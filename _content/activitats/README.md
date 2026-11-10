@@ -2,17 +2,19 @@
 
 ## Temes compartits
 
-Cada activitat té un únic `topic` principal, triat segons el seu objectiu
-d'aprenentatge. Els conceptes més específics (depuració, binari, protocols,
-comparadors, etc.) s'expliquen en el text, sense crear etiquetes noves.
+Cada activitat té un únic `topic` principal: la característica del pensament
+computacional que més destaca en el repte i en les evidències d'aprenentatge.
+Una activitat pot treballar les quatre característiques; l'etiqueta indica
+l'èmfasi principal, no una exclusió de les altres. No cal repartir les activitats
+per igual. Els conceptes específics (depuració, binari, protocols, comparadors,
+etc.) s'expliquen en el text, sense crear etiquetes noves.
 
 | `topic` | Criteri | Activitats |
 | --- | --- | --- |
-| Algorismes | Descriure, ordenar, executar o reparar instruccions | Robot humà, laberint, monstres, receptes |
-| Patrons i repeticions | Reconéixer unitats repetides o executar bucles | Detectius de patrons, coreografia |
-| Lògica i decisions | Justificar una tria segons pistes o condicions | Maleta, màquina de decisions |
-| Dades i representació | Descriure, classificar o transformar informació | Píxels binaris, correu de píxels, museu, Cèsar |
-| Xarxes i processos | Coordinar comparacions o recorreguts entre nodes | Xarxa d'ordenació, xarxa de missatgers |
+| Descomposició | Dividir una tasca o un missatge en parts i organitzar-ne les relacions | Receptes, xarxa de missatgers |
+| Abstracció | Seleccionar atributs rellevants i representar informació deixant fora altres detalls | Maleta, museu, píxels binaris |
+| Patrons | Reconéixer repeticions i aprofitar-les per descriure o executar una seqüència | Detectius de patrons, coreografia, correu de píxels |
+| Algorismes | Formular, seguir, comprovar o corregir un procediment | Robot humà, laberint, monstres, màquina de decisions, xarxa d'ordenació, Cèsar |
 
 La llista es defineix a `_scripts/lib/activity-topics.js` i el build rebutja
 etiquetes diferents, per evitar tornar a tenir un tema per activitat.

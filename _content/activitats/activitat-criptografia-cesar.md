@@ -1,7 +1,7 @@
 ---
 title: "El taller de missatges Cèsar"
 description: "Construïu una roda de substitució, acordeu una clau i comproveu el xifratge en els dos sentits."
-topic: "Dades i representació"
+topic: "Algorismes"
 cycle_label: "Tercer cicle"
 duration: "50 min"
 order: 6

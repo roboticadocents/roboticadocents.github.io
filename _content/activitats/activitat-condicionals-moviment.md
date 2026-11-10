@@ -1,7 +1,7 @@
 ---
 title: "La màquina de les decisions"
 description: "Feu passar sis targetes per una regla si–llavors–si no i comproveu que totes tenen una resposta definida."
-topic: "Lògica i decisions"
+topic: "Algorismes"
 cycle_label: "Primer cicle"
 duration: "35 min"
 order: 5

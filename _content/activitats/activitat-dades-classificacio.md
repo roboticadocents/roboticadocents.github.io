@@ -1,7 +1,7 @@
 ---
 title: "El museu de les dades"
 description: "Classifiqueu una col·lecció inventada, registreu les propietats i distingiu absència d’una dada desconeguda."
-topic: "Dades i representació"
+topic: "Abstracció"
 cycle_label: "Segon cicle"
 duration: "50 min"
 order: 10

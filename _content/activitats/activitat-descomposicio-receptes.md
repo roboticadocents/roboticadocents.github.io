@@ -1,7 +1,7 @@
 ---
 title: "Receptes per preparar un enviament"
 description: "Ordeneu una tasca en passos, identifiqueu què depèn de què i proveu dues seqüències diferents que funcionen."
-topic: "Algorismes"
+topic: "Descomposició"
 cycle_label: "Segon cicle"
 duration: "50 min"
 order: 9

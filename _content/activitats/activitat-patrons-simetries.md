@@ -1,7 +1,7 @@
 ---
 title: "Detectius de patrons"
 description: "Descobriu el tros que es repeteix, completeu una tira i conserveu la regla en passar de formes a gestos."
-topic: "Patrons i repeticions"
+topic: "Patrons"
 cycle_label: "Educació Infantil"
 duration: "35 min"
 order: 8

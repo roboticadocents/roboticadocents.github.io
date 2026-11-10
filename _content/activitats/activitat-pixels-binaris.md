@@ -1,7 +1,7 @@
 ---
 title: "Píxels: un dibuix en 25 bits"
 description: "Reconstruïu imatges amb zeros i uns, creeu un missatge propi i reviseu les discrepàncies casella per casella."
-topic: "Dades i representació"
+topic: "Abstracció"
 cycle_label: "Primer cicle"
 duration: "45 min"
 order: 2

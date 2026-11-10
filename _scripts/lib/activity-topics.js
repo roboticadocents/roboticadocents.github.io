@@ -1,12 +1,11 @@
 'use strict';
 
-// Shared editorial vocabulary: use the learning objective to select one topic.
+// Select the computational thinking skill most prominent in the learning objective.
 const ACTIVITY_TOPICS = Object.freeze([
-  'Algorismes',
-  'Patrons i repeticions',
-  'Lògica i decisions',
-  'Dades i representació',
-  'Xarxes i processos'
+  'Descomposició',
+  'Abstracció',
+  'Patrons',
+  'Algorismes'
 ]);
 
 module.exports = { ACTIVITY_TOPICS };

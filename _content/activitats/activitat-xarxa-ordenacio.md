@@ -1,7 +1,7 @@
 ---
 title: "La xarxa que ordena"
 description: "Executeu una xarxa concreta de quatre canals i descobriu quines comparacions poden fer-se alhora."
-topic: "Xarxes i processos"
+topic: "Algorismes"
 cycle_label: "Tercer cicle"
 duration: "50 min"
 order: 3

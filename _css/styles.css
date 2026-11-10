@@ -2257,7 +2257,7 @@ accent-dashes {
 }
 
 .v3 {
-  --u: calc(var(--fbot-w) / 8);
+  --u: calc(var(--fbot-w) / 4);
   position: absolute;
   inset: 0;
   /* Sombrejat per cara (el JS l'actualitza quan el robot gira) */
@@ -2271,11 +2271,11 @@ accent-dashes {
 .v3-iso {
   position: absolute;
   left: 50%;
-  bottom: calc(var(--u) * 1.4);
+  bottom: calc(var(--u) * 0.7);
   width: 0;
   height: 0;
   transform-style: preserve-3d;
-  transform: rotateX(68deg) rotateZ(45deg);
+  transform: scale3d(0.5, 0.5, 0.5) rotateX(68deg) rotateZ(45deg);
 }
 
 .v3-yaw {
@@ -2298,13 +2298,16 @@ accent-dashes {
 }
 
 .v3-f {
+  --cf: color-mix(in srgb, var(--face-c, var(--c)) calc(var(--b) * var(--lit, 1) * 100%), #000);
   position: absolute;
   left: 0;
   top: 0;
   display: block;
   transform-origin: 0 0;
   backface-visibility: hidden;
-  background: color-mix(in srgb, var(--c) calc(var(--b) * var(--lit, 1) * 100%), #000);
+  background: var(--cf);
+  box-shadow: 0 0 0.8px 0.6px var(--cf);
+  outline: 1px solid transparent;
 }
 
 .v3-box[data-light].is-off { --lit: 0.55; }
@@ -2317,9 +2320,9 @@ accent-dashes {
 
 .v3-t {
   --b: var(--b-t);
+  --face-c: var(--ct, var(--c));
   width: calc(var(--w) * var(--u));
   height: calc(var(--d) * var(--u));
-  background: color-mix(in srgb, var(--ct, var(--c)) calc(var(--b) * var(--lit, 1) * 100%), #000);
   transform: translateZ(calc(var(--h) * var(--u)));
 }
 

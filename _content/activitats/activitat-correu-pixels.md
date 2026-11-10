@@ -2,7 +2,7 @@
 active: true
 title: "El correu secret de píxels"
 description: "Envieu dibuixos amb recomptes de caselles consecutives i descobriu què permet detectar un error."
-topic: "Dades i representació"
+topic: "Patrons"
 cycle_label: "Segon cicle"
 duration: "55 min"
 order: 13

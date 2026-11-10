@@ -1,7 +1,7 @@
 ---
 title: "La coreografia dels bucles"
 description: "Delimiteu un bloc d’accions, predieu quantes vegades s’executa i compareu el programa amb la seqüència desplegada."
-topic: "Patrons i repeticions"
+topic: "Patrons"
 cycle_label: "Primer cicle"
 duration: "45 min"
 order: 7

@@ -2,7 +2,7 @@
 active: true
 title: "La maleta dels personatges"
 description: "Prepareu una maleta amb pistes visuals, expliqueu les tries i reviseu-les quan canvia el destí."
-topic: "Lògica i decisions"
+topic: "Abstracció"
 cycle_label: "Educació Infantil"
 duration: "35 min"
 order: 11

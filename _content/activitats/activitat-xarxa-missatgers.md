@@ -2,7 +2,7 @@
 active: true
 title: "La xarxa de missatgers"
 description: "Envieu un missatge en paquets per una xarxa de taules i repareu pèrdues, desordre i camins tancats."
-topic: "Xarxes i processos"
+topic: "Descomposició"
 cycle_label: "Tercer cicle"
 duration: "60 min"
 order: 14
