@@ -21,7 +21,9 @@
 
 - [ ] I les etiquetes de característiques dels robots pitjor encara (sobren)
 
-- [x] En lego spike falta un enllaç a https://spike.legoeducation.com/prime/models/
+- [x] En lego spike falta un enllaç a https://spike.legoeducation.com/prime/models
+
+- [ ] Nou repo https://github.com/roboticadocents/roboticadocents
 
 - [ ] Coses xungues en el contingut
     - tutorials/tb-motors-sensors.md (crec que no parla de sensors, només de motors i dibuix)
