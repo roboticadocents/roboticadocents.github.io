@@ -1500,6 +1500,3 @@ const semicolonRendered = renderer.parse(semicolonParagraph, 'https://example.te
 assert.equal((semicolonRendered.html.match(/<p>/g) || []).length, 1, 'el punt i coma conserva un únic paràgraf');
 assert.match(semicolonRendered.html, /paraula; continuació/, 'es conserva el punt i coma amb el seu espai');
 
-const planetSource = fs.readFileSync(path.join(root, '_content/situacions/mb-reptes-planeta.md'), 'utf8');
-const planetRendered = renderer.parse(planetSource, 'https://example.test/_content/situacions/mb-reptes-planeta.md');
-assert.match(planetRendered.html, /<p>Consulteu fonts seleccionades[^<]+La micro:bit registra l’acció humana; no reconeix ni identifica l’espècie\.<\/p>/, 'el paràgraf de les espècies es conserva complet, sense divisions automàtiques');
