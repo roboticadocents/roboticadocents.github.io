@@ -1,0 +1,11 @@
+{
+  "generator": "Built-in image_gen",
+  "style": "Use case: illustration-story. Asset: landscape cover illustration for a Catalan unplugged computational thinking classroom activity, 3:2 landscape. Match this coherent educational website art direction: playful minimal sculptural paper/clay-like objects, soft rounded geometric forms, completely matte surfaces, lineless (no black outlines), clean solid colors, flat two-color background split horizontally with very pale sky blue upper area and white lower area. Restrained coral, mustard yellow, sky blue, teal and navy accents. No gradients, no glossy highlights, no cast shadows or ground shadows, no textures, no photorealism. Friendly polished editorial composition, close framing with generous margin around all objects, clear silhouette readable as a small card thumbnail. Only classroom craft materials relevant to the scene; unplugged paper-and-object activity, no real electronic robots, no screens, no people, no logos, no typography, no letters, no numbers, no watermarks. The image symbolizes the activity, it is not an exact instructional diagram.",
+  "assets": [
+    {
+      "slug": "robot-huma",
+      "brief": "A small paper robot-shaped pawn on a chunky three by three pale board, a closed book at the far corner, two dark blue blocked squares, and a short row of three rounded instruction cards with simple forward and curved-turn arrows in front. Symbolizes planning a route to deliver a library book.",
+      "image": "_assets/activitats/portades/robot-huma.webp"
+    }
+  ]
+}

@@ -1,86 +1,74 @@
 ---
-title: 'El joc dels condicionals: si... llavors... si no...'
-description: Practiqueu les decisions amb targetes inventades i representeu què passa quan una condició és certa o falsa.
-topic: Estructures de Control Condicional
-cycle_label: Tots els cicles
-duration: 35 min
+title: "La màquina de les decisions"
+description: "Feu passar sis targetes per una regla si–llavors–si no i comproveu que totes tenen una resposta definida."
+topic: "Lògica i decisions"
+cycle_label: "Primer cicle"
+duration: "35 min"
 order: 5
+image: "_assets/activitats/portades/condicionals-moviment.webp"
+image_alt: "Una targeta d’estrela entra en una bifurcació amb dues respostes: llibre o música."
 ---
 
-![Una targeta amb una estrela es divideix en dos camins que acaben en fitxes diferents.](_assets/activitats/condicionals-ramificacions.webp)
+![Una targeta d’estrela entra en una bifurcació amb dues respostes: llibre o música.](_assets/activitats/portades/condicionals-moviment.webp)
 
 ## 🎯 Què aprendrem?
 
-Un programa pot comprovar una condició i triar què fa després. En aquesta activitat, l’alumnat interpreta una regla «si... llavors... si no...», prediu la resposta abans d’actuar i comprova què passa amb entrades diferents. Les dades són símbols inventats, no característiques personals.
+Una màquina de paper recomana llibre o música segons una propietat visible de la targeta que rep. El grup ha de predir i comprovar la branca que correspon a cada entrada. Treballem la diferència entre una condició i una acció, i entre no fer res i executar una alternativa.
+
+La regla inicial completa és **si té una estrela, llibre; si no, música**. Les dades són formes inventades. El cercle i el triangle entren en «si no», perquè tots dos no tenen estrela; el marc de punts encara no intervé.
 
 ## 🧰 Materials i preparació
 
-- Targetes grans amb tres símbols: estrela, cercle i triangle. Es poden dibuixar o retallar.
-- Una fitxa per equip i dues zones de resposta, una amb un cercle blau i una altra amb un quadrat coral.
-- Targetes amb les regles, o pissarra per escriure-les en lletra gran.
-- Una graella senzilla per registrar entrada, condició, decisió i resultat.
+- [Descarrega el kit de l'activitat (PDF, 4 pàgines)](_assets/activitats/kits/condicionals-moviment.pdf).
+- Pàgina 1: sis entrades, amb estrela, cercle o triangle, amb marc de punts o sense. Pàgina 2: zones llibre, música i inici. Pàgina 3: registre i espais per crear una regla. Pàgina 4: solucions.
+- Per grup de tres, una còpia de les pàgines 1, 2 i 3 i una fitxa. Retalleu les sis entrades; la pàgina de zones pot quedar sencera. A4 al 100%, blanc i negre.
+- Els símbols de resposta són un quadrat per a llibre i un cercle per a música, amb noms impresos. Llegiu els noms i acordeu-los abans de provar. Els papers són lectura de regla, execució i comprovació; canvieu-los cada dues entrades.
 
-### Rols de l’equip
-
-Repartiu quatre rols i canvieu-los després de cada ronda:
-
-- **Qui proposa la regla** llig la condició sense afegir pistes.
-- **Qui interpreta** rep la targeta d’entrada i diu si la condició és certa o falsa.
-- **Qui executa** col·loca una fitxa a la zona corresponent; també pot assenyalar-la si prefereix no moure’s.
-- **Qui observa** registra la predicció i comprova si s’ha seguit la regla.
+![Una condició, té una estrela, es divideix en dues branques: sí porta a llibre i no porta a música.](_assets/activitats/kits/condicionals-moviment-exemple.webp)
 
 ## 👣 Desenvolupament pas a pas
 
-### 1. Acordeu els símbols
+![Esquema de l'activitat La màquina de les decisions: materials, regla i comprovació del resultat.](_assets/activitats/kits/condicionals-moviment-inici.webp)
 
-Mostreu les targetes i comproveu que tot el grup pot distingir l’estrela, el cercle i el triangle. Si el color també ajuda, manteniu forma i color perquè la regla no depenga només de percebre un to.
+### 1. Identifiquem les dades · 5 min
 
-### 2. Proveu una condició senzilla
+Anomeneu les tres formes i distingiu marc de punts i absència de marc. Aquestes són propietats de l'entrada, no ordres. Assenyaleu les zones de resposta i deixeu la fitxa a INICI. El docent pot llegir les etiquetes; no cal lectura autònoma.
 
-Llegiu aquesta regla: **si la targeta té una estrela, posa la fitxa al cercle blau**. Presenteu una estrela, demaneu una predicció i executeu. Després proveu el cercle i el triangle. En aquests dos casos, la condició no s’acompleix; deixeu la fitxa quieta i parleu del que significa que no hi haja cap acció alternativa.
+### 2. Una condició sense alternativa · 6 min
 
-### 3. Afegiu «si no»
+Llegiu només «si té estrela, posa la fitxa a llibre». Proveu una estrela, un cercle i un triangle, amb predicció abans de moure. **Torneu sempre la fitxa a INICI abans d'una entrada nova.** Amb cercle i triangle no s'executa cap acció: la fitxa es queda a INICI. Així no confonem una posició heretada amb una decisió nova.
 
-Ara completeu la regla: **si la targeta té una estrela, posa la fitxa al cercle blau; si no, posa-la al quadrat coral**. Abans de mostrar el resultat, cada persona indica quina branca espera. Barregeu les targetes i feu diverses proves.
+### 3. Afegim si no · 10 min
 
-| Targeta d’entrada | «Té una estrela»? | Acció prevista |
-| --- | --- | --- |
-| Estrela | Sí | Cercle blau |
-| Cercle | No | Quadrat coral |
-| Triangle | No | Quadrat coral |
+Completeu la regla amb «si no, música». Passeu les sis entrades una per una i registreu predicció i resultat. Les dues estreles van a llibre; les altres quatre targetes, a música. La persona que comprova demana la propietat que justifica cada branca, no una preferència personal.
 
-Comproveu que l’opció «si no» cobreix tots els casos que no compleixen la condició, no només el cercle.
+### 4. Reparem una interpretació · 8 min
 
-### 4. Canvieu la regla sense canviar les peces
+Plantegeu que algú envia el triangle a llibre perquè pensa que «si no» només vol dir cercle. Contrasteu-ho amb la regla escrita: el triangle no té estrela i, per tant, correspon música. Proveu les tres formes després de la reparació. Un equip pot proposar «si té marc de punts, llibre; si no, música» i anticipar les sis respostes sense canviar les peces.
 
-Una altra parella tria una condició que es puga verificar amb les targetes, com ara «la targeta és redona». Abans de provar, ha d’escriure les dues branques i comprovar que cada símbol té una resposta. Si dues persones interpreten la regla de manera diferent, feu-la més precisa.
+### 5. Expliquem el canvi · 6 min
 
-### 5. Exploreu «i» i «o» (ampliació)
+Compareu la regla incompleta i la completa. Cada grup mostra una entrada que abans no provocava cap acció i que ara té alternativa. Recolliu una explicació: «hem mirat ___; com que ___, hem triat ___».
 
-Afegiu targetes amb dues propietats visibles —per exemple, forma i marc— i acordeu què vol dir cada propietat abans de combinar-les:
+> **💡 Ampliació per a Segon cicle:** Compareu «estrela i marc de punts» amb «estrela o marc de punts». En la primera regla només una targeta compleix la condició; en la segona, quatre. Acordeu que «o» inclou també complir les dues propietats.
 
-- **I:** s’han de complir les dues condicions. «Té estrela **i** marc blau».
-- **O:** n’hi ha prou que se’n complisca una. «Té estrela **o** marc blau».
-
-Feu servir primer dues targetes d’exemple per a cada combinació i anoteu quines entren a cada branca. No cal memoritzar una taula formal: l’objectiu és justificar la decisió a partir de la regla acordada.
-
-> **💡 Connexió amb la robòtica:** una targeta fa de senyal d’entrada i la fitxa mostra la resposta. En un robot, un sensor aporta dades; el programa les compara amb una condició i tria una acció.
+![La regla amb dues propietats exigeix comprovar totes dues quan hi ha i; si no cobreix totes les entrades que no compleixen la condició.](_assets/activitats/kits/condicionals-moviment-reparacio.webp)
 
 ## ✅ Evidències d'aprenentatge
 
-Recolliu la regla escrita o enregistrada amb pictogrames, una predicció i els resultats de tres targetes. L’alumnat ha de poder explicar quina dada ha comprovat, per què ha triat aquella branca i què faria amb un exemple nou. Valoreu també que detecte una regla ambigua i propose una manera d’aclarir-la.
+- Identifica la propietat comprovada, sense confondre-la amb la zona de resposta.
+- Prediu i executa una única branca per entrada amb la regla completa.
+- Explica que «si no» cobreix totes les entrades que no compleixen la condició.
+- Distingeix quedar a INICI de rebre una resposta alternativa.
+
+Recolliu els sis casos del registre i una regla nova comprovada amb les mateixes entrades. No cal memoritzar cap taula formal.
 
 ### Preguntes per fer pensar
 
-- Com podem comprovar que la condició és certa o falsa?
-- Què passa amb el triangle si la regla només parla de l’estrela?
-- Quina diferència hi ha entre deixar la fitxa quieta i definir una acció «si no»?
-- En la regla amb **i**, què passa si només una de les dues propietats coincideix? I amb **o**?
+- El marc de punts canvia el resultat de la regla de l'estrela?
+- Què passaria si no tornàrem a INICI entre proves?
+- El triangle també pot entrar en «si no»? Quina dada ho decideix?
 
 ## ♿ Variants i inclusió
 
-Manteniu les targetes visibles i llegiu la regla en veu alta. Oferiu símbols grans d’alt contrast i permeteu respondre parlant, assenyalant, mirant la zona triada o col·locant una fitxa. El moviment corporal és opcional i es pot fer des de la cadira. Comenceu amb dues formes i una sola condició; afegiu una tercera forma quan el grup ja puga explicar les dues branques.
-
-## 🔗 Referent consultat
-
-El curs de Makeblock [Codey Rocky & Neuron Discovery](https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery) inclou activitats desendollades per introduir conceptes abans de programar. Aquest joc i els seus materials són propis, no requereixen cap robot ni el mòdul Neuron.
+**Suport:** comenceu amb estrela i cercle sense marc; afegiu la resta quan s'entenguen les dues branques. Oferiu lectura compartida, formes grans i resposta assenyalant o amb la mirada. Tot el joc es fa en taula. **Ampliació:** escriviu les dues branques d'una regla nova i assegureu-vos que cada targeta té una resposta abans d'executar-la.

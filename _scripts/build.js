@@ -13,6 +13,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 const renderer = require('./lib/markdown');
+const { ACTIVITY_TOPICS } = require('./lib/activity-topics');
 const { buildAllBlocks } = require('./lib/blocks');
 const { warmMakeCodeCache } = require('./lib/makecode-cache');
 
@@ -98,6 +99,9 @@ function buildActivities() {
     const slug = file.replace(/^activitat-/, '').replace(/\.md$/, '');
     const title = String(data.title || slug).trim();
     const description = String(data.description || '').trim();
+    if (!ACTIVITY_TOPICS.includes(data.topic)) {
+      throw new Error(`${file}: topic desconegut. Trieu un de: ${ACTIVITY_TOPICS.join(', ')}`);
+    }
     const badges = [];
     if (data.topic) badges.push({ text: data.topic, primary: true });
     if (data.cycle_label || data.cycle) badges.push({ text: data.cycle_label || data.cycle, primary: false });
@@ -123,6 +127,8 @@ function buildActivities() {
         slug,
         url: `activitat/${slug}/index.html`,
         titol: title,
+        image: data.image || '',
+        image_alt: data.image_alt || '',
         tag: data.topic || '',
         cicle: data.cycle_label || data.cycle || '',
         durada: data.duration || '',

@@ -1,57 +1,74 @@
 ---
-title: El Laberint d'Instruccions i Detecció d'Errors
-description: Sobre una graella gegant al terra amb fitxes de cartolina, els alumnes col·loquen targetes de fletxes
-  per planificar un camí abans d'executar-lo. Quan troben un obstacle, aprenen a aïllar l'ordre equivocada.
-topic: Depuració (Debugging) i Seqüenciació
-cycle_label: Educació Infantil i primer cicle
-duration: 40 min
+title: "El laberint dels errors"
+description: "Investigueu una ruta que topa amb un obstacle, conserveu el programa inicial i comproveu una reparació."
+topic: "Algorismes"
+cycle_label: "Primer cicle"
+duration: "40 min"
 order: 4
+image: "_assets/activitats/portades/laberint-debugging.webp"
+image_alt: "Tauler de laberint amb obstacles, una fitxa i targetes de direcció per revisar un recorregut."
 ---
+
+![Tauler de laberint amb obstacles, una fitxa i targetes de direcció per revisar un recorregut.](_assets/activitats/portades/laberint-debugging.webp)
 
 ## 🎯 Què aprendrem?
 
-Sobre una graella gegant al terra amb fitxes de cartolina, els alumnes col·loquen targetes de fletxes per planificar un camí abans d'executar-lo. Quan troben un obstacle, aprenen a aïllar l'ordre equivocada.
+El missatger ha d'anar de S, a A4, fins a M, a D1. Ja tenim un programa, però alguna ordre el porta a una prestatgeria. L'equip treballa com un taller de depuració: prediu, executa sense improvisar, identifica la primera ordre impossible i prova una versió revisada.
+
+Ací les quatre fletxes indiquen **direccions fixes del paper: amunt, dreta, avall i esquerra**. No giren cap robot ni depenen d'on mire una fitxa. Això permet centrar-nos en el registre i la comparació de proves, amb una mecànica diferent de la missió biblioteca.
 
 ## 🧰 Materials i preparació
 
-- Cinta de pintor o rajoles de l'aula com a graella
-- Fletxes de paper (amunt, avall, esquerra, dreta)
-- Un objecte premi al final
+- [Descarrega el kit de l'activitat (PDF, 4 pàgines)](_assets/activitats/kits/laberint-debugging.pdf).
+- Pàgina 1: tauler 4 × 4 amb S a A4, M a D1 i obstacles a B3 i C3. Pàgina 2: vint fletxes retallables. Pàgina 3: programa inicial i registre. Pàgina 4: solució i ampliació.
+- Per trio, una còpia de les pàgines 1 i 2 i dues de la pàgina 3. Un botó o peça gran com a missatger. A4 al 100%, blanc i negre. Retalleu les fletxes abans de la sessió.
+- Manteniu el tauler orientat amb A–D a dalt. Les columnes es lligen d'esquerra a dreta i les files d'1 a 4 de dalt a baix. Repartiu programació, execució i registre, i roteu els papers.
+
+![Quatre fletxes del paper, amunt, dreta, avall i esquerra; cadascuna desplaça una casella sense representar cap gir.](_assets/activitats/kits/laberint-debugging-exemple.webp)
 
 ## 👣 Desenvolupament pas a pas
 
-### 1. Dibuixar la ruta en paper abans d'actuar
+![Esquema de l'activitat El laberint dels errors: materials, regla i comprovació del resultat.](_assets/activitats/kits/laberint-debugging-inici.webp)
 
-No val provar a l'atzar. L'equip ha de col·locar la fila de fletxes a la taula abans que ningú trepitgi la graella.
+### 1. Acordem les proves · 6 min
 
-### 2. Execució pas a pas
+Mostreu una fletxa i moveu la fitxa una casella. Les X són caselles prohibides i no es poden saltar. Si la següent ordre entra en una X o ix del tauler, pareu abans de moure. Ningú no afegeix una desviació per ajudar el missatger. Identifiqueu inici i meta assenyalant-los, sense exigir llegir coordenades.
 
-Un company llegeix la fletxa i un altre fa la passa sobre la casella corresponent.
+### 2. Prediem el programa rebut · 8 min
 
-### 3. Trobar el 'Bug'
+Prepareu `amunt, dreta, amunt, dreta, dreta, amunt`. Numereu les sis targetes d'esquerra a dreta. Sense moure la fitxa, cada equip prediu si arribarà, es pararà o eixirà. Anoteu la predicció al registre. Una persona assenyala quina targeta es revisa en cada moment.
 
-Si la fletxa ens porta a una casella bloquejada, aturem el pas, assenyalem quina fletxa de la fila ha fallat i la substituïm.
+### 3. Provem sense tocar les ordres · 8 min
 
-> **💡 Consell per a l'aula:** Normalitza l'error: en programació equivocar-se no és un fracàs, sinó una oportunitat per depurar.
+Reinicieu a A4. La primera ordre porta a A3; la segona intenta entrar a B3 i obliga a parar. Anoteu «ordre 2, B3» i conserveu intacta la seqüència inicial. Reviseu primer si el moviment ha seguit la fletxa. Si l'execució era correcta, el que cal canviar és el programa.
+
+### 4. Fem una reparació comprovable · 10 min
+
+Proposeu intercanviar les ordres 2 i 3. El programa queda `amunt, amunt, dreta, dreta, dreta, amunt`. Predieu de nou i executeu des d'A4: A3, A2, B2, C2, D2 i D1. Compareu les dues proves. No cal canviar la meta ni llevar obstacles per fer funcionar la reparació.
+
+### 5. Canviem una condició · 8 min
+
+Roteu papers. Poseu una peça sobre D2 com a obstacle addicional i manteniu inici i meta. El programa anterior ara falla. Busqueu una alternativa: `amunt, amunt, amunt, dreta, dreta, dreta` passa per la fila 1. Registreu que la condició ha canviat: un programa que funcionava pot deixar de servir en un altre tauler.
+
+> **💡 Consell docent:** No esborreu el programa inicial. Veure les dues versions ajuda a explicar què ha provocat la millora. Reinicieu sempre la fitxa al mateix punt abans de comparar dues proves.
+
+![El programa inicial topa a B3; intercanviant la segona i la tercera ordre i reiniciant a A4, la ruta arriba a D1.](_assets/activitats/kits/laberint-debugging-reparacio.webp)
 
 ## ✅ Evidències d'aprenentatge
 
-Guardeu el primer programa i la versió revisada. L'alumnat explica per què ha canviat una instrucció i prova que el recorregut encara acaba al lloc acordat.
+- Manté la correspondència entre número d'ordre i desplaçament.
+- Registra una ordre i una casella concretes en lloc de dir només «no funciona».
+- Conserva la versió inicial i verifica el canvi executant la ruta sencera.
+- Explica que la validesa d'una ruta depèn també dels obstacles acordats.
 
-### Registre de depuració
-
-Abans de començar, numereu les fletxes i feu que qui les executa repeteixi la regla en veu alta. En detectar una desviació, manteniu la seqüència original, assenyaleu la primera ordre que deixa de coincidir amb el trajecte i anoteu-ne la correcció en una segona columna.
-
-| Pas | Predicció | Resultat | Canvi provat |
-| --- | --- | --- | --- |
-| 1 | Arribar a la casella veïna | Coincideix / no coincideix | Canvi d'una instrucció |
+Recolliu les dues versions i una frase sobre què s'ha mantingut igual. Valoreu una revisió justificada, encara que no siga la ruta més curta.
 
 ### Preguntes per fer pensar
 
-- Quin és el primer lloc on el recorregut esperat i el real divergeixen?
-- Com distingim l'ordre que causa un problema d'un error a l'executar-la?
-- Com sabríem que la solució també funciona amb una sortida diferent?
+- Hem executat malament una fletxa o la fletxa ens envia a un lloc prohibit?
+- Per què tornar a A4 ajuda a comparar les proves?
+- Si canviem un obstacle, què cal tornar a comprovar?
 
 ## ♿ Variants i inclusió
 
-Comenceu amb dues fletxes i sense obstacle; mostreu la seqüència al costat de la graella. Per aprofundir, feu que el laberint amagui un segon error o compareu una solució fàcil de depurar amb una de més curta.
+**Educació Infantil:** tapeu part del tauler i proposeu dues fletxes sobre una fila sense obstacles abans d'introduir una X; feu predicció oral i assenyalant. **Accés:** fitxes grans, targetes preparades i execució per una altra persona si cal. No és necessari caminar, llegir o retallar. **Ampliació:** inventeu un programa amb un únic error i doneu-lo a un altre equip juntament amb la ruta que volíeu obtenir.

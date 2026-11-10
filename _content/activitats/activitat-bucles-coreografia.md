@@ -1,58 +1,74 @@
 ---
-title: La Coreografia dels Bucles
-description: Repetiu una seqüència de moviments i busqueu la manera més clara d'explicar-la amb poques instruccions.
-topic: Bucles i Repetició
-cycle_label: Primer, segon i tercer cicle
-duration: 45 min
+title: "La coreografia dels bucles"
+description: "Delimiteu un bloc d’accions, predieu quantes vegades s’executa i compareu el programa amb la seqüència desplegada."
+topic: "Patrons i repeticions"
+cycle_label: "Primer cicle"
+duration: "45 min"
 order: 7
+image: "_assets/activitats/portades/bucles-coreografia.webp"
+image_alt: "Targetes de gestos agrupades en un bloc amb una fletxa de repetició i comptadors."
 ---
+
+![Targetes de gestos agrupades en un bloc amb una fletxa de repetició i comptadors.](_assets/activitats/portades/bucles-coreografia.webp)
 
 ## 🎯 Què aprendrem?
 
-Un bucle és una instrucció que demana repetir una seqüència. El grup distingeix entre escriure una ordre moltes vegades i definir el patró una sola vegada amb un nombre de repeticions.
+El grup rep una coreografia curta que s'ha de repetir sense escriure totes les accions cada vegada. Ha de decidir què hi ha dins del bloc, quantes voltes cal fer i com comprovar que el programa abreujat produeix exactament la seqüència prevista.
+
+Les tres accions són **M: picar de mans una vegada; E: tocar alhora les dues espatlles una vegada; T: tocar suaument la taula una vegada**. Cada símbol compta com una acció, encara que es faça amb dues mans. També podem executar el programa assenyalant els símbols, sense sons ni moviment corporal.
 
 ## 🧰 Materials i preparació
 
-- Targetes amb accions: picar de mans, fer un pas, girar i tocar-se les espatlles.
-- Targetes amb nombres de l'1 al 8 i una targeta «repeteix».
-- Espai lliure perquè cada equip pugui actuar sense xocar amb altres grups.
+- [Descarrega el kit de l'activitat (PDF, 4 pàgines)](_assets/activitats/kits/bucles-coreografia.pdf).
+- Pàgina 1: dotze targetes, quatre per acció. Pàgina 2: marc de bucle i nombres de l'1 al 4. Pàgina 3: predicció, desplegament i error. Pàgina 4: solucions i convencions.
+- Per trio, una còpia de les pàgines 1 i 2 i una de la pàgina 3. Retalleu les dotze accions i els quatre nombres; el marc del bucle queda sencer. A4 al 100%, blanc i negre.
+- Una fitxa per comptar les voltes i una taula accessible. Repartiu lectura, execució i recompte; canvieu els papers entre proves. No cal música ni espai per ballar.
+
+![Tres accions del vocabulari compartit: M per mans, E per espatlles i T per taula; cada símbol representa una sola acció.](_assets/activitats/kits/bucles-coreografia-exemple.webp)
 
 ## 👣 Desenvolupament pas a pas
 
-### 1. Segueix la seqüència
+![Esquema de l'activitat La coreografia dels bucles: materials, regla i comprovació del resultat.](_assets/activitats/kits/bucles-coreografia-inici.webp)
 
-En cercle, el docent executa tres moviments i l'alumnat els imita. Repetiu la mateixa seqüència dues vegades, primer sense explicar que esteu fent un bucle.
+### 1. Aprenem una volta · 7 min
 
-### 2. Troba el patró
+Mostreu i executeu M, E, T en aquest ordre. Repetiu una segona vegada. Demaneu al grup quines accions ha vist i on recomença el tros repetit. Comproveu que tothom compta la mateixa unitat d'acció. Si useu assenyalament, manteniu eixe mode durant la prova per poder comparar-la.
 
-En equips, trieu tres accions i ordeneu-les. Un equip fa d'autòmat i l'altre d'intèrpret: només es poden fer els moviments de les targetes.
+### 2. Posem límits al bloc · 10 min
 
-### 3. Comprimiu les instruccions
+Col·loqueu M, E i T dins del marc de la pàgina 2 i poseu el recompte 3. Llegiu «repeteix tres vegades tot el que hi ha dins». Abans d'actuar, desplegueu el programa en nou símbols: M E T / M E T / M E T. La barra només separa voltes; no és una acció.
 
-Escriviu la seqüència completa sense bucle. Després substituïu-la per «repeteix 4 vegades: pas, picar, gir». Compareu la llargada i comproveu que el resultat és el mateix.
+### 3. Prediem i executem · 10 min
 
-### 4. Canvieu el nombre de repeticions
+Anoteu tres voltes de tres accions: nou accions. La persona lectora assenyala el bloc i qui compta mou la fitxa una vegada cada volta completa. Executeu sense afegir T al final per costum. Compareu amb els nou símbols desplegats i marqueu qualsevol discrepància.
 
-Una persona modifica només el nombre del bucle. Abans d'actuar, la resta prediu quants moviments farà cada participant.
+### 4. Canviem només el recompte · 8 min
+
+Roteu els papers i substituïu 3 per 2 sense modificar el cos del bucle. Predieu sis accions i comproveu M E T / M E T. Pregunteu què s'ha mantingut igual i què ha canviat. Una volta de més és un error de recompte; una acció fora de lloc pot ser un problema del bloc o de l'execució.
+
+### 5. Investiguem una acció fora · 10 min
+
+Compareu «repeteix 3: [M E T]» amb «repeteix 3: [M E]; després T». El segon programa desplega M E / M E / M E / T i té set accions. Si volíem la coreografia original, la reparació és posar T dins del marc. Torneu a provar i expliqueu per què canviar el límit del bloc canvia el resultat.
+
+> **💡 Consell docent:** El focus és executar un bloc explícit amb un recompte. Reconèixer la unitat repetida en una tira de peces és el repte de Detectius de patrons; ací el pas següent és convertir-la en una instrucció executable.
+
+![Repetir tres vegades M E T fa nou accions; repetir M E tres vegades i fer T després en fa set, perquè T queda fora del bucle.](_assets/activitats/kits/bucles-coreografia-reparacio.webp)
 
 ## ✅ Evidències d'aprenentatge
 
-- L'alumnat identifica el tros que forma el patró.
-- Pot expressar quantes vegades es repeteix i anticipar el resultat.
-- Simplifica una llista llarga d'ordres sense alterar la seqüència.
+- Delimita totes les accions que s'han de repetir.
+- Desplega un bucle i anticipa el total d'accions.
+- Manté el bloc quan només canvia el recompte.
+- Distingeix una acció dins del bucle d'una que es fa una vegada després.
 
-> **💡 Per anar més enllà:** Demaneu a un altre equip que interpreti les targetes sense cap explicació oral. Les instruccions han de ser prou clares per funcionar per si soles.
+Recolliu la predicció i els dos desplegaments de la pàgina 3. Demaneu una explicació del límit del bloc, sense valorar habilitat motriu ni ritme musical.
 
 ### Preguntes per fer pensar
 
-- On comença i on acaba el patró que repetim?
-- Si el repetim una vegada més, què canvia i què es manté?
-- Hi ha una instrucció que no necessitem perquè es pot expressar amb un bucle?
+- On comença i on acaba una volta completa?
+- Què canvia si només substituïm el nombre 3 per 2?
+- Per què tres voltes de dues accions i una acció final no són nou accions?
 
 ## ♿ Variants i inclusió
 
-Es pot fer la coreografia asseguts o representar-la només amb pictogrames i gestos de mà. A Educació Infantil, limiteu-vos a dues accions i una repetició; al tercer cicle, compareu dos bucles niats i calculeu quantes accions s'executen.
-
-## 🔗 Referent consultat
-
-El curs oficial [Codey Rocky & Neuron Discovery](https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery) descriu activitats desendollades com una manera d’introduir conceptes abans de programar. Aquesta coreografia és una activitat pròpia i es pot fer sense Codey Rocky ni el mòdul Neuron.
+**Suport:** comenceu amb dues accions i dues voltes. Oferiu símbols grans, lectura compartida i una marca visible de cada volta acabada. Es pot fer assegut i sense tocar el cos. **Ampliació per a Segon cicle:** poseu una acció abans i una després del bucle i compareu el recompte total amb el del cos; manteniu visibles els límits abans d'introduir estructures més complexes.

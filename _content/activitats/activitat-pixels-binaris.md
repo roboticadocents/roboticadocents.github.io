@@ -1,58 +1,73 @@
 ---
-title: Dibuix per Píxels i Imatges Binàries
-description: Com 'veu' i guarda un ordinador un dibuix? L'alumnat codifica i descodifica imatges senzilles en quadrícules
-  utilitzant només els valors 0 (blanc) i 1 (negre).
-topic: Representació de Dades (Binari)
-cycle_label: Primer i segon cicle
-duration: 45 min
+title: "Píxels: un dibuix en 25 bits"
+description: "Reconstruïu imatges amb zeros i uns, creeu un missatge propi i reviseu les discrepàncies casella per casella."
+topic: "Dades i representació"
+cycle_label: "Primer cicle"
+duration: "45 min"
 order: 2
+image: "_assets/activitats/portades/pixels-binaris.webp"
+image_alt: "Graella amb una figura feta de caselles fosques i clares, peces soltes i targetes de codi."
 ---
+
+![Graella amb una figura feta de caselles fosques i clares, peces soltes i targetes de codi.](_assets/activitats/portades/pixels-binaris.webp)
 
 ## 🎯 Què aprendrem?
 
-Com 'veu' i guarda un ordinador un dibuix? L'alumnat codifica i descodifica imatges senzilles en quadrícules utilitzant només els valors 0 (blanc) i 1 (negre).
+El taller d'icones ha rebut dos dibuixos convertits en nombres. Cada parella ha de reconstruir-los sense veure l'original i després enviar-ne un de propi. Treballem la representació binària: cada casella només té dos estats i cada estat es representa amb un valor.
+
+La convenció del joc és **0 = blanc i 1 = negre**. Llegim cada fila d'esquerra a dreta i les cinc files de dalt a baix. El repte és conservar tota la informació i detectar diferències, sense necessitar cap pantalla. A diferència del correu de píxels amb recomptes, ací escrivim un valor per casella: no agrupem trams.
 
 ## 🧰 Materials i preparació
 
-- Fulls de quadrícula de 8x8 o 10x10 caselles
-- Llapis o retoladors
+- [Descarrega el kit de l'activitat (PDF, 4 pàgines)](_assets/activitats/kits/pixels-binaris.pdf).
+- Pàgina 1: dos codis amb graelles buides. Pàgina 2: graella de l'emissor i espais per escriure el codi. Pàgina 3: taller de reparació. Pàgina 4: solucions docents.
+- Per parella, una còpia de les pàgines 1 i 3; una còpia de la pàgina 2 per persona. Llapis, goma i una carpeta per ocultar el dibuix original. A4 al 100%, en blanc i negre.
+- No cal retallar. Per a qui no vulga pintar, oferiu fitxes fosques o quadradets de paper negre d'uns 3 cm. Prepareu un espai on l'emissor puga tapar la part superior del seu full i mostrar només les files de codi.
 
-### Una plantilla per descodificar
-
-Comenceu amb una graella de 5 × 5. Acordeu la convenció «0 és buit, 1 és pintat» i marqueu clarament el punt d'inici de cada fila. Una seqüència curta podria ser `1 1 1 0 0`; llegiu-la d'esquerra a dreta abans de passar a la fila següent.
-
-![El robot Codey Rocky al costat d’una graella física de cinc per cinc amb caselles blaves i grogues que formen un cor.](_assets/activitats/pixels-binaris.webp)
+![Cinc valors es transformen en cinc caselles, sempre d’esquerra a dreta; el codi complet es llig fila a fila.](_assets/activitats/kits/pixels-binaris-exemple.webp)
 
 ## 👣 Desenvolupament pas a pas
 
-### 1. Què és un píxel?
+![Esquema de l'activitat Píxels: un dibuix en 25 bits: materials, regla i comprovació del resultat.](_assets/activitats/kits/pixels-binaris-inici.webp)
 
-Mostrem una imatge a la pantalla fent molt de zoom fins que es vegin els quadradets individuals (píxels).
+### 1. Provem una sola fila · 7 min
 
-### 2. La regla del codi
+Mostreu `0 0 1 0 1`. Cada parella deixa dues caselles blanques, pinta la tercera, deixa la quarta blanca i pinta la cinquena. Compareu abans de continuar. Assenyaleu l'inici de fila; un mateix codi no produeix necessàriament el mateix resultat si el llegim al revés.
 
-Cada casella blanca és un 0 i cada casella pintada de negre és un 1. Una línia com '0 1 1 0' vol dir: blanc, negre, negre, blanc.
+### 2. Reconstruïm dos missatges · 12 min
 
-### 3. Desxifrar el dibuix misteriós
+Repartiu la pàgina 1 sense mostrar les solucions. Una persona llig i assenyala un valor cada vegada; l'altra pinta la casella corresponent. Canvieu els papers per al segon dibuix. No completeu una forma perquè semble una lletra o una fletxa: seguiu tots els valors, encara que la primera intuïció siga una altra.
 
-Cada alumne rep una targeta amb files de números binaris i ha de pintar la seva quadrícula per descobrir quina figura s'amaga (un cor, una fletxa, una cara).
+### 3. Ara som emissors · 10 min
 
-### 4. Crear el propi missatge
+Cada persona dibuixa una icona pròpia de 5 × 5 a la pàgina 2 i escriu les cinc files de codi. Comprova que cada fila té cinc valors i que només hi ha zeros i uns. Oculta la graella i passa només el codi a la parella, que el reconstrueix en una de les graelles de prova o en paper quadriculat. No dieu el nom de la icona abans de provar.
 
-Ara fan el procés invers: dibuixen la seva icona i escriuen el codi numèric per passar-lo al company.
+### 4. Comparem i reparem · 10 min
 
-> **💡 Consell per a l'aula:** Connecta directament amb la compressió d'imatges i el funcionament de les pantalles digitals.
+Destapeu l'original i compareu casella per casella. Anoteu la primera fila diferent i comproveu si el problema és al codi o a la lectura. La pàgina 3 proposa una fila incompleta, `1 0 0 0`: sabem que falta un valor, però no on. Demaneu la fila sencera, sense endevinar la posició absent. També proposeu un `1 0 0 0 0` pintat a l'inrevés i repetiu-lo amb la convenció correcta.
+
+### 5. Expliquem què representa el codi · 6 min
+
+Compteu cinc files de cinc valors: **25 valors binaris, és a dir, 25 bits per al dibuix del nostre model**. No estem calculant la mida real d'un fitxer, que pot incloure altres dades. Cada parella explica una reparació i torna a comprovar la fila afectada.
+
+> **💡 Consell docent:** Triar una icona asimètrica fa visibles els errors de direcció. Un dibuix simètric pot quedar igual quan s'inverteix una fila, encara que no s'haja seguit la convenció.
+
+![Una fila de quatre valors és incompleta; es demana reenviar-la sencera en lloc d’inventar la casella absent.](_assets/activitats/kits/pixels-binaris-reparacio.webp)
 
 ## ✅ Evidències d'aprenentatge
 
-Recull la graella descodificada i demana que l'alumnat expliqui quina convenció ha utilitzat. Valora que mantingui la direcció de lectura, detecti una discrepància i utilitzi el codi per reconstruir el dibuix, no que ja conegui el sistema binari.
+- Manté la correspondència d'un valor amb una casella i respecta l'ordre de lectura.
+- Produeix cinc files completes que permeten reconstruir el seu dibuix.
+- Localitza una discrepància i justifica què ha de corregir o tornar a demanar.
+
+Recolliu original, codi i reconstrucció. Marqueu un exemple de revisió. Valoreu la correspondència i l'explicació, no la qualitat del dibuix ni la rapidesa en pintar.
 
 ### Preguntes per fer pensar
 
-- Què passa amb el dibuix si llegim la fila al revés?
-- Com sabem quantes caselles hi ha en cada fila si una xifra s'ha perdut?
-- Com podem representar el mateix dibuix amb menys instruccions repetides?
+- Un codi amb cinc valors sempre és el codi correcte? Com ho comprovem?
+- Quina informació falta quan només rebem quatre valors?
+- Per què una imatge simètrica pot amagar un error de lectura?
 
 ## ♿ Variants i inclusió
 
-Ofereix una quadrícula amb contorn gruixut, peces negres per col·locar i una fila cada vegada. Per aprofundir, compareu una imatge de 5 × 5 i una de 10 × 10, parleu de resolució i anoteu quants bits calen per descriure cada graella.
+**Suport:** useu una sola fila i una finestra de paper que tape les altres. Permeteu fitxes, dictat i lectura compartida. El contrast és blanc/negre i no depèn de distingir colors. **Ampliació per a Segon cicle:** compareu una graella de 5 × 5 amb una de 8 × 8; compteu 25 i 64 valors sense afirmar que el fitxer només ocuparà eixa quantitat. El treball amb trams repetits queda per a l'activitat específica de correu de píxels.

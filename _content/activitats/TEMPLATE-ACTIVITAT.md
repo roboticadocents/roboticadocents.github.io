@@ -2,11 +2,15 @@
 active: false
 title: "Títol clar de l'activitat desendollada"
 description: "Resum breu en una frase del repte i del concepte de pensament computacional que es treballa."
-topic: "Algorismes i Precisió"
-cycle_label: "Primer i segon cicle"
+topic: "Algorismes"
+image: "_assets/activitats/portades/[slug].webp"
+image_alt: "Descripció breu de la portada de l'activitat."
+cycle_label: "Primer cicle"
 duration: "45 min"
 order: 11
 ---
+
+![Descripció breu de la portada de l'activitat.](_assets/activitats/portades/[slug].webp)
 
 ## 🎯 Què aprendrem?
 
