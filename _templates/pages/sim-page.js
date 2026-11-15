@@ -264,9 +264,10 @@ function SimPage({ root = '../' } = {}) {
               class="sim-tb-aux-btn sim-tb-btn-repeat"
               data-tb-repeat
               aria-label="Repetició del programa"
+              title="Repetició"
             >
-              <span aria-hidden="true">🔁</span>
-              <span>Repetició <strong data-tb-repeat-badge>×1</strong></span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M42 19a18 18 0 0 0-25 23m5-13-5 13-8-9M22 45a18 18 0 0 0 25-23m-5 13 5-13 8 9" fill="none" stroke="#ea580c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <strong data-tb-repeat-badge>×1</strong>
             </button>
 
             <button
@@ -274,9 +275,9 @@ function SimPage({ root = '../' } = {}) {
               class="sim-tb-aux-btn sim-tb-btn-record"
               data-tb-cmd="record"
               aria-label="Gravació de veu"
+              title="Gravació de veu"
             >
-              <span aria-hidden="true">🎙️</span>
-              <span>Veu</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="#00c9cd" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><rect x="27" y="15" width="10" height="22" rx="5"/><path d="M21 30v3a11 11 0 0 0 22 0v-3M32 44v7m-7 0h14"/></g></svg>
             </button>
           </div>
 
@@ -286,9 +287,9 @@ function SimPage({ root = '../' } = {}) {
               class="sim-tb-dir-btn sim-tb-forward"
               data-tb-cmd="forward"
               aria-label="Endavant"
+              title="Endavant"
             >
-              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 47V18m-12 12 12-12 12 12" fill="none" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <span>Endavant</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 47V18m-12 12 12-12 12 12" fill="none" stroke="white" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
 
             <button
@@ -296,9 +297,9 @@ function SimPage({ root = '../' } = {}) {
               class="sim-tb-dir-btn sim-tb-left"
               data-tb-cmd="left"
               aria-label="Gir a l’esquerra"
+              title="Gir a l’esquerra"
             >
-              <svg viewBox="0 0 64 64" aria-hidden="true"><g transform="translate(64 0) scale(-1 1)"><path d="M29 21h17m-10-10 10 10-10 10" fill="none" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><g fill="white"><circle cx="18" cy="21" r="3"/><circle cx="15" cy="30" r="3"/><circle cx="21" cy="38" r="3"/><circle cx="27" cy="46" r="3"/></g></g></svg>
-              <span>Esquerra</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><g transform="translate(64 0) scale(-1 1)"><path d="M29 21h17m-10-10 10 10-10 10" fill="none" stroke="white" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><g fill="white"><circle cx="18" cy="21" r="2.8"/><circle cx="15" cy="30" r="2.8"/><circle cx="21" cy="38" r="2.8"/><circle cx="27" cy="46" r="2.8"/></g></g></svg>
             </button>
 
             <button
@@ -306,9 +307,10 @@ function SimPage({ root = '../' } = {}) {
               class="sim-tb-play-btn"
               data-sim-play
               aria-label="Executa (Play)"
+              title="Play"
             >
               <svg viewBox="0 0 64 64" aria-hidden="true"><path d="m24 17 22 15-22 15Z" fill="white"/></svg>
-              <span data-play-label>Play</span>
+              <span class="visually-hidden" data-play-label>Play</span>
             </button>
 
             <button
@@ -316,9 +318,9 @@ function SimPage({ root = '../' } = {}) {
               class="sim-tb-dir-btn sim-tb-right"
               data-tb-cmd="right"
               aria-label="Gir a la dreta"
+              title="Gir a la dreta"
             >
-              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M29 21h17m-10-10 10 10-10 10" fill="none" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><g fill="white"><circle cx="18" cy="21" r="3"/><circle cx="15" cy="30" r="3"/><circle cx="21" cy="38" r="3"/><circle cx="27" cy="46" r="3"/></g></svg>
-              <span>Dreta</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M29 21h17m-10-10 10 10-10 10" fill="none" stroke="white" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><g fill="white"><circle cx="18" cy="21" r="2.8"/><circle cx="15" cy="30" r="2.8"/><circle cx="21" cy="38" r="2.8"/><circle cx="27" cy="46" r="2.8"/></g></svg>
             </button>
 
             <button
@@ -326,9 +328,9 @@ function SimPage({ root = '../' } = {}) {
               class="sim-tb-dir-btn sim-tb-back"
               data-tb-cmd="back"
               aria-label="Enrere"
+              title="Enrere"
             >
-              <svg viewBox="0 0 64 64" aria-hidden="true"><g transform="rotate(180 32 32)"><path d="M32 47V18m-12 12 12-12 12 12" fill="none" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
-              <span>Enrere</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><g transform="rotate(180 32 32)"><path d="M32 47V18m-12 12 12-12 12 12" fill="none" stroke="white" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
             </button>
           </div>
 
@@ -337,20 +339,20 @@ function SimPage({ root = '../' } = {}) {
               type="button"
               class="sim-tb-aux-btn sim-tb-btn-dance"
               data-tb-cmd="dance"
-              aria-label="Dansa"
+              aria-label="Dansa predefinida"
+              title="Dansa predefinida"
             >
-              <span aria-hidden="true">💃</span>
-              <span>Dansa</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><g color="#d94bc8" fill="none" stroke="#d94bc8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="15" r="4" fill="currentColor" stroke="none"/><path d="M32 24v15m0-12-13-7m13 7 13-10M32 39l-11 12m11-12 12 10"/></g></svg>
             </button>
 
             <button
               type="button"
               class="sim-tb-aux-btn sim-tb-btn-clear"
               data-tb-clear-hold
-              aria-label="Delete (X)"
+              aria-label="Esborra (pulsació curta última, pulsació llarga tot)"
+              title="Esborra"
             >
-              <span aria-hidden="true">✕</span>
-              <span>Delete (X)</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="#ff454c" stroke-width="5.5" stroke-linecap="round"><path d="M22 22l20 20M42 22L22 42"/></g></svg>
               <span class="sim-tb-hold-bar" data-tb-hold-bar aria-hidden="true"></span>
             </button>
           </div>
@@ -399,129 +401,111 @@ function SimPage({ root = '../' } = {}) {
         id="panel-controls-coding-set"
         role="tabpanel"
         aria-labelledby="tab-coding-set"
-        class="sim-robot-panel"
+        class="sim-robot-panel sim-cs-panel"
         data-robot-panel="coding-set"
         hidden
       >
-        <div class="sim-cs-tower-bar">
-          <div class="sim-cs-tower-info">
-            <div class="sim-cs-tower-avatar" aria-hidden="true">
-              <span class="sim-cs-tower-cam"></span>
-              <span class="sim-cs-tower-led" data-cs-tower-led></span>
-            </div>
-            <span class="sim-card-title">Control Tower</span>
+        <!-- Paleta de fitxes tangibles (exclusivament vectors SVG oficials) -->
+        <div class="sim-cs-palette" aria-label="Fitxes del Coding Set">
+          <div class="sim-cs-blocks-tray" role="group" aria-label="Fitxes d'instrucció">
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="forward" aria-label="Endavant" title="Endavant">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M5 0H59Q64 0 64 5V59Q64 64 59 64H39L35 60H29L25 64H5Q0 64 0 59V5Q0 0 5 0Z" fill="#8fc32c"/><g fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 47V18m-12 12 12-12 12 12"/></g></svg>
+            </button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="back" aria-label="Enrere" title="Enrere">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M5 0H59Q64 0 64 5V59Q64 64 59 64H39L35 60H29L25 64H5Q0 64 0 59V5Q0 0 5 0Z" fill="#8fc32c"/><g fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(180 32 32)"><path d="M32 47V18m-12 12 12-12 12 12"/></g></g></svg>
+            </button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="right" aria-label="Gir a la dreta" title="Gir a la dreta">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M5 0H59Q64 0 64 5V59Q64 64 59 64H39L35 60H29L25 64H5Q0 64 0 59V5Q0 0 5 0Z" fill="#8fc32c"/><g fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M29 21h17m-10-10 10 10-10 10"/><g fill="white" stroke="none"><circle cx="18" cy="21" r="2.5"/><circle cx="15" cy="30" r="2.5"/><circle cx="21" cy="38" r="2.5"/><circle cx="27" cy="46" r="2.5"/></g></g></svg>
+            </button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="left" aria-label="Gir a l’esquerra" title="Gir a l’esquerra">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M5 0H59Q64 0 64 5V59Q64 64 59 64H39L35 60H29L25 64H5Q0 64 0 59V5Q0 0 5 0Z" fill="#8fc32c"/><g fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(64 0) scale(-1 1)"><path d="M29 21h17m-10-10 10 10-10 10"/><g fill="white" stroke="none"><circle cx="18" cy="21" r="2.5"/><circle cx="15" cy="30" r="2.5"/><circle cx="21" cy="38" r="2.5"/><circle cx="27" cy="46" r="2.5"/></g></g></g></svg>
+            </button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="loop" aria-label="Inici del bucle" title="Inici del bucle">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M5 0H59Q64 0 64 5V59Q64 64 59 64H39L35 60H29L25 64H5Q0 64 0 59V5Q0 0 5 0Z" fill="#006c3d"/><g fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M42 19a18 18 0 0 0-25 23m5-13-5 13-8-9M22 45a18 18 0 0 0 25-23m-5 13 5-13 8 9"/></g></svg>
+            </button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="end" aria-label="Fi del bucle" title="Fi del bucle">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M5 0H59Q64 0 64 5V59Q64 64 59 64H39L35 60H29L25 64H5Q0 64 0 59V5Q0 0 5 0Z" fill="#006c3d"/><g fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M42 19a18 18 0 0 0-25 23m5-13-5 13-8-9M22 45a18 18 0 0 0 25-23m-5 13 5-13 8 9"/></g></svg>
+            </button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="define" aria-label="Defineix funció" title="Defineix funció">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M5 0H59Q64 0 64 5V59Q64 64 59 64H39L35 60H29L25 64H5Q0 64 0 59V5Q0 0 5 0Z" fill="#f4df13"/><g fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><text x="32" y="43" text-anchor="middle" fill="white" stroke="none" font-family="Plus Jakarta Sans, sans-serif" font-style="italic" font-size="30" font-weight="700">fn</text></g></svg>
+            </button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="call" aria-label="Crida funció" title="Crida funció">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M5 0H59Q64 0 64 5V59Q64 64 59 64H39L35 60H29L25 64H5Q0 64 0 59V5Q0 0 5 0Z" fill="#f4df13"/><g fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><text x="32" y="43" text-anchor="middle" fill="white" stroke="none" font-family="Plus Jakarta Sans, sans-serif" font-style="italic" font-size="30" font-weight="700">fn</text><path d="M17 45a23 23 0 1 1 31 0M12 39l5 6 5-5" stroke-width="2"/></g></svg>
+            </button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="random" aria-label="Moviment aleatori" title="Moviment aleatori">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M5 0H59Q64 0 64 5V59Q64 64 59 64H39L35 60H29L25 64H5Q0 64 0 59V5Q0 0 5 0Z" fill="#922785"/><g color="white" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="15" r="4" fill="currentColor" stroke="none"/><path d="M32 24v15m0-12-13-7m13 7 13-10M32 39l-11 12m11-12 12 10"/><path d="M45 33h9m-4-4 4 4-4 4" stroke-width="3"/></g></svg>
+            </button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="music" aria-label="Música predefinida" title="Música predefinida">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M5 0H59Q64 0 64 5V59Q64 64 59 64H39L35 60H29L25 64H5Q0 64 0 59V5Q0 0 5 0Z" fill="#922785"/><g fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M26 43V20l20-4v23M26 24l20-4"/><ellipse cx="20" cy="44" rx="6" ry="4"/><ellipse cx="40" cy="40" rx="6" ry="4"/></g></svg>
+            </button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="dance" aria-label="Dansa predefinida" title="Dansa predefinida">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M5 0H59Q64 0 64 5V59Q64 64 59 64H39L35 60H29L25 64H5Q0 64 0 59V5Q0 0 5 0Z" fill="#922785"/><g color="white" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="15" r="4" fill="currentColor" stroke="none"/><path d="M32 24v15m0-12-13-7m13 7 13-10M32 39l-11 12m11-12 12 10"/></g></svg>
+            </button>
           </div>
 
-          <div class="sim-cs-play-group">
+          <div class="sim-cs-numbers-tray" role="group" aria-label="Blocs numèrics">
+            <button type="button" class="sim-cs-num-tile-btn" draggable="true" data-cs-num="2" aria-label="Bloc numèric 2" title="2">
+              <svg viewBox="0 0 64 28" aria-hidden="true"><rect width="64" height="28" rx="4" fill="#12aff0"/><text x="32" y="20" text-anchor="middle" fill="white" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="20">2</text></svg>
+            </button>
+            <button type="button" class="sim-cs-num-tile-btn" draggable="true" data-cs-num="3" aria-label="Bloc numèric 3" title="3">
+              <svg viewBox="0 0 64 28" aria-hidden="true"><rect width="64" height="28" rx="4" fill="#12aff0"/><text x="32" y="20" text-anchor="middle" fill="white" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="20">3</text></svg>
+            </button>
+            <button type="button" class="sim-cs-num-tile-btn" draggable="true" data-cs-num="4" aria-label="Bloc numèric 4" title="4">
+              <svg viewBox="0 0 64 28" aria-hidden="true"><rect width="64" height="28" rx="4" fill="#12aff0"/><text x="32" y="20" text-anchor="middle" fill="white" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="20">4</text></svg>
+            </button>
+            <button type="button" class="sim-cs-num-tile-btn" draggable="true" data-cs-num="5" aria-label="Bloc numèric 5" title="5">
+              <svg viewBox="0 0 64 28" aria-hidden="true"><rect width="64" height="28" rx="4" fill="#12aff0"/><text x="32" y="20" text-anchor="middle" fill="white" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="20">5</text></svg>
+            </button>
+            <button type="button" class="sim-cs-num-tile-btn sim-cs-num-remove-btn" data-cs-num="" aria-label="Retira el bloc numèric" title="Retira el bloc numèric">
+              <svg viewBox="0 0 64 28" aria-hidden="true"><rect x="1" y="1" width="62" height="26" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4 3"/><path d="M26 8l12 12M38 8L26 20" stroke="#64748b" stroke-width="3" stroke-linecap="round"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tauler físic Matatalab (3 files × 6 caselles + botó taronja Play inferior) -->
+        <div class="sim-cs-physical-board" data-cs-board>
+          <div class="sim-cs-board-well">
+            <div
+              class="sim-cs-board-grid"
+              data-cs-main-slots
+              role="grid"
+              aria-label="Tauler de programació de 3 files per 6 caselles"
+            ></div>
+          </div>
+
+          <div class="sim-cs-board-footer">
             <button
               type="button"
-              class="sim-cs-big-play"
+              class="sim-cs-board-aux-btn"
+              data-sim-step-cs
+              aria-label="Executa pas a pas"
+              title="Pas a pas"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14l9-7-9-7Zm11 0v14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+            <button
+              type="button"
+              class="sim-cs-orange-play"
               data-sim-play-cs
               aria-label="Executa el programa del tauler"
+              title="Play"
             >
-              <span class="sim-cs-play-circle" aria-hidden="true">▶</span>
-              <span data-cs-play-label>Play</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M22 16.5c0-2.5 2.7-4 4.8-2.7l23.4 15.5c2 1.3 2 4.1 0 5.4L26.8 50.2c-2.1 1.3-4.8-.2-4.8-2.7V16.5Z" fill="white"/>
+              </svg>
             </button>
-            <button type="button" class="sim-btn sim-btn-secondary" data-sim-step-cs>
-              👣 Pas
+
+            <button
+              type="button"
+              class="sim-cs-board-aux-btn sim-cs-board-clear-btn"
+              data-cs-clear-main
+              aria-label="Buida tot el tauler"
+              title="Buida el tauler"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
             </button>
           </div>
-        </div>
-
-        <div class="sim-cs-palette">
-          <div class="sim-cs-palette-top">
-            <div class="sim-cs-target-selector" role="group" aria-label="Fila de destinació">
-              <button type="button" class="sim-target-pill is-active" aria-pressed="true" data-cs-target-row="main">
-                Fila principal
-              </button>
-              <button type="button" class="sim-target-pill" aria-pressed="false" data-cs-target-row="func">
-                Define fn
-              </button>
-            </div>
-
-            <div class="sim-cs-number-btns" role="group" aria-label="Blocs numèrics">
-              <button type="button" class="sim-cs-num-btn" data-cs-num="2" aria-label="Número 2">2</button>
-              <button type="button" class="sim-cs-num-btn" data-cs-num="3" aria-label="Número 3">3</button>
-              <button type="button" class="sim-cs-num-btn" data-cs-num="4" aria-label="Número 4">4</button>
-              <button type="button" class="sim-cs-num-btn" data-cs-num="5" aria-label="Número 5">5</button>
-              <button type="button" class="sim-cs-num-btn sim-cs-num-clear" data-cs-num="" aria-label="Sense número">×</button>
-            </div>
-          </div>
-
-          <div class="sim-cs-blocks-tray" role="group" aria-label="Fitxes d'instrucció">
-            <button type="button" class="sim-cs-chip sim-cs-chip-move" data-cs-add="forward" aria-label="Endavant">
-              <span aria-hidden="true">↑</span><span>Endavant</span>
-            </button>
-            <button type="button" class="sim-cs-chip sim-cs-chip-move" data-cs-add="back" aria-label="Enrere">
-              <span aria-hidden="true">↓</span><span>Enrere</span>
-            </button>
-            <button type="button" class="sim-cs-chip sim-cs-chip-move" data-cs-add="right" aria-label="Dreta 90 graus">
-              <span aria-hidden="true">↱</span><span>Dreta</span>
-            </button>
-            <button type="button" class="sim-cs-chip sim-cs-chip-move" data-cs-add="left" aria-label="Esquerra 90 graus">
-              <span aria-hidden="true">↰</span><span>Esquerra</span>
-            </button>
-            <button type="button" class="sim-cs-chip sim-cs-chip-loop" data-cs-add="loop" aria-label="Inici de bucle">
-              <span aria-hidden="true">🔁</span><span>Bucle</span>
-            </button>
-            <button type="button" class="sim-cs-chip sim-cs-chip-loop" data-cs-add="end" aria-label="Fi de bucle">
-              <span aria-hidden="true">🔚</span><span>Fi</span>
-            </button>
-            <button type="button" class="sim-cs-chip sim-cs-chip-fn" data-cs-add="call" aria-label="Crida funció">
-              <span aria-hidden="true">fn↻</span><span>Crida fn</span>
-            </button>
-            <button type="button" class="sim-cs-chip sim-cs-chip-fun" data-cs-add="random" aria-label="Moviment aleatori">
-              <span aria-hidden="true">🎲</span><span>Aleatori</span>
-            </button>
-            <button type="button" class="sim-cs-chip sim-cs-chip-fun" data-cs-add="music" aria-label="Música">
-              <span aria-hidden="true">🎵</span><span>Música</span>
-            </button>
-            <button type="button" class="sim-cs-chip sim-cs-chip-fun" data-cs-add="dance" aria-label="Dansa">
-              <span aria-hidden="true">💃</span><span>Dansa</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="sim-cs-board" data-cs-board>
-          <div class="sim-cs-board-section">
-            <div class="sim-cs-board-row-header">
-              <span class="sim-sequence-title">Tauler principal</span>
-              <div class="sim-cs-row-actions">
-                <button type="button" class="sim-btn-ghost" data-cs-pop-main>⌫</button>
-                <button type="button" class="sim-btn-ghost sim-btn-ghost-danger" data-cs-clear-main>🗑️</button>
-              </div>
-            </div>
-            <div
-              class="sim-cs-slots-grid"
-              data-cs-main-slots
-              role="list"
-              aria-label="Ranures de la fila principal"
-            ></div>
-          </div>
-
-          <div class="sim-cs-board-section sim-cs-fn-section">
-            <div class="sim-cs-board-row-header">
-              <span class="sim-sequence-title"><span class="sim-fn-badge">fn</span> Define Function</span>
-              <div class="sim-cs-row-actions">
-                <button type="button" class="sim-btn-ghost" data-cs-pop-func>⌫</button>
-                <button type="button" class="sim-btn-ghost" data-cs-clear-func>🗑️</button>
-              </div>
-            </div>
-            <div
-              class="sim-cs-fn-slots-grid"
-              data-cs-func-slots
-              role="list"
-              aria-label="Ranures de Define Function"
-            ></div>
-          </div>
-        </div>
-
-        <div class="sim-sequence-dock">
-          <div class="sim-sequence-header">
-            <span class="sim-sequence-title">Blocs</span>
-            <span class="sim-sequence-meta" data-cs-summary>0 fitxes</span>
-          </div>
-          <div class="sim-sequence-strip" data-cs-sequence-strip></div>
         </div>
       </div>
 

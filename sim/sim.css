@@ -743,17 +743,27 @@
   position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.42rem 0.75rem;
-  border-radius: 999px;
+  justify-content: center;
+  gap: 0.3rem;
+  min-inline-size: 3.2rem;
+  min-block-size: 3.2rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 20px;
   border: 2px solid #cbd5e1;
   background: #ffffff;
   color: #1e293b;
   font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 700;
+  font-size: 0.85rem;
+  font-weight: 800;
   cursor: pointer;
   overflow: clip;
+  box-shadow: 0 2px 0 rgba(15, 23, 42, 0.08);
+}
+
+.sim-tb-aux-btn svg {
+  display: block;
+  inline-size: 1.9rem;
+  block-size: 1.9rem;
 }
 
 .sim-tb-aux-btn:hover { background: #f1f5f9; }
@@ -788,22 +798,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.1rem;
-  border-radius: 18px;
+  border-radius: 22px;
   border: 2px solid rgba(15, 23, 42, 0.12);
-  font-family: var(--font-sans);
-  font-size: 0.7rem;
-  font-weight: 700;
   color: #ffffff;
   cursor: pointer;
-  box-shadow: 0 2px 0 rgba(15, 23, 42, 0.12);
+  box-shadow: 0 3px 0 rgba(15, 23, 42, 0.14);
 }
 
 .sim-tb-dir-btn svg,
 .sim-tb-play-btn svg {
   display: block;
-  inline-size: 1.65rem;
-  block-size: 1.65rem;
+  inline-size: 2.35rem;
+  block-size: 2.35rem;
 }
 
 .sim-tb-dir-btn:active,
@@ -818,25 +824,18 @@
   grid-row: 2;
   border-radius: 50%;
   background: #ff8849;
-  font-size: 0.78rem;
 }
 .sim-tb-play-btn.is-running { background: #dc2626; }
 .sim-tb-right {
   grid-column: 3;
   grid-row: 2;
   background: #f3e529;
-  color: #0f172a;
 }
-.sim-tb-right svg path,
-.sim-tb-right svg g { stroke: #0f172a; }
-.sim-tb-right svg circle { fill: #0f172a; }
 .sim-tb-back {
   grid-column: 2;
   grid-row: 3;
   background: #a4e83b;
-  color: #0f172a;
 }
-.sim-tb-back svg path { stroke: #0f172a; }
 
 .sim-tb-actions-row {
   display: grid;
@@ -873,335 +872,268 @@
 }
 
 /* =========================================================
-   CONSOLA MATATALAB CODING SET
+   CONSOLA MATATALAB CODING SET (PALETA SVG + TAULER FÍSIC 3×6)
    ========================================================= */
-.sim-cs-tower-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  padding: 0.4rem 0.65rem;
-  border-radius: 10px;
-  flex-shrink: 0;
-}
-
-.sim-cs-tower-info {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.sim-cs-tower-avatar {
-  inline-size: 2.1rem;
-  block-size: 2.35rem;
-  background: #ffffff;
-  border: 1.5px solid #cbd5e1;
-  border-radius: 11px 11px 7px 7px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.18rem;
-}
-
-.sim-cs-tower-cam {
-  inline-size: 0.85rem;
-  block-size: 0.85rem;
-  border-radius: 50%;
-  background: #1e293b;
-  border: 2px solid #fc7813;
-}
-
-.sim-cs-tower-led {
-  inline-size: 0.6rem;
-  block-size: 0.22rem;
-  border-radius: 999px;
-  background: #22c55e;
-}
-
-.sim-cs-tower-led.is-scanning {
-  background: #3b82f6;
-  box-shadow: 0 0 6px #3b82f6;
-}
-
-.sim-card-title {
-  font-family: var(--font-heading);
-  font-size: 0.92rem;
-  font-weight: 700;
-  color: #0f172a;
-}
-
-.sim-cs-play-group {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.sim-cs-big-play {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.4rem 0.85rem;
-  border-radius: 999px;
-  border: 1.5px solid #c2410c;
-  background: #fc7813;
-  color: #ffffff;
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
-  font-weight: 800;
-  cursor: pointer;
-}
-
-.sim-cs-big-play.is-running {
-  background: #dc2626;
-  border-color: #991b1b;
-}
-
-.sim-cs-play-circle {
-  display: inline-grid;
-  place-items: center;
-  inline-size: 1.25rem;
-  block-size: 1.25rem;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.24);
-  font-size: 0.68rem;
+.sim-cs-panel {
+  justify-content: flex-start;
+  gap: 0.65rem;
 }
 
 .sim-cs-palette {
   background: #f8fafc;
   border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  padding: 0.55rem;
+  border-radius: 12px;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
+  gap: 0.4rem;
   flex-shrink: 0;
-}
-
-.sim-cs-palette-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-}
-
-.sim-cs-target-selector {
-  display: inline-flex;
-  gap: 0.2rem;
-  background: #ffffff;
-  padding: 0.15rem;
-  border-radius: 999px;
-  border: 1px solid #cbd5e1;
-}
-
-.sim-target-pill {
-  font-family: var(--font-sans);
-  font-size: 0.7rem;
-  font-weight: 700;
-  padding: 0.22rem 0.55rem;
-  border-radius: 999px;
-  border: none;
-  background: transparent;
-  color: #475569;
-  cursor: pointer;
-}
-
-.sim-target-pill.is-active {
-  background: #16a34a;
-  color: #ffffff;
-}
-
-.sim-cs-number-btns {
-  display: flex;
-  gap: 0.25rem;
-}
-
-.sim-cs-num-btn {
-  font-family: var(--font-sans);
-  font-size: 0.74rem;
-  font-weight: 800;
-  min-inline-size: 1.75rem;
-  padding: 0.2rem 0.4rem;
-  border-radius: 6px;
-  border: 1px solid #0284c7;
-  background: #12aff0;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.sim-cs-num-btn.sim-cs-num-clear {
-  background: #ffffff;
-  color: #334155;
-  border-color: #cbd5e1;
 }
 
 .sim-cs-blocks-tray {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 0.32rem;
-}
-
-.sim-cs-chip {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: repeat(11, minmax(0, 1fr));
   gap: 0.25rem;
-  padding: 0.35rem 0.3rem;
-  border-radius: 8px;
-  border: 1px solid rgba(15, 23, 42, 0.14);
-  font-family: var(--font-sans);
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: #ffffff;
-  cursor: pointer;
-  white-space: nowrap;
+  align-items: center;
 }
 
-.sim-cs-chip-move { background: #6ea820; }
-.sim-cs-chip-loop { background: #006c3d; }
-.sim-cs-chip-fn   { background: #f4df13; color: #0f172a; }
-.sim-cs-chip-fun  { background: #922785; }
+.sim-cs-tile-btn {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: grab;
+  display: block;
+  inline-size: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
+  transition: transform 0.12s ease, filter 0.12s ease;
+}
 
-/* Tauler matricial */
-.sim-cs-board {
+.sim-cs-tile-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  filter: drop-shadow(0 3px 5px rgba(15, 23, 42, 0.18));
+}
+
+.sim-cs-tile-btn:active {
+  cursor: grabbing;
+  transform: scale(0.97);
+}
+
+.sim-cs-tile-btn svg {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.sim-cs-numbers-tray {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 56px));
+  justify-content: center;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.sim-cs-num-tile-btn {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  inline-size: 100%;
+  aspect-ratio: 64 / 28;
+  border-radius: 4px;
+  transition: transform 0.12s ease, filter 0.12s ease;
+}
+
+.sim-cs-num-tile-btn:hover {
+  transform: translateY(-1px) scale(1.05);
+  filter: drop-shadow(0 2px 4px rgba(15, 23, 42, 0.16));
+}
+
+.sim-cs-num-tile-btn svg {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+/* Tauler físic blanc Matatalab (3 files × 6 caselles + botó taronja Play a sota) */
+.sim-cs-physical-board {
   flex: 1 1 auto;
   min-block-size: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 2px solid #cbd5e1;
+  border-radius: 16px 16px 28px 28px;
+  box-shadow:
+    0 6px 18px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 #ffffff;
+  padding: 0.7rem 0.75rem 0.55rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 0.45rem;
-}
-
-.sim-cs-board-section {
-  background: #f1f5f9;
-  border: 1.5px solid #cbd5e1;
-  border-radius: 10px;
-  padding: 0.45rem 0.55rem;
-}
-
-.sim-cs-fn-section {
-  background: #fefce8;
-  border-color: #fde047;
-}
-
-.sim-cs-board-row-header {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 0.4rem;
-  margin-block-end: 0.3rem;
+  gap: 0.55rem;
 }
 
-.sim-cs-row-actions {
-  display: flex;
-  gap: 0.25rem;
-}
-
-.sim-fn-badge {
-  display: inline-block;
-  background: #f4df13;
-  color: #0f172a;
-  font-style: italic;
-  font-weight: 800;
-  padding-inline: 0.3rem;
-  border-radius: 4px;
-  border: 1px solid #ca8a04;
-}
-
-.sim-cs-slots-grid,
-.sim-cs-fn-slots-grid {
-  display: grid;
-  grid-template-columns: repeat(8, minmax(44px, 1fr));
-  gap: 0.28rem;
-  overflow-x: auto;
-  scrollbar-gutter: stable;
-  overscroll-behavior: contain;
-}
-
-.sim-cs-slot {
-  display: flex;
-  flex-direction: column;
-  gap: 0.18rem;
-  background: #ffffff;
-  border: 1px dashed #cbd5e1;
+.sim-cs-board-well {
+  flex: 1 1 auto;
+  min-block-size: 0;
+  background: #f1f5f9;
+  border: 2px solid #cbd5e1;
   border-radius: 8px;
-  padding: 0.18rem;
+  box-shadow: inset 0 2px 6px rgba(15, 23, 42, 0.07);
+  padding: 0.55rem;
+  display: grid;
+  align-items: center;
 }
 
-.sim-cs-slot.is-selected {
-  border: 2px solid #2563eb;
-}
-
-.sim-cs-slot.is-executing {
-  border: 2px solid #fc7813;
-  box-shadow: 0 0 0 2px rgba(252, 120, 19, 0.3);
-}
-
-.sim-cs-slot-main-btn {
-  position: relative;
+.sim-cs-board-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-rows: repeat(3, auto);
+  column-gap: 0.4rem;
+  row-gap: 0.45rem;
   inline-size: 100%;
-  block-size: 2.55rem;
-  border-radius: 6px;
-  border: 1px solid transparent;
-  background: #f8fafc;
-  color: #64748b;
+}
+
+.sim-cs-cell {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-family: var(--font-sans);
-  font-size: 0.58rem;
-  font-weight: 700;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 8px;
+  border: 1.5px solid transparent;
+  transition: border-color 0.12s ease, background-color 0.12s ease, box-shadow 0.12s ease;
+}
+
+.sim-cs-cell.is-selected {
+  border-color: #94a3b8;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.sim-cs-cell.is-dragover {
+  border-color: #16a34a;
+  background: #dcfce7;
+}
+
+.sim-cs-cell.is-executing {
+  border-color: #fc7813;
+  background: #fff7ed;
+  box-shadow: 0 0 0 2px rgba(252, 120, 19, 0.32);
+}
+
+.sim-cs-peg-top,
+.sim-cs-peg-bottom {
+  padding: 0;
+  border: none;
+  background: transparent;
   cursor: pointer;
-  line-height: 1.1;
+  display: block;
+  inline-size: 100%;
 }
 
-.sim-cs-slot-main-btn.is-filled {
-  color: #ffffff;
-  border-color: rgba(15, 23, 42, 0.15);
+.sim-cs-peg-top {
+  aspect-ratio: 1 / 1;
 }
 
-.sim-cs-slot-main-btn[data-block-type="define"],
-.sim-cs-slot-main-btn[data-block-type="call"] {
+.sim-cs-peg-bottom {
+  aspect-ratio: 64 / 28;
+}
+
+.sim-cs-peg-top svg,
+.sim-cs-peg-bottom svg {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.sim-cs-peg-top.is-filled svg,
+.sim-cs-peg-bottom.is-filled svg {
+  filter: drop-shadow(0 2px 3px rgba(15, 23, 42, 0.16));
+}
+
+.sim-cs-peg-top:hover svg,
+.sim-cs-peg-bottom:hover svg {
+  transform: scale(1.04);
+}
+
+/* Peu del tauler físic amb el gran botó taronja Play al centre */
+.sim-cs-board-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  padding-block-start: 0.1rem;
+  flex-shrink: 0;
+}
+
+.sim-cs-orange-play {
+  inline-size: 4.2rem;
+  block-size: 4.2rem;
+  border-radius: 16px;
+  border: 2px solid #ea580c;
+  background: linear-gradient(180deg, #ff9838 0%, #f36c08 100%);
+  box-shadow:
+    0 4px 0 #c2410c,
+    0 6px 14px rgba(243, 108, 8, 0.32);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.15s ease;
+}
+
+.sim-cs-orange-play svg {
+  inline-size: 2.3rem;
+  block-size: 2.3rem;
+  display: block;
+}
+
+.sim-cs-orange-play:hover {
+  filter: brightness(1.04);
+}
+
+.sim-cs-orange-play:active {
+  transform: translateY(3px);
+  box-shadow:
+    0 1px 0 #c2410c,
+    0 3px 8px rgba(243, 108, 8, 0.25);
+}
+
+.sim-cs-orange-play.is-running {
+  background: linear-gradient(180deg, #ef4444 0%, #dc2626 100%);
+  border-color: #b91c1c;
+  box-shadow:
+    0 4px 0 #991b1b,
+    0 6px 14px rgba(220, 38, 38, 0.32);
+}
+
+.sim-cs-board-aux-btn {
+  inline-size: 2.35rem;
+  block-size: 2.35rem;
+  border-radius: 10px;
+  border: 1.5px solid #cbd5e1;
+  background: #f8fafc;
+  color: #475569;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.sim-cs-board-aux-btn svg {
+  inline-size: 1.15rem;
+  block-size: 1.15rem;
+}
+
+.sim-cs-board-aux-btn:hover {
+  background: #e2e8f0;
   color: #0f172a;
 }
 
-.sim-cs-slot-remove {
-  position: absolute;
-  inset-block-start: 1px;
-  inset-inline-end: 2px;
-  font-size: 0.55rem;
-  line-height: 1;
-  opacity: 0.78;
-}
-
-.sim-cs-slot-num-btn {
-  inline-size: 100%;
-  block-size: 1.15rem;
-  border-radius: 4px;
-  border: 1px dashed #cbd5e1;
-  background: #f8fafc;
-  color: #64748b;
-  font-family: var(--font-sans);
-  font-size: 0.62rem;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.sim-cs-slot-num-btn.has-number {
-  background: #12aff0;
-  border-style: solid;
-  border-color: #0284c7;
-  color: #ffffff;
-  font-weight: 800;
-}
-
-.sim-cs-slot-num-btn:disabled {
-  opacity: 0.35;
-  cursor: not-allowed;
+.sim-cs-board-clear-btn:hover {
+  background: #fef2f2;
+  border-color: #fca5a5;
+  color: #b91c1c;
 }
 
 /* =========================================================

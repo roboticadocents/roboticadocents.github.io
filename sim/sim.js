@@ -285,21 +285,12 @@
   const tbSequenceStrip = document.querySelector('[data-tb-sequence-strip]');
 
   // Controls Coding Set
-  const csTowerLed = document.querySelector('[data-cs-tower-led]');
   const csPlayBtn = document.querySelector('[data-sim-play-cs]');
-  const csPlayLabel = document.querySelector('[data-cs-play-label]');
   const csStepBtn = document.querySelector('[data-sim-step-cs]');
-  const csTargetRowBtns = Array.from(document.querySelectorAll('[data-cs-target-row]'));
   const csAddBtns = Array.from(document.querySelectorAll('[data-cs-add]'));
   const csNumBtns = Array.from(document.querySelectorAll('[data-cs-num]'));
   const csMainSlotsEl = document.querySelector('[data-cs-main-slots]');
-  const csFuncSlotsEl = document.querySelector('[data-cs-func-slots]');
-  const csPopMainBtn = document.querySelector('[data-cs-pop-main]');
   const csClearMainBtn = document.querySelector('[data-cs-clear-main]');
-  const csPopFuncBtn = document.querySelector('[data-cs-pop-func]');
-  const csClearFuncBtn = document.querySelector('[data-cs-clear-func]');
-  const csSummaryEl = document.querySelector('[data-cs-summary]');
-  const csSequenceStrip = document.querySelector('[data-cs-sequence-strip]');
 
   // Estat global del simulador
   const state = {
@@ -330,21 +321,20 @@
       armsEnabled: false,
       activeLed: -1
     },
-    // Estat Coding Set
+    // Estat Coding Set: Tauler físic de 3 files × 6 caselles (18 ranures)
     cs: {
-      targetRow: 'main',
-      selectedSlot: { row: 'main', index: 0 },
-      mainSlots: Array.from({ length: 8 }, () => null),
-      funcSlots: Array.from({ length: 7 }, () => null),
+      selectedSlot: 0,
+      boardSlots: Array.from({ length: 18 }, () => null),
       activeMainSlot: -1,
       activeFuncSlot: -1
     }
   };
 
-  // Inicialitzem una seqüència inicial al Coding Set
-  state.cs.mainSlots[0] = { type: 'forward', number: '2' };
-  state.cs.mainSlots[1] = { type: 'right', number: '' };
-  state.cs.mainSlots[2] = { type: 'forward', number: '2' };
+  // Inicialitzem una seqüència inicial al tauler 3×6 del Coding Set
+  state.cs.boardSlots[0] = { type: 'forward', number: '2' };
+  state.cs.boardSlots[1] = { type: 'right', number: '' };
+  state.cs.boardSlots[2] = { type: 'forward', number: '2' };
+  state.cs.selectedSlot = 3;
 
   // =========================================================
   // 1. SINTETITZADOR D'ÀUDIO WEB (0 dependències)
@@ -715,10 +705,27 @@
     if (type === 'dance' || type === 'random') {
       return `<circle cx="32" cy="15" r="4" fill="currentColor" stroke="none"/><path d="M32 24v15m0-12-13-7m13 7 13-10M32 39l-11 12m11-12 12 10"/>${type === 'random' ? '<path d="M45 33h9m-4-4 4 4-4 4" stroke-width="3"/>' : ''}`;
     }
-    if (type === 'define' || type === 'call') {
-      return `<text x="32" y="43" text-anchor="middle" fill="#0f172a" stroke="none" font-family="Plus Jakarta Sans, sans-serif" font-style="italic" font-size="30" font-weight="700">fn</text>${type === 'call' ? '<path d="M17 45a23 23 0 1 1 31 0M12 39l5 6 5-5" stroke="#0f172a" stroke-width="2.5"/>' : ''}`;
+    if ( type === 'define' || type === 'call') {
+      return `<text x="32" y="43" text-anchor="middle" fill="white" stroke="none" font-family="Plus Jakarta Sans, sans-serif" font-style="italic" font-size="30" font-weight="700">fn</text>${type === 'call' ? '<path d="M17 45a23 23 0 1 1 31 0M12 39l5 6 5-5" stroke-width="2"/>' : ''}`;
     }
     return straight;
+  }
+
+  function renderCSInstructionSVG(type) {
+    const fill = CS_COLORS[type] || '#8fc32c';
+    return `<svg viewBox="0 0 64 64" aria-hidden="true" class="sim-cs-block-svg"><path d="M5 0H59Q64 0 64 5V59Q64 64 59 64H39L35 60H29L25 64H5Q0 64 0 59V5Q0 0 5 0Z" fill="${fill}"/><g color="white" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">${blockIconSVG(type)}</g></svg>`;
+  }
+
+  function renderCSNumberSVG(num) {
+    return `<svg viewBox="0 0 64 28" aria-hidden="true" class="sim-cs-num-svg"><rect width="64" height="28" rx="4" fill="#12aff0"/><text x="32" y="20" text-anchor="middle" fill="white" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="20">${num}</text></svg>`;
+  }
+
+  function renderTopPegSVG() {
+    return `<svg viewBox="0 0 64 64" aria-hidden="true" class="sim-cs-peg-svg"><path d="M22 32c0-5.8 4.6-10.4 10.2-10.4 4.1 0 6.8 2.2 10.6 6.7 2.2 2.5 2.2 4.9 0 7.4-3.8 4.5-6.5 6.7-10.6 6.7C26.6 42.4 22 37.8 22 32Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="2.2"/></svg>`;
+  }
+
+  function renderBottomPegSVG() {
+    return `<svg viewBox="0 0 64 28" aria-hidden="true" class="sim-cs-peg-svg"><circle cx="32" cy="14" r="4.6" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/></svg>`;
   }
 
   function buildTangibleSVG(blocks, isTaleBot, activeIndex = -1) {
@@ -866,254 +873,218 @@
   }
 
   // =========================================================
-  // 6. INTERFÍCIE DE MATATALAB CODING SET
+  // 6. INTERFÍCIE DE MATATALAB CODING SET (TAULER FÍSIC 3×6)
   // =========================================================
-  const SHORT_NAMES = {
-    forward: 'Endavant',
-    back: 'Enrere',
-    right: 'Dreta 90°',
-    left: 'Esquerra 90°',
-    loop: 'Inici bucle',
-    end: 'Fi bucle',
-    define: 'Define fn',
-    call: 'Crida fn',
-    random: 'Aleatori',
-    music: 'Música',
-    dance: 'Dansa'
-  };
-
-  const CHIP_ICONS = {
-    forward: '↑',
-    back: '↓',
-    right: '↱',
-    left: '↰',
-    loop: '🔁',
-    end: '🔚',
-    define: 'fn',
-    call: 'fn↻',
-    random: '🎲',
-    music: '🎵',
-    dance: '💃'
-  };
-
   function acceptsNumberBlock(type) {
     return type === 'forward' || type === 'back' || type === 'loop';
   }
 
-  function renderCodingSetSlots(container, slots, rowKind) {
-    container.innerHTML = '';
-
-    // En la fila de funció, la primera posició és la fitxa groga fixa Define Function (fn)
-    if (rowKind === 'func') {
-      const defItem = document.createElement('div');
-      defItem.className = 'sim-cs-slot';
-      defItem.setAttribute('role', 'listitem');
-      defItem.innerHTML = `
-        <button type="button" class="sim-cs-slot-main-btn is-filled" data-block-type="define" style="background:${CS_COLORS.define}" aria-label="Blocs de definició de funció Define Function">
-          <span aria-hidden="true">fn</span>
-          <span>Define fn</span>
-        </button>
-        <button type="button" class="sim-cs-slot-num-btn" disabled aria-label="Define Function no admet bloc numèric">—</button>
-      `;
-      container.appendChild(defItem);
-    }
+  function renderCodingSetUI() {
+    csMainSlotsEl.innerHTML = '';
+    const slots = state.cs.boardSlots;
 
     slots.forEach((slotData, idx) => {
-      const item = document.createElement('div');
-      item.className = 'sim-cs-slot';
-      item.setAttribute('role', 'listitem');
+      const rowNum = Math.floor(idx / 6) + 1;
+      const colNum = (idx % 6) + 1;
+      const cell = document.createElement('div');
+      cell.className = 'sim-cs-cell';
+      cell.setAttribute('role', 'gridcell');
 
-      const isSelected = state.cs.selectedSlot.row === rowKind && state.cs.selectedSlot.index === idx;
-      const isExecuting = (rowKind === 'main' && state.cs.activeMainSlot === idx) ||
-        (rowKind === 'func' && state.cs.activeFuncSlot === idx);
-      if (isSelected) item.classList.add('is-selected');
-      if (isExecuting) item.classList.add('is-executing');
+      const isSelected = state.cs.selectedSlot === idx;
+      const isExecuting = state.cs.activeMainSlot === idx || state.cs.activeFuncSlot === idx;
+      if (isSelected) cell.classList.add('is-selected');
+      if (isExecuting) cell.classList.add('is-executing');
 
-      const mainBtn = document.createElement('button');
-      mainBtn.type = 'button';
-      mainBtn.className = 'sim-cs-slot-main-btn';
+      // Ranura superior (fitxa d'instrucció)
+      const topBtn = document.createElement('button');
+      topBtn.type = 'button';
+      topBtn.className = 'sim-cs-peg-top';
+      topBtn.setAttribute('tabindex', isSelected ? '0' : '-1');
 
       if (slotData) {
-        mainBtn.classList.add('is-filled');
-        mainBtn.setAttribute('data-block-type', slotData.type);
-        mainBtn.style.background = CS_COLORS[slotData.type] || '#8fc32c';
-        mainBtn.setAttribute(
+        topBtn.classList.add('is-filled');
+        topBtn.draggable = true;
+        topBtn.setAttribute(
           'aria-label',
-          `Ranura ${idx + 1} (${rowKind === 'main' ? 'fila principal' : 'funció'}): ${LABELS[slotData.type]}${slotData.number ? ` amb número ${slotData.number}` : ''}. Clica per seleccionar o retirar.`
+          `Fila ${rowNum} casella ${colNum}: ${LABELS[slotData.type]}${slotData.number ? ` (${slotData.number})` : ''}. Clica per retirar.`
         );
-        mainBtn.innerHTML = `
-          <span class="sim-cs-slot-remove" aria-hidden="true">×</span>
-          <span aria-hidden="true">${CHIP_ICONS[slotData.type] || '•'}</span>
-          <span>${SHORT_NAMES[slotData.type] || slotData.type}</span>
-        `;
+        topBtn.innerHTML = renderCSInstructionSVG(slotData.type);
+        topBtn.addEventListener('dragstart', (e) => {
+          e.dataTransfer.setData('text/plain', JSON.stringify({ kind: 'move-slot', fromIndex: idx }));
+        });
       } else {
-        mainBtn.setAttribute(
-          'aria-label',
-          `Ranura ${idx + 1} buida (${rowKind === 'main' ? 'fila principal' : 'funció'}). Clica per seleccionar aquesta posició.`
-        );
-        mainBtn.innerHTML = `<span>#${idx + 1}</span><span>Buida</span>`;
+        topBtn.setAttribute('aria-label', `Fila ${rowNum} casella ${colNum} buida`);
+        topBtn.innerHTML = renderTopPegSVG();
       }
 
-      mainBtn.addEventListener('click', () => {
+      topBtn.addEventListener('click', () => {
         if (state.isRunning) stopExecution();
-        const alreadySelected = state.cs.selectedSlot.row === rowKind && state.cs.selectedSlot.index === idx;
-        state.cs.targetRow = rowKind;
-        updateTargetRowButtons();
-        if (slotData && alreadySelected) {
+        if (slotData) {
           slots[idx] = null;
-          compactSlots(slots);
+          state.cs.selectedSlot = idx;
           playTone(330, 80, 'triangle', 0.06);
-          setStatus(`S'ha retirat la fitxa de la ranura #${idx + 1}.`, 'info');
+          setStatus(`Fitxa retirada (fila ${rowNum}, casella ${colNum}).`, 'info');
         } else {
-          state.cs.selectedSlot = { row: rowKind, index: idx };
+          state.cs.selectedSlot = idx;
           playTone(500, 60, 'sine', 0.05);
         }
         renderCodingSetUI();
       });
 
-      const numBtn = document.createElement('button');
-      numBtn.type = 'button';
-      numBtn.className = 'sim-cs-slot-num-btn';
+      // Ranura inferior (fitxa numèrica 2-5)
+      const bottomBtn = document.createElement('button');
+      bottomBtn.type = 'button';
+      bottomBtn.className = 'sim-cs-peg-bottom';
+      bottomBtn.setAttribute('tabindex', '-1');
 
-      if (!slotData) {
-        numBtn.disabled = true;
-        numBtn.textContent = '—';
-        numBtn.setAttribute('aria-label', `Ranura numèrica ${idx + 1} inactiva`);
-      } else if (acceptsNumberBlock(slotData.type)) {
-        if (slotData.number) {
-          numBtn.classList.add('has-number');
-          numBtn.textContent = `×${slotData.number}`;
-          numBtn.setAttribute('aria-label', `Bloc numèric ${slotData.number} sota ${LABELS[slotData.type]}. Clica per canviar el número.`);
-        } else {
-          numBtn.textContent = '+ núm';
-          numBtn.setAttribute('aria-label', `Afegeix bloc numèric (2 a 5) sota ${LABELS[slotData.type]}`);
-        }
-        numBtn.addEventListener('click', () => {
-          if (state.isRunning) stopExecution();
-          state.cs.selectedSlot = { row: rowKind, index: idx };
-          const cycle = ['', '2', '3', '4', '5'];
-          const nextIdx = (cycle.indexOf(slotData.number || '') + 1) % cycle.length;
-          slotData.number = cycle[nextIdx];
-          playTone(620, 75, 'sine', 0.07);
-          renderCodingSetUI();
-          setStatus(
-            slotData.number
-              ? `Bloc numèric ${slotData.number} col·locat sota ${LABELS[slotData.type]}.`
-              : `S'ha retirat el bloc numèric de ${LABELS[slotData.type]}.`,
-            'info'
-          );
-        });
+      if (slotData && slotData.number) {
+        bottomBtn.classList.add('is-filled');
+        bottomBtn.setAttribute('aria-label', `Bloc numèric ${slotData.number} a fila ${rowNum} casella ${colNum}. Clica per canviar o retirar.`);
+        bottomBtn.innerHTML = renderCSNumberSVG(slotData.number);
       } else {
-        numBtn.textContent = 'sense núm';
-        numBtn.setAttribute('aria-label', `${LABELS[slotData.type]} no admet bloc numèric`);
-        numBtn.addEventListener('click', () => {
-          playTone(230, 140, 'sawtooth', 0.07);
-          setStatus(
-            `Límit oficial del Coding Set: els blocs numèrics només modifiquen Endavant, Enrere i l'Inici de bucle (no s'apliquen a «${LABELS[slotData.type]}»).`,
-            'warning'
-          );
-        });
+        bottomBtn.setAttribute(
+          'aria-label',
+          slotData && acceptsNumberBlock(slotData.type)
+            ? `Afegeix bloc numèric (2 a 5) sota ${LABELS[slotData.type]}`
+            : ` Clavilla inferior fila ${rowNum} casella ${colNum}`
+        );
+        bottomBtn.innerHTML = renderBottomPegSVG();
       }
 
-      item.appendChild(mainBtn);
-      item.appendChild(numBtn);
-      container.appendChild(item);
+      bottomBtn.addEventListener('click', () => {
+        if (state.isRunning) stopExecution();
+        state.cs.selectedSlot = idx;
+        if (!slotData) {
+          renderCodingSetUI();
+          return;
+        }
+        if (!acceptsNumberBlock(slotData.type)) {
+          playTone(230, 140, 'sawtooth', 0.07);
+          setStatus(
+            `Els blocs numèrics només s'utilitzen sota Endavant, Enrere i Inici del bucle.`,
+            'warning'
+          );
+          renderCodingSetUI();
+          return;
+        }
+        const cycle = ['', '2', '3', '4', '5'];
+        const nextIdx = (cycle.indexOf(slotData.number || '') + 1) % cycle.length;
+        slotData.number = cycle[nextIdx];
+        playTone(620, 75, 'sine', 0.07);
+        renderCodingSetUI();
+      });
+
+      // Suport Drag & Drop sobre la casella del tauler 3×6
+      cell.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        cell.classList.add('is-dragover');
+      });
+      cell.addEventListener('dragleave', () => {
+        cell.classList.remove('is-dragover');
+      });
+      cell.addEventListener('drop', (e) => {
+        e.preventDefault();
+        cell.classList.remove('is-dragover');
+        if (state.isRunning) stopExecution();
+        try {
+          const payload = JSON.parse(e.dataTransfer.getData('text/plain') || '{}');
+          if (payload.kind === 'add-block' && payload.type) {
+            slots[idx] = { type: payload.type, number: payload.type === 'loop' ? '2' : '' };
+            state.cs.selectedSlot = idx;
+            playTone(540, 85, 'sine', 0.08);
+            renderCodingSetUI();
+          } else if (payload.kind === 'move-slot' && typeof payload.fromIndex === 'number') {
+            if (payload.fromIndex !== idx && slots[payload.fromIndex]) {
+              const temp = slots[idx];
+              slots[idx] = slots[payload.fromIndex];
+              slots[payload.fromIndex] = temp;
+              state.cs.selectedSlot = idx;
+              playTone(540, 85, 'sine', 0.08);
+              renderCodingSetUI();
+            }
+          } else if (payload.kind === 'set-num' && typeof payload.num === 'string') {
+            state.cs.selectedSlot = idx;
+            applyCodingSetNumberToSlot(idx, payload.num);
+          }
+        } catch (_) {}
+      });
+
+      cell.appendChild(topBtn);
+      cell.appendChild(bottomBtn);
+      csMainSlotsEl.appendChild(cell);
     });
-  }
-
-  function compactSlots(arr) {
-    const filled = arr.filter(Boolean);
-    for (let i = 0; i < arr.length; i++) {
-      arr[i] = filled[i] || null;
-    }
-  }
-
-  function updateTargetRowButtons() {
-    csTargetRowBtns.forEach(btn => {
-      const active = btn.getAttribute('data-cs-target-row') === state.cs.targetRow;
-      btn.classList.toggle('is-active', active);
-      btn.setAttribute('aria-pressed', String(active));
-    });
-  }
-
-  function renderCodingSetUI() {
-    renderCodingSetSlots(csMainSlotsEl, state.cs.mainSlots, 'main');
-    renderCodingSetSlots(csFuncSlotsEl, state.cs.funcSlots, 'func');
-
-    const mainFilled = state.cs.mainSlots.filter(Boolean);
-    const funcFilled = state.cs.funcSlots.filter(Boolean);
-    csSummaryEl.textContent = `${mainFilled.length}${funcFilled.length ? ` + ${funcFilled.length} fn` : ''}`;
-
-    const previewBlocks = [...mainFilled];
-    if (funcFilled.length) {
-      previewBlocks.push({ type: 'define' }, ...funcFilled);
-    }
-    if (!previewBlocks.length) {
-      csSequenceStrip.innerHTML = '<span class="sim-sequence-empty">—</span>';
-    } else {
-      csSequenceStrip.innerHTML = buildTangibleSVG(previewBlocks, false, state.cs.activeMainSlot);
-    }
   }
 
   function addCodingSetBlock(type) {
     if (state.isRunning) stopExecution();
-    const isFunc = state.cs.targetRow === 'func';
-    if (isFunc && (type === 'call' || type === 'loop' || type === 'end')) {
+    const slots = state.cs.boardSlots;
+    let targetIdx = state.cs.selectedSlot;
+
+    if (targetIdx < 0 || targetIdx >= slots.length || slots[targetIdx] !== null) {
+      // Busquem la primera casella buida a partir de la seleccionada, o des de l'inici
+      let found = -1;
+      for (let i = Math.max(0, targetIdx); i < slots.length; i++) {
+        if (slots[i] === null) {
+          found = i;
+          break;
+        }
+      }
+      if (found === -1) {
+        found = slots.findIndex(s => s === null);
+      }
+      targetIdx = found;
+    }
+
+    if (targetIdx === -1) {
       playTone(230, 150, 'sawtooth', 0.08);
-      setStatus('A la fila Define Function només es col·loquen les ordres de moviment o acció que formen la funció.', 'warning');
+      setStatus('El tauler de 3×6 caselles és ple.', 'warning');
       return;
     }
 
-    const slots = isFunc ? state.cs.funcSlots : state.cs.mainSlots;
-    const emptyIdx = slots.findIndex(s => s === null);
-    if (emptyIdx === -1) {
-      playTone(230, 150, 'sawtooth', 0.08);
-      setStatus(`La fila ${isFunc ? 'Define Function' : 'principal'} ja és plena.`, 'warning');
-      return;
-    }
-
-    slots[emptyIdx] = { type, number: type === 'loop' ? '2' : '' };
-    state.cs.selectedSlot = { row: state.cs.targetRow, index: emptyIdx };
+    slots[targetIdx] = { type, number: type === 'loop' ? '2' : '' };
+    state.cs.selectedSlot = targetIdx;
     state.stepCursor = 0;
     playTone(540, 85, 'sine', 0.08);
     renderCodingSetUI();
-    setStatus(`Fitxa «${LABELS[type]}» col·locada a la ranura #${emptyIdx + 1} (${isFunc ? 'Define Function' : 'fila principal'}).`, 'info');
   }
 
-  function applyCodingSetNumber(numStr) {
+  function applyCodingSetNumberToSlot(slotIdx, numStr) {
     if (state.isRunning) stopExecution();
-    const { row, index } = state.cs.selectedSlot;
-    const slots = row === 'func' ? state.cs.funcSlots : state.cs.mainSlots;
-    let target = slots[index];
+    const slots = state.cs.boardSlots;
+    let idx = slotIdx;
+    let target = slots[idx];
+
     if (!target) {
-      // Si la ranura seleccionada està buida, agafem l'última fitxa col·locada en la fila activa
-      const lastIdx = slots.reduce((acc, val, i) => (val ? i : acc), -1);
-      if (lastIdx !== -1) {
-        target = slots[lastIdx];
-        state.cs.selectedSlot = { row, index: lastIdx };
+      // Si la casella seleccionada és buida, apliquem a l'última casella ocupada
+      for (let i = slots.length - 1; i >= 0; i--) {
+        if (slots[i] && acceptsNumberBlock(slots[i].type)) {
+          idx = i;
+          target = slots[i];
+          break;
+        }
       }
     }
+
     if (!target) {
-      setStatus('Col·loca primer una fitxa Endavant, Enrere o Inici bucle al tauler.', 'warning');
+      setStatus('Col·loca primer una fitxa Endavant, Enrere o Inici del bucle al tauler.', 'warning');
       return;
     }
     if (!acceptsNumberBlock(target.type)) {
       playTone(230, 150, 'sawtooth', 0.08);
       setStatus(
-        `Els blocs numèrics s'utilitzen amb Endavant, Enrere i Inici bucle; no es poden combinar amb «${LABELS[target.type]}».`,
+        `Els blocs numèrics només s'utilitzen sota Endavant, Enrere i Inici del bucle.`,
         'warning'
       );
       return;
     }
     target.number = numStr;
+    state.cs.selectedSlot = idx;
     playTone(640, 80, 'sine', 0.08);
     renderCodingSetUI();
-    setStatus(
-      numStr
-        ? `Bloc numèric ${numStr} assignat a «${LABELS[target.type]}».`
-        : `S'ha retirat el bloc numèric de «${LABELS[target.type]}».`,
-      'info'
-    );
+  }
+
+  function applyCodingSetNumber(numStr) {
+    applyCodingSetNumberToSlot(state.cs.selectedSlot, numStr);
   }
 
   // =========================================================
@@ -1138,29 +1109,58 @@
   }
 
   function compileCodingSetQueue() {
-    const mainFilled = state.cs.mainSlots
+    const allFilled = state.cs.boardSlots
       .map((slot, idx) => (slot ? { ...slot, slotIndex: idx } : null))
       .filter(Boolean);
 
-    if (!mainFilled.length) {
-      return { error: 'Col·loca almenys una fitxa a la fila principal del tauler abans de prémer Play.' };
+    if (!allFilled.length) {
+      return { error: 'Col·loca almenys una fitxa al tauler 3×6 abans de prémer Play.' };
     }
 
-    const funcFilled = state.cs.funcSlots
-      .map((slot, idx) => (slot ? { ...slot, funcIndex: idx } : null))
-      .filter(Boolean);
+    // Separem el programa principal i la definició de funció (si hi ha bloc 'define')
+    let mainFilled = [];
+    let funcFilled = [];
+    const defPos = allFilled.findIndex(b => b.type === 'define');
+
+    if (defPos === -1) {
+      mainFilled = allFilled;
+    } else {
+      const defSlotIndex = allFilled[defPos].slotIndex;
+      const defRowEnd = Math.floor(defSlotIndex / 6) * 6 + 5;
+      const hasBlocksAfterDefRow = allFilled.some(b => b.slotIndex > defRowEnd);
+      const hasBlocksBeforeDef = defPos > 0;
+
+      if (!hasBlocksBeforeDef && hasBlocksAfterDefRow) {
+        // Si 'define' s'ha posat a una fila superior i el programa és a les files següents
+        funcFilled = allFilled
+          .filter(b => b.slotIndex > defSlotIndex && b.slotIndex <= defRowEnd && b.type !== 'define')
+          .map(b => ({ ...b, funcIndex: b.slotIndex }));
+        mainFilled = allFilled.filter(b => b.slotIndex > defRowEnd);
+      } else {
+        // Cas habitual: el programa principal és abans de 'define' i la funció és a partir de 'define'
+        mainFilled = allFilled.slice(0, defPos);
+        funcFilled = allFilled
+          .slice(defPos + 1)
+          .filter(b => b.type !== 'define')
+          .map(b => ({ ...b, funcIndex: b.slotIndex }));
+      }
+    }
+
+    if (!mainFilled.length) {
+      return { error: 'Falta el programa principal al tauler (només hi ha la definició de funció).' };
+    }
 
     const steps = [];
     let i = 0;
     while (i < mainFilled.length) {
       const block = mainFilled[i];
       if (block.type === 'end') {
-        return { error: `Error al tauler (ranura #${block.slotIndex + 1}): hi ha una fitxa «Fi bucle» sense «Inici bucle» abans.` };
+        return { error: `Error al tauler (casella #${block.slotIndex + 1}): hi ha una fitxa «Fi del bucle» sense «Inici del bucle» abans.` };
       }
       if (block.type === 'loop') {
         const endIdx = mainFilled.findIndex((b, j) => j > i && b.type === 'end');
         if (endIdx === -1) {
-          return { error: `Falta la fitxa «Fi bucle» per tancar el bucle iniciat a la ranura #${block.slotIndex + 1}.` };
+          return { error: `Falta la fitxa «Fi del bucle» per tancar el bucle iniciat a la casella #${block.slotIndex + 1}.` };
         }
         const inner = mainFilled.slice(i + 1, endIdx);
         if (inner.some(b => b.type === 'loop')) {
@@ -1190,7 +1190,7 @@
   function expandSingleCSBlock(block, funcFilled) {
     if (block.type === 'call') {
       if (!funcFilled.length) {
-        return { error: `Has col·locat «Crida fn» a la ranura #${block.slotIndex + 1}, però la fila inferior Define Function està buida.` };
+        return { error: `Has col·locat «Crida funció» a la casella #${block.slotIndex + 1}, però no hi ha cap funció definida amb la fitxa «fn».` };
       }
       const fnSteps = [];
       for (const fBlock of funcFilled) {
@@ -1226,7 +1226,6 @@
     } else {
       state.cs.activeMainSlot = step.mainSlot;
       state.cs.activeFuncSlot = step.funcSlot;
-      if (csTowerLed) csTowerLed.classList.add('is-scanning');
       renderCodingSetUI();
     }
 
@@ -1363,12 +1362,8 @@
 
   function updatePlayButtonsState() {
     tbPlayBtn.classList.toggle('is-running', state.isRunning);
-    tbPlayLabel.textContent = state.isRunning ? 'Atura' : 'Play';
+    if (tbPlayLabel) tbPlayLabel.textContent = state.isRunning ? 'Atura' : 'Play';
     csPlayBtn.classList.toggle('is-running', state.isRunning);
-    csPlayLabel.textContent = state.isRunning ? 'Atura' : 'Play';
-    if (!state.isRunning && csTowerLed) {
-      csTowerLed.classList.remove('is-scanning');
-    }
   }
 
   function stopExecution() {
@@ -1485,12 +1480,18 @@
         state.tb.repeat = 1;
       }
     } else if (loadSolution && challenge.demo) {
-      state.cs.mainSlots = Array.from({ length: 8 }, (_, idx) =>
-        challenge.demo.main[idx] ? { ...challenge.demo.main[idx] } : null
-      );
-      state.cs.funcSlots = Array.from({ length: 7 }, (_, idx) =>
-        challenge.demo.func[idx] ? { ...challenge.demo.func[idx] } : null
-      );
+      const nextBoard = Array.from({ length: 18 }, () => null);
+      (challenge.demo.main || []).forEach((b, idx) => {
+        if (idx < 12) nextBoard[idx] = { ...b };
+      });
+      if (challenge.demo.func && challenge.demo.func.length) {
+        nextBoard[12] = { type: 'define', number: '' };
+        challenge.demo.func.forEach((b, idx) => {
+          if (13 + idx < 18) nextBoard[13 + idx] = { ...b };
+        });
+      }
+      state.cs.boardSlots = nextBoard;
+      state.cs.selectedSlot = 0;
     }
 
     clearCanvas();
@@ -1701,69 +1702,44 @@
     );
   });
 
-  // Esdeveniments Coding Set
-  csTargetRowBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      state.cs.targetRow = btn.getAttribute('data-cs-target-row');
-      updateTargetRowButtons();
+  // Esdeveniments Coding Set (Paleta SVG + Drag & Drop + Tauler 3×6)
+  csAddBtns.forEach(btn => {
+    const type = btn.getAttribute('data-cs-add');
+    btn.addEventListener('click', () => addCodingSetBlock(type));
+    btn.addEventListener('dragstart', (e) => {
+      e.dataTransfer.setData('text/plain', JSON.stringify({ kind: 'add-block', type }));
     });
   });
 
-  csAddBtns.forEach(btn => {
-    btn.addEventListener('click', () => addCodingSetBlock(btn.getAttribute('data-cs-add')));
-  });
-
   csNumBtns.forEach(btn => {
-    btn.addEventListener('click', () => applyCodingSetNumber(btn.getAttribute('data-cs-num') || ''));
-  });
-
-  csPopMainBtn.addEventListener('click', () => {
-    if (state.isRunning) stopExecution();
-    const lastIdx = state.cs.mainSlots.reduce((acc, v, i) => (v ? i : acc), -1);
-    if (lastIdx !== -1) {
-      state.cs.mainSlots[lastIdx] = null;
-      playTone(330, 80, 'triangle', 0.06);
-      renderCodingSetUI();
-      setStatus('S’ha retirat l’última fitxa de la fila principal.', 'info');
+    const num = btn.getAttribute('data-cs-num') || '';
+    btn.addEventListener('click', () => applyCodingSetNumber(num));
+    if (num) {
+      btn.addEventListener('dragstart', (e) => {
+        e.dataTransfer.setData('text/plain', JSON.stringify({ kind: 'set-num', num }));
+      });
     }
   });
 
-  csClearMainBtn.addEventListener('click', () => {
-    if (state.isRunning) stopExecution();
-    state.cs.mainSlots = Array.from({ length: 8 }, () => null);
-    state.cs.activeMainSlot = -1;
-    playMelody([[440, 0, 80], [330, 90, 120]]);
-    renderCodingSetUI();
-    setStatus('S’han retirat totes les fitxes de la fila principal del tauler.', 'info');
-  });
-
-  csPopFuncBtn.addEventListener('click', () => {
-    if (state.isRunning) stopExecution();
-    const lastIdx = state.cs.funcSlots.reduce((acc, v, i) => (v ? i : acc), -1);
-    if (lastIdx !== -1) {
-      state.cs.funcSlots[lastIdx] = null;
-      playTone(330, 80, 'triangle', 0.06);
+  if (csClearMainBtn) {
+    csClearMainBtn.addEventListener('click', () => {
+      if (state.isRunning) stopExecution();
+      state.cs.boardSlots = Array.from({ length: 18 }, () => null);
+      state.cs.selectedSlot = 0;
+      state.cs.activeMainSlot = -1;
+      state.cs.activeFuncSlot = -1;
+      playMelody([[440, 0, 80], [330, 90, 120]]);
       renderCodingSetUI();
-      setStatus('S’ha retirat l’última fitxa de Define Function.', 'info');
-    }
-  });
-
-  csClearFuncBtn.addEventListener('click', () => {
-    if (state.isRunning) stopExecution();
-    state.cs.funcSlots = Array.from({ length: 7 }, () => null);
-    state.cs.activeFuncSlot = -1;
-    playTone(330, 100, 'triangle', 0.06);
-    renderCodingSetUI();
-    setStatus('S’ha buidat la fila Define Function.', 'info');
-  });
+      setStatus('Tauler 3×6 buidat.', 'info');
+    });
+  }
 
   csPlayBtn.addEventListener('click', runFullProgram);
   csStepBtn.addEventListener('click', runNextSingleStep);
 
-  // Spatial navigation per al tapís 6x6 i el tauler de ranures
+  // Spatial navigation per al tapís 6x6 i el tauler 3x6
   setupSpatialNavigation(gridCellsEl);
   setupSpatialNavigation(csMainSlotsEl);
-  setupSpatialNavigation(csFuncSlotsEl);
 
   // Inicialització segons ?robot=tale-bot | coding-set
   const initialParams = new URLSearchParams(window.location.search);
