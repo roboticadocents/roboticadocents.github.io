@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg4"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4" />
+  <g
+     id="tile-body">
+    <path
+       d="M5 0 H59 Q64 0 64 5 V59 Q64 64 59 64 H36.5 L33.2 59.2 Q32 57.5 30.8 59.2 L27.5 64 H5 Q0 64 0 59 V5 Q0 0 5 0 Z"
+       fill="#f4df13"
+       id="path1" />
+  </g>
+  <g
+     id="tile-icon"
+     fill="none"
+     stroke="#ffffff"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+    <g
+       id="fn-glyph">
+      <path
+         d="M34 21 C29.8 21 28.4 23.5 27.6 27.5 L25 42.5"
+         stroke-width="4"
+         id="path2" />
+      <path
+         d="M23.5 30 H31.5"
+         stroke-width="3.8"
+         id="path3" />
+      <path
+         d="M33.2 42.5 V35 C33.2 32.8 39 32.8 39 35 V42.5"
+         stroke-width="3.4"
+         id="path4" />
+    </g>
+    <circle
+       style="fill:none;stroke:#ffffff;stroke-width:2.9705;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:3.19371;stroke-opacity:1"
+       id="path5"
+       cx="31.916166"
+       cy="31.080238"
+       r="18.104404" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2.77767;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:3.19371;stroke-opacity:1"
+       d="M 32.038323,49.322993 V 46.945267"
+       id="path7" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2.77767;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:3.19371;stroke-opacity:1"
+       d="M 32.264284,15.345004 V 12.967278"
+       id="path7-2" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2.77767;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:3.19371;stroke-opacity:1"
+       d="m 47.689792,30.607638 h 2.377726"
+       id="path7-2-0" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2.77767;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:3.19371;stroke-opacity:1"
+       d="m 14.05111,30.012787 h 2.377726"
+       id="path7-2-0-3" />
+  </g>
+</svg>

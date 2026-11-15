@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <g id="tile-body">
+    <path
+      d="M5 0 H59 Q64 0 64 5 V59 Q64 64 59 64 H36.5 L33.2 59.2 Q32 57.5 30.8 59.2 L27.5 64 H5 Q0 64 0 59 V5 Q0 0 5 0 Z"
+      fill="#f4df13"
+    />
+  </g>
+  <g id="tile-icon" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+    <path
+      id="fn-f-stem"
+      d="M36 16 C30 16 28 19.5 27 25 L23 47"
+      stroke-width="5.2"
+    />
+    <path
+      id="fn-f-crossbar"
+      d="M21 29.5 H33"
+      stroke-width="5"
+    />
+    <path
+      id="fn-n"
+      d="M34.5 46.5 V35.5 C34.5 32.5 42.5 32.5 42.5 35.5 V46.5"
+      stroke-width="4.4"
+    />
+  </g>
+</svg>

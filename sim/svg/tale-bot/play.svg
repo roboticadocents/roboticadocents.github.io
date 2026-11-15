@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <g id="key-body">
+    <rect x="8" y="8" width="64" height="64" rx="22" fill="#ff8a00" />
+  </g>
+  <g id="key-icon">
+    <path
+      d="M31 24 C27.5 22 24 24.5 24 28.5 V51.5 C24 55.5 27.5 58 31 56 L53 43.5 C56.5 41.5 56.5 38.5 53 36.5 Z"
+      fill="#ffffff"
+    />
+  </g>
+</svg>

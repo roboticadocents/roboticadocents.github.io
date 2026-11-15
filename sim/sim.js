@@ -27,12 +27,12 @@
   };
 
   const TB_COLORS = {
-    forward: '#ff625f',
-    back: '#a4e83b',
-    right: '#f3e529',
-    left: '#4db9f4',
-    record: '#00c9cd',
-    dance: '#d94bc8'
+    forward: '#ff3b47',
+    back: '#188c38',
+    right: '#00a8f3',
+    left: '#ffd400',
+    record: '#66d1ff',
+    dance: '#a365d9'
   };
 
   const CS_COLORS = {
@@ -40,13 +40,13 @@
     back: '#8fc32c',
     right: '#8fc32c',
     left: '#8fc32c',
-    loop: '#006c3d',
-    end: '#006c3d',
+    loop: '#1b6e44',
+    end: '#1b6e44',
     define: '#f4df13',
     call: '#f4df13',
-    random: '#922785',
-    music: '#922785',
-    dance: '#922785'
+    random: '#8e2984',
+    music: '#8e2984',
+    dance: '#8e2984'
   };
 
   const CHALLENGES = {
@@ -683,49 +683,29 @@
   }
 
   // =========================================================
-  // 4. GENERADOR D'SVG DE BLOCS TANGIBLES (Idèntic als tutorials)
+  // 4. GENERADOR D'SVG DE BLOCS TANGIBLES (Des de sim/svg/)
   // =========================================================
-  function blockIconSVG(type) {
-    const straight = '<path d="M32 47V18m-12 12 12-12 12 12"/>';
-    if (type === 'forward') return straight;
-    if (type === 'back') return `<g transform="rotate(180 32 32)">${straight}</g>`;
-    if (type === 'right' || type === 'left') {
-      const turn = '<path d="M29 21h17m-10-10 10 10-10 10"/><g fill="white" stroke="none"><circle cx="18" cy="21" r="2.5"/><circle cx="15" cy="30" r="2.5"/><circle cx="21" cy="38" r="2.5"/><circle cx="27" cy="46" r="2.5"/></g>';
-      return type === 'left' ? `<g transform="translate(64 0) scale(-1 1)">${turn}</g>` : turn;
-    }
-    if (type === 'loop' || type === 'end') {
-      return '<path d="M42 19a18 18 0 0 0-25 23m5-13-5 13-8-9M22 45a18 18 0 0 0 25-23m-5 13 5-13 8 9"/>';
-    }
-    if (type === 'record') {
-      return '<rect x="27" y="15" width="10" height="22" rx="5"/><path d="M21 30v3a11 11 0 0 0 22 0v-3M32 44v7m-7 0h14"/>';
-    }
-    if (type === 'music') {
-      return '<path d="M26 43V20l20-4v23M26 24l20-4"/><ellipse cx="20" cy="44" rx="6" ry="4"/><ellipse cx="40" cy="40" rx="6" ry="4"/>';
-    }
-    if (type === 'dance' || type === 'random') {
-      return `<circle cx="32" cy="15" r="4" fill="currentColor" stroke="none"/><path d="M32 24v15m0-12-13-7m13 7 13-10M32 39l-11 12m11-12 12 10"/>${type === 'random' ? '<path d="M45 33h9m-4-4 4 4-4 4" stroke-width="3"/>' : ''}`;
-    }
-    if ( type === 'define' || type === 'call') {
-      return `<text x="32" y="43" text-anchor="middle" fill="white" stroke="none" font-family="Plus Jakarta Sans, sans-serif" font-style="italic" font-size="30" font-weight="700">fn</text>${type === 'call' ? '<path d="M17 45a23 23 0 1 1 31 0M12 39l5 6 5-5" stroke-width="2"/>' : ''}`;
-    }
-    return straight;
-  }
+  const svgDataEl = document.getElementById('sim-svg-data');
+  const SIM_SVGS = svgDataEl ? JSON.parse(svgDataEl.textContent) : { codingSet: {}, taleBot: {} };
 
   function renderCSInstructionSVG(type) {
-    const fill = CS_COLORS[type] || '#8fc32c';
-    return `<svg viewBox="0 0 64 64" aria-hidden="true" class="sim-cs-block-svg"><path d="M5 0H59Q64 0 64 5V59Q64 64 59 64H39L35 60H29L25 64H5Q0 64 0 59V5Q0 0 5 0Z" fill="${fill}"/><g color="white" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">${blockIconSVG(type)}</g></svg>`;
+    const entry = SIM_SVGS.codingSet[type] || SIM_SVGS.codingSet.forward;
+    return entry ? entry.svg : '';
   }
 
   function renderCSNumberSVG(num) {
-    return `<svg viewBox="0 0 64 28" aria-hidden="true" class="sim-cs-num-svg"><rect width="64" height="28" rx="4" fill="#12aff0"/><text x="32" y="20" text-anchor="middle" fill="white" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="20">${num}</text></svg>`;
+    const entry = SIM_SVGS.codingSet[`num-${num}`];
+    return entry ? entry.svg : '';
   }
 
   function renderTopPegSVG() {
-    return `<svg viewBox="0 0 64 64" aria-hidden="true" class="sim-cs-peg-svg"><path d="M22 32c0-5.8 4.6-10.4 10.2-10.4 4.1 0 6.8 2.2 10.6 6.7 2.2 2.5 2.2 4.9 0 7.4-3.8 4.5-6.5 6.7-10.6 6.7C26.6 42.4 22 37.8 22 32Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="2.2"/></svg>`;
+    const entry = SIM_SVGS.codingSet['peg-top'];
+    return entry ? entry.svg : '';
   }
 
   function renderBottomPegSVG() {
-    return `<svg viewBox="0 0 64 28" aria-hidden="true" class="sim-cs-peg-svg"><circle cx="32" cy="14" r="4.6" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/></svg>`;
+    const entry = SIM_SVGS.codingSet['peg-bottom'];
+    return entry ? entry.svg : '';
   }
 
   function buildTangibleSVG(blocks, isTaleBot, activeIndex = -1) {
@@ -735,25 +715,22 @@
     const pieces = blocks.map((block, i) => {
       const x = i * 84 + 10;
       const isCurrent = i === activeIndex;
-      const fill = isTaleBot
-        ? (block.type === 'record' || block.type === 'dance' ? '#ffffff' : TB_COLORS[block.type] || '#ff625f')
-        : (CS_COLORS[block.type] || '#8fc32c');
-      const strokeAttr = isCurrent ? 'stroke="#0f172a" stroke-width="4"' : 'stroke="#cbd5e1" stroke-width="1.5"';
-      const shape = isTaleBot
-        ? `<rect x="0" y="0" width="64" height="64" rx="22" fill="${fill}" ${strokeAttr}/>`
-        : `<path d="M5 0H59Q64 0 64 5V59Q64 64 59 64H39L35 60H29L25 64H5Q0 64 0 59V5Q0 0 5 0Z" fill="${fill}" ${isCurrent ? 'stroke="#0f172a" stroke-width="3.5"' : ''}/>`;
-      const numSVG = block.number
-        ? `<rect y="66" width="64" height="26" rx="4" fill="#12aff0"/><text x="32" y="85" text-anchor="middle" fill="white" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="19">${block.number}</text>`
+      if (isTaleBot) {
+        const keySvg = SIM_SVGS.taleBot[block.type] || SIM_SVGS.taleBot.forward;
+        const inner = keySvg ? keySvg.inner : '';
+        const highlight = isCurrent
+          ? '<circle cx="32" cy="32" r="30" fill="none" stroke="#0f172a" stroke-width="3.5"/>'
+          : '';
+        const conn = i < blocks.length - 1
+          ? '<path d="M69 32h10m-4-4 4 4-4 4" stroke="#64748b" stroke-width="2" fill="none"/>'
+          : '';
+        return `<g transform="translate(${x} 8)"><g transform="scale(0.8)">${inner}</g>${highlight}${conn}</g>`;
+      }
+      const tileSvg = SIM_SVGS.codingSet[block.type] || SIM_SVGS.codingSet.forward;
+      const numSvg = block.number && SIM_SVGS.codingSet[`num-${block.number}`]
+        ? `<g transform="translate(0 61)">${SIM_SVGS.codingSet[`num-${block.number}`].inner}</g>`
         : '';
-      const conn = isTaleBot && i < blocks.length - 1
-        ? '<path d="M69 32h10m-4-4 4 4-4 4" stroke="#64748b" stroke-width="2" fill="none"/>'
-        : '';
-      const iconStroke = isTaleBot && block.type === 'record'
-        ? '#00c9cd'
-        : isTaleBot && block.type === 'dance'
-          ? '#d94bc8'
-          : 'white';
-      return `<g transform="translate(${x} 8)">${shape}<g color="${iconStroke}" fill="none" stroke="${iconStroke}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">${blockIconSVG(block.type)}</g>${numSVG}${conn}</g>`;
+      return `<g transform="translate(${x} 8)">${tileSvg ? tileSvg.inner : ''}${numSvg}</g>`;
     }).join('');
 
     return `<svg xmlns="http://www.w3.org/2000/svg" class="tangible-sequence" role="img" aria-label="${desc}" width="${width}" height="108" viewBox="0 0 ${width} 108">${pieces}</svg>`;
@@ -773,7 +750,7 @@
       led.classList.toggle('is-lit', Boolean(cmd));
       led.classList.toggle('is-current', idx === state.tb.activeLed);
       if (cmd) {
-        led.style.setProperty('--led-color', TB_COLORS[cmd] || '#ff625f');
+        led.style.setProperty('--led-color', TB_COLORS[cmd] || '#ff3b47');
       } else {
         led.style.removeProperty('--led-color');
       }
@@ -879,6 +856,14 @@
     return type === 'forward' || type === 'back' || type === 'loop';
   }
 
+  function resolveNumberValue(numStr) {
+    if (!numStr) return 1;
+    if (numStr === 'random') {
+      return Math.floor(Math.random() * 5) + 2; // 2..6
+    }
+    return parseInt(numStr, 10) || 1;
+  }
+
   function renderCodingSetUI() {
     csMainSlotsEl.innerHTML = '';
     const slots = state.cs.boardSlots;
@@ -931,7 +916,7 @@
         renderCodingSetUI();
       });
 
-      // Ranura inferior (fitxa numèrica 2-5)
+      // Ranura inferior (fitxa numèrica 2-5 o dau)
       const bottomBtn = document.createElement('button');
       bottomBtn.type = 'button';
       bottomBtn.className = 'sim-cs-peg-bottom';
@@ -945,8 +930,8 @@
         bottomBtn.setAttribute(
           'aria-label',
           slotData && acceptsNumberBlock(slotData.type)
-            ? `Afegeix bloc numèric (2 a 5) sota ${LABELS[slotData.type]}`
-            : ` Clavilla inferior fila ${rowNum} casella ${colNum}`
+            ? `Afegeix bloc numèric (2 a 5 o dau) sota ${LABELS[slotData.type]}`
+            : `Clavilla inferior fila ${rowNum} casella ${colNum}`
         );
         bottomBtn.innerHTML = renderBottomPegSVG();
       }
@@ -967,7 +952,7 @@
           renderCodingSetUI();
           return;
         }
-        const cycle = ['', '2', '3', '4', '5'];
+        const cycle = ['', '2', '3', '4', '5', 'random'];
         const nextIdx = (cycle.indexOf(slotData.number || '') + 1) % cycle.length;
         slotData.number = cycle[nextIdx];
         playTone(620, 75, 'sine', 0.07);
@@ -1166,7 +1151,7 @@
         if (inner.some(b => b.type === 'loop')) {
           return { error: 'El Coding Set no admet bucles niuats dins d’un altre bucle.' };
         }
-        const count = parseInt(block.number || '2', 10);
+        const count = block.number ? resolveNumberValue(block.number) : 2;
         for (let r = 0; r < count; r++) {
           for (const innerBlock of inner) {
             const exp = expandSingleCSBlock(innerBlock, funcFilled);
@@ -1194,7 +1179,7 @@
       }
       const fnSteps = [];
       for (const fBlock of funcFilled) {
-        const reps = acceptsNumberBlock(fBlock.type) && fBlock.number ? parseInt(fBlock.number, 10) : 1;
+        const reps = acceptsNumberBlock(fBlock.type) && fBlock.number ? resolveNumberValue(fBlock.number) : 1;
         for (let k = 0; k < reps; k++) {
           fnSteps.push({
             type: fBlock.type,
@@ -1206,7 +1191,7 @@
       return { steps: fnSteps };
     }
 
-    const reps = acceptsNumberBlock(block.type) && block.number ? parseInt(block.number, 10) : 1;
+    const reps = acceptsNumberBlock(block.type) && fBlock.number ? resolveNumberValue(block.number) : 1;
     const out = [];
     for (let k = 0; k < reps; k++) {
       out.push({

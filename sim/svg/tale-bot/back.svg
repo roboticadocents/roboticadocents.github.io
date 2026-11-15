@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <g id="key-body">
+    <path
+      d="M40 70 C61 70 72 55 72 32 C72 19 63 13 40 13 C17 13 8 19 8 32 C8 55 19 70 40 70 Z"
+      fill="#188c38"
+    />
+  </g>
+  <g id="key-icon" fill="none" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 27 V55" />
+    <path d="M27 43 L40 56 L53 43" />
+  </g>
+</svg>

@@ -722,119 +722,87 @@
 .sim-tb-shell {
   flex: 1 1 auto;
   min-block-size: 0;
-  background: #f8fafc;
+  background: #ffffff;
   border: 2px solid #e2e8f0;
-  border-radius: 22px;
-  padding: 0.75rem;
+  border-radius: 26px;
+  padding: 0.65rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 0.5rem;
-}
-
-.sim-tb-top-row,
-.sim-tb-bottom-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-}
-
-.sim-tb-aux-btn {
-  position: relative;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.3rem;
-  min-inline-size: 3.2rem;
-  min-block-size: 3.2rem;
-  padding: 0.35rem 0.65rem;
-  border-radius: 20px;
-  border: 2px solid #cbd5e1;
-  background: #ffffff;
-  color: #1e293b;
-  font-family: var(--font-sans);
-  font-size: 0.85rem;
-  font-weight: 800;
-  cursor: pointer;
-  overflow: clip;
-  box-shadow: 0 2px 0 rgba(15, 23, 42, 0.08);
+  box-shadow: inset 0 1px 0 #ffffff, 0 4px 12px rgba(15, 23, 42, 0.04);
 }
 
-.sim-tb-aux-btn svg {
-  display: block;
-  inline-size: 1.9rem;
-  block-size: 1.9rem;
-}
-
-.sim-tb-aux-btn:hover { background: #f1f5f9; }
-.sim-tb-btn-repeat strong { color: #ea580c; }
-.sim-tb-btn-record { border-color: #00c9cd; }
-.sim-tb-btn-dance { border-color: #d94bc8; }
-.sim-tb-btn-clear { border-color: #ff454c; color: #b91c1c; }
-
-.sim-tb-hold-bar {
-  position: absolute;
-  inset-block-end: 0;
-  inset-inline-start: 0;
-  block-size: 4px;
-  inline-size: 0%;
-  background: #ef4444;
-  transition: inline-size 0.08s linear;
-}
-
-.sim-tb-dpad {
+.sim-tb-keypad {
   display: grid;
-  grid-template-columns: repeat(3, minmax(66px, 84px));
-  grid-template-rows: repeat(3, minmax(56px, 72px));
+  grid-template-columns: repeat(3, minmax(68px, 86px));
+  grid-template-rows: repeat(3, minmax(68px, 86px));
   gap: 0.45rem;
   place-content: center;
-  place-items: stretch;
+  place-items: center;
   margin-inline: auto;
 }
 
-.sim-tb-dir-btn,
-.sim-tb-play-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 22px;
-  border: 2px solid rgba(15, 23, 42, 0.12);
-  color: #ffffff;
+.sim-tb-key-btn {
+  position: relative;
+  padding: 0;
+  border: none;
+  background: transparent;
   cursor: pointer;
-  box-shadow: 0 3px 0 rgba(15, 23, 42, 0.14);
+  inline-size: 100%;
+  block-size: 100%;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  transition: transform 0.1s ease, filter 0.12s ease;
 }
 
-.sim-tb-dir-btn svg,
-.sim-tb-play-btn svg {
+.sim-tb-key-btn svg {
   display: block;
-  inline-size: 2.35rem;
-  block-size: 2.35rem;
+  inline-size: 100%;
+  block-size: 100%;
+  filter: drop-shadow(0 3px 5px rgba(15, 23, 42, 0.14));
 }
 
-.sim-tb-dir-btn:active,
-.sim-tb-play-btn:active {
-  transform: translateY(1px);
+.sim-tb-key-btn:hover {
+  transform: translateY(-1px) scale(1.03);
 }
 
-.sim-tb-forward { grid-column: 2; grid-row: 1; background: #ff625f; }
-.sim-tb-left    { grid-column: 1; grid-row: 2; background: #4db9f4; }
-.sim-tb-play-btn {
-  grid-column: 2;
-  grid-row: 2;
-  border-radius: 50%;
-  background: #ff8849;
+.sim-tb-key-btn:active {
+  transform: translateY(1px) scale(0.97);
 }
-.sim-tb-play-btn.is-running { background: #dc2626; }
-.sim-tb-right {
-  grid-column: 3;
-  grid-row: 2;
-  background: #f3e529;
+
+.sim-tb-key-play.is-running svg {
+  filter: hue-rotate(-25deg) saturate(1.4) drop-shadow(0 0 8px rgba(220, 38, 38, 0.45));
 }
-.sim-tb-back {
-  grid-column: 2;
-  grid-row: 3;
-  background: #a4e83b;
+
+.sim-tb-repeat-badge {
+  position: absolute;
+  inset-block-end: 4px;
+  inset-inline-end: 4px;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1;
+  padding: 0.15rem 0.32rem;
+  border-radius: 999px;
+  background: #16a34a;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);
+  pointer-events: none;
+}
+
+.sim-tb-hold-bar {
+  position: absolute;
+  inset-block-end: 4px;
+  inset-inline-start: 14%;
+  block-size: 4px;
+  inline-size: 0%;
+  max-inline-size: 72%;
+  border-radius: 999px;
+  background: #ef4444;
+  transition: inline-size 0.08s linear;
+  pointer-events: none;
 }
 
 .sim-tb-actions-row {
@@ -927,9 +895,9 @@
 
 .sim-cs-numbers-tray {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 56px));
+  grid-template-columns: repeat(6, minmax(0, 54px));
   justify-content: center;
-  gap: 0.35rem;
+  gap: 0.3rem;
   align-items: center;
 }
 
@@ -940,7 +908,7 @@
   cursor: pointer;
   display: block;
   inline-size: 100%;
-  aspect-ratio: 64 / 28;
+  aspect-ratio: 64 / 32;
   border-radius: 4px;
   transition: transform 0.12s ease, filter 0.12s ease;
 }
@@ -998,7 +966,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  gap: 0;
   padding: 3px;
   border-radius: 8px;
   border: 1.5px solid transparent;
@@ -1036,7 +1004,8 @@
 }
 
 .sim-cs-peg-bottom {
-  aspect-ratio: 64 / 28;
+  aspect-ratio: 64 / 32;
+  margin-block-start: -2px;
 }
 
 .sim-cs-peg-top svg,

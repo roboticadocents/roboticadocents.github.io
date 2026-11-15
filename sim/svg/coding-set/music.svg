@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <g id="tile-body">
+    <path
+      d="M5 0 H59 Q64 0 64 5 V59 Q64 64 59 64 H36.5 L33.2 59.2 Q32 57.5 30.8 59.2 L27.5 64 H5 Q0 64 0 59 V5 Q0 0 5 0 Z"
+      fill="#8e2984"
+    />
+  </g>
+  <g id="tile-icon">
+    <path
+      id="music-stems"
+      d="M26 42 V20 L44 16 V38"
+      fill="none"
+      stroke="#ffffff"
+      stroke-width="4.6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      id="music-beam"
+      d="M26 23 L44 19"
+      fill="none"
+      stroke="#ffffff"
+      stroke-width="5.2"
+      stroke-linecap="round"
+    />
+    <ellipse id="note-left" cx="21" cy="43.5" rx="6.2" ry="4.5" transform="rotate(-18 21 43.5)" fill="#ffffff" />
+    <ellipse id="note-right" cx="39" cy="39.5" rx="6.2" ry="4.5" transform="rotate(-18 39 39.5)" fill="#ffffff" />
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <g id="tile-body">
+    <path
+      d="M5 0 H59 Q64 0 64 5 V59 Q64 64 59 64 H36.5 L33.2 59.2 Q32 57.5 30.8 59.2 L27.5 64 H5 Q0 64 0 59 V5 Q0 0 5 0 Z"
+      fill="#8fc32c"
+    />
+  </g>
+  <g id="tile-icon">
+    <g id="turn-dots" fill="#ffffff">
+      <circle cx="46" cy="45" r="2.8" />
+      <circle cx="46" cy="36.5" r="2.8" />
+      <circle cx="46" cy="28" r="2.8" />
+      <circle cx="37.5" cy="28" r="2.8" />
+    </g>
+    <path
+      id="turn-chevron"
+      d="M30 16.5 L17.5 28 L30 39.5"
+      fill="none"
+      stroke="#ffffff"
+      stroke-width="6.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+</svg>

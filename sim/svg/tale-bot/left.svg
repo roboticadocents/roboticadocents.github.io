@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 80 80"
+   version="1.1"
+   id="svg4"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4" />
+  <g
+     id="key-body"
+     transform="rotate(180,41.5,40)">
+    <path
+       d="M 70,40 C 70,19 55,8 32,8 19,8 13,17 13,40 13,63 19,72 32,72 55,72 70,61 70,40 Z"
+       fill="#ffd400"
+       id="path1" />
+  </g>
+  <g
+     id="key-icon">
+    <g
+       id="right-dots"
+       fill="#ffffff"
+       transform="translate(0,-4)">
+      <circle
+         cx="-54"
+         cy="-61"
+         r="3.2"
+         id="circle1"
+         transform="scale(-1)" />
+      <circle
+         cx="-54"
+         cy="-52.5"
+         r="3.2"
+         id="circle2"
+         transform="scale(-1)" />
+      <circle
+         cx="-54"
+         cy="-44"
+         r="3.2"
+         id="circle3"
+         transform="scale(-1)" />
+      <circle
+         cx="-45"
+         cy="-44"
+         r="3.2"
+         id="circle4"
+         transform="scale(-1)" />
+      <circle
+         cx="-35.799999"
+         cy="-43.93771"
+         r="3.2"
+         id="circle4-9"
+         transform="scale(-1)" />
+    </g>
+    <path
+       id="right-chevron"
+       d="M 39,53.5 25.5,40 39,26.5"
+       fill="none"
+       stroke="#ffffff"
+       stroke-width="6.5"
+       stroke-linecap="round"
+       stroke-linejoin="round" />
+  </g>
+</svg>

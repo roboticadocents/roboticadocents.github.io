@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 32">
+  <g id="tile-body">
+    <path
+      d="M5 5 H27.5 L30.8 0.8 Q32 -0.5 33.2 0.8 L36.5 5 H59 Q64 5 64 10 V27 Q64 32 59 32 H5 Q0 32 0 27 V10 Q0 5 5 5 Z"
+      fill="#1ca7ec"
+    />
+  </g>
+  <g id="tile-icon" fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round">
+    <polygon points="32,8.5 41,13.5 41,23.5 32,28.5 23,23.5 23,13.5" />
+    <polyline points="23,13.5 32,18.5 41,13.5" />
+    <line x1="32" y1="18.5" x2="32" y2="28.5" />
+    <circle cx="32" cy="13.5" r="1.2" fill="#ffffff" stroke="none" />
+    <circle cx="27.5" cy="21" r="1.1" fill="#ffffff" stroke="none" />
+    <circle cx="36.5" cy="19.5" r="1" fill="#ffffff" stroke="none" />
+    <circle cx="36.5" cy="23" r="1" fill="#ffffff" stroke="none" />
+  </g>
+</svg>

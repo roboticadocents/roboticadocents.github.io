@@ -21,7 +21,7 @@ assert.match(bad.html, /Instrucció no reconeguda/);
 assert.match(bad.html, /avanzar -&gt; girar/);
 assert.doesNotMatch(bad.html, /<svg/);
 const tale = renderTangibleBlocks('avanzar -> retroceder -> girar derecha -> girar izquierda', 'talebot');
-for (const color of ['#ff625f', '#a4e83b', '#f3e529', '#4db9f4']) assert.ok(tale.includes(color));
+for (const color of ['#ff3b47', '#188c38', '#00a8f3', '#ffd400']) assert.ok(tale.includes(color));
 console.log('Tangible blocks: OK');
 
 assert.deepEqual(parseSequence('gravació -> dansa', 'talebot').map(b => b.type), ['record', 'dance']);

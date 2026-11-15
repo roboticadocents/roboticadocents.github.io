@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <g id="tile-body">
+    <path
+      d="M5 0 H59 Q64 0 64 5 V59 Q64 64 59 64 H36.5 L33.2 59.2 Q32 57.5 30.8 59.2 L27.5 64 H5 Q0 64 0 59 V5 Q0 0 5 0 Z"
+      fill="#8e2984"
+    />
+  </g>
+  <g id="tile-icon" fill="#ffffff" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+    <circle id="runner-head" cx="41" cy="17" r="4.2" stroke="none" />
+    <path id="runner-torso" d="M37 23 L29 35" fill="none" stroke-width="5" />
+    <path id="runner-arms" d="M24 23 L35 23 L44 31" fill="none" stroke-width="4" />
+    <path id="runner-legs" d="M18 47 L29 35 L39 38 L34 48" fill="none" stroke-width="4.4" />
+  </g>
+</svg>
