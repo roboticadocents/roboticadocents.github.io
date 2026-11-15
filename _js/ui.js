@@ -8,6 +8,11 @@
   function initLegacyRedirect() {
     const redirectBox = document.querySelector('[data-legacy-redirect]');
     if (!redirectBox) return;
+    const target = redirectBox.getAttribute('data-redirect-target');
+    if (target) {
+      window.location.replace(`${target}${window.location.search}${window.location.hash}`);
+      return;
+    }
     const params = new URLSearchParams(window.location.search);
     const rawId = params.get('id') || '';
     const id = rawId.replace(/^(?:sa-|activitat-|tutorial-|robot-|guia-)/i, '');

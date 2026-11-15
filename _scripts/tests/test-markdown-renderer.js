@@ -1203,8 +1203,8 @@ for (const slug of slugs) {
   assert.match(situationCatalogPage, new RegExp(`href="\\.\\./situacio/${slug}/index\\.html"`), `${slug} enllaça des del catàleg d'SDAs`);
 }
 const expectedDetailKinds = [
-  ["activitat", "activitats", "activitat-", 10],
-  ["tutorial", "tutorials", "tutorial-", 36],
+  ["activitat", "activitats", "", 10],
+  ["tutorial", "tutorials", "", 36],
   ["robot", "robots", "robot-", 6],
   ["guia", "guies", "guia-", 4]
 ];
@@ -1212,7 +1212,7 @@ for (const [route, folder, prefix, minExpected] of expectedDetailKinds) {
   const redirectPage = fs.readFileSync(path.join(dist, route, "index.html"), "utf8");
   assert.match(redirectPage, /data-legacy-redirect=/, `${route}/index.html ofereix redirecció de compatibilitat per a ?id=slug`);
   assert.match(redirectPage, /_js\/ui\.js\?v=/, `${route} carrega el controlador lleuger d'interfície`);
-  const docs = fs.readdirSync(path.join(root, "_content", folder)).filter(file => file.startsWith(prefix) && file.endsWith(".md"));
+  const docs = fs.readdirSync(path.join(root, "_content", folder)).filter(file => file.startsWith(prefix) && file.endsWith(".md") && !/^(README|TEMPLATE-)/.test(file));
   const activeDocs = docs.filter(file => {
     const source = fs.readFileSync(path.join(root, "_content", folder, file), "utf8");
     return !/^active:\s*false\s*$/m.test(source);
@@ -1226,7 +1226,7 @@ for (const [route, folder, prefix, minExpected] of expectedDetailKinds) {
 const activitiesDir = path.join(root, "_content/activitats");
 assert.ok(fs.existsSync(path.join(activitiesDir, "TEMPLATE-ACTIVITAT.md")), "existeix la plantilla base TEMPLATE-ACTIVITAT.md");
 const activityFiles = fs.readdirSync(activitiesDir)
-  .filter(file => file.startsWith("activitat-") && file.endsWith(".md"))
+  .filter(file => /^(pc|tb|cs)-.+\.md$/.test(file))
   .sort();
 const requiredActivityHeadings = [
   "## 🎯 Què aprendrem?",
@@ -1496,7 +1496,7 @@ assert.match(coverInsideIntro.html, /markdown-note-situation[\s\S]*?<\/aside>\s*
 
 // Un punt i coma no és un límit de paràgraf, encara que el text siga llarg.
 const semicolonParagraph = `${'paraula '.repeat(83).trim()}; ${'continuació '.repeat(20).trim()}`;
-const semicolonRendered = renderer.parse(semicolonParagraph, 'https://example.test/_content/tutorials/tutorial-prova.md');
+const semicolonRendered = renderer.parse(semicolonParagraph, 'https://example.test/_content/tutorials/tb-prova.md');
 assert.equal((semicolonRendered.html.match(/<p>/g) || []).length, 1, 'el punt i coma conserva un únic paràgraf');
 assert.match(semicolonRendered.html, /paraula; continuació/, 'es conserva el punt i coma amb el seu espai');
 

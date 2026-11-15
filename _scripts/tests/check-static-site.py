@@ -101,8 +101,8 @@ def main():
             problems.append(f"{relative}: missing data-legacy-redirect compatibility section")
 
     shared_content = {
-        "activitat": ("activity", "activitats", "activitat-"),
-        "tutorial": ("tutorial", "tutorials", "tutorial-"),
+        "activitat": ("activity", "activitats", ""),
+        "tutorial": ("tutorial", "tutorials", ""),
         "robot": ("robot", "robots", "robot-"),
         "guia": ("guide", "guies", "guia-"),
     }
@@ -114,7 +114,8 @@ def main():
     }
 
     for route, (kind, folder, prefix) in shared_content.items():
-        paths = sorted((ROOT / "_content" / folder).glob(f"{prefix}*.md"))
+        paths = sorted(p for p in (ROOT / "_content" / folder).glob(f"{prefix}*.md")
+                       if not p.name.startswith(("README", "TEMPLATE-")))
         if kind == "guide":
             paths = [p for p in paths if p.stem in {
                 "guia-pensament-computacional",

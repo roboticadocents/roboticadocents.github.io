@@ -14,6 +14,7 @@ const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 const renderer = require('./lib/markdown');
 const { ACTIVITY_TOPICS } = require('./lib/activity-topics');
+const contentRedirects = require('./content-redirects.json');
 const { buildAllBlocks } = require('./lib/blocks');
 const { warmMakeCodeCache } = require('./lib/makecode-cache');
 
@@ -25,12 +26,29 @@ const { DetailPage } = require('../_templates/pages/detail-page');
 const { RobotPage } = require('../_templates/pages/robot-page');
 const { SituationPage } = require('../_templates/pages/situation-page');
 const { RedirectPage } = require('../_templates/pages/redirect-page');
+const { SimPage } = require('../_templates/pages/sim-page');
 const { Document } = require('../_templates/layout/document');
 const { escapeHTML, escapeAttr } = require('../_templates/layout/utils');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 const DIST_DIR = path.resolve(ROOT_DIR, 'dist');
 let includePDFs = false;
+const activityRobots = {
+  tb: ['tale-bot', 'Tale-Bot'],
+  cs: ['coding-set', 'Coding Set']
+};
+
+function buildContentRedirects(route) {
+  for (const [oldSlug, slug] of Object.entries(contentRedirects[route])) {
+    if (!fs.existsSync(path.join(DIST_DIR, route, slug, 'index.html'))) continue;
+    writeHTML(`${route}/${oldSlug}/index.html`, RedirectPage({
+      root: '../../',
+      targetHref: `../${slug}/index.html`,
+      fallbackHref: `../${slug}/index.html`,
+      fallbackLabel: 'Obrir el contingut'
+    }));
+  }
+}
 
 function parseOrder(value, defaultOrder = 9999) {
   const n = parseInt(String(value ?? '').trim(), 10);
@@ -52,7 +70,7 @@ function prepareDist() {
   fs.mkdirSync(DIST_DIR, { recursive: true });
 
   // Copiar actius estàtics necessaris
-  for (const folder of ['_assets', '_css', '_js']) {
+  for (const folder of ['_assets', '_css', '_js', 'sim']) {
     const src = path.join(ROOT_DIR, folder);
     const dest = path.join(DIST_DIR, folder);
     if (fs.existsSync(src)) {
@@ -86,7 +104,7 @@ function buildActivities() {
   cleanSubdirectories('activitat');
   const dir = path.join(ROOT_DIR, '_content/activitats');
   const files = fs.readdirSync(dir)
-    .filter(f => f.startsWith('activitat-') && f.endsWith('.md'))
+    .filter(f => /^(pc|tb|cs)-.+\.md$/.test(f))
     .sort();
   const items = [];
 
@@ -96,7 +114,12 @@ function buildActivities() {
     const data = rendered.data;
     if (String(data.active ?? 'true').toLowerCase() !== 'true') continue;
 
-    const slug = file.replace(/^activitat-/, '').replace(/\.md$/, '');
+    const slug = file.replace(/\.md$/, '');
+    const prefix = slug.split('-')[0];
+    const [robot, robotLabel] = activityRobots[prefix] || ['', ''];
+    if (data.robot && data.robot !== robot) {
+      throw new Error(`${file}: el robot declarat no correspon al prefix ${prefix}-`);
+    }
     const title = String(data.title || slug).trim();
     const description = String(data.description || '').trim();
     if (!ACTIVITY_TOPICS.includes(data.topic)) {
@@ -110,10 +133,10 @@ function buildActivities() {
     writeHTML(`activitat/${slug}/index.html`, DetailPage({
       title,
       description,
-      activeNav: 'pensament',
+      activeNav: robot ? 'robots' : 'pensament',
       root: '../../',
-      backHref: '../../pensament-computacional/index.html',
-      backLabel: 'Pensament computacional',
+      backHref: robot ? `../../robot/${robot}/index.html#activitats` : '../../pensament-computacional/index.html',
+      backLabel: robotLabel || 'Pensament computacional',
       printHref: includePDFs ? `../../imprimir/activitats/${slug}.pdf` : '',
       badges,
       content: rendered.html
@@ -125,6 +148,7 @@ function buildActivities() {
       record: {
         id: `activitat-${slug}`,
         slug,
+        robot,
         url: `activitat/${slug}/index.html`,
         titol: title,
         image: data.image || '',
@@ -137,6 +161,7 @@ function buildActivities() {
     });
   }
 
+  buildContentRedirects('activitat');
   writeHTML('activitat/index.html', RedirectPage({
     title: 'Activitat | Robòtica²⁰⁰',
     activeNav: 'pensament',
@@ -152,7 +177,7 @@ function buildTutorials() {
   cleanSubdirectories('tutorial');
   const dir = path.join(ROOT_DIR, '_content/tutorials');
   const files = fs.readdirSync(dir)
-    .filter(f => f.startsWith('tutorial-') && f.endsWith('.md'))
+    .filter(f => /^(ce|cr|cs|mb|sp|tb)-.+\.md$/.test(f))
     .sort();
   const robotDisplay = {
     ce: ['coding-express', 'Coding Express'],
@@ -170,7 +195,7 @@ function buildTutorials() {
     const data = rendered.data;
     if (String(data.active ?? 'true').toLowerCase() !== 'true') continue;
 
-    const slug = file.replace(/^tutorial-/, '').replace(/\.md$/, '');
+    const slug = file.replace(/\.md$/, '');
     const prefix = slug.split('-')[0];
     const [defRobot, defLabel] = robotDisplay[prefix] || ['altres', 'Robot'];
     const robot = String(data.robot || defRobot).toLowerCase();
@@ -223,6 +248,7 @@ function buildTutorials() {
     });
   }
 
+  buildContentRedirects('tutorial');
   writeHTML('tutorial/index.html', RedirectPage({
     title: 'Tutorial | Robòtica²⁰⁰',
     activeNav: 'robots',
@@ -234,7 +260,7 @@ function buildTutorials() {
   return items.map(i => i.record);
 }
 
-function buildRobots(tutorials) {
+function buildRobots(tutorials, activitats) {
   cleanSubdirectories('robot');
   const robotMeta = [
     {
@@ -328,6 +354,7 @@ function buildRobots(tutorials) {
       robotHighlightTitle: rendered.robotHighlightTitle,
       robotHighlightBody: rendered.robotHighlightBody,
       tutorialItems: robotTutorials,
+      activityItems: activitats.filter(item => item.robot === slug),
       resources: data.official_resources || [],
       techInfo: data.tech_info || '',
       statusNote: data.status_note || '',
@@ -586,7 +613,7 @@ async function build({ pdf = false } = {}) {
   const blocks = buildAllBlocks(path.join(DIST_DIR, '_assets/blocks'));
   const activitats = buildActivities();
   const tutorials = buildTutorials();
-  const robots = buildRobots(tutorials);
+  const robots = buildRobots(tutorials, activitats);
   const guidesCount = buildGuides();
   const situacions = buildSituations();
   const printables = includePDFs ? buildPrintables() : [];
@@ -619,7 +646,9 @@ async function build({ pdf = false } = {}) {
   const subjectOptions = Array.from(new Map(situacions.map(item => [item.materia, item.materiaLabel])).entries());
 
   writeHTML('index.html', HomePage());
-  writeHTML('pensament-computacional/index.html', ActivitiesCatalogPage({ activitats }));
+  writeHTML('pensament-computacional/index.html', ActivitiesCatalogPage({
+    activitats: activitats.filter(item => item.slug.startsWith('pc-'))
+  }));
   writeHTML('robotica-educativa/index.html', RobotsCatalogPage({ robots }));
   writeHTML('situacions-aprenentatge/index.html', SituationsCatalogPage({
     situacions,
@@ -628,6 +657,15 @@ async function build({ pdf = false } = {}) {
     topicOptions,
     subjectOptions
   }));
+
+  const simHTML = SimPage({ root: '../' });
+  writeHTML('sim/index.html', simHTML);
+  const rootSimFile = path.join(ROOT_DIR, 'sim/index.html');
+  fs.mkdirSync(path.dirname(rootSimFile), { recursive: true });
+  const existingSimHTML = fs.existsSync(rootSimFile) ? fs.readFileSync(rootSimFile, 'utf8') : null;
+  if (existingSimHTML !== simHTML) {
+    fs.writeFileSync(rootSimFile, simHTML, 'utf8');
+  }
 
   console.log('✓ Build estàtic completat amb èxit:');
   console.log(`  - ${activitats.length} activitats (/activitat/<slug>/index.html)`);

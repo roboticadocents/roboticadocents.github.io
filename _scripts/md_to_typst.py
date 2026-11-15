@@ -120,6 +120,8 @@ def _stash(items: list[str], value: str) -> str:
 
 
 def markdown_to_typst(source: str, md_path: Path, typ_dir: Path) -> str:
+    # Dades internes de les fitxes: mai formen part del document imprimible.
+    source = re.sub(r"(?m)^<!-- (?:Inici|Codi|Objectiu|Resposta de control|Proposta): .+ -->[ \t]*$", "", source)
     source_lines = source.replace("\r\n", "\n").split("\n")
     tables: list[list[list[str]]] = []
     lines: list[str] = []
@@ -291,10 +293,6 @@ def document_typst(title: str, description: str, body: str, eyebrow: str = "", i
 
 def slug_for(category: str, filename: str) -> str:
     stem = Path(filename).stem
-    if category == "activitats":
-        return re.sub(r"^activitat-", "", stem)
-    if category == "tutorials":
-        return re.sub(r"^tutorial-", "", stem)
     if category == "guies":
         return re.sub(r"^guia-", "", stem)
     if category == "robots":
@@ -387,12 +385,15 @@ def collect() -> list[dict[str, str]]:
             slug = slug_for(folder, md_path.name)
             title = meta.get("title", slug).strip()
             robot_label = meta.get("robot_label") or meta.get("robot", "").replace("-", " ").title()
+            activity_robot = {"tb": "Tale-Bot", "cs": "Coding Set"}.get(slug.split("-")[0], "") if folder == "activitats" else ""
+            if activity_robot:
+                robot_label = activity_robot
             cycle_label = meta.get("cycle_label", "")
             metadata = [value for value in (robot_label, cycle_label, meta.get("level", ""), meta.get("duration", "")) if value]
             docs.append({
                 "category": category,
                 "categoryLabel": label,
-                "webGroup": WEB_GROUPS[folder],
+                "webGroup": "Robòtica educativa" if activity_robot else WEB_GROUPS[folder],
                 "slug": slug,
                 "title": title,
                 "description": meta.get("description", "").strip(),

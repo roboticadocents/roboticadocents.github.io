@@ -55,8 +55,8 @@ El contingut editorial és Markdown; el build genera les pàgines HTML i els cat
 La publicació és estàtica: GitHub Actions construeix `dist/` en cada push i GitHub Pages el serveix. Per fer-ho localment, executa `node _scripts/build.js`; per veure el resultat, serveix `dist/` per HTTP, per exemple amb `python3 -m http.server --directory dist`. La generació de PDF requereix Python 3, Typst i Ghostscript.
 
 Consulta les plantilles base per mantindre la mateixa estructura editorial i visual en totes les fitxes:
-- Activitats de pensament computacional: [`activitats/TEMPLATE-ACTIVITAT.md`](activitats/TEMPLATE-ACTIVITAT.md) (`_content/activitats/activitat-[slug].md`).
-- Tutorials de robòtica educativa: [`tutorials/TEMPLATE-TUTORIAL.md`](tutorials/TEMPLATE-TUTORIAL.md) (`_content/tutorials/tutorial-[prefix]-[slug].md`).
+- Activitats: [`_content/activitats/TEMPLATE-ACTIVITAT.md`](_content/activitats/TEMPLATE-ACTIVITAT.md). Fitxers `pc-[slug].md` per a pensament computacional, `tb-[slug].md` per a Tale-Bot i `cs-[slug].md` per a Coding Set, tots dins d’`_content/activitats/`.
+- Tutorials de robòtica educativa: [`_content/tutorials/TEMPLATE-TUTORIAL.md`](_content/tutorials/TEMPLATE-TUTORIAL.md) (`_content/tutorials/[prefix]-[slug].md`). El nom ha de descriure l’operació real del tutorial.
 - Situacions d'aprenentatge: [`situacions/TEMPLATE-SITUACIO.md`](situacions/TEMPLATE-SITUACIO.md) (`_content/situacions/[slug].md`).
 
 ## Versions imprimibles

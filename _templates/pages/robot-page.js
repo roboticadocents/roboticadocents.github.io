@@ -4,6 +4,7 @@ const { escapeHTML, escapeAttr, cleanRoot } = require('../layout/utils');
 const { Document } = require('../layout/document');
 const { SectionHero } = require('../components/section-hero');
 const { TutorialCard } = require('../components/tutorial-card');
+const { ActivityCard } = require('../components/activity-card');
 const MarkdownIt = require('../../_scripts/vendor/markdown-it.min.js');
 const infoMarkdown = new MarkdownIt({ html: false });
 
@@ -16,6 +17,7 @@ function RobotPage({
   robotHighlightTitle = '',
   robotHighlightBody = '',
   tutorialItems = [],
+  activityItems = [],
   resources = [],
   techInfo = '',
   specs = [],
@@ -25,6 +27,18 @@ function RobotPage({
   printHref = ''
 } = {}) {
   const r = cleanRoot(root);
+  const activitiesHTML = ['tale-bot', 'coding-set'].includes(robotSlug) ? `
+    <section id="activitats" data-robot-activities aria-labelledby="activities-heading">
+      <header class="robot-tutorials-heading">
+        <div>
+          <h2 id="activities-heading">Activitats</h2>
+          <p>Propostes per treballar a l’aula amb ${escapeHTML(title)}.</p>
+        </div>
+      </header>
+      ${activityItems.length ? `<div class="clean-grid" data-activity-grid>
+        ${activityItems.map(item => ActivityCard({ item, root: r })).join('\n        ')}
+      </div>` : '<p>Encara no hi ha activitats publicades per a aquest robot.</p>'}
+    </section>` : '';
 
   const highlightHTML = (robotHighlightTitle || robotHighlightBody) ? `
       <aside class="robot-highlight-card robot-highlight-${escapeAttr(robotSlug)}" data-robot="${escapeAttr(robotSlug)}">
@@ -84,6 +98,7 @@ function RobotPage({
     <div class="robot-overview-grid">
       <div class="robot-overview-lead">
         <p>${robotLead}</p>
+        ${['tale-bot', 'coding-set'].includes(robotSlug) ? `<p class="print-version-link"><a class="btn-primary" href="${r}sim/index.html?robot=${escapeAttr(robotSlug)}">Prova el simulador interactiu de ${escapeHTML(title)}</a></p>` : ''}
         ${printHref ? `<p class="print-version-link"><a href="${escapeAttr(printHref)}" download>Descarrega la fitxa imprimible (PDF)</a></p>` : ''}
       </div>${highlightHTML}
     </div>
@@ -99,7 +114,7 @@ function RobotPage({
     </div>
     <div class="clean-grid tutorial-grid" data-tutorial-grid>
       ${tutorialItems.map(item => TutorialCard({ item, root: r })).join('\n      ')}
-    </div>${resourcesHTML}
+    </div>${activitiesHTML}${resourcesHTML}
   </section>`
   });
 }

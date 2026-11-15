@@ -6,7 +6,7 @@ const renderer = require('../lib/markdown.js');
 const root = path.resolve(__dirname, '../..');
 const tutorialsDir = path.join(root, '_content', 'tutorials');
 const tutorials = fs.readdirSync(tutorialsDir)
-  .filter(name => name.startsWith('tutorial-') && name.endsWith('.md'))
+  .filter(name => /^(ce|cr|cs|mb|sp|tb)-.+\.md$/.test(name))
   .sort();
 
 const commonHeadings = [
@@ -184,45 +184,45 @@ for (const name of tutorials) {
   assert.match(source, /https:\/\//, `${name}: inclou una font externa consultable`);
 }
 
-const voiceTutorial = fs.readFileSync(path.join(tutorialsDir, 'tutorial-tb-reconeixement-veu.md'), 'utf8');
+const voiceTutorial = fs.readFileSync(path.join(tutorialsDir, 'tb-gravacio-reproduccio-veu.md'), 'utf8');
 assert.match(voiceTutorial, /^title: Gravació i reproducció de veu$/m, 'Tale-Bot separa la gravació d’àudio del reconeixement de parla');
 assert.match(voiceTutorial, /No reconeix ni interpreta la parla com una ordre/, 'la fitxa no atribueix reconeixement de parla al Tale-Bot');
-const codeyVoice = fs.readFileSync(path.join(tutorialsDir, 'tutorial-cr-veu-ia.md'), 'utf8');
+const codeyVoice = fs.readFileSync(path.join(tutorialsDir, 'cr-veu-ia.md'), 'utf8');
 assert.match(codeyVoice, /no (?:inclou|incorpora) un mòdul que reconega paraules/i, 'Codey Rocky separa el sensor de so del reconeixement de parla');
 assert.match(codeyVoice, /simulació|simule/i, 'la guia de veu ofereix una alternativa sense serveis externs');
 assert.match(codeyVoice, /Neuron compatible/i, 'la guia només atribueix reconeixement de parla a un mòdul complementari');
 assert.doesNotMatch(codeyVoice, /controlar el moviment del robot mitjançant ordres de veu en català/i, 'la guia no promet control de veu nadiu');
 
-const codingSetRoute = fs.readFileSync(path.join(tutorialsDir, 'tutorial-cs-obstacles-bandera.md'), 'utf8');
+const codingSetRoute = fs.readFileSync(path.join(tutorialsDir, 'cs-obstacles-bandera.md'), 'utf8');
 assert.match(codingSetRoute, /Obstacle Add-on|Sensor Add-on/, 'la guia diferencia els obstacles físics del complement de sensors');
 assert.match(codingSetRoute, /MatataBot base no detecta ni esquiva obstacles automàticament/, 'la guia no atribueix detecció al Coding Set base');
 assert.match(codingSetRoute, /bandera com a destinació/i, 'la guia treballa la bandera del conjunt base com a destinació');
-const codingSetNumbers = fs.readFileSync(path.join(tutorialsDir, 'tutorial-cs-motors-sensors.md'), 'utf8');
+const codingSetNumbers = fs.readFileSync(path.join(tutorialsDir, 'cs-blocs-numerics-moviment.md'), 'utf8');
 assert.match(codingSetNumbers, /no s’apliquen als girs esquerre\/dret/i, 'Coding Set explica que els nombres no es combinen amb girs');
 assert.match(codingSetNumbers, /blocs numèrics no s’apliquen als girs/i, 'la seqüència guiada prova el límit dels blocs numèrics');
 assert.doesNotMatch(codingSetNumbers, /blocs de gir angular \(90º, 45º, 30º\)/i, 'Coding Set no atribueix girs angulars numèrics al kit base');
 
-const taleBotClear = fs.readFileSync(path.join(tutorialsDir, 'tutorial-tb-esborrat-depuracio.md'), 'utf8');
+const taleBotClear = fs.readFileSync(path.join(tutorialsDir, 'tb-esborrat-depuracio.md'), 'utf8');
 assert.match(taleBotClear, /menys d’un segon elimina l’última ordre/i, 'Tale-Bot documenta esborrat curt');
 assert.match(taleBotClear, /més d’un segon esborra totes les ordres/i, 'Tale-Bot documenta esborrat llarg');
-const taleBotRepeat = fs.readFileSync(path.join(tutorialsDir, 'tutorial-tb-repeticio-mapes-dansa.md'), 'utf8');
+const taleBotRepeat = fs.readFileSync(path.join(tutorialsDir, 'tb-repeticio-mapes-dansa.md'), 'utf8');
 assert.match(taleBotRepeat, /no permet seleccionar només un fragment/i, 'Tale-Bot documenta el límit de la repetició');
-const spikePython = fs.readFileSync(path.join(tutorialsDir, 'tutorial-sp-python-motor.md'), 'utf8');
+const spikePython = fs.readFileSync(path.join(tutorialsDir, 'sp-python-motor.md'), 'utf8');
 assert.match(spikePython, /motor\.run_for_degrees\(port\.A, 360, 400\)/, 'SPIKE Prime inclou una prova executable en Python');
 assert.match(spikePython, /MicroPython/, 'SPIKE Prime diferencia l’editor de MicroPython de Python complet');
-const spikeIntro = fs.readFileSync(path.join(tutorialsDir, 'tutorial-sp-primeres-passes.md'), 'utf8');
+const spikeIntro = fs.readFileSync(path.join(tutorialsDir, 'sp-primeres-passes.md'), 'utf8');
 assert.doesNotMatch(spikeIntro, /Hub SPIKE Prime o Essential/, 'la guia SPIKE Prime no confon els dos hubs');
-const microbitPython = fs.readFileSync(path.join(tutorialsDir, 'tutorial-mb-python-microbit.md'), 'utf8');
+const microbitPython = fs.readFileSync(path.join(tutorialsDir, 'mb-micropython-simulador.md'), 'utf8');
 assert.match(microbitPython, /from microbit import \*/, 'micro:bit inclou sintaxi MicroPython executable');
 assert.match(microbitPython, /MakeCode Python.*MicroPython|MicroPython.*MakeCode Python/s, 'micro:bit diferencia els dos entorns Python');
-const microbitDataLog = fs.readFileSync(path.join(tutorialsDir, 'tutorial-mb-registre-dades.md'), 'utf8');
+const microbitDataLog = fs.readFileSync(path.join(tutorialsDir, 'mb-registre-dades.md'), 'utf8');
 assert.match(microbitDataLog, /micro:bit V2/i, 'el registre persistent s’identifica com a funció de V2');
 assert.match(microbitDataLog, /no.*V1|V1.*no/i, 'la guia no atribueix el registre persistent a V1');
 assert.match(microbitDataLog, /esborrar|sobreescriure/i, 'la guia explica el risc d’esborrar o reemplaçar dades');
-const codeyPython = fs.readFileSync(path.join(tutorialsDir, 'tutorial-cr-python-upload.md'), 'utf8');
+const codeyPython = fs.readFileSync(path.join(tutorialsDir, 'cr-python-upload.md'), 'utf8');
 assert.match(codeyPython, /mode Upload/, 'Codey Rocky practica Python en el mode Upload oficial');
 assert.match(codeyPython, /Live.*Upload|Upload.*Live/s, 'Codey Rocky diferencia Live i Upload');
-const codeyExpressions = fs.readFileSync(path.join(tutorialsDir, 'tutorial-cr-expressions-so-bateria.md'), 'utf8');
+const codeyExpressions = fs.readFileSync(path.join(tutorialsDir, 'cr-expressions-so-bateria.md'), 'utf8');
 for (const capability of [/expressió pròpia/i, /botó A/i, /indicador RGB/i, /to|so/i, /dansa/i, /bateria/i,
   /llum ambiental alta/i, /sensor de so supera/i]) {
   assert.match(codeyExpressions, capability, `Codey Rocky inclou una pràctica de ${capability}`);
@@ -231,6 +231,6 @@ assert.match(codeyExpressions, /^(?:### )\d+\. /m, 'la guia de Codey Rocky conse
 
 console.log(`Format comú correcte: ${tutorials.length} tutorials, ${commonHeadings.length} apartats en el mateix ordre.`);
 
-const tutorialWithHeading = renderer.parse('## Pas a pas\n### 1. Prepareu\nText inicial.\n#### Comprovació\nText de comprovació.', 'https://example.test/_content/tutorials/tutorial-prova.md');
+const tutorialWithHeading = renderer.parse('## Pas a pas\n### 1. Prepareu\nText inicial.\n#### Comprovació\nText de comprovació.', 'https://example.test/_content/tutorials/tb-prova.md');
 assert.doesNotMatch(tutorialWithHeading.html, /learning-phase|Desenvolupament del pas/, 'els subtítols explícits tampoc creen fases en tutorials');
 assert.match(tutorialWithHeading.html, /<h4>Comprovació<\/h4>\s*<p>Text de comprovació\.<\/p>/, 'es conserva el subtítol i el seu contingut directament dins del pas');

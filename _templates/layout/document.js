@@ -10,6 +10,7 @@ function Document({
   activeNav = '',
   root = '',
   heroLayout = false,
+  extraHead = '',
   body = ''
 } = {}) {
   const r = cleanRoot(root);
@@ -27,7 +28,7 @@ function Document({
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${r}_css/styles.css?v=10">
   <link rel="icon" type="image/svg+xml" href="${r}_assets/icons/logo.svg">
-  <script defer src="${r}_js/ui.js?v=5"></script>
+  <script defer src="${r}_js/ui.js?v=6"></script>${extraHead ? `\n${extraHead}` : ''}
 </head>
 <body>${SiteHeader({ activeNav, root: r })}
   <main id="page-content" class="container page-content${heroLayout ? ' page-content-hero' : ''}">

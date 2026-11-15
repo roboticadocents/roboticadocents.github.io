@@ -72,7 +72,9 @@ function splitFrontMatter(source) {
 function renderMarkdown(source, sourceURL) {
   const { data, body } = splitFrontMatter(source);
   // Fase 1: Traducció de Markdown (+ HTML natiu) a HTML estàndard
-  const standardHTML = md.render(body);
+  // Les dades de generació de les fitxes no són contingut visible.
+  const publicBody = body.replace(/^<!-- (?:Inici|Codi|Objectiu|Resposta de control|Proposta): .+ -->[ \t]*$/gm, '');
+  const standardHTML = md.render(publicBody);
   // Fase 2: Transformació semàntica de l'arbre HTML
   return transformSemanticHTML(standardHTML, { data, sourceURL });
 }

@@ -68,7 +68,7 @@ En una micro:bit V2, creeu un projecte separat. En **Entrada**, afegiu l’esdev
 
 Si teniu una tauleta compatible amb l’app oficial de micro:bit, seguiu la [guia de l’app](https://microbit.org/get-started/user-guide/mobile/) per emparellar-la i enviar un programa a la placa per Bluetooth. Observeu si la placa executa el programa després de la transferència. Si no teniu l’app, feu la prova per cable i anoteu que no heu comprovat Bluetooth.
 
-Compareu-ho amb la [guia de ràdio](../../tutorial/mb-radio-mesh/index.html), que envia números entre dues plaques. Per intercanviar dades amb un dispositiu Bluetooth des d’un programa cal una extensió i una aplicació compatibles; afegir l’extensió Bluetooth elimina els blocs de ràdio del mateix projecte. Guardeu cada prova en un projecte separat.
+Compareu-ho amb la [guia de ràdio](../../tutorial/mb-enviar-numero-radio/index.html), que envia números entre dues plaques. Per intercanviar dades amb un dispositiu Bluetooth des d’un programa cal una extensió i una aplicació compatibles; afegir l’extensió Bluetooth elimina els blocs de ràdio del mateix projecte. Guardeu cada prova en un projecte separat.
 
 ## 🧪 Comprovació i resolució de problemes
 

@@ -159,6 +159,7 @@ function setupWatchers() {
     if (relPath.startsWith('dist' + path.sep)) return;
     if (relPath.startsWith('_cache' + path.sep)) return;
     if (isBuilding && relPath.startsWith(path.join('_assets', 'blocks') + path.sep)) return;
+    if (isBuilding && relPath === path.join('sim', 'index.html')) return;
 
     changedFiles.add(relPath);
     if (
@@ -195,7 +196,7 @@ function setupWatchers() {
     }, 80);
   }
 
-  for (const folder of ['_content', '_templates', '_scripts', '_css', '_js', '_assets', 'test-blocks']) {
+  for (const folder of ['_content', '_templates', '_scripts', '_css', '_js', '_assets', 'sim', 'test-blocks']) {
     watchTree(path.join(ROOT_DIR, folder), triggerChange);
   }
 }

@@ -1,0 +1,33 @@
+{
+  "activitat": {
+    "bucles-coreografia": "pc-bucles-coreografia",
+    "condicionals-moviment": "pc-condicionals-moviment",
+    "correu-pixels": "pc-correu-pixels",
+    "criptografia-cesar": "pc-criptografia-cesar",
+    "dades-classificacio": "pc-dades-classificacio",
+    "descomposicio-receptes": "pc-descomposicio-receptes",
+    "fabrica-monstres": "pc-fabrica-monstres",
+    "laberint-debugging": "pc-laberint-debugging",
+    "maleta-personatges": "pc-maleta-personatges",
+    "patrons-simetries": "pc-patrons-simetries",
+    "pixels-binaris": "pc-pixels-binaris",
+    "robot-huma": "pc-robot-huma",
+    "xarxa-missatgers": "pc-xarxa-missatgers",
+    "xarxa-ordenacio": "pc-xarxa-ordenacio"
+  },
+  "tutorial": {
+    "ce-motors-sensors": "ce-maons-accio-sons-llums-aturades",
+    "cr-giroscopi-ir-control": "cr-rodeta-inclinacio-missatges-infrarojos",
+    "cr-motors-sensors": "cr-obstacles-color-seguiment-linia",
+    "cs-motors-sensors": "cs-blocs-numerics-moviment",
+    "mb-brujola-temperatura-bluetooth": "mb-bruixola-temperatura-tacte-bluetooth",
+    "mb-motors-sensors": "mb-sensor-humitat",
+    "mb-python-microbit": "mb-micropython-simulador",
+    "mb-radio-mesh": "mb-enviar-numero-radio",
+    "sp-brac-sensor-forca": "sp-sensor-forca-aturar-motor",
+    "sp-distancia": "sp-gir-motor",
+    "sp-motors-sensors": "sp-parada-sensor-color",
+    "tb-motors-sensors": "tb-dibuix-transport-accessoris",
+    "tb-reconeixement-veu": "tb-gravacio-reproduccio-veu"
+  }
+}

@@ -503,8 +503,8 @@ function renderSemanticBlocks(nodes, state = { introPending: false }) {
  */
 function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
   const isSituation = /(?:^|\/)situacions\/[^/]+\.md(?:[?#]|$)/.test(sourceURL);
-  const isTutorial = /(?:^|\/)tutorials\/tutorial-[^/]+\.md(?:[?#]|$)/.test(sourceURL);
-  const isActivity = /(?:^|\/)activitats\/activitat-[^/]+\.md(?:[?#]|$)/.test(sourceURL);
+  const isTutorial = /(?:^|\/)tutorials\/[^/]+\.md(?:[?#]|$)/.test(sourceURL);
+  const isActivity = /(?:^|\/)activitats\/[^/]+\.md(?:[?#]|$)/.test(sourceURL);
   const root = parseHTML(rawHTML);
   sanitizeAndRewriteDOM(root, sourceURL);
 

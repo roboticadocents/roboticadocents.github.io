@@ -1,6 +1,6 @@
 ---
 active: false
-title: "Títol clar de l'activitat desendollada"
+title: "Títol clar de l'activitat"
 description: "Resum breu en una frase del repte i del concepte de pensament computacional que es treballa."
 topic: "Algorismes"
 image: "_assets/activitats/portades/[slug].webp"
@@ -14,7 +14,7 @@ order: 11
 
 ## 🎯 Què aprendrem?
 
-Explica en un paràgraf breu quin concepte de pensament computacional (algorismes, bucles, condicionals, patrons, descomposició, depuració o dades) treballa l'alumnat i com ho comprovarà sense pantalles.
+Explica en un paràgraf breu quin concepte de pensament computacional (algorismes, bucles, condicionals, patrons, descomposició, depuració o dades) treballa l'alumnat i com ho comprovarà amb materials manipulatius o amb el robot corresponent.
 
 ## 🧰 Materials i preparació
 
