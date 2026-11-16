@@ -3229,7 +3229,7 @@ robot-profile .robot-detail-section,
 .catalog-supporting-link a:hover { background: #edf6f4; }
 .catalog-supporting-link a:focus-visible { outline: 3px solid #e0a92f; outline-offset: 3px; }
 .print-version-link { margin: 1rem 0 1.5rem; }
-.print-version-link a, .site-footer-print a { display: inline-flex; align-items: center; gap: .45rem; color: #1556bc; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.print-version-link a, .site-footer-links a { display: inline-flex; align-items: center; gap: .45rem; color: #1556bc; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: .2em; }
 .print-version-link a::before { content: "▤"; font-size: 1.1em; }
 .printables-page { padding: clamp(1.25rem, 4vw, 3rem); }
 .printables-all { margin: 1.25rem 0 2rem; }
@@ -3237,8 +3237,27 @@ robot-profile .robot-detail-section,
 .printable-group h2 { color: #12305a; font-family: var(--font-heading); }
 .printable-group ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid #dce5ef; } .printable-group li { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .8rem .25rem; border-bottom: 1px solid #dce5ef; }
 .printable-group li a { flex: none; color: #1556bc; font-weight: 700; }
-.site-footer-print { margin: .7rem 0; }
-.site-footer-print a { color: #1556bc; }
+.robot-simulator-link { margin: 1rem 0 1.5rem; }
+.robot-simulator-link .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+}
+.robot-simulator-link .btn-primary:focus-visible { outline: 3px solid #e0a92f; outline-offset: 3px; }
+.site-footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: .75rem 2rem;
+  margin: .7rem 0;
+}
+.site-footer-links a { justify-content: center; }
+.site-footer-links a:focus-visible { outline: 3px solid #e0a92f; outline-offset: 3px; }
 @media (max-width: 620px) {
 .printable-group li { align-items: flex-start; flex-direction: column; gap: .35rem; } }
 .info-page { max-width: 960px; margin-inline: auto; }

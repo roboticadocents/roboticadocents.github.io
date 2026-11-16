@@ -21,8 +21,8 @@ Llegiu les ordres d’esquerra a dreta i marqueu cada canvi de posició o orient
 ## 🧰 Materials i preparació
 
 - [Fitxa de l’alumnat: Quin codi posaré? (PDF, 1 pàgina A4)](_assets/activitats/kits/tb-escriu-el-codi.pdf).
-- [Les quatre fitxes de Tale-Bot (PDF, 4 pàgines A4)](_assets/activitats/kits/tb-fitxes-paper.pdf).
-- [Solucionari del professorat de Tale-Bot (PDF, 4 pàgines A4)](_assets/activitats/kits/tb-solucions-paper.pdf).
+- [Les huit fitxes de Tale-Bot (PDF, 8 pàgines A4)](_assets/activitats/kits/tb-fitxes-paper.pdf).
+- [Solucionari del professorat de Tale-Bot (PDF, 8 pàgines A4)](_assets/activitats/kits/tb-solucions-paper.pdf).
 - Una còpia de la fitxa per alumne, llapis i goma. Imprimiu en A4 vertical, al 100%, en blanc i negre. No repartiu el solucionari.
 - La llegenda i totes les dades necessàries apareixen en cada full. Dibuixeu els símbols en les caselles de resposta i escriviu només les explicacions; traceu els moviments en la quadrícula.
 

@@ -52,8 +52,9 @@ Les portades generades i els prompts es documenten a
 
 ## Fitxes de robots per a resoldre en paper
 
-Les quatre activitats `tb-` i les quatre `cs-` treballen predicció, escriptura,
-depuració i refactorització de codi. Cada fitxa és un A4 amb tres exercicis
+Les huit activitats `tb-` i les quatre `cs-` treballen predicció, escriptura,
+depuració i refactorització de codi. Tale-Bot incorpora també dibuix continu,
+descomposició, abstracció i espenta de capses amb repetició de tota la base. Cada fitxa és un A4 amb tres exercicis
 individuals, sense context narratiu i sense necessitat de robot.
 
 Els enunciats i les solucions viuen en els tres passos de cada Markdown.
@@ -66,7 +67,7 @@ Els nombres van davall de les peces; l’alumnat dibuixa els símbols en caselle
 grans. La mascota de contorn és decorativa i es pot colorejar.
 Un guió en Codi o Objectiu indica que no hi ha un valor donat.
 
-Per regenerar els huit PDF individuals, els dos reculls de l’alumnat i els dos
+Per regenerar els dotze PDF individuals, els dos reculls de l’alumnat i els dos
 solucionaris i els esquemes SVG per al web, cal Python 3 i pycairo (`python3-cairo`):
 
 ```sh
@@ -79,3 +80,7 @@ en qualsevol build, també sense `--pdf`. Són diferents de les versions imprimi
 generals de les guies docents: els fulls de l’alumnat no inclouen les respostes.
 El generador comprova els límits de la quadrícula i l’equivalència de les solucions
 amb l’objectiu; en refactorització exigeix la mateixa seqüència d’ordres.
+
+En Tale-Bot, els camps interns `Mode`, `Capses`, `Metes` i `Comparacio`
+permeten dibuixar els nous taulers. El simulador del generador comprova també
+les espentes, les col·lisions i les posicions finals de totes les capses.

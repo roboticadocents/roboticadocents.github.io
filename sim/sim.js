@@ -147,10 +147,10 @@
     activeCellIndex: 25, // B5 (row 4, col 1)
     startPose: { col: 1, row: 4, dir: 0 },
     pose: { col: 1, row: 4, dir: 0, visualAngle: 0 },
-    flag: { col: 4, row: 1 },
+    flags: [{ col: 4, row: 1 }],
     obstacles: [],
-    box: null,
-    initialBox: null,
+    boxes: [],
+    initialBoxes: [],
     oidCells: [],
     penEnabled: false,
     penColor: '#ea580c',
@@ -477,6 +477,19 @@
     return state.obstacles.some(o => o.col === col && o.row === row);
   }
 
+  function hasFlag(col, row) {
+    return state.flags.some(f => f.col === col && f.row === row);
+  }
+
+  function getBoxIndex(col, row) {
+    if (state.robot !== 'tale-bot') return -1;
+    return state.boxes.findIndex(b => b.col === col && b.row === row);
+  }
+
+  function hasBox(col, row) {
+    return getBoxIndex(col, row) !== -1;
+  }
+
   function getOidCell(col, row) {
     return state.oidCells.find(c => c.col === col && c.row === row) || null;
   }
@@ -488,9 +501,9 @@
         const idx = row * GRID_SIZE + col;
         const coord = cellName(col, row);
         const isStart = state.startPose.col === col && state.startPose.row === row;
-        const isFlag = state.flag && state.flag.col === col && state.flag.row === row;
+        const isFlag = hasFlag(col, row);
         const isObs = hasObstacle(col, row);
-        const isBox = state.robot === 'tale-bot' && state.box && state.box.col === col && state.box.row === row;
+        const isBox = hasBox(col, row);
         const oid = getOidCell(col, row);
 
         const btn = document.createElement('button');
@@ -506,12 +519,13 @@
         if (isStart) parts.push('Inici del robot');
         if (isFlag) parts.push('Bandera de destinació');
         if (isObs) parts.push('Obstacle físic');
-        if (isBox) parts.push('Objecte lleuger per transportar');
+        if (isBox) parts.push('Caixa per transportar');
         if (oid) parts.push(`Emoji: ${oid.icon}`);
         btn.setAttribute('aria-label', parts.join(', '));
 
         let itemEmoji = '';
         if (isObs) itemEmoji = '🚧';
+        else if (isBox && isFlag) itemEmoji = '📦🚩';
         else if (isBox) itemEmoji = '📦';
         else if (isFlag) itemEmoji = '🚩';
         else if (oid) itemEmoji = oid.icon;
@@ -592,11 +606,12 @@
       }
       resetRobotToStart(false);
     } else if (state.matTool === 'flag') {
-      if (state.flag && state.flag.col === col && state.flag.row === row) {
-        state.flag = null;
+      if (hasFlag(col, row)) {
+        state.flags = state.flags.filter(f => !(f.col === col && f.row === row));
       } else {
         state.obstacles = state.obstacles.filter(o => !(o.col === col && o.row === row));
-        state.flag = { col, row };
+        state.oidCells = state.oidCells.filter(c => !(c.col === col && c.row === row));
+        state.flags.push({ col, row });
       }
     } else if (state.matTool === 'obstacle') {
       if (state.startPose.col === col && state.startPose.row === row) {
@@ -606,18 +621,21 @@
       if (hasObstacle(col, row)) {
         state.obstacles = state.obstacles.filter(o => !(o.col === col && o.row === row));
       } else {
-        if (state.flag && state.flag.col === col && state.flag.row === row) state.flag = null;
-        if (state.box && state.box.col === col && state.box.row === row) state.box = null;
+        state.flags = state.flags.filter(f => !(f.col === col && f.row === row));
+        state.boxes = state.boxes.filter(b => !(b.col === col && b.row === row));
+        state.initialBoxes = state.initialBoxes.filter(b => !(b.col === col && b.row === row));
+        state.oidCells = state.oidCells.filter(c => !(c.col === col && c.row === row));
         state.obstacles.push({ col, row });
       }
     } else if (state.matTool === 'box') {
-      if (state.box && state.box.col === col && state.box.row === row) {
-        state.box = null;
-        state.initialBox = null;
+      if (state.boxes.some(b => b.col === col && b.row === row)) {
+        state.boxes = state.boxes.filter(b => !(b.col === col && b.row === row));
+        state.initialBoxes = state.boxes.map(b => ({ ...b }));
       } else {
         state.obstacles = state.obstacles.filter(o => !(o.col === col && o.row === row));
-        state.box = { col, row };
-        state.initialBox = { col, row };
+        state.oidCells = state.oidCells.filter(c => !(c.col === col && c.row === row));
+        state.boxes.push({ col, row });
+        state.initialBoxes = state.boxes.map(b => ({ ...b }));
         if (!state.tb.armsEnabled) {
           state.tb.armsEnabled = true;
           updateAccessoryButtons();
@@ -629,8 +647,9 @@
         state.oidCells = state.oidCells.filter(c => !(c.col === col && c.row === row));
       } else {
         state.obstacles = state.obstacles.filter(o => !(o.col === col && o.row === row));
-        if (state.box && state.box.col === col && state.box.row === row) state.box = null;
-        if (state.flag && state.flag.col === col && state.flag.row === row) state.flag = null;
+        state.boxes = state.boxes.filter(b => !(b.col === col && b.row === row));
+        state.initialBoxes = state.initialBoxes.filter(b => !(b.col === col && b.row === row));
+        state.flags = state.flags.filter(f => !(f.col === col && f.row === row));
         state.oidCells = state.oidCells.filter(c => !(c.col === col && c.row === row));
         state.oidCells.push({
           col,
@@ -651,9 +670,7 @@
     state.pose.row = state.startPose.row;
     state.pose.dir = state.startPose.dir;
     state.pose.visualAngle = DIRS[state.startPose.dir].angle;
-    if (state.initialBox) {
-      state.box = { col: state.initialBox.col, row: state.initialBox.row };
-    }
+    state.boxes = state.initialBoxes.map(b => ({ col: b.col, row: b.row }));
     if (clearStepCursor) {
       state.stepCursor = 0;
       state.hasStartedStepping = false;
@@ -1262,23 +1279,25 @@
         return false;
       }
 
-      // Si hi ha l'objecte lleuger 📦 a la casella següent (només Tale-Bot)
-      if (state.robot === 'tale-bot' && state.box && state.box.col === nextCol && state.box.row === nextRow) {
+      // Si hi ha una caixa 📦 a la casella següent (només Tale-Bot)
+      const boxIdx = getBoxIndex(nextCol, nextRow);
+      if (boxIdx !== -1) {
         if (state.tb.armsEnabled && sign === 1) {
           const boxNextCol = nextCol + d.dx;
           const boxNextRow = nextRow + d.dy;
           if (
             boxNextCol < 0 || boxNextCol >= GRID_SIZE ||
             boxNextRow < 0 || boxNextRow >= GRID_SIZE ||
-            hasObstacle(boxNextCol, boxNextRow)
+            hasObstacle(boxNextCol, boxNextRow) ||
+            hasBox(boxNextCol, boxNextRow)
           ) {
             robotActor.classList.add('is-bumped');
             playTone(180, 220, 'sawtooth', 0.09);
-            setStatus('L’objecte transportat 📦 no pot avançar més enllà d’aquesta casella.', 'warning');
+            setStatus('La caixa 📦 no pot avançar més enllà d’aquesta casella.', 'warning');
             setTimeout(() => robotActor.classList.remove('is-bumped'), 380);
             return false;
           }
-          state.box = { col: boxNextCol, row: boxNextRow };
+          state.boxes[boxIdx] = { col: boxNextCol, row: boxNextRow };
         } else {
           robotActor.classList.add('is-bumped');
           playTone(180, 220, 'sawtooth', 0.09);
@@ -1328,11 +1347,18 @@
   }
 
   function checkVictoryCondition() {
-    if (!state.flag) return;
-    const onFlag = state.pose.col === state.flag.col && state.pose.row === state.flag.row;
-    const boxOnFlag = state.box && state.box.col === state.flag.col && state.box.row === state.flag.row;
+    if (!state.flags.length) return;
 
-    if (onFlag || boxOnFlag) {
+    if (state.robot === 'tale-bot' && state.boxes.length > 0) {
+      const allBoxesOnFlags = state.boxes.every(b => hasFlag(b.col, b.row));
+      if (allBoxesOnFlags) {
+        playMelody([[523, 0, 110], [659, 120, 110], [784, 240, 110], [1046, 360, 220]]);
+        showBubble('🎉 Objectiu assolit! Caixes col·locades a les banderes!', 2800);
+      }
+      return;
+    }
+
+    if (hasFlag(state.pose.col, state.pose.row)) {
       playMelody([[523, 0, 110], [659, 120, 110], [784, 240, 110], [1046, 360, 220]]);
       showBubble('🎉 Objectiu assolit! Molt bona feina!', 2800);
     }
@@ -1499,8 +1525,8 @@
       btn.hidden = robotSlug !== 'tale-bot';
     });
     if (robotSlug !== 'tale-bot') {
-      state.box = null;
-      state.initialBox = null;
+      state.boxes = [];
+      state.initialBoxes = [];
       if (state.matTool === 'box') {
         setMatTool('robot');
       }
@@ -1588,10 +1614,10 @@
     if (state.isRunning) stopExecution();
     clearCanvas();
     state.obstacles = [];
-    state.box = null;
-    state.initialBox = null;
+    state.boxes = [];
+    state.initialBoxes = [];
     state.oidCells = [];
-    state.flag = null;
+    state.flags = [];
     resetRobotToStart(true);
     playTone(400, 80, 'triangle', 0.06);
   });

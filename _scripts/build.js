@@ -346,7 +346,6 @@ function buildRobots(tutorials, activitats) {
 
     writeHTML(`robot/${slug}/index.html`, RobotPage({
       robotSlug: slug,
-      printHref: includePDFs ? `../../imprimir/robots/${slug}.pdf` : '',
       title: nom,
       description: descripcio,
       root: '../../',

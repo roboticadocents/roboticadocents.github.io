@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate A4 pupil worksheets and separate keys from the eight robot Markdown activities.
+"""Generate A4 pupil worksheets and separate keys from the robot Markdown activities.
 Requires Python 3 and pycairo (python3-cairo). No robot, browser or network required.
 The exercise statements and answers live only in _content/activitats/*.md.
 """
@@ -13,6 +13,7 @@ OUT = ROOT / '_assets/activitats/kits'
 W, H = 595.2756, 841.8898
 INK, GREY, PALE = (0.06, 0.09, 0.13), (0.33, 0.36, 0.40), (0.95, 0.96, 0.97)
 KINDS = ['prediu-el-resultat', 'escriu-el-codi', 'depura-el-codi', 'refactoritza-el-codi']
+TB_EXTRA = ['quin-dibuix-fara', 'dibuixa-per-parts', 'des-de-quin-costat', 'aproxima-i-empeny']
 LABELS = {'tb': 'Tale-Bot', 'cs': 'Coding Set'}
 ctx = None
 mascot_surface = None
@@ -101,7 +102,7 @@ def simulate(start, code):
             dx, dy = [(0, 1), (1, 0), (0, -1), (-1, 0)][d]
             sign = 1 if action == 'A' else -1
             x, y = x + sign * dx, y + sign * dy
-        assert 0 <= x < 6 and 0 <= y < 6, (start, code, x, y)
+        assert 0 <= x < 8 and 0 <= y < 8, (start, code, x, y)
         states.append((x, y, d))
     return states
 
@@ -129,6 +130,8 @@ def load(prefix, kind, number):
             assert expand(fields['Codi']) == expand(solution), file
             if prefix == 'tb' and 'REP' in solution:
                 assert re.fullmatch(r'REP[2-4]\[[ARDE ]+\]', solution), file
+        if fields.get('Capses'):
+            simulate_objects(fields)
         exercises.append(fields)
     assert len(exercises) == 3, file
     return {'prefix': prefix, 'slug': f'{prefix}-{kind}', 'number': number, 'title': title, 'exercises': exercises}
@@ -163,8 +166,16 @@ def symbol(x,y,size,kind):
         for a,b in [(18,22),(15,31),(21,40),(29,47)]:
             ctx.arc(a,b,2,0,2*math.pi); ctx.fill()
     elif kind in ['loop','end','repeat']:
-        ctx.arc(32,27 if kind != 'repeat' else 30,13 if kind != 'repeat' else 16,math.radians(200),math.radians(510)); ctx.stroke()
-        ctx.move_to(18,21); ctx.line_to(17,33); ctx.line_to(28,29); ctx.stroke()
+        # Open circular arrow with the head exactly at the arc endpoint.
+        cy, radius = (27, 13) if kind != 'repeat' else (32, 18)
+        end = math.radians(315)
+        ctx.arc(32, cy, radius, math.radians(35), end); ctx.stroke()
+        px, py = 32 + radius * math.cos(end), cy + radius * math.sin(end)
+        tx, ty = -math.sin(end), math.cos(end)
+        ctx.move_to(px - tx*9 - ty*6, py - ty*9 + tx*6)
+        ctx.line_to(px, py)
+        ctx.line_to(px - tx*9 + ty*6, py - ty*9 - tx*6)
+        ctx.stroke()
         if kind!='repeat':
             ctx.set_font_size(10); ctx.select_font_face('DejaVu Sans',cairo.FONT_SLANT_NORMAL,cairo.FONT_WEIGHT_BOLD)
             label='inici' if kind=='loop' else 'fi'
@@ -264,9 +275,13 @@ def mascot(x,y,size):
 
 def header(doc,teacher):
     prefix,number=doc['prefix'],doc['number']
-    title=['Què farà el robot?','Dibuixa el codi!','Troba l’error!','Fes el codi més curt!'][number-1]
+    title=(['Què farà el robot?','Dibuixa el codi!','Troba l’error!','Fes el codi més curt!'][number-1] if number <= 4 else doc['title'])
     text(32,30,LABELS[prefix].upper()+'  ·  PROGRAMEM EN PAPER',9,True)
-    text(32,61,title,23,True)
+    title_size=min(23, 430 / max(1, len(title)) * 1.55)
+    font(title_size,True)
+    while ctx.text_extents(title).x_advance > 435:
+        title_size-=.5; font(title_size,True)
+    text(32,61,title,title_size,True)
     text(32,82,'Solucions per al professorat' if teacher else 'Nom: _______________________   Data: __________',10.5,teacher)
     mascot(477,15,82)
     outline(30,102,535,75,9)
@@ -282,12 +297,19 @@ def header(doc,teacher):
         tile(208,184,23,'loop',prefix,2); tile(241,184,23,'end',prefix)
         text(275,201,'Inici + final: repeteix les peces del mig.',9.2)
         text(275,219,'Fletxa plena: inici. Fletxa buida: final.',8.5)
-    elif number==4:
+    elif number in (4,6,8):
         tile(34,184,27,'repeat',prefix)
-        text(71,202,'Repetir: fes TOTES les tecles de nou.',10)
+        text(71,202,'Repetir tota la base: 3 vegades = 3 execucions.',9.5)
+    elif number==7:
+        text(34,202,'Capsa: quadrat amb creu. Destinació: cercle.',10)
     else:
         arrow(42,198,0,filled=True); arrow(70,198,0,size=8,filled=False)
         text(89,202,'Fletxa plena: inici. Fletxa buida: final.',10.3)
+
+    if number in (5,6):
+        text(32,225,'Retolador sempre baixat: avançar i retrocedir deixen traç.',9.5,True)
+    elif number in (7,8):
+        text(32,225,'Només empeny endavant. Un pas mou la capsa una casella. Cercle = meta.',9.2,True)
 
 
 def result_line(x,y,ex,teacher=False):
@@ -372,16 +394,121 @@ def refactor_exercise(doc,ex,index,teacher):
 
 
 
+def cells(value):
+    return {(ord(c[0])-65, int(c[1:])-1) for c in value.split()}
+
+
+def simulate_objects(ex):
+    states=simulate(ex['Inici'],ex['Resposta de control'])
+    boxes=cells(ex['Capses'])
+    for action,a,b in zip(expand(ex['Resposta de control']),states,states[1:]):
+        if a[:2]==b[:2]: continue
+        if b[:2] in boxes:
+            assert action=='A', ('No es pot arrossegar ni travessar una capsa', ex)
+            target=(2*b[0]-a[0],2*b[1]-a[1])
+            assert target not in boxes and all(0<=v<8 for v in target), ex
+            boxes.remove(b[:2]); boxes.add(target)
+    assert boxes==cells(ex['Metes']), (ex, boxes)
+    return states,boxes
+
+
+def extra_grid(x,y,ex,teacher=False,cell=17):
+    n=8 if ex.get('Capses') else 6
+    for k in range(n+1):
+        line(x+k*cell,y,x+k*cell,y+n*cell)
+        line(x,y+k*cell,x+n*cell,y+k*cell)
+    for k in range(n):
+        text(x+k*cell+cell*.3,y-6,chr(65+k),7)
+        text(x-12,y+(n-k-.35)*cell,str(k+1),7)
+    center=lambda st:(x+(st[0]+.5)*cell,y+(n-.5-st[1])*cell)
+    states=simulate(ex['Inici'],ex['Resposta de control'])
+    if ex.get('Capses'):
+        for pos in cells(ex['Metes']):
+            cx,cy=center(pos); ctx.set_source_rgb(*INK); ctx.set_line_width(1)
+            ctx.new_path(); ctx.arc(cx,cy,cell*.35,0,2*math.pi); ctx.stroke()
+        boxes=simulate_objects(ex)[1] if teacher else cells(ex['Capses'])
+        for pos in boxes:
+            cx,cy=center(pos); box(cx-cell*.3,cy-cell*.3,cell*.6,cell*.6,fill=(1,1,1))
+            line(cx-cell*.3,cy-cell*.3,cx+cell*.3,cy+cell*.3,grey=.15)
+            line(cx-cell*.3,cy+cell*.3,cx+cell*.3,cy-cell*.3,grey=.15)
+    elif teacher or ex['Mode']=='patro':
+        for a,b in zip(states,states[1:]):
+            if a[:2]!=b[:2]:
+                ctx.set_dash([] if teacher else [2,2])
+                line(*center(a),*center(b),grey=.1,width=1.5)
+                ctx.set_dash([])
+    if teacher or ex['Mode']!='costat':
+        arrow(*center(states[0]),states[0][2],size=cell*.25)
+    if teacher: arrow(*center(states[-1]),states[-1][2],size=cell*.4,filled=False)
+
+
+def compact_sequence(x,y,code,available=365,size=28):
+    pieces,repeat=tokens(code,'tb')
+    # Long sequences on two lines; the repeat applies to both rows together.
+    if len(pieces)>9:
+        split=7
+        for row,start in enumerate(range(0,len(pieces),split)):
+            for j,(kind,num) in enumerate(pieces[start:start+split]):
+                tile(x+j*(size+5),y+row*(size+5),size,kind,'tb',num)
+        return
+    sequence(x,y,code,'tb',size,5,available)
+
+
+def extra_exercise(doc,ex,index,teacher):
+    top=241+index*181
+    text(32,top,ex['heading'],11.2,True)
+    extra_grid(47,top+24,ex,teacher,cell=16.5 if ex.get('Capses') else 20)
+    right=202
+    paragraph(right,top+18,ex['Consigna'],358,9.7,12)
+    mode=ex['Mode']
+    if mode=='dibuix':
+        if ex.get('Comparacio'):
+            other=dict(ex, Inici=ex['Comparacio'])
+            extra_grid(right+12,top+63,other,teacher,cell=14)
+            compact_sequence(right+123,top+62,ex['Codi'],available=235,size=25)
+            paragraph(right+123,top+112,'Segon inici: D2, mirant a l’oest.',230,9,12)
+            paragraph(right+123,top+145,'Es conserva la forma.' if teacher else 'Què es conserva? ___________',230,9,12)
+        else:
+            compact_sequence(right,top+61,ex['Codi'])
+            paragraph(right,top+117,ex['Solució docent'] if teacher else 'El retolador no s’alça. Dibuixa també els trams que repassa.',358,9.3,12)
+    elif mode=='costat':
+        if index==2:
+            paragraph(right,top+65,'Dades: lloc de la capsa / meta / pas lliure / nom / dibuix de les cares.',355,9.5,12)
+        if teacher:
+            paragraph(right,top+103,ex['Solució docent'],358,9.2,12)
+        else:
+            text(right,top+111,'Posició: _____   Mira cap a: __________',9.5)
+            text(right,top+139,'Per què? ___________________________',9.5)
+    else:
+        repeated='REP' in ex['Resposta de control']
+        if teacher:
+            compact_sequence(right,top+62,ex['Resposta de control'])
+        else:
+            blanks(right,top+62,'tb',8,size=30)
+        if repeated:
+            tile(right,top+102,25,'repeat','tb')
+            repeat=tokens(ex['Resposta de control'],'tb')[1]
+            text(right+34,top+120,'Execucions totals: '+(str(repeat) if teacher else '_____'),10,True)
+        if mode=='patro':
+            paragraph(right,top+147,'Marca en el dibuix la part que es repeteix.' if not teacher else ex['Solució docent'],358,9,11)
+        elif index==0:
+            text(right,top+123,'Marca: aproximació | espenta.',9.5)
+            paragraph(right,top+143,'Aproximació: avançar i girar; espenta: dos avanços.' if teacher else 'Separa les parts en les tecles que has dibuixat.',358,9,11)
+        else:
+            paragraph(right,top+146,('Capses a les metes; robot '+('D1' if index==1 else 'G1')+', mirant al nord.') if teacher else 'Marca les capses i el robot al final. També canvia de columna en l’última execució.',358,9,11)
+
+
 def draw_page(doc,teacher=False):
     header(doc,teacher)
     for i,ex in enumerate(doc['exercises']):
-        if doc['number']==4: refactor_exercise(doc,ex,i,teacher)
+        if doc['number']>4: extra_exercise(doc,ex,i,teacher)
+        elif doc['number']==4: refactor_exercise(doc,ex,i,teacher)
         else: regular_exercise(doc,ex,i,teacher)
     line(32,793,563,793)
     text(32,811,'Ja ho he revisat!',9.5,True)
     outline(145,800,13,13,2)
     text(177,811,'Pots colorejar el robot quan acabes.  ·  A4 al 100%',9)
-    text(32,828,'Robòtica per a docents  ·  '+('Solucionari' if teacher else 'Llapis, goma i imaginació')+f'  ·  Fitxa {doc["number"]}/4',8)
+    text(32,828,'Robòtica per a docents  ·  '+('Solucionari' if teacher else 'Llapis, goma i imaginació')+f'  ·  Fitxa {doc["number"]}/{8 if doc["prefix"] == "tb" else 4}',8)
     ctx.show_page()
 
 
@@ -407,7 +534,14 @@ def diagrams(doc):
             ctx=cairo.Context(surface)
             sequence(10,10,ex[field],doc['prefix'],42,gap=7,available=width-20)
             surface.finish()
-        if doc['number']<4:
+        if doc['number']>4:
+            surface=cairo.SVGSurface(str(stem)+'-graella.svg',360 if ex.get('Comparacio') else 210,210)
+            ctx=cairo.Context(surface)
+            extra_grid(25,24,ex,False,cell=21)
+            if ex.get('Comparacio'):
+                other=dict(ex, Inici=ex['Comparacio']); extra_grid(205,24,other,False,cell=21)
+            surface.finish()
+        elif doc['number']<4:
             surface=cairo.SVGSurface(str(stem)+'-graella.svg',170,165)
             ctx=cairo.Context(surface)
             goal=doc['number'] in (2,3)
@@ -419,13 +553,14 @@ def diagrams(doc):
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     for prefix in LABELS:
-        docs=[load(prefix,kind,i) for i,kind in enumerate(KINDS,1)]
+        kinds=KINDS+(TB_EXTRA if prefix=='tb' else [])
+        docs=[load(prefix,kind,i) for i,kind in enumerate(kinds,1)]
         for doc in docs:
             pdf(OUT/f'{doc["slug"]}.pdf',[doc])
             diagrams(doc)
         pdf(OUT/f'{prefix}-fitxes-paper.pdf',docs)
         pdf(OUT/f'{prefix}-solucions-paper.pdf',docs,True)
-    print('12 PDF A4 amb pictogrames i esquemes web; 24 exercicis comprovats.')
+    print('16 PDF A4 amb pictogrames i esquemes web; 36 exercicis comprovats, incloses espentes i repeticions.')
 
 
 if __name__=='__main__':

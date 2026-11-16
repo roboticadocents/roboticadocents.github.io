@@ -39,7 +39,10 @@ function SiteFooter({ root = '' } = {}) {
           <span class="dash dash-blue"></span>
         </div>
         <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
-        <p class="site-footer-print"><a href="${root}imprimir/index.html">Materials imprimibles · PDF individual i recull complet</a></p>
+        <nav class="site-footer-links" aria-label="Recursos del web">
+          <a href="${root}imprimir/index.html">Materials imprimibles</a>
+          <a href="${root}sim/index.html">Simulador</a>
+        </nav>
         <div class="footer-robots" aria-hidden="true" data-footer-robots>
           <img class="footer-desks" src="${root}_assets/extra/pupitres.svg" alt="" width="831" height="68" loading="lazy" decoding="async">
           ${FOOTER_ROBOTS_HTML}

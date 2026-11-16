@@ -23,8 +23,7 @@ function RobotPage({
   specs = [],
   statusNote = '',
   statusSource = '',
-  statusSourceLabel = '',
-  printHref = ''
+  statusSourceLabel = ''
 } = {}) {
   const r = cleanRoot(root);
   const activitiesHTML = ['tale-bot', 'coding-set'].includes(robotSlug) ? `
@@ -98,8 +97,7 @@ function RobotPage({
     <div class="robot-overview-grid">
       <div class="robot-overview-lead">
         <p>${robotLead}</p>
-        ${['tale-bot', 'coding-set'].includes(robotSlug) ? `<p class="print-version-link"><a class="btn-primary" href="${r}sim/index.html?robot=${escapeAttr(robotSlug)}">Prova el simulador interactiu de ${escapeHTML(title)}</a></p>` : ''}
-        ${printHref ? `<p class="print-version-link"><a href="${escapeAttr(printHref)}" download>Descarrega la fitxa imprimible (PDF)</a></p>` : ''}
+        ${['tale-bot', 'coding-set'].includes(robotSlug) ? `<p class="robot-simulator-link"><a class="btn-primary" href="${r}sim/index.html?robot=${escapeAttr(robotSlug)}">Prova el simulador interactiu de ${escapeHTML(title)}</a></p>` : ''}
       </div>${highlightHTML}
     </div>
   </section>
