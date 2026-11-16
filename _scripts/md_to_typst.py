@@ -121,7 +121,7 @@ def _stash(items: list[str], value: str) -> str:
 
 def markdown_to_typst(source: str, md_path: Path, typ_dir: Path) -> str:
     # Dades internes de les fitxes: mai formen part del document imprimible.
-    source = re.sub(r"(?m)^<!-- (?:Inici|Codi|Objectiu|Resposta de control|Proposta|Mode|Capses|Metes|Comparacio): .+ -->[ \t]*$", "", source)
+    source = re.sub(r"(?m)^<!-- (?:Inici|Codi|Objectiu|Resposta de control|Proposta|Mode|Capses|Metes|Comparacio|Funcio|Principal): .+ -->[ \t]*$", "", source)
     source_lines = source.replace("\r\n", "\n").split("\n")
     tables: list[list[list[str]]] = []
     lines: list[str] = []

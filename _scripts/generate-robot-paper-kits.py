@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """Generate A4 pupil worksheets and separate keys from the robot Markdown activities.
-Requires Python 3 and pycairo (python3-cairo). No robot, browser or network required.
+Requires Python 3, pycairo, PyGObject and librsvg. No browser or network required.
 The exercise statements and answers live only in _content/activitats/*.md.
 """
 from pathlib import Path
 import re
 import math
 import cairo
+import gi
+gi.require_version("Rsvg", "2.0")
+from gi.repository import Rsvg
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / '_assets/activitats/kits'
@@ -14,6 +17,10 @@ W, H = 595.2756, 841.8898
 INK, GREY, PALE = (0.06, 0.09, 0.13), (0.33, 0.36, 0.40), (0.95, 0.96, 0.97)
 KINDS = ['prediu-el-resultat', 'escriu-el-codi', 'depura-el-codi', 'refactoritza-el-codi']
 TB_EXTRA = ['quin-dibuix-fara', 'dibuixa-per-parts', 'des-de-quin-costat', 'aproxima-i-empeny']
+CS_EXTRA = ['divideix-i-crea-funcions', 'que-pose-dins-del-bucle', 'una-funcio-diferents-llocs', 'combina-funcions-i-repeticions']
+ICONS = ROOT / '_assets/activitats/icones'
+ICON_NAMES = dict(A='endavant', R='enrere', D='gir-dreta', E='gir-esquerra', repeat='repetir', loop='bucle-inici', end='bucle-fi', define='defineix-funcio', F='crida-funcio')
+icon_handles = {}
 LABELS = {'tb': 'Tale-Bot', 'cs': 'Coding Set'}
 ctx = None
 mascot_surface = None
@@ -69,8 +76,12 @@ def box(x, y, w, h, fill=None):
     ctx.stroke()
 
 
-def expand(code):
+def expand(code, function=None):
     """Only the four motion commands, A/R numeric parameters and finite loops."""
+    if re.search(r'\bF\b', code):
+        if not function or function == '-' or re.search(r'\bF\b', function):
+            raise ValueError('La crida necessita una definició sense recursivitat')
+        code = re.sub(r'\bF\b', function, code)
     pattern = re.compile(r'REP([2-4])\[([^\[\]]+)\]')
     while 'REP' in code:
         changed = pattern.sub(lambda m: ' '.join([m[2]] * int(m[1])), code)
@@ -89,11 +100,11 @@ def expand(code):
     return actions
 
 
-def simulate(start, code):
+def simulate(start, code, function=None):
     cell, heading = start.split()
     x, y, d = ord(cell[0]) - 65, int(cell[1]) - 1, 'NESO'.index(heading)
     states = [(x, y, d)]
-    for action in expand(code):
+    for action in expand(code, function):
         if action == 'D':
             d = (d + 1) % 4
         elif action == 'E':
@@ -121,17 +132,21 @@ def load(prefix, kind, number):
         assert all(k in fields for k in required), file
         fields['heading'] = heading
         solution = fields['Resposta de control']
-        simulate(fields['Inici'], solution)
+        simulate(fields['Inici'], solution, fields.get('Funcio'))
         if fields['Codi'] != '-':
-            simulate(fields['Inici'], fields['Codi'])
+            simulate(fields['Inici'], fields['Codi'], fields.get('Funcio'))
         if fields['Objectiu'] != '-':
-            assert simulate(fields['Inici'], solution) == simulate(fields['Inici'], fields['Objectiu']), file
+            assert simulate(fields['Inici'], solution, fields.get('Funcio')) == simulate(fields['Inici'], fields['Objectiu'], fields.get('Funcio')), file
         if number == 4:
             assert expand(fields['Codi']) == expand(solution), file
             if prefix == 'tb' and 'REP' in solution:
                 assert re.fullmatch(r'REP[2-4]\[[ARDE ]+\]', solution), file
         if fields.get('Capses'):
             simulate_objects(fields)
+        else:
+            assert all(0<=x<6 and 0<=y<6 for x,y,_ in simulate(fields['Inici'],solution,fields.get('Funcio'))), file
+        if fields.get('Comparacio'):
+            assert all(0<=x<6 and 0<=y<6 for x,y,_ in simulate(fields['Comparacio'],solution,fields.get('Funcio'))), file
         exercises.append(fields)
     assert len(exercises) == 3, file
     return {'prefix': prefix, 'slug': f'{prefix}-{kind}', 'number': number, 'title': title, 'exercises': exercises}
@@ -153,34 +168,13 @@ def outline(x,y,w,h,r=6,dashed=False):
 
 
 def symbol(x,y,size,kind):
-    ctx.save(); ctx.translate(x,y); ctx.scale(size/64,size/64)
-    ctx.set_source_rgb(*INK); ctx.set_line_width(4); ctx.set_line_cap(cairo.LINE_CAP_ROUND); ctx.set_line_join(cairo.LINE_JOIN_ROUND)
-    if kind in ['A','R']:
-        if kind=='R': ctx.translate(64,64); ctx.rotate(math.pi)
-        ctx.move_to(32,47); ctx.line_to(32,17); ctx.line_to(21,28)
-        ctx.move_to(32,17); ctx.line_to(43,28); ctx.stroke()
-    elif kind in ['D','E']:
-        if kind=='E': ctx.translate(64,0); ctx.scale(-1,1)
-        ctx.move_to(27,21); ctx.line_to(47,21); ctx.line_to(37,11)
-        ctx.move_to(47,21); ctx.line_to(37,31); ctx.stroke()
-        for a,b in [(18,22),(15,31),(21,40),(29,47)]:
-            ctx.arc(a,b,2,0,2*math.pi); ctx.fill()
-    elif kind in ['loop','end','repeat']:
-        # Open circular arrow with the head exactly at the arc endpoint.
-        cy, radius = (27, 13) if kind != 'repeat' else (32, 18)
-        end = math.radians(315)
-        ctx.arc(32, cy, radius, math.radians(35), end); ctx.stroke()
-        px, py = 32 + radius * math.cos(end), cy + radius * math.sin(end)
-        tx, ty = -math.sin(end), math.cos(end)
-        ctx.move_to(px - tx*9 - ty*6, py - ty*9 + tx*6)
-        ctx.line_to(px, py)
-        ctx.line_to(px - tx*9 + ty*6, py - ty*9 - tx*6)
-        ctx.stroke()
-        if kind!='repeat':
-            ctx.set_font_size(10); ctx.select_font_face('DejaVu Sans',cairo.FONT_SLANT_NORMAL,cairo.FONT_WEIGHT_BOLD)
-            label='inici' if kind=='loop' else 'fi'
-            ext=ctx.text_extents(label)
-            ctx.move_to(32-ext.x_advance/2,56); ctx.show_text(label)
+    # Read user-editable SVG sources. Never regenerate or overwrite these files.
+    name=ICON_NAMES[kind]
+    if name not in icon_handles:
+        icon_handles[name]=Rsvg.Handle.new_from_file(str(ICONS/f'{name}.svg'))
+    rect=Rsvg.Rectangle(); rect.x=x; rect.y=y; rect.width=size; rect.height=size
+    ctx.save()
+    icon_handles[name].render_document(ctx,rect)
     ctx.restore()
 
 
@@ -206,7 +200,7 @@ def tile(x,y,size,kind=None,prefix='tb',number=None,blank_number=False):
 
 
 def tokens(code,prefix):
-    parts=re.findall(r'REP[2-4]|[AR][1-6]?|[DE]|\[|\]',code)
+    parts=re.findall(r'REP[2-4]|[AR][1-6]?|[DEF]|\[|\]',code)
     result=[]; repeat=None
     for p in parts:
         if p.startswith('REP'):
@@ -291,7 +285,11 @@ def header(doc,teacher):
         tile(x,113,29,kind,prefix)
         text(x+35,132,label,9.8,True)
     text(42,162,'Un pas = una casella. Un gir canvia on mira, però no el mou.',9.8)
-    if prefix=='cs':
+    if prefix=='cs' and number>4:
+        for x,kind,label in [(34,'define','Defineix'),(163,'F','Crida'),(282,'loop','Inici'),(423,'end','Fi')]:
+            tile(x,184,25,kind,prefix,2 if kind=='loop' else None)
+            text(x+32,201,label,9.5,True)
+    elif prefix=='cs':
         tile(34,184,23,'A',prefix,3)
         text(66,201,'El nombre va davall.',9.2)
         tile(208,184,23,'loop',prefix,2); tile(241,184,23,'end',prefix)
@@ -306,9 +304,9 @@ def header(doc,teacher):
         arrow(42,198,0,filled=True); arrow(70,198,0,size=8,filled=False)
         text(89,202,'Fletxa plena: inici. Fletxa buida: final.',10.3)
 
-    if number in (5,6):
+    if prefix=='tb' and number in (5,6):
         text(32,225,'Retolador sempre baixat: avançar i retrocedir deixen traç.',9.5,True)
-    elif number in (7,8):
+    elif prefix=='tb' and number in (7,8):
         text(32,225,'Només empeny endavant. Un pas mou la capsa una casella. Cercle = meta.',9.2,True)
 
 
@@ -399,7 +397,7 @@ def cells(value):
 
 
 def simulate_objects(ex):
-    states=simulate(ex['Inici'],ex['Resposta de control'])
+    states=simulate(ex['Inici'],ex['Resposta de control'],ex.get('Funcio'))
     boxes=cells(ex['Capses'])
     for action,a,b in zip(expand(ex['Resposta de control']),states,states[1:]):
         if a[:2]==b[:2]: continue
@@ -421,7 +419,7 @@ def extra_grid(x,y,ex,teacher=False,cell=17):
         text(x+k*cell+cell*.3,y-6,chr(65+k),7)
         text(x-12,y+(n-k-.35)*cell,str(k+1),7)
     center=lambda st:(x+(st[0]+.5)*cell,y+(n-.5-st[1])*cell)
-    states=simulate(ex['Inici'],ex['Resposta de control'])
+    states=simulate(ex['Inici'],ex['Resposta de control'],ex.get('Funcio'))
     if ex.get('Capses'):
         for pos in cells(ex['Metes']):
             cx,cy=center(pos); ctx.set_source_rgb(*INK); ctx.set_line_width(1)
@@ -431,7 +429,7 @@ def extra_grid(x,y,ex,teacher=False,cell=17):
             cx,cy=center(pos); box(cx-cell*.3,cy-cell*.3,cell*.6,cell*.6,fill=(1,1,1))
             line(cx-cell*.3,cy-cell*.3,cx+cell*.3,cy+cell*.3,grey=.15)
             line(cx-cell*.3,cy+cell*.3,cx+cell*.3,cy-cell*.3,grey=.15)
-    elif teacher or ex['Mode']=='patro':
+    elif teacher or ex['Mode']=='patro' or (ex['Mode']=='coding' and ex['Codi']=='-'):
         for a,b in zip(states,states[1:]):
             if a[:2]!=b[:2]:
                 ctx.set_dash([] if teacher else [2,2])
@@ -439,7 +437,8 @@ def extra_grid(x,y,ex,teacher=False,cell=17):
                 ctx.set_dash([])
     if teacher or ex['Mode']!='costat':
         arrow(*center(states[0]),states[0][2],size=cell*.25)
-    if teacher: arrow(*center(states[-1]),states[-1][2],size=cell*.4,filled=False)
+    if teacher or (ex['Mode']=='coding' and ex['Codi']=='-'):
+        arrow(*center(states[-1]),states[-1][2],size=cell*.4,filled=False)
 
 
 def compact_sequence(x,y,code,available=365,size=28):
@@ -498,17 +497,56 @@ def extra_exercise(doc,ex,index,teacher):
             paragraph(right,top+146,('Capses a les metes; robot '+('D1' if index==1 else 'G1')+', mirant al nord.') if teacher else 'Marca les capses i el robot al final. També canvia de columna en l’última execució.',358,9,11)
 
 
+def coding_sequence(x,y,code,size=28,available=358):
+    return sequence(x,y,code,'cs',size,5,available)
+
+
+def definition_row(x,y,ex,show):
+    tile(x,y,27,'define','cs')
+    if show:
+        coding_sequence(x+34,y,ex['Funcio'],available=320)
+    else:
+        blanks(x+34,y,'cs',6,size=27,numbers=True)
+
+
+def coding_exercise(doc,ex,index,teacher):
+    top=241+index*181
+    text(32,top,ex['heading'],11,True)
+    paragraph(202,top+16,ex['Consigna'],358,9.5,12)
+    extra_grid(47,top+28,ex,teacher,cell=19)
+    if doc['number']==7:
+        other=dict(ex,Inici=ex['Comparacio'])
+        extra_grid(212,top+62,other,teacher,cell=14)
+        text(212,top+49,'Altre inici: '+ex['Comparacio'],8.5)
+        text(330,top+56,'Definició donada:',9,True)
+        tile(330,top+65,26,'define','cs')
+        coding_sequence(361,top+65,ex['Funcio'],size=26,available=199)
+        text(330,top+115,'Principal:',9,True); tile(395,top+97,26,'F','cs')
+        paragraph(330,top+137,ex['Solució docent'] if teacher else 'Dibuixa els dos camins i explica què es conserva.',228,8.6,10)
+        return
+    text(202,top+56,'Fila principal:',9,True)
+    if teacher: coding_sequence(202,top+64,ex['Principal'],size=27)
+    else: blanks(202,top+64,'cs',9,size=27,numbers=True)
+    if ex['Funcio']!='-':
+        text(202,top+123,'Fila inferior: definició',9,True)
+        supplied=doc['number']==8 and index<2
+        definition_row(202,top+131,ex,teacher or supplied)
+    else:
+        paragraph(202,top+126,ex['Solució docent'] if teacher else 'Nombre davall de l’inici. Marca quines peces queden fora del bucle.',358,9.2,12)
+
+
 def draw_page(doc,teacher=False):
     header(doc,teacher)
     for i,ex in enumerate(doc['exercises']):
-        if doc['number']>4: extra_exercise(doc,ex,i,teacher)
+        if doc['prefix']=='cs' and doc['number']>4: coding_exercise(doc,ex,i,teacher)
+        elif doc['number']>4: extra_exercise(doc,ex,i,teacher)
         elif doc['number']==4: refactor_exercise(doc,ex,i,teacher)
         else: regular_exercise(doc,ex,i,teacher)
     line(32,793,563,793)
     text(32,811,'Ja ho he revisat!',9.5,True)
     outline(145,800,13,13,2)
-    text(177,811,'Pots colorejar el robot quan acabes.  ·  A4 al 100%',9)
-    text(32,828,'Robòtica per a docents  ·  '+('Solucionari' if teacher else 'Llapis, goma i imaginació')+f'  ·  Fitxa {doc["number"]}/{8 if doc["prefix"] == "tb" else 4}',8)
+    text(177,811,'Pots colorejar el robot quan acabes.',9)
+    text(32,828,'Robòtica per a docents  ·  '+('Solucionari' if teacher else 'Llapis, goma i imaginació')+f'  ·  Fitxa {doc["number"]}/{8}',8)
     ctx.show_page()
 
 
@@ -534,6 +572,11 @@ def diagrams(doc):
             ctx=cairo.Context(surface)
             sequence(10,10,ex[field],doc['prefix'],42,gap=7,available=width-20)
             surface.finish()
+        if ex.get('Funcio','-')!='-':
+            width=(len(tokens(ex['Funcio'],'cs')[0])+1)*49+20
+            surface=cairo.SVGSurface(str(stem)+'-funcio.svg',width,90); ctx=cairo.Context(surface)
+            tile(10,10,42,'define','cs'); sequence(59,10,ex['Funcio'],'cs',42,available=width-69)
+            surface.finish()
         if doc['number']>4:
             surface=cairo.SVGSurface(str(stem)+'-graella.svg',360 if ex.get('Comparacio') else 210,210)
             ctx=cairo.Context(surface)
@@ -553,14 +596,14 @@ def diagrams(doc):
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     for prefix in LABELS:
-        kinds=KINDS+(TB_EXTRA if prefix=='tb' else [])
+        kinds=KINDS+(TB_EXTRA if prefix=='tb' else CS_EXTRA)
         docs=[load(prefix,kind,i) for i,kind in enumerate(kinds,1)]
         for doc in docs:
             pdf(OUT/f'{doc["slug"]}.pdf',[doc])
             diagrams(doc)
         pdf(OUT/f'{prefix}-fitxes-paper.pdf',docs)
         pdf(OUT/f'{prefix}-solucions-paper.pdf',docs,True)
-    print('16 PDF A4 amb pictogrames i esquemes web; 36 exercicis comprovats, incloses espentes i repeticions.')
+    print('20 PDF A4; 48 exercicis comprovats amb funcions, bucles i espentes. Icones llegides dels SVG editables.')
 
 
 if __name__=='__main__':

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <title
+     id="title1">bucle-fi</title>
+  <g
+     fill="none"
+     stroke="#0f1721"
+     stroke-width="4"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="g1">
+    <g
+       id="g2"
+       transform="translate(2.13967,-0.45814885)">
+      <path
+         d="M 34.496563,15.704167 C 18.484412,10.938886 5.9288249,29.705129 16.432492,42.688753 m 12.487424,-33.0617633 5.58024,5.9697073 -5.663121,4.890419"
+         id="path1-3" />
+      <path
+         d="M 25.224097,49.212131 C 41.236248,53.977412 53.791835,35.211169 43.288168,22.227545 m -12.487424,33.061763 -5.58024,-5.969707 5.663121,-4.890419"
+         id="path1-3-1" />
+    </g>
+  </g>
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>bucle-fi</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

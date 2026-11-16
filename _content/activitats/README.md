@@ -52,7 +52,7 @@ Les portades generades i els prompts es documenten a
 
 ## Fitxes de robots per a resoldre en paper
 
-Les huit activitats `tb-` i les quatre `cs-` treballen predicció, escriptura,
+Les huit activitats `tb-` i les huit `cs-` treballen predicció, escriptura,
 depuració i refactorització de codi. Tale-Bot incorpora també dibuix continu,
 descomposició, abstracció i espenta de capses amb repetició de tota la base. Cada fitxa és un A4 amb tres exercicis
 individuals, sense context narratiu i sense necessitat de robot.
@@ -67,8 +67,9 @@ Els nombres van davall de les peces; l’alumnat dibuixa els símbols en caselle
 grans. La mascota de contorn és decorativa i es pot colorejar.
 Un guió en Codi o Objectiu indica que no hi ha un valor donat.
 
-Per regenerar els dotze PDF individuals, els dos reculls de l’alumnat i els dos
-solucionaris i els esquemes SVG per al web, cal Python 3 i pycairo (`python3-cairo`):
+Per regenerar els setze PDF individuals, els dos reculls de l’alumnat i els dos
+solucionaris i els esquemes SVG per al web, cal Python 3, pycairo i PyGObject amb librsvg
+(`python3-cairo python3-gi python3-gi-cairo gir1.2-rsvg-2.0`):
 
 ```sh
 python3 _scripts/generate-robot-paper-kits.py
@@ -84,3 +85,13 @@ amb l’objectiu; en refactorització exigeix la mateixa seqüència d’ordres.
 En Tale-Bot, els camps interns `Mode`, `Capses`, `Metes` i `Comparacio`
 permeten dibuixar els nous taulers. El simulador del generador comprova també
 les espentes, les col·lisions i les posicions finals de totes les capses.
+
+Coding Set incorpora funcions i bucles parcials. El camp intern `Funcio`
+conté la definició i `Principal` conté el programa de referència. `F` és una
+crida interna, que el generador representa amb la icona de crida. La simulació
+expandeix les crides dins dels bucles i compara totes les posicions i orientacions
+amb la ruta objectiu; no només la casella final.
+
+Les icones font editables estan en `_assets/activitats/icones/`. El generador
+les llig amb librsvg per mantindre el dibuix vectorial en els PDF i SVG generats.
+No les sobreescriu. Consulteu el README d’eixa carpeta abans de modificar-les.

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <title
+     id="title1">gir-dreta</title>
+  <g
+     fill="none"
+     stroke="#0f1721"
+     stroke-width="4"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="g1">
+    <g
+       id="g2"
+       transform="matrix(-1,0,0,1,63.88503,0.61317448)">
+      <path
+         d="M 33.670613,13.182043 49.098197,27.323995 33.670613,41.465947"
+         id="path1"
+         style="stroke-width:5.14253" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:45.5532;stroke-linecap:round;stroke-linejoin:bevel;stroke-dashoffset:3.19371"
+         id="path2"
+         cx="35.683987"
+         cy="27.340168"
+         r="3.4981506" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:45.5532;stroke-linecap:round;stroke-linejoin:bevel;stroke-dashoffset:3.19371"
+         id="path2-2"
+         cx="25.641428"
+         cy="27.340168"
+         r="3.4981506" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:45.5532;stroke-linecap:round;stroke-linejoin:bevel;stroke-dashoffset:3.19371"
+         id="path2-2-0"
+         cx="15.598872"
+         cy="27.340168"
+         r="3.4981506" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:45.5532;stroke-linecap:round;stroke-linejoin:bevel;stroke-dashoffset:3.19371"
+         id="path2-2-0-6"
+         cx="15.598872"
+         cy="38.002445"
+         r="3.4981506" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:45.5532;stroke-linecap:round;stroke-linejoin:bevel;stroke-dashoffset:3.19371"
+         id="path2-2-0-6-7"
+         cx="15.598872"
+         cy="48.664722"
+         r="3.4981506" />
+    </g>
+  </g>
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>gir-dreta</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
