@@ -20,17 +20,13 @@ function SimPage({ root = '../' } = {}) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${r}_css/styles.css?v=10">
-  <link rel="stylesheet" href="${r}sim/sim.css?v=2">
+  <link rel="stylesheet" href="${r}sim/sim.css?v=3">
   <link rel="icon" type="image/svg+xml" href="${r}_assets/icons/logo.svg">
-  <script defer src="${r}sim/sim.js?v=2"></script>
+  <script defer src="${r}sim/sim.js?v=3"></script>
 </head>
 <body class="sim-app-body">
   <header class="sim-topbar" data-sim-hero data-active-robot="tale-bot">
     <div class="sim-topbar-start">
-      <a href="${r}robotica-educativa/index.html" class="sim-back-btn" aria-label="Tornar a Robòtica educativa">
-        <span aria-hidden="true">←</span>
-        <span>Sortir</span>
-      </a>
       <a href="${r}index.html" class="sim-brand" aria-label="Inici Robòtica 200">
         <img src="${r}_assets/icons/logo.svg" alt="" class="logo-badge-img" width="24" height="24">
         <span class="logo-name">Robòtica<sup>200</sup></span>
@@ -68,16 +64,6 @@ function SimPage({ root = '../' } = {}) {
     </div>
 
     <div class="sim-topbar-end">
-      <div class="sim-scenario-control">
-        <label for="sim-challenge-select" class="visually-hidden">Escenari</label>
-        <select id="sim-challenge-select" class="filter-select sim-select" data-challenge-select>
-          <option value="tb-free">Mode lliure</option>
-        </select>
-        <button type="button" class="sim-btn sim-btn-secondary" data-load-demo>
-          ⚡ Exemple
-        </button>
-      </div>
-
       <div class="sim-speed-control">
         <label for="sim-speed-select" class="visually-hidden">Velocitat</label>
         <select id="sim-speed-select" class="sim-speed-select" data-speed-select>
@@ -90,46 +76,81 @@ function SimPage({ root = '../' } = {}) {
       <button type="button" class="sim-icon-toggle" aria-pressed="true" data-toggle-sound aria-label="So">
         <span data-sound-icon aria-hidden="true">🔊</span>
       </button>
-
-      <a href="${r}robot/tale-bot/index.html" class="sim-btn sim-btn-link" data-robot-guide-link>
-        Fitxa <span aria-hidden="true">↗</span>
-      </a>
     </div>
   </header>
 
   <main id="page-content" class="sim-workspace" data-sim-workspace data-robot="tale-bot">
     <h1 class="visually-hidden">Simulador de Tale-Bot Pro i Coding Set</h1>
 
-    <!-- PANELL ESQUERRE: TAPÍS 6x6 I BARRA D'EINES COMPACTA -->
+    <!-- PANELL ESQUERRE: BARRA D'EINES VERTICAL ESQUERRA + TAPÍS 6x6 -->
     <div class="sim-stage-pane">
-      <div class="sim-mat-toolbar" role="toolbar" aria-label="Eines del tapís">
-        <div class="sim-tool-group" data-mat-tools>
+      <div class="sim-mat-toolbar" role="toolbar" aria-orientation="vertical" aria-label="Eines del tapís">
+        <div class="sim-toolbar-section" role="group" aria-label="Elements del tapís" data-mat-tools>
           <button type="button" class="sim-tool-btn is-active" aria-pressed="true" data-mat-tool="robot">
-            📍 Robot
+            <span aria-hidden="true">📍</span>
+            <span>Robot</span>
           </button>
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-mat-tool="flag">
-            🚩 Bandera
+            <span aria-hidden="true">🚩</span>
+            <span>Bandera</span>
           </button>
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-mat-tool="obstacle">
-            🚧 Obstacle
+            <span aria-hidden="true">🚧</span>
+            <span>Obstacle</span>
           </button>
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-mat-tool="box" data-tb-only>
-            📦 Caixa
+            <span aria-hidden="true">📦</span>
+            <span>Caixa</span>
+          </button>
+          <button
+            type="button"
+            class="sim-tool-btn"
+            aria-pressed="false"
+            data-mat-tool="emoji"
+            data-open-emoji-dialog
+            commandfor="sim-emoji-dialog"
+            command="show-popover"
+          >
+            <span data-emoji-tool-icon aria-hidden="true">😀</span>
+            <span>Emoji</span>
           </button>
         </div>
 
-        <div class="sim-rotate-group">
+        <hr class="sim-toolbar-divider" aria-hidden="true">
+
+        <div class="sim-toolbar-section" role="group" aria-label="Posició i accessoris">
           <button type="button" class="sim-tool-btn" data-rotate-start="left" aria-label="Gira l'orientació inicial 90 graus">
-            ↺ 90°
+            <span aria-hidden="true">↺</span>
+            <span>90°</span>
           </button>
           <button type="button" class="sim-tool-btn" data-reset-robot aria-label="Torna el robot a la casella inicial">
-            ⏮ Inici
+            <span aria-hidden="true">⏮</span>
+            <span>Inici</span>
+          </button>
+          <button type="button" class="sim-tool-btn" aria-pressed="false" data-tb-toggle-arms data-tb-only>
+            <span aria-hidden="true">🦾</span>
+            <span>Braços</span>
           </button>
         </div>
 
-        <div class="sim-pose-readout" aria-label="Posició i orientació">
-          <span class="sim-pose-pill" data-pose-cell><strong>B5</strong></span>
-          <span class="sim-pose-pill" data-pose-dir><strong>↑ N</strong></span>
+        <hr class="sim-toolbar-divider" aria-hidden="true">
+
+        <div class="sim-toolbar-section sim-draw-controls" role="group" aria-label="Retolador i dibuix">
+          <button type="button" class="sim-tool-btn" aria-pressed="false" data-toggle-pen>
+            <span aria-hidden="true">✏️</span>
+            <span>Retolador</span>
+          </button>
+          <div class="sim-color-swatches" role="group" aria-label="Color del retolador">
+            <button type="button" class="sim-color-swatch is-active" style="--swatch:#ea580c" data-pen-color="#ea580c" aria-label="Taronja" aria-pressed="true"></button>
+            <button type="button" class="sim-color-swatch" style="--swatch:#2563eb" data-pen-color="#2563eb" aria-label="Blau" aria-pressed="false"></button>
+            <button type="button" class="sim-color-swatch" style="--swatch:#16a34a" data-pen-color="#16a34a" aria-label="Verd" aria-pressed="false"></button>
+            <button type="button" class="sim-color-swatch" style="--swatch:#9333ea" data-pen-color="#9333ea" aria-label="Lila" aria-pressed="false"></button>
+            <button type="button" class="sim-color-swatch" style="--swatch:#e11d48" data-pen-color="#e11d48" aria-label="Roig" aria-pressed="false"></button>
+          </div>
+          <button type="button" class="sim-tool-btn" data-clear-drawing aria-label="Neteja el tauler i el dibuix">
+            <span aria-hidden="true">🧹</span>
+            <span>Neteja</span>
+          </button>
         </div>
       </div>
 
@@ -199,37 +220,6 @@ function SimPage({ root = '../' } = {}) {
           </div>
         </div>
       </div>
-
-      <!-- Barra inferior del tapís: Retolador, accessoris i estat -->
-      <div class="sim-stage-bottom">
-        <div class="sim-draw-controls">
-          <button type="button" class="sim-toggle-pill" aria-pressed="false" data-toggle-pen>
-            ✏️ Retolador
-          </button>
-          <div class="sim-color-swatches" role="group" aria-label="Color del retolador">
-            <button type="button" class="sim-color-swatch is-active" style="--swatch:#ea580c" data-pen-color="#ea580c" aria-label="Taronja" aria-pressed="true"></button>
-            <button type="button" class="sim-color-swatch" style="--swatch:#2563eb" data-pen-color="#2563eb" aria-label="Blau" aria-pressed="false"></button>
-            <button type="button" class="sim-color-swatch" style="--swatch:#16a34a" data-pen-color="#16a34a" aria-label="Verd" aria-pressed="false"></button>
-            <button type="button" class="sim-color-swatch" style="--swatch:#9333ea" data-pen-color="#9333ea" aria-label="Lila" aria-pressed="false"></button>
-            <button type="button" class="sim-color-swatch" style="--swatch:#e11d48" data-pen-color="#e11d48" aria-label="Roig" aria-pressed="false"></button>
-          </div>
-          <button type="button" class="sim-btn-ghost" data-clear-drawing aria-label="Neteja el dibuix">
-            🧹 Neteja
-          </button>
-
-          <button type="button" class="sim-toggle-pill" aria-pressed="true" data-tb-toggle-oid data-tb-only>
-            🗺️ OID
-          </button>
-          <button type="button" class="sim-toggle-pill" aria-pressed="false" data-tb-toggle-arms data-tb-only>
-            🦾 Braços
-          </button>
-        </div>
-
-        <div class="sim-status-banner" role="status" aria-live="polite" data-status-banner>
-          <span class="sim-status-dot" data-status-dot></span>
-          <span class="sim-status-text" data-status-text>A punt (B5 · ↑ Nord)</span>
-        </div>
-      </div>
     </div>
 
     <!-- PANELL DRET: CONSOLA DEL ROBOT ACTIU -->
@@ -246,17 +236,24 @@ function SimPage({ root = '../' } = {}) {
         data-robot-panel="tale-bot"
       >
         <div class="sim-panel-header">
-          <div class="sim-tb-leds" data-tb-leds aria-label="Indicadors LED">
-            <span class="sim-tb-led" data-led-index="0"></span>
-            <span class="sim-tb-led" data-led-index="1"></span>
-            <span class="sim-tb-led" data-led-index="2"></span>
-            <span class="sim-tb-led" data-led-index="3"></span>
-            <span class="sim-tb-led" data-led-index="4"></span>
-            <span class="sim-tb-led" data-led-index="5"></span>
-            <span class="sim-tb-led" data-led-index="6"></span>
-            <span class="sim-tb-led" data-led-index="7"></span>
+          <div class="sim-tb-leds-group">
+            <div class="sim-tb-leds" data-tb-leds aria-label="Indicadors LED d'ordres">
+              <span class="sim-tb-led" data-led-index="0"></span>
+              <span class="sim-tb-led" data-led-index="1"></span>
+              <span class="sim-tb-led" data-led-index="2"></span>
+              <span class="sim-tb-led" data-led-index="3"></span>
+              <span class="sim-tb-led" data-led-index="4"></span>
+              <span class="sim-tb-led" data-led-index="5"></span>
+              <span class="sim-tb-led" data-led-index="6"></span>
+              <span class="sim-tb-led" data-led-index="7"></span>
+            </div>
+            <div class="sim-tb-repeat-leds" data-tb-repeat-leds aria-label="Indicadors LED de repetició">
+              <span class="sim-tb-repeat-led" data-repeat-led-index="0"></span>
+              <span class="sim-tb-repeat-led" data-repeat-led-index="1"></span>
+              <span class="sim-tb-repeat-led" data-repeat-led-index="2"></span>
+              <span class="sim-tb-repeat-led" data-repeat-led-index="3"></span>
+            </div>
           </div>
-          <span class="sim-capacity-pill" data-tb-count>0 / 8</span>
         </div>
 
         <div class="sim-tb-shell">
@@ -291,7 +288,7 @@ function SimPage({ root = '../' } = {}) {
               title="Repetició"
             >
               ${svgs.taleBot.repeat.svg}
-              <span class="sim-tb-repeat-badge" data-tb-repeat-badge>×1</span>
+              <span class="sim-tb-repeat-badge" data-tb-repeat-badge hidden></span>
             </button>
 
             <!-- Fila 2: Esquerra · Play · Dreta -->
@@ -361,10 +358,10 @@ function SimPage({ root = '../' } = {}) {
 
         <div class="sim-tb-actions-row">
           <button type="button" class="sim-btn sim-btn-outline" data-tb-delete-last>
-            ⌫ Última (&lt;1s)
+            ⌫ Esborrar última
           </button>
           <button type="button" class="sim-btn sim-btn-outline sim-btn-danger" data-tb-delete-all>
-            🗑️ Tot (&gt;1s)
+            🗑️ Esborrar tot
           </button>
           <button type="button" class="sim-btn sim-btn-secondary" data-sim-step>
             👣 Pas a pas
@@ -384,14 +381,6 @@ function SimPage({ root = '../' } = {}) {
           <button type="button" class="sim-btn sim-btn-secondary" data-tb-test-voice aria-label="Escolta la gravació">
             ▶
           </button>
-        </div>
-
-        <div class="sim-sequence-dock">
-          <div class="sim-sequence-header">
-            <span class="sim-sequence-title">Seqüència</span>
-            <span class="sim-sequence-meta" data-tb-repeat-summary>×1</span>
-          </div>
-          <div class="sim-sequence-strip" data-tb-sequence-strip></div>
         </div>
       </div>
 
@@ -483,6 +472,47 @@ function SimPage({ root = '../' } = {}) {
 
     </div>
   </main>
+
+  <!-- Diàleg emergent (Popover Top-Layer) per seleccionar qualsevol emoji per al tauler de Tale-Bot -->
+  <div
+    id="sim-emoji-dialog"
+    class="sim-emoji-dialog"
+    popover="auto"
+    role="dialog"
+    aria-labelledby="sim-emoji-dialog-title"
+    data-emoji-dialog
+  >
+    <div class="sim-emoji-dialog-header">
+      <h2 id="sim-emoji-dialog-title" class="sim-emoji-dialog-title">Selecciona un emoji per al tauler</h2>
+      <button
+        type="button"
+        class="sim-emoji-dialog-close"
+        commandfor="sim-emoji-dialog"
+        command="hide-popover"
+        data-close-emoji-dialog
+        aria-label="Tanca el selector d'emojis"
+      >✕</button>
+    </div>
+
+    <div class="sim-emoji-custom-row">
+      <label for="sim-emoji-custom-input" class="visually-hidden">Escriu o enganxa qualsevol emoji</label>
+      <input
+        type="text"
+        id="sim-emoji-custom-input"
+        class="sim-text-input sim-emoji-custom-input"
+        placeholder="Escriu o enganxa qualsevol emoji (ex. 🦄, 🚀, 🏰)..."
+        maxlength="16"
+        data-emoji-custom-input
+        autofocus
+      >
+      <button type="button" class="sim-btn sim-btn-secondary" data-emoji-custom-apply>
+        Usa l'emoji
+      </button>
+    </div>
+
+    <div class="sim-emoji-categories" data-emoji-categories></div>
+  </div>
+
   <script id="sim-svg-data" type="application/json">${JSON.stringify(svgs)}</script>
 </body>
 </html>

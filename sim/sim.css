@@ -66,25 +66,6 @@
   flex-wrap: wrap;
 }
 
-.sim-back-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.35rem 0.65rem;
-  border-radius: 8px;
-  border: 1px solid #cbd5e1;
-  background: #f8fafc;
-  color: #334155;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-decoration: none;
-  transition: background-color 0.15s ease;
-}
-
-.sim-back-btn:hover {
-  background: #e2e8f0;
-}
-
 .sim-brand {
   display: inline-flex;
   align-items: center;
@@ -154,12 +135,6 @@
   font-size: 0.85rem;
 }
 
-.sim-scenario-control {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-
 .sim-select,
 .sim-speed-select {
   font-family: var(--font-sans);
@@ -198,7 +173,7 @@
   --robot-secondary: #804cbd;
   --robot-soft-bg: #fff7ed;
   display: grid;
-  grid-template-columns: minmax(0, 1.12fr) minmax(380px, 470px);
+  grid-template-columns: minmax(0, 1fr) minmax(330px, 380px);
   gap: 0.65rem;
   padding: 0.65rem;
   block-size: 100%;
@@ -220,7 +195,19 @@
   }
 }
 
-.sim-stage-pane,
+.sim-stage-pane {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  padding: 0.65rem;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.65rem;
+  min-block-size: 0;
+  min-inline-size: 0;
+  overflow: clip;
+}
+
 .sim-console-pane {
   background: #ffffff;
   border: 1px solid #cbd5e1;
@@ -235,53 +222,72 @@
 }
 
 /* =========================================================
-   PANELL ESQUERRE: TAPÍS 6x6 A MÀXIMA MIDA
+   PANELL ESQUERRE: BARRA VERTICAL UNIFICADA + TAPÍS 6x6
    ========================================================= */
 .sim-mat-toolbar {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.35rem;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0.45rem;
   background: #f8fafc;
   border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  padding: 0.35rem 0.5rem;
+  border-radius: 12px;
+  padding: 0.5rem;
+  inline-size: 8.5rem;
   flex-shrink: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
-.sim-tool-group,
-.sim-rotate-group,
-.sim-pose-readout {
+.sim-toolbar-section {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.3rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.32rem;
+}
+
+.sim-toolbar-divider {
+  border: 0;
+  border-block-start: 1px solid #cbd5e1;
+  margin-block: 0.1rem;
+  margin-inline: 0;
 }
 
 .sim-tool-btn {
   font-family: var(--font-sans);
-  font-size: 0.76rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  padding: 0.3rem 0.55rem;
-  border-radius: 7px;
+  padding: 0.38rem 0.55rem;
+  border-radius: 8px;
   border: 1px solid #cbd5e1;
   background: #ffffff;
   color: #334155;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.42rem;
+  inline-size: 100%;
+  text-align: start;
+  transition: background-color 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+}
+
+.sim-tool-btn[hidden] {
+  display: none !important;
 }
 
 .sim-tool-btn:hover {
   background: #f1f5f9;
 }
 
-.sim-tool-btn.is-active {
+.sim-tool-btn.is-active,
+.sim-tool-btn[aria-pressed="true"] {
   background: var(--robot-soft-bg);
   border-color: var(--robot-primary);
   color: #0f172a;
 }
 
-.sim-pose-pill,
 .sim-capacity-pill {
   font-family: var(--font-sans);
   font-size: 0.75rem;
@@ -294,23 +300,79 @@
   white-space: nowrap;
 }
 
+.sim-color-swatches {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2rem;
+  background: #ffffff;
+  padding: 0.28rem 0.35rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+.sim-color-swatch {
+  inline-size: 1.1rem;
+  block-size: 1.1rem;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background-color: var(--swatch, #ea580c);
+  cursor: pointer;
+  box-shadow: 0 0 0 1px #cbd5e1;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.sim-color-swatch.is-active {
+  transform: scale(1.16);
+  box-shadow: 0 0 0 2px #0f172a;
+}
+
 /* Escenari quadrat auto-ajustat a l'alçada i amplada disponibles */
 .sim-board-stage {
   flex: 1 1 auto;
   min-block-size: 0;
+  min-inline-size: 0;
   display: grid;
   place-items: center;
   overflow: clip;
 }
 
 .sim-board-outer {
-  inline-size: min(100%, calc(100dvh - 175px));
+  inline-size: min(100%, calc(100dvh - 105px));
   max-inline-size: 620px;
 }
 
 @media (max-width: 960px), (max-height: 640px) {
   .sim-board-outer {
     inline-size: min(100%, 480px);
+  }
+}
+
+@media (max-width: 560px) {
+  .sim-stage-pane {
+    grid-template-columns: 1fr;
+  }
+
+  .sim-mat-toolbar {
+    inline-size: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .sim-toolbar-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .sim-tool-btn {
+    inline-size: auto;
+  }
+
+  .sim-toolbar-divider {
+    display: none;
   }
 }
 
@@ -557,114 +619,6 @@
   pointer-events: none;
 }
 
-/* Barra inferior del tapís */
-.sim-stage-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  padding: 0.35rem 0.55rem;
-  flex-shrink: 0;
-}
-
-.sim-draw-controls {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-}
-
-.sim-toggle-pill {
-  font-family: var(--font-sans);
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 0.28rem 0.6rem;
-  border-radius: 999px;
-  border: 1px solid #cbd5e1;
-  background: #ffffff;
-  color: #334155;
-  cursor: pointer;
-}
-
-.sim-toggle-pill[aria-pressed="true"] {
-  background: var(--robot-soft-bg);
-  border-color: var(--robot-primary);
-  color: #0f172a;
-}
-
-.sim-color-swatches {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  background: #ffffff;
-  padding: 0.18rem 0.35rem;
-  border-radius: 999px;
-  border: 1px solid #cbd5e1;
-}
-
-.sim-color-swatch {
-  inline-size: 1.15rem;
-  block-size: 1.15rem;
-  border-radius: 50%;
-  border: 2px solid #ffffff;
-  background-color: var(--swatch, #ea580c);
-  cursor: pointer;
-  box-shadow: 0 0 0 1px #cbd5e1;
-}
-
-.sim-color-swatch.is-active {
-  transform: scale(1.16);
-  box-shadow: 0 0 0 2px #0f172a;
-}
-
-.sim-status-banner {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.25rem 0.6rem;
-  border-radius: 8px;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  max-inline-size: 100%;
-}
-
-.sim-status-banner[data-tone="success"] {
-  background: #f0fdf4;
-  border-color: #86efac;
-}
-
-.sim-status-banner[data-tone="warning"] {
-  background: #fffbeb;
-  border-color: #fde047;
-}
-
-.sim-status-banner[data-tone="error"] {
-  background: #fef2f2;
-  border-color: #fca5a5;
-}
-
-.sim-status-dot {
-  inline-size: 0.5rem;
-  block-size: 0.5rem;
-  border-radius: 50%;
-  background: var(--robot-primary);
-  flex-shrink: 0;
-}
-
-.sim-status-text {
-  font-size: 0.76rem;
-  font-weight: 600;
-  color: #1e293b;
-  white-space: nowrap;
-  overflow: clip;
-  text-overflow: ellipsis;
-  max-inline-size: 38ch;
-}
-
 /* =========================================================
    PANELL DRET: CONSOLA DEL ROBOT
    ========================================================= */
@@ -684,19 +638,76 @@
 .sim-panel-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 0.5rem;
   background: #f8fafc;
   border: 1px solid #e2e8f0;
-  padding: 0.45rem 0.65rem;
+  padding: 0.55rem 0.65rem;
   border-radius: 10px;
   flex-shrink: 0;
 }
 
+.sim-tb-leds-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  min-inline-size: 0;
+}
+
 .sim-tb-leds {
+  display: grid;
+  grid-template-columns: repeat(8, 1.5rem);
+  gap: 0.32rem 0.35rem;
+  align-items: center;
+  justify-content: center;
+  max-block-size: 6rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0.12rem 0.2rem;
+}
+
+.sim-tb-repeat-leds {
   display: flex;
   gap: 0.35rem;
   align-items: center;
+  justify-content: center;
+}
+
+.sim-tb-repeat-led {
+  inline-size: 1.25rem;
+  block-size: 0.42rem;
+  border-radius: 999px;
+  background: #e2e8f0;
+  border: 1px solid #cbd5e1;
+  transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.sim-tb-repeat-led.is-lit {
+  background-color: #00a8f3;
+  border-color: #0284c7;
+  box-shadow: 0 0 5px rgba(0, 168, 243, 0.35);
+}
+
+.sim-tb-repeat-led.is-infinite {
+  background-color: #ff8f00;
+  border-color: #ea580c;
+  box-shadow: 0 0 6px rgba(249, 115, 22, 0.45);
+}
+
+.sim-tb-repeat-led.is-blinking {
+  animation: simRepeatLedBlink 0.32s ease-in-out infinite alternate;
+}
+
+@keyframes simRepeatLedBlink {
+  0% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+  100% {
+    opacity: 0.18;
+    transform: scale(0.9);
+  }
 }
 
 .sim-tb-led {
@@ -790,6 +801,14 @@
   border: 1.5px solid #ffffff;
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);
   pointer-events: none;
+}
+
+.sim-tb-repeat-badge.is-infinite {
+  background: #ff8f00;
+}
+
+.sim-tb-repeat-badge[hidden] {
+  display: none !important;
 }
 
 .sim-tb-hold-bar {
@@ -950,7 +969,8 @@
   box-shadow: inset 0 2px 6px rgba(15, 23, 42, 0.07);
   padding: 0.55rem;
   display: grid;
-  align-items: center;
+  place-items: center;
+  overflow: hidden;
 }
 
 .sim-cs-board-grid {
@@ -960,6 +980,8 @@
   column-gap: 0.4rem;
   row-gap: 0.45rem;
   inline-size: 100%;
+  max-inline-size: min(100%, calc((100dvh - 300px) * 1.25));
+  margin-inline: auto;
 }
 
 .sim-cs-cell {
@@ -1027,6 +1049,8 @@
 
 /* Peu del tauler físic amb el gran botó taronja Play al centre */
 .sim-cs-board-footer {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1157,6 +1181,133 @@
   color: #94a3b8;
 }
 
+/* =========================================================
+   DIÀLEG SELECTOR D'EMOJIS (TALE-BOT POPOVER TOP-LAYER)
+   ========================================================= */
+.sim-emoji-dialog {
+  inline-size: min(92vw, 520px);
+  max-block-size: min(82dvh, 600px);
+  margin: auto;
+  inset: 0;
+  padding: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.22);
+  overscroll-behavior: contain;
+}
+
+.sim-emoji-dialog::backdrop {
+  overflow: hidden;
+  overscroll-behavior: contain;
+  background-color: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(2px);
+}
+
+.sim-emoji-dialog[popover]:is(:popover-open, .\:popover-open) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sim-emoji-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.sim-emoji-dialog-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.sim-emoji-dialog-close {
+  inline-size: 2rem;
+  block-size: 2rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #334155;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.sim-emoji-dialog-close:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.sim-emoji-custom-row {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.4rem 0.5rem;
+}
+
+.sim-emoji-custom-input {
+  font-size: 0.88rem;
+}
+
+.sim-emoji-categories {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-inline-end: 0.2rem;
+}
+
+.sim-emoji-category-title {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-heading);
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.sim-emoji-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(2.5rem, 1fr));
+  gap: 0.3rem;
+}
+
+.sim-emoji-option-btn {
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  transition: transform 0.1s ease, background-color 0.12s ease, border-color 0.12s ease;
+}
+
+.sim-emoji-option-btn:hover {
+  background: #fff7ed;
+  border-color: #ea580c;
+  transform: scale(1.08);
+}
+
+.sim-emoji-option-btn.is-selected {
+  background: #fff7ed;
+  border-color: #ea580c;
+  box-shadow: 0 0 0 2px rgba(234, 88, 12, 0.25);
+}
+
 /* Botons generals */
 .sim-btn {
   font-family: var(--font-sans);
@@ -1197,31 +1348,9 @@
 
 .sim-btn-danger:hover { background: #fef2f2; }
 
-.sim-btn-link {
-  background: var(--sim-soft, #fff7ed);
-  border-color: color-mix(in srgb, var(--sim-accent, #ea580c) 35%, transparent);
-  color: #0f172a;
-}
-
-.sim-btn-ghost {
-  font-family: var(--font-sans);
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 0.22rem 0.45rem;
-  border-radius: 6px;
-  border: 1px solid #cbd5e1;
-  background: #ffffff;
-  color: #475569;
-  cursor: pointer;
-}
-
-.sim-btn-ghost-danger {
-  color: #b91c1c;
-  border-color: #fecaca;
-}
-
 .sim-workspace :where(button, a:any-link, select, input):focus-visible,
-.sim-topbar :where(button, a:any-link, select, input):focus-visible {
+.sim-topbar :where(button, a:any-link, select, input):focus-visible,
+.sim-emoji-dialog :where(button, input):focus-visible {
   outline: 3px solid #2563eb;
   outline-offset: 2px;
 }
