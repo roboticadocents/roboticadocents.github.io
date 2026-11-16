@@ -2,8 +2,10 @@
 (function () {
   'use strict';
 
-  const GRID_SIZE = 6;
-  const COLS = ['A', 'B', 'C', 'D', 'E', 'F'];
+  const DEFAULT_GRID_SIZE = 6;
+  const MIN_GRID_SIZE = 2;
+  const MAX_GRID_SIZE = 10;
+  const COLS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'];
   const DIRS = [
     { dx: 0, dy: -1, angle: 0, label: '↑ Nord' },
     { dx: 1, dy: 0, angle: 90, label: '→ Est' },
@@ -86,6 +88,11 @@
   const tabs = Array.from(document.querySelectorAll('[data-robot-tab]'));
   const panels = Array.from(document.querySelectorAll('[data-robot-panel]'));
 
+  const boardOuterEl = document.querySelector('[data-board-outer]');
+  const colHeadersEl = document.querySelector('[data-col-headers]');
+  const rowHeadersEl = document.querySelector('[data-row-headers]');
+  const gridRowsSelect = document.querySelector('[data-grid-rows]');
+  const gridColsSelect = document.querySelector('[data-grid-cols]');
   const gridCellsEl = document.querySelector('[data-grid-cells]');
   const drawCanvas = document.querySelector('[data-draw-canvas]');
   const drawCtx = drawCanvas.getContext('2d');
@@ -142,6 +149,8 @@
   // Estat global del simulador
   const state = {
     robot: 'tale-bot',
+    gridRows: DEFAULT_GRID_SIZE,
+    gridCols: DEFAULT_GRID_SIZE,
     matTool: 'robot',
     selectedEmoji: '😀',
     activeCellIndex: 25, // B5 (row 4, col 1)
@@ -494,11 +503,63 @@
     return state.oidCells.find(c => c.col === col && c.row === row) || null;
   }
 
+  function renderBoardHeaders() {
+    if (boardOuterEl) {
+      boardOuterEl.style.setProperty('--grid-rows', String(state.gridRows));
+      boardOuterEl.style.setProperty('--grid-cols', String(state.gridCols));
+    }
+    if (colHeadersEl) {
+      colHeadersEl.innerHTML = Array.from(
+        { length: state.gridCols },
+        (_, c) => `<span>${COLS[c] || c + 1}</span>`
+      ).join('');
+    }
+    if (rowHeadersEl) {
+      rowHeadersEl.innerHTML = Array.from(
+        { length: state.gridRows },
+        (_, r) => `<span>${r + 1}</span>`
+      ).join('');
+    }
+    if (gridCellsEl) {
+      gridCellsEl.setAttribute('aria-label', `Tapís ${state.gridRows} per ${state.gridCols}`);
+    }
+  }
+
+  function resizeBoard(newRows, newCols) {
+    if (state.isRunning) stopExecution();
+    const rows = Math.max(MIN_GRID_SIZE, Math.min(MAX_GRID_SIZE, Number(newRows) || DEFAULT_GRID_SIZE));
+    const cols = Math.max(MIN_GRID_SIZE, Math.min(MAX_GRID_SIZE, Number(newCols) || DEFAULT_GRID_SIZE));
+    state.gridRows = rows;
+    state.gridCols = cols;
+
+    if (gridRowsSelect) gridRowsSelect.value = String(rows);
+    if (gridColsSelect) gridColsSelect.value = String(cols);
+
+    drawCanvas.width = cols * 100;
+    drawCanvas.height = rows * 100;
+
+    state.startPose.col = Math.min(state.startPose.col, cols - 1);
+    state.startPose.row = Math.min(state.startPose.row, rows - 1);
+
+    state.flags = state.flags.filter(f => f.col < cols && f.row < rows);
+    state.obstacles = state.obstacles.filter(
+      o => o.col < cols && o.row < rows && !(o.col === state.startPose.col && o.row === state.startPose.row)
+    );
+    state.boxes = state.boxes.filter(b => b.col < cols && b.row < rows);
+    state.initialBoxes = state.initialBoxes.filter(b => b.col < cols && b.row < rows);
+    state.oidCells = state.oidCells.filter(c => c.col < cols && c.row < rows);
+
+    state.activeCellIndex = state.startPose.row * cols + state.startPose.col;
+
+    renderBoardHeaders();
+    resetRobotToStart(true);
+  }
+
   function renderGridCells() {
     gridCellsEl.innerHTML = '';
-    for (let row = 0; row < GRID_SIZE; row++) {
-      for (let col = 0; col < GRID_SIZE; col++) {
-        const idx = row * GRID_SIZE + col;
+    for (let row = 0; row < state.gridRows; row++) {
+      for (let col = 0; col < state.gridCols; col++) {
+        const idx = row * state.gridCols + col;
         const coord = cellName(col, row);
         const isStart = state.startPose.col === col && state.startPose.row === row;
         const isFlag = hasFlag(col, row);
@@ -509,6 +570,7 @@
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'sim-cell';
+        if ((row + col) % 2 === 1) btn.classList.add('is-alt');
         if (isStart) btn.classList.add('is-start');
         if (isFlag) btn.classList.add('is-flag');
         if (isObs) btn.classList.add('is-obstacle');
@@ -563,11 +625,12 @@
 
   function drawSegment(fromCol, fromRow, toCol, toRow) {
     if (!state.penEnabled) return;
-    const cellW = drawCanvas.width / GRID_SIZE;
+    const cellW = drawCanvas.width / state.gridCols;
+    const cellH = drawCanvas.height / state.gridRows;
     const x1 = (fromCol + 0.5) * cellW;
-    const y1 = (fromRow + 0.5) * cellW;
+    const y1 = (fromRow + 0.5) * cellH;
     const x2 = (toCol + 0.5) * cellW;
-    const y2 = (toRow + 0.5) * cellW;
+    const y2 = (toRow + 0.5) * cellH;
 
     drawCtx.save();
     drawCtx.strokeStyle = state.penColor;
@@ -1257,7 +1320,7 @@
       const nextCol = state.pose.col + d.dx * sign;
       const nextRow = state.pose.row + d.dy * sign;
 
-      if (nextCol < 0 || nextCol >= GRID_SIZE || nextRow < 0 || nextRow >= GRID_SIZE) {
+      if (nextCol < 0 || nextCol >= state.gridCols || nextRow < 0 || nextRow >= state.gridRows) {
         robotActor.classList.add('is-bumped');
         playTone(170, 260, 'sawtooth', 0.1);
         setStatus(`Atenció! El robot ha arribat a la vora del tapís a ${cellName(state.pose.col, state.pose.row)} i s'ha aturat.`, 'error');
@@ -1286,8 +1349,8 @@
           const boxNextCol = nextCol + d.dx;
           const boxNextRow = nextRow + d.dy;
           if (
-            boxNextCol < 0 || boxNextCol >= GRID_SIZE ||
-            boxNextRow < 0 || boxNextRow >= GRID_SIZE ||
+            boxNextCol < 0 || boxNextCol >= state.gridCols ||
+            boxNextRow < 0 || boxNextRow >= state.gridRows ||
             hasObstacle(boxNextCol, boxNextRow) ||
             hasBox(boxNextCol, boxNextRow)
           ) {
@@ -1633,6 +1696,20 @@
     updateRobotActor();
   });
 
+  if (gridRowsSelect) {
+    gridRowsSelect.addEventListener('change', () => {
+      resizeBoard(Number(gridRowsSelect.value), state.gridCols);
+      playTone(540, 70, 'sine', 0.06);
+    });
+  }
+
+  if (gridColsSelect) {
+    gridColsSelect.addEventListener('change', () => {
+      resizeBoard(state.gridRows, Number(gridColsSelect.value));
+      playTone(540, 70, 'sine', 0.06);
+    });
+  }
+
   // Esdeveniments Tale-Bot
   tbCmdBtns.forEach(btn => {
     btn.addEventListener('click', () => addTaleBotCommand(btn.getAttribute('data-tb-cmd')));
@@ -1700,6 +1777,7 @@
   setupSpatialNavigation(csMainSlotsEl);
 
   // Inicialització segons ?robot=tale-bot | coding-set
+  renderBoardHeaders();
   const initialParams = new URLSearchParams(window.location.search);
   const initialRobot = initialParams.get('robot') === 'coding-set' ? 'coding-set' : 'tale-bot';
   switchRobot(initialRobot, false);

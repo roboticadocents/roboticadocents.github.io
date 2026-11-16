@@ -9,9 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../_css/styles.css?v=10">
-  <link rel="stylesheet" href="../sim/sim.css?v=3">
+  <link rel="stylesheet" href="../sim/sim.css?v=4">
   <link rel="icon" type="image/svg+xml" href="../_assets/icons/logo.svg">
-  <script defer src="../sim/sim.js?v=3"></script>
+  <script defer src="../sim/sim.js?v=4"></script>
 </head>
 <body class="sim-app-body">
   <header class="sim-topbar" data-sim-hero data-active-robot="tale-bot">
@@ -141,16 +141,49 @@
             <span>Neteja</span>
           </button>
         </div>
+
+        <hr class="sim-toolbar-divider" aria-hidden="true">
+
+        <div class="sim-toolbar-section sim-grid-size-controls" role="group" aria-label="Mida del tauler">
+          <div class="sim-size-field">
+            <label for="sim-grid-rows" class="sim-size-label">Files</label>
+            <select id="sim-grid-rows" class="sim-size-select" data-grid-rows aria-label="Nombre de files del tauler">
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6" selected>6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="sim-size-field">
+            <label for="sim-grid-cols" class="sim-size-label">Columnes</label>
+            <select id="sim-grid-cols" class="sim-size-select" data-grid-cols aria-label="Nombre de columnes del tauler">
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6" selected>6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
       </div>
 
-      <!-- Tapís quadrat auto-escalable -->
+      <!-- Tapís auto-escalable -->
       <div class="sim-board-stage">
-        <div class="sim-board-outer">
-          <div class="sim-col-headers" aria-hidden="true">
+        <div class="sim-board-outer" data-board-outer style="--grid-rows: 6; --grid-cols: 6;">
+          <div class="sim-col-headers" data-col-headers aria-hidden="true">
             <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span>
           </div>
           <div class="sim-board-row-wrap">
-            <div class="sim-row-headers" aria-hidden="true">
+            <div class="sim-row-headers" data-row-headers aria-hidden="true">
               <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
             </div>
 
