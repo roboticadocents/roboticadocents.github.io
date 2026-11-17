@@ -770,7 +770,7 @@ assert.match(caesarCipher.html, /PLAÇA[\s\S]*la Ç es manté/i, "la convenció 
 const disconnectedCipherSource = fs.readFileSync(path.join(root, "_content/situacions/pc-cripto.md"), "utf8");
 const disconnectedCipher = renderer.parse(disconnectedCipherSource, "https://example.test/_content/situacions/pc-cripto.md");
 assert.match(disconnectedCipher.html, /pc-cripto\.webp/, "la situació desconnectada usa una il·lustració pròpia de materials de paper en estil 3D");
-assert.match(disconnectedCipher.html, /no un producte oficial/i, "la llegenda identifica la roda com a material didàctic conceptual");
+assert.match(disconnectedCipher.html, /no un producto oficial/i, "la llegenda identifica la roda com a material didàctic conceptual");
 
 const wetlandAnimationSource = fs.readFileSync(path.join(root, "_content/situacions/mb-animaciones-humedal.md"), "utf8");
 const wetlandAnimation = renderer.parse(wetlandAnimationSource, "https://example.test/_content/situacions/mb-animaciones-humedal.md");

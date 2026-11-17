@@ -3,7 +3,7 @@ active: true
 title: "Espías escolares: mensajes y privacidad"
 description: "¿Cómo podemos transmitir un mensaje de manera que el destinatario pueda recuperarlo, y qué nos enseña esto sobre la privacidad digital?"
 robot: "desendollat"
-robot_label: "Desendollat (sense robot)"
+robot_label: "Desconectado (sin robot)"
 cycle: "tercer-cicle"
 cycle_label: "Tercer ciclo"
 subject: "matematiques"
@@ -14,150 +14,150 @@ duration: "4 sesiones de 50 minutos"
 challenge: "¿Cómo podemos transmitir un mensaje de manera que el destinatario pueda recuperarlo, y qué nos enseña esto sobre la privacidad digital?"
 ---
 
-![Una roda de Cèsar de cartó amb dues capes, un sobre i tires de missatge en blanc, preparats com a materials desconnectats d’aula.](../../_assets/situacions/pc-cripto.webp)
+![Una rueda de César de cartón con dos capas, un sobre y tiras de mensaje en blanco, preparados como materiales desconectados de aula.](../../_assets/situacions/pc-cripto.webp)
 
-_La roda, el sobre i les tires són una representació pròpia de materials de paper, no un producte oficial. La situació és desconnectada i no demana comptes ni dades personals._
+_La rueda, el sobre y las tiras son una representación propia de materiales de papel, no un producto oficial. La situación es desconectada y no pide cuentas ni datos personales._
 
-## Repte i sentit de la proposta
+## Reto y sentido de la propuesta
 
-L'aula es converteix en un equip que ha de fer arribar instruccions fictícies a una altra classe. El grup dissenya un codi senzill, comprova que una altra persona el puga llegir i després n'analitza els límits. El fil conductor permet treballar patrons, representació i comunicació sense confondre un joc de xifrat amb la protecció que necessiten les dades reals.
+El aula se convierte en un equipo que debe hacer llegar instrucciones ficticias a otra clase. El grupo diseña un código sencillo, comprueba que otra persona pueda leerlo y después analiza sus límites. El hilo conductor permite trabajar patrones, representación y comunicación sin confundir un juego de cifrado con la protección que necesitan los datos reales.
 
-La pregunta de seguretat no és «com amaguem la contrasenya?», sinó «quina informació convé no compartir, amb qui i per quin canal?». No es demanen contrasenyes, noms d'usuari, missatges privats ni experiències personals. Tots els exemples són inventats i es poden substituir si recorden massa dades reals.
+La pregunta de seguridad no es «¿cómo escondemos la contraseña?», sino «¿qué información conviene no compartir, con quién y por qué canal?». No se piden contraseñas, nombres de usuario, mensajes privados ni experiencias personales. Todos los ejemplos son inventados y se pueden sustituir si recuerdan demasiado datos reales.
 
-## Aprenentatges que busquem
+## Aprendizajes que buscamos
 
-- Representar lletres i símbols amb una regla acordada, i aplicar la regla de manera consistent.
+- Representar letras y símbolos con una regla acordada, y aplicar la regla de forma consistente.
 
-- Descriure un procediment pas a pas, detectar un error de codificació i corregir-lo amb una prova.
+- Describir un procedimiento paso a paso, detectar un error de codificación y corregirlo con una prueba.
 
-- Comparar codis segons quantes possibilitats tenen, la facilitat d'ús i la facilitat amb què una persona externa els pot deduir.
+- Comparar códigos según cuántas posibilidades tienen, la facilidad de uso y la facilidad con que una persona externa puede deducirlos.
 
-- Distingir entre un joc de substitució, una contrasenya i els mecanismes de seguretat dels serveis digitals.
+- Distinguir entre un juego de sustitución, una contraseña y los mecanismos de seguridad de los servicios digitales.
 
-- Proposar hàbits de privacitat respectuosos: minimitzar la informació compartida, verificar el destinatari i demanar ajuda davant d'un missatge sospitós.
+- Proponer hábitos de privacidad respetuosos: minimizar la información compartida, verificar el destinatario y pedir ayuda ante un mensaje sospechoso.
 
-## Preparació i materials
+## Preparación y materiales
 
-Prepareu cartolina, tisores, llapis, una plantilla de dues rodes concèntriques o una taula de substitució, sobres i targetes. Feu una demostració prèvia amb una paraula neutra. Acordeu un alfabet comú —per exemple, A–Z sense accents— i expliqueu com es representen l'espai, la ñ, les majúscules i la puntuació. Si s'inclouen accents, afegiu-los explícitament al repertori; no doneu per fet que totes les taules els codifiquen igual.
+Preparad cartulina, tijeras, lápices, una plantilla de dos ruedas concéntricas o una tabla de sustitución, sobres y tarjetas. Haced una demostración previa con una palabra neutra. Acordad un alfabeto común —por ejemplo, A–Z sin acentos— y explicad cómo se representan el espacio, la ñ, las mayúsculas y la puntuación. Si se incluyen acentos, añadidlos explícitamente al repertorio; no deis por hecho que todas las tablas los codifican igual.
 
-Prepareu missatges breus inventats com ara «EL MAPA ESTA AL PUNT BLAU» o instruccions de cerca d'un objecte fictici. Eviteu informació personal, dades de dispositius i qualsevol contrasenya real. En grups diversos, oferiu la roda impresa ja retallada o una taula gran per reduir la càrrega de motricitat fina.
+Preparad mensajes breves inventados como «EL MAPA ESTÁ EN EL PUNTO AZUL» o instrucciones de búsqueda de un objeto ficticio. Evitad información personal, datos de dispositivos y cualquier contraseña real. En grupos diversos, ofreced la rueda impresa ya recortada o una tabla grande para reducir la carga de motricidad fina.
 
-## Seqüència didàctica · quatre sessions de 50 minuts
+## Secuencia didáctica · cuatro sesiones de 50 minutos
 
-### **Sessió 1 · Missatge, codi i destinatari (50 min).**
+### **Sesión 1 · Mensaje, código y destinatario (50 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu una targeta amb símbols inventats i pregunteu què necessita saber el receptor per interpretar-la. Recolliu idees: clau compartida, alfabet, ordre i separació de paraules.
+Presentad una tarjeta con símbolos inventados y preguntad qué necesita saber el receptor para interpretarla. Recoged ideas: clave compartida, alfabeto, orden y separación de palabras.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Codifiqueu conjuntament una paraula amb una taula de substitució simple i demaneu a una altra parella que la descodifique. Introduïu emissor, missatge, codi i receptor com a parts d’un procés comunicatiu, sense equiparar el paper amb Internet.
+Codificad conjuntamente una palabra con una tabla de sustitución simple y pedid a otra pareja que la descodifique. Introducid emisor, mensaje, código y receptor como partes de un proceso comunicativo, sin equiparar el papel con Internet.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Cada parella crea una clau visual i codifica una instrucció fictícia de fins a sis paraules. Anoteu l’alfabet acordat, la separació d’espais i qualsevol convenció que haja calgut aclarir.
+Cada pareja crea una clave visual y codifica una instrucción ficticia de hasta seis palabras. Anotad el alfabeto acordado, la separación de espacios y cualquier convención que haya hecho falta aclarar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu les instruccions i reviseu la clau o les convencions si la parella receptora no pot reconstruir-les. Manteniu els missatges inventats i sense informació personal.
+Intercambiad las instrucciones y revisad la clave o las convenciones si la pareja receptora no puede reconstruirlas. Mantened los mensajes inventados y sin información personal.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu quina informació necessita el destinatari per recuperar el missatge. **Evidència:** clau visual, missatge codificat i convencions aclarides.
+Explicad qué información necesita el destinatario para recuperar el mensaje. **Evidencia:** clave visual, mensaje codificado y convenciones aclaradas.
 
-### **Sessió 2 · Roda de Cèsar i depuració (50 min).**
+### **Sesión 2 · Rueda de César y depuración (50 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu un desplaçament acordat —per exemple, tres lletres— i prediu com es transformaran les primeres lletres. Declareu alfabet i direcció abans de començar.
+Elegid un desplazamiento acordado —por ejemplo, tres letras— y predecid cómo se transformarán las primeras letras. Declarad alfabeto y dirección antes de empezar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Munteu la roda amb un alfabet exterior i un interior i una finestra clara per llegir correspondències. Manteniu la mateixa direcció per xifrar i desxifrar.
+Montad la rueda con un alfabeto exterior y uno interior y una ventana clara para leer correspondencias. Mantened la misma dirección para cifrar y descifrar.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Intercanvieu missatges. La parella receptora escriu la regla abans de llegir i registra el resultat. Si el text no té sentit, reviseu alfabet, espais i direcció: és depuració, no un fracàs.
+Intercambiad mensajes. La pareja receptora escribe la regla antes de leer y registra el resultado. Si el texto no tiene sentido, revisad alfabeto, espacios y dirección: es depuración, no un fracaso.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu la versió inicial amb la descodificada i corregiu una ambigüitat de la regla. Amb 26 lletres, compteu quants desplaçaments no trivials hi ha i comenteu què pot passar si algú conserva una còpia de la clau.
+Comparad la versión inicial con la descodificada y corregid una ambigüedad de la regla. Con 26 letras, contad cuántos desplazamientos no triviales hay y comentad qué puede pasar si alguien conserva una copia de la clave.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Dibuixeu el pas més propens a error i expliqueu com l’heu verificat. **Evidència:** roda, missatge xifrat i descodificació amb una revisió documentada.
+Dibujad el paso más propenso a error y explicad cómo lo habéis verificado. **Evidencia:** rueda, mensaje cifrado y descodificación con una revisión documentada.
 
-### **Sessió 3 · Atacs de joc i límits del codi (50 min).**
+### **Sesión 3 · Ataques de juego y límites del código (50 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Doneu a una tercera parella un missatge xifrat i una pista: provar desplaçaments, buscar una paraula probable o observar repeticions. Predigueu què podria revelar el text sense conéixer la clau.
+Dad a una tercera pareja un mensaje cifrado y una pista: probar desplazamientos, buscar una palabra probable u observar repeticiones. Predecid qué podría revelar el texto sin conocer la clave.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-La parella prova les claus possibles o analitza patrons per recuperar el missatge. L’activitat és un joc de paper; no es prova d’accedir a cap sistema ni compte.
+La pareja prueba las claves posibles o analiza patrones para recuperar el mensaje. La actividad es un juego de papel; no se intenta acceder a ningún sistema ni cuenta.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu el xifrat de Cèsar amb una substitució inventada. Registreu quantes possibilitats té cada codi i quina pista ha ajudat a llegir el missatge.
+Comparad el cifrado de César con una sustitución inventada. Registrad cuántas posibilidades tiene cada código y qué pista ha ayudado a leer el mensaje.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Cada equip afegeix al missatge una nota que explique què ha fet possible recuperar-lo. Compareu si augmentar les combinacions dificulta la lectura manual i què no resol.
+Cada equipo añade al mensaje una nota que explique qué ha hecho posible recuperarlo. Comparad si aumentar las combinaciones dificulta la lectura manual y qué no resuelve.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu per què una transformació de paper no es converteix en seguretat moderna només perquè siga més difícil de llegir. **Evidència:** missatge recuperat, comparació de codis i nota sobre els límits.
+Explicad por qué una transformación de papel no se convierte en seguridad moderna solo porque sea más difícil de leer. **Evidencia:** mensaje recuperado, comparación de códigos y nota sobre los límites.
 
-### **Sessió 4 · Privacitat quotidiana i protocol d’aula (50 min).**
+### **Sesión 4 · Privacidad cotidiana y protocolo de aula (50 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Classifiqueu situacions fictícies en tres respostes: compartir amb tothom, compartir només amb persones de confiança o no compartir. Useu exemples com horari públic, adreça de casa, fotografia d’un company sense permís i codi d’accés del centre.
+Clasificad situaciones ficticias en tres respuestas: compartir con todo el mundo, compartir solo con personas de confianza o no compartir. Usad ejemplos como horario público, dirección de casa, fotografía de un compañero sin permiso y código de acceso del centro.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Justifiqueu cada decisió considerant context, consentiment i destinatari. No assumiu que tota dada té el mateix nivell de sensibilitat ni demaneu experiències personals.
+Justificad cada decisión considerando contexto, consentimiento y destinatario. No asumáis que todo dato tiene el mismo nivel de sensibilidad ni pidáis experiencias personales.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-En grup, redacteu cinc passos davant d’una petició inesperada: aturar-se; no enviar dades ni obrir enllaços; comprovar qui ho demana per un canal conegut; demanar ajuda a una persona adulta de confiança; comunicar l’incident segons les normes del centre.
+En grupo, redactad cinco pasos ante una petición inesperada: pararse; no enviar datos ni abrir enlaces; comprobar quién lo pide por un canal conocido; pedir ayuda a una persona adulta de confianza; comunicar el incidente según las normas del centro.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Un altre equip revisa el protocol i comprova que cada pas siga concret, respectuós i aplicable. Reviseu les instruccions que deixen dubtes sobre a qui consultar o què no s’ha de fer.
+Otro equipo revisa el protocolo y comprueba que cada paso sea concreto, respetuoso y aplicable. Revisad las instrucciones que dejan dudas sobre a quién consultar o qué no hay que hacer.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Presenteu un cartell final sense noms ni exemples identificables i expliqueu una acció segura quan no reconeixeu el destinatari. **Evidència:** classificació de casos, protocol revisat i cartell d’aula.
+Presentad un cartel final sin nombres ni ejemplos identificables y explicad una acción segura cuando no reconozcáis al destinatario. **Evidencia:** clasificación de casos, protocolo revisado y cartel de aula.
 
-## Organització i rols
+## Organización y roles
 
-En equips de tres o quatre, repartiu els rols d'emissor, lector de la clau, receptor i observador del procediment. Canvieu-los en cada prova perquè tothom haja de produir i interpretar el codi. L'observador marca en una llista si s'ha declarat l'alfabet, la direcció, el tractament dels espais i la clau, i comunica un punt fort i una pregunta de millora.
+En equipos de tres o cuatro, repartid los roles de emisor, lector de la clave, receptor y observador del procedimiento. Cambiadlos en cada prueba para que todo el mundo tenga que producir e interpretar el código. El observador marca en una lista si se ha declarado el alfabeto, la dirección, el tratamiento de los espacios y la clave, y comunica un punto fuerte y una pregunta de mejora.
 
-## Evidències i avaluació formativa
+## Evidencias y evaluación formativa
 
-- Roda o taula amb la clau indicada i les convencions d'escriptura visibles.
+- Rueda o tabla con la clave indicada y las convenciones de escritura visibles.
 
-- Un missatge xifrat i la seua descodificació, amb una explicació que una altra parella puga seguir.
+- Un mensaje cifrado y su descodificación, con una explicación que otra pareja pueda seguir.
 
-- Una revisió d'error on l'alumne assenyala el pas que ha corregit i com ho ha comprovat.
+- Una revisión de error donde el alumno señala el paso que ha corregido y cómo lo ha comprobado.
 
-- Una comparació argumentada entre el codi de joc i una pràctica real de privacitat.
+- Una comparación argumentada entre el código de juego y una práctica real de privacidad.
 
-- El protocol d'aula, revisat perquè cada pas siga concret, respectuós i aplicable.
+- El protocolo de aula, revisado para que cada paso sea concreto, respetuoso y aplicable.
 
-**Indicadors d'observació:** aplica la regla sense canviar-la a mitja seqüència; detecta almenys una ambigüitat; explica per què un codi senzill es pot deduir; evita proposar que s'hi amaguen dades personals; i identifica una acció segura quan no reconeix el destinatari. Accepteu explicacions orals, esquemes o demostracions pràctiques.
+**Indicadores de observación:** aplica la regla sin cambiarla a mitad de secuencia; detecta al menos una ambigüedad; explica por qué un código sencillo se puede deducir; evita proponer que se escondan datos personales; e identifica una acción segura cuando no reconoce al destinatario. Aceptad explicaciones orales, esquemas o demostraciones prácticas.
 
-## Inclusió i ampliacions
+## Inclusión y ampliaciones
 
-Per facilitar l'accés, oferiu alfabet en lletra gran, peces mòbils, contrast alt i missatges més curts; permeteu dictar la resposta o treballar amb una parella. Qui necessite més repte pot comptar totes les claus possibles, comparar una substitució monoalfabètica amb una transposició de targetes, o escriure pseudocodi amb passos com «llegir símbol, trobar equivalència, escriure lletra». No cal introduir aritmètica modular formal si no correspon al nivell.
+Para facilitar el acceso, ofreced alfabeto en letra grande, piezas móviles, contraste alto y mensajes más cortos; permitid dictar la respuesta o trabajar con una pareja. Quien necesite más reto puede contar todas las claves posibles, comparar una sustitución monoalfabética con una transposición de tarjetas, o escribir pseudocódigo con pasos como «leer símbolo, encontrar equivalencia, escribir letra». No hace falta introducir aritmética modular formal si no corresponde al nivel.
 
-## Seguretat i abast
+## Seguridad y alcance
 
-El xifratge Cèsar és una simulació històrica i **no protegeix informació real**. No s'utilitza per guardar contrasenyes ni per enviar informació privada. La maqueta ensenya la idea de transformar i recuperar un missatge, però no representa els protocols, les claus ni les defenses actuals dels serveis digitals. Si apareix una experiència de risc real, atureu el joc, escolteu sense exposar la persona davant del grup i seguiu el procediment de protecció del centre.
+El cifrado César es una simulación histórica y **no protege información real**. No se utiliza para guardar contraseñas ni para enviar información privada. La maqueta enseña la idea de transformar y recuperar un mensaje, pero no representa los protocolos, las claves ni las defensas actuales de los servicios digitales. Si aparece una experiencia de riesgo real, detened el juego, escuchad sin exponer a la persona delante del grupo y seguid el procedimiento de protección del centro.
 
-## Referents curriculars i transferència
+## Referentes curriculares y transferencia
 
-La proposta connecta el raonament matemàtic, la seqüenciació pròpia del pensament computacional i l'ús crític i responsable de la informació. El producte final pot quedar com a cartell d'aula amb el protocol, sense noms ni exemples que identifiquen cap alumne. Per continuar, compareu com una mateixa instrucció es representa amb paraules, pictogrames i símbols, i què guanya o perd cada representació.
+La propuesta conecta el razonamiento matemático, la secuenciación propia del pensamiento computacional y el uso crítico y responsable de la información. El producto final puede quedar como cartel de aula con el protocolo, sin nombres ni ejemplos que identifiquen a ningún alumno. Para continuar, comparad cómo una misma instrucción se representa con palabras, pictogramas y símbolos, y qué gana o pierde cada representación.
