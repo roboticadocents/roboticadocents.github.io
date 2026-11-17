@@ -1,0 +1,107 @@
+/* @theme robotica-taller */
+@import 'robotica';
+@font-face { font-family:Sora; src:url('fonts/Sora.ttf') format('truetype'); font-weight:400; }
+@font-face { font-family:Sora; src:url('fonts/Sora-Bold.ttf') format('truetype'); font-weight:700; }
+@font-face { font-family:'Plus Jakarta Sans'; src:url('fonts/PlusJakartaSans.ttf') format('truetype'); font-weight:400; }
+@font-face { font-family:'Plus Jakarta Sans'; src:url('fonts/PlusJakartaSans-Bold.ttf') format('truetype'); font-weight:700; }
+/* Taller guiat: variants pròpies de l’Itinerari 4, sessió 1. */
+section { --font-heading: 'Sora',sans-serif; --font-sans: 'Plus Jakarta Sans',sans-serif; font-family:var(--font-sans); }
+h1,h2,h3,h4,h5,h6 { font-family:var(--font-heading); }
+h2 { font-size:40px; }
+section.cover h2 { font-size:49px; margin-bottom:25px; }
+section.section h2 { font-size:51px; }
+section.schedule table { font-size:22px; width:100%; }
+section.schedule td,section.schedule th { padding:8px 12px; }
+section.visual { padding-right:580px; }
+section.visual .side-image { width:470px; height:440px; right:30px; }
+section.worksheet h2,section.solution h2 { font-size:36px; }
+section.worksheet p,section.solution p { font-size:25px; line-height:1.4; }
+section.worksheet img:not(.side-image),section.solution img:not(.side-image) { width:560px; max-width:100%; height:auto; max-height:125px; }
+
+/* Taulers i programes editables en HTML per al taller guiat. */
+section.mission,section.hardware,section.proof,section.program-compare { justify-content:flex-start; }
+section.mission h2,section.hardware h2,section.proof h2 { margin-bottom:24px; }
+.mission-layout { display:grid; grid-template-columns:380px 1fr; gap:38px; align-items:center; }
+.mission-board { margin:0; width:370px; }
+.mission-board figcaption { font:700 25px var(--font-heading); margin:0 0 10px; color:#0c1a4a; }
+.mission-grid { width:350px; table-layout:fixed; margin:0 0 10px; border-collapse:collapse; font-size:22px; }
+.mission-grid tr:nth-child(2n) { background:transparent; }
+.mission-grid th { padding:0; background:transparent; border:0; text-align:center; height:27px; font:400 21px var(--font-sans); }
+.mission-grid th:first-child { width:28px; }
+.mission-grid td { position:relative; padding:0; height:calc(320px / var(--grid-size)); border:2px solid #94a3b8; text-align:center; background:#fff; }
+.mission-grid td.obstacle { background:repeating-linear-gradient(135deg,#e2e8f0,#e2e8f0 7px,#f8fafc 7px,#f8fafc 14px); }
+.mission-grid td.visited { background:#ebf5fd; }
+.mission-grid .start-mark { position:absolute; top:4px; left:5px; color:#1d4ed8; font:700 32px var(--font-sans); }
+.mission-grid .goal-mark { position:absolute; right:5px; top:3px; color:#92400e; font:700 27px var(--font-sans); }
+.mission-grid .obstacle-mark { color:#475569; font:400 39px var(--font-sans); }
+.mission-grid .finish-mark { position:absolute; left:4px; bottom:0; color:#0f172a; font:700 31px var(--font-sans); }
+.mission-grid .visit-order { position:absolute; right:5px; bottom:2px; color:#1d4ed8; font:700 19px var(--font-sans); }
+.board-caption { margin:0; font-size:21px; line-height:1.4; color:#475569; }
+.mission-instructions p { margin:0 0 16px; font-size:26px; line-height:1.4; }
+.mission-instructions ol { font-size:25px; }
+.command-tape { display:flex; align-items:flex-start; gap:13px; flex-wrap:wrap; margin:18px 0 22px; }
+.command { display:flex; flex-direction:column; align-items:center; width:78px; flex:none; }
+.command-face { width:68px; height:65px; display:flex; align-items:center; justify-content:center; border:2px solid #64748b; border-radius:12px; font:700 43px var(--font-sans); background:#fff; color:#0f172a; }
+.command-name { font:400 17px/1.2 var(--font-sans); margin-top:6px; text-align:center; }
+.tb .F .command-face { background:#168a00; color:#fff; border-color:#168a00; }
+.tb .B .command-face { background:#dc2626; color:#fff; border-color:#dc2626; }
+.tb .R .command-face { background:#2563eb; color:#fff; border-color:#2563eb; }
+.tb .L .command-face { background:#fde047; color:#0f172a; border-color:#a16207; }
+.command.P .command-face { background:#f97316; color:#fff; border-color:#c2410c; }
+.cs .command-face { background:#85b91d; color:#fff; border-radius:2px; border-color:#4d7c0f; }
+.command-number { width:68px; height:29px; background:#0284c7; color:#fff; text-align:center; font:700 23px/29px var(--font-sans); margin-top:4px; }
+.command.changed { outline:3px solid #b45309; outline-offset:5px; }
+.command-tape[aria-label] { overflow:visible; }
+.route-comparison { display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:start; }
+.route-comparison>div { display:flex; flex-direction:column; align-items:center; }
+.mission-board.compact { width:290px; }
+.compact .mission-grid { width:240px; margin:0 auto 8px; }
+.compact .mission-grid td { height:calc(210px / var(--grid-size)); }
+.compact .mission-grid th { height:24px; font-size:18px; }
+.compact .board-caption { font-size:18px; }
+.compact .mission-grid .start-mark { font-size:25px; }
+.compact .mission-grid .finish-mark { font-size:24px; }
+.compact .mission-grid .goal-mark { font-size:21px; }
+.compact .mission-grid .visit-order { font-size:16px; }
+.route-comparison .command-tape { gap:8px; margin:14px 0 8px; }
+.route-comparison .command { width:62px; }
+.route-comparison .command-face { width:56px; height:51px; font-size:35px; }
+.route-comparison .command-name { font-size:15px; }
+.route-comparison .command-number { width:56px; font-size:21px; height:25px; line-height:25px; }
+.takeaway { font-size:25px; line-height:1.4; margin-top:20px; }
+.hardware-layout { display:grid; grid-template-columns:660px 1fr; gap:35px; align-items:center; }
+.hardware-layout figure { margin:0; }
+.hardware-layout figure>img { width:650px; height:390px; object-fit:contain; }
+.hardware-layout p { font-size:25px; line-height:1.4; margin-bottom:17px; }
+.hardware-layout figcaption { font-size:17px; color:#64748b; margin-top:8px; }
+.parts-photo { position:relative; overflow:hidden; width:390px; height:400px; margin:0 auto; }
+.parts-photo img { position:absolute; top:0; left:0; width:900px; max-width:none; }
+.parts-photo .part { position:absolute; font-size:21px; font-weight:700; padding:2px 6px; background:#fff; color:#0c1a4a; }
+.robot-part { top:119px; left:8px; }
+.tower-part { top:312px; left:0; }
+.board-part { top:340px; left:195px; }
+.number-demo .command-tape { margin:25px 0 30px; }
+.number-demo .command { width:130px; }
+.number-demo .command-face { width:105px; height:100px; font-size:64px; }
+.number-demo .command-number { width:105px; height:40px; line-height:40px; font-size:30px; }
+.number-explanation { display:flex; gap:90px; margin-bottom:25px; }
+.program-comparison p { margin:0; font-size:25px; }
+.program-comparison .command-tape { margin:12px 0 25px; }
+.phase-label { font-size:24px; color:#2563eb; }
+.working-rules p { padding:12px 0; border-bottom:1px solid #cbd5e1; }
+.diagnosis { font-size:25px; }
+section.classroom .mission-instructions p { font-size:25px; margin-bottom:14px; }
+section.closing { background:#ebf5fd; }
+section b { font-weight:700; color:#2563eb; }
+.command.changed-number .command-number { outline:3px solid #b45309; outline-offset:4px; }
+.controls-photo { position:relative; overflow:hidden; width:470px; height:410px; margin:0 auto; }
+.controls-photo img { position:absolute; top:-20px; left:0; width:900px; max-width:none; }
+
+/* Definició i programa principal visibles alhora. */
+.function-example { display:flex; align-items:flex-start; gap:60px; margin:0 0 20px; }
+.function-example figure { margin:0; }
+.function-example figcaption { font:400 22px 'Plus Jakarta Sans',sans-serif; color:#64748b; margin-bottom:8px; }
+section.solution .function-example img { width:auto; height:125px; max-width:480px; object-fit:contain; }
+
+/* Referència sincronitzada amb la numeració impresa del quadern. */
+section p.handout-ref { position:absolute; top:31px; right:76px; margin:0; color:#64748b; font:400 18px/1.2 'Plus Jakarta Sans',sans-serif; }

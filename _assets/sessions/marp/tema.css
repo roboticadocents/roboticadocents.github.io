@@ -1,0 +1,56 @@
+/* @theme robotica */
+@import 'default';
+@font-face {font-family:Sora;src:url('fonts/Sora.ttf') format('truetype');font-weight:100 900;}
+@font-face {font-family:'Plus Jakarta Sans';src:url('fonts/PlusJakartaSans.ttf') format('truetype');font-weight:200 800;}
+section { width:1280px;height:720px;padding:66px 76px 72px;background:#fff;color:#0f172a;font:28px/1.45 'Plus Jakarta Sans',sans-serif;justify-content:center;letter-spacing:-.02em; }
+section::before {content:'';position:absolute;top:30px;left:76px;width:38px;height:28px;background:url('../../icons/logo.svg') left center/contain no-repeat;}
+h1,h2,h3 {font-family:Sora,sans-serif;color:#0c1a4a;letter-spacing:-.035em;line-height:1.16;}
+h2 {font-size:43px;margin:0 0 30px;font-weight:700;}
+p {margin:0 0 20px;} strong {color:#2563eb;font-weight:700;}
+ul,ol {margin:0 0 20px;padding-left:1.25em;} li {margin:9px 0;}
+footer {bottom:25px;left:76px;color:#64748b;font:14px 'Plus Jakarta Sans',sans-serif;max-width:1020px;}
+section::after {bottom:24px;right:48px;color:#2563eb;font:15px Sora,sans-serif;}
+table {font-size:25px;width:100%;border-collapse:collapse;margin:5px 0 24px;display:table;}
+th {background:#ebf5fd;color:#12305a;font-weight:700;}
+td,th {border:0;border-bottom:1px solid #dbe5ef;padding:12px 16px;}
+tr:nth-child(2n) {background:#f8fafc;}
+section.grid table {font-size:24px;max-width:770px;}section.grid td,section.grid th {padding:7px 18px;text-align:center;}
+section.grid p {font-size:25px;}
+section.cover,section.section {background:#ebf5fd;}
+section.cover h2 {font-size:59px;max-width:1020px;margin-bottom:36px;}
+section.section h2 {font-size:55px;max-width:1000px;}
+section.activity {background:#f5f3ff;border-left:12px solid #7c3aed;}
+section.activity strong {color:#6d28d9;}
+section.solution {border-left:12px solid #2563eb;}
+section.pause {background:#f8fafc;}
+section.worksheet p {font-size:26px;line-height:1.55;}
+section.worksheet img:not(.side-image),section.solution img:not(.side-image) {max-width:620px;max-height:135px;object-fit:contain;object-position:left center;}
+section.resources p {font-size:25px;}
+a {color:#1d4ed8;text-decoration:underline;text-underline-offset:4px;}
+.flow {display:flex;align-items:center;gap:16px;margin:14px 0 32px;flex-wrap:wrap;}
+.flow span:not(.arrow) {padding:14px 18px;background:#eff6ff;border-bottom:3px solid #2563eb;font-size:25px;font-weight:600;}
+.flow .arrow {color:#2563eb;}
+section.blocks img {max-height:310px;object-fit:contain;object-position:left center;}
+section.blocks p {margin-bottom:18px;}
+/* Images remain in the slide rather than Marpit's split-background layers.
+   This keeps the logo and footer intact in Chrome's PDF export. */
+section.visual {padding-right:560px;}
+section.visual .side-image {position:absolute;right:36px;top:50%;transform:translateY(-50%);width:440px;height:430px;object-fit:contain;}
+/* Explanatory diagrams are kept large enough to read on a classroom projector. */
+section.diagram h2,section.explanation h2 {font-size:40px;}
+section.diagram .explanatory-diagram {display:block;width:1128px;height:315px;object-fit:contain;margin:0 0 16px;}
+section.diagram p {font-size:26px;line-height:1.4;margin-bottom:12px;}
+.compare {display:grid;grid-template-columns:1fr 1fr;gap:36px;margin:0 0 24px;}
+.compare>div {border-top:4px solid #2563eb;padding:20px 16px;background:#f8fafc;}
+.compare h3 {font-size:29px;margin:0 0 16px;}
+.compare p {font-size:26px;margin:0;line-height:1.5;}
+.checks {display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:0 0 28px;}
+.checks>div {border-top:4px solid #2563eb;padding:18px 12px;background:#eff6ff;}
+.checks b {color:#12305a;font-size:25px;}
+.checks p {font-size:24px;margin:15px 0 0;}
+.robot-strip {display:flex;gap:35px;justify-content:space-evenly;margin:0 0 30px;}
+.robot-strip figure {margin:0;text-align:center;}
+.robot-strip img {width:250px;height:230px;object-fit:contain;}
+.robot-strip figcaption {font-size:24px;color:#12305a;font-weight:600;margin-top:12px;}
+section.tangible img {width:1050px;max-height:250px;object-fit:contain;object-position:left center;}
+section.tangible p {font-size:26px;line-height:1.45;}
