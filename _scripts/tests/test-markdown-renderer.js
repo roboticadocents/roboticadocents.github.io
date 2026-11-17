@@ -479,7 +479,7 @@ for (const step of codingExpressFirstTrip.steps) {
 }
 const codingExpressFork = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/ce-bifurcacion-parque.md"), "utf8"), "https://example.test/_content/situacions/ce-bifurcacion-parque.md");
 assert.match(codingExpressFork.html, /sa-ce-bifurcacio-agulla\.webp/, "la bifurcació intercala una imatge del tren Coding Express de la dotació i l’agulla manual");
-assert.match(codingExpressFork.html, /el tren no llig el bitllet ni tria el ramal per si mateix/i, "la imatge de la bifurcació s’acompanya del límit funcional del tren");
+assert.match(codingExpressFork.html, /el tren no lee el billete ni elige el ramal por sí mismo/i, "la imatge de la bifurcació s’acompanya del límit funcional del tren");
 const codingExpressSafeRoute = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/ce-camino-seguro.md"), "utf8"), "https://example.test/_content/situacions/ce-camino-seguro.md");
 assert.match(codingExpressSafeRoute.html, /sa-ce-cami-segur-senyals\.webp/, "la ruta segura intercala una imatge pròpia de la maqueta Coding Express");
 assert.match(codingExpressSafeRoute.html, /no substitueixen ni reprodueixen la senyalització viària oficial/i, "la imatge identifica explícitament els pictogrames com a material de joc");

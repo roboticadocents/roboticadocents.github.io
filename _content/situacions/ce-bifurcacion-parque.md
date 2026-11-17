@@ -14,132 +14,132 @@ duration: "3 sesiones · 120 min"
 challenge: "¿Qué información nos ayuda a decidir por qué rama debe continuar el tren y cómo comprobamos si ha llegado al destino elegido?"
 ---
 
-![El tren Coding Express arriba a una bifurcació entre l’estació del parc i una biblioteca de maqueta.](../../_assets/situacions/ce-bifurcacio-parc.webp)
+![El tren Coding Express llega a una bifurcación entre la estación del parque y una biblioteca de maqueta.](../../_assets/situacions/ce-bifurcacio-parc.webp)
 
-_El tren Coding Express arriba a una bifurcació entre l’estació del parc i una biblioteca de maqueta._
+_El tren Coding Express llega a una bifurcación entre la estación del parque y una biblioteca de maqueta._
 
-## ❓ Repte i intenció
+## ❓ Reto e intención
 
-Una línia imaginària de barri connecta l’estació amb el parc i la biblioteca. La via en Y ofereix dues branques i la classe dissenya una manera clara d’encaminar una passatgera a una d’elles. El joc comença amb bitllets de colors i, després, combina targetes, pictogrames, vies, agulla roja i passatgers de Coding Express.
+Una línea imaginaria de barrio conecta la estación con el parque y la biblioteca. La vía en Y ofrece dos ramas y la clase diseña una forma clara de encaminar a una pasajera hacia una de ellas. El juego empieza con billetes de colores y, después, combina tarjetas, pictogramas, vías, aguja roja y pasajeros de Coding Express.
 
-La condició «si el bitllet té el símbol del parc, aleshores triem la branca del parc» és primer una regla compartida entre persones. La persona conductora interpreta el bitllet i mou manualment la palanca roja; ni el bitllet ni el color activen l’agulla de manera automàtica. Així separem el concepte d’una decisió condicional de l’acció mecànica real del tren.
+La condición «si el billete tiene el símbolo del parque, entonces elegimos la rama del parque» es primero una regla compartida entre personas. La persona conductora interpreta el billete y mueve manualmente la palanca roja; ni el billete ni el color activan la aguja de forma automática. Así separamos el concepto de una decisión condicional de la acción mecánica real del tren.
 
-## 🎯 Objectius i paraules clau
+## 🎯 Objetivos y palabras clave
 
-- Reconéixer que la via en Y ofereix més d’un camí possible.
+- Reconocer que la vía en Y ofrece más de un camino posible.
 
-- Relacionar una informació —bitllet/color/símbol— amb una opció de ruta.
+- Relacionar una información —billete/color/símbolo— con una opción de ruta.
 
-- Expressar una regla condicional simple en forma «si… aleshores…».
+- Expresar una regla condicional simple en forma «si… entonces…».
 
-- Accionar l’agulla roja de manera segura i comprovar l’estació on arriba el tren.
+- Accionar la aguja roja de forma segura y comprobar la estación a la que llega el tren.
 
-- Comparar maneres de comunicar una destinació i dissenyar una solució més clara.
+- Comparar formas de comunicar un destino y diseñar una solución más clara.
 
-Vocabulari: *bitllet*, *conductora*, *senyal*, *indicar*, *canvi d’agulla*, *opció*, *si… aleshores…*. Acompanyeu cada paraula amb un objecte o pictograma; no cal que l’alumnat domine la terminologia formal per mostrar la idea.
+Vocabulario: *billete*, *conductora*, *señal*, *indicar*, *cambio de aguja*, *opción*, *si… entonces…*. Acompañad cada palabra con un objeto o pictograma; no hace falta que el alumnado domine la terminología formal para mostrar la idea.
 
-## 🧰 Preparació
+## 🧰 Preparación
 
-Comproveu que el kit inclou la via en Y, l’agulla roja, maons d’acció i passatgers. Prepareu almenys tres llocs de parada coneguts pel grup (estació, parc i biblioteca), un maó de color per a cada parada i bitllets que coincidisquen amb eixos colors. Afegiu una icona a cada color per no dependre només de la percepció cromàtica. L’agulla ha de moure’s amb suavitat; no la forceu si el tren està en marxa.
+Comprobad que el kit incluye la vía en Y, la aguja roja, ladrillos de acción y pasajeros. Preparad al menos tres lugares de parada conocidos por el grupo (estación, parque y biblioteca), un ladrillo de color para cada parada y billetes que coincidan con esos colores. Añadid un icono a cada color para no depender solo de la percepción cromática. La aguja debe moverse con suavidad; no la forcéis si el tren está en marcha.
 
-Un set està pensat per a grups de fins a sis. Repartiu rols i canvieu-los entre intents: conductora, passatgera, observadora de l’agulla, observadora de la parada, narradora i encarregada de les targetes. Si no hi ha una via Y compatible, feu la primera ronda amb un mapa de dues branques i una fitxa mòbil; marqueu-la com a simulació i conserveu el repte condicional.
+Un conjunto está pensado para grupos de hasta seis. Repartid roles y cambiadlos entre intentos: conductora, pasajera, observadora de la aguja, observadora de la parada, narradora y encargada de las tarjetas. Si no hay una vía Y compatible, haced la primera ronda con un mapa de dos ramas y una ficha móvil; marcadla como simulación y conservad el reto condicional.
 
-## 📅 Seqüència didàctica · 3 sessions de 40 minuts
+## 📅 Secuencia didáctica · 3 sesiones de 40 minutos
 
-### **Sessió 1 · Joc de bitllets de colors i símbols.**
+### **Sesión 1 · Juego de billetes de colores y símbolos.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu tres punts de l’aula com a estacions i poseu a cada lloc un maó de color amb un pictograma: parc, biblioteca o jardí. Pregunteu quin bitllet podria enviar una passatgera a cadascun dels llocs abans d’explicar la regla.
+Elegid tres puntos del aula como estaciones y poned en cada lugar un ladrillo de color con un pictograma: parque, biblioteca o jardín. Preguntad qué billete podría enviar a una pasajera a cada uno de los lugares antes de explicar la regla.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Una persona fa de conductora i reparteix un bitllet a cada passatgera. La regla es diu en veu alta o s’assenyala amb una targeta: «si tens el bitllet amb l’arbre, aleshores vas cap al jardí». La persona camina o mou una fitxa fins al punt corresponent.
+Una persona hace de conductora y reparte un billete a cada pasajera. La regla se dice en voz alta o se señala con una tarjeta: «si tienes el billete con el árbol, entonces vas hacia el jardín». La persona camina o mueve una ficha hasta el punto correspondiente.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-En arribar, compareu la icona del bitllet amb la de l’estació. Registreu parelles bitllet–destinació i formuleu la regla amb «si… aleshores…», oralment, amb pictogrames o amb una tira de fletxes.
+Al llegar, comparad el icono del billete con el de la estación. Registrad parejas billete–destino y formulad la regla con «si… entonces…», oralmente, con pictogramas o con una tira de flechas.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu colors, símbols o destinacions i comproveu que la regla continua sent clara. Si un bitllet pot correspondre a més d’una estació, decidiu què cal modificar: la llegenda, el símbol o la instrucció. Com a suport, treballeu amb dues estacions i un sol pictograma.
+Cambiad colores, símbolos o destinos y comprobad que la regla sigue siendo clara. Si un billete puede corresponder a más de una estación, decidid qué hay que modificar: la leyenda, el símbolo o la instrucción. Como apoyo, trabajad con dos estaciones y un solo pictograma.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Acabeu posant dos bitllets al costat de dues branques dibuixades i fent una predicció de camí. **Evidència:** parelles bitllet–destinació, regla condicional i una observació de com s’ha comprovat la resposta. **Ampliació:** afegiu un bitllet que indique una destinació i una parada intermèdia.
+Acabad poniendo dos billetes junto a dos ramas dibujadas y haciendo una predicción de camino. **Evidencia:** parejas billete–destino, regla condicional y una observación de cómo se ha comprobado la respuesta. **Ampliación:** añadid un billete que indique un destino y una parada intermedia.
 
-### **Sessió 2 · Construïm la Y i fem la tria manual.**
+### **Sesión 2 · Construimos la Y y hacemos la elección manual.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans de muntar, mostreu el mapa de dues branques i pregunteu quina informació necessita la conductora per triar-ne una. Recordeu que la regla orienta una persona: el tren no llig el bitllet.
+Antes de montar, mostrad el mapa de dos ramas y preguntad qué información necesita la conductora para elegir una. Recordad que la regla orienta a una persona: el tren no lee el billete.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Munteu la via en Y, col·loqueu una destinació en cada branca i situeu maons d’acció perquè el tren puga aturar-se, d’acord amb les funcions que el grup ja ha comprovat. La conductora rep un bitllet, verbalitza o assenyala la regla i mou l’agulla roja abans d’engegar el tren.
+Montad la vía en Y, colocad un destino en cada rama y situad ladrillos de acción para que el tren pueda detenerse, de acuerdo con las funciones que el grupo ya ha comprobado. La conductora recibe un billete, verbaliza o señala la regla y mueve la aguja roja antes de encender el tren.
 
-![El tren Coding Express de la dotació arriba a una bifurcació amb l’agulla manual; un parc i una biblioteca marquen els dos destins.](../../_assets/situacions/sa-ce-bifurcacio-agulla.webp)
+![El tren Coding Express de la dotación llega a una bifurcación con la aguja manual; un parque y una biblioteca marcan los dos destinos.](../../_assets/situacions/sa-ce-bifurcacio-agulla.webp)
 
-_La targeta orienta la persona que controla l’agulla: el tren no llig el bitllet ni tria el ramal per si mateix._
+_La tarjeta orienta a la persona que controla la aguja: el tren no lee el billete ni elige el ramal por sí mismo._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una altra persona posa una figura passatgera al tren; la resta observa per separat el moviment de l’agulla i el punt on el tren s’atura. Registreu símbol del bitllet, branca triada, posició de l’agulla, estació observada i si coincideix amb la predicció.
+Otra persona pone una figura pasajera en el tren; el resto observa por separado el movimiento de la aguja y el punto donde el tren se detiene. Registrad símbolo del billete, rama elegida, posición de la aguja, estación observada y si coincide con la predicción.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu un intent per a cada bitllet i canvieu els rols. Si el resultat no coincideix, reviseu l’agulla, la connexió de la via i la posició del maó d’acció; no atribuïu el resultat al bitllet perquè el tren no el llig. Feu els canvis amb el tren aturat o amb la via buida, segons les instruccions del set; ningú posa la mà davant del tren.
+Haced un intento para cada billete y cambiad los roles. Si el resultado no coincide, revisad la aguja, la conexión de la vía y la posición del ladrillo de acción; no atribuyáis el resultado al billete porque el tren no lo lee. Haced los cambios con el tren detenido o con la vía vacía, según las instrucciones del conjunto; nadie pone la mano delante del tren.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dues rutes executades i una discrepància descrita amb allò que s’ha vist. Compareu la predicció amb l’estació observada i expliqueu quina part de la decisió ha fet una persona.
+**Evidencia:** dos rutas ejecutadas y una discrepancia descrita con lo que se ha visto. Comparad la predicción con la estación observada y explicad qué parte de la decisión ha hecho una persona.
 
-### **Sessió 3 · Triem senyals i ampliem les opcions.**
+### **Sesión 3 · Elegimos señales y ampliamos las opciones.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu la llegenda de les sessions anteriors. Pregunteu quin senyal —color, pictograma, paraula, llum o so— faria més clara la destinació per a les persones del grup.
+Recuperad la leyenda de las sesiones anteriores. Preguntad qué señal —color, pictograma, palabra, luz o sonido— haría más clara la destinación para las personas del grupo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-LEGO proposa parlar dels senyals que els trens poden donar; en aquesta maqueta, el grup prova una llegenda que ajude les persones a saber quina ruta s’ha triat. No pressuposeu que el tren reconeix bitllets, paraules o sons: són codis per a qui controla el model.
+LEGO propone hablar de las señales que los trenes pueden dar; en esta maqueta, el grupo prueba una leyenda que ayude a las personas a saber qué ruta se ha elegido. No presupongáis que el tren reconoce billetes, palabras o sonidos: son códigos para quien controla el modelo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Dibuixeu la regla per a cada destinació i comproveu que una altra parella pot interpretar-la sense explicacions addicionals. Marqueu qualsevol senyal ambigu i proposeu una llegenda més clara.
+Dibujad la regla para cada destino y comprobad que otra pareja puede interpretarla sin explicaciones adicionales. Marcad cualquier señal ambigua y proponed una leyenda más clara.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si la dotació ho permet, connecteu dues vies Y per crear tres branques o una forma de Q. Dibuixeu quina regla caldria per a una tercera destinació i com s’hi tornaria en una visita posterior. Proveu un maó verd de retorn només si és a la caixa i la seua funció està verificada en el tren real; altrament, traceu el retorn amb una fitxa sobre el mapa.
+Si la dotación lo permite, conectad dos vías Y para crear tres ramas o una forma de Q. Dibujad qué regla haría falta para un tercer destino y cómo se volvería a él en una visita posterior. Probad un ladrillo verde de retorno solo si está en la caja y su función está verificada en el tren real; si no, trazad el retorno con una ficha sobre el mapa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** llegenda revisada, tercera condició o simulació, i una explicació dels límits de la ruta. Tanqueu explicant quina senyalització heu millorat i quina part de la decisió continua depenent d’una persona.
+**Evidencia:** leyenda revisada, tercera condición o simulación, y una explicación de los límites de la ruta. Cerrad explicando qué señalización habéis mejorado y qué parte de la decisión sigue dependiendo de una persona.
 
-## 📋 Avaluació i evidències
+## 📋 Evaluación y evidencias
 
-Guardeu les targetes i la llegenda, l’esquema de la via, les prediccions, el registre de proves i la versió millorada dels senyals. Observeu si l’infant:
+Guardad las tarjetas y la leyenda, el esquema de la vía, las predicciones, el registro de pruebas y la versión mejorada de las señales. Observad si el niño o la niña:
 
-- descriu més d’una opció que ofereix la bifurcació;
+- describe más de una opción que ofrece la bifurcación;
 
-- relaciona un bitllet amb una destinació i explica o mostra la regla;
+- relaciona un billete con un destino y explica o muestra la regla;
 
-- anticipa quina posició cal donar a l’agulla i comprova el resultat;
+- anticipa qué posición hay que dar a la aguja y comprueba el resultado;
 
-- distingeix l’acció manual de la persona del que fa el tren;
+- distingue la acción manual de la persona de lo que hace el tren;
 
-- detecta un senyal ambigu i proposa com aclarir-lo;
+- detecta una señal ambigua y propone cómo aclararla;
 
-- pot narrar els esdeveniments de la ruta amb preguntes de suport.
+- puede narrar los eventos de la ruta con preguntas de apoyo.
 
-Registre docent: anoteu una frase, gest o elecció observada i el suport oferit («ho ha fet sense ajuda», «amb una pregunta» o «amb la llegenda a la vista»). No cal puntuar l’expressió oral: una selecció de targeta, mirada o comunicació augmentativa també mostra el raonament.
+Registro docente: anotad una frase, gesto o elección observada y el apoyo ofrecido («lo ha hecho sin ayuda», «con una pregunta» o «con la leyenda a la vista»). No hace falta puntuar la expresión oral: una selección de tarjeta, mirada o comunicación aumentativa también muestra el razonamiento.
 
-## ♿ Més d’una manera de participar i jugar amb seguretat
+## ♿ Más de una forma de participar y jugar con seguridad
 
-Useu símbols d’alt contrast junt amb colors, bitllets tàctils, recorregut curt i anticipació visual. L’alumnat pot fer de narrador/a, observador/a, responsable de llegenda o conductora. Si el so del tren és incòmode, manteniu el joc en silenci i mostreu la targeta del senyal; si la via Y no funciona, useu el mapa pla i una fitxa, identificant-ho com a representació.
+Usad símbolos de alto contraste junto con colores, billetes táctiles, recorrido corto y anticipación visual. El alumnado puede hacer de narrador/a, observador/a, responsable de leyenda o conductora. Si el sonido del tren es incómodo, mantened el juego en silencio y mostrad la tarjeta de la señal; si la vía Y no funciona, usad el mapa plano y una ficha, identificándolo como representación.
 
-Estabilitzeu les vies sobre una superfície baixa i plana, atureu el tren abans de moure l’agulla si així ho requereix el model, i eviteu pressionar o torçar les peces. Les persones no són passatgeres que caminen ràpid: les figuretes viatgen al tren i el grup observa des d’una distància segura.
+Estabilizad las vías sobre una superficie baja y plana, detened el tren antes de mover la aguja si así lo requiere el modelo, y evitad presionar o torcer las piezas. Las personas no son pasajeras que caminan rápido: las figuras viajan en el tren y el grupo observa desde una distancia segura.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta [Y-Shaped Track – Conditional Statements](https://education.lego.com/en-us/lessons/preschool-coding-express/y-shaped-track/), lliçó 4 de 8 de Coding Express, de 30–45 minuts per a PreK–K. El pla oficial proposa el joc de bitllets de colors i almenys tres parades, la regla «si… aleshores…», la construcció d’una via Y amb dues destinacions, l’ús de la palanca roja per a dirigir el tren, l’ús dels maons d’acció per a fer-lo parar, la conversa sobre senyals i una ampliació de dues vies Y en forma de tres branques o Q. També suggereix el maó verd per a tornar a visitar parades. La ciutat/parc/biblioteca, les targetes amb pictogrames, el registre, els criteris d’accés i les bastides són propis; el bitllet no controla automàticament la via.
+Adapta [Y-Shaped Track – Conditional Statements](https://education.lego.com/en-us/lessons/preschool-coding-express/y-shaped-track/), lección 4 de 8 de Coding Express, de 30–45 minutos para PreK–K. El plan oficial propone el juego de billetes de colores y al menos tres paradas, la regla «si… entonces…», la construcción de una vía Y con dos destinos, el uso de la palanca roja para dirigir el tren, el uso de los ladrillos de acción para hacerlo parar, la conversación sobre señales y una ampliación de dos vías Y en forma de tres ramas o Q. También sugiere el ladrillo verde para volver a visitar paradas. La ciudad/parque/biblioteca, las tarjetas con pictogramas, el registro, los criterios de acceso y los andamiajes son propios; el billete no controla automáticamente la vía.
