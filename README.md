@@ -2,6 +2,16 @@
 
 Portal educatiu obert de robòtica educativa, pensament computacional i situacions d'aprenentatge curriculars per a mestres i docents d'Educació Infantil i Primària.
 
+## Llicència del codi
+
+El codi original d'aquest projecte es distribueix sota la **GNU Affero General Public License, versió 3 o qualsevol versió posterior** (`AGPL-3.0-or-later`). Consulta el text complet a [`LICENSE`](LICENSE).
+
+Podeu utilitzar, estudiar, modificar i redistribuir el codi, també amb finalitats comercials, sota les condicions d'aquesta llicència. Les versions modificades que es distribueixin han de conservar aquesta llicència i proporcionar el codi font corresponent. Si una versió modificada permet la interacció amb usuaris per xarxa, ha d'oferir-los accés gratuït al seu codi font corresponent. El programari es proporciona sense garantia.
+
+Codi font: [roboticadocents/roboticadocents.github.io](https://github.com/roboticadocents/roboticadocents.github.io).
+
+Aquesta declaració s'aplica al codi original del projecte. Els materials educatius, textos, imatges i altres recursos no queden coberts per aquesta declaració; els components i recursos de tercers conserven les seves llicències i avisos originals.
+
 ---
 
 ## 🤖 Robots Oficials i Slugs

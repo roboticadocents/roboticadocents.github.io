@@ -42,6 +42,8 @@ function SiteFooter({ root = '' } = {}) {
         <nav class="site-footer-links" aria-label="Recursos del web">
           <a href="${root}imprimir/index.html">Materials imprimibles</a>
           <a href="${root}sim/index.html">Simulador</a>
+          <a href="https://github.com/roboticadocents/roboticadocents.github.io">Codi font</a>
+          <a href="${root}LICENSE">Llicència del codi: AGPL-3.0-or-later</a>
         </nav>
         <div class="footer-robots" aria-hidden="true" data-footer-robots>
           <img class="footer-desks" src="${root}_assets/extra/pupitres.svg" alt="" width="831" height="68" loading="lazy" decoding="async">

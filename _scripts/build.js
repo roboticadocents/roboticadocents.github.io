@@ -68,6 +68,7 @@ function prepareDist() {
     fs.rmSync(DIST_DIR, { recursive: true, force: true });
   }
   fs.mkdirSync(DIST_DIR, { recursive: true });
+  fs.copyFileSync(path.join(ROOT_DIR, 'LICENSE'), path.join(DIST_DIR, 'LICENSE'));
 
   // Copiar actius estàtics necessaris
   for (const folder of ['_assets', '_css', '_js', 'sim']) {
