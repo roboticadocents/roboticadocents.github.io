@@ -6,103 +6,103 @@ cycle_label: "Primer ciclo"
 duration: "45 min"
 order: 1
 image: "_assets/activitats/portades/robot-huma.webp"
-image_alt: "Fitxa de robot, tauler amb obstacles, llibre i targetes de fletxes per preparar una entrega."
+image_alt: "Ficha de robot, tablero con obstáculos, libro y tarjetas de flechas para preparar una entrega."
 ---
 
-![Fitxa de robot, tauler amb obstacles, llibre i targetes de fletxes per preparar una entrega.](_assets/activitats/portades/robot-huma.webp)
+![Ficha de robot, tablero con obstáculos, libro y tarjetas de flechas para preparar una entrega.](_assets/activitats/portades/robot-huma.webp)
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-La biblioteca espera un llibre a la casella C1. El robot comença a A3 i hi ha una prestatgeria que bloqueja B2. L'equip ha de preparar un programa que permeta entregar-lo sense travessar la prestatgeria ni eixir del tauler. Una persona interpreta el robot movent una fitxa i executa les ordres acordades, sense afegir passos per ajudar a arribar.
+La biblioteca espera un libro en la casilla C1. El robot empieza en A3 y hay una estantería que bloquea B2. El equipo debe preparar un programa que permita entregarlo sin atravesar la estantería ni salir del tablero. Una persona interpreta al robot moviendo una ficha y ejecuta las órdenes acordadas, sin añadir pasos que ayuden a llegar.
 
-Treballarem seqüències, orientació i depuració: **girar canvia cap a on mira el robot, però no el desplaça de casella**. Abans de provar, predirem el resultat; si no coincideix, buscarem la primera discrepància i comprovarem una reparació. La proposta principal és per a Primer cicle; al final hi ha una adaptació per a Educació Infantil.
+Trabajaremos secuencias, orientación y depuración: **girar cambia hacia dónde mira el robot, pero no lo desplaza de casilla**. Antes de probar, predeciremos el resultado; si no coincide, buscaremos la primera discrepancia y comprobaremos una reparación. La propuesta principal es para Primer ciclo; al final hay una adaptación para Educación Infantil.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- [Descarrega el kit del robot humà (PDF, 5 pàgines)](_assets/activitats/kits/robot-huma.pdf): tauler, dotze ordres retallables, fitxes i tres missions, full de programa i guia docent amb solucions.
-- Per grup de tres: una còpia de les pàgines 1, 2 i 3, i una còpia de la pàgina 4 per ronda que vulgueu registrar. Reserveu la pàgina 5 per al docent. Imprimiu en A4 al 100%; el color no és necessari.
-- Llapis i un marcador petit per assenyalar l'ordre que s'està executant. Retalleu les dotze ordres de la pàgina 2 i els dos robots i les dues metes de la pàgina 3 abans de començar. Les targetes de missió poden quedar en el full.
+- [Descargad el kit del robot humano (PDF, 5 páginas)](_assets/activitats/kits/robot-huma.pdf): tablero, doce órdenes recortables, fichas y tres misiones, hoja de programa y guía docente con soluciones.
+- Por grupo de tres: una copia de las páginas 1, 2 y 3, y una copia de la página 4 por ronda que queráis registrar. Reservad la página 5 para el docente. Imprimid en A4 al 100 %; el color no es necesario.
+- Lápiz y un rotulador pequeño para señalar la orden que se está ejecutando. Recortad las doce órdenes de la página 2 y los dos robots y las dos metas de la página 3 antes de empezar. Las tarjetas de misión pueden quedar en la hoja.
 
-### Tauler, inici i papers de l'equip
+### Tablero, inicio y papeles del equipo
 
-Les columnes són A, B i C d'esquerra a dreta; les files són 1, 2 i 3 de dalt a baix. La primera missió comença a **A3, mirant cap a la fila 1**, i acaba a **C1**, on hi ha el llibre. B2 està bloquejada en totes les missions. Col·loqueu la fitxa damunt del robot dibuixat: la punta negra marca el davant. Poseu la meta mòbil sobre el llibre de C1; en altres missions, traslladeu-la i ignoreu el llibre imprès.
+Las columnas son A, B y C de izquierda a derecha; las filas son 1, 2 y 3 de arriba abajo. La primera misión empieza en **A3, mirando hacia la fila 1**, y termina en **C1**, donde está el libro. B2 está bloqueada en todas las misiones. Colocad la ficha encima del robot dibujado: la punta negra marca el frente. Poned la meta móvil sobre el libro de C1; en otras misiones, trasladadla e ignorad el libro impreso.
 
-Repartiu tres papers i canvieu-los en cada ronda: **programació** ordena les instruccions, **execució** mou la fitxa i **comprovació** assenyala l'ordre actual i contrasta el moviment amb el programa. Tothom participa en la predicció i la revisió. En parelles, combineu execució i comprovació.
+Repartid tres papeles y cambiadlos en cada ronda: **programación** ordena las instrucciones, **ejecución** mueve la ficha y **comprobación** señala la orden actual y contrasta el movimiento con el programa. Todo el mundo participa en la predicción y la revisión. En parejas, combinad ejecución y comprobación.
 
-### Tres ordres i una regla de parada
+### Tres órdenes y una regla de parada
 
-- **A / Avança 1:** una casella en la direcció cap a on mira la punta del robot.
-- **D / Gira dreta:** un quart de volta a la dreta del robot, sense canviar de casella.
-- **E / Gira esquerra:** un quart de volta a l'esquerra del robot, sense canviar de casella.
+- **A / Avanzar 1:** una casilla en la dirección hacia donde mira la punta del robot.
+- **D / Girar a la derecha:** un cuarto de vuelta a la derecha del robot, sin cambiar de casilla.
+- **E / Girar a la izquierda:** un cuarto de vuelta a la izquierda del robot, sin cambiar de casilla.
 
-Cada targeta s'executa una vegada, d'esquerra a dreta. No hi ha diagonals ni salts. Si la següent ordre obliga a eixir de la graella o entrar a B2, **pareu abans de moure**, marqueu eixa ordre i reviseu el programa. Acabar damunt del llibre és suficient; aquesta missió no exigeix una orientació final concreta.
+Cada tarjeta se ejecuta una vez, de izquierda a derecha. No hay diagonales ni saltos. Si la siguiente orden obliga a salir de la cuadrícula o entrar en B2, **deteneos antes de mover**, marcad esa orden y revisad el programa. Acabar encima del libro es suficiente; esta misión no exige una orientación final concreta.
 
-![Comparació de les tres ordres: avançar canvia de casella i conserva l'orientació; girar a la dreta o a l'esquerra conserva la casella i canvia l'orientació de la fitxa.](_assets/activitats/kits/robot-huma-ordres.webp)
+![Comparación de las tres órdenes: avanzar cambia de casilla y conserva la orientación; girar a la derecha o a la izquierda conserva la casilla y cambia la orientación de la ficha.](_assets/activitats/kits/robot-huma-ordres.webp)
 
-_Les fletxes rectes són ordres d'avançar respecte del robot, no una ordre de pujar sempre en el paper. Les fletxes corbes indiquen girs sobre la mateixa casella._
+_Las flechas rectas son órdenes de avanzar respecto al robot, no una orden de subir siempre en el papel. Las flechas curvas indican giros sobre la misma casilla._
 
-## 👣 Desenvolupament pas a pas
+## 👣 Desarrollo paso a paso
 
-![Tres moments de la missió biblioteca: planificar una ruta en una graella de tres per tres, ordenar cinc instruccions i comprovar el recorregut fins al llibre.](_assets/activitats/kits/robot-huma-inici.webp)
+![Tres momentos de la misión biblioteca: planificar una ruta en una cuadrícula de tres por tres, ordenar cinco instrucciones y comprobar el recorrido hasta el libro.](_assets/activitats/kits/robot-huma-inici.webp)
 
-### 1. Entenem el repte i provem les ordres · 8 min
+### 1. Entendemos el reto y probamos las órdenes · 8 min
 
-Presenteu el llibre que cal entregar. Abans de donar targetes, digueu «ves al llibre» i pregunteu què falta concretar per fer el recorregut pas a pas. Mostreu les tres ordres i modeleu-les en una casella lliure.
+Presentad el libro que hay que entregar. Antes de dar tarjetas, decid «ve al libro» y preguntad qué falta concretar para hacer el recorrido paso a paso. Mostrad las tres órdenes y modeladlas en una casilla libre.
 
-Poseu el robot mirant cap a la fila 1: executeu D i després A. El gir el deixa a la mateixa casella i l'avanç el porta cap a la columna següent. Repetiu amb el robot mirant cap a la fila 3: ara la seua dreta apunta a l'altre costat del paper. Deixeu que el grup gire el tauler o es pose darrere de la fitxa per entendre el punt de vista.
+Poned el robot mirando hacia la fila 1: ejecutad D y después A. El giro lo deja en la misma casilla y el avance lo lleva hacia la columna siguiente. Repetid con el robot mirando hacia la fila 3: ahora su derecha apunta al otro lado del papel. Dejad que el grupo gire el tablero o se ponga detrás de la ficha para entender el punto de vista.
 
-### 2. Planifiquem sense moure la fitxa · 10 min
+### 2. Planificamos sin mover la ficha · 10 min
 
-Prepareu la missió 1: A3 mirant cap a la fila 1, meta C1 i B2 bloquejada. Cada equip compon un programa amb les targetes disponibles; les ordres que sobren queden fora. Es poden posar en una fila damunt de la taula o escriure com A, D i E als espais del full de registre. No cal omplir els huit espais.
+Preparad la misión 1: A3 mirando hacia la fila 1, meta C1 y B2 bloqueada. Cada equipo compone un programa con las tarjetas disponibles; las órdenes que sobran quedan fuera. Se pueden poner en una fila encima de la mesa o escribir como A, D y E en los espacios de la hoja de registro. No hace falta rellenar los ocho espacios.
 
-Abans de tocar la fitxa, la persona que comprova ressegueix mentalment la seqüència i explica on creu que acabarà. Anoteu o assenyaleu la casella i cap a on mirarà. En aquesta primera ronda, l'objectiu és obtenir una ruta executable, no trobar la més curta.
+Antes de tocar la ficha, la persona que comprueba repasa mentalmente la secuencia y explica dónde cree que acabará. Anotad o señalad la casilla y hacia dónde mirará. En esta primera ronda, el objetivo es obtener una ruta ejecutable, no encontrar la más corta.
 
-### 3. Executem i comparem amb la predicció · 10 min
+### 3. Ejecutamos y comparamos con la predicción · 10 min
 
-La persona executora posa la fitxa en la posició inicial. La persona que comprova assenyala una targeta, es fa només eixa acció i després es passa a la següent. No es mouen les targetes durant la prova. Si apareix una ordre impossible, s'aplica la regla de parada.
+La persona ejecutora pone la ficha en la posición inicial. La persona que comprueba señala una tarjeta, se hace solo esa acción y después se pasa a la siguiente. No se mueven las tarjetas durante la prueba. Si aparece una orden imposible, se aplica la regla de parada.
 
-En acabar o parar, compareu amb la predicció. Si no coincideix, distingiu dues possibilitats: el moviment no ha seguit la targeta, o el programa no descrivia la ruta prevista. En el primer cas, torneu a executar correctament; en el segon, reviseu les ordres. Per comprovar qualsevol canvi, torneu sempre a la mateixa casella i orientació inicials.
+Al acabar o parar, comparad con la predicción. Si no coincide, distinguid dos posibilidades: el movimiento no ha seguido la tarjeta, o el programa no describía la ruta prevista. En el primer caso, volved a ejecutar correctamente; en el segundo, revisad las órdenes. Para comprobar cualquier cambio, volved siempre a la misma casilla y orientación iniciales.
 
-### 4. Taller de reparació: un gir canviat · 10 min
+### 4. Taller de reparación: un giro cambiado · 10 min
 
-Proposeu a tots els grups el programa **A, A, E, A, A** per a la missió 1. Primer feu una predicció i després proveu-lo. Després de les dues primeres ordres, el robot és a A1; la tercera el deixa mirant fora del tauler. La quarta ordre no es pot executar. Pregunteu: «L'ordre on ens parem és necessàriament la que hem de canviar?».
+Proponed a todos los grupos el programa **A, A, E, A, A** para la misión 1. Primero haced una predicción y después probadlo. Tras las dos primeras órdenes, el robot está en A1; la tercera lo deja mirando fuera del tablero. La cuarta orden no se puede ejecutar. Preguntad: «¿La orden en la que nos paramos es necesariamente la que tenemos que cambiar?».
 
-La reparació és substituir la **tercera ordre, E, per D**. Reinicieu a A3 mirant cap a la fila 1 i executeu A, A, D, A, A. El robot arriba a C1. Registreu què s'ha canviat i per què. No es tracta de memoritzar la solució: cal relacionar el gir amb la direcció del moviment següent.
+La reparación es sustituir la **tercera orden, E, por D**. Reiniciad en A3 mirando hacia la fila 1 y ejecutad A, A, D, A, A. El robot llega a C1. Registrad qué se ha cambiado y por qué. No se trata de memorizar la solución: hay que relacionar el giro con la dirección del movimiento siguiente.
 
-![Programa amb un error i la seua reparació: A, A, E, A, A intenta eixir del tauler; canviant només la tercera ordre per D i reiniciant, arriba a C1.](_assets/activitats/kits/robot-huma-reparacio.webp)
+![Programa con un error y su reparación: A, A, E, A, A intenta salir del tablero; cambiando solo la tercera orden por D y reiniciando, llega a C1.](_assets/activitats/kits/robot-huma-reparacio.webp)
 
-_L'ordre impossible és la quarta, però l'error del programa està en el gir anterior. La reparació es valida repetint la prova amb el mateix inici._
+_La orden imposible es la cuarta, pero el error del programa está en el giro anterior. La reparación se valida repitiendo la prueba con el mismo inicio._
 
-### 5. Canviem els papers i transferim · 7 min
+### 5. Cambiamos los papeles y transferimos · 7 min
 
-Roteu els papers i feu la missió 2: A3 mirant cap a la fila 1, amb meta a C3. Cada equip prepara un programa nou i el prova. Una solució és D, A, A. Demaneu que expliquen per què reutilitzar sense canvis el programa de la primera missió no resol aquesta entrega.
+Rotad los papeles y haced la misión 2: A3 mirando hacia la fila 1, con meta en C3. Cada equipo prepara un programa nuevo y lo prueba. Una solución es D, A, A. Pedid que expliquen por qué reutilizar sin cambios el programa de la primera misión no resuelve esta entrega.
 
-Tanqueu amb una frase de cada equip: «Hem canviat ___ perquè ___, i ho hem comprovat ___». La missió 3 queda com a ampliació o segona sessió: comença a C1 mirant cap a la fila 3 i acaba a A1. El kit inclou una ruta possible de huit ordres.
+Cerrad con una frase de cada equipo: «Hemos cambiado ___ porque ___, y lo hemos comprobado ___». La misión 3 queda como ampliación o segunda sesión: empieza en C1 mirando hacia la fila 3 y acaba en A1. El kit incluye una ruta posible de ocho órdenes.
 
-> **💡 Consell per a l'aula:** El nom «robot humà» descriu un paper dins del joc. La persona no ha d'endevinar la intenció del programa ni fer-lo funcionar d'amagat. El docent pot ajudar a llegir les targetes mantenint les mateixes regles.
+> **💡 Consejo para el aula:** El nombre «robot humano» describe un papel dentro del juego. La persona no debe adivinar la intención del programa ni hacerlo funcionar a escondidas. El docente puede ayudar a leer las tarjetas manteniendo las mismas reglas.
 
-## ✅ Evidències d'aprenentatge
+## ✅ Evidencias de aprendizaje
 
-- Identifica la casella inicial i l'orientació abans de començar.
-- Distingeix un gir d'un desplaçament i executa una acció per targeta.
-- Fa una predicció i la compara amb el resultat observat.
-- Relaciona una discrepància amb una instrucció, proposa una reparació i la torna a provar.
+- Identifica la casilla inicial y la orientación antes de empezar.
+- Distingue un giro de un desplazamiento y ejecuta una acción por tarjeta.
+- Hace una predicción y la compara con el resultado observado.
+- Relaciona una discrepancia con una instrucción, propone una reparación y la vuelve a probar.
 
-Recolliu el programa inicial i el revisat al full de la pàgina 4. En cada criteri, anoteu **amb ajuda**, **de manera autònoma** o **encara no observat**, sense confondre dificultats de lectura o de motricitat amb la comprensió de les instruccions. Una explicació oral o assenyalant és una evidència vàlida. A la missió 2, observeu especialment si transfereixen la diferència entre girar i avançar.
+Recoged el programa inicial y el revisado en la hoja de la página 4. En cada criterio, anotad **con ayuda**, **de manera autónoma** o **aún no observado**, sin confundir dificultades de lectura o de motricidad con la comprensión de las instrucciones. Una explicación oral o señalando es una evidencia válida. En la misión 2, observad especialmente si transfieren la diferencia entre girar y avanzar.
 
-### Preguntes per fer pensar
+### Preguntas para pensar
 
-- Si el robot mira cap a nosaltres, on és la seua dreta?
-- Després de girar, ha canviat la seua casella o només cap a on mira?
-- Per què ens parem a la quarta ordre si hem de corregir la tercera?
-- Què passaria si provàrem la reparació des d'una orientació diferent?
+- Si el robot mira hacia nosotros, ¿dónde está su derecha?
+- Después de girar, ¿ha cambiado su casilla o solo hacia dónde mira?
+- ¿Por qué nos paramos en la cuarta orden si tenemos que corregir la tercera?
+- ¿Qué pasaría si probáramos la reparación desde una orientación diferente?
 
-## ♿ Variants i inclusió
+## ♿ Variantes e inclusión
 
-**Educació Infantil:** comenceu amb només la columna A, sense girs. Situeu el robot a A3 mirant cap a la fila 1 i la meta a A1. Prepareu dues targetes A i anticipeu amb gestos on arribarà. Després de dues proves, introduïu un sol gir en una demostració guiada. Dividiu el treball en dos moments de 15 minuts i no exigiu registrar per escrit ni reconèixer les coordenades: el docent les assenyala.
+**Educación Infantil:** empezad con solo la columna A, sin giros. Situad el robot en A3 mirando hacia la fila 1 y la meta en A1. Preparad dos tarjetas A y anticipad con gestos dónde llegará. Después de dos pruebas, introducid un solo giro en una demostración guiada. Dividid el trabajo en dos momentos de 15 minutos y no exijáis registrar por escrito ni reconocer las coordenadas: el docente las señala.
 
-**Accés i participació:** oferiu fitxes ja retallades, una graella ampliada, lectura compartida i resposta assenyalant o dictant. Les ordres combinen símbol i text i no depenen del color. Qui no puga moure la fitxa pot indicar cada acció perquè una altra persona la faça. Tot el joc es pot fer assegut en una taula.
+**Acceso y participación:** ofreced fichas ya recortadas, una cuadrícula ampliada, lectura compartida y respuesta señalando o dictando. Las órdenes combinan símbolo y texto y no dependen del color. Quien no pueda mover la ficha puede indicar cada acción para que la haga otra persona. Todo el juego se puede hacer sentado en una mesa.
 
-**Amb el cos:** si voleu representar el robot caminant, reproduïu el mateix tauler amb cinta de pintor en un espai lliure, amb caselles prou grans per girar sense topar. La persona camina mirant el recorregut, sense ulls tapats, i el grup s'atura entre ordres. És una variant opcional; no afegeix cap requisit d'aprenentatge.
+**Con el cuerpo:** si queréis representar el robot caminando, reproducid el mismo tablero con cinta de pintor en un espacio libre, con casillas lo bastante grandes para girar sin chocar. La persona camina mirando el recorrido, sin ojos tapados, y el grupo se detiene entre órdenes. Es una variante opcional; no añade ningún requisito de aprendizaje.
 
-**Aprofundiment:** feu la missió 3 o compareu dues rutes vàlides per a una mateixa entrega. Compteu avanços i girs per separat. Si decidiu buscar un programa més curt, acordeu abans que cada targeta compta com una ordre; arribar és el criteri inicial i optimitzar és un repte posterior.
+**Profundización:** haced la misión 3 o comparad dos rutas válidas para una misma entrega. Contad avances y giros por separado. Si decidís buscar un programa más corto, acordad antes que cada tarjeta cuenta como una orden; llegar es el criterio inicial y optimizar es un reto posterior.

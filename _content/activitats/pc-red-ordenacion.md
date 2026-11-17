@@ -6,71 +6,71 @@ cycle_label: "Tercer ciclo"
 duration: "50 min"
 order: 3
 image: "_assets/activitats/portades/xarxa-ordenacio.webp"
-image_alt: "Quatre canals de comparació transformen piles de peces desordenades en una sèrie creixent."
+image_alt: "Cuatro canales de comparación transforman pilas de piezas desordenadas en una serie creciente."
 ---
 
-![Quatre canals de comparació transformen piles de peces desordenades en una sèrie creixent.](_assets/activitats/portades/xarxa-ordenacio.webp)
+![Cuatro canales de comparación transforman pilas de piezas desordenadas en una serie creciente.](_assets/activitats/portades/xarxa-ordenacio.webp)
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Quatre nombres entren desordenats en una xarxa que sempre fa les mateixes comparacions. L'equip ha de conduir les targetes pels canals, registrar cada etapa i comprovar l'eixida. El repte no és ordenar «a ull», sinó executar un procediment fix i investigar què passa si en llevem un comparador.
+Cuatro números entran desordenados en una red que siempre hace las mismas comparaciones. El equipo debe conducir las tarjetas por los canales, registrar cada etapa y comprobar la salida. El reto no es ordenar «a ojo», sino ejecutar un procedimiento fijo e investigar qué pasa si quitamos un comparador.
 
-La xarxa del kit té **quatre canals, cinc comparadors i tres etapes**. Llegim el temps d'esquerra a dreta. A cada comparador, el menor queda al canal de dalt i el major al de baix; en un empat, mantenim els valors on són. No es tria la direcció segons l'esquerra del participant.
+La red del kit tiene **cuatro canales, cinco comparadores y tres etapas**. Leemos el tiempo de izquierda a derecha. En cada comparador, el menor queda en el canal de arriba y el mayor en el de abajo; en un empate, mantenemos los valores donde están. No se elige la dirección según la izquierda de quien participa.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- [Descarrega el kit de l'activitat (PDF, 4 pàgines)](_assets/activitats/kits/xarxa-ordenacio.pdf).
-- Pàgina 1: xarxa completa amb la regla i les tres etapes. Pàgina 2: dotze targetes numèriques, inclosos duplicats. Pàgina 3: registre i prova amb un comparador absent. Pàgina 4: solucions.
-- Per grup de quatre, una còpia de les pàgines 1 i 2 i dues de la pàgina 3. A4 al 100%, blanc i negre. Retalleu les dotze targetes i trieu-ne quatre per prova; reserveu les altres.
-- Repartiu els papers de dos comparadors, coordinació d'etapa i registre. Les targetes poden quedar al marge de cada etapa si són més grans que el diagrama. No cal caminar pel pati ni ampliar el dibuix al terra.
+- [Descargad el kit de la actividad (PDF, 4 páginas)](_assets/activitats/kits/xarxa-ordenacio.pdf).
+- Página 1: red completa con la regla y las tres etapas. Página 2: doce tarjetas numéricas, incluidos duplicados. Página 3: registro y prueba con un comparador ausente. Página 4: soluciones.
+- Por grupo de cuatro, una copia de las páginas 1 y 2 y dos de la página 3. A4 al 100 %, blanco y negro. Recortad las doce tarjetas y elegid cuatro para cada prueba; reservad las demás.
+- Repartid los papeles de dos comparadores, coordinación de etapa y registro. Las tarjetas pueden quedar al margen de cada etapa si son más grandes que el diagrama. No hace falta caminar por el patio ni ampliar el dibujo en el suelo.
 
-![Xarxa de quatre canals: primer es comparen 1–2 i 3–4, després 1–3 i 2–4, i finalment 2–3; l’exemple acaba ordenat.](_assets/activitats/kits/xarxa-ordenacio-exemple.webp)
+![Red de cuatro canales: primero se comparan 1–2 y 3–4, después 1–3 y 2–4, y finalmente 2–3; el ejemplo acaba ordenado.](_assets/activitats/kits/xarxa-ordenacio-exemple.webp)
 
-## 👣 Desenvolupament pas a pas
+## 👣 Desarrollo paso a paso
 
-![Esquema de l'activitat La xarxa que ordena: materials, regla i comprovació del resultat.](_assets/activitats/kits/xarxa-ordenacio-inici.webp)
+![Esquema de la actividad La red que ordena: materiales, regla y comprobación del resultado.](_assets/activitats/kits/xarxa-ordenacio-inici.webp)
 
-### 1. Entenem un comparador · 8 min
+### 1. Entendemos un comparador · 8 min
 
-Poseu 3 al canal de dalt i 1 al de baix. Apliqueu la regla: l'1 acaba dalt i el 3 baix. Repetiu amb dos 2: continuen sent dos valors, encara que no calga intercanviar-los. Un comparador conserva les dues targetes; només decideix a quin canal van.
+Poned 3 en el canal de arriba y 1 en el de abajo. Aplicad la regla: el 1 acaba arriba y el 3 abajo. Repetid con dos 2: continúan siendo dos valores, aunque no haga falta intercambiarlos. Un comparador conserva las dos tarjetas; solo decide a qué canal van.
 
-### 2. Executem la xarxa completa · 12 min
+### 2. Ejecutamos la red completa · 12 min
 
-Introduïu `3, 1, 4, 2`, de dalt a baix. A l'etapa 1 compareu 1–2 i 3–4; a la 2, compareu 1–3 i 2–4; a la 3, només 2–3. Després de cada etapa, atureu-vos i anoteu els quatre valors. Els canals que no participen conserven el valor. No comenceu una etapa abans que acabe tota l'anterior.
+Introducid `3, 1, 4, 2`, de arriba abajo. En la etapa 1 comparad 1–2 y 3–4; en la 2, comparad 1–3 y 2–4; en la 3, solo 2–3. Después de cada etapa, deteneos y anotad los cuatro valores. Los canales que no participan conservan el valor. No iniciéis una etapa antes de que acabe toda la anterior.
 
-El registre esperat és `1, 3, 2, 4` després de la primera; igual després de la segona; i `1, 2, 3, 4` després de la tercera. Mostreu la solució només després de comparar registres.
+El registro esperado es `1, 3, 2, 4` después de la primera; igual después de la segunda; y `1, 2, 3, 4` después de la tercera. Mostrad la solución solo después de comparar registros.
 
-### 3. Provem altres entrades · 10 min
+### 3. Probamos otras entradas · 10 min
 
-Canvieu els papers i proveu `4, 3, 2, 1`, una entrada ja ordenada i `2, 2, 1, 1`. Abans de començar, predieu el resultat. Comproveu que cada eixida és creixent i que conté els mateixos quatre valors. Els empats no són errors ni autoritzen a eliminar una targeta.
+Cambiad los papeles y probad `4, 3, 2, 1`, una entrada ya ordenada y `2, 2, 1, 1`. Antes de empezar, predecid el resultado. Comprobad que cada salida es creciente y que contiene los mismos cuatro valores. Los empates no son errores ni autorizan a eliminar una tarjeta.
 
-### 4. Llevem una comparació · 12 min
+### 4. Quitamos una comparación · 12 min
 
-Tapeu només el comparador final, entre canals 2 i 3. Reinicieu l'entrada `3, 1, 4, 2`. La xarxa incompleta acaba `1, 3, 2, 4`: els extrems estan ben situats, però el centre no. Demaneu que localitzen la parella que falta comparar i ho comproven restaurant el comparador. No n'hi ha prou a provar una entrada que per casualitat ja quede ordenada.
+Tapad solo el comparador final, entre los canales 2 y 3. Reiniciad la entrada `3, 1, 4, 2`. La red incompleta acaba `1, 3, 2, 4`: los extremos están bien situados, pero el centro no. Pedid que localicen la pareja que falta comparar y lo comprueben restaurando el comparador. No basta con probar una entrada que por casualidad ya quede ordenada.
 
-### 5. Expliquem el treball simultani · 8 min
+### 5. Explicamos el trabajo simultáneo · 8 min
 
-Compteu cinc comparacions repartides en tres etapes. En les dues primeres, cada parella de comparadors utilitza canals diferents i pot actuar alhora. L'etapa següent depèn dels resultats de l'anterior. Distingiu nombre de comparacions i nombre d'etapes; no afirmeu que tots els passos de la xarxa són simultanis.
+Contad cinco comparaciones repartidas en tres etapas. En las dos primeras, cada pareja de comparadores utiliza canales diferentes y puede actuar a la vez. La etapa siguiente depende de los resultados de la anterior. Distinguid número de comparaciones y número de etapas; no afirméis que todos los pasos de la red son simultáneos.
 
-> **💡 Precisió del model:** Aquesta xarxa està definida per a quatre entrades. Per ordenar-ne sis caldria un altre diagrama; afegir dues línies no basta. El generador comprova les 24 permutacions de quatre valors diferents i 81 casos amb empats.
+> **💡 Precisión del modelo:** Esta red está definida para cuatro entradas. Para ordenar seis haría falta otro diagrama; añadir dos líneas no basta. El generador comprueba las 24 permutaciones de cuatro valores diferentes y 81 casos con empates.
 
-![Sense l’últim comparador l’eixida és 1, 3, 2, 4; comparar els canals centrals repara el resultat.](_assets/activitats/kits/xarxa-ordenacio-reparacio.webp)
+![Sin el último comparador la salida es 1, 3, 2, 4; comparar los canales centrales repara el resultado.](_assets/activitats/kits/xarxa-ordenacio-reparacio.webp)
 
-## ✅ Evidències d'aprenentatge
+## ✅ Evidencias de aprendizaje
 
-- Aplica la convenció menor/dalt i major/baix sense ordenar al marge del procediment.
-- Registra cada etapa i conserva tots els valors, també en els empats.
-- Mostra un contraexemple de la xarxa incompleta i explica la reparació.
-- Distingeix comparacions totals i etapes que poden contenir treball simultani.
+- Aplica la convención menor/arriba y mayor/abajo sin ordenar al margen del procedimiento.
+- Registra cada etapa y conserva todos los valores, también en los empates.
+- Muestra un contraejemplo de la red incompleta y explica la reparación.
+- Distingue comparaciones totales y etapas que pueden contener trabajo simultáneo.
 
-Recolliu un registre complet i un de la xarxa incompleta. Una explicació sobre quins canals comparteixen els comparadors és més informativa que arribar ràpidament a l'eixida.
+Recoged un registro completo y uno de la red incompleta. Una explicación sobre qué canales comparten los comparadores es más informativa que llegar rápidamente a la salida.
 
-### Preguntes per fer pensar
+### Preguntas para pensar
 
-- Per què una entrada ordenada no és una prova suficient d'un diagrama qualsevol?
-- Quins comparadors podrien funcionar alhora sense disputar-se cap targeta?
-- Què conservaríem si canviàrem la regla per ordenar de major a menor?
+- ¿Por qué una entrada ordenada no es una prueba suficiente de un diagrama cualquiera?
+- ¿Qué comparadores podrían funcionar a la vez sin disputarse ninguna tarjeta?
+- ¿Qué conservaríamos si cambiáramos la regla para ordenar de mayor a menor?
 
-## ♿ Variants i inclusió
+## ♿ Variantes e inclusión
 
-**Suport i adaptació per a Segon cicle:** feu primer un comparador i després l'etapa de dues parelles, amb nombres petits i quatre targetes visibles. Una persona pot assenyalar què cal intercanviar sense manipular. **Ampliació:** exploreu totes les permutacions amb quatre valors o busqueu un altre exemple que falle sense l'últim comparador. Compareu l'ordenació descendent invertint la mateixa regla en tots els comparadors.
+**Apoyo y adaptación para Segundo ciclo:** haced primero un comparador y después la etapa de dos parejas, con números pequeños y cuatro tarjetas visibles. Una persona puede señalar qué hay que intercambiar sin manipular. **Ampliación:** explorad todas las permutaciones con cuatro valores o buscad otro ejemplo que falle sin el último comparador. Comparad la ordenación descendente invirtiendo la misma regla en todos los comparadores.

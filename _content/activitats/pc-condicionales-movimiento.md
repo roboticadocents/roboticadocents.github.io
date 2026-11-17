@@ -6,69 +6,69 @@ cycle_label: "Primer ciclo"
 duration: "35 min"
 order: 5
 image: "_assets/activitats/portades/condicionals-moviment.webp"
-image_alt: "Una targeta d’estrela entra en una bifurcació amb dues respostes: llibre o música."
+image_alt: "Una tarjeta de estrella entra en una bifurcación con dos respuestas: libro o música."
 ---
 
-![Una targeta d’estrela entra en una bifurcació amb dues respostes: llibre o música.](_assets/activitats/portades/condicionals-moviment.webp)
+![Una tarjeta de estrella entra en una bifurcación con dos respuestas: libro o música.](_assets/activitats/portades/condicionals-moviment.webp)
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Una màquina de paper recomana llibre o música segons una propietat visible de la targeta que rep. El grup ha de predir i comprovar la branca que correspon a cada entrada. Treballem la diferència entre una condició i una acció, i entre no fer res i executar una alternativa.
+Una máquina de papel recomienda libro o música según una propiedad visible de la tarjeta que recibe. El grupo debe predecir y comprobar la rama que corresponde a cada entrada. Trabajamos la diferencia entre una condición y una acción, y entre no hacer nada y ejecutar una alternativa.
 
-La regla inicial completa és **si té una estrela, llibre; si no, música**. Les dades són formes inventades. El cercle i el triangle entren en «si no», perquè tots dos no tenen estrela; el marc de punts encara no intervé.
+La regla inicial completa es **si tiene una estrella, libro; si no, música**. Los datos son formas inventadas. El círculo y el triángulo entran en «si no», porque ninguno de los dos tiene estrella; el marco de puntos todavía no interviene.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- [Descarrega el kit de l'activitat (PDF, 4 pàgines)](_assets/activitats/kits/condicionals-moviment.pdf).
-- Pàgina 1: sis entrades, amb estrela, cercle o triangle, amb marc de punts o sense. Pàgina 2: zones llibre, música i inici. Pàgina 3: registre i espais per crear una regla. Pàgina 4: solucions.
-- Per grup de tres, una còpia de les pàgines 1, 2 i 3 i una fitxa. Retalleu les sis entrades; la pàgina de zones pot quedar sencera. A4 al 100%, blanc i negre.
-- Els símbols de resposta són un quadrat per a llibre i un cercle per a música, amb noms impresos. Llegiu els noms i acordeu-los abans de provar. Els papers són lectura de regla, execució i comprovació; canvieu-los cada dues entrades.
+- [Descargad el kit de la actividad (PDF, 4 páginas)](_assets/activitats/kits/condicionals-moviment.pdf).
+- Página 1: seis entradas, con estrella, círculo o triángulo, con marco de puntos o sin él. Página 2: zonas libro, música e inicio. Página 3: registro y espacios para crear una regla. Página 4: soluciones.
+- Por grupo de tres, una copia de las páginas 1, 2 y 3 y una ficha. Recortad las seis entradas; la página de zonas puede quedar entera. A4 al 100 %, blanco y negro.
+- Los símbolos de respuesta son un cuadrado para libro y un círculo para música, con nombres impresos. Leed los nombres y acordadlos antes de probar. Los papeles son lectura de regla, ejecución y comprobación; cambiadlos cada dos entradas.
 
-![Una condició, té una estrela, es divideix en dues branques: sí porta a llibre i no porta a música.](_assets/activitats/kits/condicionals-moviment-exemple.webp)
+![Una condición, tiene una estrella, se divide en dos ramas: sí lleva a libro y no lleva a música.](_assets/activitats/kits/condicionals-moviment-exemple.webp)
 
-## 👣 Desenvolupament pas a pas
+## 👣 Desarrollo paso a paso
 
-![Esquema de l'activitat La màquina de les decisions: materials, regla i comprovació del resultat.](_assets/activitats/kits/condicionals-moviment-inici.webp)
+![Esquema de la actividad La máquina de las decisiones: materiales, regla y comprobación del resultado.](_assets/activitats/kits/condicionals-moviment-inici.webp)
 
-### 1. Identifiquem les dades · 5 min
+### 1. Identificamos los datos · 5 min
 
-Anomeneu les tres formes i distingiu marc de punts i absència de marc. Aquestes són propietats de l'entrada, no ordres. Assenyaleu les zones de resposta i deixeu la fitxa a INICI. El docent pot llegir les etiquetes; no cal lectura autònoma.
+Nombrad las tres formas y distinguid marco de puntos y ausencia de marco. Estas son propiedades de la entrada, no órdenes. Señalad las zonas de respuesta y dejad la ficha en INICIO. El docente puede leer las etiquetas; no hace falta lectura autónoma.
 
-### 2. Una condició sense alternativa · 6 min
+### 2. Una condición sin alternativa · 6 min
 
-Llegiu només «si té estrela, posa la fitxa a llibre». Proveu una estrela, un cercle i un triangle, amb predicció abans de moure. **Torneu sempre la fitxa a INICI abans d'una entrada nova.** Amb cercle i triangle no s'executa cap acció: la fitxa es queda a INICI. Així no confonem una posició heretada amb una decisió nova.
+Leed solo «si tiene estrella, pon la ficha en libro». Probad una estrella, un círculo y un triángulo, con predicción antes de mover. **Volved siempre la ficha a INICIO antes de una entrada nueva.** Con círculo y triángulo no se ejecuta ninguna acción: la ficha se queda en INICIO. Así no confundimos una posición heredada con una decisión nueva.
 
-### 3. Afegim si no · 10 min
+### 3. Añadimos si no · 10 min
 
-Completeu la regla amb «si no, música». Passeu les sis entrades una per una i registreu predicció i resultat. Les dues estreles van a llibre; les altres quatre targetes, a música. La persona que comprova demana la propietat que justifica cada branca, no una preferència personal.
+Completad la regla con «si no, música». Pasad las seis entradas una por una y registrad predicción y resultado. Las dos estrellas van a libro; las otras cuatro tarjetas, a música. La persona que comprueba pide la propiedad que justifica cada rama, no una preferencia personal.
 
-### 4. Reparem una interpretació · 8 min
+### 4. Reparamos una interpretación · 8 min
 
-Plantegeu que algú envia el triangle a llibre perquè pensa que «si no» només vol dir cercle. Contrasteu-ho amb la regla escrita: el triangle no té estrela i, per tant, correspon música. Proveu les tres formes després de la reparació. Un equip pot proposar «si té marc de punts, llibre; si no, música» i anticipar les sis respostes sense canviar les peces.
+Plantead que alguien envía el triángulo a libro porque piensa que «si no» solo significa círculo. Contrastadlo con la regla escrita: el triángulo no tiene estrella y, por tanto, corresponde a música. Probad las tres formas después de la reparación. Un equipo puede proponer «si tiene marco de puntos, libro; si no, música» y anticipar las seis respuestas sin cambiar las piezas.
 
-### 5. Expliquem el canvi · 6 min
+### 5. Explicamos el cambio · 6 min
 
-Compareu la regla incompleta i la completa. Cada grup mostra una entrada que abans no provocava cap acció i que ara té alternativa. Recolliu una explicació: «hem mirat ___; com que ___, hem triat ___».
+Comparad la regla incompleta y la completa. Cada grupo muestra una entrada que antes no provocaba ninguna acción y que ahora tiene alternativa. Recoged una explicación: «hemos mirado ___; como ___, hemos elegido ___».
 
-> **💡 Ampliació per a Segon cicle:** Compareu «estrela i marc de punts» amb «estrela o marc de punts». En la primera regla només una targeta compleix la condició; en la segona, quatre. Acordeu que «o» inclou també complir les dues propietats.
+> **💡 Ampliación para Segundo ciclo:** Comparad «estrella y marco de puntos» con «estrella o marco de puntos». En la primera regla solo una tarjeta cumple la condición; en la segunda, cuatro. Acordad que «o» incluye también cumplir las dos propiedades.
 
-![La regla amb dues propietats exigeix comprovar totes dues quan hi ha i; si no cobreix totes les entrades que no compleixen la condició.](_assets/activitats/kits/condicionals-moviment-reparacio.webp)
+![La regla con dos propiedades exige comprobar ambas cuando hay y; si no, cubre todas las entradas que no cumplen la condición.](_assets/activitats/kits/condicionals-moviment-reparacio.webp)
 
-## ✅ Evidències d'aprenentatge
+## ✅ Evidencias de aprendizaje
 
-- Identifica la propietat comprovada, sense confondre-la amb la zona de resposta.
-- Prediu i executa una única branca per entrada amb la regla completa.
-- Explica que «si no» cobreix totes les entrades que no compleixen la condició.
-- Distingeix quedar a INICI de rebre una resposta alternativa.
+- Identifica la propiedad comprobada, sin confundirla con la zona de respuesta.
+- Predice y ejecuta una única rama por entrada con la regla completa.
+- Explica que «si no» cubre todas las entradas que no cumplen la condición.
+- Distingue quedarse en INICIO de recibir una respuesta alternativa.
 
-Recolliu els sis casos del registre i una regla nova comprovada amb les mateixes entrades. No cal memoritzar cap taula formal.
+Recoged los seis casos del registro y una regla nueva comprobada con las mismas entradas. No hace falta memorizar ninguna tabla formal.
 
-### Preguntes per fer pensar
+### Preguntas para pensar
 
-- El marc de punts canvia el resultat de la regla de l'estrela?
-- Què passaria si no tornàrem a INICI entre proves?
-- El triangle també pot entrar en «si no»? Quina dada ho decideix?
+- ¿El marco de puntos cambia el resultado de la regla de la estrella?
+- ¿Qué pasaría si no volviéramos a INICIO entre pruebas?
+- ¿El triángulo también puede entrar en «si no»? ¿Qué dato lo decide?
 
-## ♿ Variants i inclusió
+## ♿ Variantes e inclusión
 
-**Suport:** comenceu amb estrela i cercle sense marc; afegiu la resta quan s'entenguen les dues branques. Oferiu lectura compartida, formes grans i resposta assenyalant o amb la mirada. Tot el joc es fa en taula. **Ampliació:** escriviu les dues branques d'una regla nova i assegureu-vos que cada targeta té una resposta abans d'executar-la.
+**Apoyo:** empezad con estrella y círculo sin marco; añadid el resto cuando se entiendan las dos ramas. Ofreced lectura compartida, formas grandes y respuesta señalando o con la mirada. Todo el juego se hace en mesa. **Ampliación:** escribid las dos ramas de una regla nueva y asegurad que cada tarjeta tiene una respuesta antes de ejecutarla.

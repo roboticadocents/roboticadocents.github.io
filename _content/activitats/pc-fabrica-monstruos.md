@@ -7,67 +7,67 @@ cycle_label: "Primer ciclo"
 duration: "50 min"
 order: 12
 image: "_assets/activitats/portades/fabrica-monstres.webp"
-image_alt: "Dos monstres de peces al costat d’ulls, potes, banyes i una tira d’instruccions."
+image_alt: "Dos monstruos de piezas junto a ojos, patas, cuernos y una tira de instrucciones."
 ---
 
-![Dos monstres de peces al costat d’ulls, potes, banyes i una tira d’instruccions.](_assets/activitats/portades/fabrica-monstres.webp)
+![Dos monstruos de piezas junto a ojos, patas, cuernos y una tira de instrucciones.](_assets/activitats/portades/fabrica-monstres.webp)
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-La fàbrica té un encàrrec: dos equips han de muntar el mateix monstre sense veure el model de l'altre. El pont entre els dos serà una recepta que diga quines peces calen, quantes i on posar-les. Treballem instruccions precises, execució i depuració. L'èxit és que la recepta permeta reproduir el model; no depèn de saber dibuixar.
+La fábrica tiene un encargo: dos equipos deben montar el mismo monstruo sin ver el modelo del otro. El puente entre los dos será una receta que indique qué piezas hacen falta, cuántas y dónde ponerlas. Trabajamos instrucciones precisas, ejecución y depuración. El éxito es que la receta permita reproducir el modelo; no depende de saber dibujar.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- [Descarrega el kit de monstres (PDF, 4 pàgines)](_assets/activitats/kits/fabrica-monstres.pdf): peces, dos cossos, recepta amb registre de revisió i exemple resolt.
-- Per parella, imprimiu dues còpies de la pàgina 1 i una de la pàgina 2: cada participant tindrà quatre ulls, tres potes, una banya i un cos. Una còpia de la pàgina 3 per recepta. Reserveu la pàgina 4 per a la demostració.
-- Una carpeta dreta per ocultar el model i llapis. Retalleu abans de jugar; les peces es col·loquen sense cola i es reutilitzen. A4 al 100%, en color o blanc i negre.
+- [Descargad el kit de monstruos (PDF, 4 páginas)](_assets/activitats/kits/fabrica-monstres.pdf): piezas, dos cuerpos, receta con registro de revisión y ejemplo resuelto.
+- Por pareja, imprimid dos copias de la página 1 y una de la página 2: cada participante tendrá cuatro ojos, tres patas, un cuerno y un cuerpo. Una copia de la página 3 por receta. Reservad la página 4 para la demostración.
+- Una carpeta en posición vertical para ocultar el modelo y lápiz. Recortad antes de jugar; las piezas se colocan sin cola y se reutilizan. A4 al 100 %, en color o blanco y negro.
 
-![Peces retallables del kit: quatre ulls, tres potes i una banya, cadascuna amb el nom i un dibuix de contorn.](_assets/activitats/kits/fabrica-monstres-1.webp)
+![Piezas recortables del kit: cuatro ojos, tres patas y un cuerno, cada una con el nombre y un dibujo de contorno.](_assets/activitats/kits/fabrica-monstres-1.webp)
 
-## 👣 Desenvolupament pas a pas
+## 👣 Desarrollo paso a paso
 
-![Tres passos de la fàbrica: crear un monstre ocult, escriure una recepta amb quantitats i posicions, i muntar-lo per comparar els resultats.](_assets/activitats/kits/fabrica-monstres-inici.webp)
+![Tres pasos de la fábrica: crear un monstruo oculto, escribir una receta con cantidades y posiciones, y montarlo para comparar los resultados.](_assets/activitats/kits/fabrica-monstres-inici.webp)
 
-### 1. Una recepta que deixa dubtes · 8 min
+### 1. Una receta que deja dudas · 8 min
 
-Digueu «posa ulls al monstre» sense concretar res més. Dos voluntaris ho fan en paral·lel. Compareu els resultats: quants ulls? On? Construïu entre tots el vocabulari compartit: dins del cos, damunt, davall, al centre i a cada costat. Manteniu els cossos orientats igual sobre la taula.
+Decid «pon ojos al monstruo» sin concretar nada más. Dos voluntarios lo hacen en paralelo. Comparad los resultados: ¿cuántos ojos? ¿Dónde? Construid entre todos el vocabulario compartido: dentro del cuerpo, encima, debajo, en el centro y a cada lado. Mantened los cuerpos orientados igual sobre la mesa.
 
-### 2. Del model a les instruccions · 12 min
+### 2. Del modelo a las instrucciones · 12 min
 
-En parelles, una persona crea un monstre amb les peces disponibles darrere de la carpeta. Escriu o dicta la recepta de la pàgina 3. La recepta ha d'indicar quantitat i posició; pot incloure símbols i paraules. No es mostra cap dibuix del resultat ni es fan gestos que revelen el model. Si l'escriptura frena el joc, el docent fa d'escriba.
+En parejas, una persona crea un monstruo con las piezas disponibles detrás de la carpeta. Escribe o dicta la receta de la página 3. La receta debe indicar cantidad y posición; puede incluir símbolos y palabras. No se muestra ningún dibujo del resultado ni se hacen gestos que revelen el modelo. Si la escritura frena el juego, el docente hace de escriba.
 
-![Monstre d'exemple amb dos ulls dins del cos, dues potes davall i una banya damunt, al costat de la recepta de quatre instruccions.](_assets/activitats/kits/fabrica-monstres-2.webp)
+![Monstruo de ejemplo con dos ojos dentro del cuerpo, dos patas debajo y un cuerno encima, junto a la receta de cuatro instrucciones.](_assets/activitats/kits/fabrica-monstres-2.webp)
 
-_La recepta descriu quantitats i relacions espacials. No cal que la distància entre peces siga mil·limètricament igual._
+_La receta describe cantidades y relaciones espaciales. No hace falta que la distancia entre piezas sea milimétricamente igual._
 
-### 3. La fàbrica executa · 10 min
+### 3. La fábrica ejecuta · 10 min
 
-L'altra persona rep només la recepta i munta el monstre amb el seu joc de peces. Si una frase admet dues interpretacions, la marca amb un interrogant i en tria una. En aquesta ronda l'autoria observa sense afegir explicacions: les instruccions han de poder funcionar soles.
+La otra persona recibe solo la receta y monta el monstruo con su juego de piezas. Si una frase admite dos interpretaciones, la marca con un interrogante y elige una. En esta ronda la autoría observa sin añadir explicaciones: las instrucciones deben poder funcionar solas.
 
-### 4. Comparem i reparem · 10 min
+### 4. Comparamos y reparamos · 10 min
 
-Retireu la carpeta. Compareu tipus de peces, quantitats i posicions. Si no coincideixen, localitzeu una instrucció que explique la diferència, modifiqueu-la i repetiu eixe pas. Registreu la frase anterior i la nova al full. Exemple: «posa potes» es converteix en «posa dues potes davall del cos, una a cada costat».
+Retirad la carpeta. Comparad tipos de piezas, cantidades y posiciones. Si no coinciden, localizad una instrucción que explique la diferencia, modificadla y repetid ese paso. Registrad la frase anterior y la nueva en la hoja. Ejemplo: «pon patas» se convierte en «pon dos patas debajo del cuerpo, una a cada lado».
 
-### 5. Canvi de papers · 10 min
+### 5. Cambio de papeles · 10 min
 
-Qui executava crea ara un model nou i qui escrivia executa. Comproveu si la segona recepta evita alguna ambigüitat de la primera. Guardeu una recepta revisada i una foto del model sense persones, si voleu documentar el procés.
+Quien ejecutaba crea ahora un modelo nuevo y quien escribía ejecuta. Comprobad si la segunda receta evita alguna ambigüedad de la primera. Guardad una receta revisada y una foto del modelo sin personas, si queréis documentar el proceso.
 
-> **💡 Consell per a l'aula:** Una discrepància és informació sobre les instruccions, no una falta d'atenció per defecte. Si la recepta és clara però s'ha executat malament, reviseu l'execució; si admet dos resultats, reviseu la recepta.
+> **💡 Consejo para el aula:** Una discrepancia es información sobre las instrucciones, no una falta de atención por defecto. Si la receta es clara pero se ha ejecutado mal, revisad la ejecución; si admite dos resultados, revisad la receta.
 
-## ✅ Evidències d'aprenentatge
+## ✅ Evidencias de aprendizaje
 
-- Especifica quantitat i posició de les peces en una recepta executable.
-- Segueix les instruccions i assenyala una ambigüitat concreta.
-- Relaciona una diferència amb un pas, el modifica i torna a provar-lo.
+- Especifica cantidad y posición de las piezas en una receta ejecutable.
+- Sigue las instrucciones y señala una ambigüedad concreta.
+- Relaciona una diferencia con un paso, lo modifica y lo vuelve a probar.
 
-Compareu la primera recepta i la revisada: la millora ha de resoldre una discrepància observable. No puntueu la decoració.
+Comparad la primera receta y la revisada: la mejora debe resolver una discrepancia observable. No puntuéis la decoración.
 
-### Preguntes per fer pensar
+### Preguntas para pensar
 
-- «Dos ulls» és suficient per obtenir el mateix resultat?
-- Quins passos podem intercanviar sense canviar el monstre?
-- Què passa si la recepta demana més peces de les que tenim?
+- ¿«Dos ojos» es suficiente para obtener el mismo resultado?
+- ¿Qué pasos podemos intercambiar sin cambiar el monstruo?
+- ¿Qué pasa si la receta pide más piezas de las que tenemos?
 
-## ♿ Variants i inclusió
+## ♿ Variantes e inclusión
 
-Comenceu amb un cos i dos tipus de peces. Permeteu dictat, lectura compartida i instruccions amb símbols; oferiu peces ja retallades i de mida ampliada. Es pot jugar en taula sense barrera física si una persona guarda el model en un sobre. Per aprofundir, afegiu «repeteix dues vegades: posa un ull» i compareu-ho amb «posa dos ulls», respectant les mateixes posicions.
+Empezad con un cuerpo y dos tipos de piezas. Permitid dictado, lectura compartida e instrucciones con símbolos; ofreced piezas ya recortadas y de tamaño ampliado. Se puede jugar en mesa sin barrera física si una persona guarda el modelo en un sobre. Para profundizar, añadid «repite dos veces: pon un ojo» y comparadlo con «pon dos ojos», respetando las mismas posiciones.

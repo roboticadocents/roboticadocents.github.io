@@ -6,69 +6,69 @@ cycle_label: "Primer ciclo"
 duration: "40 min"
 order: 4
 image: "_assets/activitats/portades/laberint-debugging.webp"
-image_alt: "Tauler de laberint amb obstacles, una fitxa i targetes de direcció per revisar un recorregut."
+image_alt: "Tablero de laberinto con obstáculos, una ficha y tarjetas de dirección para revisar un recorrido."
 ---
 
-![Tauler de laberint amb obstacles, una fitxa i targetes de direcció per revisar un recorregut.](_assets/activitats/portades/laberint-debugging.webp)
+![Tablero de laberinto con obstáculos, una ficha y tarjetas de dirección para revisar un recorrido.](_assets/activitats/portades/laberint-debugging.webp)
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-El missatger ha d'anar de S, a A4, fins a M, a D1. Ja tenim un programa, però alguna ordre el porta a una prestatgeria. L'equip treballa com un taller de depuració: prediu, executa sense improvisar, identifica la primera ordre impossible i prova una versió revisada.
+El mensajero debe ir de S, en A4, hasta M, en D1. Ya tenemos un programa, pero alguna orden lo lleva a una estantería. El equipo trabaja como un taller de depuración: predice, ejecuta sin improvisar, identifica la primera orden imposible y prueba una versión revisada.
 
-Ací les quatre fletxes indiquen **direccions fixes del paper: amunt, dreta, avall i esquerra**. No giren cap robot ni depenen d'on mire una fitxa. Això permet centrar-nos en el registre i la comparació de proves, amb una mecànica diferent de la missió biblioteca.
+Aquí las cuatro flechas indican **direcciones fijas del papel: arriba, derecha, abajo e izquierda**. No giran ningún robot ni dependen de dónde mire una ficha. Esto permite centrarnos en el registro y la comparación de pruebas, con una mecánica diferente de la misión biblioteca.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- [Descarrega el kit de l'activitat (PDF, 4 pàgines)](_assets/activitats/kits/laberint-debugging.pdf).
-- Pàgina 1: tauler 4 × 4 amb S a A4, M a D1 i obstacles a B3 i C3. Pàgina 2: vint fletxes retallables. Pàgina 3: programa inicial i registre. Pàgina 4: solució i ampliació.
-- Per trio, una còpia de les pàgines 1 i 2 i dues de la pàgina 3. Un botó o peça gran com a missatger. A4 al 100%, blanc i negre. Retalleu les fletxes abans de la sessió.
-- Manteniu el tauler orientat amb A–D a dalt. Les columnes es lligen d'esquerra a dreta i les files d'1 a 4 de dalt a baix. Repartiu programació, execució i registre, i roteu els papers.
+- [Descargad el kit de la actividad (PDF, 4 páginas)](_assets/activitats/kits/laberint-debugging.pdf).
+- Página 1: tablero 4 × 4 con S en A4, M en D1 y obstáculos en B3 y C3. Página 2: veinte flechas recortables. Página 3: programa inicial y registro. Página 4: solución y ampliación.
+- Por trío, una copia de las páginas 1 y 2 y dos de la página 3. Un botón o pieza grande como mensajero. A4 al 100 %, blanco y negro. Recortad las flechas antes de la sesión.
+- Mantened el tablero orientado con A–D arriba. Las columnas se leen de izquierda a derecha y las filas del 1 al 4 de arriba abajo. Repartid programación, ejecución y registro, y rotad los papeles.
 
-![Quatre fletxes del paper, amunt, dreta, avall i esquerra; cadascuna desplaça una casella sense representar cap gir.](_assets/activitats/kits/laberint-debugging-exemple.webp)
+![Cuatro flechas del papel, arriba, derecha, abajo e izquierda; cada una desplaza una casilla sin representar ningún giro.](_assets/activitats/kits/laberint-debugging-exemple.webp)
 
-## 👣 Desenvolupament pas a pas
+## 👣 Desarrollo paso a paso
 
-![Esquema de l'activitat El laberint dels errors: materials, regla i comprovació del resultat.](_assets/activitats/kits/laberint-debugging-inici.webp)
+![Esquema de la actividad El laberinto de los errores: materiales, regla y comprobación del resultado.](_assets/activitats/kits/laberint-debugging-inici.webp)
 
-### 1. Acordem les proves · 6 min
+### 1. Acordamos las pruebas · 6 min
 
-Mostreu una fletxa i moveu la fitxa una casella. Les X són caselles prohibides i no es poden saltar. Si la següent ordre entra en una X o ix del tauler, pareu abans de moure. Ningú no afegeix una desviació per ajudar el missatger. Identifiqueu inici i meta assenyalant-los, sense exigir llegir coordenades.
+Mostrad una flecha y moved la ficha una casilla. Las X son casillas prohibidas y no se pueden saltar. Si la siguiente orden entra en una X o sale del tablero, deteneos antes de mover. Nadie añade un desvío para ayudar al mensajero. Identificad inicio y meta señalándolos, sin exigir leer coordenadas.
 
-### 2. Prediem el programa rebut · 8 min
+### 2. Predecimos el programa recibido · 8 min
 
-Prepareu `amunt, dreta, amunt, dreta, dreta, amunt`. Numereu les sis targetes d'esquerra a dreta. Sense moure la fitxa, cada equip prediu si arribarà, es pararà o eixirà. Anoteu la predicció al registre. Una persona assenyala quina targeta es revisa en cada moment.
+Preparad `arriba, derecha, arriba, derecha, derecha, arriba`. Numerad las seis tarjetas de izquierda a derecha. Sin mover la ficha, cada equipo predice si llegará, se parará o saldrá. Anotad la predicción en el registro. Una persona señala qué tarjeta se revisa en cada momento.
 
-### 3. Provem sense tocar les ordres · 8 min
+### 3. Probamos sin tocar las órdenes · 8 min
 
-Reinicieu a A4. La primera ordre porta a A3; la segona intenta entrar a B3 i obliga a parar. Anoteu «ordre 2, B3» i conserveu intacta la seqüència inicial. Reviseu primer si el moviment ha seguit la fletxa. Si l'execució era correcta, el que cal canviar és el programa.
+Reiniciad en A4. La primera orden lleva a A3; la segunda intenta entrar en B3 y obliga a parar. Anotad «orden 2, B3» y conservad intacta la secuencia inicial. Revisad primero si el movimiento ha seguido la flecha. Si la ejecución era correcta, lo que hay que cambiar es el programa.
 
-### 4. Fem una reparació comprovable · 10 min
+### 4. Hacemos una reparación comprobable · 10 min
 
-Proposeu intercanviar les ordres 2 i 3. El programa queda `amunt, amunt, dreta, dreta, dreta, amunt`. Predieu de nou i executeu des d'A4: A3, A2, B2, C2, D2 i D1. Compareu les dues proves. No cal canviar la meta ni llevar obstacles per fer funcionar la reparació.
+Proponed intercambiar las órdenes 2 y 3. El programa queda `arriba, arriba, derecha, derecha, derecha, arriba`. Predecid de nuevo y ejecutad desde A4: A3, A2, B2, C2, D2 y D1. Comparad las dos pruebas. No hace falta cambiar la meta ni quitar obstáculos para hacer funcionar la reparación.
 
-### 5. Canviem una condició · 8 min
+### 5. Cambiamos una condición · 8 min
 
-Roteu papers. Poseu una peça sobre D2 com a obstacle addicional i manteniu inici i meta. El programa anterior ara falla. Busqueu una alternativa: `amunt, amunt, amunt, dreta, dreta, dreta` passa per la fila 1. Registreu que la condició ha canviat: un programa que funcionava pot deixar de servir en un altre tauler.
+Rotad papeles. Poned una pieza sobre D2 como obstáculo adicional y mantened inicio y meta. El programa anterior ahora falla. Buscad una alternativa: `arriba, arriba, arriba, derecha, derecha, derecha` pasa por la fila 1. Registrad que la condición ha cambiado: un programa que funcionaba puede dejar de servir en otro tablero.
 
-> **💡 Consell docent:** No esborreu el programa inicial. Veure les dues versions ajuda a explicar què ha provocat la millora. Reinicieu sempre la fitxa al mateix punt abans de comparar dues proves.
+> **💡 Consejo docente:** No borréis el programa inicial. Ver las dos versiones ayuda a explicar qué ha provocado la mejora. Reiniciad siempre la ficha en el mismo punto antes de comparar dos pruebas.
 
-![El programa inicial topa a B3; intercanviant la segona i la tercera ordre i reiniciant a A4, la ruta arriba a D1.](_assets/activitats/kits/laberint-debugging-reparacio.webp)
+![El programa inicial choca en B3; intercambiando la segunda y la tercera orden y reiniciando en A4, la ruta llega a D1.](_assets/activitats/kits/laberint-debugging-reparacio.webp)
 
-## ✅ Evidències d'aprenentatge
+## ✅ Evidencias de aprendizaje
 
-- Manté la correspondència entre número d'ordre i desplaçament.
-- Registra una ordre i una casella concretes en lloc de dir només «no funciona».
-- Conserva la versió inicial i verifica el canvi executant la ruta sencera.
-- Explica que la validesa d'una ruta depèn també dels obstacles acordats.
+- Mantiene la correspondencia entre número de orden y desplazamiento.
+- Registra una orden y una casilla concretas en lugar de decir solo «no funciona».
+- Conserva la versión inicial y verifica el cambio ejecutando la ruta entera.
+- Explica que la validez de una ruta depende también de los obstáculos acordados.
 
-Recolliu les dues versions i una frase sobre què s'ha mantingut igual. Valoreu una revisió justificada, encara que no siga la ruta més curta.
+Recoged las dos versiones y una frase sobre qué se ha mantenido igual. Valorad una revisión justificada, aunque no sea la ruta más corta.
 
-### Preguntes per fer pensar
+### Preguntas para pensar
 
-- Hem executat malament una fletxa o la fletxa ens envia a un lloc prohibit?
-- Per què tornar a A4 ajuda a comparar les proves?
-- Si canviem un obstacle, què cal tornar a comprovar?
+- ¿Hemos ejecutado mal una flecha o la flecha nos envía a un lugar prohibido?
+- ¿Por qué volver a A4 ayuda a comparar las pruebas?
+- Si cambiamos un obstáculo, ¿qué hay que volver a comprobar?
 
-## ♿ Variants i inclusió
+## ♿ Variantes e inclusión
 
-**Educació Infantil:** tapeu part del tauler i proposeu dues fletxes sobre una fila sense obstacles abans d'introduir una X; feu predicció oral i assenyalant. **Accés:** fitxes grans, targetes preparades i execució per una altra persona si cal. No és necessari caminar, llegir o retallar. **Ampliació:** inventeu un programa amb un únic error i doneu-lo a un altre equip juntament amb la ruta que volíeu obtenir.
+**Educación Infantil:** tapad parte del tablero y proponed dos flechas sobre una fila sin obstáculos antes de introducir una X; haced predicción oral y señalando. **Acceso:** fichas grandes, tarjetas preparadas y ejecución por otra persona si hace falta. No es necesario caminar, leer ni recortar. **Ampliación:** inventad un programa con un único error y dadlo a otro equipo junto con la ruta que queríais obtener.

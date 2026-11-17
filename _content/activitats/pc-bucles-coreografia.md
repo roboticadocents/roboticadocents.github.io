@@ -6,69 +6,69 @@ cycle_label: "Primer ciclo"
 duration: "45 min"
 order: 7
 image: "_assets/activitats/portades/bucles-coreografia.webp"
-image_alt: "Targetes de gestos agrupades en un bloc amb una fletxa de repetició i comptadors."
+image_alt: "Tarjetas de gestos agrupadas en un bloque con una flecha de repetición y contadores."
 ---
 
-![Targetes de gestos agrupades en un bloc amb una fletxa de repetició i comptadors.](_assets/activitats/portades/bucles-coreografia.webp)
+![Tarjetas de gestos agrupadas en un bloque con una flecha de repetición y contadores.](_assets/activitats/portades/bucles-coreografia.webp)
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-El grup rep una coreografia curta que s'ha de repetir sense escriure totes les accions cada vegada. Ha de decidir què hi ha dins del bloc, quantes voltes cal fer i com comprovar que el programa abreujat produeix exactament la seqüència prevista.
+El grupo recibe una coreografía corta que debe repetirse sin escribir todas las acciones cada vez. Debe decidir qué hay dentro del bloque, cuántas vueltas hay que dar y cómo comprobar que el programa abreviado produce exactamente la secuencia prevista.
 
-Les tres accions són **M: picar de mans una vegada; E: tocar alhora les dues espatlles una vegada; T: tocar suaument la taula una vegada**. Cada símbol compta com una acció, encara que es faça amb dues mans. També podem executar el programa assenyalant els símbols, sense sons ni moviment corporal.
+Las tres acciones son **M: dar una palmada; E: tocar a la vez los dos hombros una vez; T: tocar suavemente la mesa una vez**. Cada símbolo cuenta como una acción, aunque se haga con dos manos. También podemos ejecutar el programa señalando los símbolos, sin sonidos ni movimiento corporal.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- [Descarrega el kit de l'activitat (PDF, 4 pàgines)](_assets/activitats/kits/bucles-coreografia.pdf).
-- Pàgina 1: dotze targetes, quatre per acció. Pàgina 2: marc de bucle i nombres de l'1 al 4. Pàgina 3: predicció, desplegament i error. Pàgina 4: solucions i convencions.
-- Per trio, una còpia de les pàgines 1 i 2 i una de la pàgina 3. Retalleu les dotze accions i els quatre nombres; el marc del bucle queda sencer. A4 al 100%, blanc i negre.
-- Una fitxa per comptar les voltes i una taula accessible. Repartiu lectura, execució i recompte; canvieu els papers entre proves. No cal música ni espai per ballar.
+- [Descargad el kit de la actividad (PDF, 4 páginas)](_assets/activitats/kits/bucles-coreografia.pdf).
+- Página 1: doce tarjetas, cuatro por acción. Página 2: marco de bucle y números del 1 al 4. Página 3: predicción, despliegue y error. Página 4: soluciones y convenciones.
+- Por trío, una copia de las páginas 1 y 2 y una de la página 3. Recortad las doce acciones y los cuatro números; el marco del bucle queda entero. A4 al 100 %, blanco y negro.
+- Una ficha para contar las vueltas y una mesa accesible. Repartid lectura, ejecución y recuento; cambiad los papeles entre pruebas. No hace falta música ni espacio para bailar.
 
-![Tres accions del vocabulari compartit: M per mans, E per espatlles i T per taula; cada símbol representa una sola acció.](_assets/activitats/kits/bucles-coreografia-exemple.webp)
+![Tres acciones del vocabulario compartido: M por manos, E por hombros y T por mesa; cada símbolo representa una sola acción.](_assets/activitats/kits/bucles-coreografia-exemple.webp)
 
-## 👣 Desenvolupament pas a pas
+## 👣 Desarrollo paso a paso
 
-![Esquema de l'activitat La coreografia dels bucles: materials, regla i comprovació del resultat.](_assets/activitats/kits/bucles-coreografia-inici.webp)
+![Esquema de la actividad La coreografía de los bucles: materiales, regla y comprobación del resultado.](_assets/activitats/kits/bucles-coreografia-inici.webp)
 
-### 1. Aprenem una volta · 7 min
+### 1. Aprendemos una vuelta · 7 min
 
-Mostreu i executeu M, E, T en aquest ordre. Repetiu una segona vegada. Demaneu al grup quines accions ha vist i on recomença el tros repetit. Comproveu que tothom compta la mateixa unitat d'acció. Si useu assenyalament, manteniu eixe mode durant la prova per poder comparar-la.
+Mostrad y ejecutad M, E, T en este orden. Repetid una segunda vez. Preguntad al grupo qué acciones ha visto y dónde vuelve a empezar el trozo repetido. Comprobad que todo el mundo cuenta la misma unidad de acción. Si usáis el señalamiento, mantened ese modo durante la prueba para poder compararla.
 
-### 2. Posem límits al bloc · 10 min
+### 2. Ponemos límites al bloque · 10 min
 
-Col·loqueu M, E i T dins del marc de la pàgina 2 i poseu el recompte 3. Llegiu «repeteix tres vegades tot el que hi ha dins». Abans d'actuar, desplegueu el programa en nou símbols: M E T / M E T / M E T. La barra només separa voltes; no és una acció.
+Colocad M, E y T dentro del marco de la página 2 y poned el recuento 3. Leed «repite tres veces todo lo que hay dentro». Antes de actuar, desplegad el programa en nueve símbolos: M E T / M E T / M E T. La barra solo separa vueltas; no es una acción.
 
-### 3. Prediem i executem · 10 min
+### 3. Predecimos y ejecutamos · 10 min
 
-Anoteu tres voltes de tres accions: nou accions. La persona lectora assenyala el bloc i qui compta mou la fitxa una vegada cada volta completa. Executeu sense afegir T al final per costum. Compareu amb els nou símbols desplegats i marqueu qualsevol discrepància.
+Anotad tres vueltas de tres acciones: nueve acciones. La persona lectora señala el bloque y quien cuenta mueve la ficha una vez cada vuelta completa. Ejecutad sin añadir T al final por costumbre. Comparad con los nueve símbolos desplegados y marcad cualquier discrepancia.
 
-### 4. Canviem només el recompte · 8 min
+### 4. Cambiamos solo el recuento · 8 min
 
-Roteu els papers i substituïu 3 per 2 sense modificar el cos del bucle. Predieu sis accions i comproveu M E T / M E T. Pregunteu què s'ha mantingut igual i què ha canviat. Una volta de més és un error de recompte; una acció fora de lloc pot ser un problema del bloc o de l'execució.
+Rotad los papeles y sustituid 3 por 2 sin modificar el cuerpo del bucle. Predecid seis acciones y comprobad M E T / M E T. Preguntad qué se ha mantenido igual y qué ha cambiado. Una vuelta de más es un error de recuento; una acción fuera de lugar puede ser un problema del bloque o de la ejecución.
 
-### 5. Investiguem una acció fora · 10 min
+### 5. Investigamos una acción fuera · 10 min
 
-Compareu «repeteix 3: [M E T]» amb «repeteix 3: [M E]; després T». El segon programa desplega M E / M E / M E / T i té set accions. Si volíem la coreografia original, la reparació és posar T dins del marc. Torneu a provar i expliqueu per què canviar el límit del bloc canvia el resultat.
+Comparad «repite 3: [M E T]» con «repite 3: [M E]; después T». El segundo programa despliega M E / M E / M E / T y tiene siete acciones. Si queríamos la coreografía original, la reparación es poner T dentro del marco. Volved a probar y explicad por qué cambiar el límite del bloque cambia el resultado.
 
-> **💡 Consell docent:** El focus és executar un bloc explícit amb un recompte. Reconèixer la unitat repetida en una tira de peces és el repte de Detectius de patrons; ací el pas següent és convertir-la en una instrucció executable.
+> **💡 Consejo docente:** El foco es ejecutar un bloque explícito con un recuento. Reconocer la unidad repetida en una tira de piezas es el reto de Detectives de patrones; aquí el paso siguiente es convertirla en una instrucción ejecutable.
 
-![Repetir tres vegades M E T fa nou accions; repetir M E tres vegades i fer T després en fa set, perquè T queda fora del bucle.](_assets/activitats/kits/bucles-coreografia-reparacio.webp)
+![Repetir tres veces M E T hace nueve acciones; repetir M E tres veces y hacer T después hace siete, porque T queda fuera del bucle.](_assets/activitats/kits/bucles-coreografia-reparacio.webp)
 
-## ✅ Evidències d'aprenentatge
+## ✅ Evidencias de aprendizaje
 
-- Delimita totes les accions que s'han de repetir.
-- Desplega un bucle i anticipa el total d'accions.
-- Manté el bloc quan només canvia el recompte.
-- Distingeix una acció dins del bucle d'una que es fa una vegada després.
+- Delimita todas las acciones que se deben repetir.
+- Despliega un bucle y anticipa el total de acciones.
+- Mantiene el bloque cuando solo cambia el recuento.
+- Distingue una acción dentro del bucle de una que se hace una vez después.
 
-Recolliu la predicció i els dos desplegaments de la pàgina 3. Demaneu una explicació del límit del bloc, sense valorar habilitat motriu ni ritme musical.
+Recoged la predicción y los dos despliegues de la página 3. Pedid una explicación del límite del bloque, sin valorar habilidad motriz ni ritmo musical.
 
-### Preguntes per fer pensar
+### Preguntas para pensar
 
-- On comença i on acaba una volta completa?
-- Què canvia si només substituïm el nombre 3 per 2?
-- Per què tres voltes de dues accions i una acció final no són nou accions?
+- ¿Dónde empieza y dónde acaba una vuelta completa?
+- ¿Qué cambia si solo sustituimos el número 3 por 2?
+- ¿Por qué tres vueltas de dos acciones y una acción final no son nueve acciones?
 
-## ♿ Variants i inclusió
+## ♿ Variantes e inclusión
 
-**Suport:** comenceu amb dues accions i dues voltes. Oferiu símbols grans, lectura compartida i una marca visible de cada volta acabada. Es pot fer assegut i sense tocar el cos. **Ampliació per a Segon cicle:** poseu una acció abans i una després del bucle i compareu el recompte total amb el del cos; manteniu visibles els límits abans d'introduir estructures més complexes.
+**Apoyo:** empezad con dos acciones y dos vueltas. Ofreced símbolos grandes, lectura compartida y una marca visible de cada vuelta acabada. Se puede hacer sentado y sin tocar el cuerpo. **Ampliación para Segundo ciclo:** poned una acción antes y una después del bucle y comparad el recuento total con el del cuerpo; mantened visibles los límites antes de introducir estructuras más complejas.

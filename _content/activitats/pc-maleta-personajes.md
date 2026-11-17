@@ -7,65 +7,65 @@ cycle_label: "Educación Infantil"
 duration: "35 min"
 order: 11
 image: "_assets/activitats/portades/maleta-personatges.webp"
-image_alt: "Maleta oberta amb objectes de viatge i targetes de pistes sobre el temps i el destí."
+image_alt: "Maleta abierta con objetos de viaje y tarjetas de pistas sobre el tiempo y el destino."
 ---
 
-![Maleta oberta amb objectes de viatge i targetes de pistes sobre el temps i el destí.](_assets/activitats/portades/maleta-personatges.webp)
+![Maleta abierta con objetos de viaje y tarjetas de pistas sobre el tiempo y el destino.](_assets/activitats/portades/maleta-personatges.webp)
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Una titella necessita ajuda per preparar la maleta. El grup escolta les pistes del viatge, relaciona cada objecte amb una necessitat i tria què endur-se. No busquem una maleta única: busquem decisions que es puguen explicar i revisar. Treballem classificació per atributs i descomposició d'una necessitat en decisions petites, sense pantalles ni lectura autònoma.
+Un títere necesita ayuda para preparar la maleta. El grupo escucha las pistas del viaje, relaciona cada objeto con una necesidad y elige qué llevarse. No buscamos una maleta única: buscamos decisiones que se puedan explicar y revisar. Trabajamos clasificación por atributos y descomposición de una necesidad en decisiones pequeñas, sin pantallas ni lectura autónoma.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- [Descarrega el kit de la maleta (PDF, 4 pàgines)](_assets/activitats/kits/maleta-personatges.pdf): huit targetes d'objectes, una maleta, tres destins amb pistes i una guia amb exemple.
-- Una titella o personatge triat pel grup; una safata per a les peces que queden fora.
-- Un joc per grup de 3 o 4. Imprimiu en A4 al 100%; el color és opcional. L'adult retalla les huit targetes abans de la sessió. Per a una demostració col·lectiva, useu objectes reals equivalents.
+- [Descargad el kit de la maleta (PDF, 4 páginas)](_assets/activitats/kits/maleta-personatges.pdf): ocho tarjetas de objetos, una maleta, tres destinos con pistas y una guía con ejemplo.
+- Un títere o personaje elegido por el grupo; una bandeja para las piezas que quedan fuera.
+- Un juego por grupo de 3 o 4. Imprimid en A4 al 100 %; el color es opcional. El adulto recorta las ocho tarjetas antes de la sesión. Para una demostración colectiva, usad objetos reales equivalentes.
 
-![Tres targetes del kit amb destins i pistes: platja amb sol i bany, muntanya amb fred i fang, i dia de pluja amb lectura a casa.](_assets/activitats/kits/maleta-personatges-1.webp)
+![Tres tarjetas del kit con destinos y pistas: playa con sol y baño, montaña con frío y barro, y día de lluvia con lectura en casa.](_assets/activitats/kits/maleta-personatges-1.webp)
 
-_Les pistes descriuen el context: no són ordres de posar un objecte concret. El docent les llig i acompanya amb gestos._
+_Las pistas describen el contexto: no son órdenes de poner un objeto concreto. El docente las lee y acompaña con gestos._
 
-## 👣 Desenvolupament pas a pas
+## 👣 Desarrollo paso a paso
 
-![Tres passos del joc: escoltar les pistes del destí, triar tres objectes i revisar la maleta quan canvien les condicions.](_assets/activitats/kits/maleta-personatges-inici.webp)
+![Tres pasos del juego: escuchar las pistas del destino, elegir tres objetos y revisar la maleta cuando cambian las condiciones.](_assets/activitats/kits/maleta-personatges-inici.webp)
 
-### 1. Una maleta amb un problema · 5 min
+### 1. Una maleta con un problema · 5 min
 
-Presenteu la titella i el destí platja. Llegiu les tres pistes: fa sol, ens banyarem i ens haurem d'eixugar. Poseu totes les targetes a la vista i anomeneu els objectes. Pregunteu: «Què necessitarà? Quina pista t'ho fa pensar?».
+Presentad el títere y el destino playa. Leed las tres pistas: hace sol, nos bañaremos y tendremos que secarnos. Poned todas las tarjetas a la vista y nombrad los objetos. Preguntad: «¿Qué necesitará? ¿Qué pista te lo hace pensar?».
 
-### 2. Triem i expliquem · 10 min
+### 2. Elegimos y explicamos · 10 min
 
-Cada grup posa tres targetes dins de la maleta i les altres fora. En cada torn, una criatura tria una peça, una altra assenyala la pista relacionada i una tercera col·loca la peça. Roteu els papers. Una resposta pot ser oral, amb gestos o assenyalant. Si dues peces cobreixen la mateixa necessitat, discutiu quina voleu prioritzar.
+Cada grupo pone tres tarjetas dentro de la maleta y las demás fuera. En cada turno, cada niño o niña elige una pieza, otra persona señala la pista relacionada y una tercera coloca la pieza. Rotad los papeles. Una respuesta puede ser oral, con gestos o señalando. Si dos piezas cubren la misma necesidad, discutid cuál queréis priorizar.
 
-![Exemple del kit: gorra, aigua i tovallola per anar a la platja, amb preguntes per revisar la tria quan canvien les pistes.](_assets/activitats/kits/maleta-personatges-2.webp)
+![Ejemplo del kit: gorra, agua y toalla para ir a la playa, con preguntas para revisar la elección cuando cambian las pistas.](_assets/activitats/kits/maleta-personatges-2.webp)
 
-_Una tria possible, no una solució obligatòria. La pilota o el llibre també poden justificar-se; cal explicar què deixem fora quan només tenim tres espais._
+_Una elección posible, no una solución obligatoria. La pelota o el libro también pueden justificarse; hay que explicar qué dejamos fuera cuando solo tenemos tres espacios._
 
-### 3. El personatge canvia de plans · 10 min
+### 3. El personaje cambia de planes · 10 min
 
-Canvieu a muntanya: fa fred, caminarem per fang i necessitarem aigua. Cada grup conserva les peces que encara li serveixen i substitueix les altres. Demaneu que mostren una parella «abans / ara» i expliquen quina pista ha provocat el canvi. No cal tornar a començar tota la maleta.
+Cambiad a montaña: hace frío, caminaremos por barro y necesitaremos agua. Cada grupo conserva las piezas que aún le sirven y sustituye las demás. Pedid que muestren una pareja «antes / ahora» y expliquen qué pista ha provocado el cambio. No hace falta volver a empezar toda la maleta.
 
-### 4. Un altre grup ho entén? · 10 min
+### 4. ¿Otro grupo lo entiende? · 10 min
 
-Un grup explica la seua maleta a un altre. L'altre assenyala una peça i pregunta per què hi és. Tanqueu amb una ronda de pluja: paraigua, botes i llibre són una possibilitat. Si apareix una resposta diferent, contrasteu-la amb les pistes abans de descartar-la.
+Un grupo explica su maleta a otro. El otro señala una pieza y pregunta por qué está ahí. Cerrad con una ronda de lluvia de ideas: paraguas, botas y libro son una posibilidad. Si aparece una respuesta diferente, contrastadla con las pistas antes de descartarla.
 
-> **💡 Consell per a l'aula:** El límit de tres peces és una regla del joc per provocar decisions. No afirma què cal portar realment a una excursió. No valoreu experiències familiars de viatges: tota la informació necessària és a les pistes.
+> **💡 Consejo para el aula:** El límite de tres piezas es una regla del juego para provocar decisiones. No afirma qué hay que llevar realmente a una excursión. No valoréis experiencias familiares de viajes: toda la información necesaria está en las pistas.
 
-## ✅ Evidències d'aprenentatge
+## ✅ Evidencias de aprendizaje
 
-- Relaciona un objecte amb una pista concreta, amb paraules o assenyalant.
-- Identifica una peça que continua servint i una que convé canviar quan varia el context.
-- Escolta una justificació diferent i la contrasta amb les pistes.
+- Relaciona un objeto con una pista concreta, con palabras o señalando.
+- Identifica una pieza que sigue sirviendo y una que conviene cambiar cuando varía el contexto.
+- Escucha una justificación diferente y la contrasta con las pistas.
 
-El docent pot anotar una observació de cada criatura en dos moments: primera tria i canvi de destí. No cal cap fitxa escrita de l'alumnat.
+El docente puede anotar una observación de cada niño o niña en dos momentos: primera elección y cambio de destino. No hace falta ninguna ficha escrita del alumnado.
 
-### Preguntes per fer pensar
+### Preguntas para pensar
 
-- Quina pista t'ha ajudat a triar les botes?
-- Hi ha un objecte que ens serveix en dos viatges?
-- Què necessitaríem saber abans de decidir si posem la pilota?
+- ¿Qué pista te ha ayudado a elegir las botas?
+- ¿Hay un objeto que nos sirve en dos viajes?
+- ¿Qué necesitaríamos saber antes de decidir si ponemos la pelota?
 
-## ♿ Variants i inclusió
+## ♿ Variantes e inclusión
 
-Per començar, presenteu un únic destí i quatre objectes. Oferiu peces grans, objectes reals i una maleta accessible damunt de la taula. Llegiu les pistes amb gestos; les targetes no depenen del color. No exigiu retallar, parlar davant del grup ni desplaçar-se. Per aprofundir, afegiu una quarta pista i negocieu una substitució sense augmentar els tres espais.
+Para empezar, presentad un único destino y cuatro objetos. Ofreced piezas grandes, objetos reales y una maleta accesible encima de la mesa. Leed las pistas con gestos; las tarjetas no dependen del color. No exijáis recortar, hablar delante del grupo ni desplazaros. Para profundizar, añadid una cuarta pista y negociad una sustitución sin aumentar los tres espacios.

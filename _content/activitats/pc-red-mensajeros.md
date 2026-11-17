@@ -7,70 +7,70 @@ cycle_label: "Tercer ciclo"
 duration: "60 min"
 order: 14
 image: "_assets/activitats/portades/xarxa-missatgers.webp"
-image_alt: "Estacions connectades per camins alternatius amb paquets de paper que formen un missatge."
+image_alt: "Estaciones conectadas por caminos alternativos con paquetes de papel que forman un mensaje."
 ---
 
-![Estacions connectades per camins alternatius amb paquets de paper que formen un missatge.](_assets/activitats/portades/xarxa-missatgers.webp)
+![Estaciones conectadas por caminos alternativos con paquetes de papel que forman un mensaje.](_assets/activitats/portades/xarxa-missatgers.webp)
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Com podem reconstruir un missatge si les parts arriben per camins diferents o en ordre canviat? Quatre nodes d'aula enviaran paquets numerats i comprovaran què ha arribat. Treballem descomposició, rutes, identificadors i un protocol de confirmació i reenviament. És una simulació amb regles pròpies, pensada per raonar; no reprodueix tot el funcionament d'Internet.
+¿Cómo podemos reconstruir un mensaje si las partes llegan por caminos diferentes o en orden cambiado? Cuatro nodos de aula enviarán paquetes numerados y comprobarán qué ha llegado. Trabajamos descomposición, rutas, identificadores y un protocolo de confirmación y reenvío. Es una simulación con reglas propias, pensada para razonar; no reproduce todo el funcionamiento de Internet.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- [Descarrega el kit de la xarxa (PDF, 4 pàgines)](_assets/activitats/kits/xarxa-missatgers.pdf): mapa, quatre paquets del missatge M1, incidències i confirmació, registre i solució docent.
-- Per xarxa, un kit i quatre taules o safates marcades A, B, C i D. Una còpia addicional de la pàgina 2 es queda a A per als reenviaments. Imprimiu en A4 al 100%, en blanc i negre o color.
-- Retalleu els paquets i les targetes d'incidències; manteniu la confirmació separada. Marqueu les connexions amb tires de paper sobre la taula. En una aula gran, repliqueu xarxes de quatre grups; no afegiu nodes a la primera ronda.
+- [Descargad el kit de la red (PDF, 4 páginas)](_assets/activitats/kits/xarxa-missatgers.pdf): mapa, cuatro paquetes del mensaje M1, incidencias y confirmación, registro y solución docente.
+- Por red, un kit y cuatro mesas o bandejas marcadas A, B, C y D. Una copia adicional de la página 2 se queda en A para los reenvíos. Imprimid en A4 al 100 %, en blanco y negro o color.
+- Recortad los paquetes y las tarjetas de incidencias; mantened la confirmación separada. Marcad las conexiones con tiras de papel sobre la mesa. En un aula grande, replicad redes de cuatro grupos; no añadáis nodos en la primera ronda.
 
-![Mapa del kit amb quatre nodes: A connecta amb B i C; B i C també connecten entre si i amb D. Hi ha dues rutes directes de dos salts entre A i D.](_assets/activitats/kits/xarxa-missatgers-1.webp)
+![Mapa del kit con cuatro nodos: A conecta con B y C; B y C también conectan entre sí y con D. Hay dos rutas directas de dos saltos entre A y D.](_assets/activitats/kits/xarxa-missatgers-1.webp)
 
-## 👣 Desenvolupament pas a pas
+## 👣 Desarrollo paso a paso
 
-![El missatge es divideix en quatre paquets, travessa una xarxa amb rutes alternatives i es reconstrueix abans de confirmar la recepció.](_assets/activitats/kits/xarxa-missatgers-inici.webp)
+![El mensaje se divide en cuatro paquetes, atraviesa una red con rutas alternativas y se reconstruye antes de confirmar la recepción.](_assets/activitats/kits/xarxa-missatgers-inici.webp)
 
-### 1. Pactem el protocol · 10 min
+### 1. Pactamos el protocolo · 10 min
 
-A és l'origen i D és el destí; B i C reenvien. Dins de cada node, repartiu els papers de responsable de paquets, registre i comprovació; es poden combinar i rotar. Cada paquet mostra identificador M1, origen, destí, número i total. A conserva la còpia original. D coneix que espera quatre paquets de M1, però no el text.
+A es el origen y D es el destino; B y C reenvían. Dentro de cada nodo, repartid los papeles de responsable de paquetes, registro y comprobación; se pueden combinar y rotar. Cada paquete muestra identificador M1, origen, destino, número y total. A conserva la copia original. D sabe que espera cuatro paquetes de M1, pero no el texto.
 
-Un torn té tres moments: cada node decideix on enviar els paquets que ja té; es resolen els conflictes; es mouen els paquets i es registren les arribades. Un paquet avança com a màxim un enllaç per torn. Cada enllaç admet un sol paquet per torn, sumant les dues direccions. Si dos nodes volen usar-lo alhora, es posa d'acord qui espera; si no hi ha acord, tots dos esperen. Un paquet acabat d'arribar espera al torn següent per tornar a moure's.
+Un turno tiene tres momentos: cada nodo decide dónde enviar los paquetes que ya tiene; se resuelven los conflictos; se mueven los paquetes y se registran las llegadas. Un paquete avanza como máximo un enlace por turno. Cada enlace admite un solo paquete por turno, sumando las dos direcciones. Si dos nodos quieren usarlo a la vez, se ponen de acuerdo en quién espera; si no hay acuerdo, los dos esperan. Un paquete recién llegado espera al turno siguiente para volver a moverse.
 
-### 2. Primera entrega sense incidències · 12 min
+### 2. Primera entrega sin incidencias · 12 min
 
-A reparteix els quatre paquets entre les rutes A-B-D i A-C-D. Registreu torn, paquet, origen del salt i destí del salt. D ordena les parts pel número, reconstrueix el text i marca els quatre rebuts a la targeta de confirmació. La confirmació viatja de D a A pels enllaços i ocupa torns com qualsevol altre paquet. L'enviament acaba quan A rep la confirmació completa.
+A reparte los cuatro paquetes entre las rutas A-B-D y A-C-D. Registrad turno, paquete, origen del salto y destino del salto. D ordena las partes por el número, reconstruye el texto y marca los cuatro recibos en la tarjeta de confirmación. La confirmación viaja de D a A por los enlaces y ocupa turnos como cualquier otro paquete. El envío acaba cuando A recibe la confirmación completa.
 
-![Quatre paquets retallables de M1, numerats de l'1 al 4, amb origen A, destí D i les paraules EL, ROBOT, PORTA i LLIBRES.](_assets/activitats/kits/xarxa-missatgers-2.webp)
+![Cuatro paquetes recortables de M1, numerados del 1 al 4, con origen A, destino D y las palabras EL, ROBOT, LLEVA y LIBROS.](_assets/activitats/kits/xarxa-missatgers-2.webp)
 
-_La numeració permet ordenar les parts. L'identificador evita barrejar fragments de missatges diferents._
+_La numeración permite ordenar las partes. El identificador evita mezclar fragmentos de mensajes diferentes._
 
-### 3. Un camí es tanca · 10 min
+### 3. Un camino se cierra · 10 min
 
-Reinicieu el missatge i tanqueu B-D amb la targeta d'incidència. Abans de moure res, cada node proposa què farà amb els paquets que té. Un paquet a B pot passar per C i arribar a D; un paquet que encara és a A pot anar per C. Compteu els salts i els torns reals. Una ruta amb menys salts pot haver d'esperar si l'enllaç està ocupat.
+Reiniciad el mensaje y cerrad B-D con la tarjeta de incidencia. Antes de mover nada, cada nodo propone qué hará con los paquetes que tiene. Un paquete en B puede pasar por C y llegar a D; un paquete que todavía está en A puede ir por C. Contad los saltos y los turnos reales. Una ruta con menos saltos puede tener que esperar si el enlace está ocupado.
 
-### 4. Falta una part · 13 min
+### 4. Falta una parte · 13 min
 
-Reinicieu i apliqueu només la incidència de paquet retingut: el docent aparta el paquet 2 després que isca d'A. Acordeu un termini de sis torns per a aquesta ronda, que és una regla del joc i no una garantia d'entrega. En acabar el termini, D comprova els números i envia la confirmació amb la petició «M1: falta 2; reenvia 2». Quan arriba a A, A envia la còpia del paquet 2. El docent no reté el reenviament. D confirma quan completa el missatge.
+Reiniciad y aplicad solo la incidencia de paquete retenido: el docente aparta el paquete 2 después de que salga de A. Acordad un plazo de seis turnos para esta ronda, que es una regla del juego y no una garantía de entrega. Al acabar el plazo, D comprueba los números y envía la confirmación con la petición «M1: falta 2; reenvía 2». Cuando llega a A, A envía la copia del paquete 2. El docente no retiene el reenvío. D confirma cuando completa el mensaje.
 
-### 5. Arriba desordenat: què hem après? · 15 min
+### 5. Llega desordenado: ¿qué hemos aprendido? · 15 min
 
-En una ronda breu, feu arribar el paquet 4 abans del 3. D els guarda i ordena sense demanar el reenviament del que ja té. Compareu les tres incidències: un camí tancat exigeix buscar ruta; una part absent exigeix demanar-la; l'ordre d'arribada diferent es resol amb els números. Cada equip proposa una millora del protocol i la prova amb una incidència, no amb totes alhora.
+En una ronda breve, haced llegar el paquete 4 antes del 3. D los guarda y ordena sin pedir el reenvío de lo que ya tiene. Comparad las tres incidencias: un camino cerrado exige buscar ruta; una parte ausente exige pedirla; el orden de llegada diferente se resuelve con los números. Cada equipo propone una mejora del protocolo y la prueba con una incidencia, no con todas a la vez.
 
-> **💡 Consell per a l'aula:** No feu carreres ni llanceu sobres. Els missatges es passen entre safates o amb un únic missatger adult. El repte és coordinar-se i justificar el protocol, no moure's ràpidament.
+> **💡 Consejo para el aula:** No hagáis carreras ni lancéis sobres. Los mensajes se pasan entre bandejas o con un único mensajero adulto. El reto es coordinarse y justificar el protocolo, no moverse rápidamente.
 
-## ✅ Evidències d'aprenentatge
+## ✅ Evidencias de aprendizaje
 
-- Tria una ruta que només utilitza les connexions disponibles i respecta els torns.
-- Reconstrueix el missatge per número i identifica amb precisió una part absent.
-- Demana el reenviament amb identificador i número, sense endevinar el contingut.
-- Distingeix una pèrdua, una espera i una arribada desordenada amb dades del registre.
+- Elige una ruta que solo utiliza las conexiones disponibles y respeta los turnos.
+- Reconstruye el mensaje por número e identifica con precisión una parte ausente.
+- Pide el reenvío con identificador y número, sin adivinar el contenido.
+- Distingue una pérdida, una espera y una llegada desordenada con datos del registro.
 
-La pàgina 4 inclou nou files: useu una altra còpia si necessiteu més salts. Recolliu un registre i una explicació breu de quina incidència han resolt i amb quina regla.
+La página 4 incluye nueve filas: usad otra copia si necesitáis más saltos. Recoged un registro y una explicación breve de qué incidencia han resuelto y con qué regla.
 
-### Preguntes per fer pensar
+### Preguntas para pensar
 
-- Podem saber el contingut del paquet que falta només amb el seu número?
-- Què passaria si A esborrara l'original abans de rebre la confirmació?
-- Per què necessitaríem M1 i M2 si enviàrem dos missatges alhora?
+- ¿Podemos saber el contenido del paquete que falta solo con su número?
+- ¿Qué pasaría si A borrara el original antes de recibir la confirmación?
+- ¿Por qué necesitaríamos M1 y M2 si enviáramos dos mensajes a la vez?
 
-## ♿ Variants i inclusió
+## ♿ Variantes e inclusión
 
-Feu tota la xarxa en una taula amb safates; ningú ha de caminar. Oferiu paquets grans, lectura compartida i un marcador de torn visible. Per començar, useu dos paquets i una sola ruta. Per aprofundir, introduïu un segon missatge M2 amb quatre fragments propis i compareu què passa amb i sense identificadors. Manteniu el límit de capacitat dels enllaços.
+Haced toda la red en una mesa con bandejas; nadie tiene que caminar. Ofreced paquetes grandes, lectura compartida y un marcador de turno visible. Para empezar, usad dos paquetes y una sola ruta. Para profundizar, introducid un segundo mensaje M2 con cuatro fragmentos propios y comparad qué pasa con y sin identificadores. Mantened el límite de capacidad de los enlaces.
