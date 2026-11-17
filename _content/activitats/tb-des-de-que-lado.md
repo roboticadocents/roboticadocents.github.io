@@ -8,24 +8,24 @@ duration: "30 min"
 order: 7
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Seleccionar la posició i l’orientació necessàries per empentar una capsa cap a una destinació. Activitat individual per a alumnat de 8 anys, neutra i resolta sobre paper. No requereix robot, ordinador ni peces físiques.
+Seleccionar la posición y la orientación necesarias para empujar una caja hacia un destino. Actividad individual para alumnado de 8 años, neutra y resuelta sobre papel. No requiere robot, ordenador ni piezas físicas.
 
-Els braços només empenten cap endavant: no agafen, no arrosseguen ni desplacen capses lateralment. Un avanç mou el robot una casella; si té una capsa just davant, també l’empenta una casella, sempre que la següent estiga lliure. No es poden empentar dues capses juntes. Retrocedir separa el robot de la capsa. Els cercles indiquen les destinacions, no són obstacles.
+Los brazos solo empujan hacia delante: no agarran, no arrastran ni desplazan cajas lateralmente. Un avance mueve el robot una casilla; si tiene una caja justo delante, también la empuja una casilla, siempre que la siguiente esté libre. No se pueden empujar dos cajas juntas. Retroceder separa el robot de la caja. Los círculos indican los destinos, no son obstáculos.
 
-Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equival a una casella. La fletxa plena indica l’inici. Cada exercici comença de nou. La repetició executa **tota la base**: «3 vegades» són tres execucions totals. Els separadors que dibuixem per planificar no són tecles ni funcions del robot.
+Las órdenes se dibujan como las teclas del Tale-Bot, sin letras. Un paso equivale a una casilla. La flecha llena indica el inicio. Cada ejercicio empieza de nuevo. La repetición ejecuta **toda la base**: «3 veces» son tres ejecuciones totales. Los separadores que dibujamos para planificar no son teclas ni funciones del robot.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- [Fitxa de l’alumnat (PDF, 1 pàgina A4)](_assets/activitats/kits/tb-des-de-quin-costat.pdf).
-- [Les huit fitxes de Tale-Bot (PDF, 8 pàgines A4)](_assets/activitats/kits/tb-fitxes-paper.pdf).
-- [Solucionari del professorat (PDF, 8 pàgines A4)](_assets/activitats/kits/tb-solucions-paper.pdf).
-- Llapis i goma. Imprimiu al 100%, en blanc i negre. No repartiu el solucionari.
+- [Ficha del alumnado (PDF, 1 página A4)](_assets/activitats/kits/tb-des-de-quin-costat.pdf).
+- [Las ocho fichas de Tale-Bot (PDF, 8 páginas A4)](_assets/activitats/kits/tb-fitxes-paper.pdf).
+- [Solucionario del profesorado (PDF, 8 páginas A4)](_assets/activitats/kits/tb-solucions-paper.pdf).
+- Lápiz y goma. Imprimid al 100 %, en blanco y negro. No repartáis el solucionario.
 
-## 👣 Desenvolupament pas a pas
+## 👣 Desarrollo paso a paso
 
-### 1. Posa’t darrere
+### 1. Ponte detrás
 
 <!-- Mode: costat -->
 <!-- Inici: B2 N -->
@@ -35,17 +35,17 @@ Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equiva
 <!-- Capses: B3 -->
 <!-- Metes: B4 -->
 
-**Consigna:** Marca on ha d’estar el robot per empentar cap al cercle. Dibuixa com ha de mirar.
+**Consigna:** Marca dónde debe estar el robot para empujar hacia el círculo. Dibuja cómo debe mirar.
 
-![Tauler de l’exercici amb les dades inicials.](_assets/activitats/kits/tb-des-de-quin-costat-ex1-graella.svg)
+![Tablero del ejercicio con los datos iniciales.](_assets/activitats/kits/tb-des-de-quin-costat-ex1-graella.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Programa de referència amb tecles i repeticions.](_assets/activitats/kits/tb-des-de-quin-costat-ex1-resposta.svg)
+![Programa de referencia con teclas y repeticiones.](_assets/activitats/kits/tb-des-de-quin-costat-ex1-resposta.svg)
 
-**Solució docent:** Per moure B3 cap a B4, ha d’estar en B2 mirant al nord. Un avanç deixa la capsa en B4 i el robot en B3.
+**Solución docente:** Para mover B3 hacia B4, debe estar en B2 mirando al norte. Un avance deja la caja en B4 y el robot en B3.
 
-### 2. La direcció de l’espenta
+### 2. La dirección del empujón
 
 <!-- Mode: costat -->
 <!-- Inici: B3 E -->
@@ -55,17 +55,17 @@ Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equiva
 <!-- Capses: C3 -->
 <!-- Metes: E3 -->
 
-**Consigna:** Marca on ha d’estar el robot per portar la capsa al cercle. Quants avanços necessita?
+**Consigna:** Marca dónde debe estar el robot para llevar la caja al círculo. ¿Cuántos avances necesita?
 
-![Tauler de l’exercici amb les dades inicials.](_assets/activitats/kits/tb-des-de-quin-costat-ex2-graella.svg)
+![Tablero del ejercicio con los datos iniciales.](_assets/activitats/kits/tb-des-de-quin-costat-ex2-graella.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Programa de referència amb tecles i repeticions.](_assets/activitats/kits/tb-des-de-quin-costat-ex2-resposta.svg)
+![Programa de referencia con teclas y repeticiones.](_assets/activitats/kits/tb-des-de-quin-costat-ex2-resposta.svg)
 
-**Solució docent:** Ha d’estar en B3 mirant a l’est. Amb dos avanços la capsa va de C3 a E3 i el robot acaba en D3.
+**Solución docente:** Debe estar en B3 mirando al este. Con dos avances la caja va de C3 a E3 y el robot acaba en D3.
 
-### 3. Quines dades importen?
+### 3. ¿Qué datos importan?
 
 <!-- Mode: costat -->
 <!-- Inici: D4 S -->
@@ -75,29 +75,29 @@ Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equiva
 <!-- Capses: D3 -->
 <!-- Metes: D2 -->
 
-**Consigna:** Encercla les dades necessàries de la llista. Marca la posició i la direcció per empentar.
+**Consigna:** Rodea los datos necesarios de la lista. Marca la posición y la dirección para empujar.
 
-![Tauler de l’exercici amb les dades inicials.](_assets/activitats/kits/tb-des-de-quin-costat-ex3-graella.svg)
+![Tablero del ejercicio con los datos iniciales.](_assets/activitats/kits/tb-des-de-quin-costat-ex3-graella.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Programa de referència amb tecles i repeticions.](_assets/activitats/kits/tb-des-de-quin-costat-ex3-resposta.svg)
+![Programa de referencia con teclas y repeticiones.](_assets/activitats/kits/tb-des-de-quin-costat-ex3-resposta.svg)
 
-**Solució docent:** Cal conéixer on és la capsa, on és la meta i si el pas està lliure. El nom de la capsa i el dibuix de les seues cares no determinen l’espenta. El robot se situa en D4 mirant al sud.
+**Solución docente:** Hay que conocer dónde está la caja, dónde está la meta y si el paso está libre. El nombre de la caja y el dibujo de sus caras no determinan el empujón. El robot se sitúa en D4 mirando al sur.
 
-## ✅ Evidències d'aprenentatge
+## ✅ Evidencias de aprendizaje
 
-- Representa correctament el resultat i explica com l’ha comprovat.
-- Distingeix les parts del problema o les dades necessàries segons la consigna.
-- Quan hi ha repetició, identifica la base i comprova l’estat entre execucions.
+- Representa correctamente el resultado y explica cómo lo ha comprobado.
+- Distingue las partes del problema o los datos necesarios según la consigna.
+- Cuando hay repetición, identifica la base y comprueba el estado entre ejecuciones.
 
-Valoreu cada exercici de 0 a 2 punts: 1 pel resultat i 1 per la justificació o les marques de planificació. Accepteu altres programes que complisquen totes les condicions. En les repeticions, cal recuperar l’orientació adequada abans de començar la següent execució.
+Valorad cada ejercicio de 0 a 2 puntos: 1 por el resultado y 1 por la justificación o las marcas de planificación. Aceptad otros programas que cumplan todas las condiciones. En las repeticiones, hay que recuperar la orientación adecuada antes de empezar la siguiente ejecución.
 
-### Preguntes per fer pensar
+### Preguntas para pensar
 
-- Per què cal situar-se darrere de la capsa?
-- Quines dades necessites i quines pots ignorar?
+- ¿Por qué hay que situarse detrás de la caja?
+- ¿Qué datos necesitas y cuáles puedes ignorar?
 
-## ♿ Variants i inclusió
+## ♿ Variantes e inclusión
 
-Llegiu les consignes en veu alta si cal. Es pot seguir la simulació amb el dit o amb una fitxa de paper. Els símbols són grans i en blanc i negre. Per donar suport, marqueu la primera part; per ampliar, canvieu la posició inicial o el nombre de repeticions i comproveu que tot cap al tauler.
+Leed las consignas en voz alta si hace falta. Se puede seguir la simulación con el dedo o con una ficha de papel. Los símbolos son grandes y en blanco y negro. Para apoyar, marcad la primera parte; para ampliar, cambiad la posición inicial o el número de repeticiones y comprobad que todo cabe en el tablero.

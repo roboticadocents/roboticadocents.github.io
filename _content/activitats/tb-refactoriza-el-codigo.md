@@ -8,65 +8,65 @@ duration: "25 min"
 order: 4
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Abreujar un programa sense alterar la seqüència d’ordres executades. Activitat individual per a 8 anys, neutra i descontextualitzada: només hi ha codis, caselles i orientacions. No requereix robot, ordinador, tauleta ni peces físiques.
+Abreviar un programa sin alterar la secuencia de órdenes ejecutadas. Actividad individual para 8 años, neutra y descontextualizada: solo hay códigos, casillas y orientaciones. No requiere robot, ordenador, tableta ni piezas físicas.
 
-**Convencions del paper:** les ordres es representen amb dibuixos de les tecles del Tale-Bot o de les peces del Coding Set, sense abreviatures amb lletres. La quadrícula indica la posició i la direcció inicials amb una fletxa plena. El camí de punts i la fletxa buida indiquen el recorregut i l’orientació que cal aconseguir. Avançar o retrocedir mou una casella; girar canvia la direcció sense moure’s de casella. Cada exercici comença de nou.
+**Convenciones del papel:** las órdenes se representan con dibujos de las teclas del Tale-Bot o de las piezas del Coding Set, sin abreviaturas con letras. La cuadrícula indica la posición y la dirección iniciales con una flecha llena. El camino de puntos y la flecha vacía indican el recorrido y la orientación que hay que conseguir. Avanzar o retroceder mueve una casilla; girar cambia la dirección sin moverse de casilla. Cada ejercicio empieza de nuevo.
 
-La repetició afecta tota la base. «2 vegades» significa dues execucions totals, no una més dues. No s’utilitzen bucles parcials ni nombres de moviment.
+La repetición afecta a toda la base. «2 veces» significa dos ejecuciones totales, no una más dos. No se utilizan bucles parciales ni números de movimiento.
 
-**Refactoritzar** significa conservar totes les ordres elementals en el mateix ordre: arribar a la mateixa casella no basta. No es val eliminar anades i tornades o girs que es compensen.
+**Refactorizar** significa conservar todas las órdenes elementales en el mismo orden: llegar a la misma casilla no basta. No vale eliminar idas y vueltas o giros que se compensan.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- [Fitxa de l’alumnat: Refactoritza el codi (PDF, 1 pàgina A4)](_assets/activitats/kits/tb-refactoritza-el-codi.pdf).
-- [Les huit fitxes de Tale-Bot (PDF, 8 pàgines A4)](_assets/activitats/kits/tb-fitxes-paper.pdf).
-- [Solucionari del professorat de Tale-Bot (PDF, 8 pàgines A4)](_assets/activitats/kits/tb-solucions-paper.pdf).
-- Una còpia de la fitxa per alumne, llapis i goma. Imprimiu en A4 vertical, al 100%, en blanc i negre. No repartiu el solucionari.
-- La llegenda i totes les dades necessàries apareixen en cada full. Dibuixeu els símbols en les caselles de resposta i escriviu només les explicacions; traceu els moviments en la quadrícula.
+- [Ficha del alumnado: Refactoriza el código (PDF, 1 página A4)](_assets/activitats/kits/tb-refactoritza-el-codi.pdf).
+- [Las ocho fichas de Tale-Bot (PDF, 8 páginas A4)](_assets/activitats/kits/tb-fitxes-paper.pdf).
+- [Solucionario del profesorado de Tale-Bot (PDF, 8 páginas A4)](_assets/activitats/kits/tb-solucions-paper.pdf).
+- Una copia de la ficha por alumno, lápiz y goma. Imprimid en A4 vertical, al 100 %, en blanco y negro. No repartáis el solucionario.
+- La leyenda y todos los datos necesarios aparecen en cada hoja. Dibujad los símbolos en las casillas de respuesta y escribid solo las explicaciones; trazad los movimientos en la cuadrícula.
 
-## 👣 Desenvolupament pas a pas
+## 👣 Desarrollo paso a paso
 
-### 1. Una unitat que es repeteix
+### 1. Una unidad que se repite
 
 <!-- Inici: B2 N -->
 <!-- Codi: A D A D -->
 <!-- Objectiu: A D A D -->
 <!-- Resposta de control: REP2[A D] -->
 
-**Consigna:** Dibuixa el tros que es repeteix. Quantes vegades cal fer-lo?
+**Consigna:** Dibuja el trozo que se repite. ¿Cuántas veces hay que hacerlo?
 
-**Codi donat:**
+**Código dado:**
 
-![Seqüència de tecles o peces amb símbols de moviment.](_assets/activitats/kits/tb-refactoritza-el-codi-ex1-codi.svg)
+![Secuencia de teclas o piezas con símbolos de movimiento.](_assets/activitats/kits/tb-refactoritza-el-codi-ex1-codi.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Solució amb dibuixos dels comandaments.](_assets/activitats/kits/tb-refactoritza-el-codi-ex1-resposta.svg)
+![Solución con dibujos de los comandos.](_assets/activitats/kits/tb-refactoritza-el-codi-ex1-resposta.svg)
 
-**Solució docent:** La base és avançar i girar a la dreta. S’executa dues vegades en total. Es guarden dues tecles en lloc de quatre; acaba en C3, mirant al sud.
+**Solución docente:** La base es avanzar y girar a la derecha. Se ejecuta dos veces en total. Se guardan dos teclas en lugar de cuatro; acaba en C3, mirando al sur.
 
-### 2. Troba el patró
+### 2. Encuentra el patrón
 
 <!-- Inici: D2 N -->
 <!-- Codi: A A E A A E A A E -->
 <!-- Objectiu: A A E A A E A A E -->
 <!-- Resposta de control: REP3[A A E] -->
 
-**Consigna:** Busca el tros repetit. Dibuixa’l i indica quantes vegades es fa.
+**Consigna:** Busca el trozo repetido. Dibújalo e indica cuántas veces se hace.
 
-**Codi donat:**
+**Código dado:**
 
-![Seqüència de tecles o peces amb símbols de moviment.](_assets/activitats/kits/tb-refactoritza-el-codi-ex2-codi.svg)
+![Secuencia de teclas o piezas con símbolos de movimiento.](_assets/activitats/kits/tb-refactoritza-el-codi-ex2-codi.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Solució amb dibuixos dels comandaments.](_assets/activitats/kits/tb-refactoritza-el-codi-ex2-resposta.svg)
+![Solución con dibujos de los comandos.](_assets/activitats/kits/tb-refactoritza-el-codi-ex2-resposta.svg)
 
-**Solució docent:** La base són dos avanços i un gir a l’esquerra. S’executa tres vegades en total. Es guarden tres tecles en lloc de nou; acaba en B2, mirant a l’est.
+**Solución docente:** La base son dos avances y un giro a la izquierda. Se ejecuta tres veces en total. Se guardan tres teclas en lugar de nueve; acaba en B2, mirando al este.
 
-### 3. Es pot abreujar així?
+### 3. ¿Se puede abreviar así?
 
 <!-- Inici: B2 N -->
 <!-- Codi: A D A D A -->
@@ -74,40 +74,40 @@ La repetició afecta tota la base. «2 vegades» significa dues execucions total
 <!-- Resposta de control: A D A D A -->
 <!-- Proposta: REP3[A D] -->
 
-**Consigna:** La proposta fa exactament el mateix? Encercla sí o no.
+**Consigna:** ¿La propuesta hace exactamente lo mismo? Rodea sí o no.
 
-**Codi donat:**
+**Código dado:**
 
-![Seqüència de tecles o peces amb símbols de moviment.](_assets/activitats/kits/tb-refactoritza-el-codi-ex3-codi.svg)
+![Secuencia de teclas o piezas con símbolos de movimiento.](_assets/activitats/kits/tb-refactoritza-el-codi-ex3-codi.svg)
 
-**Proposta que cal comprovar:**
+**Propuesta que hay que comprobar:**
 
-![Dues tecles amb repetició global de tres execucions.](_assets/activitats/kits/tb-refactoritza-el-codi-ex3-proposta.svg)
+![Dos teclas con repetición global de tres ejecuciones.](_assets/activitats/kits/tb-refactoritza-el-codi-ex3-proposta.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Solució amb dibuixos dels comandaments.](_assets/activitats/kits/tb-refactoritza-el-codi-ex3-resposta.svg)
+![Solución con dibujos de los comandos.](_assets/activitats/kits/tb-refactoritza-el-codi-ex3-resposta.svg)
 
-**Solució docent:** No són equivalents: la proposta afegeix un gir a la dreta al final. L’original acaba en C2, mirant al sud; la proposta, en C2, mirant a l’oest. Cal conservar les cinc tecles originals perquè no són una repetició exacta d’una base més curta.
+**Solución docente:** No son equivalentes: la propuesta añade un giro a la derecha al final. El original acaba en C2, mirando al sur; la propuesta, en C2, mirando al oeste. Hay que conservar las cinco teclas originales porque no son una repetición exacta de una base más corta.
 
-## ✅ Evidències d'aprenentatge
+## ✅ Evidencias de aprendizaje
 
-- Interpreta avanç, retrocés i gir sense confondre desplaçament amb orientació.
-- Deixa una resposta gràfica i un recorregut verificable per a cada exercici.
-- Comprova l’equivalència desplegant les dues versions del codi.
+- Interpreta avance, retroceso y giro sin confundir desplazamiento con orientación.
+- Deja una respuesta gráfica y un recorrido verificable para cada ejercicio.
+- Comprueba la equivalencia desplegando las dos versiones del código.
 
-Valoreu cada exercici de 0 a 2 punts: 1 per la resposta correcta i 1 per la traça o justificació coherent. Total: 6 punts. En escriptura de codi, accepteu alternatives que respecten la ruta ordenada, l’orientació final i les restriccions de la consigna; el solucionari dona una resposta possible.
+Valorad cada ejercicio de 0 a 2 puntos: 1 por la respuesta correcta y 1 por la traza o justificación coherente. Total: 6 puntos. En escritura de código, aceptad alternativas que respeten la ruta ordenada, la orientación final y las restricciones de la consigna; el solucionario da una respuesta posible.
 
-### Preguntes per fer pensar
+### Preguntas para pensar
 
-- Quina diferència hi ha entre girar i desplaçar-se?
-- Per què necessitem conéixer l’orientació inicial?
-- Com demostres que els dos codis executen exactament les mateixes ordres?
+- ¿Qué diferencia hay entre girar y desplazarse?
+- ¿Por qué necesitamos conocer la orientación inicial?
+- ¿Cómo demuestras que los dos códigos ejecutan exactamente las mismas órdenes?
 
-## ♿ Variants i inclusió
+## ♿ Variantes e inclusión
 
-Llegiu les consignes en veu alta si cal; les respostes continuen escrivint-se en la fitxa. Es pot usar el dit o un llapis per seguir el codi. Els símbols són grans, en blanc i negre; la resposta es pot dibuixar amb fletxes senzilles. La mascota de contorn es pot colorejar en acabar. Per donar suport, resolgueu oralment un primer moviment; per ampliar, canvieu l’orientació inicial i torneu a calcular el resultat en un full auxiliar.
+Leed las consignas en voz alta si hace falta; las respuestas se continúan escribiendo en la ficha. Se puede usar el dedo o un lápiz para seguir el código. Los símbolos son grandes, en blanco y negro; la respuesta se puede dibujar con flechas sencillas. La mascota de contorno se puede colorear al terminar. Para apoyar, resolved oralmente un primer movimiento; para ampliar, cambiad la orientación inicial y volved a calcular el resultado en una hoja auxiliar.
 
-## 🔗 Referent consultat
+## 🔗 Referente consultado
 
-[Comandaments i repetició de Tale-Bot Pro](https://matatalab.com/en/lesson4.2). Les tecles i les peces es representen amb dibuixos de contorn simplificats. Els símbols conserven el sentit dels comandaments. Les dades internes de generació queden en comentaris i no es mostren a l’alumnat.
+[Comandos y repetición de Tale-Bot Pro](https://matatalab.com/en/lesson4.2). Las teclas y las piezas se representan con dibujos de contorno simplificados. Los símbolos conservan el sentido de los comandos. Los datos internos de generación quedan en comentarios y no se muestran al alumnado.

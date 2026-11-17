@@ -8,24 +8,24 @@ duration: "30 min"
 order: 8
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Planificar l’aproximació i l’espenta, i reutilitzar una seqüència completa per moure tres capses. Activitat individual per a alumnat de 8 anys, neutra i resolta sobre paper. No requereix robot, ordinador ni peces físiques.
+Planificar la aproximación y el empujón, y reutilizar una secuencia completa para mover tres cajas. Actividad individual para alumnado de 8 años, neutra y resuelta sobre papel. No requiere robot, ordenador ni piezas físicas.
 
-Els braços només empenten cap endavant: no agafen, no arrosseguen ni desplacen capses lateralment. Un avanç mou el robot una casella; si té una capsa just davant, també l’empenta una casella, sempre que la següent estiga lliure. No es poden empentar dues capses juntes. Retrocedir separa el robot de la capsa. Els cercles indiquen les destinacions, no són obstacles.
+Los brazos solo empujan hacia delante: no agarran, no arrastran ni desplazan cajas lateralmente. Un avance mueve el robot una casilla; si tiene una caja justo delante, también la empuja una casilla, siempre que la siguiente esté libre. No se pueden empujar dos cajas juntas. Retroceder separa el robot de la caja. Los círculos indican los destinos, no son obstáculos.
 
-Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equival a una casella. La fletxa plena indica l’inici. Cada exercici comença de nou. La repetició executa **tota la base**: «3 vegades» són tres execucions totals. Els separadors que dibuixem per planificar no són tecles ni funcions del robot.
+Las órdenes se dibujan como las teclas del Tale-Bot, sin letras. Un paso equivale a una casilla. La flecha llena indica el inicio. Cada ejercicio empieza de nuevo. La repetición ejecuta **toda la base**: «3 veces» son tres ejecuciones totales. Los separadores que dibujamos para planificar no son teclas ni funciones del robot.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- [Fitxa de l’alumnat (PDF, 1 pàgina A4)](_assets/activitats/kits/tb-aproxima-i-empeny.pdf).
-- [Les huit fitxes de Tale-Bot (PDF, 8 pàgines A4)](_assets/activitats/kits/tb-fitxes-paper.pdf).
-- [Solucionari del professorat (PDF, 8 pàgines A4)](_assets/activitats/kits/tb-solucions-paper.pdf).
-- Llapis i goma. Imprimiu al 100%, en blanc i negre. No repartiu el solucionari.
+- [Ficha del alumnado (PDF, 1 página A4)](_assets/activitats/kits/tb-aproxima-i-empeny.pdf).
+- [Las ocho fichas de Tale-Bot (PDF, 8 páginas A4)](_assets/activitats/kits/tb-fitxes-paper.pdf).
+- [Solucionario del profesorado (PDF, 8 páginas A4)](_assets/activitats/kits/tb-solucions-paper.pdf).
+- Lápiz y goma. Imprimid al 100 %, en blanco y negro. No repartáis el solucionario.
 
-## 👣 Desenvolupament pas a pas
+## 👣 Desarrollo paso a paso
 
-### 1. Arriba al costat correcte
+### 1. Llega al lado correcto
 
 <!-- Mode: capses -->
 <!-- Inici: B2 E -->
@@ -35,17 +35,17 @@ Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equiva
 <!-- Capses: C3 -->
 <!-- Metes: C5 -->
 
-**Consigna:** Separa el codi en aproximació i espenta. Porta la capsa al cercle.
+**Consigna:** Separa el código en aproximación y empujón. Lleva la caja al círculo.
 
-![Tauler de l’exercici amb les dades inicials.](_assets/activitats/kits/tb-aproxima-i-empeny-ex1-graella.svg)
+![Tablero del ejercicio con los datos iniciales.](_assets/activitats/kits/tb-aproxima-i-empeny-ex1-graella.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Programa de referència amb tecles i repeticions.](_assets/activitats/kits/tb-aproxima-i-empeny-ex1-resposta.svg)
+![Programa de referencia con teclas y repeticiones.](_assets/activitats/kits/tb-aproxima-i-empeny-ex1-resposta.svg)
 
-**Solució docent:** Avança fins a C2 i gira a l’esquerra: ja està darrere de C3. Dos avanços porten la capsa a C5 i el robot a C4.
+**Solución docente:** Avanza hasta C2 y gira a la izquierda: ya está detrás de C3. Dos avances llevan la caja a C5 y el robot a C4.
 
-### 2. Una capsa i la següent
+### 2. Una caja y la siguiente
 
 <!-- Mode: capses -->
 <!-- Inici: A1 N -->
@@ -55,17 +55,17 @@ Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equiva
 <!-- Capses: A2 B2 C2 -->
 <!-- Metes: A3 B3 C3 -->
 
-**Consigna:** Escriu una base: empeny, torna i prepara’t darrere de la següent. Repeteix-la tres vegades.
+**Consigna:** Escribe una base: empuja, vuelve y prepárate detrás de la siguiente. Repítela tres veces.
 
-![Tauler de l’exercici amb les dades inicials.](_assets/activitats/kits/tb-aproxima-i-empeny-ex2-graella.svg)
+![Tablero del ejercicio con los datos iniciales.](_assets/activitats/kits/tb-aproxima-i-empeny-ex2-graella.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Programa de referència amb tecles i repeticions.](_assets/activitats/kits/tb-aproxima-i-empeny-ex2-resposta.svg)
+![Programa de referencia con teclas y repeticiones.](_assets/activitats/kits/tb-aproxima-i-empeny-ex2-resposta.svg)
 
-**Solució docent:** La base avança una casella, retrocedeix, gira a la dreta, avança i gira a l’esquerra. Les capses A2, B2 i C2 arriben a A3, B3 i C3. El robot acaba en D1 mirant al nord.
+**Solución docente:** La base avanza una casilla, retrocede, gira a la derecha, avanza y gira a la izquierda. Las cajas A2, B2 y C2 llegan a A3, B3 y C3. El robot acaba en D1 mirando al norte.
 
-### 3. Més separades, el mateix pla
+### 3. Más separadas, el mismo plan
 
 <!-- Mode: capses -->
 <!-- Inici: A1 N -->
@@ -75,29 +75,29 @@ Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equiva
 <!-- Capses: A2 C2 E2 -->
 <!-- Metes: A4 C4 E4 -->
 
-**Consigna:** Adapta la base: empeny dos passos, torna i passa a la següent capsa. Repeteix-la tres vegades.
+**Consigna:** Adapta la base: empuja dos pasos, vuelve y pasa a la siguiente caja. Repítela tres veces.
 
-![Tauler de l’exercici amb les dades inicials.](_assets/activitats/kits/tb-aproxima-i-empeny-ex3-graella.svg)
+![Tablero del ejercicio con los datos iniciales.](_assets/activitats/kits/tb-aproxima-i-empeny-ex3-graella.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Programa de referència amb tecles i repeticions.](_assets/activitats/kits/tb-aproxima-i-empeny-ex3-resposta.svg)
+![Programa de referencia con teclas y repeticiones.](_assets/activitats/kits/tb-aproxima-i-empeny-ex3-resposta.svg)
 
-**Solució docent:** Dos avanços, dos retrocessos, gir a la dreta, dos avanços i gir a l’esquerra. Les capses A2, C2 i E2 arriben a A4, C4 i E4. El robot acaba en G1 mirant al nord. També fa el canvi lateral després de l’última capsa.
+**Solución docente:** Dos avances, dos retrocesos, giro a la derecha, dos avances y giro a la izquierda. Las cajas A2, C2 y E2 llegan a A4, C4 y E4. El robot acaba en G1 mirando al norte. También hace el cambio lateral después de la última caja.
 
-## ✅ Evidències d'aprenentatge
+## ✅ Evidencias de aprendizaje
 
-- Representa correctament el resultat i explica com l’ha comprovat.
-- Distingeix les parts del problema o les dades necessàries segons la consigna.
-- Quan hi ha repetició, identifica la base i comprova l’estat entre execucions.
+- Representa correctamente el resultado y explica cómo lo ha comprobado.
+- Distingue las partes del problema o los datos necesarios según la consigna.
+- Cuando hay repetición, identifica la base y comprueba el estado entre ejecuciones.
 
-Valoreu cada exercici de 0 a 2 punts: 1 pel resultat i 1 per la justificació o les marques de planificació. Accepteu altres programes que complisquen totes les condicions. En les repeticions, cal recuperar l’orientació adequada abans de començar la següent execució.
+Valorad cada ejercicio de 0 a 2 puntos: 1 por el resultado y 1 por la justificación o las marcas de planificación. Aceptad otros programas que cumplan todas las condiciones. En las repeticiones, hay que recuperar la orientación adecuada antes de empezar la siguiente ejecución.
 
-### Preguntes per fer pensar
+### Preguntas para pensar
 
-- Quines tecles preparen la següent espenta?
-- Per què la mateixa base serveix per a les tres capses?
+- ¿Qué teclas preparan el siguiente empujón?
+- ¿Por qué la misma base sirve para las tres cajas?
 
-## ♿ Variants i inclusió
+## ♿ Variantes e inclusión
 
-Llegiu les consignes en veu alta si cal. Es pot seguir la simulació amb el dit o amb una fitxa de paper. Els símbols són grans i en blanc i negre. Per donar suport, marqueu la primera part; per ampliar, canvieu la posició inicial o el nombre de repeticions i comproveu que tot cap al tauler.
+Leed las consignas en voz alta si hace falta. Se puede seguir la simulación con el dedo o con una ficha de papel. Los símbolos son grandes y en blanco y negro. Para apoyar, marcad la primera parte; para ampliar, cambiad la posición inicial o el número de repeticiones y comprobad que todo cabe en el tablero.

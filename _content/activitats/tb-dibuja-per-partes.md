@@ -8,24 +8,24 @@ duration: "30 min"
 order: 6
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Separar un dibuix en una unitat que es repeteix i programar tota la seqüència amb repetició. Activitat individual per a alumnat de 8 anys, neutra i resolta sobre paper. No requereix robot, ordinador ni peces físiques.
+Separar un dibujo en una unidad que se repite y programar toda la secuencia con repetición. Actividad individual para alumnado de 8 años, neutra y resuelta sobre papel. No requiere robot, ordenador ni piezas físicas.
 
-El retolador està sempre baixat: avançar i retrocedir deixen traç, i passar de nou per una línia no l’esborra. En el model de la fitxa, el retolador segueix el centre del robot i els girs només canvien l’orientació. No es pot alçar el retolador ni separar dos trams sense connectar-los.
+El rotulador está siempre bajado: avanzar y retroceder dejan trazo, y pasar de nuevo por una línea no la borra. En el modelo de la ficha, el rotulador sigue el centro del robot y los giros solo cambian la orientación. No se puede levantar el rotulador ni separar dos tramos sin conectarlos.
 
-Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equival a una casella. La fletxa plena indica l’inici. Cada exercici comença de nou. La repetició executa **tota la base**: «3 vegades» són tres execucions totals. Els separadors que dibuixem per planificar no són tecles ni funcions del robot.
+Las órdenes se dibujan como las teclas del Tale-Bot, sin letras. Un paso equivale a una casilla. La flecha llena indica el inicio. Cada ejercicio empieza de nuevo. La repetición ejecuta **toda la base**: «3 veces» son tres ejecuciones totales. Los separadores que dibujamos para planificar no son teclas ni funciones del robot.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- [Fitxa de l’alumnat (PDF, 1 pàgina A4)](_assets/activitats/kits/tb-dibuixa-per-parts.pdf).
-- [Les huit fitxes de Tale-Bot (PDF, 8 pàgines A4)](_assets/activitats/kits/tb-fitxes-paper.pdf).
-- [Solucionari del professorat (PDF, 8 pàgines A4)](_assets/activitats/kits/tb-solucions-paper.pdf).
-- Llapis i goma. Imprimiu al 100%, en blanc i negre. No repartiu el solucionari.
+- [Ficha del alumnado (PDF, 1 página A4)](_assets/activitats/kits/tb-dibuixa-per-parts.pdf).
+- [Las ocho fichas de Tale-Bot (PDF, 8 páginas A4)](_assets/activitats/kits/tb-fitxes-paper.pdf).
+- [Solucionario del profesorado (PDF, 8 páginas A4)](_assets/activitats/kits/tb-solucions-paper.pdf).
+- Lápiz y goma. Imprimid al 100 %, en blanco y negro. No repartáis el solucionario.
 
-## 👣 Desenvolupament pas a pas
+## 👣 Desarrollo paso a paso
 
-### 1. Un costat i un gir
+### 1. Un lado y un giro
 
 <!-- Mode: patro -->
 <!-- Inici: B2 N -->
@@ -33,17 +33,17 @@ Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equiva
 <!-- Objectiu: REP4[A A D] -->
 <!-- Resposta de control: REP4[A A D] -->
 
-**Consigna:** Marca un costat del quadrat. Dibuixa la base i indica les repeticions.
+**Consigna:** Marca un lado del cuadrado. Dibuja la base e indica las repeticiones.
 
-![Tauler de l’exercici amb les dades inicials.](_assets/activitats/kits/tb-dibuixa-per-parts-ex1-graella.svg)
+![Tablero del ejercicio con los datos iniciales.](_assets/activitats/kits/tb-dibuixa-per-parts-ex1-graella.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Programa de referència amb tecles i repeticions.](_assets/activitats/kits/tb-dibuixa-per-parts-ex1-resposta.svg)
+![Programa de referencia con teclas y repeticiones.](_assets/activitats/kits/tb-dibuixa-per-parts-ex1-resposta.svg)
 
-**Solució docent:** La base és avançar, avançar i girar a la dreta. Quatre execucions dibuixen el quadrat i recuperen la posició i l’orientació inicials.
+**Solución docente:** La base es avanzar, avanzar y girar a la derecha. Cuatro ejecuciones dibujan el cuadrado y recuperan la posición y la orientación iniciales.
 
-### 2. Tres escalons iguals
+### 2. Tres escalones iguales
 
 <!-- Mode: patro -->
 <!-- Inici: B2 N -->
@@ -51,17 +51,17 @@ Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equiva
 <!-- Objectiu: REP3[A D A E] -->
 <!-- Resposta de control: REP3[A D A E] -->
 
-**Consigna:** Separa els tres escalons. Dibuixa les tecles d’un escaló i repeteix-lo.
+**Consigna:** Separa los tres escalones. Dibuja las teclas de un escalón y repítelo.
 
-![Tauler de l’exercici amb les dades inicials.](_assets/activitats/kits/tb-dibuixa-per-parts-ex2-graella.svg)
+![Tablero del ejercicio con los datos iniciales.](_assets/activitats/kits/tb-dibuixa-per-parts-ex2-graella.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Programa de referència amb tecles i repeticions.](_assets/activitats/kits/tb-dibuixa-per-parts-ex2-resposta.svg)
+![Programa de referencia con teclas y repeticiones.](_assets/activitats/kits/tb-dibuixa-per-parts-ex2-resposta.svg)
 
-**Solució docent:** La base és avançar, girar a la dreta, avançar i girar a l’esquerra. Tres execucions acaben en E5 mirant al nord.
+**Solución docente:** La base es avanzar, girar a la derecha, avanzar y girar a la izquierda. Tres ejecuciones acaban en E5 mirando al norte.
 
-### 3. Descobreix la peça del dibuix
+### 3. Descubre la pieza del dibujo
 
 <!-- Mode: patro -->
 <!-- Inici: B2 N -->
@@ -69,29 +69,29 @@ Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equiva
 <!-- Objectiu: REP2[A A D A D] -->
 <!-- Resposta de control: REP2[A A D A D] -->
 
-**Consigna:** Divideix el rectangle en dues parts iguals. Escriu una base repetida dues vegades.
+**Consigna:** Divide el rectángulo en dos partes iguales. Escribe una base repetida dos veces.
 
-![Tauler de l’exercici amb les dades inicials.](_assets/activitats/kits/tb-dibuixa-per-parts-ex3-graella.svg)
+![Tablero del ejercicio con los datos iniciales.](_assets/activitats/kits/tb-dibuixa-per-parts-ex3-graella.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Programa de referència amb tecles i repeticions.](_assets/activitats/kits/tb-dibuixa-per-parts-ex3-resposta.svg)
+![Programa de referencia con teclas y repeticiones.](_assets/activitats/kits/tb-dibuixa-per-parts-ex3-resposta.svg)
 
-**Solució docent:** Cada part dibuixa un costat llarg, un gir, un costat curt i un gir. Dues execucions tanquen el rectangle. El retolador no s’alça entre les parts.
+**Solución docente:** Cada parte dibuja un lado largo, un giro, un lado corto y un giro. Dos ejecuciones cierran el rectángulo. El rotulador no se levanta entre las partes.
 
-## ✅ Evidències d'aprenentatge
+## ✅ Evidencias de aprendizaje
 
-- Representa correctament el resultat i explica com l’ha comprovat.
-- Distingeix les parts del problema o les dades necessàries segons la consigna.
-- Quan hi ha repetició, identifica la base i comprova l’estat entre execucions.
+- Representa correctamente el resultado y explica cómo lo ha comprobado.
+- Distingue las partes del problema o los datos necesarios según la consigna.
+- Cuando hay repetición, identifica la base y comprueba el estado entre ejecuciones.
 
-Valoreu cada exercici de 0 a 2 punts: 1 pel resultat i 1 per la justificació o les marques de planificació. Accepteu altres programes que complisquen totes les condicions. En les repeticions, cal recuperar l’orientació adequada abans de començar la següent execució.
+Valorad cada ejercicio de 0 a 2 puntos: 1 por el resultado y 1 por la justificación o las marcas de planificación. Aceptad otros programas que cumplan todas las condiciones. En las repeticiones, hay que recuperar la orientación adecuada antes de empezar la siguiente ejecución.
 
-### Preguntes per fer pensar
+### Preguntas para pensar
 
-- Quina part del dibuix es repeteix?
-- On queda el robot i cap a on mira després de cada execució?
+- ¿Qué parte del dibujo se repite?
+- ¿Dónde queda el robot y hacia dónde mira después de cada ejecución?
 
-## ♿ Variants i inclusió
+## ♿ Variantes e inclusión
 
-Llegiu les consignes en veu alta si cal. Es pot seguir la simulació amb el dit o amb una fitxa de paper. Els símbols són grans i en blanc i negre. Per donar suport, marqueu la primera part; per ampliar, canvieu la posició inicial o el nombre de repeticions i comproveu que tot cap al tauler.
+Leed las consignas en voz alta si hace falta. Se puede seguir la simulación con el dedo o con una ficha de papel. Los símbolos son grandes y en blanco y negro. Para apoyar, marcad la primera parte; para ampliar, cambiad la posición inicial o el número de repeticiones y comprobad que todo cabe en el tablero.

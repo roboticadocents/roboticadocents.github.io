@@ -8,24 +8,24 @@ duration: "30 min"
 order: 5
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Interpretar el traç continu i reconéixer una mateixa figura en posicions o orientacions diferents. Activitat individual per a alumnat de 8 anys, neutra i resolta sobre paper. No requereix robot, ordinador ni peces físiques.
+Interpretar el trazo continuo y reconocer una misma figura en posiciones u orientaciones diferentes. Actividad individual para alumnado de 8 años, neutra y resuelta sobre papel. No requiere robot, ordenador ni piezas físicas.
 
-El retolador està sempre baixat: avançar i retrocedir deixen traç, i passar de nou per una línia no l’esborra. En el model de la fitxa, el retolador segueix el centre del robot i els girs només canvien l’orientació. No es pot alçar el retolador ni separar dos trams sense connectar-los.
+El rotulador está siempre bajado: avanzar y retroceder dejan trazo, y pasar de nuevo por una línea no la borra. En el modelo de la ficha, el rotulador sigue el centro del robot y los giros solo cambian la orientación. No se puede levantar el rotulador ni separar dos tramos sin conectarlos.
 
-Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equival a una casella. La fletxa plena indica l’inici. Cada exercici comença de nou. La repetició executa **tota la base**: «3 vegades» són tres execucions totals. Els separadors que dibuixem per planificar no són tecles ni funcions del robot.
+Las órdenes se dibujan como las teclas del Tale-Bot, sin letras. Un paso equivale a una casilla. La flecha llena indica el inicio. Cada ejercicio empieza de nuevo. La repetición ejecuta **toda la base**: «3 veces» son tres ejecuciones totales. Los separadores que dibujamos para planificar no son teclas ni funciones del robot.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- [Fitxa de l’alumnat (PDF, 1 pàgina A4)](_assets/activitats/kits/tb-quin-dibuix-fara.pdf).
-- [Les huit fitxes de Tale-Bot (PDF, 8 pàgines A4)](_assets/activitats/kits/tb-fitxes-paper.pdf).
-- [Solucionari del professorat (PDF, 8 pàgines A4)](_assets/activitats/kits/tb-solucions-paper.pdf).
-- Llapis i goma. Imprimiu al 100%, en blanc i negre. No repartiu el solucionari.
+- [Ficha del alumnado (PDF, 1 página A4)](_assets/activitats/kits/tb-quin-dibuix-fara.pdf).
+- [Las ocho fichas de Tale-Bot (PDF, 8 páginas A4)](_assets/activitats/kits/tb-fitxes-paper.pdf).
+- [Solucionario del profesorado (PDF, 8 páginas A4)](_assets/activitats/kits/tb-solucions-paper.pdf).
+- Lápiz y goma. Imprimid al 100 %, en blanco y negro. No repartáis el solucionario.
 
-## 👣 Desenvolupament pas a pas
+## 👣 Desarrollo paso a paso
 
-### 1. Segueix el retolador
+### 1. Sigue el rotulador
 
 <!-- Mode: dibuix -->
 <!-- Inici: B2 N -->
@@ -33,21 +33,21 @@ Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equiva
 <!-- Objectiu: - -->
 <!-- Resposta de control: A A D A A -->
 
-**Consigna:** Dibuixa el traç. Marca on comença i on acaba.
+**Consigna:** Dibuja el trazo. Marca dónde empieza y dónde acaba.
 
-![Tauler de l’exercici amb les dades inicials.](_assets/activitats/kits/tb-quin-dibuix-fara-ex1-graella.svg)
+![Tablero del ejercicio con los datos iniciales.](_assets/activitats/kits/tb-quin-dibuix-fara-ex1-graella.svg)
 
-**Codi donat:**
+**Código dado:**
 
-![Tecles del programa.](_assets/activitats/kits/tb-quin-dibuix-fara-ex1-codi.svg)
+![Teclas del programa.](_assets/activitats/kits/tb-quin-dibuix-fara-ex1-codi.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Programa de referència amb tecles i repeticions.](_assets/activitats/kits/tb-quin-dibuix-fara-ex1-resposta.svg)
+![Programa de referencia con teclas y repeticiones.](_assets/activitats/kits/tb-quin-dibuix-fara-ex1-resposta.svg)
 
-**Solució docent:** Dos trams units formen un angle. El robot acaba en D4, mirant a l’est.
+**Solución docente:** Dos tramos unidos forman un ángulo. El robot acaba en D4, mirando al este.
 
-### 2. Repassar també és dibuixar
+### 2. Repasar también es dibujar
 
 <!-- Mode: dibuix -->
 <!-- Inici: B2 N -->
@@ -55,21 +55,21 @@ Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equiva
 <!-- Objectiu: - -->
 <!-- Resposta de control: A A R R D A A -->
 
-**Consigna:** Dibuixa el traç. Repassa amb punts el tram que recorre dues vegades.
+**Consigna:** Dibuja el trazo. Repasa con puntos el tramo que recorre dos veces.
 
-![Tauler de l’exercici amb les dades inicials.](_assets/activitats/kits/tb-quin-dibuix-fara-ex2-graella.svg)
+![Tablero del ejercicio con los datos iniciales.](_assets/activitats/kits/tb-quin-dibuix-fara-ex2-graella.svg)
 
-**Codi donat:**
+**Código dado:**
 
-![Tecles del programa.](_assets/activitats/kits/tb-quin-dibuix-fara-ex2-codi.svg)
+![Teclas del programa.](_assets/activitats/kits/tb-quin-dibuix-fara-ex2-codi.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Programa de referència amb tecles i repeticions.](_assets/activitats/kits/tb-quin-dibuix-fara-ex2-resposta.svg)
+![Programa de referencia con teclas y repeticiones.](_assets/activitats/kits/tb-quin-dibuix-fara-ex2-resposta.svg)
 
-**Solució docent:** Puja de B2 a B4 i torna pel mateix traç. Després dibuixa de B2 a D2. Repassar no esborra la línia.
+**Solución docente:** Sube de B2 a B4 y vuelve por el mismo trazo. Después dibuja de B2 a D2. Repasar no borra la línea.
 
-### 3. La mateixa figura, girada
+### 3. La misma figura, girada
 
 <!-- Mode: dibuix -->
 <!-- Inici: B2 N -->
@@ -78,33 +78,33 @@ Les ordres es dibuixen com les tecles del Tale-Bot, sense lletres. Un pas equiva
 <!-- Resposta de control: A A D A -->
 <!-- Comparacio: D2 O -->
 
-**Consigna:** Repeteix el mateix codi des de D2 mirant a l’oest. Què canvia?
+**Consigna:** Repite el mismo código desde D2 mirando al oeste. ¿Qué cambia?
 
-![Tauler de l’exercici amb les dades inicials.](_assets/activitats/kits/tb-quin-dibuix-fara-ex3-graella.svg)
+![Tablero del ejercicio con los datos iniciales.](_assets/activitats/kits/tb-quin-dibuix-fara-ex3-graella.svg)
 
-**Codi donat:**
+**Código dado:**
 
-![Tecles del programa.](_assets/activitats/kits/tb-quin-dibuix-fara-ex3-codi.svg)
+![Teclas del programa.](_assets/activitats/kits/tb-quin-dibuix-fara-ex3-codi.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Programa de referència amb tecles i repeticions.](_assets/activitats/kits/tb-quin-dibuix-fara-ex3-resposta.svg)
+![Programa de referencia con teclas y repeticiones.](_assets/activitats/kits/tb-quin-dibuix-fara-ex3-resposta.svg)
 
-**Solució docent:** El primer traç acaba en C4, mirant a l’est. El segon acaba en B3, mirant al nord. Es conserva la forma i la longitud dels trams; canvien la posició i l’orientació.
+**Solución docente:** El primer trazo acaba en C4, mirando al este. El segundo acaba en B3, mirando al norte. Se conserva la forma y la longitud de los tramos; cambian la posición y la orientación.
 
-## ✅ Evidències d'aprenentatge
+## ✅ Evidencias de aprendizaje
 
-- Representa correctament el resultat i explica com l’ha comprovat.
-- Distingeix les parts del problema o les dades necessàries segons la consigna.
-- Quan hi ha repetició, identifica la base i comprova l’estat entre execucions.
+- Representa correctamente el resultado y explica cómo lo ha comprobado.
+- Distingue las partes del problema o los datos necesarios según la consigna.
+- Cuando hay repetición, identifica la base y comprueba el estado entre ejecuciones.
 
-Valoreu cada exercici de 0 a 2 punts: 1 pel resultat i 1 per la justificació o les marques de planificació. Accepteu altres programes que complisquen totes les condicions. En les repeticions, cal recuperar l’orientació adequada abans de començar la següent execució.
+Valorad cada ejercicio de 0 a 2 puntos: 1 por el resultado y 1 por la justificación o las marcas de planificación. Aceptad otros programas que cumplan todas las condiciones. En las repeticiones, hay que recuperar la orientación adecuada antes de empezar la siguiente ejecución.
 
-### Preguntes per fer pensar
+### Preguntas para pensar
 
-- Què passa amb el traç quan el robot retrocedeix?
-- Què es conserva si canviem el lloc o la direcció inicial?
+- ¿Qué pasa con el trazo cuando el robot retrocede?
+- ¿Qué se conserva si cambiamos el lugar o la dirección inicial?
 
-## ♿ Variants i inclusió
+## ♿ Variantes e inclusión
 
-Llegiu les consignes en veu alta si cal. Es pot seguir la simulació amb el dit o amb una fitxa de paper. Els símbols són grans i en blanc i negre. Per donar suport, marqueu la primera part; per ampliar, canvieu la posició inicial o el nombre de repeticions i comproveu que tot cap al tauler.
+Leed las consignas en voz alta si hace falta. Se puede seguir la simulación con el dedo o con una ficha de papel. Los símbolos son grandes y en blanco y negro. Para apoyar, marcad la primera parte; para ampliar, cambiad la posición inicial o el número de repeticiones y comprobad que todo cabe en el tablero.

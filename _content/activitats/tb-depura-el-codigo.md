@@ -8,107 +8,107 @@ duration: "25 min"
 order: 3
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Localitzar i corregir un únic error amb una simulació sobre paper. Activitat individual per a 8 anys, neutra i descontextualitzada: només hi ha codis, caselles i orientacions. No requereix robot, ordinador, tauleta ni peces físiques.
+Localizar y corregir un único error con una simulación sobre papel. Actividad individual para 8 años, neutra y descontextualizada: solo hay códigos, casillas y orientaciones. No requiere robot, ordenador, tableta ni piezas físicas.
 
-**Convencions del paper:** les ordres es representen amb dibuixos de les tecles del Tale-Bot o de les peces del Coding Set, sense abreviatures amb lletres. La quadrícula indica la posició i la direcció inicials amb una fletxa plena. El camí de punts i la fletxa buida indiquen el recorregut i l’orientació que cal aconseguir. Avançar o retrocedir mou una casella; girar canvia la direcció sense moure’s de casella. Cada exercici comença de nou.
+**Convenciones del papel:** las órdenes se representan con dibujos de las teclas del Tale-Bot o de las piezas del Coding Set, sin abreviaturas con letras. La cuadrícula indica la posición y la dirección iniciales con una flecha llena. El camino de puntos y la flecha vacía indican el recorrido y la orientación que hay que conseguir. Avanzar o retroceder mueve una casilla; girar cambia la dirección sin moverse de casilla. Cada ejercicio empieza de nuevo.
 
-La repetició afecta tota la base. «2 vegades» significa dues execucions totals, no una més dues. No s’utilitzen bucles parcials ni nombres de moviment.
+La repetición afecta a toda la base. «2 veces» significa dos ejecuciones totales, no una más dos. No se utilizan bucles parciales ni números de movimiento.
 
-Llegiu les ordres d’esquerra a dreta i marqueu cada canvi de posició o orientació. No cal escriure Play: la simulació comença en la primera ordre.
+Leed las órdenes de izquierda a derecha y marcad cada cambio de posición u orientación. No hace falta escribir Play: la simulación empieza en la primera orden.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- [Fitxa de l’alumnat: Troba i corregeix l’error (PDF, 1 pàgina A4)](_assets/activitats/kits/tb-depura-el-codi.pdf).
-- [Les huit fitxes de Tale-Bot (PDF, 8 pàgines A4)](_assets/activitats/kits/tb-fitxes-paper.pdf).
-- [Solucionari del professorat de Tale-Bot (PDF, 8 pàgines A4)](_assets/activitats/kits/tb-solucions-paper.pdf).
-- Una còpia de la fitxa per alumne, llapis i goma. Imprimiu en A4 vertical, al 100%, en blanc i negre. No repartiu el solucionari.
-- La llegenda i totes les dades necessàries apareixen en cada full. Dibuixeu els símbols en les caselles de resposta i escriviu només les explicacions; traceu els moviments en la quadrícula.
+- [Ficha del alumnado: Encuentra y corrige el error (PDF, 1 página A4)](_assets/activitats/kits/tb-depura-el-codi.pdf).
+- [Las ocho fichas de Tale-Bot (PDF, 8 páginas A4)](_assets/activitats/kits/tb-fitxes-paper.pdf).
+- [Solucionario del profesorado de Tale-Bot (PDF, 8 páginas A4)](_assets/activitats/kits/tb-solucions-paper.pdf).
+- Una copia de la ficha por alumno, lápiz y goma. Imprimid en A4 vertical, al 100 %, en blanco y negro. No repartáis el solucionario.
+- La leyenda y todos los datos necesarios aparecen en cada hoja. Dibujad los símbolos en las casillas de respuesta y escribid solo las explicaciones; trazad los movimientos en la cuadrícula.
 
-## 👣 Desenvolupament pas a pas
+## 👣 Desarrollo paso a paso
 
-### 1. Un gir incorrecte
+### 1. Un giro incorrecto
 
 <!-- Inici: B2 N -->
 <!-- Codi: A A E A -->
 <!-- Objectiu: A A D A -->
 <!-- Resposta de control: A A D A -->
 
-**Consigna:** Hi ha una tecla equivocada. Encercla-la i corregeix el codi.
+**Consigna:** Hay una tecla equivocada. Rodéala y corrige el código.
 
-![Quadrícula amb inici i, quan correspon, camí de punts i orientació final.](_assets/activitats/kits/tb-depura-el-codi-ex1-graella.svg)
+![Cuadrícula con inicio y, cuando corresponde, camino de puntos y orientación final.](_assets/activitats/kits/tb-depura-el-codi-ex1-graella.svg)
 
-**Codi donat:**
+**Código dado:**
 
-![Seqüència de tecles o peces amb símbols de moviment.](_assets/activitats/kits/tb-depura-el-codi-ex1-codi.svg)
+![Secuencia de teclas o piezas con símbolos de movimiento.](_assets/activitats/kits/tb-depura-el-codi-ex1-codi.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Solució amb dibuixos dels comandaments.](_assets/activitats/kits/tb-depura-el-codi-ex1-resposta.svg)
+![Solución con dibujos de los comandos.](_assets/activitats/kits/tb-depura-el-codi-ex1-resposta.svg)
 
-**Solució docent:** La tercera tecla ha de girar a la dreta, no a l’esquerra. El codi erroni acaba en A4, mirant a l’oest; el corregit, en C4, mirant a l’est.
+**Solución docente:** La tercera tecla debe girar a la derecha, no a la izquierda. El código erróneo acaba en A4, mirando al oeste; el corregido, en C4, mirando al este.
 
-### 2. La posició no ho és tot
+### 2. La posición no lo es todo
 
 <!-- Inici: B2 N -->
 <!-- Codi: A D A D -->
 <!-- Objectiu: A D A E -->
 <!-- Resposta de control: A D A E -->
 
-**Consigna:** Arriba al lloc correcte, però mira malament. Canvia una tecla.
+**Consigna:** Llega al lugar correcto, pero mira mal. Cambia una tecla.
 
-![Quadrícula amb inici i, quan correspon, camí de punts i orientació final.](_assets/activitats/kits/tb-depura-el-codi-ex2-graella.svg)
+![Cuadrícula con inicio y, cuando corresponde, camino de puntos y orientación final.](_assets/activitats/kits/tb-depura-el-codi-ex2-graella.svg)
 
-**Codi donat:**
+**Código dado:**
 
-![Seqüència de tecles o peces amb símbols de moviment.](_assets/activitats/kits/tb-depura-el-codi-ex2-codi.svg)
+![Secuencia de teclas o piezas con símbolos de movimiento.](_assets/activitats/kits/tb-depura-el-codi-ex2-codi.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Solució amb dibuixos dels comandaments.](_assets/activitats/kits/tb-depura-el-codi-ex2-resposta.svg)
+![Solución con dibujos de los comandos.](_assets/activitats/kits/tb-depura-el-codi-ex2-resposta.svg)
 
-**Solució docent:** La quarta tecla ha de girar a l’esquerra. Tots dos codis acaben en C3, però l’erroni mira al sud i el corregit al nord.
+**Solución docente:** La cuarta tecla debe girar a la izquierda. Los dos códigos acaban en C3, pero el erróneo mira al sur y el corregido al norte.
 
-### 3. Avançar o retrocedir?
+### 3. ¿Avanzar o retroceder?
 
 <!-- Inici: C3 E -->
 <!-- Codi: R D A -->
 <!-- Objectiu: A D A -->
 <!-- Resposta de control: A D A -->
 
-**Consigna:** Canvia una sola tecla per seguir el camí de punts.
+**Consigna:** Cambia una sola tecla para seguir el camino de puntos.
 
-![Quadrícula amb inici i, quan correspon, camí de punts i orientació final.](_assets/activitats/kits/tb-depura-el-codi-ex3-graella.svg)
+![Cuadrícula con inicio y, cuando corresponde, camino de puntos y orientación final.](_assets/activitats/kits/tb-depura-el-codi-ex3-graella.svg)
 
-**Codi donat:**
+**Código dado:**
 
-![Seqüència de tecles o peces amb símbols de moviment.](_assets/activitats/kits/tb-depura-el-codi-ex3-codi.svg)
+![Secuencia de teclas o piezas con símbolos de movimiento.](_assets/activitats/kits/tb-depura-el-codi-ex3-codi.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Solució amb dibuixos dels comandaments.](_assets/activitats/kits/tb-depura-el-codi-ex3-resposta.svg)
+![Solución con dibujos de los comandos.](_assets/activitats/kits/tb-depura-el-codi-ex3-resposta.svg)
 
-**Solució docent:** La primera tecla ha de ser avançar, no retrocedir. L’erroni acaba en B2, mirant al sud; el corregit, en D2, mirant al sud.
+**Solución docente:** La primera tecla debe ser avanzar, no retroceder. El erróneo acaba en B2, mirando al sur; el corregido, en D2, mirando al sur.
 
-## ✅ Evidències d'aprenentatge
+## ✅ Evidencias de aprendizaje
 
-- Interpreta avanç, retrocés i gir sense confondre desplaçament amb orientació.
-- Deixa una resposta gràfica i un recorregut verificable per a cada exercici.
-- Justifica el resultat seguint les ordres una a una.
+- Interpreta avance, retroceso y giro sin confundir desplazamiento con orientación.
+- Deja una respuesta gráfica y un recorrido verificable para cada ejercicio.
+- Justifica el resultado siguiendo las órdenes una a una.
 
-Valoreu cada exercici de 0 a 2 punts: 1 per la resposta correcta i 1 per la traça o justificació coherent. Total: 6 punts. En escriptura de codi, accepteu alternatives que respecten la ruta ordenada, l’orientació final i les restriccions de la consigna; el solucionari dona una resposta possible.
+Valorad cada ejercicio de 0 a 2 puntos: 1 por la respuesta correcta y 1 por la traza o justificación coherente. Total: 6 puntos. En escritura de código, aceptad alternativas que respeten la ruta ordenada, la orientación final y las restricciones de la consigna; el solucionario da una respuesta posible.
 
-### Preguntes per fer pensar
+### Preguntas para pensar
 
-- Quina diferència hi ha entre girar i desplaçar-se?
-- Per què necessitem conéixer l’orientació inicial?
-- Com pots comprovar la resposta sense disposar del robot?
+- ¿Qué diferencia hay entre girar y desplazarse?
+- ¿Por qué necesitamos conocer la orientación inicial?
+- ¿Cómo puedes comprobar la respuesta sin disponer del robot?
 
-## ♿ Variants i inclusió
+## ♿ Variantes e inclusión
 
-Llegiu les consignes en veu alta si cal; les respostes continuen escrivint-se en la fitxa. Es pot usar el dit o un llapis per seguir el codi. Els símbols són grans, en blanc i negre; la resposta es pot dibuixar amb fletxes senzilles. La mascota de contorn es pot colorejar en acabar. Per donar suport, resolgueu oralment un primer moviment; per ampliar, canvieu l’orientació inicial i torneu a calcular el resultat en un full auxiliar.
+Leed las consignas en voz alta si hace falta; las respuestas se continúan escribiendo en la ficha. Se puede usar el dedo o un lápiz para seguir el código. Los símbolos son grandes, en blanco y negro; la respuesta se puede dibujar con flechas sencillas. La mascota de contorno se puede colorear al terminar. Para apoyar, resolved oralmente un primer movimiento; para ampliar, cambiad la orientación inicial y volved a calcular el resultado en una hoja auxiliar.
 
-## 🔗 Referent consultat
+## 🔗 Referente consultado
 
-[Comandaments i repetició de Tale-Bot Pro](https://matatalab.com/en/lesson4.2). Les tecles i les peces es representen amb dibuixos de contorn simplificats. Els símbols conserven el sentit dels comandaments. Les dades internes de generació queden en comentaris i no es mostren a l’alumnat.
+[Comandos y repetición de Tale-Bot Pro](https://matatalab.com/en/lesson4.2). Las teclas y las piezas se representan con dibujos de contorno simplificados. Los símbolos conservan el sentido de los comandos. Los datos internos de generación quedan en comentarios y no se muestran al alumnado.
