@@ -8,36 +8,36 @@ order: 2
 image: _assets/tutorials/mb-motors-sensors-flat.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Connecta un sensor d’humitat compatible a P0 i observa com canvia la lectura quan el sensor està sec o humit. El servo és una ampliació opcional i es prova en una prova diferent.
+Conectad un sensor de humedad compatible a P0 y observad cómo cambia la lectura cuando el sensor está seco o húmedo. El servo es una ampliación opcional y se prueba en una prueba diferente.
 
-- Connectar el sensor segons l’esquema del fabricant.
-- Mostrar i comparar lectures en dues condicions conegudes.
+- Conectar el sensor según el esquema del fabricante.
+- Mostrar y comparar lecturas en dos condiciones conocidas.
 
 ![](../../_assets/tutorials/mb-motors-sensors-flat.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- micro:bit amb portapiles
-- Ordinador amb MakeCode i cable USB de dades per transferir el programa.
-- Sensor d'humitat compatible amb micro:bit i instruccions de connexió del fabricant.
-- Cables indicats per les instruccions dels components.
+- micro:bit con portapilas
+- Ordenador con MakeCode y cable USB de datos para transferir el programa.
+- Sensor de humedad compatible con micro:bit e instrucciones de conexión del fabricante.
+- Cables indicados por las instrucciones de los componentes.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Pin P0 per llegir el senyal analògic d’un sensor extern.
-- El sensor no forma part de la micro:bit. La placa no pot alimentar ni llegir qualsevol sensor sense comprovar-ne abans la compatibilitat i l’esquema.
+- Pin P0 para leer la señal analógica de un sensor externo.
+- El sensor no forma parte de la micro:bit. La placa no puede alimentar ni leer cualquier sensor sin comprobar antes la compatibilidad y el esquema.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Comproveu el sensor i els cables
+### 1. Comprobad el sensor y los cables
 
-Abans de connectar res, identifiqueu el model exacte del sensor i llegiu-ne l’esquema. Amb la placa desconnectada, connecteu el senyal a P0 i els altres cables als pins que indique el fabricant. No feu la connexió si no teniu l’esquema o si falta una placa auxiliar necessària.
+Antes de conectar nada, identificad el modelo exacto del sensor y leed su esquema. Con la placa desconectada, conectad la señal a P0 y los demás cables a los pines que indique el fabricante. No hagáis la conexión si no tenéis el esquema o si falta una placa auxiliar necesaria.
 
-### 2. Llegir el valor analògic
+### 2. Leed el valor analógico
 
-En MakeCode, poseu «mostra el número» dins de «per sempre». En l’espai del nombre, col·loqueu la peça de **lectura analògica del pin P0**, disponible a Pins. Així veureu la lectura del sensor a la pantalla.
+En MakeCode, poned «mostrar el número» dentro de «para siempre». En el espacio del número, colocad la pieza de **lectura analógica del pin P0**, disponible en Pines. Así veréis la lectura del sensor en la pantalla.
 
 ```makecode
 basic.forever(function () {
@@ -45,20 +45,20 @@ basic.forever(function () {
 })
 ```
 
-La [referència oficial de lectura d'un pin](https://makecode.microbit.org/reference/pins/analog-read-pin) mostra la peça i un exemple de lectura en pantalla.
+La [referencia oficial de lectura de un pin](https://makecode.microbit.org/reference/pins/analog-read-pin) muestra la pieza y un ejemplo de lectura en pantalla.
 
-### 3. Compareu sec i humit
+### 3. Comparad seco y húmedo
 
-Anoteu tres lectures amb el sensor sec i tres amb el sensor humit, seguint les instruccions del fabricant. Compareu els valors: el nombre és una lectura del pin, no un percentatge universal d’humitat. No submergiu la placa ni els cables. Sense sensor, proveu el programa al simulador i marqueu el resultat com a simulat.
+Anotad tres lecturas con el sensor seco y tres con el sensor húmedo, siguiendo las instrucciones del fabricante. Comparad los valores: el número es una lectura del pin, no un porcentaje universal de humedad. No sumerjáis la placa ni los cables. Sin sensor, probad el programa en el simulador y marcad el resultado como simulado.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Compareu les tres lectures de cada condició. Si no canvien, confirmeu al manual quin pin proporciona el senyal i reviseu els cables amb la placa desconnectada. Si el sensor requereix una placa auxiliar, no el connecteu directament a P0. Sense sensor, feu la prova al simulador i marqueu les lectures com a simulades.
+Comparad las tres lecturas de cada condición. Si no cambian, confirmad en el manual qué pin proporciona la señal y revisad los cables con la placa desconectada. Si el sensor requiere una placa auxiliar, no lo conectéis directamente a P0. Sin sensor, haced la prueba en el simulador y marcad las lecturas como simuladas.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu l’aigua allunyada de la micro:bit, els cables i la placa auxiliar. Mulleu només la part del sensor indicada pel fabricant i desconnecteu l’alimentació abans de canviar cables. El servo no és necessari per a aquesta prova.
+Mantened el agua lejos de la micro:bit, los cables y la placa auxiliar. Mojad solo la parte del sensor indicada por el fabricante y desconectad la alimentación antes de cambiar cables. El servo no es necesario para esta prueba.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La [referència oficial de MakeCode per a la lectura analògica](https://makecode.microbit.org/reference/pins/analog-read-pin) descriu el bloc utilitzat. La connexió i la interpretació dels valors depenen del model concret del sensor; seguiu-ne el manual.
+La [referencia oficial de MakeCode para la lectura analógica](https://makecode.microbit.org/reference/pins/analog-read-pin) describe el bloque utilizado. La conexión y la interpretación de los valores dependen del modelo concreto del sensor; seguid su manual.

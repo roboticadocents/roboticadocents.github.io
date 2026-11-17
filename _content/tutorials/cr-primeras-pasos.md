@@ -8,37 +8,37 @@ order: 1
 image: _assets/tutorials/cr-primeres-passes.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Dibuixeu una cara a la pantalla de Codey i feu que aparega en prémer A. Després, programeu B perquè mostre una salutació.
+Dibujad una cara en la pantalla de Codey y haced que aparezca al pulsar A. Después, programad B para que muestre un saludo.
 
-- Connectar Codey per cable USB a mBlock 5.
-- Dibuixar una cara a la pantalla LED.
-- Assignar una resposta als botons A i B.
+- Conectar Codey por cable USB a mBlock 5.
+- Dibujar una cara en la pantalla LED.
+- Asignar una respuesta a los botones A y B.
 
 ![](../../_assets/tutorials/cr-primeres-passes.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Controlador Codey de la dotació (Rocky és opcional per a aquesta pràctica).
-- Ordinador amb mBlock 5 i cable micro-USB de dades.
+- Controlador Codey de la dotación (Rocky es opcional para esta práctica).
+- Ordenador con mBlock 5 y cable micro-USB de datos.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Connexió a mBlock 5, pantalla LED 16 × 8 i botons programables A/B.
-- Execució en viu i càrrega de codi segons la connexió triada.
+- Conexión a mBlock 5, pantalla LED 16 × 8 y botones programables A/B.
+- Ejecución en vivo y carga de código según la conexión elegida.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Connecteu Codey i prepareu la pantalla
+### 1. Conectad Codey y preparad la pantalla
 
-A mBlock 5, afegiu el dispositiu **Codey**, connecteu-lo amb el cable i enceneu-lo. Comproveu que l’estat indica que està connectat. Per a aquesta primera prova, no cal muntar-lo sobre Rocky.
+En mBlock 5, añadid el dispositivo **Codey**, conectadlo con el cable y encendedlo. Comprobad que el estado indica que está conectado. Para esta primera prueba, no hace falta montarlo sobre Rocky.
 
-Obriu la categoria de pantalla i afegiu el bloc per mostrar una imatge. Dibuixeu dos ulls i una boca a la graella de 16 × 8 punts. Deseu el projecte abans de provar-lo.
+Abrid la categoría de pantalla y añadid el bloque para mostrar una imagen. Dibujad dos ojos y una boca en la cuadrícula de 16 × 8 puntos. Guardad el proyecto antes de probarlo.
 
-### 2. Feu que els botons mostren dues respostes
+### 2. Haced que los botones muestren dos respuestas
 
-Prepareu dues piles separades: quan es prem A, mostreu la cara; quan es prem B, mostreu el text «Hola».
+Preparad dos pilas separadas: cuando se pulsa A, mostrad la cara; cuando se pulsa B, mostrad el texto «Hola».
 
 ```mblock
 quan es prem el botó [A v]
@@ -48,18 +48,18 @@ quan es prem el botó [B v]
 mostra el text [Hola]
 ```
 
-Busqueu els blocs equivalents en la vostra versió de mBlock: els noms poden variar. Executeu en mode **En viu**, que envia les ordres mentre Codey està connectat. Si voleu que el programa funcione sense l'ordinador, feu servir el mode de càrrega i seguiu la indicació de mBlock per transferir-lo al dispositiu.
+Buscad los bloques equivalentes en vuestra versión de mBlock: los nombres pueden variar. Ejecutad en modo **En vivo**, que envía las órdenes mientras Codey está conectado. Si queréis que el programa funcione sin el ordenador, usad el modo de carga y seguid la indicación de mBlock para transferirlo al dispositivo.
 
-> **💡 Consell d’ús:** Comenceu en mode «En viu» per comprovar cada canvi. Proveu la càrrega al dispositiu només després que les dues respostes funcionen.
+> **💡 Consejo de uso:** Empezad en modo «En vivo» para comprobar cada cambio. Probad la carga al dispositivo solo después de que las dos respuestas funcionen.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Amb Codey connectat en mode **En viu**, premeu A: ha d’aparéixer la cara que heu dibuixat. Premeu B: ha d’aparéixer «Hola». Si no passa res, comproveu la connexió i que cada bloc estiga unit al botó corresponent.
+Con Codey conectado en modo **En vivo**, pulsad A: debe aparecer la cara que habéis dibujado. Pulsad B: debe aparecer «Hola». Si no pasa nada, comprobad la conexión y que cada bloque esté unido al botón correspondiente.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu el robot quiet durant la connexió i les proves dels botons. Deixeu el cable USB allunyat de la zona de moviment i desconnecteu-lo agafant-ne el connector.
+Mantened el robot quieto durante la conexión y las pruebas de los botones. Dejad el cable USB lejos de la zona de movimiento y desconectadlo agarrando el conector.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-Makeblock · Codey Rocky · [About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) i [Display the battery level](https://support.makeblock.com/hc/en-us/articles/7462863296535-Case-7-Display-the-battery-level). La lectura depén del bloc disponible en la versió de mBlock instal·lada.
+Makeblock · Codey Rocky · [About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) y [Display the battery level](https://support.makeblock.com/hc/en-us/articles/7462863296535-Case-7-Display-the-battery-level). La lectura depende del bloque disponible en la versión de mBlock instalada.

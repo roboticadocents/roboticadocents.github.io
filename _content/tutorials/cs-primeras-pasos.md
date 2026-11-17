@@ -8,53 +8,53 @@ order: 1
 image: _assets/tutorials/cs-primeres-passes.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Prepareu una ruta de tres ordres i comproveu com la torre la llig i l’envia al MatataBot. Reviseu l’ordre de les peces abans de prémer Play.
+Preparad una ruta de tres órdenes y comprobad cómo la torre la lee y la envía al MatataBot. Revisad el orden de las piezas antes de pulsar Play.
 
-- Entendre que les fitxes es llegeixen com un text: d'esquerra a dreta i de dalt a baix.
-- Emparellar per Bluetooth la torre i el robot.
-- Executar una seqüència de tres passos simples.
+- Entender que las fichas se leen como un texto: de izquierda a derecha y de arriba abajo.
+- Emparejar por Bluetooth la torre y el robot.
+- Ejecutar una secuencia de tres pasos simples.
 
 ![](../../_assets/tutorials/cs-primeres-passes.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Torre i tauler del Coding Set, amb superfície clara i plana.
-- MatataBot carregat, dues fitxes Endavant, una Dreta i una Enrere.
-- Mapa de quadrícula per marcar el punt inicial i comprovar el desplaçament.
+- Torre y tablero del Coding Set, con superficie clara y plana.
+- MatataBot cargado, dos fichas Adelante, una Derecha y una Atrás.
+- Mapa de cuadrícula para marcar el punto inicial y comprobar el desplazamiento.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Torre de control amb lectura visual dels blocs i transmissió sense fils al MatataBot.
-- Ordres tangibles de moviment, ordre d’execució i botó Play.
+- Torre de control con lectura visual de los bloques y transmisión inalámbrica al MatataBot.
+- Órdenes tangibles de movimiento, orden de ejecución y botón Play.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Engegueu el sistema i prepareu la seqüència
+### 1. Encended el sistema y preparad la secuencia
 
-Enceneu la torre de control i el MatataBot i espereu que es connecten. Comproveu els indicadors del vostre model o seguiu el manual del conjunt. Si no es connecten, apagueu-los i torneu a engegar-los abans de continuar.
+Encended la torre de control y el MatataBot y esperad a que se conecten. Comprobad los indicadores de vuestro modelo o seguid el manual del conjunto. Si no se conectan, apagadlos y volved a encenderlos antes de continuar.
 
-Poseu tres fitxes a la primera fila, d’esquerra a dreta: **Endavant → Dreta → Endavant**. Col·loqueu el robot sobre el mapa, mirant cap a una zona lliure. Assenyaleu la casella on penseu que acabarà; el gir canvia cap a on mira el robot, però no l’avança.
+Poned tres fichas en la primera fila, de izquierda a derecha: **Adelante → Derecha → Adelante**. Colocad el robot sobre el mapa, mirando hacia una zona libre. Señalad la casilla donde pensáis que acabará; el giro cambia hacia dónde mira el robot, pero no lo avanza.
 
 ```coding-set
 avançar -> girar dreta -> avançar
 ```
 
-### 2. Executeu i comproveu la ruta
+### 2. Ejecutad y comprobad la ruta
 
-Premeu el botó gran taronja. La torre llig les fitxes i envia les ordres al robot. Observeu si avança, gira a la dreta i torna a avançar. Si no es mou, comproveu la connexió i la posició de les peces abans de tornar a prémer.
+Pulsad el botón grande naranja. La torre lee las fichas y envía las órdenes al robot. Observad si avanza, gira a la derecha y vuelve a avanzar. Si no se mueve, comprobad la conexión y la posición de las piezas antes de volver a pulsar.
 
-> **💡 Consell d’ús:** Si la torre no llegeix una fitxa, comprova que la il·luminació no creï ombres intenses sobre el tauler.
+> **💡 Consejo de uso:** Si la torre no lee una ficha, comprobad que la iluminación no cree sombras intensas sobre el tablero.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Comproveu que el robot avança, gira a la dreta i torna a avançar. Si la seqüència no coincideix, reviseu l’ordre de les peces i la connexió de la torre. Torneu el robot a la mateixa posició i orientació abans d’una altra prova.
+Comprobad que el robot avanza, gira a la derecha y vuelve a avanzar. Si la secuencia no coincide, revisad el orden de las piezas y la conexión de la torre. Devolved el robot a la misma posición y orientación antes de otra prueba.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu el tauler estable i retireu objectes de la ruta. No mogueu les peces mentre la torre les llig. Atureu el robot abans de canviar-ne la posició inicial.
+Mantened el tablero estable y retirad objetos de la ruta. No mováis las piezas mientras la torre las lee. Detened el robot antes de cambiar su posición inicial.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La pàgina oficial del [Coding Set](https://matatalab.com/en/coding-set?hl=en-IN) descriu la torre, el tauler i el MatataBot. Els indicadors de connexió poden variar segons el model; si no es connecten, seguiu els passos del manual de la torre disponible al centre.
+La página oficial del [Coding Set](https://matatalab.com/en/coding-set?hl=en-IN) describe la torre, el tablero y el MatataBot. Los indicadores de conexión pueden variar según el modelo; si no se conectan, seguid los pasos del manual de la torre disponible en el centro.

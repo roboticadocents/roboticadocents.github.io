@@ -8,43 +8,43 @@ order: 6
 image: _assets/tutorials/cr-python-upload.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Feu que Codey mostre una cara en prémer A i una altra en prémer B. Després carregueu el programa al robot i observeu com mBlock el representa en Python. No cal saber Python per fer la primera prova.
+Haced que Codey muestre una cara al pulsar A y otra al pulsar B. Después cargad el programa en el robot y observad cómo mBlock lo representa en Python. No hace falta saber Python para hacer la primera prueba.
 
-- Connectar Codey a mBlock 5 i seleccionar el dispositiu correcte.
-- Distingir l’execució Live de la càrrega Upload.
-- Crear dos esdeveniments de botó amb blocs i executar-los sense connexió permanent.
-- En mode Upload, obrir la vista Python generada pels blocs i buscar les accions dels botons.
-- Canviar una acció i comprovar el resultat amb el robot.
+- Conectar Codey a mBlock 5 y seleccionar el dispositivo correcto.
+- Distinguir la ejecución Live de la carga Upload.
+- Crear dos eventos de botón con bloques y ejecutarlos sin conexión permanente.
+- En modo Upload, abrir la vista Python generada por los bloques y buscar las acciones de los botones.
+- Cambiar una acción y comprobar el resultado con el robot.
 
 ![](../../_assets/tutorials/cr-python-upload.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Codey Rocky de la dotació, carregat i amb el controlador ben acoblat al xassís.
-- mBlock 5 per a ordinador i cable micro-USB de la dotació.
-- Superfície plana, amb espai lliure al voltant de Rocky; es pot elevar el xassís perquè les erugues no el desplacen durant la primera comprovació.
-- Targetes A/B amb les dues expressions que mostrarà la matriu 16 × 8.
+- Codey Rocky de la dotación, cargado y con el controlador bien acoplado al chasis.
+- mBlock 5 para ordenador y cable micro-USB de la dotación.
+- Superficie plana, con espacio libre alrededor de Rocky; se puede elevar el chasis para que las orugas no lo desplacen durante la primera comprobación.
+- Tarjetas A/B con las dos expresiones que mostrará la matriz 16 × 8.
 
-Obriu mBlock, afegiu el dispositiu «Codey» de la biblioteca i connecteu-lo per USB. En mode Upload, comproveu primer que el programa de blocs funciona abans d’obrir la vista Python. Segons l’edició i versió de mBlock, l’etiqueta o la posició de l’opció Python pot canviar; si no apareix, actualitzeu el programari disponible segons les instruccions oficials o feu l’exercici amb la traducció de blocs que sí que es mostre.
+Abrid mBlock, añadid el dispositivo «Codey» de la biblioteca y conectadlo por USB. En modo Upload, comprobad primero que el programa de bloques funciona antes de abrir la vista Python. Según la edición y versión de mBlock, la etiqueta o la posición de la opción Python puede cambiar; si no aparece, actualizad el software disponible según las instrucciones oficiales o haced el ejercicio con la traducción de bloques que sí se muestre.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Programació de Codey Rocky amb blocs i Python a mBlock 5.
-- Botons A i B del controlador Codey com a entrades i matriu LED 16 × 8 com a eixida.
-- Mode Live per a executar mentre Codey continua connectat i mode Upload per a transferir el programa al controlador.
-- Vista de codi Python generat pels blocs i ús de biblioteques pròpies de Codey/Rocky.
+- Programación de Codey Rocky con bloques y Python en mBlock 5.
+- Botones A y B del controlador Codey como entradas y matriz LED 16 × 8 como salida.
+- Modo Live para ejecutar mientras Codey continúa conectado y modo Upload para transferir el programa al controlador.
+- Vista de código Python generado por los bloques y uso de bibliotecas propias de Codey/Rocky.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Connecteu el dispositiu Codey
+### 1. Conectad el dispositivo Codey
 
-Useu el cable micro-USB per a connectar Codey a l’ordinador i enceneu-lo. A mBlock 5, afegiu «Codey» i completeu la connexió. Confirmeu que l’estat és connectat abans de crear el programa. Si useu la versió web, seguiu el mètode de connexió i el controlador mLink que indique la instal·lació disponible.
+Usad el cable micro-USB para conectar Codey al ordenador y encendedlo. En mBlock 5, añadid «Codey» y completad la conexión. Confirmad que el estado es conectado antes de crear el programa. Si usáis la versión web, seguid el método de conexión y el controlador mLink que indique la instalación disponible.
 
-### 2. Creeu el programa amb blocs
+### 2. Cread el programa con bloques
 
-Creeu una pila de blocs per al botó A i una altra per al B. Dibuixeu una cara diferent en cada bloc de pantalla:
+Cread una pila de bloques para el botón A y otra para el B. Dibujad una cara diferente en cada bloque de pantalla:
 
 ```mblock
 quan es prem el botó [A v]
@@ -54,30 +54,30 @@ quan es prem el botó [B v]
 mostra una cara sorpresa
 ```
 
-El dibuix és una guia: els noms dels blocs poden variar. Trieu **Live** i, amb Codey connectat, proveu A i B. Després trieu **Upload** i seguiu les indicacions de mBlock per preparar la càrrega.
+El dibujo es una guía: los nombres de los bloques pueden variar. Elegid **Live** y, con Codey conectado, probad A y B. Después elegid **Upload** y seguid las indicaciones de mBlock para preparar la carga.
 
-### 3. Carregueu i comproveu el programa
+### 3. Cargad y comprobad el programa
 
-Seleccioneu Upload i transferiu el projecte a Codey. Quan la càrrega acabe, desconnecteu el cable només si el programa ja s’ha transferit i proveu A i B. El programa carregat continua funcionant sense connexió a mBlock. En Live, en canvi, el controlador ha de mantindre la connexió amb l’ordinador perquè les ordres s’executen en temps real.
+Seleccionad Upload y transferid el proyecto a Codey. Cuando la carga acabe, desconectad el cable solo si el programa ya se ha transferido y probad A y B. El programa cargado continúa funcionando sin conexión a mBlock. En Live, en cambio, el controlador debe mantener la conexión con el ordenador para que las órdenes se ejecuten en tiempo real.
 
-### 4. Obriu la vista Python generada
+### 4. Abrid la vista Python generada
 
-Torneu a connectar Codey, obriu el mateix projecte en mode Upload i activeu l’opció de veure Python. Compareu la part del botó A amb la del B i busqueu on apareixen les imatges. El text depén de la versió de mBlock; no cal copiar-lo ni entendre totes les línies per continuar.
+Volved a conectar Codey, abrid el mismo proyecto en modo Upload y activad la opción de ver Python. Comparad la parte del botón A con la del B y buscad dónde aparecen las imágenes. El texto depende de la versión de mBlock; no hace falta copiarlo ni entender todas las líneas para continuar.
 
-### 5. Modifiqueu una instrucció i torneu-la a provar
+### 5. Modificad una instrucción y volved a probar
 
-Guardeu primer el projecte. Torneu als blocs i canvieu només el dibuix del botó A; després consulteu de nou la vista Python per observar el canvi. Carregueu el programa una altra vegada i proveu A i B: A ha de mostrar la nova cara i B ha de conservar l’anterior.
+Guardad primero el proyecto. Volved a los bloques y cambiad solo el dibujo del botón A; después consultad de nuevo la vista Python para observar el cambio. Cargad el programa otra vez y probad A y B: A debe mostrar la nueva cara y B debe conservar la anterior.
 
-En algunes versions és possible editar Python directament. Si ho proveu, feu-ho en una còpia del projecte: la traducció automàtica dels blocs a text no garanteix que els canvis en text tornen a convertir-se en blocs.
+En algunas versiones es posible editar Python directamente. Si lo probáis, hacedlo en una copia del proyecto: la traducción automática de los bloques a texto no garantiza que los cambios en texto vuelvan a convertirse en bloques.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Anoteu què passa amb A i B en la prova Live amb el cable connectat i en la prova Upload després de carregar el programa. Si Python no apareix, comproveu que heu seleccionat Codey, que esteu en Upload i que la vostra versió ofereix la vista de codi.
+Anotad qué pasa con A y B en la prueba Live con el cable conectado y en la prueba Upload después de cargar el programa. Si Python no aparece, comprobad que habéis seleccionado Codey, que estáis en Upload y que vuestra versión ofrece la vista de código.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu el robot quiet durant la transferència del programa. Abans d’afegir ordres de motor, deixeu lliure la zona i localitzeu el control d’aturada. Desconnecteu el cable agafant-ne el connector.
+Mantened el robot quieto durante la transferencia del programa. Antes de añadir órdenes de motor, dejad libre la zona y localizad el control de parada. Desconectad el cable agarrando el conector.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La guia oficial de Makeblock [Program Codey Rocky with mBlock 5](https://support.makeblock.com/hc/en-us/articles/1500008637961-Program-Codey-Rocky-with-mBlock-5) confirma els modes Live/Upload i que, en Upload, es pot canviar entre blocs i Python o veure el codi corresponent. La documentació de [transcodificació d’Upload](https://support.makeblock.com/hc/en-us/articles/15236617061783-Configuration-Transcoding-Setting-for-the-Upload-Mode) mostra les biblioteques `codey` i `rocky`. Les opcions de vista i edició depenen de la versió instal·lada; la guia no pressuposa una API manual estable ni una connexió a Internet durant l’execució carregada.
+La guía oficial de Makeblock [Program Codey Rocky with mBlock 5](https://support.makeblock.com/hc/en-us/articles/1500008637961-Program-Codey-Rocky-with-mBlock-5) confirma los modos Live/Upload y que, en Upload, se puede cambiar entre bloques y Python o ver el código correspondiente. La documentación de [transcodificación de Upload](https://support.makeblock.com/hc/en-us/articles/15236617061783-Configuration-Transcoding-Setting-for-the-Upload-Mode) muestra las bibliotecas `codey` y `rocky`. Las opciones de vista y edición dependen de la versión instalada; la guía no presupone una API manual estable ni una conexión a Internet durante la ejecución cargada.

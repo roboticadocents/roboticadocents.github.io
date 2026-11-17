@@ -8,37 +8,37 @@ order: 3
 image: _assets/tutorials/sp-brac-sensor-forca-flat.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Programeu un motor solt perquè s’ature en prémer el sensor de força amb el dit. No cal construir cap braç ni pinça, ni encaixar peces LEGO.
+Programad un motor suelto para que se detenga al pulsar el sensor de fuerza con el dedo. No hace falta construir ningún brazo ni pinza, ni encajar piezas LEGO.
 
-- Distingir els estats premut i alliberat.
-- Relacionar una entrada del sensor amb una ordre al motor.
-- Provar una condició i explicar el resultat.
+- Distinguir los estados pulsado y liberado.
+- Relacionar una entrada del sensor con una orden al motor.
+- Probar una condición y explicar el resultado.
 
 ![](../../_assets/tutorials/sp-brac-sensor-forca-flat.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Hub SPIKE Prime, un motor angular i un sensor de força.
-- Ordinador o tauleta amb SPIKE App i connexió USB o Bluetooth.
+- Hub SPIKE Prime, un motor angular y un sensor de fuerza.
+- Ordenador o tableta con SPIKE App y conexión USB o Bluetooth.
 
-Connecteu només els cables. Recolzeu el motor de manera estable sobre la taula, amb l’eix lliure i sense cap peça afegida. Deixeu el sensor separat del motor i fàcil d’abastar.
+Conectad solo los cables. Apoyad el motor de forma estable sobre la mesa, con el eje libre y sin ninguna pieza añadida. Dejad el sensor separado del motor y fácil de alcanzar.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Lectura de contacte del sensor de força i control d’un motor angular.
-- Espera condicional; el sensor no mesura distància.
+- Lectura de contacto del sensor de fuerza y control de un motor angular.
+- Espera condicional; el sensor no mide distancia.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Comproveu el sensor amb el motor parat
+### 1. Comprobad el sensor con el motor parado
 
-Connecteu el motor al port A i el sensor de força al B. Obriu la informació del Hub a SPIKE App. Premeu suaument la superfície del sensor amb el dit i deixeu-la anar: comproveu si l’estat canvia entre premut i alliberat. Si no canvia, reviseu el cable i el port.
+Conectad el motor al puerto A y el sensor de fuerza al B. Abrid la información del Hub en SPIKE App. Pulsad suavemente la superficie del sensor con el dedo y soltadla: comprobad si el estado cambia entre pulsado y liberado. Si no cambia, revisad el cable y el puerto.
 
-### 2. Programeu l’aturada en prémer
+### 2. Programad la parada al pulsar
 
-Busqueu els blocs equivalents de la vostra versió de SPIKE App:
+Buscad los bloques equivalentes de vuestra versión de SPIKE App:
 
 ```spikeapp
 quan comença el programa
@@ -47,20 +47,20 @@ espera fins que el sensor de força [B v] estiga premut
 atura el motor [A v]
 ```
 
-Inicieu el programa amb el sensor alliberat. Premeu-lo sense acostar la mà al motor i observeu l’aturada. Deixar anar el sensor no reinicia aquest programa: cal tornar-lo a executar. Manteniu també accessible l’aturada manual del Hub o de l’app.
+Iniciad el programa con el sensor liberado. Pulsadlo sin acercar la mano al motor y observad la parada. Soltar el sensor no reinicia este programa: hay que volver a ejecutarlo. Mantened también accesible la parada manual del Hub o de la app.
 
-### 3. Compareu dos estats inicials
+### 3. Comparad dos estados iniciales
 
-Repetiu tres vegades començant amb el sensor alliberat. Després inicieu el programa amb el sensor ja premut i comproveu la resposta. Si l’app ofereix una lectura numèrica de força, observeu com varia amb una pressió suau; no cal fer força elevada ni canviar el programa.
+Repetid tres veces empezando con el sensor liberado. Después iniciad el programa con el sensor ya pulsado y comprobad la respuesta. Si la app ofrece una lectura numérica de fuerza, observad cómo varía con una presión suave; no hace falta hacer fuerza elevada ni cambiar el programa.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Registreu l’estat inicial, si heu premut el sensor i si el motor s’ha aturat. Si continua girant, atureu-lo manualment i reviseu els ports i la condició.
+Registrad el estado inicial, si habéis pulsado el sensor y si el motor se ha detenido. Si continúa girando, detenedlo manualmente y revisad los puertos y la condición.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Situeu el sensor on siga còmode prémer-lo. No toqueu l’eix del motor en moviment. La condició programada no substitueix l’aturada manual ni és un sistema de protecció.
+Situad el sensor donde sea cómodo pulsarlo. No toquéis el eje del motor en movimiento. La condición programada no sustituye la parada manual ni es un sistema de protección.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La [fitxa tècnica del sensor](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt23df304b05e587b2/5f8801ba721f8178f2e5e626/techspecs_technicforcesensor.pdf?locale=en-us) diferencia detecció de contacte i mesura de força. LEGO també ofereix una [pràctica de sensor i motor](https://education.lego.com/en-us/lessons/spike-python-u3-sensor-control/spike-python-u3l1-start-sensing/); aquella lliçó usa Python, mentre que aquest tutorial fa servir blocs.
+La [ficha técnica del sensor](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt23df304b05e587b2/5f8801ba721f8178f2e5e626/techspecs_technicforcesensor.pdf?locale=en-us) diferencia detección de contacto y medida de fuerza. LEGO también ofrece una [práctica de sensor y motor](https://education.lego.com/en-us/lessons/spike-python-u3-sensor-control/spike-python-u3l1-start-sensing/); esa lección usa Python, mientras que este tutorial utiliza bloques.

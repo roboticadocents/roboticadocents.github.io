@@ -8,51 +8,51 @@ order: 4
 image: _assets/tutorials/ce-bucles.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Munteu una via tancada i comproveu com el tren torna al punt inicial. La repetició depén de la forma del circuit: no és un bucle de codi ni un comptador programat.
+Montad una vía cerrada y comprobad cómo el tren vuelve al punto inicial. La repetición depende de la forma del circuito: no es un bucle de código ni un contador programado.
 
-- Comprovar el retorn al punt inicial en una via tancada.
-- Construir i comparar una via tancada i una via oberta.
-- Registrar les voltes sense atribuir al tren un comptador que no té.
+- Comprobar el retorno al punto inicial en una vía cerrada.
+- Construir y comparar una vía cerrada y una vía abierta.
+- Registrar las vueltas sin atribuir al tren un contador que no tiene.
 
 ![](../../_assets/tutorials/ce-bucles.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Tren Coding Express i trams de via corbs i rectes per construir un circuit tancat.
-- Una marca per identificar el punt inicial del circuit.
-- Llapis de colors per dibuixar la ruta abans de construir-la.
+- Tren Coding Express y tramos de vía curvos y rectos para construir un circuito cerrado.
+- Una marca para identificar el punto inicial del circuito.
+- Lápices de colores para dibujar la ruta antes de construirla.
 
-Comproveu que el tren, les vies i les peces d’acció del kit funcionen. Coding Express està retirat comercialment; aquesta proposta és per als centres que ja disposen del conjunt.
+Comprobad que el tren, las vías y las piezas de acción del kit funcionan. Coding Express está retirado comercialmente; esta propuesta es para los centros que ya disponen del conjunto.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Motor Push & Go i recorregut sobre vies.
-- Bucle com a propietat de la via tancada; el tren no executa un bucle de codi ni compta voltes per si mateix.
+- Motor Push & Go y recorrido sobre vías.
+- Bucle como propiedad de la vía cerrada; el tren no ejecuta un bucle de código ni cuenta vueltas por sí mismo.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Planifiqueu i munteu el circuit
+### 1. Planificad y montad el circuito
 
-Munteu una via tancada i identifiqueu el sentit de circulació. Comproveu les unions i marqueu el punt de partida amb una targeta.
+Montad una vía cerrada e identificad el sentido de circulación. Comprobad las uniones y marcad el punto de partida con una tarjeta.
 
-### 2. Poseu el tren en marxa
+### 2. Poned el tren en marcha
 
-Doneu al tren una empenta suau i comproveu que torna a passar per la marca inicial. Deixeu-lo completar dues voltes i atureu-lo amb la mà, sense bloquejar les rodes.
+Dad al tren un empujón suave y comprobad que vuelve a pasar por la marca inicial. Dejadlo completar dos vueltas y detenedlo con la mano, sin bloquear las ruedas.
 
-### 3. Compareu amb una ruta oberta i milloreu-la
+### 3. Comparad con una ruta abierta y mejoradla
 
-Atureu el tren i obriu un tram del circuit per convertir-lo en una via amb inici i final diferents. Feu avançar el tren i atureu-lo abans que arribe al final de la via. Compareu-la amb la via tancada: el recorregut obert no porta el tren de nou a l’inici. Amb el tren aturat, modifiqueu un tram i comproveu de nou les unions. Atureu sempre la locomotora abans de moure figures o peces.
+Detened el tren y abrid un tramo del circuito para convertirlo en una vía con inicio y final diferentes. Haced avanzar el tren y detenedlo antes de que llegue al final de la vía. Comparadla con la vía cerrada: el recorrido abierto no lleva el tren de nuevo al inicio. Con el tren detenido, modificad un tramo y comprobad de nuevo las uniones. Detened siempre la locomotora antes de mover figuras o piezas.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Comproveu que el tren completa el circuit i torna a la marca inicial. Si s’atura o descarrila, atureu-lo i reviseu les unions. En obrir el circuit, atureu-lo abans que arribe al final de la via.
+Comprobad que el tren completa el circuito y vuelve a la marca inicial. Si se detiene o descarrila, detenedlo y revisad las uniones. Al abrir el circuito, detenedlo antes de que llegue al final de la vía.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Munteu el circuit en una superfície estable i manteniu els dits fora del mecanisme mentre el tren es mou. Atureu la locomotora abans de modificar la via o les peces d’acció.
+Montad el circuito en una superficie estable y mantened los dedos fuera del mecanismo mientras el tren se mueve. Detened la locomotora antes de modificar la vía o las piezas de acción.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La [lliçó oficial sobre via en forma d’O](https://education.lego.com/en-us/lessons/preschool-coding-express/o-shaped-track-looping/) relaciona el circuit tancat amb la idea de repetició. En aquest exemple, la repetició és una propietat del recorregut físic; el tren no executa un bucle escrit ni compta voltes.
+La [lección oficial sobre vía en forma de O](https://education.lego.com/en-us/lessons/preschool-coding-express/o-shaped-track-looping/) relaciona el circuito cerrado con la idea de repetición. En este ejemplo, la repetición es una propiedad del recorrido físico; el tren no ejecuta un bucle escrito ni cuenta vueltas.

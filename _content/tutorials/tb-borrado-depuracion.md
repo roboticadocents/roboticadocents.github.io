@@ -8,66 +8,66 @@ order: 5
 image: _assets/tutorials/tb-esborrat-depuracio.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Useu Clear per corregir l’última ordre o buidar tot el programa de Tale-Bot Pro. Una pulsació curta elimina l’última ordre introduïda; una pulsació llarga elimina totes les ordres. Comproveu el resultat als indicadors abans d’executar.
+Usad Clear para corregir la última orden o vaciar todo el programa de Tale-Bot Pro. Una pulsación corta elimina la última orden introducida; una pulsación larga elimina todas las órdenes. Comprobad el resultado en los indicadores antes de ejecutar.
 
-- Llegir la seqüència acumulada als indicadors de color.
-- Distingir una pulsació de menys d’un segon d’una pulsació de més d’un segon.
-- Corregir l’última ordre sense perdre la resta de la ruta, o esborrar tot el programa quan calga començar de nou.
-- Executar només després de revisar el codi que s’ha tornat a introduir.
+- Leer la secuencia acumulada en los indicadores de color.
+- Distinguir una pulsación de menos de un segundo de una pulsación de más de un segundo.
+- Corregir la última orden sin perder el resto de la ruta, o borrar todo el programa cuando haga falta empezar de nuevo.
+- Ejecutar solo después de revisar el código que se ha vuelto a introducir.
 
 ![](../../_assets/tutorials/tb-esborrat-depuracio.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Tale-Bot Pro carregat i amb una superfície plana per a la prova.
-- Targetes de fletxes o una tira de programació en paper.
-- Graella o mapa simple amb inici i destinació.
+- Tale-Bot Pro cargado y con una superficie plana para la prueba.
+- Tarjetas de flechas o una tira de programación en papel.
+- Cuadrícula o mapa simple con inicio y destino.
 
-Trieu una ruta segura de quatre ordres. L’exemple següent introdueix una quarta ordre incorrecta per provar l’esborrat parcial. Identifiqueu el botó Clear/X al model físic. El temps de pulsació és important: feu una pulsació clarament curta o llarga i comproveu els indicadors.
+Elegid una ruta segura de cuatro órdenes. El ejemplo siguiente introduce una cuarta orden incorrecta para probar el borrado parcial. Identificad el botón Clear/X en el modelo físico. El tiempo de pulsación es importante: haced una pulsación claramente corta o larga y comprobad los indicadores.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Botó Clear amb esborrat de l’última ordre amb pulsació curta (<1 s).
-- Esborrat de totes les ordres introduïdes amb pulsació llarga (>1 s).
-- Indicadors de programació que reprodueixen el color de les ordres i s’apaguen quan s’ha buidat la seqüència.
-- Depuració d’un programa físic abans d’executar-lo amb Play.
+- Botón Clear con borrado de la última orden con pulsación corta (<1 s).
+- Borrado de todas las órdenes introducidas con pulsación larga (>1 s).
+- Indicadores de programación que reproducen el color de las órdenes y se apagan cuando se ha vaciado la secuencia.
+- Depuración de un programa físico antes de ejecutarlo con Play.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Introduïu una ruta i llegiu-ne els indicadors
+### 1. Introducid una ruta y leed sus indicadores
 
-Planifiqueu quatre ordres senzilles que facen arribar Tale-Bot a una destinació. Esborreu el programa anterior mantenint X més d’un segon. Introduïu les tres primeres ordres, assenyaleu cada indicador i afegiu una fletxa a la tira de paper. Després, introduïu a propòsit una quarta ordre incorrecta i anoteu-la. Compareu la ruta prevista amb els indicadors i decidiu què convé conservar abans de prémer Play.
+Planificad cuatro órdenes sencillas que hagan llegar Tale-Bot a un destino. Borrad el programa anterior manteniendo X más de un segundo. Introducid las tres primeras órdenes, señalad cada indicador y añadid una flecha a la tira de papel. Después, introducid a propósito una cuarta orden incorrecta y anotadla. Comparad la ruta prevista con los indicadores y decidid qué conviene conservar antes de pulsar Play.
 
-Exemple de ruta prevista: dos avanços, un gir a la dreta i un avanç. Introduïu per error un gir a l’esquerra com a quarta ordre, sense executar encara:
+Ejemplo de ruta prevista: dos avances, un giro a la derecha y un avance. Introducid por error un giro a la izquierda como cuarta orden, sin ejecutar todavía:
 
 ```talebot
 avançar -> avançar -> girar dreta -> girar esquerra
 ```
 
-### 2. Corregiu l’última ordre
+### 2. Corregid la última orden
 
-Premeu Clear breument, menys d’un segon. Comproveu que desapareix l’últim indicador i que els tres anteriors continuen visibles. Introduïu l’ordre correcta i confirmeu que la seqüència torna a tindre quatre passos. Si el resultat no és clar, pareu i reviseu els indicadors abans de continuar.
+Pulsad Clear brevemente, menos de un segundo. Comprobad que desaparece el último indicador y que los tres anteriores continúan visibles. Introducid la orden correcta y confirmad que la secuencia vuelve a tener cuatro pasos. Si el resultado no es claro, parad y revisad los indicadores antes de continuar.
 
-En l’exemple, feu una pulsació curta de Clear i afegiu l’avanç que faltava. La ruta corregida queda així:
+En el ejemplo, haced una pulsación corta de Clear y añadid el avance que faltaba. La ruta corregida queda así:
 
 ```talebot
 avançar -> avançar -> girar dreta -> avançar
 ```
 
-### 3. Executeu la seqüència i proveu l’esborrat complet
+### 3. Ejecutad la secuencia y probad el borrado completo
 
-Premeu Play una sola vegada i observeu si el recorregut arriba a la destinació. Compareu-lo amb la tira de paper. Si l’error és en una ordre anterior, retireu amb pulsacions curtes les ordres des del final fins arribar-hi i torneu-les a introduir en ordre. Després, manteniu Clear premut més d’un segon i comproveu que s’apaguen tots els indicadors. Introduïu tres ordres noves, executeu-les i compareu quan convé corregir una ordre i quan és millor començar de nou.
+Pulsad Play una sola vez y observad si el recorrido llega al destino. Comparadlo con la tira de papel. Si el error está en una orden anterior, retirad con pulsaciones cortas las órdenes desde el final hasta llegar a ella y volved a introducirlas en orden. Después, mantened Clear pulsado más de un segundo y comprobad que se apagan todos los indicadores. Introducid tres órdenes nuevas, ejecutadlas y comparad cuándo conviene corregir una orden y cuándo es mejor empezar de nuevo.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Feu tres comprovacions: una pulsació curta després d’introduir almenys tres ordres; una pulsació llarga amb una seqüència visible; i una reprogramació que s’executa amb Play. Anoteu quins indicadors s’han apagat en cada cas i si les ordres conservades coincideixen amb el pla. Si la pulsació dura aproximadament un segon, repetiu la prova amb una durada clarament curta o llarga, sense afegir més ordres al mateix temps.
+Haced tres comprobaciones: una pulsación corta después de introducir al menos tres órdenes; una pulsación larga con una secuencia visible; y una reprogramación que se ejecuta con Play. Anotad qué indicadores se han apagado en cada caso y si las órdenes conservadas coinciden con el plan. Si la pulsación dura aproximadamente un segundo, repetid la prueba con una duración claramente corta o larga, sin añadir más órdenes al mismo tiempo.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu el robot quiet durant la correcció i no pressioneu diverses tecles alhora. Feu pulsacions clarament inferiors o superiors a un segon i comproveu els indicadors abans de prémer Play.
+Mantened el robot quieto durante la corrección y no pulséis varias teclas a la vez. Haced pulsaciones claramente inferiores o superiores a un segundo y comprobad los indicadores antes de pulsar Play.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-El [curs oficial de Tale-Bot Pro de Matatalab](https://matatalab.com/en/lesson4.2) especifica que Clear premut menys d’un segon elimina l’última ordre i mantingut més d’un segon esborra totes les ordres; també indica que els indicadors de programació s’apaguen quan la seqüència és buida. Els llindars són els publicats pel fabricant: en la pràctica, feu una pulsació clarament inferior o superior a un segon i comproveu el resultat en el vostre robot.
+El [curso oficial de Tale-Bot Pro de Matatalab](https://matatalab.com/en/lesson4.2) especifica que Clear pulsado menos de un segundo elimina la última orden y mantenido más de un segundo borra todas las órdenes; también indica que los indicadores de programación se apagan cuando la secuencia está vacía. Los umbrales son los publicados por el fabricante: en la práctica, haced una pulsación claramente inferior o superior a un segundo y comprobad el resultado en vuestro robot.

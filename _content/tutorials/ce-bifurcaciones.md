@@ -8,56 +8,56 @@ order: 3
 image: _assets/tutorials/ce-bifurcacions.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Munteu una bifurcació en Y i trieu la branca movent manualment l’agulla abans de posar el tren en marxa. El retorn amb el maó verd és una prova opcional.
+Montad una bifurcación en Y y elegid la rama moviendo manualmente la aguja antes de poner el tren en marcha. El retorno con el ladrillo verde es una prueba opcional.
 
-- Construir una via en Y estable i identificar-ne les dues branques.
-- Explicar que el canvi d’agulla es mou manualment i orienta físicament el tren.
-- Seleccionar una branca i comprovar el recorregut del tren.
-- Com a ampliació, provar el maó verd en una configuració de retorn recomanada.
+- Construir una vía en Y estable e identificar sus dos ramas.
+- Explicar que el cambio de aguja se mueve manualmente y orienta físicamente el tren.
+- Seleccionar una rama y comprobar el recorrido del tren.
+- Como ampliación, probar el ladrillo verde en una configuración de retorno recomendada.
 
 ![](../../_assets/tutorials/ce-bifurcacions.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Tren Coding Express i trams de via DUPLO del conjunt disponible.
-- Peça de via en Y amb agulla mòbil; comproveu que es pot orientar suaument abans d’engegar el tren.
-- Dues marques per identificar els extrems de la bifurcació.
-- Maons d’acció del kit, especialment el roig i el verd, només si són presents i funcionen.
-- Dues marques per identificar les branques de la via.
+- Tren Coding Express y tramos de vía DUPLO del conjunto disponible.
+- Pieza de vía en Y con aguja móvil; comprobad que se puede orientar suavemente antes de encender el tren.
+- Dos marcas para identificar los extremos de la bifurcación.
+- Ladrillos de acción del kit, especialmente el rojo y el verde, solo si están presentes y funcionan.
+- Dos marcas para identificar las ramas de la vía.
 
-Munteu la bifurcació sobre una superfície plana i feu una prova amb el tren aturat per comprovar l’alineació de cada branca. La palanca de la via no és un sensor ni un commutador electrònic: una persona ha de seleccionar físicament el camí.
+Montad la bifurcación sobre una superficie plana y haced una prueba con el tren detenido para comprobar la alineación de cada rama. La palanca de la vía no es un sensor ni un conmutador electrónico: una persona debe seleccionar físicamente el camino.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Desplaçament motoritzat per una via en Y.
-- Selecció manual de la branca mitjançant el canvi d’agulla.
-- Ús d’un maó roig per aturar el tren, si el reconeix el kit.
-- Prova del maó verd per ajudar el tren a tornar cap a una estació; el resultat depén de la disposició de la via i s’ha de comprovar.
+- Desplazamiento motorizado por una vía en Y.
+- Selección manual de la rama mediante el cambio de aguja.
+- Uso de un ladrillo rojo para detener el tren, si el kit lo reconoce.
+- Prueba del ladrillo verde para ayudar al tren a volver hacia una estación; el resultado depende de la disposición de la vía y hay que comprobarlo.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Prepareu les destinacions i l’agulla
+### 1. Preparad los destinos y la aguja
 
-Marqueu els dos extrems de la Y com a A i B. Amb el tren apagat o aturat, orienteu l’agulla cap a una branca i comproveu que les peces queden alineades; repetiu-ho amb l’altra. Anoteu quina posició correspon a cada destí i canvieu l’agulla abans que el tren arribe a la bifurcació.
+Marcad los dos extremos de la Y como A y B. Con el tren apagado o detenido, orientad la aguja hacia una rama y comprobad que las piezas quedan alineadas; repetidlo con la otra. Anotad qué posición corresponde a cada destino y cambiad la aguja antes de que el tren llegue a la bifurcación.
 
-### 2. Proveu les dues branques
+### 2. Probad las dos ramas
 
-Amb el tren aturat, orienteu l’agulla cap a la branca A. Feu passar el tren i anoteu si ha seguit la branca prevista. Atureu-lo abans de moure l’agulla i repetiu la prova amb la branca B.
+Con el tren detenido, orientad la aguja hacia la rama A. Haced pasar el tren y anotad si ha seguido la rama prevista. Detenedlo antes de mover la aguja y repetid la prueba con la rama B.
 
-### 3. Ampliació opcional: investigueu una manera de tornar
+### 3. Ampliación opcional: investigad una forma de volver
 
-Col·loqueu el maó verd només en una configuració segura recomanada per al vostre conjunt i feu una prova curta. Observeu si ajuda el tren a reprendre el trajecte cap a l’estació en aquesta disposició. No pressuposeu que la peça canvia l’agulla ni que crea un retorn automàtic: la via i el sentit del tren determinen què ocorre. Compareu el resultat amb una ruta de retorn dissenyada manualment.
+Colocad el ladrillo verde solo en una configuración segura recomendada para vuestro conjunto y haced una prueba corta. Observad si ayuda al tren a reanudar el trayecto hacia la estación en esta disposición. No presupongáis que la pieza cambia la aguja ni que crea un retorno automático: la vía y el sentido del tren determinan qué ocurre. Comparad el resultado con una ruta de retorno diseñada manualmente.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Proveu les branques A i B canviant l’agulla amb el tren aturat. Si no segueix la branca seleccionada, reviseu l’alineació de l’agulla i les unions de la via abans de tornar-lo a posar en marxa.
+Probad las ramas A y B cambiando la aguja con el tren detenido. Si no sigue la rama seleccionada, revisad la alineación de la aguja y las uniones de la vía antes de volver a ponerlo en marcha.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Atureu el tren abans de moure la palanca del canvi d’agulla o tocar els rails. Comproveu que la via queda alineada i no poseu els dits entre les rodes i les vies.
+Detened el tren antes de mover la palanca del cambio de aguja o tocar los raíles. Comprobad que la vía queda alineada y no pongáis los dedos entre las ruedas y las vías.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La lliçó [Y Shaped Track de LEGO Education](https://education.lego.com/en-us/lessons/preschool-coding-express/y-shaped-track/) demana guiar el tren movent l’agulla roja i utilitza els maons d’acció per a les parades; també proposa el maó verd per ajudar el tren a tornar. La selecció de branca és manual: aquesta via no llegeix una condició ni canvia l’agulla de manera automàtica.
+La lección [Y Shaped Track de LEGO Education](https://education.lego.com/en-us/lessons/preschool-coding-express/y-shaped-track/) pide guiar el tren moviendo la aguja roja y utiliza los ladrillos de acción para las paradas; también propone el ladrillo verde para ayudar al tren a volver. La selección de rama es manual: esta vía no lee una condición ni cambia la aguja de forma automática.

@@ -8,45 +8,45 @@ order: 7
 image: _assets/tutorials/cr-expressions-so-bateria.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Creeu una salutació amb una cara i una llum de Codey. Després hi podeu afegir un so i provar una dansa. Els noms de les peces poden variar segons la versió de mBlock.
+Cread un saludo con una cara y una luz de Codey. Después podéis añadirle un sonido y probar una danza. Los nombres de las piezas pueden variar según la versión de mBlock.
 
-- Dibuixar i mostrar una expressió a la matriu LED de 16 × 8.
-- Vincular una acció als botons i a l’indicador RGB.
-- Crear una seqüència curta de tons o una melodia i activar una dansa programada.
-- Consultar el nivell de bateria abans de fer una prova llarga.
+- Dibujar y mostrar una expresión en la matriz LED de 16 × 8.
+- Vincular una acción a los botones y al indicador RGB.
+- Crear una secuencia corta de tonos o una melodía y activar una danza programada.
+- Consultar el nivel de batería antes de hacer una prueba larga.
 
 ![](../../_assets/tutorials/cr-expressions-so-bateria.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Un Codey Rocky de la dotació, amb les erugues lliures i espai per a girar sense colpejar objectes.
-- Ordinador amb mBlock 5 i el dispositiu/firmware de Codey actualitzats segons les instruccions del fabricant.
-- Plantilla de 16 × 8 píxels, cartolines de colors i targetes amb icones de resposta.
-- Opcional: un espai silenciós i un temporitzador per comparar la duració de la seqüència.
+- Un Codey Rocky de la dotación, con las orugas libres y espacio para girar sin golpear objetos.
+- Ordenador con mBlock 5 y el dispositivo/firmware de Codey actualizados según las instrucciones del fabricante.
+- Plantilla de 16 × 8 píxeles, cartulinas de colores y tarjetas con iconos de respuesta.
+- Opcional: un espacio silencioso y un temporizador para comparar la duración de la secuencia.
 
-Connecteu Codey i confirmeu que la vista de blocs ofereix pantalla, botons, RGB i so. Si el bloc de bateria no apareix, anoteu l’estat indicat pel dispositiu o carregueu-lo abans de la prova; no deduïu un percentatge exacte a partir del temps d’ús. Manteniu el robot sobre una superfície plana i poseu el volum baix.
+Conectad Codey y confirmad que la vista de bloques ofrece pantalla, botones, RGB y sonido. Si el bloque de batería no aparece, anotad el estado indicado por el dispositivo o cargadlo antes de la prueba; no deduzcáis un porcentaje exacto a partir del tiempo de uso. Mantened el robot sobre una superficie plana y poned el volumen bajo.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Matriu LED 16 × 8: dibuix d’icones o patrons propis.
-- Botons programables de Codey i indicador RGB per a activar i comunicar estats.
-- Altaveu integrat: tons, efectes o melodies disponibles en l’extensió del dispositiu.
-- Motors d’eruga: moviment o dansa programada, executada en una zona lliure.
-- Lectura de bateria disponible a mBlock; és un indicador d’estat, no una mesura de duració garantida.
+- Matriz LED 16 × 8: dibujo de iconos o patrones propios.
+- Botones programables de Codey e indicador RGB para activar y comunicar estados.
+- Altavoz integrado: tonos, efectos o melodías disponibles en la extensión del dispositivo.
+- Motores de oruga: movimiento o danza programada, ejecutada en una zona libre.
+- Lectura de batería disponible en mBlock; es un indicador de estado, no una medida de duración garantizada.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Prepareu una expressió de 16 × 8
+### 1. Preparad una expresión de 16 × 8
 
-Dibuixeu una expressió pròpia —una cara o un símbol— que es puga reconéixer sense color. Reproduïu-la amb el bloc de mostrar imatge i compareu la pantalla real amb el dibuix. Feu una segona versió amb només tres canvis de píxel i expliqueu què continua sent llegible.
+Dibujad una expresión propia —una cara o un símbolo— que se pueda reconocer sin color. Reproducidla con el bloque de mostrar imagen y comparad la pantalla real con el dibujo. Haced una segunda versión con solo tres cambios de píxel y explicad qué sigue siendo legible.
 
-### 2. Associeu una resposta al botó i al RGB
+### 2. Asociad una respuesta al botón y al RGB
 
-Programeu el botó A perquè mostre la primera expressió i encenga l’indicador RGB amb un color triat. Feu que el botó B mostre una icona diferent. Premeu cada botó tres vegades i observeu la resposta.
+Programad el botón A para que muestre la primera expresión y encienda el indicador RGB con un color elegido. Haced que el botón B muestre un icono diferente. Pulsad cada botón tres veces y observad la respuesta.
 
-Per començar, prepareu només la resposta del botó A:
+Para empezar, preparad solo la respuesta del botón A:
 
 ```mblock
 quan es prem el botó [A v]
@@ -54,30 +54,30 @@ mostra una cara feliç
 encén el llum RGB de color [blau v]
 ```
 
-El dibuix és una guia: trieu els blocs de pantalla i llum equivalents en mBlock. Premeu A tres vegades i comproveu la cara i la llum abans d’afegir el botó B o els sensors.
+El dibujo es una guía: elegid los bloques de pantalla y luz equivalentes en mBlock. Pulsad A tres veces y comprobad la cara y la luz antes de añadir el botón B o los sensores.
 
-**Per ampliar:** en un projecte separat, proveu la idea d’estalvi del fabricant. Amb llum ambiental alta, el RGB queda apagat; amb poca llum, s’encén quan el sensor de so supera el valor que heu triat i s’apaga quan el so baixa. Compareu clar/silenci, ombra/silenci i ombra/palmada suau. Mantindre els projectes separats evita que dues ordres diferents controlen el mateix llum alhora.
+**Para ampliar:** en un proyecto separado, probad la idea de ahorro del fabricante. Con luz ambiental alta, el RGB queda apagado; con luz tenue, se enciende cuando el sensor de sonido supera el valor que habéis elegido y se apaga cuando el sonido baja. Comparad claro/silencio, sombra/silencio y sombra/palmada suave. Mantener los proyectos separados evita que dos órdenes diferentes controlen la misma luz a la vez.
 
-### 3. Afegiu un so o una melodia breu
+### 3. Añadid un sonido o una melodía breve
 
-Després de la resposta visual, reproduïu un to o una seqüència curta amb els blocs de so que ofereix el dispositiu. Si la versió permet triar notes, alterneu dues notes; si només ofereix efectes, compareu dos sons disponibles. Afegiu una pausa perquè una pulsació no dispare una cadena de sons superposats. Manteniu una alternativa només visual.
+Después de la respuesta visual, reproducid un tono o una secuencia corta con los bloques de sonido que ofrece el dispositivo. Si la versión permite elegir notas, alternad dos notas; si solo ofrece efectos, comparad dos sonidos disponibles. Añadid una pausa para que una pulsación no dispare una cadena de sonidos superpuestos. Mantened una alternativa solo visual.
 
-### 4. Proveu una dansa controlada
+### 4. Probad una danza controlada
 
-Afegiu una dansa o una seqüència de moviments predefinida a una activació separada. Poseu Codey Rocky al centre d’una àrea lliure, inicieu el programa amb el robot quiet i atureu-lo abans de canviar el muntatge. Si la versió instal·lada no inclou un bloc de dansa, construïu una seqüència pròpia amb dos girs curts i una pausa; identifiqueu-la com a programa propi.
+Añadid una danza o una secuencia de movimientos predefinida a una activación separada. Poned Codey Rocky en el centro de un área libre, iniciad el programa con el robot quieto y detenedlo antes de cambiar el montaje. Si la versión instalada no incluye un bloque de danza, construid una secuencia propia con dos giros cortos y una pausa; identificadla como programa propio.
 
-### 5. Registreu l’estat de la bateria
+### 5. Registrad el estado de la batería
 
-Abans de la prova final, consulteu el bloc o indicador de nivell de bateria de mBlock i anoteu què mostra. Executeu la salutació tres vegades i torneu a consultar l’estat. Compareu la lectura sense interpretar diferències menudes com una predicció exacta d’autonomia. Si el robot es desconnecta o respon irregularment, carregueu-lo i repetiu la mateixa prova.
+Antes de la prueba final, consultad el bloque o indicador de nivel de batería de mBlock y anotad qué muestra. Ejecutad el saludo tres veces y volved a consultar el estado. Comparad la lectura sin interpretar diferencias pequeñas como una predicción exacta de autonomía. Si el robot se desconecta o responde de forma irregular, cargadlo y repetid la misma prueba.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Premeu A i B i comproveu la resposta de cada botó. Proveu el so i la dansa per separat, amb el robot en una zona lliure. Si una acció falla, reviseu el bloc corresponent, la connexió i la càrrega de la bateria.
+Pulsad A y B y comprobad la respuesta de cada botón. Probad el sonido y la danza por separado, con el robot en una zona libre. Si una acción falla, revisad el bloque correspondiente, la conexión y la carga de la batería.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Ajusteu el volum abans de reproduir tons. Manteniu el robot allunyat de vores, cables i persones durant la dansa. No bloquegeu les erugues amb les mans mentre els motors estan actius.
+Ajustad el volumen antes de reproducir tonos. Mantened el robot alejado de bordes, cables y personas durante la danza. No bloqueéis las orugas con las manos mientras los motores están activos.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-Makeblock enumera els casos de [pantalla emocional, RGB, sons, potenciòmetre, llum ambiental, bateria, sacsejada, postures, melodies i dansa](https://support.makeblock.com/hc/en-us/sections/360001829193-Codey-Rocky), inclòs l’[indicador RGB d’estalvi d’energia](https://support.makeblock.com/hc/en-us/articles/7463194482839-Case-12-Energy-conserving-RGB-LED-indicator), i descriu les funcions de [Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky). La lectura de bateria i els blocs de so depenen del dispositiu, firmware i versió de mBlock; les melodies i danses disponibles poden variar. Les lliçons de temps meteorològic i els jocs en línia depenen de serveis de xarxa externs; el reconeixement de veu també requereix un servei extern i no és una funció autònoma del robot.
+Makeblock enumera los casos de [pantalla emocional, RGB, sonidos, potenciómetro, luz ambiental, batería, sacudida, posturas, melodías y danza](https://support.makeblock.com/hc/en-us/sections/360001829193-Codey-Rocky), incluido el [indicador RGB de ahorro de energía](https://support.makeblock.com/hc/en-us/articles/7463194482839-Case-12-Energy-conserving-RGB-LED-indicator), y describe las funciones de [Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky). La lectura de batería y los bloques de sonido dependen del dispositivo, firmware y versión de mBlock; las melodías y danzas disponibles pueden variar. Las lecciones de tiempo meteorológico y los juegos en línea dependen de servicios de red externos; el reconocimiento de voz también requiere un servicio externo y no es una función autónoma del robot.

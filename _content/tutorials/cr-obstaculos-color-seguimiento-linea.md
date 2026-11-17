@@ -8,40 +8,40 @@ order: 2
 image: _assets/tutorials/cr-motors-sensors.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Prepareu una ruta curta perquè Rocky avance, detecte un obstacle i canvie de direcció abans de tocar-lo. Després, reorienteu el sensor inferior per provar una línia de contrast. La pràctica separa les funcions del sensor infraroig/color de les decisions del programa: el robot no comprén el mapa ni tria per si mateix la ruta.
+Preparad una ruta corta para que Rocky avance, detecte un obstáculo y cambie de dirección antes de tocarlo. Después, reorientad el sensor inferior para probar una línea de contraste. La práctica separa las funciones del sensor infrarrojo/color de las decisiones del programa: el robot no comprende el mapa ni elige por sí mismo la ruta.
 
-- Canviar l’orientació del sensor de Rocky per provar obstacle o superfície.
-- Llegir una condició del sensor i relacionar-la amb els motors de les erugues.
-- Comparar una prova d’obstacle amb una prova de seguiment d’una línia.
+- Cambiar la orientación del sensor de Rocky para probar obstáculo o superficie.
+- Leer una condición del sensor y relacionarla con los motores de las orugas.
+- Comparar una prueba de obstáculo con una prueba de seguimiento de una línea.
 
 ![](../../_assets/tutorials/cr-motors-sensors.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Codey Rocky de la dotació, acoblat i amb càrrega suficient.
-- Ordinador amb mBlock 5 i la versió de firmware disponible.
-- Obstacles amples, tous i no reflectants, com caixes de cartó.
-- Cinta fosca ampla i una base clara per fer una pista de contrast.
-- Graella de registre per anotar l’estat del sensor, la condició i el resultat.
+- Codey Rocky de la dotación, acoplado y con carga suficiente.
+- Ordenador con mBlock 5 y la versión de firmware disponible.
+- Obstáculos anchos, blandos y no reflectantes, como cajas de cartón.
+- Cinta oscura ancha y una base clara para hacer una pista de contraste.
+- Cuadrícula de registro para anotar el estado del sensor, la condición y el resultado.
 
-Comproveu que el mòdul Rocky està connectat amb Codey i que els blocs de sensor i motors apareixen a mBlock. Orienteu el sensor infraroig/color cap al davant per a la prova d’obstacles; abans de provar la línia, reorienteu-lo cap al terra segons el muntatge del fabricant. Manteniu el programa aturat mentre canvieu la posició del sensor.
+Comprobad que el módulo Rocky está conectado con Codey y que los bloques de sensor y motores aparecen en mBlock. Orientad el sensor infrarrojo/color hacia delante para la prueba de obstáculos; antes de probar la línea, reorientadlo hacia el suelo según el montaje del fabricante. Mantened el programa detenido mientras cambiáis la posición del sensor.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Motors independents de les dues erugues per avançar i girar.
-- Sensor infraroig/color orientable: detecció d’obstacles quan mira cap endavant i lectura de superfícies/línies quan mira cap avall.
-- Blocs condicionals de mBlock per transformar una lectura en una acció motora.
-- Límit de la prova: una detecció infraroja no és una mesura universal en centímetres; superfície, angle i llum poden canviar la resposta.
+- Motores independientes de las dos orugas para avanzar y girar.
+- Sensor infrarrojo/color orientable: detección de obstáculos cuando mira hacia delante y lectura de superficies/líneas cuando mira hacia abajo.
+- Bloques condicionales de mBlock para transformar una lectura en una acción motora.
+- Límite de la prueba: una detección infrarroja no es una medida universal en centímetros; superficie, ángulo y luz pueden cambiar la respuesta.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Connecteu i comproveu els actuadors
+### 1. Conectad y comprobad los actuadores
 
-Obriu mBlock 5, afegiu Codey Rocky i connecteu el robot per USB o per una connexió Bluetooth compatible. Executeu una prova curta que moga les dues erugues lentament i després les ature. Comproveu que el xassís està ben acoblat i que el sensor es pot orientar cap a davant o cap avall sense forçar el suport.
+Abrid mBlock 5, añadid Codey Rocky y conectad el robot por USB o por una conexión Bluetooth compatible. Ejecutad una prueba corta que mueva las dos orugas lentamente y después las detenga. Comprobad que el chasis está bien acoplado y que el sensor se puede orientar hacia delante o hacia abajo sin forzar el soporte.
 
-Comenceu amb una ordre curta, sobre una taula sense vores pròximes:
+Empezad con una orden corta, sobre una mesa sin bordes próximos:
 
 ```mblock
 quan es prem el botó [A v]
@@ -49,15 +49,15 @@ avança a velocitat (20) durant (1) segons
 atura el moviment
 ```
 
-El dibuix mostra la idea del programa: busqueu els blocs de moviment equivalents a la vostra versió i comproveu que Rocky s’atura després d’un segon.
+El dibujo muestra la idea del programa: buscad los bloques de movimiento equivalentes en vuestra versión y comprobad que Rocky se detiene después de un segundo.
 
-### 2. Observeu la detecció d’un obstacle
+### 2. Observad la detección de un obstáculo
 
-Amb el sensor orientat cap al davant, mostreu a la matriu de Codey l’estat «lliure» o «obstacle» segons el bloc disponible. Poseu una caixa de cartó a una distància curta i després més lluny; repetiu amb una superfície clara i una fosca, mantenint l’angle. Registreu el resultat tal com l’exposa mBlock (estat o valor d’aproximació/distància) i no el convertiu a centímetres si el bloc no dona una mesura calibrada.
+Con el sensor orientado hacia delante, mostrad en la matriz de Codey el estado «libre» u «obstáculo» según el bloque disponible. Poned una caja de cartón a una distancia corta y después más lejos; repetid con una superficie clara y una oscura, manteniendo el ángulo. Registrad el resultado tal como lo expone mBlock (estado o valor de aproximación/distancia) y no lo convirtáis a centímetros si el bloque no da una medida calibrada.
 
-### 3. Programeu una maniobra d’esquiva
+### 3. Programad una maniobra de esquiva
 
-Feu que Rocky avance a baixa velocitat mentre el sensor indique espai lliure. Si detecta un obstacle, atureu-lo, feu una marxa enrere breu i gireu a un costat abans de reprendre l’avanç. Busqueu els blocs equivalents en mBlock:
+Haced que Rocky avance a baja velocidad mientras el sensor indique espacio libre. Si detecta un obstáculo, detenedlo, haced una marcha atrás breve y girad a un lado antes de reanudar el avance. Buscad los bloques equivalentes en mBlock:
 
 ```mblock
 quan es prem el botó [A v]
@@ -72,22 +72,22 @@ fi
 fi
 ```
 
-Comenceu amb una sola caixa de cartó i una velocitat baixa. Si el sensor no ofereix un bloc d’obstacle en la vostra versió, no inventeu el llindar: proveu el cas oficial de Makeblock amb el dispositiu i els blocs disponibles. Si el gir no deixa espai suficient, canvieu només la durada o la velocitat. El [cas oficial](https://support.makeblock.com/hc/en-us/articles/7463724329879-Case-18-Codey-Rocky-avoids-obstacles) mostra un exemple amb el sensor mirant endavant.
+Empezad con una sola caja de cartón y una velocidad baja. Si el sensor no ofrece un bloque de obstáculo en vuestra versión, no inventéis el umbral: probad el caso oficial de Makeblock con el dispositivo y los bloques disponibles. Si el giro no deja espacio suficiente, cambiad solo la duración o la velocidad. El [caso oficial](https://support.makeblock.com/hc/en-us/articles/7463724329879-Case-18-Codey-Rocky-avoids-obstacles) muestra un ejemplo con el sensor mirando hacia delante.
 
-### 4. Compareu amb el seguiment d’una línia
+### 4. Comparad con el seguimiento de una línea
 
-Atureu el programa, gireu el sensor perquè mire cap avall i col·loqueu Rocky sobre la pista de contrast. Seguiu el [cas oficial de detecció de colors](https://support.makeblock.com/hc/en-us/articles/7484512467223-Case-19-Codey-Rocky-identifies-colors) per mostrar la lectura a l’indicador lluminós. Poseu el sensor primer sobre el fons clar i després sobre la cinta fosca, sense moure els motors, i anoteu si les lectures es diferencien. Si no es diferencien, reviseu l’orientació del sensor i proveu altres superfícies.
+Detened el programa, girad el sensor para que mire hacia abajo y colocad Rocky sobre la pista de contraste. Seguid el [caso oficial de detección de colores](https://support.makeblock.com/hc/en-us/articles/7484512467223-Case-19-Codey-Rocky-identifies-colors) para mostrar la lectura en el indicador luminoso. Poned el sensor primero sobre el fondo claro y después sobre la cinta oscura, sin mover los motores, y anotad si las lecturas se diferencian. Si no se diferencian, revisad la orientación del sensor y probad otras superficies.
 
-Per a una primera prova de seguiment, situeu el sensor sobre la vora dreta de la cinta, mirant en el sentit del recorregut. En un programa nou, repetiu aquesta decisió: si detecta fosc, feu un gir curt a la dreta; si detecta clar, un gir curt a l’esquerra. Després de cada correcció, avanceu un interval curt a velocitat baixa i torneu a llegir el sensor. Ajusteu la durada dels girs i dels avanços amb proves breus. Invertiu els girs si comenceu a l’altra vora. Useu els blocs de condició, detecció i moviment disponibles a la vostra versió i atureu-lo si perd la pista. Si no podeu distingir les superfícies o el programa no manté la vora, conserveu la prova de lectura i anoteu que el seguiment queda pendent.
+Para una primera prueba de seguimiento, situad el sensor sobre el borde derecho de la cinta, mirando en el sentido del recorrido. En un programa nuevo, repetid esta decisión: si detecta oscuro, haced un giro corto a la derecha; si detecta claro, un giro corto a la izquierda. Después de cada corrección, avanzad un intervalo corto a velocidad baja y volved a leer el sensor. Ajustad la duración de los giros y de los avances con pruebas breves. Invertid los giros si empezáis en el otro borde. Usad los bloques de condición, detección y movimiento disponibles en vuestra versión y detenedlo si pierde la pista. Si no podéis distinguir las superficies o el programa no mantiene el borde, conservad la prueba de lectura y anotad que el seguimiento queda pendiente.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Comproveu la detecció d’un obstacle i el seguiment de línia per separat. Si fallen, reviseu l’orientació i l’altura del sensor, la reflexió de la superfície i les connexions. Canvieu un únic llindar o paràmetre de moviment cada vegada.
+Comprobad la detección de un obstáculo y el seguimiento de línea por separado. Si fallan, revisad la orientación y la altura del sensor, la reflexión de la superficie y las conexiones. Cambiad un único umbral o parámetro de movimiento cada vez.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Feu servir velocitats baixes, obstacles tous i un espai delimitat. Manteniu mans, cables i roba lluny de les erugues. Atureu el programa abans de reorientar el sensor.
+Usad velocidades bajas, obstáculos blandos y un espacio delimitado. Mantened manos, cables y ropa lejos de las orugas. Detened el programa antes de reorientar el sensor.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La pàgina [About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) descriu els motors de Rocky i el sensor infraroig/color. Els casos oficials [Avoids Obstacles](https://support.makeblock.com/hc/en-us/articles/7463724329879-Case-18-Codey-Rocky-avoids-obstacles) i [Identifies Colors](https://support.makeblock.com/hc/en-us/articles/7484512467223-Case-19-Codey-Rocky-identifies-colors) mostren l’orientació del sensor cap al davant i cap avall. La resposta depén de la superfície i de l’angle; no és un sensor ultrasònic de distància calibrada.
+La página [About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) describe los motores de Rocky y el sensor infrarrojo/color. Los casos oficiales [Avoids Obstacles](https://support.makeblock.com/hc/en-us/articles/7463724329879-Case-18-Codey-Rocky-avoids-obstacles) e [Identifies Colors](https://support.makeblock.com/hc/en-us/articles/7484512467223-Case-19-Codey-Rocky-identifies-colors) muestran la orientación del sensor hacia delante y hacia abajo. La respuesta depende de la superficie y del ángulo; no es un sensor ultrasónico de distancia calibrada.

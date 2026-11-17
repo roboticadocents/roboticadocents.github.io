@@ -8,38 +8,38 @@ order: 3
 image: _assets/tutorials/cr-veu-ia.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Compareu què passa quan Codey sent una palmada i què caldria perquè interpretara una paraula. El robot pot indicar si un so és més fort o més fluix, però no inclou un mòdul que reconega paraules.
+Comparad qué pasa cuando Codey oye una palmada y qué haría falta para que interpretara una palabra. El robot puede indicar si un sonido es más fuerte o más flojo, pero no incluye un módulo que reconozca palabras.
 
-- Comparar una lectura de so ambiental amb una ordre de veu interpretada per programari.
-- Comprovar si l’extensió de serveis cognitius està disponible abans d’utilitzar-la.
-- Vincular una entrada de prova a una resposta visible i segura, sense activar moviments inesperats.
-- Identificar quan una prova necessita un servei de veu extern.
+- Comparar una lectura de sonido ambiental con una orden de voz interpretada por software.
+- Comprobar si la extensión de servicios cognitivos está disponible antes de utilizarla.
+- Vincular una entrada de prueba a una respuesta visible y segura, sin activar movimientos inesperados.
+- Identificar cuándo una prueba necesita un servicio de voz externo.
 
 ![](../../_assets/tutorials/cr-veu-ia.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Codey Rocky de la dotació amb bateria suficient i espai de treball delimitat.
-- Ordinador amb mBlock 5, micròfon del dispositiu i connexió de xarxa només si el servei en línia està autoritzat.
-- Targetes grans amb les ordres fictícies «marxa», «para» i «gira» per a una simulació sense veu.
-- Un registre per anotar component, programa, resposta i dependències de cada prova.
+- Codey Rocky de la dotación con batería suficiente y espacio de trabajo delimitado.
+- Ordenador con mBlock 5, micrófono del dispositivo y conexión de red solo si el servicio en línea está autorizado.
+- Tarjetas grandes con las órdenes ficticias «marcha», «para» y «gira» para una simulación sin voz.
+- Un registro para anotar componente, programa, respuesta y dependencias de cada prueba.
 
-Comenceu amb el sensor de so de Codey. La prova de paraules és opcional i només es fa si el centre disposa d’un servei compatible i n’autoritza l’ús; si no, useu les targetes.
+Empezad con el sensor de sonido de Codey. La prueba de palabras es opcional y solo se hace si el centro dispone de un servicio compatible y autoriza su uso; si no, usad las tarjetas.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Sensor de so integrat de Codey: permet llegir intensitat sonora i fer que una condició responga a un llindar; no transcriu ni entén paraules.
-- Pantalla LED, indicador RGB i altaveu com a eixides per comunicar un estat de prova.
-- Reconeixement de parla com a funció de programari o mòdul Neuron compatible, no com a sensor integrat del Codey Rocky base.
-- Connexió i serveis en línia com a dependències externes que poden no estar disponibles o tindre límits d’idioma i compte.
+- Sensor de sonido integrado de Codey: permite leer intensidad sonora y hacer que una condición responda a un umbral; no transcribe ni entiende palabras.
+- Pantalla LED, indicador RGB y altavoz como salidas para comunicar un estado de prueba.
+- Reconocimiento de habla como función de software o módulo Neuron compatible, no como sensor integrado del Codey Rocky base.
+- Conexión y servicios en línea como dependencias externas que pueden no estar disponibles o tener límites de idioma y cuenta.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Mesureu el so amb el robot base
+### 1. Medid el sonido con el robot base
 
-Connecteu Codey a mBlock i busqueu el bloc que llig el nivell de so. Prepareu un programa que el mostre contínuament a la pantalla. Aquesta representació us ajuda a trobar els blocs equivalents en la vostra versió:
+Conectad Codey a mBlock y buscad el bloque que lee el nivel de sonido. Preparad un programa que lo muestre continuamente en la pantalla. Esta representación os ayuda a encontrar los bloques equivalentes en vuestra versión:
 
 ```mblock
 quan comença el programa
@@ -48,26 +48,26 @@ mostra el nivell de so
 fi
 ```
 
-Carregueu o executeu el programa segons el mode triat. Anoteu què mostra en silenci i després amb una palmada suau; repetiu tres vegades. El número ajuda a comparar sons: no és una mesura de decibels ni una paraula reconeguda.
+Cargad o ejecutad el programa según el modo elegido. Anotad qué muestra en silencio y después con una palmada suave; repetid tres veces. El número ayuda a comparar sonidos: no es una medida de decibelios ni una palabra reconocida.
 
-### 2. Comproveu i, si podeu, proveu el servei de veu
+### 2. Comprobad y, si podéis, probad el servicio de voz
 
-Comproveu si disposeu d’una extensió o d’un servei de reconeixement de parla compatible. Anoteu-ne el nom i la llengua disponible abans d’activar el micròfon. Si el servei funciona i està autoritzat, proveu una frase fictícia i feu que aparega una icona quan coincidisca amb la paraula prevista; proveu també una frase diferent i el silenci. Manteniu els motors aturats. Una lectura de so alt no significa que Codey haja entés una paraula.
+Comprobad si disponéis de una extensión o de un servicio de reconocimiento de habla compatible. Anotad su nombre y la lengua disponible antes de activar el micrófono. Si el servicio funciona y está autorizado, probad una frase ficticia y haced que aparezca un icono cuando coincida con la palabra prevista; probad también una frase diferente y el silencio. Mantened los motores detenidos. Una lectura de sonido alto no significa que Codey haya entendido una palabra.
 
-### 3. Simuleu les ordres si no hi ha servei
+### 3. Simulad las órdenes si no hay servicio
 
-Una persona tria una targeta —«marxa», «para» o «gira»— i una altra mostra la icona acordada. Anoteu el resultat com a **simulació**: aquesta prova ajuda a preparar la prova, però no comprova que el robot reconega la veu.
+Una persona elige una tarjeta —«marcha», «para» o «gira»— y otra muestra el icono acordado. Anotad el resultado como **simulación**: esta prueba ayuda a preparar la prueba, pero no comprueba que el robot reconozca la voz.
 
-_Il·lustració decorativa: el símbol no representa un servei concret. El robot base no incorpora reconeixement de parla._
+_Ilustración decorativa: el símbolo no representa un servicio concreto. El robot base no incorpora reconocimiento de habla._
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Comproveu per separat la lectura del sensor de so i la resposta de l’extensió externa. Si el servei de veu no està disponible, podeu provar la resposta del programa amb una entrada de text fictici; això no comprova reconeixement de parla. Manteniu els motors aturats.
+Comprobad por separado la lectura del sensor de sonido y la respuesta de la extensión externa. Si el servicio de voz no está disponible, podéis probar la respuesta del programa con una entrada de texto ficticio; esto no comprueba reconocimiento de habla. Mantened los motores detenidos.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Useu paraules fictícies o text de prova, sense dades personals. Manteniu els motors desactivats durant les proves de veu. Abans d’activar un servei extern, comproveu si envia àudio fora del dispositiu i reviseu-ne les condicions de privacitat.
+Usad palabras ficticias o texto de prueba, sin datos personales. Mantened los motores desactivados durante las pruebas de voz. Antes de activar un servicio externo, comprobad si envía audio fuera del dispositivo y revisad sus condiciones de privacidad.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-Makeblock descriu el [sensor de so integrat de Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) com una lectura del nivell sonor, i a les [FAQ oficials](https://support.makeblock.com/hc/en-us/articles/1500004266501-FAQs-on-Codey-Rocky) indica que el model base no té un mòdul de reconeixement de parla; la veu requeriria un mòdul Neuron compatible. La [guia oficial del cas de veu](https://support.makeblock.com/hc/en-us/articles/7463171094295-Case-11-Voice-activated-RGB-LED-indicator) treballa el nivell de so, no la transcripció de paraules. Les extensions d’IA i els serveis en línia depenen de la versió i de la xarxa disponible.
+Makeblock describe el [sensor de sonido integrado de Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) como una lectura del nivel sonoro, y en las [FAQ oficiales](https://support.makeblock.com/hc/en-us/articles/1500004266501-FAQs-on-Codey-Rocky) indica que el modelo base no tiene un módulo de reconocimiento de habla; la voz requeriría un módulo Neuron compatible. La [guía oficial del caso de voz](https://support.makeblock.com/hc/en-us/articles/7463171094295-Case-11-Voice-activated-RGB-LED-indicator) trabaja el nivel de sonido, no la transcripción de palabras. Las extensiones de IA y los servicios en línea dependen de la versión y de la red disponible.

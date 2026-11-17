@@ -8,42 +8,42 @@ order: 6
 image: _assets/tutorials/mb-brujola-temperatura-bluetooth-flat.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Feu que la micro:bit mostre la direcció i una temperatura aproximada. Compareu-les amb una brúixola i un termòmetre; després exploreu el logotip tàctil de V2 i la connexió Bluetooth si teniu els dispositius necessaris.
+Haced que la micro:bit muestre la dirección y una temperatura aproximada. Comparadlas con una brújula y un termómetro; después explorad el logotipo táctil de V2 y la conexión Bluetooth si tenéis los dispositivos necesarios.
 
-- Calibrar la brúixola i comparar rumbs amb una referència.
-- Contrastar la temperatura interna aproximada amb un termòmetre.
-- Distingir l’entrada tàctil de V2 i la connexió Bluetooth de la ràdio.
+- Calibrar la brújula y comparar rumbos con una referencia.
+- Contrastar la temperatura interna aproximada con un termómetro.
+- Distinguir la entrada táctil de V2 y la conexión Bluetooth de la radio.
 
 ![](../../_assets/tutorials/mb-brujola-temperatura-bluetooth-flat.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Placa BBC micro:bit i ordinador amb MakeCode o editor compatible.
-- Brúixola i termòmetre de referència; tots dos poden ser analògics.
-- Dispositiu compatible amb Bluetooth i editor/app adient, si la connexió està disponible.
-- Portapiles opcional per a separar la placa de l’ordinador.
+- Placa BBC micro:bit y ordenador con MakeCode o editor compatible.
+- Brújula y termómetro de referencia; ambos pueden ser analógicos.
+- Dispositivo compatible con Bluetooth y editor/app adecuado, si la conexión está disponible.
+- Portapilas opcional para separar la placa del ordenador.
 
-Comproveu la versió impresa a la placa. La brúixola pot requerir calibratge i es pot veure afectada per imants, altaveus, taules metàl·liques o cables amb corrent. El sensor tèrmic és dins del processador i només dona una aproximació de la temperatura de la placa/entorn.
+Comprobad la versión impresa en la placa. La brújula puede requerir calibración y puede verse afectada por imanes, altavoces, mesas metálicas o cables con corriente. El sensor térmico está dentro del procesador y solo da una aproximación de la temperatura de la placa/entorno.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Magnetòmetre/brúixola integrada: rumb i calibratge, amb interferències identificades.
-- Sensor tèrmic intern: lectura aproximada, no termòmetre ambiental calibrat.
-- Logotip tàctil capacitiu i funcions de so només en micro:bit V2; V1 no incorpora aquestes peces.
-- Bluetooth per a connexió amb dispositius compatibles, diferenciat de la ràdio local entre plaques.
+- Magnetómetro/brújula integrada: rumbo y calibración, con interferencias identificadas.
+- Sensor térmico interno: lectura aproximada, no termómetro ambiental calibrado.
+- Logotipo táctil capacitivo y funciones de sonido solo en micro:bit V2; V1 no incorpora estas piezas.
+- Bluetooth para conexión con dispositivos compatibles, diferenciado de la radio local entre placas.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Calibreu i compareu el rumb
+### 1. Calibrad y comparad el rumbo
 
-Obriu MakeCode i prepareu dos botons:
+Abrid MakeCode y preparad dos botones:
 
-1. En **Entrada**, afegiu «en prémer el botó A». Dins, poseu «mostra el número» i, al seu espai, la lectura de brúixola.
-2. Afegiu un altre bloc de botó i canvieu-lo a **B**. Dins, poseu «mostra el número» amb la lectura de temperatura.
+1. En **Entrada**, añadid «al pulsar el botón A». Dentro, poned «mostrar el número» y, en su espacio, la lectura de brújula.
+2. Añadid otro bloque de botón y cambiadlo a **B**. Dentro, poned «mostrar el número» con la lectura de temperatura.
 
-El botó A mostrarà la direcció i el B, la temperatura aproximada. Si preferiu copiar el programa, obriu **JavaScript** en MakeCode, enganxeu aquest text i torneu a **Blocs** per veure les peces:
+El botón A mostrará la dirección y el B, la temperatura aproximada. Si preferís copiar el programa, abrid **JavaScript** en MakeCode, pegad este texto y volved a **Bloques** para ver las piezas:
 
 ```makecode
 input.onButtonPressed(Button.A, function () {
@@ -54,30 +54,30 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-Descarregueu-lo a la placa i premeu A. Si demana calibrar-la, seguiu les indicacions de la pantalla. Manteniu-la plana, amb la vora superior cap a la direcció que voleu mesurar. Proveu quatre direccions lluny d’imants i objectes metàl·lics; compareu les lectures amb una brúixola de referència.
+Descargadlo a la placa y pulsad A. Si pide calibrarla, seguid las indicaciones de la pantalla. Mantenedla plana, con el borde superior hacia la dirección que queréis medir. Probad cuatro direcciones lejos de imanes y objetos metálicos; comparad las lecturas con una brújula de referencia.
 
-Podeu consultar el [bloc i l’exemple oficial de brúixola](https://makecode.microbit.org/reference/input/compass-heading) per identificar la peça en MakeCode.
+Podéis consultar el [bloque y el ejemplo oficial de brújula](https://makecode.microbit.org/reference/input/compass-heading) para identificar la pieza en MakeCode.
 
-### 2. Compareu temperatura i tacte segons la versió
+### 2. Comparad temperatura y tacto según la versión
 
-Deixeu la placa i un termòmetre uns minuts al mateix lloc, a l’ombra. Premeu B i compareu els nombres. Anoteu-los sense tocar la placa durant la lectura: la micro:bit mesura la temperatura del xip, que pot ser diferent de la de l’aire.
+Dejad la placa y un termómetro unos minutos en el mismo lugar, a la sombra. Pulsad B y comparad los números. Anotadlos sin tocar la placa durante la lectura: la micro:bit mide la temperatura del chip, que puede ser diferente de la del aire.
 
-En una micro:bit V2, creeu un projecte separat. En **Entrada**, afegiu l’esdeveniment «en tocar el logotip» i poseu-hi dins «mostra una icona». Transferiu-lo i toqueu el logotip metàl·lic: hauria d’aparéixer la icona. Si no apareix, confirmeu que la placa és V2 i que heu transferit aquest projecte. Com a ampliació, proveu els esdeveniments de deixar anar i mantindre el contacte si l’editor els ofereix. En V1, substituïu l’entrada per A/B; no presenteu la placa V1 com si tinguera logotip sensible al tacte.
+En una micro:bit V2, cread un proyecto separado. En **Entrada**, añadid el evento «al tocar el logotipo» y poned dentro «mostrar un icono». Transferidlo y tocad el logotipo metálico: debería aparecer el icono. Si no aparece, confirmad que la placa es V2 y que habéis transferido este proyecto. Como ampliación, probad los eventos de soltar y mantener el contacto si el editor los ofrece. En V1, sustituid la entrada por A/B; no presentéis la placa V1 como si tuviera logotipo sensible al tacto.
 
-### 3. Distingiu Bluetooth de ràdio
+### 3. Distinguid Bluetooth de radio
 
-Si teniu una tauleta compatible amb l’app oficial de micro:bit, seguiu la [guia de l’app](https://microbit.org/get-started/user-guide/mobile/) per emparellar-la i enviar un programa a la placa per Bluetooth. Observeu si la placa executa el programa després de la transferència. Si no teniu l’app, feu la prova per cable i anoteu que no heu comprovat Bluetooth.
+Si tenéis una tableta compatible con la app oficial de micro:bit, seguid la [guía de la app](https://microbit.org/get-started/user-guide/mobile/) para emparejarla y enviar un programa a la placa por Bluetooth. Observad si la placa ejecuta el programa después de la transferencia. Si no tenéis la app, haced la prueba por cable y anotad que no habéis comprobado Bluetooth.
 
-Compareu-ho amb la [guia de ràdio](../../tutorial/mb-enviar-numero-radio/index.html), que envia números entre dues plaques. Per intercanviar dades amb un dispositiu Bluetooth des d’un programa cal una extensió i una aplicació compatibles; afegir l’extensió Bluetooth elimina els blocs de ràdio del mateix projecte. Guardeu cada prova en un projecte separat.
+Comparadlo con la [guía de radio](../../tutorial/mb-enviar-numero-radio/index.html), que envía números entre dos placas. Para intercambiar datos con un dispositivo Bluetooth desde un programa hace falta una extensión y una aplicación compatibles; añadir la extensión Bluetooth elimina los bloques de radio del mismo proyecto. Guardad cada prueba en un proyecto separado.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Proveu A en quatre direccions i B al costat del termòmetre; anoteu els resultats. Si teniu V2, comproveu també el logotip tàctil. Indiqueu si heu transferit el programa per Bluetooth o per cable. Si la brúixola dona valors inestables, allunyeu-la d’objectes metàl·lics i repetiu.
+Probad A en cuatro direcciones y B junto al termómetro; anotad los resultados. Si tenéis V2, comprobad también el logotipo táctil. Indicad si habéis transferido el programa por Bluetooth o por cable. Si la brújula da valores inestables, alejadla de objetos metálicos y repetid.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-No useu imants forts prop de la brúixola durant les proves. Emparelleu només dispositius identificats i elimineu la vinculació quan ja no siga necessària. La temperatura indicada és aproximada i correspon al processador.
+No uséis imanes fuertes cerca de la brújula durante las pruebas. Emparejad solo dispositivos identificados y eliminad la vinculación cuando ya no sea necesaria. La temperatura indicada es aproximada y corresponde al procesador.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La [vista general oficial de micro:bit](https://microbit.org/get-started/features/overview/) descriu botons, brúixola, acceleròmetre, ràdio/Bluetooth, pins i les diferències de V2; la guia oficial de [sensors](https://microbit.org/get-started/features/sensors/) documenta la temperatura aproximada i el logotip tàctil. Consulteu també la [referència Bluetooth de MakeCode](https://makecode.microbit.org/reference/bluetooth). El Bluetooth depén de l’editor/dispositiu compatible; el sensor intern de temperatura no és un instrument calibrat.
+La [vista general oficial de micro:bit](https://microbit.org/get-started/features/overview/) describe botones, brújula, acelerómetro, radio/Bluetooth, pines y las diferencias de V2; la guía oficial de [sensores](https://microbit.org/get-started/features/sensors/) documenta la temperatura aproximada y el logotipo táctil. Consultad también la [referencia Bluetooth de MakeCode](https://makecode.microbit.org/reference/bluetooth). El Bluetooth depende del editor/dispositivo compatible; el sensor interno de temperatura no es un instrumento calibrado.

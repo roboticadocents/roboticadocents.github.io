@@ -8,38 +8,38 @@ order: 2
 image: _assets/tutorials/sp-motors-sensors-flat.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Feu girar un motor solt i atureu-lo quan acosteu una targeta vermella al sensor de color. No cal construir cap model ni encaixar peces LEGO: només connectar els cables al Hub.
+Haced girar un motor suelto y detenedlo cuando acerquéis una tarjeta roja al sensor de color. No hace falta construir ningún modelo ni encajar piezas LEGO: solo conectar los cables al Hub.
 
-- Controlar un motor angular i programar una condició de parada.
-- Comparar lectures del sensor de color.
-- Comprovar com influeixen la llum i la distància de la targeta.
+- Controlar un motor angular y programar una condición de parada.
+- Comparar lecturas del sensor de color.
+- Comprobar cómo influyen la luz y la distancia de la tarjeta.
 
 ![](../../_assets/tutorials/sp-motors-sensors-flat.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Hub SPIKE Prime carregat, un motor angular i un sensor de color.
-- Targetes blanca i vermella de paper o cartolina.
-- Ordinador o tauleta amb SPIKE App i connexió USB o Bluetooth.
+- Hub SPIKE Prime cargado, un motor angular y un sensor de color.
+- Tarjetas blanca y roja de papel o cartulina.
+- Ordenador o tableta con SPIKE App y conexión USB o Bluetooth.
 
-Deixeu el motor recolzat de manera estable sobre la taula, amb l’eix lliure i sense rodes, eixos afegits ni engranatges.
+Dejad el motor apoyado de forma estable sobre la mesa, con el eje libre y sin ruedas, ejes añadidos ni engranajes.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Motor angular i sensor de color SPIKE Prime.
-- Lectura de color i espera condicional per aturar el motor.
+- Motor angular y sensor de color SPIKE Prime.
+- Lectura de color y espera condicional para detener el motor.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Connecteu i comproveu el sensor
+### 1. Conectad y comprobad el sensor
 
-Amb el programa aturat, connecteu el motor al port A i el sensor de color al C. Deixeu el sensor sobre la taula amb la finestra de lectura descoberta. Obriu la informació del Hub en SPIKE App i acosteu successivament les targetes blanca i vermella a la finestra, sense tocar-la. Busqueu una posició que done lectures estables i manteniu-la durant les proves.
+Con el programa detenido, conectad el motor al puerto A y el sensor de color al C. Dejad el sensor sobre la mesa con la ventana de lectura descubierta. Abrid la información del Hub en SPIKE App y acercad sucesivamente las tarjetas blanca y roja a la ventana, sin tocarla. Buscad una posición que dé lecturas estables y mantenedla durante las pruebas.
 
-### 2. Programeu la condició de parada
+### 2. Programad la condición de parada
 
-Prepareu aquesta seqüència amb els blocs equivalents de la vostra versió de SPIKE App:
+Preparad esta secuencia con los bloques equivalentes de vuestra versión de SPIKE App:
 
 ```spikeapp
 quan comença el programa
@@ -48,20 +48,20 @@ espera fins que el sensor de color [C v] detecte [vermell v]
 atura el motor [A v]
 ```
 
-Comenceu amb la targeta blanca davant del sensor. Executeu el programa i substituïu-la per la vermella sense acostar les mans al motor. Observeu si l’eix deixa de girar. Manteniu accessible el botó d’aturada i pareu manualment si no es detecta el color.
+Empezad con la tarjeta blanca delante del sensor. Ejecutad el programa y sustituidla por la roja sin acercar las manos al motor. Observad si el eje deja de girar. Mantened accesible el botón de parada y parad manualmente si no se detecta el color.
 
-### 3. Canvieu una condició
+### 3. Cambiad una condición
 
-Repetiu tres vegades a la mateixa distància. Després canvieu només la distància de la targeta o la il·luminació i compareu les lectures. Atureu el programa abans de recol·locar el motor o el sensor.
+Repetid tres veces a la misma distancia. Después cambiad solo la distancia de la tarjeta o la iluminación y comparad las lecturas. Detened el programa antes de recolocar el motor o el sensor.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Anoteu el color mostrat per l’app i si el motor s’ha aturat en cada intent. Si falla, reviseu els ports, la llum i la posició de la targeta, una cosa cada vegada.
+Anotad el color mostrado por la app y si el motor se ha detenido en cada intento. Si falla, revisad los puertos, la luz y la posición de la tarjeta, una cosa cada vez.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu mans, cabells, roba i cables lluny de l’eix del motor. No el freneu amb els dits. Atureu el programa abans de moure el motor o canviar els cables de port.
+Mantened manos, pelo, ropa y cables lejos del eje del motor. No lo frenéis con los dedos. Detened el programa antes de mover el motor o cambiar los cables de puerto.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-Les [especificacions oficials de SPIKE Prime](https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/) descriuen el motor angular i el sensor de color. La parada depén de la posició, l’altura i la llum ambiental; proveu primer amb una targeta ampla i una velocitat baixa.
+Las [especificaciones oficiales de SPIKE Prime](https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/) describen el motor angular y el sensor de color. La parada depende de la posición, la altura y la luz ambiental; probad primero con una tarjeta ancha y una velocidad baja.

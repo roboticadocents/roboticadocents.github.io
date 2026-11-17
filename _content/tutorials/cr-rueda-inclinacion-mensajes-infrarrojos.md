@@ -8,48 +8,48 @@ order: 5
 image: _assets/tutorials/cr-giroscopi-ir-control.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Feu que Codey mostre el valor de la rodeta i responga amb una icona quan l’inclineu. Si disposeu de dos robots, al final podeu provar d’enviar un missatge per infraroig.
+Haced que Codey muestre el valor de la ruedecilla y responda con un icono cuando lo inclinéis. Si disponéis de dos robots, al final podéis probar a enviar un mensaje por infrarrojos.
 
-- Llegir la rodeta en tres posicions i comparar els valors.
-- Fer que una inclinació active una icona.
-- Com a ampliació opcional, enviar i rebre un missatge IR amb dos robots.
+- Leer la ruedecilla en tres posiciones y comparar los valores.
+- Hacer que una inclinación active un icono.
+- Como ampliación opcional, enviar y recibir un mensaje IR con dos robots.
 
 ![](../../_assets/tutorials/cr-giroscopi-ir-control.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Dos Codey Rocky de la dotació, si es vol provar transmissió entre robots; amb un sol kit, la comunicació IR es pot simular amb targetes.
-- mBlock 5 i connexió USB o Bluetooth admesa pel dispositiu.
-- Una superfície plana i una marca per definir l’orientació inicial.
-- Targetes amb les ordres fictícies «endavant», «aturar» i «gir».
+- Dos Codey Rocky de la dotación, si se quiere probar la transmisión entre robots; con un solo kit, la comunicación IR se puede simular con tarjetas.
+- mBlock 5 y conexión USB o Bluetooth admitida por el dispositivo.
+- Una superficie plana y una marca para definir la orientación inicial.
+- Tarjetas con las órdenes ficticias «adelante», «detener» y «girar».
 
-Comproveu al mBlock instal·lat que els blocs de potenciòmetre, orientació/gest i infraroig apareixen per al dispositiu Codey. Les extensions i noms de blocs poden variar. Si un bloc no apareix, documenteu la funció com a no disponible en aquella versió; no el substituïu per una funció de Neuron o d’un altre robot.
+Comprobad en el mBlock instalado que los bloques de potenciómetro, orientación/gesto e infrarrojos aparecen para el dispositivo Codey. Las extensiones y nombres de bloques pueden variar. Si un bloque no aparece, documentad la función como no disponible en esa versión; no lo sustituyáis por una función de Neuron o de otro robot.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Potenciòmetre/gear knob per llegir una entrada variable física.
-- Connexió Bluetooth a l’app Makeblock per al control Drive i el traçat Draw & Run, quan l’app és compatible i està disponible.
-- Giroscopi i acceleròmetre de sis eixos per detectar inclinació, gir o sacsejada.
-- Altaveu i matriu LED de Codey com a eixides.
-- Emissor i receptor d’infraroig per enviar/recollir un codi entre Codey Rocky compatibles.
+- Potenciómetro/gear knob para leer una entrada variable física.
+- Conexión Bluetooth a la app Makeblock para el control Drive y el trazado Draw & Run, cuando la app es compatible y está disponible.
+- Giroscopio y acelerómetro de seis ejes para detectar inclinación, giro o sacudida.
+- Altavoz y matriz LED de Codey como salidas.
+- Emisor y receptor de infrarrojos para enviar/recoger un código entre Codey Rocky compatibles.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Proveu el control manual de l’app
+### 1. Probad el control manual de la app
 
-Si l’app Makeblock està disponible en el vostre dispositiu, activeu-hi Bluetooth, enceneu Codey i seleccioneu el model Codey Rocky. Apropeu el dispositiu i espereu la confirmació sonora de connexió descrita pel fabricant. Comproveu les tres opcions de l’app, sense donar per fet que totes les versions continuen disponibles:
+Si la app Makeblock está disponible en vuestro dispositivo, activad Bluetooth, encended Codey y seleccionad el modelo Codey Rocky. Acercad el dispositivo y esperad la confirmación sonora de conexión descrita por el fabricante. Comprobad las tres opciones de la app, sin dar por hecho que todas las versiones continúan disponibles:
 
-- **Drive:** feu una ordre curta en una zona delimitada i observeu tant el moviment com el canvi d’imatge de la matriu LED. Atureu Codey abans de canviar de mode.
-- **Draw and Run:** dibuixeu un trajecte senzill o poseu-hi un senyal disponible; comproveu que el robot segueix el trajecte indicat.
-- **Code:** obriu l’opció i comproveu que deriva a mBlock per programar. Distingiu aquest entorn de la conducció manual i de la ruta dibuixada.
+- **Drive:** haced una orden corta en una zona delimitada y observad tanto el movimiento como el cambio de imagen de la matriz LED. Detened Codey antes de cambiar de modo.
+- **Draw and Run:** dibujad un trayecto sencillo o poned una señal disponible; comprobad que el robot sigue el trayecto indicado.
+- **Code:** abrid la opción y comprobad que deriva a mBlock para programar. Distinguid este entorno de la conducción manual y de la ruta dibujada.
 
-Registreu quina opció heu pogut obrir i amb quin dispositiu. Si la connexió, una funció o l’app no està disponible, planifiqueu la mateixa ruta amb targetes i marqueu-la com a simulació; no presenteu aquesta alternativa com una prova del robot.
+Registrad qué opción habéis podido abrir y con qué dispositivo. Si la conexión, una función o la app no está disponible, planificad la misma ruta con tarjetas y marcadla como simulación; no presentéis esta alternativa como una prueba del robot.
 
-### 2. Llegiu el potenciòmetre
+### 2. Leed el potenciómetro
 
-Mostreu a la pantalla el valor de la rodeta de Codey i gireu-la lentament d’un extrem a l’altre. Busqueu els blocs equivalents a la vostra versió:
+Mostrad en la pantalla el valor de la ruedecilla de Codey y giradla lentamente de un extremo al otro. Buscad los bloques equivalentes en vuestra versión:
 
 ```mblock
 quan comença el programa
@@ -58,33 +58,33 @@ mostra el valor de la rodeta
 fi
 ```
 
-Anoteu el valor amb la rodeta en tres posicions: un extrem, el centre i l’altre extrem. Torneu a cadascuna i comproveu si les lectures s’assemblen. Com a ampliació, feu que els valors activen icones diferents.
+Anotad el valor con la ruedecilla en tres posiciones: un extremo, el centro y el otro extremo. Volved a cada una y comprobad si las lecturas se parecen. Como ampliación, haced que los valores activen iconos diferentes.
 
-### 3. Calibreu la inclinació i afegiu una resposta
+### 3. Calibrad la inclinación y añadid una respuesta
 
-Busqueu a mBlock l’esdeveniment que detecta la inclinació cap a l’esquerra. Feu que mostre una fletxa cap a l’esquerra:
+Buscad en mBlock el evento que detecta la inclinación hacia la izquierda. Haced que muestre una flecha hacia la izquierda:
 
 ```mblock
 quan Codey s'inclina cap a l'esquerra
 mostra una fletxa cap a l'esquerra
 ```
 
-Torneu Codey a la posició plana abans de cada intent i repetiu tres vegades. Si la vostra versió també ofereix l’esdeveniment d’inclinació cap a la dreta, afegiu una altra icona. La sacsejada és una acció diferent de mantindre Codey inclinat.
+Devolved Codey a la posición plana antes de cada intento y repetid tres veces. Si vuestra versión también ofrece el evento de inclinación hacia la derecha, añadid otro icono. La sacudida es una acción diferente de mantener Codey inclinado.
 
-Com a ampliació, feu que la inclinació mostre una icona i reproduïsca un to breu. Afegiu una pausa perquè el senyal no es repetisca mentre Codey continua inclinat. Si el so no és adequat en aquesta prova, useu només la icona.
+Como ampliación, haced que la inclinación muestre un icono y reproduzca un tono breve. Añadid una pausa para que la señal no se repita mientras Codey continúa inclinado. Si el sonido no es adecuado en esta prueba, usad solo el icono.
 
-### 4. Ampliació opcional: envieu un senyal infraroig
+### 4. Ampliación opcional: enviad una señal infrarroja
 
-Amb dos Codey Rocky, busqueu els blocs d’infraroig que oferisca la versió de mBlock instal·lada. Prepareu el primer perquè envie un missatge de prova en prémer A i el segon perquè mostre una icona quan reba eixe mateix missatge. Carregueu el programa corresponent a cadascun. Poseu-los encarats i pròxims, premeu A i observeu la pantalla del receptor. Després interposeu una cartolina i repetiu. Si falta un bloc o només hi ha un robot, representeu l’enviament amb targetes i marqueu-lo com a simulació.
+Con dos Codey Rocky, buscad los bloques de infrarrojos que ofrezca la versión de mBlock instalada. Preparad el primero para que envíe un mensaje de prueba al pulsar A y el segundo para que muestre un icono cuando reciba ese mismo mensaje. Cargad el programa correspondiente en cada uno. Ponedlos encarados y próximos, pulsad A y observad la pantalla del receptor. Después interponed una cartulina y repetid. Si falta un bloque o solo hay un robot, representad el envío con tarjetas y marcadlo como simulación.
 
-Per al **primer Codey**, busqueu a «Infraroig» la peça d’enviar missatge i escriviu-hi `HOLA`:
+Para el **primer Codey**, buscad en «Infrarrojos» la pieza de enviar mensaje y escribid `HOLA`:
 
 ```mblock
 quan es prem el botó [A v]
 envia el missatge IR [HOLA]
 ```
 
-Per al **segon Codey**, combineu la peça que comprova el missatge rebut amb «si» i «per sempre». Feu que mostre una cara quan reba `HOLA`:
+Para el **segundo Codey**, combinad la pieza que comprueba el mensaje recibido con «si» y «para siempre». Haced que muestre una cara cuando reciba `HOLA`:
 
 ```mblock
 quan comença el programa
@@ -95,18 +95,18 @@ fi
 fi
 ```
 
-Els dibuixos resumeixen les accions; els noms i l’aspecte de les peces poden variar. El [quadern oficial de Makeblock](https://qiniu.makeblock.com/education-makeblock-com/studentbook.pdf) mostra les peces d’enviament i de comprovació en la prova de comunicació entre Codeys. Si el bloc de recepció no apareix, useu les targetes i indiqueu que no s’ha provat la comunicació real.
+Los dibujos resumen las acciones; los nombres y el aspecto de las piezas pueden variar. El [cuaderno oficial de Makeblock](https://qiniu.makeblock.com/education-makeblock-com/studentbook.pdf) muestra las piezas de envío y de comprobación en la prueba de comunicación entre Codeys. Si el bloque de recepción no aparece, usad las tarjetas e indicad que no se ha probado la comunicación real.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Completeu una taula amb els tres valors de la rodeta i el resultat de tres inclinacions cap a l’esquerra. Si proveu la inclinació cap a la dreta, anoteu-la en una columna separada. Registreu quines opcions de l’app heu pogut obrir.
+Completad una tabla con los tres valores de la ruedecilla y el resultado de tres inclinaciones hacia la izquierda. Si probáis la inclinación hacia la derecha, anotadla en una columna separada. Registrad qué opciones de la app habéis podido abrir.
 
-Com a ampliació, si teniu dos robots, feu una prova amb els robots encarats i una altra amb una cartolina al mig. Abans de cada enviament, comproveu que la pantalla del receptor està neta i que una indicació anterior no es manté activa. Anoteu si apareix una resposta nova. Si no podeu distingir una recepció nova d’una indicació anterior, no compteu missatges: anoteu el límit i consulteu el comportament dels blocs de la versió instal·lada. Si no teniu dos robots o falta el bloc IR, marqueu la prova com a simulació.
+Como ampliación, si tenéis dos robots, haced una prueba con los robots encarados y otra con una cartulina en medio. Antes de cada envío, comprobad que la pantalla del receptor está limpia y que una indicación anterior no se mantiene activa. Anotad si aparece una respuesta nueva. Si no podéis distinguir una recepción nueva de una indicación anterior, no contéis mensajes: anotad el límite y consultad el comportamiento de los bloques de la versión instalada. Si no tenéis dos robots o falta el bloque IR, marcad la prueba como simulación.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu els robots quiets durant les proves de recepció IR. Inclineu Codey suaument, sense estirar els cables. Useu un to breu a volum moderat i no envieu missatges personals.
+Mantened los robots quietos durante las pruebas de recepción IR. Inclinad Codey suavemente, sin estirar los cables. Usad un tono breve a volumen moderado y no enviéis mensajes personales.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La pàgina oficial [About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) identifica el potenciòmetre, giroscopi, acceleròmetre, emissor/receptor IR, altaveu, matriu i indicador RGB. La guia de [control amb l’app Makeblock](https://support.makeblock.com/hc/en-us/articles/1500008637181-Control-Codey-Rocky-with-the-Makeblock-app), el [catàleg de casos de Codey Rocky](https://support.makeblock.com/hc/en-us/sections/360001829193-Codey-Rocky) i la guia de [programació amb mBlock 5](https://support.makeblock.com/hc/en-us/articles/1500008637961-Program-Codey-Rocky-with-mBlock-5) depenen de la versió de l’app i del programari. Makeblock aclareix a les [FAQ](https://support.makeblock.com/hc/en-us/articles/1500004266501-FAQs-on-Codey-Rocky) que Codey Rocky no té reconeixement de parla incorporat; les guies d’aquesta col·lecció que usen veu en línia o extensions ho indiquen com a dependència externa.
+La página oficial [About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) identifica el potenciómetro, giroscopio, acelerómetro, emisor/receptor IR, altavoz, matriz e indicador RGB. La guía de [control con la app Makeblock](https://support.makeblock.com/hc/en-us/articles/1500008637181-Control-Codey-Rocky-with-the-Makeblock-app), el [catálogo de casos de Codey Rocky](https://support.makeblock.com/hc/en-us/sections/360001829193-Codey-Rocky) y la guía de [programación con mBlock 5](https://support.makeblock.com/hc/en-us/articles/1500008637961-Program-Codey-Rocky-with-mBlock-5) dependen de la versión de la app y del software. Makeblock aclara en las [FAQ](https://support.makeblock.com/hc/en-us/articles/1500004266501-FAQs-on-Codey-Rocky) que Codey Rocky no tiene reconocimiento de habla incorporado; las guías de esta colección que usan voz en línea o extensiones lo indican como dependencia externa.

@@ -9,33 +9,33 @@ order: 1
 image: _assets/tutorials/mb-primeres-passes-flat.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Construïu un dau electrònic que reaccione a una sacsejada i mostreu-lo tant al simulador com a la placa. La seqüència presenta MakeCode, l’acceleròmetre (el sensor que detecta canvis de moviment), la matriu de 5 × 5 llums i la transferència del programa.
+Construid un dado electrónico que reaccione a una sacudida y mostradlo tanto en el simulador como en la placa. La secuencia presenta MakeCode, el acelerómetro (el sensor que detecta cambios de movimiento), la matriz de 5 × 5 luces y la transferencia del programa.
 
-- Obrir un projecte MakeCode i provar-lo al simulador.
-- Mostrar un nombre de l’1 al 6 quan se sacseja la placa.
-- Transferir el programa a una micro:bit amb el mètode que ofereix l’ordinador.
+- Abrir un proyecto MakeCode y probarlo en el simulador.
+- Mostrar un número del 1 al 6 cuando se sacude la placa.
+- Transferir el programa a una micro:bit con el método que ofrece el ordenador.
 
 ![](../../_assets/tutorials/mb-primeres-passes-flat.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- micro:bit V1 o V2 i cable USB de dades.
-- Ordinador amb navegador i accés a MakeCode.
+- micro:bit V1 o V2 y cable USB de datos.
+- Ordenador con navegador y acceso a MakeCode.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- MakeCode i matriu de 5 × 5 llums LED.
-- Sacsejada detectada per l’acceleròmetre en les versions V1 i V2.
+- MakeCode y matriz de 5 × 5 luces LED.
+- Sacudida detectada por el acelerómetro en las versiones V1 y V2.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Creeu el projecte i el dau
+### 1. Cread el proyecto y el dado
 
-Obriu MakeCode, trieu **Nou projecte** i poseu-li el nom «El meu dau». Abans de connectar la placa, comproveu que el simulador mostra la micro:bit.
+Abrid MakeCode, elegid **Nuevo proyecto** y ponedle el nombre «Mi dado». Antes de conectar la placa, comprobad que el simulador muestra la micro:bit.
 
-En **Entrada**, afegiu «si es sacseja» i, dins, «mostra el número» amb «tria a l’atzar de l’1 al 6». Aquest exemple mostra l’ordre dels blocs:
+En **Entrada**, añadid «si se sacude» y, dentro, «mostrar el número» con «elegir al azar del 1 al 6». Este ejemplo muestra el orden de los bloques:
 
 ```makecode
 input.onGesture(Gesture.Shake, function () {
@@ -43,22 +43,22 @@ input.onGesture(Gesture.Shake, function () {
 })
 ```
 
-Els noms de les peces poden aparéixer en una altra llengua segons la configuració de MakeCode. La primera detecta la sacsejada i la segona mostra un nombre entre 1 i 6.
+Los nombres de las piezas pueden aparecer en otro idioma según la configuración de MakeCode. La primera detecta la sacudida y la segunda muestra un número entre 1 y 6.
 
-### 2. Proveu i transferiu el programa
+### 2. Probad y transferid el programa
 
-Sacsegeu la micro:bit del simulador i comproveu que mostra un nombre de l’1 al 6. Per provar-ho amb la placa, connecteu-la per USB i premeu **Descarregar**. Si MakeCode desa un fitxer `.hex`, copieu-lo a la unitat **MICROBIT** i espereu que la transferència acabe abans de desconnectar el cable. Sacsegeu la placa i comproveu el resultat.
+Sacudid la micro:bit del simulador y comprobad que muestra un número del 1 al 6. Para probarlo con la placa, conectadla por USB y pulsad **Descargar**. Si MakeCode guarda un archivo `.hex`, copiadlo a la unidad **MICROBIT** y esperad a que la transferencia acabe antes de desconectar el cable. Sacudid la placa y comprobad el resultado.
 
-> **💡 Consell d’ús:** Mostreu el simulador de MakeCode: permet provar el programa abans de connectar la placa.
+> **💡 Consejo de uso:** Mostrad el simulador de MakeCode: permite probar el programa antes de conectar la placa.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Sacsegeu la placa suaument i comproveu que mostra un nombre de l’1 al 6. Si el simulador funciona i la placa no, reviseu que la transferència haja acabat i que heu carregat el programa a la micro:bit correcta.
+Sacudid la placa suavemente y comprobad que muestra un número del 1 al 6. Si el simulador funciona y la placa no, revisad que la transferencia haya acabado y que habéis cargado el programa en la micro:bit correcta.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Subjecteu la placa per les vores i sacsegeu-la suaument. Si preferiu provar el programa sense moure-la, useu el simulador de MakeCode. No estireu el cable USB ni doblegueu el connector.
+Sujetad la placa por los bordes y sacudidla suavemente. Si preferís probar el programa sin moverla, usad el simulador de MakeCode. No estiréis el cable USB ni dobléis el conector.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La [vista general oficial de micro:bit](https://microbit.org/get-started/features/overview/) descriu els botons, la matriu i els sensors integrats. La sacsejada d’aquesta pràctica es detecta amb l’acceleròmetre de la placa.
+La [vista general oficial de micro:bit](https://microbit.org/get-started/features/overview/) describe los botones, la matriz y los sensores integrados. La sacudida de esta práctica se detecta con el acelerómetro de la placa.

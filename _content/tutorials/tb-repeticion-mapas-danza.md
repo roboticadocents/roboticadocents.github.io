@@ -8,76 +8,76 @@ order: 4
 image: _assets/tutorials/tb-repeticio-mapes-dansa.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Prepareu una ruta curta, proveu la repetició i descobriu què passa sobre un mapa interactiu compatible. Les marques especials del mapa permeten que el robot reproduïsca instruccions; un mapa imprés normal no té aquesta funció.
+Preparad una ruta corta, probad la repetición y descubrid qué pasa sobre un mapa interactivo compatible. Las marcas especiales del mapa permiten que el robot reproduzca instrucciones; un mapa impreso normal no tiene esta función.
 
-- Comparar un programa repetit amb un programa que inclou ordres addicionals.
-- Diferenciar una dansa predefinida d’una seqüència programada amb els botons.
-- Explorar la lectura OID i la gravació només amb accessoris compatibles.
+- Comparar un programa repetido con un programa que incluye órdenes adicionales.
+- Diferenciar una danza predefinida de una secuencia programada con los botones.
+- Explorar la lectura OID y la grabación solo con accesorios compatibles.
 
 ![](../../_assets/tutorials/tb-repeticio-mapes-dansa.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Tale-Bot Pro carregat, en una superfície plana.
-- Un mapa interactiu OID compatible o, com a alternativa, un mapa imprés sense funcions interactives.
-- Targetes de comandament i una ruta curta amb inici i destinació marcats.
-- Dos retoladors rentables i el suport de dibuix només si formen part del kit disponible.
+- Tale-Bot Pro cargado, en una superficie plana.
+- Un mapa interactivo OID compatible o, como alternativa, un mapa impreso sin funciones interactivas.
+- Tarjetas de mando y una ruta corta con inicio y destino marcados.
+- Dos rotuladores lavables y el soporte de dibujo solo si forman parte del kit disponible.
 
-Abans de començar, comproveu les tecles físiques de moviment, Play, esborrat, repetició, dansa i gravació. El fabricant documenta una gravació de veu de fins a 30 segons i sis danses predefinides; les funcions interactives del mapa depenen del mapa concret.
+Antes de empezar, comprobad las teclas físicas de movimiento, Play, borrado, repetición, danza y grabación. El fabricante documenta una grabación de voz de hasta 30 segundos y seis danzas predefinidas; las funciones interactivas del mapa dependen del mapa concreto.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Botó de repetició per repetir unitats d’ordres del programa complet; no permet repetir només un fragment d’un programa més llarg.
-- Indicadors de color per seguir les ordres enregistrades.
-- Botó de dansa aleatòria amb moviments predefinits.
-- Lectura OID del mapa compatible i instruccions de veu contextuals.
-- Gravació i reproducció d’àudio, diferenciades de la interpretació de parla.
-- Dibuix mitjançant accessori compatible, com a extensió opcional.
+- Botón de repetición para repetir unidades de órdenes del programa completo; no permite repetir solo un fragmento de un programa más largo.
+- Indicadores de color para seguir las órdenes registradas.
+- Botón de danza aleatoria con movimientos predefinidos.
+- Lectura OID del mapa compatible e instrucciones de voz contextuales.
+- Grabación y reproducción de audio, diferenciadas de la interpretación de habla.
+- Dibujo mediante accesorio compatible, como extensión opcional.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Programeu i repetiu una seqüència
+### 1. Programad y repetid una secuencia
 
-Manteniu X més d’un segon per començar sense ordres anteriors. Prepareu amb targetes **Endavant → Dreta**, introduïu eixes dues ordres i premeu Play sense activar la repetició. Compteu els moviments i torneu el robot a la posició i orientació inicials. Introduïu de nou la seqüència si cal, premeu el botó de repetició, observeu els llums i premeu Play. Compteu quantes vegades es fa la seqüència. Canvieu el nombre de repeticions amb el botó i torneu a provar des de l’inici. La repetició s’aplica al programa complet: no permet seleccionar només un fragment si després hi ha altres ordres. Si no sabeu quina opció de repetició està activa, comenceu amb una prova curta en un espai ampli i atureu el robot si continua més del previst.
+Mantened X más de un segundo para empezar sin órdenes anteriores. Preparad con tarjetas **Adelante → Derecha**, introducid esas dos órdenes y pulsad Play sin activar la repetición. Contad los movimientos y devolved el robot a la posición y orientación iniciales. Introducid de nuevo la secuencia si hace falta, pulsad el botón de repetición, observad las luces y pulsad Play. Contad cuántas veces se hace la secuencia. Cambiad el número de repeticiones con el botón y volved a probar desde el inicio. La repetición se aplica al programa completo: no permite seleccionar solo un fragmento si después hay otras órdenes. Si no sabéis qué opción de repetición está activa, empezad con una prueba corta en un espacio amplio y detened el robot si continúa más de lo previsto.
 
-Seqüència base; el botó de repetició es configura després, tal com s’explica al pas:
+Secuencia base; el botón de repetición se configura después, tal como se explica en el paso:
 
 ```talebot
 avançar -> girar dreta
 ```
 
-### 2. Compareu la dansa predefinida
+### 2. Comparad la danza predefinida
 
-Esborreu les ordres anteriors, premeu una vegada el botó de dansa i després **Play**. Repetiu la prova tres vegades i anoteu si el moviment canvia. Compareu-lo amb una seqüència direccional pròpia: la dansa selecciona un patró incorporat, mentre que la ruta depén de les ordres introduïdes.
+Borrad las órdenes anteriores, pulsad una vez el botón de danza y después **Play**. Repetid la prueba tres veces y anotad si el movimiento cambia. Comparadlo con una secuencia direccional propia: la danza selecciona un patrón incorporado, mientras que la ruta depende de las órdenes introducidas.
 
 ```talebot
 dansa -> executa
 ```
 
-### 3. Exploreu la guia d’un mapa OID
+### 3. Explorad la guía de un mapa OID
 
-Amb un mapa interactiu compatible, col·loqueu el robot a l’entrada principal i escolteu la instrucció. Després proveu una entrada secundària i compareu el missatge. Programeu una ruta i premeu Play. Per tornar a utilitzar-lo fora del mapa, apagueu el robot i torneu-lo a encendre. Un mapa imprés normal no activa la lectura OID; sense un mapa compatible, ometeu aquesta prova.
+Con un mapa interactivo compatible, colocad el robot en la entrada principal y escuchad la instrucción. Después probad una entrada secundaria y comparad el mensaje. Programad una ruta y pulsad Play. Para volver a utilizarlo fuera del mapa, apagad el robot y volved a encenderlo. Un mapa impreso normal no activa la lectura OID; sin un mapa compatible, omitid esta prueba.
 
-### 4. Afegiu una veu gravada o un traç opcional
+### 4. Añadid una voz grabada o un trazo opcional
 
-Manteniu premut el botó de gravació mentre dieu una frase fictícia curta i solteu-lo. El robot la reproduirà perquè la pugueu comprovar. Esborreu les ordres anteriors i introduïu **Endavant → gravació** amb una pulsació curta del botó de gravació; premeu Play i escolteu el missatge després del moviment.
+Mantened pulsado el botón de grabación mientras decís una frase ficticia corta y soltadlo. El robot la reproducirá para que podáis comprobarla. Borrad las órdenes anteriores e introducid **Adelante → grabación** con una pulsación breve del botón de grabación; pulsad Play y escuchad el mensaje después del movimiento.
 
 ```talebot
 avançar -> gravació -> executa
 ```
 
-Useu una frase fictícia sense noms ni dades personals.
+Usad una frase ficticia sin nombres ni datos personales.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Compareu l’execució de la ruta amb repetició i sense. Si continua més del previst, atureu el robot i reviseu l’opció de repetició. Proveu la dansa i la gravació per separat. La guia OID només es pot comprovar amb un mapa compatible.
+Comparad la ejecución de la ruta con repetición y sin ella. Si continúa más de lo previsto, detened el robot y revisad la opción de repetición. Probad la danza y la grabación por separado. La guía OID solo se puede comprobar con un mapa compatible.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Deixeu espai lliure per a les repeticions i danses. Manteniu mans i retoladors lluny de les rodes. Atureu el robot abans de moure’l i useu missatges ficticis sense dades personals.
+Dejad espacio libre para las repeticiones y danzas. Mantened manos y rotuladores lejos de las ruedas. Detened el robot antes de moverlo y usad mensajes ficticios sin datos personales.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-El [curs oficial de Tale-Bot Pro de Matatalab](https://matatalab.com/en/lesson4.2) descriu botons, indicadors, gravació/reproducció, dansa i repetició. Les [instruccions oficials de l’Activity Box](https://matatalab.com/en/lesson4.3) documenten l’ús dels mapes interactius i les entrades OID. La gravació no és reconeixement de parla; la dansa no és una seqüència creada per l’usuari; la repetició no permet seleccionar una subseqüència dins d’un programa més llarg; i la lectura de mapa requereix material OID compatible.
+El [curso oficial de Tale-Bot Pro de Matatalab](https://matatalab.com/en/lesson4.2) describe botones, indicadores, grabación/reproducción, danza y repetición. Las [instrucciones oficiales de la Activity Box](https://matatalab.com/en/lesson4.3) documentan el uso de los mapas interactivos y las entradas OID. La grabación no es reconocimiento de habla; la danza no es una secuencia creada por el usuario; la repetición no permite seleccionar una subsecuencia dentro de un programa más largo; y la lectura de mapa requiere material OID compatible.

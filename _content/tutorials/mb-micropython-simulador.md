@@ -8,43 +8,43 @@ order: 7
 image: _assets/tutorials/mb-python-microbit-flat.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Creeu una insígnia que mostre una cara feliç quan es prem A i una cara pensativa quan es prem B. Primer la provareu al simulador i després a la placa. No cal saber Python: copieu l’exemple i canvieu una icona per veure’n el resultat.
+Cread una insignia que muestre una cara feliz al pulsar A y una cara pensativa al pulsar B. Primero la probaréis en el simulador y después en la placa. No hace falta saber Python: copiad el ejemplo y cambiad un icono para ver el resultado.
 
-- Obrir el Python Editor oficial i localitzar el codi, el simulador, la referència i els avisos d’error.
-- Relacionar els botons A/B i la matriu 5 × 5 amb instruccions Python.
-- Reconéixer `import`, un bucle `while`, les condicions `if` i la indentació.
-- Provar el comportament al simulador abans de transferir el programa.
-- Comparar MicroPython i MakeCode Python sense barrejar-ne les biblioteques.
+- Abrir el Python Editor oficial y localizar el código, el simulador, la referencia y los avisos de error.
+- Relacionar los botones A/B y la matriz 5 × 5 con instrucciones Python.
+- Reconocer `import`, un bucle `while`, las condiciones `if` y la indentación.
+- Probar el comportamiento en el simulador antes de transferir el programa.
+- Comparar MicroPython y MakeCode Python sin mezclar sus bibliotecas.
 
 ![](../../_assets/tutorials/mb-python-microbit-flat.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- BBC micro:bit V1 o V2 amb cable USB; un portapiles és opcional per a la prova sense ordinador.
-- Ordinador amb navegador compatible i accés a [python.microbit.org](https://python.microbit.org/).
-- Targetes amb `A`, `B`, `HAPPY` i `CONFUSED` per anticipar la relació entrada–programa–eixida.
-- MakeCode o captures impreses per a comparar les dues versions de Python, si convé.
+- BBC micro:bit V1 o V2 con cable USB; un portapilas es opcional para la prueba sin ordenador.
+- Ordenador con navegador compatible y acceso a [python.microbit.org](https://python.microbit.org/).
+- Tarjetas con `A`, `B`, `HAPPY` y `CONFUSED` para anticipar la relación entrada–programa–salida.
+- MakeCode o capturas impresas para comparar las dos versiones de Python, si conviene.
 
-Obriu un projecte nou al Python Editor i llegiu el tutorial de referència integrat. El simulador permet començar sense placa. El V1 i el V2 comparteixen els botons i la matriu necessaris per a aquesta pràctica; no useu micròfon, altaveu ni logotip tàctil, que depenen del V2. Si voleu enviar el codi directament a la placa des del navegador, seguiu la compatibilitat i els passos que l’editor indica; si no, descarregueu el fitxer `.hex` i transferiu-lo per USB.
+Abrid un proyecto nuevo en el Python Editor y leed el tutorial de referencia integrado. El simulador permite empezar sin placa. El V1 y el V2 comparten los botones y la matriz necesarios para esta práctica; no uséis micrófono, altavoz ni logotipo táctil, que dependen del V2. Si queréis enviar el código directamente a la placa desde el navegador, seguid la compatibilidad y los pasos que indica el editor; si no, descargad el archivo `.hex` y transferidlo por USB.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Python Editor oficial amb MicroPython, simulador, autocompleció, referència i ressaltat d’estructura i errors.
-- MicroPython sobre la placa: `button_a`, `button_b` i `display` amb la matriu LED.
-- Transferència del programa a la micro:bit o prova prèvia sense maquinari.
-- Diferència entre MicroPython i MakeCode Python, que usa funcions d’esdeveniment i una biblioteca pròpia de MakeCode.
+- Python Editor oficial con MicroPython, simulador, autocompletado, referencia y resaltado de estructura y errores.
+- MicroPython sobre la placa: `button_a`, `button_b` y `display` con la matriz LED.
+- Transferencia del programa a la micro:bit o prueba previa sin hardware.
+- Diferencia entre MicroPython y MakeCode Python, que usa funciones de evento y una biblioteca propia de MakeCode.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Explorem el simulador i el panell de referència
+### 1. Exploramos el simulador y el panel de referencia
 
-Obriu el Python Editor i localitzeu les pestanyes de referència, idees i API, l’àrea d’edició i el simulador. Trieu una instrucció de pantalla a la referència i arrossegueu-la a l’editor. Executeu un exemple amb el botó de reproducció del simulador i proveu els controls que simulen els botons de la placa.
+Abrid el Python Editor y localizad las pestañas de referencia, ideas y API, el área de edición y el simulador. Elegid una instrucción de pantalla en la referencia y arrastradla al editor. Ejecutad un ejemplo con el botón de reproducción del simulador y probad los controles que simulan los botones de la placa.
 
-### 2. Copieu i executeu el programa
+### 2. Copiad y ejecutad el programa
 
-Copieu el programa següent. Abans d’executar-lo, marqueu quines línies es repeteixen i quina eixida correspon a cada botó.
+Copiad el programa siguiente. Antes de ejecutarlo, marcad qué líneas se repiten y qué salida corresponde a cada botón.
 
 ```python
 from microbit import *
@@ -56,19 +56,19 @@ while True:
         display.show(Image.CONFUSED)
 ```
 
-`from microbit import *` carrega les funcions de la placa; `while True` manté les comprovacions actives; cada `if` prova un botó; `display.show(...)` mostra una icona. Les línies interiors han d’anar indentades. Si premeu A i B alhora, les dues condicions poden executar-se en el mateix cicle: observeu quin dibuix queda visible i expliqueu l’ordre de les instruccions.
+`from microbit import *` carga las funciones de la placa; `while True` mantiene las comprobaciones activas; cada `if` prueba un botón; `display.show(...)` muestra un icono. Las líneas interiores deben ir indentadas. Si pulsáis A y B a la vez, las dos condiciones pueden ejecutarse en el mismo ciclo: observad qué dibujo queda visible y explicad el orden de las instrucciones.
 
-### 3. Depureu al Python Editor
+### 3. Depurad en el Python Editor
 
-Executeu primer el codi al simulador. Canvieu una icona i torneu a provar A i B. Després elimineu temporalment els espais d’una línia interior per veure com el ressaltat o el missatge d’error ajuda a localitzar la indentació incorrecta; desfeu el canvi i comproveu que el programa torna a executar-se. No descarregueu la versió amb error a la placa.
+Ejecutad primero el código en el simulador. Cambiad un icono y volved a probar A y B. Después eliminad temporalmente los espacios de una línea interior para ver cómo el resaltado o el mensaje de error ayuda a localizar la indentación incorrecta; deshaced el cambio y comprobad que el programa vuelve a ejecutarse. No descarguéis la versión con error a la placa.
 
-### 4. Transferiu el programa a una micro:bit
+### 4. Transferid el programa a una micro:bit
 
-Connecteu la placa per USB i useu l’opció «Send to micro:bit» si el navegador i els permisos són compatibles. Si aquesta opció no apareix, descarregueu el `.hex`, obriu la unitat de la micro:bit i copieu-lo. Espereu que la transferència acabe; després proveu A i B en la placa real i compareu el resultat amb el simulador.
+Conectad la placa por USB y usad la opción «Send to micro:bit» si el navegador y los permisos son compatibles. Si esta opción no aparece, descargad el `.hex`, abrid la unidad de la micro:bit y copiadlo. Esperad a que la transferencia acabe; después probad A y B en la placa real y comparad el resultado con el simulador.
 
-### 5. Compareu amb els blocs de MakeCode
+### 5. Comparad con los bloques de MakeCode
 
-En MakeCode, podeu fer la mateixa prova amb blocs. Aquest exemple mostra una cara per a cada botó:
+En MakeCode, podéis hacer la misma prueba con bloques. Este ejemplo muestra una cara para cada botón:
 
 ```makecode
 input.onButtonPressed(Button.A, function () {
@@ -79,18 +79,18 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-Executeu el projecte de MakeCode i premeu primer A i després B. Per veure’n la versió textual, seleccioneu **Python** a la part superior de MakeCode. Compareu-la amb el programa de MicroPython: les dues fan una prova semblant, però usen noms i formes d’organitzar les ordres diferents.
+Ejecutad el proyecto de MakeCode y pulsad primero A y después B. Para ver la versión textual, seleccionad **Python** en la parte superior de MakeCode. Comparadla con el programa de MicroPython: las dos hacen una prueba parecida, pero usan nombres y formas de organizar las órdenes diferentes.
 
-MakeCode i l’editor de MicroPython són eines diferents: no copieu les ordres d’un dins de l’altre. Proveu A+B en cada projecte i anoteu què observeu; no cal que reaccionen igual quan es premen els dos botons alhora.
+MakeCode y el editor de MicroPython son herramientas diferentes: no copiéis las órdenes de uno dentro del otro. Probad A+B en cada proyecto y anotad qué observáis; no hace falta que reaccionen igual cuando se pulsan los dos botones a la vez.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Feu quatre proves al simulador i a la placa: A, B, cap botó i A+B alhora. Comproveu la resposta de cada botó al simulador i a la placa. Per a depurar, comproveu importació, indentació, nom d’imatge, transferència acabada i editor triat. Canvieu una única cosa cada vegada; si el simulador respon però la placa no, reviseu primer que el fitxer s’ha transferit a la micro:bit correcta.
+Haced cuatro pruebas en el simulador y en la placa: A, B, ningún botón y A+B a la vez. Comprobad la respuesta de cada botón en el simulador y en la placa. Para depurar, comprobad importación, indentación, nombre de imagen, transferencia acabada y editor elegido. Cambiad una única cosa cada vez; si el simulador responde pero la placa no, revisad primero que el archivo se ha transferido a la micro:bit correcta.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Podeu comprovar el programa al simulador abans de transferir-lo. Desconnecteu el cable agafant-ne el connector i no pressioneu ni doblegueu la vora daurada de la placa.
+Podéis comprobar el programa en el simulador antes de transferirlo. Desconectad el cable agarrando el conector y no presionéis ni dobléis el borde dorado de la placa.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La [guia oficial del Python Editor](https://microbit.org/get-started/user-guide/python-editor/) descriu referència, fragments, ressaltat, errors, autocompleció, simulador i transferència. L’article de la fundació [MakeCode Python i MicroPython](https://support.microbit.org/support/solutions/articles/19000111744-makecode-python-and-micropython) compara les dues sintaxis i els seus models d’execució. L’editor Python necessita haver-se carregat inicialment; després pot funcionar fora de línia en les condicions indicades a la [guia oficial d’ús sense connexió](https://microbit.org/get-started/user-guide/offline/). Les funcions de micròfon, altaveu i logotip tàctil no formen part d’aquesta pràctica i requereixen micro:bit V2.
+La [guía oficial del Python Editor](https://microbit.org/get-started/user-guide/python-editor/) describe referencia, fragmentos, resaltado, errores, autocompletado, simulador y transferencia. El artículo de la fundación [MakeCode Python y MicroPython](https://support.microbit.org/support/solutions/articles/19000111744-makecode-python-and-micropython) compara las dos sintaxis y sus modelos de ejecución. El editor Python necesita haberse cargado inicialmente; después puede funcionar sin conexión en las condiciones indicadas en la [guía oficial de uso sin conexión](https://microbit.org/get-started/user-guide/offline/). Las funciones de micrófono, altavoz y logotipo táctil no forman parte de esta práctica y requieren micro:bit V2.

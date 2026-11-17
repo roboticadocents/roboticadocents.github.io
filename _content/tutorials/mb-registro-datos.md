@@ -8,40 +8,40 @@ order: 7
 image: _assets/tutorials/mb-registre-dades-flat.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Amb una micro:bit V2, registreu cinc lectures de llum: tres en un lloc clar i dues fent ombra. Després compareu-les amb les anotacions. Les dades es guarden a la placa i no s’envien a Internet automàticament.
+Con una micro:bit V2, registrad cinco lecturas de luz: tres en un lugar claro y dos haciendo sombra. Después comparadlas con las anotaciones. Los datos se guardan en la placa y no se envían a Internet automáticamente.
 
-- Crear una columna amb un nom clar.
-- Registrar una lectura cada vegada que es prem el botó A.
-- Recuperar les dades de la memòria i representar-les en una taula o gràfic.
-- Diferenciar una variació observada d’una conclusió sobre toten aquesta prova o el dia.
+- Crear una columna con un nombre claro.
+- Registrar una lectura cada vez que se pulsa el botón A.
+- Recuperar los datos de la memoria y representarlos en una tabla o gráfico.
+- Diferenciar una variación observada de una conclusión sobre toda esta prueba o el día.
 
 ![](../../_assets/tutorials/mb-registre-dades-flat.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- micro:bit V2; la V1 no admet aquest registre de dades.
-- Ordinador amb MakeCode i connexió USB per transferir el programa i recuperar les dades.
-- Una targeta per fer ombra i un full amb dues opcions: «llum» i «ombra».
+- micro:bit V2; la V1 no admite este registro de datos.
+- Ordenador con MakeCode y conexión USB para transferir el programa y recuperar los datos.
+- Una tarjeta para hacer sombra y una hoja con dos opciones: «luz» y «sombra».
 
-En MakeCode, creeu un projecte nou. Abans de descarregar-lo, guardeu les dades anteriors que necessiteu: un programa nou pot esborrar el registre visible.
+En MakeCode, cread un proyecto nuevo. Antes de descargarlo, guardad los datos anteriores que necesitéis: un programa nuevo puede borrar el registro visible.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Registre de dades de MakeCode en micro:bit V2 amb l’extensió `datalogger`.
-- Sensor de llum de la matriu LED, emprat per comparar les condicions de la prova.
-- Emmagatzematge local que es conserva en desconnectar l’alimentació fins que s’esborra o se sobreescriu el registre.
-- Recuperació de les files en connectar la placa a un ordinador; visualització en taula o gràfic i exportació quan el navegador/editor ho ofereix.
-- El registre persistent d’aquest tutorial és de V2; les lectures depenen de les condicions de la prova.
+- Registro de datos de MakeCode en micro:bit V2 con la extensión `datalogger`.
+- Sensor de luz de la matriz LED, empleado para comparar las condiciones de la prueba.
+- Almacenamiento local que se conserva al desconectar la alimentación hasta que se borra o se sobrescribe el registro.
+- Recuperación de las filas al conectar la placa a un ordenador; visualización en tabla o gráfico y exportación cuando el navegador/editor lo ofrece.
+- El registro persistente de este tutorial es de V2; las lecturas dependen de las condiciones de la prueba.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Planifiqueu les dades
+### 1. Planificad los datos
 
-Pregunteu-vos: «Canvia la lectura quan fem ombra a la placa?». Preparareu una columna anomenada `llum` i premeu A una vegada per cada mostra.
+Preguntaos: «¿Cambia la lectura cuando hacemos sombra a la placa?». Prepararéis una columna llamada `llum` y pulsaréis A una vez por cada muestra.
 
-Abans de registrar dades, podeu provar la llum en un **projecte separat**. Guardeu primer qualsevol registre anterior que vulgueu conservar; després, carregueu aquesta prova i premeu A en una zona clara i en una d’ombra:
+Antes de registrar datos, podéis probar la luz en un **proyecto separado**. Guardad primero cualquier registro anterior que queráis conservar; después, cargad esta prueba y pulsad A en una zona clara y en una de sombra:
 
 ```makecode
 input.onButtonPressed(Button.A, function () {
@@ -49,17 +49,17 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-La primera lectura pot ser zero mentre s’activa el sensor; premeu A una altra vegada. Aquest programa només mostra un número: encara no guarda cap dada. En el pas següent creareu el programa de registre.
+La primera lectura puede ser cero mientras se activa el sensor; pulsad A otra vez. Este programa solo muestra un número: todavía no guarda ningún dato. En el paso siguiente crearéis el programa de registro.
 
-### 2. Prepareu el registre
+### 2. Preparad el registro
 
-Afegiu l’extensió **datalogger** des d’«Extensions». L’[exemple oficial de registre manual en MakeCode](https://makecode.microbit.org/#pub:_gHx1MJdJziaE) mostra les peces; per a aquesta prova, deixeu només la columna de llum.
+Añadid la extensión **datalogger** desde «Extensiones». El [ejemplo oficial de registro manual en MakeCode](https://makecode.microbit.org/#pub:_gHx1MJdJziaE) muestra las piezas; para esta prueba, dejad solo la columna de luz.
 
-1. A **en iniciar**, poseu el bloc per definir títols de columna i escriviu `llum`. Afegiu una primera lectura del nivell de llum en una variable, sense registrar-la: activa el sensor abans de les mostres.
-2. A **en prémer el botó A**, afegiu el bloc de registrar dades i associeu `llum` amb el nivell de llum.
-3. Afegiu una icona de confirmació, una pausa d’un segon i «neteja la pantalla».
+1. En **al iniciar**, poned el bloque para definir títulos de columna y escribid `llum`. Añadid una primera lectura del nivel de luz en una variable, sin registrarla: activa el sensor antes de las muestras.
+2. En **al pulsar el botón A**, añadid el bloque de registrar datos y asociad `llum` con el nivel de luz.
+3. Añadid un icono de confirmación, una pausa de un segundo y «limpiar la pantalla».
 
-Per muntar les peces, useu els blocs equivalents en la versió de MakeCode disponible. També podeu obrir la pestanya **JavaScript**, copiar aquest exemple i tornar a **Blocs** per veure la traducció:
+Para montar las piezas, usad los bloques equivalentes en la versión de MakeCode disponible. También podéis abrir la pestaña **JavaScript**, copiar este ejemplo y volver a **Bloques** para ver la traducción:
 
 ```makecode
 datalogger.includeTimestamp(FlashLogTimeStampFormat.Seconds)
@@ -73,24 +73,24 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-La variable inicial activa el sensor i no s’afegeix a la taula. El programa registra una fila cada vegada que premeu A i mostra un senyal de confirmació. Espereu que desaparega abans de fer la mostra següent. Si el bloc de registre no està disponible en l’editor, no substituïu la dada per un número mostrat a la pantalla: eixe programa no guardaria cap fila. La [guia oficial de registre](https://microbit.org/get-started/user-guide/data-logging/) mostra l’apartat «Manual logging».
+La variable inicial activa el sensor y no se añade a la tabla. El programa registra una fila cada vez que pulsáis A y muestra una señal de confirmación. Esperad a que desaparezca antes de hacer la muestra siguiente. Si el bloque de registro no está disponible en el editor, no sustituyáis el dato por un número mostrado en la pantalla: ese programa no guardaría ninguna fila. La [guía oficial de registro](https://microbit.org/get-started/user-guide/data-logging/) muestra el apartado «Manual logging».
 
-### 3. Feu una captura controlada
+### 3. Haced una captura controlada
 
-Transferiu el programa a la V2 i espereu que acabe la transferència. Feu tres lectures amb llum i dues fent ombra amb la targeta. Premeu A una vegada per mostra, espereu que desaparega la icona i anoteu en paper si era una prova amb llum o amb ombra. Manteniu la placa en la mateixa posició.
+Transferid el programa a la V2 y esperad a que acabe la transferencia. Haced tres lecturas con luz y dos haciendo sombra con la tarjeta. Pulsad A una vez por muestra, esperad a que desaparezca el icono y anotad en papel si era una prueba con luz o con sombra. Mantened la placa en la misma posición.
 
-### 4. Recupereu les dades i conserveu-les
+### 4. Recuperad los datos y conservadlos
 
-Per recuperar les dades, connecteu de nou la micro:bit a l’ordinador. Obriu la unitat **MICROBIT** i feu doble clic al fitxer **MY_DATA**: s’obrirà una taula al navegador. Compareu les files amb les anotacions i, si voleu, copieu o descarregueu les dades. Per veure els gràfics de MY_DATA cal connexió a Internet; sense connexió podeu consultar la taula. La columna de temps compta des de l’últim reinici de la placa, no indica l’hora del dia. Abans de descarregar un programa nou o esborrar el registre, guardeu una còpia de la taula. Per començar una altra prova, seguiu el procediment d’esborrat de la guia oficial i torneu a preparar els títols de les columnes.
+Para recuperar los datos, conectad de nuevo la micro:bit al ordenador. Abrid la unidad **MICROBIT** y haced doble clic en el archivo **MY_DATA**: se abrirá una tabla en el navegador. Comparad las filas con las anotaciones y, si queréis, copiad o descargad los datos. Para ver los gráficos de MY_DATA hace falta conexión a Internet; sin conexión podéis consultar la tabla. La columna de tiempo cuenta desde el último reinicio de la placa, no indica la hora del día. Antes de descargar un programa nuevo o borrar el registro, guardad una copia de la tabla. Para empezar otra prueba, seguid el procedimiento de borrado de la guía oficial y volved a preparar los títulos de las columnas.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Compareu les cinc files amb el full: hi ha tres proves amb llum i dues amb ombra? Si falta una fila, torneu a prémer A i anoteu la nova mostra. Les dades del simulador són simulades; distingiu-les de les que recull la placa.
+Comparad las cinco filas con la hoja: ¿hay tres pruebas con luz y dos con sombra? Si falta una fila, volved a pulsar A y anotad la nueva muestra. Los datos del simulador son simulados; distinguidlos de los que recoge la placa.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu el dispositiu estable i no cobriu els components amb materials que acumulen calor. No registreu informació personal i deseu una còpia de les dades abans d’esborrar-les o carregar un altre programa.
+Mantened el dispositivo estable y no cubráis los componentes con materiales que acumulen calor. No registréis información personal y guardad una copia de los datos antes de borrarlos o cargar otro programa.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La guia oficial de [registre de dades de micro:bit](https://microbit.org/get-started/user-guide/data-logging/) descriu l’extensió `datalogger`, la captura manual i automàtica, la recuperació i l’emmagatzematge local de micro:bit V2. La [vista general de funcions](https://microbit.org/get-started/features/overview/) detalla les diferències entre V1 i V2. Les lectures depenen del sensor i de les condicions de la prova; el registre no calibra els instruments ni valida per si mateix una hipòtesi.
+La guía oficial de [registro de datos de micro:bit](https://microbit.org/get-started/user-guide/data-logging/) describe la extensión `datalogger`, la captura manual y automática, la recuperación y el almacenamiento local de micro:bit V2. La [vista general de funciones](https://microbit.org/get-started/features/overview/) detalla las diferencias entre V1 y V2. Las lecturas dependen del sensor y de las condiciones de la prueba; el registro no calibra los instrumentos ni valida por sí mismo una hipótesis.

@@ -8,51 +8,51 @@ order: 2
 image: _assets/tutorials/tb-reconeixement-veu.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Enregistreu un missatge breu perquè Tale-Bot el reproduïsca durant una ruta. La pràctica diferencia l’enregistrament d’àudio del reconeixement de parla: el robot no interpreta ordres parlades.
+Grabad un mensaje breve para que Tale-Bot lo reproduzca durante una ruta. La práctica diferencia la grabación de audio del reconocimiento de habla: el robot no interpreta órdenes habladas.
 
-- Preparar i enregistrar una frase breu, sense dades personals.
-- Afegir el missatge gravat a una seqüència de botons.
-- Crear seqüències de moviment amb reproducció de veu.
+- Preparar y grabar una frase breve, sin datos personales.
+- Añadir el mensaje grabado a una secuencia de botones.
+- Crear secuencias de movimiento con reproducción de voz.
 
 ![](../../_assets/tutorials/tb-reconeixement-veu.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Tale-Bot Pro carregat.
-- Targetes de personatges i una ruta curta sobre una superfície plana.
-- Un missatge de prova inventat, sense noms ni dades personals.
+- Tale-Bot Pro cargado.
+- Tarjetas de personajes y una ruta corta sobre una superficie plana.
+- Un mensaje de prueba inventado, sin nombres ni datos personales.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Gravació i reproducció d’un missatge de veu amb el botó Record (màxim oficial de 30 segons per gravació).
-- No reconeix ni interpreta la parla com una ordre de navegació.
+- Grabación y reproducción de un mensaje de voz con el botón Record (máximo oficial de 30 segundos por grabación).
+- No reconoce ni interpreta el habla como una orden de navegación.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Enregistreu i comproveu el missatge
+### 1. Grabad y comprobad el mensaje
 
-Trieu una frase curta, per exemple «Hola, sóc el conill!». Manteniu premut el botó de gravació mentre parleu i deixeu-lo anar en acabar. Cada gravació pot durar fins a 30 segons; en deixar anar el botó, escolteu la reproducció. Si no se sent o no s’entén, torneu a gravar-la en un lloc més tranquil. Useu una frase fictícia sense dades personals.
+Elegid una frase corta, por ejemplo «¡Hola, soy el conejo!». Mantened pulsado el botón de grabación mientras habláis y soltadlo al terminar. Cada grabación puede durar hasta 30 segundos; al soltar el botón, escuchad la reproducción. Si no se oye o no se entiende, volved a grabarla en un lugar más tranquilo. Usad una frase ficticia sin datos personales.
 
-### 2. Afegiu el missatge a una ruta
+### 2. Añadid el mensaje a una ruta
 
-Manteniu X més d’un segon per esborrar les ordres anteriors i comproveu que els indicadors s’apaguen. Després premeu **Endavant → gravació breument → Dreta → Endavant → Play**. La pulsació breu del botó de gravació afegeix el missatge a la seqüència; mantindre’l premut inicia una gravació nova.
+Mantened X más de un segundo para borrar las órdenes anteriores y comprobad que los indicadores se apagan. Después pulsad **Adelante → grabación brevemente → Derecha → Adelante → Play**. La pulsación breve del botón de grabación añade el mensaje a la secuencia; mantenerlo pulsado inicia una grabación nueva.
 
 ```talebot
 avançar -> gravació -> girar dreta -> avançar -> executa
 ```
 
-> **💡 Consell d’ús:** Comproveu la gravació abans d’afegir-la al programa; una pulsació llarga del botó substitueix el missatge anterior.
+> **💡 Consejo de uso:** Comprobad la grabación antes de añadirla al programa; una pulsación larga del botón sustituye el mensaje anterior.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Executeu la ruta i comproveu que el missatge sona després del primer avanç. Si no sona, reviseu que heu gravat una frase i que heu afegit l’ordre amb una pulsació breu. Repetiu la prova des de la mateixa posició inicial.
+Ejecutad la ruta y comprobad que el mensaje suena después del primer avance. Si no suena, revisad que habéis grabado una frase y que habéis añadido la orden con una pulsación breve. Repetid la prueba desde la misma posición inicial.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Enregistreu un missatge fictici sense dades personals. La pulsació llarga grava un missatge nou; la curta l’afegeix al programa. Manteniu lliure la ruta abans de prémer Play.
+Grabad un mensaje ficticio sin datos personales. La pulsación larga graba un mensaje nuevo; la breve lo añade al programa. Mantened libre la ruta antes de pulsar Play.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La [guia oficial de Tale-Bot Pro](https://matatalab.com/en/lesson4.2) indica que la gravació dura fins a 30 segons i que una pulsació breu del botó afig la gravació a la seqüència. Tale-Bot reproduïx l’àudio; no interpreta la frase com una ordre.
+La [guía oficial de Tale-Bot Pro](https://matatalab.com/en/lesson4.2) indica que la grabación dura hasta 30 segundos y que una pulsación breve del botón añade la grabación a la secuencia. Tale-Bot reproduce el audio; no interpreta la frase como una orden.

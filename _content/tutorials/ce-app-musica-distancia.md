@@ -8,58 +8,58 @@ order: 5
 image: _assets/tutorials/ce-app-musica-distancia.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Proveu les respostes dels maons d’acció i les opcions de personalització de l’app Coding Express. La distància entre punts de la via es mesura amb un regle o una cinta mètrica: el tren no la mesura.
+Probad las respuestas de los ladrillos de acción y las opciones de personalización de la app Coding Express. La distancia entre puntos de la vía se mide con una regla o una cinta métrica: el tren no la mide.
 
-- Personalitzar una resposta dels maons amb l’app, si la versió disponible ho permet.
-- Crear i comparar dues seqüències sonores amb els maons d’acció.
-- Mesurar una distància externament i distingir-la d’una lectura del tren.
+- Personalizar una respuesta de los ladrillos con la app, si la versión disponible lo permite.
+- Crear y comparar dos secuencias sonoras con los ladrillos de acción.
+- Medir una distancia externamente y distinguirla de una lectura del tren.
 
 ![](../../_assets/tutorials/ce-app-musica-distancia.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Tren LEGO DUPLO Coding Express de la dotació, via i maons d’acció disponibles.
-- App Coding Express en un dispositiu compatible, si encara està instal·lada i funciona al centre.
-- Cinta de paper i regle/cinta mètrica per marcar i comparar trams.
-- Targetes de parada, emoció i so; alternativa desconnectada amb pictogrames si l’app no està disponible.
+- Tren LEGO DUPLO Coding Express de la dotación, vía y ladrillos de acción disponibles.
+- App Coding Express en un dispositivo compatible, si todavía está instalada y funciona en el centro.
+- Cinta de papel y regla/cinta métrica para marcar y comparar tramos.
+- Tarjetas de parada, emoción y sonido; alternativa desconectada con pictogramas si la app no está disponible.
 
-Comproveu l’estat de les piles i que el sensor llig els maons d’acció presents. Si disposeu de l’app, comproveu també que connecta amb el tren. El conjunt està retirat comercialment; aquesta pràctica pressuposa que el centre ja el té. No substituïu les funcions de l’app amb un comportament imaginat si la versió instal·lada no les ofereix.
+Comprobad el estado de las pilas y que el sensor lea los ladrillos de acción presentes. Si disponéis de la app, comprobad también que conecta con el tren. El conjunto está retirado comercialmente; esta práctica presupone que el centro ya lo tiene. No sustituyáis las funciones de la app con un comportamiento imaginado si la versión instalada no las ofrece.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Personalització de la resposta dels maons d’acció a l’app Coding Express.
-- Composició d’una seqüència musical/sonora amb accions ordenades a la via.
-- Relació entre senyals de trànsit, seqüència i presa de decisions en una ruta.
-- Mesura i comparació externa de distàncies recorregudes; no hi ha sensor de distància al tren.
+- Personalización de la respuesta de los ladrillos de acción en la app Coding Express.
+- Composición de una secuencia musical/sonora con acciones ordenadas en la vía.
+- Relación entre señales de tráfico, secuencia y toma de decisiones en una ruta.
+- Medida y comparación externa de distancias recorridas; no hay sensor de distancia en el tren.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Prepareu tres parades i una escala
+### 1. Preparad tres paradas y una escala
 
-Construïu una via recta o amb un recorregut senzill. Marqueu tres estacions i mesureu la distància entre elles amb la cinta mètrica; anoteu els centímetres i convertiu-los, si convé, en unitats de via. Comproveu les unions de la via abans d’encendre el tren.
+Construid una vía recta o con un recorrido sencillo. Marcad tres estaciones y medid la distancia entre ellas con la cinta métrica; anotad los centímetros y convertidlos, si conviene, en unidades de vía. Comprobad las uniones de la vía antes de encender el tren.
 
-### 2. Connecteu l’app i compareu una acció
+### 2. Conectad la app y comparad una acción
 
-Si la versió de l’app és compatible, connecteu-hi el tren segons les instruccions que mostra i observeu l’acció associada a cada maó. Trieu una prova de l’app, com la de l’eruga de la lliçó oficial, i feu passar el tren per un maó. Compareu la resposta amb la que heu observat abans d’utilitzar la prova. Les opcions depenen de l’app: no pressuposeu que es pot assignar lliurement qualsevol resposta a cada maó. Si la connexió o l’app no funciona, ometeu la personalització i proveu les respostes dels maons sense l’app.
+Si la versión de la app es compatible, conectadle el tren según las instrucciones que muestra y observad la acción asociada a cada ladrillo. Elegid una prueba de la app, como la de la oruga de la lección oficial, y haced pasar el tren por un ladrillo. Comparad la respuesta con la que habéis observado antes de utilizar la prueba. Las opciones dependen de la app: no presupongáis que se puede asignar libremente cualquier respuesta a cada ladrillo. Si la conexión o la app no funciona, omitid la personalización y probad las respuestas de los ladrillos sin la app.
 
-### 3. Compareu els sons de les parades
+### 3. Comparad los sonidos de las paradas
 
-Poseu un maó groc i un de blau en una via recta. Feu passar el tren i anoteu quin so sona primer. Atureu-lo, intercanvieu els maons i repetiu des del mateix punt. Compareu l’ordre dels dos sons. Si la vostra app permet canviar-ne les respostes, feu-ho després i repetiu la prova per comprovar què ha canviat.
+Poned un ladrillo amarillo y uno azul en una vía recta. Haced pasar el tren y anotad qué sonido suena primero. Detenedlo, intercambiad los ladrillos y repetid desde el mismo punto. Comparad el orden de los dos sonidos. Si vuestra app permite cambiar sus respuestas, hacedlo después y repetid la prueba para comprobar qué ha cambiado.
 
-### 4. Resoleu una ruta amb senyals
+### 4. Resolved una ruta con señales
 
-Afegiu un senyal de paper a cada parada i acordeu què representa: aturar-se, continuar o tornar. Feu passar el tren i compteu les peces de via entre estacions; compareu-les amb les mesures en centímetres. Els senyals de paper són indicacions per a les persones: el tren no els llig. Atureu el tren abans de canviar la via o els maons.
+Añadid una señal de papel en cada parada y acordad qué representa: detenerse, continuar o volver. Haced pasar el tren y contad las piezas de vía entre estaciones; comparadlas con las medidas en centímetros. Las señales de papel son indicaciones para las personas: el tren no las lee. Detened el tren antes de cambiar la vía o los ladrillos.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Comproveu la resposta de cada maó abans i després de modificar-la a l’app. Si no canvia, reviseu la connexió Bluetooth i la compatibilitat de la versió instal·lada. Mesureu els trams amb el regle: el tren no calcula la distància.
+Comprobad la respuesta de cada ladrillo antes y después de modificarla en la app. Si no cambia, revisad la conexión Bluetooth y la compatibilidad de la versión instalada. Medid los tramos con la regla: el tren no calcula la distancia.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu el tren a baixa velocitat, sobre una via estable i lluny de vores. Ajusteu el volum de l’app abans de reproduir sons. Atureu la locomotora abans de canviar els maons o la via.
+Mantened el tren a baja velocidad, sobre una vía estable y lejos de bordes. Ajustad el volumen de la app antes de reproducir sonidos. Detened la locomotora antes de cambiar los ladrillos o la vía.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La lliçó LEGO Education [Character – Caterpillar](https://education.lego.com/en-us/lessons/preschool-coding-express/character-caterpillar/) adapta el comportament dels maons amb l’app; [Music – Animal Concert](https://education.lego.com/en-us/lessons/preschool-coding-express/music-animal-concert/) explora sons i melodies; [Math – Distance](https://education.lego.com/en-us/lessons/preschool-coding-express/math-distance/) compara distàncies mitjançant l’app. L’app és necessària per a personalitzar accions; la distància s’estima amb passos o es mesura externament, no amb un sensor incorporat al tren.
+La lección LEGO Education [Character – Caterpillar](https://education.lego.com/en-us/lessons/preschool-coding-express/character-caterpillar/) adapta el comportamiento de los ladrillos con la app; [Music – Animal Concert](https://education.lego.com/en-us/lessons/preschool-coding-express/music-animal-concert/) explora sonidos y melodías; [Math – Distance](https://education.lego.com/en-us/lessons/preschool-coding-express/math-distance/) compara distancias mediante la app. La app es necesaria para personalizar acciones; la distancia se estima con pasos o se mide externamente, no con un sensor incorporado al tren.

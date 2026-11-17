@@ -7,34 +7,34 @@ duration: 35 min
 order: 5
 image: _assets/tutorials/mb-fanalet-llum-flat.webp
 ---
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Construeix un fanalet que responga a la llum ambiental i ajusta el llindar amb proves en espais diferents. La matriu LED de micro:bit pot funcionar alhora com a eixida visual i com a sensor de llum.
+Construid un farolillo que responda a la luz ambiental y ajustad el umbral con pruebas en espacios diferentes. La matriz LED de micro:bit puede funcionar a la vez como salida visual y como sensor de luz.
 
-- Entendre que la matriu LED també pot llegir la llum ambiental.
-- Utilitzar una lectura de sensor dins d’una condició i un bucle.
-- Ajustar un llindar a partir de proves en diferents espais.
+- Entender que la matriz LED también puede leer la luz ambiental.
+- Utilizar una lectura de sensor dentro de una condición y un bucle.
+- Ajustar un umbral a partir de pruebas en distintos espacios.
 
 ![](../../_assets/tutorials/mb-fanalet-llum-flat.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
 - Placa BBC micro:bit (V1 o V2) o simulador MakeCode.
-- Ordinador amb navegador i MakeCode.
-- Portapiles opcional per a les proves fora de l’ordinador.
+- Ordenador con navegador y MakeCode.
+- Portapilas opcional para las pruebas fuera del ordenador.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Matriu 5 × 5 com a eixida LED i sensor de llum ambiental.
-- Lectura del nivell de llum i condicional amb llindar calibrat.
+- Matriz 5 × 5 como salida LED y sensor de luz ambiental.
+- Lectura del nivel de luz y condicional con umbral calibrado.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Creeu el projecte i programeu el fanalet
+### 1. Cread el proyecto y programad el farolillo
 
-Obriu MakeCode, creeu un projecte nou i comproveu el simulador. En la categoria **Entrada**, busqueu la lectura del nivell de llum. El nom pot aparéixer en anglés («light level») si l’editor no està traduït.
+Abrid MakeCode, cread un proyecto nuevo y comprobad el simulador. En la categoría **Entrada**, buscad la lectura del nivel de luz. El nombre puede aparecer en inglés («light level») si el editor no está traducido.
 
-Dins de «per sempre», poseu una peça «si… aleshores… si no». En la condició, compareu **nivell de llum < 100**. Dins d’«aleshores», afegiu una icona; dins de «si no», poseu «neteja la pantalla». La lectura de llum és a **Entrada** i la comparació a **Lògica**. El valor 100 és només un punt de partida.
+Dentro de «para siempre», poned una pieza «si… entonces… si no». En la condición, comparad **nivel de luz < 100**. Dentro de «entonces», añadid un icono; dentro de «si no», poned «limpiar la pantalla». La lectura de luz está en **Entrada** y la comparación en **Lógica**. El valor 100 es solo un punto de partida.
 
 ```makecode
 basic.forever(function () {
@@ -46,9 +46,9 @@ basic.forever(function () {
 })
 ```
 
-### 2. Calibreu i personalitzeu la resposta
+### 2. Calibrad y personalizad la respuesta
 
-Per triar un valor adequat, deseu el fanalet i creeu **un altre projecte de prova**. En «en prémer el botó A», poseu «mostra el número» amb «nivell de llum» dins:
+Para elegir un valor adecuado, guardad el farolillo y cread **otro proyecto de prueba**. En «al pulsar el botón A», poned «mostrar el número» con «nivel de luz» dentro:
 
 ```makecode
 input.onButtonPressed(Button.A, function () {
@@ -56,22 +56,22 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-Descarregueu aquest projecte a la placa. Premeu A i anoteu el nombre en un lloc clar; repetiu fent ombra suaument a la matriu. La primera lectura pot ser zero mentre s’activa el sensor: torneu a prémer A per comprovar-la.
+Descargad este proyecto a la placa. Pulsad A y anotad el número en un lugar claro; repetid haciendo sombra suavemente a la matriz. La primera lectura puede ser cero mientras se activa el sensor: volved a pulsar A para comprobarla.
 
-Torneu a obrir el projecte del fanalet i poseu un valor entre les dues lectures. Per exemple, si heu anotat 30 amb ombra i 150 amb llum, proveu amb 90. Descarregueu-lo i comproveu que la icona apareix quan feu ombra.
+Volved a abrir el proyecto del farolillo y poned un valor entre las dos lecturas. Por ejemplo, si habéis anotado 30 con sombra y 150 con luz, probad con 90. Descargadlo y comprobad que el icono aparece cuando hacéis sombra.
 
-> **💡 Consell d’ús:** els LED que mostren la icona també s’utilitzen per estimar la llum. Comproveu el comportament amb la placa disponible i deixeu un breu interval entre lectures si la pantalla parpelleja.
+> **💡 Consejo de uso:** los LED que muestran el icono también se utilizan para estimar la luz. Comprobad el comportamiento con la placa disponible y dejad un breve intervalo entre lecturas si la pantalla parpadea.
 
-Canvieu el diamant per una estrella, una casa o un símbol propi. Si la placa queda connectada a un portapiles, col·loqueu-la estable i no la tapeu amb materials que puguen acumular calor.
+Cambiad el diamante por una estrella, una casa o un símbolo propio. Si la placa queda conectada a un portapilas, colocadla estable y no la tapéis con materiales que puedan acumular calor.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Proveu la placa en un lloc clar i després feu-li ombra suaument. Anoteu quan apareix el dibuix. La lectura va de 0 (molt fosc) a 255 (molt clar): si el canvi no es veu, ajusteu el valor 100 i torneu a provar sense canviar l’orientació de la placa.
+Probad la placa en un lugar claro y después hacedle sombra suavemente. Anotad cuándo aparece el dibujo. La lectura va de 0 (muy oscuro) a 255 (muy claro): si el cambio no se ve, ajustad el valor 100 y volved a probar sin cambiar la orientación de la placa.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu lliures els components de la placa; no els cobriu amb materials que acumulen calor. Desconnecteu l’alimentació abans de canviar el muntatge i eviteu que el suport toque els contactes elèctrics.
+Mantened libres los componentes de la placa; no los cubráis con materiales que acumulen calor. Desconectad la alimentación antes de cambiar el montaje y evitad que el soporte toque los contactos eléctricos.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-Adaptació pròpia del projecte oficial [Nightlight de micro:bit](https://www.microbit.org/projects/make-it-code-it/nightlight/), que usa el bloc [nivell de llum de MakeCode](https://makecode.microbit.org/reference/input/light-level). La lectura va de 0 a 255 i pot variar segons la llum i la posició de la placa; per això cal ajustar el llindar en aquesta prova.
+Adaptación propia del proyecto oficial [Nightlight de micro:bit](https://www.microbit.org/projects/make-it-code-it/nightlight/), que usa el bloque [nivel de luz de MakeCode](https://makecode.microbit.org/reference/input/light-level). La lectura va de 0 a 255 y puede variar según la luz y la posición de la placa; por eso hay que ajustar el umbral en esta prueba.

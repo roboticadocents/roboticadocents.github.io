@@ -8,38 +8,38 @@ order: 4
 image: _assets/tutorials/sp-distancia-flat.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Programeu i comproveu el gir d’un motor angular solt. No cal muntar cap vehicle ni encaixar peces LEGO: treballareu amb el motor tal com ve al kit.
+Programad y comprobad el giro de un motor angular suelto. No hace falta montar ningún vehículo ni encajar piezas LEGO: trabajaréis con el motor tal como viene en el kit.
 
-- Relacionar 90°, 180° i 360° amb un quart, mitja volta i una volta completa.
-- Comprovar que el gir correspon a l’angle programat.
-- Distingir l’angle de gir del motor de la distància recorreguda per un vehicle.
+- Relacionar 90°, 180° y 360° con un cuarto, media vuelta y una vuelta completa.
+- Comprobar que el giro corresponde al ángulo programado.
+- Distinguir el ángulo de giro del motor de la distancia recorrida por un vehículo.
 
 ![](../../_assets/tutorials/sp-distancia-flat.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Hub SPIKE Prime carregat i un motor angular.
-- Paper amb un cercle dividit en quatre parts per comprovar el gir.
-- Ordinador o tauleta amb SPIKE App i connexió USB o Bluetooth.
+- Hub SPIKE Prime cargado y un motor angular.
+- Papel con un círculo dividido en cuatro partes para comprobar el giro.
+- Ordenador o tableta con SPIKE App y conexión USB o Bluetooth.
 
-Recolzeu el motor de manera estable sobre la taula amb la marca de la part giratòria visible. No hi afegiu rodes, braços ni eixos. El paper serveix de referència visual al costat del motor, sense tocar-lo.
+Apoyad el motor de forma estable sobre la mesa con la marca de la parte giratoria visible. No le añadáis ruedas, brazos ni ejes. El papel sirve de referencia visual junto al motor, sin tocarlo.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Motor angular: gir programat en graus, sentit i velocitat.
-- Observació de la posició angular; sense rodes no es calcula una distància lineal.
+- Motor angular: giro programado en grados, sentido y velocidad.
+- Observación de la posición angular; sin ruedas no se calcula una distancia lineal.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Connecteu i identifiqueu la posició inicial
+### 1. Conectad e identificad la posición inicial
 
-Connecteu el motor al port A i comproveu que SPIKE App el reconeix. Observeu la marca de la part giratòria i dibuixeu-ne la posició inicial al paper. Useu les marques del paper per comprovar després un quart de volta.
+Conectad el motor al puerto A y comprobad que SPIKE App lo reconoce. Observad la marca de la parte giratoria y dibujad su posición inicial en el papel. Usad las marcas del papel para comprobar después un cuarto de vuelta.
 
-### 2. Programeu un gir curt
+### 2. Programad un giro corto
 
-Seleccioneu els blocs equivalents de la vostra versió de l’app i una velocitat baixa:
+Seleccionad los bloques equivalentes de vuestra versión de la app y una velocidad baja:
 
 ```spikeapp
 quan comença el programa
@@ -47,24 +47,24 @@ fixa la velocitat del motor [A v] a (20) %
 motor [A v] gira (90) graus
 ```
 
-Executeu una vegada i comproveu que la marca ha girat un quart de volta. No toqueu ni freneu la part giratòria. Si el motor es desplaça sobre la taula, atureu-lo i busqueu una posició de suport estable abans de continuar.
+Ejecutad una vez y comprobad que la marca ha girado un cuarto de vuelta. No toquéis ni frenéis la parte giratoria. Si el motor se desplaza sobre la mesa, detenedlo y buscad una posición de apoyo estable antes de continuar.
 
-### 3. Compareu tres angles
+### 3. Comparad tres ángulos
 
-Proveu 90°, 180° i 360°, mantenint la mateixa velocitat. Abans de cada execució, anoteu la posició de partida i dibuixeu el resultat esperat: el gir és relatiu a aquella posició, no a un zero fix. En una volta completa, la marca torna aproximadament al punt inicial; observeu també el moviment per distingir-la d’una absència de gir.
+Probad 90°, 180° y 360°, manteniendo la misma velocidad. Antes de cada ejecución, anotad la posición de partida y dibujad el resultado esperado: el giro es relativo a esa posición, no a un cero fijo. En una vuelta completa, la marca vuelve aproximadamente al punto inicial; observad también el movimiento para distinguirla de una ausencia de giro.
 
-### 4. Canvieu només la velocitat
+### 4. Cambiad solo la velocidad
 
-Repetiu el gir de 180° amb dues velocitats baixes diferents. Compareu l’angle final i el temps que tarda. Manteniu el mateix port, sentit i angle en totes dues proves.
+Repetid el giro de 180° con dos velocidades bajas diferentes. Comparad el ángulo final y el tiempo que tarda. Mantened el mismo puerto, sentido y ángulo en las dos pruebas.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Comproveu la posició final de la marca del motor per a 90°, 180° i 360°. Si el gir no correspon al valor indicat, reviseu la unitat del bloc, el port i la posició inicial abans de repetir.
+Comprobad la posición final de la marca del motor para 90°, 180° y 360°. Si el giro no corresponde al valor indicado, revisad la unidad del bloque, el puerto y la posición inicial antes de repetir.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu mans, roba, cabells i cables lluny del motor en marxa. Recolzeu-lo de manera estable i atureu el programa abans de recol·locar-lo. No freneu l’eix amb els dits.
+Mantened manos, ropa, pelo y cables lejos del motor en marcha. Apoyadlo de forma estable y detened el programa antes de recolocarlo. No frenéis el eje con los dedos.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-Les [especificacions de SPIKE Prime](https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/) descriuen els motors angulars. Aquesta prova observa el gir del motor sense càrrega; no mesura un desplaçament lineal.
+Las [especificaciones de SPIKE Prime](https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/) describen los motores angulares. Esta prueba observa el giro del motor sin carga; no mide un desplazamiento lineal.

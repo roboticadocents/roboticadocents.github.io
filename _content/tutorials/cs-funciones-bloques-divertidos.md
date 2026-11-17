@@ -8,43 +8,43 @@ order: 4
 image: _assets/tutorials/cs-funcions-blocs-divertits.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Prepareu una ruta curta amb dos moviments que es repetisquen. Guardareu eixa parella de moviments en una funció i la cridareu dues vegades. Després, si el vostre kit té els blocs divertits, en provareu els comportaments predefinits.
+Preparad una ruta corta con dos movimientos que se repitan. Guardaréis esa pareja de movimientos en una función y la llamaréis dos veces. Después, si vuestro kit tiene los bloques divertidos, probaréis sus comportamientos predefinidos.
 
-- Definir i cridar una funció per reutilitzar una seqüència de moviments.
-- Comparar la versió amb funció amb la seqüència escrita completa.
-- Si el kit els inclou, provar els tres blocs divertits i distingir-los d’un programa propi.
+- Definir y llamar una función para reutilizar una secuencia de movimientos.
+- Comparar la versión con función con la secuencia escrita completa.
+- Si el kit los incluye, probar los tres bloques divertidos y distinguirlos de un programa propio.
 
 ![](../../_assets/tutorials/cs-funcions-blocs-divertits.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Coding Set amb torre de control, tauler, MatataBot i blocs de moviment i funció.
-- Blocs divertits del kit, si estan disponibles; no cal el Musician Add-on per a les proves incloses.
-- Mapa o graella plana amb una ruta senzilla.
-- Full per anotar la seqüència i comptar els blocs utilitzats.
+- Coding Set con torre de control, tablero, MatataBot y bloques de movimiento y función.
+- Bloques divertidos del kit, si están disponibles; no hace falta el Musician Add-on para las pruebas incluidas.
+- Mapa o cuadrícula plana con una ruta sencilla.
+- Hoja para anotar la secuencia y contar los bloques utilizados.
 
-Carregueu torre i robot, col·loqueu la torre estable davant del tauler i confirmeu la connexió abans de prémer Play. Separeu qualsevol bloc del Sensor Add-on o del Musician Add-on: no és necessari ni forma part de les funcions base tractades ací.
+Cargad torre y robot, colocad la torre estable delante del tablero y confirmad la conexión antes de pulsar Play. Separad cualquier bloque del Sensor Add-on o del Musician Add-on: no es necesario ni forma parte de las funciones base tratadas aquí.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Blocs físics Define Function i Call Function per definir i reutilitzar una seqüència.
-- Lectura del programa pel Control Tower i transmissió al MatataBot.
-- Blocs divertits predefinits: moviment aleatori, música i dansa.
-- Blocs numèrics associats a ordres compatibles, incloses les funcions de diversió documentades pel fabricant.
+- Bloques físicos Define Function y Call Function para definir y reutilizar una secuencia.
+- Lectura del programa por el Control Tower y transmisión al MatataBot.
+- Bloques divertidos predefinidos: movimiento aleatorio, música y danza.
+- Bloques numéricos asociados a órdenes compatibles, incluidas las funciones de diversión documentadas por el fabricante.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Planifiqueu, definiu i crideu una funció
+### 1. Planificad, definid y llamad una función
 
-Una funció és un grup d’ordres que podem utilitzar més d’una vegada. Dibuixeu una ruta amb **Endavant → Dreta → Endavant → Dreta** i marqueu el punt i l’orientació inicials. Poseu aquestes quatre peces a la fila principal, executeu-les i anoteu on acaba el robot i cap on mira. Repetiu des de la mateixa posició.
+Una función es un grupo de órdenes que podemos utilizar más de una vez. Dibujad una ruta con **Adelante → Derecha → Adelante → Derecha** y marcad el punto y la orientación iniciales. Poned estas cuatro piezas en la fila principal, ejecutadlas y anotad dónde acaba el robot y hacia dónde mira. Repetid desde la misma posición.
 
 ```coding-set
 avançar -> girar dreta -> avançar -> girar dreta
 ```
 
-Retireu les quatre peces del tauler. A la fila principal poseu les dues peces **Call Function → Call Function**; a la fila inferior poseu **Define Function → Endavant → Dreta**, seguint la [guia del fabricant](https://matatalab.com/en/node/63). Cada crida executa les dues ordres de la definició. Torneu el robot a l’inici amb la mateixa orientació, executeu i compareu-ne la posició final amb la del programa anterior. Si no coincideixen, reviseu les dues files i la posició inicial abans de tornar a provar.
+Retirad las cuatro piezas del tablero. En la fila principal poned las dos piezas **Call Function → Call Function**; en la fila inferior poned **Define Function → Adelante → Derecha**, siguiendo la [guía del fabricante](https://matatalab.com/en/node/63). Cada llamada ejecuta las dos órdenes de la definición. Devolved el robot al inicio con la misma orientación, ejecutad y comparad su posición final con la del programa anterior. Si no coinciden, revisad las dos filas y la posición inicial antes de volver a probar.
 
 Fila principal:
 
@@ -52,19 +52,19 @@ Fila principal:
 crida funció -> crida funció
 ```
 
-Fila inferior (definició):
+Fila inferior (definición):
 
 ```coding-set
 defineix funció -> avançar -> girar dreta
 ```
 
-Les peces Define i Call van en files diferents. No afegiu un bloc número a la funció: el fabricant indica que aquesta combinació no és compatible.
+Las piezas Define y Call van en filas diferentes. No añadáis un bloque número a la función: el fabricante indica que esta combinación no es compatible.
 
-### 2. Compareu els blocs divertits
+### 2. Comparad los bloques divertidos
 
-Si el kit inclou aquests blocs, proveu per separat el moviment aleatori, la música i la dansa. Executeu una sola peça cada vegada per identificar-ne la resposta. Són comportaments incorporats al robot, no seqüències programades amb les peces de moviment. La música permet escoltar una resposta predefinida; per a compondre una melodia amb notes pròpies cal el Musician Add-on.
+Si el kit incluye estos bloques, probad por separado el movimiento aleatorio, la música y la danza. Ejecutad una sola pieza cada vez para identificar su respuesta. Son comportamientos incorporados al robot, no secuencias programadas con las piezas de movimiento. La música permite escuchar una respuesta predefinida; para componer una melodía con notas propias hace falta el Musician Add-on.
 
-Cada peça següent correspon a una prova independent; no les col·loqueu juntes en un únic programa.
+Cada pieza siguiente corresponde a una prueba independiente; no las coloquéis juntas en un único programa.
 
 ```coding-set
 aleatori
@@ -78,18 +78,18 @@ música
 dansa
 ```
 
-### 3. Depureu la lectura del tauler
+### 3. Depurad la lectura del tablero
 
-Canvieu una sola peça de la funció o de la ruta i torneu a executar. Si el MatataBot no fa la ruta esperada, comproveu ordre de lectura, orientació de les peces, posició de Define/Call i connexió de la torre. Registreu quin canvi ha resolt l’error; no mogueu peces mentre la torre està llegint.
+Cambiad una sola pieza de la función o de la ruta y volved a ejecutar. Si el MatataBot no hace la ruta esperada, comprobad orden de lectura, orientación de las piezas, posición de Define/Call y conexión de la torre. Registrad qué cambio ha resuelto el error; no mováis piezas mientras la torre está leyendo.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Compareu la posició final de la ruta completa i de la versió amb funció, començant des del mateix punt i orientació. Si difereixen, reviseu l’ordre de lectura, les files de definició i crida i la connexió de la torre.
+Comparad la posición final de la ruta completa y de la versión con función, empezando desde el mismo punto y orientación. Si difieren, revisad el orden de lectura, las filas de definición y llamada y la conexión de la torre.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu la torre i el tauler en una superfície estable, sense peces soltes en la trajectòria del robot. Deixeu espai lliure abans de provar moviments aleatoris o danses i ajusteu el volum per a la música.
+Mantened la torre y el tablero en una superficie estable, sin piezas sueltas en la trayectoria del robot. Dejad espacio libre antes de probar movimientos aleatorios o danzas y ajustad el volumen para la música.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-Les pàgines oficials Matatalab descriuen els [blocs de funció](https://matatalab.com/en/node/63), els [blocs de seqüència i paràmetres](https://matatalab.com/en/node/61) i l’[inventari dels blocs del Coding Set](https://matatalab.com/en/node/60). El [Musician Add-on](https://matatalab.com/en/node/65) és un complement separat per a treballar notes i melodies; el Sensor Add-on també és opcional i no s’utilitza en aquesta guia.
+Las páginas oficiales Matatalab describen los [bloques de función](https://matatalab.com/en/node/63), los [bloques de secuencia y parámetros](https://matatalab.com/en/node/61) y el [inventario de los bloques del Coding Set](https://matatalab.com/en/node/60). El [Musician Add-on](https://matatalab.com/en/node/65) es un complemento separado para trabajar notas y melodías; el Sensor Add-on también es opcional y no se utiliza en esta guía.

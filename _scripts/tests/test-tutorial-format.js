@@ -10,45 +10,45 @@ const tutorials = fs.readdirSync(tutorialsDir)
   .sort();
 
 const commonHeadings = [
-  '## 🎯 Què aprendrem?',
-  '## 🧰 Materials i preparació',
-  '## 🧩 Funcions i controls',
-  '## 👣 Pas a pas',
-  '## 🧪 Comprovació i resolució de problemes',
-  '## 🛡️ Ús i seguretat',
-  '## 🔗 Fonts i límits',
+  '## 🎯 ¿Qué vamos a aprender?',
+  '## 🧰 Materiales y preparación',
+  '## 🧩 Funciones y controles',
+  '## 👣 Paso a paso',
+  '## 🧪 Comprobación y resolución de problemas',
+  '## 🛡️ Uso y seguridad',
+  '## 🔗 Fuentes y límites',
 ];
 
 // Inventari mínim de funcions que han d'aparéixer explicades en alguna fitxa de cada robot.
 // Les expressions comproven cobertura del corpus; les fitxes conserven els límits de cada model.
 const robotCapabilities = {
   'coding-express': [
-    /sensor òptic inferior/i, /maons d’acció/i, /llum del tren/i, /sons? associats al tren/i,
-    /Push & Go/i, /bucle/i, /bifurc/i, /distància/i, /motor/i,
+    /sensor óptico inferior/i, /ladrillos? de acción/i, /luz del tren/i, /sonidos? asociados al tren/i,
+    /Push & Go/i, /bucle/i, /bifurc/i, /distancia/i, /motor/i,
   ],
   'tale-bot': [
-    /botons direccionals/i, /OID/i, /gravació/i, /dibuix/i, /repetició/i, /esborrat/i,
-    /altaveu|reproducció d’àudio/i, /micròfon|enregistrament de veu|gravació.*veu/i, /braços/i,
+    /botones direccionales/i, /OID/i, /grabación/i, /dibujo/i, /repetición/i, /borrado/i,
+    /altavoz|reproducción de audio/i, /micrófono|grabación.*voz/i, /brazos/i,
   ],
   'coding-set': [
-    /Control Tower/i, /tauler de control/i, /blocs numèrics/i, /bucle/i, /funció/i,
-    /Sensor Add-on/i, /bandera/i, /reconeixement visual|càmera|escaneig|lectura/i, /Bluetooth/i,
+    /Control Tower/i, /tablero de control/i, /bloques numéricos/i, /bucle/i, /función/i,
+    /Sensor Add-on/i, /bandera/i, /reconocimiento visual|cámara|escaneo|lectura/i, /Bluetooth/i,
   ],
   'codey-rocky': [
-    /matriu(?: LED)?(?: 16| 16 × 8)/i, /botons A i B/i, /giroscop/i, /sensor infraroig/i,
-    /sensor de color|infraroig\/color/i, /sensor de llum/i, /sensor de so/i, /motors.*erugues/i, /Python/i,
-    /altaveu/i, /Bluetooth/i, /bateria/i, /expressió pròpia|cara pròpia/i,
-    /melodia|seqüència curta de tons/i, /dansa/i,
+    /matriz(?: LED)?(?: 16| 16 × 8)/i, /botones A y B/i, /giroscopio/i, /sensor infrarrojo/i,
+    /sensor de color|infrarrojo\/color/i, /sensor de luz/i, /sensor de sonido/i, /motores.*orugas/i, /Python/i,
+    /altavoz/i, /Bluetooth/i, /batería/i, /expresión propia|cara propia/i,
+    /melodía|secuencia corta de tonos/i, /danza/i,
   ],
   microbit: [
-    /matriu 5 × 5/i, /botons A\/B/i, /acceleròmetre/i, /brúixola/i, /temperatura/i,
-    /sensor de llum/i, /micròfon/i, /altaveu/i, /ràdio/i, /Bluetooth/i, /pins/i,
-    /logotip tàctil/i, /MicroPython/i, /registre de dades|datalogger/i,
+    /matriz 5 × 5/i, /botones A\/B/i, /acelerómetro/i, /brújula/i, /temperatura/i,
+    /sensor de luz/i, /micrófono/i, /altavoz/i, /radio/i, /Bluetooth/i, /pines/i,
+    /logotipo táctil/i, /MicroPython/i, /registro de datos|datalogger/i,
   ],
   spike: [
-    /Hub Prime/i, /matriu/i, /giroscop/i, /motors/i, /distància/i, /sensor de color/i,
-    /sensor de força/i, /Python/i, /ports A.?F/i, /Bluetooth|BLE/i, /USB/i, /altaveu/i,
-    /botons laterals|botons esquerre i dret/i, /bateria recarregable/i, /sensor de sis eixos/i,
+    /Hub Prime/i, /matriz/i, /giroscopio/i, /motores/i, /distancia/i, /sensor de color/i,
+    /sensor de fuerza/i, /Python/i, /puertos A.?F/i, /Bluetooth|BLE/i, /USB/i, /altavoz/i,
+    /botones laterales|botones izquierdo y derecho/i, /batería recargable/i, /sensor de seis ejes/i,
   ],
 };
 
@@ -56,41 +56,41 @@ const robotCapabilities = {
 // també han de tindre una pràctica explicada dins dels passos guiats.
 const guidedCapabilities = {
   'coding-express': [
-    /sensor òptic/i, /maó roig/i, /groc.*blau/i,
-    /maó blanc/i, /maó verd/i, /Push & Go|empenta/i, /repet/i, /bifurcació|via en Y/i,
-    /app/i, /distància/i, /melodia|seqüència sonora|sons/i,
+    /sensor óptico/i, /ladrillo rojo/i, /amarillo.*azul/i,
+    /ladrillo blanco/i, /ladrillo verde/i, /Push & Go|empuj/i, /repet/i, /bifurcación|vía en Y/i,
+    /app/i, /distancia/i, /melodía|secuencia sonora|sonidos/i,
   ],
   'tale-bot': [
-    /botons direccionals|ordres senzilles|ordres? de moviment/i, /Play/i, /Delete|Clear|esborrat/i,
-    /indicadors/i, /repetició|repeteix/i, /dansa/i, /OID/i, /gravació/i,
-    /dibuix|retolador/i, /casella|graella/i, /braços/i, /objecte lleuger/i,
+    /botones direccionales|órdenes sencillas|órdenes? de movimiento/i, /Play/i, /Delete|Clear|borrado/i,
+    /indicadores/i, /repetición|repite/i, /danza/i, /OID/i, /grabación/i,
+    /dibujo|rotulador/i, /casilla|cuadrícula/i, /brazos/i, /objeto ligero/i,
   ],
   'coding-set': [
-    /Control Tower|torre de control/i, /Bluetooth|connecten|connexió/i, /tauler/i,
-    /blocs numèrics/i, /avanç.*retroced/i, /girs?.{0,30}90°/i,
-    /bucle/i, /Define Function|funció/i, /moviment aleatori/i, /música/i, /dansa/i,
-    /bandera/i, /obstacle/i, /Sensor Add-on/i,
+    /Control Tower|torre de control/i, /Bluetooth|conectan|conexión/i, /tablero/i,
+    /bloques numéricos/i, /avanz.*retroced/i, /giros?.{0,30}90°/i,
+    /bucle/i, /Define Function|función/i, /movimiento aleatorio/i, /música/i, /danza/i,
+    /bandera/i, /obstáculo/i, /Sensor Add-on/i,
   ],
   'codey-rocky': [
-    /matriu|pantalla|LED/i, /botons A i B|botó A.{0,100}botó B/i, /potenciòmetre|gear knob/i,
-    /giroscop|inclinació/i, /llum/i, /sensor de so/i, /indicador RGB/i,
-    /sensor de color|infraroig\/color/i, /seguir una línia|seguiment de línia|línia fosca/i, /obstacle/i,
-    /infraroig/i, /distància/i, /bateria/i, /altaveu|blocs de so|sons?/i, /Bluetooth/i,
-    /mode Live|en viu/i, /mode Upload/i, /Python/i, /bateria/i, /expressió pròpia/i,
-    /dansa/i, /melodia|seqüència curta de tons/i,
-    /llum ambiental alta/i, /sensor de so supera/i,
+    /matriz|pantalla|LED/i, /botones? A(?: y B|\/B)|botón A|botón B/i, /potenciómetro|gear knob/i,
+    /giroscopio|inclinación/i, /luz/i, /sensor de sonido/i, /indicador RGB/i,
+    /sensor de color|infrarrojo\/color/i, /seguimiento de línea|seguir una línea|línea oscura/i, /obstáculo/i,
+    /infrarrojo/i, /distancia/i, /batería/i, /altavoz|bloques de sonido|sonidos?/i, /Bluetooth/i,
+    /modo Live|en vivo/i, /modo Upload/i, /Python/i, /batería/i, /expresión propia/i,
+    /danza/i, /melodía|secuencia corta de tonos/i,
+    /luz ambiental alta/i, /sensor de sonido supera/i,
   ],
   microbit: [
-    /matriu|LED/i, /botons? A\/B|botó A|botó B/i, /acceleròmetre|sacsej/i,
-    /llum/i, /brúixola/i, /temperatura/i, /logotip tàctil|tocar el logotip|logotip sensible/i,
-    /micròfon/i, /altaveu/i, /ràdio/i, /Bluetooth/i, /pins|GPIO/i, /MicroPython/i,
-    /registre de dades|datalogger/i, /recuper.{0,40}dades|dades.{0,40}recuper/i,
+    /matriz|LED/i, /botones? A\/B|botón A|botón B/i, /acelerómetro|sacud/i,
+    /luz/i, /brújula/i, /temperatura/i, /logotipo táctil|tocar el logotipo|logotipo sensible/i,
+    /micrófono/i, /altavoz/i, /radio/i, /Bluetooth/i, /pines|GPIO/i, /MicroPython/i,
+    /registro de datos|datalogger/i, /recuper.{0,40}datos|datos.{0,40}recuper/i,
   ],
   spike: [
-    /Hub Prime/i, /port [A-F]/i, /Bluetooth|BLE/i, /matriu/i, /giroscop/i,
-    /motor angular/i, /sensor de color/i, /sensor de força/i, /sensor de distància/i,
-    /ultrasò/i, /altaveu/i, /Python/i, /botons esquerre i dret/i, /botó central/i,
-    /sacsej|giroscopi|inclinació/i, /bateria|càrrega/i, /USB/i,
+    /Hub Prime/i, /puerto [A-F]/i, /Bluetooth|BLE/i, /matriz/i, /giroscopio/i,
+    /motor angular/i, /sensor de color/i, /sensor de fuerza/i, /sensor de distancia/i,
+    /ultrasonido|ultrasónico/i, /altavoz/i, /Python/i, /botones izquierdo y derecho/i, /botón central/i,
+    /sacud|giroscop|inclinación/i, /batería|carga/i, /USB/i,
   ],
 };
 
@@ -114,7 +114,7 @@ for (const [robot, capabilities] of Object.entries(guidedCapabilities)) {
   const guidedCorpus = tutorials
     .map(name => fs.readFileSync(path.join(tutorialsDir, name), 'utf8'))
     .filter(source => source.match(/^robot:\s*(.+)$/m)?.[1].trim() === robot)
-    .map(source => source.split('## 👣 Pas a pas', 2)[1].split('\n## ', 1)[0])
+    .map(source => source.split('## 👣 Paso a paso', 2)[1].split('\n## ', 1)[0])
     .join('\n');
   for (const capability of capabilities) {
     assert.match(guidedCorpus, capability, `${robot}: hi ha una pràctica guiada per a ${capability}`);
@@ -170,12 +170,12 @@ for (const name of tutorials) {
   assert.ok((materialsSection.match(/^- .+/gm) || []).length >= 2, `${name}: presenta els materials com a llista`);
   const functionsSection = source.split(commonHeadings[2], 2)[1].split('\n## ', 1)[0];
   assert.ok((functionsSection.match(/^- .+/gm) || []).length >= 2, `${name}: presenta les funcions com a llista`);
-  assert.doesNotMatch(source, /Evidències d’aprenentatge|Preguntes per comprovar|Consell docent|\b(?:alumnat|alumnes|parelles|rols)\b/, `${name}: és un manual d’ús sense consignes d’aula`);
+  assert.doesNotMatch(source, /Evidencias de aprendizaje|Preguntas para comprobar|Consejo docente|\b(?:alumnado|alumnes|parejas|roles)\b/, `${name}: és un manual d’ús sense consignes d’aula`);
   assert.match(introHTML, /¿Qué vamos a aprender\?/, `${name}: la introducció té el títol propi dels tutorials`);
   const proofSection = source.split(commonHeadings[4], 2)[1].split('\n## ', 1)[0];
-  const proofProtocol = proofSection.split('### Preguntes per comprovar', 1)[0].trim();
+  const proofProtocol = proofSection.split('### Preguntas para comprobar', 1)[0].trim();
   assert.ok(proofProtocol.length >= 80, `${name}: descriu una prova observable abans de les preguntes`);
-  assert.match(proofProtocol, /\b(prov|repet|registre|comprov|mesur|anot|execut|observ|compar|identific|verific)/i,
+  assert.match(proofProtocol, /\b(prob|repet|regist|comprueb|comprob|medid|medir|anot|ejecut|observ|compar|identific|verific)/i,
     `${name}: el protocol proposa una acció de verificació`);
   for (const heading of commonHeadings) {
     const section = source.split(heading, 2)[1].split('\n## ', 1)[0].trim();
@@ -186,27 +186,27 @@ for (const name of tutorials) {
 
 const voiceTutorial = fs.readFileSync(path.join(tutorialsDir, 'tb-grabacion-reproduccion-voz.md'), 'utf8');
 assert.match(voiceTutorial, /^title: "?Grabación y reproducción de voz"?$/m, 'Tale-Bot separa la gravació d’àudio del reconeixement de parla');
-assert.match(voiceTutorial, /No reconeix ni interpreta la parla com una ordre/, 'la fitxa no atribueix reconeixement de parla al Tale-Bot');
+assert.match(voiceTutorial, /No reconoce ni interpreta el habla como una orden/, 'la fitxa no atribueix reconeixement de parla al Tale-Bot');
 const codeyVoice = fs.readFileSync(path.join(tutorialsDir, 'cr-voz-ia.md'), 'utf8');
-assert.match(codeyVoice, /no (?:inclou|incorpora) un mòdul que reconega paraules/i, 'Codey Rocky separa el sensor de so del reconeixement de parla');
-assert.match(codeyVoice, /simulació|simule/i, 'la guia de veu ofereix una alternativa sense serveis externs');
+assert.match(codeyVoice, /no (?:incluye|incorpora) un módulo que reconozca palabras/i, 'Codey Rocky separa el sensor de so del reconeixement de parla');
+assert.match(codeyVoice, /simulación|simule/i, 'la guia de veu ofereix una alternativa sense serveis externs');
 assert.match(codeyVoice, /Neuron compatible/i, 'la guia només atribueix reconeixement de parla a un mòdul complementari');
-assert.doesNotMatch(codeyVoice, /controlar el moviment del robot mitjançant ordres de veu en català/i, 'la guia no promet control de veu nadiu');
+assert.doesNotMatch(codeyVoice, /controlar el movimiento del robot mediante órdenes de voz en catalán/i, 'la guia no promet control de veu nadiu');
 
 const codingSetRoute = fs.readFileSync(path.join(tutorialsDir, 'cs-obstaculos-bandera.md'), 'utf8');
 assert.match(codingSetRoute, /Obstacle Add-on|Sensor Add-on/, 'la guia diferencia els obstacles físics del complement de sensors');
-assert.match(codingSetRoute, /MatataBot base no detecta ni esquiva obstacles automàticament/, 'la guia no atribueix detecció al Coding Set base');
-assert.match(codingSetRoute, /bandera com a destinació/i, 'la guia treballa la bandera del conjunt base com a destinació');
+assert.match(codingSetRoute, /MatataBot base no detecta ni esquiva obstáculos automáticamente/, 'la guia no atribueix detecció al Coding Set base');
+assert.match(codingSetRoute, /bandera como destino/i, 'la guia treballa la bandera del conjunt base com a destinació');
 const codingSetNumbers = fs.readFileSync(path.join(tutorialsDir, 'cs-bloques-numericos-movimiento.md'), 'utf8');
-assert.match(codingSetNumbers, /no s’apliquen als girs esquerre\/dret/i, 'Coding Set explica que els nombres no es combinen amb girs');
-assert.match(codingSetNumbers, /blocs numèrics no s’apliquen als girs/i, 'la seqüència guiada prova el límit dels blocs numèrics');
-assert.doesNotMatch(codingSetNumbers, /blocs de gir angular \(90º, 45º, 30º\)/i, 'Coding Set no atribueix girs angulars numèrics al kit base');
+assert.match(codingSetNumbers, /no se aplican a los giros izquierda\/derecha/i, 'Coding Set explica que els nombres no es combinen amb girs');
+assert.match(codingSetNumbers, /bloques numéricos no se aplican a los giros/i, 'la seqüència guiada prova el límit dels blocs numèrics');
+assert.doesNotMatch(codingSetNumbers, /bloques de giro angular \(90º, 45º, 30º\)/i, 'Coding Set no atribueix girs angulars numèrics al kit base');
 
 const taleBotClear = fs.readFileSync(path.join(tutorialsDir, 'tb-borrado-depuracion.md'), 'utf8');
-assert.match(taleBotClear, /menys d’un segon elimina l’última ordre/i, 'Tale-Bot documenta esborrat curt');
-assert.match(taleBotClear, /més d’un segon esborra totes les ordres/i, 'Tale-Bot documenta esborrat llarg');
+assert.match(taleBotClear, /menos de un segundo elimina la última orden/i, 'Tale-Bot documenta esborrat curt');
+assert.match(taleBotClear, /más de un segundo borra todas las órdenes/i, 'Tale-Bot documenta esborrat llarg');
 const taleBotRepeat = fs.readFileSync(path.join(tutorialsDir, 'tb-repeticion-mapas-danza.md'), 'utf8');
-assert.match(taleBotRepeat, /no permet seleccionar només un fragment/i, 'Tale-Bot documenta el límit de la repetició');
+assert.match(taleBotRepeat, /no permite seleccionar solo un fragmento/i, 'Tale-Bot documenta el límit de la repetició');
 const spikePython = fs.readFileSync(path.join(tutorialsDir, 'sp-python-motor.md'), 'utf8');
 assert.match(spikePython, /motor\.run_for_degrees\(port\.A, 360, 400\)/, 'SPIKE Prime inclou una prova executable en Python');
 assert.match(spikePython, /MicroPython/, 'SPIKE Prime diferencia l’editor de MicroPython de Python complet');
@@ -218,13 +218,13 @@ assert.match(microbitPython, /MakeCode Python.*MicroPython|MicroPython.*MakeCode
 const microbitDataLog = fs.readFileSync(path.join(tutorialsDir, 'mb-registro-datos.md'), 'utf8');
 assert.match(microbitDataLog, /micro:bit V2/i, 'el registre persistent s’identifica com a funció de V2');
 assert.match(microbitDataLog, /no.*V1|V1.*no/i, 'la guia no atribueix el registre persistent a V1');
-assert.match(microbitDataLog, /esborrar|sobreescriure/i, 'la guia explica el risc d’esborrar o reemplaçar dades');
+assert.match(microbitDataLog, /borrar|sobrescribir/i, 'la guia explica el risc d’esborrar o reemplaçar dades');
 const codeyPython = fs.readFileSync(path.join(tutorialsDir, 'cr-python-upload.md'), 'utf8');
-assert.match(codeyPython, /mode Upload/, 'Codey Rocky practica Python en el mode Upload oficial');
+assert.match(codeyPython, /modo Upload/, 'Codey Rocky practica Python en el mode Upload oficial');
 assert.match(codeyPython, /Live.*Upload|Upload.*Live/s, 'Codey Rocky diferencia Live i Upload');
 const codeyExpressions = fs.readFileSync(path.join(tutorialsDir, 'cr-expresiones-sonido-bateria.md'), 'utf8');
-for (const capability of [/expressió pròpia/i, /botó A/i, /indicador RGB/i, /to|so/i, /dansa/i, /bateria/i,
-  /llum ambiental alta/i, /sensor de so supera/i]) {
+for (const capability of [/expresión propia/i, /botón A/i, /indicador RGB/i, /to|so/i, /danza/i, /batería/i,
+  /luz ambiental alta/i, /sensor de sonido supera/i]) {
   assert.match(codeyExpressions, capability, `Codey Rocky inclou una pràctica de ${capability}`);
 }
 assert.match(codeyExpressions, /^(?:### )\d+\. /m, 'la guia de Codey Rocky conserva la seqüència de passos comuna');

@@ -8,40 +8,40 @@ order: 4
 image: _assets/tutorials/cr-sensors-llum-so-linia.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Feu que Codey responga a una palmada suau i investigueu com detecta la llum. Després proveu Rocky sobre una línia negra. Observeu què detecta el robot i què li heu indicat que faça.
+Haced que Codey responda a una palmada suave e investigad cómo detecta la luz. Después probad Rocky sobre una línea negra. Observad qué detecta el robot y qué le habéis indicado que haga.
 
-- Comparar lectures de llum i so en condicions repetibles.
-- Relacionar la lectura del sensor infraroig/color amb una línia i els motors.
-- Explicar per què els llindars depenen de la superfície i de la llum ambiental.
+- Comparar lecturas de luz y sonido en condiciones repetibles.
+- Relacionar la lectura del sensor infrarrojo/color con una línea y los motores.
+- Explicar por qué los umbrales dependen de la superficie y de la luz ambiental.
 
 ![](../../_assets/tutorials/cr-sensors-llum-so-linia.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Codey Rocky de la dotació, carregat i muntat correctament.
-- Ordinador amb una versió compatible de mBlock 5 i l’extensió/dispositiu Codey.
-- Cartolines clara, fosca i de colors; una tira negra ampla sobre fons blanc.
-- Un llum regulable o una caixa de cartó oberta per variar la il·luminació.
-- Targetes de prova amb condicions de llum, so i color; les dades poden ser simulades.
+- Codey Rocky de la dotación, cargado y montado correctamente.
+- Ordenador con una versión compatible de mBlock 5 y la extensión/dispositivo Codey.
+- Cartulinas clara, oscura y de colores; una tira negra ancha sobre fondo blanco.
+- Una luz regulable o una caja de cartón abierta para variar la iluminación.
+- Tarjetas de prueba con condiciones de luz, sonido y color; los datos pueden ser simulados.
 
-Abans de començar, comproveu que el robot es connecta, que les erugues es mouen lliurement i que el sensor infraroig/color no està tapat. Els noms dels blocs poden variar amb la versió de mBlock i del firmware; no substituïu la lectura del sensor per una afirmació de distància o color exacte si l’aplicació no la proporciona.
+Antes de empezar, comprobad que el robot se conecta, que las orugas se mueven libremente y que el sensor infrarrojo/color no está tapado. Los nombres de los bloques pueden variar con la versión de mBlock y del firmware; no sustituyáis la lectura del sensor por una afirmación de distancia o color exacto si la aplicación no la proporciona.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Sensor de llum ambiental i indicador RGB programable del mòdul Codey.
-- Sensor de so ambiental: detecta intensitat/llindar de so, no paraules ni identitat de qui parla.
-- Sensor infraroig/color de Rocky i motors de les erugues per provar una ruta amb línia i targetes.
-- Condicionals i ajust de llindars a mBlock 5; el sensor reflectit depén del material, la distància i l’angle.
+- Sensor de luz ambiental e indicador RGB programable del módulo Codey.
+- Sensor de sonido ambiental: detecta intensidad/umbral de sonido, no palabras ni identidad de quien habla.
+- Sensor infrarrojo/color de Rocky y motores de las orugas para probar una ruta con línea y tarjetas.
+- Condicionales y ajuste de umbrales en mBlock 5; el sensor reflejado depende del material, la distancia y el ángulo.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Comprovem les entrades i eixides
+### 1. Comprobamos las entradas y salidas
 
-Obriu mBlock 5, seleccioneu Codey Rocky i executeu una seqüència curta que mostre un color a l’indicador RGB i faça avançar Rocky a baixa velocitat durant un interval breu. Atureu el programa i verifiqueu que el botó d’aturada del projecte respon. Anoteu quins elements són entrades (llum, so i reflexió infraroja) i quins són eixides (RGB i motors).
+Abrid mBlock 5, seleccionad Codey Rocky y ejecutad una secuencia corta que muestre un color en el indicador RGB y haga avanzar Rocky a baja velocidad durante un intervalo breve. Detened el programa y verificad que el botón de parada del proyecto responde. Anotad qué elementos son entradas (luz, sonido y reflexión infrarroja) y cuáles son salidas (RGB y motores).
 
-Podeu començar amb aquesta prova curta:
+Podéis empezar con esta prueba corta:
 
 ```mblock
 quan es prem el botó [A v]
@@ -50,26 +50,26 @@ avança a velocitat (20) durant (1) segons
 atura el moviment
 ```
 
-Busqueu els blocs equivalents a la vostra versió. En prémer A, observeu la llum i comproveu que Rocky s’atura; si no ho fa, atureu el programa abans de continuar.
+Buscad los bloques equivalentes en vuestra versión. Al pulsar A, observad la luz y comprobad que Rocky se detiene; si no lo hace, detened el programa antes de continuar.
 
-### 2. Calibrem llum i color
+### 2. Calibramos luz y color
 
-Manteniu Codey en la mateixa orientació. En mBlock, combineu un bloc de pantalla amb el valor del sensor de llum. Aquesta és la idea que heu de construir amb les peces de la vostra versió:
+Mantened Codey en la misma orientación. En mBlock, combinad un bloque de pantalla con el valor del sensor de luz. Esta es la idea que debéis construir con las piezas de vuestra versión:
 
 ```mblock
 quan es prem el botó [A v]
 mostra el valor de llum ambiental
 ```
 
-Premeu A i anoteu tres lectures amb llum habitual i tres fent ombra al sensor. Si necessiteu ajuda per trobar el sensor, consulteu l’[exemple de llum del fabricant](https://support.makeblock.com/hc/en-us/articles/7463194482839-Case-12-Energy-conserving-RGB-LED-indicator).
+Pulsad A y anotad tres lecturas con luz habitual y tres haciendo sombra al sensor. Si necesitáis ayuda para encontrar el sensor, consultad el [ejemplo de luz del fabricante](https://support.makeblock.com/hc/en-us/articles/7463194482839-Case-12-Energy-conserving-RGB-LED-indicator).
 
-Després, amb Rocky aturat i el sensor orientat cap avall, compareu una targeta clara i una fosca a la mateixa distància. Anoteu què detecta el bloc de color de la vostra versió. No suposeu que distingirà tots els colors amb la mateixa fiabilitat.
+Después, con Rocky detenido y el sensor orientado hacia abajo, comparad una tarjeta clara y una oscura a la misma distancia. Anotad qué detecta el bloque de color de vuestra versión. No supongáis que distinguirá todos los colores con la misma fiabilidad.
 
-### 3. Proveu el sensor de so amb una entrada controlada
+### 3. Probad el sensor de sonido con una entrada controlada
 
-En un projecte de prova, mostreu el nivell de so contínuament a la pantalla de Codey amb el bloc de lectura del sensor dins de «per sempre». Anoteu el valor en silenci i després durant tres palmades suaus, sempre a la mateixa distància. Trieu un valor entre les lectures de silenci i de palmada: serà el **valor de tall**. Per exemple, si obteniu aproximadament 10 i 40, proveu amb 25.
+En un proyecto de prueba, mostrad el nivel de sonido continuamente en la pantalla de Codey con el bloque de lectura del sensor dentro de «para siempre». Anotad el valor en silencio y después durante tres palmadas suaves, siempre a la misma distancia. Elegid un valor entre las lecturas de silencio y de palmada: será el **valor de corte**. Por ejemplo, si obtenéis aproximadamente 10 y 40, probad con 25.
 
-En un projecte nou, construïu aquesta idea amb els blocs equivalents de mBlock. El número 25 és només un exemple: poseu-hi el vostre valor de tall.
+En un proyecto nuevo, construid esta idea con los bloques equivalentes de mBlock. El número 25 es solo un ejemplo: poned vuestro valor de corte.
 
 ```mblock
 quan comença el programa
@@ -83,22 +83,22 @@ espera (0.5) segons
 fi
 ```
 
-Aquest dibuix resumeix les accions; els noms dels blocs poden variar. Proveu el programa en silenci i amb una palmada. Si la llum no canvia, reviseu les lectures i ajusteu el valor de tall. El sensor no reconeix paraules.
+Este dibujo resume las acciones; los nombres de los bloques pueden variar. Probad el programa en silencio y con una palmada. Si la luz no cambia, revisad las lecturas y ajustad el valor de corte. El sensor no reconoce palabras.
 
-### 4. Proveu el seguiment de línia i depureu la ruta
+### 4. Probad el seguimiento de línea y depurad la ruta
 
-Atureu el programa i orienteu el sensor infraroig/color de Rocky cap al terra. Poseu-lo primer sobre el fons blanc i després sobre la línia negra; anoteu què mostra mBlock en cada cas. El sensor identifica la superfície que té davall, però no sap a quin costat queda el centre de la línia.
+Detened el programa y orientad el sensor infrarrojo/color de Rocky hacia el suelo. Ponedlo primero sobre el fondo blanco y después sobre la línea negra; anotad qué muestra mBlock en cada caso. El sensor identifica la superficie que tiene debajo, pero no sabe a qué lado queda el centro de la línea.
 
-Per provar una correcció pròpia, comenceu amb el sensor sobre la **vora dreta** de la línia, mirant en el sentit del recorregut. Programeu un gir curt a la dreta quan veja negre i a l’esquerra quan veja blanc; després de cada gir, avanceu un interval curt a baixa velocitat i torneu a llegir el sensor. Ajusteu la durada dels girs i dels avanços en un tram recte i atureu-lo si perd la pista. Si comenceu per l’altra vora, intercanvieu els girs. Si la vostra versió ofereix un exemple de seguiment, també podeu provar-lo i comparar-ne el resultat. Si la lectura no distingeix les superfícies, anoteu que el seguiment queda pendent.
+Para probar una corrección propia, empezad con el sensor sobre el **borde derecho** de la línea, mirando en el sentido del recorrido. Programad un giro corto a la derecha cuando vea negro y a la izquierda cuando vea blanco; después de cada giro, avanzad un intervalo corto a baja velocidad y volved a leer el sensor. Ajustad la duración de los giros y de los avances en un tramo recto y detenedlo si pierde la pista. Si empezáis por el otro borde, intercambiad los giros. Si vuestra versión ofrece un ejemplo de seguimiento, también podéis probarlo y comparar el resultado. Si la lectura no distingue las superficies, anotad que el seguimiento queda pendiente.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Comproveu que les lectures canvien entre llum i ombra, i entre silenci i una palmada suau. Si Rocky perd la línia, reviseu que el sensor mire a terra i que comence a la vora correcta. Ajusteu un sol llindar cada vegada.
+Comprobad que las lecturas cambian entre luz y sombra, y entre silencio y una palmada suave. Si Rocky pierde la línea, revisad que el sensor mire al suelo y que empiece en el borde correcto. Ajustad un solo umbral cada vez.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu el robot a velocitat baixa dins d’un recorregut delimitat, lluny de vores i dits. Feu servir sons breus a volum moderat. Atureu-lo abans de canviar el sensor de posició.
+Mantened el robot a velocidad baja dentro de un recorrido delimitado, lejos de bordes y dedos. Usad sonidos breves a volumen moderado. Detenedlo antes de cambiar el sensor de posición.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-[Makeblock · About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) descriu els elements de Codey i Rocky. [Makeblock · Programming Codey Rocky with mBlock 5](https://support.makeblock.com/hc/en-us/articles/1500008637961-Program-Codey-Rocky-with-mBlock-5) és el punt de partida per a la connexió; comproveu la compatibilitat del sistema i l’extensió instal·lada. La detecció de so no és reconeixement de parla, i el sensor infraroig/color no és una càmera ni un dispositiu de mesura universal.
+[Makeblock · About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) describe los elementos de Codey y Rocky. [Makeblock · Programming Codey Rocky with mBlock 5](https://support.makeblock.com/hc/en-us/articles/1500008637961-Program-Codey-Rocky-with-mBlock-5) es el punto de partida para la conexión; comprobad la compatibilidad del sistema y la extensión instalada. La detección de sonido no es reconocimiento de habla, y el sensor infrarrojo/color no es una cámara ni un dispositivo de medida universal.

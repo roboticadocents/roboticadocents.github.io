@@ -8,34 +8,34 @@ order: 3
 image: _assets/tutorials/mb-radio-mesh-flat.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Feu que una placa envie el número 7 i que una altra el mostre. Després canvieu el grup d’una placa i observeu què passa. És una comunicació local: no cal Wi-Fi i no transmet veu.
+Haced que una placa envíe el número 7 y que otra lo muestre. Después cambiad el grupo de una placa y observad qué pasa. Es una comunicación local: no hace falta Wi-Fi y no transmite voz.
 
-- Posar dues plaques en el mateix grup de ràdio.
-- Enviar un número de prova i mostrar-lo a l’altra placa.
-- Comprovar què passa quan canvia el grup.
+- Poner dos placas en el mismo grupo de radio.
+- Enviar un número de prueba y mostrarlo en la otra placa.
+- Comprobar qué pasa cuando cambia el grupo.
 
 ![](../../_assets/tutorials/mb-radio-mesh-flat.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- 2 o més plaques micro:bit amb portapiles
-- Ordinador amb MakeCode per preparar i transferir un programa a cada placa.
-- Full de registre per anotar grup, missatge enviat i missatge rebut.
+- 2 o más placas micro:bit con portapilas
+- Ordenador con MakeCode para preparar y transferir un programa a cada placa.
+- Hoja de registro para anotar grupo, mensaje enviado y mensaje recibido.
 
-Prepareu un programa emissor i un de receptor. Si hi ha altres plaques a prop, trieu un grup de ràdio que no utilitzen per evitar interferències.
+Preparad un programa emisor y uno receptor. Si hay otras placas cerca, elegid un grupo de radio que no utilicen para evitar interferencias.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Ràdio integrada per enviar i rebre missatges dins d’un grup configurat.
-- Comunicació per ràdio entre plaques sense Wi-Fi; és difusió local, no un canal privat ni un servei meteorològic.
+- Radio integrada para enviar y recibir mensajes dentro de un grupo configurado.
+- Comunicación por radio entre placas sin Wi-Fi; es difusión local, no un canal privado ni un servicio meteorológico.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Prepareu i envieu el missatge
+### 1. Preparad y enviad el mensaje
 
-A la placa emissora, poseu «ràdio: fixa grup a 7» a **en iniciar**. Dins de «en prémer el botó A», afegiu «ràdio: envia número 7». Descarregueu el programa. Les plaques emissora i receptora han d’usar el mateix grup de ràdio.
+En la placa emisora, poned «radio: fijar grupo a 7» en **al iniciar**. Dentro de «al pulsar el botón A», añadid «radio: enviar número 7». Descargad el programa. Las placas emisora y receptora deben usar el mismo grupo de radio.
 
 ```makecode
 radio.setGroup(7)
@@ -44,9 +44,9 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-### 2. Prepareu el receptor i feu la prova
+### 2. Preparad el receptor y haced la prueba
 
-A la segona placa, poseu també el grup 7 a **en iniciar**. Afegiu «en rebre número per ràdio» i, dins, «mostra el número» rebut. Descarregueu aquest altre programa a la placa receptora abans de prémer A a l’emissora:
+En la segunda placa, poned también el grupo 7 en **al iniciar**. Añadid «al recibir número por radio» y, dentro, «mostrar el número» recibido. Descargad este otro programa a la placa receptora antes de pulsar A en la emisora:
 
 ```makecode
 radio.setGroup(7)
@@ -55,18 +55,18 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 ```
 
-La [referència oficial de recepció per ràdio](https://makecode.microbit.org/reference/radio/on-received-number) mostra la peça de recepció i enllaça les peces d’enviament i de grup.
+La [referencia oficial de recepción por radio](https://makecode.microbit.org/reference/radio/on-received-number) muestra la pieza de recepción y enlaza las piezas de envío y de grupo.
 
-> **💡 Consell d’ús:** Useu el mateix grup de ràdio en les dues plaques de prova i un grup diferent del d’altres dispositius propers.
+> **💡 Consejo de uso:** Usad el mismo grupo de radio en las dos placas de prueba y un grupo diferente del de otros dispositivos próximos.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Premeu A cinc vegades a l’emissora i compteu quantes vegades apareix el 7 a la receptora. Deixeu que el número acabe de mostrar-se abans de tornar a prémer. Després canvieu només el grup de la receptora, descarregueu-li el programa i repetiu la prova. Torneu al grup 7 en acabar.
+Pulsad A cinco veces en la emisora y contad cuántas veces aparece el 7 en la receptora. Dejad que el número acabe de mostrarse antes de volver a pulsar. Después cambiad solo el grupo de la receptora, descargadle el programa y repetid la prueba. Volved al grupo 7 al terminar.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-No envieu dades personals: qualsevol placa del mateix grup de ràdio pot rebre el missatge. Useu números de prova i comproveu el grup configurat en cada dispositiu abans de transmetre.
+No enviéis datos personales: cualquier placa del mismo grupo de radio puede recibir el mensaje. Usad números de prueba y comprobad el grupo configurado en cada dispositivo antes de transmitir.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La [guia oficial de funcions de micro:bit](https://microbit.org/get-started/features/overview/) descriu la ràdio integrada i la diferència amb Bluetooth. La ràdio d’aquest exemple envia un número al grup configurat; no és privada i no necessita connexió a Internet.
+La [guía oficial de funciones de micro:bit](https://microbit.org/get-started/features/overview/) describe la radio integrada y la diferencia con Bluetooth. La radio de este ejemplo envía un número al grupo configurado; no es privada y no necesita conexión a Internet.

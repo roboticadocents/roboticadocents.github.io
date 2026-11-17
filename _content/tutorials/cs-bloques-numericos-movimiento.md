@@ -8,40 +8,40 @@ order: 2
 image: _assets/tutorials/cs-motors-sensors.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Feu avançar el MatataBot tres caselles amb tres peces de moviment i després amb una sola peça i el nombre 3. Els nombres modifiquen l’avanç i el retrocés, però no els girs. El robot base no mesura caselles ni detecta la graella.
+Haced avanzar el MatataBot tres casillas con tres piezas de movimiento y después con una sola pieza y el número 3. Los números modifican el avance y el retroceso, pero no los giros. El robot base no mide casillas ni detecta la cuadrícula.
 
-- Relacionar els blocs numèrics amb les ordres de moviment que poden modificar.
-- Comparar una seqüència d’avanç amb diverses ordres i una ordre amb paràmetre.
-- Explicar el límit dels blocs numèrics: s’apliquen a avançar o retrocedir, no als girs.
+- Relacionar los bloques numéricos con las órdenes de movimiento que pueden modificar.
+- Comparar una secuencia de avance con varias órdenes y una orden con parámetro.
+- Explicar el límite de los bloques numéricos: se aplican a avanzar o retroceder, no a los giros.
 
 ![](../../_assets/tutorials/cs-motors-sensors.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Coding Set de la dotació: MatataBot, Control Tower, tauler i blocs de moviment i números.
-- Mapa o quadrícula plana amb caselles de 10 cm, si el model disponible usa aquesta escala.
-- Una marca per identificar el punt i l’orientació inicials.
+- Coding Set de la dotación: MatataBot, Control Tower, tablero y bloques de movimiento y números.
+- Mapa o cuadrícula plana con casillas de 10 cm, si el modelo disponible usa esta escala.
+- Una marca para identificar el punto y la orientación iniciales.
 
-Carregueu el robot i la torre. Poseu el MatataBot a la casella d’inici, alineat amb la quadrícula; emparelleu-lo amb la torre i confirmeu el senyal de connexió. Abans de començar, identifiqueu les peces de moviment i comproveu com es disposa el nombre al tauler segons la guia del vostre model.
+Cargad el robot y la torre. Poned el MatataBot en la casilla de inicio, alineado con la cuadrícula; emparejadlo con la torre y confirmad la señal de conexión. Antes de empezar, identificad las piezas de movimiento y comprobad cómo se dispone el número en el tablero según la guía de vuestro modelo.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Torre de control que llig visualment les peces del tauler i envia el programa al MatataBot per Bluetooth.
-- Ordres de moviment tangible: avançar, retrocedir i girar 90° a esquerra o dreta.
-- Blocs numèrics com a paràmetre per repetir un nombre de vegades una ordre d’avanç o retrocés.
-- Execució ordenada del programa després de llegir el tauler i prémer el botó d’inici.
+- Torre de control que lee visualmente las piezas del tablero y envía el programa al MatataBot por Bluetooth.
+- Órdenes de movimiento tangible: avanzar, retroceder y girar 90° a izquierda o derecha.
+- Bloques numéricos como parámetro para repetir un número de veces una orden de avance o retroceso.
+- Ejecución ordenada del programa después de leer el tablero y pulsar el botón de inicio.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Compareu dues disposicions de peces
+### 1. Comparad dos disposiciones de piezas
 
-Dibuixeu una ruta recta de tres caselles i marqueu l’orientació inicial del robot. Representeu-la primer amb tres blocs d’avanç, sense posar les peces al tauler. Comproveu l’ordre de lectura de les peces abans de prémer el botó d’inici.
+Dibujad una ruta recta de tres casillas y marcad la orientación inicial del robot. Representadla primero con tres bloques de avance, sin poner las piezas en el tablero. Comprobad el orden de lectura de las piezas antes de pulsar el botón de inicio.
 
-Prepareu **Endavant → Endavant → Endavant** i premeu el botó gran. Torneu el robot a l'inici, retireu les tres peces del tauler i col·loqueu **Endavant** amb el nombre **3** a sota, tal com mostra la guia del kit. Premeu el botó i compareu on s'atura. 
+Preparad **Adelante → Adelante → Adelante** y pulsad el botón grande. Devolved el robot al inicio, retirad las tres piezas del tablero y colocad **Adelante** con el número **3** debajo, tal como muestra la guía del kit. Pulsad el botón y comparad dónde se detiene.
 
-Compareu les dues disposicions del tauler:
+Comparad las dos disposiciones del tablero:
 
 ```coding-set
 avançar -> avançar -> avançar
@@ -51,28 +51,28 @@ avançar -> avançar -> avançar
 avançar -> 3
 ```
 
-Repetiu amb Enrere si hi ha espai lliure darrere. El nombre indica quantes vegades es fa el moviment d'avançar o retrocedir, no centímetres ni velocitat.
+Repetid con Atrás si hay espacio libre detrás. El número indica cuántas veces se hace el movimiento de avanzar o retroceder, no centímetros ni velocidad.
 
-### 2. Comproveu el límit dels girs
+### 2. Comprobad el límite de los giros
 
-Afegiu un gir de 90° al final de la ruta i observeu que el robot gira sense avançar de casella. Segons la guia del fabricant, els blocs numèrics no s’apliquen als girs esquerre/dret: per fer dos girs, col·loqueu dues peces de gir o utilitzeu les peces de bucle.
+Añadid un giro de 90° al final de la ruta y observad que el robot gira sin avanzar de casilla. Según la guía del fabricante, los bloques numéricos no se aplican a los giros izquierda/derecha: para hacer dos giros, colocad dos piezas de giro o utilizad las piezas de bucle.
 
 ```coding-set
 avançar -> 3 -> girar dreta
 ```
 
-### 3. Corregiu el programa
+### 3. Corregid el programa
 
-Canvieu només el valor del nombre i comproveu el desplaçament després de cada execució. Si el resultat no coincideix, reviseu l’orientació de la peça, la posició del nombre al tauler, l’ordre de lectura i l’alineació inicial del robot. Anoteu si l’error provenia del programa, de la lectura o de la col·locació sobre la graella.
+Cambiad solo el valor del número y comprobad el desplazamiento después de cada ejecución. Si el resultado no coincide, revisad la orientación de la pieza, la posición del número en el tablero, el orden de lectura y la alineación inicial del robot. Anotad si el error provenía del programa, de la lectura o de la colocación sobre la cuadrícula.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Comproveu que tres peces Endavant i una peça Endavant amb el nombre 3 produeixen el mateix desplaçament. Si difereixen, reviseu la posició del nombre, l’ordre de lectura i l’alineació inicial del robot. No canvieu alhora el programa i la superfície.
+Comprobad que tres piezas Adelante y una pieza Adelante con el número 3 producen el mismo desplazamiento. Si difieren, revisad la posición del número, el orden de lectura y la alineación inicial del robot. No cambiéis a la vez el programa y la superficie.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu les mans fora del recorregut quan el MatataBot estiga en marxa. Atureu-lo abans de reposicionar-lo o canviar el tauler i deixeu espai lliure darrere abans de provar Enrere.
+Mantened las manos fuera del recorrido cuando el MatataBot esté en marcha. Detenedlo antes de reposicionarlo o cambiar el tablero y dejad espacio libre detrás antes de probar Atrás.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La lliçó oficial Matatalab [Sequence](https://matatalab.com/en/node/61) indica que els blocs numèrics s’utilitzen amb ordres d’avanç i retrocés i que no es poden combinar amb els girs esquerre/dret. [Get to Know Matatalab Coding Set](https://matatalab.com/en/node/60) descriu la torre, el tauler, la connexió Bluetooth i les peces de moviment del conjunt. La quadrícula és una guia externa; el conjunt base no conté un sensor que mesure caselles o distàncies.
+La lección oficial Matatalab [Sequence](https://matatalab.com/en/node/61) indica que los bloques numéricos se utilizan con órdenes de avance y retroceso y que no se pueden combinar con los giros izquierda/derecha. [Get to Know Matatalab Coding Set](https://matatalab.com/en/node/60) describe la torre, el tablero, la conexión Bluetooth y las piezas de movimiento del conjunto. La cuadrícula es una guía externa; el conjunto base no contiene un sensor que mida casillas o distancias.

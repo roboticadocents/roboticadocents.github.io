@@ -8,32 +8,32 @@ order: 4
 image: _assets/tutorials/mb-so-microfon-flat.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Feu que una micro:bit V2 reaccione a un so i compareu les lectures en silenci i després d’una palmada suau. El micròfon i l’altaveu integrats necessaris per a aquesta pràctica són de la versió V2.
+Haced que una micro:bit V2 reaccione a un sonido y comparad las lecturas en silencio y después de una palmada suave. El micrófono y el altavoz integrados necesarios para esta práctica son de la versión V2.
 
-- Mostrar una icona quan la placa detecta un so fort.
-- Comparar el nivell de so en dues situacions.
-- Provar l’altaveu integrat amb un to breu.
+- Mostrar un icono cuando la placa detecta un sonido fuerte.
+- Comparar el nivel de sonido en dos situaciones.
+- Probar el altavoz integrado con un tono breve.
 
 ![](../../_assets/tutorials/mb-so-microfon-flat.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- micro:bit V2 (amb micròfon i altaveu integrats)
-- Ordinador amb MakeCode i cable USB per transferir el programa.
-- Espai on provar sons breus a volum moderat; una placa V1 necessita un perifèric extern compatible.
+- micro:bit V2 (con micrófono y altavoz integrados)
+- Ordenador con MakeCode y cable USB para transferir el programa.
+- Espacio donde probar sonidos breves a volumen moderado; una placa V1 necesita un periférico externo compatible.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Micròfon i LED indicador, lectura del nivell de so i altaveu integrat en micro:bit V2.
-- No reconeix paraules ni mesura decibels calibrats; en V1 cal un perifèric extern per a aquestes entrades/eixides de so.
+- Micrófono y LED indicador, lectura del nivel de sonido y altavoz integrado en micro:bit V2.
+- No reconoce palabras ni mide decibelios calibrados; en V1 hace falta un periférico externo para estas entradas/salidas de sonido.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Esdeveniment d'aplaudiment
+### 1. Evento de aplauso
 
-En MakeCode, creeu un projecte nou. En **Entrada**, busqueu «quan s’escolta un so fort» i poseu-hi dins «mostra una icona», una pausa d’un segon i «neteja la pantalla». Aquest exemple mostra l’ordre dels blocs:
+En MakeCode, cread un proyecto nuevo. En **Entrada**, buscad «cuando se escucha un sonido fuerte» y poned dentro «mostrar un icono», una pausa de un segundo y «limpiar la pantalla». Este ejemplo muestra el orden de los bloques:
 
 ```makecode
 input.onSound(DetectedSound.Loud, function () {
@@ -43,11 +43,11 @@ input.onSound(DetectedSound.Loud, function () {
 })
 ```
 
-Descarregueu el programa a la V2 i feu una palmada suau: la icona hauria d’aparéixer i desaparèixer. Espereu que desaparega abans de repetir la prova. Si no respon, apropeu-vos un poc o reviseu el llindar de so de l’editor, sense fer sorolls forts. La [referència oficial](https://makecode.microbit.org/reference/input/on-sound) mostra aquesta peça i un exemple.
+Descargad el programa a la V2 y dad una palmada suave: el icono debería aparecer y desaparecer. Esperad a que desaparezca antes de repetir la prueba. Si no responde, acercaos un poco o revisad el umbral de sonido del editor, sin hacer ruidos fuertes. La [referencia oficial](https://makecode.microbit.org/reference/input/on-sound) muestra esta pieza y un ejemplo.
 
-### 2. Mostra el nivell de so
+### 2. Mostrad el nivel de sonido
 
-Creeu un segon projecte perquè la barra no tape la icona del primer. Dins de «per sempre», afegiu el bloc de mostrar una barra de llums. En el valor de la barra poseu «nivell de so» i deixeu el màxim a 255. El nombre serveix per comparar lectures; no són decibels.
+Cread un segundo proyecto para que la barra no tape el icono del primero. Dentro de «para siempre», añadid el bloque de mostrar una barra de luces. En el valor de la barra poned «nivel de sonido» y dejad el máximo en 255. El número sirve para comparar lecturas; no son decibelios.
 
 ```makecode
 basic.forever(function () {
@@ -55,22 +55,22 @@ basic.forever(function () {
 })
 ```
 
-La [referència oficial del nivell de so](https://makecode.microbit.org/reference/input/sound-level) mostra la peça del micròfon i recorda que necessita micro:bit V2.
+La [referencia oficial del nivel de sonido](https://makecode.microbit.org/reference/input/sound-level) muestra la pieza del micrófono y recuerda que necesita micro:bit V2.
 
-### 3. Proveu l’altaveu
+### 3. Probad el altavoz
 
-En un tercer projecte, poseu «reprodueix un to» dins de «quan es prem el botó B». Descarregueu-lo i premeu B per escoltar-lo a l’altaveu de la V2. Trieu un volum còmode; també podeu mostrar una icona en lloc de reproduir un so.
+En un tercer proyecto, poned «reproduce un tono» dentro de «al pulsar el botón B». Descargadlo y pulsad B para escucharlo en el altavoz de la V2. Elegid un volumen cómodo; también podéis mostrar un icono en lugar de reproducir un sonido.
 
-> **💡 Consell d’ús:** Deseu els projectes amb noms diferents per provar la icona, la barra i el to per separat.
+> **💡 Consejo de uso:** Guardad los proyectos con nombres diferentes para probar el icono, la barra y el tono por separado.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Amb el primer projecte, comproveu que una palmada suau activa la icona. Amb el projecte de la barra, observeu si puja el nivell de so. Amb el projecte del to, premeu B. Si no hi ha resposta, reviseu el projecte carregat i que la placa siga V2.
+Con el primer proyecto, comprobad que una palmada suave activa el icono. Con el proyecto de la barra, observad si sube el nivel de sonido. Con el proyecto del tono, pulsad B. Si no hay respuesta, revisad el proyecto cargado y que la placa sea V2.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu el volum moderat i feu servir una palmada suau; no calen crits ni sons forts. El programa llig el nivell de so i no necessita enregistrar veus.
+Mantened el volumen moderado y usad una palmada suave; no hacen falta gritos ni sonidos fuertes. El programa lee el nivel de sonido y no necesita grabar voces.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La referència de MakeCode explica l’esdeveniment [so fort](https://makecode.microbit.org/reference/input/on-sound) i el bloc [nivell de so](https://makecode.microbit.org/reference/input/sound-level). El micròfon i l’altaveu integrats d’aquesta pràctica requereixen micro:bit V2; el número de la barra no són decibels.
+La referencia de MakeCode explica el evento [sonido fuerte](https://makecode.microbit.org/reference/input/on-sound) y el bloque [nivel de sonido](https://makecode.microbit.org/reference/input/sound-level). El micrófono y el altavoz integrados de esta práctica requieren micro:bit V2; el número de la barra no son decibelios.

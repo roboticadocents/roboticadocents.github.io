@@ -8,66 +8,66 @@ order: 5
 image: _assets/tutorials/cs-obstacles-bandera.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Programeu una ruta que passe pel costat d’un obstacle i acabe a la bandera. Les peces del tauler determinen el recorregut; el MatataBot base no detecta ni esquiva obstacles automàticament.
+Programad una ruta que pase junto a un obstáculo y acabe en la bandera. Las piezas del tablero determinan el recorrido; el MatataBot base no detecta ni esquiva obstáculos automáticamente.
 
-- descriure inici, destinació i caselles prohibides;
-- construir una seqüència de moviments que evite les peces d’obstacle;
-- comprovar si la ruta arriba a la bandera i corregir-la amb una prova cada vegada;
-- explicar per què «girar a l’esquerra» no vol dir «desplaçar-se cap a l’esquerra».
+- describir inicio, destino y casillas prohibidas;
+- construir una secuencia de movimientos que evite las piezas de obstáculo;
+- comprobar si la ruta llega a la bandera y corregirla con una prueba cada vez;
+- explicar por qué «girar a la izquierda» no significa «desplazarse hacia la izquierda».
 
 ![](../../_assets/tutorials/cs-obstacles-bandera.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Coding Set de la dotació: MatataBot, Control Tower, tauler de control, mapa, fitxes de moviment i bandera.
-- Obstacles inclosos amb el conjunt; confirmeu que són les peces del kit base del vostre centre.
-- Targetes o quadrícula de paper per a planificar una ruta abans de col·locar les fitxes.
+- Coding Set de la dotación: MatataBot, Control Tower, tablero de control, mapa, fichas de movimiento y bandera.
+- Obstáculos incluidos con el conjunto; confirmad que son las piezas del kit base de vuestro centro.
+- Tarjetas o cuadrícula de papel para planificar una ruta antes de colocar las fichas.
 
-Connecteu la torre, el tauler i el robot. Poseu una targeta d’obstacle davant del punt d’inici i una bandera dues caselles més enllà. Deixeu lliure una columna a la dreta per passar-hi. El Sensor Add-on no és necessari per a aquesta pràctica.
+Conectad la torre, el tablero y el robot. Poned una tarjeta de obstáculo delante del punto de inicio y una bandera dos casillas más allá. Dejad libre una columna a la derecha para pasar. El Sensor Add-on no es necesario para esta práctica.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Lectura del programa físic per la Control Tower i transmissió al MatataBot.
-- Ordres direccionals: avançar, retrocedir i girar 90° a dreta o esquerra.
-- Bandera com a destinació visible i obstacles físics com a restriccions de la ruta.
-- Execució seqüencial i depuració d’un programa tangible.
+- Lectura del programa físico por la Control Tower y transmisión al MatataBot.
+- Órdenes direccionales: avanzar, retroceder y girar 90° a derecha o izquierda.
+- Bandera como destino visible y obstáculos físicos como restricciones de la ruta.
+- Ejecución secuencial y depuración de un programa tangible.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Llegiu el mapa i planifiqueu la ruta
+### 1. Leed el mapa y planificad la ruta
 
-Poseu MatataBot a l’inici, mirant cap a l’obstacle i la bandera. Dibuixeu les tres posicions en una graella. Assenyaleu la dreta del robot: els girs depenen de cap a on mira.
+Poned MatataBot en el inicio, mirando hacia el obstáculo y la bandera. Dibujad las tres posiciones en una cuadrícula. Señalad la derecha del robot: los giros dependen de hacia dónde mira.
 
-Seguiu amb el dit aquesta ruta sobre la graella abans de col·locar les peces. Un gir canvia cap a on mira el robot, però no l’avança:
+Seguid con el dedo esta ruta sobre la cuadrícula antes de colocar las piezas. Un giro cambia hacia dónde mira el robot, pero no lo avanza:
 
 ```coding-set
 girar dreta -> avançar -> girar esquerra -> avançar -> avançar -> girar esquerra -> avançar
 ```
 
-El recorregut passa pel costat de la targeta i torna a la columna de la bandera. Abans d'usar el robot, seguiu les fletxes amb el dit i comproveu que hi ha prou espai a la graella.
+El recorrido pasa junto a la tarjeta y vuelve a la columna de la bandera. Antes de usar el robot, seguid las flechas con el dedo y comprobad que hay espacio suficiente en la cuadrícula.
 
-### 2. Traduïu el pla a fitxes físiques
+### 2. Traducid el plan a fichas físicas
 
-Col·loqueu les fitxes en l’ordre de lectura del tauler. Reviseu cada moviment assenyalant alhora la fitxa i el tram dibuixat. Comproveu que cada gir canvia l’orientació i que la seqüència acaba quan MatataBot arriba a la bandera.
+Colocad las fichas en el orden de lectura del tablero. Revisad cada movimiento señalando a la vez la ficha y el tramo dibujado. Comprobad que cada giro cambia la orientación y que la secuencia acaba cuando MatataBot llega a la bandera.
 
-### 3. Executeu i observeu el trajecte
+### 3. Ejecutad y observad el trayecto
 
-Poseu el robot a l’inici amb la mateixa orientació que al dibuix i executeu el programa. No mogueu els obstacles mentre es desplaça. En arribar a la bandera, confirmeu si ha seguit el camí previst; si topa amb una peça o passa de llarg, atureu la prova, localitzeu la primera diferència i torneu al tauler de control.
+Poned el robot en el inicio con la misma orientación que en el dibujo y ejecutad el programa. No mováis los obstáculos mientras se desplaza. Al llegar a la bandera, confirmad si ha seguido el camino previsto; si choca con una pieza o se pasa de largo, detened la prueba, localizad la primera diferencia y volved al tablero de control.
 
-### 4. Depureu canviant una sola instrucció
+### 4. Depurad cambiando una sola instrucción
 
-Si el resultat no és el previst, reviseu la primera fitxa que no correspon a la ruta, canvieu-la i torneu a provar des de l’inici. Si ja funciona, busqueu una altra ruta. El Sensor Add-on és un complement diferent: les barreres del kit base no detecten res.
+Si el resultado no es el previsto, revisad la primera ficha que no corresponde a la ruta, cambiadla y volved a probar desde el inicio. Si ya funciona, buscad otra ruta. El Sensor Add-on es un complemento diferente: las barreras del kit base no detectan nada.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Comproveu que el recorregut evita l’obstacle i acaba a la bandera. Si no ho fa, atureu el robot i corregiu la primera peça que no correspon a la ruta. Torneu-lo al mateix punt i orientació abans de repetir.
+Comprobad que el recorrido evita el obstáculo y acaba en la bandera. Si no lo hace, detened el robot y corregid la primera pieza que no corresponde a la ruta. Devolvedlo al mismo punto y orientación antes de repetir.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Manteniu dits i cables fora del recorregut. Atureu el robot abans de moure obstacles o corregir les peces del tauler. El kit base no detecta l’obstacle automàticament: deixeu espai per aturar la prova si la ruta és incorrecta.
+Mantened dedos y cables fuera del recorrido. Detened el robot antes de mover obstáculos o corregir las piezas del tablero. El kit base no detecta el obstáculo automáticamente: dejad espacio para detener la prueba si la ruta es incorrecta.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-La lliçó oficial [Get to Know Matatalab Coding Set](https://matatalab.com/en/node/60) inclou obstacles i banderes en l’inventari del conjunt; [Hello, Matatalab Robots!](https://matatalab.com/en/node/88) treballa la bandera com a destinació i les ordres de moviment. Aquest manual mostra com programar una ruta amb aquests elements. Les peces físiques no detecten obstacles: la detecció amb fitxes «Obstacle/No Obstacle» pertany al Sensor Add-on, que és un complement diferent.
+La lección oficial [Get to Know Matatalab Coding Set](https://matatalab.com/en/node/60) incluye obstáculos y banderas en el inventario del conjunto; [Hello, Matatalab Robots!](https://matatalab.com/en/node/88) trabaja la bandera como destino y las órdenes de movimiento. Este manual muestra cómo programar una ruta con estos elementos. Las piezas físicas no detectan obstáculos: la detección con fichas «Obstacle/No Obstacle» pertenece al Sensor Add-on, que es un complemento diferente.

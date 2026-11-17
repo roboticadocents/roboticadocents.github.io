@@ -8,63 +8,63 @@ order: 3
 image: _assets/tutorials/tb-motors-sensors.webp
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Instal·leu el suport de retolador i programeu un quadrat i un rectangle amb Tale-Bot. Comproveu el traç i ajusteu el contacte del retolador amb el paper.
+Instalad el soporte de rotulador y programad un cuadrado y un rectángulo con Tale-Bot. Comprobad el trazo y ajustad el contacto del rotulador con el papel.
 
-- Relacionar la geometria espacial amb seqüències d'ordres repetitives.
-- Dibuixar i comparar un quadrat i un rectangle.
-- Observar com la superfície i el suport afecten el resultat del dibuix.
+- Relacionar la geometría espacial con secuencias de órdenes repetitivas.
+- Dibujar y comparar un cuadrado y un rectángulo.
+- Observar cómo la superficie y el soporte afectan al resultado del dibujo.
 
 ![](../../_assets/tutorials/tb-motors-sensors.webp)
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Tale-Bot Pro i accessoris de dibuix; braços de transport si formen part de la caixa disponible.
-- Un retolador rentable i full gran de paper fixat sobre una superfície plana.
-- Un objecte lleuger, gran i segur que càpia entre els braços; no useu peces menudes ni fràgils.
+- Tale-Bot Pro y accesorios de dibujo; brazos de transporte si forman parte de la caja disponible.
+- Un rotulador lavable y una hoja grande de papel fijada sobre una superficie plana.
+- Un objeto ligero, grande y seguro que quepa entre los brazos; no uséis piezas pequeñas ni frágiles.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Moviment programat i suport oficial de dibuix amb retoladors quan està inclòs en la dotació.
-- Braços opcionals per a subjectar i desplaçar objectes lleugers; no són pinça motoritzada ni mesuren la càrrega.
-- La precisió del traç depén de la posició del suport, el contacte amb el paper i la superfície; no és un sensor.
+- Movimiento programado y soporte oficial de dibujo con rotuladores cuando está incluido en la dotación.
+- Brazos opcionales para sujetar y desplazar objetos ligeros; no son una pinza motorizada ni miden la carga.
+- La precisión del trazo depende de la posición del soporte, el contacto con el papel y la superficie; no es un sensor.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Prepareu el suport i dibuixeu un quadrat
+### 1. Preparad el soporte y dibujad un cuadrado
 
-Fixeu un full gran sobre una superfície plana i poseu-hi una cartolina a sota. Amb el robot aturat, col·loqueu el suport de dibuix i el retolador rentable seguint la guia del fabricant; ajusteu-lo suaument perquè la punta toque el paper sense alçar les rodes. Cal el suport compatible per fer aquesta prova de dibuix.
+Fijad una hoja grande sobre una superficie plana y poned una cartulina debajo. Con el robot detenido, colocad el soporte de dibujo y el rotulador lavable siguiendo la guía del fabricante; ajustadlo suavemente para que la punta toque el papel sin levantar las ruedas. Hace falta el soporte compatible para hacer esta prueba de dibujo.
 
-Marqueu un punt inicial i orienteu el robot paral·lel a una vora del paper. Esborreu el programa anterior mantenint X més d’un segon. Premeu **Endavant → Dreta** quatre vegades i després **Play**. Cada avanç dibuixa un costat i cada gir canvia l’orientació; el gir no dibuixa un costat. Observeu si el traç s’assembla a un quadrat i acaba prop del punt inicial.
+Marcad un punto inicial y orientad el robot paralelo a un borde del papel. Borrad el programa anterior manteniendo X más de un segundo. Pulsad **Adelante → Derecha** cuatro veces y después **Play**. Cada avance dibuja un lado y cada giro cambia la orientación; el giro no dibuja un lado. Observad si el trazo se parece a un cuadrado y acaba cerca del punto inicial.
 
 ```talebot
 avançar -> girar dreta -> avançar -> girar dreta -> avançar -> girar dreta -> avançar -> girar dreta -> executa
 ```
 
-### 2. Creeu un patró rectangular
+### 2. Cread un patrón rectangular
 
-Esborreu la seqüència. Planifiqueu costats de dos passos, un pas, dos passos i un pas, amb un gir a la dreta després de cada costat. Introduïu **Endavant → Endavant → Dreta → Endavant → Dreta → Endavant → Endavant → Dreta → Endavant → Dreta** i premeu **Play**. Els costats oposats tenen la mateixa longitud. Abans d’executar, dibuixeu la forma prevista; useu un full nou per distingir els intents. Si el robot no accepta tota la seqüència, executeu dos costats, esborreu les ordres i introduïu els altres dos sense canviar-ne la posició ni l’orientació.
+Borrad la secuencia. Planificad lados de dos pasos, un paso, dos pasos y un paso, con un giro a la derecha después de cada lado. Introducid **Adelante → Adelante → Derecha → Adelante → Derecha → Adelante → Adelante → Derecha → Adelante → Derecha** y pulsad **Play**. Los lados opuestos tienen la misma longitud. Antes de ejecutar, dibujad la forma prevista; usad una hoja nueva para distinguir los intentos. Si el robot no acepta toda la secuencia, ejecutad dos lados, borrad las órdenes e introducid los otros dos sin cambiar la posición ni la orientación.
 
 ```talebot
 avançar -> avançar -> girar dreta -> avançar -> girar dreta
 avançar -> avançar -> girar dreta -> avançar -> girar dreta -> executa
 ```
 
-### 3. Ampliació opcional: proveu el transport amb els braços
+### 3. Ampliación opcional: probad el transporte con los brazos
 
-Si el kit inclou els dos braços, instal·leu-los en els punts indicats pel fabricant i comproveu manualment que queden subjectes. Trieu un objecte lleuger i ample, col·loqueu-lo entre els braços i programeu un recorregut curt fins a una zona de lliurament. Observeu si l’objecte es manté estable; reduïu el nombre de girs abans d’augmentar la distància. Si el kit no inclou els braços compatibles, ometeu la prova de transport.
+Si el kit incluye los dos brazos, instaladlos en los puntos indicados por el fabricante y comprobad manualmente que quedan sujetos. Elegid un objeto ligero y ancho, colocadlo entre los brazos y programad un recorrido corto hasta una zona de entrega. Observad si el objeto se mantiene estable; reducid el número de giros antes de aumentar la distancia. Si el kit no incluye los brazos compatibles, omitid la prueba de transporte.
 
-> **💡 Consell d’ús:** Posa una cartolina gruixuda a sota per evitar que els retoladors traspassin a la taula.
+> **💡 Consejo de uso:** Poned una cartulina gruesa debajo para evitar que los rotuladores traspasen a la mesa.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Fixeu el paper a una taula plana. Proveu un avanç i un gir per comprovar el contacte del retolador. Després executeu el quadrat i anoteu si torna prop de la marca inicial. Per al transport, feu una prova curta amb un objecte ample i lleuger. No forceu els braços si l’objecte cau o el robot no el pot moure.
+Fijad el papel a una mesa plana. Probad un avance y un giro para comprobar el contacto del rotulador. Después ejecutad el cuadrado y anotad si vuelve cerca de la marca inicial. Para el transporte, haced una prueba corta con un objeto ancho y ligero. No forcéis los brazos si el objeto cae o el robot no puede moverlo.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Fixeu el paper sobre una superfície plana i protegiu la taula amb cartolina. Ajusteu el retolador sense alçar les rodes i manteniu-lo lluny del mecanisme. Atureu el robot abans de canviar el suport o els braços.
+Fijad el papel sobre una superficie plana y proteged la mesa con cartulina. Ajustad el rotulador sin levantar las ruedas y mantenedlo lejos del mecanismo. Detened el robot antes de cambiar el soporte o los brazos.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-Matatalab · [guia oficial de Tale-Bot Pro](https://matatalab.com/en/node/774). El fabricant descriu el suport de dibuix i els braços per subjectar i moure objectes; confirmeu que aquests accessoris estan en la caixa disponible. La precisió del traç i el transport depenen del muntatge, la superfície i la càrrega.
+Matatalab · [guía oficial de Tale-Bot Pro](https://matatalab.com/en/node/774). El fabricante describe el soporte de dibujo y los brazos para sujetar y mover objetos; confirmad que estos accesorios están en la caja disponible. La precisión del trazo y el transporte dependen del montaje, la superficie y la carga.
