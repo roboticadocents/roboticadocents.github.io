@@ -1,3 +1,4 @@
+// check-es:skip
 'use strict';
 
 const fs = require('node:fs');
@@ -17,21 +18,21 @@ const EXTRA_COMMANDS = {
   'coding-set': { define: ['defineix funcio', 'definir funcion'], call: ['crida funcio', 'llamar funcion'], random: ['aleatori', 'aleatorio'], music: ['musica'], dance: ['dansa', 'baile'] }
 };
 const LABELS = {
-  record: 'Reprodueix la gravació (pulsació curta)',
-  dance: 'Dansa predefinida',
-  repeat: 'Repetició',
-  define: 'Defineix funció',
-  call: 'Crida funció',
-  random: 'Moviment aleatori',
+  record: 'Reproducir la grabación (pulsación corta)',
+  dance: 'Danza predefinida',
+  repeat: 'Repetición',
+  define: 'Definir función',
+  call: 'Llamar función',
+  random: 'Movimiento aleatorio',
   music: 'Música predefinida',
-  forward: 'Endavant',
-  back: 'Enrere',
-  right: 'Gir a la dreta',
-  left: 'Gir a l’esquerra',
-  loop: 'Inici del bucle',
-  end: 'Fi del bucle',
-  play: 'Executa',
-  clear: 'Esborra'
+  forward: 'Adelante',
+  back: 'Atrás',
+  right: 'Girar a la derecha',
+  left: 'Girar a la izquierda',
+  loop: 'Inicio del bucle',
+  end: 'Fin del bucle',
+  play: 'Ejecutar',
+  clear: 'Borrar'
 };
 
 const SVG_ROOT = path.resolve(__dirname, '../../sim/svg');

@@ -12,7 +12,7 @@ function ActivityCard({ item, root = '../' }) {
     </div>
     <h3 class="item-title">${escapeHTML(item.titol)}</h3>
     <p class="item-desc">${escapeHTML(item.descripcio)}</p>
-    <div class="item-footer"><span>⏱️ ${escapeHTML(item.durada)}</span><span>Veure activitat →</span></div>
+    <div class="item-footer"><span>⏱️ ${escapeHTML(item.durada)}</span><span>Ver actividad →</span></div>
   </a>`;
 }
 

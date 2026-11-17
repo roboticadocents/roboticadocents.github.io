@@ -1,8 +1,8 @@
 ---
-title: Coding Set: repetir una ruta amb peces de bucle
-description: Repetir una seqüència curta amb les peces físiques de bucle i comparar-ne el resultat.
+title: "Coding Set: repetir una ruta con piezas de bucle"
+description: "Repetir una secuencia corta con las piezas físicas de bucle y comparar el resultado."
 robot: coding-set
-level: Intermedi
+level: "Intermedio"
 duration: 45 min
 order: 3
 image: _assets/tutorials/cs-bucles.webp

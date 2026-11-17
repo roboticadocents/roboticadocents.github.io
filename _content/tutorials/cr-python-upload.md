@@ -1,8 +1,8 @@
 ---
-title: Codey Rocky: del programa de blocs a Python en mBlock
-description: Connectar Codey Rocky, carregar un programa de blocs i inspeccionar o editar la traducció Python del mode Upload.
+title: "Codey Rocky: del programa de bloques a Python en mBlock"
+description: "Conectar Codey Rocky, cargar un programa de bloques e inspeccionar o editar la traducción a Python del modo Upload."
 robot: codey-rocky
-level: Avançat
+level: "Avanzado"
 duration: 50 min
 order: 6
 image: _assets/tutorials/cr-python-upload.webp

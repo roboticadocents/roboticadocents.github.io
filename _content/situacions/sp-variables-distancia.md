@@ -1,17 +1,17 @@
 ---
 active: true
-title: "Mesurar per decidir"
-description: "Sis lliçons SPIKE Prime sobre orientació del hub, variables, comptadors, distància, velocitat i decisions de gestió amb dades."
+title: "Medir para decidir"
+description: "Seis lecciones SPIKE Prime sobre orientación del hub, variables, contadores, distancia, velocidad y decisiones de gestión con datos."
 robot: "spike"
 robot_label: "SPIKE Prime"
 cycle: "tercer-cicle"
-cycle_label: "Tercer cicle"
+cycle_label: "Tercer ciclo"
 subject: "tecnologia"
-subject_label: "Tecnologia, Matemàtiques i Economia"
+subject_label: "Tecnología, Matemáticas y Economía"
 theme: "dades"
-theme_label: "Variables, mesures i gestió"
-duration: "6 lliçons · 7–9 sessions"
-challenge: "Com fem servir variables i mesures repetibles per a decidir quina ruta de servei escolar convé en una maqueta?"
+theme_label: "Variables, medidas y gestión"
+duration: "6 lecciones · 7–9 sesiones"
+challenge: "¿Cómo usamos variables y medidas repetibles para decidir qué ruta de servicio escolar conviene en una maqueta?"
 ---
 
 ![Base mòbil real LEGO SPIKE Prime en una pista curta de taula, amb un objectiu de paper i una regla per mesurar el recorregut.](../../_assets/situacions/sp-variables-distancia.webp)

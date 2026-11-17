@@ -6,9 +6,9 @@ Totes les activitats es guarden en aquesta carpeta. El prefix determina on es mo
 
 | Nom del fitxer | Llista | URL de detall |
 | --- | --- | --- |
-| `pc-[slug].md` | `/pensament-computacional/` | `/activitat/pc-[slug]/` |
-| `tb-[slug].md` | Secció «Activitats» de Tale-Bot, després dels tutorials | `/activitat/tb-[slug]/` |
-| `cs-[slug].md` | Secció «Activitats» de Coding Set, després dels tutorials | `/activitat/cs-[slug]/` |
+| `pc-[slug].md` | `/pensamiento-computacional/` | `/actividad/pc-[slug]/` |
+| `tb-[slug].md` | Secció «Activitats» de Tale-Bot, després dels tutorials | `/actividad/tb-[slug]/` |
+| `cs-[slug].md` | Secció «Activitats» de Coding Set, després dels tutorials | `/actividad/cs-[slug]/` |
 
 Copieu `TEMPLATE-ACTIVITAT.md`, poseu un nom amb el prefix corresponent i canvieu
 `active` a `true` quan estiga preparada. Les activitats es mostren segons `order`.

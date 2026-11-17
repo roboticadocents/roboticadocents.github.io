@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// check-es:skip
 /**
  * _scripts/build.js
  *
@@ -13,7 +14,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 const renderer = require('./lib/markdown');
-const { ACTIVITY_TOPICS } = require('./lib/activity-topics');
+const { ACTIVITY_TOPICS, ACTIVITY_TOPIC_LABELS } = require('./lib/activity-topics');
 const contentRedirects = require('./content-redirects.json');
 const { buildAllBlocks } = require('./lib/blocks');
 const { warmMakeCodeCache } = require('./lib/makecode-cache');
@@ -45,7 +46,7 @@ function buildContentRedirects(route) {
       root: '../../',
       targetHref: `../${slug}/index.html`,
       fallbackHref: `../${slug}/index.html`,
-      fallbackLabel: 'Obrir el contingut'
+      fallbackLabel: 'Abrir el contenido'
     }));
   }
 }
@@ -61,6 +62,34 @@ function slugifyBadge(text) {
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/\s+/g, '-');
+}
+
+function buildLegacyRouteRedirects() {
+  const map = JSON.parse(fs.readFileSync(path.join(__dirname, 'legacy-content-map.json'), 'utf8'));
+  for (const [oldRoute, newRoute] of Object.entries(map.routes || {})) {
+    writeHTML(`${oldRoute}/index.html`, RedirectPage({
+      root: '../',
+      targetHref: `../${newRoute}/index.html`,
+      fallbackHref: `../${newRoute}/index.html`,
+      fallbackLabel: 'Abrir el contenido'
+    }));
+    for (const [oldSlug, newSlug] of Object.entries((map.slugs || {})[newRoute] || {})) {
+      writeHTML(`${oldRoute}/${oldSlug}/index.html`, RedirectPage({
+        root: '../../',
+        targetHref: `../../${newRoute}/${newSlug}/index.html`,
+        fallbackHref: `../../${newRoute}/index.html`,
+        fallbackLabel: 'Abrir el contenido'
+      }));
+    }
+  }
+  for (const [oldRoute, newRoute] of Object.entries(map.catalogs || {})) {
+    writeHTML(`${oldRoute}/index.html`, RedirectPage({
+      root: '../',
+      targetHref: `../${newRoute}/index.html`,
+      fallbackHref: `../${newRoute}/index.html`,
+      fallbackLabel: 'Abrir el contenido'
+    }));
+  }
 }
 
 function prepareDist() {
@@ -102,7 +131,7 @@ function cleanSubdirectories(sectionDir) {
 }
 
 function buildActivities() {
-  cleanSubdirectories('activitat');
+  cleanSubdirectories('actividad');
   const dir = path.join(ROOT_DIR, '_content/activitats');
   const files = fs.readdirSync(dir)
     .filter(f => /^(pc|tb|cs)-.+\.md$/.test(f))
@@ -124,20 +153,20 @@ function buildActivities() {
     const title = String(data.title || slug).trim();
     const description = String(data.description || '').trim();
     if (!ACTIVITY_TOPICS.includes(data.topic)) {
-      throw new Error(`${file}: topic desconegut. Trieu un de: ${ACTIVITY_TOPICS.join(', ')}`);
+      throw new Error(`${file}: tema desconocido. Elige uno de: ${ACTIVITY_TOPICS.join(', ')}`);
     }
     const badges = [];
-    if (data.topic) badges.push({ text: data.topic, primary: true });
+    if (data.topic) badges.push({ text: ACTIVITY_TOPIC_LABELS[data.topic] || data.topic, primary: true });
     if (data.cycle_label || data.cycle) badges.push({ text: data.cycle_label || data.cycle, primary: false });
     if (data.duration) badges.push({ text: `⏱️ ${data.duration}`, primary: false });
 
-    writeHTML(`activitat/${slug}/index.html`, DetailPage({
+    writeHTML(`actividad/${slug}/index.html`, DetailPage({
       title,
       description,
       activeNav: robot ? 'robots' : 'pensament',
       root: '../../',
-      backHref: robot ? `../../robot/${robot}/index.html#activitats` : '../../pensament-computacional/index.html',
-      backLabel: robotLabel || 'Pensament computacional',
+      backHref: robot ? `../../robot/${robot}/index.html#activitats` : '../../pensamiento-computacional/index.html',
+      backLabel: robotLabel || 'Pensamiento computacional',
       printHref: includePDFs ? `../../imprimir/activitats/${slug}.pdf` : '',
       badges,
       content: rendered.html
@@ -150,11 +179,11 @@ function buildActivities() {
         id: `activitat-${slug}`,
         slug,
         robot,
-        url: `activitat/${slug}/index.html`,
+        url: `actividad/${slug}/index.html`,
         titol: title,
         image: data.image || '',
         image_alt: data.image_alt || '',
-        tag: data.topic || '',
+        tag: ACTIVITY_TOPIC_LABELS[data.topic] || data.topic || '',
         cicle: data.cycle_label || data.cycle || '',
         durada: data.duration || '',
         descripcio: description
@@ -162,12 +191,12 @@ function buildActivities() {
     });
   }
 
-  buildContentRedirects('activitat');
-  writeHTML('activitat/index.html', RedirectPage({
-    title: 'Activitat | Robòtica²⁰⁰',
+  buildContentRedirects('actividad');
+  writeHTML('actividad/index.html', RedirectPage({
+    title: 'Actividad | Robótica²⁰⁰',
     activeNav: 'pensament',
-    fallbackHref: '../pensament-computacional/index.html',
-    fallbackLabel: 'Tornar a Pensament computacional'
+    fallbackHref: '../pensamiento-computacional/index.html',
+    fallbackLabel: 'Volver a Pensamiento computacional'
   }));
 
   items.sort((a, b) => a.order - b.order || a.slug.localeCompare(b.slug));
@@ -251,10 +280,10 @@ function buildTutorials() {
 
   buildContentRedirects('tutorial');
   writeHTML('tutorial/index.html', RedirectPage({
-    title: 'Tutorial | Robòtica²⁰⁰',
+    title: 'Tutorial | Robótica²⁰⁰',
     activeNav: 'robots',
     fallbackHref: '../robotica-educativa/index.html',
-    fallbackLabel: 'Tornar a Robòtica educativa'
+    fallbackLabel: 'Volver a Robótica educativa'
   }));
 
   items.sort((a, b) => a.robot.localeCompare(b.robot) || a.order - b.order || a.slug.localeCompare(b.slug));
@@ -271,7 +300,7 @@ function buildRobots(tutorials, activitats) {
       nom: 'Coding Express',
       cicle: 'Infantil',
       edat: 'Infantil',
-      descripcio: 'El tren interactiu dels colors i el pensament computacional primerenc.',
+      descripcio: 'El tren interactivo de los colores y del pensamiento computacional inicial.',
       colors: ['#e4242b', '#fec002'],
       order: 1
     },
@@ -280,9 +309,9 @@ function buildRobots(tutorials, activitats) {
       slug: 'tale-bot',
       prefix: 'tb',
       nom: 'Tale-Bot',
-      cicle: 'Infantil i primer cicle',
-      edat: 'Infantil i primer cicle',
-      descripcio: 'El robot narrador que parla, llegeix mapes interactius i dibuixa.',
+      cicle: 'Infantil y primer ciclo',
+      edat: 'Infantil y primer ciclo',
+      descripcio: 'El robot narrador que habla, lee mapas interactivos y dibuja.',
       colors: ['#ea580c', '#804cbd'],
       order: 2
     },
@@ -291,9 +320,9 @@ function buildRobots(tutorials, activitats) {
       slug: 'coding-set',
       prefix: 'cs',
       nom: 'Coding Set',
-      cicle: 'Infantil i primer cicle',
-      edat: 'Infantil i primer cicle',
-      descripcio: 'Programació tangible sense pantalles amb Matatalab.',
+      cicle: 'Infantil y primer ciclo',
+      edat: 'Infantil y primer ciclo',
+      descripcio: 'Programación tangible sin pantallas con Matatalab.',
       colors: ['#16a34a', '#fc7813'],
       order: 3
     },
@@ -302,9 +331,9 @@ function buildRobots(tutorials, activitats) {
       slug: 'codey-rocky',
       prefix: 'cr',
       nom: 'Codey Rocky',
-      cicle: 'Primer i segon cicle',
-      edat: 'Primer i segon cicle',
-      descripcio: 'El robot amb pantalla LED 16 × 8, sensors i moviment amb orugues.',
+      cicle: 'Primer y segundo ciclo',
+      edat: 'Primer y segundo ciclo',
+      descripcio: 'El robot con pantalla LED 16 × 8, sensores y movimiento con orugas.',
       colors: ['#0079dc', '#64748b'],
       order: 4
     },
@@ -313,9 +342,9 @@ function buildRobots(tutorials, activitats) {
       slug: 'spike',
       prefix: 'sp',
       nom: 'Spike',
-      cicle: 'Segon cicle',
-      edat: 'Segon cicle',
-      descripcio: "Mecatrònica, engranatges i sensors d'alta precisió de LEGO Education.",
+      cicle: 'Segundo ciclo',
+      edat: 'Segundo ciclo',
+      descripcio: "Mecatrónica, engranajes y sensores de alta precisión de LEGO Education.",
       colors: ['#ca8a04', '#0284c7'],
       order: 5
     },
@@ -324,9 +353,9 @@ function buildRobots(tutorials, activitats) {
       slug: 'microbit',
       prefix: 'mb',
       nom: 'Micro:bit',
-      cicle: 'Segon i tercer cicle',
-      edat: 'Segon i tercer cicle',
-      descripcio: 'La placa microcontroladora per a projectes oberts i ciutadans.',
+      cicle: 'Segundo y tercer ciclo',
+      edat: 'Segundo y tercer ciclo',
+      descripcio: 'La placa microcontroladora para proyectos abiertos y ciudadanos.',
       colors: ['#db2777', '#facc15'],
       order: 6
     }
@@ -375,10 +404,10 @@ function buildRobots(tutorials, activitats) {
   }
 
   writeHTML('robot/index.html', RedirectPage({
-    title: 'Robot | Robòtica²⁰⁰',
+    title: 'Robot | Robótica²⁰⁰',
     activeNav: 'robots',
     fallbackHref: '../robotica-educativa/index.html',
-    fallbackLabel: 'Tornar a Robòtica educativa'
+    fallbackLabel: 'Volver a Robótica educativa'
   }));
 
   return robots;
@@ -392,10 +421,10 @@ function buildGuides() {
     .sort();
 
   const guideBack = {
-    'pensament-computacional': ['../../pensament-computacional/index.html', 'Activitats de pensament computacional', 'pensament'],
-    'robotica-educativa': ['../../robotica-educativa/index.html', 'Catàleg de robòtica', 'robots'],
-    'situacions-aprenentatge': ['../../situacions-aprenentatge/index.html', "Situacions d'aprenentatge", 'situacions'],
-    'fira-descobertes': ['../../situacions-aprenentatge/index.html', "Situacions d'aprenentatge", 'situacions']
+    'pensamiento-computacional': ['../../pensamiento-computacional/index.html', 'Actividades de pensamiento computacional', 'pensament'],
+    'robotica-educativa': ['../../robotica-educativa/index.html', 'Catálogo de robótica', 'robots'],
+    'situaciones-aprendizaje': ['../../situaciones-aprendizaje/index.html', "Situaciones de aprendizaje", 'situacions'],
+    'feria-descubrimientos': ['../../situaciones-aprendizaje/index.html', "Situaciones de aprendizaje", 'situacions']
   };
 
   let count = 0;
@@ -416,24 +445,26 @@ function buildGuides() {
       backHref,
       backLabel,
       printHref: includePDFs ? `../../imprimir/guies/${slug}.pdf` : '',
-      badges: [{ text: data.tag || 'Guia docent', primary: true }],
+      badges: [{ text: data.tag || 'Guía docente', primary: true }],
       content: rendered.html
     }));
     count += 1;
   }
 
+  buildContentRedirects('guia');
+
   writeHTML('guia/index.html', RedirectPage({
-    title: 'Guia docent | Robòtica²⁰⁰',
+    title: 'Guía docente | Robótica²⁰⁰',
     activeNav: 'inici',
     fallbackHref: '../index.html',
-    fallbackLabel: 'Tornar a Inici'
+    fallbackLabel: 'Volver a Inicio'
   }));
 
   return count;
 }
 
 function buildSituations() {
-  cleanSubdirectories('situacio');
+  cleanSubdirectories('situacion');
   const dir = path.join(ROOT_DIR, '_content/situacions');
   const files = fs.readdirSync(dir)
     .filter(f => f.endsWith('.md') && !f.startsWith('TEMPLATE-'))
@@ -445,7 +476,7 @@ function buildSituations() {
     'codey-rocky': 'Codey Rocky',
     'spike': 'Spike',
     'microbit': 'Micro:bit',
-    'desendollat': 'Desendollat (Sense robot)'
+    'desendollat': 'Desconectado (sin robot)'
   };
 
   const situations = [];
@@ -488,13 +519,13 @@ function buildSituations() {
     const imatge = (editorial.image || (imgMatch ? imgMatch[2].replace(/^(\.\.\/)+/, '') : '')).trim();
     const imatgeAlt = imgMatch ? imgMatch[1].trim() : title;
 
-    writeHTML(`situacio/${slug}/index.html`, SituationPage({
+    writeHTML(`situacion/${slug}/index.html`, SituationPage({
       slug,
       title,
       description: String(editorial.description || repte || '').trim(),
       root: '../../',
-      backHref: `../../situacions-aprenentatge/index.html#situacio-sa-${slug}`,
-      backLabel: "Situacions d'Aprenentatge",
+      backHref: `../../situaciones-aprendizaje/index.html#situacio-sa-${slug}`,
+      backLabel: "Situaciones de Aprendizaje",
       printHref: includePDFs ? `../../imprimir/situacions/${slug}.pdf` : '',
       badges,
       themeLabel: tematicaLabel,
@@ -506,7 +537,7 @@ function buildSituations() {
     situations.push({
       id: `situacio-sa-${slug}`,
       slug,
-      url: `situacio/${slug}/index.html`,
+      url: `situacion/${slug}/index.html`,
       titol: title,
       robot,
       robotLabel,
@@ -523,11 +554,13 @@ function buildSituations() {
     });
   }
 
-  writeHTML('situacio/index.html', RedirectPage({
-    title: 'Situació d’aprenentatge | Robòtica²⁰⁰',
+  buildContentRedirects('situacion');
+
+  writeHTML('situacion/index.html', RedirectPage({
+    title: 'Situación de aprendizaje | Robótica²⁰⁰',
     activeNav: 'situacions',
-    fallbackHref: '../situacions-aprenentatge/index.html',
-    fallbackLabel: "Tornar a Situacions d'Aprenentatge"
+    fallbackHref: '../situaciones-aprendizaje/index.html',
+    fallbackLabel: "Volver a Situaciones de Aprendizaje"
   }));
 
   return situations;
@@ -541,7 +574,7 @@ function buildPrintables() {
     maxBuffer: 8 * 1024 * 1024
   });
   if (result.status !== 0) {
-    throw new Error((result.stderr || result.stdout || 'No s’han pogut generar els materials imprimibles.').trim());
+    throw new Error((result.stderr || result.stdout || 'No se han podido generar los materiales imprimibles.').trim());
   }
   const payload = JSON.parse(result.stdout);
   console.log(`  - PDF: ${payload.stats.reused} reutilitzats, ${payload.stats.generated} regenerats; recull global ${payload.stats.globalCached ? 'reutilitzat' : 'regenerat'}`);
@@ -556,7 +589,7 @@ function buildPrintables() {
   const groupHTML = Array.from(groups.values()).map(group => {
     const categoryHTML = Array.from(group.categories.values()).map(category => `
       ${group.categories.size > 1 ? `<h3>${escapeHTML(category.label)}</h3>` : ''}
-      <ul>${category.items.map(item => `<li><span>${escapeHTML(item.title)}</span><a href="../${escapeAttr(item.pdf)}" download>Descarrega el PDF</a></li>`).join('')}</ul>`).join('\n');
+      <ul>${category.items.map(item => `<li><span>${escapeHTML(item.title)}</span><a href="../${escapeAttr(item.pdf)}" download>Descargar el PDF</a></li>`).join('')}</ul>`).join('\n');
     return `
     <section class="printable-group">
       <h2>${escapeHTML(group.label)}</h2>
@@ -564,14 +597,14 @@ function buildPrintables() {
     </section>`;
   }).join('\n');
   writeHTML('imprimir/index.html', Document({
-    title: 'Materials imprimibles | Robòtica²⁰⁰',
-    description: 'Descarrega activitats, tutorials, guies i situacions d’aprenentatge en PDF.',
+    title: 'Materiales imprimibles | Robótica²⁰⁰',
+    description: 'Descargar actividades, tutoriales, guías y situaciones de aprendizaje en PDF.',
     activeNav: 'imprimir',
     root: '../',
     body: `<article class="detail-page-card printables-page">
-      <div class="detail-page-header"><h1 class="detail-page-title">Materials imprimibles</h1>
-      <p class="detail-intro">Versions preparades per imprimir, generades directament des dels continguts Markdown.</p>
-      <p class="printables-all"><a class="btn-primary" href="../imprimir/robotica200-complet.pdf" download>Descarrega el recull complet (PDF)</a></p></div>
+      <div class="detail-page-header"><h1 class="detail-page-title">Materiales imprimibles</h1>
+      <p class="detail-intro">Versiones preparadas para imprimir, generadas directamente desde los contenidos Markdown.</p>
+      <p class="printables-all"><a class="btn-primary" href="../imprimir/robotica200-complet.pdf" download>Descargar el compendio completo (PDF)</a></p></div>
       ${groupHTML}
     </article>`
   }));
@@ -619,11 +652,11 @@ async function build({ pdf = false } = {}) {
   const printables = includePDFs ? buildPrintables() : [];
   if (!includePDFs) {
     writeHTML('imprimir/index.html', Document({
-      title: 'Materials imprimibles | Robòtica²⁰⁰',
+      title: 'Materiales imprimibles | Robótica²⁰⁰',
       activeNav: 'imprimir',
       root: '../',
-      body: `<article class="detail-page-card"><h1>Materials imprimibles</h1>
-        <p>Aquesta versió del web no inclou els materials imprimibles.</p></article>`
+      body: `<article class="detail-page-card"><h1>Materiales imprimibles</h1>
+        <p>Esta versión del sitio no incluye los materiales imprimibles.</p></article>`
     }));
   }
 
@@ -634,23 +667,23 @@ async function build({ pdf = false } = {}) {
     ['codey-rocky', 'Codey Rocky'],
     ['spike', 'SPIKE Prime'],
     ['microbit', 'Micro:bit'],
-    ['desendollat', 'Desendollat (sense robot)']
+    ['desendollat', 'Desconectado (sin robot)']
   ];
   const cycleOptions = [
-    ['infantil', 'Educació Infantil'],
-    ['primer-cicle', 'Primer cicle'],
-    ['segon-cicle', 'Segon cicle'],
-    ['tercer-cicle', 'Tercer cicle']
+    ['infantil', 'Educación Infantil'],
+    ['primer-cicle', 'Primer ciclo'],
+    ['segon-cicle', 'Segundo ciclo'],
+    ['tercer-cicle', 'Tercer ciclo']
   ];
   const topicOptions = Array.from(new Map(situacions.map(item => [item.tematica, item.tematicaLabel])).entries());
   const subjectOptions = Array.from(new Map(situacions.map(item => [item.materia, item.materiaLabel])).entries());
 
   writeHTML('index.html', HomePage());
-  writeHTML('pensament-computacional/index.html', ActivitiesCatalogPage({
+  writeHTML('pensamiento-computacional/index.html', ActivitiesCatalogPage({
     activitats: activitats.filter(item => item.slug.startsWith('pc-'))
   }));
   writeHTML('robotica-educativa/index.html', RobotsCatalogPage({ robots }));
-  writeHTML('situacions-aprenentatge/index.html', SituationsCatalogPage({
+  writeHTML('situaciones-aprendizaje/index.html', SituationsCatalogPage({
     situacions,
     robotOptions,
     cycleOptions,
@@ -667,16 +700,17 @@ async function build({ pdf = false } = {}) {
     fs.writeFileSync(rootSimFile, simHTML, 'utf8');
   }
 
-  console.log('✓ Build estàtic completat amb èxit:');
-  console.log(`  - ${activitats.length} activitats (/activitat/<slug>/index.html)`);
-  console.log(`  - ${tutorials.length} tutorials (/tutorial/<slug>/index.html)`);
+  buildLegacyRouteRedirects();
+  console.log('✓ Compilación estática completada con éxito:');
+  console.log(`  - ${activitats.length} actividades (/actividad/<slug>/index.html)`);
+  console.log(`  - ${tutorials.length} tutoriales (/tutorial/<slug>/index.html)`);
   console.log(`  - ${robots.length} robots (/robot/<slug>/index.html)`);
-  console.log(`  - ${guidesCount} guies docents (/guia/<slug>/index.html)`);
-  console.log(`  - ${situacions.length} situacions d'aprenentatge (/situacio/<slug>/index.html)`);
+  console.log(`  - ${guidesCount} guías docentes (/guia/<slug>/index.html)`);
+  console.log(`  - ${situacions.length} situaciones de aprendizaje (/situacion/<slug>/index.html)`);
   console.log(includePDFs
     ? `  - ${printables.length} documents imprimibles i recull global (/imprimir/)`
-    : '  - PDF omesos (utilitza --pdf per generar-los)');
-  console.log(`  - ${blocks.length} diagrames de blocs SVG (_assets/blocks/*.svg)`);
+    : '  - PDF omitidos (usa --pdf para generarlos)');
+  console.log(`  - ${blocks.length} diagramas de bloques SVG (_assets/blocks/*.svg)`);
 }
 
 // Compartit entre builds manuals i servidors dev del mateix projecte.

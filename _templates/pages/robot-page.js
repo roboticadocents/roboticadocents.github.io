@@ -30,13 +30,13 @@ function RobotPage({
     <section id="activitats" data-robot-activities aria-labelledby="activities-heading">
       <header class="robot-tutorials-heading">
         <div>
-          <h2 id="activities-heading">Activitats</h2>
-          <p>Propostes per treballar a l’aula amb ${escapeHTML(title)}.</p>
+          <h2 id="activities-heading">Actividades</h2>
+          <p>Propuestas para trabajar en el aula con ${escapeHTML(title)}.</p>
         </div>
       </header>
       ${activityItems.length ? `<div class="clean-grid" data-activity-grid>
         ${activityItems.map(item => ActivityCard({ item, root: r })).join('\n        ')}
-      </div>` : '<p>Encara no hi ha activitats publicades per a aquest robot.</p>'}
+      </div>` : '<p>Todavía no hay actividades publicadas para este robot.</p>'}
     </section>` : '';
 
   const highlightHTML = (robotHighlightTitle || robotHighlightBody) ? `
@@ -58,28 +58,28 @@ function RobotPage({
 
   const statusHTML = statusNote ? `
       <aside class="manufacturer-status" data-status>
-        <span class="manufacturer-kicker">Estat i disponibilitat</span>
+        <span class="manufacturer-kicker">Estado y disponibilidad</span>
         <p>${escapeHTML(statusNote)}</p>
-        ${statusSource ? `<a href="${escapeAttr(statusSource)}" target="_blank" rel="noopener noreferrer">${escapeHTML(statusSourceLabel || 'Font oficial')} <span aria-hidden="true">↗</span></a>` : ''}
+        ${statusSource ? `<a href="${escapeAttr(statusSource)}" target="_blank" rel="noopener noreferrer">${escapeHTML(statusSourceLabel || 'Fuente oficial')} <span aria-hidden="true">↗</span></a>` : ''}
       </aside>` : '';
 
   const resourcesHTML = (resources.length || statusNote || techInfo || specs.length) ? `
     <section class="robot-official-resources" data-official-resources aria-labelledby="manufacturer-heading">
       <header class="manufacturer-heading">
-        <h2 id="manufacturer-heading">Recursos oficials del fabricant</h2>
-        <p>Explora noves possibilitats amb la documentació oficial i les guies del fabricant.</p>
+        <h2 id="manufacturer-heading">Recursos oficiales del fabricante</h2>
+        <p>Nuevas posibilidades con la documentación oficial y las guías del fabricante.</p>
       </header>
       <div class="manufacturer-info">
-        ${(techInfo || specs.length || statusNote) ? `<div class="manufacturer-tech" data-tech-info><h3>Informació tècnica i compatibilitat</h3>${techInfo ? `<div>${infoMarkdown.render(techInfo)}</div>` : ''}${specs.length ? `<h4>Especificacions tècniques</h4><ul class="manufacturer-specs">${specs.map(spec => `<li>${escapeHTML(String(spec).replace(/^✓\s*/, ''))}</li>`).join('')}</ul>` : ''}${statusHTML}</div>` : ''}
+        ${(techInfo || specs.length || statusNote) ? `<div class="manufacturer-tech" data-tech-info><h3>Información técnica y compatibilidad</h3>${techInfo ? `<div>${infoMarkdown.render(techInfo)}</div>` : ''}${specs.length ? `<h4>Especificaciones técnicas</h4><ul class="manufacturer-specs">${specs.map(spec => `<li>${escapeHTML(String(spec).replace(/^✓\s*/, ''))}</li>`).join('')}</ul>` : ''}${statusHTML}</div>` : ''}
       </div>
       ${resources.length ? `<ul class="manufacturer-resource-grid">
-        ${resources.map((res, index) => `<li><a class="manufacturer-resource" href="${escapeAttr(res.href)}" target="_blank" rel="noopener noreferrer"><span class="manufacturer-resource-top"><span class="manufacturer-resource-number">${String(index + 1).padStart(2, '0')}</span><span aria-hidden="true">↗</span></span><h3>${escapeHTML(res.title)}</h3>${res.description ? `<p>${escapeHTML(res.description)}</p>` : ''}<span class="manufacturer-resource-action">Consulta el recurs <span aria-hidden="true">→</span></span></a></li>`).join('')}
+        ${resources.map((res, index) => `<li><a class="manufacturer-resource" href="${escapeAttr(res.href)}" target="_blank" rel="noopener noreferrer"><span class="manufacturer-resource-top"><span class="manufacturer-resource-number">${String(index + 1).padStart(2, '0')}</span><span aria-hidden="true">↗</span></span><h3>${escapeHTML(res.title)}</h3>${res.description ? `<p>${escapeHTML(res.description)}</p>` : ''}<span class="manufacturer-resource-action">Consultar el recurso <span aria-hidden="true">→</span></span></a></li>`).join('')}
       </ul>` : ''}
     </section>` : '';
 
   return Document({
-    title: `${title} | Robòtica²⁰⁰`,
-    description: description || 'Contingut didàctic de robòtica educativa.',
+    title: `${title} | Robótica²⁰⁰`,
+    description: description || 'Contenido didáctico de robótica educativa.',
     activeNav: 'robots',
     root: r,
     heroLayout: true,
@@ -89,7 +89,7 @@ function RobotPage({
       bannerSrc: `${r}_assets/robots/${robotSlug}.webp`,
       bannerAlt: title,
       backHref: `${r}robotica-educativa/index.html`,
-      backLabel: 'Robòtica educativa',
+      backLabel: 'Robótica educativa',
       isRobotHero: true,
       robotSlug
     })}
@@ -97,7 +97,7 @@ function RobotPage({
     <div class="robot-overview-grid">
       <div class="robot-overview-lead">
         <p>${robotLead}</p>
-        ${['tale-bot', 'coding-set'].includes(robotSlug) ? `<p class="robot-simulator-link"><a class="btn-primary" href="${r}sim/index.html?robot=${escapeAttr(robotSlug)}">Prova el simulador interactiu de ${escapeHTML(title)}</a></p>` : ''}
+        ${['tale-bot', 'coding-set'].includes(robotSlug) ? `<p class="robot-simulator-link"><a class="btn-primary" href="${r}sim/index.html?robot=${escapeAttr(robotSlug)}">Probar el simulador interactivo de ${escapeHTML(title)}</a></p>` : ''}
       </div>${highlightHTML}
     </div>
   </section>
@@ -105,8 +105,8 @@ function RobotPage({
     <div class="robot-tutorials-heading">
       <div class="robot-tutorials-heading-main">
         <div>
-          <h2 data-tutorial-heading>Tutorials de ${escapeHTML(title)}</h2>
-          <p>Tutorials per iniciar-se en les possibilitats del robot, connectar-lo i utilitzar-ne els components.</p>
+          <h2 data-tutorial-heading>Tutoriales de ${escapeHTML(title)}</h2>
+          <p>Tutoriales para iniciarse en las posibilidades del robot, conectarlo y utilizar sus componentes.</p>
         </div>
       </div>
     </div>

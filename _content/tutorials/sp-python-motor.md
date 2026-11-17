@@ -1,8 +1,8 @@
 ---
-title: SPIKE Prime: del programa de blocs a Python
-description: Canviar a l’editor Python de MicroPython, controlar un motor angular i depurar una instrucció modificant un valor cada vegada.
+title: "SPIKE Prime: del programa de bloques a Python"
+description: "Cambiar al editor Python de MicroPython, controlar un motor angular y depurar una instrucción modificando un valor cada vez."
 robot: spike
-level: Avançat
+level: "Avanzado"
 duration: 50 min
 order: 6
 image: _assets/tutorials/sp-python-motor-flat.webp

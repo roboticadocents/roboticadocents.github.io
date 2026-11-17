@@ -79,8 +79,8 @@ def main():
     pages = sorted(p for p in DIST.rglob("*.html") if not any(part.startswith(".") for part in p.relative_to(DIST).parts))
 
     redirect_routes = {
-        Path("situacio/index.html"),
-        Path("activitat/index.html"),
+        Path("situacion/index.html"),
+        Path("actividad/index.html"),
         Path("tutorial/index.html"),
         Path("robot/index.html"),
         Path("guia/index.html"),
@@ -101,7 +101,7 @@ def main():
             problems.append(f"{relative}: missing data-legacy-redirect compatibility section")
 
     shared_content = {
-        "activitat": ("activity", "activitats", ""),
+        "actividad": ("activity", "activitats", ""),
         "tutorial": ("tutorial", "tutorials", ""),
         "robot": ("robot", "robots", "robot-"),
         "guia": ("guide", "guies", "guia-"),
@@ -118,10 +118,10 @@ def main():
                        if not p.name.startswith(("README", "TEMPLATE-")))
         if kind == "guide":
             paths = [p for p in paths if p.stem in {
-                "guia-pensament-computacional",
+                "guia-pensamiento-computacional",
                 "guia-robotica-educativa",
-                "guia-situacions-aprenentatge",
-                "guia-fira-descobertes",
+                "guia-situaciones-aprendizaje",
+                "guia-feria-descubrimientos",
             }]
         if not paths:
             problems.append(f"_content/{folder}: no Markdown records for {kind}")
@@ -144,7 +144,7 @@ def main():
 
     content_dir = ROOT / "_content/situacions"
     active = []
-    situations_catalog_html = (DIST / "situacions-aprenentatge/index.html").read_text(encoding="utf-8")
+    situations_catalog_html = (DIST / "situaciones-aprendizaje/index.html").read_text(encoding="utf-8")
     for markdown_path in sorted(content_dir.glob("*.md")):
         if markdown_path.name.startswith("TEMPLATE-"):
             continue
@@ -153,11 +153,11 @@ def main():
             continue
         active.append(markdown_path)
         slug = markdown_path.stem
-        rendered_page = DIST / "situacio" / slug / "index.html"
+        rendered_page = DIST / "situacion" / slug / "index.html"
         if not rendered_page.is_file():
             problems.append(f"{markdown_path.relative_to(ROOT)}: missing pre-rendered HTML at {rendered_page.relative_to(ROOT)} (run node _scripts/build.js)")
-        if f"../situacio/{slug}/index.html" not in situations_catalog_html:
-            problems.append(f"situacions-aprenentatge/index.html: missing card link for {slug} (run node _scripts/build.js)")
+        if f"../situacion/{slug}/index.html" not in situations_catalog_html:
+            problems.append(f"situaciones-aprendizaje/index.html: missing card link for {slug} (run node _scripts/build.js)")
         for required in ("title", "description", "robot", "cycle", "subject", "theme", "duration", "challenge"):
             if not editorial.get(required):
                 problems.append(f"{markdown_path.relative_to(ROOT)}: missing front matter '{required}'")

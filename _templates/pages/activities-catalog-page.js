@@ -6,18 +6,18 @@ const { ActivityCard } = require('../components/activity-card');
 
 function ActivitiesCatalogPage({ activitats = [] } = {}) {
   return Document({
-    title: 'Pensament Computacional Desendollat | Robòtica200',
-    description: "Activitats desendollades de pensament computacional per a l'aula.",
+    title: 'Pensamiento Computacional Desconectado | Robótica200',
+    description: "Actividades desconectadas de pensamiento computacional para el aula.",
     activeNav: 'pensament',
     root: '../',
     heroLayout: true,
     body: `${SectionHero({
-      title: 'Pensament Computacional',
-      description: "Activitats desendollades per treballar instruccions, patrons, decisions i dades amb el cos i materials d'aula.",
+      title: 'Pensamiento Computacional',
+      description: "Actividades desconectadas para trabajar instrucciones, patrones, decisiones y datos con el cuerpo y materiales de aula.",
       bannerSrc: '../_assets/banners/pensament-computacional.webp',
-      bannerAlt: 'Pensament Computacional',
+      bannerAlt: 'Pensamiento Computacional',
       backHref: '../index.html',
-      backLabel: 'inici'
+      backLabel: 'inicio'
     })}
     <div class="clean-grid" id="activities-grid">
       ${activitats.map(item => ActivityCard({ item, root: '../' })).join('\n      ')}

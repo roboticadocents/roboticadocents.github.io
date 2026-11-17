@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// check-es:skip
 /**
  * _scripts/dev.js
  *

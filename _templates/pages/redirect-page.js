@@ -5,22 +5,22 @@ const { Document } = require('../layout/document');
 const { NavBack } = require('../layout/nav-back');
 
 function RedirectPage({
-  title = 'Redirigint… | Robòtica²⁰⁰',
+  title = 'Redirigiendo… | Robótica²⁰⁰',
   activeNav = 'inici',
   root = '../',
   targetHref = '',
   fallbackHref = '../index.html',
-  fallbackLabel = 'Tornar al catàleg'
+  fallbackLabel = 'Volver al catálogo'
 } = {}) {
   return Document({
     title,
-    description: 'Contingut didàctic de robòtica educativa.',
+    description: 'Contenido didáctico de robótica educativa.',
     activeNav,
     root,
     body: `    ${NavBack({ href: fallbackHref, label: fallbackLabel })}
     <section class="content-load-error" data-legacy-redirect="${escapeAttr(fallbackHref)}"${targetHref ? ` data-redirect-target="${escapeAttr(targetHref)}"` : ''}>
-      <h1>Redirigint al contingut…</h1>
-      <p>Si la redirecció no és automàtica, <a href="${escapeAttr(fallbackHref)}">${escapeHTML(fallbackLabel)}</a>.</p>
+      <h1>Redirigiendo al contenido…</h1>
+      <p>Si la redirección no es automática, <a href="${escapeAttr(fallbackHref)}">${escapeHTML(fallbackLabel)}</a>.</p>
     </section>`
   });
 }

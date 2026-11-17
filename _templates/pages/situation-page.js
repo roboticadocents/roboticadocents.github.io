@@ -11,8 +11,8 @@ function SituationPage({
   title = '',
   description = '',
   root = '../../',
-  backHref = '../../situacions-aprenentatge/index.html',
-  backLabel = "Situacions d'Aprenentatge",
+  backHref = '../../situaciones-aprendizaje/index.html',
+  backLabel = "Situaciones de Aprendizaje",
   badges = [],
   printHref = '',
   themeLabel = '',
@@ -22,13 +22,13 @@ function SituationPage({
 } = {}) {
   const challengeSection = showChallenge ? `
       <section class="detail-section" data-challenge-section>
-        <h2>${SectionHeading('Repte o pregunta guia', 'intro')}</h2>
+        <h2>${SectionHeading('Reto o pregunta guía', 'intro')}</h2>
         <p class="sa-challenge" data-challenge>${escapeHTML(challenge)}</p>
       </section>` : '';
 
   return Document({
-    title: `${title} | Situació d’aprenentatge | Robòtica²⁰⁰`,
-    description: description || challenge || 'Situació d’aprenentatge de robòtica i pensament computacional.',
+    title: `${title} | Situación de aprendizaje | Robótica²⁰⁰`,
+    description: description || challenge || 'Situación de aprendizaje de robótica y pensamiento computacional.',
     activeNav: 'situacions',
     root,
     body: `    ${NavBack({ href: backHref, label: backLabel, preserveFilters: true, slug })}
@@ -38,7 +38,7 @@ function SituationPage({
         <h1 class="detail-page-title" data-title>${escapeHTML(title)}</h1>
         ${themeLabel ? `<span class="tag-badge" data-theme>🏷️ ${escapeHTML(themeLabel)}</span>` : ''}
       </div>
-      ${printHref ? `<p class="print-version-link"><a href="${escapeAttr(printHref)}" download>Descarrega la versió imprimible (PDF)</a></p>` : ''}
+      ${printHref ? `<p class="print-version-link"><a href="${escapeAttr(printHref)}" download>Descargar la versión imprimible (PDF)</a></p>` : ''}
       <div class="prose">${challengeSection}
         <div data-markdown-content>${content}</div>
       </div>

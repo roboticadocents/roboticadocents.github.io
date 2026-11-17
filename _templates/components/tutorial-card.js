@@ -23,7 +23,7 @@ function TutorialCard({ item, root = '../../' }) {
     <h3 class="tutorial-card-title"><a href="${escapeAttr(href)}">${escapeHTML(item.titol)}</a></h3>
     <p class="tutorial-card-desc">${escapeHTML(item.descripcio)}</p>
     <div class="tutorial-card-footer">
-      <a href="${escapeAttr(href)}" class="btn-open-tutorial">Obrir tutorial →</a>
+      <a href="${escapeAttr(href)}" class="btn-open-tutorial">Abrir tutorial →</a>
     </div>
   </article>`;
 }

@@ -1,17 +1,17 @@
 ---
 active: true
-title: "Un plànol geomètric amb MatataBot"
-description: "Quantes ordres necessitem per dibuixar el contorn d’una casa i com podem simplificar el programa quan repetim moviments?"
+title: "Un plano geométrico con MatataBot"
+description: "¿Cuántas órdenes necesitamos para dibujar el contorno de una casa y cómo podemos simplificar el programa cuando repetimos movimientos?"
 robot: "coding-set"
 robot_label: "Coding Set"
 cycle: "primer-cicle"
-cycle_label: "Primer cicle"
+cycle_label: "Primer ciclo"
 subject: "matematiques"
-subject_label: "Matemàtiques"
+subject_label: "Matemáticas"
 theme: "art"
-theme_label: "Art, música i expressió"
-duration: "4 sessions · 180 min"
-challenge: "Quantes ordres necessitem per dibuixar el contorn d’una casa i com podem simplificar el programa quan repetim moviments?"
+theme_label: "Arte, música y expresión"
+duration: "4 sesiones · 180 min"
+challenge: "¿Cuántas órdenes necesitamos para dibujar el contorno de una casa y cómo podemos simplificar el programa cuando repetimos movimientos?"
 official_source: "https://matatalab.com/en/node/85"
 ---
 

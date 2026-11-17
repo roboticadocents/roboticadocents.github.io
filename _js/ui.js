@@ -1,3 +1,4 @@
+// check-es:skip
 // _js/ui.js - Micro-controlador d'interactivitat per a Robòtica²⁰⁰ (0 dependències)
 (function () {
   'use strict';
@@ -36,7 +37,7 @@
     const filters = new URLSearchParams();
     FILTER_KEYS.forEach(k => { if (query.has(k)) filters.set(k, query.get(k)); });
     if (filters.size) {
-      backLink.href = `../../situacions-aprenentatge/index.html?${filters}#situacio-sa-${slug}`;
+      backLink.href = `../../situaciones-aprendizaje/index.html?${filters}#situacio-sa-${slug}`;
     }
   }
 
@@ -68,10 +69,10 @@
         });
         const title = steps[current]?.querySelector('h3')?.textContent || '';
         const stepNum = current + 1;
-        if (statusEl) statusEl.textContent = `Pas ${stepNum} de ${total} · ${title}`;
+        if (statusEl) statusEl.textContent = `Paso ${stepNum} de ${total} · ${title}`;
         if (progressEl) {
           progressEl.setAttribute('aria-valuenow', String(stepNum));
-          progressEl.setAttribute('aria-valuetext', `Pas ${stepNum} de ${total}`);
+          progressEl.setAttribute('aria-valuetext', `Paso ${stepNum} de ${total}`);
         }
         if (barEl) barEl.style.width = `${(stepNum / total * 100).toFixed(2)}%`;
         if (prevBtn) prevBtn.disabled = current === 0;
@@ -133,7 +134,7 @@
         }
       });
 
-      if (countEl) countEl.textContent = `Mostrant ${visibleCount} de ${total} situacions`;
+      if (countEl) countEl.textContent = `Mostrando ${visibleCount} de ${total} situaciones`;
       if (emptyEl) emptyEl.hidden = visibleCount > 0;
 
       const newUrl = window.location.pathname + (params.size ? `?${params}` : '') + window.location.hash;

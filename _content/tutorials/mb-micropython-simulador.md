@@ -1,8 +1,8 @@
 ---
-title: micro:bit: programar amb MicroPython i depurar amb el simulador
-description: Llegir els botons A/B en Python, mostrar icones, provar la indentació i enviar el programa a una micro:bit.
+title: "micro:bit: programar con MicroPython y depurar con el simulador"
+description: "Leer los botones A/B en Python, mostrar iconos, probar la indentación y enviar el programa a una micro:bit."
 robot: microbit
-level: Avançat
+level: "Avanzado"
 duration: 50 min
 order: 7
 image: _assets/tutorials/mb-python-microbit-flat.webp

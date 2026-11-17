@@ -1,17 +1,17 @@
 ---
 active: true
-title: "Del codi a un projecte del marjal"
-description: "Una progressió de dotze sessions que combina seqüències, música, mapes, creació artística i un joc final amb MatataBot."
+title: "Del código a un proyecto de la marjal"
+description: "Una progresión de doce sesiones que combina secuencias, música, mapas, creación artística y un juego final con MatataBot."
 robot: "coding-set"
 robot_label: "Coding Set"
 cycle: "segon-cicle"
-cycle_label: "Segon cicle"
+cycle_label: "Segundo ciclo"
 subject: "pensament-computacional"
-subject_label: "Pensament computacional, música, coneixement del medi i educació artística"
+subject_label: "Pensamiento computacional, música, conocimiento del medio y educación artística"
 theme: "albufera"
-theme_label: "Projecte de descoberta de la marjal"
-duration: "12 sessions de 60 minuts"
-challenge: "Com podem crear una experiència de joc i descoberta del marjal amb ordres, música, mapes i una proposta pròpia?"
+theme_label: "Proyecto de descubrimiento de la marjal"
+duration: "12 sesiones de 60 minutos"
+challenge: "¿Cómo podemos crear una experiencia de juego y descubrimiento de la marjal con órdenes, música, mapas y una propuesta propia?"
 official_source: "https://matatalab.com/zh-hans/node/67"
 ---
 

@@ -7,24 +7,24 @@
   const MAX_GRID_SIZE = 10;
   const COLS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'];
   const DIRS = [
-    { dx: 0, dy: -1, angle: 0, label: '↑ Nord' },
-    { dx: 1, dy: 0, angle: 90, label: '→ Est' },
-    { dx: 0, dy: 1, angle: 180, label: '↓ Sud' },
-    { dx: -1, dy: 0, angle: 270, label: '← Oest' }
+    { dx: 0, dy: -1, angle: 0, label: '↑ Norte' },
+    { dx: 1, dy: 0, angle: 90, label: '→ Este' },
+    { dx: 0, dy: 1, angle: 180, label: '↓ Sur' },
+    { dx: -1, dy: 0, angle: 270, label: '← Oeste' }
   ];
 
   const LABELS = {
-    forward: 'Endavant',
-    back: 'Enrere',
-    right: 'Gir a la dreta',
-    left: 'Gir a l’esquerra',
-    record: 'Reprodueix la gravació',
-    dance: 'Dansa predefinida',
-    loop: 'Inici del bucle',
-    end: 'Fi del bucle',
-    define: 'Defineix funció',
-    call: 'Crida funció',
-    random: 'Moviment aleatori',
+    forward: 'Adelante',
+    back: 'Atrás',
+    right: 'Girar a la derecha',
+    left: 'Girar a la izquierda',
+    record: 'Reproducir la grabación',
+    dance: 'Danza predefinida',
+    loop: 'Inicio del bucle',
+    end: 'Fin del bucle',
+    define: 'Definir función',
+    call: 'Llamar función',
+    random: 'Movimiento aleatorio',
     music: 'Música predefinida'
   };
 
@@ -39,7 +39,7 @@
 
   const EMOJI_CATEGORIES = [
     {
-      title: 'Animals',
+      title: 'Animales',
       emojis: [
         '🐰', '🦊', '🐻', '🐸', '🦁', '🐯', '🐼', '🐨', '🐶', '🐱', '🐭', '🐹',
         '🐷', '🐮', '🐵', '🐔', '🐧', '🐦', '🦆', '🦉', '🐝', '🐛', '🦋', '🐌',
@@ -47,7 +47,7 @@
       ]
     },
     {
-      title: 'Natura i bosc',
+      title: 'Naturaleza y bosque',
       emojis: [
         '🌲', '🌳', '🌴', '🌵', '🍄', '🌻', '🌷', '🌹', '🌺', '🌸', '🌼', '🍀',
         '🍁', '🍂', '🍃', '🌾', '🪨', '🌈', '☀️', '🌙', '⭐', '🌟', '☁️', '❄️',
@@ -55,7 +55,7 @@
       ]
     },
     {
-      title: 'Menjar i fruites',
+      title: 'Comida y frutas',
       emojis: [
         '🍎', '🍐', '🍊', '🍋', '🍌', '🍉', '🍇', '🍓', '🍒', '🍑', '🍍', '🥝',
         '🍅', '🥕', '🌽', '🥦', '🥔', '🍞', '🧀', '🥚', '🍕', '🍔', '🍟', '🍿',
@@ -63,7 +63,7 @@
       ]
     },
     {
-      title: 'Llocs i transports',
+      title: 'Lugares y transportes',
       emojis: [
         '🏡', '🏠', '🏰', '⛺', '🏫', '🏥', '🚒', '🚓', '🚑', '🚜', '🚗', '🚌',
         '🚂', '✈️', '🚀', '🛸', '🚁', '⛵', '🚢', '🚲', '🛴', '🚦', '⛽', '🗺️',
@@ -71,7 +71,7 @@
       ]
     },
     {
-      title: 'Objectes, contes i símbols',
+      title: 'Objetos, cuentos y símbolos',
       emojis: [
         '👑', '💎', '🔑', '🎁', '🎈', '🎉', '🎨', '🎭', '🎪', '📚', '✏️', '🔍',
         '💡', '🔦', '🧲', '⚙️', '🧰', '🧪', '🔭', '⚽', '🏀', '🏆', '🥇', '🎸',
@@ -348,7 +348,7 @@
     const trimmed = (raw || '').trim();
     if (!trimmed) return '';
     if (typeof Intl !== 'undefined' && Intl.Segmenter) {
-      const seg = new Intl.Segmenter('ca', { granularity: 'grapheme' });
+      const seg = new Intl.Segmenter('es', { granularity: 'grapheme' });
       const first = seg.segment(trimmed)[Symbol.iterator]().next();
       if (first && first.value && first.value.segment) {
         return first.value.segment;
@@ -381,7 +381,7 @@
           btn.classList.add('is-selected');
         }
         btn.textContent = emoji;
-        btn.setAttribute('aria-label', `Selecciona l'emoji ${emoji}`);
+        btn.setAttribute('aria-label', `Seleccionar el emoji ${emoji}`);
         btn.addEventListener('click', () => {
           selectEmojiForBoard(emoji);
         });
@@ -521,7 +521,7 @@
       ).join('');
     }
     if (gridCellsEl) {
-      gridCellsEl.setAttribute('aria-label', `Tapís ${state.gridRows} per ${state.gridCols}`);
+      gridCellsEl.setAttribute('aria-label', `Tapete ${state.gridRows} por ${state.gridCols}`);
     }
   }
 
@@ -577,10 +577,10 @@
         if (oid) btn.classList.add('is-oid');
         btn.setAttribute('tabindex', idx === state.activeCellIndex ? '0' : '-1');
 
-        const parts = [`Casella ${coord}`];
+        const parts = [`Casilla ${coord}`];
         if (isStart) parts.push('Inici del robot');
-        if (isFlag) parts.push('Bandera de destinació');
-        if (isObs) parts.push('Obstacle físic');
+        if (isFlag) parts.push('Bandera de destino');
+        if (isObs) parts.push('Obstáculo físico');
         if (isBox) parts.push('Caixa per transportar');
         if (oid) parts.push(`Emoji: ${oid.icon}`);
         btn.setAttribute('aria-label', parts.join(', '));
@@ -658,7 +658,7 @@
 
     if (state.matTool === 'robot') {
       if (hasObstacle(col, row)) {
-        setStatus(`La casella ${coord} té un obstacle. Retira'l abans de situar-hi el robot.`, 'warning');
+        setStatus(`La casilla ${coord} tiene un obstáculo. No se puede colocar el robot hasta quitarlo.`, 'warning');
         return;
       }
       if (state.startPose.col === col && state.startPose.row === row) {
@@ -678,7 +678,7 @@
       }
     } else if (state.matTool === 'obstacle') {
       if (state.startPose.col === col && state.startPose.row === row) {
-        setStatus(`No pots posar un obstacle damunt de la casella d'inici (${coord}).`, 'warning');
+        setStatus(`No se puede poner un obstáculo sobre la casilla de inicio (${coord}).`, 'warning');
         return;
       }
       if (hasObstacle(col, row)) {
@@ -866,7 +866,7 @@
     if (state.isRunning) stopExecution();
     if (state.tb.sequence.length >= MAX_TB_COMMANDS) {
       playTone(220, 180, 'sawtooth', 0.08);
-      setStatus(`Memòria completa (${MAX_TB_COMMANDS} ordres). Esborra una ordre o buida-les totes.`, 'warning');
+      setStatus(`Memoria completa (${MAX_TB_COMMANDS} órdenes). Borra una orden o vacíalas todas.`, 'warning');
       return;
     }
     state.tb.sequence.push(cmd);
@@ -986,14 +986,14 @@
         topBtn.draggable = true;
         topBtn.setAttribute(
           'aria-label',
-          `Fila ${rowNum} casella ${colNum}: ${LABELS[slotData.type]}${slotData.number ? ` (${slotData.number})` : ''}. Clica per retirar.`
+          `Fila ${rowNum}, casilla ${colNum}: ${LABELS[slotData.type]}${slotData.number ? ` (${slotData.number})` : ''}. Haz clic para quitar.`
         );
         topBtn.innerHTML = renderCSInstructionSVG(slotData.type);
         topBtn.addEventListener('dragstart', (e) => {
           e.dataTransfer.setData('text/plain', JSON.stringify({ kind: 'move-slot', fromIndex: idx }));
         });
       } else {
-        topBtn.setAttribute('aria-label', `Fila ${rowNum} casella ${colNum} buida`);
+        topBtn.setAttribute('aria-label', `Fila ${rowNum}, casilla ${colNum}, vacía`);
         topBtn.innerHTML = renderTopPegSVG();
       }
 
@@ -1018,14 +1018,14 @@
 
       if (slotData && slotData.number) {
         bottomBtn.classList.add('is-filled');
-        bottomBtn.setAttribute('aria-label', `Bloc numèric ${slotData.number} a fila ${rowNum} casella ${colNum}. Clica per canviar o retirar.`);
+        bottomBtn.setAttribute('aria-label', `Bloque numérico ${slotData.number} en la fila ${rowNum}, casilla ${colNum}. Haz clic para cambiar o quitar.`);
         bottomBtn.innerHTML = renderCSNumberSVG(slotData.number);
       } else {
         bottomBtn.setAttribute(
           'aria-label',
           slotData && acceptsNumberBlock(slotData.type)
-            ? `Afegeix bloc numèric (2 a 5 o dau) sota ${LABELS[slotData.type]}`
-            : `Clavilla inferior fila ${rowNum} casella ${colNum}`
+            ? `Añadir bloque numérico (2 a 5 o dado) debajo de ${LABELS[slotData.type]}`
+            : `Clavija inferior, fila ${rowNum}, casilla ${colNum}`
         );
         bottomBtn.innerHTML = renderBottomPegSVG();
       }
@@ -1040,7 +1040,7 @@
         if (!acceptsNumberBlock(slotData.type)) {
           playTone(230, 140, 'sawtooth', 0.07);
           setStatus(
-            `Els blocs numèrics només s'utilitzen sota Endavant, Enrere i Inici del bucle.`,
+            `Los bloques numéricos solo se utilizan debajo de Adelante, Atrás e Inicio del bucle.`,
             'warning'
           );
           renderCodingSetUI();
@@ -1115,7 +1115,7 @@
 
     if (targetIdx === -1) {
       playTone(230, 150, 'sawtooth', 0.08);
-      setStatus('El tauler de 3×6 caselles és ple.', 'warning');
+      setStatus('El tablero de 3×6 casillas está lleno.', 'warning');
       return;
     }
 
@@ -1143,13 +1143,13 @@
     }
 
     if (!target) {
-      setStatus('Col·loca primer una fitxa Endavant, Enrere o Inici del bucle al tauler.', 'warning');
+      setStatus('Coloca primero una ficha Adelante, Atrás o Inicio del bucle en el tablero.', 'warning');
       return;
     }
     if (!acceptsNumberBlock(target.type)) {
       playTone(230, 150, 'sawtooth', 0.08);
       setStatus(
-        `Els blocs numèrics només s'utilitzen sota Endavant, Enrere i Inici del bucle.`,
+        `Los bloques numéricos solo se utilizan debajo de Adelante, Atrás e Inicio del bucle.`,
         'warning'
       );
       return;
@@ -1169,7 +1169,7 @@
   // =========================================================
   function compileTaleBotQueue() {
     if (!state.tb.sequence.length) {
-      return { error: 'Introdueix almenys una ordre als botons de Tale-Bot abans de prémer Play.' };
+      return { error: 'Introduce al menos una orden en los botones de Tale-Bot antes de pulsar Play.' };
     }
     const isInfinite = state.tb.repeat === 5;
     const reps = isInfinite ? 1 : Math.max(1, state.tb.repeat);
@@ -1194,7 +1194,7 @@
       .filter(Boolean);
 
     if (!allFilled.length) {
-      return { error: 'Col·loca almenys una fitxa al tauler 3×6 abans de prémer Play.' };
+      return { error: 'Coloca al menos una ficha en el tablero 3×6 antes de pulsar Play.' };
     }
 
     let mainFilled = [];
@@ -1224,7 +1224,7 @@
     }
 
     if (!mainFilled.length) {
-      return { error: 'Falta el programa principal al tauler (només hi ha la definició de funció).' };
+      return { error: 'Falta el programa principal en el tablero (solo hay la definición de función).' };
     }
 
     const steps = [];
@@ -1232,16 +1232,16 @@
     while (i < mainFilled.length) {
       const block = mainFilled[i];
       if (block.type === 'end') {
-        return { error: `Error al tauler (casella #${block.slotIndex + 1}): hi ha una fitxa «Fi del bucle» sense «Inici del bucle» abans.` };
+        return { error: `Error en el tablero (casilla #${block.slotIndex + 1}): hay una ficha «Fin del bucle» sin «Inicio del bucle» antes.` };
       }
       if (block.type === 'loop') {
         const endIdx = mainFilled.findIndex((b, j) => j > i && b.type === 'end');
         if (endIdx === -1) {
-          return { error: `Falta la fitxa «Fi del bucle» per tancar el bucle iniciat a la casella #${block.slotIndex + 1}.` };
+          return { error: `Falta la ficha «Fin del bucle» para cerrar el bucle iniciado en la casilla #${block.slotIndex + 1}.` };
         }
         const inner = mainFilled.slice(i + 1, endIdx);
         if (inner.some(b => b.type === 'loop')) {
-          return { error: 'El Coding Set no admet bucles niuats dins d’un altre bucle.' };
+          return { error: 'Coding Set no admite bucles anidados dentro de otro bucle.' };
         }
         const count = block.number ? resolveNumberValue(block.number) : 2;
         for (let r = 0; r < count; r++) {
@@ -1267,7 +1267,7 @@
   function expandSingleCSBlock(block, funcFilled) {
     if (block.type === 'call') {
       if (!funcFilled.length) {
-        return { error: `Has col·locat «Crida funció» a la casella #${block.slotIndex + 1}, però no hi ha cap funció definida amb la fitxa «fn».` };
+        return { error: `Has colocado «Llamar función» en la casilla #${block.slotIndex + 1}, pero no hay ninguna función definida con la ficha «fn».` };
       }
       const fnSteps = [];
       for (const fBlock of funcFilled) {
@@ -1311,7 +1311,7 @@
     if (actionType === 'random') {
       const pool = ['forward', 'back', 'left', 'right'];
       actionType = pool[Math.floor(Math.random() * pool.length)];
-      showBubble(`🎲 Moviment aleatori: ${LABELS[actionType]}`, state.stepMs);
+      showBubble(`🎲 Movimiento aleatorio: ${LABELS[actionType]}`, state.stepMs);
     }
 
     if (actionType === 'forward' || actionType === 'back') {
@@ -1323,7 +1323,7 @@
       if (nextCol < 0 || nextCol >= state.gridCols || nextRow < 0 || nextRow >= state.gridRows) {
         robotActor.classList.add('is-bumped');
         playTone(170, 260, 'sawtooth', 0.1);
-        setStatus(`Atenció! El robot ha arribat a la vora del tapís a ${cellName(state.pose.col, state.pose.row)} i s'ha aturat.`, 'error');
+        setStatus(`¡Atención! El robot ha llegado al borde del tapete en ${cellName(state.pose.col, state.pose.row)} y se ha detenido.`, 'error');
         setTimeout(() => robotActor.classList.remove('is-bumped'), 380);
         return false;
       }
@@ -1334,8 +1334,8 @@
         const obsCoord = cellName(nextCol, nextRow);
         setStatus(
           state.robot === 'coding-set'
-            ? `El MatataBot ha topat amb l'obstacle de ${obsCoord}!`
-            : `Tale-Bot ha topat amb l'obstacle de ${obsCoord}!`,
+            ? `¡El MatataBot ha chocado con el obstáculo de ${obsCoord}!`
+            : `¡Tale-Bot ha chocado con el obstáculo de ${obsCoord}!`,
           'error'
         );
         setTimeout(() => robotActor.classList.remove('is-bumped'), 380);
@@ -1356,7 +1356,7 @@
           ) {
             robotActor.classList.add('is-bumped');
             playTone(180, 220, 'sawtooth', 0.09);
-            setStatus('La caixa 📦 no pot avançar més enllà d’aquesta casella.', 'warning');
+            setStatus('La caja 📦 no puede avanzar más allá de esta casilla.', 'warning');
             setTimeout(() => robotActor.classList.remove('is-bumped'), 380);
             return false;
           }
@@ -1364,7 +1364,7 @@
         } else {
           robotActor.classList.add('is-bumped');
           playTone(180, 220, 'sawtooth', 0.09);
-          setStatus('Activa els «Braços» de Tale-Bot i avança de cara per empènyer la caixa 📦!', 'warning');
+          setStatus('¡Activa los «Brazos» de Tale-Bot y avanza de frente para empujar la caja 📦!', 'warning');
           setTimeout(() => robotActor.classList.remove('is-bumped'), 380);
           return false;
         }
@@ -1393,15 +1393,15 @@
       updateRobotActor();
       playTone(actionType === 'right' ? 659 : 587, 105, 'triangle', 0.08);
     } else if (actionType === 'record') {
-      const msg = (tbVoiceInput && tbVoiceInput.value.trim()) || 'Hola, sóc el conill!';
+      const msg = (tbVoiceInput && tbVoiceInput.value.trim()) || '¡Hola, soy el conejo!';
       showBubble(`🎙️ «${msg}»`, Math.max(1800, state.stepMs * 2));
       playMelody([[523, 0, 100], [659, 110, 100], [784, 220, 140]]);
     } else if (actionType === 'music') {
-      showBubble('🎵 ♪ Melodia predefinida de MatataBot ♫', Math.max(1800, state.stepMs * 2));
+      showBubble('🎵 ♪ Melodía predefinida de MatataBot ♫', Math.max(1800, state.stepMs * 2));
       playMelody([[523, 0, 110], [587, 120, 110], [659, 240, 110], [784, 360, 160]]);
     } else if (actionType === 'dance') {
       robotActor.classList.add('is-dancing');
-      showBubble('💃 Dansa predefinida!', Math.max(1600, state.stepMs * 1.8));
+      showBubble('💃 ¡Danza predefinida!', Math.max(1600, state.stepMs * 1.8));
       playMelody([[523, 0, 90], [659, 100, 90], [587, 200, 90], [784, 300, 140]]);
       setTimeout(() => robotActor.classList.remove('is-dancing'), state.stepMs - 40);
     }
@@ -1416,14 +1416,14 @@
       const allBoxesOnFlags = state.boxes.every(b => hasFlag(b.col, b.row));
       if (allBoxesOnFlags) {
         playMelody([[523, 0, 110], [659, 120, 110], [784, 240, 110], [1046, 360, 220]]);
-        showBubble('🎉 Objectiu assolit! Caixes col·locades a les banderes!', 2800);
+        showBubble('🎉 ¡Objetivo conseguido! ¡Cajas colocadas en las banderas!', 2800);
       }
       return;
     }
 
     if (hasFlag(state.pose.col, state.pose.row)) {
       playMelody([[523, 0, 110], [659, 120, 110], [784, 240, 110], [1046, 360, 220]]);
-      showBubble('🎉 Objectiu assolit! Molt bona feina!', 2800);
+      showBubble('🎉 ¡Objetivo conseguido! ¡Muy buen trabajo!', 2800);
     }
   }
 
@@ -1728,7 +1728,7 @@
   tbStepBtn.addEventListener('click', runNextSingleStep);
 
   tbTestVoiceBtn.addEventListener('click', () => {
-    const msg = (tbVoiceInput && tbVoiceInput.value.trim()) || 'Hola, sóc el conill!';
+    const msg = (tbVoiceInput && tbVoiceInput.value.trim()) || '¡Hola, soy el conejo!';
     showBubble(`🎙️ «${msg}»`, 2400);
     playMelody([[523, 0, 90], [659, 100, 90], [784, 200, 130]]);
   });

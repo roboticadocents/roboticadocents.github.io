@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# check-es:skip
 """Rebuild nine classroom kits and 27 web diagrams, using local vector artwork.
 Requires ReportLab, Pillow, pdftoppm and DejaVu Sans fonts. No network access.
 Run from any directory. Existing Robot Humà and the four new kits are untouched.

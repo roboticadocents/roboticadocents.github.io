@@ -1,17 +1,17 @@
 ---
 active: true
-title: "Una dansa robòtica per a la festa de l’escola"
-description: "Creem i depurem una dansa breu amb Codey Rocky, ritmes de tabal i llums programades per a una festa de l’escola."
+title: "Una danza robótica para la fiesta de la escuela"
+description: "Creamos y depuramos una danza breve con Codey Rocky, ritmos de tambor y luces programadas para una fiesta de la escuela."
 robot: "codey-rocky"
 robot_label: "Codey Rocky"
 cycle: "primer-cicle"
-cycle_label: "Primer cicle"
+cycle_label: "Primer ciclo"
 subject: "artistica"
-subject_label: "Educació Artística, Música i Tecnologia"
+subject_label: "Educación Artística, Música y Tecnología"
 theme: "art"
-theme_label: "Ritme, dansa i expressió"
-duration: "4 sessions"
-challenge: "Com podem convertir un ritme propi en una seqüència de moviments, expressions i llums que el robot puga repetir?"
+theme_label: "Ritmo, danza y expresión"
+duration: "4 sesiones"
+challenge: "¿Cómo podemos convertir un ritmo propio en una secuencia de movimientos, expresiones y luces que el robot pueda repetir?"
 ---
 
 ![Codey Rocky real de la dotació sobre una taula, amb quatre targetes de colors que representen pulsacions d’una coreografia.](../../_assets/situacions/cr-coreografia.webp)

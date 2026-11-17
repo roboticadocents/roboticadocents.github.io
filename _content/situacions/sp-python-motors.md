@@ -1,17 +1,17 @@
 ---
 active: true
-title: "Moviment amb motiu"
-description: "Sis lliçons de Python amb SPIKE Prime per controlar motors, posicions, parelles de motors, automatització i trajectes provats."
+title: "Movimiento con motivo"
+description: "Seis lecciones de Python con SPIKE Prime para controlar motores, posiciones, parejas de motores, automatización y trayectos probados."
 robot: "spike"
 robot_label: "SPIKE Prime"
 cycle: "tercer-cicle"
-cycle_label: "Tercer cicle"
+cycle_label: "Tercer ciclo"
 subject: "tecnologia"
-subject_label: "Tecnologia, Matemàtiques i Programació"
+subject_label: "Tecnología, Matemáticas y Programación"
 theme: "python"
-theme_label: "Python: motors, posició i automatització"
-duration: "6 lliçons · 6–8 sessions"
-challenge: "Com podem programar un mecanisme SPIKE que complete moviments útils i repetibles en una ruta de transport simulada, i demostrar-ne la precisió amb proves?"
+theme_label: "Python: motores, posición y automatización"
+duration: "6 lecciones · 6–8 sesiones"
+challenge: "¿Cómo podemos programar un mecanismo SPIKE que complete movimientos útiles y repetibles en una ruta de transporte simulada, y demostrar su precisión con pruebas?"
 ---
 
 ![Base de dues rodes construïda amb peces LEGO SPIKE Prime i el seu hub, en una pista de taula amb girs i una fita de destinació.](../../_assets/situacions/sp-python-motors.webp)

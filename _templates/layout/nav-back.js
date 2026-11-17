@@ -2,12 +2,12 @@
 
 const { escapeHTML, escapeAttr } = require('./utils');
 
-function NavBack({ href = 'index.html', label = 'Tornar', preserveFilters = false, slug = '' } = {}) {
-  let cleanLabel = String(label || 'Tornar').trim();
+function NavBack({ href = 'index.html', label = 'Volver', preserveFilters = false, slug = '' } = {}) {
+  let cleanLabel = String(label || 'Volver').trim();
   if (cleanLabel.startsWith('←')) {
     cleanLabel = cleanLabel.replace(/^←\s*/, '');
-  } else if (!cleanLabel.toLowerCase().startsWith('tornar')) {
-    cleanLabel = `Tornar a ${cleanLabel}`;
+  } else if (!cleanLabel.toLowerCase().startsWith('volver')) {
+    cleanLabel = `Volver a ${cleanLabel}`;
   }
   const filterAttr = preserveFilters
     ? ` data-preserve-filters="${escapeAttr(slug)}"`

@@ -1,8 +1,8 @@
 ---
-title: 'micro:bit: enviar un número per ràdio'
-description: Fer que dues plaques intercanvien un número de prova sense utilitzar Wi-Fi.
+title: "micro:bit: enviar un número por radio"
+description: "Hacer que dos placas intercambien un número de prueba sin utilizar wifi."
 robot: microbit
-level: Intermedi
+level: "Intermedio"
 duration: 45 min
 order: 3
 image: _assets/tutorials/mb-radio-mesh-flat.webp

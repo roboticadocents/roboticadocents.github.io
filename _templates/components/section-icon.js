@@ -13,7 +13,11 @@ function SectionIcon(name, className = 'section-icon') {
 }
 
 function stripHeadingIcon(html) {
-  return String(html).replace(/^((?:<(?:strong|em|b|i)>)*?)[^\p{L}\p{N}<]+/u, '$1').trim();
+  const value = String(html);
+  const match = value.match(/^((?:<(?:strong|em|b|i)>)*)([\s\S]*)$/u); // check-es:ignore
+  const prefix = match ? match[1] : '';
+  const rest = match ? match[2] : value;
+  return (prefix + rest.replace(/^[^\p{L}\p{N}¿¡<]+/u, '')).trim();
 }
 
 function SectionHeading(title, key, isTutorial = false) {

@@ -1,34 +1,34 @@
 ---
 title: Micro:bit
-description: La placa microcontroladora per a projectes oberts i ciutadans
+description: "La placa microcontroladora para proyectos abiertos y ciudadanos"
 icon: 📟
-cicle: Segon i tercer cicle
-age: Segon i tercer cicle
+cicle: "Segundo y tercer ciclo"
+age: "Segundo y tercer ciclo"
 order: 6
 specs:
-- ✓ Matriu 5x5 de LEDs vermells
-- ✓ Botons i sensors segons la versió (V2 incorpora micròfon)
-- ✓ Acceleròmetre i brúixola 3D
-- ✓ Antena de ràdio 2.4GHz
-- ✓ Pins d’entrada/sortida i connexió a circuits
+- ✓ Matriz de 5 × 5 LED rojos
+- ✓ Botones y sensores según la versión (la V2 incorpora micrófono)
+- ✓ Acelerómetro y brújula 3D
+- ✓ Antena de radio de 2,4 GHz
+- ✓ Pines de entrada/salida y conexión a circuitos
 image: _assets/robots/microbit.webp
 
 # Informació i recursos oficials del fabricant
 tech_info: >
-  La micro:bit és una placa programable amb MakeCode o Python que permet llegir entrades, processar-les i controlar sortides. Pot mostrar text i patrons a la matriu LED de 5 × 5, detectar pulsacions, moviment i orientació, estimar la llum ambiental i consultar la temperatura del processador. La ràdio permet intercanviar missatges entre plaques; els pins permeten llegir senyals i controlar circuits externs compatibles. La V2 incorpora micròfon, altaveu i logotip tàctil. No inclou motors ni xassís: el moviment i el control de càrregues requereixen perifèrics, controladors i alimentació adequats. Consulta les [funcions de cada versió de micro:bit](https://microbit.org/get-started/features/overview/).
+  La micro:bit es una placa programable con MakeCode o Python que permite leer entradas, procesarlas y controlar salidas. Puede mostrar texto y patrones en la matriz LED de 5 × 5, detectar pulsaciones, movimiento y orientación, estimar la luz ambiental y consultar la temperatura del procesador. La radio permite intercambiar mensajes entre placas; los pines permiten leer señales y controlar circuitos externos compatibles. La V2 incorpora micrófono, altavoz y logotipo táctil. No incluye motores ni chasis: el movimiento y el control de cargas requieren periféricos, controladores y alimentación adecuados. Consulta las [funciones de cada versión de micro:bit](https://microbit.org/get-started/features/overview/).
 official_resources:
-- title: Lliçons de micro:bit
+- title: Lecciones de micro:bit
   href: https://microbit.org/teach/lessons/
-  description: Unitats i reptes de disseny filtrables per edat, matèria i eina.
-- title: Primers projectes amb MakeCode
+  description: Unidades y retos de diseño filtrables por edad, materia y herramienta.
+- title: Primeros proyectos con MakeCode
   href: https://microbit.org/teach/lessons/first-lessons-with-makecode-and-the-microbit/
-  description: Itinerari per practicar seqüències, bucles, entrades, sortides i sensors.
-- title: Registre de dades
+  description: Itinerario para practicar secuencias, bucles, entradas, salidas y sensores.
+- title: Registro de datos
   href: https://microbit.org/get-started/user-guide/data-logging/
-  description: Capturar dades de sensors amb micro:bit V2, recuperar-les i analitzar-les.
+  description: Capturar datos de sensores con micro:bit V2, recuperarlos y analizarlos.
 - title: 'Make it: code it'
   href: https://www.microbit.org/projects/make-it-code-it/
-  description: Projectes filtrables per nivell, tema, llenguatge i característica de la placa.
+  description: Proyectos filtrables por nivel, tema, lenguaje y característica de la placa.
 ---
 
 La BBC micro:bit és una petita placa programable amb una matriu de 25 LEDs, dos polsadors, acceleròmetre, brúixola i ràdio. Les funcions de maquinari depenen de la revisió: la V2 incorpora logotip tàctil, micròfon, altaveu i registre persistent de dades de sensors amb MakeCode; altres funcions i connexions poden variar. Identifica la versió abans de dissenyar una activitat.

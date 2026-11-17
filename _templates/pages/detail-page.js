@@ -11,14 +11,14 @@ function DetailPage({
   activeNav = '',
   root = '../../',
   backHref = '../../index.html',
-  backLabel = 'Inici',
+  backLabel = 'Inicio',
   badges = [],
   printHref = '',
   content = ''
 } = {}) {
   return Document({
-    title: `${title} | Robòtica²⁰⁰`,
-    description: description || 'Contingut didàctic de robòtica educativa.',
+    title: `${title} | Robótica²⁰⁰`,
+    description: description || 'Contenido didáctico de robótica educativa.',
     activeNav,
     root,
     body: `    ${NavBack({ href: backHref, label: backLabel })}
@@ -28,7 +28,7 @@ function DetailPage({
         <h1 class="detail-page-title" data-title>${escapeHTML(title)}</h1>
         ${description ? `<p class="detail-intro" data-description>${escapeHTML(description)}</p>` : ''}
       </div>
-      ${printHref ? `<p class="print-version-link"><a href="${escapeAttr(printHref)}" download>Descarrega la versió imprimible (PDF)</a></p>` : ''}
+      ${printHref ? `<p class="print-version-link"><a href="${escapeAttr(printHref)}" download>Descargar la versión imprimible (PDF)</a></p>` : ''}
       <div class="prose" data-content>${content}</div>
     </article>`
   });

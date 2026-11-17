@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# check-es:skip
 """Rebuild the Robot Humà PDF and instructional WebP diagrams.
 Requires ReportLab, Pillow, pdftoppm and system DejaVu Sans fonts.
 """

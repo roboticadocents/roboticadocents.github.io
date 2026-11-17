@@ -1,17 +1,17 @@
 ---
 active: true
-title: "Una ruta segura per la marjal"
-description: "Planifiquem, programem i depurem recorreguts amb obstacles en una quadrícula de la marjal, amb el Coding Set i rols cooperatius."
+title: "Una ruta segura por la marjal"
+description: "Planificamos, programamos y depuramos recorridos con obstáculos en una cuadrícula de la marjal, con el Coding Set y roles cooperativos."
 robot: "coding-set"
 robot_label: "Coding Set"
 cycle: "primer-cicle"
-cycle_label: "Primer cicle"
+cycle_label: "Primer ciclo"
 subject: "pensament-computacional"
-subject_label: "Pensament computacional, Matemàtiques i Medi"
+subject_label: "Pensamiento computacional, Matemáticas y Medio"
 theme: "entorn-local"
-theme_label: "Marjal i cura dels hàbitats"
-duration: "3 sessions de 45 minuts"
-challenge: "Com podem guiar MatataBot fins a dos punts de la marjal sense travessar una zona protegida i explicar a un altre equip com ho hem aconseguit?"
+theme_label: "Marjal y cuidado dels hábitats"
+duration: "3 sesiones de 45 minutos"
+challenge: "¿Cómo podemos guiar MatataBot hasta dos puntos de la marjal sin cruzar una zona protegida y explicar a otro equipo cómo lo hemos conseguido?"
 official_source: "https://matatalab.com/cdn/ff/3ihe_ldu0qGpw6-JNLtdn8UaZVTFje4pO0eRFPIgtcY/1600223266/public/2020-09/%E7%AC%AC3%E8%AF%BE%20%20%E7%8B%BC%E6%9D%A5%E4%BA%86%EF%BC%81.pdf"
 ---
 

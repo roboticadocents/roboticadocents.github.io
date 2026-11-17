@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# check-es:skip
 """Render the site's editorial Markdown as individual and collected Typst PDFs.
 
 The Markdown files remain the only source of editorial content.  This renderer
@@ -20,18 +21,18 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CATEGORIES = {
-    "activitats": ("activitats", "Activitats"),
-    "tutorials": ("tutorials", "Tutorials"),
-    "guies": ("guies", "Guies docents"),
-    "robots": ("robots", "Fitxes de robots"),
-    "situacions": ("situacions", "Situacions d’aprenentatge"),
+    "activitats": ("activitats", "Actividades"),
+    "tutorials": ("tutorials", "Tutoriales"),
+    "guies": ("guies", "Guías docentes"),
+    "robots": ("robots", "Fichas de robots"),
+    "situacions": ("situacions", "Situaciones de aprendizaje"),
 }
 WEB_GROUPS = {
-    "activitats": "Pensament computacional",
-    "tutorials": "Robòtica educativa",
-    "guies": "Robòtica educativa",
-    "robots": "Robòtica educativa",
-    "situacions": "Situacions d’aprenentatge",
+    "activitats": "Pensamiento computacional",
+    "tutorials": "Robótica educativa",
+    "guies": "Robótica educativa",
+    "robots": "Robótica educativa",
+    "situacions": "Situaciones de aprendizaje",
 }
 
 
@@ -152,13 +153,16 @@ def markdown_to_typst(source: str, md_path: Path, typ_dir: Path) -> str:
         nonlocal paragraph
         if paragraph:
             rendered = " ".join(line.strip() for line in paragraph)
-            callout = re.match(r"^\*\*(Evidència|Pregunta docent|Vocabulari):\*\*\s*(.*)$", rendered, re.I)
+            callout = re.match(r"^\*\*(Evidència|Evidencia|Pregunta docent|Pregunta docente|Vocabulari|Vocabulario):\*\*\s*(.*)$", rendered, re.I)
             if callout:
                 label, content = callout.groups()
                 themes = {
                     "evidència": ("#eff6ff", "#2563eb"),
+                    "evidencia": ("#eff6ff", "#2563eb"),
                     "pregunta docent": ("#f5f3ff", "#7c3aed"),
+                    "pregunta docente": ("#f5f3ff", "#7c3aed"),
                     "vocabulari": ("#f4f6f8", "#64748b"),
+                    "vocabulario": ("#f4f6f8", "#64748b"),
                 }
                 fill, accent = themes[label.lower()]
                 out.append(f'#block(breakable: false, fill: rgb("{fill}"), stroke: (left: 2pt + rgb("{accent}"), rest: 0.5pt + rgb("#e5e9ee")), radius: 5pt, inset: (x: 9pt, y: 7pt))[#text(size: 7.5pt, weight: "bold", fill: rgb("{accent}"), tracking: 0.4pt)[{label.upper()}] #v(3pt) {inline(content, md_path, typ_dir)}]')
@@ -265,10 +269,10 @@ def markdown_to_typst(source: str, md_path: Path, typ_dir: Path) -> str:
 def document_typst(title: str, description: str, body: str, eyebrow: str = "", include_outline: bool = False) -> str:
     description_block = f'#v(5pt)\n#text(size: 11pt, fill: rgb("#64748b"))[{typst_text(description)}]\n#v(10pt)' if description else ''
     eyebrow_block = f'#text(size: 8pt, weight: "bold", fill: rgb("#2563eb"), tracking: 0.7pt)[{typst_text(eyebrow.upper())}]' if eyebrow else '#text(size: 8pt, weight: "bold", fill: rgb("#2563eb"), tracking: 0.7pt)[ROBÒTICA PER A DOCENTS]'
-    outline_block = '#pagebreak()\n#outline(title: [Índex de recursos], depth: 2)\n#pagebreak()' if include_outline else ''
-    return f'''#set document(title: {typst_string(title)}, author: "Robòtica²⁰⁰")
-#set page(paper: "a4", margin: (top: 20mm, bottom: 19mm, left: 20mm, right: 20mm), header: context [#text(size: 7pt, weight: "bold", fill: rgb("#2563eb"), tracking: 0.5pt)[ROBÒTICA²⁰⁰] #h(1fr) #text(size: 7pt, fill: rgb("#64748b"))[{typst_text(eyebrow or "MATERIALS PER A DOCENTS")} ] #line(length: 100%, stroke: 0.5pt + rgb("#e5e9ee"))], footer: context [#line(length: 100%, stroke: 0.5pt + rgb("#e5e9ee")) #v(5pt) #text(size: 8pt, weight: "semibold", fill: rgb("#2563eb"))[ROBÒTICA²⁰⁰] #text(size: 8pt, fill: rgb("#64748b"))[ · {typst_text(title)}] #h(1fr) #text(size: 8pt, fill: rgb("#64748b"))[#counter(page).display() / #counter(page).final().at(0)]])
-#set text(font: "DejaVu Sans", size: 10.5pt, fill: rgb("#111827"), lang: "ca")
+    outline_block = '#pagebreak()\n#outline(title: [Índice de recursos], depth: 2)\n#pagebreak()' if include_outline else ''
+    return f'''#set document(title: {typst_string(title)}, author: "Robótica²⁰⁰")
+#set page(paper: "a4", margin: (top: 20mm, bottom: 19mm, left: 20mm, right: 20mm), header: context [#text(size: 7pt, weight: "bold", fill: rgb("#2563eb"), tracking: 0.5pt)[ROBÓTICA²⁰⁰] #h(1fr) #text(size: 7pt, fill: rgb("#64748b"))[{typst_text(eyebrow or "MATERIALES PARA DOCENTES")} ] #line(length: 100%, stroke: 0.5pt + rgb("#e5e9ee"))], footer: context [#line(length: 100%, stroke: 0.5pt + rgb("#e5e9ee")) #v(5pt) #text(size: 8pt, weight: "semibold", fill: rgb("#2563eb"))[ROBÓTICA²⁰⁰] #text(size: 8pt, fill: rgb("#64748b"))[ · {typst_text(title)}] #h(1fr) #text(size: 8pt, fill: rgb("#64748b"))[#counter(page).display() / #counter(page).final().at(0)]])
+#set text(font: "DejaVu Sans", size: 10.5pt, fill: rgb("#111827"), lang: "es")
 #set par(leading: 0.72em, justify: true, spacing: 0.72em)
 #set heading(numbering: none)
 #show heading.where(level: 1): set text(font: "DejaVu Sans", size: 19pt, weight: "bold", fill: rgb("#0f172a"))
@@ -393,7 +397,7 @@ def collect() -> list[dict[str, str]]:
             docs.append({
                 "category": category,
                 "categoryLabel": label,
-                "webGroup": "Robòtica educativa" if activity_robot else WEB_GROUPS[folder],
+                "webGroup": "Robótica educativa" if activity_robot else WEB_GROUPS[folder],
                 "slug": slug,
                 "title": title,
                 "description": meta.get("description", "").strip(),
@@ -463,10 +467,10 @@ def write_printables(out: Path, compile_pdf: bool, cache_dir: Path | None = None
         global_body.append('#line(length: 100%, stroke: 0.6pt + rgb("#dbeafe"))')
         global_body.append(markdown_to_typst(doc["body"], ROOT / doc["source"], global_typ_dir))
     global_source = document_typst(
-        "Recull complet de recursos",
-        "Activitats, tutorials, guies docents, fitxes de robots i situacions d’aprenentatge.",
+        "Compendio completo de recursos",
+        "Actividades, tutoriales, guías docentes, fichas de robots y situaciones de aprendizaje.",
         "\n\n".join(global_body),
-        "Robòtica per a docents · Recull",
+        "Robótica para docentes · Compendio",
         include_outline=True,
     )
     global_typ = output_root / "robotica200-complet.typ"

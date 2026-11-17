@@ -1,8 +1,8 @@
 ---
-title: "El bucle ferroviari: repetir un recorregut"
-description: Muntar una via tancada, posar el tren en marxa i comprovar el retorn al punt inicial.
+title: "El bucle ferroviario: repetir un recorrido"
+description: "Montar una vía cerrada, poner el tren en marcha y comprobar el retorno al punto inicial."
 robot: coding-express
-level: Iniciació
+level: "Iniciación"
 duration: 40 min
 order: 4
 image: _assets/tutorials/ce-bucles.webp

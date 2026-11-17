@@ -1,3 +1,4 @@
+// check-es:skip
 'use strict';
 
 /**
@@ -112,48 +113,97 @@ function highlight(code, language) {
 }
 
 const noteTypes = [
+  [/^(situación|punto de partida|contexto):$/i, 'situation', '🧭'],
   [/^(situació|punt de partida|context):$/i, 'situation', '🧭'],
+  [/^(materiales|material|materiales y preparación):$/i, 'materials', '🧰'],
   [/^(materials|material|materials i preparació):$/i, 'materials', '🧰'],
+  [/^(evidencia|evidencias y evaluación|producto):$/i, 'evidence', '🔎'],
   [/^(evidència|evidencia|producte|evidències i avaluació):$/i, 'evidence', '🔎'],
+  [/^(pregunt(?:a|as) docentes?|preguntas? docentes?|pregunta|pregunta guía|reto|reto e intención):$/i, 'question', '❓'],
   [/^(pregunt(?:a|es) docents?|pregunta|pregunta guia|repte|repte i intenció):$/i, 'question', '❓'],
+  [/^(apoyo|participación|participación y límites|accesibilidad):$/i, 'support', '♿'],
   [/^(suport|participació|participació i límits|accessibilitat):$/i, 'support', '♿'],
+  [/^(ampliación|extensión):$/i, 'extension', '🚀'],
   [/^(ampliació|extensió):$/i, 'extension', '🚀'],
+  [/^(vocabulario|palabras clave):$/i, 'vocabulary', '💬'],
   [/^(vocabulari|paraules clau):$/i, 'vocabulary', '💬'],
+  [/^(aprendizajes|objetivos):$/i, 'learning', '🎯'],
   [/^(aprenentatges|objectius):$/i, 'learning', '🎯'],
+  [/^(límite del modelo|límite|precaución):$/i, 'limit', 'ℹ️'],
   [/^(límit del model|límit|precaució):$/i, 'limit', 'ℹ️'],
+  [/^(activación|engage|explore|exploración|construcción|modelado|programación|programa|pruebas?|test|explain|explicación|elaborate|evaluate|evaluación|cierre|reflexión|decisión|iteración|revisión|registro|salida|diseño|ideación|prototipo|depuración|presentación|comunicación|ejercicio|modelo|implementación|validación|preparación|investigación|contraste|intercambio|feedback|lectura|planificación|maqueta|definición|práctica|caso de prueba|demostración|debrief)(?:\b|\s|·)/i, 'phase', '🧩'],
   [/^(activació|engage|explore|exploració|construcció|modelatge|programació|programa|proves?|test|explain|explicació|elaborate|evaluate|avaluació|tancament|reflexió|decisió|iteració|revisió|registre|eixida|disseny|ideació|prototip|depuració|presentació|comunicació|exercici|model|implementació|validació|preparació|investigació|contrast|intercanvi|feedback|lectura|planificació|maqueta|definició|pràctica|cas de prova|sortida|demostració|debrief)(?:\b|\s|·)/i, 'phase', '🧩']
 ];
 
 const listLabels = [
-  [/^(evidència|evidencia|producte|resultat esperat)\s*:\s*/i, 'evidence', 'Evidència'],
-  [/^(pregunta docent|pregunta per acompanyar|pregunta guia)\s*:\s*/i, 'question', 'Pregunta docent'],
-  [/^(criteri(?: d'èxit| de disseny)?)\s*:\s*/i, 'criterion', 'Criteri'],
-  [/^(depuració|si hi ha errors|revisió)\s*:\s*/i, 'debug', 'Revisió'],
-  [/^(ampliació|extensió|opcional)\s*:\s*/i, 'extension', 'Ampliació'],
-  [/^(temps|duració|durada)\s*:\s*/i, 'time', 'Temps']
+  [/^(evidencia|producto|resultado esperado)\s*:\s*/i, 'evidence', 'Evidencia'],
+  [/^(pregunta docente|pregunta para acompañar|pregunta guía)\s*:\s*/i, 'question', 'Pregunta docente'],
+  [/^(criterio(?: de éxito| de diseño)?)\s*:\s*/i, 'criterion', 'Criterio'],
+  [/^(depuración|si hay errores|revisión)\s*:\s*/i, 'debug', 'Revisión'],
+  [/^(ampliación|extensión|opcional)\s*:\s*/i, 'extension', 'Ampliación'],
+  [/^(tiempo|duración)\s*:\s*/i, 'time', 'Tiempo'],
+  [/^(evidència|evidencia|producte|resultat esperat)\s*:\s*/i, 'evidence', 'Evidencia'],
+  [/^(pregunta docent|pregunta per acompanyar|pregunta guia)\s*:\s*/i, 'question', 'Pregunta docente'],
+  [/^(criteri(?: d'èxit| de disseny)?)\s*:\s*/i, 'criterion', 'Criterio'],
+  [/^(depuració|si hi ha errors|revisió)\s*:\s*/i, 'debug', 'Revisión'],
+  [/^(ampliació|extensió|opcional)\s*:\s*/i, 'extension', 'Ampliación'],
+  [/^(temps|duració|durada)\s*:\s*/i, 'time', 'Tiempo']
 ];
+
+const ES_SECTION_TITLES = {
+  'situación, reto e intención': { key: 'intro', title: '🌱 Situación, reto e intención' },
+  'situación y intención': { key: 'intro', title: '🌱 Situación, reto e intención' },
+  'reto e intención': { key: 'intro', title: '🌱 Situación, reto e intención' },
+  'aprendizajes y vocabulario': { key: 'learning', title: '🎯 Aprendizajes y vocabulario' },
+  'materiales y preparación': { key: 'materials', title: '🧰 Materiales y preparación' },
+  'evidencias y evaluación': { key: 'assessment', title: '🧪 Evidencias y evaluación' },
+  'evaluación y evidencias': { key: 'assessment', title: '🧪 Evidencias y evaluación' },
+  'participación, accesibilidad y seguridad': { key: 'access', title: '♿ Participación, accesibilidad y seguridad' },
+  'referentes y adaptación': { key: 'official', title: '🔗 Referentes y adaptación' },
+  'secuencia didáctica': { key: 'sequence', title: '📅 Secuencia didáctica' }
+};
 
 function canonicalSection(title) {
   const value = String(title).replace(/^[^\p{L}\p{N}]+/u, '').trim().toLowerCase();
-  if (/^repte\s+\d+/i.test(value)) return { key: 'sequence', title: '📅 Seqüència didàctica' };
-  if (/^(seqüèn|seqüen|itinerari|sessions\b|passos\b|lliçons\b|fases\b|activitats\b|desenvolupament\b|projecte en\b|set (?:reptes|estands)\b|deu reptes\b|guió de treball\b|conducció de les sessions\b|ritme i conducció\b|procés de disseny\b|detall de les sis experiències\b)/.test(value)) return { key: 'sequence', title: '📅 Seqüència didàctica' };
-  if (/^reptes(?!\s+oficial)/i.test(value)) return { key: 'sequence', title: '📅 Seqüència didàctica' };
-  if (/^com usar\b/i.test(value)) return { key: 'intro', title: '🌱 Situació, repte i intenció' };
-  if (/^(repte\b|situació|situacio|punt de partida|punt de trobada|sentit i intenció|context\b|propòsit|proposit)/.test(value)) return { key: 'intro', title: '🌱 Situació, repte i intenció' };
-  if (/^(participació|participacio|participar|accessibilitat|inclusió|inclusio|privacitat|seguretat|salvaguardes|diferenciació|diferenciacio|variacions|benestar|confort sensorial)/.test(value)) return { key: 'access', title: '♿ Participació, accessibilitat i seguretat' };
-  if (/^(aprenent|vocabulari|objectius?|resultats d.aprenentatge|què aprendrem|que aprendrem|competències clau|funcions del robot)/.test(value)) return { key: 'learning', title: '🎯 Aprenentatges i vocabulari' };
-  const assessmentSignal = /evidèn|eviden|avaluació|avaluacio|autoavaluació|rúbrica|criteris? d.èxit|registre de prova|registres de prova|registre de depuració|documentació i retroacció|diari de proves|producte final i evidències|observació|mostra final|prova, depura i reflexiona|preguntes per (?:fer pensar|comprovar)|preguntes del docent/.test(value);
-  if (!assessmentSignal && /aprenent|objectius?|resultats d.aprenentatge|vocabulari|què aprendrem|que aprendrem|competències clau/.test(value)) return { key: 'learning', title: '🎯 Aprenentatges i vocabulari' };
-  if (!/material oficial/.test(value) && /materials?|preparació|preparacio|abans de començar|maquinari|programari|requisits?|muntatge|organització i materials/.test(value)) return { key: 'materials', title: '🧰 Materials i preparació' };
-  if (assessmentSignal) return { key: 'assessment', title: '🧪 Evidències i avaluació' };
-  if (/^(fonts? oficials|referent)/.test(value)) return { key: 'official', title: '🔗 Referents i adaptació' };
-  if (/participació|participacio|manera de participar|inclusió|inclusio|accessibilitat|privacitat|seguretat|salvaguardes|límits|limites|adaptacions|ús responsable|variacions|benestar|confort sensorial|diferenciació|diferenciacio|inclusió i variacions/.test(value)) return { key: 'access', title: '♿ Participació, accessibilitat i seguretat' };
-  if (/oficial|adaptació|adaptacio|referent|fonts?|recursos|unitat oficial|dotació i fonts/.test(value)) return { key: 'official', title: '🔗 Referents i adaptació' };
-  if (/rols|organitzaci[oó]|disseny accessible|equitat|consentiment|dades responsables/.test(value)) return { key: 'access', title: '♿ Participació, accessibilitat i seguretat' };
-  if (/retorn|portafoli|portafolis|quadern|registre|fitxa de recerca|taula de proves|criteris observables|lectura crítica|lectura critica|resultats|mostra final/.test(value)) return { key: 'assessment', title: '🧪 Evidències i avaluació' };
-  if (/sostenibilitat|connexi[oó]|cultural|raonament|continguts|llenguatge|idees clau|vies de programació|programacio|vocabulari/.test(value)) return { key: 'learning', title: '🎯 Aprenentatges i vocabulari' };
-  if (/opci[oó]|mapes interactius|activity box|materials|versions|programari|accessoris/.test(value)) return { key: 'materials', title: '🧰 Materials i preparació' };
-  return { key: 'sequence', title: '📅 Seqüència didàctica' };
+  const exact = ES_SECTION_TITLES[value];
+  if (exact) return exact;
+  if (/^repte\s+\d+/i.test(value)) return { key: 'sequence', title: '📅 Secuencia didáctica' };
+  if (/^(seqüèn|seqüen|itinerari|sessions\b|passos\b|lliçons\b|fases\b|activitats\b|desenvolupament\b|projecte en\b|set (?:reptes|estands)\b|deu reptes\b|guió de treball\b|conducció de les sessions\b|ritme i conducció\b|procés de disseny\b|detall de les sis experiències\b)/.test(value)) return { key: 'sequence', title: '📅 Secuencia didáctica' };
+  if (/^reptes(?!\s+oficial)/i.test(value)) return { key: 'sequence', title: '📅 Secuencia didáctica' };
+  if (/^com usar\b/i.test(value)) return { key: 'intro', title: '🌱 Situación, reto e intención' };
+  if (/^(repte\b|situació|situacio|punt de partida|punt de trobada|sentit i intenció|context\b|propòsit|proposit)/.test(value)) return { key: 'intro', title: '🌱 Situación, reto e intención' };
+  if (/^(participació|participacio|participar|accessibilitat|inclusió|inclusio|privacitat|seguretat|salvaguardes|diferenciació|diferenciacio|variacions|benestar|confort sensorial)/.test(value)) return { key: 'access', title: '♿ Participación, accesibilidad y seguridad' };
+  if (/^(aprenent|vocabulari|objectius?|resultats d.aprenentatge|què aprendrem|que aprendrem|competències clau|funcions del robot)/.test(value)) return { key: 'learning', title: '🎯 Aprendizajes y vocabulario' };
+  const assessmentSignalCA = /evidèn|eviden|avaluació|avaluacio|autoavaluació|rúbrica|criteris? d.èxit|registre de prova|registres de prova|registre de depuració|documentació i retroacció|diari de proves|producte final i evidències|observació|mostra final|prova, depura i reflexiona|preguntes per (?:fer pensar|comprovar)|preguntes del docent/.test(value);
+  if (!assessmentSignalCA && /aprenent|objectius?|resultats d.aprenentatge|vocabulari|què aprendrem|que aprendrem|competències clau/.test(value)) return { key: 'learning', title: '🎯 Aprendizajes y vocabulario' };
+  if (!/material oficial/.test(value) && /materials?|preparació|preparacio|abans de començar|maquinari|programari|requisits?|muntatge|organització i materials/.test(value)) return { key: 'materials', title: '🧰 Materiales y preparación' };
+  if (assessmentSignalCA) return { key: 'assessment', title: '🧪 Evidencias y evaluación' };
+  if (/^(fonts? oficials|referent)/.test(value)) return { key: 'official', title: '🔗 Referentes y adaptación' };
+  if (/participació|participacio|manera de participar|inclusió|inclusio|accessibilitat|privacitat|seguretat|salvaguardes|límits|limites|adaptacions|ús responsable|variacions|benestar|confort sensorial|diferenciació|diferenciacio|inclusió i variacions/.test(value)) return { key: 'access', title: '♿ Participación, accesibilidad y seguridad' };
+  if (/oficial|adaptació|adaptacio|referent|fonts?|recursos|unitat oficial|dotació i fonts/.test(value)) return { key: 'official', title: '🔗 Referentes y adaptación' };
+  if (/rols|organitzaci[oó]|disseny accessible|equitat|consentiment|dades responsables/.test(value)) return { key: 'access', title: '♿ Participación, accesibilidad y seguridad' };
+  if (/retorn|portafoli|portafolis|quadern|registre|fitxa de recerca|taula de proves|criteris observables|lectura crítica|lectura critica|resultats|mostra final/.test(value)) return { key: 'assessment', title: '🧪 Evidencias y evaluación' };
+  if (/sostenibilitat|connexi[oó]|cultural|raonament|continguts|llenguatge|idees clau|vies de programació|programacio|vocabulari/.test(value)) return { key: 'learning', title: '🎯 Aprendizajes y vocabulario' };
+  if (/opci[oó]|mapes interactius|activity box|materials|versions|programari|accessoris/.test(value)) return { key: 'materials', title: '🧰 Materiales y preparación' };
+  if (/^reto\s+\d+/i.test(value)) return { key: 'sequence', title: '📅 Secuencia didáctica' };
+  if (/^(secuencia|secuen|itinerario|sesiones\b|pasos\b|lecciones\b|fases\b|actividades\b|desarrollo\b|proyecto en\b|conjunto de (?:retos|estands)\b|diez retos\b|guion de trabajo\b|conducción de las sesiones\b|ritmo y conducción\b|proceso de diseño\b|detalle de las seis experiencias\b)/.test(value)) return { key: 'sequence', title: '📅 Secuencia didáctica' };
+  if (/^retos(?!\s+oficial)/i.test(value)) return { key: 'sequence', title: '📅 Secuencia didáctica' };
+  if (/^cómo usar\b/i.test(value)) return { key: 'intro', title: '🌱 Situación, reto e intención' };
+  if (/^(reto\b|situación|situacion|punto de partida|punto de encuentro|sentido e intención|contexto\b|propósito|proposito)/.test(value)) return { key: 'intro', title: '🌱 Situación, reto e intención' };
+  if (/^(participación|participacion|participar|accesibilidad|inclusión|inclusion|privacidad|seguridad|salvaguardas|diferenciación|diferenciacion|variaciones|bienestar|confort sensorial)/.test(value)) return { key: 'access', title: '♿ Participación, accesibilidad y seguridad' };
+  if (/^(aprendiz|vocabulario|objetivos?|resultados de aprendizaje|qué vamos a aprender|qué aprenderemos|competencias clave|funciones del robot)/.test(value)) return { key: 'learning', title: '🎯 Aprendizajes y vocabulario' };
+  const assessmentSignal = /eviden|evaluación|evaluacion|autoevaluación|rúbrica|criterios? de éxito|registro de prueba|registros de prueba|registro de depuración|documentación y retroalimentación|diario de pruebas|producto final y evidencias|observación|muestra final|prueba, depura y reflexiona|preguntas para (?:hacer pensar|comprobar)|preguntas del docente/.test(value);
+  if (!assessmentSignal && /aprendiz|objetivos?|resultados de aprendizaje|vocabulario|qué vamos a aprender|qué aprenderemos|competencias clave/.test(value)) return { key: 'learning', title: '🎯 Aprendizajes y vocabulario' };
+  if (!/material oficial/.test(value) && /materiales?|preparación|preparacion|antes de empezar|hardware|software|requisitos?|montaje|organización y materiales/.test(value)) return { key: 'materials', title: '🧰 Materiales y preparación' };
+  if (assessmentSignal) return { key: 'assessment', title: '🧪 Evidencias y evaluación' };
+  if (/^(fuentes? oficiales|referente)/.test(value)) return { key: 'official', title: '🔗 Referentes y adaptación' };
+  if (/participación|participacion|manera de participar|inclusión|inclusion|accesibilidad|privacidad|seguridad|salvaguardas|límites|limites|adaptaciones|uso responsable|variaciones|bienestar|confort sensorial|diferenciación|diferenciacion|inclusión y variaciones/.test(value)) return { key: 'access', title: '♿ Participación, accesibilidad y seguridad' };
+  if (/oficial|adaptación|adaptacion|referente|fuentes?|recursos|unidad oficial|dotación y fuentes/.test(value)) return { key: 'official', title: '🔗 Referentes y adaptación' };
+  if (/roles|organizaci[oó]n|diseño accesible|equidad|consentimiento|datos responsables/.test(value)) return { key: 'access', title: '♿ Participación, accesibilidad y seguridad' };
+  if (/retorno|portafolio|portafolios|cuaderno|registro|ficha de investigación|tabla de pruebas|criterios observables|lectura crítica|lectura critica|resultados|muestra final/.test(value)) return { key: 'assessment', title: '🧪 Evidencias y evaluación' };
+  if (/sostenibilidad|conexi[oó]n|cultural|razonamiento|contenidos|lenguaje|ideas clave|vías de programación|programacion|vocabulario/.test(value)) return { key: 'learning', title: '🎯 Aprendizajes y vocabulario' };
+  if (/opci[oó]n|mapas interactivos|activity box|materiales|versiones|software|accesorios/.test(value)) return { key: 'materials', title: '🧰 Materiales y preparación' };
+  return { key: 'sequence', title: '📅 Secuencia didáctica' };
 }
 
 /**
@@ -321,7 +371,7 @@ function transformBlockquoteElement(bqEl, { plainEvidence = false } = {}) {
     }
   }
   const content = linesHtml.join('');
-  const isEvidence = /<strong>(evidència|evidencia|producte|pregunta docent|repte)/i.test(content);
+  const isEvidence = /<strong>(evidència|evidencia|producte|pregunta docent|pregunta docente|repte|reto)/i.test(content);
   const label = content.match(/^<p><strong>([^<]+)<\/strong>\s*(.*?)<\/p>/s);
   const labelText = label ? decodeEntities(label[1]).trim() : '';
   const note = label && noteTypes.find(([pattern]) => pattern.test(labelText));
@@ -522,13 +572,20 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
       if (currentGroup) h2Groups.push(currentGroup);
       const plainTitle = node.textContent.trim();
       const tutorialSections = {
-        'Què aprendrem?': ['intro', '🎯 Què aprendrem?'],
-        'Materials i preparació': ['materials', '🧰 Materials i preparació'],
-        'Funcions i controls': ['learning', '🧩 Funcions i controls'],
-        'Pas a pas': ['sequence', '👣 Pas a pas'],
-        'Comprovació i resolució de problemes': ['assessment', '🧪 Comprovació i resolució de problemes'],
-        'Ús i seguretat': ['access', '🛡️ Ús i seguretat'],
-        'Fonts i límits': ['official', '🔗 Fonts i límits']
+        'Qué vamos a aprender?': ['intro', '🎯 ¿Qué vamos a aprender?'],
+        'Què aprendrem?': ['intro', '🎯 ¿Qué vamos a aprender?'],
+        'Materiales y preparación': ['materials', '🧰 Materiales y preparación'],
+        'Materials i preparació': ['materials', '🧰 Materiales y preparación'],
+        'Funciones y controles': ['learning', '🧩 Funciones y controles'],
+        'Funcions i controls': ['learning', '🧩 Funciones y controles'],
+        'Paso a paso': ['sequence', '👣 Paso a paso'],
+        'Pas a pas': ['sequence', '👣 Paso a paso'],
+        'Comprobación y resolución de problemas': ['assessment', '🧪 Comprobación y resolución de problemas'],
+        'Comprovació i resolució de problemes': ['assessment', '🧪 Comprobación y resolución de problemas'],
+        'Uso y seguridad': ['access', '🛡️ Uso y seguridad'],
+        'Ús i seguretat': ['access', '🛡️ Uso y seguridad'],
+        'Fuentes y límites': ['official', '🔗 Fuentes y límites'],
+        'Fonts i límits': ['official', '🔗 Fuentes y límites']
       };
       const tutorialSection = isTutorial && tutorialSections[plainTitle.replace(/^[^\p{L}]+/u, '')];
       const section = tutorialSection ? { key: tutorialSection[0], title: tutorialSection[1] } : canonicalSection(plainTitle);
@@ -680,13 +737,13 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
 
           const hiddenAttr = steps.length > 0 ? ' hidden' : '';
           output.push(
-            `<section class="learning-step" id="${id}" data-step="${stepNumber}"${hiddenAttr}><header class="learning-step-header"><span class="learning-step-kicker">Pas ${stepNumber}</span><h3>${stripHeadingIcon(displayTitleHTML)}</h3></header><div class="learning-step-content">`
+            `<section class="learning-step" id="${id}" data-step="${stepNumber}"${hiddenAttr}><header class="learning-step-header"><span class="learning-step-kicker">Paso ${stepNumber}</span><h3>${stripHeadingIcon(displayTitleHTML)}</h3></header><div class="learning-step-content">`
           );
           openStep = true;
           steps.push({ id, title: displayTitlePlain });
 
           if (!isTutorial && !isActivity && !hasPhaseInStep) {
-            output.push('<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>');
+            output.push('<section class="learning-phase learning-phase-default"><h4>Desarrollo del paso</h4>');
             openPhase = true;
           }
           continue;
@@ -695,9 +752,10 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
         if (node.type === 'element' && node.tagName === 'h4' && openStep) {
           closePhase();
           const plainH4 = node.textContent.trim();
-          const phaseMatch = plainH4.match(/^(Fase [1-5] · (?:Activem i prediem|Explorem i construïm|Expliquem i registrem|Apliquem i millorem|Comprovem i reflexionem))(?:\s*\(([^)]+)\))?$/);
-          const phaseHeading = phaseMatch ? escapeHTML(phaseMatch[1]) : stripHeadingIcon(node.innerHTML.trim());
+          const phaseMatch = plainH4.match(/^Fase [1-5] · (Activem i prediem|Explorem i construïm|Expliquem i registrem|Apliquem i millorem|Comprovem i reflexionem|Activamos y predecimos|Exploramos y construimos|Explicamos y registramos|Aplicamos y mejoramos|Comprobamos y reflexionamos)(?:\s*\(([^)]+)\))?$/);
+          const phaseNames = { 'Activem i prediem': 'Activamos y predecimos', 'Explorem i construïm': 'Exploramos y construimos', 'Expliquem i registrem': 'Explicamos y registramos', 'Apliquem i millorem': 'Aplicamos y mejoramos', 'Comprovem i reflexionem': 'Comprobamos y reflexionamos' };
           const phaseNumber = phaseMatch ? Number(plainH4.match(/^Fase ([1-5])/)[1]) : 0;
+          const phaseHeading = phaseMatch ? escapeHTML(`Fase ${phaseNumber} · ${phaseNames[phaseMatch[1]] || phaseMatch[1]}`) : stripHeadingIcon(node.innerHTML.trim());
           state.plainEvidence = isSituation && phaseNumber === 5;
           const timelineAttr = isSituation && phaseNumber ? ` data-phase="${phaseNumber}"` : '';
           const markerHTML = timelineAttr ? PhaseMarker(phaseNumber) : '';

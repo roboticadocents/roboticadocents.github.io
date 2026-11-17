@@ -1,8 +1,8 @@
 ---
-title: Coding Express: app, melodies i distàncies
-description: Personalitzar les respostes dels maons d’acció amb l’app, compondre una seqüència sonora i comparar distàncies en una via.
+title: "Coding Express: app, melodías y distancias"
+description: "Personalizar las respuestas de los ladrillos de acción con la app, componer una secuencia sonora y comparar distancias en una vía."
 robot: coding-express
-level: Intermedi
+level: "Intermedio"
 duration: 50 min
 order: 5
 image: _assets/tutorials/ce-app-musica-distancia.webp

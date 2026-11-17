@@ -32,18 +32,18 @@ function SiteFooter({ root = '' } = {}) {
     </div>
     <div class="site-footer-body">
       <div class="container site-footer-inner">
-        <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+        <p class="site-footer-motto">Aprender haciendo, programar para un futuro mejor.</p>
         <div class="footer-accent-dashes" aria-hidden="true">
           <span class="dash dash-red"></span>
           <span class="dash dash-yellow"></span>
           <span class="dash dash-blue"></span>
         </div>
-        <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
-        <nav class="site-footer-links" aria-label="Recursos del web">
-          <a href="${root}imprimir/index.html">Materials imprimibles</a>
+        <p class="site-footer-brand">Robótica<sup>200</sup> • Robótica para docentes</p>
+        <nav class="site-footer-links" aria-label="Recursos del sitio">
+          <a href="${root}imprimir/index.html">Materiales imprimibles</a>
           <a href="${root}sim/index.html">Simulador</a>
-          <a href="https://github.com/roboticadocents/roboticadocents.github.io">Codi font</a>
-          <a href="${root}LICENSE">Llicència del codi: AGPL-3.0-or-later</a>
+          <a href="https://github.com/roboticadocents/roboticadocents.github.io">Código fuente</a>
+          <a href="${root}LICENSE">Licencia del código: AGPL-3.0-or-later</a>
         </nav>
         <div class="footer-robots" aria-hidden="true" data-footer-robots>
           <img class="footer-desks" src="${root}_assets/extra/pupitres.svg" alt="" width="831" height="68" loading="lazy" decoding="async">

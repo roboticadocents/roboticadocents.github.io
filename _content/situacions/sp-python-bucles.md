@@ -1,17 +1,17 @@
 ---
 active: true
-title: "Un mosaic de moviments repetits"
-description: "Set lliçons de Python SPIKE Prime per aprendre bucles, comptadors, repeticions, condicions, bucles infinits i disseny iteratiu."
+title: "Un mosaico de movimientos repetidos"
+description: "Siete lecciones de Python SPIKE Prime para aprender bucles, contadores, repeticiones, condiciones, bucles infinitos y diseño iterativo."
 robot: "spike"
 robot_label: "SPIKE Prime"
 cycle: "tercer-cicle"
-cycle_label: "Tercer cicle"
+cycle_label: "Tercer ciclo"
 subject: "tecnologia"
-subject_label: "Tecnologia, Matemàtiques, Art i Programació"
+subject_label: "Tecnología, Matemáticas, Arte y Programación"
 theme: "python"
-theme_label: "Python: bucles i repetició"
-duration: "7 lliçons · 7–10 sessions"
-challenge: "Com podem programar una màquina de mosaic de taula amb patrons repetibles, controlar quantes vegades actua i evitar que un bucle continue quan ja ha acabat la tasca?"
+theme_label: "Python: bucles y repetición"
+duration: "7 lecciones · 7–10 sesiones"
+challenge: "¿Cómo podemos programar una máquina de mosaico de mesa con patrones repetibles, controlar cuántas veces actúa y evitar que un bucle continúe cuando ya ha terminado la tarea?"
 ---
 
 ![Mecanisme real construït amb LEGO SPIKE Prime, hub i motor, que col·loca peces planes per crear un mosaic geomètric inspirat en l’horta valenciana.](../../_assets/situacions/sp-python-bucles.webp)

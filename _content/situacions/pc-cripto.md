@@ -1,17 +1,17 @@
 ---
 active: true
-title: "Espies escolars: missatges i privacitat"
-description: "Com podem transmetre un missatge de manera que el destinatari el puga recuperar, i què ens ensenya això sobre la privacitat digital?"
+title: "Espías escolares: mensajes y privacidad"
+description: "¿Cómo podemos transmitir un mensaje de manera que el destinatario pueda recuperarlo, y qué nos enseña esto sobre la privacidad digital?"
 robot: "desendollat"
 robot_label: "Desendollat (sense robot)"
 cycle: "tercer-cicle"
-cycle_label: "Tercer cicle"
+cycle_label: "Tercer ciclo"
 subject: "matematiques"
-subject_label: "Matemàtiques"
+subject_label: "Matemáticas"
 theme: "societat"
-theme_label: "Convivència i ciutadania digital"
-duration: "4 sessions de 50 minuts"
-challenge: "Com podem transmetre un missatge de manera que el destinatari el puga recuperar, i què ens ensenya això sobre la privacitat digital?"
+theme_label: "Convivencia y ciudadanía digital"
+duration: "4 sesiones de 50 minutos"
+challenge: "¿Cómo podemos transmitir un mensaje de manera que el destinatario pueda recuperarlo, y qué nos enseña esto sobre la privacidad digital?"
 ---
 
 ![Una roda de Cèsar de cartó amb dues capes, un sobre i tires de missatge en blanc, preparats com a materials desconnectats d’aula.](../../_assets/situacions/pc-cripto.webp)

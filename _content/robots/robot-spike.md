@@ -1,35 +1,35 @@
 ---
 title: Spike
-description: Mecatrònica, engranatges i sensors d'alta precisió de LEGO Education
+description: "Mecatrónica, engranajes y sensores de alta precisión de LEGO Education"
 icon: ⚙️
-cicle: Segon cicle
-age: Segon cicle
+cicle: "Segundo ciclo"
+age: "Segundo ciclo"
 order: 5
 specs:
-- ✓ Smart Hub amb giroscopi de 6 eixos
-- ✓ Motors angulars amb mesura de graus
-- ✓ Sensor de distància (segons el conjunt)
-- ✓ Sensor de color i llum
-- ✓ Sensor de força (SPIKE Prime)
+- ✓ Smart Hub con giroscopio de 6 ejes
+- ✓ Motores angulares con medición de grados
+- ✓ Sensor de distancia (según el conjunto)
+- ✓ Sensor de color y luz
+- ✓ Sensor de fuerza (SPIKE Prime)
 image: _assets/robots/spike.webp
 
 # Informació i recursos oficials del fabricant
 status_note: >
-  LEGO Education ha anunciat la retirada comercial de SPIKE Essential i SPIKE Prime a partir del 30 de juny de 2026. Si el centre ja té el kit, el pot continuar fent servir; el suport de l’aplicació està previst fins al 30 de juny de 2031.
+  LEGO Education ha anunciado la retirada comercial de SPIKE Essential y SPIKE Prime a partir del 30 de junio de 2026. Si el centro ya tiene el kit, puede seguir utilizándolo; el soporte de la aplicación está previsto hasta el 30 de junio de 2031.
 status_source: https://www.education.lego.com/en-us/spike-update-2026/
-status_source_label: Informació de LEGO Education
+status_source_label: "Información de LEGO Education"
 tech_info: >
-  SPIKE Prime permet controlar motors angulars per potència, velocitat, posició i angle de gir, i combinar-los amb lectures dels sensors de color, distància i força. El hub gran disposa de sis ports, sensor de moviment de sis eixos, matriu LED de 5 × 5, botons i altaveu. Es poden programar moviments coordinats, respostes condicionades pels sensors i correccions basades en les lectures del motor o del hub. La programació es fa amb blocs o Python a l’app SPIKE, amb connexió USB o Bluetooth. Aquestes característiques corresponen a Prime; SPIKE Essential utilitza un hub i una dotació diferents. Consulta les [especificacions tècniques de SPIKE Prime](https://education.lego.com/en-us/product-resources/spike-prime/downloads/technical-specifications/).
+  SPIKE Prime permite controlar motores angulares por potencia, velocidad, posición y ángulo de giro, y combinarlos con lecturas de los sensores de color, distancia y fuerza. El hub grande dispone de seis puertos, sensor de movimiento de seis ejes, matriz LED de 5 × 5, botones y altavoz. Se pueden programar movimientos coordinados, respuestas condicionadas por los sensores y correcciones basadas en las lecturas del motor o del hub. La programación se realiza con bloques o Python en la app SPIKE, con conexión USB o Bluetooth. Estas características corresponden a Prime; SPIKE Essential utiliza un hub y una dotación diferentes. Consulta las [especificaciones técnicas de SPIKE Prime](https://education.lego.com/en-us/product-resources/spike-prime/downloads/technical-specifications/).
 official_resources:
-- title: Models de construcció de SPIKE Prime
+- title: Modelos de construcción de SPIKE Prime
   href: https://spike.legoeducation.com/prime/models/
-  description: Models i instruccions de construcció oficials per explorar noves possibilitats amb SPIKE Prime.
+  description: Modelos e instrucciones de construcción oficiales para explorar nuevas posibilidades con SPIKE Prime.
 - title: Competition Ready (SPIKE Prime)
   href: https://education.lego.com/en-us/lessons/prime-competition-ready/
-  description: Unitat de missions, moviment controlat, sensors i disseny iteratiu.
+  description: Unidad de misiones, movimiento controlado, sensores y diseño iterativo.
 - title: SPIKE Prime Activity Briefs
   href: https://education.lego.com/en-us/product-resources/spike-prime/teacher-resources/activity-briefs/
-  description: Reptes oberts en què hi ha diverses solucions possibles.
+  description: Retos abiertos en los que hay varias soluciones posibles.
 ---
 
 LEGO Education SPIKE Prime és un conjunt de construcció STEAM per a primària avançada i secundària. El hub gran té 6 ports; el conjunt Prime inclou motors angulars i sensors de distància, color i força. SPIKE Essential té maquinari i accessoris diferents: adapta la proposta al conjunt que hi ha al centre.

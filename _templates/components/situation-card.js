@@ -27,7 +27,7 @@ function SituationCard({ item, root = '../' }) {
     </div>
     <div class="item-footer">
       <span>⏱️ ${escapeHTML(item.sessions || item.durada)}</span>
-      <span class="sa-card-action">Obrir situació →</span>
+      <span class="sa-card-action">Abrir situación →</span>
     </div>
   </a>`;
 }

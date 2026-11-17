@@ -1,17 +1,17 @@
 ---
 active: true
-title: "La llum que usem"
-description: "Com podem recollir dades de llum amb micro:bit per argumentar una proposta d’estalvi d’energia?"
+title: "La luz que usamos"
+description: "¿Cómo podemos recoger datos de luz con micro:bit para argumentar una propuesta de ahorro de energía?"
 robot: "microbit"
 robot_label: "micro:bit"
 cycle: "tercer-cicle"
-cycle_label: "Tercer cicle"
+cycle_label: "Tercer ciclo"
 subject: "medi"
-subject_label: "Ciències, Matemàtiques i Tecnologia"
+subject_label: "Ciencias, Matemáticas y Tecnología"
 theme: "sostenibilitat"
-theme_label: "Energia i dades del centre"
-duration: "6 sessions"
-challenge: "Què ens diuen les lectures de llum sobre l’ús de la il·luminació i quina proposta podem defensar amb dades?"
+theme_label: "Energía y datos del centro"
+duration: "6 sesiones"
+challenge: "¿Qué nos dicen las lecturas de luz sobre el uso de la iluminación y qué propuesta podemos defender con datos?"
 ---
 
 ![Una placa micro:bit sobre la taula acompanya un llum de sobretaula i un gràfic de barres en blanc.](../../_assets/situacions/mb-energia-aula.webp)

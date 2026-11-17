@@ -5,8 +5,8 @@ const { SiteHeader } = require('./site-header');
 const { SiteFooter } = require('./site-footer');
 
 function Document({
-  title = 'Robòtica200 | Robòtica per a docents',
-  description = 'Recursos oberts de robòtica educativa i pensament computacional per a mestres i professors.',
+  title = 'Robótica200 | Robótica para docentes',
+  description = 'Recursos abiertos de robótica educativa y pensamiento computacional para maestros y profesores.',
   activeNav = '',
   root = '',
   heroLayout = false,
@@ -14,10 +14,10 @@ function Document({
   body = ''
 } = {}) {
   const r = cleanRoot(root);
-  const fullTitle = title.includes('Robòtica') ? title : `${title} | Robòtica²⁰⁰`;
+  const fullTitle = /Rob[òó]tica/.test(title) ? title : `${title} | Robótica²⁰⁰`; // check-es:ignore
 
   return `<!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

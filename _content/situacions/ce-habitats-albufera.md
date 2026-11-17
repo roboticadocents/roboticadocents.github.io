@@ -1,17 +1,17 @@
 ---
 active: true
-title: "Hàbitats vius de l’Albufera"
-description: "Cinc investigacions amb Coding Express connecten les necessitats dels éssers vius, els hàbitats i la cura responsable de l’entorn de l’Albufera."
+title: "Hábitats vivos de la Albufera"
+description: "Cinco investigaciones con Coding Express conectan las necesidades de los seres vivos, los hábitats y el cuidado responsable del entorno de la Albufera."
 robot: "coding-express"
 robot_label: "Coding Express"
 cycle: "infantil"
-cycle_label: "Educació Infantil"
+cycle_label: "Educación Infantil"
 subject: "medi"
-subject_label: "Descoberta de l’entorn, Ciències i Llenguatge"
+subject_label: "Descubrimiento del entorno, Ciencias y Lenguaje"
 theme: "sostenibilitat"
-theme_label: "Biodiversitat i cura de l’entorn"
-duration: "5 sessions"
-challenge: "Què necessiten els éssers vius per habitar un lloc, i com podem representar canvis que ajuden a conservar-lo?"
+theme_label: "Biodiversidad y cuidado del entorno"
+duration: "5 sesiones"
+challenge: "¿Qué necesitan los seres vivos para habitar un lugar, y cómo podemos representar cambios que ayudan a conservarlo?"
 ---
 
 ![El tren LEGO Education Coding Express de la dotació passa al costat d’una maqueta seca d’aiguamoll amb vegetació, targetes de necessitats i fauna de paper.](../../_assets/situacions/ce-habitats-albufera.webp)

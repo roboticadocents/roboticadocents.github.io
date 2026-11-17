@@ -1,17 +1,17 @@
 ---
 active: true
-title: "Una aula amb opcions sensorials"
-description: "Dissenyem amb micro:bit un recurs sensorial opcional per a l'aula, amb patrons visuals regulables i control de qui l'utilitza."
+title: "Un aula con opciones sensoriales"
+description: "Diseñamos con micro:bit un recurso sensorial opcional para el aula, con patrones visuales regulables y control de quién lo utiliza."
 robot: "microbit"
 robot_label: "micro:bit"
 cycle: "tercer-cicle"
-cycle_label: "Tercer cicle"
+cycle_label: "Tercer ciclo"
 subject: "tecnologia"
-subject_label: "Tecnologia, Ciències i Inclusió"
+subject_label: "Tecnología, Ciencias y Inclusión"
 theme: "ciutadania"
-theme_label: "Disseny accessible"
-duration: "4 sessions · 200 min"
-challenge: "Com podem crear un recurs visual opcional i configurable que ajude a fer més previsible una rutina de l’aula?"
+theme_label: "Diseño accesible"
+duration: "4 sesiones · 200 min"
+challenge: "¿Cómo podemos crear un recurso visual opcional y configurable que ayude a hacer más previsible una rutina del aula?"
 ---
 
 ![Micro:bit en un suport de cartó amb interruptor d’aturada i targetes de patrons visuals tranquils.](../../_assets/situacions/mb-aula-sensorial.webp)

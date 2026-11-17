@@ -1,8 +1,8 @@
 ---
-title: 'SPIKE Prime: sensor de distància i avís de proximitat'
-description: Crear un avís visual i sonor acostant una caixa a un sensor quiet, i observar el gir manual del Hub.
+title: "SPIKE Prime: sensor de distancia y aviso de proximidad"
+description: "Crear un aviso visual y sonoro acercando una caja a un sensor quieto, y observar el giro manual del Hub."
 robot: spike
-level: Intermedi
+level: "Intermedio"
 duration: 45 min
 order: 5
 image: _assets/tutorials/sp-sensor-distancia-alarma-flat.webp

@@ -1,0 +1,39 @@
+# Términos admitidos con formas que el detector podría marcar como catalanas.
+# Una entrada por línea. Se ignoran las líneas que empiezan por #.
+# úsalo solo para nombres propios, topónimos oficiales y términos técnicos justificados.
+Albufera
+l'Albufera
+marjal
+l'Horta
+Xàtiva
+Alaquàs
+Llíria
+l'Alfàs del Pi
+
+Tale-Bot
+Tale-Bot Pro
+Matatalab
+MatataBot
+Coding Set
+Coding Express
+Codey Rocky
+SPIKE
+SPIKE Essential
+micro:bit
+MakeCode
+mBlock
+Python
+LEGO
+Bluetooth
+Wi-Fi
+USB
+RGB
+LOMLOE
+PEC
+AMPA
+TDAH
+TEA
+CAA
+ODS
+MVP
+BLE

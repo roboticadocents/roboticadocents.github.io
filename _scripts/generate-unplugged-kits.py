@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# check-es:skip
 """Rebuild the four original classroom kits and their web previews.
 Requires reportlab, Pillow and pdftoppm. No network assets or fonts required.
 """

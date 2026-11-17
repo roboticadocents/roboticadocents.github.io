@@ -7,7 +7,7 @@ function CodePanel({ lang, codeHTML }) {
   if (['python', 'py', 'python3', 'javascript', 'js'].includes(String(lang).toLowerCase())) {
     return `<div class="code-panel"><pre class="code-block" tabindex="0"><code class="language-${safeLang}">${codeHTML}</code></pre></div>`;
   }
-  return `<figure class="code-panel"><figcaption>Exemple de programació · ${safeLang}</figcaption><pre class="code-block" tabindex="0"><code class="language-${safeLang}">${codeHTML}</code></pre></figure>`;
+  return `<figure class="code-panel"><figcaption>Ejemplo de programación · ${safeLang}</figcaption><pre class="code-block" tabindex="0"><code class="language-${safeLang}">${codeHTML}</code></pre></figure>`;
 }
 
 function VisualBlocksPanel({ lang, svgHTML, hash }) {

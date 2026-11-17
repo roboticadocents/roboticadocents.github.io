@@ -1,8 +1,8 @@
 ---
-title: "La coreografia dels bucles"
-description: "Delimiteu un bloc d’accions, predieu quantes vegades s’executa i compareu el programa amb la seqüència desplegada."
-topic: "Patrons"
-cycle_label: "Primer cicle"
+title: "La coreografía de los bucles"
+description: "Delimitad un bloque de acciones, predecid cuántas veces se ejecuta y comparad el programa con la secuencia desplegada."
+topic: "Patrones"
+cycle_label: "Primer ciclo"
 duration: "45 min"
 order: 7
 image: "_assets/activitats/portades/bucles-coreografia.webp"

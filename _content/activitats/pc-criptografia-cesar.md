@@ -1,8 +1,8 @@
 ---
-title: "El taller de missatges Cèsar"
-description: "Construïu una roda de substitució, acordeu una clau i comproveu el xifratge en els dos sentits."
-topic: "Algorismes"
-cycle_label: "Tercer cicle"
+title: "El taller de mensajes César"
+description: "Construid una rueda de sustitución, acordad una clave y comprobad el cifrado en los dos sentidos."
+topic: "Algoritmos"
+cycle_label: "Tercer ciclo"
 duration: "50 min"
 order: 6
 image: "_assets/activitats/portades/criptografia-cesar.webp"

@@ -1,11 +1,26 @@
+// check-es:skip
 'use strict';
 
-// Select the computational thinking skill most prominent in the learning objective.
 const ACTIVITY_TOPICS = Object.freeze([
   'Descomposició',
   'Abstracció',
   'Patrons',
-  'Algorismes'
+  'Algorismes',
+  'Descomposición',
+  'Abstracción',
+  'Patrones',
+  'Algoritmos'
 ]);
 
-module.exports = { ACTIVITY_TOPICS };
+const ACTIVITY_TOPIC_LABELS = Object.freeze({
+  'Descomposició': 'Descomposición',
+  'Abstracció': 'Abstracción',
+  'Patrons': 'Patrones',
+  'Algorismes': 'Algoritmos',
+  'Descomposición': 'Descomposición',
+  'Abstracción': 'Abstracción',
+  'Patrones': 'Patrones',
+  'Algoritmos': 'Algoritmos'
+});
+
+module.exports = { ACTIVITY_TOPICS, ACTIVITY_TOPIC_LABELS };

@@ -6,11 +6,11 @@ const { getSimSvgs } = require('../../_scripts/lib/tangible-blocks');
 function SimPage({ root = '../' } = {}) {
   const r = cleanRoot(root);
   const svgs = getSimSvgs();
-  const title = 'Simulador · Tale-Bot i Coding Set | Robòtica²⁰⁰';
-  const description = 'Aplicació de simulació per a Tale-Bot Pro i Matatalab Coding Set.';
+  const title = 'Simulador · Tale-Bot y Coding Set | Robótica²⁰⁰';
+  const description = 'Aplicación de simulación para Tale-Bot Pro y Matatalab Coding Set.';
 
   return `<!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,9 +27,9 @@ function SimPage({ root = '../' } = {}) {
 <body class="sim-app-body">
   <header class="sim-topbar" data-sim-hero data-active-robot="tale-bot">
     <div class="sim-topbar-start">
-      <a href="${r}index.html" class="sim-brand" aria-label="Inici Robòtica 200">
+      <a href="${r}index.html" class="sim-brand" aria-label="Inicio Robótica 200">
         <img src="${r}_assets/icons/logo.svg" alt="" class="logo-badge-img" width="24" height="24">
-        <span class="logo-name">Robòtica<sup>200</sup></span>
+        <span class="logo-name">Robótica<sup>200</sup></span>
       </a>
     </div>
 
@@ -65,27 +65,27 @@ function SimPage({ root = '../' } = {}) {
 
     <div class="sim-topbar-end">
       <div class="sim-speed-control">
-        <label for="sim-speed-select" class="visually-hidden">Velocitat</label>
+        <label for="sim-speed-select" class="visually-hidden">Velocidad</label>
         <select id="sim-speed-select" class="sim-speed-select" data-speed-select>
           <option value="850">🐢 Lenta</option>
           <option value="520" selected>▶ Normal</option>
-          <option value="260">⚡ Ràpida</option>
+          <option value="260">⚡ Rápida</option>
         </select>
       </div>
 
-      <button type="button" class="sim-icon-toggle" aria-pressed="true" data-toggle-sound aria-label="So">
+      <button type="button" class="sim-icon-toggle" aria-pressed="true" data-toggle-sound aria-label="Sonido">
         <span data-sound-icon aria-hidden="true">🔊</span>
       </button>
     </div>
   </header>
 
   <main id="page-content" class="sim-workspace" data-sim-workspace data-robot="tale-bot">
-    <h1 class="visually-hidden">Simulador de Tale-Bot Pro i Coding Set</h1>
+    <h1 class="visually-hidden">Simulador de Tale-Bot Pro y Coding Set</h1>
 
     <!-- PANELL ESQUERRE: BARRA D'EINES VERTICAL ESQUERRA + TAPÍS 6x6 -->
     <div class="sim-stage-pane">
-      <div class="sim-mat-toolbar" role="toolbar" aria-orientation="vertical" aria-label="Eines del tapís">
-        <div class="sim-toolbar-section" role="group" aria-label="Elements del tapís" data-mat-tools>
+      <div class="sim-mat-toolbar" role="toolbar" aria-orientation="vertical" aria-label="Herramientas del tapete">
+        <div class="sim-toolbar-section" role="group" aria-label="Elementos del tapete" data-mat-tools>
           <button type="button" class="sim-tool-btn is-active" aria-pressed="true" data-mat-tool="robot">
             <span aria-hidden="true">📍</span>
             <span>Robot</span>
@@ -96,11 +96,11 @@ function SimPage({ root = '../' } = {}) {
           </button>
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-mat-tool="obstacle">
             <span aria-hidden="true">🚧</span>
-            <span>Obstacle</span>
+            <span>Obstáculo</span>
           </button>
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-mat-tool="box" data-tb-only>
             <span aria-hidden="true">📦</span>
-            <span>Caixa</span>
+            <span>Caja</span>
           </button>
           <button
             type="button"
@@ -118,47 +118,47 @@ function SimPage({ root = '../' } = {}) {
 
         <hr class="sim-toolbar-divider" aria-hidden="true">
 
-        <div class="sim-toolbar-section" role="group" aria-label="Posició i accessoris">
-          <button type="button" class="sim-tool-btn" data-rotate-start="left" aria-label="Gira l'orientació inicial 90 graus">
+        <div class="sim-toolbar-section" role="group" aria-label="Posición y accesorios">
+          <button type="button" class="sim-tool-btn" data-rotate-start="left" aria-label="Girar la orientación inicial 90 grados">
             <span aria-hidden="true">↺</span>
             <span>90°</span>
           </button>
-          <button type="button" class="sim-tool-btn" data-reset-robot aria-label="Torna el robot a la casella inicial">
+          <button type="button" class="sim-tool-btn" data-reset-robot aria-label="Volver el robot a la casilla inicial">
             <span aria-hidden="true">⏮</span>
-            <span>Inici</span>
+            <span>Inicio</span>
           </button>
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-tb-toggle-arms data-tb-only>
             <span aria-hidden="true">🦾</span>
-            <span>Braços</span>
+            <span>Brazos</span>
           </button>
         </div>
 
         <hr class="sim-toolbar-divider" aria-hidden="true">
 
-        <div class="sim-toolbar-section sim-draw-controls" role="group" aria-label="Retolador i dibuix">
+        <div class="sim-toolbar-section sim-draw-controls" role="group" aria-label="Rotulador y dibujo">
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-toggle-pen>
             <span aria-hidden="true">✏️</span>
-            <span>Retolador</span>
+            <span>Rotulador</span>
           </button>
-          <div class="sim-color-swatches" role="group" aria-label="Color del retolador">
-            <button type="button" class="sim-color-swatch is-active" style="--swatch:#ea580c" data-pen-color="#ea580c" aria-label="Taronja" aria-pressed="true"></button>
-            <button type="button" class="sim-color-swatch" style="--swatch:#2563eb" data-pen-color="#2563eb" aria-label="Blau" aria-pressed="false"></button>
-            <button type="button" class="sim-color-swatch" style="--swatch:#16a34a" data-pen-color="#16a34a" aria-label="Verd" aria-pressed="false"></button>
+          <div class="sim-color-swatches" role="group" aria-label="Color del rotulador">
+            <button type="button" class="sim-color-swatch is-active" style="--swatch:#ea580c" data-pen-color="#ea580c" aria-label="Naranja" aria-pressed="true"></button>
+            <button type="button" class="sim-color-swatch" style="--swatch:#2563eb" data-pen-color="#2563eb" aria-label="Azul" aria-pressed="false"></button>
+            <button type="button" class="sim-color-swatch" style="--swatch:#16a34a" data-pen-color="#16a34a" aria-label="Verde" aria-pressed="false"></button>
             <button type="button" class="sim-color-swatch" style="--swatch:#9333ea" data-pen-color="#9333ea" aria-label="Lila" aria-pressed="false"></button>
-            <button type="button" class="sim-color-swatch" style="--swatch:#e11d48" data-pen-color="#e11d48" aria-label="Roig" aria-pressed="false"></button>
+            <button type="button" class="sim-color-swatch" style="--swatch:#e11d48" data-pen-color="#e11d48" aria-label="Rojo" aria-pressed="false"></button>
           </div>
-          <button type="button" class="sim-tool-btn" data-clear-drawing aria-label="Neteja el tauler i el dibuix">
+          <button type="button" class="sim-tool-btn" data-clear-drawing aria-label="Limpiar el tablero y el dibujo">
             <span aria-hidden="true">🧹</span>
-            <span>Neteja</span>
+            <span>Limpiar</span>
           </button>
         </div>
 
         <hr class="sim-toolbar-divider" aria-hidden="true">
 
-        <div class="sim-toolbar-section sim-grid-size-controls" role="group" aria-label="Mida del tauler">
+        <div class="sim-toolbar-section sim-grid-size-controls" role="group" aria-label="Tamaño del tablero">
           <div class="sim-size-field">
-            <label for="sim-grid-rows" class="sim-size-label">Files</label>
-            <select id="sim-grid-rows" class="sim-size-select" data-grid-rows aria-label="Nombre de files del tauler">
+            <label for="sim-grid-rows" class="sim-size-label">Filas</label>
+            <select id="sim-grid-rows" class="sim-size-select" data-grid-rows aria-label="Número de filas del tablero">
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
@@ -171,8 +171,8 @@ function SimPage({ root = '../' } = {}) {
             </select>
           </div>
           <div class="sim-size-field">
-            <label for="sim-grid-cols" class="sim-size-label">Columnes</label>
-            <select id="sim-grid-cols" class="sim-size-select" data-grid-cols aria-label="Nombre de columnes del tauler">
+            <label for="sim-grid-cols" class="sim-size-label">Columnas</label>
+            <select id="sim-grid-cols" class="sim-size-select" data-grid-cols aria-label="Número de columnas del tablero">
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
@@ -203,7 +203,7 @@ function SimPage({ root = '../' } = {}) {
                 class="sim-grid-cells"
                 data-grid-cells
                 role="grid"
-                aria-label="Tapís 6 per 6"
+                aria-label="Tapete 6 por 6"
               ></div>
 
               <canvas class="sim-draw-canvas" data-draw-canvas width="600" height="600" aria-hidden="true"></canvas>
@@ -270,7 +270,7 @@ function SimPage({ root = '../' } = {}) {
       >
         <div class="sim-panel-header">
           <div class="sim-tb-leds-group">
-            <div class="sim-tb-leds" data-tb-leds aria-label="Indicadors LED d'ordres">
+            <div class="sim-tb-leds" data-tb-leds aria-label="Indicadores LED de órdenes">
               <span class="sim-tb-led" data-led-index="0"></span>
               <span class="sim-tb-led" data-led-index="1"></span>
               <span class="sim-tb-led" data-led-index="2"></span>
@@ -280,7 +280,7 @@ function SimPage({ root = '../' } = {}) {
               <span class="sim-tb-led" data-led-index="6"></span>
               <span class="sim-tb-led" data-led-index="7"></span>
             </div>
-            <div class="sim-tb-repeat-leds" data-tb-repeat-leds aria-label="Indicadors LED de repetició">
+            <div class="sim-tb-repeat-leds" data-tb-repeat-leds aria-label="Indicadores LED de repetición">
               <span class="sim-tb-repeat-led" data-repeat-led-index="0"></span>
               <span class="sim-tb-repeat-led" data-repeat-led-index="1"></span>
               <span class="sim-tb-repeat-led" data-repeat-led-index="2"></span>
@@ -290,14 +290,14 @@ function SimPage({ root = '../' } = {}) {
         </div>
 
         <div class="sim-tb-shell">
-          <div class="sim-tb-keypad" role="group" aria-label="Teclat físic de Tale-Bot Pro">
+          <div class="sim-tb-keypad" role="group" aria-label="Teclado físico de Tale-Bot Pro">
             <!-- Fila 1: Clear (X) · Endavant · Repetició -->
             <button
               type="button"
               class="sim-tb-key-btn sim-tb-key-clear"
               data-tb-clear-hold
-              aria-label="Esborra (pulsació curta última, pulsació llarga tot)"
-              title="Esborra"
+              aria-label="Borrar (pulsación corta: última; pulsación larga: todo)"
+              title="Borrar"
             >
               ${svgs.taleBot.clear.svg}
               <span class="sim-tb-hold-bar" data-tb-hold-bar aria-hidden="true"></span>
@@ -307,8 +307,8 @@ function SimPage({ root = '../' } = {}) {
               type="button"
               class="sim-tb-key-btn sim-tb-key-forward"
               data-tb-cmd="forward"
-              aria-label="Endavant"
-              title="Endavant"
+              aria-label="Adelante"
+              title="Adelante"
             >
               ${svgs.taleBot.forward.svg}
             </button>
@@ -317,8 +317,8 @@ function SimPage({ root = '../' } = {}) {
               type="button"
               class="sim-tb-key-btn sim-tb-key-repeat"
               data-tb-repeat
-              aria-label="Repetició del programa"
-              title="Repetició"
+              aria-label="Repetición del programa"
+              title="Repetición"
             >
               ${svgs.taleBot.repeat.svg}
               <span class="sim-tb-repeat-badge" data-tb-repeat-badge hidden></span>
@@ -329,8 +329,8 @@ function SimPage({ root = '../' } = {}) {
               type="button"
               class="sim-tb-key-btn sim-tb-key-left"
               data-tb-cmd="left"
-              aria-label="Gir a l’esquerra"
-              title="Gir a l’esquerra"
+              aria-label="Girar a la izquierda"
+              title="Girar a la izquierda"
             >
               ${svgs.taleBot.left.svg}
             </button>
@@ -339,7 +339,7 @@ function SimPage({ root = '../' } = {}) {
               type="button"
               class="sim-tb-key-btn sim-tb-key-play"
               data-sim-play
-              aria-label="Executa (Play)"
+              aria-label="Ejecutar (Play)"
               title="Play"
             >
               ${svgs.taleBot.play.svg}
@@ -350,8 +350,8 @@ function SimPage({ root = '../' } = {}) {
               type="button"
               class="sim-tb-key-btn sim-tb-key-right"
               data-tb-cmd="right"
-              aria-label="Gir a la dreta"
-              title="Gir a la dreta"
+              aria-label="Girar a la derecha"
+              title="Girar a la derecha"
             >
               ${svgs.taleBot.right.svg}
             </button>
@@ -361,8 +361,8 @@ function SimPage({ root = '../' } = {}) {
               type="button"
               class="sim-tb-key-btn sim-tb-key-record"
               data-tb-cmd="record"
-              aria-label="Gravació de veu"
-              title="Gravació de veu"
+              aria-label="Grabación de voz"
+              title="Grabación de voz"
             >
               ${svgs.taleBot.record.svg}
             </button>
@@ -371,8 +371,8 @@ function SimPage({ root = '../' } = {}) {
               type="button"
               class="sim-tb-key-btn sim-tb-key-back"
               data-tb-cmd="back"
-              aria-label="Enrere"
-              title="Enrere"
+              aria-label="Atrás"
+              title="Atrás"
             >
               ${svgs.taleBot.back.svg}
             </button>
@@ -381,8 +381,8 @@ function SimPage({ root = '../' } = {}) {
               type="button"
               class="sim-tb-key-btn sim-tb-key-dance"
               data-tb-cmd="dance"
-              aria-label="Dansa predefinida"
-              title="Dansa predefinida"
+              aria-label="Danza predefinida"
+              title="Danza predefinida"
             >
               ${svgs.taleBot.dance.svg}
             </button>
@@ -391,27 +391,27 @@ function SimPage({ root = '../' } = {}) {
 
         <div class="sim-tb-actions-row">
           <button type="button" class="sim-btn sim-btn-outline" data-tb-delete-last>
-            ⌫ Esborrar última
+            ⌫ Borrar última
           </button>
           <button type="button" class="sim-btn sim-btn-outline sim-btn-danger" data-tb-delete-all>
-            🗑️ Esborrar tot
+            🗑️ Borrar todo
           </button>
           <button type="button" class="sim-btn sim-btn-secondary" data-sim-step>
-            👣 Pas a pas
+            👣 Paso a paso
           </button>
         </div>
 
         <div class="sim-tb-voice-bar">
-          <label for="sim-tb-voice-input" class="sim-voice-icon-label" aria-label="Frase de veu gravada">🎙️</label>
+          <label for="sim-tb-voice-input" class="sim-voice-icon-label" aria-label="Frase de voz grabada">🎙️</label>
           <input
             type="text"
             id="sim-tb-voice-input"
             class="sim-text-input"
-            value="Hola, sóc el conill del bosc!"
+            value="¡Hola, soy el conejo del bosque!"
             maxlength="80"
             data-tb-voice-input
           >
-          <button type="button" class="sim-btn sim-btn-secondary" data-tb-test-voice aria-label="Escolta la gravació">
+          <button type="button" class="sim-btn sim-btn-secondary" data-tb-test-voice aria-label="Escuchar la grabación">
             ▶
           </button>
         </div>
@@ -429,28 +429,28 @@ function SimPage({ root = '../' } = {}) {
         hidden
       >
         <!-- Paleta de fitxes tangibles (exclusivament vectors SVG oficials) -->
-        <div class="sim-cs-palette" aria-label="Fitxes del Coding Set">
-          <div class="sim-cs-blocks-tray" role="group" aria-label="Fitxes d'instrucció">
-            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="forward" aria-label="Endavant" title="Endavant">${svgs.codingSet.forward.svg}</button>
-            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="back" aria-label="Enrere" title="Enrere">${svgs.codingSet.back.svg}</button>
-            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="right" aria-label="Gir a la dreta" title="Gir a la dreta">${svgs.codingSet.right.svg}</button>
-            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="left" aria-label="Gir a l’esquerra" title="Gir a l’esquerra">${svgs.codingSet.left.svg}</button>
-            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="loop" aria-label="Inici del bucle" title="Inici del bucle">${svgs.codingSet.loop.svg}</button>
-            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="end" aria-label="Fi del bucle" title="Fi del bucle">${svgs.codingSet.end.svg}</button>
-            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="define" aria-label="Defineix funció" title="Defineix funció">${svgs.codingSet.define.svg}</button>
-            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="call" aria-label="Crida funció" title="Crida funció">${svgs.codingSet.call.svg}</button>
-            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="dance" aria-label="Dansa predefinida" title="Dansa predefinida">${svgs.codingSet.dance.svg}</button>
+        <div class="sim-cs-palette" aria-label="Fichas del Coding Set">
+          <div class="sim-cs-blocks-tray" role="group" aria-label="Fichas de instrucción">
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="forward" aria-label="Adelante" title="Adelante">${svgs.codingSet.forward.svg}</button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="back" aria-label="Atrás" title="Atrás">${svgs.codingSet.back.svg}</button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="right" aria-label="Girar a la derecha" title="Girar a la derecha">${svgs.codingSet.right.svg}</button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="left" aria-label="Girar a la izquierda" title="Girar a la izquierda">${svgs.codingSet.left.svg}</button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="loop" aria-label="Inicio del bucle" title="Inicio del bucle">${svgs.codingSet.loop.svg}</button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="end" aria-label="Fin del bucle" title="Fin del bucle">${svgs.codingSet.end.svg}</button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="define" aria-label="Definir función" title="Definir función">${svgs.codingSet.define.svg}</button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="call" aria-label="Llamar función" title="Llamar función">${svgs.codingSet.call.svg}</button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="dance" aria-label="Danza predefinida" title="Danza predefinida">${svgs.codingSet.dance.svg}</button>
             <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="music" aria-label="Música predefinida" title="Música predefinida">${svgs.codingSet.music.svg}</button>
-            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="random" aria-label="Moviment aleatori" title="Moviment aleatori">${svgs.codingSet.random.svg}</button>
+            <button type="button" class="sim-cs-tile-btn" draggable="true" data-cs-add="random" aria-label="Movimiento aleatorio" title="Movimiento aleatorio">${svgs.codingSet.random.svg}</button>
           </div>
 
-          <div class="sim-cs-numbers-tray" role="group" aria-label="Blocs numèrics">
-            <button type="button" class="sim-cs-num-tile-btn" draggable="true" data-cs-num="2" aria-label="Bloc numèric 2" title="2">${svgs.codingSet['num-2'].svg}</button>
-            <button type="button" class="sim-cs-num-tile-btn" draggable="true" data-cs-num="3" aria-label="Bloc numèric 3" title="3">${svgs.codingSet['num-3'].svg}</button>
-            <button type="button" class="sim-cs-num-tile-btn" draggable="true" data-cs-num="4" aria-label="Bloc numèric 4" title="4">${svgs.codingSet['num-4'].svg}</button>
-            <button type="button" class="sim-cs-num-tile-btn" draggable="true" data-cs-num="5" aria-label="Bloc numèric 5" title="5">${svgs.codingSet['num-5'].svg}</button>
-            <button type="button" class="sim-cs-num-tile-btn" draggable="true" data-cs-num="random" aria-label="Bloc numèric aleatori (dau)" title="Aleatori (dau)">${svgs.codingSet['num-random'].svg}</button>
-            <button type="button" class="sim-cs-num-tile-btn sim-cs-num-remove-btn" data-cs-num="" aria-label="Retira el bloc numèric" title="Retira el bloc numèric">
+          <div class="sim-cs-numbers-tray" role="group" aria-label="Bloques numéricos">
+            <button type="button" class="sim-cs-num-tile-btn" draggable="true" data-cs-num="2" aria-label="Bloque numérico 2" title="2">${svgs.codingSet['num-2'].svg}</button>
+            <button type="button" class="sim-cs-num-tile-btn" draggable="true" data-cs-num="3" aria-label="Bloque numérico 3" title="3">${svgs.codingSet['num-3'].svg}</button>
+            <button type="button" class="sim-cs-num-tile-btn" draggable="true" data-cs-num="4" aria-label="Bloque numérico 4" title="4">${svgs.codingSet['num-4'].svg}</button>
+            <button type="button" class="sim-cs-num-tile-btn" draggable="true" data-cs-num="5" aria-label="Bloque numérico 5" title="5">${svgs.codingSet['num-5'].svg}</button>
+            <button type="button" class="sim-cs-num-tile-btn" draggable="true" data-cs-num="random" aria-label="Bloque numérico aleatorio (dado)" title="Aleatorio (dado)">${svgs.codingSet['num-random'].svg}</button>
+            <button type="button" class="sim-cs-num-tile-btn sim-cs-num-remove-btn" data-cs-num="" aria-label="Quitar el bloque numérico" title="Quitar el bloque numérico">
               <svg viewBox="0 0 64 32" aria-hidden="true"><rect x="1" y="3" width="62" height="27" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4 3"/><path d="M26 10.5l12 12M38 10.5l-12 12" stroke="#64748b" stroke-width="3" stroke-linecap="round"/></svg>
             </button>
           </div>
@@ -463,7 +463,7 @@ function SimPage({ root = '../' } = {}) {
               class="sim-cs-board-grid"
               data-cs-main-slots
               role="grid"
-              aria-label="Tauler de programació de 3 files per 6 caselles"
+              aria-label="Tablero de programación de 3 filas por 6 casillas"
             ></div>
           </div>
 
@@ -472,8 +472,8 @@ function SimPage({ root = '../' } = {}) {
               type="button"
               class="sim-cs-board-aux-btn"
               data-sim-step-cs
-              aria-label="Executa pas a pas"
-              title="Pas a pas"
+              aria-label="Ejecutar paso a paso"
+              title="Paso a paso"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14l9-7-9-7Zm11 0v14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
@@ -482,7 +482,7 @@ function SimPage({ root = '../' } = {}) {
               type="button"
               class="sim-cs-orange-play"
               data-sim-play-cs
-              aria-label="Executa el programa del tauler"
+              aria-label="Ejecutar el programa del tablero"
               title="Play"
             >
               <svg viewBox="0 0 64 64" aria-hidden="true">
@@ -494,8 +494,8 @@ function SimPage({ root = '../' } = {}) {
               type="button"
               class="sim-cs-board-aux-btn sim-cs-board-clear-btn"
               data-cs-clear-main
-              aria-label="Buida tot el tauler"
-              title="Buida el tauler"
+              aria-label="Vaciar todo el tablero"
+              title="Vaciar el tablero"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
             </button>
@@ -516,30 +516,30 @@ function SimPage({ root = '../' } = {}) {
     data-emoji-dialog
   >
     <div class="sim-emoji-dialog-header">
-      <h2 id="sim-emoji-dialog-title" class="sim-emoji-dialog-title">Selecciona un emoji per al tauler</h2>
+      <h2 id="sim-emoji-dialog-title" class="sim-emoji-dialog-title">Seleccionar un emoji para el tablero</h2>
       <button
         type="button"
         class="sim-emoji-dialog-close"
         commandfor="sim-emoji-dialog"
         command="hide-popover"
         data-close-emoji-dialog
-        aria-label="Tanca el selector d'emojis"
+        aria-label="Cerrar el selector de emojis"
       >✕</button>
     </div>
 
     <div class="sim-emoji-custom-row">
-      <label for="sim-emoji-custom-input" class="visually-hidden">Escriu o enganxa qualsevol emoji</label>
+      <label for="sim-emoji-custom-input" class="visually-hidden">Escribir o pegar cualquier emoji</label>
       <input
         type="text"
         id="sim-emoji-custom-input"
         class="sim-text-input sim-emoji-custom-input"
-        placeholder="Escriu o enganxa qualsevol emoji (ex. 🦄, 🚀, 🏰)..."
+        placeholder="Escribir o pegar cualquier emoji (ex. 🦄, 🚀, 🏰)..."
         maxlength="16"
         data-emoji-custom-input
         autofocus
       >
       <button type="button" class="sim-btn sim-btn-secondary" data-emoji-custom-apply>
-        Usa l'emoji
+        Usar el emoji
       </button>
     </div>
 

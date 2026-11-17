@@ -1,12 +1,12 @@
 ---
-title: Guia per triar i preparar robots educatius
-seo_title: Guia per triar i preparar robots educatius | Robòtica200
-description: Orientacions per seleccionar el kit, planificar proves i organitzar l’aula.
+title: Guía para elegir y preparar robots educativos
+seo_title: Guía para elegir y preparar robots educativos | Robótica200
+description: Orientaciones para seleccionar el kit, planificar pruebas y organizar el aula.
 layout: article
 active: robotica.html
 back:
   href: robotica.html
-  label: ← Tornar al catàleg de robòtica
+  label: ← Volver al catálogo de robótica
 ---
 
 ## Orientacions per a la sessió

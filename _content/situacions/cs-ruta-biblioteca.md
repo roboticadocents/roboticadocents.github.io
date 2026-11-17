@@ -1,17 +1,17 @@
 ---
 active: true
-title: "La ruta dels llibres viatgers"
-description: "Com podem programar MatataBot per a visitar quatre espais mentre presentem un llibre fictici i una recomanació original?"
+title: "La ruta de los libros viajeros"
+description: "¿Cómo podemos programar MatataBot para visitar cuatro espacios mientras presentamos un libro ficticio y una recomendación original?"
 robot: "coding-set"
 robot_label: "Coding Set"
 cycle: "segon-cicle"
-cycle_label: "Segon cicle"
+cycle_label: "Segundo ciclo"
 subject: "llengua"
-subject_label: "Llengua i Literatura"
+subject_label: "Lengua y Literatura"
 theme: "societat"
-theme_label: "Convivència i ciutadania"
-duration: "4 sessions · 180 min"
-challenge: "Com podem programar MatataBot per a visitar quatre espais mentre presentem un llibre fictici i una recomanació original?"
+theme_label: "Convivencia y ciudadanía"
+duration: "4 sesiones · 180 min"
+challenge: "¿Cómo podemos programar MatataBot para visitar cuatro espacios mientras presentamos un libro ficticio y una recomendación original?"
 official_source: "https://matatalab.com/en/node/95"
 ---
 

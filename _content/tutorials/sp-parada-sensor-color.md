@@ -1,8 +1,8 @@
 ---
-title: 'Motors i sensors: parada amb una targeta de color'
-description: Programar un motor sense accessoris perquè s’ature quan el sensor detecte una targeta vermella.
+title: "Motores y sensores: parada con una tarjeta de color"
+description: "Programar un motor sin accesorios para que se detenga cuando el sensor detecte una tarjeta roja."
 robot: spike
-level: Intermedi
+level: "Intermedio"
 duration: 40 min
 order: 2
 image: _assets/tutorials/sp-motors-sensors-flat.webp

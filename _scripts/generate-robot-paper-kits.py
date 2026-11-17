@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# check-es:skip
 """Generate A4 pupil worksheets and separate keys from the robot Markdown activities.
 Requires Python 3, pycairo, PyGObject and librsvg. No browser or network required.
 The exercise statements and answers live only in _content/activitats/*.md.

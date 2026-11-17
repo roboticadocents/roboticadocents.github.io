@@ -1,30 +1,30 @@
 ---
 title: Coding Set
-description: Programació tangible sense pantalles amb Matatalab
+description: "Programación tangible sin pantallas con Matatalab"
 icon: 🧩
-cicle: Infantil i primer cicle
-age: Infantil i primer cicle
+cicle: "Infantil y primer ciclo"
+age: "Infantil y primer ciclo"
 order: 3
 specs:
-- ✓ Torre de reconeixement visual
-- ✓ Tauler de programació matricial
-- ✓ Blocs físics de moviment, números i bucles
-- ✓ Robot mòbil amb ulls expressius
+- ✓ Torre de reconocimiento visual
+- ✓ Tablero de programación matricial
+- ✓ Bloques físicos de movimiento, números y bucles
+- ✓ Robot móvil con ojos expresivos
 image: _assets/robots/coding-set.webp
 
 # Informació i recursos oficials del fabricant
 tech_info: >
-  Matatalab Coding Set executa programes formats amb blocs físics que una torre reconeix visualment sobre el tauler. Permet definir desplaçaments i girs, ajustar-los amb paràmetres numèrics i repetir seqüències amb blocs de bucle. La torre envia les ordres al MatataBot perquè executi el recorregut, sense ordinador ni tauleta. El robot pot traçar les trajectòries amb un retolador i el suport corresponent. Les funcions de música i altres ampliacions depenen dels blocs i accessoris inclosos en l’edició; el sistema base no equival a un robot amb sensors d’obstacles o de seguiment de línies programables. Consulta la [documentació de Coding Set](https://matatalab.com/en/node/60).
+  Matatalab Coding Set ejecuta programas formados con bloques físicos que una torre reconoce visualmente sobre el tablero. Permite definir desplazamientos y giros, ajustarlos con parámetros numéricos y repetir secuencias con bloques de bucle. La torre envía las órdenes al MatataBot para que ejecute el recorrido, sin ordenador ni tableta. El robot puede trazar las trayectorias con un rotulador y el soporte correspondiente. Las funciones de música y otras ampliaciones dependen de los bloques y accesorios incluidos en la edición; el sistema base no equivale a un robot con sensores de obstáculos o de seguimiento de líneas programables. Consulta la [documentación de Coding Set](https://matatalab.com/en/node/60).
 official_resources:
-- title: Catàleg d’activitats de Matatalab
+- title: Catálogo de actividades de Matatalab
   href: https://matatalab.com/en/activity
-  description: Propostes de Coding Set, art, matemàtiques i pensament computacional.
+  description: Propuestas de Coding Set, arte, matemáticas y pensamiento computacional.
 - title: Deliver Animals
   href: https://matatalab.com/en/node/86
-  description: Recorreguts, destinacions i creació de relats per a Coding Set.
+  description: Recorridos, destinos y creación de relatos para Coding Set.
 - title: MatataBot’s Cozy House
   href: https://matatalab.com/en/node/85
-  description: Exemple de formes, angles i repeticions amb blocs tangibles.
+  description: Ejemplo de formas, ángulos y repeticiones con bloques tangibles.
 ---
 
 El Coding Set de Matatalab elimina la necessitat d'ordinadors o tauletes mitjançant un tauler físic on els alumnes col·loquen fitxes de plàstic dures. Una torre amb càmera escaneja els blocs i envia les instruccions al robot mòbil MatataBot per Bluetooth.

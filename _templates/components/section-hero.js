@@ -9,7 +9,7 @@ function SectionHero({
   bannerSrc = '',
   bannerAlt = '',
   backHref = '../index.html',
-  backLabel = 'inici',
+  backLabel = 'inicio',
   isRobotHero = false,
   robotSlug = ''
 } = {}) {
