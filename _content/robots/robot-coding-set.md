@@ -26,11 +26,8 @@ official_resources:
   href: https://matatalab.com/en/node/85
   description: Ejemplo de formas, ángulos y repeticiones con bloques tangibles.
 ---
+El Coding Set de Matatalab elimina la necesidad de ordenadores o tabletas mediante un tablero físico donde los alumnos y las alumnas colocan fichas de plástico duras. Una torre con cámara escanea los bloques y envía las instrucciones al robot móvil MatataBot por Bluetooth.
 
-El Coding Set de Matatalab elimina la necessitat d'ordinadors o tauletes mitjançant un tauler físic on els alumnes col·loquen fitxes de plàstic dures. Una torre amb càmera escaneja els blocs i envia les instruccions al robot mòbil MatataBot per Bluetooth.
+## Del código tangible a la ruta
 
-## Del codi tangible a la ruta
-
-El Coding Set permet ordenar instruccions físiques al tauler i veure'n el resultat al robot. Aquesta separació entre preparar el codi i executar-lo deixa espai per anticipar el recorregut, observar-ne la correspondència i depurar-lo sense començar a una pantalla.
-
-
+El Coding Set permite ordenar instrucciones físicas en el tablero y ver el resultado en el robot. Esta separación entre preparar el código y ejecutarlo deja espacio para anticipar el recorrido, observar su correspondencia y depurarlo sin empezar en una pantalla.

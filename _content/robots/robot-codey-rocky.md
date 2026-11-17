@@ -24,11 +24,8 @@ official_resources:
   href: https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery
   description: Curso con secuencias, bucles, condiciones, sensores y actividades desconectadas; algunas partes requieren Neuron.
 ---
+Codey Rocky está formado por dos partes desacoplables: «Codey» (el cerebro con pantalla matricial de 128 LED, sensor de luz, micrófono, altavoz y giroscopio) y «Rocky» (el chasis con orugas y sensores de color e infrarrojos). Se programa con bloques tipo Scratch o Python mediante el software mBlock 5.
 
-Codey Rocky està format per dues parts desacoblables: 'Codey' (el cervell amb pantalla matriu de 128 LEDs, sensor de llum, micròfon, altaveu i giroscopi) i 'Rocky' (el xassís oruga amb sensors de color i d'infrarojos). Es programa amb blocs tipus Scratch o Python a través del software mBlock5.
+## De la observación al código
 
-## De l'observació al codi
-
-Codey Rocky combina el mòdul Codey amb el xassís Rocky i es programa amb mBlock. La matriu de LEDs, els botons i els moviments observables permeten començar amb esdeveniments; els sensors del xassís obren reptes de línia, color i distància. Separar «què llegeix el sensor?» de «què hauria de fer el programa?» evita que les proves es converteixin en una successió de temptatives a l'atzar.
-
-
+Codey Rocky combina el módulo Codey con el chasis Rocky y se programa con mBlock. La matriz de LED, los botones y los movimientos observables permiten empezar con eventos; los sensores del chasis abren retos de línea, color y distancia. Separar «¿qué lee el sensor?» de «¿qué debería hacer el programa?» evita que las pruebas se conviertan en una sucesión de tanteos al azar.

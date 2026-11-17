@@ -31,10 +31,8 @@ official_resources:
   href: https://education.lego.com/en-us/product-resources/spike-prime/teacher-resources/activity-briefs/
   description: Retos abiertos en los que hay varias soluciones posibles.
 ---
+LEGO Education SPIKE Prime es un conjunto de construcción STEAM para primaria avanzada y secundaria. El hub grande tiene 6 puertos; el conjunto Prime incluye motores angulares y sensores de distancia, color y fuerza. SPIKE Essential tiene hardware y accesorios diferentes: adaptad la propuesta al conjunto que hay en el centro.
 
-LEGO Education SPIKE Prime és un conjunt de construcció STEAM per a primària avançada i secundària. El hub gran té 6 ports; el conjunt Prime inclou motors angulars i sensors de distància, color i força. SPIKE Essential té maquinari i accessoris diferents: adapta la proposta al conjunt que hi ha al centre.
+## Construir, medir e iterar
 
-## Construir, mesurar i iterar
-
-SPIKE combina construcció, una unitat programable, motors i sensors per proposar preguntes d'enginyeria que es poden provar. El professorat pot demanar un moviment quantificat o una decisió basada en lectura; en tots dos casos, l'equip necessita predir què canviarà abans d'ajustar el muntatge.
-
+SPIKE combina construcción, una unidad programable, motores y sensores para plantear preguntas de ingeniería que se pueden probar. El profesorado puede pedir un movimiento cuantificado o una decisión basada en una lectura; en ambos casos, el equipo necesita predecir qué cambiará antes de ajustar el montaje.

@@ -33,9 +33,8 @@ official_resources:
   href: https://education.lego.com/es-es/lessons/preschool-coding-express/y-shaped-track/
   description: Lección sobre rutas alternativas y decisiones.
 ---
+Coding Express combina las clásicas vías y piezas DUPLO con una locomotora inteligente equipada con un sensor de luz inferior. Mediante ladrillos de acción de colores colocados en la vía, los niños y las niñas controlan paradas, cambios de sentido, silbidos y luces sin necesidad de pantallas.
 
-Coding Express combina les clàssiques vies i peces DUPLO amb una locomotora intel·ligent equipada amb un sensor de llum inferior. Mitjançant maons d'acció de colors col·locats a la via, els infants controlen parades, canvis de sentit, xiulets i llums sense necessitat de pantalles.
+## Un tren que hace visible el programa
 
-## Un tren que fa visible el programa
-
-El recorregut sobre la via converteix ordres de colors i moviment en una experiència compartida: els infants poden predir a quina parada arribarà la figura, observar la resposta de la peça d'acció i provar de nou amb una sola modificació.
+El recorrido sobre la vía convierte órdenes de color y movimiento en una experiencia compartida: los niños y las niñas pueden predecir en qué parada llegará la figura, observar la respuesta de la pieza de acción y volver a probar con una sola modificación.

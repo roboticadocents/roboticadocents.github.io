@@ -23,11 +23,8 @@ official_resources:
   href: https://matatalab.com/en/activity
   description: Filtra las actividades y comprueba para qué producto se han diseñado.
 ---
+Tale-Bot Pro es un robot tangible pensado para desarrollar el pensamiento computacional, el lenguaje oral y la creatividad. Reconoce mapas temáticos mediante un sensor óptico OID, permite grabar la propia voz en cada casilla y dibuja figuras geométricas con rotuladores.
 
-TaleBot Pro és un robot tangible pensat per desenvolupar el pensament computacional, el llenguatge oral i la creativitat. Reconeix mapes temàtics mitjançant un sensor òptic OID, permet enregistrar la pròpia veu a cada casella i dibuixa figures geomètriques amb retoladors.
+## Un mapa que invita a explorar
 
-## Un mapa que convida a explorar
-
-Tale-Bot Pro dona al grup un punt de partida per unir seqüències de moviment, llenguatge oral, orientació en una quadrícula i narració. Mantingues la història en mans dels infants: el robot és un personatge més, no qui decideix com acaba.
-
-
+Tale-Bot Pro da al grupo un punto de partida para unir secuencias de movimiento, lenguaje oral, orientación en una cuadrícula y narración. Mantened la historia en manos de los niños y las niñas: el robot es un personaje más, no quien decide cómo acaba.

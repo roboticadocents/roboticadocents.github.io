@@ -30,11 +30,8 @@ official_resources:
   href: https://www.microbit.org/projects/make-it-code-it/
   description: Proyectos filtrables por nivel, tema, lenguaje y característica de la placa.
 ---
+La BBC micro:bit es una pequeña placa programable con una matriz de 25 LED, dos pulsadores, acelerómetro, brújula y radio. Las funciones de hardware dependen de la revisión: la V2 incorpora logotipo táctil, micrófono, altavoz y registro persistente de datos de sensores con MakeCode; otras funciones y conexiones pueden variar. Identificad la versión antes de diseñar una actividad.
 
-La BBC micro:bit és una petita placa programable amb una matriu de 25 LEDs, dos polsadors, acceleròmetre, brúixola i ràdio. Les funcions de maquinari depenen de la revisió: la V2 incorpora logotip tàctil, micròfon, altaveu i registre persistent de dades de sensors amb MakeCode; altres funcions i connexions poden variar. Identifica la versió abans de dissenyar una activitat.
+## Una placa para medir el mundo
 
-## Una placa per mesurar el món
-
-La micro:bit deixa començar amb botons i matriu de 5 × 5 i créixer cap a dades de moviment, llum, orientació, ràdio i connexions de pins. Pregunta sempre quin fenomen s'està mesurant, quina unitat o interval s'utilitza i què no pot concloure el grup a partir d'una lectura breu.
-
-
+La micro:bit permite empezar con botones y matriz de 5 × 5 y crecer hacia datos de movimiento, luz, orientación, radio y conexiones de pines. Preguntad siempre qué fenómeno se está midiendo, qué unidad o intervalo se utiliza y qué no puede concluir el grupo a partir de una lectura breve.

@@ -8,152 +8,148 @@ back:
   href: situaciones-aprendizaje.html
   label: ← Volver a las situaciones de aprendizaje
 ---
+## Orientaciones para la sesión
 
-## Orientacions per a la sessió
+### Adaptad el reto al grupo
 
-### Adapta el repte al grup
+Concretad qué sabe ya el alumnado, qué tendrá que averiguar y qué producto final tendrá utilidad para otra persona.
 
-Concreta què sap ja l’alumnat, què haurà d’esbrinar i quin producte final tindrà utilitat per a algú altre.
+- Modificad los materiales y la complejidad antes de sumar sesiones.
+- Asegurad opciones de respuesta oral, gráfica o manipulativa.
 
-- Modifica els materials i la complexitat abans de sumar sessions.
-- Assegura opcions de resposta oral, gràfica o manipulativa.
+### Mostrad el proceso, no solo el resultado
 
-### Mostra el procés, no només el resultat
+Recoged evidencias pequeñas a lo largo del proyecto. Un prototipo que todavía necesita mejoras puede demostrar un razonamiento sólido.
 
-Recull evidències petites al llarg del projecte. Un prototip que encara necessita millores pot demostrar raonament sòlid.
+- Comparad el plan inicial con el programa probado.
+- Preguntad qué dato o resultado ha hecho cambiar una decisión.
 
-- Compara el pla inicial amb el programa provat.
-- Pregunta quina dada o resultat ha fet canviar una decisió.
+### Cerrad con una transferencia
 
-### Tanca amb una transferència
+Reservad tiempo para que los equipos expliquen qué mantendrían, qué revisarían y dónde podrían reutilizar esta solución.
 
-Reserva temps perquè els equips expliquin què mantindrien, què revisarien i on podrien reutilitzar aquesta solució.
+- Invitad al destinatario del reto a hacer preguntas.
+- Evitad recoger datos personales que no sean necesarios.
 
-- Convida el destinatari del repte a fer preguntes.
-- Evita recollir dades personals que no siguin necessàries.
+## 01 · DISEÑO — Convertir una idea en una situación viable
 
-## 01 · DISSENY — Convertir una idea en una situació viable
+Una situación de aprendizaje conecta un reto significativo con saberes, acciones y evidencias. No hace falta empezar por el robot: empezad por la necesidad, preguntad quién se beneficiará y decidid qué aprendizaje queréis observar.
 
-Una situació d’aprenentatge connecta un repte significatiu amb sabers, accions i evidències. No cal començar pel robot: comença per la necessitat, pregunta qui se’n beneficiarà i decideix quin aprenentatge vols observar.
+### 🌍 Contexto cercano y destinatario
 
-### 🌍 Context proper i destinatari
+Partid de una observación de la escuela, el barrio, un relato o una pregunta científica. Definid para quién es útil la propuesta, sin presuponer necesidades de otras personas.
 
-Parteix d’una observació de l’escola, el barri, un relat o una pregunta científica. Defineix per a qui és útil la proposta, sense pressuposar necessitats d’altres persones.
+- ¿Qué pasa ahora y cómo lo sabemos?
+- ¿Quién puede contrastar nuestra interpretación?
 
-- Què passa ara i com ho sabem?
-- Qui pot contrastar la nostra interpretació?
+### ❓ Pregunta guía abierta
 
-### ❓ Pregunta guia oberta
+Formulad una pregunta que admita investigación y más de una solución posible. Evitad una consigna que solo pida copiar una maqueta o seguir un tutorial.
 
-Formula una pregunta que admeti investigació i més d’una solució possible. Evita una consigna que només demani copiar una maqueta o seguir un tutorial.
+- Delimitad qué queda dentro del reto.
+- Acordad los criterios de éxito con el grupo.
 
-- Delimita què queda dins del repte.
-- Acorda els criteris d’èxit amb el grup.
+### 📚 Conexión curricular
 
-### 📚 Connexió curricular
+Seleccionad saberes y criterios de evaluación de las áreas implicadas y describid qué acción del alumnado dará evidencia de ellos. Las etiquetas del catálogo son orientativas.
 
-Selecciona sabers i criteris d’avaluació de les àrees implicades i descriu quina acció de l’alumnat en donarà evidència. Les etiquetes del catàleg són orientatives.
+- Relacionad criterio, tarea y evidencia.
+- Adaptad la concreción curricular al nivel y al centro.
 
-- Relaciona criteri, tasca i evidència.
-- Adapta la concreció curricular al nivell i al centre.
+[Ejemplo: ciudad accesible](../../situacion/index.html?id=mb-ciudad-accesible)
 
+### 🗺️ Investigar antes de diseñar
 
-[Exemple: ciutat accessible](../../situacion/index.html?id=mb-ciudad-accesible)
+Observad, medid, entrevistad con consentimiento o consultad fuentes adecuadas. Anotad las limitaciones de los datos y separad los hechos observados de las interpretaciones.
 
-### 🗺️ Investigar abans de dissenyar
+- Repartid preguntas de investigación entre equipos.
+- Usad datos ficticios cuando no haga falta recoger datos reales.
 
-Observa, mesura, entrevista amb consentiment o consulta fonts adequades. Anota les limitacions de les dades i separa els fets observats de les interpretacions.
+### 🧪 Prototipo y ciclo de pruebas
 
-- Reparteix preguntes d’investigació entre equips.
-- Fes servir dades fictícies quan no calgui recollir-ne de reals.
+Construid una versión inicial de baja complejidad. Probadla con los criterios acordados, recoged comentarios y priorizad un cambio razonado para la siguiente iteración.
 
-### 🧪 Prototip i cicle de proves
+- Dejad constancia del primer prototipo.
+- Explicad qué ha cambiado a partir de la evidencia.
 
-Construeix una versió inicial de baixa complexitat. Prova-la amb els criteris acordats, recull comentaris i prioritza un canvi raonat per a la iteració següent.
+[Ejemplo: invernadero con sensores](../../situacion/index.html?id=mb-invernadero)
 
-- Deixa constància del primer prototip.
-- Explica què ha canviat a partir de l’evidència.
+### 📣 Comunicación con propósito
 
+El producto final puede ser un prototipo, un mapa, una demostración o una propuesta argumentada. La audiencia da una razón para comunicar con claridad y escuchar preguntas.
 
-[Exemple: hivernacle amb sensors](../../situacion/index.html?id=mb-invernadero)
+- Asignad tiempo para revisar las explicaciones.
+- Cerrad con qué transferirían a otro reto.
 
-### 📣 Comunicació amb propòsit
+[Ejemplo: clasificación de residuos](../../situacion/index.html?id=sp-residuos-lego)
 
-El producte final pot ser un prototip, un mapa, una demostració o una proposta argumentada. L’audiència dona una raó per comunicar amb claredat i escoltar preguntes.
+## 02 · PLANIFICACIÓN — Una secuencia flexible de seis momentos
 
-- Assigna temps per revisar les explicacions.
-- Tanca amb què transferirien a un altre repte.
+Las fases se pueden repetir y combinar. Ajustad duración y materiales al grupo; no hace falta añadir sesiones solo para completar una plantilla. Lo esencial es dejar espacio para investigar, probar y revisar las ideas.
 
+### 💬 Conectar y preguntar
 
-[Exemple: classificació de residus](../../situacion/index.html?id=sp-residuos-lego)
+Presentad el contexto con una imagen, un objeto o una observación. Recoged preguntas e ideas iniciales antes de compartir vocabulario técnico.
 
-## 02 · PLANIFICACIÓ — Una seqüència flexible de sis moments
-
-Les fases es poden repetir i combinar. Ajusta durada i materials al grup; no cal afegir sessions només per completar una plantilla. Allò essencial és deixar espai per investigar, provar i revisar les idees.
-
-### 💬 Connectar i preguntar
-
-Presenta el context amb una imatge, un objecte o una observació. Recull preguntes i idees inicials abans de compartir vocabulari tècnic.
-
-- Mapa d’idees inicial.
+- Mapa de ideas inicial.
 - Pregunta consensuada.
 
-### 🔍 Investigar i definir
+### 🔍 Investigar y definir
 
-Busca informació rellevant i tradueix la pregunta a criteris concrets. Decideix què mesurareu i qui pot validar la necessitat plantejada.
+Buscad información relevante y traducid la pregunta a criterios concretos. Decidid qué mediréis y quién puede validar la necesidad planteada.
 
-- Fonts i dades anotades.
-- Criteris de disseny visibles.
+- Fuentes y datos anotados.
+- Criterios de diseño visibles.
 
-### 🧠 Imaginar i planificar
+### 🧠 Imaginar y planificar
 
-Genera diverses propostes ràpides, compara-les amb els criteris i tria una idea que es pugui provar amb els recursos disponibles.
+Generad varias propuestas rápidas, comparadlas con los criterios y elegid una idea que se pueda probar con los recursos disponibles.
 
-- Esbós o storyboard.
-- Raó de la tria.
+- Boceto o storyboard.
+- Razón de la elección.
 
-### 🛠️ Construir i programar
+### 🛠️ Construir y programar
 
-Munta el prototip i implementa només les funcions necessàries per respondre la pregunta. Fes una prova curta abans d’afegir complexitat.
+Montad el prototipo e implementad solo las funciones necesarias para responder la pregunta. Haced una prueba corta antes de añadir complejidad.
 
-- Versió documentada.
-- Programa explicable per l’equip.
+- Versión documentada.
+- Programa explicable por el equipo.
 
-### 📏 Avaluar i iterar
+### 📏 Evaluar e iterar
 
-Compara el resultat amb els criteris i els comentaris. Prioritza una millora, executa-la i conserva l’evidència de les dues versions.
+Comparad el resultado con los criterios y los comentarios. Priorizad una mejora, ejecutadla y conservad la evidencia de las dos versiones.
 
-- Observacions amb data.
-- Canvi vinculat a una dada.
+- Observaciones con fecha.
+- Cambio vinculado a un dato.
 
-### 🎤 Compartir i transferir
+### 🎤 Compartir y transferir
 
-Mostra el procés a una audiència adequada. Demana que expliquin una decisió, una limitació i una situació nova on podrien aplicar allò après.
+Mostrad el proceso a una audiencia adecuada. Pedid que expliquen una decisión, una limitación y una situación nueva donde podrían aplicar lo aprendido.
 
-- Demostració o relat del procés.
-- Reflexió individual breu.
+- Demostración o relato del proceso.
+- Reflexión individual breve.
 
-## 03 · AVALUACIÓ — Evidències petites al llarg del procés
+## 03 · EVALUACIÓN — Evidencias pequeñas a lo largo del proceso
 
-Una avaluació formativa ajuda el docent a decidir el següent pas i l’alumnat a entendre com millorar. Combina evidències individuals i d’equip perquè el resultat del grup no amagui qui ha pres les decisions.
+Una evaluación formativa ayuda al docente a decidir el siguiente paso y al alumnado a entender cómo mejorar. Combinad evidencias individuales y de equipo para que el resultado del grupo no oculte quién ha tomado las decisiones.
 
-### 📝 Abans: idees i prediccions
+### 📝 Antes: ideas y predicciones
 
-Recull un dibuix, una explicació oral o una predicció breu. Serveix per identificar idees inicials i ajustar el punt de partida.
+Recoged un dibujo, una explicación oral o una predicción breve. Sirve para identificar ideas iniciales y ajustar el punto de partida.
 
-- Què creu que passarà?
-- Quina informació li falta?
+- ¿Qué cree que pasará?
+- ¿Qué información le falta?
 
-### 📓 Durant: observació i decisions
+### 📓 Durante: observación y decisiones
 
-Fes servir una llibreta d’equip amb una entrada per prova: objectiu, canvi fet, resultat i següent pregunta. Una foto del prototip pot completar-la.
+Usad una libreta de equipo con una entrada por prueba: objetivo, cambio hecho, resultado y siguiente pregunta. Una foto del prototipo puede completarla.
 
-- Observa l’ús de dades i criteris.
-- Escolta com reparteixen i revisen les tasques.
+- Observad el uso de datos y criterios.
+- Escuchad cómo reparten y revisan las tareas.
 
-### 🌱 Després: reflexió i transferència
+### 🌱 Después: reflexión y transferencia
 
-Tanca amb una autoavaluació accessible: què he aportat, què he revisat i què provaria ara. Contrasta-la amb el procés que has observat.
+Cerrad con una autoevaluación accesible: qué he aportado, qué he revisado y qué probaría ahora. Contrastadla con el proceso que habéis observado.
 
-- Ofereix frase iniciadora, àudio o dibuix.
-- Valora raonament i revisió, no només acabat.
+- Ofreced frase iniciadora, audio o dibujo.
+- Valorad razonamiento y revisión, no solo el acabado.

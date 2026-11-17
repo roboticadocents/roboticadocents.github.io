@@ -8,140 +8,133 @@ back:
   href: robotica.html
   label: ← Volver al catálogo de robótica
 ---
+## Orientaciones para la sesión
 
-## Orientacions per a la sessió
+### Antes de la sesión
 
-### Abans de la sessió
+Comprobad batería, conexión, versión de la app y componentes antes de repartir los kits; estas comprobaciones varían según el modelo.
 
-Comprova bateria, connexió, versió de l’app i components abans de repartir els kits; aquestes comprovacions varien segons el model.
+- Dejad un robot o una maqueta de prueba a mano.
+- Preparad una alternativa en papel por si falla la conexión.
 
-- Deixa un robot o una maqueta de prova a mà.
-- Prepara una alternativa en paper per si falla la connexió.
+### Organizad los equipos
 
-### Organitza els equips
+Los grupos de tres o cuatro pueden repartir la preparación del código, la conducción, el registro y la portavocía. Rotar los roles evita que solo una persona manipule.
 
-Els grups de tres o quatre poden repartir la preparació del codi, la conducció, el registre i la portaveu. Rotar els papers evita que només una persona manipuli.
+- Acordad la trayectoria o el resultado antes de programar.
+- Desconectad y recoged las piezas entre grupos.
 
-- Acordeu la trajectòria o resultat abans de programar.
-- Desconnecteu i recolliu les peces entre grups.
+### Repetid el ciclo
 
-### Repetiu el cicle
+Una ejecución suele ser insuficiente para aprender. Pedid una predicción, haced una prueba corta, anotad qué ha pasado y modificad una variable cada vez.
 
-Una execució sol ser insuficient per aprendre. Demana una predicció, feu una prova curta, anoteu què ha passat i modifiqueu una variable cada vegada.
+- Conservad el primer intento para compararlo.
+- Terminad explicando qué cambio ha mejorado la respuesta.
 
-- Conserveu el primer intent per comparar-lo.
-- Acabeu explicant quin canvi ha millorat la resposta.
+## 01 · ELEGIR EL MATERIAL — El reto determina el robot
 
-## 01 · TRIAR EL MATERIAL — El repte determina el robot
+Antes de mirar el catálogo, concretad qué queréis que el alumnado pueda observar o decidir. El dispositivo es un medio: un mismo concepto se puede trabajar con un robot de suelo, un tren tangible, una placa programable o una maqueta hecha con cartón.
 
-Abans de mirar el catàleg, concreta què vols que l’alumnat pugui observar o decidir. El dispositiu és un mitjà: un mateix concepte es pot treballar amb un robot de terra, un tren tangible, una placa programable o una maqueta feta amb cartró.
+### ➡️ Secuencias y orientación
 
-### ➡️ Seqüències i orientació
+Los robots de suelo hacen visible el orden de las instrucciones y la relación entre giro, distancia y posición. Son útiles para planificar rutas, narrar recorridos y depurar órdenes.
 
-Els robots de terra fan visible l’ordre de les instruccions i la relació entre gir, distància i posició. Són útils per planificar rutes, narrar recorreguts i depurar ordres.
-
-- Marca una graella i un punt d’arribada.
-- Compara la ruta prevista amb la ruta real.
-
+- Marcad una cuadrícula y un punto de llegada.
+- Comparad la ruta prevista con la ruta real.
 
 [Mira Tale-Bot Pro](../../robot/index.html?id=tale-bot)
 
-### 🧩 Codificar amb objectes
+### 🧩 Codificar con objetos
 
-Els sistemes tangibles connecten peces físiques amb accions. Permeten explorar seqüències i condicions abans que la sintaxi o el teclat siguin el centre de la tasca.
+Los sistemas tangibles conectan piezas físicas con acciones. Permiten explorar secuencias y condiciones antes de que la sintaxis o el teclado sean el centro de la tarea.
 
-- Comprova quines peces i funcions inclou el kit.
-- Demana que l’equip expliqui què representa cada peça.
-
+- Comprobad qué piezas y funciones incluye el kit.
+- Pedid que el equipo explique qué representa cada pieza.
 
 [Explora Coding Express](../../robot/index.html?id=coding-express)
 
-### 📟 Mesurar i respondre
+### 📟 Medir y responder
 
-Les plaques i robots amb sensors relacionen el programa amb fenòmens com la llum, el moviment, la distància o el so. Cal identificar versió, límits del sensor i condicions de la prova.
+Las placas y robots con sensores relacionan el programa con fenómenos como la luz, el movimiento, la distancia o el sonido. Hay que identificar versión, límites del sensor y condiciones de la prueba.
 
-- Canvia una variable cada vegada.
-- Anota la lectura i el context de mesura.
+- Cambiad una variable cada vez.
+- Anotad la lectura y el contexto de medida.
 
+[Descubre micro:bit](../../robot/index.html?id=microbit)
 
-[Descobreix micro:bit](../../robot/index.html?id=microbit)
+### ⚙️ Construir mecanismos
 
-### ⚙️ Construir mecanismes
+Los kits de construcción conectan programación con transmisión, estabilidad, fricción y fuerza. Hacer dos versiones de un mecanismo ayuda a dar sentido a los cambios de código.
 
-Els kits de construcció connecten programació amb transmissió, estabilitat, fricció i força. Fer dues versions d’un mecanisme ajuda a donar sentit als canvis de codi.
-
-- Fotografia o dibuixa el prototip inicial.
-- Canvia una peça o un paràmetre per prova.
-
+- Fotografiad o dibujad el prototipo inicial.
+- Cambiad una pieza o un parámetro por prueba.
 
 [Explora SPIKE Prime](../../robot/index.html?id=spike)
 
-### 🧒 Prioritzar l’accessibilitat
+### 🧒 Priorizar la accesibilidad
 
-Per a primeres experiències, valora la mida dels botons, la retroacció visual i sonora, el tipus de lectura i la facilitat per compartir el control.
+Para las primeras experiencias, valorad el tamaño de los botones, la retroalimentación visual y sonora, el tipo de lectura y la facilidad para compartir el control.
 
-- Pregunta qui podrà manipular cada element.
-- Planifica rols perquè tothom prengui decisions.
-
+- Preguntad quién podrá manipular cada elemento.
+- Planificad roles para que todo el mundo tome decisiones.
 
 [Consulta Matatalab](../../robot/index.html?id=coding-set)
 
-### 🧰 Comprovar disponibilitat
+### 🧰 Comprobar disponibilidad
 
-Els models, accessoris, versions d’app i sistemes operatius canvien. Fes una prova amb el material concret del centre i planifica una alternativa desendollada equivalent.
+Los modelos, accesorios, versiones de app y sistemas operativos cambian. Haced una prueba con el material concreto del centro y planificad una alternativa desconectada equivalente.
 
-- Comprova bateria, ports i connexió.
-- No pressuposis que tots els kits del mateix nom són idèntics.
-
+- Comprobad batería, puertos y conexión.
+- No presupongáis que todos los kits del mismo nombre son idénticos.
 
 [Consulta Codey Rocky](../../robot/index.html?id=codey-rocky)
 
-## 02 · CICLE D’ENGINYERIA — Una rutina curta que aprofundeix l’aprenentatge
+## 02 · CICLO DE INGENIERÍA — Una rutina corta que profundiza el aprendizaje
 
-Dona temps per pensar abans de programar. Si l’alumnat registra la predicció i el primer intent, després podrà justificar els canvis en comptes d’atribuir l’èxit a la sort.
+Dad tiempo para pensar antes de programar. Si el alumnado registra la predicción y el primer intento, después podrá justificar los cambios en vez de atribuir el éxito a la suerte.
 
-### 🎯 Repte i criteri d’èxit
+### 🎯 Reto y criterio de éxito
 
-Converteix la consigna en un resultat comprovable: aturar-se a una zona, encendre un indicador amb una condició o moure un objecte sense que caigui.
+Convertid la consigna en un resultado comprobable: detenerse en una zona, encender un indicador con una condición o mover un objeto sin que caiga.
 
-- Acordeu com sabreu que funciona.
-- Distingiu l’objectiu de les possibles solucions.
+- Acordad cómo sabréis que funciona.
+- Distinguid el objetivo de las posibles soluciones.
 
-### ✍️ Predicció i programa mínim
+### ✍️ Predicción y programa mínimo
 
-Feu un dibuix o una seqüència breu abans de construir. Comenceu amb el mínim de blocs que permet respondre la pregunta.
+Haced un dibujo o una secuencia breve antes de construir. Empezad con el mínimo de bloques que permita responder la pregunta.
 
-- Quin sensor o ordre intervé?
-- Què esperem veure en la primera prova?
+- ¿Qué sensor u orden interviene?
+- ¿Qué esperamos ver en la primera prueba?
 
-### 🔬 Prova, dada i millora
+### 🔬 Prueba, dato y mejora
 
-Executa en condicions segures i recull una dada concreta. Ajusta un únic element —temps, distància, llindar o geometria— i compara els dos resultats.
+Ejecutad en condiciones seguras y recoged un dato concreto. Ajustad un único elemento —tiempo, distancia, umbral o geometría— y comparad los dos resultados.
 
-- Guarda codi o foto de cada versió.
-- Demana explicar per què el canvi hauria d’ajudar.
+- Guardad código o foto de cada versión.
+- Pedid que expliquen por qué el cambio debería ayudar.
 
-## 03 · ORGANITZACIÓ D’AULA — Fer que els equips treballin i aprenguin
+## 03 · ORGANIZACIÓN DE AULA — Hacer que los equipos trabajen y aprendan
 
-Els kits no haurien de convertir la sessió en una cursa per acabar primer. Assigna responsabilitats rotatives, prepara material de recanvi i deixa espai perquè els grups puguin mostrar què han après encara que el prototip sigui parcial.
+Los kits no deberían convertir la sesión en una carrera por terminar primero. Asignad responsabilidades rotativas, preparad material de repuesto y dejad espacio para que los grupos puedan mostrar qué han aprendido aunque el prototipo sea parcial.
 
-### 👥 Rols que roten
+### 👥 Roles que rotan
 
-En grups de tres o quatre, combina disseny, programació, prova i registre. A mitja sessió, cada alumne passa a una responsabilitat nova.
+En grupos de tres o cuatro, combinad diseño, programación, prueba y registro. A mitad de sesión, cada alumno y cada alumna pasa a una responsabilidad nueva.
 
-- Qui no té el dispositiu també pren decisions.
-- Alterna la persona que presenta el resultat.
+- Quien no tiene el dispositivo también toma decisiones.
+- Alternad la persona que presenta el resultado.
 
-### 🪫 Logística senzilla
+### 🪫 Logística sencilla
 
-Prepara kits identificats, estacions de càrrega i una safata de peces. Mantén un robot de prova docent i una activitat en paper per a incidències tècniques.
+Preparad kits identificados, estaciones de carga y una bandeja de piezas. Mantened un robot de prueba docente y una actividad en papel para incidencias técnicas.
 
-- Comprova el material abans de la classe.
-- Reserva minuts per recollir i inventariar.
+- Comprobad el material antes de la clase.
+- Reservad minutos para recoger e inventariar.
 
-### 🛡️ Seguretat i dades
+### 🛡️ Seguridad y datos
 
-Mantén cables i peces petites ordenats, evita proves amb força sobre el cos i demana només les dades necessàries. Si hi ha càmeres, veu o ràdio, parla de consentiment i privacitat.
+Mantened cables y piezas pequeñas ordenados, evitad pruebas con fuerza sobre el cuerpo y pedid solo los datos necesarios. Si hay cámaras, voz o radio, hablad de consentimiento y privacidad.
 
-- Fes les proves en espai delimitat.
-- No pugis enregistraments identificables sense autorització.
+- Haced las pruebas en un espacio delimitado.
+- No subáis grabaciones identificables sin autorización.

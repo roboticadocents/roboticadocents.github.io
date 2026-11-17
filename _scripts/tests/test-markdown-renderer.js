@@ -563,11 +563,11 @@ assert.match(taleBotDiscoveries.html, /sa-tb-coneguem-tale-bot-v2\.webp/, "la se
 assert.match(taleBotDiscoveries.html, /guia\/feria-descubrimientos\/index\.html/, "la situació principal enllaça els recursos docents en una pàgina separada");
 assert.doesNotMatch(taleBotDiscoveries.html, /Intencions d'aprenentatge i criteris d'èxit|Diari de proves i mostra final/, "els recursos extensos no tornen a carregar-se al final de la situació principal");
 const taleBotFairGuide = renderer.parse(fs.readFileSync(path.join(root, "_content/guies/guia-feria-descubrimientos.md"), "utf8"), "https://example.test/_content/guies/guia-feria-descubrimientos.md");
-assert.match(taleBotFairGuide.html, /aquesta pàgina reuneix els recursos docents ampliats/i, "la guia docent complementària té un context propi");
-assert.match(taleBotFairGuide.html, /Challenge Booklet[\s\S]*tampoc no es considera adaptat fins que se’n puga verificar/i, "la guia manté explícit el límit de verificació del quadern oficial");
-assert.match(taleBotFairGuide.html, /reduïu la ruta a dues destinacions[\s\S]*canvieu només una ordre/i, "la guia ofereix una bastida clara quan l'equip encara no arriba a la fita");
-assert.match(taleBotFairGuide.html, /apague Tale-Bot[\s\S]*retorne les targetes i els accessoris/i, "la guia converteix la cura del robot i els materials en una rutina observable");
-assert.match(taleBotFairGuide.html, /curs docent oficial de Tale-Bot Pro/i, "la guia atribueix els consells de suport docent a una font del fabricant");
+assert.match(taleBotFairGuide.html, /esta página reúne los recursos docentes ampliados/i, "la guia docent complementària té un context propi");
+assert.match(taleBotFairGuide.html, /Challenge Booklet[\s\S]*tampoco se considera adaptado hasta que pueda verificarse/i, "la guia manté explícit el límit de verificació del quadern oficial");
+assert.match(taleBotFairGuide.html, /reducid la ruta a dos destinos[\s\S]*cambiad solo una orden/i, "la guia ofereix una bastida clara quan l'equip encara no arriba a la fita");
+assert.match(taleBotFairGuide.html, /apague Tale-Bot[\s\S]*devuelva las tarjetas y los accesorios/i, "la guia converteix la cura del robot i els materials en una rutina observable");
+assert.match(taleBotFairGuide.html, /curso docente oficial de Tale-Bot Pro/i, "la guia atribueix els consells de suport docent a una font del fabricant");
 assert.match(fs.readFileSync(path.join(dist, "guia/feria-descubrimientos/index.html"), "utf8"), /href="\.\.\/\.\.\/situaciones-aprendizaje\/index\.html"/, "la pàgina docent ofereix una tornada accessible al catàleg de situacions");
 assert.match(taleBotDiscoveries.html, /no té intencions humanes/i, "la sessió d'iniciació diferencia el comportament programat de la intencionalitat humana");
 assert.match(taleBotDiscoveries.html, /deu gots de paper lleugers/i, "la sessió d'iniciació adapta el material públic dels deu gots com a fites segures");
@@ -579,7 +579,7 @@ for (const image of ["sa-tb-fira-mapa-escola-v1.webp", "sa-tb-fira-respostes-v1.
 assert.match(taleBotDiscoveries.html, /no identifica els espais/i, "la imatge de l'escola no atribueix reconeixement visual al Tale-Bot");
 assert.match(taleBotDiscoveries.html, /el robot només recorre la seqüència programada/i, "la imatge de recompte delimita la funció real del Tale-Bot");
 assert.match(taleBotDiscoveries.html, /maqueta de paper anotada[\s\S]*demostració d’encesa\/apagada/i, "la sessió d'iniciació avalua les parts del robot i l'ús correcte dels controls d'alimentació");
-assert.match(taleBotFairGuide.html, /parts i funcions[\s\S]*distingir el robot de les persones[\s\S]*deu gots/i, "la guia docent documenta la correspondència amb els objectius i materials públics de L1");
+assert.match(taleBotFairGuide.html, /partes y funciones[\s\S]*distinguir el robot de las personas[\s\S]*diez vasos/i, "la guia docent documenta la correspondència amb els objectius i materials públics de L1");
 assert.match(taleBotDiscoveries.html, /Predigueu el total abans de comptar[\s\S]*casella, quantitat observada i subtotal acumulat/i, "la sessió de recompte inclou predicció, registre i control de dobles recomptes");
 assert.match(taleBotDiscoveries.html, /sis danses predefinides a l’atzar/i, "la sessió de funcions registra que la dansa no és seleccionable");
 assert.match(taleBotDiscoveries.html, /limit[a-zà-ú ]*cada enregistrament a 30 segons/i, "la sessió d'àudio conserva el límit temporal de la guia oficial");

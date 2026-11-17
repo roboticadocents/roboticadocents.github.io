@@ -8,93 +8,92 @@ back:
   href: pensamiento-computacional.html
   label: ← Volver a las actividades
 ---
+## Conceptos clave
 
-## Conceptes clau
+El pensamiento computacional ayuda a aclarar un problema, representarlo y comprobar si una solución funciona. No es una asignatura separada ni exige escribir código. En una misma actividad pueden aparecer varios conceptos:
 
-El pensament computacional ajuda a aclarir un problema, representar-lo i comprovar si una solució funciona. No és una assignatura separada ni exigeix escriure codi. En una mateixa activitat poden aparéixer diversos conceptes:
+### Descomponer
 
-### Descompondre
+Dividid un reto grande en tareas pequeñas, cada una con un resultado observable. En una receta de construcción: buscar piezas, ordenarlas, montar y comprobar la estabilidad.
 
-Divideix un repte gran en tasques menudes, cadascuna amb un resultat observable. En una recepta de construcció: buscar peces, ordenar-les, muntar i comprovar l’estabilitat.
+- Pregunta: ¿qué parte podemos resolver primero?
+- Observad si el equipo organiza los pasos sin perder de vista el objetivo.
 
-- Pregunta: quina part podem resoldre primer?
-- Observa si l’equip organitza els passos sense perdre de vista l’objectiu.
+### Reconocer patrones
 
-### Reconéixer patrons
+Comparad ejemplos para encontrar qué se repite y qué cambia. Clasificar hojas, movimientos o sonidos ayuda a formular una regla que pueda aplicarse a un caso nuevo.
 
-Compara exemples per trobar què es repeteix i què canvia. Classificar fulles, moviments o sons ajuda a formular una regla que es puga aplicar a un cas nou.
+- Pregunta: ¿qué rasgo nos permite agrupar estos casos?
+- Observad si el alumnado justifica la regla con más de un ejemplo.
 
-- Pregunta: quin tret ens permet agrupar aquests casos?
-- Observa si l’alumnat justifica la regla amb més d’un exemple.
+### Diseñar algoritmos
 
-### Dissenyar algoritmes
+Escribid instrucciones en un orden que otra persona pueda seguir sin adivinar la intención. Un buen algoritmo concreta las acciones y prevé qué hacer cuando el resultado no es el esperado.
 
-Escriu instruccions en un ordre que una altra persona puga seguir sense endevinar la intenció. Un bon algoritme concreta les accions i preveu què fer quan el resultat no és l’esperat.
+- Pregunta: ¿qué instrucción podría tener dos interpretaciones?
+- Comprobad si otra pareja ejecuta el plan con el mismo resultado.
 
-- Pregunta: quina instrucció podria tindre dues interpretacions?
-- Comprova si una altra parella executa el pla amb el mateix resultat.
+### Repetir y decidir
 
-### Repetir i decidir
+Un bucle expresa una repetición; una condición elige una acción según lo que pasa. El cuerpo o las tarjetas permiten ensayar estas ideas antes de abrir un entorno de programación.
 
-Un bucle expressa una repetició; una condició tria una acció segons el que passa. El cos o les targetes permeten assajar aquestes idees abans d’obrir un entorn de programació.
+- Pregunta: ¿qué parte del patrón se repite?
+- Pedid que prevean el resultado si cambia el número de repeticiones.
 
-- Pregunta: quina part del patró es repeteix?
-- Demana que prevegen el resultat si canvia el nombre de repeticions.
+### Depurar con evidencias
 
-### Depurar amb evidències
+Un error es una diferencia observable entre la predicción y el resultado. Repetir la prueba cambiando un solo paso ayuda a encontrar la causa y evita corregir al azar.
 
-Un error és una diferència observable entre la predicció i el resultat. Repetir la prova canviant un sol pas ajuda a trobar-ne la causa i evita corregir a l’atzar.
+- Anotad qué esperábamos y qué ha pasado.
+- Cambiad una instrucción y volved a probar.
 
-- Anota què esperàvem i què ha passat.
-- Canvia una instrucció i torna a provar.
+### Trabajar con datos
 
-### Treballar amb dades
+Recoger y ordenar datos permite responder preguntas con evidencias. Acordad categorías, haced registros consistentes y explicad qué no podemos concluir de una muestra pequeña.
 
-Recollir i ordenar dades permet respondre preguntes amb evidències. Acordeu categories, feu registres consistents i expliqueu què no podem concloure d’una mostra menuda.
+- Pregunta: ¿cómo decidimos si dos casos son parecidos?
+- Representad los resultados con una tabla, un gráfico o fichas.
 
-- Pregunta: com decidim si dos casos són semblants?
-- Representa els resultats amb una taula, un gràfic o fitxes.
+## Secuencia didáctica: de la experiencia al símbolo
 
-## Seqüència didàctica: de l’experiència al símbol
+La misma idea se puede representar con el cuerpo, objetos, dibujos, palabras y bloques. Cambiar de representación ayuda a hacer visible el razonamiento y ofrece más de una manera de participar.
 
-La mateixa idea es pot representar amb el cos, objectes, dibuixos, paraules i blocs. Canviar de representació ajuda a fer visible el raonament i ofereix més d’una manera de participar.
+### 1. Vivir el reto
 
-### 1. Viure el repte
+Presentad una pregunta corta e invitad a probarla sin dar la solución. Pedid que el alumnado describa qué ha observado con sus propias palabras. Partid de un contexto conocido y dejad ensayar en parejas.
 
-Presenta una pregunta curta i convida a provar-la sense donar la solució. Demana que l’alumnat descriga què ha observat amb paraules pròpies. Parteix d’un context conegut i deixa assajar en parelles.
+### 2. Construir una representación
 
-### 2. Construir una representació
+Traducid las acciones a tarjetas, flechas, cuadrículas o piezas. Mantened una leyenda común para que cada símbolo tenga un significado estable. Comparad dos representaciones del mismo plan.
 
-Traduïu les accions a targetes, fletxes, graelles o peces. Manteniu una llegenda comuna perquè cada símbol tinga un significat estable. Compareu dues representacions del mateix pla.
+### 3. Probar y explicar
 
-### 3. Provar i explicar
+Antes de ejecutar, cada grupo predice qué pasará. Después compara la predicción con el resultado y explica qué cambio haría y qué observación lo justifica. Registrad los intentos, no solo la versión final, y terminad con un reto nuevo para comprobar la transferencia.
 
-Abans d’executar, cada grup prediu què passarà. Després compara la predicció amb el resultat i explica quin canvi faria i quina observació el justifica. Registra els intents, no sols la versió final, i acaba amb un repte nou per comprovar la transferència.
+## Evaluación e inclusión
 
-## Avaluació i inclusió
+Valorad las decisiones y las explicaciones, no solo si el reto se ha terminado. Una solución que todavía no funciona puede mostrar una buena descomposición, una regla bien argumentada o una depuración útil.
 
-Valora les decisions i les explicacions, no només si el repte s’ha acabat. Una solució que encara no funciona pot mostrar una bona descomposició, una regla ben argumentada o una depuració útil.
+### Indicadores observables
 
-### Indicadors observables
+- Identifica el patrón o la condición que ha utilizado.
+- Predice un resultado antes de ejecutarlo.
+- Señala una evidencia que ha motivado un cambio.
 
-- Identifica el patró o la condició que ha utilitzat.
-- Prediu un resultat abans d’executar-lo.
-- Assenyala una evidència que ha motivat un canvi.
+### Más de una manera de participar
 
-### Més d’una manera de participar
+Repartid roles sin separar al alumnado del reto: ordenar tarjetas, ejecutar, dibujar la ruta o explicar el resultado. Aceptad respuestas orales, gráficas, gestuales o escritas; preparad pictogramas de alto contraste y ofreced movimientos sentados o manipulación sobre la mesa.
 
-Reparteix rols sense separar l’alumnat del repte: ordenar targetes, executar, dibuixar la ruta o explicar el resultat. Accepta respostes orals, gràfiques, gestuals o escrites; prepara pictogrames d’alt contrast i ofereix moviments asseguts o manipulació sobre taula.
+### Pensamiento crítico y cuidado
 
-### Pensament crític i cura
+Al hablar de datos y mensajes, distinguid los juegos de las herramientas de protección reales. Usad ejemplos inventados y no pidáis información privada. El cifrado César es un juego educativo, no protege datos reales.
 
-En parlar de dades i missatges, distingeix els jocs de les eines de protecció reals. Fes servir exemples inventats i no demanes informació privada. El xifratge Cèsar és un joc educatiu, no protegeix dades reals.
+## Actividades relacionadas
 
-## Activitats relacionades
-
-- [Prova la recepta d’instruccions](../../actividad/index.html?id=pc-descomposicion-recetas)
-- [Explora patrons i simetries](../../actividad/index.html?id=pc-patrones-simetrias)
-- [Programa un robot humà](../../actividad/index.html?id=pc-robot-humano)
-- [Fes la coreografia dels bucles](../../actividad/index.html?id=bucles-coreografia)
-- [Depura un laberint](../../actividad/index.html?id=pc-laberinto-debugging)
-- [Classifica i interpreta dades](../../actividad/index.html?id=pc-datos-clasificacion)
-- [Explora el xifratge Cèsar](../../actividad/index.html?id=criptografia-cesar)
+- [Prueba la receta de instrucciones](../../actividad/index.html?id=pc-descomposicion-recetas)
+- [Explora patrones y simetrías](../../actividad/index.html?id=pc-patrones-simetrias)
+- [Programa un robot humano](../../actividad/index.html?id=pc-robot-humano)
+- [Haz la coreografía de los bucles](../../actividad/index.html?id=pc-bucles-coreografia)
+- [Depura un laberinto](../../actividad/index.html?id=pc-laberinto-debugging)
+- [Clasifica e interpreta datos](../../actividad/index.html?id=pc-datos-clasificacion)
+- [Explora el cifrado César](../../actividad/index.html?id=pc-criptografia-cesar)
