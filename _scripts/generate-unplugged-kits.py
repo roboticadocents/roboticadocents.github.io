@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-# check-es:skip
-"""Rebuild the four original classroom kits and their web previews.
+"""Reconstruye los cuatro kits de aula originales y sus vistas web.
 Requires reportlab, Pillow and pdftoppm. No network assets or fonts required.
 """
 from pathlib import Path
@@ -24,7 +23,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 W, H = A4
 INK = colors.HexColor('#0f172a')
 BLUE = colors.HexColor('#ebf5fd')
-TITLES = {'maleta-personatges': ('La maleta dels personatges', 'Educació Infantil'), 'fabrica-monstres': ('La fàbrica de monstres', 'Primer cicle'), 'correu-pixels': ('El correu secret de píxels', 'Segon cicle'), 'xarxa-missatgers': ('La xarxa de missatgers', 'Tercer cicle')}
+TITLES = {'maleta-personatges': ('La maleta de los personajes', 'Educación Infantil'), 'fabrica-monstres': ('La fábrica de monstruos', 'Primer ciclo'), 'correu-pixels': ('El correo secreto de píxeles', 'Segundo ciclo'), 'xarxa-missatgers': ('La red de mensajeros', 'Tercer ciclo')}
 
 def text(x, y, s, size=12, bold=False):
     font = 'KitSans-Bold' if bold else 'KitSans'
@@ -34,10 +33,10 @@ def page(label, hint):
     global num
     num += 1
     c.setFillColor(BLUE); c.rect(0, H-130, W, 130, fill=1, stroke=0)
-    text(36,H-35,'ROBÒTICA 200 / MATERIAL D’AULA',10,True)
+    text(36,H-35,'ROBÓTICA 200 / MATERIAL DE AULA',10,True)
     text(36,H-67,title,22,True); text(36,H-91,f'{level}  |  {label}',12)
     text(36,H-113,hint,10)
-    text(36,24,'Imprimiu en A4 al 100%. El color no és necessari per resoldre els reptes.',9)
+    text(36,24,'Imprimid en A4 al 100 %. El color no es necesario para resolver los retos.',9)
     text(W-60,24,str(num),10)
     c.setStrokeColor(INK); c.setLineWidth(1)
 def end(): c.showPage()
@@ -108,81 +107,81 @@ def monster(x,y):
 
 for slug,(title,level) in TITLES.items():
     num=0; c=canvas.Canvas(str(OUT/f'{slug}.pdf'),pagesize=A4)
-    c.setTitle(f'{title} - kit imprimible'); c.setAuthor('Robòtica per a docents')
+    c.setTitle(f'{title} - kit imprimible'); c.setAuthor('Robótica para docentes')
     if slug=='maleta-personatges':
-        page('01 / Targetes per retallar','Un joc per grup de 3 o 4. Retalleu els rectangles; un adult prepara les peces.')
-        cards([('Gorra','gorra'),('Botes','botes'),('Paraigua','paraigua'),('Aigua','aigua'),('Tovallola','tovallola'),('Abric','abric'),('Llibre','llibre'),('Pilota','pilota')]); end()
-        page('02 / La maleta','Col·loqueu les peces dins. Reserveu fora les que voleu discutir.')
+        page('01 / Tarjetas para recortar','Un juego por grupo de 3 o 4. Recortad los rectángulos; un adulto prepara las piezas.')
+        cards([('Gorra','gorra'),('Botas','botes'),('Paraguas','paraigua'),('Agua','aigua'),('Toalla','tovallola'),('Abrigo','abric'),('Libro','llibre'),('Pelota','pilota')]); end()
+        page('02 / La maleta','Colocad las piezas dentro. Dejad fuera las que queráis discutir.')
         c.roundRect(85,210,425,400,30); c.roundRect(220,610,155,30,10)
-        text(118,570,'Preparem la maleta de:',16,True); c.line(118,535,475,535)
-        text(118,490,'Anem a:',16,True); c.line(118,455,475,455)
-        text(118,255,'Trieu 3 objectes i expliqueu per què.',14); end()
-        page('03 / Destins i pistes','Trieu un destí. Les pistes es lligen en veu alta i també es representen amb gestos.')
-        for i,(dest,pistas) in enumerate([('PLATJA',['Fa sol. Ens banyarem.','Després ens haurem d’eixugar.']),('MUNTANYA',['Fa fred. Caminarem per fang.','Necessitarem beure aigua.']),('DIA DE PLUJA',['Plou i hi ha bassals.','Després llegirem dins de casa.'])]):
+        text(118,570,'Preparamos la maleta de:',16,True); c.line(118,535,475,535)
+        text(118,490,'Vamos a:',16,True); c.line(118,455,475,455)
+        text(118,255,'Elegid 3 objetos y explicad por qué.',14); end()
+        page('03 / Destinos y pistas','Elegid un destino. Las pistas se leen en voz alta y también se representan con gestos.')
+        for i,(dest,pistas) in enumerate([('PLAYA',['Hace sol. Nos bañaremos.','Después tendremos que secarnos.']),('MONTAÑA',['Hace frío. Caminaremos por barro.','Necesitaremos beber agua.']),('DÍA DE LLUVIA',['Llueve y hay charcos.','Después leeremos dentro de casa.'])]):
             y=510-i*155; box(36,y,523,135); text(55,y+100,dest,18,True); text(55,y+70,pistas[0],14); text(55,y+43,pistas[1],14); weather(i,480,y+73)
         end()
-        page('04 / Exemple i conversa','Guia docent. No és una llista única de respostes correctes.')
-        lines(650,['1. Platja: fa sol, ens banyarem i ens eixugarem.','2. Una tria possible: gorra, aigua i tovallola.','3. La pilota també es pot defensar: què deixaríem fora?'])
+        page('04 / Ejemplo y conversación','Guía docente. No es una lista única de respuestas correctas.')
+        lines(650,['1. Playa: hace sol, nos bañaremos y nos secaremos.','2. Una elección posible: gorra, agua y toalla.','3. La pelota también se puede defender: ¿qué dejaríamos fuera?'])
         for i,k in enumerate(['gorra','aigua','tovallola']): icon(k,130+i*160,480,1.5)
-        lines(385,['Canvi de pista: ara fa fred i caminem per fang.','Quina peça canviaries? Quina pista justifica el canvi?','Observem: relaciona una peça amb una pista?','Revisa la tria quan canvia una condició?'])
+        lines(385,['Cambio de pista: ahora hace frío y caminamos por barro.','¿Qué pieza cambiarías? ¿Qué pista justifica el cambio?','¿Observamos: relaciona una pieza con una pista?','¿Revisa la elección cuando cambia una condición?'])
         end()
     elif slug=='fabrica-monstres':
-        page('01 / Peces per retallar','Imprimiu aquesta pàgina dues vegades per parella. Afegiu un cos de la pàgina 2.')
-        cards([('Ull','ull')]*4+[('Pota','pota')]*3+[('Banya','banya')]); end()
-        page('02 / Dos cossos de muntatge','Retalleu els cossos. Poseu les peces damunt; no cal enganxar-les.')
+        page('01 / Piezas para recortar','Imprimid esta página dos veces por pareja. Añadid un cuerpo de la página 2.')
+        cards([('Ojo','ull')]*4+[('Pata','pota')]*3+[('Cuerno','banya')]); end()
+        page('02 / Dos cuerpos de montaje','Recortad los cuerpos. Poned las piezas encima; no hace falta pegarlas.')
         for y in [440,155]:
-            c.roundRect(190,y,215,220,28); text(235,y+95,'COS',24,True)
+            c.roundRect(190,y,215,220,28); text(235,y+95,'CUERPO',24,True)
         end()
-        page('03 / Recepta i comprovació','Marqueu la posició respecte del cos. Intercanvieu la recepta sense mostrar el model.')
-        for i,s in enumerate(['1. Cos: posa’l al centre.','2. Ulls: quants? ____  On? ____________________','3. Potes: quantes? ____  On? __________________','4. Banyes: quantes? ____  On? _________________']):
+        page('03 / Receta y comprobación','Marcad la posición respecto al cuerpo. Intercambiad la receta sin mostrar el modelo.')
+        for i,s in enumerate(['1. Cuerpo: ponlo en el centro.','2. Ojos: ¿cuántos? ____  ¿Dónde? ____________________','3. Patas: ¿cuántas? ____  ¿Dónde? __________________','4. Cuernos: ¿cuántos? ____  ¿Dónde? _________________']):
             box(36,585-i*85,523,65); text(50,610-i*85,s,12)
-        lines(235,['Hem obtingut el mateix? __________________________','La instrucció que hem canviat: _____________________','Ara diu: ________________________________________']); end()
-        page('04 / Una recepta que es pot executar','Guia docent i exemple per explicar la primera ronda.')
+        lines(235,['¿Hemos obtenido lo mismo? __________________________','La instrucción que hemos cambiado: _____________________','Ahora dice: ________________________________________']); end()
+        page('04 / Una receta que se puede ejecutar','Guía docente y ejemplo para explicar la primera ronda.')
         monster(300,500)
-        lines(340,['1. Poseu un cos al centre.','2. Poseu dos ulls dins del cos, a la part de dalt.','3. Poseu dues potes davall del cos, una a cada costat.','4. Poseu una banya damunt del cos, al centre.'])
-        lines(200,['Error per discutir: «posa ulls» no diu quants ni on.','Compareu quantitat i posició, no la bellesa del dibuix.','Una recepta diferent pot descriure el mateix monstre.']); end()
+        lines(340,['1. Poned un cuerpo en el centro.','2. Poned dos ojos dentro del cuerpo, en la parte de arriba.','3. Poned dos patas debajo del cuerpo, una a cada lado.','4. Poned un cuerno encima del cuerpo, en el centro.'])
+        lines(200,['Error para discutir: «pon ojos» no dice cuántos ni dónde.','Comparad cantidad y posición, no la belleza del dibujo.','Una receta diferente puede describir el mismo monstruo.']); end()
     elif slug=='correu-pixels':
         rows=['00100','01110','11111','00100','00100']
         codes=['2, 1, 2','1, 3, 1','0, 5','2, 1, 2','2, 1, 2']
-        page('01 / Exemple resolt','Sempre comencem comptant les caselles blanques, encara que siguen zero.')
+        page('01 / Ejemplo resuelto','Siempre empezamos contando las casillas blancas, aunque sean cero.')
         grid(85,570,rows,43)
         for i,s in enumerate(codes): text(355,580-i*43,f'Fila {i+1}: {s}',16,True)
-        lines(280,['Llegiu cada fila d’esquerra a dreta.','Alternem: blanques, negres, blanques, negres...','Fila 3: 0 blanques i 5 negres. El 0 inicial és necessari.','Cada fila ha de sumar 5. No s’escriuen zeros al final.']); end()
-        page('02 / Emissor','Dibuixa una icona en la graella. Envia només la pàgina 3 al receptor.')
+        lines(280,['Leed cada fila de izquierda a derecha.','Alternamos: blancas, negras, blancas, negras...','Fila 3: 0 blancas y 5 negras. El 0 inicial es necesario.','Cada fila debe sumar 5. No se escriben ceros al final.']); end()
+        page('02 / Emisor','Dibuja un icono en la cuadrícula. Envía solo la página 3 al receptor.')
         grid(205,575,None,42)
-        lines(295,['Nom del missatge: ______________________________','Abans d’enviar: cada fila suma 5?','Has començat comptant les blanques?','Has separat les cinc files?']); end()
-        page('03 / Missatge codificat','Retalla per la línia. El receptor no ha de veure el dibuix original.')
+        lines(295,['Nombre del mensaje: ______________________________','¿Antes de enviar: cada fila suma 5?','¿Has empezado contando las blancas?','¿Has separado las cinco filas?']); end()
+        page('03 / Mensaje codificado','Recorta por la línea. El receptor no debe ver el dibujo original.')
         for i in range(5): text(50,650-i*40,f'Fila {i+1}: ______________________________________',15)
         c.setDash(5,4); c.line(36,445,559,445); c.setDash()
-        text(45,410,'RECEPTOR / Reconstrueix sense mirar l’original',14,True)
-        grid(210,355,None,39); text(45,100,'Fila revisada i motiu: _______________________________',12); end()
-        page('04 / Taller de reparació','Guia docent. Tapeu les respostes durant la primera prova.')
-        lines(645,['A. Codi rebut per a una fila de 5 caselles: 2, 2','Què podem detectar? La suma és 4: falta informació.','No podem deduir amb certesa quina casella falta.','','B. Codi rebut: 1, 3, 1','La suma és 5. Això garanteix que el dibuix siga correcte?','No: el codi 2, 1, 2 també suma 5 i dibuixa una altra fila.','','C. Comparem maneres d’escriure una fila negra.','Amb bits: 1 1 1 1 1. Amb recomptes: 0, 5.','Comptem nombres escrits, no bits ni mida d’un fitxer.','Els recomptes no sempre fan el missatge més curt.']); end()
+        text(45,410,'RECEPTOR / Reconstruye sin mirar el original',14,True)
+        grid(210,355,None,39); text(45,100,'Fila revisada y motivo: _______________________________',12); end()
+        page('04 / Taller de reparación','Guía docente. Tapad las respuestas durante la primera prueba.')
+        lines(645,['A. Código recibido para una fila de 5 casillas: 2, 2','¿Qué podemos detectar? La suma es 4: falta información.','No podemos deducir con certeza qué casilla falta.','','B. Código recibido: 1, 3, 1','La suma es 5. ¿Esto garantiza que el dibujo sea correcto?','No: el código 2, 1, 2 también suma 5 y dibuja otra fila.','','C. Comparamos formas de escribir una fila negra.','Con bits: 1 1 1 1 1. Con recuentos: 0, 5.','Contamos números escritos, no bits ni tamaño de un archivo.','Los recuentos no siempre hacen el mensaje más corto.']); end()
     else:
-        page('01 / Mapa de la xarxa','Un node pot ser una taula. Només es pot enviar per les línies dibuixades.')
+        page('01 / Mapa de la red','Un nodo puede ser una mesa. Solo se puede enviar por las líneas dibujadas.')
         pts={'A':(95,525),'B':(285,645),'C':(285,405),'D':(490,525)}
         for a,b in [('A','B'),('A','C'),('B','C'),('B','D'),('C','D')]: c.line(*pts[a],*pts[b])
         for name,(x,y) in pts.items():
             c.setFillColor(colors.white); c.circle(x,y,30,fill=1); text(x-7,y-7,name,22,True)
-        lines(285,['Origen A / Destí D. Camins: A-B-D o A-C-D.','També podeu passar per B-C. Compteu cada salt.','Protocol: espera un torn, mou un paquet un enllaç.','Cada enllaç admet un paquet per torn, en total.']); end()
-        page('02 / Paquets per retallar','Retalleu els quatre paquets. El receptor només coneix el total i l’identificador.')
-        for i,word in enumerate(['EL','ROBOT','PORTA','LLIBRES']):
+        lines(285,['Origen A / Destino D. Caminos: A-B-D o A-C-D.','También podéis pasar por B-C. Contad cada salto.','Protocolo: espera un turno, mueve un paquete un enlace.','Cada enlace admite un paquete por turno, en total.']); end()
+        page('02 / Paquetes para recortar','Recortad los cuatro paquetes. El receptor solo conoce el total y el identificador.')
+        for i,word in enumerate(['EL','ROBOT','LLEVA','LIBROS']):
             y=525-i*125; box(36,y,523,110)
-            text(52,y+82,f'Missatge M1 | Origen A | Destí D | {i+1} de 4',13,True)
+            text(52,y+82,f'Mensaje M1 | Origen A | Destino D | {i+1} de 4',13,True)
             text(52,y+38,word,23,True)
         end()
-        page('03 / Incidències i confirmacions','Retalleu les targetes. Introduïu només una incidència cada ronda.')
-        labels=[('CAMÍ TANCAT','Tanqueu B-D. Busqueu un altre camí.'),('PAQUET RETINGUT','El docent reté el paquet 2 en aquesta ronda.'),('ARRIBADA DESORDENADA','Feu arribar el paquet 4 abans del paquet 3.'),('CONFIRMACIÓ M1','He rebut: 1 / 2 / 3 / 4. Falta: __________')]
+        page('03 / Incidencias y confirmaciones','Recortad las tarjetas. Introducid solo una incidencia cada ronda.')
+        labels=[('CAMINO CERRADO','Cerrad B-D. Buscad otro camino.'),('PAQUETE RETENIDO','El docente retiene el paquete 2 en esta ronda.'),('LLEGADA DESORDENADA','Haced llegar el paquete 4 antes del paquete 3.'),('CONFIRMACIÓN M1','He recibido: 1 / 2 / 3 / 4. Falta: __________')]
         for i,(a,b) in enumerate(labels):
             y=525-i*125; box(36,y,523,110); text(52,y+75,a,17,True); text(52,y+40,b,12)
         end()
-        page('04 / Registre i solució docent','Un registre per equip. La confirmació torna a A pels mateixos enllaços.')
-        for i,s in enumerate(['Torn','Paquet','De','A']): text(45+i*130,640,s,12,True)
+        page('04 / Registro y solución docente','Un registro por equipo. La confirmación vuelve a A por los mismos enlaces.')
+        for i,s in enumerate(['Turno','Paquete','De','A']): text(45+i*130,640,s,12,True)
         for r in range(9):
             y=620-r*30; c.line(36,y,559,y)
             for x in [36,166,296,426,559]: c.line(x,y,x,y-30)
         c.line(36,350,559,350)
-        lines(285,['Solució: EL ROBOT PORTA LLIBRES.','Si falta 2/4, sabem què falta, però no el seu contingut.','D demana «M1, reenvia 2»; A conserva una còpia.','En tancar B-D, B-C-D és una alternativa des de B.','Els paquets es poden ordenar gràcies als números.','Aquesta és una simulació amb torns, no Internet real.']); end()
+        lines(285,['Solución: EL ROBOT LLEVA LIBROS.','Si falta 2/4, sabemos qué falta, pero no su contenido.','D pide «M1, reenvía 2»; A conserva una copia.','Al cerrar B-D, B-C-D es una alternativa desde B.','Los paquetes se pueden ordenar gracias a los números.','Esta es una simulación con turnos, no Internet real.']); end()
     c.save()
     with tempfile.TemporaryDirectory() as tmp:
         subprocess.run(['pdftoppm','-scale-to','1400','-png',str(OUT/f'{slug}.pdf'),str(Path(tmp)/'page')],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
@@ -192,7 +191,7 @@ for slug,(title,level) in TITLES.items():
         for n,index in enumerate(chosen,1):
             im=Image.open(files[index]).convert('RGB')
             im.save(OUT/f'{slug}-{n}.webp','WEBP',quality=90)
-print('Generated four 4-page kits and eight web previews.')
+print('Generados cuatro kits de 4 páginas y ocho vistas web.')
 
 rows=['00100','01110','11111','00100','00100']
 codes=['2, 1, 2','1, 3, 1','0, 5','2, 1, 2','2, 1, 2']
@@ -204,44 +203,44 @@ with tempfile.TemporaryDirectory() as tmp:
         c=canvas.Canvas(str(target),pagesize=(960,460))
         c.setFillColor(colors.white); c.rect(0,0,960,460,fill=1,stroke=0)
         c.setFillColor(BLUE); c.roundRect(16,16,928,428,20,fill=1,stroke=0)
-        text(38,405,title,26,True); text(38,376,level+' / Així es juga',14)
+        text(38,405,title,26,True); text(38,376,level+' / Así se juega',14)
         for i in range(3):
             box(34+i*308,48,280,300)
             c.setFillColor(INK); c.circle(59+i*308,322,14,fill=1)
             c.setFillColor(colors.white); c.setFont('KitSans-Bold',12); c.drawCentredString(59+i*308,318,str(i+1))
         if slug=='maleta-personatges':
-            text(83,317,'Escoltem les pistes',14,True)
-            weather(0,173,235); text(61,160,'Sol, bany i eixugar-se.',13)
-            text(391,317,'Triem tres objectes',14,True)
+            text(83,317,'Escuchamos las pistas',14,True)
+            weather(0,173,235); text(61,160,'Sol, baño y secarse.',13)
+            text(391,317,'Elegimos tres objetos',14,True)
             for i,k in enumerate(['gorra','aigua','tovallola']): icon(k,390+i*75,225,1)
-            text(366,160,'Quina pista ho explica?',13)
-            text(699,317,'Canvia el destí',14,True)
+            text(366,160,'¿Qué pista lo explica?',13)
+            text(699,317,'Cambia el destino',14,True)
             weather(1,790,250); icon('botes',755,160); icon('abric',840,160)
-            text(677,90,'Què conservem? Què canviem?',12)
+            text(677,90,'¿Qué conservamos? ¿Qué cambiamos?',12)
         elif slug=='fabrica-monstres':
-            text(83,317,'Creem un model',14,True); monster(175,200)
-            text(391,317,'Escrivim la recepta',14,True)
-            for i,s in enumerate(['1 cos al centre','2 ulls dins, dalt','2 potes davall','1 banya damunt']): text(370,260-i*38,s,15)
-            text(699,317,'Muntem i comparem',14,True); monster(790,200)
-            text(677,79,'Si no coincideix, revisem un pas.',12)
+            text(83,317,'Creamos un modelo',14,True); monster(175,200)
+            text(391,317,'Escribimos la receta',14,True)
+            for i,s in enumerate(['1 cuerpo al centro','2 ojos dentro, arriba','2 patas debajo','1 cuerno encima']): text(370,260-i*38,s,15)
+            text(699,317,'Montamos y comparamos',14,True); monster(790,200)
+            text(677,79,'Si no coincide, revisamos un paso.',12)
         elif slug=='correu-pixels':
-            text(83,317,'Dibuixem',14,True); grid(105,250,rows,27)
-            text(391,317,'Enviem recomptes',14,True)
+            text(83,317,'Dibujamos',14,True); grid(105,250,rows,27)
+            text(391,317,'Enviamos recuentos',14,True)
             for i,s in enumerate(codes): text(390,260-i*33,f'{i+1}:   {s}',16)
-            text(699,317,'Reconstruïm',14,True); grid(720,250,rows,27)
-            text(677,79,'Comparem amb l’original.',12)
+            text(699,317,'Reconstruimos',14,True); grid(720,250,rows,27)
+            text(677,79,'Comparamos con el original.',12)
         else:
-            text(83,317,'Separem en paquets',14,True)
-            for i,s in enumerate(['1/4  EL','2/4  ROBOT','3/4  PORTA','4/4  LLIBRES']):
+            text(83,317,'Separamos en paquetes',14,True)
+            for i,s in enumerate(['1/4  EL','2/4  ROBOT','3/4  LLEVA','4/4  LIBROS']):
                 box(63,243-i*44,220,35); text(76,254-i*44,s,13,True)
-            text(391,317,'Triem una ruta',14,True)
+            text(391,317,'Elegimos una ruta',14,True)
             pts={'A':(375,200),'B':(478,265),'C':(478,130),'D':(585,200)}
             for a,b in [('A','B'),('A','C'),('B','C'),('B','D'),('C','D')]: c.line(*pts[a],*pts[b])
             for name,(x,y) in pts.items():
                 c.setFillColor(colors.white); c.circle(x,y,19,fill=1); text(x-5,y-5,name,14,True)
-            text(699,317,'Ordenem i confirmem',14,True)
-            for i,s in enumerate(['EL ROBOT','PORTA LLIBRES','Rebuts: 1, 2, 3, 4','Falta 2? Demanem 2.']): text(682,260-i*40,s,15,i<2)
+            text(699,317,'Ordenamos y confirmamos',14,True)
+            for i,s in enumerate(['EL ROBOT','LLEVA LIBROS','Recibidos: 1, 2, 3, 4','¿Falta 2? Pedimos 2.']): text(682,260-i*40,s,15,i<2)
         c.save()
         subprocess.run(['pdftoppm','-scale-to','1600','-singlefile','-png',str(target),str(Path(tmp)/slug)],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
         Image.open(Path(tmp)/f'{slug}.png').convert('RGB').save(OUT/f'{slug}-inici.webp','WEBP',quality=92)
-print('Generated four landscape activity explainers.')
+print('Generados cuatro explicadores de actividad en horizontal.')

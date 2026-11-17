@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-# check-es:skip
 """Rebuild nine classroom kits and 27 web diagrams, using local vector artwork.
 Requires ReportLab, Pillow, pdftoppm and DejaVu Sans fonts. No network access.
-Run from any directory. Existing Robot Humà and the four new kits are untouched.
+Run from any directory. Existing Robot Humano and the four new kits are untouched.
 """
 from pathlib import Path
 import itertools
@@ -25,20 +24,20 @@ INK=HexColor('#0f172a');MUTED=HexColor('#64748b');BLUE=HexColor('#ebf5fd')
 W,H=A4
 C=None
 TITLES={
-'pixels-binaris':('Píxels: un dibuix en 25 bits','Primer cicle'),
-'xarxa-ordenacio':('La xarxa que ordena','Tercer cicle'),
-'laberint-debugging':('El laberint dels errors','Primer cicle'),
-'condicionals-moviment':('La màquina de les decisions','Primer cicle'),
-'criptografia-cesar':('El taller de missatges Cèsar','Tercer cicle'),
-'bucles-coreografia':('La coreografia dels bucles','Primer cicle'),
-'patrons-simetries':('Detectius de patrons','Educació Infantil'),
-'descomposicio-receptes':('Receptes per preparar un enviament','Segon cicle'),
-'dades-classificacio':('El museu de les dades','Segon cicle')}
+'pixels-binaris':('Píxeles: un dibujo en 25 bits','Primer ciclo'),
+'xarxa-ordenacio':('La red que ordena','Tercer ciclo'),
+'laberint-debugging':('El laberinto de los errores','Primer ciclo'),
+'condicionals-moviment':('La máquina de las decisiones','Primer ciclo'),
+'criptografia-cesar':('El taller de mensajes César','Tercer ciclo'),
+'bucles-coreografia':('La coreografía de los bucles','Primer ciclo'),
+'patrons-simetries':('Detectives de patrones','Educación Infantil'),
+'descomposicio-receptes':('Recetas para preparar un envío','Segundo ciclo'),
+'dades-classificacio':('El museo de los datos','Segundo ciclo')}
 L=['10000','10000','10000','10000','11111']
 ARROW=['00100','00010','11111','00010','00100']
 STAGES=[[(0,1),(2,3)],[(0,2),(1,3)],[(1,2)]]
 ALPHABET='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-TASKS=[('O','Obri el sobre'),('M','Dibuixa el missatge'),('I','Introdueix el missatge'),('T','Tanca el sobre'),('E','Escriu el destí'),('C','Comprova l’enviament'),('L','Lliura l’enviament')]
+TASKS=[('O','Abre el sobre'),('M','Dibuja el mensaje'),('I','Introduce el mensaje'),('T','Cierra el sobre'),('E','Escribe el destino'),('C','Comprueba el envío'),('L','Entrega el envío')]
 EDGES=[('O','I'),('M','I'),('I','T'),('T','C'),('E','C'),('C','L')]
 
 def text(x,y,s,size=11,bold=False):
@@ -63,11 +62,11 @@ def box(x,y,w,h,fill=white):
 def line(x,y,xx,yy):C.setStrokeColor(INK);C.setLineWidth(1);C.line(x,y,xx,yy)
 def header(n,label,hint):
     C.setFillColor(BLUE);C.rect(0,H-130,W,130,fill=1,stroke=0)
-    text(36,H-32,'ROBÒTICA 200 / MATERIAL D’AULA',10,True)
+    text(36,H-32,'ROBÓTICA 200 / MATERIAL DE AULA',10,True)
     text(36,H-65,TITLES[slug][0],20,True)
     text(36,H-90,f'{TITLES[slug][1]} | {label}',11)
     text(36,H-113,hint,9)
-    text(36,24,'A4 al 100%. Apte per a blanc i negre. Solucions docents: pàgina 4.',9)
+    text(36,24,'A4 al 100 %. Apto para blanco y negro. Soluciones docentes: página 4.',9)
     text(W-50,24,str(n),10)
 def end():C.showPage()
 def shape(kind,x,y,size=18,striped=False):
@@ -178,292 +177,292 @@ def instruction_diagrams(kind):
     # Content-specific overview, example and repair visuals; all are vector-drawn.
     if slug=='pixels-binaris':
         if kind==0:
-            text(40,321,'1. Llegim el codi',17,True);lines(40,278,['1 0 0 0 0']*4+['1 1 1 1 1'],17,36)
-            text(360,321,'2. Pintem per files',17,True);grid(385,103,L,s=36)
-            text(684,321,'3. Comprovem',17,True);lines(684,268,['5 files de 5 valors.','0 = blanc; 1 = negre.','Mateix ordre, mateix dibuix.'],13,35)
+            text(40,321,'1. Leemos el código',17,True);lines(40,278,['1 0 0 0 0']*4+['1 1 1 1 1'],17,36)
+            text(360,321,'2. Pintamos por filas',17,True);grid(385,103,L,s=36)
+            text(684,321,'3. Comprobamos',17,True);lines(684,268,['5 filas de 5 valores.','0 = blanco; 1 = negro.','Mismo orden, mismo dibujo.'],13,35)
         elif kind==1:
-            text(42,323,'Una fila és una seqüència',19,True);sequence(44,213,['0','0','1','0','1'],s=63)
+            text(42,323,'Una fila es una secuencia',19,True);sequence(44,213,['0','0','1','0','1'],s=63)
             for i,v in enumerate('00101'):
                 C.setFillColor(INK if v=='1' else white);C.setStrokeColor(INK);C.rect(453+i*78,212,50,50,fill=1)
-            lines(45,140,['Llegim d’esquerra a dreta. En acabar, baixem a la fila següent.','El dibuix complet té 25 valors binaris: 25 bits en aquest model.'],14,31)
+            lines(45,140,['Leemos de izquierda a derecha. Al acabar, bajamos a la fila siguiente.','El dibujo completo tiene 25 valores binarios: 25 bits en este modelo.'],14,31)
         else:
-            text(42,322,'Codi rebut: 1 0 0 0',22,True);text(42,276,'Falta un valor per completar cinc caselles.',16)
-            lines(42,211,['No sabem quina posició s’ha perdut.','Demanem que es reenvie la fila completa.','Una fila de cinc valors també pot contindre un valor equivocat.'],16,40)
+            text(42,322,'Código recibido: 1 0 0 0',22,True);text(42,276,'Falta un valor para completar cinco casillas.',16)
+            lines(42,211,['No sabemos qué posición se ha perdido.','Pedimos que se reenvíe la fila completa.','Una fila de cinco valores también puede contener un valor equivocado.'],16,40)
     elif slug=='xarxa-ordenacio':
         if kind<2:
             network(95,285,170,60)
-            text(45,55,'En cada comparador: menor al canal de dalt; major al de baix.',15)
+            text(45,55,'En cada comparador: menor en el canal de arriba; mayor en el de abajo.',15)
             if kind==1:lines(805,290,['3,1,4,2','1,3,2,4','1,3,2,4','1,2,3,4'],12,44)
         else:
-            lines(45,300,['Sense l’últim comparador: 1, 3, 2, 4.','Els extrems estan bé, però el centre encara no està ordenat.','Compareu els canals 2 i 3: obtenim 1, 2, 3, 4.'],19,55)
+            lines(45,300,['Sin el último comparador: 1, 3, 2, 4.','Los extremos están bien, pero el centro todavía no está ordenado.','Comparad los canales 2 y 3: obtenemos 1, 2, 3, 4.'],19,55)
     elif slug=='laberint-debugging':
         if kind==0:
-            maze(65,85,56,True);text(400,310,'1. Prediem',20,True);text(400,270,'2. Provem sense canviar el programa',17,True);text(400,230,'3. Registrem i tornem a provar',17,True)
+            maze(65,85,56,True);text(400,310,'1. Predecimos',20,True);text(400,270,'2. Probamos sin cambiar el programa',17,True);text(400,230,'3. Registramos y volvemos a probar',17,True)
             sequence(400,120,['U','U','R','R','R','U'],s=66)
         elif kind==1:
             for i,k in enumerate('URBE'):
                 x=43+i*230;box(x,100,208,240);move_arrow(k,x+104,245,1.3)
-                text(x+20,145,{'U':'Amunt','R':'Dreta','B':'Avall','E':'Esquerra'}[k],17,True)
-            text(45,58,'Les direccions són fixes al paper. No són girs del robot.',16)
+                text(x+20,145,{'U':'Arriba','R':'Derecha','B':'Abajo','E':'Izquierda'}[k],17,True)
+            text(45,58,'Las direcciones son fijas en el papel. No son giros del robot.',16)
         else:
-            text(40,317,'ABANS / topa a la segona ordre',18,True);sequence(40,222,['U','R','U','R','R','U'],s=57)
-            text(510,317,'DESPRÉS / intercanviem 2 i 3',18,True);sequence(510,222,['U','U','R','R','R','U'],s=57)
-            lines(42,148,['La primera seqüència intenta entrar a B3.','Reiniciem a A4 i provem la nova ruta sencera.'],17,35)
+            text(40,317,'ANTES / choca en la segunda orden',18,True);sequence(40,222,['U','R','U','R','R','U'],s=57)
+            text(510,317,'DESPUÉS / intercambiamos 2 y 3',18,True);sequence(510,222,['U','U','R','R','R','U'],s=57)
+            lines(42,148,['La primera secuencia intenta entrar en B3.','Reiniciamos en A4 y probamos la nueva ruta entera.'],17,35)
     elif slug=='condicionals-moviment':
         if kind==0:
-            shape('S',140,235,57);text(55,115,'Entrada: estrela',16,True)
-            box(310,180,300,110);text(334,242,'Té una estrela?',20,True)
+            shape('S',140,235,57);text(55,115,'Entrada: estrella',16,True)
+            box(310,180,300,110);text(334,242,'¿Tiene una estrella?',20,True)
             line(212,235,310,235);line(610,260,712,300);line(610,210,712,150)
             shape('Q',795,300,26);shape('O',795,150,26)
-            text(700,342,'SÍ / llibre',16,True);text(700,90,'NO / música',16,True)
+            text(700,342,'SÍ / libro',16,True);text(700,90,'NO / música',16,True)
         elif kind==1:
-            for i,(k,label,result) in enumerate([('S','Estrela','LLIBRE'),('O','Cercle','MÚSICA'),('T','Triangle','MÚSICA')]):
+            for i,(k,label,result) in enumerate([('S','Estrella','LIBRO'),('O','Círculo','MÚSICA'),('T','Triángulo','MÚSICA')]):
                 x=45+i*315;box(x,100,285,245);shape(k,x+142,260,36)
                 text(x+20,185,label,18,True);text(x+20,137,'Resposta: '+result,15,True)
-            text(45,55,'«Si no» inclou totes les entrades que no tenen estrela.',16)
+            text(45,55,'«Si no» incluye todas las entradas que no tienen estrella.',16)
         else:
             for i,k in enumerate('SSOOTT'):
                 x=40+i*156;box(x,185,140,148);shape(k,x+70,266,24)
                 if i%2==0:
                     for dx in [20,45,70,95,120]:C.setFillColor(INK);C.circle(x+dx,207,2,fill=1,stroke=0)
-            lines(45,135,['Estrela I punts: només la primera targeta.','Estrela O punts: targetes 1, 2, 3 i 5.'],18,40)
+            lines(45,135,['Estrella Y puntos: solo la primera tarjeta.','Estrella O puntos: tarjetas 1, 2, 3 y 5.'],18,40)
     elif slug=='criptografia-cesar':
         if kind==0:
             wheel(180,220,110,'EXTERIOR');wheel(445,220,91,'INTERIOR',shift=3)
-            lines(590,310,['A exterior amb D interior.','Xifrar: exterior > interior.','Desxifrar: interior > exterior.','Clau +3.'],14,45)
+            lines(590,310,['A exterior con D interior.','Cifrar: exterior > interior.','Descifrar: interior > exterior.','Clave +3.'],14,45)
         elif kind==1:
-            lines(45,310,['ALFABET: A B C D E F ... X Y Z','XIFRAT:  D E F G H I ... A B C','HOLA > KROD','ZOO > CRR'],22,60)
-        else:lines(45,310,['KROD amb clau +3 torna a HOLA.','Per desxifrar, retrocedim tres posicions.','Aquesta roda té només 26 desplaçaments.','És un joc de substitució, no protecció per a secrets reals.'],20,57)
+            lines(45,310,['ALFABETO: A B C D E F ... X Y Z','CIFRADO:  D E F G H I ... A B C','HOLA > KROD','ZOO > CRR'],22,60)
+        else:lines(45,310,['KROD con clave +3 vuelve a HOLA.','Para descifrar, retrocedemos tres posiciones.','Esta rueda tiene solo 26 desplazamientos.','Es un juego de sustitución, no protección para secretos reales.'],20,57)
     elif slug=='bucles-coreografia':
         if kind==0:
-            text(44,320,'Un bloc de tres accions',20,True);sequence(44,206,['M','E','T'],s=75,directional=False)
-            text(400,282,'REPETEIX 3 VEGADES',23,True)
-            lines(400,219,['M E T | M E T | M E T','3 voltes × 3 accions = 9 accions.'],20,44)
+            text(44,320,'Un bloque de tres acciones',20,True);sequence(44,206,['M','E','T'],s=75,directional=False)
+            text(400,282,'REPITE 3 VECES',23,True)
+            lines(400,219,['M E T | M E T | M E T','3 vueltas × 3 acciones = 9 acciones.'],20,44)
         elif kind==1:
-            for i,(k,label) in enumerate([('M','Mans'),('E','Espatlles'),('T','Taula')]):
+            for i,(k,label) in enumerate([('M','Manos'),('E','Hombros'),('T','Mesa')]):
                 x=45+i*315;box(x,100,285,245);action(k,x+142,250,1.6)
                 text(x+25,150,k+' / '+label,20,True)
-            text(45,55,'Una acció per símbol. També es pot fer assenyalant.',16)
-        else:lines(45,310,['REPETEIX 3: [M E T]  >  9 accions','REPETEIX 3: [M E]; després T  >  7 accions','El límit del bloc canvia el que es repeteix.'],20,65)
+            text(45,55,'Una acción por símbolo. También se puede hacer señalando.',16)
+        else:lines(45,310,['REPITE 3: [M E T]  >  9 acciones','REPITE 3: [M E]; después T  >  7 acciones','El límite del bloque cambia lo que se repite.'],20,65)
     elif slug=='patrons-simetries':
         if kind==0:
             for i,k in enumerate('OOT'*3):shape(k,75+i*100,245,24)
-            text(45,115,'Busquem el tros més curt que repetim: cercle, cercle, triangle.',18,True)
+            text(45,115,'Buscamos el trozo más corto que repetimos: círculo, círculo, triángulo.',18,True)
         elif kind==1:
             for i,k in enumerate('OOT'):
                 shape(k,110+i*135,245,30)
-            lines(535,300,['Cercle = toca els genolls.','Triangle = alça una mà.','Genolls, genolls, mà.'],17,45)
-            text(45,90,'Canvien els materials. Es conserva l’ordre A A B.',18,True)
+            lines(535,300,['Círculo = toca las rodillas.','Triángulo = alza una mano.','Rodillas, rodillas, mano.'],17,45)
+            text(45,90,'Cambian los materiales. Se conserva el orden A A B.',18,True)
         else:
             for i,k in enumerate('OOTOOTOO'):shape(k,75+i*100,245,24)
             text(865,230,'?',34,True)
-            text(45,110,'Si repetim A A B, falta un triangle. Expliquem la regla.',18,True)
+            text(45,110,'Si repetimos A A B, falta un triángulo. Explicamos la regla.',18,True)
     elif slug=='descomposicio-receptes':
         if kind==0:
             for i in range(3):box(40+i*315,100,285,245)
-            text(58,305,'1. Sobre buit',18,True)
+            text(58,305,'1. Sobre vacío',18,True)
             box(90,157,180,110);line(90,267,180,206);line(180,206,270,267)
-            text(373,305,'2. Set passos',18,True)
-            lines(375,260,['Obrir, preparar, introduir...','Què ha de passar abans?','Una acció per targeta.'],15,43)
-            text(688,305,'3. Enviament fet',18,True)
+            text(373,305,'2. Siete pasos',18,True)
+            lines(375,260,['Abrir, preparar, introducir...','¿Qué debe pasar antes?','Una acción por tarjeta.'],15,43)
+            text(688,305,'3. Envío hecho',18,True)
             box(720,157,180,110);text(735,218,'BIBLIOTECA',14,True);shape('S',810,184,15)
         elif kind==1:
             pos={'O':(125,280),'M':(125,145),'I':(360,220),'T':(560,220),'E':(560,100),'C':(760,220),'L':(760,100)}
             for a,b in EDGES:connector(*pos[a],*pos[b])
             for k,(x,y) in pos.items():box(x-38,y-23,76,46);text(x-8,y-8,k,22,True)
-            text(45,50,'Una línia indica «ha de passar abans», no una ordre de caminar.',15)
-        else:lines(45,310,['O, M, E, I, T, C, L: funciona.','E, M, O, I, T, C, L: també funciona.','T abans d’I: el sobre es tanca abans de posar el missatge.','No hi ha una única recepta: cal respectar les dependències.'],18,55)
+            text(45,50,'Una línea indica «debe pasar antes», no una orden de caminar.',15)
+        else:lines(45,310,['O, M, E, I, T, C, L: funciona.','E, M, O, I, T, C, L: también funciona.','T antes de I: el sobre se cierra antes de poner el mensaje.','No hay una única receta: hay que respetar las dependencias.'],18,55)
     else:
         if kind==0:
             for i in range(4):data_card(48+i*147,140,i,133,160)
-            lines(665,310,['Regla: té ratlles?','P2 i P4: sí.','P1 i P3: no.','P9: no ho sabem.'],16,48)
+            lines(665,310,['Regla: ¿tiene rayas?','P2 y P4: sí.','P1 y P3: no.','P9: no lo sabemos.'],16,48)
         elif kind==1:
-            table(45,330,['ID','Forma','Mida','Ratlles'],[['P1','Cercle','Petit','0'],['P2','Cercle','Petit','1'],['P9','Triangle','Gran','?']],[100,230,200,200],53)
-            text(45,90,'Cada identificador és una fila; cada propietat és una columna.',16)
-        else:lines(45,310,['Sense ratlles no és el mateix que «no ho sabem».','P9 té la superfície amagada: registrem ?','No inventem un 0 per completar la taula.','Un recompte és fiable si la regla i les dades són clares.'],19,57)
+            table(45,330,['ID','Forma','Tamaño','Rayas'],[['P1','Círculo','Pequeño','0'],['P2','Círculo','Pequeño','1'],['P9','Triángulo','Grande','?']],[100,230,200,200],53)
+            text(45,90,'Cada identificador es una fila; cada propiedad es una columna.',16)
+        else:lines(45,310,['Sin rayas no es lo mismo que «no lo sabemos».','P9 tiene la superficie tapada: registramos ?','No inventamos un 0 para completar la tabla.','Un recuento es fiable si la regla y los datos son claros.'],19,57)
 
 for slug,(title,level) in TITLES.items():
     C=canvas.Canvas(str(OUT/f'{slug}.pdf'),pagesize=A4,invariant=1)
-    C.setTitle(title+' - kit imprimible');C.setAuthor('Robòtica per a docents')
+    C.setTitle(title+' - kit imprimible');C.setAuthor('Robótica para docentes')
     if slug=='pixels-binaris':
-        header(1,'01 / Dos missatges per reconstruir','0 = blanc; 1 = negre. Llegiu cada fila d’esquerra a dreta i de dalt a baix.')
+        header(1,'01 / Dos mensajes para reconstruir','0 = blanco; 1 = negro. Leed cada fila de izquierda a derecha y de arriba abajo.')
         for j,rows in enumerate([L,ARROW]):
-            y=460-j*280;text(40,y+180,f'MISSATGE {j+1}',15,True)
+            y=460-j*280;text(40,y+180,f'MENSAJE {j+1}',15,True)
             for r,row in enumerate(rows):text(48,y+134-r*26,' '.join(row),15,True)
             grid(310,y, s=32)
         end()
-        header(2,'02 / Crea el teu missatge','El receptor només rep el codi. Manteniu amagada la graella original.')
+        header(2,'02 / Crea tu mensaje','El receptor solo recibe el código. Mantened oculta la cuadrícula original.')
         grid(202,445,s=38)
         for r in range(5):text(42,368-r*47,f'Fila {r+1}: ____  ____  ____  ____  ____',15)
         end()
-        header(3,'03 / Comprovació i reparació','Anoteu la primera diferència. No endevineu el dibuix per completar el codi.')
-        lines(40,657,['A. Una fila rebuda és: 1 0 0 0','Què falta saber? __________________________________',
-                      'Què demanaríeu a l’emissor? ________________________'],12,32)
-        lines(40,520,['B. El codi diu 1 0 0 0 0, però la fila s’ha pintat 0 0 0 0 1.','Què s’ha de revisar? ______________________________'],12,32)
+        header(3,'03 / Comprobación y reparación','Anotad la primera diferencia. No adivinéis el dibujo para completar el código.')
+        lines(40,657,['A. Una fila recibida es: 1 0 0 0','¿Qué falta saber? __________________________________',
+                      '¿Qué pediríais al emisor? ________________________'],12,32)
+        lines(40,520,['B. El código dice 1 0 0 0 0, pero la fila se ha pintado 0 0 0 0 1.','¿Qué hay que revisar? ______________________________'],12,32)
         grid(205,270,s=34)
-        lines(40,220,['C. Descodifiqueu un missatge propi i compareu-lo amb l’original.',
-                      'Fila revisada: ______  Valor canviat: ______',
-                      'Motiu del canvi: __________________________________'],11,32)
+        lines(40,220,['C. Descodificad un mensaje propio y comparadlo con el original.',
+                      'Fila revisada: ______  Valor cambiado: ______',
+                      'Motivo del cambio: __________________________________'],11,32)
         end()
-        header(4,'04 / Solucions docents','Reserveu aquesta pàgina fins a acabar la reconstrucció.')
+        header(4,'04 / Soluciones docentes','Reservad esta página hasta acabar la reconstrucción.')
         grid(75,430,L,s=35);grid(340,430,ARROW,s=35)
-        text(75,402,'Missatge 1 / L',13,True);text(340,402,'Missatge 2 / fletxa',13,True)
-        para(40,340,'A: falta un valor, però la fila incompleta no diu on s’ha perdut. Cal demanar la fila sencera. B: s’ha invertit la lectura de la fila; cal seguir la convenció d’esquerra a dreta.')
-        para(40,245,'Cinc files de cinc valors fan 25 bits per al dibuix d’aquest model. No hi comptem el format del fitxer, les dimensions o altres metadades. Aquesta activitat no demana comprimir el codi.')
+        text(75,402,'Mensaje 1 / L',13,True);text(340,402,'Mensaje 2 / flecha',13,True)
+        para(40,340,'A: falta un valor, pero la fila incompleta no dice dónde se ha perdido. Hay que pedir la fila entera. B: se ha invertido la lectura de la fila; hay que seguir la convención de izquierda a derecha.')
+        para(40,245,'Cinco filas de cinco valores hacen 25 bits para el dibujo de este modelo. No contamos el formato del archivo, las dimensiones u otros metadatos. Esta actividad no pide comprimir el código.')
         end()
     elif slug=='xarxa-ordenacio':
-        header(1,'01 / Xarxa de quatre canals','Temps: d’esquerra a dreta. Menor: canal de dalt; major: canal de baix.')
+        header(1,'01 / Red de cuatro canales','Tiempo: de izquierda a derecha. Menor: canal de arriba; mayor: canal de abajo.')
         network(70,600,110,80)
-        lines(40,280,['Etapa 1: compareu 1-2 i 3-4. Poden actuar alhora.',
-                      'Etapa 2: compareu 1-3 i 2-4. Poden actuar alhora.',
-                      'Etapa 3: compareu 2-3. La resta conserva el valor.',
-                      'Si hi ha empat, conserveu l’ordre dels dos valors.',
-                      'Només avanceu d’etapa quan totes les comparacions acaben.'],11,29)
+        lines(40,280,['Etapa 1: comparad 1-2 y 3-4. Pueden actuar a la vez.',
+                      'Etapa 2: comparad 1-3 y 2-4. Pueden actuar a la vez.',
+                      'Etapa 3: comparad 2-3. El resto conserva el valor.',
+                      'Si hay empate, conservad el orden de los dos valores.',
+                      'Solo avanzad de etapa cuando todas las comparaciones acaban.'],11,29)
         end()
-        header(2,'02 / Nombres per retallar','Trieu quatre targetes. Els duplicats serveixen per provar els empats.')
+        header(2,'02 / Números para recortar','Elegid cuatro tarjetas. Los duplicados sirven para probar los empates.')
         for i,v in enumerate(list(range(1,9))+[2,2,5,5]):
             x=36+i%3*177;y=H-255-i//3*139;box(x,y,165,120);text(x+60,y+45,str(v),35,True)
         end()
-        header(3,'03 / Registre de les etapes','Un registre per prova. Els valors s’escriuen de dalt a baix en cada etapa.')
+        header(3,'03 / Registro de las etapas','Un registro por prueba. Los valores se escriben de arriba abajo en cada etapa.')
         table(36,650,['Canal','Entrada','Etapa 1','Etapa 2','Etapa 3'],[[str(i+1),'','','',''] for i in range(4)],[65,114,114,114,114],45)
-        lines(40,360,['Entrada d’exemple: 3, 1, 4, 2. Predicció: ______________',
-                      'Hi ha ordre creixent en totes les eixides? ______________',
-                      'Cinc comparacions, repartides en quantes etapes? ______'],11,32)
-        para(40,230,'Prova de reparació: tapeu l’últim comparador (canals 2 i 3). Executeu 3, 1, 4, 2. Escriviu l’eixida i justifiqueu què falta fer.')
-        text(40,130,'Eixida sense el comparador: ________________________',12)
+        lines(40,360,['Entrada de ejemplo: 3, 1, 4, 2. Predicción: ______________',
+                      '¿Hay orden creciente en todas las salidas? ______________',
+                      'Cinco comparaciones, repartidas en ¿cuántas etapas? ______'],11,32)
+        para(40,230,'Prueba de reparación: tapad el último comparador (canales 2 y 3). Ejecutad 3, 1, 4, 2. Escribid la salida y justificad qué falta hacer.')
+        text(40,130,'Salida sin el comparador: ________________________',12)
         end()
-        header(4,'04 / Solucions i interpretació','Una entrada ordenada no demostra per si sola que qualsevol diagrama funcione.')
+        header(4,'04 / Soluciones e interpretación','Una entrada ordenada no demuestra por sí sola que cualquier diagrama funcione.')
         table(36,650,['Entrada','Etapa 1','Etapa 2','Etapa 3'],[['3, 1, 4, 2','1, 3, 2, 4','1, 3, 2, 4','1, 2, 3, 4']],[130]*4,43)
-        para(40,510,'Sense el comparador final, l’exemple acaba 1, 3, 2, 4: el centre no està ordenat. La xarxa completa té cinc comparadors en tres etapes. Dos comparadors sense canals compartits poden actuar en una mateixa etapa.')
-        para(40,380,'Proveu també 4, 3, 2, 1 i 2, 2, 1, 1. Les eixides són 1, 2, 3, 4 i 1, 1, 2, 2. Conserveu les quatre targetes: comparar no crea ni elimina dades.')
-        para(40,260,'La disposició és una xarxa de quatre entrades; no n’hi ha prou d’afegir canals per ordenar-ne sis. El generador verifica les 24 permutacions d’1, 2, 3, 4 i casos amb empats.')
+        para(40,510,'Sin el comparador final, el ejemplo acaba 1, 3, 2, 4: el centro no está ordenado. La red completa tiene cinco comparadores en tres etapas. Dos comparadores sin canales compartidos pueden actuar en una misma etapa.')
+        para(40,380,'Probad también 4, 3, 2, 1 y 2, 2, 1, 1. Las salidas son 1, 2, 3, 4 y 1, 1, 2, 2. Conservad las cuatro tarjetas: comparar no crea ni elimina datos.')
+        para(40,260,'La disposición es una red de cuatro entradas; no basta con añadir canales para ordenar seis. El generador verifica las 24 permutaciones de 1, 2, 3, 4 y casos con empates.')
         end()
     elif slug=='laberint-debugging':
-        header(1,'01 / Tauler del laberint','S = inici A4; M = meta D1. B3 i C3 estan bloquejades. No es poden travessar.')
+        header(1,'01 / Tablero del laberinto','S = inicio A4; M = meta D1. B3 y C3 están bloqueadas. No se pueden atravesar.')
         maze(105,235,95)
-        lines(40,180,['Cada fletxa mou una casella en la direcció del paper.',
-                      'No hi ha girs ni orientació del robot en aquest joc.',
-                      'Pareu abans d’entrar en una X o d’eixir del tauler.'],11,27)
+        lines(40,180,['Cada flecha mueve una casilla en la dirección del papel.',
+                      'No hay giros ni orientación del robot en este juego.',
+                      'Parad antes de entrar en una X o de salir del tablero.'],11,27)
         end()
-        header(2,'02 / Fletxes i fitxes per retallar','Huit fletxes amunt, huit dreta, dues avall i dues esquerra. Afegiu un botó com a fitxa.')
+        header(2,'02 / Flechas y fichas para recortar','Ocho flechas arriba, ocho derecha, dos abajo y dos izquierda. Añadid un botón como ficha.')
         for i,k in enumerate('U'*8+'R'*8+'B'*2+'E'*2):
             x=36+i%4*133;y=H-235-i//4*105;box(x,y,123,94);move_arrow(k,x+61,y+57,.8)
-            text(x+12,y+15,{'U':'Amunt','R':'Dreta','B':'Avall','E':'Esquerra'}[k],10,True)
+            text(x+12,y+15,{'U':'Arriba','R':'Derecha','B':'Abajo','E':'Izquierda'}[k],10,True)
         end()
-        header(3,'03 / Dues proves d’un mateix programa','Abans de començar, predieu el resultat. No canvieu fletxes durant la prova.')
+        header(3,'03 / Dos pruebas de un mismo programa','Antes de empezar, predecid el resultado. No cambiéis flechas durante la prueba.')
         text(40,657,'PROGRAMA INICIAL',14,True);sequence(40,555,['U','R','U','R','R','U'],s=65)
-        lines(40,500,['Predicció: ________________________________________',
-                      'Primera ordre impossible: ______  Casella: ______',
-                      'Canvi proposat: ___________________________________'],11,31)
-        text(40,375,'PROGRAMA REVISAT / dibuixeu sis fletxes',14,True)
+        lines(40,500,['Predicción: ________________________________________',
+                      'Primera orden imposible: ______  Casilla: ______',
+                      'Cambio propuesto: ___________________________________'],11,31)
+        text(40,375,'PROGRAMA REVISADO / dibujad seis flechas',14,True)
         for i in range(6):box(40+i*75,285,68,60)
-        lines(40,225,['Resultat de la nova prova: __________________________',
-                      'Què heu conservat igual per comparar les proves? ______',
+        lines(40,225,['Resultado de la nueva prueba: __________________________',
+                      '¿Qué habéis conservado igual para comparar las pruebas? ______',
                       '_________________________________________________'],11,31)
         end()
-        header(4,'04 / Solucions docents','Les dues primeres ordres adequades són amunt i amunt, des d’A4.')
+        header(4,'04 / Soluciones docentes','Las dos primeras órdenes adecuadas son arriba y arriba, desde A4.')
         maze(75,400,59,True)
-        lines(355,620,['Ruta de sis ordres:','Amunt, amunt, dreta,','dreta, dreta, amunt.','A4 > A3 > A2 > B2','> C2 > D2 > D1.'],11,30)
-        para(40,337,'El programa inicial topa en la segona ordre: des d’A3 intenta entrar a B3. Intercanviar les ordres 2 i 3 produeix una ruta vàlida. Torneu a començar a A4 i proveu-la sencera.')
-        para(40,220,'Ampliació: bloquegeu també D2 amb una peça i manteniu la mateixa meta. Una alternativa és amunt, amunt, amunt, dreta, dreta, dreta, per la fila 1. No altereu alhora inici i obstacles si voleu comparar proves.')
+        lines(355,620,['Ruta de seis órdenes:','Arriba, arriba, derecha,','derecha, derecha, arriba.','A4 > A3 > A2 > B2','> C2 > D2 > D1.'],11,30)
+        para(40,337,'El programa inicial choca en la segunda orden: desde A3 intenta entrar en B3. Intercambiar las órdenes 2 y 3 produce una ruta válida. Volved a empezar en A4 y probadla entera.')
+        para(40,220,'Ampliación: bloquead también D2 con una pieza y mantened la misma meta. Una alternativa es arriba, arriba, arriba, derecha, derecha, derecha, por la fila 1. No alteréis a la vez inicio y obstáculos si queréis comparar pruebas.')
         end()
     elif slug=='condicionals-moviment':
-        header(1,'01 / Entrades per retallar','Sis targetes: estrela, cercle i triangle; cadascun amb marc de punts i sense.')
+        header(1,'01 / Entradas para recortar','Seis tarjetas: estrella, círculo y triángulo; cada uno con marco de puntos y sin él.')
         for i,k in enumerate('SSOOTT'):
             x=36+i%2*266;y=510-i//2*175;box(x,y,250,155);shape(k,x+125,y+87,33)
             if i%2==0:
                 for dx in range(15,240,25):
                     for dy in [9,137]:C.setFillColor(INK);C.circle(x+dx,y+dy,2,fill=1,stroke=0)
-            text(x+17,y+40,{'S':'Estrela','O':'Cercle','T':'Triangle'}[k],13,True)
-            text(x+17,y+17,'Marc de punts' if i%2==0 else 'Sense marc de punts',10)
+            text(x+17,y+40,{'S':'Estrella','O':'Círculo','T':'Triángulo'}[k],13,True)
+            text(x+17,y+17,'Marco de puntos' if i%2==0 else 'Sin marco de puntos',10)
         end()
-        header(2,'02 / Zones de resposta','Poseu una fitxa a INICI abans de cada targeta nova.')
-        for y,name,symbol in [(510,'SÍ / LLIBRE','Q'),(290,'SI NO / MÚSICA','O')]:
+        header(2,'02 / Zonas de respuesta','Poned una ficha en INICIO antes de cada tarjeta nueva.')
+        for y,name,symbol in [(510,'SÍ / LIBRO','Q'),(290,'SI NO / MÚSICA','O')]:
             box(36,y,523,190);shape(symbol,122,y+95,43);text(210,y+105,name,20,True)
-        box(36,112,523,110);text(65,159,'INICI / abans de cada prova',18,True)
+        box(36,112,523,110);text(65,159,'INICIO / antes de cada prueba',18,True)
         end()
-        header(3,'03 / Regla i registre','Regla: si té una estrela, llibre; si no, música. El marc no intervé encara.')
-        table(36,650,['Entrada','Predicció','Resultat'],[[x,'',''] for x in ['Estrela amb punts','Estrela sense punts','Cercle amb punts','Cercle sense punts','Triangle amb punts','Triangle sense punts']],[205,155,161],43)
-        lines(40,290,['La regla nova del nostre equip: _____________________',
+        header(3,'03 / Regla y registro','Regla: si tiene una estrella, libro; si no, música. El marco no interviene todavía.')
+        table(36,650,['Entrada','Predicción','Resultado'],[[x,'',''] for x in ['Estrella con puntos','Estrella sin puntos','Círculo con puntos','Círculo sin puntos','Triángulo con puntos','Triángulo sin puntos']],[205,155,161],43)
+        lines(40,290,['La regla nueva de nuestro equipo: _____________________',
                       'Si ______________________________________________',
-                      'Llavors __________________________________________',
+                      'Entonces __________________________________________',
                       'Si no ____________________________________________'],11,35)
         end()
-        header(4,'04 / Guia docent','Les propietats són de les targetes inventades, no de les persones.')
-        para(40,650,'Amb la regla completa, les dues estreles van a llibre. Els dos cercles i els dos triangles van a música. El marc de punts no canvia aquesta decisió.')
-        para(40,550,'Amb només «si té estrela, llibre», les altres formes no fan cap acció. Reinicieu la fitxa abans de cada prova: quedar a INICI permet observar que no s’ha executat cap branca alternativa.')
-        para(40,427,'Error proposat: algú envia el triangle a llibre perquè «si no» vol dir només cercle. La regla escrita diu que totes les entrades sense estrela van a música. Proveu les tres formes.')
-        para(40,300,'Ampliació: «estrela i marc de punts» només és certa per a una targeta. «Estrela o marc de punts» és certa per a quatre: les dues estreles, el cercle amb punts i el triangle amb punts. En «o», una o les dues propietats són suficients.')
+        header(4,'04 / Guía docente','Las propiedades son de las tarjetas inventadas, no de las personas.')
+        para(40,650,'Con la regla completa, las dos estrellas van a libro. Los dos círculos y los dos triángulos van a música. El marco de puntos no cambia esta decisión.')
+        para(40,550,'Con solo «si tiene estrella, libro», las demás formas no hacen ninguna acción. Reiniciad la ficha antes de cada prueba: quedarse en INICIO permite observar que no se ha ejecutado ninguna rama alternativa.')
+        para(40,427,'Error propuesto: alguien envía el triángulo a libro porque «si no» significa solo círculo. La regla escrita dice que todas las entradas sin estrella van a música. Probad las tres formas.')
+        para(40,300,'Ampliación: «estrella y marco de puntos» solo es cierto para una tarjeta. «Estrella o marco de puntos» es cierto para cuatro: las dos estrellas, el círculo con puntos y el triángulo con puntos. En «o», una o las dos propiedades son suficientes.')
         end()
     elif slug=='criptografia-cesar':
-        header(1,'01 / Roda retallable','Retalleu els dos cercles. L’adult prepara els forats centrals i col·loca l’enquadernador.')
-        wheel(W/2,555,120,'FIX EXTERIOR');wheel(W/2,270,90,'MÒBIL')
-        lines(40,119,['Per a +3, alineeu A exterior amb D interior.',
-                      'Xifreu d’exterior a interior. Desxifreu d’interior a exterior.'],10,24)
+        header(1,'01 / Rueda recortable','Recortad los dos círculos. El adulto prepara los agujeros centrales y coloca el encuadernador.')
+        wheel(W/2,555,120,'FIJO EXTERIOR');wheel(W/2,270,90,'MÓVIL')
+        lines(40,119,['Para +3, alinead A exterior con D interior.',
+                      'Cifrad de exterior a interior. Descifrad de interior a exterior.'],10,24)
         end()
-        header(2,'02 / Alternativa sense retallar','Una taula de substitució també permet xifrar i desxifrar. Clau +3.')
+        header(2,'02 / Alternativa sin recortar','Una tabla de sustitución también permite cifrar y descifrar. Clave +3.')
         for j in range(2):
             chars=ALPHABET if j==0 else ALPHABET[3:]+ALPHABET[:3]
-            text(36,650-j*90,'Original' if j==0 else 'Xifrat (+3)',13,True)
+            text(36,650-j*90,'Original' if j==0 else 'Cifrado (+3)',13,True)
             for i,a in enumerate(chars):
                 xx=36+i*20;box(xx,593-j*90,20,36);text(xx+6,605-j*90,a,10,True)
-        lines(40,415,['HOLA > KROD. Per tornar, llegiu la taula en sentit invers.',
-                      'ZOO > CRR: després de Z, el desplaçament continua per A.',
-                      'Alfabet del joc: A-Z, sense accents ni Ç. Espais conservats.'],10,32)
-        para(40,275,'Escriviu directament missatges ficticis amb aquestes 26 lletres. Si adapteu un text català, acordeu abans llevar accents i representar Ç com C. Això perd informació ortogràfica i no és una convenció general d’escriptura.')
+        lines(40,415,['HOLA > KROD. Para volver, leed la tabla en sentido inverso.',
+                      'ZOO > CRR: después de Z, el desplazamiento continúa por A.',
+                      'Alfabeto del juego: A-Z, sin acentos ni ce cedilla. Espacios conservados.'],10,32)
+        para(40,275,'Escribid directamente mensajes ficticios con estas 26 letras. Si adaptáis un texto catalán, acordad antes quitar los acentos y representar la ce cedilla como C. Esto pierde información ortográfica y no es una convención general de escritura.')
         end()
-        header(3,'03 / Missatges i registre','Compartiu la clau acordada per un altre canal: ací pot ser oralment amb el company.')
-        for i,(task,msg) in enumerate([('XIFRA +3','ROBOT'),('XIFRA +3','LLIBRE'),('DESXIFRA +3','FDVD')]):
+        header(3,'03 / Mensajes y registro','Compartid la clave acordada por otro canal: aquí puede ser oralmente con el compañero.')
+        for i,(task,msg) in enumerate([('CIFRA +3','ROBOT'),('CIFRA +3','LIBRO'),('DESCIFRA +3','FDVD')]):
             y=535-i*135;box(36,y,523,112);text(50,y+78,task+' / '+msg,17,True)
-            text(50,y+35,'Resposta: ___________________________________',12)
-        lines(40,190,['Un error per reparar: algú desxifra KROD avançant +3.',
-                      'Quin sentit hauria d’usar? __________________________',
-                      'Escriviu un missatge propi i comproveu l’anada i la tornada.'],11,31)
+            text(50,y+35,'Respuesta: ___________________________________',12)
+        lines(40,190,['Un error para reparar: alguien descifra KROD avanzando +3.',
+                      '¿Qué sentido debería usar? __________________________',
+                      'Escribid un mensaje propio y comprobad la ida y la vuelta.'],11,31)
         end()
-        header(4,'04 / Solucions i límits','Aquest xifratge de paper no serveix per protegir contrasenyes ni secrets reals.')
-        lines(40,650,['ROBOT > URERW','LLIBRE > OOLEUH','FDVD > CASA','KROD > HOLA en retrocedir 3 posicions.'],18,44)
-        para(40,420,'Avançar +3 una segona vegada no desfà el primer xifratge. Per desxifrar, busqueu la lletra rebuda a l’interior i llegiu l’exterior, o retrocediu tres posicions en l’alfabet.')
-        para(40,300,'Hi ha 26 desplaçaments possibles, inclòs el 0 que deixa el text igual: només 25 el canvien. Es poden provar tots. Una paraula amb sentit pot suggerir una clau, però un missatge curt no garanteix una única interpretació.')
-        para(40,170,'No equipareu aquest joc amb els sistemes actuals de protecció de dades. El seu objectiu és entendre una substitució reversible i explicar per què provar poques claus posa en evidència el límit del mètode.')
+        header(4,'04 / Soluciones y límites','Este cifrado de papel no sirve para proteger contraseñas ni secretos reales.')
+        lines(40,650,['ROBOT > URERW','LIBRO > OLEUR','FDVD > CASA','KROD > HOLA al retroceder 3 posiciones.'],18,44)
+        para(40,420,'Avanzar +3 una segunda vez no deshace el primer cifrado. Para descifrar, buscad la letra recibida en el interior y leed el exterior, o retroceded tres posiciones en el alfabeto.')
+        para(40,300,'Hay 26 desplazamientos posibles, incluido el 0 que deja el texto igual: solo 25 lo cambian. Se pueden probar todos. Una palabra con sentido puede sugerir una clave, pero un mensaje corto no garantiza una única interpretación.')
+        para(40,170,'No equiparéis este juego con los sistemas actuales de protección de datos. Su objetivo es entender una sustitución reversible y explicar por qué probar pocas claves pone en evidencia el límite del método.')
         end()
     elif slug=='bucles-coreografia':
-        header(1,'01 / Accions per retallar','Quatre targetes de cada acció. Les accions també es poden fer assenyalant.')
+        header(1,'01 / Acciones para recortar','Cuatro tarjetas de cada acción. Las acciones también se pueden hacer señalando.')
         for i,k in enumerate('MET'*4):
             x=36+i%3*177;y=H-255-i//3*139;box(x,y,135,110);action(k,x+67,y+73,.8);text(x+110,y+83,k,14,True)
-            text(x+12,y+31,{'M':'Mans','E':'Espatlles','T':'Taula'}[k],13,True)
-            text(x+12,y+12,'Una acció cada vegada',9)
+            text(x+12,y+31,{'M':'Manos','E':'Hombros','T':'Mesa'}[k],13,True)
+            text(x+12,y+12,'Una acción cada vez',9)
         end()
-        header(2,'02 / El marc del bucle','El marc inclou només les accions que cal repetir en cada volta.')
-        box(36,365,523,300,BLUE);text(55,625,'REPETEIX ____ VEGADES',20,True)
+        header(2,'02 / El marco del bucle','El marco incluye solo las acciones que hay que repetir en cada vuelta.')
+        box(36,365,523,300,BLUE);text(55,625,'REPITE ____ VECES',20,True)
         for i in range(3):box(70+i*155,440,135,120)
-        text(55,392,'COS DEL BUCLE / una volta completa',12,True)
+        text(55,392,'CUERPO DEL BUCLE / una vuelta completa',12,True)
         for i in range(4):box(40+i*130,205,115,110);text(80+i*130,243,str(i+1),30,True)
-        text(40,160,'Retalleu els nombres o escriviu el recompte al marc.',11)
+        text(40,160,'Recortad los números o escribid el recuento en el marco.',11)
         end()
-        header(3,'03 / Predicció i prova','M = mans; E = espatlles; T = taula. Cada símbol equival a una acció.')
-        lines(40,650,['Programa: repeteix 3 vegades [M E T].',
-                      'Abans d’actuar: ____ voltes × ____ accions = ____ accions.'],13,35)
-        text(40,545,'Escriviu la seqüència desplegada:',13,True)
+        header(3,'03 / Predicción y prueba','M = manos; E = hombros; T = mesa. Cada símbolo equivale a una acción.')
+        lines(40,650,['Programa: repite 3 veces [M E T].',
+                      'Antes de actuar: ____ vueltas × ____ acciones = ____ acciones.'],13,35)
+        text(40,545,'Escribid la secuencia desplegada:',13,True)
         for i in range(9):box(36+i*58,462,52,57)
-        lines(40,399,['Ara canvieu només el recompte a 2.',
-                      'Predicció: ____ accions. Resultat: ____ accions.'],12,32)
-        para(40,280,'Error per discutir: repeteix 3 vegades [M E]; després T. Té el mateix resultat que repetir [M E T] tres vegades? Desplegueu les dues seqüències.')
-        text(40,155,'El canvi que proposem: ______________________________',11)
+        lines(40,399,['Ahora cambiad solo el recuento a 2.',
+                      'Predicción: ____ acciones. Resultado: ____ acciones.'],12,32)
+        para(40,280,'Error para discutir: repite 3 veces [M E]; después T. ¿Tiene el mismo resultado que repetir [M E T] tres veces? Desplegad las dos secuencias.')
+        text(40,155,'El cambio que proponemos: ______________________________',11)
         end()
-        header(4,'04 / Solucions docents','El nombre de voltes i el límit del bloc han de quedar visibles.')
-        lines(40,650,['3 × [M E T] = M E T / M E T / M E T = 9 accions.',
-                      '2 × [M E T] = M E T / M E T = 6 accions.',
-                      '3 × [M E]; després T = M E / M E / M E / T = 7 accions.'],11,38)
-        para(40,470,'La reparació és tornar a posar T dins del marc si la intenció és fer taula en cada volta. Un altre resultat pot ser correcte per a una intenció diferent, però no és equivalent a la seqüència original.')
-        para(40,340,'Una volta del model és: picar una vegada de mans, tocar alhora les dues espatlles una vegada i tocar suaument la taula una vegada. Marqueu les voltes amb un comptador, no només de memòria.')
-        para(40,210,'No cal fer soroll, alçar-se o tocar el propi cos. Assenyalar M, E i T també executa el programa. Per ampliar, afegiu una acció fora del bucle i distingiu què es repeteix i què es fa una sola vegada.')
+        header(4,'04 / Soluciones docentes','El número de vueltas y el límite del bloque deben quedar visibles.')
+        lines(40,650,['3 × [M E T] = M E T / M E T / M E T = 9 acciones.',
+                      '2 × [M E T] = M E T / M E T = 6 acciones.',
+                      '3 × [M E]; después T = M E / M E / M E / T = 7 acciones.'],11,38)
+        para(40,470,'La reparación es volver a poner T dentro del marco si la intención es hacer mesa en cada vuelta. Otro resultado puede ser correcto para una intención diferente, pero no es equivalente a la secuencia original.')
+        para(40,340,'Una vuelta del modelo es: dar una palmada, tocar a la vez los dos hombros una vez y tocar suavemente la mesa una vez. Marcad las vueltas con un contador, no solo de memoria.')
+        para(40,210,'No hace falta hacer ruido, levantarse o tocar el propio cuerpo. Señalar M, E y T también ejecuta el programa. Para ampliar, añadid una acción fuera del bucle y distinguid qué se repite y qué se hace una sola vez.')
         end()
     elif slug=='patrons-simetries':
-        header(1,'01 / Peces de patrons','Retalleu dotze cercles i sis triangles. No cal distingir colors.')
+        header(1,'01 / Piezas de patrones','Recortad doce círculos y seis triángulos. No hace falta distinguir colores.')
         for i,k in enumerate('O'*12+'T'*6):
             x=36+i%6*87;y=H-235-i//6*130;box(x,y,80,78);shape(k,x+40,y+39,23)
         end()
-        header(2,'02 / Tres tires per completar','Amb la regla repetitiva acordada, poseu la peça que falta. No cal escriure.')
+        header(2,'02 / Tres tiras para completar','Con la regla repetitiva acordada, poned la pieza que falta. No hace falta escribir.')
         for j,pattern in enumerate(['OOTOO?','OTT?TT','OTO?OT']):
             y=555-j*175;text(40,y+105,f'TIRA {j+1}',14,True)
             for i,k in enumerate(pattern):
@@ -471,77 +470,77 @@ for slug,(title,level) in TITLES.items():
                 if k=='?':text(36+i*87+29,y+26,'?',29,True)
                 else:shape(k,76+i*87,y+43,19)
         end()
-        header(3,'03 / Canviem les peces, conservem la regla','Cercle: toca els genolls. Triangle: alça una mà. També es pot assenyalar.')
-        text(40,651,'UNITAT / cercle, cercle, triangle',17,True)
+        header(3,'03 / Cambiamos las piezas, conservamos la regla','Círculo: toca las rodillas. Triángulo: alza una mano. También se puede señalar.')
+        text(40,651,'UNIDAD / círculo, círculo, triángulo',17,True)
         for i,k in enumerate('OOT'):box(80+i*155,490,135,120);shape(k,147+i*155,552,28)
-        lines(40,410,['Una volta: genolls, genolls, mà.',
-                      'Tres voltes: genolls, genolls, mà / genolls, genolls, mà /',
-                      'genolls, genolls, mà.'],11,27)
-        text(40,285,'INVENTEU UNA UNITAT / màxim tres peces',14,True)
+        lines(40,410,['Una vuelta: rodillas, rodillas, mano.',
+                      'Tres vueltas: rodillas, rodillas, mano / rodillas, rodillas, mano /',
+                      'rodillas, rodillas, mano.'],11,27)
+        text(40,285,'INVENTAD UNA UNIDAD / máximo tres piezas',14,True)
         for i in range(3):box(80+i*155,125,135,120)
         end()
-        header(4,'04 / Guia d’observació i solucions','Les solucions pressuposen que es repeteix la unitat mostrada.')
-        lines(40,650,['Tira 1: O O T / O O T. Falta un triangle.',
-                      'Tira 2: O T T / O T T. Falta un cercle.',
-                      'Tira 3: O T / O T / O T. Falta un triangle.'],13,35)
-        para(40,480,'Mostreu almenys dues voltes de la unitat abans de tapar una peça. Demaneu que assenyalen el tros que es repeteix i que el reconstruïsquen amb altres peces o gestos.')
-        para(40,350,'Una seqüència curta pot admetre més d’una regla. Si una criatura proposa una altra continuació, demaneu que mostre la seua regla i com continuaria. La consigna del joc és repetir la unitat acordada, no descobrir una única llei inevitable.')
-        para(40,210,'Observeu si agrupa una unitat, anticipa una peça i conserva l’ordre en canviar de representació. No valoreu la rapidesa, la lectura o el nom formal de les formes.')
+        header(4,'04 / Guía de observación y soluciones','Las soluciones presuponen que se repite la unidad mostrada.')
+        lines(40,650,['Tira 1: O O T / O O T. Falta un triángulo.',
+                      'Tira 2: O T T / O T T. Falta un círculo.',
+                      'Tira 3: O T / O T / O T. Falta un triángulo.'],13,35)
+        para(40,480,'Mostrad al menos dos vueltas de la unidad antes de tapar una pieza. Pedid que señalen el trozo que se repite y que lo reconstruyan con otras piezas o gestos.')
+        para(40,350,'Una secuencia corta puede admitir más de una regla. Si un niño o niña propone otra continuación, pedid que muestre su regla y cómo seguiría. La consigna del juego es repetir la unidad acordada, no descubrir una única ley inevitable.')
+        para(40,210,'Observad si agrupa una unidad, anticipa una pieza y conserva el orden al cambiar de representación. No valoréis la rapidez, la lectura o el nombre formal de las formas.')
         end()
     elif slug=='descomposicio-receptes':
-        header(1,'01 / Passos per retallar','Les targetes ja descriuen les accions: el repte és ordenar-les segons les dependències.')
+        header(1,'01 / Pasos para recortar','Las tarjetas ya describen las acciones: el reto es ordenarlas según las dependencias.')
         for i,(k,label) in enumerate(TASKS):
             x=36+i%2*266;y=548-i//2*142;box(x,y,250,128);text(x+15,y+80,k,24,True);text(x+15,y+34,label,12,True)
         end()
-        header(2,'02 / Sobre de joc','Doblegueu la meitat inferior cap arrere. Fixeu els dos costats amb cinta; deixeu obert dalt.')
-        box(70,500,455,170);text(90,625,'DESTÍ FICTICI',14,True);text(90,590,'____________________',21)
-        text(90,550,'Equip: __________________________',13)
+        header(2,'02 / Sobre de juego','Doblad la mitad inferior hacia atrás. Fijad los dos lados con cinta; dejad abierto arriba.')
+        box(70,500,455,170);text(90,625,'DESTINO FICTICIO',14,True);text(90,590,'____________________',21)
+        text(90,550,'Equipo: __________________________',13)
         C.setDash(5,4);line(36,H/2,W-36,H/2);C.setDash()
-        lines(40,340,['Línia de plec / part inferior cap arrere.',
-                      'Podeu usar un sobre reutilitzable en lloc d’aquesta plantilla.',
-                      'La cinta es posa als laterals: el sobre s’ha de poder obrir.',
-                      'Tancar en el joc és abaixar la vora oberta, sense segellar.'],10,28)
+        lines(40,340,['Línea de pliegue / parte inferior hacia atrás.',
+                      'Podéis usar un sobre reutilizable en lugar de esta plantilla.',
+                      'La cinta se pone en los laterales: el sobre debe poder abrirse.',
+                      'Cerrar en el juego es bajar el borde abierto, sin sellar.'],10,28)
         end()
-        header(3,'03 / Què ha de passar abans?','Un registre per equip. Retalleu només el missatge de la part inferior.')
-        table(36,650,['Acció','Què cal haver fet abans?'],[[k+' / '+label,''] for k,label in TASKS],[260,261],36)
-        text(40,310,'Ordre proposat: __________________________________',12)
-        text(40,275,'Ordre alternatiu vàlid: ______________________________',12)
-        box(65,80,465,145);text(85,193,'MISSATGE / dibuixeu un símbol inventat',13,True)
+        header(3,'03 / ¿Qué debe pasar antes?','Un registro por equipo. Recortad solo el mensaje de la parte inferior.')
+        table(36,650,['Acción','¿Qué hay que haber hecho antes?'],[[k+' / '+label,''] for k,label in TASKS],[260,261],36)
+        text(40,310,'Orden propuesto: __________________________________',12)
+        text(40,275,'Orden alternativo válido: ______________________________',12)
+        box(65,80,465,145);text(85,193,'MENSAJE / dibujad un símbolo inventado',13,True)
         end()
-        header(4,'04 / Dependències i solucions','O: obrir; M: missatge; I: introduir; T: tancar; E: destí; C: comprovar; L: lliurar.')
-        lines(40,650,['O i M han de passar abans d’I.',
-                      'I ha de passar abans de T.',
-                      'T i E han de passar abans de C.',
-                      'C ha de passar abans de L.'],14,35)
-        lines(40,465,['Una seqüència: O, M, E, I, T, C, L.',
-                      'Una altra seqüència: E, M, O, I, T, C, L.'],13,35)
-        para(40,350,'Comprovar vol dir revisar que el missatge és dins, el destí és llegible i la vora està abaixada. Feu la prova amb el material: si tanqueu abans d’introduir el missatge, no el podeu posar dins sense reobrir. En aquesta prova només es pot executar cada targeta una vegada.')
-        para(40,205,'Error: O, M, T, I, E, C, L. La inversió T-I impedeix completar l’enviament amb les regles. Intercanvieu T i I, reinicieu i proveu. Escriure el destí pot fer-se en diferents moments sempre que siga abans de comprovar.')
+        header(4,'04 / Dependencias y soluciones','O: abrir; M: mensaje; I: introducir; T: cerrar; E: destino; C: comprobar; L: entregar.')
+        lines(40,650,['O y M deben pasar antes de I.',
+                      'I debe pasar antes de T.',
+                      'T y E deben pasar antes de C.',
+                      'C debe pasar antes de L.'],14,35)
+        lines(40,465,['Una secuencia: O, M, E, I, T, C, L.',
+                      'Otra secuencia: E, M, O, I, T, C, L.'],13,35)
+        para(40,350,'Comprobar significa revisar que el mensaje está dentro, el destino es legible y el borde está bajado. Haced la prueba con el material: si cerráis antes de introducir el mensaje, no podéis ponerlo dentro sin reabrir. En esta prueba solo se puede ejecutar cada tarjeta una vez.')
+        para(40,205,'Error: O, M, T, I, E, C, L. La inversión T-I impide completar el envío con las reglas. Intercambiad T e I, reiniciad y probad. Escribir el destino puede hacerse en distintos momentos siempre que sea antes de comprobar.')
         end()
     else:
-        header(1,'01 / Objectes del museu','Huit objectes ficticis: cercle o triangle, gran o petit, amb ratlles o sense.')
+        header(1,'01 / Objetos del museo','Ocho objetos ficticios: círculo o triángulo, grande o pequeño, con rayas o sin ellas.')
         for i in range(8):data_card(36+i%4*133,475-i//4*185,i)
-        lines(40,225,['Identificadors: P1-P4 són cercles; P5-P8 són triangles.',
-                      'P1, P2, P5 i P6 són petits; la resta són grans.',
-                      'P2, P4, P6 i P8 tenen ratlles.'],10,28)
+        lines(40,225,['Identificadores: P1-P4 son círculos; P5-P8 son triángulos.',
+                      'P1, P2, P5 y P6 son pequeños; el resto son grandes.',
+                      'P2, P4, P6 y P8 tienen rayas.'],10,28)
         end()
-        header(2,'02 / Classificació i dada desconeguda','Retalleu els cartells i P9. «No ho sabem» no equival a «no té ratlles».')
-        for i,s in enumerate(['SÍ / TÉ RATLLES','NO / SENSE RATLLES','NO HO SABEM / ?']):
+        header(2,'02 / Clasificación y dato desconocido','Recortad los carteles y P9. «No lo sabemos» no equivale a «no tiene rayas».')
+        for i,s in enumerate(['SÍ / TIENE RAYAS','NO / SIN RAYAS','NO LO SABEMOS / ?']):
             box(36,555-i*140,523,110);text(60,600-i*140,s,20,True)
-        box(36,80,190,160);shape('T',130,173,28);text(120,161,'?',22,True);text(50,102,'P9 / superfície tapada',10,True)
-        para(260,204,'De P9 sabem que és un triangle gran. No es veu si té ratlles. No completeu la propietat inventant-la.',width=285,size=11)
+        box(36,80,190,160);shape('T',130,173,28);text(120,161,'?',22,True);text(50,102,'P9 / superficie tapada',10,True)
+        para(260,204,'De P9 sabemos que es un triángulo grande. No se ve si tiene rayas. No completéis la propiedad inventándola.',width=285,size=11)
         end()
-        header(3,'03 / Registre de dades','Anoteu O o T; mida G o P; ratlles 1, 0 o ? si no hi ha informació.')
+        header(3,'03 / Registro de datos','Anotad O o T; tamaño G o P; rayas 1, 0 o ? si no hay información.')
         table(36,650,['ID','Forma','Mida','Ratlles'],[[f'P{i+1}','','',''] for i in range(9)],[70,150,150,151],34)
-        lines(40,250,['Regla de classificació: ______________________________',
-                      'Amb ratlles: ____  Sense ratlles: ____  Desconegut: ____',
-                      'Total comprovat: ____  Hi és cada identificador una vegada?',
-                      'Si canviem a «és cercle», quins grups obtenim? __________'],11,32)
+        lines(40,250,['Regla de clasificación: ______________________________',
+                      'Con rayas: ____  Sin rayas: ____  Desconocido: ____',
+                      'Total comprobado: ____  ¿Está cada identificador una vez?',
+                      'Si cambiamos a «es círculo», ¿qué grupos obtenemos? __________'],11,32)
         end()
-        header(4,'04 / Solucions i límits de les dades','Classificació per ratlles amb P1-P9: quatre sí, quatre no, una dada desconeguda.')
+        header(4,'04 / Soluciones y límites de los datos','Clasificación por rayas con P1-P9: cuatro sí, cuatro no, un dato desconocido.')
         table(36,650,['ID','Forma','Mida','Ratlles'],[[f'P{i+1}','O' if i<4 else 'T','G' if i%4>=2 else 'P',str(i%2)] for i in range(8)]+[['P9','T','G','?']],[70,150,150,151],30)
-        para(40,285,'Amb ratlles: P2, P4, P6, P8. Sense ratlles: P1, P3, P5, P7. P9 queda desconegut. La suma 4 + 4 + 1 és 9. Si classifiquem per forma: quatre cercles i cinc triangles; la superfície desconeguda no impedeix llegir la forma.')
-        para(40,155,'No registrem noms, gustos ni dades de persones. Un 0 expressa que hem observat absència de ratlles; ? expressa que no ho podem saber. Són informacions diferents.')
+        para(40,285,'Con rayas: P2, P4, P6, P8. Sin rayas: P1, P3, P5, P7. P9 queda desconocido. La suma 4 + 4 + 1 es 9. Si clasificamos por forma: cuatro círculos y cinco triángulos; la superficie desconocida no impide leer la forma.')
+        para(40,155,'No registramos nombres, gustos ni datos de personas. Un 0 expresa que hemos observado ausencia de rayas; ? expresa que no lo podemos saber. Son informaciones diferentes.')
         end()
     C.save()
     for kind,name in enumerate(['inici','exemple','reparacio']):
@@ -550,11 +549,11 @@ for slug,(title,level) in TITLES.items():
             C.setFillColor(white);C.rect(0,0,1000,460,fill=1,stroke=0)
             C.setFillColor(BLUE);C.roundRect(16,16,968,428,20,fill=1,stroke=0)
             text(36,410,title,25,True)
-            text(36,379,[level+' / Així es juga','Exemple i convencions','Una prova per revisar'][kind],13)
+            text(36,379,[level+' / Así se juega','Ejemplo y convenciones','Una prueba para revisar'][kind],13)
             instruction_diagrams(kind);C.save()
             subprocess.run(['pdftoppm','-scale-to','1600','-singlefile','-png',str(p),str(Path(tmp)/'visual')],check=True,stderr=subprocess.PIPE)
             Image.open(Path(tmp)/'visual.png').convert('RGB').save(OUT/f'{slug}-{name}.webp','WEBP',quality=92)
-    print(slug+': 4 PDF pages + 3 web diagrams',flush=True)
+    print(slug+': 4 páginas PDF + 3 diagramas web',flush=True)
 
 # Verify the classroom models and printed answer keys.
 for values in itertools.product(range(3),repeat=4):
@@ -569,8 +568,8 @@ for values in itertools.permutations(range(1,5)):
     assert result==sorted(values)
 def shift(word,k):return ''.join(ALPHABET[(ALPHABET.index(a)+k)%26] if a in ALPHABET else a for a in word)
 assert shift('HOLA',3)=='KROD' and shift('ZOO',3)=='CRR'
-assert shift('ROBOT',3)=='URERW' and shift('LLIBRE',3)=='OOLEUH' and shift('FDVD',-3)=='CASA'
+assert shift('ROBOT',3)=='URERW' and shift('LIBRO',3)=='OLEUR' and shift('FDVD',-3)=='CASA'
 for seq in ['OMEITCL','EMOITCL']:
     assert all(seq.index(a)<seq.index(b) for a,b in EDGES)
 assert not all('OMTIECL'.index(a)<'OMTIECL'.index(b) for a,b in EDGES)
-print('Verified sorting network (24 permutations, 81 cases with ties), cipher and task dependencies.')
+print('Verificados la red de ordenación (24 permutaciones, 81 casos con empates), el cifrado y las dependencias de tareas.')
