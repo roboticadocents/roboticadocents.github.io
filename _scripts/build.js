@@ -27,6 +27,7 @@ const { RobotPage } = require('../_templates/pages/robot-page');
 const { SituationPage } = require('../_templates/pages/situation-page');
 const { RedirectPage } = require('../_templates/pages/redirect-page');
 const { SimPage } = require('../_templates/pages/sim-page');
+const { PresencialPage } = require('../_templates/pages/presencial-page');
 const { Document } = require('../_templates/layout/document');
 const { escapeHTML, escapeAttr } = require('../_templates/layout/utils');
 
@@ -78,6 +79,12 @@ function prepareDist() {
       fs.cpSync(src, dest, { recursive: true });
     }
   }
+
+  // El quadern presencial es distribueix tal com s'ha revisat, també sense --pdf.
+  const handout = 'output/pdf/sessio-1-handout-revisat.pdf';
+  const handoutDest = path.join(DIST_DIR, handout);
+  fs.mkdirSync(path.dirname(handoutDest), { recursive: true });
+  fs.copyFileSync(path.join(ROOT_DIR, handout), handoutDest);
 
   const nojekyll = path.join(ROOT_DIR, '.nojekyll');
   if (fs.existsSync(nojekyll)) {
@@ -646,6 +653,8 @@ async function build({ pdf = false } = {}) {
   const subjectOptions = Array.from(new Map(situacions.map(item => [item.materia, item.materiaLabel])).entries());
 
   writeHTML('index.html', HomePage());
+  // Accés directe compartit amb els participants; no s'afegeix als menús.
+  writeHTML('presencial/index.html', PresencialPage());
   writeHTML('pensament-computacional/index.html', ActivitiesCatalogPage({
     activitats: activitats.filter(item => item.slug.startsWith('pc-'))
   }));

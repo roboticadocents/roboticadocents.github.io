@@ -1,0 +1,68 @@
+.presencial-intro {
+  background: #ebf5fd;
+  padding: clamp(28px, 5vw, 56px);
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.presencial-eyebrow {
+  color: #2563eb;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+.presencial-intro h1 {
+  font-family: var(--font-heading);
+  color: #0f172a;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+.presencial-intro > p:last-child {
+  max-width: 700px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.presencial-session {
+  padding: 0 clamp(0px, 3vw, 32px) 32px;
+}
+.presencial-session h2,
+.presencial-session h3 {
+  font-family: var(--font-heading);
+  color: #0f172a;
+}
+.presencial-session h2 { font-size: 30px; margin: 0 0 12px; }
+.presencial-summary { color: #64748b; margin: 0 0 32px; }
+.presencial-download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding: 28px 0;
+  border-top: 1px solid #dbe5ef;
+}
+.presencial-download h3 { font-size: 21px; margin: 0 0 10px; }
+.presencial-download p { max-width: 620px; margin: 0; color: #64748b; line-height: 1.7; }
+.presencial-download-link {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 14px 20px;
+  border: 2px solid #2563eb;
+  border-radius: 10px;
+  background: #2563eb;
+  color: #fff;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  text-decoration: none;
+}
+.presencial-download-link span { font-size: 12px; font-weight: 500; }
+.presencial-download-link:hover { background: #1d4ed8; border-color: #1d4ed8; }
+.presencial-download-link:focus-visible { outline: 3px solid #0f172a; outline-offset: 4px; }
+.presencial-note { border-top: 1px solid #dbe5ef; padding-top: 24px; color: #64748b; line-height: 1.7; }
+@media (max-width: 760px) {
+  .presencial-download { align-items: stretch; flex-direction: column; gap: 20px; }
+  .presencial-download-link { align-self: flex-start; flex-wrap: wrap; max-width: 100%; }
+  .presencial-session h2 { font-size: 26px; }
+}
