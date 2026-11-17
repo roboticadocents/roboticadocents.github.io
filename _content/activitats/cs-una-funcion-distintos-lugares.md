@@ -7,27 +7,26 @@ cycle_label: "Segundo ciclo"
 duration: "30 min"
 order: 7
 ---
+## 🎯 ¿Qué vamos a aprender?
 
-## 🎯 Què aprendrem?
+Reconocer qué conserva una función cuando cambia la posición o la orientación inicial. Actividad individual para alumnado de 8 años, neutra, sobre papel y sin robot.
 
-Reconéixer què conserva una funció quan canvia la posició o l’orientació inicial. Activitat individual per a alumnat de 8 anys, neutra, sobre paper i sense robot.
+Un avance o retroceso mueve una casilla; un giro cambia la orientación sin desplazarse. La flecha llena indica el inicio. Los puntos indican el recorrido y la flecha vacía, la orientación final deseada. Cada ejercicio empieza de nuevo.
 
-Un avanç o retrocés mou una casella; un gir canvia l’orientació sense desplaçar-se. La fletxa plena indica l’inici. Els punts indiquen el recorregut i la fletxa buida, l’orientació final desitjada. Cada exercici comença de nou.
+La **definición** va en una fila inferior y no se ejecuta por sí misma. La fila principal contiene las **llamadas**. Cada llamada ejecuta todas las órdenes de la función y después continúa la principal. No pongáis números debajo de definir ni de llamar: las funciones no admiten piezas de número. Solo usamos una función, sin recursividad.
 
-La **definició** va en una fila inferior i no s’executa per si mateixa. La fila principal conté les **crides**. Cada crida executa totes les ordres de la funció i després continua la principal. No poseu nombres davall de definir ni de cridar: les funcions no admeten peces de nombre. Només usem una funció, sense recursivitat.
+El **bucle** repite solo las piezas entre el inicio y el fin. El número va debajo del inicio del bucle. Una llamada puede estar dentro del bucle. «3 vueltas» significa tres ejecuciones totales. Los iconos son representaciones de contorno simplificadas; la leyenda diferencia cada pieza.
 
-El **bucle** repeteix només les peces entre l’inici i el fi. El nombre va davall de l’inici del bucle. Una crida pot estar dins del bucle. «3 voltes» significa tres execucions totals. Les icones són representacions de contorn simplificades; la llegenda diferencia cada peça.
+## 🧰 Materiales y preparación
 
-## 🧰 Materials i preparació
+- [Ficha del alumnado (PDF, 1 página A4)](_assets/activitats/kits/cs-una-funcio-diferents-llocs.pdf).
+- [Las ocho fichas de Coding Set (PDF, 8 páginas A4)](_assets/activitats/kits/cs-fitxes-paper.pdf).
+- [Solucionario de Coding Set (PDF, 8 páginas A4)](_assets/activitats/kits/cs-solucions-paper.pdf).
+- Lápiz y goma. Imprimid en A4 vertical al 100 %, en blanco y negro. Reservad el solucionario al profesorado.
 
-- [Fitxa de l’alumnat (PDF, 1 pàgina A4)](_assets/activitats/kits/cs-una-funcio-diferents-llocs.pdf).
-- [Les huit fitxes de Coding Set (PDF, 8 pàgines A4)](_assets/activitats/kits/cs-fitxes-paper.pdf).
-- [Solucionari de Coding Set (PDF, 8 pàgines A4)](_assets/activitats/kits/cs-solucions-paper.pdf).
-- Llapis i goma. Imprimiu en A4 vertical al 100%, en blanc i negre. Reserveu el solucionari al professorat.
+## 👣 Desarrollo paso a paso
 
-## 👣 Desenvolupament pas a pas
-
-### 1. Des d’un altre lloc
+### 1. Desde otro lugar
 
 <!-- Mode: coding -->
 <!-- Inici: B2 N -->
@@ -38,21 +37,21 @@ El **bucle** repeteix només les peces entre l’inici i el fi. El nombre va dav
 <!-- Resposta de control: F -->
 <!-- Comparacio: D2 N -->
 
-**Consigna:** Executa la mateixa funció des dels dos inicis. Què es conserva?
+**Consigna:** Ejecuta la misma función desde los dos inicios. ¿Qué se conserva?
 
-![Recorregut i inici de l’exercici.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex1-graella.svg)
+![Recorrido e inicio del ejercicio.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex1-graella.svg)
 
-**Definició de referència:**
+**Definición de referencia:**
 
-![Fila inferior: definició de la funció.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex1-funcio.svg)
+![Fila inferior: definición de la función.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex1-funcio.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Fila principal amb crides i bucles.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex1-resposta.svg)
+![Fila principal con llamadas y bucles.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex1-resposta.svg)
 
-**Solució docent:** Des de B2 acaba en C3 mirant a l’est; des de D2 acaba en E3 mirant a l’est. Es conserven la forma i l’orientació del recorregut.
+**Solución docente:** Desde B2 termina en C3 mirando al este; desde D2 termina en E3 mirando al este. Se conservan la forma y la orientación del recorrido.
 
-### 2. La figura també gira
+### 2. La figura también gira
 
 <!-- Mode: coding -->
 <!-- Inici: B2 N -->
@@ -63,21 +62,21 @@ El **bucle** repeteix només les peces entre l’inici i el fi. El nombre va dav
 <!-- Resposta de control: F -->
 <!-- Comparacio: E3 O -->
 
-**Consigna:** Executa la funció des dels dos inicis. Canvia el codi si el robot comença mirant a l’oest?
+**Consigna:** Ejecuta la función desde los dos inicios. ¿Cambia el código si el robot empieza mirando al oeste?
 
-![Recorregut i inici de l’exercici.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex2-graella.svg)
+![Recorrido e inicio del ejercicio.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex2-graella.svg)
 
-**Definició de referència:**
+**Definición de referencia:**
 
-![Fila inferior: definició de la funció.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex2-funcio.svg)
+![Fila inferior: definición de la función.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex2-funcio.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Fila principal amb crides i bucles.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex2-resposta.svg)
+![Fila principal con llamadas y bucles.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex2-resposta.svg)
 
-**Solució docent:** Des de B2 N acaba en C3 E. Des de E3 O acaba en D4 N. No canvia el codi: es conserva la forma, però el recorregut gira.
+**Solución docente:** Desde B2 N termina en C3 E. Desde E3 O termina en D4 N. No cambia el código: se conserva la forma, pero el recorrido gira.
 
-### 3. Tria què es conserva
+### 3. Elige qué se conserva
 
 <!-- Mode: coding -->
 <!-- Inici: B2 N -->
@@ -88,38 +87,36 @@ El **bucle** repeteix només les peces entre l’inici i el fi. El nombre va dav
 <!-- Resposta de control: F -->
 <!-- Comparacio: E2 O -->
 
-**Consigna:** Compara els dos recorreguts. Encercla què es conserva: forma / casella final / longituds.
+**Consigna:** Compara los dos recorridos. Rodea qué se conserva: forma / casilla final / longitudes.
 
-![Recorregut i inici de l’exercici.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex3-graella.svg)
+![Recorrido e inicio del ejercicio.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex3-graella.svg)
 
-**Definició de referència:**
+**Definición de referencia:**
 
-![Fila inferior: definició de la funció.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex3-funcio.svg)
+![Fila inferior: definición de la función.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex3-funcio.svg)
 
-**Resposta gràfica de control:**
+**Respuesta gráfica de control:**
 
-![Fila principal amb crides i bucles.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex3-resposta.svg)
+![Fila principal con llamadas y bucles.](_assets/activitats/kits/cs-una-funcio-diferents-llocs-ex3-resposta.svg)
 
-**Solució docent:** Des de B2 N acaba en C4 E. Des de E2 O acaba en C3 N. Es conserven la forma i les longituds; la casella final i l’orientació canvien.
+**Solución docente:** Desde B2 N termina en C4 E. Desde E2 O termina en C3 N. Se conservan la forma y las longitudes; la casilla final y la orientación cambian.
 
-## ✅ Evidències d'aprenentatge
+## ✅ Evidencias de aprendizaje
 
-- Distingeix la definició de la funció i les crides de la fila principal.
-- Delimita correctament què es repeteix i què s’executa una sola vegada.
-- Comprova les posicions, les orientacions i el recorregut; no sols la casella final.
+- Distingue la definición de la función y las llamadas de la fila principal.
+- Delimita correctamente qué se repite y qué se ejecuta una sola vez.
+- Comprueba posiciones, orientaciones y recorrido; no solo la casilla final.
 
-Valoreu cada exercici de 0 a 2 punts: 1 pel resultat i 1 per la comprovació o justificació. Accepteu altres solucions que respecten la ruta i totes les restriccions de la consigna.
+Valorad cada ejercicio de 0 a 2 puntos: 1 por el resultado y 1 por la comprobación o justificación. Aceptad otras soluciones que respeten la ruta y todas las restricciones de la consigna.
 
-### Preguntes per fer pensar
+### Preguntas para pensar
 
-- Definir una funció fa que el robot la comence a executar?
-- On continua el programa quan acaba una crida?
-- Què canvia si una peça queda fora del bucle?
+- ¿Definir una función hace que el robot empiece a ejecutarla?
+- ¿Dónde continúa el programa cuando termina una llamada?
+- ¿Qué cambia si una pieza queda fuera del bucle?
+## ♿ Variantes e inclusión
 
-## ♿ Variants i inclusió
+Leed las consignas en voz alta si hace falta. Seguid la simulación con el dedo y marcad las órdenes ya ejecutadas. Las respuestas se dibujan con piezas de contorno en blanco y negro. Para apoyar, proporcionad la función resuelta; para ampliar, cambiad el número de repeticiones y comprobad la ruta hacia el tablero.
+## 🔗 Referente consultado
 
-Llegiu les consignes en veu alta si cal. Seguiu la simulació amb el dit i marqueu les ordres ja executades. Les respostes es dibuixen amb peces de contorn en blanc i negre. Per donar suport, proporcioneu la funció resolta; per ampliar, canvieu el nombre de repeticions i comproveu que la ruta cap al tauler.
-
-## 🔗 Referent consultat
-
-[Funcions de Coding Set](https://matatalab.com/en/node/63) i [bucles de Coding Set](https://matatalab.com/en/node/62). La definició va en una fila inferior; els nombres no es combinen amb peces de funció i sí amb l’inici del bucle. Les icones editables són esquemes didàctics, no reproduccions exactes de les peces.
+[Funciones de Coding Set](https://matatalab.com/en/node/63) y [bucles de Coding Set](https://matatalab.com/en/node/62). La definición va en una fila inferior; los números no se combinan con piezas de función y sí con el inicio del bucle. Los iconos editables son esquemas didácticos, no reproducciones exactas de las piezas.

@@ -1235,6 +1235,13 @@ const requiredActivityHeadings = [
   "## ✅ Evidències d'aprenentatge",
   "## ♿ Variants i inclusió"
 ];
+const requiredActivityHeadingsEs = [
+  "## 🎯 ¿Qué vamos a aprender?",
+  "## 🧰 Materiales y preparación",
+  "## 👣 Desarrollo paso a paso",
+  "## ✅ Evidencias de aprendizaje",
+  "## ♿ Variantes e inclusión"
+];
 for (const file of activityFiles) {
   const source = fs.readFileSync(path.join(activitiesDir, file), "utf8");
   if (/^active:\s*false\s*$/m.test(source)) continue;
@@ -1243,15 +1250,18 @@ for (const file of activityFiles) {
     assert.ok(rendered.data[field], `${file}: declara la propietat obligatòria ${field}`);
   }
   const h2Headings = source.split("\n").filter(line => line.startsWith("## "));
-  const expectedHeadings = h2Headings.includes("## 🔗 Referent consultat")
-    ? [...requiredActivityHeadings, "## 🔗 Referent consultat"]
-    : requiredActivityHeadings;
+  const spanishActivity = h2Headings.includes("## 🎯 ¿Qué vamos a aprender?");
+  const baseHeadings = spanishActivity ? requiredActivityHeadingsEs : requiredActivityHeadings;
+  const referentHeading = spanishActivity ? "## 🔗 Referente consultado" : "## 🔗 Referent consultat";
+  const expectedHeadings = h2Headings.includes(referentHeading)
+    ? [...baseHeadings, referentHeading]
+    : baseHeadings;
   assert.deepEqual(h2Headings, expectedHeadings, `${file}: manté exactament els encapçalaments canònics d'activitat`);
-  assert.match(source, /^### Preguntes per fer pensar$/m, `${file}: inclou la subsecció de preguntes de reflexió`);
-  assert.doesNotMatch(rendered.html, /Desenvolupament del pas|learning-phase-default/, `${file}: el pas no té cap fase automàtica`);
+  assert.match(source, /^### (?:Preguntes per fer pensar|Preguntas para pensar)$/m, `${file}: inclou la subsecció de preguntes de reflexió`);
+  assert.doesNotMatch(rendered.html, /Desenvolupament del pas|Desarrollo del paso|learning-phase-default/, `${file}: el pas no té cap fase automàtica`);
   assert.match(rendered.html, /<div class="learning-step-content">\s*<(?:p|aside|figure|ul|ol)/, `${file}: el contingut és directament dins del pas`);
   assert.ok(rendered.steps.length >= 3, `${file}: organitza l'activitat en almenys tres passos al wizard`);
-  const expectedGroups = h2Headings.includes("## 🔗 Referent consultat")
+  const expectedGroups = (h2Headings.includes("## 🔗 Referent consultat") || h2Headings.includes("## 🔗 Referente consultado"))
     ? ["learning", "materials", "sequence", "assessment", "access", "official"]
     : ["learning", "materials", "sequence", "assessment", "access"];
   assert.deepEqual(

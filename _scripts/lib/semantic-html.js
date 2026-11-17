@@ -630,7 +630,7 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
   // Renderitzar el preàmbul (abans del primer <h2>, ex. imatge de portada)
   output.push(...renderSemanticBlocks(preambleNodes, { introPending: false }));
 
-  const isStepHeading = title => /^(sessió|sessio|lliçó|lliço|lesson|session)\s+\d+/i.test(title);
+  const isStepHeading = title => /^(sessió|sessio|lliçó|lliço|sesión|lección|lesson|session)\s+\d+/i.test(title);
 
   // Agrupar grups consecutius amb la mateixa clau canònica en un únic <section class="detail-section">
   const mergedSections = [];
@@ -670,7 +670,7 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
       const isSequenceSub =
         sub.key === 'sequence' &&
         !/oficial|adaptació|adaptacio|referent/i.test(sub.plainTitle) &&
-        (isTutorial || /(seqüèn|seqüen|itinerari|sessions|passos|lliçons|activitats|desenvolupament|projecte en|reptes|estands|fases|àmbits|repte\s+\d)/i.test(sub.plainTitle));
+        (isTutorial || /(seqüèn|seqüen|itinerari|sessions|passos|lliçons|activitats|desenvolupament|projecte en|reptes|estands|fases|àmbits|repte\s+\d|secuencia|sesiones|pasos|lecciones|actividades|desarrollo|proyecto en|retos|fases|reto\s+\d)/i.test(sub.plainTitle));
 
       // Processar els nodes dins d'aquest bloc <h2>
       let openStep = false;
@@ -715,7 +715,7 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
 
           const plainTitle = node.textContent.trim();
           const displayTitlePlain = plainTitle
-            .replace(/^(?:(?:sess(?:ió|io)|lliç(?:ó|o)|lesson|session)\s+\d+|s\d+)\s*[·—:.-]\s*/i, '')
+            .replace(/^(?:(?:sess(?:ió|io)|lliç(?:ó|o)|sesión|lección|lesson|session)\s+\d+|s\d+)\s*[·—:.-]\s*/i, '')
             .replace(/^(?:[a-z]{1,3}-?\d+)\s*[·—:.-]\s*/i, '')
             .replace(/^\d+(?:[.)]\s*|\s+|(?=[A-ZÀ-ÖØ-Þ]))/, '')
             .replace(/[.!?]+$/, '')
