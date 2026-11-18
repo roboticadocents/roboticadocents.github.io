@@ -3,7 +3,7 @@
 
 /**
  * Prototipo local de sitio bilingüe:
- *   /      -> build catalán desde la rama `main`
+ *   /      -> build catalán desde la rama `catalan` (original)
  *   /es/   -> build castellano desde la rama actual
  *
  * No modifica el contenido ni las plantillas: compone ambos `dist` y añade
@@ -18,33 +18,47 @@ const crypto = require('node:crypto');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'dist-bilingue');
-const CA_WORKTREE = '/tmp/opencode/roboticadocents-ca';
+const CA_BRANCH = process.env.CA_REF || 'catalan';
+const CA_FALLBACK = 'c619386';
+const CA_WORKTREE = process.env.CA_WORKTREE || path.join(path.dirname(ROOT), 'roboticadocents-ca');
 const ES_DIST = path.join(ROOT, 'dist');
 const CA_DIST = path.join(CA_WORKTREE, 'dist');
+const BUILD_PDF = process.argv.includes('--pdf');
 
 function sh(cmd, args, opts = {}) {
   return execFileSync(cmd, args, { stdio: 'inherit', ...opts });
 }
 
-function cleanWorktree() {
+function ensureCatalanWorktree() {
   try {
-    sh('git', ['worktree', 'remove', '--force', CA_WORKTREE], { cwd: ROOT });
+    sh('git', ['show-ref', '--verify', '--quiet', `refs/heads/${CA_BRANCH}`], { cwd: ROOT });
   } catch (_) {
-    fs.rmSync(CA_WORKTREE, { recursive: true, force: true });
+    sh('git', ['branch', CA_BRANCH, CA_FALLBACK], { cwd: ROOT });
   }
-  try {
-    sh('git', ['worktree', 'prune'], { cwd: ROOT });
-  } catch (_) {}
+  const valid = fs.existsSync(path.join(CA_WORKTREE, '_scripts/build.js'));
+  if (!valid) {
+    if (fs.existsSync(CA_WORKTREE)) {
+      try {
+        sh('git', ['worktree', 'remove', '--force', CA_WORKTREE], { cwd: ROOT });
+      } catch (_) {
+        fs.rmSync(CA_WORKTREE, { recursive: true, force: true });
+      }
+    }
+    sh('git', ['worktree', 'add', '--force', CA_WORKTREE, CA_BRANCH], { cwd: ROOT });
+  }
 }
 
 function buildCatalan() {
-  cleanWorktree();
-  sh('git', ['worktree', 'add', '--force', CA_WORKTREE, 'main'], { cwd: ROOT });
-  sh('node', ['_scripts/build.js'], { cwd: CA_WORKTREE });
+  ensureCatalanWorktree();
+  const args = ['_scripts/build.js'];
+  if (BUILD_PDF) args.push('--pdf');
+  sh('node', args, { cwd: CA_WORKTREE });
 }
 
 function buildSpanish() {
-  sh('node', ['_scripts/build.js'], { cwd: ROOT });
+  const args = ['_scripts/build.js'];
+  if (BUILD_PDF) args.push('--pdf');
+  sh('node', args, { cwd: ROOT });
 }
 
 function loadMaps() {
@@ -288,7 +302,7 @@ function main() {
     console.log('1/3 · reutilizando builds existentes');
     if (!fs.existsSync(CA_DIST) || !fs.existsSync(ES_DIST)) throw new Error('No hay builds previos para --assemble-only');
   } else {
-    console.log('1/4 · build catalán desde main');
+    console.log(`1/4 · build catalán desde ${CA_BRANCH} (${CA_WORKTREE})`);
     buildCatalan();
     console.log('2/4 · build castellano desde traduccion-es');
     buildSpanish();
