@@ -122,19 +122,19 @@ Combinad las dos entradas simuladas o externas con las reglas de luz y humedad; 
 _La pasarela, las salidas, el identificador y la parada son elementos de maqueta o representación; las placas no controlan relés ni identifican una ubicación real._
 
 ```text
-aturada = fals  # en iniciar el programa
-quan es premen A+B:
-    aturada = cert
-si aturada:
-    llum = OFF
-    reg = OFF
-altrament:
-    llum = ON si lectura_llum < llindar_llum_de_prova, si no OFF
-    reg = ON si lectura_humitat < llindar_humitat_de_prova, si no OFF
-    envia «HORT-01:REVISA» si cal revisió
+parada = falso  # al iniciar el programa
+cuando se pulsen A+B:
+    parada = verdadero
+si parada:
+    luz = OFF
+    riego = OFF
+si no:
+    luz = ON si lectura_luz < umbral_luz_de_prueba, si no OFF
+    riego = ON si lectura_humedad < umbral_humedad_de_prueba, si no OFF
+    enviar «HORT-01:REVISA» si hace falta una revisión
 ```
 
-_Pseudocódigo propio para la maqueta: «llum» y «reg» son salidas representadas, no relés reales. En MakeCode, el estado de parada se reinicia al iniciar el programa y A+B lo mantiene activo hasta que se reinicia; la placa permite detectar la pulsación conjunta._
+_Pseudocódigo propio para la maqueta: «luz» y «riego» son salidas representadas, no relés reales. En MakeCode, el estado de parada se reinicia al iniciar el programa y A+B lo mantiene activo hasta que se reinicia; la placa permite detectar la pulsación conjunta._
 
 #### Fase 3 · Explicamos y registramos
 

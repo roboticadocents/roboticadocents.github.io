@@ -204,7 +204,7 @@ def markdown_to_typst(source: str, md_path: Path, typ_dir: Path) -> str:
                 labels = {"makecode": "MakeCode", "spikeapp": "SPIKE App", "mblock": "mBlock"}
                 language = {"makecode": "js"}.get(fence, fence if fence not in labels else "")
                 raw = "\n".join(code)
-                label = labels.get(fence, "Codi")
+                label = labels.get(fence, "Código")
                 out.append(f"#block(breakable: false, fill: rgb(\"#f4f6f8\"), stroke: (left: 2.5pt + rgb(\"#2563eb\"), rest: 0.6pt + rgb(\"#e5e9ee\")), radius: 7pt, inset: (x: 12pt, y: 10pt))[#text(size: 8pt, weight: \"bold\", fill: rgb(\"#2563eb\"))[ {label.upper()} ] #v(4pt) #raw({typst_string(raw)}, lang: {typst_string(language)})]")
                 out.append("")
                 fence = None

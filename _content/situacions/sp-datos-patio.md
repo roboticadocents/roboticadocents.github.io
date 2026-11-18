@@ -67,11 +67,11 @@ En quince minutos, construid en parejas una figura mecánica con SPIKE Prime que
 
 #### Fase 3 · Explicamos y registramos
 
-En diez minutos, cread una variable numérica con un nombre claro, como `moviments`, que empiece en 0 y aumente en 1 cada vez que el mecanismo complete un movimiento. Ejecutad el programa y comprobad que, después de cinco repeticiones, la variable muestra 5. Explicad qué representa y en qué punto del programa se actualiza; distinguid la cantidad de movimientos del tiempo que el motor ha estado activo.
+En diez minutos, cread una variable numérica con un nombre claro, como `movimientos`, que empiece en 0 y aumente en 1 cada vez que el mecanismo complete un movimiento. Ejecutad el programa y comprobad que, después de cinco repeticiones, la variable muestra 5. Explicad qué representa y en qué punto del programa se actualiza; distinguid la cantidad de movimientos del tiempo que el motor ha estado activo.
 
 #### Fase 4 · Aplicamos y mejoramos
 
-Dentro de los quince minutos de elaboración —que incluyen el cierre y la autoevaluación—, añadid una segunda variable para calcular **puntos de movimiento simulados** con una regla inventada y visible, por ejemplo dos puntos por cada movimiento completado: `punts = moviments × 2`. Modificad el número de repeticiones, ejecutad el programa y registrad número de movimientos y puntos en una tabla; representad después la relación en un gráfico sencillo. Los puntos son una convención de la actividad, no calorías, gasto energético ni una medida del esfuerzo humano. Para ampliar, alternad dos movimientos lentos y tres rápidos, usad contadores separados y mostrad los valores finales. Para dar apoyo, volved al bote y las fichas o contad cada repetición con marcas en papel.
+Dentro de los quince minutos de elaboración —que incluyen el cierre y la autoevaluación—, añadid una segunda variable para calcular **puntos de movimiento simulados** con una regla inventada y visible, por ejemplo dos puntos por cada movimiento completado: `puntos = movimientos × 2`. Modificad el número de repeticiones, ejecutad el programa y registrad número de movimientos y puntos en una tabla; representad después la relación en un gráfico sencillo. Los puntos son una convención de la actividad, no calorías, gasto energético ni una medida del esfuerzo humano. Para ampliar, alternad dos movimientos lentos y tres rápidos, usad contadores separados y mostrad los valores finales. Para dar apoyo, volved al bote y las fichas o contad cada repetición con marcas en papel.
 
 #### Fase 5 · Comprobamos y reflexionamos
 
@@ -155,7 +155,7 @@ Presentad un reto de memoria cooperativo: dos personas leerán secuencias de pie
 
 #### Fase 2 · Exploramos y construimos
 
-Durante 15 minutos, montad en pareja la cabeza y el cuerpo del modelo *Game Master*, repartiendo tareas para que ambas personas participen. Comprobad que el sensor de color queda alineado con la pieza antes de programar. La primera persona pasa una tira de cinco piezas y el programa registra, en orden, las lecturas en `llista_1`; la segunda pasa su tira y rellena `llista_2`. Empezad con tres piezas si hace falta y aumentad a cinco cuando las lecturas sean repetibles. Si una pieza no se reconoce con suficiente estabilidad, repetid la lectura o usad una secuencia de tarjetas identificada como simulación.
+Durante 15 minutos, montad en pareja la cabeza y el cuerpo del modelo *Game Master*, repartiendo tareas para que ambas personas participen. Comprobad que el sensor de color queda alineado con la pieza antes de programar. La primera persona pasa una tira de cinco piezas y el programa registra, en orden, las lecturas en `lista_1`; la segunda pasa su tira y rellena `lista_2`. Empezad con tres piezas si hace falta y aumentad a cinco cuando las lecturas sean repetibles. Si una pieza no se reconoce con suficiente estabilidad, repetid la lectura o usad una secuencia de tarjetas identificada como simulación.
 
 ![Modelo SPIKE Prime con sensor de color junto a dos secuencias de cinco piezas e indicadores que señalan las posiciones coincidentes.](../../_assets/situacions/sa-sp-joc-memoria-llistes.webp)
 
@@ -166,11 +166,11 @@ _Las secuencias son datos de prueba propios; la fila de indicadores ilustra la c
 En los 10 minutos de explicación, programad la lectura de cada secuencia en una lista y comparad los valores por el mismo índice. En cada posición, haced que la matriz LED indique si hay coincidencia; registrad también las lecturas reales para detectar un fallo del sensor antes de culpar al programa. Trazad una prueba corta en papel y explicad por qué importa el orden de los datos.
 
 ```text
-per cada posició de les dues llistes:
-  si llista_1[posició] = llista_2[posició]:
-    mostra coincidència
+para cada posición de las dos listas:
+  si lista_1[posición] = lista_2[posición]:
+    mostrar coincidencia
   si no:
-    mostra diferència
+    mostrar diferencia
 ```
 
 #### Fase 4 · Aplicamos y mejoramos

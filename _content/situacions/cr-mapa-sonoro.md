@@ -80,11 +80,11 @@ Recuperad las lecturas de la sesión anterior. ¿Qué debería mantenerse igual 
 Definid un protocolo común: misma mesa, misma orientación del robot, misma distancia entre sensor y fuente, misma duración y una pausa entre pruebas. Una persona prepara el material, otra inicia el programa, una tercera registra el valor y una cuarta comprueba el protocolo. Cambiad los roles después de cada fuente.
 
 ```blocks
-quan comença
-  mostra la lectura del sensor de so
-  espera l'interval acordat
-  registra el valor i el codi de mostra
-  torna a l'estat de repòs
+cuando comience
+  mostrar la lectura del sensor de sonido
+  esperar el intervalo acordado
+  registrar el valor y el código de muestra
+  volver al estado de reposo
 ```
 
 #### Fase 3 · Explicamos y registramos
@@ -110,14 +110,14 @@ Ordenad las muestras a partir de los rangos observados, no de una impresión ini
 Elegid dos umbrales a partir de los datos locales y programad tres estados visibles en la matriz LED: lectura baja, intermedia o alta según la escala de la clase. Los umbrales son convenciones de la actividad, no valores universales. Comprobad en el programa que las condiciones no se solapan y que cada caso tiene una respuesta.
 
 ```blocks
-quan comença
-  llig el nivell de so
-  si és inferior al primer llindar
-    mostra el símbol de nivell baix
-  altrament si és inferior al segon llindar
-    mostra el símbol de nivell intermedi
-  altrament
-    mostra el símbol de nivell alt
+cuando comience
+  leer el nivel de sonido
+  si es inferior al primer umbral
+    mostrar el símbolo de nivel bajo
+  si no, si es inferior al segundo umbral
+    mostrar el símbolo de nivel intermedio
+  si no
+    mostrar el símbolo de nivel alto
 ```
 
 #### Fase 3 · Explicamos y registramos

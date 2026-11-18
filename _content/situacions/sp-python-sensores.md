@@ -45,11 +45,11 @@ Esta situación adapta las seis lecciones de la unidad 3 *Sensor Control* de LEG
 **Entrada:** dato recibido por el programa, como la presión del sensor. **Condicional:** instrucción que elige una acción según si una expresión es verdadera o falsa. **Umbral:** valor a partir del cual se activa una regla. **Ultrasonidos:** sonido de alta frecuencia usado por el sensor para estimar la separación respecto a un objeto. **Potencia:** intensidad ordenada al motor, que no determina por sí sola la velocidad real. **Falso positivo/negativo:** activación o ausencia de activación que no concuerda con el criterio de prueba.
 
 ```pseudocode
-# Pseudocodi conceptual, no és una API executable de SPIKE
-si s'ha confirmat_l'ordre:
-    avançar_a_velocitat_baixa()
-si distancia_llegida < llindar_d'aturada:
-    aturar_i_mostrar_arribada()
+# Pseudocódigo conceptual, no es una API ejecutable de SPIKE
+si se_ha_confirmado_la_orden:
+    avanzar_a_velocidad_baja()
+si distancia_leida < umbral_de_parada:
+    detener_y_mostrar_llegada()
 ```
 
 Las llamadas reales del sensor, la lectura no disponible, los puertos y los motores varían según la versión de la app SPIKE. Consultad la Knowledge Base instalada y evitad asumir que una lectura ausente equivale a cero: definid qué hace el robot ante una lectura inválida y cómo puede detenerlo manualmente una persona.

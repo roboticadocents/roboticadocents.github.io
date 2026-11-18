@@ -46,11 +46,11 @@ Indica qué prepara el docente, qué hace el alumnado, la pregunta que orienta l
 Describe los pasos en orden, las decisiones, los materiales y la forma de registrar resultados.
 
 ```blocks
-quan comença
-  inicialitza les dades
-  repeteix les proves acordades
-    llig l’entrada
-    decideix l’acció
+cuando comience
+  inicializar los datos
+  repetir las pruebas acordadas
+    leer la entrada
+    decidir la acción
 ```
 
 ![Ilustración de apoyo para la exploración o el montaje.](../../_assets/situacions/nom-imatge-pas.webp)

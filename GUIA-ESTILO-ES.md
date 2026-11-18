@@ -103,7 +103,7 @@ La interfaz se dirige a una persona que navega, no al equipo docente. Para no me
 ## 6. Estructura y fidelidad
 
 - Se conservan los encabezados, listas, tablas, bloques de código, enlaces, imágenes, emojis y claves del front matter.
-- Los bloques de código (`makecode`, `mblock`, `spikeapp`, `talebot`, `coding-set`) no se tocan.
+- El código ejecutable (`makecode`, Python y JavaScript) no se traduce. En los diagramas textuales (`mblock`, `spikeapp`, `talebot`, `coding-set`) y el pseudocódigo didáctico (`blocks`, `pseudocode`, `text`) sí se traducen las instrucciones. Se mantienen las órdenes, parámetros, puertos, agrupaciones y correspondencias entre mensajes; los nombres didácticos de variables y funciones deben coincidir con sus referencias en la explicación. El generador debe reconocer la sintaxis castellana y conservar las formas y colores de los bloques.
 - Las rutas de imágenes y archivos no se traducen, salvo que formen parte del cambio de slugs acordado.
 - Los enlaces externos y las fuentes oficiales se mantienen.
 - Se conservan cifras, tiempos, recuentos, edades y duraciones.

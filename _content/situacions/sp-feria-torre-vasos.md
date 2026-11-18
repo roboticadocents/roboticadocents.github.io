@@ -86,11 +86,11 @@ Comprobad primero que el vehículo avanza y gira en un espacio abierto. Si la co
 Dibujad la ruta en cuadrícula y describid cada orden antes de programarla. Usad este pseudocódigo, ajustando los movimientos a la app y al montaje locales:
 
 ```text
-inici: orientar el vehicle cap al primer tram
-avançar a velocitat baixa fins a la marca de gir
-girar per vorejar l'obstacle tou
-avançar fins a la zona de la torre
-aturar el vehicle abans de recuperar-lo
+inicio: orientar el vehículo hacia el primer tramo
+avanzar a velocidad baja hasta la marca de giro
+girar para rodear el obstáculo blando
+avanzar hasta la zona de la torre
+detener el vehículo antes de recuperarlo
 ```
 
 La secuencia no incluye una lectura de sensor: el vehículo no sabe por sí mismo dónde está el obstáculo ni si ha llegado a la torre. La persona observadora comprueba estos eventos y registra la diferencia entre el recorrido previsto y el ejecutado.

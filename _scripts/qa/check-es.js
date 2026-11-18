@@ -24,6 +24,10 @@ const options = {
   json: hasFlag('--json')
 };
 
+// These fences describe classroom algorithms; their labels are translatable.
+// Executable Python, JavaScript and MakeCode remain protected and masked.
+const DIDACTIC_FENCES = ['blocks', 'pseudocode', 'text', 'mblock', 'mblocks', 'spikeapp', 'spike-app', 'spike', 'scratchblocks', 'talebot', 'tale-bot', 'coding-set', 'codingset'];
+
 const CA_CHARS = /[àèìòùçï]/giu;
 const CA_LDOT = /\p{L}·\p{L}/giu;
 const CA_APOS = /(?<![\p{L}\p{N}])[ldsnmt]'[\p{L}]|\bqu'[\p{L}]/giu;
@@ -133,7 +137,12 @@ function langOf(file) {
 
 function maskMarkdown(text) {
   let result = text;
-  result = result.replace(/^```[^\n]*\n[\s\S]*?^```[ \t]*$/gm, blank);
+  result = result.replace(/^```([^\n]*)\n[\s\S]*?^```[ \t]*$/gm, (match, lang) => {
+    if (!DIDACTIC_FENCES.includes(lang.trim().toLowerCase())) return blank(match);
+    const start = match.indexOf('\n') + 1;
+    const end = match.lastIndexOf('```');
+    return blank(match.slice(0, start)) + match.slice(start, end) + blank(match.slice(end));
+  });
   result = result.replace(/`[^`\n]*`/g, blank);
   result = result.replace(/!\[([^\]]*)\]\([^)]*\)/g, (_, alt) => ` ${alt} `);
   result = result.replace(/\[([^\]]*)\]\([^)]*\)/g, (_, label) => ` ${label} `);
@@ -267,11 +276,12 @@ function compareStats(file, original, translated, issues) {
       const other = after.fences[index];
       if (fence.lang !== other.lang) error(`Lenguaje del bloque ${index + 1}: ${fence.lang} → ${other.lang}`);
       if (fence.code !== other.code) {
-        const visual = ['mblock', 'mblocks', 'spikeapp', 'spike-app', 'spike', 'scratchblocks', 'talebot', 'tale-bot', 'coding-set', 'codingset'].includes(fence.lang);
+        const visual = DIDACTIC_FENCES.includes(fence.lang);
         if (visual && fence.lang === other.lang) {
           const numbers = code => (code.match(/\b\d+(?:[.,]\d+)?\b/g) || []).join(',');
           if (numbers(fence.code) !== numbers(other.code)) error(`Han cambiado los parámetros numéricos del diagrama ${index + 1}`);
-          warn(`Etiquetas del diagrama ${index + 1} traducidas; comprobar formas, colores y agrupaciones con test-visual-blocks.js`);
+          const check = ['blocks', 'pseudocode', 'text'].includes(fence.lang) ? 'test-markdown-renderer.js' : 'test-visual-blocks.js';
+          warn(`Instrucciones del ejemplo ${index + 1} traducidas; comprobar parámetros y agrupaciones con ${check}`);
         } else {
           error(`El contenido del bloque ${index + 1} ha cambiado; el código ejecutable no se traduce`);
         }

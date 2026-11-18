@@ -145,7 +145,7 @@ Recuperad la secuencia de animación de L3. En una tira de cuatro viñetas, repr
 
 #### Fase 2 · Exploramos y construimos (10 min)
 
-Ordenad tres tarjetas de papel —preparar la rana, saltar y aterrizar— y añadid una pausa para que se pueda leer cada fotograma. Haced que otra pareja ejecute el fragmento cuatro veces. Después, comparad la tira de tres instrucciones dentro de un único bucle con contador con la misma tira copiada cuatro veces; marcad qué queda dentro de `repeteix` y qué se ejecuta solo una vez antes o después.
+Ordenad tres tarjetas de papel —preparar la rana, saltar y aterrizar— y añadid una pausa para que se pueda leer cada fotograma. Haced que otra pareja ejecute el fragmento cuatro veces. Después, comparad la tira de tres instrucciones dentro de un único bucle con contador con la misma tira copiada cuatro veces; marcad qué queda dentro de `repetir` y qué se ejecuta solo una vez antes o después.
 
 ![Codey Rocky real junto a un mapa de papel de la marjal con cuatro paradas de cañizo conectadas por flechas y cuatro fichas de recuento.](../../_assets/situacions/sa-cr-bucle-comptat-v2.webp)
 
@@ -153,7 +153,7 @@ _Las cuatro marcas modelan el número de iteraciones; el robot no identifica há
 
 #### Fase 3 · Explicamos y registramos (10 min)
 
-En mBlock, programad con el botón A una animación original en la pantalla de Codey: mostrad dos dibujos propios (rana preparada y salto), añadid una pausa breve para leerlos y repetid la secuencia con `repeteix (4)`. Después del bucle, mostrad un icono final diferente. Seguid las cuatro iteraciones con una tabla de traza: número de vuelta y fotograma observado. Cambiad el recuento a 3, volved a ejecutarlo y comprobad que la secuencia final se muestra solo cuando el bucle acaba. Explicad qué evento inicia el programa y cómo el número de repeticiones determina el final.
+En mBlock, programad con el botón A una animación original en la pantalla de Codey: mostrad dos dibujos propios (rana preparada y salto), añadid una pausa breve para leerlos y repetid la secuencia con `repetir (4)`. Después del bucle, mostrad un icono final diferente. Seguid las cuatro iteraciones con una tabla de traza: número de vuelta y fotograma observado. Cambiad el recuento a 3, volved a ejecutarlo y comprobad que la secuencia final se muestra solo cuando el bucle acaba. Explicad qué evento inicia el programa y cómo el número de repeticiones determina el final.
 
 #### Fase 4 · Aplicamos y mejoramos (10 min)
 
@@ -169,11 +169,11 @@ Cada pareja presenta la animación y responde: ¿qué representa una iteración,
 
 #### Fase 1 · Activamos y predecimos (5 min)
 
-Recuperad el programa de L5 y comparad `repeteix (4)` con una secuencia que no tiene un número fijo de vueltas. Usad el ciclo de luz y oscuridad como ejemplo natural que se repite, y dibujad tres fotogramas para representar un amanecer y una puesta de sol sobre la marjal. Predecid qué programa acabará después de un número establecido y cuál continuará hasta que alguien lo detenga.
+Recuperad el programa de L5 y comparad `repetir (4)` con una secuencia que no tiene un número fijo de vueltas. Usad el ciclo de luz y oscuridad como ejemplo natural que se repite, y dibujad tres fotogramas para representar un amanecer y una puesta de sol sobre la marjal. Predecid qué programa acabará después de un número establecido y cuál continuará hasta que alguien lo detenga.
 
 #### Fase 2 · Exploramos y construimos (10 min)
 
-En mBlock, haced una animación finita con un evento de botón y un `repeteix`; después, cread una segunda con otro botón y poned la secuencia dentro de `per sempre`. Alternad tres fotogramas propios con pausas suficientemente largas para que se puedan leer. Antes de probar el bucle infinito, identificad el control de parada del entorno. Si la versión de mBlock ofrece un evento del botón C y un bloque para detener todos los scripts, asignadles esa función y comprobadla con el robot quieto. Si no están, usad el control de detención de mBlock. En MicroPython, la documentación oficial muestra el botón C llamando a `codey.stop_all_scripts()`; esta API no implica que el mismo bloque esté disponible en mBlock.
+En mBlock, haced una animación finita con un evento de botón y un `repetir`; después, cread una segunda con otro botón y poned la secuencia dentro de `para siempre`. Alternad tres fotogramas propios con pausas suficientemente largas para que se puedan leer. Antes de probar el bucle infinito, identificad el control de parada del entorno. Si la versión de mBlock ofrece un evento del botón C y un bloque para detener todos los scripts, asignadles esa función y comprobadla con el robot quieto. Si no están, usad el control de detención de mBlock. En MicroPython, la documentación oficial muestra el botón C llamando a `codey.stop_all_scripts()`; esta API no implica que el mismo bloque esté disponible en mBlock.
 
 #### Fase 3 · Explicamos y registramos (10 min)
 
@@ -189,7 +189,7 @@ En parejas, cambiad las imágenes, el orden, una pausa, el sonido opcional o añ
 
 #### Fase 5 · Comprobamos y reflexionamos (5 min)
 
-Cada equipo presenta las dos animaciones y responde cuál utiliza `repeteix`, cuál `per sempre` y cómo ha comprobado su finalización. Completad una autoevaluación: un bucle con contador de la vida cotidiana, un proceso cíclico que no tiene un final fijo y una precaución necesaria cuando un programa sigue activo. **Evidencia:** storyboard de tres fotogramas, dos programas con eventos diferentes, registro de ciclos/detención, comentarios de otra pareja y autoevaluación.
+Cada equipo presenta las dos animaciones y responde cuál utiliza `repetir`, cuál `para siempre` y cómo ha comprobado su finalización. Completad una autoevaluación: un bucle con contador de la vida cotidiana, un proceso cíclico que no tiene un final fijo y una precaución necesaria cuando un programa sigue activo. **Evidencia:** storyboard de tres fotogramas, dos programas con eventos diferentes, registro de ciclos/detención, comentarios de otra pareja y autoevaluación.
 
 **Pregunta docente:** ¿cómo sabe el usuario que el bucle está activo y cómo puede terminarlo?
 
@@ -197,7 +197,7 @@ Cada equipo presenta las dos animaciones y responde cuál utiliza `repeteix`, cu
 
 #### Fase 1 · Activamos y predecimos (5 min)
 
-Recuperad el trabajo anterior: recordad qué es un error de programa y distinguid `repeteix` de `per sempre` con un ejemplo oral breve. Después, contrastadlo con la condición: una decisión `si` comprueba un valor y solo entonces ejecuta una instrucción. Haced una «caja de condiciones» con tarjetas de prueba fáciles de identificar y no personales (por ejemplo, «la ficha es verde»): quien saca una tarjeta decide si se cumple y sigue la instrucción asociada. En parejas, cread una tarjeta propia de reto con una respuesta para el caso verdadero y otra para el falso. Predecid cómo podría responder Codey ante una bandera verde o un obstáculo en una pista de maqueta. No es una carrera de velocidad.
+Recuperad el trabajo anterior: recordad qué es un error de programa y distinguid `repetir` de `para siempre` con un ejemplo oral breve. Después, contrastadlo con la condición: una decisión `si` comprueba un valor y solo entonces ejecuta una instrucción. Haced una «caja de condiciones» con tarjetas de prueba fáciles de identificar y no personales (por ejemplo, «la ficha es verde»): quien saca una tarjeta decide si se cumple y sigue la instrucción asociada. En parejas, cread una tarjeta propia de reto con una respuesta para el caso verdadero y otra para el falso. Predecid cómo podría responder Codey ante una bandera verde o un obstáculo en una pista de maqueta. No es una carrera de velocidad.
 
 #### Fase 2 · Exploramos y construimos (10 min)
 
@@ -209,20 +209,20 @@ _Los objetos son estáticos; la lectura de color y la detección de obstáculos 
 
 #### Fase 3 · Explicamos y registramos (10 min)
 
-En la configuración hacia abajo, programad el botón A y una condición `si color = verd`: avanzad solo un tramo corto a velocidad baja si la lectura coincide; de lo contrario, quedaos detenidos. En la configuración hacia delante, haced una prueba independiente `si obstacle detectat`: deteneos, girad a la izquierda una cantidad limitada y avanzad solo una casilla de maqueta antes de deteneros. El bloque de proximidad se trata como una detección, no como una medida exacta de distancia. Registrad por separado orientación, entrada, valor/estado, condición verdadera o falsa y respuesta.
+En la configuración hacia abajo, programad el botón A y una condición `si color = verde`: avanzad solo un tramo corto a velocidad baja si la lectura coincide; de lo contrario, quedaos detenidos. En la configuración hacia delante, haced una prueba independiente `si se detecta un obstáculo`: deteneos, girad a la izquierda una cantidad limitada y avanzad solo una casilla de maqueta antes de deteneros. El bloque de proximidad se trata como una detección, no como una medida exacta de distancia. Registrad por separado orientación, entrada, valor/estado, condición verdadera o falsa y respuesta.
 
 ```blocks
-quan es prem A
-  si el color llegit és verd
-    avança a velocitat baixa un tram curt
+cuando se pulse A
+  si el color leído es verde
+    avanzar a velocidad baja un tramo corto
   si no
-    atura els motors
+    detener los motores
 
-quan es prem A  // en la prova amb el sensor orientat cap avant
-  si es detecta un obstacle
-    atura els motors
-    gira a l'esquerra una vegada
-    avança una casella i atura
+cuando se pulse A  // en la prueba con el sensor orientado hacia delante
+  si se detecta un obstáculo
+    detener los motores
+    girar a la izquierda una vez
+    avanzar una casilla y detenerse
 ```
 
 #### Fase 4 · Aplicamos y mejoramos (10 min)
@@ -238,7 +238,7 @@ Completad una batería de casos en dos tandas: con el sensor hacia abajo, tarjet
 
 #### Fase 1 · Activamos y predecimos (5 min)
 
-Recuperad las condiciones verdadera/falsa de L7 y comparad varias instrucciones `si` con un `repeteix` que contiene una condición. El reto principal adapta la reentrada al circuito de *The Racing Game II*: Codey Rocky llega a una estación de servicio en tres orientaciones posibles —hacia la izquierda, hacia la derecha o hacia delante— y tiene que encontrar la única salida. Predecid qué indica el obstáculo delante del sensor y por qué hay que volver a comprobarlo después de cada giro. Como segunda prueba independiente, cruzaréis un túnel oscuro y compararéis lecturas de luz con un operador. No se leerán color, obstáculo y luz a la vez.
+Recuperad las condiciones verdadera/falsa de L7 y comparad varias instrucciones `si` con un `repetir` que contiene una condición. El reto principal adapta la reentrada al circuito de *The Racing Game II*: Codey Rocky llega a una estación de servicio en tres orientaciones posibles —hacia la izquierda, hacia la derecha o hacia delante— y tiene que encontrar la única salida. Predecid qué indica el obstáculo delante del sensor y por qué hay que volver a comprobarlo después de cada giro. Como segunda prueba independiente, cruzaréis un túnel oscuro y compararéis lecturas de luz con un operador. No se leerán color, obstáculo y luz a la vez.
 
 #### Fase 2 · Exploramos y construimos (10 min)
 
@@ -253,31 +253,31 @@ _Ilustración propia de la maqueta de L8; el túnel y el trazado son materiales 
 Programad la salida con una condición dentro de un bucle con contador: si hay una pared delante, girad a la derecha 90°; repetid la comprobación tres veces como máximo. Cuando el sensor vea la salida libre, el robot se habrá orientado sin depender de la posición inicial. Al llegar a la abertura, girad a la izquierda 90° para incorporaros a la recta del circuito y avanzad a la velocidad más alta que hayáis comprobado antes de que ninguna rueda sobresalga del trazado. Anotad orientación inicial, número de giros, salida detectada y resultado de la incorporación.
 
 ```blocks
-quan es prem A
-  repeteix 3 vegades
-    si hi ha obstacle davant
-      gira a la dreta 90 graus
-  si l'eixida està lliure
-    gira a l'esquerra 90 graus
-    avança pel circuit a velocitat validada
+cuando se pulse A
+  repetir 3 veces
+    si hay un obstáculo delante
+      girar a la derecha 90 grados
+  si la salida está libre
+    girar a la izquierda 90 grados
+    avanzar por el circuito a velocidad validada
 ```
 
-El bucle es finito y limita los giros a tres intentos; no lo envolváis con un `per sempre`. La consigna oficial de continuar a gran velocidad se adapta a una velocidad máxima local validada, porque una recta corta o una batería baja pueden hacer perder el control del modelo.
+El bucle es finito y limita los giros a tres intentos; no lo envolváis con un `para siempre`. La consigna oficial de continuar a gran velocidad se adapta a una velocidad máxima local validada, porque una recta corta o una batería baja pueden hacer perder el control del modelo.
 
 #### Fase 4 · Aplicamos y mejoramos (10 min)
 
-Probad la ruta desde las tres orientaciones, con tres intentos comparables por orientación. Registrad los giros y si llega a la pista; cambiad una sola parte del código si falla. Como extensión del reto oficial, al llegar a la estación el Codey puede mostrar una expresión inventada y un indicador luminoso; añadid un sonido breve y bajo solo si todo el grupo lo encuentra cómodo. No hagáis sonar el altavoz mientras el robot se mueve. En una tanda separada, usad el sensor de luz de Codey para comparar el pasillo claro con el túnel sombreado. Registrad primero las lecturas y elegid un umbral entre los valores observados: son valores relativos del sensor, no lux calibrados. Dentro de un segundo `repeteix 3`, leed la luz, esperad un segundo y aplicad el operador `<`: si queda por debajo del umbral, encended el indicador RGB blanco y reducid la velocidad; si no, apagad el indicador y mantened la velocidad de prueba. Haced tres lecturas por condición y no presentéis el umbral como una medida de seguridad real.
+Probad la ruta desde las tres orientaciones, con tres intentos comparables por orientación. Registrad los giros y si llega a la pista; cambiad una sola parte del código si falla. Como extensión del reto oficial, al llegar a la estación el Codey puede mostrar una expresión inventada y un indicador luminoso; añadid un sonido breve y bajo solo si todo el grupo lo encuentra cómodo. No hagáis sonar el altavoz mientras el robot se mueve. En una tanda separada, usad el sensor de luz de Codey para comparar el pasillo claro con el túnel sombreado. Registrad primero las lecturas y elegid un umbral entre los valores observados: son valores relativos del sensor, no lux calibrados. Dentro de un segundo `repetir 3`, leed la luz, esperad un segundo y aplicad el operador `<`: si queda por debajo del umbral, encended el indicador RGB blanco y reducid la velocidad; si no, apagad el indicador y mantened la velocidad de prueba. Haced tres lecturas por condición y no presentéis el umbral como una medida de seguridad real.
 
 ```blocks
-repeteix 3 vegades
-  llig la llum ambiental
-  espera 1 segon
-  si la llum és menor que el llindar
-    encén l’indicador RGB blanc
-    mou-te a velocitat reduïda
+repetir 3 veces
+  leer la luz ambiental
+  esperar 1 segundo
+  si la luz es menor que el umbral
+    encender el indicador RGB blanco
+    moverse a velocidad reducida
   si no
-    apaga l’indicador RGB
-    mantín la velocitat de prova
+    apagar el indicador RGB
+    mantener la velocidad de prueba
 ```
 
 #### Fase 5 · Comprobamos y reflexionamos (5 min)
@@ -298,17 +298,17 @@ Localizad el sensor de sonido de Codey en la versión de mBlock disponible y obs
 
 #### Fase 3 · Explicamos y registramos (10 min)
 
-Construid la barra de tres alturas con tres condiciones dentro de un único bucle `per sempre`. El plan docente define `nivell > 20`, `10–20` y `nivell < 10`, y pide el operador **y** para la franja central; el cuaderno del alumnado escribe esa franja como `10 < nivell < 20`, sin asignar explícitamente los valores exactos 10 y 20. Para que la propuesta local clasifique todas las lecturas, acordamos y anotamos una convención propia: 10 y 20 también muestran la barra media (`10 ≤ nivell ≤ 20`). Son umbrales didácticos del reto, no valores universales del sensor. Trazad 9, 10, 15, 20 y 21 antes de probarlos.
+Construid la barra de tres alturas con tres condiciones dentro de un único bucle `para siempre`. El plan docente define `nivel > 20`, `10–20` y `nivel < 10`, y pide el operador **y** para la franja central; el cuaderno del alumnado escribe esa franja como `10 < nivel < 20`, sin asignar explícitamente los valores exactos 10 y 20. Para que la propuesta local clasifique todas las lecturas, acordamos y anotamos una convención propia: 10 y 20 también muestran la barra media (`10 ≤ nivel ≤ 20`). Son umbrales didácticos del reto, no valores universales del sensor. Trazad 9, 10, 15, 20 y 21 antes de probarlos.
 
 ```blocks
-per sempre
-  llig el nivell de so
-  si nivell > 20
-    mostra barra alta
-  si nivell >= 10 i nivell <= 20
-    mostra barra mitjana
-  si nivell < 10
-    mostra barra baixa
+para siempre
+  leer el nivel de sonido
+  si nivel > 20
+    mostrar barra alta
+  si nivel >= 10 y nivel <= 20
+    mostrar barra media
+  si nivel < 10
+    mostrar barra baja
 ```
 
 | Lectura de prueba | Salida local | Motivo |
@@ -348,23 +348,23 @@ _Las tarjetas modelan funciones creadas por el alumnado; no son bloques ni acces
 
 #### Fase 3 · Explicamos y registramos (10 min)
 
-En mBlock 5, abrid **Mis bloques / My Blocks**, cread una función propia `benvinguda_marjal` y definid en ella una animación de dos fotogramas en la matriz: icono de la marjal, pausa legible, icono de bienvenida y borrado. Después, llamadla desde el evento de inicio de Codey. Trazad el orden: evento → llamada → instrucciones de la función → final de la secuencia. Registrad la diferencia entre definir una función y llamarla.
+En mBlock 5, abrid **Mis bloques / My Blocks**, cread una función propia `bienvenida_marjal` y definid en ella una animación de dos fotogramas en la matriz: icono de la marjal, pausa legible, icono de bienvenida y borrado. Después, llamadla desde el evento de inicio de Codey. Trazad el orden: evento → llamada → instrucciones de la función → final de la secuencia. Registrad la diferencia entre definir una función y llamarla.
 
 ```blocks
-defineix benvinguda_marjal
-  mostra icona de la marjal
-  espera 1 segon
-  mostra icona de benvinguda
-  espera 1 segon
-  esborra la matriu
+definir bienvenida_marjal
+  mostrar icono de la marjal
+  esperar 1 segundo
+  mostrar icono de bienvenida
+  esperar 1 segundo
+  borrar la matriz
 
-quan Codey inicia
-  crida benvinguda_marjal
+cuando Codey se inicie
+  llamar bienvenida_marjal
 ```
 
 #### Fase 4 · Aplicamos y mejoramos (10 min)
 
-Personalizad los dos fotogramas y comparad la función con una versión que repita los mismos bloques sin función. Como extensión, añadid un evento del botón A que llame de nuevo a `benvinguda_marjal`: comprobad que una única definición sirve tanto al iniciar como al pulsar A. El sonido es opcional; mantened la alternativa visual silenciosa.
+Personalizad los dos fotogramas y comparad la función con una versión que repita los mismos bloques sin función. Como extensión, añadid un evento del botón A que llame de nuevo a `bienvenida_marjal`: comprobad que una única definición sirve tanto al iniciar como al pulsar A. El sonido es opcional; mantened la alternativa visual silenciosa.
 
 #### Fase 5 · Comprobamos y reflexionamos (5 min)
 
@@ -376,11 +376,11 @@ Personalizad los dos fotogramas y comparad la función con una versión que repi
 
 #### Fase 1 · Activamos y predecimos (5 min)
 
-Recuperad la función `benvinguda_marjal` de L10: ¿qué quiere decir definirla y qué hay que hacer para que se ejecute? Recordad un error que depurasteis en L4 y la relación entre distancia, velocidad y tiempo. El museo escolar quiere una maqueta de patrulla con dos recintos cuadrados conectados por un pasillo. En parejas, dibujad el inicio, los dos cuadrados y la conexión; medid un lado y el pasillo con la misma unidad. Predecid qué secuencia se puede encapsular en una función repetible y qué datos faltan antes de calcular el tiempo del trayecto.
+Recuperad la función `bienvenida_marjal` de L10: ¿qué quiere decir definirla y qué hay que hacer para que se ejecute? Recordad un error que depurasteis en L4 y la relación entre distancia, velocidad y tiempo. El museo escolar quiere una maqueta de patrulla con dos recintos cuadrados conectados por un pasillo. En parejas, dibujad el inicio, los dos cuadrados y la conexión; medid un lado y el pasillo con la misma unidad. Predecid qué secuencia se puede encapsular en una función repetible y qué datos faltan antes de calcular el tiempo del trayecto.
 
 #### Fase 2 · Exploramos y construimos (10 min)
 
-Marcad la ruta sobre papel grande o con cinta de pintor en una zona de suelo libre y plano; mantened el robot alejado de mesas, escaleras y pasillos de circulación. Medid la distancia que recorre Codey Rocky durante un segundo a una potencia baja y repetible; repetid tres veces y calculad `velocitat = distància ÷ temps` con la media de las tres lecturas. Anotad lado, conexión, potencia, duración y distancia observada. El valor de ejemplo del manual (14 cm por lado y 7 cm/s a potencia 50%) es solo un dato para practicar el cálculo: medid el robot real antes de usarlo.
+Marcad la ruta sobre papel grande o con cinta de pintor en una zona de suelo libre y plano; mantened el robot alejado de mesas, escaleras y pasillos de circulación. Medid la distancia que recorre Codey Rocky durante un segundo a una potencia baja y repetible; repetid tres veces y calculad `velocidad = distancia ÷ tiempo` con la media de las tres lecturas. Anotad lado, conexión, potencia, duración y distancia observada. El valor de ejemplo del manual (14 cm por lado y 7 cm/s a potencia 50%) es solo un dato para practicar el cálculo: medid el robot real antes de usarlo.
 
 ![Codey Rocky real junto a un mapa de papel con dos rutas cuadradas conectadas, marcas de inicio y final y una regla.](../../_assets/situacions/sa-cr-patrulla-quadrats-v2.webp)
 
@@ -388,36 +388,36 @@ _El plano representa una patrulla en superficie plana; las distancias y el tiemp
 
 #### Fase 3 · Explicamos y registramos (10 min)
 
-Definid `quadrat` como cuatro repeticiones de «avanza una longitud de lado y gira a la derecha». Calculad el tiempo aproximado de cada lado con `temps = distància ÷ velocitat mesurada`, y calibrad por separado el tiempo de giro de 90° en una prueba corta. Si un lado mide 14 cm y el robot recorre 7 cm/s en la prueba, el cálculo inicial es 2 s; no presupongáis que esa relación se mantiene a cualquier potencia o superficie.
+Definid `cuadrado` como cuatro repeticiones de «avanza una longitud de lado y gira a la derecha». Calculad el tiempo aproximado de cada lado con `tiempo = distancia ÷ velocidad medida`, y calibrad por separado el tiempo de giro de 90° en una prueba corta. Si un lado mide 14 cm y el robot recorre 7 cm/s en la prueba, el cálculo inicial es 2 s; no presupongáis que esa relación se mantiene a cualquier potencia o superficie.
 
 ```blocks
-defineix quadrat
-  repeteix 4
-    avança durant temps_costat
-    gira a la dreta durant temps_gir
+definir cuadrado
+  repetir 4
+    avanzar durante tiempo_lado
+    girar a la derecha durante tiempo_giro
 
-quan es prem A
-  crida quadrat
-  avança durant temps_connexio
-  crida quadrat
+cuando se pulse A
+  llamar cuadrado
+  avanzar durante tiempo_conexion
+  llamar cuadrado
 ```
 
-Trazad en el mapa la distancia total prevista: `2 × (4 × costat) + connexió`. Explicad por qué llamar la función dos veces repite el perímetro y por qué el tramo de conexión va entre las dos llamadas.
+Trazad en el mapa la distancia total prevista: `2 × (4 × lado) + conexión`. Explicad por qué llamar la función dos veces repite el perímetro y por qué el tramo de conexión va entre las dos llamadas.
 
 #### Fase 4 · Aplicamos y mejoramos (10 min)
 
-Ejecutad una vuelta a potencia baja con una persona al lado del robot y comparad la posición final con la línea. Ajustad un solo dato cada vez (tiempo de lado, potencia o giro), volved a probar y registrad el error. Después, completad el trayecto con las dos llamadas de `quadrat`. Como extensión que aparece en el manual complementario de Codey Rocky & Neuron, probad una condición de sonido alto con una tarjeta o una lectura ambiental suave: registrad un caso por debajo, uno igual y uno por encima del umbral elegido, sin grabar ni pedir gritos. El manual propone que el robot avance o gire a máxima potencia; en esta adaptación, la condición activa solo un icono LED estacionario, porque un sonido repentino no debe iniciar un desplazamiento inesperado.
+Ejecutad una vuelta a potencia baja con una persona al lado del robot y comparad la posición final con la línea. Ajustad un solo dato cada vez (tiempo de lado, potencia o giro), volved a probar y registrad el error. Después, completad el trayecto con las dos llamadas de `cuadrado`. Como extensión que aparece en el manual complementario de Codey Rocky & Neuron, probad una condición de sonido alto con una tarjeta o una lectura ambiental suave: registrad un caso por debajo, uno igual y uno por encima del umbral elegido, sin grabar ni pedir gritos. El manual propone que el robot avance o gire a máxima potencia; en esta adaptación, la condición activa solo un icono LED estacionario, porque un sonido repentino no debe iniciar un desplazamiento inesperado.
 
 #### Fase 5 · Comprobamos y reflexionamos (5 min)
 
-**Evidencia:** mapa medido, tres lecturas de calibración y su media, cálculo de velocidad y tiempo, función `quadrat` llamada dos veces y comparación entre posición prevista y observada.
+**Evidencia:** mapa medido, tres lecturas de calibración y su media, cálculo de velocidad y tiempo, función `cuadrado` llamada dos veces y comparación entre posición prevista y observada.
 
 **Pregunta docente:** ¿qué dato hemos medido en el robot y qué parte del cálculo sigue siendo una estimación que depende del suelo y de la batería?
 ### **L12 · Pequeño vigilante II: patrullamos la segunda planta (40 min).**
 
 #### Fase 1 · Activamos y predecimos (5 min)
 
-Recuperad el plano de patrulla de la primera planta, construido en L11, y explicad cómo reutilizabais `quadrat`. El reto oficial aumenta la dificultad con más salas y pasillos: hay que definir dos funciones, una para el cuadrado superior y otra para el inferior, con giros en sentidos opuestos, y repetir la secuencia de salas superiores. En nuestra maqueta, dibujaréis una ruta propia con una sala inferior, dos superiores y tres conexiones. Predecid por qué las dos funciones de sala no pueden compartir el mismo sentido de giro. El robot no sube escaleras: cada planta es un plano plano diferente.
+Recuperad el plano de patrulla de la primera planta, construido en L11, y explicad cómo reutilizabais `cuadrado`. El reto oficial aumenta la dificultad con más salas y pasillos: hay que definir dos funciones, una para el cuadrado superior y otra para el inferior, con giros en sentidos opuestos, y repetir la secuencia de salas superiores. En nuestra maqueta, dibujaréis una ruta propia con una sala inferior, dos superiores y tres conexiones. Predecid por qué las dos funciones de sala no pueden compartir el mismo sentido de giro. El robot no sube escaleras: cada planta es un plano plano diferente.
 
 #### Fase 2 · Exploramos y construimos (10 min)
 
@@ -429,28 +429,28 @@ _Las dos plantas son mapas de papel independientes: Codey Rocky no sube escalera
 
 #### Fase 3 · Explicamos y registramos (10 min)
 
-Definid `quadrat_inferior` con cuatro avances y giros a la derecha, y `quadrat_superior` con cuatro avances y giros a la izquierda. Cread `planta_2_marjal`: llamad primero la sala inferior, avanzad una conexión y, dos veces, llamad la sala superior y avanzad una conexión. Asignad el programa al botón A. Antes de probar, calculad `distància recta = 3 × (4 × costat) + 3 × passadís`; estimad el tiempo recto dividiendo esa distancia por la velocidad medida y sumad por separado los 12 giros calibrados. El plano y las medidas son propios, no una copia del mapa de la tarjeta oficial.
+Definid `cuadrado_inferior` con cuatro avances y giros a la derecha, y `cuadrado_superior` con cuatro avances y giros a la izquierda. Cread `planta_2_marjal`: llamad primero la sala inferior, avanzad una conexión y, dos veces, llamad la sala superior y avanzad una conexión. Asignad el programa al botón A. Antes de probar, calculad `distancia recta = 3 × (4 × lado) + 3 × pasillo`; estimad el tiempo recto dividiendo esa distancia por la velocidad medida y sumad por separado los 12 giros calibrados. El plano y las medidas son propios, no una copia del mapa de la tarjeta oficial.
 
 ```blocks
-defineix quadrat_inferior
-  repeteix 4
-    avança durant temps_costat
-    gira a la dreta 90 graus
+definir cuadrado_inferior
+  repetir 4
+    avanzar durante tiempo_lado
+    girar a la derecha 90 grados
 
-defineix quadrat_superior
-  repeteix 4
-    avança durant temps_costat
-    gira a l’esquerra 90 graus
+definir cuadrado_superior
+  repetir 4
+    avanzar durante tiempo_lado
+    girar a la izquierda 90 grados
 
-defineix planta_2_marjal
-  crida quadrat_inferior
-  avança durant temps_passadís
-  repeteix 2
-    crida quadrat_superior
-    avança durant temps_passadís
+definir planta_2_marjal
+  llamar cuadrado_inferior
+  avanzar durante tiempo_pasillo
+  repetir 2
+    llamar cuadrado_superior
+    avanzar durante tiempo_pasillo
 
-quan es prem A
-  crida planta_2_marjal
+cuando se pulse A
+  llamar planta_2_marjal
 ```
 
 Comparad el cálculo con la traza del programa. Identificad las dos funciones de sala y `planta_2_marjal` como la función principal. Explicad cómo la repetición evita duplicar las dos salas superiores y por qué la sala inferior gira en sentido contrario.
@@ -461,7 +461,7 @@ Probad primero cada tipo de sala y después una conexión, siempre a potencia ba
 
 #### Fase 5 · Comprobamos y reflexionamos (5 min)
 
-**Evidencia:** dos planos propios, funciones `quadrat_inferior` y `quadrat_superior`, función `planta_2_marjal` con repetición, cálculo de distancia/tiempo, registro de pruebas por tramo y extensión visual. Cada pareja presenta su solución, recibe una observación concreta de otra pareja y completa una autoevaluación sobre funciones, bucles y calibración.
+**Evidencia:** dos planos propios, funciones `cuadrado_inferior` y `cuadrado_superior`, función `planta_2_marjal` con repetición, cálculo de distancia/tiempo, registro de pruebas por tramo y extensión visual. Cada pareja presenta su solución, recibe una observación concreta de otra pareja y completa una autoevaluación sobre funciones, bucles y calibración.
 
 **Pregunta docente:** ¿qué parte de la patrulla de la primera planta hemos reutilizado y qué valores hay que recalcular cuando cambian ruta, superficie, batería o giro?
 
@@ -501,7 +501,7 @@ Traducid a los bloques una asignación inicial, un cambio positivo y uno negativ
 
 #### Fase 4 · Aplicamos y mejoramos (10 min)
 
-Comprobad también las variables de movimiento con Codey Rocky en una zona libre: asignad `velocitat = 30` y haced un avance de un segundo; detened y registrad el resultado. Después asignad `angle = 70` y probad el giro; cambiad el valor a 140 y comparadlo. Si la reserva supera 12, la respuesta del juego original es una vuelta completa de celebración: probadla solo a potencia baja, con el espacio vacío y una persona observadora; si no es seguro o el valor depende de la configuración, usad una animación LED e identificad el movimiento como simulado. Marcad siempre cuándo una prueba es física o simulada.
+Comprobad también las variables de movimiento con Codey Rocky en una zona libre: asignad `velocidad = 30` y haced un avance de un segundo; detened y registrad el resultado. Después asignad `angle = 70` y probad el giro; cambiad el valor a 140 y comparadlo. Si la reserva supera 12, la respuesta del juego original es una vuelta completa de celebración: probadla solo a potencia baja, con el espacio vacío y una persona observadora; si no es seguro o el valor depende de la configuración, usad una animación LED e identificad el movimiento como simulado. Marcad siempre cuándo una prueba es física o simulada.
 
 #### Fase 5 · Comprobamos y reflexionamos (5 min)
 
@@ -527,17 +527,17 @@ _Los materiales son un modelo de clase; las operaciones las calcula el programa,
 El reto oficial presenta dos tareas separadas. Primero probad la versión de suma/resta; después guardadla o sustituidla por la versión de multiplicación/división. No añadáis los dos programas a los mismos botones a la vez: así, A no activará dos operaciones inesperadas. En la segunda versión, inicializad `marcador` a `4`; A multiplica el valor por 2 y B lo divide por 2. En cada caso, calculad el resultado con un bloque de operadores, asignadlo a la misma variable y mostradlo.
 
 ```blocks
-quan Codey inicia
-  fixa marcador a 4
-  mostra marcador
+cuando Codey se inicie
+  fijar marcador a 4
+  mostrar marcador
 
-quan es prem A
-  fixa marcador a (marcador × 2)
-  mostra marcador
+cuando se pulse A
+  fijar marcador a (marcador × 2)
+  mostrar marcador
 
-quan es prem B
-  fixa marcador a (marcador ÷ 2)
-  mostra marcador
+cuando se pulse B
+  fijar marcador a (marcador ÷ 2)
+  mostrar marcador
 ```
 
 Trazad manualmente las dos versiones con `0`, `4` y `−4`. En la versión de operaciones, comparad también `marcador = 3`: dividir un número impar entre 2 puede producir un valor no entero según los bloques y el tipo de dato de la versión instalada. Anotad lo que el programa muestra en lugar de suponer que siempre redondea de la misma manera.
@@ -558,11 +558,11 @@ El plan oficial trabaja variables, cuenta atrás y aleatoriedad con dos tareas: 
 
 #### Fase 1 · Activamos y predecimos (5 min)
 
-Mostrad una parada de feria de papel todavía cerrada y una variable `temps` que empieza en 30. Predecid cuántas actualizaciones habrá si cada segundo se resta una unidad y qué indicará Codey Rocky cuando la cuenta llegue a cero. Acordad que es una simulación de la apertura, no un cronómetro para presionar a ningún participante.
+Mostrad una parada de feria de papel todavía cerrada y una variable `tiempo` que empieza en 30. Predecid cuántas actualizaciones habrá si cada segundo se resta una unidad y qué indicará Codey Rocky cuando la cuenta llegue a cero. Acordad que es una simulación de la apertura, no un cronómetro para presionar a ningún participante.
 
 #### Fase 2 · Exploramos y construimos (10 min)
 
-Al iniciar, asignad 30 a `temps` y mostradlo en la matriz. Al pulsar A, empezad la cuenta atrás: esperad un segundo, restad 1, mostrad el valor y repetid 30 veces. Cuando `temps` llega a 0, detened el bucle y mostrad un icono de hoja o parada abierta con una luz acordada; el sonido es opcional y tiene que tener una alternativa silenciosa. El robot permanece sobre una mesa estable: para repartir turnos, el equipo mueve una tarjeta de papel, no el dispositivo.
+Al iniciar, asignad 30 a `tiempo` y mostradlo en la matriz. Al pulsar A, empezad la cuenta atrás: esperad un segundo, restad 1, mostrad el valor y repetid 30 veces. Cuando `tiempo` llega a 0, detened el bucle y mostrad un icono de hoja o parada abierta con una luz acordada; el sonido es opcional y tiene que tener una alternativa silenciosa. El robot permanece sobre una mesa estable: para repartir turnos, el equipo mueve una tarjeta de papel, no el dispositivo.
 
 ![Codey Rocky real de la dotación junto a una parada de feria escolar de la huerta, fichas de colores y tarjetas de fruta en papel.](../../_assets/situacions/sa-cr-comptador-fira-horta-v1.webp)
 
@@ -574,27 +574,27 @@ Trazad los tres primeros segundos y el final. Comprobad que el valor inicial, la
 
 #### Fase 4 · Aplicamos y mejoramos (10 min)
 
-Haced dos ampliaciones como proyectos separados. En una copia de la cuenta atrás, asignad B a cancelar: tiene que detener los scripts de tiempo y mostrar un icono neutro de pausa; comprobad que el temporizador no continúa en segundo plano. En el segundo proyecto, adaptad *The Explosive Number* como un recuento cooperativo de cestas de papel: inicializad `objectiu` y `comptador` a cero; al pulsar A, generad un objetivo aleatorio de 1 a 20 y reiniciad el contador; cada pulsación de B suma 1 y muestra el valor. Cuando `comptador = objectiu`, mostrad el icono de parada abierta. Esta puntuación representa solo pulsaciones programadas, no existencias ni una clasificación real de la cosecha. No combinéis los dos proyectos en los mismos botones.
+Haced dos ampliaciones como proyectos separados. En una copia de la cuenta atrás, asignad B a cancelar: tiene que detener los scripts de tiempo y mostrar un icono neutro de pausa; comprobad que el temporizador no continúa en segundo plano. En el segundo proyecto, adaptad *The Explosive Number* como un recuento cooperativo de cestas de papel: inicializad `objetivo` y `contador` a cero; al pulsar A, generad un objetivo aleatorio de 1 a 20 y reiniciad el contador; cada pulsación de B suma 1 y muestra el valor. Cuando `contador = objetivo`, mostrad el icono de parada abierta. Esta puntuación representa solo pulsaciones programadas, no existencias ni una clasificación real de la cosecha. No combinéis los dos proyectos en los mismos botones.
 
 ```blocks
-quan Codey inicia
-  fixa objectiu a 0
-  fixa comptador a 0
+cuando Codey se inicie
+  fijar objetivo a 0
+  fijar contador a 0
 
-quan es prem A
-  fixa comptador a 0
-  fixa objectiu a nombre aleatori entre 1 i 20
-  mostra icona de preparació
+cuando se pulse A
+  fijar contador a 0
+  fijar objetivo a número aleatorio entre 1 y 20
+  mostrar icono de preparación
 
-quan es prem B
-  canvia comptador en 1
-  mostra comptador
-  si comptador = objectiu
-    mostra icona de parada oberta
-    encén la llum neutra
+cuando se pulse B
+  cambiar contador en 1
+  mostrar contador
+  si contador = objetivo
+    mostrar icono de parada abierta
+    encender la luz neutra
 ```
 
-Para probar la condición sin depender del azar, sustituid temporalmente la asignación por objetivos fijos 1 y 20; después probad `objectiu − 1`, `objectiu` y `objectiu + 1`. Solo la igualdad tiene que activar el mensaje. Restaurad el bloque aleatorio y comprobad que cada A reinicia `comptador` antes de una ronda nueva. El azar sirve para el juego, no para seguridad, predicciones de cosecha o cifrado.
+Para probar la condición sin depender del azar, sustituid temporalmente la asignación por objetivos fijos 1 y 20; después probad `objetivo − 1`, `objetivo` y `objetivo + 1`. Solo la igualdad tiene que activar el mensaje. Restaurad el bloque aleatorio y comprobad que cada A reinicia `contador` antes de una ronda nueva. El azar sirve para el juego, no para seguridad, predicciones de cosecha o cifrado.
 
 #### Fase 5 · Comprobamos y reflexionamos (5 min)
 
@@ -610,7 +610,7 @@ Representad las tres opciones con símbolos neutros y acordad la regla: piedra g
 
 #### Fase 2 · Exploramos y construimos (10 min)
 
-Inicializad `gest`, `guanys`, `derrotes` y `empats` a cero. Cuando Codey Rocky se agita, asignad a `gest` un número aleatorio entre 0 y 2 y mostrad el símbolo correspondiente en la matriz LED. En el cuaderno del alumnado y el manual docente, la correspondencia es **0 = piedra, 1 = tijera, 2 = papel**; otro resumen oficial de la unidad intercambia los valores de tijera y papel. Aquí seguimos la correspondencia del reto docente y la mantendremos igual en todas las tarjetas y pruebas. Si mBlock no expone el giroscopio o el azar, usad A y tarjetas de números, e identificadlo como simulación.
+Inicializad `gesto`, `victorias`, `derrotas` y `empates` a cero. Cuando Codey Rocky se agita, asignad a `gesto` un número aleatorio entre 0 y 2 y mostrad el símbolo correspondiente en la matriz LED. En el cuaderno del alumnado y el manual docente, la correspondencia es **0 = piedra, 1 = tijera, 2 = papel**; otro resumen oficial de la unidad intercambia los valores de tijera y papel. Aquí seguimos la correspondencia del reto docente y la mantendremos igual en todas las tarjetas y pruebas. Si mBlock no expone el giroscopio o el azar, usad A y tarjetas de números, e identificadlo como simulación.
 
 ![Codey Rocky real junto a tarjetas de papel con piedra, tijera y mano abierta; la pantalla muestra un símbolo abstracto.](../../_assets/situacions/sa-cr-pedra-paper-tisora-v2.webp)
 
@@ -618,38 +618,38 @@ _Las tarjetas hacen visibles las tres opciones del juego; la matriz del robot mu
 
 #### Fase 3 · Explicamos y registramos (10 min)
 
-Después de comparar el gesto de Codey con el de la pareja, registrad el resultado con los botones: A suma 1 a `guanys`, B suma 1 a `derrotes` y C suma 1 a `empats`. Cada botón muestra una expresión propia diferente; un sonido breve y bajo es opcional y siempre se puede sustituir por la respuesta visual. Trazad las nueve combinaciones y comprobad que solo cambia el contador elegido. El robot genera su gesto pero no clasifica automáticamente el resultado: el equipo aplica las reglas y pulsa el botón correspondiente. Mantened un máximo de seis eventos de programa (inicio, agitación, A/B/C y luz). El azar determina el gesto del juego; no es una predicción ni una medida sobre las personas.
+Después de comparar el gesto de Codey con el de la pareja, registrad el resultado con los botones: A suma 1 a `victorias`, B suma 1 a `derrotas` y C suma 1 a `empates`. Cada botón muestra una expresión propia diferente; un sonido breve y bajo es opcional y siempre se puede sustituir por la respuesta visual. Trazad las nueve combinaciones y comprobad que solo cambia el contador elegido. El robot genera su gesto pero no clasifica automáticamente el resultado: el equipo aplica las reglas y pulsa el botón correspondiente. Mantened un máximo de seis eventos de programa (inicio, agitación, A/B/C y luz). El azar determina el gesto del juego; no es una predicción ni una medida sobre las personas.
 
 ```blocks
-quan Codey es sacseja
-  estableix gest a nombre aleatori entre 0 i 2
-  si gest = 0
-    mostra símbol pedra
-  si no, si gest = 1
-    mostra símbol tisora
+cuando se sacuda Codey
+  establecer gesto a número aleatorio entre 0 y 2
+  si gesto = 0
+    mostrar símbolo piedra
+  si no, si gesto = 1
+    mostrar símbolo tijera
   si no
-    mostra símbol paper
+    mostrar símbolo papel
 
-quan es prem A
-  canvia guanys per 1
-  mostra expressió de celebració
-quan es prem B
-  canvia derrotes per 1
-  mostra expressió de revisió
-quan es prem C
-  canvia empats per 1
-  mostra expressió tranquil·la
+cuando se pulse A
+  cambiar victorias en 1
+  mostrar expresión de celebración
+cuando se pulse B
+  cambiar derrotas en 1
+  mostrar expresión de revisión
+cuando se pulse C
+  cambiar empates en 1
+  mostrar expresión tranquila
 
-quan la llum ambiental supera 2
-  si guanys + derrotes + empats > 0
-    mostra guanys / (guanys + derrotes + empats)
+cuando la luz ambiental supere 2
+  si victorias + derrotas + empates > 0
+    mostrar victorias / (victorias + derrotas + empates)
   si no
-    mostra «sense rondes»
+    mostrar «sin rondas»
 ```
 
 #### Fase 4 · Aplicamos y mejoramos (10 min)
 
-Ejecutad la matriz completa de nueve combinaciones y revisad si cada resultado coincide con las reglas. Como extensión, mostrad en decimal la proporción `guanys ÷ (guanys + derrotes + empats)` cuando haya al menos una ronda y la lectura de luz ambiental sea superior a 2. Hay una discrepancia en el recurso oficial: el texto dice «superior a 2», pero el bloque de ejemplo muestra la condición `< 2`; esta propuesta sigue el texto y lo registra como una convención local. Probad lecturas 1, 2 y 3: solo 3 tiene que mostrar la proporción. El sensor da una lectura propia del dispositivo, no lux calibrados; si el bloque no está disponible, simulad las tres lecturas. Para expresar después el resultado como porcentaje, multiplicad la proporción por 100. Antes de dividir, comprobad que `guanys + derrotes + empats > 0`.
+Ejecutad la matriz completa de nueve combinaciones y revisad si cada resultado coincide con las reglas. Como extensión, mostrad en decimal la proporción `victorias ÷ (victorias + derrotas + empates)` cuando haya al menos una ronda y la lectura de luz ambiental sea superior a 2. Hay una discrepancia en el recurso oficial: el texto dice «superior a 2», pero el bloque de ejemplo muestra la condición `< 2`; esta propuesta sigue el texto y lo registra como una convención local. Probad lecturas 1, 2 y 3: solo 3 tiene que mostrar la proporción. El sensor da una lectura propia del dispositivo, no lux calibrados; si el bloque no está disponible, simulad las tres lecturas. Para expresar después el resultado como porcentaje, multiplicad la proporción por 100. Antes de dividir, comprobad que `victorias + derrotas + empates > 0`.
 
 #### Fase 5 · Comprobamos y reflexionamos (5 min)
 
@@ -675,22 +675,22 @@ _El robot envía controles al juego de pantalla; no es un coche físico ni una p
 
 #### Fase 3 · Explicamos y registramos (10 min)
 
-Escribid primero las reglas en una tabla de decisión. La meta roja se tiene que comprobar antes que el retorno por salida de pista, porque el color de meta no debe activar las dos respuestas a la vez. Cuando el juego está activo, las flechas actualizan la posición; si el personaje toca la meta roja, cambia al estado `guanyat`, muestra «win!» durante dos segundos e ignora más controles; si toca la zona fuera de pista, vuelve a la posición inicial. Haced pseudocódigo y probad por separado: dentro de ruta, fuera de pista, tocar meta y pulsar después de haber ganado.
+Escribid primero las reglas en una tabla de decisión. La meta roja se tiene que comprobar antes que el retorno por salida de pista, porque el color de meta no debe activar las dos respuestas a la vez. Cuando el juego está activo, las flechas actualizan la posición; si el personaje toca la meta roja, cambia al estado `ganado`, muestra «win!» durante dos segundos e ignora más controles; si toca la zona fuera de pista, vuelve a la posición inicial. Haced pseudocódigo y probad por separado: dentro de ruta, fuera de pista, tocar meta y pulsar después de haber ganado.
 
 ```blocks
-quan s'inicia el joc
-  fixa estat a «actiu»
-  vés a la posició inicial
-  per sempre
-    si estat = «actiu» i toca la línia roja
-      fixa estat a «guanyat»
-      mostra «win!» durant 2 segons
-    si estat = «actiu» i toca el color de fora de pista
-      vés a la posició inicial
+cuando se inicie el juego
+  fijar estado a «activo»
+  ir a la posición inicial
+  para siempre
+    si estado = «activo» y toca la línea roja
+      fijar estado a «ganado»
+      mostrar «win!» durante 2 segundos
+    si estado = «activo» y toca el color de fuera de pista
+      ir a la posición inicial
 
-quan es prem una fletxa
-  si estat = «actiu»
-    mou el personatge en la direcció indicada
+cuando se pulse una flecha
+  si estado = «activo»
+    mover el personaje en la dirección indicada
 ```
 
 #### Fase 4 · Aplicamos y mejoramos (10 min)
@@ -721,27 +721,27 @@ _El movimiento representado es del personaje virtual; el robot permanece quieto 
 Trazad la cadena entrada del giroscopio → mensaje → detención del script anterior → respuesta del sprite. Probad izquierda → derecha → izquierda, vuelta a posición neutra y ausencia de mensaje cuando Codey está plano. En una copia, quitad temporalmente el bloque de detención y haced el cambio izquierda/derecha: observad cómo los dos bucles pueden quedar activos y conflictuar. Restauradlo y comprobad que solo se mueve en la dirección del mensaje más reciente.
 
 ```blocks
-quan Codey s'inclina a l'esquerra
-  mostra icona esquerra
-  envia «gira_esquerra»
+cuando Codey se incline a la izquierda
+  mostrar icono izquierda
+  enviar «girar_izquierda»
 
-quan Codey s'inclina a la dreta
-  mostra icona dreta
-  envia «gira_dreta»
+cuando Codey se incline a la derecha
+  mostrar icono derecha
+  enviar «girar_derecha»
 
-quan el personatge rep «gira_esquerra»
-  atura els altres scripts d'aquest personatge
-  per sempre
-    digues «esquerra»
-    gira 1 grau
-    avança 1 pas
+cuando el personaje reciba «girar_izquierda»
+  detener los otros scripts de este personaje
+  para siempre
+    decir «izquierda»
+    girar 1 grado
+    avanzar 1 paso
 
-quan el personatge rep «gira_dreta»
-  atura els altres scripts d'aquest personatge
-  per sempre
-    digues «dreta»
-    gira 1 grau
-    avança 1 pas
+cuando el personaje reciba «girar_derecha»
+  detener los otros scripts de este personaje
+  para siempre
+    decir «derecha»
+    girar 1 grado
+    avanzar 1 paso
 ```
 
 #### Fase 4 · Aplicamos y mejoramos (10 min)
@@ -783,21 +783,21 @@ _El mapa ilustra la regla de límite del juego; la barquita es un personaje digi
 Programad los casos previstos con ramas excluyentes: si la barquita toca la meta, muestra la señal final y deja de recibir órdenes; si no, pero toca el exterior, vuelve al inicio; de lo contrario, continúa por el canal. Así, una misma lectura no puede reiniciar y acabar la partida en el mismo ciclo. El personaje de juego puede ser una ilustración original: no se presenta como un robot físico ni como una representación exacta de fauna local.
 
 ```blocks
-quan es prem A en Codey
-  envia el missatge «avança»
-quan es prem B en Codey
-  envia el missatge «gira»
+cuando se pulse A en Codey
+  enviar el mensaje «avanzar»
+cuando se pulse B en Codey
+  enviar el mensaje «girar»
 
-quan el personatge rep «avança» o «gira»
-  mou el personatge segons l'ordre
+cuando el personaje reciba «avanzar» o «girar»
+  mover el personaje según la orden
   si toca la meta
-    mostra «missió completada»
-    atura els controls
+    mostrar «misión completada»
+    detener los controles
   si no, si toca la zona exterior
-    torna a l'inici
-    reinicia la ruta
+    volver al inicio
+    reiniciar la ruta
   si no
-    continua la ruta
+    continuar la ruta
 ```
 
 Trazad una partida que sigue la ruta, una que sale del canal y una que llega a la meta. Probad también una configuración incorrecta en la que meta y exterior comparten color: detectad el conflicto, separad las zonas y repetid. En cada caso, comprobad que el resultado corresponde a la tarjeta de reglas.
@@ -828,7 +828,7 @@ _La escena representa un obstáculo, un objeto coleccionable y dos rutas; las re
 
 #### Fase 3 · Explicamos y registramos (10 min)
 
-Representad las reglas con pseudocódigo y una tabla de estados. La rama y una ficha de mensaje caen a la vez: si la rama toca la barquita, se reinicia la posición y no se cuenta ninguna recogida de aquel ciclo; si no hay contacto con la rama, pero la barquita toca la ficha antes de que llegue al suelo, `missatges` aumenta en 1 y la ficha desaparece; si la ficha llega al suelo, desaparece sin sumar. Al llegar al final del canal, el juego se detiene. Haced que la rama y la ficha reaparezcan después de una pausa, con posiciones separadas para que una ronda sea posible.
+Representad las reglas con pseudocódigo y una tabla de estados. La rama y una ficha de mensaje caen a la vez: si la rama toca la barquita, se reinicia la posición y no se cuenta ninguna recogida de aquel ciclo; si no hay contacto con la rama, pero la barquita toca la ficha antes de que llegue al suelo, `mensajes` aumenta en 1 y la ficha desaparece; si la ficha llega al suelo, desaparece sin sumar. Al llegar al final del canal, el juego se detiene. Haced que la rama y la ficha reaparezcan después de una pausa, con posiciones separadas para que una ronda sea posible.
 
 | Estado/evento | Respuesta esperada | Evidencia |
 |---|---|---|
@@ -841,26 +841,26 @@ Representad las reglas con pseudocódigo y una tabla de estados. La rama y una f
 Probad cada transición con posiciones fijadas antes de activar las apariciones aleatorias. Comprobad también que la colisión con la rama tenga prioridad si los dos objetos quedan superpuestos en una misma lectura.
 
 ```blocks
-quan comença la partida
-  fixa estat a «en curs»
-  fixa missatges a 0
-  situa la barqueta a l'inici
-  per sempre
-    si estat = «en curs»
-      mou branca i fitxa cap avall
-      si la barqueta toca la meta
-        fixa estat a «completat»
-        mostra «missió completada»
-      si no, si la barqueta toca la branca
-        situa la barqueta a l'inici
-        amaga la branca
-        espera 1 segon
-        mostra la branca a dalt
-      si no, si la barqueta toca la fitxa i la fitxa no ha arribat a terra
-        canvia missatges per 1
-        amaga la fitxa
-      si la fitxa arriba a terra
-        amaga la fitxa
+cuando comience la partida
+  fijar estado a «en curso»
+  fijar mensajes a 0
+  situar la barquita al inicio
+  para siempre
+    si estado = «en curso»
+      mover rama y ficha hacia abajo
+      si la barquita toca la meta
+        fijar estado a «completado»
+        mostrar «misión completada»
+      si no, si la barquita toca la rama
+        situar la barquita al inicio
+        ocultar la rama
+        esperar 1 segundo
+        mostrar la rama arriba
+      si no, si la barquita toca la ficha y la ficha no ha llegado al suelo
+        cambiar mensajes en 1
+        ocultar la ficha
+      si la ficha llega al suelo
+        ocultar la ficha
 ```
 
 #### Fase 4 · Aplicamos y mejoramos (10 min)
@@ -889,28 +889,28 @@ _El coche es un personaje digital controlado por Codey; la unidad física no se 
 
 #### Fase 3 · Explicamos y registramos (10 min)
 
-Implementad estados excluyentes. Si el personaje sale de la pista o toca el murciélago, pierde la vuelta. Mostrad una señal visual de retorno y, si el grupo lo elige, reproducid un aviso neutro y breve (nunca una explosión); después, vuelve al inicio y reinicia `ha_eixit_meta` a falso. Si no se ha producido una pérdida, marcad `ha_eixit_meta` cuando el personaje ya no toque la línea azul; solo cuando esta variable es cierta y el coche vuelve a tocar la línea, completa una vuelta, muestra una señal de victoria y puede reproducir un sonido breve. Para una extensión de varias vueltas, aumentad `voltes` en cada cruce válido, poned `ha_eixit_meta` a falso mientras cruza la línea y continuad hasta el objetivo elegido; una línea roja puede definir una segunda meta con otro resultado. Registrad el estado antes y después de cada evento. Comprobad que la posición de inicio no activa la victoria y que solo el retorno a la línea después del recorrido cuenta como vuelta.
+Implementad estados excluyentes. Si el personaje sale de la pista o toca el murciélago, pierde la vuelta. Mostrad una señal visual de retorno y, si el grupo lo elige, reproducid un aviso neutro y breve (nunca una explosión); después, vuelve al inicio y reinicia `ha_salido_meta` a falso. Si no se ha producido una pérdida, marcad `ha_salido_meta` cuando el personaje ya no toque la línea azul; solo cuando esta variable es cierta y el coche vuelve a tocar la línea, completa una vuelta, muestra una señal de victoria y puede reproducir un sonido breve. Para una extensión de varias vueltas, aumentad `vueltas` en cada cruce válido, poned `ha_salido_meta` a falso mientras cruza la línea y continuad hasta el objetivo elegido; una línea roja puede definir una segunda meta con otro resultado. Registrad el estado antes y después de cada evento. Comprobad que la posición de inicio no activa la victoria y que solo el retorno a la línea después del recorrido cuenta como vuelta.
 
 ```blocks
-quan comença la partida
-  situa el cotxe virtual a l'inici
-  estableix estat a «en curs»
-  estableix ha_eixit_meta a fals
+cuando comience la partida
+  situar el coche virtual al inicio
+  establecer estado a «en curso»
+  establecer ha_salido_meta a falso
 
-mentre estat és «en curs»
-  si el cotxe ix de la pista o toca l'obstacle
-    mostra l'avís visual de retorn
-    reprodueix un avís neutre (opcional)
-    torna el cotxe a l'inici
-    estableix ha_eixit_meta a fals
-    reinicia la partida
+mientras estado sea «en curso»
+  si el coche sale de la pista o toca el obstáculo
+    mostrar el aviso visual de retorno
+    reproducir un aviso neutro (opcional)
+    devolver el coche al inicio
+    establecer ha_salido_meta a falso
+    reiniciar la partida
   si no
-    si el cotxe no toca la línia blava
-      estableix ha_eixit_meta a cert
-    si ha_eixit_meta i el cotxe toca la línia blava
-      mostra el senyal de victòria
-      reprodueix un so breu (opcional)
-      estableix estat a «volta completada»
+    si el coche no toca la línea azul
+      establecer ha_salido_meta a verdadero
+    si ha_salido_meta y el coche toca la línea azul
+      mostrar la señal de victoria
+      reproducir un sonido breve (opcional)
+      establecer estado a «vuelta completada»
 ```
 
 #### Fase 4 · Aplicamos y mejoramos (10 min)
@@ -959,24 +959,24 @@ Recuperad las trazas curvas de L22 y presentad un tramo recto del camino escolar
 
 #### Fase 2 · Exploramos y construimos (10 min)
 
-Comprobad que el módulo de color de Rocky, que incorpora el sensor de proximidad IR, mira hacia delante y que mBlock ofrece el bloque de detección de obstáculos. En una pista plana, ancha y sin bordes expuestos, programad el inicio con A y una condición: si el sensor detecta el obstáculo, girad a la derecha, avanzad un tramo corto a potencia reducida, girad a la izquierda y volved a leer el sensor; si no detecta ninguno, avanzad a baja potencia. Añadid un contador de desviaciones: después de tres intentos seguidos sin liberar el paso, detened los motores y mostrad un aviso, en lugar de continuar probando indefinidamente. Reiniciad el contador cuando el camino vuelva a estar libre. Si «Mis bloques» está disponible, agrupad la maniobra en `esquivar_obstacle()`; de lo contrario, conservadla como una secuencia de bloques visible. Si el sensor o el firmware no son compatibles, simulad la entrada con tarjetas y etiquetad la prueba como simulación.
+Comprobad que el módulo de color de Rocky, que incorpora el sensor de proximidad IR, mira hacia delante y que mBlock ofrece el bloque de detección de obstáculos. En una pista plana, ancha y sin bordes expuestos, programad el inicio con A y una condición: si el sensor detecta el obstáculo, girad a la derecha, avanzad un tramo corto a potencia reducida, girad a la izquierda y volved a leer el sensor; si no detecta ninguno, avanzad a baja potencia. Añadid un contador de desviaciones: después de tres intentos seguidos sin liberar el paso, detened los motores y mostrad un aviso, en lugar de continuar probando indefinidamente. Reiniciad el contador cuando el camino vuelva a estar libre. Si «Mis bloques» está disponible, agrupad la maniobra en `esquivar_obstaculo()`; de lo contrario, conservadla como una secuencia de bloques visible. Si el sensor o el firmware no son compatibles, simulad la entrada con tarjetas y etiquetad la prueba como simulación.
 
 ```blocks
-quan es prem A
-  fixa intents seguits a 0
-per sempre
-  si obstacle detectat
-    si intents seguits < 3
-      gira a la dreta
-      avança un tram curt a potència baixa
-      gira a l’esquerra per recuperar l’orientació
-      suma 1 a intents seguits
-    altrament
-      atura els motors
-      mostra avís de camí bloquejat
-  altrament
-    fixa intents seguits a 0
-    avança amb potència baixa durant 1 s
+cuando se pulse A
+  fijar intentos seguidos a 0
+para siempre
+  si se detecta un obstáculo
+    si intentos seguidos < 3
+      girar a la derecha
+      avanzar un tramo corto a potencia baja
+      girar a la izquierda para recuperar la orientación
+      sumar 1 a intentos seguidos
+    si no
+      detener los motores
+      mostrar aviso de camino bloqueado
+  si no
+    fijar intentos seguidos a 0
+    avanzar con potencia baja durante 1 s
 ```
 
 ![Codey Rocky real detenido a distancia segura de un bloque blando, con flechas de papel que muestran una ruta alternativa.](../../_assets/situacions/sa-cr-gir-obstacles-v2.webp)
@@ -1016,16 +1016,16 @@ _La ilustración señala el punto de lectura que se compara con las superficies 
 Simulad la regla con una ficha y flechas: cuando la lectura queda de un lado del umbral, representad una corrección de 45° hacia un lado; cuando queda al otro, representad la corrección opuesta. Es una versión de mesa del juego de simulación del cuaderno, sin exigir movimientos corporales. Después, programad Rocky para que avance a potencia baja y corrija alternativamente la dirección según la lectura; el umbral y el sentido de cada corrección se tienen que comprobar con los datos y la orientación del sensor de la unidad disponible. Empezad en un tramo recto ancho, añadid una curva solo cuando la respuesta sea repetible y dejad una zona de detención libre.
 
 ```blocks
-quan es prem A
-  llig les superfícies clara i fosca
-  estableix llindar entre les dues lectures
-  per sempre
-    mostra la lectura reflectida
-    si lectura queda al costat de línia del llindar
-      corregeix lleument cap a un costat
-    altrament
-      corregeix lleument cap a l’altre costat
-    avança a potència baixa
+cuando se pulse A
+  leer las superficies clara y oscura
+  establecer umbral entre las dos lecturas
+  para siempre
+    mostrar la lectura reflejada
+    si la lectura queda en el lado de línea del umbral
+      corregir ligeramente hacia un lado
+    si no
+      corregir ligeramente hacia el otro lado
+    avanzar a potencia baja
 ```
 
 _Esbozo de lógica, no una secuencia de bloques con nombres universales: calibrad el umbral, el sentido de giro y la potencia con el mBlock y el Rocky del centro._

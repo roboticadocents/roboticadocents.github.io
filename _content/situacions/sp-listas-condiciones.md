@@ -54,20 +54,20 @@ Organizad equipos de tres o cuatro con roles rotativos: diseño de casos de prue
 
 #### Fase 2 · Exploramos y construimos
 
-Cread en la app una lista llamada `Lectures`, inicializadla vacía, leed una tarjeta con el sensor y añadid su valor en intervalos acordados. Si la lectura no es estable, introducid los valores manualmente y marcad la prueba como simulación.
+Cread en la app una lista llamada `Lecturas`, inicializadla vacía, leed una tarjeta con el sensor y añadid su valor en intervalos acordados. Si la lectura no es estable, introducid los valores manualmente y marcad la prueba como simulación.
 
 #### Fase 3 · Explicamos y registramos
 
 Antes de programar la secuencia completa, escribid pseudocódigo y trazadlo con cinco tarjetas. La versión Python es una representación textual de la lógica para analizar sobre papel; no se ejecuta en la app SPIKE.
 
 ```pseudocode
-quan comença
-  buida Lectures
-  repeteix 5 vegades
-    valor ← llig_color()
-    afegeix valor a Lectures
-    espera fins a la següent targeta
-  mostra Lectures
+cuando comience
+  vaciar Lecturas
+  repetir 5 veces
+    valor ← leer_color()
+    añadir valor a Lecturas
+    esperar hasta la siguiente tarjeta
+  mostrar Lecturas
 ```
 
 ```python
@@ -124,7 +124,7 @@ Usad datos en directo para comprobar qué detecta el sensor, haced una primera v
 
 #### Fase 4 · Aplicamos y mejoramos
 
-Modificad una sola cosa por prueba. Añadid deliberadamente una línea de color no acordada y observad si la regla la confunde. Descomponed el programa en bloques propios con nombres funcionales —por ejemplo `SeguirPista` y `AturarEnMarca`— y volved a llamarlos desde el programa principal.
+Modificad una sola cosa por prueba. Añadid deliberadamente una línea de color no acordada y observad si la regla la confunde. Descomponed el programa en bloques propios con nombres funcionales —por ejemplo `SeguirPista` y `DetenerEnMarca`— y volved a llamarlos desde el programa principal.
 
 ![SPIKE Prime de la dotación junto a dos secuencias de tarjetas de color; una tarjeta diferente se revisa con una lupa antes de probar la ruta.](../../_assets/situacions/sa-sp-llistes-condicions-sequencies.webp)
 
@@ -202,7 +202,7 @@ Preparad una explicación de un minuto con una decisión humana que el prototipo
 
 ## 🧩 Modelo de razonamiento
 
-Antes de programar, representad verbalmente las condiciones y después comprobadlas con casos. Para una estación de maqueta, `prop_i_color_correcte` solo es cierta si las dos pruebas son ciertas; si falta cualquier lectura, la señal no se activa. Una regla inclusiva de ruta puede ser `color_blau_o_color_vermell`. Una tabla de verdad con todas las combinaciones impide confiar solo en el caso feliz y hace visible qué significa cada operador. Para listas, escribid las posiciones iniciales y comparad los elementos en el mismo orden. Esta notación es apoyo conceptual: los bloques exactos, la gestión de índices y los valores disponibles pueden variar según la versión de la app.
+Antes de programar, representad verbalmente las condiciones y después comprobadlas con casos. Para una estación de maqueta, `cerca_y_color_correcto` solo es cierta si las dos pruebas son ciertas; si falta cualquier lectura, la señal no se activa. Una regla inclusiva de ruta puede ser `color_azul_o_color_rojo`. Una tabla de verdad con todas las combinaciones impide confiar solo en el caso feliz y hace visible qué significa cada operador. Para listas, escribid las posiciones iniciales y comparad los elementos en el mismo orden. Esta notación es apoyo conceptual: los bloques exactos, la gestión de índices y los valores disponibles pueden variar según la versión de la app.
 
 ## 🧰 Materiales y organización
 
