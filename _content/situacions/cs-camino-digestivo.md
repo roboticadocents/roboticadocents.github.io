@@ -15,149 +15,149 @@ challenge: "¿Cómo podemos representar, programar y explicar el recorrido de lo
 official_source: "https://matatalab.com/en/node/90"
 ---
 
-![MatataBot i la torre reals del Coding Set al costat d'un mapa de graella amb pictogrames del recorregut digestiu i una fitxa de fruita.](../../_assets/situacions/cs-cami-digestiu.webp)
+![MatataBot y la torre reales del Coding Set junto a un mapa de cuadrícula con pictogramas del recorrido digestivo y una ficha de fruta.](../../_assets/situacions/cs-cami-digestiu.webp)
 
-_El mapa és un model didàctic de paper: el robot només executa moviments programats. No interpreta òrgans ni simula el procés biològic._
+_El mapa es un modelo didáctico de papel: el robot solo ejecuta movimientos programados. No interpreta órganos ni simula el proceso biológico._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-Una cooperativa escolar prepara una exposició sobre fruites de l'horta i vol explicar què ocorre després de menjar. L'equip crea un mapa de caselles amb estacions que representen la boca, l'esòfag, l'estómac, l'intestí prim, l'intestí gros i l'eixida del tub digestiu. Una fitxa de fruita recorre el mapa mentre MatataBot segueix una seqüència de moviments. La classe ha de distingir entre el recorregut simplificat del model i el procés real, que és més complex.
+Una cooperativa escolar prepara una exposición sobre frutas de la huerta y quiere explicar qué ocurre después de comer. El equipo crea un mapa de casillas con estaciones que representan la boca, el esófago, el estómago, el intestino delgado, el intestino grueso y la salida del tubo digestivo. Una ficha de fruta recorre el mapa mientras MatataBot sigue una secuencia de movimientos. La clase debe distinguir entre el recorrido simplificado del modelo y el proceso real, que es más complejo.
 
-La situació adapta i trasllada a la dotació disponible l'activitat pública *Food Digestion*: conserva l'explicació inicial, el recorregut per estacions, la pràctica per parelles i la conversa final. La font està dissenyada per a Matatalab Lite i usa el seu mode de control manual; ací el substituïm per blocs tangibles i una ruta ortogonal del Coding Set. No es presenta aquesta substitució com una funció del Lite ni com una còpia exacta del seu procediment.
+La situación adapta y traslada a la dotación disponible la actividad pública *Food Digestion*: conserva la explicación inicial, el recorrido por estaciones, la práctica por parejas y la conversación final. La fuente está diseñada para Matatalab Lite y usa su modo de control manual; aquí lo sustituimos por bloques tangibles y una ruta ortogonal del Coding Set. No se presenta esta sustitución como una función del Lite ni como una copia exacta de su procedimiento.
 
-**Pregunta guia:** quina seqüència permet passar per totes les estacions en ordre i quines parts del mapa són només una representació?
+**Pregunta guía:** ¿qué secuencia permite pasar por todas las estaciones en orden y qué partes del mapa son solo una representación?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Ordenar boca, esòfag, estómac, intestí prim i intestí gros com a parts del tub digestiu que recorre l'aliment.
-- Explicar amb un model senzill que masteguem a la boca, que els moviments musculars impulsen el contingut per l'esòfag, que l'estómac el barreja i que els intestins continuen el procés; l'intestí prim absorbeix la major part dels nutrients i el gros absorbeix aigua.
-- Descompondre una ruta en trams, girs i punts de parada, i traduir-la a una seqüència de blocs.
-- Comparar predicció i resultat, localitzar la primera diferència i corregir una instrucció cada vegada.
-- Distingir el trajecte de l'aliment de les funcions d'òrgans auxiliars com el fetge i el pàncrees, que participen en la digestió però no són caselles del trajecte.
+- Ordenar boca, esófago, estómago, intestino delgado e intestino grueso como partes del tubo digestivo que recorre el alimento.
+- Explicar con un modelo sencillo que masticamos en la boca, que los movimientos musculares impulsan el contenido por el esófago, que el estómago lo mezcla y que los intestinos continúan el proceso; el intestino delgado absorbe la mayor parte de los nutrientes y el grueso absorbe agua.
+- Descomponer una ruta en tramos, giros y puntos de parada, y traducirla a una secuencia de bloques.
+- Comparar predicción y resultado, localizar la primera diferencia y corregir una instrucción cada vez.
+- Distinguir el trayecto del alimento de las funciones de órganos auxiliares como el hígado y el páncreas, que participan en la digestión pero no son casillas del trayecto.
 
-**Vocabulari clau:** tub digestiu, boca, esòfag, estómac, intestí prim, intestí gros, nutrients, absorció, peristaltisme, seqüència, gir, depuració, model.
+**Vocabulario clave:** tubo digestivo, boca, esófago, estómago, intestino delgado, intestino grueso, nutrientes, absorción, peristaltismo, secuencia, giro, depuración, modelo.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Coding Set complet: MatataBot, torre de control, tauler i blocs tangibles de moviment disponibles al centre.
-- Mapa original de 4 × 4 caselles de **10 × 10 cm** per a la prova física, amb inici, orientació i una ruta ortogonal marcada; el robot no fa recorreguts corbs ni llig els pictogrames.
-- Sis pictogrames de paper amb les estacions digestives, una fitxa plana de fruita, fletxes de direcció i targetes d'ordre; no cal menjar real.
-- Full de registre amb les columnes **estació**, **casella**, **ordre prevista**, **ordre executada**, **observació** i **revisió**.
-- Fonts de consulta docent: [NIDDK, funcionament del sistema digestiu](https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works) i [activitat Matatalab *Food Digestion*](https://matatalab.com/en/node/90).
+- Coding Set completo: MatataBot, torre de control, tablero y bloques tangibles de movimiento disponibles en el centro.
+- Mapa original de 4 × 4 casillas de **10 × 10 cm** para la prueba física, con inicio, orientación y una ruta ortogonal marcada; el robot no hace recorridos curvos ni lee los pictogramas.
+- Seis pictogramas de papel con las estaciones digestivas, una ficha plana de fruta, flechas de dirección y tarjetas de orden; no hace falta comer de verdad.
+- Hoja de registro con las columnas **estación**, **casilla**, **orden prevista**, **orden ejecutada**, **observación** y **revisión**.
+- Fuentes de consulta docente: [NIDDK, funcionamiento del sistema digestivo](https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works) y [actividad Matatalab *Food Digestion*](https://matatalab.com/en/node/90).
 
-Abans de la classe, comproveu càrrega, connexió de torre i robot, orientació inicial i mida de les caselles. Proveu una seqüència curta sobre el mateix mapa i anoteu si cada avanç correspon a una casella. Prepareu una ruta accessible amb inici al marge i girs fàcils de llegir; no canvieu la mida oficial de la graella per compensar desviacions.
+Antes de la clase, comprobad carga, conexión de torre y robot, orientación inicial y tamaño de las casillas. Probad una secuencia corta sobre el mismo mapa y anotad si cada avance corresponde a una casilla. Preparad una ruta accesible con inicio al margen y giros fáciles de leer; no cambiéis el tamaño oficial de la cuadrícula para compensar desviaciones.
 
-Useu pictogrames científicament revisats i no dibuixeu el cos d'un infant. La fruita és una fitxa que representa qualsevol aliment; no demaneu a l'alumnat què menja, si té al·lèrgies, ni que compartisca informació de salut o hàbits familiars. Eviteu classificar aliments o cossos com a bons, dolents, nets o bruts.
+Usad pictogramas científicamente revisados y no dibujéis el cuerpo de un niño o una niña. La fruta es una ficha que representa cualquier alimento; no preguntéis al alumnado qué come, si tiene alergias, ni que comparta información de salud o hábitos familiares. Evitad clasificar alimentos o cuerpos como buenos, malos, limpios o sucios.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### 1. Ordenem les estacions (50 min)
+### 1. Ordenamos las estaciones (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu el repte amb sis pictogrames sense ordre i una fitxa de fruita. En parelles, ordeneu-los segons què penseu que ocorre després d'empassar. Recolliu les idees inicials sense corregir-les d'immediat; marqueu amb un signe d'interrogació les parts que caldrà contrastar amb la font científica.
+Presentad el reto con seis pictogramas sin orden y una ficha de fruta. En parejas, ordenadlos según lo que penséis que ocurre después de tragar. Recoged las ideas iniciales sin corregirlas de inmediato y marcad con un signo de interrogación las partes que habrá que contrastar con la fuente científica.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Amb una explicació docent breu i la pàgina de NIDDK, reviseu la seqüència boca → esòfag → estómac → intestí prim → intestí gros → recte i anus. Per a aquesta primera representació, agrupeu recte i anus en una estació final titulada «eixida» si el mapa no té prou caselles. Situeu fetge i pàncrees en una vora com a òrgans que ajuden al procés però que no són part del trajecte seguit per la fitxa.
+Con una explicación docente breve y la página de NIDDK, revisad la secuencia boca → esófago → estómago → intestino delgado → intestino grueso → recto y ano. Para esta primera representación, agrupad recto y ano en una estación final titulada «salida» si el mapa no tiene suficientes casillas. Situad hígado y páncreas en un borde como órganos que ayudan al proceso pero que no forman parte del trayecto seguido por la ficha.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Cada parella prepara una targeta per estació amb una frase clara: mastegar; avançar per l'esòfag; barrejar a l'estómac; absorbir la major part dels nutrients a l'intestí prim; absorbir aigua a l'intestí gros; i arribar a l'eixida. No cal memoritzar noms més específics ni representar reaccions químiques. Registreu una idea inicial que hàgeu corregit amb la font.
+Cada pareja prepara una tarjeta por estación con una frase clara: masticar; avanzar por el esófago; mezclar en el estómago; absorber la mayor parte de los nutrientes en el intestino delgado; absorber agua en el intestino grueso; y llegar a la salida. No hace falta memorizar nombres más específicos ni representar reacciones químicas. Registrad una idea inicial que hayáis corregido con la fuente.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu els pictogrames amb una altra parella sense mostrar l'ordre. L'equip visitant els col·loca i justifica la seqüència. Si hi ha desacord, cerqueu la dada en la font abans de canviar la targeta. El professorat comprova que la ruta no suggerisca que fetge o pàncrees són trams pels quals passa l'aliment.
+Intercambiad los pictogramas con otra pareja sin mostrar el orden. El equipo visitante los coloca y justifica la secuencia. Si hay desacuerdo, buscad el dato en la fuente antes de cambiar la tarjeta. El profesorado comprueba que la ruta no sugiera que hígado o páncreas son tramos por los que pasa el alimento.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** seqüència de pictogrames amb una frase per estació i una correcció justificada. **Pregunta de tancament:** quin òrgan participa en la digestió però no forma part del tub pel qual passa l'aliment?
+**Evidencia:** secuencia de pictogramas con una frase por estación y una corrección justificada. **Pregunta de cierre:** ¿qué órgano participa en la digestión pero no forma parte del tubo por el que pasa el alimento?
 
-### 2. Del mapa a les ordres (50 min)
+### 2. Del mapa a las órdenes (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu el mapa de 4 × 4 i marqueu inici, orientació i final. Feu que una persona camine la ruta amb una fitxa de robot mentre la parella diu les instruccions. Abans d'escriure el programa, prediu quants avanços i girs calen i en quina estació podria ser més fàcil equivocar-se.
+Mostrad el mapa de 4 × 4 y marcad inicio, orientación y final. Haced que una persona recorra la ruta con una ficha de robot mientras la pareja dice las instrucciones. Antes de escribir el programa, predecid cuántos avances y giros hacen falta y en qué estación podría ser más fácil equivocarse.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Ubiqueu les estacions en una ruta ortogonal possible. Convertiu cada tram en avanços i cada canvi d'orientació en un gir de 90° amb els blocs disponibles. Les parades són marques del mapa, no ordres que MatataBot detecte. Si una ruta no cap en la quadrícula, canvieu la disposició dels pictogrames o declareu un nou inici; no afegiu sensors ni moviment corb al kit base.
+Ubicad las estaciones en una ruta ortogonal posible. Convertid cada tramo en avances y cada cambio de orientación en un giro de 90° con los bloques disponibles. Las paradas son marcas del mapa, no órdenes que MatataBot detecte. Si una ruta no cabe en la cuadrícula, cambiad la disposición de los pictogramas o declarad un nuevo inicio; no añadáis sensores ni movimiento curvo al kit base.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Abans d'executar, una persona llig la seqüència en veu alta i l'altra assenyala sobre el mapa què farà el robot. Registreu la casella i l'orientació després de cada ordre. Si un tram requereix moltes peces iguals, compareu-lo amb una repetició verbal; només useu un bloc de bucle si forma part del kit real i la seqüència resultant s'ha comprovat.
+Antes de ejecutar, una persona lee la secuencia en voz alta y la otra señala sobre el mapa qué hará el robot. Registrad la casilla y la orientación después de cada orden. Si un tramo requiere muchas piezas iguales, comparadlo con una repetición verbal; usad un bloque de bucle solo si forma parte del kit real y la secuencia resultante se ha comprobado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu i executeu una vegada. L'observador marca la primera casella on la posició real se separa de la prevista. Depureu primer la interpretació de gir i avanç; després, si cal, reviseu l'alineació física. Canvieu una instrucció cada vegada i repetiu la prova des del mateix punt inicial.
+Programad y ejecutad una vez. El observador marca la primera casilla en la que la posición real se separa de la prevista. Depurad primero la interpretación de giro y avance; después, si hace falta, revisad la alineación física. Cambiad una instrucción cada vez y repetid la prueba desde el mismo punto inicial.
 
-![MatataBot, la torre i els blocs tangibles al costat d'una graella amb estacions digestives connectades per una ruta de caselles.](../../_assets/situacions/sa-cs-viatge-digestiu-ruta-v1.webp)
+![MatataBot, la torre y los bloques tangibles junto a una cuadrícula con estaciones digestivas conectadas por una ruta de casillas.](../../_assets/situacions/sa-cs-viatge-digestiu-ruta-v1.webp)
 
-_Les fletxes i pictogrames representen un mapa preparat per l'alumnat; el robot només executa les ordres físiques._
+_Las flechas y los pictogramas representan un mapa preparado por el alumnado; el robot solo ejecuta las órdenes físicas._
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** seqüència de blocs, predicció casella a casella i registre del resultat de la primera execució. **Pregunta de tancament:** quin canvi d'orientació ha sigut més important per a no eixir de la ruta?
+**Evidencia:** secuencia de bloques, predicción casilla a casilla y registro del resultado de la primera ejecución. **Pregunta de cierre:** ¿qué cambio de orientación ha sido más importante para no salir de la ruta?
 
-### 3. Seguim el procés sense simplificar-lo de més (50 min)
+### 3. Seguimos el proceso sin simplificarlo en exceso (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu la ruta programada i pregunteu què representa cada parada. Mostreu una targeta d'estómac i una d'intestí prim: predigueu si fan la mateixa funció o si el model necessita distingir-les. Recordeu que la fitxa només representa el recorregut, no els canvis que pateix l'aliment.
+Recuperad la ruta programada y preguntad qué representa cada parada. Mostrad una tarjeta de estómago y una de intestino delgado: predecid si hacen la misma función o si el modelo necesita distinguirlas. Recordad que la ficha solo representa el recorrido, no los cambios que sufre el alimento.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Afegiu al mapa targetes d'esdeveniment per a «mastegar», «moviment muscular», «barreja», «absorció de nutrients» i «absorció d'aigua». Associeu-les amb la parada corresponent i contrasteu-les amb la font. El peristaltisme és un moviment muscular que impulsa el contingut; no és una ordre conscient del robot ni un moviment de la fitxa que puga reproduir exactament el cos.
+Añadid al mapa tarjetas de evento para «masticar», «movimiento muscular», «mezcla», «absorción de nutrientes» y «absorción de agua». Asociadlas con la parada correspondiente y contrastadlas con la fuente. El peristaltismo es un movimiento muscular que impulsa el contenido; no es una orden consciente del robot ni un movimiento de la ficha que pueda reproducir exactamente el cuerpo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Cada parella crea una llegenda de dos nivells: **què fa MatataBot** (avança, gira, s'atura perquè una persona el para) i **què explica la ciència** (funció aproximada de cada òrgan). Marqueu amb una vora discontínua les idees que el mapa no representa, com la digestió química, els sucs digestius i l'absorció a través de les parets intestinals.
+Cada pareja crea una leyenda de dos niveles: **qué hace MatataBot** (avanza, gira, se detiene porque una persona lo para) y **qué explica la ciencia** (función aproximada de cada órgano). Marcad con un borde discontinuo las ideas que el mapa no representa, como la digestión química, los jugos digestivos y la absorción a través de las paredes intestinales.
 
-![Fitxes didàctiques separades mostren funcions generals de l'estómac i els intestins, amb el fetge i el pàncrees situats fora del trajecte de la fruita.](../../_assets/situacions/sa-cs-viatge-digestiu-funcions-v1.webp)
+![Fichas didácticas separadas muestran funciones generales del estómago y los intestinos, con el hígado y el páncreas situados fuera del trayecto de la fruta.](../../_assets/situacions/sa-cs-viatge-digestiu-funcions-v1.webp)
 
-_Les icones són un recurs per a conversar sobre funcions; no descriuen tots els processos digestius ni són un mapa de sensors._
+_Los iconos son un recurso para conversar sobre funciones; no describen todos los procesos digestivos ni son un mapa de sensores._
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Afegiu una casella de desviament fictícia i demaneu a una altra parella que detecte l'error en una seqüència escrita. La classe decideix si l'error és de ruta o de coneixement científic: corregir un gir no canvia la funció d'un òrgan, i corregir una dada científica no exigeix moure el robot. Registreu les dues revisions per separat.
+Añadid una casilla de desvío ficticia y pedid a otra pareja que detecte el error en una secuencia escrita. La clase decide si el error es de ruta o de conocimiento científico: corregir un giro no cambia la función de un órgano, y corregir un dato científico no exige mover el robot. Registrad las dos revisiones por separado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** llegenda que separa model i procés real, amb almenys dues limitacions explícites. **Pregunta de tancament:** què no podem concloure observant només el moviment del robot?
+**Evidencia:** leyenda que separa modelo y proceso real, con al menos dos limitaciones explícitas. **Pregunta de cierre:** ¿qué no podemos concluir observando solo el movimiento del robot?
 
-### 4. Revisem i compartim el mapa (50 min)
+### 4. Revisamos y compartimos el mapa (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu una ruta nova a partir d'una disposició diferent de les targetes. Cada equip prediu si pot arribar a l'eixida sense retrocedir i anota un pla alternatiu. La fruita continua sent una peça fictícia: no cal portar aliments reals ni parlar d'hàbits personals.
+Preparad una ruta nueva a partir de una disposición diferente de las tarjetas. Cada equipo predice si puede llegar a la salida sin retroceder y anota un plan alternativo. La fruta sigue siendo una pieza ficticia: no hace falta traer alimentos reales ni hablar de hábitos personales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dissenyeu i intercanvieu mapes entre equips. Cada mapa ha d'incloure inici, orientació, ordre de les estacions i una ruta executable amb la graella. El grup que rep el mapa ha de poder entendre'l sense que l'equip autor explique les instruccions oralment; milloreu símbols o llegenda si no és així.
+Diseñad e intercambiad mapas entre equipos. Cada mapa debe incluir inicio, orientación, orden de las estaciones y una ruta ejecutable con la cuadrícula. El grupo que recibe el mapa tiene que poder entenderlo sin que el equipo autor explique las instrucciones oralmente; mejorad los símbolos o la leyenda si no es así.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-L'equip visitant fa una predicció completa i escriu el programa. La parella autora comprova que les ordres coincidisquen amb el mapa, però no dona la solució. Registreu una pregunta que ha ajudat a aclarir el repte i una dada científica que s'ha verificat.
+El equipo visitante hace una predicción completa y escribe el programa. La pareja autora comprueba que las órdenes coincidan con el mapa, pero no da la solución. Registrad una pregunta que haya ayudado a aclarar el reto y un dato científico que se haya verificado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu i compareu programa, ruta i pictogrames. Si hi ha una errada, indiqueu-ne la primera causa observada, proposeu una modificació i torneu a provar només el fragment necessari des d'un punt segur. No puntueu el temps: valoreu que una altra parella puga seguir i explicar la ruta.
+Ejecutad y comparad programa, ruta y pictogramas. Si hay un error, indicad la primera causa observada, proponed una modificación y volved a probar solo el fragmento necesario desde un punto seguro. No puntuéis el tiempo: valorad que otra pareja pueda seguir y explicar la ruta.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Cada equip presenta el mapa, una prova de depuració i una limitació del model. **Evidència final:** mapa amb llegenda, seqüència, predicció, registre d'execució i explicació científica revisada. **Pregunta de tancament:** quina part de l'exposició canviaries perquè ningú confonga una ruta programada amb un cos real?
+Cada equipo presenta el mapa, una prueba de depuración y una limitación del modelo. **Evidencia final:** mapa con leyenda, secuencia, predicción, registro de ejecución y explicación científica revisada. **Pregunta de cierre:** ¿qué parte de la exposición cambiaríais para que nadie confunda una ruta programada con un cuerpo real?
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu quatre productes: seqüència científica de la sessió 1, programa i registre de la sessió 2, llegenda de límits del model en la sessió 3, i mapa revisat amb explicació en la sessió 4. Observeu si l'equip: ordena les parts principals del tub digestiu; diferencia el recorregut de les funcions auxiliars del fetge i el pàncrees; tradueix una ruta ortogonal a blocs; prediu girs i avanços; localitza la primera diferència durant la prova; i comunica què no simula el robot. No avalueu coneixements mèdics personals ni demaneu relats de salut.
+Recoged cuatro productos: secuencia científica de la sesión 1, programa y registro de la sesión 2, leyenda de límites del modelo en la sesión 3, y mapa revisado con explicación en la sesión 4. Observad si el equipo: ordena las partes principales del tubo digestivo; diferencia el recorrido de las funciones auxiliares del hígado y el páncreas; traduce una ruta ortogonal a bloques; predice giros y avances; localiza la primera diferencia durante la prueba; y comunica qué no simula el robot. No evaluéis conocimientos médicos personales ni pidáis relatos de salud.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Useu pictogrames grans, text de lectura fàcil, relleu o formes diferenciades a més del color. Marqueu l'inici amb una textura o una osca i oferiu una ruta curta amb menys girs. Es pot participar com a responsable de pictogrames, programador/a, predictor/a, observador/a del robot, verificador/a científic/a o relator/a. Doneu l'ordre de les estacions en targetes manipulables a qui necessite suport de memòria; accepteu una predicció oral, assenyalada o escrita. Manteniu mans i materials fora del pas del robot; no hi ha ingestió, contacte amb aliments ni representació corporal real.
+Usad pictogramas grandes, texto de lectura fácil, relieve o formas diferenciadas además del color. Marcad el inicio con una textura o una muesca y ofreced una ruta corta con menos giros. Se puede participar como responsable de pictogramas, programador/a, predictor/a, observador/a del robot, verificador/a científico/a o relator/a. Dad el orden de las estaciones en tarjetas manipulables a quien necesite apoyo de memoria; aceptad una predicción oral, señalada o escrita. Mantened las manos y los materiales fuera del paso del robot; no hay ingestión, contacto con alimentos ni representación corporal real.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [Food Digestion](https://matatalab.com/en/node/90): activitat de Matatalab Lite amb presentació del procés digestiu, representació de la ruta en paper de gran format, control per parelles, pràctica guiada i retorn. La proposta conserva el recorregut i la conversa, però canvia el control manual del Lite per blocs tangibles del Coding Set, usa un mapa de graella i distribueix el treball en quatre sessions pròpies.
-- National Institute of Diabetes and Digestive and Kidney Diseases, [Your Digestive System & How it Works](https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works): ordre del tub digestiu, moviment per peristaltisme i funcions generals de l'estómac i els intestins. La situació en fa una síntesi educativa i no una explicació mèdica exhaustiva.
+- Matatalab, [Food Digestion](https://matatalab.com/en/node/90): actividad de Matatalab Lite con presentación del proceso digestivo, representación de la ruta en papel de gran formato, control por parejas, práctica guiada y retorno. La propuesta conserva el recorrido y la conversación, pero cambia el control manual del Lite por bloques tangibles del Coding Set, usa un mapa de cuadrícula y distribuye el trabajo en cuatro sesiones propias.
+- National Institute of Diabetes and Digestive and Kidney Diseases, [Your Digestive System & How it Works](https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works): orden del tubo digestivo, movimiento por peristaltismo y funciones generales del estómago y los intestinos. La situación hace una síntesis educativa y no una explicación médica exhaustiva.
 
-Els pictogrames, el mapa, les preguntes, el registre i la il·lustració són originals. La imatge mostra el MatataBot i la torre reals de la dotació; els símbols d'òrgans són icones planes i no parts del robot. La font de Matatalab Lite és un referent pedagògic, no una afirmació de compatibilitat del seu mode manual amb el Coding Set.
+Los pictogramas, el mapa, las preguntas, el registro y la ilustración son originales. La imagen muestra el MatataBot y la torre reales de la dotación; los símbolos de órganos son iconos planos y no partes del robot. La fuente de Matatalab Lite es un referente pedagógico, no una afirmación de compatibilidad de su modo manual con el Coding Set.

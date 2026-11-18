@@ -15,132 +15,132 @@ challenge: "¿Cómo podemos usar una tarjeta de país para encontrar el lugar pa
 official_source: "https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf"
 ---
 
-![MatataBot i la torre de control reals del Coding Set davant d’un mapa amb imatges de patrimoni i targetes de país.](../../_assets/situacions/cs-patrimoni-rutes.webp)
+![MatataBot y la torre de control reales del Coding Set ante un mapa con imágenes de patrimonio y tarjetas de país.](../../_assets/situacions/cs-patrimoni-rutes.webp)
 
-_Il·lustració IA pròpia basada en el kit de la dotació. Les targetes i la ruta són esquemàtiques; persones relacionen país i lloc amb fonts, i MatataBot només executa ordres de moviment._
+_Ilustración IA propia basada en el kit de la dotación. Las tarjetas y la ruta son esquemáticas; las personas relacionan país y lugar con fuentes, y MatataBot solo ejecuta órdenes de movimiento._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-Una mostra escolar presenta llocs patrimonials de València i d’altres parts del món. En una graella hi ha nou targetes il·lustrades de llocs i, al costat, nou targetes de país que s’han associat prèviament amb una font fiable. Cada equip tria una targeta de país, localitza el lloc corresponent i programa MatataBot perquè hi arribe sense tocar les altres targetes. En una segona ronda, ha de visitar dos llocs amb un únic programa.
+Una muestra escolar presenta lugares patrimoniales de Valencia y de otras partes del mundo. En una cuadrícula hay nueve tarjetas ilustradas de lugares y, al lado, nueve tarjetas de país que se han asociado previamente con una fuente fiable. Cada equipo elige una tarjeta de país, localiza el lugar correspondiente y programa MatataBot para que llegue sin tocar las otras tarjetas. En una segunda ronda, debe visitar dos lugares con un único programa.
 
-La situació adapta la targeta oficial **C-1 · Culture Differences** de les *Coding Activity Cards*: preparar targetes de banderes de països i nou targetes de monuments corresponents, triar inici i bandera, programar MatataBot fins al monument d’eixe país sense tocar les altres targetes, i puntuar cada destinació correcta; l’ampliació demana programar dues destinacions amb un únic programa. Ací substituïm la puntuació individual per una missió cooperativa: la classe completa una ruta de patrimoni i justifica les associacions amb fonts. La Llotja de la Seda de València dona un punt de partida local; les altres parelles de targetes es preparen amb informació verificada, no amb estereotips ni per l’aparença d’un edifici.
+La situación adapta la tarjeta oficial **C-1 · Culture Differences** de las *Coding Activity Cards*: preparar tarjetas de banderas de países y nueve tarjetas de monumentos correspondientes, elegir inicio y bandera, programar MatataBot hasta el monumento de ese país sin tocar las otras tarjetas, y puntuar cada destino correcto; la ampliación pide programar dos destinos con un único programa. Aquí sustituimos la puntuación individual por una misión cooperativa: la clase completa una ruta de patrimonio y justifica las asociaciones con fuentes. La Lonja de la Seda de Valencia da un punto de partida local; las otras parejas de tarjetas se preparan con información verificada, no con estereotipos ni por la apariencia de un edificio.
 
-MatataBot no reconeix banderes ni monuments i no detecta targetes. Les persones llegeixen la font, identifiquen la destinació, planifiquen el recorregut i comproven si el robot hi arriba sense contacte.
+MatataBot no reconoce banderas ni monumentos y no detecta tarjetas. Las personas leen la fuente, identifican el destino, planifican el recorrido y comprueban si el robot llega sin contacto.
 
-**Pregunta guia:** quina font confirma la relació entre la targeta de país i el lloc patrimonial, i quines instruccions permeten arribar-hi sense tocar altres imatges?
+**Pregunta guía:** ¿qué fuente confirma la relación entre la tarjeta de país y el lugar patrimonial, y qué instrucciones permiten llegar sin tocar otras imágenes?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Buscar i verificar una relació geogràfica entre un país i un lloc patrimonial.
-- Distingir una dada amb font d’una associació feta només per aparença o familiaritat.
-- Llegir una graella i planificar una ruta amb inici, orientació i destinació.
-- Programar una ruta que evite targetes no seleccionades i corregir-la després d’una prova.
-- Ampliar el recorregut a dues destinacions amb un únic programa.
-- Explicar que el reconeixement de targetes i la selecció del lloc són accions humanes.
+- Buscar y verificar una relación geográfica entre un país y un lugar patrimonial.
+- Distinguir un dato con fuente de una asociación hecha solo por apariencia o familiaridad.
+- Leer una cuadrícula y planificar una ruta con inicio, orientación y destino.
+- Programar una ruta que evite tarjetas no seleccionadas y corregirla después de una prueba.
+- Ampliar el recorrido a dos destinos con un único programa.
+- Explicar que el reconocimiento de tarjetas y la selección del lugar son acciones humanas.
 
-**Vocabulari clau:** patrimoni, país, font, targeta, graella, ruta, destinació, orientació, seqüència, contacte, verificació.
+**Vocabulario clave:** patrimonio, país, fuente, tarjeta, cuadrícula, ruta, destino, orientación, secuencia, contacto, verificación.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Coding Set de la dotació: MatataBot, torre de control, tauler i blocs direccionals disponibles.
-- Mapa pla en quadrícula amb nou caselles de destinació i espai per a la ruta; useu la graella física del kit si el centre en disposa i comproveu-ne l’escala.
-- Nou targetes grans amb imatges de llocs patrimonials i nou targetes separades de país. Incloeu La Llotja de la Seda de València i seleccioneu les altres huit destinacions des de fonts fiables; una persona adulta revisa les correspondències i apunta l’URL o la referència al revers.
-- Fitxa de registre amb **país triat**, **lloc seleccionat**, **font consultada**, **inici/orientació**, **ruta**, **targetes evitades**, **resultat** i **revisió**.
-- Fitxa de robot i fletxes per a simular; targetes de suport amb noms de llocs i països en lletra gran, lectura fàcil i transcripció oral.
+- Coding Set de la dotación: MatataBot, torre de control, tablero y bloques direccionales disponibles.
+- Mapa plano en cuadrícula con nueve casillas de destino y espacio para la ruta; usad la cuadrícula física del kit si el centro dispone de ella y comprobad su escala.
+- Nueve tarjetas grandes con imágenes de lugares patrimoniales y nueve tarjetas separadas de país. Incluid la Lonja de la Seda de Valencia y seleccionad los otros ocho destinos desde fuentes fiables; una persona adulta revisa las correspondencias y anota la URL o la referencia en el reverso.
+- Ficha de registro con **país elegido**, **lugar seleccionado**, **fuente consultada**, **inicio/orientación**, **ruta**, **tarjetas evitadas**, **resultado** y **revisión**.
+- Ficha de robot y flechas para simular; tarjetas de apoyo con nombres de lugares y países en letra grande, lectura fácil y transcripción oral.
 
-Useu la [Llista del Patrimoni Mundial de la UNESCO](https://whc.unesco.org/en/list/) per a verificar denominació i país de cada lloc; contrasteu també la fitxa individual del lloc abans de crear cada parella. Per al punt local, la pàgina oficial de [La Llotja de la Seda de València](https://whc.unesco.org/en/list/782/) identifica el lloc i els materials oficials en descriuen l’ús històric com a centre de comerç de la seda. No copieu mapes, fotografies o logos protegits a les targetes sense comprovar-ne la llicència; feu il·lustracions esquemàtiques pròpies o useu materials amb llicència adequada.
+Usad la [Lista del Patrimonio Mundial de la UNESCO](https://whc.unesco.org/en/list/) para verificar la denominación y el país de cada lugar; contrastad también la ficha individual del lugar antes de crear cada pareja. Para el punto local, la página oficial de [La Lonja de la Seda de Valencia](https://whc.unesco.org/en/list/782/) identifica el lugar y los materiales oficiales describen su uso histórico como centro de comercio de la seda. No copiéis mapas, fotografías o logos protegidos en las tarjetas sin comprobar su licencia; haced ilustraciones esquemáticas propias o usad materiales con licencia adecuada.
 
-Carregueu i proveu la torre i el robot. Fixeu les targetes de destinació al centre de les caselles, deixeu passadissos prou amplis i comproveu una ruta de prova que passe entre dues targetes sense tocar-les. La selecció del país i la identificació del lloc es fan abans de programar; no useu la càmera de la torre com si llegira les imatges del mapa.
+Cargad y probad la torre y el robot. Fijad las tarjetas de destino en el centro de las casillas, dejad pasillos suficientemente amplios y comprobad una ruta de prueba que pase entre dos tarjetas sin tocarlas. La selección del país y la identificación del lugar se hacen antes de programar; no uséis la cámara de la torre como si leyera las imágenes del mapa.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Sessió 1 · Verifiquem les parelles de targetes (45 min)
+### Sesión 1 · Verificamos las parejas de tarjetas (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu la Llotja de la Seda i pregunteu què podem afirmar sobre el lloc i què necessitem comprovar. Compareu una targeta amb una imatge sense nom i una fitxa de font amb país i denominació oficial. Acordeu que l’aspecte d’un edifici no és evidència suficient per a identificar-ne el país.
+Mostrad la Lonja de la Seda y preguntad qué podemos afirmar sobre el lugar y qué necesitamos comprobar. Comparad una tarjeta con una imagen sin nombre y una ficha de fuente con país y denominación oficial. Acordad que el aspecto de un edificio no es evidencia suficiente para identificar su país.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En equips, reviseu les nou parelles de país i lloc preparades per la docent. Busqueu el nom del lloc en la Llista del Patrimoni Mundial o en la seua fitxa i anoteu la font al revers. Si la targeta és ambigua o la font no confirma la correspondència, poseu-la en una pila pendent i substituïu-la per una parella verificable.
+En equipos, revisad las nueve parejas de país y lugar preparadas por la docente. Buscad el nombre del lugar en la Lista del Patrimonio Mundial o en su ficha y anotad la fuente en el reverso. Si la tarjeta es ambigua o la fuente no confirma la correspondencia, ponedla en una pila pendiente y sustituidla por una pareja verificable.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Creeu un inventari amb tres columnes: **país de la targeta**, **nom del lloc** i **font**. Cada equip explica una relació amb una dada consultada, evitant generalitzacions sobre les persones o la cultura d’un país. L’equip que escolta comprova que la targeta no confon el lloc, l’estat o una regió.
+Cread un inventario con tres columnas: **país de la tarjeta**, **nombre del lugar** y **fuente**. Cada equipo explica una relación con un dato consultado, evitando generalizaciones sobre las personas o la cultura de un país. El equipo que escucha comprueba que la tarjeta no confunde el lugar, el Estado o una región.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Barregeu les targetes i intercanvieu-les amb un altre equip. La parella visitant intenta reconstruir les nou associacions a partir de les fonts del revers. Si no pot verificar-ne una, l’equip autor revisa l’etiqueta o l’enllaç; no es tracta com un error de memòria de l’alumnat.
+Mezclad las tarjetas e intercambiadlas con otro equipo. La pareja visitante intenta reconstruir las nueve asociaciones a partir de las fuentes del reverso. Si no puede verificar una, el equipo autor revisa la etiqueta o el enlace; no se trata como un error de memoria del alumnado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** nou parelles revisades amb font i una targeta corregida o substituïda si cal. **Pregunta:** quina evidència hem consultat abans de dir que aquest lloc correspon a aquest país?
+**Evidencia:** nueve parejas revisadas con fuente y una tarjeta corregida o sustituida si hace falta. **Pregunta:** ¿qué evidencia hemos consultado antes de decir que este lugar corresponde a este país?
 
-### Sessió 2 · Programem una destinació sense tocar les altres (45 min)
+### Sesión 2 · Programamos un destino sin tocar las demás (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Col·loqueu MatataBot en una casella inicial i trieu una targeta de país. La parella localitza el lloc corresponent i marca una ruta que no passe per damunt de les altres targetes. Predigueu cada casella abans d’usar els blocs.
+Colocad MatataBot en una casilla inicial y elegid una tarjeta de país. La pareja localiza el lugar correspondiente y marca una ruta que no pase por encima de las otras tarjetas. Predecid cada casilla antes de usar los bloques.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Traduïu la ruta a blocs direccionals, tenint en compte l’orientació del robot i el fet que girar no equival a avançar de costat. Simuleu-la amb una fitxa de paper; si la ruta toca una altra targeta, trieu un passadís alternatiu abans de programar.
+Traducid la ruta a bloques direccionales, teniendo en cuenta la orientación del robot y que girar no equivale a avanzar de lado. Simuladla con una ficha de papel; si la ruta toca otra tarjeta, elegid un pasillo alternativo antes de programar.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu el país triat, el nom del lloc, la font, l’inici, l’orientació i la seqüència. Una persona llig les ordres i l’altra assenyala la trajectòria. L’observadora marca quines targetes no seleccionades cal evitar.
+Anotad el país elegido, el nombre del lugar, la fuente, el inicio, la orientación y la secuencia. Una persona lee las órdenes y la otra señala la trayectoria. La observadora marca qué tarjetas no seleccionadas hay que evitar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu la ruta. Comproveu si el robot arriba a la casella correcta i si ha mantingut distància de les altres targetes. Si toca una imatge, atureu-lo i registreu el punt de contacte; reviseu una sola instrucció i repetiu des del mateix inici. No retireu ni mogueu targetes durant l’execució.
+Ejecutad la ruta. Comprobad si el robot llega a la casilla correcta y si ha mantenido distancia de las otras tarjetas. Si toca una imagen, detenedlo y registrad el punto de contacto; revisad una sola instrucción y repetid desde el mismo inicio. No retiréis ni mováis tarjetas durante la ejecución.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** associació amb font, programa i registre d’arribada/contactes. **Pregunta:** com sabem que l’encert prové de la ruta i de la font, no d’una lectura automàtica del robot?
+**Evidencia:** asociación con fuente, programa y registro de llegada/contactos. **Pregunta:** ¿cómo sabemos que el acierto proviene de la ruta y de la fuente, y no de una lectura automática del robot?
 
-### Sessió 3 · Dues destinacions en un sol programa (45 min)
+### Sesión 3 · Dos destinos en un solo programa (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu dues targetes de país i localitzeu-ne els dos llocs amb les fonts. Predigueu quin ordre visitarà MatataBot i com tornarà a orientar-se entre les destinacions sense tocar altres targetes.
+Elegid dos tarjetas de país y localizad los dos lugares con las fuentes. Predecid qué orden visitará MatataBot y cómo volverá a orientarse entre los destinos sin tocar otras tarjetas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Prepareu un programa únic que passe primer per una destinació i després per l’altra. Simuleu tota la seqüència en paper i marqueu un punt d’aturada segur després de la segona arribada; no dividiu el repte en dos programes executats per separat.
+Preparad un programa único que pase primero por un destino y después por el otro. Simulad toda la secuencia en papel y marcad un punto de parada seguro después de la segunda llegada; no dividáis el reto en dos programas ejecutados por separado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una parella visitant revisa la ruta i comprova que les dues destinacions s’ajusten a les fonts consultades i que cap altre lloc queda en la trajectòria. Escriviu **país 1 → lloc 1 → país 2 → lloc 2** al registre i anoteu l’ordre exacte dels blocs.
+Una pareja visitante revisa la ruta y comprueba que los dos destinos se ajustan a las fuentes consultadas y que ningún otro lugar queda en la trayectoria. Escribid **país 1 → lugar 1 → país 2 → lugar 2** en el registro y anotad el orden exacto de los bloques.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu el programa complet amb les dues destinacions. Registreu si MatataBot arriba a cadascuna i si toca alguna targeta no seleccionada. Si la ruta no funciona, localitzeu l’última casella correcta, reviseu el tram següent i torneu a executar des de l’inici.
+Ejecutad el programa completo con los dos destinos. Registrad si MatataBot llega a cada uno y si toca alguna tarjeta no seleccionada. Si la ruta no funciona, localizad la última casilla correcta, revisad el tramo siguiente y volved a ejecutar desde el inicio.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència final:** dues fonts verificades, un programa únic, dos llocs visitats i una nota sobre una revisió. Tanqueu amb: «La font confirma…» i «MatataBot només ha executat…».
+**Evidencia final:** dos fuentes verificadas, un programa único, dos lugares visitados y una nota sobre una revisión. Cerrad con: «La fuente confirma…» y «MatataBot solo ha ejecutado…».
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu l’inventari de nou parelles, fonts consultades, dos mapes de ruta, programes i registres de prova. Observeu si l’alumnat:
+Recoged el inventario de nueve parejas, fuentes consultadas, dos mapas de ruta, programas y registros de prueba. Observad si el alumnado:
 
-- comprova la correspondència abans de programar;
-- marca orientació i ruta completa abans d’executar;
-- evita targetes no seleccionades en una o dues destinacions;
-- fa servir una sola seqüència quan programa dues arribades;
-- identifica si una font és insuficient i demana verificar-la;
-- distingeix associació humana i moviment programat.
+- comprueba la correspondencia antes de programar;
+- marca orientación y ruta completa antes de ejecutar;
+- evita tarjetas no seleccionadas en uno o dos destinos;
+- usa una sola secuencia cuando programa dos llegadas;
+- identifica si una fuente es insuficiente y pide verificarla;
+- distingue asociación humana y movimiento programado.
 
-No hi ha rànquing ni puntuació individual. No avalueu coneixements previs sobre països, velocitat o nombre d’encerts al primer intent.
+No hay ranking ni puntuación individual. No evaluéis conocimientos previos sobre países, velocidad o número de aciertos en el primer intento.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Oferiu versions amb noms grans, descripció oral, relleu o pictogrames i mapes d’alt contrast. Les fonts es poden llegir en veu alta, consultar en grup o preparar prèviament; ningú ha de compartir experiències familiars ni representar una cultura. Roteu rols de consulta, verificació, programació i observació. Fixeu les targetes i manteniu les mans fora del recorregut; atureu el robot abans de reposicionar qualsevol material. Tracteu cada lloc amb respecte, sense caricatures ni associacions basades només en color, vestimenta o arquitectura.
+Ofreced versiones con nombres grandes, descripción oral, relieve o pictogramas y mapas de alto contraste. Las fuentes se pueden leer en voz alta, consultar en grupo o preparar previamente; nadie debe compartir experiencias familiares ni representar una cultura. Rotad roles de consulta, verificación, programación y observación. Fijad las tarjetas y mantened las manos fuera del recorrido; detened el robot antes de recolocar cualquier material. Tratad cada lugar con respeto, sin caricaturas ni asociaciones basadas solo en color, vestimenta o arquitectura.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [*Coding Activity Cards*, targeta C-1 · *Culture Differences* (PDF oficial)](https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf): prepara targetes de banderes i nou targetes de llocs corresponents; demana triar inici i bandera, trobar el monument sense tocar les altres targetes, puntuar cada encert i ampliar el repte a dues destinacions amb un únic programa. La mostra és parcial, però aquesta targeta inclou les instruccions llegibles.
-- UNESCO World Heritage Centre, [Llista del Patrimoni Mundial](https://whc.unesco.org/en/list/): consulta primària per a verificar denominació i país dels llocs seleccionats.
-- UNESCO World Heritage Centre, [La Llotja de la Seda de València](https://whc.unesco.org/en/list/782/) i [fitxa del Taj Mahal](https://whc.unesco.org/en/list/252/): exemples de referències oficials per a construir parelles locals i internacionals.
+- Matatalab, [*Coding Activity Cards*, tarjeta C-1 · *Culture Differences* (PDF oficial)](https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf): prepara tarjetas de banderas y nueve tarjetas de lugares correspondientes; pide elegir inicio y bandera, encontrar el monumento sin tocar las otras tarjetas, puntuar cada acierto y ampliar el reto a dos destinos con un único programa. La muestra es parcial, pero esta tarjeta incluye las instrucciones legibles.
+- UNESCO World Heritage Centre, [Lista del Patrimonio Mundial](https://whc.unesco.org/en/list/): consulta primaria para verificar la denominación y el país de los lugares seleccionados.
+- UNESCO World Heritage Centre, [La Lonja de la Seda de Valencia](https://whc.unesco.org/en/list/782/) y [ficha del Taj Mahal](https://whc.unesco.org/en/list/252/): ejemplos de referencias oficiales para construir parejas locales e internacionales.
 
-La proposta conserva la mecànica de relacionar una bandera amb un lloc, evitar altres targetes i visitar dos llocs amb una sola seqüència. Canvia la competició per una missió cooperativa, incorpora verificació de fonts, inclou patrimoni valencià i evita atribuir al MatataBot lectura d’imatges, interpretació cultural o detecció d’obstacles.
+La propuesta conserva la mecánica de relacionar una bandera con un lugar, evitar otras tarjetas y visitar dos lugares con una sola secuencia. Cambia la competición por una misión cooperativa, incorpora la verificación de fuentes, incluye patrimonio valenciano y evita atribuir a MatataBot la lectura de imágenes, la interpretación cultural o la detección de obstáculos.

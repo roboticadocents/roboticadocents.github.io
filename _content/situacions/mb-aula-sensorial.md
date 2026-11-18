@@ -14,131 +14,131 @@ duration: "4 sesiones · 200 min"
 challenge: "¿Cómo podemos crear un recurso visual opcional y configurable que ayude a hacer más previsible una rutina del aula?"
 ---
 
-![Micro:bit en un suport de cartó amb interruptor d’aturada i targetes de patrons visuals tranquils.](../../_assets/situacions/mb-aula-sensorial.webp)
+![Micro:bit en un soporte de cartón con interruptor de parada y tarjetas de patrones visuales tranquilos.](../../_assets/situacions/mb-aula-sensorial.webp)
 
-_El patró és una opció configurable, no una resposta universal a les necessitats sensorials._
+_El patrón es una opción configurable, no una respuesta universal a las necesidades sensoriales._
 
-## 🌱 Situació i intenció
+## 🌱 Situación e intención
 
-Una classe de tercer cicle treballa el disseny d’un recurs de suport visual que només s’activa quan la persona usuària ho tria. El repte no parteix d’endevinar què necessita algú ni d’imitar una experiència sensorial: l’equip llig un encàrrec fictici validat per la docent (per exemple, “vull veure un senyal lent per saber quan comença una tasca”), compara ajudes existents i dissenya una opció fàcil d’ignorar, canviar o apagar. La matriu 5 × 5 és una eixida visual menuda de prototip; no il·lumina l’aula ni substitueix adaptacions acordades amb la persona i el centre.
+Una clase de tercer ciclo trabaja el diseño de un recurso de apoyo visual que solo se activa cuando la persona usuaria lo elige. El reto no parte de adivinar qué necesita alguien ni de imitar una experiencia sensorial: el equipo lee un encargo ficticio validado por la docente (por ejemplo, «quiero ver una señal lenta para saber cuándo empieza una tarea»), compara ayudas existentes y diseña una opción fácil de ignorar, cambiar o apagar. La matriz de 5 × 5 es una salida visual pequeña de prototipo; no ilumina el aula ni sustituye adaptaciones acordadas con la persona y el centro.
 
-La unitat oficial té quatre lliçons per a 11–14 anys i assumeix coneixements previs de pseudocodi i MakeCode. Aquesta versió local conserva l’exploració d’entorns i ajudes, patrons de llum, algoritmes amb entrada/eixida/iteració/selecció i construcció, prova i avaluació; adapta el ritme i l’abast al tercer cicle de primària. No demana a ningú compartir diagnòstic, preferències personals ni experiències de salut.
+La unidad oficial tiene cuatro lecciones para 11–14 años y asume conocimientos previos de pseudocódigo y MakeCode. Esta versión local conserva la exploración de entornos y ayudas, patrones de luz, algoritmos con entrada/salida/iteración/selección y construcción, prueba y evaluación; adapta el ritmo y el alcance al tercer ciclo de primaria. No pide a nadie compartir diagnóstico, preferencias personales ni experiencias de salud.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Analitzar una rutina fictícia i formular requisits de predictibilitat, control voluntari i aturada.
-- Dissenyar patrons visuals regulables amb entrades i eixides que l’usuari puga controlar.
-- Programar i provar opcions estàtiques o de moviment suau, sense pampallugues ni estímuls obligatoris.
-- Recollir retorn voluntari sobre el prototip i explicar que no és una intervenció clínica ni una solució universal.
+- Analizar una rutina ficticia y formular requisitos de predictibilidad, control voluntario y parada.
+- Diseñar patrones visuales regulables con entradas y salidas que el usuario pueda controlar.
+- Programar y probar opciones estáticas o de movimiento suave, sin parpadeos ni estímulos obligatorios.
+- Recoger retorno voluntario sobre el prototipo y explicar que no es una intervención clínica ni una solución universal.
 
-## 🧰 Materials i acords previs
+## 🧰 Materiales y acuerdos previos
 
-BBC micro:bit, MakeCode i cable USB, cartó per a un suport que deixe visibles botons i LEDs, targetes de patrons estàtics, pseudocodi, full d’observació de criteris i un temporitzador opcional. Prepareu dos encàrrecs ficticis contrastats amb una persona adulta de suport educatiu o amb material públic d’accessibilitat; no inventeu una “necessitat típica” d’un diagnòstic. Totes les proves es fan primer amb simulador, en una zona de l’aula on la persona que observa pot apartar-se. L’ús en una aula real requereix autorització i acceptació voluntària; el valor pedagògic és el procés de disseny, no l’eficàcia clínica del prototip.
+BBC micro:bit, MakeCode y cable USB, cartón para un soporte que deje visibles botones y LEDs, tarjetas de patrones estáticos, pseudocódigo, hoja de observación de criterios y un temporizador opcional. Preparad dos encargos ficticios contrastados con una persona adulta de apoyo educativo o con material público de accesibilidad; no inventéis una «necesidad típica» de un diagnóstico. Todas las pruebas se hacen primero con simulador, en una zona del aula donde la persona que observa puede apartarse. El uso en un aula real requiere autorización y aceptación voluntaria; el valor pedagógico es el proceso de diseño, no la eficacia clínica del prototipo.
 
-Establiu criteris visibles abans de programar: el recurs roman apagat fins que algú l’activa; ofereix una imatge estàtica o un patró lent sense parpelleig; la persona pot canviar d’opció i deixar-la; el patró acaba o torna a un estat neutre; i hi ha una alternativa en paper. Si un criteri no es pot complir amb la placa, es registra com a límit del prototip.
+Estableced criterios visibles antes de programar: el recurso permanece apagado hasta que alguien lo activa; ofrece una imagen estática o un patrón lento sin parpadeo; la persona puede cambiar de opción y dejarla; el patrón acaba o vuelve a un estado neutro; y hay una alternativa en papel. Si un criterio no se puede cumplir con la placa, se registra como límite del prototipo.
 
-## 📅 Seqüència didàctica · quatre sessions de 50 minuts
+## 📅 Secuencia didáctica · cuatro sesiones de 50 minutos
 
-### **Sessió 1 · Explorar entorns i avaluar ajudes (Exploring learning environments).**
+### **Sesión 1 · Explorar entornos y evaluar ayudas (Exploring learning environments).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Llegiu una targeta fictícia amb un objectiu concret, sense etiquetar una persona. Predigueu quina informació de l’entorn pot ajudar a fer més previsible una rutina.
+Leed una tarjeta ficticia con un objetivo concreto, sin etiquetar a una persona. Predecid qué información del entorno puede ayudar a hacer más previsible una rutina.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En un mapa inventat d’aula, marqueu fonts de canvi o informació —inici de tasca, cartell, rellotge o soroll representat amb una targeta—. No augmenteu llum ni soroll real per fer la prova.
+En un mapa inventado de aula, marcad fuentes de cambio o información —inicio de tarea, cartel, reloj o ruido representado con una tarjeta—. No aumentéis la luz ni el ruido real para hacer la prueba.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu tres opcions: pictograma imprés, temporitzador analògic i micro:bit amb una icona. Useu una matriu de criteris: control de la persona, comprensibilitat, facilitat d’aturada, accessibilitat, cost i manteniment; anoteu també què no sabeu.
+Comparad tres opciones: pictograma impreso, temporizador analógico y micro:bit con un icono. Usad una matriz de criterios: control de la persona, comprensibilidad, facilidad de parada, accesibilidad, coste y mantenimiento; anotad también qué no sabéis.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Trieu què provaríeu per a l’encàrrec fictici i què deixareu fora. Reviseu la proposta perquè l’opció impresa, el control de la persona i la possibilitat de declinar-la continuen disponibles.
+Elegid qué probaríais para el encargo ficticio y qué dejaríais fuera. Revisad la propuesta para que la opción impresa, el control de la persona y la posibilidad de rechazarla continúen disponibles.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu qui decideix utilitzar el recurs i com pot no usar-lo. **Evidència:** mapa d’entorn, comparació d’ajudes i criteris acordats.
+Explicad quién decide utilizar el recurso y cómo puede no usarlo. **Evidencia:** mapa de entorno, comparación de ayudas y criterios acordados.
 
-### **Sessió 2 · Dissenyar patrons de llum amb repetició (Light patterns).**
+### **Sesión 2 · Diseñar patrones de luz con repetición (Light patterns).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu els criteris de la sessió anterior i comproveu que l’opció impresa i l’estat apagat continuen disponibles. Predigueu com serà el comportament d’un patró estàtic o lent.
+Recuperad los criterios de la sesión anterior y comprobad que la opción impresa y el estado apagado continúan disponibles. Predecid cómo será el comportamiento de un patrón estático o lento.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Escriviu pseudocodi amb la seqüència «inici voluntari → mostrar patró → pausa → acabar en neutre». Dissenyeu dues imatges 5 × 5 de contrast clar; eviteu animacions, alternança ràpida i estímuls inesperats.
+Escribid pseudocódigo con la secuencia «inicio voluntario → mostrar patrón → pausa → acabar en neutro». Diseñad dos imágenes de 5 × 5 de contraste claro; evitad animaciones, alternancia rápida y estímulos inesperados.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Traslladeu un patró a MakeCode i useu una repetició de durada finita o una pausa perquè el comportament siga previsible. Registreu com correspon cada bloc amb el pseudocodi.
+Trasladad un patrón a MakeCode y usad una repetición de duración finita o una pausa para que el comportamiento sea previsible. Registrad cómo corresponde cada bloque con el pseudocódigo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu el codi amb els criteris i reviseu-lo si s’activa sol, no acaba en neutre o no és fàcil d’aturar. No demaneu a companys que valoren reaccions corporals ni comoditat personal.
+Comparad el código con los criterios y revisadlo si se activa solo, no acaba en neutro o no es fácil de detener. No pidáis a compañeros que valoren reacciones corporales ni comodidad personal.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Comproveu que el patró només comença amb una acció voluntària i acaba de manera previsible. **Evidència:** pseudocodi, dues graelles, codi i revisió segons criteris tècnics.
+Comprobad que el patrón solo empieza con una acción voluntaria y acaba de manera previsible. **Evidencia:** pseudocódigo, dos cuadrículas, código y revisión según criterios técnicos.
 
-### **Sessió 3 · Algoritme amb entrada, selecció i eixida (Developing pattern algorithms).**
+### **Sesión 3 · Algoritmo con entrada, selección y salida (Developing pattern algorithms).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Dibuixeu els estats «apagat», «opció 1», «opció 2» i «retorn a neutre». Predigueu què ha de passar quan no es prem cap botó, se’n tria una opció o s’atura.
+Dibujad los estados «apagado», «opción 1», «opción 2» y «retorno a neutro». Predecid qué debe pasar cuando no se pulsa ningún botón, se elige una opción o se detiene.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Decidiu quin botó tria una opció i quin l’atura o la canvia. El programa no s’activa per llum, soroll, presència o moviment de la persona. Escriviu pseudocodi amb condicions «si/opció», «si/aturada» i una iteració limitada.
+Decidid qué botón elige una opción y cuál la detiene o la cambia. El programa no se activa por luz, ruido, presencia o movimiento de la persona. Escribid pseudocódigo con condiciones «si/opción», «si/parada» y una iteración limitada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una parella fa d’ordinador i executa literalment les instruccions. Completeu una taula amb **estat inicial, entrada, eixida esperada, eixida observada i resultat**. Incloeu com a mínim: cap entrada (es manté apagat), botó A (mostra l’opció 1), botó B (mostra l’opció 2), una segona pulsació (canvia o manté l’opció segons la regla escrita) i ordre d’aturada (torna a neutre). Afegiu un cas inesperat, com ara deixar passar el temps sense prémer cap botó. No cal registrar noms ni opinions personals.
+Una pareja hace de ordenador y ejecuta literalmente las instrucciones. Completad una tabla con **estado inicial, entrada, salida esperada, salida observada y resultado**. Incluid como mínimo: ninguna entrada (se mantiene apagado), botón A (muestra la opción 1), botón B (muestra la opción 2), una segunda pulsación (cambia o mantiene la opción según la regla escrita) y orden de parada (vuelve a neutro). Añadid un caso inesperado, como dejar pasar el tiempo sin pulsar ningún botón. No hace falta registrar nombres ni opiniones personales.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Localitzeu instruccions ambigües o una branca sense eixida i corregiu-les. Torneu a executar els casos afectats per comprovar la revisió.
+Localizad instrucciones ambiguas o una rama sin salida y corregidlas. Volved a ejecutar los casos afectados para comprobar la revisión.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Verifiqueu que el diagrama inclou entrada, selecció, eixida i retorn a estat neutre. **Evidència:** diagrama d’estats, pseudocodi depurat i matriu de casos.
+Verificad que el diagrama incluye entrada, selección, salida y retorno a estado neutro. **Evidencia:** diagrama de estados, pseudocódigo depurado y matriz de casos.
 
-### **Sessió 4 · Construir, provar i avaluar l’ajuda (Building sensory aids).**
+### **Sesión 4 · Construir, probar y evaluar la ayuda (Building sensory aids).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Predigueu com es podrà activar i aturar el prototip abans de muntar-lo. Comproveu que la prova es pot fer amb simulador, captura estàtica o paper, sense mirar el patró. Assigneu una persona al programa, una altra a llegir els casos de prova i una tercera a registrar eixides; canvieu els rols abans de la revisió final.
+Predecid cómo se podrá activar y detener el prototipo antes de montarlo. Comprobad que la prueba se puede hacer con simulador, captura estática o papel, sin mirar el patrón. Asignad una persona al programa, otra a leer los casos de prueba y una tercera a registrar salidas; cambiad los roles antes de la revisión final.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Col·loqueu la micro:bit en un suport estable sense tapar botons ni matriu LED, o deixeu-la plana si així és més fàcil controlar-la. Implementeu l’algoritme amb entrades, selecció, una repetició limitada i eixida estàtica; no afegiu automatismes que observen la classe.
+Colocad la micro:bit en un soporte estable sin tapar botones ni matriz LED, o dejadla plana si así es más fácil controlarla. Implementad el algoritmo con entradas, selección, una repetición limitada y salida estática; no añadáis automatismos que observen la clase.
 
-![Micro:bit real de la dotació en un suport de cartó, al costat de targetes de paper amb un sol, una fulla i una opció neutra en blanc.](../../_assets/situacions/sa-mb-aula-sensorial-opcions-v2.webp)
+![Micro:bit real de la dotación en un soporte de cartón, junto a tarjetas de papel con un sol, una hoja y una opción neutra en blanco.](../../_assets/situacions/sa-mb-aula-sensorial-opcions-v2.webp)
 
-_La placa presenta un patró visual triat; no observa l’aula ni interpreta emocions. La persona pot fer servir les targetes de paper o deixar el dispositiu apagat._
+_La placa presenta un patrón visual elegido; no observa el aula ni interpreta emociones. La persona puede usar las tarjetas de papel o dejar el dispositivo apagado._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Recorreu els sis casos de la sessió anterior i anoteu eixida esperada i real. Si la taula mostra una diferència, reproduïu només eixe cas, localitzeu si l’error està en l’entrada, la condició o l’eixida i torneu a provar-lo després del canvi. Els comentaris de la galeria seran sobre el disseny, no sobre les reaccions de cap persona.
+Recorred los seis casos de la sesión anterior y anotad salida esperada y real. Si la tabla muestra una diferencia, reproducid solo ese caso, localizad si el error está en la entrada, la condición o la salida y volved a probarlo después del cambio. Los comentarios de la galería serán sobre el diseño, no sobre las reacciones de ninguna persona.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Auditeu els criteris: per defecte queda apagat, l’opció en paper és equivalent per comprendre l’avís i sempre és fàcil deixar el recurs. Reviseu el programa si algun d’aquests punts falla.
+Auditad los criterios: por defecto queda apagado, la opción en papel es equivalente para comprender el aviso y siempre es fácil dejar el recurso. Revisad el programa si alguno de estos puntos falla.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Presenteu el codi, els criteris i un límit conegut. **Evidència:** prototip, programa revisat, matriu de proves i autoavaluació tècnica.
+Presentad el código, los criterios y un límite conocido. **Evidencia:** prototipo, programa revisado, matriz de pruebas y autoevaluación técnica.
 
-## 📊 Avaluació i evidències
+## 📊 Evaluación y evidencias
 
-Guardeu l’encàrrec fictici, mapa d’entorn, comparació d’ajudes, criteris, pseudocodi, diagrama d’estats, codi i resultats esperats/reals dels sis casos. Valoreu si l’equip (1) justifica per què una opció pot respondre a l’encàrrec sense dir que convé a tothom; (2) representa entrada, selecció, eixida i repetició; (3) programa el comportament triat i previsible; (4) prova i depura casos, incloent-hi estat apagat i aturada; i (5) comunica una alternativa i un límit. La rúbrica avalua decisions de disseny i funcionament tècnic, no una resposta sensorial “correcta”.
+Guardad el encargo ficticio, mapa de entorno, comparación de ayudas, criterios, pseudocódigo, diagrama de estados, código y resultados esperados/reales de los seis casos. Valorad si el equipo (1) justifica por qué una opción puede responder al encargo sin decir que conviene a todo el mundo; (2) representa entrada, selección, salida y repetición; (3) programa el comportamiento elegido y previsible; (4) prueba y depura casos, incluidos estado apagado y parada; y (5) comunica una alternativa y un límite. La rúbrica evalúa decisiones de diseño y funcionamiento técnico, no una respuesta sensorial «correcta».
 
-## 🛡️ Consentiment, accessibilitat i privacitat
+## 🛡️ Consentimiento, accesibilidad y privacidad
 
-L’ajuda és voluntària, no es registra qui l’ha provada i no es demanen testimonis, diagnòstics ni preferències personals. Ningú no ha de mirar el patró: la prova pot fer-se al simulador, amb una captura estàtica o en paper. No useu flaixos, llums intermitents ni so; oferiu sempre control manual, opció neutra i possibilitat de no usar el dispositiu. Si el centre vol provar un suport en ús real, la decisió ha de comptar amb la persona usuària i el personal responsable, i pot abandonar-se sense justificació. Aquest prototip escolar no es presenta com a teràpia, tractament ni ajust raonable formal.
+La ayuda es voluntaria, no se registra quién la ha probado y no se piden testimonios, diagnósticos ni preferencias personales. Nadie tiene que mirar el patrón: la prueba puede hacerse en el simulador, con una captura estática o en papel. No uséis destellos, luces intermitentes ni sonido; ofreced siempre control manual, opción neutra y posibilidad de no usar el dispositivo. Si el centro quiere probar un apoyo en uso real, la decisión debe contar con la persona usuaria y el personal responsable, y puede abandonarse sin justificación. Este prototipo escolar no se presenta como terapia, tratamiento ni ajuste razonable formal.
 
-## 🔗 Unitat oficial adaptada
+## 🔗 Unidad oficial adaptada
 
-[Sensory classroom](https://microbit.org/teach/lessons/sensory-classroom/) té quatre lliçons per a 11–14 anys i assumeix experiència prèvia amb algoritmes/MakeCode. La primera explora entorns d’aprenentatge i avalua ajudes; la segona escriu pseudocodi amb iteració i patrons de llum; la tercera planifica una ajuda visual amb entrades, eixides, iteració i selecció; la quarta programa, prova, depura i avalua el disseny. Aquesta adaptació manté la progressió i els objectius, incorpora criteris d’ús voluntari, casos de prova i alternativa impresa i redueix l’abast tecnològic al micro:bit. No reutilitza materials visuals oficials.
+[Sensory classroom](https://microbit.org/teach/lessons/sensory-classroom/) tiene cuatro lecciones para 11–14 años y asume experiencia previa con algoritmos/MakeCode. La primera explora entornos de aprendizaje y evalúa ayudas; la segunda escribe pseudocódigo con iteración y patrones de luz; la tercera planifica una ayuda visual con entradas, salidas, iteración y selección; la cuarta programa, prueba, depura y evalúa el diseño. Esta adaptación mantiene la progresión y los objetivos, incorpora criterios de uso voluntario, casos de prueba y alternativa impresa y reduce el alcance tecnológico a micro:bit. No reutiliza materiales visuales oficiales.

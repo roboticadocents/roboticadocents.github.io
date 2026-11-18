@@ -14,146 +14,146 @@ duration: "4 sesiones de 35–40 minutos"
 challenge: "¿Cómo podemos conectar la huerta, el mercado y la escuela con un recorrido que el tren pueda completar y que todas las personas entiendan?"
 ---
 
-![El tren Coding Express recorre una xarxa pròpia amb un bucle, una bifurcació i dues estacions.](../../_assets/situacions/ce-tren-transport.webp)
+![El tren Coding Express recorre una red propia con un bucle, una bifurcación y dos estaciones.](../../_assets/situacions/ce-tren-transport.webp)
 
-_La xarxa, les estacions i la càrrega són una maqueta original. L'alumnat observa el tren real i comprova les seues prediccions._
+_La red, las estaciones y la carga son una maqueta original. El alumnado observa el tren real y comprueba sus predicciones._
 
-## Context i repte
+## Contexto y reto
 
-La classe rep una missió: imaginar una línia de tren que connecte tres llocs pròxims —una horta, un mercat i l'escola— i transportar una càrrega simbòlica sense perdre-la. La maqueta no pretén reproduir el mapa real ni afirmar que un mitjà de transport no tinga impacte. Serveix per parlar de connexions, parades, capacitat, recorreguts i de les persones que necessiten informació clara per orientar-se.
+La clase recibe una misión: imaginar una línea de tren que conecte tres lugares próximos —una huerta, un mercado y la escuela— y transportar una carga simbólica sin perderla. La maqueta no pretende reproducir el mapa real ni afirmar que un medio de transporte no tenga impacto. Sirve para hablar de conexiones, paradas, capacidad, recorridos y de las personas que necesitan información clara para orientarse.
 
-La situació pren com a referent activitats oficials de Coding Express sobre bucles, bifurcacions i distàncies; la història, el plànol i els criteris de disseny són propis. Abans de començar, reviseu el manual del kit disponible al centre, perquè la configuració i les peces poden variar.
+La situación toma como referente actividades oficiales de Coding Express sobre bucles, bifurcaciones y distancias; la historia, el plano y los criterios de diseño son propios. Antes de empezar, revisad el manual del kit disponible en el centro, porque la configuración y las piezas pueden variar.
 
-## Intencions d'aprenentatge
+## Intenciones de aprendizaje
 
-- Construir una via estable que connecte almenys tres estacions i descriure'n el recorregut amb paraules, gestos o pictogrames.
+- Construir una vía estable que conecte al menos tres estaciones y describir su recorrido con palabras, gestos o pictogramas.
 
-- Anticipar què farà el tren en un tram recte, un bucle o una bifurcació, provar-ho i ajustar la predicció amb evidències.
+- Anticipar qué hará el tren en un tramo recto, un bucle o una bifurcación, probarlo y ajustar la predicción con evidencias.
 
-- Reconéixer que una ruta pot ser més curta i, alhora, menys clara o menys adequada per a la missió triada.
+- Reconocer que una ruta puede ser más corta y, al mismo tiempo, menos clara o menos adecuada para la misión elegida.
 
-- Coordinar-se en el muntatge, respectar torns i explicar les decisions amb vocabulari espacial: davant, darrere, abans, després, gir i parada.
+- Coordinaros en el montaje, respetar turnos y explicar las decisiones con vocabulario espacial: delante, detrás, antes, después, giro y parada.
 
-- Relacionar el transport col·lectiu amb una conversa inicial sobre mobilitat i sostenibilitat, sense simplificar-ne els impactes.
+- Relacionar el transporte colectivo con una conversación inicial sobre movilidad y sostenibilidad, sin simplificar sus impactos.
 
-## Materials i preparació
+## Materiales y preparación
 
-Utilitzeu les vies, el tren i els elements d'acció inclosos en el Coding Express del centre, les targetes de colors del kit, cartolina per al mapa, blocs de construcció per a les estacions i una càrrega lleugera, gran i estable. No inventeu correspondències entre colors i ordres: consulteu la guia del fabricant i deixeu visibles les peces que realment té el kit. Prepareu una zona de muntatge a terra o sobre una taula baixa amb espai per circular sense xafar les vies.
+Usad las vías, el tren y los elementos de acción incluidos en el Coding Express del centro, las tarjetas de colores del kit, cartulina para el mapa, bloques de construcción para las estaciones y una carga ligera, grande y estable. No inventéis correspondencias entre colores y órdenes: consultad la guía del fabricante y dejad visibles las piezas que realmente tiene el kit. Preparad una zona de montaje en el suelo o sobre una mesa baja con espacio para circular sin pisar las vías.
 
-Trieu tres estacions amb pictogrames: horta, mercat i escola. La càrrega pot ser una peça de construcció o una imatge, mai aliment real si això complica higiene o al·lèrgies. Marqueu un punt de partida, una destinació i una pregunta per a cada prova. Feu una revisió de seguretat de peces menudes i delimiteu l'espai de joc segons l'edat.
+Elegid tres estaciones con pictogramas: huerta, mercado y escuela. La carga puede ser una pieza de construcción o una imagen, nunca alimento real si eso complica la higiene o las alergias. Marcad un punto de partida, un destino y una pregunta para cada prueba. Haced una revisión de seguridad de piezas pequeñas y delimitad el espacio de juego según la edad.
 
-## Seqüència d'aprenentatge
+## Secuencia de aprendizaje
 
-### Sessió 1 — Què necessita una línia de tren? (35–40 min)
+### Sesión 1 — ¿Qué necesita una línea de tren? (35–40 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Observeu imatges o pictogrames d'estacions i penseu què ajuda a saber on som: nom, color, símbol o ordre de les parades. Converseu sobre com s'orienta una persona que arriba per primera vegada.
+Observad imágenes o pictogramas de estaciones y pensad qué ayuda a saber dónde estamos: nombre, color, símbolo u orden de las paradas. Conversad sobre cómo se orienta una persona que llega por primera vez.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En grups, ordeneu les tres estacions —horta, mercat i escola— en una tira de paper i dibuixeu una primera ruta amb fletxes. Uniu vies rectes i corbes senzilles; comproveu que les unions queden fermes i que el tren pot circular sense obstacles al voltant.
+En grupos, ordenad las tres estaciones —huerta, mercado y escuela— en una tira de papel y dibujad una primera ruta con flechas. Unid vías rectas y curvas sencillas; comprobad que las uniones quedan firmes y que el tren puede circular sin obstáculos alrededor.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Assenyaleu amb el dit el camí que espereu que faça el tren abans d'engegar-lo. Marqueu el punt de partida, l'ordre de les parades i la destinació amb dibuix o pictogrames. Un equip explica la seua predicció a un altre.
+Señalad con el dedo el camino que esperáis que haga el tren antes de encenderlo. Marcad el punto de partida, el orden de las paradas y el destino con dibujo o pictogramas. Un equipo explica su predicción a otro.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu circular el tren en la ruta breu i compareu el recorregut observat amb el mapa. Si alguna unió es mou o la via queda interrompuda, canvieu només eixe tram i torneu a provar.
+Haced circular el tren en la ruta breve y comparad el recorrido observado con el mapa. Si alguna unión se mueve o la vía queda interrumpida, cambiad solo ese tramo y volved a probar.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa amb les tres estacions, ordre de parades i una predicció comprovada. Tanqueu amb «Quina informació del mapa ajudaria una altra persona a seguir la ruta?».
+**Evidencia:** mapa con las tres estaciones, orden de paradas y una predicción comprobada. Cerrad con «¿Qué información del mapa ayudaría a otra persona a seguir la ruta?».
 
-### Sessió 2 — Provar, descriure i depurar (35–40 min)
+### Sesión 2 — Probar, describir y depurar (35–40 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu el mapa de la sessió anterior i trieu un recorregut curt per comprovar. Abans de posar en marxa el tren buit, cada infant assenyala el tram que creu que podria necessitar revisió i explica o representa per què.
+Recuperad el mapa de la sesión anterior y elegid un recorrido corto para comprobar. Antes de poner en marcha el tren vacío, cada niño o niña señala el tramo que cree que podría necesitar revisión y explica o representa por qué.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Una persona posa en marxa el tren seguint el procediment del kit, una altra descriu el trajecte i una tercera observa si s'ha completat. Roteu aquests rols en la prova següent perquè totes les persones puguen participar.
+Una persona pone en marcha el tren siguiendo el procedimiento del kit, otra describe el trayecto y una tercera observa si se ha completado. Rotad estos roles en la prueba siguiente para que todas las personas puedan participar.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Si el tren s'atura o es desvia, reviseu una cosa cada vegada: unió de vies, posició del tram d'acció o orientació de l'element segons el manual. Registreu-ho amb tres dibuixos: «esperàvem», «ha passat» i «canviarem».
+Si el tren se detiene o se desvía, revisad una cosa cada vez: unión de vías, posición del tramo de acción u orientación del elemento según el manual. Registradlo con tres dibujos: «esperábamos», «ha pasado» y «cambiaremos».
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu només la peça o la unió triada i torneu a provar. Compareu el resultat amb l'intent anterior; no afegiu moltes peces alhora, perquè seria difícil saber quina modificació ha produït l'efecte.
+Cambiad solo la pieza o la unión elegida y volved a probar. Comparad el resultado con el intento anterior; no añadáis muchas piezas a la vez, porque sería difícil saber qué modificación ha producido el efecto.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** seqüència de dibuixos abans/després amb una explicació del canvi. Pregunteu: «Què hem mantingut igual? Quina observació ens ajuda a saber si la revisió ha funcionat?».
+**Evidencia:** secuencia de dibujos antes/después con una explicación del cambio. Preguntad: «¿Qué hemos mantenido igual? ¿Qué observación nos ayuda a saber si la revisión ha funcionado?».
 
-### Sessió 3 — Bucle i bifurcació (35–40 min)
+### Sesión 3 — Bucle y bifurcación (35–40 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu dues opcions de disseny: una ruta amb bucle i una amb bifurcació, si el material real ho permet. Pregunteu: «Tornarà el tren al mateix lloc? Quines opcions veiem? On pot parar?».
+Presentad dos opciones de diseño: una ruta con bucle y una con bifurcación, si el material real lo permite. Preguntad: «¿Volverá el tren al mismo lugar? ¿Qué opciones vemos? ¿Dónde puede parar?».
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Marqueu les rutes amb fletxes grans i munteu primer la que es puga construir amb seguretat amb les peces disponibles. Si el kit no permet alguna configuració, representeu-la amb una via dibuixada o una fitxa que es mou sobre el mapa: no forceu el mecanisme.
+Marcad las rutas con flechas grandes y montad primero la que se pueda construir con seguridad con las piezas disponibles. Si el kit no permite alguna configuración, representadla con una vía dibujada o una ficha que se mueve sobre el mapa: no forcéis el mecanismo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Abans de la prova, cada equip explica què espera que passe en el bucle o en arribar a la bifurcació. Un altre grup segueix les fletxes i assenyala el punt on el tren hauria de tornar o triar camí.
+Antes de la prueba, cada equipo explica qué espera que pase en el bucle o al llegar a la bifurcación. Otro grupo sigue las flechas y señala el punto en el que el tren debería volver o elegir camino.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proveu la ruta possible i compareu l'observació amb la predicció. Reviseu les fletxes o el muntatge si la representació no deixa clar el recorregut; manteniu la idea de la segona ruta com a simulació si falta material.
+Probad la ruta posible y comparad la observación con la predicción. Revisad las flechas o el montaje si la representación no deja claro el recorrido; mantened la idea de la segunda ruta como simulación si falta material.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dos esquemes —muntatge i/o simulació— amb una explicació del bucle o les opcions de la bifurcació. Tanqueu amb «Què pot explicar el nostre model i què no podem concloure només amb aquesta prova?».
+**Evidencia:** dos esquemas —montaje y/o simulación— con una explicación del bucle o las opciones de la bifurcación. Cerrad con «¿Qué puede explicar nuestro modelo y qué no podemos concluir solo con esta prueba?».
 
-### Sessió 4 — La línia verda i la càrrega (35–40 min)
+### Sesión 4 — La línea verde y la carga (35–40 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu els mapes i trieu quin trajecte completarà la missió horta–mercat–escola. Predigueu quin criteri farà més entenedora la ruta per a una persona que no coneix la maqueta.
+Recuperad los mapas y elegid qué trayecto completará la misión huerta–mercado–escuela. Predecid qué criterio hará más comprensible la ruta para una persona que no conoce la maqueta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Compareu dues opcions amb criteris visibles: nombre de trams, quantitat de parades i facilitat d'explicar l'ordre. Dibuixeu cada opció o prepareu les vies si hi ha prou peces.
+Comparad dos opciones con criterios visibles: número de tramos, cantidad de paradas y facilidad de explicar el orden. Dibujad cada opción o preparad las vías si hay suficientes piezas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Col·loqueu una càrrega lleugera, gran i estable. Repetiu la prova i registreu si es manté al seu lloc i si el tren completa les parades. Distingiu què heu observat d'allò que encara és una hipòtesi sobre una ruta real.
+Colocad una carga ligera, grande y estable. Repetid la prueba y registrad si se mantiene en su sitio y si el tren completa las paradas. Distinguid qué habéis observado de lo que todavía es una hipótesis sobre una ruta real.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si la càrrega cau, observeu si el suport està centrat i si la via o el tren vibren; simplifiqueu la càrrega i torneu a provar. Canvieu només un aspecte per poder explicar quin ajust ha ajudat.
+Si la carga cae, observad si el soporte está centrado y si la vía o el tren vibran; simplificad la carga y volved a probar. Cambiad solo un aspecto para poder explicar qué ajuste ha ayudado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa final, criteri de tria i registre d'una prova amb càrrega. Tanqueu amb una presentació curta: «La nostra ruta connecta…, hem triat… perquè…, i encara no sabem…».
+**Evidencia:** mapa final, criterio de elección y registro de una prueba con carga. Cerrad con una presentación breve: «Nuestra ruta conecta…, hemos elegido… porque…, y todavía no sabemos…».
 
-## Rols i participació
+## Roles y participación
 
-Distribuïu els rols de constructor/a, guia del mapa, encarregat/da de la prova i narrador/a. Els rols roten entre sessions. Es pot participar sense manipular el tren: assenyalar el mapa, fer la predicció, col·locar una targeta, descriure el resultat o comprovar si s'han respectat els torns. Acordeu com demanar una pausa abans de tocar la maqueta d'un altre equip.
+Distribuid los roles de constructor/a, guía del mapa, encargado/a de la prueba y narrador/a. Los roles rotan entre sesiones. Se puede participar sin manipular el tren: señalar el mapa, hacer la predicción, colocar una tarjeta, describir el resultado o comprobar si se han respetado los turnos. Acordad cómo pedir una pausa antes de tocar la maqueta de otro equipo.
 
-## Avaluació i evidències
+## Evaluación y evidencias
 
-- Mapa amb les tres estacions, l'ordre de la ruta i un símbol per indicar el punt de partida.
+- Mapa con las tres estaciones, el orden de la ruta y un símbolo para indicar el punto de partida.
 
-- Registre de predicció i resultat d'una prova, amb una modificació justificada.
+- Registro de predicción y resultado de una prueba, con una modificación justificada.
 
-- Observació de la coordinació: escolta, torns, cura del material i participació en una decisió comuna.
+- Observación de la coordinación: escucha, turnos, cuidado del material y participación en una decisión común.
 
-- Explicació oral, gestual o visual d'un bucle o d'una bifurcació observada.
+- Explicación oral, gestual o visual de un bucle o de una bifurcación observada.
 
-- Presentació final que diu quin criteri va guiar el recorregut i quina limitació té la maqueta.
+- Presentación final que dice qué criterio guió el recorrido y qué limitación tiene la maqueta.
 
-Durant les proves, feu preguntes breus: «Què penseu que passarà?», «Què ha canviat?», «Quina part podem revisar?» i «Com ho explicaries a algú que no veu el tren?». Valoreu el procés de raonament i revisió, no que el tren complete la ruta a la primera.
+Durante las pruebas, haced preguntas breves: «¿Qué pensáis que pasará?», «¿Qué ha cambiado?», «¿Qué parte podemos revisar?» y «¿Cómo se lo explicarías a alguien que no ve el tren?». Valorad el proceso de razonamiento y revisión, no que el tren complete la ruta a la primera.
 
-## Inclusió, diferenciació i continuïtat
+## Inclusión, diferenciación y continuidad
 
-Reduïu el nombre d'estacions o oferiu un mapa amb pictogrames si cal; amplieu el repte amb dues rutes alternatives o amb instruccions per a un grup nou. Feu servir fletxes grans, codis de forma a més de color i una demostració visual pas a pas. Per a alumnat que preferisca un rol observador, doneu-li una graella amb els moments de parada i els resultats. Les aportacions de cada infant es poden recollir amb una foto del mapa, un àudio breu o una frase dictada.
+Reducid el número de estaciones u ofreced un mapa con pictogramas si hace falta; ampliad el reto con dos rutas alternativas o con instrucciones para un grupo nuevo. Emplead flechas grandes, códigos de forma además de color y una demostración visual paso a paso. Para el alumnado que prefiera un rol observador, dadle una cuadrícula con los momentos de parada y los resultados. Las aportaciones de cada niño o niña se pueden recoger con una foto del mapa, un audio breve o una frase dictada.
 
-## Transferència i referents
+## Transferencia y referentes
 
-Compareu el plànol de la maqueta amb un mapa senzill del barri: tots dos representen llocs, però no mostren totes les característiques del trajecte. Parleu de distància, freqüència, accessibilitat i necessitats diferents sense decidir que una única ruta és la millor per a tothom. Les activitats oficials de LEGO Education ofereixen referents per treballar [bucles](https://education.lego.com/es-es/lessons/preschool-coding-express/o-shaped-track-looping/), [rutes amb bifurcació](https://education.lego.com/es-es/lessons/preschool-coding-express/y-shaped-track/) i [comparació de distàncies](https://education.lego.com/es-es/lessons/preschool-coding-express/math-distance/); aquesta situació crea un context propi per connectar eixes idees amb les estacions del barri.
+Comparad el plano de la maqueta con un mapa sencillo del barrio: ambos representan lugares, pero no muestran todas las características del trayecto. Hablad de distancia, frecuencia, accesibilidad y necesidades diferentes sin decidir que una única ruta es la mejor para todo el mundo. Las actividades oficiales de LEGO Education ofrecen referentes para trabajar [bucles](https://education.lego.com/es-es/lessons/preschool-coding-express/o-shaped-track-looping/), [rutas con bifurcación](https://education.lego.com/es-es/lessons/preschool-coding-express/y-shaped-track/) y [comparación de distancias](https://education.lego.com/es-es/lessons/preschool-coding-express/math-distance/); esta situación crea un contexto propio para conectar esas ideas con las estaciones del barrio.

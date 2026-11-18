@@ -14,33 +14,33 @@ duration: "6 lecciones · 6–8 sesiones"
 challenge: "¿Cómo podemos dividir el triaje de una jornada escolar en acciones reutilizables y enseñar a un prototipo SPIKE a ejecutarlas con datos diferentes?"
 ---
 
-![Robot LEGO SPIKE Prime real amb pinça mecànica classificant fitxes de materials de colors sobre una taula de prova.](../../_assets/situacions/sp-python-funcions.webp)
+![Robot LEGO SPIKE Prime real con pinza mecánica que clasifica fichas de materiales de colores sobre una mesa de prueba.](../../_assets/situacions/sp-python-funcions.webp)
 
-_Una funció concentra una acció; els paràmetres permeten reutilitzar-la amb valors diferents._
+_Una función concentra una acción; los parámetros permiten reutilizarla con valores diferentes._
 
-## 🌱 Repte i sentit
+## 🌱 Reto y sentido
 
-La comunitat educativa vol preparar una jornada de reutilització de materials i necessita ordenar fitxes netes de cartó, paper i envasos simulats en una maqueta de taula. Un equip construeix un mecanisme simple amb peces SPIKE Prime i escriu en Python un programa que classifica mostres de colors acordats. El robot no identifica materials reals ni decideix què es recicla: en aquesta maqueta, el color és una etiqueta creada per la classe, i les persones comproven i validen la classificació. La pregunta d’enginyeria és com separar un procediment llarg en accions amb nom, com repetir-lo amb dades diferents i com demostrar que la reutilització manté el comportament esperat.
+La comunidad educativa quiere preparar una jornada de reutilización de materiales y necesita ordenar fichas limpias de cartón, papel y envases simulados en una maqueta de mesa. Un equipo construye un mecanismo sencillo con piezas SPIKE Prime y escribe en Python un programa que clasifica muestras de colores acordados. El robot no identifica materiales reales ni decide qué se recicla: en esta maqueta, el color es una etiqueta creada por la clase, y las personas comprueban y validan la clasificación. La pregunta de ingeniería es cómo separar un procedimiento largo en acciones con nombre, cómo repetirlo con datos diferentes y cómo demostrar que la reutilización mantiene el comportamiento esperado.
 
-La seqüència adapta les sis lliçons de la unitat 7 *Functions* de LEGO Education *Introduction to Python Programming · Course 2*. Progressa des de la descomposició d’una acció, passa per diverses funcions i funcions amb paràmetres, i arriba a un prototip ambiental investigat, provat i revisat amb feedback. La programació és Python textual: el pseudocodi ajuda a planificar, però no substitueix les funcions i crides de Python.
+La secuencia adapta las seis lecciones de la unidad 7 *Functions* de LEGO Education *Introduction to Python Programming · Course 2*. Progresa desde la descomposición de una acción, pasa por varias funciones y funciones con parámetros, y llega a un prototipo ambiental investigado, probado y revisado con retroalimentación. La programación es Python textual: el pseudocódigo ayuda a planificar, pero no sustituye las funciones y llamadas de Python.
 
-## 🎯 Aprenentatges i llenguatge
+## 🎯 Aprendizajes y lenguaje
 
-- Descompondre una tasca en subproblemes i donar noms clars a accions que es repetiran.
+- Descomponer una tarea en subproblemas y dar nombres claros a acciones que se repetirán.
 
-- Definir una funció amb `def`, indentació i cos; explicar la diferència entre definir-la i cridar-la.
+- Definir una función con `def`, indentación y cuerpo; explicar la diferencia entre definirla y llamarla.
 
-- Crear i cridar diverses funcions en un ordre deliberat, evitant duplicar instruccions.
+- Crear y llamar varias funciones en un orden deliberado, evitando duplicar instrucciones.
 
-- Usar paràmetres com a noms d’entrada dins d’una funció i arguments com a valors concrets en la crida; anticipar errors de quantitat o ordre.
+- Usar parámetros como nombres de entrada dentro de una función y argumentos como valores concretos en la llamada; anticipar errores de cantidad o orden.
 
-- Separar lectura del sensor, decisió de classificació i actuació mecànica perquè es puguen provar independentment.
+- Separar la lectura del sensor, la decisión de clasificación y la actuación mecánica para que se puedan probar de forma independiente.
 
-- Provar casos coneguts i no assignats, registrar resultats, depurar una causa cada vegada i justificar redissenys.
+- Probar casos conocidos y no asignados, registrar resultados, depurar una causa cada vez y justificar rediseños.
 
-- Comunicar límits del prototip: una lectura de color no és identificació material ni una recomanació real de reciclatge.
+- Comunicar los límites del prototipo: una lectura de color no es identificación de material ni una recomendación real de reciclaje.
 
-**Funció:** bloc de codi amb nom que es pot executar quan es crida. **Paràmetre:** nom declarat entre els parèntesis de la definició; rep una dada quan la funció és cridada. **Argument:** valor concret que passem en una crida. **Descomposició:** dividir una tasca complexa en parts que es poden entendre, construir i provar. **Cas de prova:** entrada, comportament esperat i resultat observat.
+**Función:** bloque de código con nombre que se puede ejecutar cuando se llama. **Parámetro:** nombre declarado entre los paréntesis de la definición; recibe un dato cuando se llama a la función. **Argumento:** valor concreto que pasamos en una llamada. **Descomposición:** dividir una tarea compleja en partes que se pueden entender, construir y probar. **Caso de prueba:** entrada, comportamiento esperado y resultado observado.
 
 ```python
 def mostrar_estat(etiqueta, color):
@@ -49,160 +49,160 @@ def mostrar_estat(etiqueta, color):
 mostrar_estat("Mostra A", "blau")
 ```
 
-En l’exemple, `etiqueta` i `color` són paràmetres; `"Mostra A"` i `"blau"` són arguments. És Python general vàlid per entendre la idea. Les ordres SPIKE de motors, sensors i runloop s’han de consultar en la Knowledge Base de la versió de l’app instal·lada: no s’ha de copiar aquest exemple com si fóra un programa de maquinari complet.
+En el ejemplo, `etiqueta` y `color` son parámetros; `"Mostra A"` y `"blau"` son argumentos. Es Python general válido para entender la idea. Las órdenes SPIKE de motores, sensores y runloop deben consultarse en la Knowledge Base de la versión de la app instalada: no hay que copiar este ejemplo como si fuera un programa de hardware completo.
 
-## 🧰 Materials i preparació docent
+## 🧰 Materiales y preparación docente
 
-Un set SPIKE Prime per equip, hub carregat, dispositiu amb app SPIKE i editor Python disponible, sensor de color del set, un motor i peces Technic per a una pinça o porta de triatge senzilla, cartó per a canals i contenidors, fitxes grans de colors mats, cinta de paper, diari de disseny, cronòmetre extern opcional i ordinador/projector per mostrar fragments curts. El model pot ser fix sobre la taula: la base mòbil no és necessària per a la tasca. Eviteu instruccions de construcció privades o copiar models de marca; cada equip dissenya una solució amb peces de la seua caixa.
+Un set SPIKE Prime por equipo, hub cargado, dispositivo con app SPIKE y editor Python disponible, sensor de color del set, un motor y piezas Technic para una pinza o puerta de triaje sencilla, cartón para canales y contenedores, fichas grandes de colores mate, cinta de papel, diario de diseño, cronómetro externo opcional y ordenador/proyector para mostrar fragmentos cortos. El modelo puede ser fijo sobre la mesa: la base móvil no es necesaria para la tarea. Evitad instrucciones de construcción privadas o copiar modelos de marca; cada equipo diseña una solución con piezas de su caja.
 
-Abans de classe, comproveu que l’editor Python detecta el hub, que el sensor i motor estan connectats als ports acordats i que es pot aturar l’execució. Les versions de l’app poden oferir API diferents. Prepareu quatre etiquetes de color provades amb la llum de l’aula, una etiqueta sense correspondència, una entrada manual alternativa per si el sensor falla i còpies desconnectades de crides correctes i incorrectes. Desactiveu motors abans de connectar o canviar cables. Poseu el mecanisme a baixa velocitat, amb topalls de recorregut i dits lluny de la pinça.
+Antes de clase, comprobad que el editor Python detecta el hub, que el sensor y el motor están conectados a los puertos acordados y que se puede detener la ejecución. Las versiones de la app pueden ofrecer API diferentes. Preparad cuatro etiquetas de color probadas con la luz del aula, una etiqueta sin correspondencia, una entrada manual alternativa por si falla el sensor y copias desconectadas de llamadas correctas e incorrectas. Desactivad los motores antes de conectar o cambiar cables. Poned el mecanismo a baja velocidad, con topes de recorrido y los dedos lejos de la pinza.
 
-Equips de 2–3 persones: programació/lectura del codi, cura del mecanisme i registre de proves. Feu rotació de rols a cada lliçó. La persona que observa té dret a demanar una pausa abans d’executar qualsevol canvi físic.
+Equipos de 2–3 personas: programación/lectura del código, cuidado del mecanismo y registro de pruebas. Haced rotación de roles en cada lección. La persona que observa tiene derecho a pedir una pausa antes de ejecutar cualquier cambio físico.
 
-## 📅 Seqüència didàctica · sis lliçons
+## 📅 Secuencia didáctica · seis lecciones
 
-### **Lliçó 1 · Una tasca, moltes accions amb nom (45 min).**
+### **Lección 1 · Una tarea, muchas acciones con nombre (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Activació (8 min):** demaneu que descriguen oralment un gest repetible —per exemple, alçar un cartell i tornar-lo a la posició inicial— i marqueu on reapareixen les mateixes instruccions. Escriviu-les en pseudocodi i pregunteu què canviaria si repetírem el gest amb un altre missatge.
+**Activación (8 min):** pedid que describan oralmente un gesto repetible —por ejemplo, levantar un cartel y devolverlo a la posición inicial— y marcad dónde reaparecen las mismas instrucciones. Escribidlas en pseudocódigo y preguntad qué cambiaría si repitiéramos el gesto con otro mensaje.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Model (10 min):** compareu una seqüència amb les mateixes línies copiades tres vegades i una seqüència que defineix `saludar()` una vegada i la crida en tres punts. No executeu encara el mecanisme; feu traça en paper per comprovar definició, crida i ordre.
+**Modelo (10 min):** comparad una secuencia con las mismas líneas copiadas tres veces y una secuencia que define `saludar()` una vez y la llama en tres puntos. No ejecutéis todavía el mecanismo; haced una traza en papel para comprobar definición, llamada y orden.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Repte (20 min):** construir una xicoteta aleta/indicador articulat amb un motor SPIKE que faça un senyal d’inici, un senyal de “mostra preparada” i un retorn a la posició inicial. Descomponeu el comportament en `preparar()`, `indicar()` i `tornar()`; definiu-los amb `def` i crideu-los en l’ordre del pseudocodi. Consulteu la Knowledge Base per a ordres de motor compatibles. Proveu primer cada funció amb mecanisme desconnectat o sense càrrega, després amb un moviment curt i lent.
+**Reto (20 min):** construir una pequeña aleta/indicador articulado con un motor SPIKE que haga una señal de inicio, una señal de «muestra preparada» y un retorno a la posición inicial. Descomponed el comportamiento en `preparar()`, `indicar()` y `tornar()`; definidlos con `def` y llamadlos en el orden del pseudocódigo. Consultad la Knowledge Base para las órdenes de motor compatibles. Probad primero cada función con el mecanismo desconectado o sin carga, después con un movimiento corto y lento.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Evidència i conversa (7 min):** dibuixeu les crides com una línia temporal i expliqueu quina instrucció s’executa primer i per què el codi dins una definició no corre fins que la funció és cridada.
+**Evidencia y conversación (7 min):** dibujad las llamadas como una línea temporal y explicad qué instrucción se ejecuta primero y por qué el código dentro de una definición no se ejecuta hasta que se llama a la función.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Extensió:** canvieu l’ordre de dues crides i predigueu el comportament abans de provar-lo.
+**Extensión:** cambiad el orden de dos llamadas y predecid el comportamiento antes de probarlo.
 
-### **Lliçó 2 · Dues pinces, dues funcions de captura (45 min).**
+### **Lección 2 · Dos pinzas, dos funciones de captura (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta d’investigació:** com pot el mateix programa controlar accessoris amb agafades diferents? Dissenyeu en esbós dues puntes intercanviables —una ampla i lleugera per a una fitxa gran i una més estreta per a una fitxa menuda— sense que cap peça puga caure de la taula. No cal fabricar ambdues si el temps o les peces no ho permeten: una pinça i una palanca de cartó poden representar la segona variant.
+**Pregunta de investigación:** ¿cómo puede el mismo programa controlar accesorios con agarres diferentes? Diseñad en boceto dos puntas intercambiables —una ancha y ligera para una ficha grande y otra más estrecha para una ficha pequeña— sin que ninguna pieza pueda caer de la mesa. No hace falta fabricar ambas si el tiempo o las piezas no lo permiten: una pinza y una palanca de cartón pueden representar la segunda variante.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Descomposició (8 min):** feu una seqüència com ara esperar ordre, tancar fins a límit segur, indicar captura i obrir. Marqueu quines accions són comunes i quines depenen de la forma de l’accessori.
+**Descomposición (8 min):** haced una secuencia como esperar la orden, cerrar hasta el límite seguro, indicar la captura y abrir. Marcad qué acciones son comunes y cuáles dependen de la forma del accesorio.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Construcció i Python (25 min):** creeu dues funcions amb noms que expliquen la diferència (per exemple, `agafar_fitxa_gran()` i `agafar_fitxa_menuda()`) i un programa principal que crida la funció adequada segons una etiqueta triada per l’equip. Compareu aquest disseny amb una llarga còpia de codi duplicat: compteu quines línies canvien i quines es repeteixen. Calibreu cada recorregut amb la pinça buida, sense posar dits en la zona de tancament.
+**Construcción y Python (25 min):** cread dos funciones con nombres que expliquen la diferencia (por ejemplo, `agafar_fitxa_gran()` y `agafar_fitxa_menuda()`) y un programa principal que llama a la función adecuada según una etiqueta elegida por el equipo. Comparad este diseño con una larga copia de código duplicado: contad qué líneas cambian y cuáles se repiten. Calibrad cada recorrido con la pinza vacía, sin poner los dedos en la zona de cierre.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Proves (7 min):** proveu tres vegades una mateixa fitxa amb cada variant; registreu si l’agafa, si llisca, si es deforma i si la deixa al contenidor.
+**Pruebas (7 min):** probad tres veces una misma ficha con cada variante; registrad si la agarra, si resbala, si se deforma y si la deja en el contenedor.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Reflexió:** per què ajuda tindre funcions separades quan cada accessori necessita un moviment distint? En quins casos seria millor compartir una funció comuna i canviar només una dada?
+**Reflexión:** ¿por qué ayuda tener funciones separadas cuando cada accesorio necesita un movimiento distinto? ¿En qué casos sería mejor compartir una función común y cambiar solo un dato?
 
-### **Lliçó 3 · Una funció, entrades diferents: paràmetres (45 min).**
+### **Lección 3 · Una función, entradas diferentes: parámetros (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Activació corporal (7 min):** feu un gràfic humà de preferències amb quatre opcions neutres (per exemple, quin tipus de missatge visual es comprén millor); compteu les respostes sense guardar noms. Relacioneu categories i quantitats amb la necessitat d’enviar dades a una mateixa acció.
+**Activación corporal (7 min):** haced un gráfico humano de preferencias con cuatro opciones neutras (por ejemplo, qué tipo de mensaje visual se comprende mejor); contad las respuestas sin guardar nombres. Relacionad categorías y cantidades con la necesidad de enviar datos a una misma acción.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Modelatge (10 min):** escriviu una funció de programari general `informar(etiqueta, color)` i crideu-la amb dos conjunts d’arguments. L’alumnat assenyala què és fix i què varia. Contrasteu-la amb una funció sense paràmetres i observeu que definir paràmetres obliga a proporcionar arguments en cridar-la.
+**Modelado (10 min):** escribid una función de software general `informar(etiqueta, color)` y llamadla con dos conjuntos de argumentos. El alumnado señala qué es fijo y qué varía. Contrastadla con una función sin parámetros y observad que definir parámetros obliga a proporcionar argumentos al llamarla.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Estació SPIKE (20 min):** el sensor llig una de quatre fitxes mat provades; el programa assigna una resposta de la maqueta (posició curta/mitjana/llarga del motor i missatge de consola). Separeu la funció que informa de les dades i la part que llig el sensor: una funció d’actuació rep arguments ja decidits per la regla. Per exemple, el programa pot cridar `indicar(20, "paper")` o `indicar(45, "cartró")`; traduïu les posicions a l’API disponible només després de consultar-la. Incloeu un color sense assignació que no tanque la pinça i mostre “sense lectura”.
+**Estación SPIKE (20 min):** el sensor lee una de cuatro fichas mate probadas; el programa asigna una respuesta de la maqueta (posición corta/media/larga del motor y mensaje de consola). Separad la función que informa de los datos y la parte que lee el sensor: una función de actuación recibe argumentos ya decididos por la regla. Por ejemplo, el programa puede llamar a `indicar(20, "paper")` o `indicar(45, "cartró")`; traducid las posiciones a la API disponible solo después de consultarla. Incluid un color sin asignación que no cierre la pinza y muestre «sin lectura».
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Depuració guiada (8 min):** compareu crides amb dos arguments, un argument i arguments intercanviats. Predigueu quines fallen immediatament i quines podrien executar-se però mostrar una etiqueta incorrecta. Registreu definició, crida, error/sortida i correcció.
+**Depuración guiada (8 min):** comparad llamadas con dos argumentos, un argumento y argumentos intercambiados. Predecid cuáles fallan de inmediato y cuáles podrían ejecutarse pero mostrar una etiqueta incorrecta. Registrad definición, llamada, error/salida y corrección.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Eixida:** cada alumne completa “el paràmetre és…, el valor concret que he passat és…”.
+**Salida:** cada alumno completa «el parámetro es…, el valor concreto que he pasado es…».
 
-### **Lliçó 4 · Una estació de triatge automàtica en maqueta (90 min).**
+### **Lección 4 · Una estación de triaje automática en maqueta (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Repte i criteris (12 min):** programar un prototip que reba una fitxa d’una en una i la porte al contenidor assignat pel codi de colors acordat per la classe. No es tracta d’identificar el material real. Fixeu criteris: no agafar fitxes no assignades; col·locar la fitxa dins una zona marcada; mantindre les peces senceres; respondre amb un indicador comprensible; permetre una aturada manual. Registreu les limitacions abans de construir.
+**Reto y criterios (12 min):** programar un prototipo que reciba una ficha de una en una y la lleve al contenedor asignado por el código de colores acordado por la clase. No se trata de identificar el material real. Fijad criterios: no coger fichas no asignadas; colocar la ficha dentro de una zona marcada; mantener las piezas enteras; responder con un indicador comprensible; permitir una parada manual. Registrad las limitaciones antes de construir.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Ideació i maqueta (18 min):** esbosseu dos mecanismes possibles (braç/pinça, porta desviadora o canal accionat); compareu nombre de peces, recorregut i risc d’encallament; seleccioneu-ne un i construïu-lo amb una fitxa de prova, sense reproduir cap model oficial.
+**Ideación y maqueta (18 min):** esbozad dos mecanismos posibles (brazo/pinza, puerta desviadora o canal accionado); comparad número de piezas, recorrido y riesgo de atasco; seleccionad uno y construidlo con una ficha de prueba, sin reproducir ningún modelo oficial.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Pseudocodi (10 min):** descriviu una volta: esperar activació; llegir color; seleccionar regla; cridar funció de triatge amb arguments; mostrar confirmació o “no reconegut”; esperar nova mostra.
+**Pseudocódigo (10 min):** describid una vuelta: esperar activación; leer color; seleccionar regla; llamar a la función de triaje con argumentos; mostrar confirmación o «no reconocido»; esperar nueva muestra.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Programa (20 min):** organitzeu funcions per responsabilitat: per exemple, `llegir_mostra()`, `informar_resultat(etiqueta, posicio)` i una rutina d’actuació de cada mecanisme. La lectura del sensor de color, els valors previstos i les ordres del motor depenen de la versió de l’app i han de consultar-se en la Knowledge Base. Manteniu separada la regla escolar de classificació de l’acció física del robot.
+**Programa (20 min):** organizad funciones por responsabilidad: por ejemplo, `llegir_mostra()`, `informar_resultat(etiqueta, posicio)` y una rutina de actuación de cada mecanismo. La lectura del sensor de color, los valores previstos y las órdenes del motor dependen de la versión de la app y deben consultarse en la Knowledge Base. Mantened separada la regla escolar de clasificación de la acción física del robot.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Proves (20 min):** creeu una taula amb entrada, resultat esperat, observació i decisió: cada color assignat, un color no assignat, absència de fitxa, peça girada i dos intents seguits. Feu tres assajos per color assignat; compteu encerts sobre intents, errors de lectura, encallaments i temps aproximat, sense presentar el recompte com una certificació. Canvieu només una variable cada vegada (llum, posició del sensor, llindar, geometria o argument). **Tancament (10 min):** expliqueu un error que la funció reusable ha evitat i un límit del sensor que l’equip encara ha de comunicar a l’usuari.
+**Pruebas (20 min):** cread una tabla con entrada, resultado esperado, observación y decisión: cada color asignado, un color no asignado, ausencia de ficha, pieza girada y dos intentos seguidos. Haced tres ensayos por color asignado; contad aciertos sobre intentos, errores de lectura, atascos y tiempo aproximado, sin presentar el recuento como una certificación. Cambiad solo una variable cada vez (luz, posición del sensor, umbral, geometría o argumento). **Cierre (10 min):** explicad un error que la función reutilizable ha evitado y un límite del sensor que el equipo todavía debe comunicar al usuario.
 
-### **Lliçó 5 · Investigar una necessitat de l’entorn escolar (90 min).**
+### **Lección 5 · Investigar una necesidad del entorno escolar (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Exploració (15 min):** trieu amb el centre un flux de materials nets que existisca a l’aula o en una activitat escolar: repartir targetes, ordenar peces reutilitzables o tornar material a safates. No manipuleu residus reals ni fotografieu persones. Si no hi ha temps per a una visita, useu una planta de l’espai o un escenari inventat clarament identificat com a simulació. Escriviu qui fa la tasca, què costa o es confon i quina dada permetria prendre una decisió millor; no convertiu una observació puntual en afirmació sobre tota l’escola.
+**Exploración (15 min):** elegid con el centro un flujo de materiales limpios que exista en el aula o en una actividad escolar: repartir tarjetas, ordenar piezas reutilizables o devolver material a bandejas. No manipuléis residuos reales ni fotografiéis personas. Si no hay tiempo para una visita, usad una planta del espacio o un escenario inventado claramente identificado como simulación. Escribid quién hace la tarea, qué cuesta o se confunde y qué dato permitiría tomar una decisión mejor; no convirtáis una observación puntual en una afirmación sobre toda la escuela.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Defineix i idea (15 min):** formuleu una necessitat en una frase neutral, seleccioneu usuari i condicions d’ús, i redacteu dos criteris mesurables i dues restriccions (temps, peces, estabilitat o accessibilitat). Esbosseu individualment dues solucions abans de consensuar un prototip.
+**Define e idea (15 min):** formulad una necesidad en una frase neutra, seleccionad usuario y condiciones de uso, y redactad dos criterios medibles y dos restricciones (tiempo, piezas, estabilidad o accesibilidad). Esbozad individualmente dos soluciones antes de consensuar un prototipo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Construcció i funcions (30 min):** munteu una ajuda de taula que classifique o indique el pas d’una fitxa simulada. Decomposeu-la en subproblemes: rebre, detectar o seleccionar, actuar, informar i reiniciar. Escriviu funcions amb noms coherents, paràmetres per a les dades variables i comentaris per explicar decisions no òbvies. Eviteu una funció monolítica que llig sensor, tria categoria, mou motor i imprimeix tot a la vegada.
+**Construcción y funciones (30 min):** montad una ayuda de mesa que clasifique o indique el paso de una ficha simulada. Descomponedla en subproblemas: recibir, detectar o seleccionar, actuar, informar y reiniciar. Escribid funciones con nombres coherentes, parámetros para los datos variables y comentarios para explicar decisiones no obvias. Evitad una función monolítica que lee el sensor, elige la categoría, mueve el motor e imprime todo a la vez.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Pla de prova i revisió (20 min):** prepareu casos normals, frontera/no assignat i repetició; deixeu un marge físic al voltant de l’accessori i una parada manual. Executeu-los, registreu predicció/resultat i canvieu un element per iteració.
+**Plan de prueba y revisión (20 min):** preparad casos normales, de frontera/no asignado y de repetición; dejad un margen físico alrededor del accesorio y una parada manual. Ejecutadlos, registrad predicción/resultado y cambiad un elemento por iteración.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Comunicació (10 min):** escriviu una targeta d’ús que explique entrada, resultat, què fer amb “sense lectura” i què el prototip no pot determinar. Si la necessitat s’ha identificat al centre, demaneu a una persona adulta que confirme que la descripció és respectuosa i no conté dades personals.
+**Comunicación (10 min):** escribid una tarjeta de uso que explique la entrada, el resultado, qué hacer con «sin lectura» y qué no puede determinar el prototipo. Si la necesidad se ha identificado en el centro, pedid a una persona adulta que confirme que la descripción es respetuosa y no contiene datos personales.
 
-### **Lliçó 6 · Idees per millorar i retorn entre equips (45 min).**
+### **Lección 6 · Ideas para mejorar y retorno entre equipos (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Preparació (8 min):** cada equip deixa un programa curt comentat, una taula amb almenys dos casos, la targeta d’ús i una pregunta oberta. Compartiu només dades simulades i codi necessari per entendre la maqueta; no publiqueu informació del centre.
+**Preparación (8 min):** cada equipo deja un programa corto comentado, una tabla con al menos dos casos, la tarjeta de uso y una pregunta abierta. Compartid solo datos simulados y el código necesario para entender la maqueta; no publiquéis información del centro.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Revisió (12 min):** un altre equip segueix pseudocodi o prova la maqueta amb el permís de l’equip autor. El retorn descriu evidència amb una pauta: “he observat…”, “esperava…”, “un cas que encara provaria és…”. No es canvia ni es reescriu el projecte d’un altre grup.
+**Revisión (12 min):** otro equipo sigue el pseudocódigo o prueba la maqueta con el permiso del equipo autor. El retorno describe evidencia con una pauta: «he observado…», «esperaba…», «un caso que todavía probaría es…». No se cambia ni se reescribe el proyecto de otro grupo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Decisió (5 min):** l’equip autor marca quina idea adopta, quina deixa per més avant i amb quina evidència ho justifica.
+**Decisión (5 min):** el equipo autor marca qué idea adopta, cuál deja para más adelante y con qué evidencia lo justifica.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Redisseny (12 min):** feu una única millora: aclarir un nom, reorganitzar crides, validar un argument, afegir resposta a entrada no assignada o fer més llegible l’indicador. Repetiu el cas que va motivar-la i un cas diferent per comprovar que no s’ha trencat una resposta existent.
+**Rediseño (12 min):** haced una única mejora: aclarar un nombre, reorganizar llamadas, validar un argumento, añadir respuesta a una entrada no asignada o hacer más legible el indicador. Repetid el caso que la motivó y un caso diferente para comprobar que no se ha roto una respuesta existente.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Autoavaluació (8 min):** cada persona registra una contribució pròpia, una ajuda que ha rebut, una pràctica de codi que entén millor i una pregunta que queda oberta. Escala privada d’1–3 per a ús del temps i cura del material, amb un objectiu de millora, sense comparar alumnat.
+**Autoevaluación (8 min):** cada persona registra una contribución propia, una ayuda que ha recibido, una práctica de código que entiende mejor y una pregunta que queda abierta. Escala privada de 1–3 para el uso del tiempo y el cuidado del material, con un objetivo de mejora, sin comparar al alumnado.
 
-## 🧪 Evidències, avaluació i producte final
+## 🧪 Evidencias, evaluación y producto final
 
-El portafolis d’equip conté: definició de la necessitat i límits; dos esbossos i una decisió amb criteris; pseudocodi; mapa de funcions i crides; codi Python comentat; explicació de paràmetres i arguments amb un exemple propi; taula d’entrades esperades/no assignades i resultats; registre de depuració; proves repetides; feedback rebut i decisió de redisseny; i una targeta d’ús amb les limitacions del prototip. El producte final és una maqueta de triatge de fitxes netes, una demostració de menys de dos minuts i una explicació oral o escrita que distingeix dada, regla i actuació.
+El portafolio de equipo contiene: definición de la necesidad y límites; dos bocetos y una decisión con criterios; pseudocódigo; mapa de funciones y llamadas; código Python comentado; explicación de parámetros y argumentos con un ejemplo propio; tabla de entradas esperadas/no asignadas y resultados; registro de depuración; pruebas repetidas; retroalimentación recibida y decisión de rediseño; y una tarjeta de uso con las limitaciones del prototipo. El producto final es una maqueta de triaje de fichas limpias, una demostración de menos de dos minutos y una explicación oral o escrita que distingue dato, regla y actuación.
 
-Observeu quatre dimensions amb descriptors: **estructura** (identifica i crida funcions en un ordre coherent), **paràmetres** (diferencia definició, paràmetre i argument i comprova quantitat/ordre), **validació** (prova casos assignats i no assignats, registra evidència i explica un canvi), i **comunicació/col·laboració** (documenta el codi, respon al feedback i declara límits). En cada dimensió, useu nivells “encara necessita modelatge / ho fa amb suport / ho fa amb autonomia / ho transfereix i ho justifica”. La valoració no depén només que el robot es moga: una funció ben provada i una limitació ben comunicada també són evidència d’aprenentatge.
+Observad cuatro dimensiones con descriptores: **estructura** (identifica y llama funciones en un orden coherente), **parámetros** (diferencia definición, parámetro y argumento y comprueba cantidad/orden), **validación** (prueba casos asignados y no asignados, registra evidencia y explica un cambio) y **comunicación/colaboración** (documenta el código, responde a la retroalimentación y declara límites). En cada dimensión, usad niveles «todavía necesita modelado / lo hace con apoyo / lo hace con autonomía / lo transfiere y lo justifica». La valoración no depende solo de que el robot se mueva: una función bien probada y una limitación bien comunicada también son evidencia de aprendizaje.
 
-## ♿ Accessibilitat, seguretat i sostenibilitat
+## ♿ Accesibilidad, seguridad y sostenibilidad
 
-Permeteu pseudocodi oral, tauler de crides en paper, fragments Python amb tipografia ampliada o lectura compartida; els rols de disseny, registre, proves i programació tenen valor equivalent i roten. Les etiquetes s’identifiquen amb color i forma/textura o símbol triat per l’alumnat, sense dependre només de la visió del color. Useu peces grans, netes i lleugeres; manteniu la pinça a la taula, amb velocitat limitada, recorregut curt i aturada manual. No executeu canvis mentre hi ha mans prop del mecanisme. No introduïu residus, menjar, líquids ni objectes punxants. Recolliu i reutilitzeu les fitxes. Eviteu dades personals, etiquetes amb noms, imatges d’alumnes i afirmacions sobre pràctiques ambientals del centre que no s’hagen comprovat.
+Permitid pseudocódigo oral, tablero de llamadas en papel, fragmentos Python con tipografía ampliada o lectura compartida; los roles de diseño, registro, pruebas y programación tienen un valor equivalente y rotan. Las etiquetas se identifican con color y forma/textura o un símbolo elegido por el alumnado, sin depender solo de la visión del color. Usad piezas grandes, limpias y ligeras; mantened la pinza en la mesa, con velocidad limitada, recorrido corto y parada manual. No ejecutéis cambios mientras hay manos cerca del mecanismo. No introduzcáis residuos, comida, líquidos ni objetos punzantes. Recoged y reutilizad las fichas. Evitad datos personales, etiquetas con nombres, imágenes de alumnado y afirmaciones sobre prácticas ambientales del centro que no se hayan comprobado.
 
-## 🔗 Referent oficial i decisions d’adaptació
+## 🔗 Referente oficial y decisiones de adaptación
 
-Adapta les sis lliçons de la unitat 7 *Functions* del curs LEGO Education [*Introduction to Python Programming · Course 2*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us): *Turtle Trouble*, *Clean Up with Multiple Functions*, *Clean Indicator*, *Automate the Clean Up*, *Taking Care of My Environment* i *Ideas to Help with My Environment*. Conserva la progressió de descomposició i funcions, diverses funcions per a mecanismes diferents, paràmetres i depuració de les crides, triatge amb dades, repte de disseny ambiental en context autèntic, documentació, proves i feedback. La tortuga i la neteja de residus es transformen en una necessitat de circulació de materials nets triada localment; les regles de colors són una simulació acordada per l’aula, i no es diu que el sensor reconega materials. S’han creat relat, activitats, evidències i il·lustració propis; no es copien instruccions de construcció ni codi complet del fabricant. La guia oficial especifica lliçons de 45 minuts, amb activitats de 90 minuts per a l’automatització i el projecte ambiental, i una sessió final de feedback; aquesta proposta manté sis lliçons i distribueix la durada segons la disponibilitat del centre.
+Adapta las seis lecciones de la unidad 7 *Functions* del curso LEGO Education [*Introduction to Python Programming · Course 2*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us): *Turtle Trouble*, *Clean Up with Multiple Functions*, *Clean Indicator*, *Automate the Clean Up*, *Taking Care of My Environment* e *Ideas to Help with My Environment*. Conserva la progresión de descomposición y funciones, varias funciones para mecanismos diferentes, parámetros y depuración de las llamadas, triaje con datos, reto de diseño ambiental en contexto auténtico, documentación, pruebas y retroalimentación. La tortuga y la limpieza de residuos se transforman en una necesidad de circulación de materiales limpios elegida localmente; las reglas de colores son una simulación acordada por el aula, y no se dice que el sensor reconozca materiales. Se han creado relato, actividades, evidencias e ilustración propios; no se copian instrucciones de construcción ni código completo del fabricante. La guía oficial especifica lecciones de 45 minutos, con actividades de 90 minutos para la automatización y el proyecto ambiental, y una sesión final de retroalimentación; esta propuesta mantiene seis lecciones y distribuye la duración según la disponibilidad del centro.

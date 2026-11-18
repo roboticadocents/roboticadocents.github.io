@@ -9,130 +9,130 @@ cycle_label: "Primer ciclo"
 subject: "pensament-computacional"
 subject_label: "Pensamiento computacional, Matemáticas y Medio"
 theme: "entorn-local"
-theme_label: "Marjal y cuidado dels hábitats"
+theme_label: "Marjal y cuidado de los hábitats"
 duration: "3 sesiones de 45 minutos"
 challenge: "¿Cómo podemos guiar MatataBot hasta dos puntos de la marjal sin cruzar una zona protegida y explicar a otro equipo cómo lo hemos conseguido?"
 official_source: "https://matatalab.com/cdn/ff/3ihe_ldu0qGpw6-JNLtdn8UaZVTFje4pO0eRFPIgtcY/1600223266/public/2020-09/%E7%AC%AC3%E8%AF%BE%20%20%E7%8B%BC%E6%9D%A5%E4%BA%86%EF%BC%81.pdf"
 ---
 
-![El Coding Set real de la dotació al costat d’una quadrícula de la marjal: MatataBot té una ruta marcada que evita una zona representada amb una targeta.](../../_assets/situacions/cs-ruta-segura-marjal.webp)
+![El Coding Set real de la dotación junto a una cuadrícula de la marjal: MatataBot tiene una ruta marcada que evita una zona representada con una tarjeta.](../../_assets/situacions/cs-ruta-segura-marjal.webp)
 
-_Il·lustració IA basada en la fotografia del Coding Set del centre. La quadrícula, la ruta i la targeta d’obstacle són materials didàctics; MatataBot no detecta ni esquiva obstacles per si mateix._
+_Ilustración IA basada en la fotografía del Coding Set del centro. La cuadrícula, la ruta y la tarjeta de obstáculo son materiales didácticos; MatataBot no detecta ni esquiva obstáculos por sí mismo._
 
-## 🌱 Situació, repte i intenció
+## 🌱 Situación, reto e intención
 
-La classe prepara un mapa perquè una altra parella puga portar una granota de paper des d’un punt d’aigua fins a una zona de vegetació sense travessar un espai marcat com a protegit. El repte no consisteix a fer que el robot “veja” l’obstacle: l’alumnat el representa al mapa, calcula un itinerari segur i programa el MatataBot perquè el recórrega.
+La clase prepara un mapa para que otra pareja pueda llevar una rana de papel desde un punto de agua hasta una zona de vegetación sin atravesar un espacio marcado como protegido. El reto no consiste en hacer que el robot «vea» el obstáculo: el alumnado lo representa en el mapa, calcula un itinerario seguro y programa MatataBot para que lo recorra.
 
-Aquesta proposta adapta la lliçó oficial de Matatalab **“The Wolf is Coming!”** (lliçó 3), que introdueix el concepte d’obstacle, la planificació d’una ruta prèvia, la codificació d’un camí amb blocs direccionals, el treball en dos equips que intercanvien tasques i un repte final de permutacions. El context de la marjal, els personatges, els mapes i els casos de prova són propis. La lliçó oficial proposa una exploració de 40 minuts; ací es distribueix en tres sessions de 45 minuts per a permetre predicció, rotació de rols, depuració i comunicació a una altra parella. No es reprodueixen les pàgines ni les il·lustracions del material oficial.
+Esta propuesta adapta la lección oficial de Matatalab **«The Wolf is Coming!»** (lección 3), que introduce el concepto de obstáculo, la planificación de una ruta previa, la codificación de un camino con bloques direccionales, el trabajo en dos equipos que intercambian tareas y un reto final de permutaciones. El contexto de la marjal, los personajes, los mapas y los casos de prueba son propios. La lección oficial propone una exploración de 40 minutos; aquí se distribuye en tres sesiones de 45 minutos para permitir la predicción, la rotación de roles, la depuración y la comunicación a otra pareja. No se reproducen las páginas ni las ilustraciones del material oficial.
 
-**Pregunta guia:** quina informació necessitem per triar una ruta que evite una zona protegida, i com comprovem que les ordres porten el robot al punt correcte?
+**Pregunta guía:** ¿qué información necesitamos para elegir una ruta que evite una zona protegida, y cómo comprobamos que las órdenes llevan el robot al punto correcto?
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Identificar inici, destinació, orientació, obstacle representat i ruta possible en una graella.
-- Planificar el recorregut abans de col·locar blocs, anticipant la posició i l’orientació després de cada ordre.
-- Traduir una ruta a blocs direccionals del Coding Set, executar-la i comparar el resultat amb la predicció.
-- Depurar una seqüència canviant una instrucció cada vegada i registrar què ha canviat.
-- Repartir i intercanviar els rols de disseny del mapa, programació, comprovació i portaveu.
-- Explicar per què una ruta és segura dins del mapa i distingir aquesta decisió humana de les capacitats del robot.
+- Identificar inicio, destino, orientación, obstáculo representado y ruta posible en una cuadrícula.
+- Planificar el recorrido antes de colocar bloques, anticipando la posición y la orientación después de cada orden.
+- Traducir una ruta a bloques direccionales del Coding Set, ejecutarla y comparar el resultado con la predicción.
+- Depurar una secuencia cambiando una instrucción cada vez y registrar qué ha cambiado.
+- Repartir e intercambiar los roles de diseño del mapa, programación, comprobación y portavoz.
+- Explicar por qué una ruta es segura dentro del mapa y distinguir esta decisión humana de las capacidades del robot.
 
-**Vocabulari clau:** casella, fila, columna, inici, destinació, orientació, obstacle, ruta, instrucció, seqüència, predicció, prova i depuració.
+**Vocabulario clave:** casilla, fila, columna, inicio, destino, orientación, obstáculo, ruta, instrucción, secuencia, predicción, prueba y depuración.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Coding Set del centre: MatataBot, torre de control, tauler de programació i blocs direccionals disponibles. Carregueu els dispositius, comproveu la connexió i executeu una instrucció senzilla abans de la sessió.
-- Dues graelles pròpies de 5 × 5 caselles. Per a moure físicament el robot, marqueu caselles de **10 × 10 cm** i confirmeu el desplaçament amb una prova del vostre model; una graella de paper més menuda només serveix per a planificar o simular.
-- Targetes de paper amb una granota, dos punts d’aigua, dues zones de vegetació i una zona protegida. L’obstacle és una marca del mapa: el robot no el reconeix ni l’evita automàticament. Manteniu lliure el recorregut físic i no col·loqueu barreres que puguen fer caure o bloquejar el robot.
-- Full de registre amb quatre columnes: **pas**, **posició i orientació previstes**, **resultat observat**, **canvi provat**. Afegiu-hi targetes amb les ordres que tinga realment el kit.
+- Coding Set del centro: MatataBot, torre de control, tablero de programación y bloques direccionales disponibles. Cargad los dispositivos, comprobad la conexión y ejecutad una instrucción sencilla antes de la sesión.
+- Dos cuadrículas propias de 5 × 5 casillas. Para mover físicamente el robot, marcad casillas de **10 × 10 cm** y confirmad el desplazamiento con una prueba de vuestro modelo; una cuadrícula de papel más pequeña solo sirve para planificar o simular.
+- Tarjetas de papel con una rana, dos puntos de agua, dos zonas de vegetación y una zona protegida. El obstáculo es una marca del mapa: el robot no lo reconoce ni lo evita automáticamente. Mantened libre el recorrido físico y no coloquéis barreras que puedan hacer caer o bloquear el robot.
+- Hoja de registro con cuatro columnas: **paso**, **posición y orientación previstas**, **resultado observado**, **cambio probado**. Añadid tarjetas con las órdenes que tenga realmente el kit.
 
-Formeu equips de quatre. En cada parella, una persona prepara el mapa i l’altra programa; les dues persones revisen conjuntament la ruta. Després de la primera missió, intercanvien la funció de disseny i programació amb l’altra parella. Ajusteu els blocs a l’inventari del centre: si el model no té algun moviment, representeu-lo en paper i no el presenteu com una prova física.
+Formad equipos de cuatro. En cada pareja, una persona prepara el mapa y la otra programa; las dos personas revisan conjuntamente la ruta. Después de la primera misión, intercambian la función de diseño y programación con la otra pareja. Ajustad los bloques al inventario del centro: si el modelo no tiene algún movimiento, representadlo en papel y no lo presentéis como una prueba física.
 
-## 📅 Seqüència didàctica · tres sessions de 45 minuts
+## 📅 Secuencia didáctica · tres sesiones de 45 minutos
 
-### **Sessió 1 · Llegim el mapa i planifiquem sense travessar la zona protegida (45 min).**
+### **Sesión 1 · Leemos el mapa y planificamos sin atravesar la zona protegida (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu una graella amb inici, destinació i una zona protegida marcada. Pregunteu si hi ha més d’un camí possible i demaneu que assenyalen quines caselles no pot travessar la ruta acordada. Recolliu prediccions sense encendre encara el robot.
+Mostrad una cuadrícula con inicio, destino y una zona protegida marcada. Preguntad si hay más de un camino posible y pedid que señalen qué casillas no puede atravesar la ruta acordada. Recoged predicciones sin encender todavía el robot.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En equips de quatre, assigneu rols de cartògraf/a, planificador/a, verificador/a i portaveu. La parella planificadora traça amb llapis una ruta casella a casella; la parella verificadora recorre el mapa amb una fitxa i comprova que no passa per la zona protegida ni ix de la graella. Si una ruta no és viable, marqueu la primera casella que causa el problema.
+En equipos de cuatro, asignad roles de cartógrafo/a, planificador/a, verificador/a y portavoz. La pareja planificadora traza con lápiz una ruta casilla a casilla; la pareja verificadora recorre el mapa con una ficha y comprueba que no pasa por la zona protegida ni sale de la cuadrícula. Si una ruta no es viable, marcad la primera casilla que causa el problema.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu cada canvi de direcció en una seqüència de fletxes i indiqueu la direcció inicial de MatataBot. Compteu els moviments entre caselles i distingiu-los dels girs: un gir canvia l’orientació, però no trasllada el robot a una casella veïna.
+Anotad cada cambio de dirección en una secuencia de flechas e indicad la dirección inicial de MatataBot. Contad los movimientos entre casillas y distinguidlos de los giros: un giro cambia la orientación, pero no traslada el robot a una casilla vecina.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu la ruta amb un altre equip sense explicar-la oralment. L’equip receptor ha de poder reconstruir el recorregut només amb la graella, el punt d’inici, l’orientació i la seqüència. Afegiu al mapa la informació que falte.
+Intercambiad la ruta con otro equipo sin explicarla oralmente. El equipo receptor debe poder reconstruir el recorrido solo con la cuadrícula, el punto de inicio, la orientación y la secuencia. Añadid al mapa la información que falte.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa amb llegenda, ruta contínua i registre de posició després de cada ordre. Expliqueu quina dada del mapa ha evitat confondre un gir amb un desplaçament.
+**Evidencia:** mapa con leyenda, ruta continua y registro de posición después de cada orden. Explicad qué dato del mapa ha evitado confundir un giro con un desplazamiento.
 
-### **Sessió 2 · Convertim dues rutes en programes i canviem els rols (45 min).**
+### **Sesión 2 · Convertimos dos rutas en programas y cambiamos los roles (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu dos reptes amb el mateix inici però destinacions diferents. Cada parella tria una ruta segura i escriu la predicció abans de tocar els blocs. Repasseu la col·locació inicial i l’orientació del robot.
+Presentad dos retos con el mismo inicio pero destinos diferentes. Cada pareja elige una ruta segura y escribe la predicción antes de tocar los bloques. Repasad la colocación inicial y la orientación del robot.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-La primera parella construeix el programa al tauler i el llig en veu alta; la segona comprova bloc per bloc que correspon a la ruta del mapa. Executeu el programa només quan les dues parelles l’hagen validat. Després, canvieu els rols i resoleu la segona destinació amb un altre mapa.
+La primera pareja construye el programa en el tablero y lo lee en voz alta; la segunda comprueba bloque a bloque que corresponde a la ruta del mapa. Ejecutad el programa solo cuando las dos parejas lo hayan validado. Después, cambiad los roles y resolved el segundo destino con otro mapa.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Després de cada prova, anoteu l’última posició correcta i la primera discrepància. Si el robot no arriba, compareu la seqüència amb el mapa i canvieu una sola instrucció abans de repetir. Torneu MatataBot a la mateixa casella i orientació inicial abans de cada execució.
+Después de cada prueba, anotad la última posición correcta y la primera discrepancia. Si el robot no llega, comparad la secuencia con el mapa y cambiad una sola instrucción antes de repetir. Devolved MatataBot a la misma casilla y orientación inicial antes de cada ejecución.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu que cada parella reba el programa de l’altra sense veure la ruta dibuixada. Ha d’anticipar el destí, provar-lo i després comparar la predicció amb el resultat. Si hi ha una diferència, expliqueu si prové del mapa, de l’orientació inicial, de la lectura dels blocs o de l’execució.
+Haced que cada pareja reciba el programa de la otra sin ver la ruta dibujada. Debe anticipar el destino, probarlo y después comparar la predicción con el resultado. Si hay una diferencia, explicad si proviene del mapa, de la orientación inicial, de la lectura de los bloques o de la ejecución.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dos programes amb les seues rutes anotades, una comprovació entre parelles i, si ha calgut, un canvi justificat. El repte es considera resolt quan el recorregut observat arriba a la destinació sense entrar a les caselles prohibides.
+**Evidencia:** dos programas con sus rutas anotadas, una comprobación entre parejas y, si ha hecho falta, un cambio justificado. El reto se considera resuelto cuando el recorrido observado llega al destino sin entrar en las casillas prohibidas.
 
-### **Sessió 3 · Depurem i resolguem un repte de permutacions (45 min).**
+### **Sesión 3 · Depuramos y resolvemos un reto de permutaciones (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Col·loqueu quatre targetes d’hàbitat en quatre caselles identificades. Expliqueu que, en el repte final, dues targetes canviaran de lloc i que caldrà decidir quines configuracions són possibles sense repetir cap casella. Distingiu aquest problema de classificació del moviment del robot.
+Colocad cuatro tarjetas de hábitat en cuatro casillas identificadas. Explicad que, en el reto final, dos tarjetas cambiarán de lugar y que habrá que decidir qué configuraciones son posibles sin repetir ninguna casilla. Distinguid este problema de clasificación del movimiento del robot.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Cada equip rep una configuració inicial i dues targetes intercanviables. Proposeu quatre configuracions candidates; l’alumnat les prova físicament amb les targetes i descarta les que deixen una casella duplicada o buida quan el repte exigeix una targeta per casella. Després, trieu una configuració vàlida i planifiqueu una ruta que visite les destinacions en l’ordre acordat.
+Cada equipo recibe una configuración inicial y dos tarjetas intercambiables. Proponed cuatro configuraciones candidatas; el alumnado las prueba físicamente con las tarjetas y descarta las que dejan una casilla duplicada o vacía cuando el reto exige una tarjeta por casilla. Después, elegid una configuración válida y planificad una ruta que visite los destinos en el orden acordado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Programeu una ruta curta cap a les destinacions triades. La persona observadora registra l’ordre de visita i el resultat. Si la seqüència falla, depureu-la pas a pas; no canvieu alhora la disposició de targetes i el programa.
+Programad una ruta corta hacia los destinos elegidos. La persona observadora registra el orden de visita y el resultado. Si la secuencia falla, depuradla paso a paso; no cambiéis a la vez la disposición de tarjetas y el programa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Presenteu el mapa i una ruta a una parella visitant. Aquesta ha d’explicar quina configuració ha triat, reconstruir les instruccions i verificar la destinació. Incorporeu una millora només si resol una confusió observada durant aquesta prova.
+Presentad el mapa y una ruta a una pareja visitante. Esta debe explicar qué configuración ha elegido, reconstruir las instrucciones y verificar el destino. Incorporad una mejora solo si resuelve una confusión observada durante esta prueba.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència final:** mapa amb llegenda, una configuració de targetes justificada, programa comprovat i explicació breu d’una depuració. Tanqueu amb la pregunta: quina part de la decisió sobre la zona protegida ha fet l’alumnat i quina part ha fet el robot?
+**Evidencia final:** mapa con leyenda, una configuración de tarjetas justificada, programa comprobado y explicación breve de una depuración. Cerrad con la pregunta: ¿qué parte de la decisión sobre la zona protegida ha hecho el alumnado y qué parte ha hecho el robot?
 
-## ♿ Accessibilitat, seguretat i límits
+## ♿ Accesibilidad, seguridad y límites
 
-- Oferiu graelles amb contrast alt, pictogrames, peces més grans i una versió de recorregut corporal o amb fitxa per a qui no puga manipular els blocs menuts.
-- Permeteu anticipar la seqüència oralment, amb fletxes, amb una plantilla de posicions o amb suport d’una parella; els rols es poden adaptar sense perdre la rotació de responsabilitats.
-- Manteniu mans i materials fora del trajecte durant l’execució. No poseu el robot sobre vores, superfícies inclinades ni obstacles físics; atureu la prova si queda bloquejat.
-- La zona protegida és una convenció del mapa. El Coding Set base no disposa de detecció automàtica d’obstacles en aquesta activitat; cap moviment del robot demostra percepció ambiental.
-- No feu servir ubicacions identificables de l’alumnat ni fotografies amb dades personals. Els llocs i animals del mapa són representacions educatives.
+- Ofreced cuadrículas con alto contraste, pictogramas, piezas más grandes y una versión de recorrido corporal o con ficha para quien no pueda manipular los bloques pequeños.
+- Permitid anticipar la secuencia oralmente, con flechas, con una plantilla de posiciones o con el apoyo de una pareja; los roles se pueden adaptar sin perder la rotación de responsabilidades.
+- Mantened manos y materiales fuera del trayecto durante la ejecución. No pongáis el robot sobre bordes, superficies inclinadas ni obstáculos físicos; detened la prueba si queda bloqueado.
+- La zona protegida es una convención del mapa. El Coding Set base no dispone de detección automática de obstáculos en esta actividad; ningún movimiento del robot demuestra percepción del entorno.
+- No uséis ubicaciones identificables del alumnado ni fotografías con datos personales. Los lugares y animales del mapa son representaciones educativas.
 
-## ✅ Avaluació i evidències
+## ✅ Evaluación y evidencias
 
-- **Planificació:** el mapa inclou inici, orientació, destinació, zona protegida i una ruta contínua.
-- **Programació:** la seqüència de blocs correspon a la ruta que l’equip ha anunciat.
-- **Depuració:** l’alumnat localitza la primera discrepància i prova un canvi controlat.
-- **Comunicació:** una altra parella pot reconstruir el recorregut sense instruccions addicionals.
-- **Comprensió del robot:** l’explicació separa les decisions humanes sobre el mapa de les ordres que MatataBot executa.
+- **Planificación:** el mapa incluye inicio, orientación, destino, zona protegida y una ruta continua.
+- **Programación:** la secuencia de bloques corresponde a la ruta que el equipo ha anunciado.
+- **Depuración:** el alumnado localiza la primera discrepancia y prueba un cambio controlado.
+- **Comunicación:** otra pareja puede reconstruir el recorrido sin instrucciones adicionales.
+- **Comprensión del robot:** la explicación separa las decisiones humanas sobre el mapa de las órdenes que MatataBot ejecuta.
 
-## 🔗 Fonts oficials i decisions d’adaptació
+## 🔗 Fuentes oficiales y decisiones de adaptación
 
-- [Matatalab, lliçó 3: “The Wolf is Coming!” (PDF oficial)](https://matatalab.com/cdn/ff/3ihe_ldu0qGpw6-JNLtdn8UaZVTFje4pO0eRFPIgtcY/1600223266/public/2020-09/%E7%AC%AC3%E8%AF%BE%20%20%E7%8B%BC%E6%9D%A5%E4%BA%86%EF%BC%81.pdf): treballa obstacles, planificació prèvia, seqüències direccionals, cooperació en parelles amb intercanvi de tasques i una activitat final de permutacions. La proposta conserva aquesta progressió didàctica, però crea un context de marjal, mapes, consignes i proves propis.
-- La font descriu l’ús del Matatalab Coding Set. Les dimensions de 10 × 10 cm i la resposta als blocs s’han de validar amb el kit i la superfície concrets del centre abans de fer l’activitat física.
-- La duració de tres sessions de 45 minuts, els indicadors d’avaluació i els materials de paper són decisions pròpies d’aquesta adaptació, no dades atribuïdes al fabricant.
+- [Matatalab, lección 3: «The Wolf is Coming!» (PDF oficial)](https://matatalab.com/cdn/ff/3ihe_ldu0qGpw6-JNLtdn8UaZVTFje4pO0eRFPIgtcY/1600223266/public/2020-09/%E7%AC%AC3%E8%AF%BE%20%20%E7%8B%BC%E6%9D%A5%E4%BA%86%EF%BC%81.pdf): trabaja obstáculos, planificación previa, secuencias direccionales, cooperación en parejas con intercambio de tareas y una actividad final de permutaciones. La propuesta conserva esta progresión didáctica, pero crea un contexto de marjal, mapas, consignas y pruebas propios.
+- La fuente describe el uso de Matatalab Coding Set. Las dimensiones de 10 × 10 cm y la respuesta a los bloques se deben validar con el kit y la superficie concretos del centro antes de hacer la actividad física.
+- La duración de tres sesiones de 45 minutos, los indicadores de evaluación y los materiales de papel son decisiones propias de esta adaptación, no datos atribuidos al fabricante.

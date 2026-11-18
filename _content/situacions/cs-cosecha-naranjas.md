@@ -15,148 +15,148 @@ challenge: "¿Cómo podemos programar una ruta para que MatataBot llegue a una o
 official_source: "https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf"
 ---
 
-![El MatataBot i la torre reals del Coding Set en una graella de collita; una taronja de paper avança cap a una cistella i el programa acaba amb el bloc de música.](../../_assets/situacions/cs-collita-taronges.webp)
+![El MatataBot y la torre reales del Coding Set en una cuadrícula de cosecha; una naranja de papel avanza hacia una cesta y el programa acaba con el bloque de música.](../../_assets/situacions/cs-collita-taronges.webp)
 
-_Il·lustració IA pròpia basada en el model real del Coding Set. La fruita és una peça lleugera de maqueta que el robot empeny; una persona la col·loca a la cistella. El robot no té pinça ni recull objectes de manera autònoma._
+_Ilustración IA propia basada en el modelo real del Coding Set. La fruta es una pieza ligera de maqueta que el robot empuja; una persona la coloca en la cesta. El robot no tiene pinza ni recoge objetos de manera autónoma._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-La cooperativa escolar prepara una parada de productes de temporada. En un mapa de quadrícula hi ha una o més taronges de paper i una cistella marcada com a punt de recollida. Els equips planifiquen una ruta perquè MatataBot arribe a cada peça, l’empenya amb cura fins a una zona acordada i tanque el programa amb música. Després, una persona recull cada peça i la posa manualment a la cistella.
+La cooperativa escolar prepara un puesto de productos de temporada. En un mapa de cuadrícula hay una o más naranjas de papel y una cesta marcada como punto de recogida. Los equipos planifican una ruta para que MatataBot llegue a cada pieza, la empuje con cuidado hasta una zona acordada y cierre el programa con música. Después, una persona recoge cada pieza y la pone manualmente en la cesta.
 
-La proposta adapta dues targetes oficials de les *Coding Activity Cards*: **A-2 · Fruit Picking**, amb una peça i música de celebració, i **A-3 · MatataBot Loves Candy**, que amplia la tasca a dues peces i després a tres o més en un únic programa. El material oficial representa una ruta en quadrícula i, en A-2, un bloc musical al final. La versió local transforma la “recollida” en una acció observable i segura: el robot empeny testimonis lleugers, sense pinça ni mecanisme inventat; l’alumnat completa manualment el pas de posar-los a la cistella. El context de cítrics, el mapa, la seqüència didàctica, el registre i les imatges són propis.
+La propuesta adapta dos tarjetas oficiales de las *Coding Activity Cards*: **A-2 · Fruit Picking**, con una pieza y música de celebración, y **A-3 · MatataBot Loves Candy**, que amplía la tarea a dos piezas y después a tres o más en un único programa. El material oficial representa una ruta en cuadrícula y, en A-2, un bloque musical al final. La versión local transforma la «recogida» en una acción observable y segura: el robot empuja objetos ligeros, sin pinza ni mecanismo inventado; el alumnado completa manualmente el paso de ponerlos en la cesta. El contexto de cítricos, el mapa, la secuencia didáctica, el registro y las imágenes son propios.
 
-**Pregunta guia:** quines ordres necessitem perquè el robot arribe a la fruita, la desplace sense eixir del camí i faça sonar la melodia només després de completar la ruta?
+**Pregunta guía:** ¿qué órdenes necesitamos para que el robot llegue a la fruta, la desplace sin salirse del camino y haga sonar la melodía solo después de completar la ruta?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Llegir una ruta en quadrícula tenint en compte la posició i l’orientació inicials.
-- Traduir una ruta a blocs de moviment del Coding Set i predir-ne el resultat.
-- Comprovar com canvia la posició d’un objecte quan el robot hi arriba i l’empeny.
-- Col·locar el bloc de música després dels moviments i verificar l’ordre de la seqüència.
-- Distingir les accions programades del robot de la recollida manual de la fruita.
-- Descompondre una ruta amb diversos testimonis i visitar-los tots amb un únic programa.
+- Leer una ruta en cuadrícula teniendo en cuenta la posición y la orientación iniciales.
+- Traducir una ruta a bloques de movimiento del Coding Set y predecir el resultado.
+- Comprobar cómo cambia la posición de un objeto cuando el robot llega y lo empuja.
+- Colocar el bloque de música después de los movimientos y verificar el orden de la secuencia.
+- Distinguir las acciones programadas del robot de la recogida manual de la fruta.
+- Descomponer una ruta con varios objetos y visitarlos todos con un único programa.
 
-**Vocabulari clau:** inici, orientació, casella, ruta, avançar, girar, empényer, destinació, seqüència, prova, melodia.
+**Vocabulario clave:** inicio, orientación, casilla, ruta, avanzar, girar, empujar, destino, secuencia, prueba, melodía.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Coding Set real: MatataBot, torre de control, tauler i blocs de moviment i música presents al kit del centre.
-- Mapa propi de 4 × 4 caselles amb inici, zona de fruita i cistella; useu la quadrícula del kit si el centre en disposa i confirmeu-ne les dimensions abans de fer prediccions.
-- Una o dues fruites de paper gruixut o escuma lleugera, amb vores arrodonides; una cistella ampla i baixa fora del recorregut del robot.
-- Full de registre amb **posició inicial**, **orientació**, **ordres**, **posició final**, **fruit desplaçat sí/no**, **música al final sí/no** i **canvi per a la prova següent**.
-- Cinta de pintor per immobilitzar el mapa, targetes grans amb les instruccions i una fitxa de MatataBot de paper per simular abans d’encendre el robot.
+- Coding Set real: MatataBot, torre de control, tablero y bloques de movimiento y música presentes en el kit del centro.
+- Mapa propio de 4 × 4 casillas con inicio, zona de fruta y cesta; usad la cuadrícula del kit si el centro dispone de ella y confirmad sus dimensiones antes de hacer predicciones.
+- Una o dos frutas de papel grueso o espuma ligera, con bordes redondeados; una cesta amplia y baja fuera del recorrido del robot.
+- Hoja de registro con **posición inicial**, **orientación**, **órdenes**, **posición final**, **fruta desplazada sí/no**, **música al final sí/no** y **cambio para la prueba siguiente**.
+- Cinta de pintor para fijar el mapa, tarjetas grandes con las instrucciones y una ficha de MatataBot de papel para simular antes de encender el robot.
 
-Carregueu la torre i el robot. En una superfície plana, comproveu que la torre reconeix els blocs que fareu servir i que el bloc musical sona a volum moderat. Proveu la peça lleugera abans de la classe: si es queda atrapada sota el robot, es desvia de la ruta o bloqueja les rodes, substituïu-la per una targeta plana que puga lliscar. Manteniu mans i dits fora del recorregut mentre el robot es mou. No useu fruita real ni aliments.
+Cargad la torre y el robot. En una superficie plana, comprobad que la torre reconoce los bloques que vais a usar y que el bloque musical suena a volumen moderado. Probad la pieza ligera antes de la clase: si se queda atrapada bajo el robot, se desvía de la ruta o bloquea las ruedas, sustituidla por una tarjeta plana que pueda deslizarse. Mantened manos y dedos fuera del recorrido mientras el robot se mueve. No uséis fruta real ni alimentos.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Sessió 1 · Del mapa a la primera ruta (45 min)
+### Sesión 1 · Del mapa a la primera ruta (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu la parada fictícia de la cooperativa i mostreu el mapa amb inici, fruita i cistella. Demaneu que l’alumnat descriga el trajecte amb paraules espacials. Aclariu que MatataBot pot seguir ordres i reproduir música, però no sap què és una taronja ni decideix quan s’ha collit.
+Presentad el puesto ficticio de la cooperativa y mostrad el mapa con inicio, fruta y cesta. Pedid al alumnado que describa el trayecto con palabras espaciales. Aclarad que MatataBot puede seguir órdenes y reproducir música, pero no sabe qué es una naranja ni decide cuándo se ha cosechado.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Poseu una sola fruita lleugera en una casella que es puga assolir des de l’inici. En parelles, col·loqueu una fitxa de robot de paper sobre la graella, marqueu cap on mira i assageu el camí fins al testimoni. Prepareu una seqüència de blocs de moviment; deixeu el bloc musical separat, encara sense afegir-lo.
+Poned una sola fruta ligera en una casilla a la que se pueda llegar desde el inicio. En parejas, colocad una ficha de robot de papel sobre la cuadrícula, marcad hacia dónde mira y ensayad el camino hasta el objeto. Preparad una secuencia de bloques de movimiento; dejad el bloque musical aparte, todavía sin añadirlo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una persona llig les ordres i l’altra ressegueix la ruta amb el dit. Anoteu cada casella prevista i el punt on el robot hauria de tocar la fruita. Abans de provar, una parella visitant ha de poder reconstruir el trajecte a partir del mapa i les ordres, sense explicacions addicionals.
+Una persona lee las órdenes y la otra sigue la ruta con el dedo. Anotad cada casilla prevista y el punto donde el robot debería tocar la fruta. Antes de probar, una pareja visitante debe poder reconstruir el trayecto a partir del mapa y las órdenes, sin explicaciones adicionales.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu només la ruta fins a la fruita. Observeu si el robot hi arriba amb l’orientació prevista i si la peça es desplaça de manera controlada. Si la fruita és massa lleugera o bloqueja el robot, atureu-lo, canvieu la peça i repetiu la mateixa seqüència; no canvieu alhora el programa i el material.
+Ejecutad solo la ruta hasta la fruta. Observad si el robot llega con la orientación prevista y si la pieza se desplaza de manera controlada. Si la fruta es demasiado ligera o bloquea el robot, detenedlo, cambiad la pieza y repetid la misma secuencia; no cambiéis a la vez el programa y el material.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa amb ruta prevista, seqüència de blocs i registre de la primera prova. **Pregunta:** quina diferència hi ha entre arribar a la fruita i posar-la dins de la cistella?
+**Evidencia:** mapa con ruta prevista, secuencia de bloques y registro de la primera prueba. **Pregunta:** ¿qué diferencia hay entre llegar a la fruta y ponerla dentro de la cesta?
 
-### Sessió 2 · Provem l’empenta i depurem (45 min)
+### Sesión 2 · Probamos el empuje y depuramos (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu el registre anterior. Cada equip anticipa si la fruita acabarà dins de la zona de recollida o si caldrà que una persona la col·loque manualment. Marqueu el lloc d’inici i l’orientació abans de moure cap bloc.
+Recuperad el registro anterior. Cada equipo anticipa si la fruta acabará dentro de la zona de recogida o si hará falta que una persona la coloque manualmente. Marcad el lugar de inicio y la orientación antes de mover ningún bloque.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Manteniu la mateixa fruita i el mateix mapa. Executeu la ruta completa fins al contacte i observeu cap a on es desplaça el testimoni. Si l’empeny fora de la zona marcada, localitzeu la primera casella on la predicció i el resultat divergeixen; reviseu una sola instrucció o la posició inicial. No poseu les mans davant del robot en moviment.
+Mantened la misma fruta y el mismo mapa. Ejecutad la ruta completa hasta el contacto y observad hacia dónde se desplaza el objeto. Si lo empuja fuera de la zona marcada, localizad la primera casilla donde la predicción y el resultado divergen; revisad una sola instrucción o la posición inicial. No pongáis las manos delante del robot en movimiento.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu la seqüència provada, la casella final del robot i la posició final de la fruita. Distingiu tres resultats: **el robot ha arribat**, **ha empés la peça** i **la peça ha quedat dins de la zona**. Una marca en el full no compta com a resultat observat si no s’ha fet la prova física.
+Anotad la secuencia probada, la casilla final del robot y la posición final de la fruta. Distinguid tres resultados: **el robot ha llegado**, **ha empujado la pieza** y **la pieza ha quedado dentro de la zona**. Una marca en la hoja no cuenta como resultado observado si no se ha hecho la prueba física.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una sola variable: el punt inicial, l’orientació, una instrucció o la forma de la peça. Repetiu el programa i compareu els dos registres. Quan la fruita quede en una zona accessible i segura, una persona la posa manualment dins de la cistella i l’equip marca aquesta acció com a manual.
+Cambiad una sola variable: el punto inicial, la orientación, una instrucción o la forma de la pieza. Repetid el programa y comparad los dos registros. Cuando la fruta quede en una zona accesible y segura, una persona la pone manualmente dentro de la cesta y el equipo marca esta acción como manual.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dos registres comparables i una explicació del canvi que ha ajudat. **Pregunta:** quina part del resultat ha causat el programa i quina part ha completat una persona?
+**Evidencia:** dos registros comparables y una explicación del cambio que ha ayudado. **Pregunta:** ¿qué parte del resultado ha causado el programa y qué parte ha completado una persona?
 
-### Sessió 3 · Afegim la música i compartim la solució (45 min)
+### Sesión 3 · Añadimos la música y compartimos la solución (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu la seqüència ja depurada i pregunteu quan té sentit fer sonar la celebració. Cada equip prediu què passaria si el bloc musical apareguera abans que el robot arribara al testimoni.
+Mostrad la secuencia ya depurada y preguntad cuándo tiene sentido hacer sonar la celebración. Cada equipo predice qué pasaría si el bloque musical apareciera antes de que el robot llegara al objeto.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Afegiu el bloc de música després dels moviments de la ruta, seguint la disposició que admeta el tauler del vostre model. Comproveu visualment que queda al final de la seqüència. Si el centre té més d’un MatataBot, feu les proves en torns o abaixeu el volum per a evitar que els sons se superposen.
+Añadid el bloque de música después de los movimientos de la ruta, siguiendo la disposición que admita el tablero de vuestro modelo. Comprobad visualmente que queda al final de la secuencia. Si el centro tiene más de un MatataBot, haced las pruebas por turnos o bajad el volumen para evitar que los sonidos se superpongan.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Escriviu o dibuixeu la seqüència completa i separeu en el registre **moviment**, **contacte amb la fruita**, **acció manual** i **música**. Prepareu una explicació breu perquè una altra parella puga repetir la ruta i identificar què no fa el robot.
+Escribid o dibujad la secuencia completa y separad en el registro **movimiento**, **contacto con la fruta**, **acción manual** y **música**. Preparad una explicación breve para que otra pareja pueda repetir la ruta e identificar qué no hace el robot.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-La parella visitant prepara el mapa i programa la seqüència sense rebre la resposta. Comprova si MatataBot arriba a la fruita, si l’empeny cap a la zona, si la música sona després del recorregut i si la cistella s’ompli amb l’acció manual acordada. L’equip autor revisa una instrucció ambigua i repetix la prova.
+La pareja visitante prepara el mapa y programa la secuencia sin recibir la respuesta. Comprueba si MatataBot llega a la fruta, si la empuja hacia la zona, si la música suena después del recorrido y si la cesta se llena con la acción manual acordada. El equipo autor revisa una instrucción ambigua y repite la prueba.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència final:** mapa, seqüència amb el bloc musical, dos registres de prova i una targeta que diferencia accions del robot i de les persones. Tanqueu amb: «La melodia sona després de…» i «MatataBot no arreplega la fruita; nosaltres…».
+**Evidencia final:** mapa, secuencia con el bloque musical, dos registros de prueba y una tarjeta que diferencia acciones del robot y de las personas. Cerrad con: «La melodía suena después de…» y «MatataBot no recoge la fruta; nosotros…».
 
-### Sessió 4 · Una seqüència per a tota la collita (45 min)
+### Sesión 4 · Una secuencia para toda la cosecha (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu l’ampliació de la targeta oficial **A-3 · MatataBot Loves Candy**: la targeta col·loca dues peces i demana visitar-les totes amb un programa; després proposa repetir el repte amb tres o més. Ací les llaminadures es converteixen en taronges de paper i la recollida continua sent manual. Cada equip prediu quantes ordres addicionals necessitarà per a arribar a totes les peces.
+Presentad la ampliación de la tarjeta oficial **A-3 · MatataBot Loves Candy**: la tarjeta coloca dos piezas y pide visitarlas todas con un programa; después propone repetir el reto con tres o más. Aquí las golosinas se convierten en naranjas de papel y la recogida sigue siendo manual. Cada equipo predice cuántas órdenes adicionales necesitará para llegar a todas las piezas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Col·loqueu dues fruites en caselles diferents i planifiqueu una ruta que passe per totes dues abans de la cistella. Registreu l’orientació després de cada gir i escriviu el programa complet abans d’executar-lo; no esborreu la primera destinació per a començar un programa nou. Si la seqüència és massa llarga per a una prova segura, reduïu la distància entre caselles, no el nombre de fruites.
+Colocad dos frutas en casillas diferentes y planificad una ruta que pase por las dos antes de la cesta. Registrad la orientación después de cada giro y escribid el programa completo antes de ejecutarlo; no borréis el primer destino para empezar un programa nuevo. Si la secuencia es demasiado larga para una prueba segura, reducid la distancia entre casillas, no el número de frutas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una parella visitant comprova al mapa que la seqüència arriba a la primera i a la segona peça i que acaba en la zona prevista. Després, anoteu el resultat de la prova, l’ordre de visita i quines peces ha empés realment el robot. Diferencieu programa únic de dues seqüències executades per separat.
+Una pareja visitante comprueba en el mapa que la secuencia llega a la primera y a la segunda pieza y que acaba en la zona prevista. Después, anotad el resultado de la prueba, el orden de visita y qué piezas ha empujado realmente el robot. Diferenciad programa único de dos secuencias ejecutadas por separado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu el programa amb dues peces; atureu el robot i registreu cada contacte. Si funciona, afegiu una tercera fruita i prediu si cal afegir ordres o reordenar el recorregut. Canvieu una sola part del programa i torneu a provar. Una persona col·loca manualment a la cistella els testimonis quan el robot ha acabat i està aturat.
+Ejecutad el programa con dos piezas; detened el robot y registrad cada contacto. Si funciona, añadid una tercera fruta y predecid si hay que añadir órdenes o reordenar el recorrido. Cambiad una sola parte del programa y volved a probar. Una persona coloca manualmente en la cesta los objetos cuando el robot ha terminado y está detenido.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa amb dues o tres destinacions, una seqüència única provada, registres de les peces desplaçades i comprovació manual de la cistella. **Pregunta:** com sabem que hem visitat totes les fruites amb un sol programa?
+**Evidencia:** mapa con dos o tres destinos, una secuencia única probada, registros de las piezas desplazadas y comprobación manual de la cesta. **Pregunta:** ¿cómo sabemos que hemos visitado todas las frutas con un solo programa?
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu el mapa, la seqüència inicial i la depurada, els registres d’observació, la targeta de comunicació i una breu explicació final. Observeu si l’alumnat:
+Recoged el mapa, la secuencia inicial y la depurada, los registros de observación, la tarjeta de comunicación y una breve explicación final. Observad si el alumnado:
 
-- té en compte orientació i posició en predir el recorregut;
-- relaciona una instrucció concreta amb el moviment observat;
-- revisa una variable cada vegada i usa el registre per explicar el canvi;
-- situa el bloc musical després del trajecte;
-- diferencia arribar/empenyer d’arreplegar i posar la peça dins la cistella.
+- tiene en cuenta orientación y posición al predecir el recorrido;
+- relaciona una instrucción concreta con el movimiento observado;
+- revisa una variable cada vez y usa el registro para explicar el cambio;
+- sitúa el bloque musical después del trayecto;
+- diferencia llegar y empujar de recoger y poner la pieza dentro de la cesta.
 
-No s’avaluen la velocitat, l’encert al primer intent, la qualitat del so ni la destresa per a manipular la peça.
+No se evalúan la velocidad, el acierto al primer intento, la calidad del sonido ni la destreza para manipular la pieza.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Oferiu mapa en gran format, fletxes en relleu, símbols amb formes a més dels colors i una seqüència impresa perquè es puga participar sense manipular blocs menuts. Repartiu rols rotatius de planificació, lectura de blocs, observació i registre; qualsevol alumne pot triar el rol sense tocar un robot en moviment. Useu una melodia breu i volum baix, amb una alternativa visual de targeta de celebració. Atureu el robot abans de reposicionar la fruita; no poseu mans en el seu recorregut ni useu peces menudes o aliments.
+Ofreced mapa en gran formato, flechas en relieve, símbolos con formas además de los colores y una secuencia impresa para que se pueda participar sin manipular bloques pequeños. Repartid roles rotativos de planificación, lectura de bloques, observación y registro; cualquier alumno puede elegir el rol sin tocar un robot en movimiento. Usad una melodía breve y volumen bajo, con una alternativa visual de tarjeta de celebración. Detened el robot antes de recolocar la fruta; no pongáis las manos en su recorrido ni uséis piezas pequeñas o alimentos.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [*Coding Activity Cards*, targetes A-2 · *Fruit Picking* i A-3 · *MatataBot Loves Candy* (PDF oficial)](https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf): A-2 situa MatataBot i una fruita al mapa i demana programar l’arribada/recollida i una música de celebració; A-3 passa de dues peces a tres o més i les visita amb un programa. La mostra consultada presenta una ruta en quadrícula i el bloc musical al final d’A-2; és una mostra parcial del quadern de 40 targetes, no el procediment complet de la resta.
-- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): referència per comprovar el moviment tangible del Coding Set, l’orientació de MatataBot i la interpretació dels blocs direccionals.
+- Matatalab, [*Coding Activity Cards*, tarjetas A-2 · *Fruit Picking* y A-3 · *MatataBot Loves Candy* (PDF oficial)](https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf): A-2 sitúa MatataBot y una fruta en el mapa y pide programar la llegada y la recogida, además de una música de celebración; A-3 pasa de dos piezas a tres o más y las visita con un programa. La muestra consultada presenta una ruta en cuadrícula y el bloque musical al final de A-2; es una muestra parcial del cuaderno de 40 tarjetas, no el procedimiento completo de las demás.
+- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): referencia para comprobar el movimiento tangible del Coding Set, la orientación de MatataBot y la interpretación de los bloques direccionales.
 
-La proposta conserva el nucli observable de les dues targetes —ruta cap a una o més peces, programa únic per a diverses destinacions i música final— i concreta la interacció física amb testimonis que el MatataBot real pot empényer. La persona completa manualment la recollida. La taronja, la cistella i la narrativa de collita són materials locals; no s’hi atribueix reconeixement d’objectes ni un mecanisme de pinça.
+La propuesta conserva el núcleo observable de las dos tarjetas —ruta hacia una o más piezas, programa único para varios destinos y música final— y concreta la interacción física con objetos que el MatataBot real puede empujar. La persona completa manualmente la recogida. La naranja, la cesta y la narrativa de cosecha son materiales locales; no se le atribuye reconocimiento de objetos ni un mecanismo de pinza.

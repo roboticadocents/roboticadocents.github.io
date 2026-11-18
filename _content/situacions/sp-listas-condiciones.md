@@ -9,56 +9,56 @@ cycle_label: "Tercer ciclo"
 subject: "tecnologia"
 subject_label: "Tecnología, Matemáticas y Educación en Valores"
 theme: "logica"
-theme_label: "Listas, condiciones y servicios escolars"
+theme_label: "Listas, condiciones y servicios escolares"
 duration: "6 lecciones · 8–10 sesiones"
 challenge: "¿Cómo puede una maqueta leer una secuencia, aplicar reglas explícitas y responder a una ruta sin tratarla como un sistema de seguridad real?"
 ---
 
-![Base mòbil LEGO SPIKE Prime segueix una pista de colors cap a una estació de classificació escolar de paper.](../../_assets/situacions/sp-llistes-condicions.webp)
+![Base móvil LEGO SPIKE Prime sigue una pista de colores hacia una estación de clasificación escolar de papel.](../../_assets/situacions/sp-llistes-condicions.webp)
 
-_Una llista guarda una seqüència; les condicions decideixen quina acció correspon a cada lectura._
+_Una lista guarda una secuencia; las condiciones deciden qué acción corresponde a cada lectura._
 
-## 🌱 Repte i context
+## 🌱 Reto y contexto
 
-L’escola prepara una jornada de portes obertes i necessita assajar, només en maqueta, com donar indicacions a visitants, ordenar targetes de ruta i avisar quan una seqüència no coincideix amb el pla. Els equips programaran llistes de lectures de color, compararan dues seqüències posició per posició, faran que una base seguisca una línia i cree blocs propis per reutilitzar procediments. Al mini-repte final construiran un senyalador de taula que reacciona a un moviment de maqueta i a una targeta de color acordada. La situació adapta les sis lliçons de la unitat 7 *Arrays, Boolean Expressions, and Conditionals* de *Foundations of Physical Computing*. Les targetes i rutes representen informació inventada: cap muntatge identifica persones, controla portes o protegeix cap espai.
+La escuela prepara una jornada de puertas abiertas y necesita ensayar, solo en maqueta, cómo dar indicaciones a visitantes, ordenar tarjetas de ruta y avisar cuando una secuencia no coincide con el plan. Los equipos programarán listas de lecturas de color, compararán dos secuencias posición por posición, harán que una base recorra una línea y cree bloques propios para reutilizar procedimientos. En el mini-reto final construirán un señalizador de mesa que reacciona a un movimiento de maqueta y a una tarjeta de color acordada. La situación adapta las seis lecciones de la unidad 7 *Arrays, Boolean Expressions, and Conditionals* de *Foundations of Physical Computing*. Las tarjetas y rutas representan información inventada: ningún montaje identifica personas, controla puertas ni protege ningún espacio.
 
-## 🎯 Aprenentatges i continguts
+## 🎯 Aprendizajes y contenidos
 
-- Crear i llegir una **llista** com una seqüència ordenada, distingint-ne els elements i les posicions; comprendre que l’ordre i la repetició tenen significat.
+- Crear y leer una **lista** como una secuencia ordenada, distinguiendo sus elementos y sus posiciones; comprender que el orden y la repetición tienen significado.
 
-- Usar sensors per a afegir valors a una llista, interpretar les lectures que genera el sensor de color i verificar-les amb una mostra de referència, sense donar per fet que qualsevol paper es detecta igual.
+- Usar sensores para añadir valores a una lista, interpretar las lecturas que genera el sensor de color y verificarlas con una muestra de referencia, sin dar por hecho que cualquier papel se detecta igual.
 
-- Comparar dues llistes element a element, detectar la primera diferència, i emprar condicions amb `i`, `o`, `no`, igualtat i desigualtat.
+- Comparar dos listas elemento a elemento, detectar la primera diferencia y emplear condiciones con `y`, `o`, `no`, igualdad y desigualdad.
 
-- Construir una condició composta a partir de predicats simples; predir-ne el resultat amb una taula de casos abans d’executar-la.
+- Construir una condición compuesta a partir de predicados simples; predecir su resultado con una tabla de casos antes de ejecutarla.
 
-- Descompondre el programa en subprocediments reutilitzables (“els meus blocs”), documentar-ne la funció i depurar per components.
+- Descomponer el programa en subprocedimientos reutilizables («mis bloques»), documentar su función y depurar por componentes.
 
-- Modelar el seguiment d’una línia amb sensor de color, ajustar-lo mitjançant proves i comunicar els límits del prototip.
+- Modelar el seguimiento de una línea con sensor de color, ajustarlo mediante pruebas y comunicar los límites del prototipo.
 
-- Relacionar el disseny de serveis escolars amb professions de turisme, acollida i administració pública.
+- Relacionar el diseño de servicios escolares con profesiones de turismo, acogida y administración pública.
 
-## 🗺️ Preparació del repte
+## 🗺️ Preparación del reto
 
-Abans de començar, munteu una base mòbil estable amb el sensor de color orientat cap avall i comproveu que els ports coincideixen amb el programa. Prepareu una pista curta sobre cartolina mate, amb trams blancs i negres i una zona d’aturada en un color que el sensor puga llegir consistentment; afegiu al costat una tira de colors que servisca de control. Feu una prova amb la llum real de l’aula, la distància al paper i el llindar de detecció. Marqueu una àrea de circulació lliure i limiteu la velocitat. Si no hi ha sensor o la lectura no és estable, l’alumnat pot introduir les lectures en una taula manual i provar la mateixa lògica sense robot; anoteu que és simulació.
+Antes de empezar, montad una base móvil estable con el sensor de color orientado hacia abajo y comprobad que los puertos coinciden con el programa. Preparad una pista corta sobre cartulina mate, con tramos blancos y negros y una zona de parada en un color que el sensor pueda leer de forma consistente; añadid al lado una tira de colores que sirva de control. Haced una prueba con la luz real del aula, la distancia al papel y el umbral de detección. Marcad un área de circulación libre y limitad la velocidad. Si no hay sensor o la lectura no es estable, el alumnado puede introducir las lecturas en una tabla manual y probar la misma lógica sin robot; anotad que es simulación.
 
-Organitzeu equips de tres o quatre amb rols rotatius: disseny de casos de prova, programació, calibratge/registre i comunicació. Cada equip manté un diari breu per sessió amb predicció, canvi efectuat, resultat i següent pas. Reserveu peces del set en safates, carregueu els hubs i assegureu un dispositiu amb l’app SPIKE. La seqüència no depén d’un model “Game Master” o “Quality Check” de les lliçons LEGO ni reprodueix les seues instruccions de muntatge.
+Organizad equipos de tres o cuatro con roles rotativos: diseño de casos de prueba, programación, calibración/registro y comunicación. Cada equipo mantiene un diario breve por sesión con predicción, cambio efectuado, resultado y siguiente paso. Reservad piezas del set en bandejas, cargad los hubs y asegurad un dispositivo con la app SPIKE. La secuencia no depende de un modelo «Game Master» o «Quality Check» de las lecciones LEGO ni reproduce sus instrucciones de montaje.
 
-## 📅 Seqüència d’aprenentatge · sis lliçons
+## 📅 Secuencia didáctica · seis lecciones
 
-### **Lliçó 1 · Crear una llista llegible per màquina (90 min).**
+### **Lección 1 · Crear una lista legible por máquina (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** com guardem l’ordre d’una ruta perquè es puga llegir després? En parelles, poseu cinc targetes de color en una bossa opaca i traieu-les una per una, col·locant-les d’esquerra a dreta en una tira numerada. Registreu la seqüència dues vegades: una amb paraules i una amb codis numèrics assignats pel grup. Feu una segona extracció tornant cada targeta a la bossa abans de traure’n una altra; compareu-la amb una extracció sense reposició i expliqueu per què en una poden repetir-se colors i en l’altra no.
+**Pregunta:** ¿cómo guardamos el orden de una ruta para que se pueda leer después? En parejas, poned cinco tarjetas de color en una bolsa opaca y sacadlas una a una, colocándolas de izquierda a derecha en una tira numerada. Registrad la secuencia dos veces: una con palabras y otra con códigos numéricos asignados por el grupo. Haced una segunda extracción devolviendo cada tarjeta a la bolsa antes de sacar otra; comparadla con una extracción sin reposición y explicad por qué en una pueden repetirse colores y en la otra no.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Creeu en l’app una llista anomenada `Lectures`, inicialitzeu-la buida, llegiu una targeta amb el sensor i afegiu-ne el valor en intervals acordats. Si la lectura no és estable, introduïu els valors manualment i marqueu la prova com a simulació.
+Cread en la app una lista llamada `Lectures`, inicializadla vacía, leed una tarjeta con el sensor y añadid su valor en intervalos acordados. Si la lectura no es estable, introducid los valores manualmente y marcad la prueba como simulación.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Abans de programar la seqüència completa, escriviu pseudocodi i traceu-lo amb cinc targetes. La versió Python és una representació textual de la lògica per a analitzar sobre paper; no s’executa en l’app SPIKE.
+Antes de programar la secuencia completa, escribid pseudocódigo y trazadlo con cinco tarjetas. La versión Python es una representación textual de la lógica para analizar sobre papel; no se ejecuta en la app SPIKE.
 
 ```pseudocode
 quan comença
@@ -78,144 +78,144 @@ for _ in range(5):
 print(lectures)
 ```
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proveu cinc entrades en un ordre conegut i comproveu que l’ordre registrat coincideix. Repetiu amb una lectura inesperada i reviseu què guarda la llista en cada posició.
+Probad cinco entradas en un orden conocido y comprobad que el orden registrado coincide. Repetid con una lectura inesperada y revisad qué guarda la lista en cada posición.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Discussió i evidència:** quina informació desapareixeria si només comptàrem quants colors de cada tipus hi ha? Què significa una lectura inesperada? Tanqueu amb una definició pròpia de llista, un exemple i un contraexemple.
+**Discusión y evidencia:** ¿qué información desaparecería si solo contáramos cuántos colores de cada tipo hay? ¿Qué significa una lectura inesperada? Cerrad con una definición propia de lista, un ejemplo y un contraejemplo.
 
-### **Lliçó 2 · Comparar dos itineraris (90–135 min).**
+### **Lección 2 · Comparar dos itinerarios (90–135 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** quan són iguals dues seqüències i com localitzem el primer desacord? Cada equip rep dues rutes fictícies de cinc estacions, representades per peces o targetes en filera. Predigueu si són iguals i assenyaleu on espereu trobar el primer desacord.
+**Pregunta:** ¿cuándo son iguales dos secuencias y cómo localizamos el primer desacuerdo? Cada equipo recibe dos rutas ficticias de cinco estaciones, representadas por piezas o tarjetas en fila. Predecid si son iguales y señalad dónde esperáis encontrar el primer desacuerdo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Escriviu un algorisme que compare el primer element de cada llista, continue només si coincideixen i indique “coincidència” quan totes les posicions són iguals; si una posició difereix, deseu la primera posició discrepant i atureu la comparació.
+Escribid un algoritmo que compare el primer elemento de cada lista, continúe solo si coinciden e indique «coincidencia» cuando todas las posiciones son iguales; si una posición difiere, guardad la primera posición discrepante y detened la comparación.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Traceu manualment tres casos —llistes iguals, diferència inicial i diferència final— i registreu les posicions consultades i el resultat. Anoteu què ha de passar quan les longituds no coincideixen.
+Trazad manualmente tres casos —listas iguales, diferencia inicial y diferencia final— y registrad las posiciones consultadas y el resultado. Anotad qué tiene que pasar cuando las longitudes no coinciden.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu el pseudocodi amb un altre equip perquè el prove amb llistes sorpresa, inclosa una seqüència de longitud desigual; anoteu si falla o produeix un fals positiu. Si l’app permet llistes i índexs, implementeu la comparació amb lectures de color de dues tires; si no, manteniu les llistes en paper i programeu la condició amb els blocs equivalents disponibles.
+Intercambiad el pseudocódigo con otro equipo para que lo pruebe con listas sorpresa, incluida una secuencia de longitud desigual; anotad si falla o produce un falso positivo. Si la app permite listas e índices, implementad la comparación con lecturas de color de dos tiras; si no, mantened las listas en papel y programad la condición con los bloques equivalentes disponibles.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Completeu una taula de veritat per a dos elements i compareu la regla “tots iguals” (AND) amb “almenys un coincideix” (OR). **Evidència:** procediment provat i explicació de per què l’ordre forma part de les dades.
+Completad una tabla de verdad para dos elementos y comparad la regla «todos iguales» (AND) con «al menos uno coincide» (OR). **Evidencia:** procedimiento probado y explicación de por qué el orden forma parte de los datos.
 
-### **Lliçó 3 · Llegir una línia i simplificar el programa (90 min).**
+### **Lección 3 · Leer una línea y simplificar el programa (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** com transforma una lectura del sensor en correccions repetides? En una primera pràctica desconnectada, una persona fa de robot i una altra dona instruccions “si lligues fosc, gira lleument cap a la línia; si lligues clar, corregeix cap a l’altre costat”. Predigueu què passarà si el robot arriba a una marca no prevista.
+**Pregunta:** ¿cómo transforma una lectura del sensor en correcciones repetidas? En una primera práctica desconectada, una persona hace de robot y otra da instrucciones «si lees oscuro, gira ligeramente hacia la línea; si lees claro, corrige hacia el otro lado». Predecid qué pasará si el robot llega a una marca no prevista.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-El grup identifica els subproblemes que es repeteixen. Amb la base mòbil i el sensor de color, proveu primer una regla senzilla d’aturada en una línia fosca; després seguiu una pista ampla llegint el valor reflectit/color, ajustant la direcció i repetint.
+El grupo identifica los subproblemas que se repiten. Con la base móvil y el sensor de color, probad primero una regla sencilla de parada en una línea oscura; después seguid una pista ancha leyendo el valor reflejado/color, ajustando la dirección y repitiendo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Useu dades en directe per comprovar què detecta el sensor, feu una primera volta a velocitat baixa i marqueu on se n’ix o oscil·la. Anoteu la llum, l’amplària de línia, el llindar, la velocitat i l’orientació de la prova.
+Usad datos en directo para comprobar qué detecta el sensor, haced una primera vuelta a velocidad baja y marcad dónde se sale o oscila. Anotad la luz, la anchura de línea, el umbral, la velocidad y la orientación de la prueba.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Modifiqueu una sola cosa per prova. Afegiu deliberadament una línia de color no acordada i observeu si la regla la confon. Descomponeu el programa en blocs propis amb noms funcionals —per exemple `SeguirPista` i `AturarEnMarca`— i torneu a cridar-los des del programa principal.
+Modificad una sola cosa por prueba. Añadid deliberadamente una línea de color no acordada y observad si la regla la confunde. Descomponed el programa en bloques propios con nombres funcionales —por ejemplo `SeguirPista` y `AturarEnMarca`— y volved a llamarlos desde el programa principal.
 
-![SPIKE Prime de la dotació al costat de dues seqüències de targetes de color; una targeta diferent es revisa amb una lupa abans de provar la ruta.](../../_assets/situacions/sa-sp-llistes-condicions-sequencies.webp)
+![SPIKE Prime de la dotación junto a dos secuencias de tarjetas de color; una tarjeta diferente se revisa con una lupa antes de probar la ruta.](../../_assets/situacions/sa-sp-llistes-condicions-sequencies.webp)
 
-_Les targetes modelen dues llistes ordenades; la lupa assenyala la primera diferència que cal comprovar. No és una lectura automàtica del robot._
+_Las tarjetas modelan dos listas ordenadas; la lupa señala la primera diferencia que hay que comprobar. No es una lectura automática del robot._
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compareu la llegibilitat del programa original i del reutilitzable. **Evidència:** pista provada, registre d’una iteració i explicació dels límits: el seguiment no és robust en qualsevol superfície o il·luminació.
+Comparad la legibilidad del programa original y del reutilizable. **Evidencia:** pista probada, registro de una iteración y explicación de los límites: el seguimiento no es robusto en cualquier superficie o iluminación.
 
-### **Lliçó 4 · Condicions compostes i blocs reutilitzables (90 min).**
+### **Lección 4 · Condiciones compuestas y bloques reutilizables (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** què ha de ser cert perquè la maqueta done una indicació? Dissenyeu una estació fictícia que només active “continua” si el robot és dins de la zona de prova *i* ha llegit el color acordat. Predigueu què ocorre quan només una de les dues condicions es compleix.
+**Pregunta:** ¿qué tiene que ser cierto para que la maqueta dé una indicación? Diseñad una estación ficticia que solo active «continúa» si el robot está dentro de la zona de prueba *y* ha leído el color acordado. Predecid qué ocurre cuando solo se cumple una de las dos condiciones.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Representeu la regla amb frases simples i símbols. Afegiu *o* perquè dos colors alternatius mostren “consulta el mapa”, i *no* per indicar que una condició no s’ha complit sense convertir l’absència en una alarma.
+Representad la regla con frases simples y símbolos. Añadid *o* para que dos colores alternativos muestren «consulta el mapa», y *no* para indicar que una condición no se ha cumplido sin convertir la ausencia en una alarma.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Completeu taules de veritat i casos de prova, incloent valors just per damunt i per davall de la distància triada. Especifiqueu si *o* és inclusiu o exclusiu en cada regla.
+Completad tablas de verdad y casos de prueba, incluyendo valores justo por encima y por debajo de la distancia elegida. Especificad si *o* es inclusivo o exclusivo en cada regla.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu el comportament en blocs propis amb comentaris; si l’app admet paràmetres, feu un bloc configurable, i si no, expliqueu la limitació i reutilitzeu valors fixos. Proveu tots els casos i traceu-ne un d’inesperat. Introduïu una errada deliberada en un bloc secundari i useu la descomposició per trobar-la.
+Programad el comportamiento en bloques propios con comentarios; si la app admite parámetros, haced un bloque configurable, y si no, explicad la limitación y reutilizad valores fijos. Probad todos los casos y trazad uno inesperado. Introducid un error deliberado en un bloque secundario y usad la descomposición para encontrarlo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compareu el programa original amb la versió descomposta. **Evidència:** casos provats i explicació en llenguatge natural de “A i B”, “A o B” i “no A”, sense ambigüitat sobre l’operador *o*.
+Comparad el programa original con la versión descompuesta. **Evidencia:** casos probados y explicación en lenguaje natural de «A y B», «A o B» y «no A», sin ambigüedad sobre el operador *o*.
 
-### **Lliçó 5 · Mini-repte: indicador d’accés a una maqueta (90–135 min).**
+### **Lección 5 · Mini-reto: indicador de acceso a una maqueta (90–135 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Repte:** prototipar un indicador de taula per a una jornada de portes obertes que detecte l’arribada d’un objecte de prova i demane una seqüència de colors fictícia per a triar una ruta dins de la maqueta. No protegeix cap porta ni controla el pas de persones. Predigueu quins errors podrien aparéixer en una seqüència llegida.
+**Reto:** prototipar un indicador de mesa para una jornada de puertas abiertas que detecte la llegada de un objeto de prueba y pida una secuencia de colores ficticia para elegir una ruta dentro de la maqueta. No protege ninguna puerta ni controla el paso de personas. Predecid qué errores podrían aparecer en una secuencia leída.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Definiu requisits mesurables: avís només després del marcador de proximitat; seqüència de dos o tres colors correcta i en ordre; “revisar ruta” i reinici davant d’una diferència; com a màxim un avís per intent. Escriviu pseudocodi i un diagrama d’estats abans de connectar els sensors i els llums/sons del hub.
+Definid requisitos medibles: aviso solo después del marcador de proximidad; secuencia de dos o tres colores correcta y en orden; «revisar ruta» y reinicio ante una diferencia; como máximo un aviso por intento. Escribid pseudocódigo y un diagrama de estados antes de conectar los sensores y las luces/sonidos del hub.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Creeu llistes per a la seqüència esperada i la llegida, combineu operadors i descomponeu avís, lectura i reinici en blocs propis. Prepareu una matriu de proves: proximitat absent/present; seqüència correcta; primer o segon color incorrecte; ordre invertit; retirada durant la lectura; reinici després d’error.
+Cread listas para la secuencia esperada y la leída, combinad operadores y descomponed aviso, lectura y reinicio en bloques propios. Preparad una matriz de pruebas: proximidad ausente/presente; secuencia correcta; primer o segundo color incorrecto; orden invertido; retirada durante la lectura; reinicio después de error.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu la matriu, registreu fallades i feu almenys una iteració. Si el kit o l’app no ofereix una funció necessària, useu un botó del hub, una entrada manual o targetes, i identifiqueu-ho com a alternativa.
+Ejecutad la matriz, registrad fallos y haced al menos una iteración. Si el kit o la app no ofrece una función necesaria, usad un botón del hub, una entrada manual o tarjetas, e identificadlo como alternativa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Demostreu el prototip a un altre equip i reviseu cada requisit. **Evidència:** diagrama, codi, matriu de proves i límits declarats; no afirmeu autenticació ni seguretat real.
+Demostrad el prototipo a otro equipo y revisad cada requisito. **Evidencia:** diagrama, código, matriz de pruebas y límites declarados; no afirméis autenticación ni seguridad real.
 
-### **Lliçó 6 · Professions que organitzen una visita (60–90 min).**
+### **Lección 6 · Profesiones que organizan una visita (60–90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** quins coneixements fan que un servei d’acollida siga útil, inclusiu i comprensible? Predigueu quina informació necessita una persona que arriba a una visita escolar i quina decisió ha de continuar en mans d’una persona.
+**Pregunta:** ¿qué conocimientos hacen que un servicio de acogida sea útil, inclusivo y comprensible? Predecid qué información necesita una persona que llega a una visita escolar y qué decisión debe seguir en manos de una persona.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Exploreu rols de recepció, guia, interpretació, accessibilitat, organització d’esdeveniments i administració municipal amb fonts públiques preparades per la docent. Distingiu professió, tasca diària, competències, formació i responsabilitats; compareu les necessitats d’una visita escolar, d’un museu i d’una oficina d’informació turística.
+Explorad roles de recepción, guía, interpretación, accesibilidad, organización de eventos y administración municipal con fuentes públicas preparadas por la docente. Distinguid profesión, tarea diaria, competencias, formación y responsabilidades; comparad las necesidades de una visita escolar, de un museo y de una oficina de información turística.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Cada equip tria un perfil sense vincular-lo amb les preferències personals de cap alumne i representa amb peces o cartó un punt d’informació o part d’un itinerari accessible. Connecteu una tasca amb l’ús de llistes i condicions i anoteu una decisió que requeriria escoltar les persones usuàries.
+Cada equipo elige un perfil sin vincularlo con las preferencias personales de ningún alumno y representa con piezas o cartón un punto de información o parte de un itinerario accesible. Conectad una tarea con el uso de listas y condiciones y anotad una decisión que requeriría escuchar a las personas usuarias.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu si la maqueta ofereix indicacions comprensibles per a més d’una persona usuària. Feu un canvi de disseny a partir d’una pregunta o necessitat d’accessibilitat identificada.
+Revisad si la maqueta ofrece indicaciones comprensibles para más de una persona usuaria. Haced un cambio de diseño a partir de una pregunta o necesidad de accesibilidad identificada.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Prepareu una explicació d’un minut amb una decisió humana que el prototip no pot prendre, una pregunta per a les persones usuàries i un límit de la maqueta. Feu una galeria i una autoavaluació voluntària i privada sobre habilitats practicades i una pregunta per investigar.
+Preparad una explicación de un minuto con una decisión humana que el prototipo no puede tomar, una pregunta para las personas usuarias y un límite de la maqueta. Haced una galería y una autoevaluación voluntaria y privada sobre habilidades practicadas y una pregunta por investigar.
 
-## 🧩 Model de raonament
+## 🧩 Modelo de razonamiento
 
-Abans de programar, representeu verbalment les condicions i després comproveu-les amb casos. Per a una estació de maqueta, `prop_i_color_correcte` només és certa si les dues proves són certes; si falta qualsevol lectura, el senyal no s’activa. Una regla inclusiva de ruta pot ser `color_blau_o_color_vermell`. Una taula de veritat amb totes les combinacions impedeix confiar només en el cas feliç i fa visible què significa cada operador. Per a llistes, escriviu les posicions inicials i compareu els elements en el mateix ordre. Aquesta notació és suport conceptual: els blocs exactes, la gestió d’índexs i els valors disponibles poden variar segons la versió de l’app.
+Antes de programar, representad verbalmente las condiciones y después comprobadlas con casos. Para una estación de maqueta, `prop_i_color_correcte` solo es cierta si las dos pruebas son ciertas; si falta cualquier lectura, la señal no se activa. Una regla inclusiva de ruta puede ser `color_blau_o_color_vermell`. Una tabla de verdad con todas las combinaciones impide confiar solo en el caso feliz y hace visible qué significa cada operador. Para listas, escribid las posiciones iniciales y comparad los elementos en el mismo orden. Esta notación es apoyo conceptual: los bloques exactos, la gestión de índices y los valores disponibles pueden variar según la versión de la app.
 
-## 🧰 Materials i organització
+## 🧰 Materiales y organización
 
-Set SPIKE Prime 45678, hub carregat, base mòbil amb sensor de color i, per al mini-repte, sensor de distància; dispositiu amb app SPIKE, cartolina clara/mate, cinta opaca per a línies, targetes de color de mostra, tires de seqüències, peces grans de classificació, obstacles tous, paper i quadern. No es requereixen els models oficials Game Master o Quality Check Robot. Prepareu targetes accessibles amb paraules/símbols a més del color, i una variant manual completa quan la lectura del sensor no siga fiable. Reduïu velocitat, manteniu la base dins de la pista i atureu el programa abans de reposicionar-la.
+Set SPIKE Prime 45678, hub cargado, base móvil con sensor de color y, para el mini-reto, sensor de distancia; dispositivo con app SPIKE, cartulina clara/mate, cinta opaca para líneas, tarjetas de color de muestra, tiras de secuencias, piezas grandes de clasificación, obstáculos blandos, papel y cuaderno. No se requieren los modelos oficiales Game Master o Quality Check Robot. Preparad tarjetas accesibles con palabras/símbolos además del color, y una variante manual completa cuando la lectura del sensor no sea fiable. Reducid la velocidad, mantened la base dentro de la pista y detened el programa antes de reposicionarla.
 
-## 🧪 Avaluació i evidències
+## 🧪 Evaluación y evidencias
 
-Guardeu llistes d’exemple, pseudocodi llegit per un altre equip, registres de sensor, comparador provat amb coincidència/diferència/desigualtat de longitud, taules de veritat, programa segmentat en blocs propis, registre d’iteracions del seguidor de línia i matriu de proves del mini-repte. Useu una escala descriptiva de quatre nivells per a: (1) estructura i ordre de les llistes; (2) correcció de condicions i operadors; (3) proves que inclouen casos límit i depuració documentada; (4) reutilització clara de blocs; (5) comunicació de límits i col·laboració. No puntueu només que el robot “funcione”: l’alumnat pot demostrar comprensió amb simulació en paper o explicació traçada quan hi ha limitacions de maquinari. Coavaluació: identifica una prova que falta i proposa com afegir-la.
+Guardad listas de ejemplo, pseudocódigo leído por otro equipo, registros de sensor, comparador probado con coincidencia/diferencia/desigualdad de longitud, tablas de verdad, programa segmentado en bloques propios, registro de iteraciones del seguidor de línea y matriz de pruebas del mini-reto. Usad una escala descriptiva de cuatro niveles para: (1) estructura y orden de las listas; (2) corrección de condiciones y operadores; (3) pruebas que incluyen casos límite y depuración documentada; (4) reutilización clara de bloques; (5) comunicación de límites y colaboración. No puntuéis solo que el robot «funcione»: el alumnado puede demostrar comprensión con simulación en papel o explicación trazada cuando hay limitaciones de hardware. Coevaluación: identifica una prueba que falta y propone cómo añadirla.
 
-## ♿ Accessibilitat, privacitat i cura
+## ♿ Accesibilidad, privacidad y cuidado
 
-Permeteu treballar amb seqüències tàctils, targetes etiquetades i pseudocodi en lloc de discriminar colors visualment. Cap alumne ha d’actuar com a “visitant” sota una falsa alarma, compartir interessos professionals personals ni descriure situacions de seguretat de sa casa. Totes les dades són inventades i referides a targetes o objectes de maqueta. Eviteu tons d’alarma intensos; oferiu senyal visual, patró suau o text equivalent. Distribuïu els rols i assegureu que tothom pot contribuir a una part tècnica o de disseny sense haver de conduir el robot.
+Permitid trabajar con secuencias táctiles, tarjetas etiquetadas y pseudocódigo en lugar de discriminar colores visualmente. Ningún alumno debe actuar como «visitante» bajo una falsa alarma, compartir intereses profesionales personales ni describir situaciones de seguridad de su casa. Todos los datos son inventados y se refieren a tarjetas u objetos de maqueta. Evitad tonos de alarma intensos; ofreced señal visual, patrón suave o texto equivalente. Distribuid los roles y asegurad que todo el mundo puede contribuir a una parte técnica o de diseño sin tener que conducir el robot.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta les sis lliçons de la unitat 7 *Arrays, Boolean Expressions, and Conditionals* del curs LEGO Education [*Foundations of Physical Computing*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb): *Intro to Arrays (Lists) & Compound Conditionals*, *Comparing Arrays (Lists)*, *Conditionals and Simplifying Code*, *Conditionals and Boolean Expressions*, *Mini-Challenge: Security Alarm Using Operators* i *Connecting to Careers: Hospitality & Tourism and Government & Public Administration*. Manté la creació i lectura de llistes amb sensor, la seqüència aleatòria/reposició com a idea de repte, la comparació de seqüències, el seguiment de línia i els blocs propis, la lògica composta, la prova iterativa d’un dispositiu i la recerca professional; canvia els jocs, objectes i contextos per recursos originals d’una jornada escolar. El prototip d’indicador és expressament no segur i no es fa servir per protegir persones o espais.
+Adapta las seis lecciones de la unidad 7 *Arrays, Boolean Expressions, and Conditionals* del curso LEGO Education [*Foundations of Physical Computing*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb): *Intro to Arrays (Lists) & Compound Conditionals*, *Comparing Arrays (Lists)*, *Conditionals and Simplifying Code*, *Conditionals and Boolean Expressions*, *Mini-Challenge: Security Alarm Using Operators* y *Connecting to Careers: Hospitality & Tourism and Government & Public Administration*. Mantiene la creación y lectura de listas con sensor, la secuencia aleatoria/reposición como idea de reto, la comparación de secuencias, el seguimiento de línea y los bloques propios, la lógica compuesta, la prueba iterativa de un dispositivo y la búsqueda profesional; cambia los juegos, objetos y contextos por recursos originales de una jornada escolar. El prototipo de indicador es expresamente no seguro y no se usa para proteger personas o espacios.

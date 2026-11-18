@@ -14,191 +14,191 @@ duration: "7–8 sesiones"
 challenge: "¿Cómo podemos automatizar una acción cotidiana de menor impacto y diseñar una herramienta que maneje el fruto con suavidad?"
 ---
 
-![Un muntatge LEGO SPIKE Prime acompanya una maqueta de casa amb una pantalla mòbil i una branca amb fruits de paper.](../../_assets/situacions/sp-prime-combinat.webp)
+![Un montaje LEGO SPIKE Prime acompaña una maqueta de casa con una pantalla móvil y una rama con frutos de papel.](../../_assets/situacions/sp-prime-combinat.webp)
 
-_Dos reptes d’enginyeria redissenyats per al centre i per als materials SPIKE Prime disponibles._
+_Dos retos de ingeniería rediseñados para el centro y para los materiales SPIKE Prime disponibles._
 
-## 🌱 Situació i intenció
+## 🌱 Situación y intención
 
-Una cooperativa escolar prepara una mostra de prototips sobre consum responsable i agricultura de proximitat. La seqüència adapta dos reptes oberts oficials de LEGO Education que combinen programació SPIKE Prime amb les peces i l’experimentació de BricQ Motion Prime. El primer investiga com automatitzar una acció quotidiana per reduir l’impacte ambiental; el segon aplica forces i disseny iteratiu a una eina de collita que no danye fruita. El context s’inspira en habitatges i horts de la Comunitat Valenciana, però els prototips només funcionen en maquetes: no controlen habitatges reals ni toquen aliments o cultius.
+Una cooperativa escolar prepara una muestra de prototipos sobre consumo responsable y agricultura de proximidad. La secuencia adapta dos retos abiertos oficiales de LEGO Education que combinan programación SPIKE Prime con las piezas y la experimentación de BricQ Motion Prime. El primero investiga cómo automatizar una acción cotidiana para reducir el impacto ambiental; el segundo aplica fuerzas y diseño iterativo a una herramienta de cosecha que no dañe la fruta. El contexto se inspira en viviendas y huertos de la Comunitat Valenciana, pero los prototipos solo funcionan en maquetas: no controlan viviendas reales ni tocan alimentos o cultivos.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Definir una regla d’automatització domèstica simulada amb entrada, condició, eixida i cancel·lació.
-- Construir i comparar mecanismes de collita amb formes de fruita simulades i càrregues lleugeres.
-- Relacionar forces d’interacció amb observacions qualitatives sense afirmar mesures que el set no capta.
-- Provar alternatives, revisar el disseny i comunicar què no es pot concloure sobre una casa o collita reals.
+- Definir una regla de automatización doméstica simulada con entrada, condición, salida y cancelación.
+- Construir y comparar mecanismos de cosecha con formas de fruta simuladas y cargas ligeras.
+- Relacionar fuerzas de interacción con observaciones cualitativas sin afirmar medidas que el set no capta.
+- Probar alternativas, revisar el diseño y comunicar qué no se puede concluir sobre una casa o cosecha reales.
 
-## 📅 Seqüència didàctica · 7–8 sessions
+## 📅 Secuencia didáctica · 7–8 sesiones
 
-Dediqueu tres sessions a [Smart House: Go Green](https://education.lego.com/en-us/lessons/spike-and-bricq-motion-prime-combined/spike-prime-and-bricq-motion-prime-smart-house-go-green/) i tres a [Protect Our Produce](https://education.lego.com/en-us/lessons/spike-and-bricq-motion-prime-combined/spike-prime-and-bricq-motion-prime-protect-our-produce/); reserveu una sessió de galeria i, si cal, una d’ampliació. En tots dos reptes, establiu criteris d’èxit abans de construir, useu idees d’exemple com a inspiració i registreu proves per poder defensar les decisions amb evidències.
+Dedicad tres sesiones a [Smart House: Go Green](https://education.lego.com/en-us/lessons/spike-and-bricq-motion-prime-combined/spike-prime-and-bricq-motion-prime-smart-house-go-green/) y tres a [Protect Our Produce](https://education.lego.com/en-us/lessons/spike-and-bricq-motion-prime-combined/spike-prime-and-bricq-motion-prime-protect-our-produce/); reservad una sesión de galería y, si hace falta, una de ampliación. En ambos retos, estableced criterios de éxito antes de construir, usad ideas de ejemplo como inspiración y registrad pruebas para poder defender las decisiones con evidencias.
 
-### **S1 · Casa intel·ligent: detectar impactes i definir criteris.**
+### **S1 · Casa inteligente: detectar impactos y definir criterios.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Activeu coneixements previs amb la pregunta «quins hàbits de casa depenen d’una decisió que podríem automatitzar?». Anoteu maneres en què una llar pot afectar el medi, com l’ús d’energia o d’aigua, i distingiu les observacions generals de les dades que el prototip no mesurarà.
+Activad conocimientos previos con la pregunta «¿qué hábitos de casa dependen de una decisión que podríamos automatizar?». Anotad maneras en que un hogar puede afectar al medio, como el uso de energía o de agua, y distinguid las observaciones generales de los datos que el prototipo no medirá.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Reviseu les idees del brief i trieu un problema acotat: un ventilador que s’apaga quan no hi ha ningú, una finestra que s’obri o tanque amb una condició meteorològica, o una proposta conceptual que use el vent per moure un element. La classe en selecciona una per prototipar.
+Revisad las ideas del brief y elegid un problema acotado: un ventilador que se apaga cuando no hay nadie, una ventana que se abre o se cierra con una condición meteorológica, o una propuesta conceptual que use el viento para mover un elemento. La clase selecciona una para prototipar.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Definiu dos o tres criteris observables: l’acció només s’activa amb les entrades acordades, el mecanisme torna a una posició segura i el model no es mou quan l’espai està buit. Registreu quines dades reals no es poden inferir d’una maqueta: consum elèctric, emissions o estalvi de la llar.
+Definid dos o tres criterios observables: la acción solo se activa con las entradas acordadas, el mecanismo vuelve a una posición segura y el modelo no se mueve cuando el espacio está vacío. Registrad qué datos reales no se pueden inferir de una maqueta: consumo eléctrico, emisiones o ahorro del hogar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Esbosseu dues idees de funció i compareu-les amb els criteris. Trieu-ne una per construir i expliqueu quin canvi faríeu si la primera proposta no poguera complir una de les condicions.
+Esbozad dos ideas de función y comparadlas con los criterios. Elegid una para construir y explicad qué cambio haríais si la primera propuesta no pudiera cumplir una de las condiciones.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** problema acotat, dos esbossos i criteris observables. El benefici ambiental és encara una hipòtesi: quina dada caldria mesurar en una casa real per comprovar-lo?
+**Evidencia:** problema acotado, dos esbozos y criterios observables. El beneficio ambiental es todavía una hipótesis: ¿qué dato habría que medir en una casa real para comprobarlo?
 
-### **S2 · Casa intel·ligent: construir i programar una resposta condicional.**
+### **S2 · Casa inteligente: construir y programar una respuesta condicional.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Predigueu què ha de passar quan hi ha presència i la targeta representa calor, i què ha de passar en els altres casos. Recordeu que el sensor de color llig una targeta: no mesura la temperatura de l’aula.
+Predecid qué debe pasar cuando hay presencia y la tarjeta representa calor, y qué debe pasar en los otros casos. Recordad que el sensor de color lee una tarjeta: no mide la temperatura del aula.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construïu un ventilador de cartó mogut per un motor SPIKE o una finestra/persiana lleugera. Fixeu el panell al bastidor amb una frontissa o un eix estable. Useu el sensor de distància per representar presència i el sensor de color per llegir una targeta de condició.
+Construid un ventilador de cartón movido por un motor SPIKE o una ventana o persiana ligera. Fijad el panel al bastidor con una bisagra o un eje estable. Usad el sensor de distancia para representar presencia y el sensor de color para leer una tarjeta de condición.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Programeu una condició composta i prepareu la matriu de quatre combinacions d’entrada amb l’eixida prevista. Si el sensor o la versió de l’app no admeten la combinació, representeu manualment la segona condició i etiqueteu-la com a simulació.
+Programad una condición compuesta y preparad la matriz de cuatro combinaciones de entrada con la salida prevista. Si el sensor o la versión de la app no admiten la combinación, representad manualmente la segunda condición y etiquetadla como simulación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu les quatre proves i reviseu una que falle. Canvieu una sola variable del programa, la subjecció o el mecanisme. Com a ampliació, afegiu una tercera condició de temps o una targeta d’oratge i compareu la matriu ampliada.
+Ejecutad las cuatro pruebas y revisad una que falle. Cambiad una sola variable del programa, la sujeción o el mecanismo. Como ampliación, añadid una tercera condición de tiempo o una tarjeta de meteorología y comparad la matriz ampliada.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** maqueta, programa o esquema de control i matriu amb prediccions i resultats. Quines entrades heu mesurat amb sensors i quines heu simulat amb targetes o control manual?
+**Evidencia:** maqueta, programa o esquema de control y matriz con predicciones y resultados. ¿Qué entradas habéis medido con sensores y cuáles habéis simulado con tarjetas o control manual?
 
-### **S3 · Casa intel·ligent: comparar, argumentar i comunicar.**
+### **S3 · Casa inteligente: comparar, argumentar y comunicar.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Reprengueu la matriu de quatre entrades i prediu quantes eixides coincidiran amb la versió revisada.
+Retomad la matriz de cuatro entradas y predecid cuántas salidas coincidirán con la versión revisada.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Repetiu les proves amb la mateixa disposició i registreu per a cada combinació l’entrada, l’eixida esperada i l’observada.
+Repetid las pruebas con la misma disposición y registrad para cada combinación la entrada, la salida esperada y la observada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compteu les coincidències i argumenteu com la solució podria evitar una acció innecessària. Separeu el resultat observat del possible benefici ambiental, que no heu mesurat.
+Contad las coincidencias y argumentad cómo la solución podría evitar una acción innecesaria. Separad el resultado observado del posible beneficio ambiental, que no habéis medido.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Creeu un anunci breu per a una família fictícia: descriviu el funcionament, els criteris complits, el benefici com a hipòtesi i una limitació. Un altre equip pregunta què passa si canvia l’entrada i quina dada falta per afirmar que hi ha estalvi.
+Cread un anuncio breve para una familia ficticia: describid el funcionamiento, los criterios cumplidos, el beneficio como hipótesis y una limitación. Otro equipo pregunta qué pasa si cambia la entrada y qué dato falta para afirmar que hay ahorro.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** recompte de proves i anunci revisat amb el retorn d’un altre equip. No afirmeu estalvis d’energia o d’aigua que el grup no haja mesurat.
+**Evidencia:** recuento de pruebas y anuncio revisado con el retorno de otro equipo. No afirméis ahorros de energía o de agua que el grupo no haya medido.
 
-### **S4 · Collita delicada: forces i criteris de disseny.**
+### **S4 · Cosecha delicada: fuerzas y criterios de diseño.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu el repte: recollir una “fruita” d’una branca de maqueta sense danyar-la. Observeu que l’eina exerceix una força sobre el fruit i el fruit una força igual i oposada sobre l’eina.
+Presentad el reto: recoger una “fruta” de una rama de maqueta sin dañarla. Observad que la herramienta ejerce una fuerza sobre el fruto y el fruto una fuerza igual y opuesta sobre la herramienta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dibuixeu dues ferramentes possibles —pinça flexible, bressol o ganxo— i, si la dotació BricQ ho permet, considereu un accionament pneumàtic o un ressort. Compareu-les sense construir-les.
+Dibujad dos herramientas posibles —pinza flexible, cuna o gancho— y, si la dotación BricQ lo permite, considerad un accionamiento neumático o un muelle. Comparadlas sin construirlas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Representeu parells de forces sobre cossos diferents per explicar la tercera llei de Newton: no es cancel·len entre si. Definiu “dany” per a la prova (deformació visible, caiguda o no poder traslladar el fruit) i manteniu constants alçada, massa aproximada, distància i zona de recepció.
+Representad parejas de fuerzas sobre cuerpos diferentes para explicar la tercera ley de Newton: no se cancelan entre sí. Definid “daño” para la prueba (deformación visible, caída o no poder trasladar el fruto) y mantened constantes altura, masa aproximada, distancia y zona de recepción.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Trieu una proposta segons com acumula, reparteix o limita el contacte. Reviseu l’esbós per incloure un límit de tancament o una superfície que reduïsca deformacions.
+Elegid una propuesta según cómo acumula, reparte o limita el contacto. Revisad el esbozo para incluir un límite de cierre o una superficie que reduzca deformaciones.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dos esbossos, criteri acordat de dany i condicions comunes de prova. Quina observació permetrà comparar dissenys sense afirmar que heu mesurat la força?
+**Evidencia:** dos esbozos, criterio acordado de daño y condiciones comunes de prueba. ¿Qué observación permitirá comparar diseños sin afirmar que habéis medido la fuerza?
 
-### **S5 · Collita delicada: construir i programar una ferramenta.**
+### **S5 · Cosecha delicada: construir y programar una herramienta.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Reviseu els criteris de dany i predigueu quina peça del mecanisme tocarà primer el fruit simulat.
+Revisad los criterios de daño y predecid qué pieza del mecanismo tocará primero el fruto simulado.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construïu l’agafador i fixeu-lo al motor SPIKE amb eixos i connectors estables. Amb BricQ Motion Prime, proveu els elements flexibles, ressorts o pneumàtics que incloga el kit. Sense BricQ, useu cartó ondulat, cinta de paper o escuma sobre una estructura SPIKE estable i registreu que és una alternativa parcial, no equivalent.
+Construid el agarrador y fijadlo al motor SPIKE con ejes y conectores estables. Con BricQ Motion Prime, probad los elementos flexibles, muelles o neumáticos que incluya el kit. Sin BricQ, usad cartón ondulado, cinta de papel o espuma sobre una estructura SPIKE estable y registrad que es una alternativa parcial, no equivalente.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Dibuixeu la connexió. Programeu dues ordres fàcils de distingir (per exemple, botó A obri i B tanca), moviments lents i repetibles, i una manera accessible d’aturar i reiniciar.
+Dibujad la conexión. Programad dos órdenes fáciles de distinguir (por ejemplo, botón A abre y B cierra), movimientos lentos y repetibles, y una manera accesible de detener y reiniciar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Comproveu cada botó i la subjecció amb una bola de paper arrugada o una peça d’escuma. Atureu el hub abans d’ajustar cap element; no useu fruita real.
+Comprobad cada botón y la sujeción con una bola de papel arrugada o una pieza de espuma. Detened el hub antes de ajustar cualquier elemento; no uséis fruta real.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** agafador, esquema de connexió i observació del contacte. El mecanisme queda estable i es pot aturar abans que la peça simulada es deforme?
+**Evidencia:** agarrador, esquema de conexión y observación del contacto. ¿El mecanismo queda estable y se puede detener antes de que la pieza simulada se deforme?
 
-### **S6 · Collita delicada: provar diverses formes i iterar.**
+### **S6 · Cosecha delicada: probar varias formas e iterar.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu dues formes i mides de fruita simulada i prediu quina combinació serà més difícil de subjectar sense dany.
+Preparad dos formas y tamaños de fruta simulada y predecid qué combinación será más difícil de sujetar sin daño.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Proveu almenys dos dissenys amb les dues formes o mides i feu tres intents per combinació. Registreu si agafa i reté la peça, si cau o es deforma i quant tarda el trasllat.
+Probad al menos dos diseños con las dos formas o tamaños y haced tres intentos por combinación. Registrad si agarra y retiene la pieza, si cae o se deforma y cuánto tarda el traslado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu els resultats i relacioneu el contacte amb la força de reacció. El sensor de color o el de distància no mesuren la duresa del fruit; descriviu les observacions com a qualitatives si no hi ha un sensor de força adequat.
+Comparad los resultados y relacionad el contacto con la fuerza de reacción. El sensor de color o el de distancia no miden la dureza del fruto; describid las observaciones como cualitativas si no hay un sensor de fuerza adecuado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Modifiqueu una sola variable mecànica o de codi —amplària, pivot, material flexible, velocitat o recorregut— i repetiu els casos amb les mateixes condicions. Si cal, assigneu recorreguts diferents amb una selecció manual o una etiqueta llegible pel sensor, sense atribuir-li una mesura de duresa.
+Modificad una sola variable mecánica o de código —anchura, pivote, material flexible, velocidad o recorrido— y repetid los casos con las mismas condiciones. Si hace falta, asignad recorridos diferentes con una selección manual o una etiqueta legible por el sensor, sin atribuirle una medida de dureza.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** taula de proves abans/després amb tres intents per combinació. Trieu el disseny segons el conjunt de resultats, no segons el rècord d’un únic intent.
+**Evidencia:** tabla de pruebas antes y después con tres intentos por combinación. Elegid el diseño según el conjunto de resultados, no según el récord de un único intento.
 
-### **S7 · Galeria de dissenys i retorn.**
+### **S7 · Galería de diseños y retorno.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Planifiqueu una mostra amb els dos prototips, el programa o esquema manual, la matriu de la casa i la taula de proves de collita.
+Planificad una muestra con los dos prototipos, el programa o esquema manual, la matriz de la casa y la tabla de pruebas de cosecha.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Munteu una galeria on les persones visitants puguen provar l’agafador amb una fitxa de paper i llegir els criteris de cada repte.
+Montad una galería donde las personas visitantes puedan probar el agarrador con una ficha de papel y leer los criterios de cada reto.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Expliqueu les decisions amb evidències: què fa cada prototip, quines proves ha superat i quina limitació conserva. Les persones visitants responen què és convincent i quina prova falta.
+Explicad las decisiones con evidencias: qué hace cada prototipo, qué pruebas ha superado y qué limitación conserva. Las personas visitantes responden qué es convincente y qué prueba falta.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Useu el retorn per revisar una conclusió o proposar una millora. Qui acaba abans pot comparar una segona condició per al ventilador o redissenyar la pinça per a una altra forma simulada.
+Usad el retorno para revisar una conclusión o proponer una mejora. Quien acaba antes puede comparar una segunda condición para el ventilador o rediseñar la pinza para otra forma simulada.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** presentació, retorn rebut i una millora futura justificada. Què podem concloure sobre les maquetes i què no podem afirmar d’una casa o collita reals?
+**Evidencia:** presentación, retorno recibido y una mejora futura justificada. ¿Qué podemos concluir sobre las maquetas y qué no podemos afirmar de una casa o cosecha reales?
 
-## 🧰 Materials i alternatives
+## 🧰 Materiales y alternativas
 
-SPIKE Prime amb hub, motor gran o mitjà, sensor de distància i sensor de color per a la maqueta de casa; BricQ Motion Prime si el centre vol provar-ne els elements mecànics; cartó, cinta de paper, llapis, targetes de colors mates, regla i materials lleugers per a simular fruits (paper arrugat, boles d’escuma o peces grans). El set SPIKE Prime no inclou un sensor de temperatura ambiental: les condicions de clima es representen amb targetes. La situació es pot completar sense BricQ amb cartó i components SPIKE, però aquesta alternativa no reprodueix els materials ni totes les possibilitats físiques del kit BricQ.
+SPIKE Prime con hub, motor grande o mediano, sensor de distancia y sensor de color para la maqueta de casa; BricQ Motion Prime si el centro quiere probar sus elementos mecánicos; cartón, cinta de papel, lápiz, tarjetas de colores mate, regla y materiales ligeros para simular frutos (papel arrugado, bolas de espuma o piezas grandes). El set SPIKE Prime no incluye un sensor de temperatura ambiental: las condiciones de clima se representan con tarjetas. La situación se puede completar sin BricQ con cartón y componentes SPIKE, pero esta alternativa no reproduce los materiales ni todas las posibilidades físicas del kit BricQ.
 
-## 🧪 Evidències, límits i seguretat
+## 🧪 Evidencias, límites y seguridad
 
-Carpeta de procés amb criteris i prediccions, esbossos alternatius, codi condicional, matriu de quatre entrades, taula d’iteracions de collita, retorn dels visitants i argument final. Valoreu la coherència entre problema, criteris, programa i proves; que la modificació responga a dades; i que l’equip separe allò observat d’allò que només suposa. No connecteu cap prototip a la xarxa elèctrica, no inferiu estalvi energètic d’una maqueta, no useu fruita ni branques reals i manteniu qualsevol moviment a baixa velocitat. Atureu el hub abans d’ajustar peces.
+Carpeta de proceso con criterios y predicciones, esbozos alternativos, código condicional, matriz de cuatro entradas, tabla de iteraciones de cosecha, retorno de los visitantes y argumento final. Valorad la coherencia entre problema, criterios, programa y pruebas; que la modificación responda a datos; y que el equipo separe lo observado de lo que solo supone. No conectéis ningún prototipo a la red eléctrica, no infiráis ahorro energético de una maqueta, no uséis fruta ni ramas reales y mantened cualquier movimiento a baja velocidad. Detened el hub antes de ajustar piezas.
 
-## ♿ Participació, accessibilitat i seguretat
+## ♿ Participación, accesibilidad y seguridad
 
-Assigneu rols rotatius de muntatge, programació, observació i registre; permeteu que una persona contribuïsca amb un esquema o una predicció sense manipular el mecanisme. Feu totes les proves a baixa velocitat, atureu el hub abans d’ajustar peces i useu només càrregues de paper o escuma. Les targetes de clima i els fruits simulats no es presenten com a dades o materials reals.
+Asignad roles rotativos de montaje, programación, observación y registro; permitid que una persona contribuya con un esquema o una predicción sin manipular el mecanismo. Haced todas las pruebas a baja velocidad, detened el hub antes de ajustar piezas y usad solo cargas de papel o espuma. Las tarjetas de clima y los frutos simulados no se presentan como datos o materiales reales.
 
-## 🔗 Reptes oficials adaptats
+## 🔗 Retos oficiales adaptados
 
-La proposta adapta els dos reptes de LEGO Education [Prime Combined](https://education.lego.com/en-us/lessons/spike-and-bricq-motion-prime-combined/): [*Smart House: Go Green*](https://education.lego.com/en-us/lessons/spike-and-bricq-motion-prime-combined/spike-prime-and-bricq-motion-prime-smart-house-go-green/) i [*Protect Our Produce*](https://education.lego.com/en-us/lessons/spike-and-bricq-motion-prime-combined/spike-prime-and-bricq-motion-prime-protect-our-produce/). S’han contrastat els objectius, fases de disseny, idees d’exemple, condicions compostes, tercera llei de Newton, proves iteratives i reflexió del pla docent i els briefs públics. L’original declara SPIKE Prime, BricQ Motion Prime, dispositiu amb l’app SPIKE i un brief per grup; per això les alternatives de cartó ací identificades són adaptacions parcials de material i no equivalències. El context, les activitats, les explicacions, les dades, les imatges i els instruments d’avaluació són propis.
+La propuesta adapta los dos retos de LEGO Education [Prime Combined](https://education.lego.com/en-us/lessons/spike-and-bricq-motion-prime-combined/): [*Smart House: Go Green*](https://education.lego.com/en-us/lessons/spike-and-bricq-motion-prime-combined/spike-prime-and-bricq-motion-prime-smart-house-go-green/) y [*Protect Our Produce*](https://education.lego.com/en-us/lessons/spike-and-bricq-motion-prime-combined/spike-prime-and-bricq-motion-prime-protect-our-produce/). Se han contrastado los objetivos, fases de diseño, ideas de ejemplo, condiciones compuestas, tercera ley de Newton, pruebas iterativas y reflexión del plan docente y los briefs públicos. El original declara SPIKE Prime, BricQ Motion Prime, dispositivo con la app SPIKE y un brief por grupo; por eso las alternativas de cartón aquí identificadas son adaptaciones parciales de material y no equivalencias. El contexto, las actividades, las explicaciones, los datos, las imágenes y los instrumentos de evaluación son propios.

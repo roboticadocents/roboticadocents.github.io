@@ -15,296 +15,296 @@ challenge: "¿Cómo podemos diseñar y programar en Python un prototipo SPIKE qu
 official_source: "https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us"
 ---
 
-![Base mòbil LEGO SPIKE Prime amb una càrrega de targetes de paper que segueix una ruta de maqueta fins a una aula i una biblioteca.](../../_assets/situacions/sp-python-projecte-transport.webp)
+![Base móvil LEGO SPIKE Prime con una carga de tarjetas de papel que sigue una ruta de maqueta hasta un aula y una biblioteca.](../../_assets/situacions/sp-python-projecte-transport.webp)
 
-_El projecte final integra mecànica, Python, sensors, dades, proves iteratives i comunicació de límits._
+_El proyecto final integra mecánica, Python, sensores, datos, pruebas iterativas y comunicación de límites._
 
-## 🌱 Repte de projecte i traçabilitat
+## 🌱 Reto de proyecto y trazabilidad
 
-La comunitat escolar necessita moure materials compartits (targetes, peces grans o llibres de maqueta) entre dos punts d’una aula o biblioteca simulada. Cada equip investiga una necessitat concreta, defineix criteris d’èxit i restriccions, compara idees, construeix una base SPIKE Prime o un mecanisme de transport, programa amb Python una ruta repetible i documenta proves i millores. La mostra final explica la solució i les dades que la sustenten.
+La comunidad escolar necesita mover materiales compartidos (tarjetas, piezas grandes o libros de maqueta) entre dos puntos de un aula o biblioteca simulada. Cada equipo investiga una necesidad concreta, define criterios de éxito y restricciones, compara ideas, construye una base SPIKE Prime o un mecanismo de transporte, programa con Python una ruta repetible y documenta pruebas y mejoras. La muestra final explica la solución y los datos que la sustentan.
 
-És una adaptació de la branca *Transportation Project* anunciada com a projecte culminant de LEGO Education [*Introduction to Python Programming · Course 2*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us). El projecte mobilitza les competències de final de curs que la guia enumera: dissenyar i iterar un prototip, usar algoritmes, dades, sensors, bucles i condicions compostes, depurar maquinari/programari, escriure pseudocodi, descompondre el problema, documentar proves i feedback, considerar biaix/accessibilitat i comunicar la solució. La guia accessible diu que el projecte ocupa entre 10 i 12 lliçons de 45–60 minuts i que té diari i rúbrica pròpia, però el PDF publicat no inclou un guió detallat d’aquestes sessions ni els descriptors de la rúbrica. Per això, aquesta seqüència de deu lliçons és una proposta didàctica original, traçada als resultats publicats, i no una adaptació pas a pas d’instruccions no disponibles.
+Es una adaptación de la rama *Transportation Project* anunciada como proyecto culminante de LEGO Education [*Introduction to Python Programming · Course 2*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us). El proyecto moviliza las competencias de final de curso que enumera la guía: diseñar e iterar un prototipo, usar algoritmos, datos, sensores, bucles y condiciones compuestas, depurar hardware/software, escribir pseudocódigo, descomponer el problema, documentar pruebas y retroalimentación, considerar sesgo/accesibilidad y comunicar la solución. La guía accesible dice que el proyecto ocupa entre 10 y 12 lecciones de 45–60 minutos y que tiene diario y rúbrica propia, pero el PDF publicado no incluye un guion detallado de esas sesiones ni los descriptores de la rúbrica. Por eso, esta secuencia de diez lecciones es una propuesta didáctica original, trazada a los resultados publicados, y no una adaptación paso a paso de instrucciones no disponibles.
 
-## 🎯 Resultats d’aprenentatge i vocabulari
+## 🎯 Resultados de aprendizaje y vocabulario
 
-- Investigar i reformular una necessitat de transport de materials de maqueta sense recopilar trajectes personals ni exposar persones a vehicles.
+- Investigar y reformular una necesidad de transporte de materiales de maqueta sin recopilar trayectos personales ni exponer a personas a vehículos.
 
-- Definir criteris mesurables (arribar a destí, mantindre la càrrega, respectar zona d’aturada) i restriccions de temps, peces, dimensions i seguretat.
+- Definir criterios medibles (llegar a destino, mantener la carga, respetar la zona de parada) y restricciones de tiempo, piezas, dimensiones y seguridad.
 
-- Descompondre ruta, seguiment de línia/fites, decisions, aturada, càrrega i feedback en funcions/subproblemes.
+- Descomponer ruta, seguimiento de línea/metas, decisiones, parada, carga y retroalimentación en funciones/subproblemas.
 
-- Escriure en Python una seqüència de moviment amb funcions, variables, llistes, bucles, condicionals, lògica booleana i dades de sensor, segons els conceptes treballats en Course 2.
+- Escribir en Python una secuencia de movimiento con funciones, variables, listas, bucles, condicionales, lógica booleana y datos de sensor, según los conceptos trabajados en Course 2.
 
-- Calibrar i registrar distància, color o contacte només quan el sensor disponible siga adequat; distingir dada mesurada, regla escrita per l’equip i decisió del programa.
+- Calibrar y registrar distancia, color o contacto solo cuando el sensor disponible sea adecuado; distinguir dato medido, regla escrita por el equipo y decisión del programa.
 
-- Depurar errors mecànics, de connexió, sintaxi, execució o lògica amb hipòtesis i proves controlades.
+- Depurar errores mecánicos, de conexión, sintaxis, ejecución o lógica con hipótesis y pruebas controladas.
 
-- Iterar a partir de resultats i comentaris, documentar els canvis i comunicar límits del prototip i evidència d’èxit.
+- Iterar a partir de resultados y comentarios, documentar los cambios y comunicar límites del prototipo y evidencia de éxito.
 
-- Treballar en equip amb rols rotatius i considerar si la interfície, la pista i la càrrega són accessibles a persones amb diferents capacitats.
+- Trabajar en equipo con roles rotativos y considerar si la interfaz, la pista y la carga son accesibles a personas con diferentes capacidades.
 
-**Necessitat:** dificultat observada i descrita sense atribuir defectes a una persona. **Criteri:** condició que defineix si la solució compleix el propòsit. **Restricció:** límit que el disseny ha de respectar. **Iteració:** canvi basat en una prova seguit d’una nova prova. **Prototip:** model per aprendre i comparar, no un sistema certificat de transport. **Evidència:** registre o observació que permet a una altra persona valorar una afirmació.
+**Necesidad:** dificultad observada y descrita sin atribuir defectos a una persona. **Criterio:** condición que define si la solución cumple el propósito. **Restricción:** límite que el diseño debe respetar. **Iteración:** cambio basado en una prueba seguido de una nueva prueba. **Prototipo:** modelo para aprender y comparar, no un sistema certificado de transporte. **Evidencia:** registro u observación que permite a otra persona valorar una afirmación.
 
-## 🧰 Recursos, organització i preparació
+## 🧰 Recursos, organización y preparación
 
-Per equip: set SPIKE Prime, hub carregat, app amb Python i consola, base mòbil de dos motors o estructura alternativa dissenyada per l’alumnat, sensor de color/distància/força només si ajuda a un criteri definit, fitxes grans simulant càrregues, cartó per a carrils i topalls, cinta de paper, regle, cronòmetre opcional, diari de projecte, llapis i ordinador per a la mostra. No calen sensors addicionals, càmeres, telèfons personals ni connexió a Internet durant la prova. Les instruccions de muntatge i API es consulten en la versió de l’app i el set locals; les API de Python varien segons versió.
+Por equipo: set SPIKE Prime, hub cargado, app con Python y consola, base móvil de dos motores o estructura alternativa diseñada por el alumnado, sensor de color/distancia/fuerza solo si ayuda a un criterio definido, fichas grandes simulando cargas, cartón para carriles y topes, cinta de papel, regla, cronómetro opcional, diario de proyecto, lápiz y ordenador para la muestra. No hacen falta sensores adicionales, cámaras, teléfonos personales ni conexión a Internet durante la prueba. Las instrucciones de montaje y API se consultan en la versión de la app y el set locales; las API de Python varían según la versión.
 
-La docent prepara una zona tancada de taula o terra llis amb marges, una ruta de prova assequible a tots els equips, una càrrega fictícia i lleugera, una estació d’eixida i una destinació marcada amb forma i text gran. Preveu una ruta manual en quadrícula i un programa de simulació si el robot o un sensor fallen. Cap maqueta transporta objectes fràgils, menjar, líquids ni persones. Els motors s’aturen abans de manipular el robot i funcionen a baixa velocitat; s’eviten desnivells, passadissos oberts i escales.
+La docente prepara una zona cerrada de mesa o suelo liso con márgenes, una ruta de prueba asequible a todos los equipos, una carga ficticia y ligera, una estación de salida y un destino marcado con forma y texto grande. Prevé una ruta manual en cuadrícula y un programa de simulación si el robot o un sensor fallan. Ninguna maqueta transporta objetos frágiles, comida, líquidos ni personas. Los motores se detienen antes de manipular el robot y funcionan a baja velocidad; se evitan desniveles, pasillos abiertos y escaleras.
 
-Durant les deu lliçons, roten quatre responsabilitats: investigació/documentació, construcció/seguretat, Python/proves i comunicació/accessibilitat. Totes les persones han de tenir oportunitat de llegir o explicar una part del programa i una evidència. La docent fa minirevisions al final de les lliçons 2, 4, 6 i 8 perquè el projecte puga redirigir-se sense perdre el calendari.
+Durante las diez lecciones, rotan cuatro responsabilidades: investigación/documentación, construcción/seguridad, Python/pruebas y comunicación/accesibilidad. Todas las personas deben tener oportunidad de leer o explicar una parte del programa y una evidencia. La docente hace minirrevisiones al final de las lecciones 2, 4, 6 y 8 para que el proyecto pueda reorientarse sin perder el calendario.
 
-## 📅 Projecte en deu lliçons
+## 📅 Proyecto en diez lecciones
 
-### **Lliçó 1 · Escoltar, observar i definir el repte (45–60 min).**
+### **Lección 1 · Escuchar, observar y definir el reto (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu el mandat: traslladar materials lleugers entre dos punts d’una maqueta de classe amb un prototip SPIKE. Useu un escenari escolar fictici; no pregunteu qui porta materials a casa ni com arriba a escola. Predigueu quines condicions farien clara i ordenada l’entrega.
+Presentad el mandato: trasladar materiales ligeros entre dos puntos de una maqueta de clase con un prototipo SPIKE. Usad un escenario escolar ficticio; no preguntéis quién lleva materiales a casa ni cómo llega a la escuela. Predecid qué condiciones harían clara y ordenada la entrega.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Examineu una escena de maqueta o parleu amb una persona adulta voluntària sobre què fa que una entrega siga clara i accessible. Registreu necessitats anònimes com a observacions i preguntes, no com a opinions sobre persones.
+Examinad una escena de maqueta o hablad con una persona adulta voluntaria sobre qué hace que una entrega sea clara y accesible. Registrad necesidades anónimas como observaciones y preguntas, no como opiniones sobre personas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Redacteu una frase de problema, usuari, objectiu, dos criteris d’èxit i tres restriccions. Un criteri possible és arribar a la destinació en 3 de 4 intents, sense caiguda de la càrrega i amb aturada manual accessible.
+Redactad una frase de problema, usuario, objetivo, dos criterios de éxito y tres restricciones. Un criterio posible es llegar al destino en 3 de 4 intentos, sin caída de la carga y con parada manual accesible.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Decidiu si la ruta seguirà una línia de cinta, fites de color o ordres prefixades. No pressuposeu cap sensor fins a comprovar la dotació; ajusteu els criteris si el material disponible no els pot verificar.
+Decidid si la ruta seguirá una línea de cinta, metas de color u órdenes prefijadas. No presupongáis ningún sensor hasta comprobar la dotación; ajustad los criterios si el material disponible no puede verificarlos.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** problema definit, usuari, criteris, restriccions i una pregunta oberta. Expliqueu una cosa que el prototip no pretén resoldre.
+**Evidencia:** problema definido, usuario, criterios, restricciones y una pregunta abierta. Explicad una cosa que el prototipo no pretende resolver.
 
-### **Lliçó 2 · Investigar dades, materials i restriccions (45–60 min).**
+### **Lección 2 · Investigar datos, materiales y restricciones (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Dibuixeu l’origen, els trams, els girs, la zona de càrrega, la destinació i els punts d’aturada. Predigueu quins materials o dades poden limitar la ruta.
+Dibujad el origen, los tramos, los giros, la zona de carga, el destino y los puntos de parada. Predecid qué materiales o datos pueden limitar la ruta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Mesureu amplària de pista i longitud dels trams; descriviu la càrrega com a lleugera o mitjana sense necessitat de bàscula. Consulteu les funcions del sensor a la Knowledge Base i anoteu port, unitat i rang llegible.
+Medid la anchura de pista y la longitud de los tramos; describid la carga como ligera o media sin necesidad de báscula. Consultad las funciones del sensor en la Knowledge Base y anotad puerto, unidad y rango legible.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu dues solucions manuals i dos mecanismes de maqueta, com base amb safata, empenyedor o pinça sense tancament arriscat. Registreu estabilitat, accessibilitat i peces necessàries; no copieu models protegits.
+Comparad dos soluciones manuales y dos mecanismos de maqueta, como base con bandeja, empujador o pinza sin cierre arriesgado. Registrad estabilidad, accesibilidad y piezas necesarias; no copiéis modelos protegidos.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu els criteris amb la informació recollida i anoteu allò que no s’ha pogut comprovar. Afegiu la restricció d’utilitzar només càrrega de prova lleugera.
+Revisad los criterios con la información recogida y anotad lo que no se ha podido comprobar. Añadid la restricción de utilizar solo carga de prueba ligera.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa del sistema, inventari de dades i comparació de mecanismes. La docent comprova que el repte és possible amb les peces i el temps disponibles.
+**Evidencia:** mapa del sistema, inventario de datos y comparación de mecanismos. La docente comprueba que el reto es posible con las piezas y el tiempo disponibles.
 
-### **Lliçó 3 · Generar opcions i triar amb criteris (45–60 min).**
+### **Lección 3 · Generar opciones y elegir con criterios (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Cada membre dibuixa una idea individual sense discutir-la ni jutjar-la. Predigueu quin criteri serà més difícil de satisfer.
+Cada miembro dibuja una idea individual sin discutirla ni juzgarla. Predecid qué criterio será más difícil de satisfacer.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Combineu aportacions i prepareu almenys tres conceptes diferents, inclosa una opció no motoritzada. Feu esbossos prou clars per comparar-los.
+Combinad aportaciones y preparad al menos tres conceptos diferentes, incluida una opción no motorizada. Haced bocetos suficientemente claros para compararlos.
 
-![Robot SPIKE Prime de la dotació al costat de tres prototips de cartó separats: safata, empenyedor i plataforma, amb targetes de ruta i criteris visuals.](../../_assets/situacions/sa-sp-python-projecte-transport-disseny.webp)
+![Robot SPIKE Prime de la dotación junto a tres prototipos de cartón separados: bandeja, empujador y plataforma, con tarjetas de ruta y criterios visuales.](../../_assets/situacions/sa-sp-python-projecte-transport-disseny.webp)
 
-_Els tres conceptes són maquetes pròpies per comparar; no són accessoris ni mecanismes inclosos en el set._
+_Los tres conceptos son maquetas propias para comparar; no son accesorios ni mecanismos incluidos en el set._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu cada idea per seguretat, estabilitat de càrrega, funcions Python, adaptació a usuaris, peces i facilitat de prova. Useu escala 1–3 amb comentaris; si una dada falta, marqueu-la com a desconeguda.
+Comparad cada idea por seguridad, estabilidad de carga, funciones Python, adaptación a usuarios, piezas y facilidad de prueba. Usad una escala 1–3 con comentarios; si falta un dato, marcadlo como desconocido.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Trieu una idea i anoteu el compromís que implica i una característica d’una alternativa que podríeu incorporar. Presenteu l’esbós a un altre equip i pregunteu què entén del criteri abans de construir.
+Elegid una idea y anotad el compromiso que implica y una característica de una alternativa que podríais incorporar. Presentad el boceto a otro equipo y preguntad qué entiende del criterio antes de construir.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** tres conceptes, matriu raonada i decisió. L’escala orienta la conversa; no és una puntuació científica de les idees.
+**Evidencia:** tres conceptos, matriz razonada y decisión. La escala orienta la conversación; no es una puntuación científica de las ideas.
 
-### **Lliçó 4 · Planificar el programa i els casos de prova (45–60 min).**
+### **Lección 4 · Planificar el programa y los casos de prueba (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Representeu una ruta i predigueu què pot fallar: sensor absent, fita desconeguda, càrrega desplaçada o necessitat d’aturada manual.
+Representad una ruta y predecid qué puede fallar: sensor ausente, meta desconocida, carga desplazada o necesidad de parada manual.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Descomponeu el programa en iniciar, conduir tram, llegir fita, corregir, arribar/aturar i comunicar error. Creeu funcions per a les accions que realment es repeteixen.
+Descomponed el programa en iniciar, conducir tramo, leer meta, corregir, llegar/detener y comunicar error. Cread funciones para las acciones que realmente se repiten.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Dibuixeu l’algoritme o pseudocodi. Indiqueu on poden servir llistes de punts, condicions compostes, bucles, paràmetres de velocitat i registre de dades.
+Dibujad el algoritmo o pseudocódigo. Indicad dónde pueden servir listas de puntos, condiciones compuestas, bucles, parámetros de velocidad y registro de datos.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Prepareu casos nominals i límit: ruta amb gir, color no assignat, càrrega ampla, inici mal orientat i aturada manual. Predigueu el resultat i què fareu si falla; deseu una còpia del pla.
+Preparad casos nominales y límite: ruta con giro, color no asignado, carga ancha, inicio mal orientado y parada manual. Predecid el resultado y qué haréis si falla; guardad una copia del plan.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** diagrama, pseudocodi i pla de proves. La docent comprova que cap regla depén d’un sensor que no estiga disponible.
+**Evidencia:** diagrama, pseudocódigo y plan de pruebas. La docente comprueba que ninguna regla depende de un sensor que no esté disponible.
 
-### **Lliçó 5 · Construir el prototip i validar la mecànica (45–60 min).**
+### **Lección 5 · Construir el prototipo y validar la mecánica (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans de muntar, prediu què podria fer inestable la càrrega o dificultar un gir. Recordeu que el prototip transporta només materials lleugers de maqueta.
+Antes de montar, predecid qué podría hacer inestable la carga o dificultar un giro. Recordad que el prototipo transporta solo materiales ligeros de maqueta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construïu per subsistemes la base, el suport de càrrega i el sensor si escau. Proveu la safata buida i després amb càrrega de cartó molt lleugera; observeu recta i gir. No subjecteu la càrrega amb persones ni useu pinces que tanquen sobre dits.
+Construid por subsistemas la base, el soporte de carga y el sensor si procede. Probad la bandeja vacía y después con carga de cartón muy ligera; observad recta y giro. No sujetéis la carga con personas ni uséis pinzas que se cierran sobre dedos.
 
-![Base mòbil SPIKE Prime de la dotació amb una safata buida de cartó, un carril pla i un regle per a comprovar estabilitat i espai.](../../_assets/situacions/sa-sp-python-projecte-transport-mecanica.webp)
+![Base móvil SPIKE Prime de la dotación con una bandeja vacía de cartón, un carril plano y una regla para comprobar estabilidad y espacio.](../../_assets/situacions/sa-sp-python-projecte-transport-mecanica.webp)
 
-_La safata és un prototip de l’equip; la imatge no pressuposa cap accessori oficial de transport._
+_La bandeja es un prototipo del equipo; la imagen no presupone ningún accesorio oficial de transporte._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Amb el muntatge apagat, proveu manualment el recorregut si és segur. Anoteu encallaments, cables que arrosseguen, rodes que freguen o centre de càrrega alt.
+Con el montaje apagado, probad manualmente el recorrido si es seguro. Anotad atascos, cables que arrastran, ruedas que rozan o centro de carga alto.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Escriviu una única ordre curta amb la funció API verificada; no intenteu encara un programa autònom complet. Dibuixeu la versió 1, anoteu què funciona i decidiu un ajust.
+Escribid una única orden corta con la función API verificada; no intentéis todavía un programa autónomo completo. Dibujad la versión 1, anotad qué funciona y decidid un ajuste.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** esquema de muntatge i primer registre de prova. Valoreu la construcció pels criteris acordats, no per la semblança amb un model comercial.
+**Evidencia:** esquema de montaje y primer registro de prueba. Valorad la construcción por los criterios acordados, no por el parecido con un modelo comercial.
 
-### **Lliçó 6 · Escriure el primer programa Python integrat (45–60 min).**
+### **Lección 6 · Escribir el primer programa Python integrado (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Predigueu com es dividirà el programa i quina informació necessitareu per depurar una ruta curta. Acordeu qui pot autoritzar l’arrencada i qui té el control de l’aturada.
+Predecid cómo se dividirá el programa y qué información necesitaréis para depurar una ruta corta. Acordad quién puede autorizar el arranque y quién tiene el control de la parada.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Organitzeu constants i ports al principi, funcions amb noms clars al mig i seqüència principal al final. Comenteu les unitats de velocitat/distància i l’origen dels llindars.
+Organizad constantes y puertos al principio, funciones con nombres claros en el medio y secuencia principal al final. Comentad las unidades de velocidad/distancia y el origen de los umbrales.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Programeu un tram, una aturada controlada i la seqüència cap al tram següent. Comproveu aïlladament cada sensor abans d’afegir-lo; si no està disponible, useu fites o ordres manuals identificades com a simulació.
+Programad un tramo, una parada controlada y la secuencia hacia el tramo siguiente. Comprobad aisladamente cada sensor antes de añadirlo; si no está disponible, usad metas u órdenes manuales identificadas como simulación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Useu una llista per a punts o accions si redueix repeticions i afegiu una condició per a dades no reconegudes. Executeu una ruta curta amb velocitat baixa, zona lliure i una persona responsable d’aturar; no feu el programa tan llarg que siga difícil de depurar.
+Usad una lista para puntos o acciones si reduce repeticiones y añadid una condición para datos no reconocidos. Ejecutad una ruta corta con velocidad baja, zona libre y una persona responsable de detener; no hagáis el programa tan largo que sea difícil de depurar.
 
-![SPIKE Prime real de la dotació sobre una ruta de proves de colors, al costat d’un ordinador amb editor textual de Python i targetes de test.](../../_assets/situacions/sa-sp-python-projecte-transport-python.webp)
+![SPIKE Prime real de la dotación sobre una ruta de pruebas de colores, junto a un ordenador con editor textual de Python y tarjetas de test.](../../_assets/situacions/sa-sp-python-projecte-transport-python.webp)
 
-_La pantalla representa codi textual; el programa, els ports i l’API s’han de comprovar en la versió d’app instal·lada al centre._
+_La pantalla representa código textual; el programa, los puertos y la API se deben comprobar en la versión de app instalada en el centro._
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** sortida de consola i registre de posició final, detecció, temps i error. Una sola prova no demostra que el criteri s’haja complit.
+**Evidencia:** salida de consola y registro de posición final, detección, tiempo y error. Una sola prueba no demuestra que el criterio se haya cumplido.
 
-### **Lliçó 7 · Calibrar, provar i depurar amb evidència (45–60 min).**
+### **Lección 7 · Calibrar, probar y depurar con evidencia (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu una causa probable d’una fallada: orientació, fricció, unitat, llindar, ordre, dada absent o funció API incorrecta. Escriviu què espereu observar si la hipòtesi és correcta.
+Elegid una causa probable de un fallo: orientación, fricción, unidad, umbral, orden, dato ausente o función API incorrecta. Escribid qué esperáis observar si la hipótesis es correcta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Feu tres intents del mateix cas nominal amb inici i superfície constants. Afegiu després un cas amb fita absent o diferent.
+Haced tres intentos del mismo caso nominal con inicio y superficie constantes. Añadid después un caso con meta ausente o diferente.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu lectura del sensor, valor esperat, resposta, aturada i variació. Classifiqueu l’error com a muntatge, connexió, sintaxi, execució o lògica.
+Anotad lectura del sensor, valor esperado, respuesta, parada y variación. Clasificad el error como montaje, conexión, sintaxis, ejecución o lógica.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una sola causa i repetiu. Si la consola no mostra error però el robot falla, reviseu l’especificació i la lectura abans d’assumir que el codi és correcte. Decidiu si cal continuar o simplificar l’abast.
+Cambiad una sola causa y repetid. Si la consola no muestra error pero el robot falla, revisad la especificación y la lectura antes de asumir que el código es correcto. Decidid si hace falta continuar o simplificar el alcance.
 
-![Base mòbil SPIKE Prime de la dotació amb una targeta lleugera en una ruta plana entre aula i biblioteca de maqueta; al costat hi ha un regle i un registre de proves sense text.](../../_assets/situacions/sa-sp-python-projecte-transport-proves.webp)
+![Base móvil SPIKE Prime de la dotación con una tarjeta ligera en una ruta plana entre aula y biblioteca de maqueta; al lado hay una regla y un registro de pruebas sin texto.](../../_assets/situacions/sa-sp-python-projecte-transport-proves.webp)
 
-_La ruta de prova és plana; la rampa que apareix apartada no forma part de l’assaig. Es comparen el punt de partida, l’aturada i la càrrega lleugera._
+_La ruta de prueba es plana; la rampa que aparece apartada no forma parte del ensayo. Se comparan el punto de partida, la parada y la carga ligera._
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** proves repetides, hipòtesi revisada i versió d’app/API. Atribuïu qualsevol funció o fragment extern reutilitzat.
+**Evidencia:** pruebas repetidas, hipótesis revisada y versión de app/API. Atribuid cualquier función o fragmento externo reutilizado.
 
-### **Lliçó 8 · Revisar accessibilitat i millorar el sistema complet (45–60 min).**
+### **Lección 8 · Revisar accesibilidad y mejorar el sistema completo (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Una parella d’un altre equip observa la pista i intenta seguir les instruccions sense ajuda. Predigueu quines barreres podrien dificultar l’ús: llegenda poc clara, color difícil de distingir o aturada difícil de trobar.
+Una pareja de otro equipo observa la pista e intenta seguir las instrucciones sin ayuda. Predecid qué barreras podrían dificultar el uso: leyenda poco clara, color difícil de distinguir o parada difícil de encontrar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Comproveu si la meta té paraula o símbol a més de color, si hi ha alternativa quan el sensor no distingeix una marca i si la ruta evita exigir reflexos ràpids.
+Comprobad si la meta tiene palabra o símbolo además de color, si hay alternativa cuando el sensor no distingue una marca y si la ruta evita exigir reflejos rápidos.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Recolliu retorn amb frases d’evidència: «he vist…», «no he sabut…», «esperava…». Valoreu l’accessibilitat de l’artefacte, no l’habilitat personal de qui el prova.
+Recoged retorno con frases de evidencia: «he visto…», «no he sabido…», «esperaba…». Valorad la accesibilidad del artefacto, no la habilidad personal de quien lo prueba.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Trieu un canvi d’estructura, programa o instrucció. Actualitzeu el pseudocodi, apliqueu una edició cada vegada i torneu a executar dos casos.
+Elegid un cambio de estructura, programa o instrucción. Actualizad el pseudocódigo, aplicad una edición cada vez y volved a ejecutar dos casos.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** retorn, canvi i dues proves posteriors. Registreu una possible barrera, un sensor sense calibrar o una afirmació que excedeix les dades, i com ho heu abordat.
+**Evidencia:** retorno, cambio y dos pruebas posteriores. Registrad una posible barrera, un sensor sin calibrar o una afirmación que excede los datos, y cómo lo habéis abordado.
 
-### **Lliçó 9 · Tancar documentació, demostració i rúbrica (45–60 min).**
+### **Lección 9 · Cerrar documentación, demostración y rúbrica (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Reviseu què ha d’entendre l’audiència sobre el repte i predigueu quina evidència sustenta cada afirmació de la presentació.
+Revisad qué debe entender la audiencia sobre el reto y predecid qué evidencia sustenta cada afirmación de la presentación.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Completeu el diari amb problema, criteris/restriccions, tres idees, diagrama, ports, codi comentat, pla/resultats de prova, fallada important, canvi, retorn i limitació.
+Completad el diario con problema, criterios/restricciones, tres ideas, diagrama, puertos, código comentado, plan/resultados de prueba, fallo importante, cambio, retorno y limitación.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Prepareu una mostra de tres minuts: necessitat, usuari i criteris, construcció, fragment Python, proves repetides, millora i què no resol. Si el robot no està disponible, useu una imatge estàtica o simulació identificada com a tal.
+Preparad una muestra de tres minutos: necesidad, usuario y criterios, construcción, fragmento Python, pruebas repetidas, mejora y qué no resuelve. Si el robot no está disponible, usad una imagen estática o simulación identificada como tal.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Autoapliqueu la rúbrica d’equip en Python, integració física, proves/depuració, accessibilitat i comunicació. Useu nivells inicial, en desenvolupament, competent i transferible amb una evidència concreta del diari.
+Aplicad la rúbrica de equipo en Python, integración física, pruebas/depuración, accesibilidad y comunicación. Usad niveles inicial, en desarrollo, competente y transferible con una evidencia concreta del diario.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** diari complet i guió revisat entre parelles. Comproveu que cada afirmació de la presentació té una dada o observació al darrere.
+**Evidencia:** diario completo y guion revisado entre parejas. Comprobad que cada afirmación de la presentación tiene un dato u observación detrás.
 
-### **Lliçó 10 · Fira de prototips i reflexió final (45–60 min).**
+### **Lección 10 · Feria de prototipos y reflexión final (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Delimiteu carril, càrrega i zona de públic i trieu una demostració curta. Predigueu quina condició de prova pot mostrar una limitació del prototip.
+Delimitad carril, carga y zona de público y elegid una demostración corta. Predecid qué condición de prueba puede mostrar una limitación del prototipo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Prepareu l’estació i comproveu que l’aturada manual és fàcil de trobar. Manteniu la càrrega lleugera i el recorregut dins de la zona marcada.
+Preparad la estación y comprobad que la parada manual es fácil de encontrar. Mantened la carga ligera y el recorrido dentro de la zona marcada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Presenteu almenys un cas d’èxit i una condició que el sistema no resol. Accepteu preguntes sobre dades, sensors, decisions, mecanisme i proves; no compareu equips per rapidesa ni per nombre de peces.
+Presentad al menos un caso de éxito y una condición que el sistema no resuelve. Aceptad preguntas sobre datos, sensores, decisiones, mecanismo y pruebas; no comparéis equipos por rapidez ni por número de piezas.
 
-![Prototip SPIKE Prime de la dotació amb una càrrega lleugera recorre un carril de maqueta fins a una zona de parada mentre un quadern mostra un gràfic de proves.](../../_assets/situacions/sa-sp-python-projecte-transport-fira.webp)
+![Prototipo SPIKE Prime de la dotación con una carga ligera recorre un carril de maqueta hasta una zona de parada mientras un cuaderno muestra un gráfico de pruebas.](../../_assets/situacions/sa-sp-python-projecte-transport-fira.webp)
 
-_La demostració és de taula i no representa un sistema autònom per a passadissos ni transport real._
+_La demostración es de mesa y no representa un sistema autónomo para pasillos ni transporte real._
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Recolliu una nota concreta del públic i una pregunta respectuosa. Cada membre explica la seua contribució i una aportació d’una altra persona que haja canviat el projecte.
+Recoged una nota concreta del público y una pregunta respetuosa. Cada miembro explica su contribución y una aportación de otra persona que haya cambiado el proyecto.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** demostració, retorn i següent experiment proposat. Compareu estimació inicial i final del criteri, no el valor personal. El model és educatiu, no autònom ni apte per a transportar materials o persones en espais reals.
+**Evidencia:** demostración, retorno y siguiente experimento propuesto. Comparad la estimación inicial y final del criterio, no el valor personal. El modelo es educativo, no autónomo ni apto para transportar materiales o personas en espacios reales.
 
-## 📦 Producte final i evidències
+## 📦 Producto final y evidencias
 
-La mostra inclou un prototip de transport per a fitxes o paquets buits i lleugers, programa Python que usa almenys una funció pròpia, un sensor SPIKE quan siga pertinent/disponible, i una parada; trajecte i instruccions accessibles; diari de disseny; pseudocodi/diagrama; codi comentat amb atribució; mapa de ports; taula amb criteri, intent, resultat, dada, unitat i ajust; documentació d’una fallada i la seua depuració; revisió entre iguals; estimació de límits/impacte; i una presentació de 3 minuts.
+La muestra incluye un prototipo de transporte para fichas o paquetes vacíos y ligeros, programa Python que usa al menos una función propia, un sensor SPIKE cuando sea pertinente/disponible, y una parada; trayecto e instrucciones accesibles; diario de diseño; pseudocódigo/diagrama; código comentado con atribución; mapa de puertos; tabla con criterio, intento, resultado, dato, unidad y ajuste; documentación de un fallo y su depuración; revisión entre iguales; estimación de límites/impacto; y una presentación de 3 minutos.
 
-Rúbrica formativa (4 nivells per dimensió): **ús de Python** —programa poc estructurat / seqüència parcial / funcions i control de flux coherents / estructura documentada que es pot reutilitzar i justificar; **integració física** —muntatge o ports no verificats / acció bàsica / mecanisme i sensors responen als criteris / el grup explica calibratge i alternatives; **prova/iteració** —resultat anecdòtic / una prova registrada / casos variats i una revisió basada en dades / repeticions comparables, causes aïllades i límits explícits; **disseny per a les persones** —no hi ha instrucció/aturada clara / una barrera reconeguda / alternatives d’entrada i indicadors / perspectives revisades amb iteració; **comunicació/equip** —afirmacions sense registre / evidència parcial / rols i aportacions explicats amb respecte / decisions i desacords documentats amb arguments i proves. La rúbrica s’utilitza per orientar millores, no per certificar un transportista real.
+Rúbrica formativa (4 niveles por dimensión): **uso de Python** —programa poco estructurado / secuencia parcial / funciones y control de flujo coherentes / estructura documentada que se puede reutilizar y justificar; **integración física** —montaje o puertos no verificados / acción básica / mecanismo y sensores responden a los criterios / el grupo explica calibración y alternativas; **prueba/iteración** —resultado anecdótico / una prueba registrada / casos variados y una revisión basada en datos / repeticiones comparables, causas aisladas y límites explícitos; **diseño para las personas** —no hay instrucción/parada clara / una barrera reconocida / alternativas de entrada e indicadores / perspectivas revisadas con iteración; **comunicación/equipo** —afirmaciones sin registro / evidencia parcial / roles y aportaciones explicados con respeto / decisiones y desacuerdos documentados con argumentos y pruebas. La rúbrica se utiliza para orientar mejoras, no para certificar un transportista real.
 
-## ♿ Accessibilitat, dades i seguretat
+## ♿ Accesibilidad, datos y seguridad
 
-El repte pot ser resolt en simulació, amb una maqueta estacionària o amb un vehicle de taula. La ruta es representa amb símbols, text ampliat, formes i colors redundants; es pot donar una ordre manual per a provar la lògica. No es fan enquestes identificables, no es registren domicilis ni trajectes de l’alumnat i no s’avalua capacitat física. Es recullen només dades del prototip i d’entrades sintètiques. Qualsevol observació sobre l’espai escolar s’anonimitza i es valida amb l’adult responsable. Els motors funcionen en una zona controlada de baixa velocitat; cap equip prova al passadís, prop d’escales, persones o càrrega fràgil. En cas d’error, s’atura el robot abans de canviar peces o cables.
+El reto se puede resolver en simulación, con una maqueta estacionaria o con un vehículo de mesa. La ruta se representa con símbolos, texto ampliado, formas y colores redundantes; se puede dar una orden manual para probar la lógica. No se hacen encuestas identificables, no se registran domicilios ni trayectos del alumnado y no se evalúa capacidad física. Se recogen solo datos del prototipo y de entradas sintéticas. Cualquier observación sobre el espacio escolar se anonimiza y se valida con el adulto responsable. Los motores funcionan en una zona controlada de baja velocidad; ningún equipo prueba en el pasillo, cerca de escaleras, personas o carga frágil. En caso de error, se detiene el robot antes de cambiar piezas o cables.
 
-## 🔗 Referent oficial, abast i adaptació
+## 🔗 Referente oficial, alcance y adaptación
 
-El referent és el projecte culminant de *Introduction to Python Programming · Course 2* de LEGO Education, que s’anuncia com a *Environmental Impact or Transportation Project*. La guia declara que els projectes tenen 10–12 lliçons de 45–60 minuts i inclouen documentació amb diari i rúbrica; també explicita disseny iteratiu, debugging de maquinari/programari, dades, sensors, condicions compostes, pseudocodi, descomposició, accessibilitat, biaix i presentació. Aquest itinerari adapta la branca de transport a la logística de materials de maqueta de l’escola i ofereix un artefacte, dades, restriccions, proves, rols i rúbrica originals. El PDF consultable no desglossa el guió docent ni els criteris detallats del projecte de 10–12 lliçons, per tant no atribuïm a LEGO la seqüència de deu sessions ací creada ni afirmem que reproduïsca els seus materials privats. La construcció i l’API Python s’ajusten al set i la versió SPIKE presents al centre.
+El referente es el proyecto culminante de *Introduction to Python Programming · Course 2* de LEGO Education, que se anuncia como *Environmental Impact or Transportation Project*. La guía declara que los proyectos tienen 10–12 lecciones de 45–60 minutos e incluyen documentación con diario y rúbrica; también explicita diseño iterativo, depuración de hardware/software, datos, sensores, condiciones compuestas, pseudocódigo, descomposición, accesibilidad, sesgo y presentación. Este itinerario adapta la rama de transporte a la logística de materiales de maqueta de la escuela y ofrece un artefacto, datos, restricciones, pruebas, roles y rúbrica originales. El PDF consultable no desglosa el guion docente ni los criterios detallados del proyecto de 10–12 lecciones, por lo tanto no atribuimos a LEGO la secuencia de diez sesiones aquí creada ni afirmamos que reproduzca sus materiales privados. La construcción y la API Python se ajustan al set y la versión SPIKE presentes en el centro.

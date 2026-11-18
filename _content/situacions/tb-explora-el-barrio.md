@@ -14,433 +14,433 @@ duration: "15 actividades · 20–30 min cada una"
 challenge: "¿Cómo podemos utilizar una ruta programada para observar, ordenar y contar historias sobre nuestro entorno?"
 ---
 
-![Tale-Bot Pro real, amb panell lateral taronja i botons direccionals, sobre un mapa de quadrícula amb animals, plantes i espais comunitaris.](../../_assets/situacions/tb-explora-el-barri.webp)
+![Tale-Bot Pro real, con panel lateral naranja y botones direccionales, sobre un mapa de cuadrícula con animales, plantas y espacios comunitarios.](../../_assets/situacions/tb-explora-el-barri.webp)
 
-_Les imatges del mapa són targetes manuals perquè l’alumnat les interprete; Tale-Bot només executa el recorregut programat._
+_Las imágenes del mapa son tarjetas manuales para que el alumnado las interprete; Tale-Bot solo ejecuta el recorrido programado._
 
-## 🌱 Punt de partida
+## 🌱 Punto de partida
 
-La classe crea un mapa d’exploració del municipi: jardí, mercat, escola, plaça i espai d’aigua. En quinze reptes, Tale-Bot ajuda a ordenar idees, comparar rutes, descriure patrons i crear composicions. Les consignes parteixen de les 15 activitats oficials de categoria B, amb contingut local revisable i sense exigir mapes addicionals de la caixa comercial. Seguint les orientacions oficials, cada proposta es planifica per a infants de 3–5 anys, parelles i 20–30 minuts; alterneu els rols de programar, observar i contar el resultat, i ajusteu l’objectiu per facilitar una experiència d’èxit. Abans de cada repte, carregueu Tale-Bot, comproveu la versió del robot i prepareu una taula o terra nets i plans. Els mapes i materials d’aquesta adaptació són propis; useu adhesius OID o funcions de l’Activity Box només quan el centre en tinga i els haja verificat.
+La clase crea un mapa de exploración del municipio: jardín, mercado, escuela, plaza y espacio de agua. En quince retos, Tale-Bot ayuda a ordenar ideas, comparar rutas, describir patrones y crear composiciones. Las consignas parten de las 15 actividades oficiales de categoría B, con contenido local revisable y sin exigir mapas adicionales de la caja comercial. Siguiendo las orientaciones oficiales, cada propuesta se planifica para niños y niñas de 3–5 años, parejas y 20–30 minutos; alternad los roles de programar, observar y contar el resultado, y ajustad el objetivo para facilitar una experiencia de éxito. Antes de cada reto, cargad Tale-Bot, comprobad la versión del robot y preparad una mesa o un suelo limpios y planos. Los mapas y materiales de esta adaptación son propios; usad adhesivos OID o funciones de la Activity Box solo cuando el centro los tenga y los haya verificado.
 
-## 🗺️ Seqüència · 15 activitats d’exploració
+## 🗺️ Secuencia · 15 actividades de exploración
 
-### **B-1 · Els cinc sentits.**
-![Tale-Bot Pro real recorre una graella de paper entre targetes de l’oïda, el tacte, l’olfacte, el gust i una fulla.](../../_assets/situacions/sa-tb-sentits-b1-v1.webp)
+### **B-1 · Los cinco sentidos.**
+![Tale-Bot Pro real recorre una cuadrícula de papel entre tarjetas del oído, el tacto, el olfato, el gusto y una hoja.](../../_assets/situacions/sa-tb-sentits-b1-v1.webp)
 
-_Les targetes representen pistes per a l’alumnat; Tale-Bot no percep olors, gustos, sons ni textures._
+_Las tarjetas representan pistas para el alumnado; Tale-Bot no percibe olores, gustos, sonidos ni texturas._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu una targeta sensorial i relacioneu-la amb una imatge o un objecte del mapa. Expliqueu quin indici us ha fet triar-lo.
+Elegid una tarjeta sensorial y relacionadla con una imagen o un objeto del mapa. Explicad qué indicio os ha hecho elegirla.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dibuixeu dos recorreguts possibles fins a la mateixa destinació i representeu les ordres amb targetes abans de programar Tale-Bot.
+Dibujad dos recorridos posibles hasta la misma destinación y representad las órdenes con tarjetas antes de programar Tale-Bot.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu quantes ordres necessita cada ruta i marqueu-les amb colors diferents. Anoteu si les dues arriben a la mateixa casella.
+Comparad cuántas órdenes necesita cada ruta y marcadlas con colores diferentes. Anotad si las dos llegan a la misma casilla.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu una de les rutes i comproveu-la sobre el mapa. Si no arriba a la destinació, localitzeu la primera ordre que cal canviar.
+Programad una de las rutas y comprobadla sobre el mapa. Si no llega a la destinación, localizad la primera orden que hay que cambiar.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dues rutes representades i una comparació explicada. Les propostes de gust i olfacte es resolen amb imatges o records, sense tastar ni olorar materials desconeguts.
+**Evidencia:** dos rutas representadas y una comparación explicada. Las propuestas de gusto y olfato se resuelven con imágenes o recuerdos, sin probar ni oler materiales desconocidos.
 
-### **B-2 · Comptem al mercat.**
-![Tale-Bot Pro real arriba a una parada de maduixes de paper mentre una mà ordena fitxes de recompte.](../../_assets/situacions/sa-tb-mercat-b2-v1.webp)
+### **B-2 · Contamos en el mercado.**
+![Tale-Bot Pro real llega a un puesto de fresas de papel mientras una mano ordena fichas de recuento.](../../_assets/situacions/sa-tb-mercat-b2-v1.webp)
 
-_Les maduixes i les quantitats són materials de paper: el recompte i la tria els fa l’alumnat._
+_Las fresas y las cantidades son materiales de papel: el recuento y la elección los hace el alumnado._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Poseu a les caselles conjunts de maduixes d’1 a 7. Trieu una targeta numèrica i predigueu quina casella representa.
+Poned en las casillas conjuntos de fresas del 1 al 7. Elegid una tarjeta numérica y predecid qué casilla representa.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Planifiqueu la ruta fins a la casella amb targetes de direcció, indicant el punt d’inici i l’orientació del robot.
+Planificad la ruta hasta la casilla con tarjetas de dirección, indicando el punto de inicio y la orientación del robot.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una parella programa Tale-Bot i l’altra comprova el recompte, les ordres i la destinació. Anoteu on coincideixen o divergeixen.
+Una pareja programa Tale-Bot y la otra comprueba el recuento, las órdenes y la destinación. Anotad dónde coinciden o divergen.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si el robot no arriba, decidiu si l’error és de recompte, orientació o ordre; canvieu una instrucció i repetiu el trajecte.
+Si el robot no llega, decidid si el error es de recuento, orientación u orden; cambiad una instrucción y repetid el trayecto.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** targeta numèrica, casella i ruta comprovada. Com a extensió, inventeu una pregunta oral de recompte per al grup.
+**Evidencia:** tarjeta numérica, casilla y ruta comprobada. Como extensión, inventad una pregunta oral de recuento para el grupo.
 
-### **B-3 · El monstre de les formes.**
-![Tale-Bot Pro real segueix un camí de paper al costat d’un monstre fet amb formes geomètriques i targetes de cercle, triangle, quadrat i rectangle.](../../_assets/situacions/sa-tb-formes-b3-v1.webp)
+### **B-3 · El monstruo de las formas.**
+![Tale-Bot Pro real sigue un camino de papel junto a un monstruo hecho con formas geométricas y tarjetas de círculo, triángulo, cuadrado y rectángulo.](../../_assets/situacions/sa-tb-formes-b3-v1.webp)
 
-_El monstre i les formes són materials de paper; el robot segueix la ruta programada i no reconeix figures._
+_El monstruo y las formas son materiales de papel; el robot sigue la ruta programada y no reconoce figuras._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu targetes de cercle, triangle, quadrat i rectangle, i quatre destinacions amb aliments dibuixats. Traieu una forma i predigueu quina propietat permetrà reconéixer-la.
+Preparad tarjetas de círculo, triángulo, cuadrado y rectángulo, y cuatro destinaciones con alimentos dibujados. Sacad una forma y predecid qué propiedad permitirá reconocerla.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Descriviu costats, vèrtexs o línia corba i trieu la destinació acordada. Planifiqueu les ordres fins a la casella.
+Describid lados, vértices o línea curva y elegid la destinación acordada. Planificad las órdenes hasta la casilla.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Registreu la forma, la propietat i el menjar triat. Una persona observadora verifica la destinació abans d’acceptar-la.
+Registrad la forma, la propiedad y la comida elegida. Una persona observadora verifica la destinación antes de aceptarla.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu la ruta. Si no és correcta, expliqueu i depureu el programa sense donar la resposta de seguida.
+Programad la ruta. Si no es correcta, explicad y depurad el programa sin dar la respuesta de inmediato.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** una classificació justificada i una ruta revisada. Expliqueu quina propietat heu utilitzat per distingir la forma.
+**Evidencia:** una clasificación justificada y una ruta revisada. Explicad qué propiedad habéis utilizado para distinguir la forma.
 
-### **B-4 · Fruites i verdures de colors.**
-![Tale-Bot Pro real recorre un mapa amb targetes de fruites i verdures agrupades sobre fons de colors.](../../_assets/situacions/sa-tb-colors-b4-v1.webp)
+### **B-4 · Frutas y verduras de colores.**
+![Tale-Bot Pro real recorre un mapa con tarjetas de frutas y verduras agrupadas sobre fondos de colores.](../../_assets/situacions/sa-tb-colors-b4-v1.webp)
 
-_La classificació per color és una decisió humana; Tale-Bot no identifica aliments ni colors._
+_La clasificación por color es una decisión humana; Tale-Bot no identifica alimentos ni colores._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Distribuïu imatges de productes grocs, morats, taronges, rojos i verds. Cada equip rep un color i prediu quines caselles podrien correspondre-hi.
+Distribuid imágenes de productos amarillos, morados, naranjas, rojos y verdes. Cada equipo recibe un color y predice qué casillas podrían corresponderle.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Trieu un producte que represente el color i guieu Tale-Bot fins a la casella amb una seqüència d’ordres planificada.
+Elegid un producto que represente el color y guiad Tale-Bot hasta la casilla con una secuencia de órdenes planificada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Justifiqueu la tria a partir de la imatge i anoteu quines altres respostes són possibles si el producte té més d’un color.
+Justificad la elección a partir de la imagen y anotad qué otras respuestas son posibles si el producto tiene más de un color.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu la ruta i comproveu que arriba a la casella. Si una altra parella ha triat un producte diferent amb el mateix color, compareu les justificacions.
+Ejecutad la ruta y comprobad que llega a la casilla. Si otra pareja ha elegido un producto diferente con el mismo color, comparad las justificaciones.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** classificació, ruta i explicació de les alternatives. L’activitat treballa observació, no associa colors amb salut, qualitat o preferències alimentàries.
+**Evidencia:** clasificación, ruta y explicación de las alternativas. La actividad trabaja la observación, no asocia colores con salud, calidad o preferencias alimentarias.
 
-### **B-5 · El cicle de vida de la granota.**
-![Tale-Bot Pro real segueix una ruta entre cinc targetes de paper que representen les etapes del cicle de vida d’una granota.](../../_assets/situacions/sa-tb-granota-b5-v1.webp)
+### **B-5 · El ciclo de vida de la rana.**
+![Tale-Bot Pro real sigue una ruta entre cinco tarjetas de papel que representan las etapas del ciclo de vida de una rana.](../../_assets/situacions/sa-tb-granota-b5-v1.webp)
 
-_Les targetes mostren contingut científic preparat pel grup; el robot només recorre les ordres programades._
+_Las tarjetas muestran contenido científico preparado por el grupo; el robot solo recorre las órdenes programadas._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Observeu les cinc targetes del cicle i predigueu quina etapa va abans i després de la que trieu.
+Observad las cinco tarjetas del ciclo y predecid qué etapa va antes y después de la que elegís.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Ordeneu ous, capgrossos, capgrossos amb potes posteriors, granota jove amb cua i granota adulta. Representeu la seqüència primer amb targetes.
+Ordenad huevos, renacuajos, renacuajos con patas posteriores, rana joven con cola y rana adulta. Representad la secuencia primero con tarjetas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una persona llig les etapes, una altra prepara les ordres i una tercera comprova cada parada. Anoteu la seqüència acordada.
+Una persona lee las etapas, otra prepara las órdenes y una tercera comprueba cada parada. Anotad la secuencia acordada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu Tale-Bot perquè visite les imatges en ordre. Si una parada queda fora de seqüència, localitzeu la primera ordre que cal revisar.
+Programad Tale-Bot para que visite las imágenes en orden. Si una parada queda fuera de secuencia, localizad la primera orden que hay que revisar.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** ruta ordenada i seqüència explicada. Distingiu els canvis biològics de l’animal del simple desplaçament del robot.
+**Evidencia:** ruta ordenada y secuencia explicada. Distinguid los cambios biológicos del animal del simple desplazamiento del robot.
 
-### **B-6 · El cicle del gira-sol.**
-![Tale-Bot Pro real recorre targetes de paper amb llavor, arrel, plàntula i gira-sol adult sobre un mapa escolar.](../../_assets/situacions/sa-tb-girasol-b6-v1.webp)
+### **B-6 · El ciclo del girasol.**
+![Tale-Bot Pro real recorre tarjetas de papel con semilla, raíz, plántula y girasol adulto sobre un mapa escolar.](../../_assets/situacions/sa-tb-girasol-b6-v1.webp)
 
-_Les etapes i l’explicació del creixement les aporta el grup; Tale-Bot no detecta el desenvolupament de la planta._
+_Las etapas y la explicación del crecimiento las aporta el grupo; Tale-Bot no detecta el desarrollo de la planta._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Observeu les sis imatges del gira-sol i predigueu quin canvi es produeix entre dues etapes consecutives.
+Observad las seis imágenes del girasol y predecid qué cambio se produce entre dos etapas consecutivas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Exploreu el mapa i les targetes informatives; ordeneu llavor, arrel, plàntula, planta menuda, planta jove i planta adulta.
+Explorad el mapa y las tarjetas informativas; ordenad semilla, raíz, plántula, planta pequeña, planta joven y planta adulta.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Trieu un punt d’inici i anoteu les sis parades en la seqüència abans de programar.
+Elegid un punto de inicio y anotad las seis paradas en la secuencia antes de programar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu Tale-Bot perquè visite les imatges en ordre. Feu una segona ronda i expliqueu què necessita la planta en una etapa triada.
+Programad Tale-Bot para que visite las imágenes en orden. Haced una segunda ronda y explicad qué necesita la planta en una etapa elegida.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** ruta i seqüència justificades. Distingiu el creixement biològic del moviment del robot.
+**Evidencia:** ruta y secuencia justificadas. Distinguid el crecimiento biológico del movimiento del robot.
 
-### **B-7 · Parc musical I.**
-![Tale-Bot Pro real segueix una ruta de paper cap a targetes d’un tambor, un xilòfon i una flauta, al costat d’una seqüència de notes.](../../_assets/situacions/sa-tb-musica-b7-v1.webp)
+### **B-7 · Parque musical I.**
+![Tale-Bot Pro real sigue una ruta de papel hacia tarjetas de un tambor, un xilófono y una flauta, junto a una secuencia de notas.](../../_assets/situacions/sa-tb-musica-b7-v1.webp)
 
-_L’alumnat interpreta les notes amb veu o instruments; el robot només es desplaça fins a la casella programada._
+_El alumnado interpreta las notas con voz o instrumentos; el robot solo se desplaza hasta la casilla programada._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Canteu
+Cantad
 
 *Are You Sleeping*
 
-—o una melodia d’aula equivalent si no es treballa aquesta cançó— i predigueu quin instrument del mapa podria acompanyar-la.
+—o una melodía de aula equivalente si no se trabaja esta canción— y predecid qué instrumento del mapa podría acompañarla.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Llegiu la targeta de notació i manteniu les notes en l’ordre indicat. Trieu al mapa un instrument i representeu el recorregut amb targetes de direcció.
+Leed la tarjeta de notación y mantened las notas en el orden indicado. Elegid en el mapa un instrumento y representad el recorrido con tarjetas de dirección.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu l’ordre de les notes i les ordres de la ruta. Assigneu torns perquè totes les persones puguen participar en la lectura, programació o interpretació.
+Anotad el orden de las notas y las órdenes de la ruta. Asignad turnos para que todas las personas puedan participar en la lectura, la programación o la interpretación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu el trajecte fins a l’instrument i interpreteu la melodia amb veu o instruments d’aula. Reviseu l’ordre musical si la interpretació no coincideix amb la targeta.
+Programad el trayecto hasta el instrumento e interpretad la melodía con voz o instrumentos de aula. Revisad el orden musical si la interpretación no coincide con la tarjeta.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** targeta de notes, ruta i interpretació. Tale-Bot només es desplaça, llevat que una funció musical concreta s’haja comprovat.
+**Evidencia:** tarjeta de notas, ruta e interpretación. Tale-Bot solo se desplaza, salvo que se haya comprobado una función musical concreta.
 
-### **B-8 · Parc musical II.**
-![Tale-Bot Pro real recorre un mapa de paper amb lluna i estrelles mentre l’alumnat canta una melodia.](../../_assets/situacions/sa-tb-estels-b8-v1.webp)
+### **B-8 · Parque musical II.**
+![Tale-Bot Pro real recorre un mapa de papel con luna y estrellas mientras el alumnado canta una melodía.](../../_assets/situacions/sa-tb-estels-b8-v1.webp)
 
-_La música s’interpreta a banda; Tale-Bot no llig partitures ni reprodueix la cançó._
+_La música se interpreta aparte; Tale-Bot no lee partituras ni reproduce la canción._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Canteu
+Cantad
 
 *Twinkle, Twinkle, Little Star*
 
- i predigueu quin instrument del mapa podria acompanyar-la. Seguiu la targeta de notes sense necessitat de reproduir la cançó amb el robot.
+ y predecid qué instrumento del mapa podría acompañarla. Seguid la tarjeta de notas sin necesidad de reproducir la canción con el robot.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Manteniu les notes en l’ordre indicat, trieu una destinació i traceu la ruta amb targetes de direcció.
+Mantened las notas en el orden indicado, elegid una destinación y trazad la ruta con tarjetas de dirección.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu la seqüència de notes i les ordres del trajecte; compareu-les amb les de la primera melodia.
+Anotad la secuencia de notas y las órdenes del trayecto; comparadlas con las de la primera melodía.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Creeu o busqueu una segona targeta musical, interpreteu-la i repetiu el recorregut. Reviseu la seqüència o les ordres si les notes o el trajecte no coincideixen amb el pla.
+Cread o buscad una segunda tarjeta musical, interpretadla y repetid el recorrido. Revisad la secuencia o las órdenes si las notas o el trayecto no coinciden con el plan.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dues targetes, dues rutes i una comparació de notes. No atribuïu al robot una reproducció musical si el model no la fa.
+**Evidencia:** dos tarjetas, dos rutas y una comparación de notas. No atribuyáis al robot una reproducción musical si el modelo no la hace.
 
-### **B-9 · Viatge pel sistema solar.**
-![Tale-Bot Pro real recorre un tauler de paper amb targetes dels planetes i del Sol.](../../_assets/situacions/sa-tb-sistema-solar-b9-v1.webp)
+### **B-9 · Viaje por el sistema solar.**
+![Tale-Bot Pro real recorre un tablero de papel con tarjetas de los planetas y del Sol.](../../_assets/situacions/sa-tb-sistema-solar-b9-v1.webp)
 
-_El tauler és una representació de joc, no està a escala ni mostra òrbites reals; el robot no identifica planetes._
+_El tablero es una representación de juego, no está a escala ni muestra órbitas reales; el robot no identifica planetas._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu les huit targetes de planetes en un mapa propi. Trieu un punt d’inici i predigueu quina ruta permetrà arribar al planeta objectiu.
+Preparad las ocho tarjetas de planetas en un mapa propio. Elegid un punto de inicio y predecid qué ruta permitirá llegar al planeta objetivo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Col·loqueu les targetes i seleccioneu una destinació. Una pregunta científica —com quin planeta és més gran— pot donar una destinació extra.
+Colocad las tarjetas y seleccionad una destinación. Una pregunta científica —como qué planeta es más grande— puede dar una destinación extra.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Representeu les ordres de la ruta i marqueu les caselles que cal evitar. Expliqueu com heu triat el camí.
+Representad las órdenes de la ruta y marcad las casillas que hay que evitar. Explicad cómo habéis elegido el camino.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu Tale-Bot fins al planeta objectiu sense entrar en les caselles dels altres planetes. Si s’hi desvia, localitzeu la primera instrucció incorrecta.
+Programad Tale-Bot hasta el planeta objetivo sin entrar en las casillas de los otros planetas. Si se desvía, localizad la primera instrucción incorrecta.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa i ruta provada. La quadrícula és un mapa de joc: no representa a escala distàncies ni òrbites reals.
+**Evidencia:** mapa y ruta probada. La cuadrícula es un mapa de juego: no representa a escala distancias ni órbitas reales.
 
-### **B-10 · Recollida magnètica, amb adaptació segura.**
-![Tale-Bot Pro real segueix una ruta al costat de mostres de fusta, plàstic i metall mentre una persona adulta prova una volandera amb un imant de mà.](../../_assets/situacions/sa-tb-magnetisme-b10-v1.webp)
+### **B-10 · Recogida magnética, con adaptación segura.**
+![Tale-Bot Pro real sigue una ruta junto a muestras de madera, plástico y metal mientras una persona adulta prueba una arandela con un imán de mano.](../../_assets/situacions/sa-tb-magnetisme-b10-v1.webp)
 
-_La prova magnètica la fa una persona adulta; Tale-Bot no porta imant ni detecta materials._
+_La prueba magnética la hace una persona adulta; Tale-Bot no lleva imán ni detecta materiales._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Observeu objectes grans i segurs i predigueu quins podrien ser atrets per un imant. Expliqueu quin material o característica heu usat com a pista.
+Observad objetos grandes y seguros y predecid cuáles podrían ser atraídos por un imán. Explicad qué material o característica habéis usado como pista.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Col·loqueu els objectes en caselles diferents i planifiqueu una ruta de Tale-Bot que visite cada mostra. L’imant no s’arrossega amb el robot.
+Colocad los objetos en casillas diferentes y planificad una ruta de Tale-Bot que visite cada muestra. El imán no se arrastra con el robot.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu objecte, predicció i ruta. Una persona adulta fa la prova magnètica a mà amb peces grans i segures i registra el resultat observat.
+Anotad objeto, predicción y ruta. Una persona adulta hace la prueba magnética a mano con piezas grandes y seguras y registra el resultado observado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu prediccions i resultats i reviseu les classificacions amb evidències. Comproveu que la ruta visita totes les mostres sense tocar-les ni enganxar cap accessori al robot.
+Comparad predicciones y resultados y revisad las clasificaciones con evidencias. Comprobad que la ruta visita todas las muestras sin tocarlas ni pegar ningún accesorio al robot.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** taula de prediccions i resultats amb una explicació. Tale-Bot no detecta magnetisme; la prova magnètica la fa una persona adulta.
+**Evidencia:** tabla de predicciones y resultados con una explicación. Tale-Bot no detecta magnetismo; la prueba magnética la hace una persona adulta.
 
-### **B-11 · Paranys i tresors.**
-![Tale-Bot Pro real avança per una ruta segura dibuixada en una quadrícula entre caselles d’obstacle i una targeta de tresor.](../../_assets/situacions/sa-tb-tresor-b11-v1.webp)
+### **B-11 · Trampas y tesoros.**
+![Tale-Bot Pro real avanza por una ruta segura dibujada en una cuadrícula entre casillas de obstáculo y una tarjeta de tesoro.](../../_assets/situacions/sa-tb-tresor-b11-v1.webp)
 
-_L’alumnat planifica les caselles segures; el robot no detecta obstacles ni arreplega el tresor._
+_El alumnado planifica las casillas seguras; el robot no detecta obstáculos ni recoge el tesoro._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Col·loqueu adhesius propis de paranys i tresors en la quadrícula. Trieu una casella d’inici i predigueu un camí segur fins a un tresor.
+Colocad adhesivos propios de trampas y tesoros en la cuadrícula. Elegid una casilla de inicio y predecid un camino seguro hasta un tesoro.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Traceu el camí amb el dit i després representeu-lo amb targetes de direcció, evitant les caselles tancades.
+Trazad el camino con el dedo y después representadlo con tarjetas de dirección, evitando las casillas cerradas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu les ordres i marqueu les caselles per on ha de passar Tale-Bot. Una altra parella comprova el pla abans d’executar-lo.
+Anotad las órdenes y marcad las casillas por las que debe pasar Tale-Bot. Otra pareja comprueba el plan antes de ejecutarlo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu la ruta. Si falla, identifiqueu la primera ordre que la desvia i canvieu-la abans de repetir.
+Programad la ruta. Si falla, identificad la primera orden que la desvía y cambiadla antes de repetir.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** ruta segura i una correcció explicada. Els obstacles representen zones tancades del mapa, no persones ni animals en perill.
+**Evidencia:** ruta segura y una corrección explicada. Los obstáculos representan zonas cerradas del mapa, no personas ni animales en peligro.
 
-### **B-12 · Persones que fan servei al barri.**
-![Tale-Bot Pro real segueix una ruta entre targetes de paper d’una bibliotecària, una jardinera i una persona repartidora.](../../_assets/situacions/sa-tb-serveis-b12-v1.webp)
+### **B-12 · Personas que prestan servicio en el barrio.**
+![Tale-Bot Pro real sigue una ruta entre tarjetas de papel de una bibliotecaria, una jardinera y una persona repartidora.](../../_assets/situacions/sa-tb-serveis-b12-v1.webp)
 
-_Les persones, les eines i els serveis són una maqueta respectuosa del barri; Tale-Bot no els reconeix._
+_Las personas, las herramientas y los servicios son una maqueta respetuosa del barrio; Tale-Bot no los reconoce._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Creeu targetes pròpies de serveis del barri: persona bibliotecària i carretó de llibres, jardinera i regadora, o personal de correus i bossa de cartes. Parleu del servei i relacioneu-lo amb l’eina; no deduïu ocupacions per l’aparença ni les assigneu per gènere.
+Cread tarjetas propias de servicios del barrio: persona bibliotecaria y carrito de libros, jardinera y regadera, o personal de correos y bolsa de cartas. Hablad del servicio y relacionadlo con la herramienta; no deduzcáis ocupaciones por la apariencia ni las asignéis por género.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Afegiu adhesius de «zona tancada» com a adaptació local dels paranys. Trieu una parella persona–eina, marqueu l’inici i la destinació i planifiqueu una ruta que no travesse les zones tancades.
+Añadid adhesivos de «zona cerrada» como adaptación local de las trampas. Elegid una pareja persona–herramienta, marcad el inicio y la destinación y planificad una ruta que no cruce las zonas cerradas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Representeu les ordres amb targetes, comproveu-les i anoteu per què l’eina correspon al servei triat.
+Representad las órdenes con tarjetas, comprobadlas y anotad por qué la herramienta corresponde al servicio elegido.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu Tale-Bot i compareu el recorregut amb la predicció. Si entra en una casella tancada o no arriba, localitzeu la primera ordre que cal canviar i repetiu; després feu una segona missió canviant els rols.
+Programad Tale-Bot y comparad el recorrido con la predicción. Si entra en una casilla cerrada o no llega, localizad la primera orden que hay que cambiar y repetid; después haced una segunda misión cambiando los roles.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dues parelles persona–eina justificades, dues rutes que eviten zones tancades i una correcció o comprovació independent. Si no hi ha robot disponible, useu una fitxa i identifiqueu la prova com a desconnectada. És una representació de serveis quotidians, no d’emergències.
+**Evidencia:** dos parejas persona–herramienta justificadas, dos rutas que evitan zonas cerradas y una corrección o comprobación independiente. Si no hay robot disponible, usad una ficha e identificad la prueba como desconectada. Es una representación de servicios cotidianos, no de emergencias.
 
-### **B-13 · Del més lent al més ràpid (2 sessions, 2 hores).**
+### **B-13 · Del más lento al más rápido (2 sesiones, 2 horas).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Sessió 1 — comparem el model.** Observeu les tres fitxes de la targeta: tractor, camió de bombers i tren maglev. Abans de classificar-les, llegiu el context que acompanya cada vehicle; la velocitat depén del model, el recorregut i les condicions, així que no deduïu un valor universal només pel dibuix. Per a fer la comparació matemàtica, acordeu una simulació: en el mateix interval de temps, el tractor avança una casella, el camió dues i el tren tres. Aquests nombres són **dades fictícies del joc**, no velocitats reals.
+**Sesión 1 — comparamos el modelo.** Observad las tres fichas de la tarjeta: tractor, camión de bomberos y tren maglev. Antes de clasificarlas, leed el contexto que acompaña a cada vehículo; la velocidad depende del modelo, el recorrido y las condiciones, así que no deduzcáis un valor universal solo por el dibujo. Para hacer la comparación matemática, acordad una simulación: en el mismo intervalo de tiempo, el tractor avanza una casilla, el camión dos y el tren tres. Estos números son **datos ficticios del juego**, no velocidades reales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Representem les tres distàncies amb fitxes de colors damunt de tres tires iguals de temps. Compteu caselles i ordeneu els vehicles de la menor a la major distància recorreguda en el mateix interval. Després, en una quadrícula nova, situeu les fitxes dels tres vehicles i una destinació —l’estació— en una ruta pròpia que connecte l’horta, el servei de bombers i el tren. Comenceu al tractor i traceu amb llapis un itinerari continu fins a la destinació.
+Representamos las tres distancias con fichas de colores sobre tres tiras iguales de tiempo. Contad casillas y ordenad los vehículos de la menor a la mayor distancia recorrida en el mismo intervalo. Después, en una cuadrícula nueva, situad las fichas de los tres vehículos y una destinación —la estación— en una ruta propia que conecte la huerta, el servicio de bomberos y el tren. Empezad en el tractor y trazad con lápiz un itinerario continuo hasta la destinación.
 
-![Tale-Bot sense accessoris sobre un mapa de l’horta i l’estació, amb fitxes de tractor, camió de bombers i tren i una ruta traçada a mà.](../../_assets/situacions/sa-tb-velocitats-relatives.webp)
+![Tale-Bot sin accesorios sobre un mapa de la huerta y la estación, con fichas de tractor, camión de bomberos y tren y una ruta trazada a mano.](../../_assets/situacions/sa-tb-velocitats-relatives.webp)
 
-_Les fitxes i els comptadors representen un model de distància en intervals iguals; el robot estàndard només segueix les ordres de la ruta._
+_Las fichas y los contadores representan un modelo de distancia en intervalos iguales; el robot estándar solo sigue las órdenes de la ruta._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Sessió 2 — preparem un únic recorregut.** Registreu en una taula la distància simulada de cada vehicle en un interval, l’ordre resultant i la destinació final. Una parella transforma el traç en targetes de comandament; l’altra comprova el punt d’inici, l’orientació, cada gir i el nombre de caselles fins a la meta. Feu una simulació manual amb una fitxa de robòtica abans de tocar el robot.
+**Sesión 2 — preparamos un único recorrido.** Registrad en una tabla la distancia simulada de cada vehículo en un intervalo, el orden resultante y la destinación final. Una pareja transforma el trazo en tarjetas de mando; la otra comprueba el punto de inicio, la orientación, cada giro y el número de casillas hasta la meta. Haced una simulación manual con una ficha de robótica antes de tocar el robot.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Introduïu tota la seqüència en Tale-Bot i executeu-la **una vegada**, com proposa el repte. Compareu la posició final amb la destinació i localitzeu en el mapa la primera desviació si no coincideixen. Reviseu en paper quin comandament caldria canviar; una segona execució és una extensió opcional i s’anota com a nova prova, no com si fora la primera.
+Introducid toda la secuencia en Tale-Bot y ejecutadla **una vez**, como propone el reto. Comparad la posición final con la destinación y localizad en el mapa la primera desviación si no coinciden. Revisad en papel qué mando habría que cambiar; una segunda ejecución es una extensión opcional y se anota como nueva prueba, no como si fuera la primera.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** ordenació argumentada amb la simulació de distància/temps, taula de dades fictícies, mapa amb ruta, seqüència de comandaments i resultat de l’execució única. Expliqueu per què el robot no ha anat més ràpid quan ha passat pel tren: els comptadors modelen una comparació matemàtica, però Tale-Bot no mesura ni reprodueix la velocitat real dels vehicles. No extrapoleu la classificació del joc al trànsit real.
+**Evidencia:** ordenación argumentada con la simulación de distancia/tiempo, tabla de datos ficticios, mapa con ruta, secuencia de mandos y resultado de la ejecución única. Explicad por qué el robot no ha ido más rápido cuando ha pasado por el tren: los contadores modelan una comparación matemática, pero Tale-Bot no mide ni reproduce la velocidad real de los vehículos. No extrapoléis la clasificación del juego al tráfico real.
 
-### **B-14 · Taller d’artista I.**
+### **B-14 · Taller de artista I.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Observeu el suport multifunció, els punts on es pot subjectar un retolador i la distància entre la punta i el cos del robot. En un full, dibuixeu una forma tancada —com un quadrat— i marqueu amb fletxes quin tram correspon a cada ordre. Predigueu què passarà si una ordre de gir o d’avanç es repeteix una vegada més.
+Observad el soporte multifunción, los puntos en los que se puede sujetar un rotulador y la distancia entre la punta y el cuerpo del robot. En un folio, dibujad una forma cerrada —como un cuadrado— y marcad con flechas qué tramo corresponde a cada orden. Predecid qué pasará si una orden de giro o de avance se repite una vez más.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Comproveu físicament que el kit del centre inclou el suport de dibuix i que el retolador queda subjecte sense tocar les rodes. Fixeu un full gran perquè no llisque i feu una prova d’un sol tram amb el robot aturat abans d’iniciar el programa. Si el centre té una versió diferent del suport o no el té, no forceu peces: prepareu una quadrícula i representeu la mateixa seqüència amb una fitxa.
+Comprobad físicamente que el kit del centro incluye el soporte de dibujo y que el rotulador queda sujeto sin tocar las ruedas. Fijad un folio grande para que no resbale y haced una prueba de un solo tramo con el robot detenido antes de iniciar el programa. Si el centro tiene una versión diferente del soporte o no lo tiene, no forcéis piezas: preparad una cuadrícula y representad la misma secuencia con una ficha.
 
-![Tale-Bot Pro traça una forma quadrada amb un retolador subjecte al suport de dibuix.](../../_assets/situacions/sa-tb-artista-un-retolador.webp)
+![Tale-Bot Pro traza una forma cuadrada con un rotulador sujeto al soporte de dibujo.](../../_assets/situacions/sa-tb-artista-un-retolador.webp)
 
-_La primera exploració prova el muntatge i relaciona cada tram del traç amb una ordre planificada._
+_La primera exploración prueba el montaje y relaciona cada tramo del trazo con una orden planificada._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Planifiqueu una forma amb una seqüència curta de moviments i girs. Abans de prémer Play, feu que una parella represente les ordres sobre la quadrícula amb una fitxa; l’altra comprova orientació, punt d’inici i nombre de passos. Registreu el programa previst i el nombre d’ordres de cada costat.
+Planificad una forma con una secuencia corta de movimientos y giros. Antes de pulsar Play, haced que una pareja represente las órdenes sobre la cuadrícula con una ficha; la otra comprueba orientación, punto de inicio y número de pasos. Registrad el programa previsto y el número de órdenes de cada lado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu el traç amb un sol retolador. Compareu el dibuix amb la predicció: la forma tanca?, els costats s’assemblen?, on s’ha desviat el marcador? Canvieu només una decisió —un pas, un gir o l’orientació inicial— i repetiu sobre un full nou. Si la línia no tanca, conserveu el primer resultat i marqueu el punt on cal revisar la seqüència.
+Ejecutad el trazo con un solo rotulador. Comparad el dibujo con la predicción: ¿la forma cierra?, ¿los lados se parecen?, ¿dónde se ha desviado el rotulador? Cambiad solo una decisión —un paso, un giro o la orientación inicial— y repetid sobre un folio nuevo. Si la línea no cierra, conservad el primer resultado y marcad el punto en el que hay que revisar la secuencia.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** forma original, seqüència anotada i comparació entre el traç esperat i l’observat. Expliqueu què ha canviat en la segona prova. Sense accessori, la parella traça el recorregut amb una fitxa i un retolador a mà; aquesta alternativa treballa l’algorisme, però no es presenta com un dibuix automatitzat.
+**Evidencia:** forma original, secuencia anotada y comparación entre el trazo esperado y el observado. Explicad qué ha cambiado en la segunda prueba. Sin accesorio, la pareja traza el recorrido con una ficha y un rotulador a mano; esta alternativa trabaja el algoritmo, pero no se presenta como un dibujo automatizado.
 
-### **B-15 · Taller d’artista II.**
+### **B-15 · Taller de artista II.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu la forma i el programa del taller anterior. En parelles, trieu dues formes que puguen combinar-se per representar un espai del barri —per exemple, un jardí amb un camí o una plaça amb un estany— i decidiu quina es dibuixarà primer. Predigueu què veurà el full si s’hi col·loquen dos retoladors i les línies coincideixen o se separen.
+Recuperad la forma y el programa del taller anterior. En parejas, elegid dos formas que puedan combinarse para representar un espacio del barrio —por ejemplo, un jardín con un camino o una plaza con un estanque— y decidid cuál se dibujará primero. Predecid qué verá el folio si se colocan dos rotuladores y las líneas coinciden o se separan.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Comproveu si el suport disponible permet fixar dos retoladors alhora i si les dues puntes poden tocar el paper sense que els cossos xoquen. Feu una prova curta amb el robot estacionari i retireu la segona punta si el muntatge fa força o s’encalla. Assigneu rols de disseny, programació, comprovació del suport i registre; prepareu també una alternativa amb una forma per retolador.
+Comprobad si el soporte disponible permite fijar dos rotuladores a la vez y si las dos puntas pueden tocar el papel sin que los cuerpos choquen. Haced una prueba corta con el robot estacionario y retirad la segunda punta si el montaje hace fuerza o se atasca. Asignad roles de diseño, programación, comprobación del soporte y registro; preparad también una alternativa con una forma por rotulador.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-![Tale-Bot Pro traça una composició de formes amb dos retoladors de colors subjectes al suport.](../../_assets/situacions/sa-tb-artista-dos-retoladors.webp)
+![Tale-Bot Pro traza una composición de formas con dos rotuladores de colores sujetos al soporte.](../../_assets/situacions/sa-tb-artista-dos-retoladors.webp)
 
-_La segona activitat contrasta el traç d’un retolador amb una composició de dos colors abans d’afegir-hi detalls a mà._
+_La segunda actividad contrasta el trazo de un rotulador con una composición de dos colores antes de añadirle detalles a mano._
 
-Escriviu i dibuixeu el pla abans de programar: forma, punt inicial, orientació, color i ordres associades. Indiqueu si els dos colors apareixen al mateix temps o en execucions separades, segons el suport real. Després de cada traç, l’alumnat pot acolorir les formes a mà i afegir detalls que expliquen una escena; distingiu clarament el que ha fet el robot del que s’ha completat manualment.
+Escribid y dibujad el plan antes de programar: forma, punto inicial, orientación, color y órdenes asociadas. Indicad si los dos colores aparecen al mismo tiempo o en ejecuciones separadas, según el soporte real. Después de cada trazo, el alumnado puede colorear las formas a mano y añadir detalles que expliquen una escena; distinguid claramente lo que ha hecho el robot de lo que se ha completado manualmente.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu primer cada forma per separat i després, si el muntatge és estable, proveu la composició amb dos retoladors. Compareu les dues versions i decidiu si el solapament ajuda a comunicar l’escena. Si el suport no admet dos retoladors o el traç no és consistent, feu les formes en dues passades o representeu la ruta en paper; no pressioneu el robot ni l’accessori per a forçar el contacte.
+Ejecutad primero cada forma por separado y después, si el montaje es estable, probad la composición con dos rotuladores. Comparad las dos versiones y decidid si el solapamiento ayuda a comunicar la escena. Si el soporte no admite dos rotuladores o el trazo no es consistente, haced las formas en dos pasadas o representad la ruta en papel; no presionéis el robot ni el accesorio para forzar el contacto.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-En grup, acoloriu i amplieu els traços amb materials de papereria. Presenteu una decisió de composició que hàgeu revisat després de veure el resultat i demaneu a una altra parella què interpreta de la imatge. **Evidència:** composició final, programa o seqüència manual, registre de les proves amb un i dos retoladors, i una explicació de què s’ha dibuixat automàticament i què s’ha afegit a mà. Si la configuració de dos retoladors no és compatible amb el model de suport del centre, l’equip documenta la comprovació fallida i usa la variant de dues passades.
+En grupo, coloread y ampliad los trazos con materiales de papelería. Presentad una decisión de composición que hayáis revisado después de ver el resultado y pedid a otra pareja qué interpreta de la imagen. **Evidencia:** composición final, programa o secuencia manual, registro de las pruebas con uno y dos rotuladores, y una explicación de qué se ha dibujado automáticamente y qué se ha añadido a mano. Si la configuración de dos rotuladores no es compatible con el modelo de soporte del centro, el equipo documenta la comprobación fallida y usa la variante de dos pasadas.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Fer servir una ruta per orientar una exploració de ciència, llenguatge, matemàtiques o art.
-- Ordenar instruccions i anticipar què observarà el grup en cada parada.
-- Comparar observació directa, representació i inferència en activitats de l’entorn.
-- Crear relats i recomptes amb mapes propis sense registrar dades personals ni afirmar deteccions del robot.
+- Usar una ruta para orientar una exploración de ciencia, lenguaje, matemáticas o arte.
+- Ordenar instrucciones y anticipar qué observará el grupo en cada parada.
+- Comparar observación directa, representación e inferencia en actividades del entorno.
+- Crear relatos y recuentos con mapas propios sin registrar datos personales ni afirmar detecciones del robot.
 
-## 🧰 Materials i límits tècnics
+## 🧰 Materiales y límites técnicos
 
-Robot de la dotació, mapa en paper, targetes pròpies, fitxes planes i, opcionalment, suport multifunció i retoladors compatibles que s’hagen comprovat físicament. La proposta oficial empra els mapes i recursos de l’Activity Box; ací s’ofereix una alternativa imprimible i manipulable, i no es pressuposen avisos de veu ni mapes interactius. Les activitats d’imant i dibuix s’adapten segons la seguretat i els accessoris disponibles. El robot no identifica objectes, aliments, colors ni magnetisme per si mateix.
+Robot de la dotación, mapa en papel, tarjetas propias, fichas planas y, opcionalmente, soporte multifunción y rotuladores compatibles que se hayan comprobado físicamente. La propuesta oficial emplea los mapas y recursos de la Activity Box; aquí se ofrece una alternativa imprimible y manipulable, y no se presuponen avisos de voz ni mapas interactivos. Las actividades de imán y dibujo se adaptan según la seguridad y los accesorios disponibles. El robot no identifica objetos, alimentos, colores ni magnetismo por sí mismo.
 
-## 🧪 Evidències
+## 🧪 Evidencias
 
-Mapa anotat, classificacions, prediccions, seqüències de comandaments, una ruta depurada i relat oral o visual. Es valora argumentar l’ordre, comprovar-lo i revisar una idea després d’una prova, no encertar a la primera.
+Mapa anotado, clasificaciones, predicciones, secuencias de mandos, una ruta depurada y relato oral o visual. Se valora argumentar el orden, comprobarlo y revisar una idea después de una prueba, no acertar a la primera.
 
-## ♿ Participació, accessibilitat i seguretat
+## ♿ Participación, accesibilidad y seguridad
 
-Oferiu el mapa en format gran, amb inici ben contrastat i pictogrames a més de colors. L’alumnat pot planificar amb targetes, assenyalar o dictar les ordres abans que una altra persona les introduïsca al robot. Reduïu el nombre de parades si cal i feu les proves sobre una taula estable, sense obstacles que puguen encallar les rodes.
+Ofreced el mapa en formato grande, con inicio bien contrastado y pictogramas además de colores. El alumnado puede planificar con tarjetas, señalar o dictar las órdenes antes de que otra persona las introduzca en el robot. Reducid el número de paradas si hace falta y haced las pruebas sobre una mesa estable, sin obstáculos que puedan atascar las ruedas.
 
-## 🔗 Referent oficial adaptat
+## 🔗 Referente oficial adaptado
 
-Adaptació de les 15 activitats oficials de categoria B —*My Five Senses*, *Counting Game*, *Shape Monster*, *Fruits & Veggies Challenge*, *Frog Life Cycle*, *Sunflower Life Cycle*, *Music Park I/II*, *Trouble Traps*, *Solar System*, *Magnetic Collector*, *Community Helpers*, *Slowest to Fastest* i *Tale-Bot is an Artist I/II*— de les [Activity Cards per a Tale-Bot Pro](https://matatalab.com/en/lesson4.4). El marc oficial confirma l’estructura 10/15/7/10 ([Lesson 4.4: Activity Cards](https://matatalab.com/zh-hans/node/814)); el fabricant també ofereix una [mostra en la pàgina de descàrregues](https://www.matatastudio.com/download.html). En B-14 i B-15, la proposta adapta l’exploració del suport de dibuix, els traços amb un retolador i dos, i l’ampliació artística en grup; el funcionament del suport es comprova amb el model real del centre. Les tasques, mapes i dades són propis.
+Adaptación de las 15 actividades oficiales de categoría B —*My Five Senses*, *Counting Game*, *Shape Monster*, *Fruits & Veggies Challenge*, *Frog Life Cycle*, *Sunflower Life Cycle*, *Music Park I/II*, *Trouble Traps*, *Solar System*, *Magnetic Collector*, *Community Helpers*, *Slowest to Fastest* y *Tale-Bot is an Artist I/II*— de las [Activity Cards para Tale-Bot Pro](https://matatalab.com/en/lesson4.4). El marco oficial confirma la estructura 10/15/7/10 ([Lesson 4.4: Activity Cards](https://matatalab.com/zh-hans/node/814)); el fabricante también ofrece una [muestra en la página de descargas](https://www.matatastudio.com/download.html). En B-14 y B-15, la propuesta adapta la exploración del soporte de dibujo, los trazos con uno y dos rotuladores, y la ampliación artística en grupo; el funcionamiento del soporte se comprueba con el modelo real del centro. Las tareas, mapas y datos son propios.

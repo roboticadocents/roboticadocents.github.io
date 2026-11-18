@@ -14,165 +14,165 @@ duration: "5 sesiones"
 challenge: "¿Cómo podemos convertir una idea rítmica en instrucciones que otras personas y la micro:bit puedan interpretar?"
 ---
 
-![Una placa micro:bit acompanya una partitura simbòlica de ritmes inventats per l’alumnat.](../../_assets/situacions/mb-ritmes-pati.webp)
+![Una placa micro:bit acompaña una partitura simbólica de ritmos inventados por el alumnado.](../../_assets/situacions/mb-ritmes-pati.webp)
 
-_La peça és original i pot escoltar-se amb la placa, instruments d’aula, llum o notació visual._
+_La pieza es original y puede escucharse con la placa, instrumentos de aula, luz o notación visual._
 
-## 🌱 Situació i intenció
+## 🌱 Situación, reto e intención
 
-El pati de l’escola tindrà una mostra sonora breu. Cada equip crea una peça original, escriu instruccions per a un públic concret i investiga com la micro:bit pot interpretar notes, pauses i gestos. La situació recorre les cinc lliçons oficials de *Musical micro:bit*, combinant algoritmes desconnectats, composició, selecció, acceleròmetre, programació i avaluació.
+El patio de la escuela acogerá una muestra sonora breve. Cada equipo crea una pieza original, escribe instrucciones para un público concreto e investiga cómo la micro:bit puede interpretar notas, pausas y gestos. La situación recorre las cinco lecciones oficiales de *Musical micro:bit*, combinando algoritmos desconectados, composición, selección, acelerómetro, programación y evaluación.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Transformar una idea musical en símbols, duracions i instruccions interpretables.
-- Programar una peça amb les eixides sonores disponibles i depurar-ne el ritme i les pauses.
-- Comparar una interpretació de la placa amb una interpretació humana i revisar la partitura perquè es puga seguir.
-- Comunicar decisions de composició i oferir una participació visual o silenciosa equivalent.
+- Transformar una idea musical en símbolos, duraciones e instrucciones interpretables.
+- Programar una pieza con las salidas sonoras disponibles y depurar su ritmo y sus pausas.
+- Comparar una interpretación de la placa con una interpretación humana y revisar la partitura para que se pueda seguir.
+- Comunicar decisiones de composición y ofrecer una participación visual o silenciosa equivalente.
 
-## 📅 Seqüència didàctica · 5 sessions
+## 📅 Secuencia didáctica · 5 sesiones
 
-### **Sessió 1 · Algoritmes musicals (Musical algorithms).**
+### **Sesión 1 · Algoritmos musicales (Musical algorithms).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Escolteu patrons breus creats pel grup i representeu notes i pauses amb símbols acordats. Abans d’interpretar-ne un, prediu l’ordre dels sons i el lloc del silenci.
+Escuchad patrones breves creados por el grupo y representad notas y pausas con símbolos acordados. Antes de interpretar uno, predecid el orden de los sonidos y el lugar del silencio.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Acordeu símbols per a so curt, so llarg, silenci i repetició, a més d’inici i final. Cada equip escriu una peça original de 20–40 segons amb tres o quatre sons i una llegenda clara.
+Acordad símbolos para sonido corto, sonido largo, silencio y repetición, además de inicio y final. Cada equipo escribe una pieza original de 20–40 segundos con tres o cuatro sonidos y una leyenda clara.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una persona interpreta la partitura amb percussió corporal o instruments suaus i una altra la segueix amb el dit; després intercanvien rols. Anoteu les interpretacions diferents i les instruccions que han resultat ambigües.
+Una persona interpreta la partitura con percusión corporal o instrumentos suaves y otra la sigue con el dedo; después intercambiad los roles. Anotad las interpretaciones diferentes y las instrucciones que han resultado ambiguas.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu la notació perquè indique millor durades, pauses o repeticions. No corregiu la persona que interpreta: feu que la partitura comunique amb més precisió. Proveu-la de nou amb una altra parella.
+Revisad la notación para que indique mejor duraciones, pausas o repeticiones. No corrijáis a la persona que interpreta: haced que la partitura comunique con más precisión. Probadla de nuevo con otra pareja.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu què ha fet que l’algoritme siga interpretable per a un públic que no l’ha escrit. **Evidència:** partitura amb llegenda, prova entre parelles i versió revisada.
+Explicad qué ha hecho que el algoritmo sea interpretable para un público que no lo ha escrito. **Evidencia:** partitura con leyenda, prueba entre parejas y versión revisada.
 
-### **Sessió 2 · Programar i depurar música (Programming & debugging music).**
+### **Sesión 2 · Programar y depurar música (Programming & debugging music).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Llegiu una seqüència de MakeCode amb notes, durades i una repetició. Predigueu l’ordre i la durada abans d’escoltar-la; compareu-la amb la partitura de la sessió anterior.
+Leed una secuencia de MakeCode con notas, duraciones y una repetición. Predecid el orden y la duración antes de escucharla; comparadla con la partitura de la sesión anterior.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Trieu una frase curta i programeu-la amb blocs de notes, durades i repeticions. Feu primer funcionar una frase de dos sons, afegiu una pausa explícita i després repetiu una secció. Useu l’altaveu integrat en micro:bit V2; amb V1, feu servir només una eixida d’àudio autoritzada pel centre o interpreteu-la amb instruments d’aula.
+Elegid una frase corta y programadla con bloques de notas, duraciones y repeticiones. Haced primero funcionar una frase de dos sonidos, añadid una pausa explícita y después repetid una sección. Usad el altavoz integrado en micro:bit V2; con V1, usad solo una salida de audio autorizada por el centro o interpretadla con instrumentos de aula.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Executeu la peça i anoteu l’ordre dels blocs, el resultat esperat i el que s’ha sentit o representat. Registreu qualsevol diferència entre la predicció i l’eixida.
+Ejecutad la pieza y anotad el orden de los bloques, el resultado esperado y lo que se ha oído o representado. Registrad cualquier diferencia entre la predicción y la salida.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Quan el resultat no correspon a la predicció, reviseu selecció de notes, durades, ordre dels blocs i repeticions, en aquest ordre. Canvieu un element i torneu a provar; anoteu error inicial, hipòtesi i resultat posterior.
+Cuando el resultado no corresponda a la predicción, revisad la selección de notas, las duraciones, el orden de los bloques y las repeticiones, en ese orden. Cambiad un elemento y volved a probar; anotad el error inicial, la hipótesis y el resultado posterior.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compareu la versió inicial i la depurada i expliqueu quin canvi ha resolt la diferència. **Evidència:** partitura, codi amb pausa o repetició i taula d’errors corregits.
+Comparad la versión inicial y la depurada y explicad qué cambio ha resuelto la diferencia. **Evidencia:** partitura, código con pausa o repetición y tabla de errores corregidos.
 
-### **Sessió 3 · Gestos musicals (Musical gestures).**
+### **Sesión 3 · Gestos musicales (Musical gestures).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Una persona dirigeix amb gestos acordats i l’equip prediu quina instrucció correspon a cada gest: repetir, triar una de dues notes o fer una pausa.
+Una persona dirige con gestos acordados y el equipo predice qué instrucción corresponde a cada gesto: repetir, elegir una de dos notas o hacer una pausa.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Traduïu els gestos en instruccions i incorporeu-los a la partitura. Trieu un públic concret i prepareu una notació visual que puga seguir la peça sense dependre de la lectura musical convencional.
+Traducid los gestos en instrucciones e incorporadlos a la partitura. Elegid un público concreto y preparad una notación visual que pueda seguir la pieza sin depender de la lectura musical convencional.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Intercanvieu la partitura amb un altre grup i registreu quins gestos s’han interpretat de més d’una manera i quina part de la notació ha causat el dubte.
+Intercambiad la partitura con otro grupo y registrad qué gestos se han interpretado de más de una manera y qué parte de la notación ha causado la duda.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Afegiu un símbol, una llegenda o un exemple breu per resoldre l’ambigüitat. Torneu a dirigir la seqüència i comproveu que els gestos i la partitura concorden.
+Añadid un símbolo, una leyenda o un ejemplo breve para resolver la ambigüedad. Volved a dirigir la secuencia y comprobad que los gestos y la partitura concuerdan.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu quina instrucció s’ha aclarit i com ho heu comprovat amb el públic triat. **Evidència:** partitura visual, llegenda de gestos i comentaris de la prova.
+Explicad qué instrucción se ha aclarado y cómo lo habéis comprobado con el público elegido. **Evidencia:** partitura visual, leyenda de gestos y comentarios de la prueba.
 
-### **Sessió 4 · Controlem la música amb entrades (Controlling music with inputs).**
+### **Sesión 4 · Controlamos la música con entradas (Controlling music with inputs).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu un esdeveniment senzill —per exemple, el botó A inicia o canvia de motiu— i representeu-lo en una targeta. Predigueu quina variació activarà i què ha de passar si no arriba cap entrada.
+Elegid un evento sencillo —por ejemplo, el botón A inicia o cambia de motivo— y representadlo en una tarjeta. Predecid qué variación activará y qué debe pasar si no llega ninguna entrada.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Programeu un botó o moviment de la placa perquè active una variació sonora amb condicions. Compareu l’activació per botó i per acceleròmetre amb moviments suaus i voluntaris. Assageu el moviment de la placa sobre una taula i comproveu que el llindar no activa la música accidentalment.
+Programad un botón o movimiento de la placa para que active una variación sonora con condiciones. Comparad la activación por botón y por acelerómetro con movimientos suaves y voluntarios. Ensayad el movimiento de la placa sobre una mesa y comprobad que el umbral no activa la música accidentalmente.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una persona executa les entrades i una altra registra la resposta prevista i observada, incloent-hi les activacions no desitjades. Expliqueu quina condició del programa decideix la variació.
+Una persona ejecuta las entradas y otra registra la respuesta prevista y observada, incluidas las activaciones no deseadas. Explicad qué condición del programa decide la variación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Ajusteu el llindar si cal i repetiu les proves. Manteniu un botó o control de direcció com a alternativa equivalent; ningú no ha de sacsejar la placa ni fer un moviment que no li resulte accessible o còmode.
+Ajustad el umbral si hace falta y repetid las pruebas. Mantened un botón o control de dirección como alternativa equivalente; nadie debe sacudir la placa ni hacer un movimiento que no le resulte accesible o cómodo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Comproveu si l’entrada activa el motiu previst i si hi ha una alternativa per a cada participant. **Evidència:** targeta d’esdeveniment, codi amb condició i registre de proves d’entrada.
+Comprobad si la entrada activa el motivo previsto y si hay una alternativa para cada participante. **Evidencia:** tarjeta de evento, código con condición y registro de pruebas de entrada.
 
-### **Sessió 5 · Avaluem la música de micro:bit (Evaluating micro:bit music).**
+### **Sesión 5 · Evaluamos la música de micro:bit (Evaluating micro:bit music).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Reprengueu la peça i identifiqueu el ritme acordat, la repetició i una condició que es podria modificar sense perdre el patró.
+Retomad la pieza e identificad el ritmo acordado, la repetición y una condición que se podría modificar sin perder el patrón.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Feu el repte de modificació: canvieu una condició o una repetició. Prepareu el codi o la partitura perquè una persona que no ha programat puga seguir la demostració.
+Haced el reto de modificación: cambiad una condición o una repetición. Preparad el código o la partitura para que una persona que no ha programado pueda seguir la demostración.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Presenteu la partitura o el codi abans d’interpretar-lo. L’audiència respon: quin patró ha reconegut?, en quin moment ha sentit el silenci?, quina part es podria representar amb llum o amb un gest? El retorn descriu l’experiència, no qualifica el gust musical ni la capacitat de ningú.
+Presentad la partitura o el código antes de interpretarlo. La audiencia responde: ¿qué patrón ha reconocido?, ¿en qué momento ha sentido el silencio?, ¿qué parte se podría representar con luz o con un gesto? El retorno describe la experiencia, no califica el gusto musical ni la capacidad de nadie.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu una part de la peça a partir del retorn. Si no convé usar so, mostreu una animació LED estàtica amb el ritme representat en seqüència o dirigiu una interpretació silenciosa amb targetes.
+Revisad una parte de la pieza a partir del retorno. Si no conviene usar sonido, mostrad una animación LED estática con el ritmo representado en secuencia o dirigid una interpretación silenciosa con tarjetas.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Valoreu quan la placa ajuda a fer música i quan convé una alternativa acústica, visual o corporal. **Evidència:** peça revisada, retorn de l’audiència i autoavaluació del mitjà triat.
+Valorad cuándo la placa ayuda a hacer música y cuándo conviene una alternativa acústica, visual o corporal. **Evidencia:** pieza revisada, retorno de la audiencia y autoevaluación del medio elegido.
 
-## 🧰 Materials i compatibilitat
+## 🧰 Materiales y compatibilidad
 
-BBC micro:bit, MakeCode, instruments d’aula opcionals, targetes de símbols i un altaveu de baix volum si cal. El so integrat està disponible en micro:bit V2; confirmeu les sortides d’àudio de la placa concreta abans de preparar l’activitat. No és necessari gravar ni reproduir veus.
+BBC micro:bit, MakeCode, instrumentos de aula opcionales, tarjetas de símbolos y un altavoz de bajo volumen si hace falta. El sonido integrado está disponible en micro:bit V2; confirmad las salidas de audio de la placa concreta antes de preparar la actividad. No es necesario grabar ni reproducir voces.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Recolliu partitura simbòlica, algoritme per a un públic, codi amb una iteració, taula d’errors corregits i una valoració del mitjà triat. Valoreu si les instruccions són interpretables, si el programa respon als esdeveniments previstos i si la proposta admet diverses formes de participació.
+Recoged partitura simbólica, algoritmo para un público, código con una iteración, tabla de errores corregidos y una valoración del medio elegido. Valorad si las instrucciones son interpretables, si el programa responde a los eventos previstos y si la propuesta admite diversas formas de participación.
 
-## Partitura comuna i procés de composició
+## Partitura común y proceso de composición
 
-Abans de programar, acordeu quatre símbols: so curt, so llarg, silenci i repetició. Afegiu un símbol d'inici i un de final perquè l'altra classe sàpia quan escoltar. La peça pot durar entre 20 i 40 segons i usar només tres o quatre sons, cosa que facilita provar-ne l'ordre sense haver de llegir notació convencional. Cada equip escriu una llegenda que explica què significa cada marca i deixa una casella per anotar una variació.
+Antes de programar, acordad cuatro símbolos: sonido corto, sonido largo, silencio y repetición. Añadid un símbolo de inicio y otro de final para que la otra clase sepa cuándo escuchar. La pieza puede durar entre 20 y 40 segundos y usar solo tres o cuatro sonidos, lo que facilita probar su orden sin tener que leer notación convencional. Cada equipo escribe una leyenda que explica qué significa cada marca y deja una casilla para anotar una variación.
 
-En la primera prova, una persona interpreta la partitura amb percussió corporal o instruments suaus i una altra la segueix amb el dit. Després intercanvien rols. Si les dues interpretacions són diferents, no corregiu la persona: reviseu la notació perquè indique millor la durada o el silenci. El docent pot mostrar una seqüència de MakeCode amb notes, durades i una repetició i demanar que el grup prediga l'ordre abans d'escoltar-la.
+En la primera prueba, una persona interpreta la partitura con percusión corporal o instrumentos suaves y otra la sigue con el dedo. Después intercambian roles. Si las dos interpretaciones son diferentes, no corrijáis a la persona: revisad la notación para que indique mejor la duración o el silencio. El docente puede mostrar una secuencia de MakeCode con notas, duraciones y una repetición y pedir que el grupo prediga el orden antes de escucharla.
 
-## Programació, entrades i depuració
+## Programación, entradas y depuración
 
-Feu primer funcionar una frase de dos sons. Afegiu després una pausa explícita i, finalment, repetiu una secció. Per controlar-la, definiu un esdeveniment senzill —botó A inicia o canvia de motiu— i representeu-lo en una targeta. Si s'usa l'acceleròmetre, assageu un moviment suau de la placa sobre una taula i comproveu que el llindar no activa la música accidentalment. Manteniu el botó o la direcció com a alternativa equivalent; no cal que ningú sacsege la placa.
+Haced primero funcionar una frase de dos sonidos. Añadid después una pausa explícita y, finalmente, repetid una sección. Para controlarla, definid un evento sencillo —el botón A inicia o cambia de motivo— y representadlo en una tarjeta. Si se usa el acelerómetro, ensayad un movimiento suave de la placa sobre una mesa y comprobad que el umbral no activa la música accidentalmente. Mantened el botón o la dirección como alternativa equivalente; no hace falta que nadie sacuda la placa.
 
-Quan el resultat no correspon a la predicció, reviseu en aquest ordre: selecció de notes, durades, ordre dels blocs, repeticions i esdeveniment d'entrada. Canvieu un element i torneu a escoltar. Anoteu l'error inicial, la hipòtesi i el resultat posterior; així l'alumnat mostra una estratègia de depuració, no només un producte final reeixit.
+Cuando el resultado no corresponde a la predicción, revisad en este orden: selección de notas, duraciones, orden de los bloques, repeticiones y evento de entrada. Cambiad un elemento y volved a escuchar. Anotad el error inicial, la hipótesis y el resultado posterior; así el alumnado muestra una estrategia de depuración, no solo un producto final logrado.
 
-## Mostra i retorn de l'audiència
+## Muestra y retorno de la audiencia
 
-Prepareu una mostra en què cada equip presente el codi o la partitura abans d'interpretar-la. L'audiència pot respondre amb tres preguntes: quin patró ha reconegut?, en quin moment ha sentit el silenci?, i quina part es podria representar amb llum o amb un gest? El retorn descriu l'experiència, no qualifica el gust musical ni la capacitat de ningú. Si no convé usar so, l'equip mostra una animació LED estàtica amb el ritme representat en seqüència o dirigeix una interpretació silenciosa amb targetes.
+Preparad una muestra en la que cada equipo presente el código o la partitura antes de interpretarla. La audiencia puede responder con tres preguntas: ¿qué patrón ha reconocido?, ¿en qué momento ha sentido el silencio? y ¿qué parte se podría representar con luz o con un gesto? El retorno describe la experiencia, no califica el gusto musical ni la capacidad de nadie. Si no conviene usar sonido, el equipo muestra una animación LED estática con el ritmo representado en secuencia o dirige una interpretación silenciosa con tarjetas.
 
-## Criteris observables i ajustos
+## Criterios observables y ajustes
 
-Useu una escala de tres nivells per observar si la partitura té llegenda, si l'ordre es pot seguir, si el programa integra una pausa o repetició, si una entrada activa l'acció prevista i si l'equip pot explicar una revisió. Accepteu evidències en format oral, escrit, visual o de demostració. Manteniu el volum baix i les proves breus; oferiu auriculars només si la política del centre i les necessitats individuals ho recomanen, i permeteu sempre una opció sense so.
+Usad una escala de tres niveles para observar si la partitura tiene leyenda, si el orden se puede seguir, si el programa integra una pausa o repetición, si una entrada activa la acción prevista y si el equipo puede explicar una revisión. Aceptad evidencias en formato oral, escrito, visual o de demostración. Mantened el volumen bajo y las pruebas breves; ofreced auriculares solo si la política del centro y las necesidades individuales lo recomiendan, y permitid siempre una opción sin sonido.
 
-## ♿ Participació i cura auditiva
+## ♿ Participación y cuidado auditivo
 
-Oferiu notació, llum, percussió suau, instruments o direcció com a alternatives equivalents. Manteniu el volum moderat i permeteu treballar sense estímuls sonors. La interpretació amb moviment és opcional i no es puntua la precisió física.
+Ofreced notación, luz, percusión suave, instrumentos o dirección como alternativas equivalentes. Mantened el volumen moderado y permitid trabajar sin estímulos sonoros. La interpretación con movimiento es opcional y no se puntúa la precisión física.
 
-## 🔗 Unitat oficial adaptada
+## 🔗 Unidad oficial adaptada
 
-Aquesta situació adapta les cinc lliçons de micro:bit [Musical micro:bit](https://microbit.org/teach/lessons/musical-microbit-unit-overview/): *Musical algorithms*, *Programming & debugging music*, *Musical gestures*, *Controlling music with inputs* i *Evaluating micro:bit music*. Les peces, els ritmes, les targetes i l’avaluació són originals i cobreixen algoritmes, repetició, selecció, entrades i eixides.
+Esta situación adapta las cinco lecciones de micro:bit [Musical micro:bit](https://microbit.org/teach/lessons/musical-microbit-unit-overview/): *Musical algorithms*, *Programming & debugging music*, *Musical gestures*, *Controlling music with inputs* y *Evaluating micro:bit music*. Las piezas, los ritmos, las tarjetas y la evaluación son originales y cubren algoritmos, repetición, selección, entradas y salidas.

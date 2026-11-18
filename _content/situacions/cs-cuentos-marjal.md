@@ -15,141 +15,141 @@ challenge: "¿Cómo podemos contar una historia con una ruta que el robot pueda 
 official_source: "https://matatalab.com/en/node/89"
 ---
 
-![MatataBot i la torre reals del Coding Set recorren una maqueta de l’Albufera amb escenes de paper, camins i targetes de relat.](../../_assets/situacions/cs-contes-marjal.webp)
+![MatataBot y la torre reales del Coding Set recorren una maqueta de la Albufera con escenas de papel, caminos y tarjetas de relato.](../../_assets/situacions/cs-contes-marjal.webp)
 
-_La maqueta, les escenes i les targetes són materials narratius propis. MatataBot no reconeix els paisatges ni interpreta la història: només executa les ordres programades._
+_La maqueta, las escenas y las tarjetas son materiales narrativos propios. MatataBot no reconoce los paisajes ni interpreta la historia: solo ejecuta las órdenes programadas._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-Una classe crea un conte col·lectiu sobre un viatge imaginari pel marjal: MatataBot ix d’un embarcador de maqueta, passa per un observatori, una séquia i un ullal, i arriba a una barraca de paper. Cada parada aporta una escena que l’alumnat descriu amb una frase, un so vocal o una targeta de vocabulari. Després, un altre equip rep el mapa i el programa, però no el relat; ha d’executar la ruta i reconstruir la història a partir de les escenes on arriba.
+Una clase crea un cuento colectivo sobre un viaje imaginario por la marjal: MatataBot sale de un embarcadero de maqueta, pasa por un observatorio, una acequia y un manantial, y llega a una barraca de papel. Cada parada aporta una escena que el alumnado describe con una frase, un sonido vocal o una tarjeta de vocabulario. Después, otro equipo recibe el mapa y el programa, pero no el relato; debe ejecutar la ruta y reconstruir la historia a partir de las escenas a las que llega.
 
-La proposta adapta *MatataBot’s Adventure*, activitat oficial de Matatalab Lite. El pla oficial presenta el mode de control, les ordres de moviment i la música, demana crear en grup una història d’exploració, decorar-ne l’escena i representar-la controlant el robot, i tanca amb una presentació i preguntes de reflexió. Ací el context del bosc es transforma en un paisatge local de maqueta i el control del producte Lite es tradueix a una seqüència tangible del Coding Set. Aquesta equivalència és una adaptació didàctica: el tauler del Coding Set no és el comandament de control de Matatalab Lite. La decoració es col·loca en l’escena, mai damunt del robot ni de la torre.
+La propuesta adapta *MatataBot's Adventure*, actividad oficial de Matatalab Lite. El plan oficial presenta el modo de control, las órdenes de movimiento y la música, pide crear en grupo una historia de exploración, decorar su escena y representarla controlando el robot, y cierra con una presentación y preguntas de reflexión. Aquí el contexto del bosque se transforma en un paisaje local de maqueta y el control del producto Lite se traduce a una secuencia tangible del Coding Set. Esta equivalencia es una adaptación didáctica: el tablero del Coding Set no es el mando de control de Matatalab Lite. La decoración se coloca en la escena, nunca encima del robot ni de la torre.
 
-**Pregunta guia:** quina informació necessita un altre equip per a executar la ruta i contar una història coherent sense conéixer la nostra intenció?
+**Pregunta guía:** ¿qué información necesita otro equipo para ejecutar la ruta y contar una historia coherente sin conocer nuestra intención?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Descompondre un relat en escenes ordenades i associar cada escena a una parada concreta del mapa.
-- Transformar una ruta dibuixada en una seqüència de moviments i girs del Coding Set.
-- Predir el recorregut a partir dels blocs, provar-lo i corregir la primera divergència observable.
-- Explicar una història oralment, amb pictogrames, gestos o frases breus, i interpretar la d’un altre equip a partir d’evidències.
-- Diferenciar les accions humanes de les funcions del robot: l’alumnat crea, narra i interpreta; MatataBot no veu ni comprén les escenes.
+- Descomponer un relato en escenas ordenadas y asociar cada escena a una parada concreta del mapa.
+- Transformar una ruta dibujada en una secuencia de movimientos y giros del Coding Set.
+- Predecir el recorrido a partir de los bloques, probarlo y corregir la primera divergencia observable.
+- Explicar una historia oralmente, con pictogramas, gestos o frases breves, e interpretar la de otro equipo a partir de evidencias.
+- Diferenciar las acciones humanas de las funciones del robot: el alumnado crea, narra e interpreta; MatataBot no ve ni comprende las escenas.
 
-**Paraules clau:** escena, relat, seqüència, mapa, casella, orientació, programa, predicció, prova, depuració.
+**Palabras clave:** escena, relato, secuencia, mapa, casilla, orientación, programa, predicción, prueba, depuración.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Coding Set de la dotació: MatataBot, torre, tauler i blocs de moviment. Comproveu càrrega, connexió i lectura d’una seqüència curta segons el model del centre.
-- Graella pròpia de 5 × 5 caselles, amb punt d’inici, orientació marcada i quatre parades separades per camins transitables. Ajusteu la mida de les caselles al pas real del robot i fixeu el paper perquè no llisque.
-- Quatre escenes planes de cartó o paper —embarcador, observatori, séquia i ullal—, targetes amb pictogrames i fulls grans per al relat. Les escenes han d’estar al costat de la graella, sense obstruir-la.
-- Full de registre amb **escena**, **frase o pictograma**, **ordre de visita**, **seqüència prevista**, **resultat** i **canvi provat**; targetes de fletxes per a planificar abans de col·locar blocs.
-- Opcional: un instrument senzill per a crear un efecte vocal en directe. No es necessita cap accessori de música, sensor, càmera ni aplicació.
+- Coding Set de la dotación: MatataBot, torre, tablero y bloques de movimiento. Comprobad carga, conexión y lectura de una secuencia corta según el modelo del centro.
+- Cuadrícula propia de 5 × 5 casillas, con punto de inicio, orientación marcada y cuatro paradas separadas por caminos transitables. Ajustad el tamaño de las casillas al paso real del robot y fijad el papel para que no resbale.
+- Cuatro escenas planas de cartón o papel —embarcadero, observatorio, acequia y manantial—, tarjetas con pictogramas y hojas grandes para el relato. Las escenas deben estar junto a la cuadrícula, sin obstruirla.
+- Hoja de registro con **escena**, **frase o pictograma**, **orden de visita**, **secuencia prevista**, **resultado** y **cambio probado**; tarjetas de flechas para planificar antes de colocar bloques.
+- Opcional: un instrumento sencillo para crear un efecto vocal en directo. No se necesita ningún accesorio de música, sensor, cámara ni aplicación.
 
-Abans de començar, proveu cada casella i els girs sobre la mateixa superfície de l’activitat. Marqueu la posició i l’orientació inicials; trieu parades que es puguen visitar en més d’un ordre perquè hi haja decisions narratives i de ruta. No poseu peces menudes ni elements solts davant del robot. Si no es pot usar el robot, la mateixa seqüència es pot representar amb una fitxa de paper i una persona que llig les ordres.
+Antes de empezar, probad cada casilla y los giros sobre la misma superficie de la actividad. Marcad la posición y la orientación iniciales; elegid paradas que se puedan visitar en más de un orden para que haya decisiones narrativas y de ruta. No pongáis piezas pequeñas ni elementos sueltos delante del robot. Si no se puede usar el robot, la misma secuencia se puede representar con una ficha de papel y una persona que lea las órdenes.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Sessió 1 · Un paisatge es converteix en escenes (45 min)
+### Sesión 1 · Un paisaje se convierte en escenas (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu quatre imatges o pictogrames del marjal sense donar-los encara un ordre. En grups, inventeu una situació inicial i una destinació: per exemple, una barqueta de paper que porta un missatge a l’observatori. Pregunteu quines escenes fan falta perquè el relat s’entenga i com podríem mostrar-les sense escriure un text llarg.
+Presentad cuatro imágenes o pictogramas de la marjal sin darles todavía un orden. En grupos, inventad una situación inicial y un destino: por ejemplo, una barquita de papel que lleva un mensaje al observatorio. Preguntad qué escenas hacen falta para que el relato se entienda y cómo podríamos mostrarlas sin escribir un texto largo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Col·loqueu les quatre escenes al voltant d’una graella plana i deixeu un corredor lliure per a MatataBot. Amb una fitxa de paper, assageu trajectes possibles des de l’embarcador. Identifiqueu caselles, girs i punts on la història podria canviar; distingiu el mapa de la seqüència d’ordres que el robot pot executar.
+Colocad las cuatro escenas alrededor de una cuadrícula plana y dejad un pasillo libre para MatataBot. Con una ficha de papel, ensayad trayectos posibles desde el embarcadero. Identificad casillas, giros y puntos donde la historia podría cambiar; distinguid el mapa de la secuencia de órdenes que el robot puede ejecutar.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Cada equip tria un ordre de visita i crea una frase, un pictograma o un gest per a cada parada. Anoteu l’escena i la pista narrativa en quatre targetes separades. Una altra persona del grup comprova si les pistes permeten entendre què passa abans i després, sense haver d’endevinar dades que no apareixen.
+Cada equipo elige un orden de visita y crea una frase, un pictograma o un gesto para cada parada. Anotad la escena y la pista narrativa en cuatro tarjetas separadas. Otra persona del grupo comprueba si las pistas permiten entender qué pasa antes y después, sin tener que adivinar datos que no aparecen.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu de lloc dues escenes i reviseu si el relat continua sent coherent. Si no, reescriviu una pista o canvieu l’ordre narratiu; manteniu el mapa i el programa en blanc fins que la seqüència de la història estiga clara.
+Cambiad de lugar dos escenas y revisad si el relato sigue siendo coherente. Si no, reescribid una pista o cambiad el orden narrativo; mantened el mapa y el programa en blanco hasta que la secuencia de la historia esté clara.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** quatre escenes ordenades amb una pista comprensible per a cada una i un mapa amb inici i destinació. **Pregunta:** quina pista ajuda més a entendre la relació entre dues escenes consecutives?
+**Evidencia:** cuatro escenas ordenadas con una pista comprensible para cada una y un mapa con inicio y destino. **Pregunta:** ¿qué pista ayuda más a entender la relación entre dos escenas consecutivas?
 
-### Sessió 2 · Escrivim una ruta que es puga llegir (45 min)
+### Sesión 2 · Escribimos una ruta que se pueda leer (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu el mapa i les targetes narratives. Abans de moure el robot, cada parella assenyala la ruta amb el dit i prediu quants moviments i girs necessitarà. Marqueu on espera arribar després de tres ordres concretes.
+Recuperad el mapa y las tarjetas narrativas. Antes de mover el robot, cada pareja señala la ruta con el dedo y predice cuántos movimientos y giros necesitará. Marcad dónde espera llegar después de tres órdenes concretas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Convertiu la ruta en una tira de blocs físics. Llegiu-la en veu alta d’esquerra a dreta i comproveu que cada gir canvia l’orientació sense desplaçar el robot lateralment. Feu una passada de paper: una persona llig cada ordre i l’altra mou una fitxa per la graella. Canvieu de rol i reviseu qualsevol casella amb més d’una interpretació.
+Convertid la ruta en una tira de bloques físicos. Leedla en voz alta de izquierda a derecha y comprobad que cada giro cambia la orientación sin desplazar el robot lateralmente. Haced una pasada de papel: una persona lee cada orden y la otra mueve una ficha por la cuadrícula. Cambiad de rol y revisad cualquier casilla con más de una interpretación.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Registreu la correspondència entre cada tram i l’escena a què porta. Una parella revisora ha de poder seguir el programa sense que l’equip autor li indique amb el dit quin és el camí correcte. Afegiu al full les ordres de moviment, els girs i el text o pictograma que es llegirà en cada parada.
+Registrad la correspondencia entre cada tramo y la escena a la que lleva. Una pareja revisora debe poder seguir el programa sin que el equipo autor le indique con el dedo cuál es el camino correcto. Añadid a la hoja las órdenes de movimiento, los giros y el texto o pictograma que se leerá en cada parada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu primer una ruta de dues escenes. Si MatataBot no arriba on s’esperava, localitzeu la primera divergència, comproveu orientació i recompte, canvieu una sola ordre i torneu a provar. Després, completeu la seqüència sencera des del mateix punt inicial.
+Ejecutad primero una ruta de dos escenas. Si MatataBot no llega donde se esperaba, localizad la primera divergencia, comprobad orientación y recuento, cambiad una sola orden y volved a probar. Después, completad la secuencia entera desde el mismo punto inicial.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** tira de blocs llegible per una altra parella i registre de predicció/resultat per a cada parada. **Pregunta:** com podem saber si el problema és una ordre mal col·locada o una casella mal representada al mapa?
+**Evidencia:** tira de bloques legible por otra pareja y registro de predicción/resultado para cada parada. **Pregunta:** ¿cómo podemos saber si el problema es una orden mal colocada o una casilla mal representada en el mapa?
 
-### Sessió 3 · Representem el conte amb el robot (45 min)
+### Sesión 3 · Representamos el cuento con el robot (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Repartiu els rols de programació, narració, observació i registre. Cada equip llig el seu conte mentre una altra persona recorre el mapa amb el dit. Abans de prémer *Play*, l’equip observador prediu en quina escena arribarà MatataBot després de cada gir.
+Repartid los roles de programación, narración, observación y registro. Cada equipo lee su cuento mientras otra persona recorre el mapa con el dedo. Antes de pulsar *Play*, el equipo observador predice en qué escena llegará MatataBot después de cada giro.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Carregueu els blocs al tauler, comproveu de nou l’orientació i executeu la ruta a baixa velocitat d’aula i amb l’espai lliure. En cada parada, l’alumnat llig la frase, mostra el pictograma o fa el gest acordat; el robot no activa ni reconeix cap senyal. Si una ordre falla, atureu l’activitat, anoteu la posició observada i reviseu la seqüència abans d’una nova execució.
+Cargad los bloques en el tablero, comprobad de nuevo la orientación y ejecutad la ruta a baja velocidad de aula y con el espacio libre. En cada parada, el alumnado lee la frase, muestra el pictograma o hace el gesto acordado; el robot no activa ni reconoce ninguna señal. Si una orden falla, detened la actividad, anotad la posición observada y revisad la secuencia antes de una nueva ejecución.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Registreu la ruta real i contrasteu-la amb la prevista. Graveu només si el centre ja disposa d’un mitjà autoritzat i hi ha consentiment; com a opció ordinària, feu la narració en directe o useu targetes impreses. Les evidències poden ser el mapa anotat i les frases, sense enregistrar veus ni imatges de l’alumnat.
+Registrad la ruta real y contrastadla con la prevista. Grabad solo si el centro ya dispone de un medio autorizado y hay consentimiento; como opción ordinaria, haced la narración en directo o usad tarjetas impresas. Las evidencias pueden ser el mapa anotado y las frases, sin grabar voces ni imágenes del alumnado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu les històries entre equips. La parella visitant rep les escenes i els blocs, però no l’explicació de l’autoria. Primer reconstrueix el relat a partir de l’ordre de parades i les pistes; després executa el programa i comprova si la seqüència arriba a totes les escenes. Qui ha creat el conte pot aclarir les regles, però no revelar la narració final abans de la prova.
+Intercambiad las historias entre equipos. La pareja visitante recibe las escenas y los bloques, pero no la explicación de la autoría. Primero reconstruye el relato a partir del orden de paradas y las pistas; después ejecuta el programa y comprueba si la secuencia llega a todas las escenas. Quien ha creado el cuento puede aclarar las reglas, pero no revelar la narración final antes de la prueba.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** programa executat, quatre parades registrades i una reconstrucció del relat feta per un altre equip. **Pregunta:** quina informació ha sigut suficient perquè la parella visitant reconstruïra la història?
+**Evidencia:** programa ejecutado, cuatro paradas registradas y una reconstrucción del relato hecha por otro equipo. **Pregunta:** ¿qué información ha sido suficiente para que la pareja visitante reconstruyera la historia?
 
-### Sessió 4 · Publica un conte que una altra classe puga jugar (45 min)
+### Sesión 4 · Publica un cuento que otra clase pueda jugar (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Cada equip selecciona un conte que es puga completar en una ruta curta. Predigueu quines instruccions necessita una classe que no ha vist la planificació: inici, orientació, ordre de visita, significat de les pistes i condició d’arribada.
+Cada equipo selecciona un cuento que se pueda completar en una ruta corta. Predecid qué instrucciones necesita una clase que no ha visto la planificación: inicio, orientación, orden de visita, significado de las pistas y condición de llegada.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Prepareu un paquet reutilitzable: mapa amb llegenda, seqüència de blocs dibuixada, targetes d’escena i instruccions breus. Afegiu una alternativa desconnectada en què una persona fa de robot i només pot moure’s quan escolta una ordre vàlida. No poseu adorns damunt del robot ni presenteu les escenes com a sensors o peces del kit.
+Preparad un paquete reutilizable: mapa con leyenda, secuencia de bloques dibujada, tarjetas de escena e instrucciones breves. Añadid una alternativa desconectada en la que una persona hace de robot y solo puede moverse cuando escucha una orden válida. No pongáis adornos encima del robot ni presentéis las escenas como sensores o piezas del kit.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una altra parella prova el paquet sense ajuda oral de l’autoria. Registreu quines instruccions ha entés, on s’ha aturat, quines pistes ha interpretat i si ha pogut arribar al final. Si el mapa no és accessible, accepteu que la parella descriga, assenyale o ordene targetes en lloc d’escriure.
+Otra pareja prueba el paquete sin ayuda oral de la autoría. Registrad qué instrucciones ha entendido, dónde se ha detenido, qué pistas ha interpretado y si ha podido llegar al final. Si el mapa no es accesible, aceptad que la pareja describa, señale u ordene tarjetas en lugar de escribir.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Repareu una ambigüitat cada vegada i torneu a provar amb una tercera persona. Manteniu el mateix programa mentre reviseu el text; si modifiqueu blocs, anoteu la nova versió i compareu-ne el recorregut amb la prova anterior.
+Reparad una ambigüedad cada vez y volved a probar con una tercera persona. Mantened el mismo programa mientras revisáis el texto; si modificáis bloques, anotad la nueva versión y comparad su recorrido con la prueba anterior.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** conte jugable per un altre equip, registre de la prova externa i una revisió justificada. **Tancament:** «La instrucció que hem fet més clara és…; ho sabem perquè…».
+**Evidencia:** cuento jugable por otro equipo, registro de la prueba externa y una revisión justificada. **Cierre:** «La instrucción que hemos hecho más clara es…; lo sabemos porque…».
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu el mapa anotat, les quatre escenes i pistes, el programa en blocs, les prediccions abans de cada prova, el registre de divergències i la interpretació de la parella visitant. Observeu si l’alumnat (1) ordena les escenes amb sentit, (2) tradueix la ruta a moviments i girs compatibles amb la graella, (3) comprova el programa i localitza la primera diferència, (4) interpreta les pistes amb evidència i (5) millora instruccions després d’una prova externa. Valoreu la claredat, la revisió i la cooperació; no la velocitat ni la capacitat d’improvisar oralment.
+Recoged el mapa anotado, las cuatro escenas y pistas, el programa en bloques, las predicciones antes de cada prueba, el registro de divergencias y la interpretación de la pareja visitante. Observad si el alumnado (1) ordena las escenas con sentido, (2) traduce la ruta a movimientos y giros compatibles con la cuadrícula, (3) comprueba el programa y localiza la primera diferencia, (4) interpreta las pistas con evidencia y (5) mejora instrucciones después de una prueba externa. Valorad la claridad, la revisión y la cooperación; no la velocidad ni la capacidad de improvisar oralmente.
 
-Autoavaluació: «He predit la ruta abans d’executar-la», «he distingit el relat de les ordres del robot» i «he fet una revisió a partir d’una prova». Coavaluació: la parella visitant marca les instruccions que ha pogut seguir i assenyala una escena que necessita una pista més clara.
+Autoevaluación: «He predicho la ruta antes de ejecutarla», «he distinguido el relato de las órdenes del robot» y «he hecho una revisión a partir de una prueba». Coevaluación: la pareja visitante marca las instrucciones que ha podido seguir y señala una escena que necesita una pista más clara.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Oferiu targetes grans d’alt contrast, pictogrames amb forma i textura, frases model, suport oral o gestual i una graella ampliada. Permeteu que cada alumne trie entre narrar, programar, moure la fitxa, comprovar el mapa o registrar les proves. L’alternativa desconnectada conserva el mateix repte i no és una activitat de menor valor. Manteniu el robot en una superfície plana, fora de la vora de la taula, i deixeu lliure el recorregut; les maquetes no han de tindre peces menudes ni vores que puguen enganxar-se. No calen dades, veus ni imatges personals.
+Ofreced tarjetas grandes de alto contraste, pictogramas con forma y textura, frases modelo, apoyo oral o gestual y una cuadrícula ampliada. Permitid que cada alumno elija entre narrar, programar, mover la ficha, comprobar el mapa o registrar las pruebas. La alternativa desconectada conserva el mismo reto y no es una actividad de menor valor. Mantened el robot en una superficie plana, fuera del borde de la mesa, y dejad libre el recorrido; las maquetas no deben tener piezas pequeñas ni bordes que puedan engancharse. No hacen falta datos, voces ni imágenes personales.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [*MatataBot’s Adventure*](https://matatalab.com/en/node/89): l’activitat oficial introdueix el mode de control de Matatalab Lite, les ordres endavant/enrere/esquerra/dreta i música, proposa que grups creen una història d’exploració, decoren l’escena, representen el relat amb el robot i el presenten. El tancament oficial inclou preguntes sobre el procés creatiu i les dificultats amb el comandament. La proposta conserva la creació narrativa, l’escena, la representació i la presentació; trasllada la temàtica del bosc al marjal i les ordres del mode Lite a una programació tangible del Coding Set. No afirma que el tauler del Coding Set funcione com el comandament de Lite.
-- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): font complementària per a verificar la connexió MatataBot–torre–tauler i les ordres tangibles d’avanç, retrocés i gir. Les escenes, el conte, el mapa, els registres i les proves entre parelles són materials originals.
+- Matatalab, [*MatataBot's Adventure*](https://matatalab.com/en/node/89): la actividad oficial introduce el modo de control de Matatalab Lite, las órdenes adelante/atrás/izquierda/derecha y música, propone que los grupos creen una historia de exploración, decoren la escena, representen el relato con el robot y lo presenten. El cierre oficial incluye preguntas sobre el proceso creativo y las dificultades con el mando. La propuesta conserva la creación narrativa, la escena, la representación y la presentación; traslada la temática del bosque a la marjal y las órdenes del modo Lite a una programación tangible del Coding Set. No afirma que el tablero del Coding Set funcione como el mando de Lite.
+- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): fuente complementaria para verificar la conexión MatataBot–torre–tablero y las órdenes tangibles de avance, retroceso y giro. Las escenas, el cuento, el mapa, los registros y las pruebas entre parejas son materiales originales.
 
-La imatge IA pròpia mostra el MatataBot i la torre basats en la dotació real, amb un paisatge de maqueta de paper. El paisatge no és un mapa real ni una capacitat de percepció del robot.
+La imagen IA propia muestra el MatataBot y la torre basados en la dotación real, con un paisaje de maqueta de papel. El paisaje no es un mapa real ni una capacidad de percepción del robot.

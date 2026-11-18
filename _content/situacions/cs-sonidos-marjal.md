@@ -15,143 +15,143 @@ challenge: "¿Cómo podemos representar y ordenar sonidos más agudos y más gra
 official_source: "https://matatalab.com/cdn/ff/Ecee9VUTy4hPQNW2Vq3TPoDZ5mjzubwFIH9Hvla33oE/1637739674/public/2021-11/Musician%20Add-on%20Activity%20Cards.pdf"
 ---
 
-![MatataBot i torre del Coding Set al costat d’una partitura de paper i targetes de notes per a una melodia pròpia.](../../_assets/situacions/cs-sons-marjal.webp)
+![MatataBot y torre del Coding Set junto a una partitura de papel y tarjetas de notas para una melodía propia.](../../_assets/situacions/cs-sons-marjal.webp)
 
-_Les targetes i la partitura són materials de paper creats per a la proposta. El Musician Add-On és opcional i només amb aquest accessori el MatataBot reprodueix les notes programades._
+_Las tarjetas y la partitura son materiales de papel creados para la propuesta. El Musician Add-On es opcional y solo con este accesorio MatataBot reproduce las notas programadas._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-La classe vol crear una peça breu que una altra classe puga llegir i escoltar. El paisatge de la marjal inspira el tema, però no assignarem una nota a cada animal ni afirmarem que el robot imita sons de la natura. Investigarem una propietat musical concreta: en el pentagrama, les notes situades més amunt representen sons més aguts que les situades més avall. Després, farem servir els blocs de nota i de melodia del Musician Add-On si el centre en disposa; sense aquest accessori, completarem les mateixes activitats de representació i composició amb veu, percussió corporal i peces de paper, identificant aquesta via com a desconnectada.
+La clase quiere crear una pieza breve que otra clase pueda leer y escuchar. El paisaje de la marjal inspira el tema, pero no asignaremos una nota a cada animal ni afirmaremos que el robot imita sonidos de la naturaleza. Investigaremos una propiedad musical concreta: en el pentagrama, las notas situadas más arriba representan sonidos más agudos que las situadas más abajo. Después, usaremos los bloques de nota y de melodía del Musician Add-On si el centro dispone de ellos; sin este accesorio, completaremos las mismas actividades de representación y composición con voz, percusión corporal y piezas de papel, identificando esta vía como desconectada.
 
-La proposta combina dos referents diferents, sense confondre'ls: la lliçó de mostra *Staff Notes and Pitches* aporta la lectura del pentagrama, i les targetes oficials *Music Teacher* i *Music Player I* aporten, respectivament, el joc de reconeixement de notes i la interpretació d'una partitura programada. En lloc de reproduir la cançó protegida de la targeta, la classe crea una melodia pròpia. Aquesta adaptació cobreix aquests materials concrets; no declara adaptades les altres onze lliçons del currículum Musician ni les altres huit targetes del complement.
+La propuesta combina dos referentes distintos, sin confundirlos: la lección de muestra *Staff Notes and Pitches* aporta la lectura del pentagrama, y las tarjetas oficiales *Music Teacher* y *Music Player I* aportan, respectivamente, el juego de reconocimiento de notas y la interpretación de una partitura programada. En lugar de reproducir la canción protegida de la tarjeta, la clase crea una melodía propia. Esta adaptación cubre estos materiales concretos; no declara adaptadas las otras once lecciones del currículo Musician ni las otras ocho tarjetas del complemento.
 
-**Pregunta guia:** com podem deixar escrit un patró de sons perquè una altra parella puga reconstruir-lo i explicar què ha canviat?
+**Pregunta guía:** ¿cómo podemos dejar escrito un patrón de sonidos para que otra pareja pueda reconstruirlo y explicar qué ha cambiado?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Identificar les cinc línies i els quatre espais del pentagrama i numerar-los de baix cap amunt.
-- Relacionar la posició vertical d’una nota amb l’altura greu o aguda, sense confondre altura amb volum.
-- Escoltar i comparar els blocs de nota 3 i 5 i ordenar una sèrie de notes de menor a major altura.
-- Diferenciar visualment les peces de clau d'alt i de sol, i relacionar els selectors numerats de l'1 al 7 amb Do–Re–Mi–Fa–Sol–La–Ti.
-- Seguir una notació numèrica en una execució ordenada i reconstruir una melodia original en equip.
-- Representar una peça breu amb una llegenda clara, provar-la i explicar una revisió.
-- Distingir una nota seleccionada amb un bloc de nota d’una melodia predefinida del bloc *Melody*.
+- Identificar las cinco líneas y los cuatro espacios del pentagrama y numerarlos de abajo arriba.
+- Relacionar la posición vertical de una nota con la altura grave o aguda, sin confundir altura con volumen.
+- Escuchar y comparar los bloques de nota 3 y 5 y ordenar una serie de notas de menor a mayor altura.
+- Diferenciar visualmente las piezas de clave de alto y de sol, y relacionar los selectores numerados del 1 al 7 con Do–Re–Mi–Fa–Sol–La–Ti.
+- Seguir una notación numérica en una ejecución ordenada y reconstruir una melodía original en equipo.
+- Representar una pieza breve con una leyenda clara, probarla y explicar una revisión.
+- Distinguir una nota seleccionada con un bloque de nota de una melodía predefinida del bloque *Melody*.
 
-**Paraules clau:** pentagrama, línia, espai, nota, altura, greu, agut, seqüència, pols, compàs, llegenda.
+**Palabras clave:** pentagrama, línea, espacio, nota, altura, grave, agudo, secuencia, pulso, compás, leyenda.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Coding Set: MatataBot, torre de control, tauler i cable/càrrega segons el model del centre.
-- Si la dotació en disposa: Musician Add-On compatible, blocs de nota amb selectors, blocs *Melody* i blocs numèrics. L’inventari oficial del complement inclou blocs de notes en clau d’alt i de sol i blocs de melodia predefinida; comproveu quines peces concretes té el centre abans d’escriure les instruccions de sessió.
-- Set targetes de notes Do–Ti i targetes de notació numèrica preparades pel docent; són materials de paper propis, no peces oficials ni reconegudes automàticament pel robot.
-- Cinc tires de llana o cinta de paper per a un pentagrama gran, notes de cartolina, llapis i un full de registre amb columnes **posició**, **nota/bloc**, **predicció**, **so observat** i **canvi**.
-- Targetes amb fletxes amunt/avall, colors amb contrast i una versió de la partitura amb peces grans. L’audició mai no és l’única manera de participar.
+- Coding Set: MatataBot, torre de control, tablero y cable/carga según el modelo del centro.
+- Si la dotación dispone de ello: Musician Add-On compatible, bloques de nota con selectores, bloques *Melody* y bloques numéricos. El inventario oficial del complemento incluye bloques de notas en clave de alto y de sol y bloques de melodía predefinida; comprobad qué piezas concretas tiene el centro antes de escribir las instrucciones de sesión.
+- Siete tarjetas de notas Do–Ti y tarjetas de notación numérica preparadas por el docente; son materiales de papel propios, no piezas oficiales ni reconocidas automáticamente por el robot.
+- Cinco tiras de lana o cinta de papel para un pentagrama grande, notas de cartulina, lápices y una hoja de registro con columnas **posición**, **nota/bloque**, **predicción**, **sonido observado** y **cambio**.
+- Tarjetas con flechas arriba/abajo, colores con contraste y una versión de la partitura con piezas grandes. La audición nunca es la única manera de participar.
 
-Abans de l’activitat, carregueu robot i torre i feu una prova amb els blocs reals. En el complement, gireu el selector de cada bloc de nota a la posició triada i col·loqueu-lo al tauler perquè la torre el llija. Valideu amb el manual del model local la col·locació de qualsevol bloc numèric: no forceu peces ni pressuposeu una orientació si el kit difereix. Prepareu les targetes de crida i la partitura numèrica amb una equivalència estable entre 1–7 i Do–Ti. Manteniu el volum baix i oferiu una tasca visual equivalent.
+Antes de la actividad, cargad el robot y la torre y haced una prueba con los bloques reales. En el complemento, girad el selector de cada bloque de nota a la posición elegida y colocadlo en el tablero para que la torre lo lea. Validad con el manual del modelo local la colocación de cualquier bloque numérico: no forcéis piezas ni presupongáis una orientación si el kit difiere. Preparad las tarjetas de llamada y la partitura numérica con una equivalencia estable entre 1–7 y Do–Ti. Mantened el volumen bajo y ofreced una tarea visual equivalente.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Un pentagrama per a situar els sons (45 min)
+### Un pentagrama para situar los sonidos (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Pregunteu on escoltem música i com podríem escriure una melodia perquè algú altre la puga llegir. Mostreu cinc línies paral·leles i quatre espais. Cada equip prediu on sonarà una nota més aguda i on una de més greu; distingiu des del principi *altura* (agut/greu) de *volum* (fort/suau).
+Preguntad dónde escuchamos música y cómo podríamos escribir una melodía para que otra persona pueda leerla. Mostrad cinco líneas paralelas y cuatro espacios. Cada equipo predice dónde sonará una nota más aguda y dónde una más grave; distinguid desde el principio *altura* (agudo/grave) de *volumen* (fuerte/suave).
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Amb tires de llana, cordill o paper, construïu un pentagrama gran. Numereu línies i espais de baix a dalt. Col·loqueu notes retallades en línies i espais indicats en targetes, incloent línia 1, espai 2, línia 3 i línia 5. Una persona situa les notes i una altra comprova la posició amb la llegenda; canvieu els rols.
+Con tiras de lana, cordel o papel, construid un pentagrama grande. Numerad líneas y espacios de abajo arriba. Colocad notas recortadas en las líneas y espacios indicados en tarjetas, incluida la línea 1, el espacio 2, la línea 3 y la línea 5. Una persona sitúa las notas y otra comprueba la posición con la leyenda; cambiad los roles.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Cada parella tria dues posicions, les representa al full i indica quina espera que siga més aguda. Afegiu una fletxa amunt o avall i expliqueu la predicció amb la posició escrita, sense dependre només del color.
+Cada pareja elige dos posiciones, las representa en la hoja e indica cuál espera que sea más aguda. Añadid una flecha arriba o abajo y explicad la predicción con la posición escrita, sin depender solo del color.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu les targetes amb una altra parella. L’equip visitant ha de reconstruir les dues notes en el pentagrama i justificar l’ordre. Si interpreta una posició diferent, reviseu la numeració de la llegenda i torneu-ho a provar.
+Intercambiad las tarjetas con otra pareja. El equipo visitante debe reconstruir las dos notas en el pentagrama y justificar el orden. Si interpreta una posición distinta, revisad la numeración de la leyenda y volved a probarlo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** pentagrama de cinc línies amb una nota en línia i una en espai, numeració de baix cap amunt i comparació escrita greu/aguda. **Pregunta docent:** què canvia quan movem una nota a una línia més alta?
+**Evidencia:** pentagrama de cinco líneas con una nota en línea y una en espacio, numeración de abajo arriba y comparación escrita grave/aguda. **Pregunta docente:** ¿qué cambia cuando movemos una nota a una línea más alta?
 
-### Music Teacher: reconeixem i ordenem les notes (45 min)
+### Music Teacher: reconocemos y ordenamos las notas (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu el pentagrama i presenteu les peces de nota disponibles. Mostreu costat per costat els blocs de clau d'alt i de sol, compareu-ne la forma i comproveu com es llig el selector. Expliqueu que les posicions numerades representen Do, Re, Mi, Fa, Sol, La i Ti. Si el Musician Add-On no forma part del set, feu la mateixa classificació amb targetes de paper; no presenteu aquesta alternativa com una funció del robot.
+Recuperad el pentagrama y presentad las piezas de nota disponibles. Mostrad lado a lado los bloques de clave de alto y de sol, comparad su forma y comprobad cómo se lee el selector. Explicad que las posiciones numeradas representan Do, Re, Mi, Fa, Sol, La y Ti. Si el Musician Add-On no forma parte del set, haced la misma clasificación con tarjetas de papel; no presentéis esta alternativa como una función del robot.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Repartiu les set targetes de nota entre l'alumnat i prepareu una notació numèrica curta amb les posicions de l'1 al 7. El docent canta o reprodueix una nota cada vegada; qui té la targeta corresponent s'alça i s'agrupa amb les altres persones que han rebut la mateixa nota. Canvieu qui fa la crida i repetiu la ronda amb una ordre diferent. Amb l'accessori disponible, proveu també els selectors 1–7 d'un en un i compareu les posicions 3 i 5, tal com proposa la lliçó de mostra; sense l'accessori, aquesta comparació és vocal o instrumental.
+Repartid las siete tarjetas de nota entre el alumnado y preparad una notación numérica corta con las posiciones del 1 al 7. El docente canta o reproduce una nota cada vez; quien tiene la tarjeta correspondiente se levanta y se agrupa con las otras personas que han recibido la misma nota. Cambiad quién hace la llamada y repetid la ronda con un orden distinto. Con el accesorio disponible, probad también los selectores 1–7 de uno en uno y comparad las posiciones 3 y 5, tal como propone la lección de muestra; sin el accesorio, esta comparación es vocal o instrumental.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Col·loqueu les notes en una escala visual de greu a agut i contrasteu-la amb les posicions del pentagrama. Cada alumne pot respondre escoltant, assenyalant, ordenant targetes o descrivint el resultat amb suport visual. Després, amb el Musician Add-On, programeu la notació numèrica amb blocs de nota i seguiu la interpretació de MatataBot; distingiu la seqüència construïda peça a peça d'un bloc *Melody* predefinit.
+Colocad las notas en una escala visual de grave a agudo y contrastadla con las posiciones del pentagrama. Cada alumno puede responder escuchando, señalando, ordenando tarjetas o describiendo el resultado con apoyo visual. Después, con el Musician Add-On, programad la notación numérica con bloques de nota y seguid la interpretación de MatataBot; distinguid la secuencia construida pieza a pieza de un bloque *Melody* predefinido.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Una parella prepara una comparació nova amb dos selectors diferents i demana a una altra que determine quin sona més agut. Si les percepcions discrepen, repetiu la mateixa prova en condicions de volum i distància semblants; no convertiu una diferència d’audició en un error de l’alumne.
+Una pareja prepara una comparación nueva con dos selectores distintos y pide a otra que determine cuál suena más agudo. Si las percepciones discrepan, repetid la misma prueba en condiciones de volumen y distancia parecidas; no convirtáis una diferencia de audición en un error del alumno.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** registre de les posicions 1–7, comparació específica entre 3 i 5, una ronda de crida amb agrupació correcta i una explicació de la diferència entre altura i volum. **Límit:** si no s’ha emprat el Musician Add-On, el registre és d’una activitat vocal o instrumental de l’aula, no d'una execució del robot.
+**Evidencia:** registro de las posiciones 1–7, comparación específica entre 3 y 5, una ronda de llamada con agrupación correcta y una explicación de la diferencia entre altura y volumen. **Límite:** si no se ha empleado el Musician Add-On, el registro es de una actividad vocal o instrumental del aula, no de una ejecución del robot.
 
-### Music Player I: programem una melodia pròpia (45 min)
+### Music Player I: programamos una melodía propia (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu una partitura numèrica original de quatre a sis notes, sense títol ni colors identificatius. Demaneu que una parella prediga l'ordre dels sons i que explique quina informació li falta per interpretar-la. Si el grup ja coneix una melodia de domini públic o una creació pròpia, pot cantar-la abans; no cal ni es reprodueix la cançó amb lletra impresa de la targeta oficial.
+Mostrad una partitura numérica original de cuatro a seis notas, sin título ni colores identificativos. Pedid que una pareja prediga el orden de los sonidos y que explique qué información le falta para interpretarla. Si el grupo ya conoce una melodía de dominio público o una creación propia, puede cantarla antes; no hace falta ni se reproduce la canción con letra impresa de la tarjeta oficial.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Cada equip crea una seqüència original de quatre a sis notes sobre el pentagrama, amb una llegenda compartida. Amb el complement, col·loqueu els blocs de nota amb el selector triat en l'ordre de la partitura i feu que la torre llija el programa. Sense l'accessori, una parella interpreta la partitura amb veu, palmades o instruments d'aula mentre una altra segueix les notes. No imiteu ni distribuïu la cançó coneguda que apareix com a exemple a la targeta oficial: l'objectiu ací és transferir-ne la mecànica de llegir, programar i interpretar a una obra pròpia.
+Cada equipo crea una secuencia original de cuatro a seis notas sobre el pentagrama, con una leyenda compartida. Con el complemento, colocad los bloques de nota con el selector elegido en el orden de la partitura y haced que la torre lea el programa. Sin el accesorio, una pareja interpreta la partitura con voz, palmas o instrumentos de aula mientras otra sigue las notas. No imitéis ni distribuyáis la canción conocida que aparece como ejemplo en la tarjeta oficial: el objetivo aquí es transferir la mecánica de leer, programar e interpretar a una obra propia.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Abans de reproduir o interpretar la seqüència, un altre equip la copia a partir de la partitura i anota la seua predicció d’altura. Compareu després la reconstrucció amb el programa o l’execució original i localitzeu la primera posició diferent.
+Antes de reproducir o interpretar la secuencia, otro equipo la copia a partir de la partitura y anota su predicción de altura. Comparad después la reconstrucción con el programa o la ejecución original y localizad la primera posición distinta.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Partiu la peça en fins a tres trams de programa perquè un equip puga preparar cada tram i després unir-los, o dividiu-la en dues parts perquè dos grups col·laboren en una execució completa. Canvieu una sola nota —per exemple, substituïu el selector 3 pel 5— i compareu la versió original i la revisada. Registreu el canvi gràfic i el canvi sonor observat; si no hi ha complement, feu la mateixa comparació amb veu o percussió i declareu el mitjà emprat. El límit de tres programes pertany a la dinàmica descrita per la targeta; comproveu la capacitat concreta del tauler del centre abans d'interpretar-la com un límit tècnic universal.
+Dividid la pieza en hasta tres tramos de programa para que un equipo pueda preparar cada tramo y después unirlos, o divididla en dos partes para que dos grupos colaboren en una ejecución completa. Cambiad una sola nota —por ejemplo, sustituid el selector 3 por el 5— y comparad la versión original y la revisada. Registrad el cambio gráfico y el cambio sonoro observado; si no hay complemento, haced la misma comparación con voz o percusión y declarad el medio empleado. El límite de tres programas pertenece a la dinámica descrita por la tarjeta; comprobad la capacidad concreta del tablero del centro antes de interpretarla como un límite técnico universal.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** partitura de quatre a sis notes, llegenda, registre dels trams/equips, còpia d'un equip visitant i comparació abans/després. **Pregunta docent:** quines convencions hem hagut d'acordar perquè dues parelles puguen interpretar la mateixa peça sense dependre de la persona autora?
+**Evidencia:** partitura de cuatro a seis notas, leyenda, registro de los tramos/equipos, copia de un equipo visitante y comparación antes/después. **Pregunta docente:** ¿qué convenciones hemos tenido que acordar para que dos parejas puedan interpretar la misma pieza sin depender de la persona autora?
 
-### Composem una peça amb pols i retorn (45 min)
+### Componemos una pieza con pulso y retorno (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Escolteu o llegiu dues seqüències pròpies amb les mateixes notes en ordre diferent. Predigueu com canviarà el resultat. Expliqueu que el fabricant descriu el bloc de nota sense modificador com un pols de referència d’un quart i que combinar-lo amb un bloc numèric pot canviar la duració; valideu sempre la disposició amb la guia del kit real.
+Escuchad o leed dos secuencias propias con las mismas notas en orden distinto. Predecid cómo cambiará el resultado. Explicad que el fabricante describe el bloque de nota sin modificador como un pulso de referencia de un cuarto y que combinarlo con un bloque numérico puede cambiar la duración; validad siempre la disposición con la guía del kit real.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Amb Musician Add-On, cada grup prepara una frase curta de notes triades i, només si les peces encaixen segons el manual, compara una nota amb el bloc numèric 1 i amb el 2. Observeu la duració relativa i anoteu-la amb símbols propis. També podeu provar un bloc *Melody*, però identifiqueu-lo com una melodia predefinida, no com una composició creada nota per nota. Sense el complement, representeu els pols amb palmades i fitxes de duració.
+Con Musician Add-On, cada grupo prepara una frase corta de notas elegidas y, solo si las piezas encajan según el manual, compara una nota con el bloque numérico 1 y con el 2. Observad la duración relativa y anotadla con símbolos propios. También podéis probar un bloque *Melody*, pero identificadlo como una melodía predefinida, no como una composición creada nota por nota. Sin el complemento, representad los pulsos con palmas y fichas de duración.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Completeu una targeta de composició amb seqüència, duració acordada, predicció i resultat. Un equip interpreta la peça d’un altre i marca si la llegenda és suficient per repetir-la.
+Completad una tarjeta de composición con secuencia, duración acordada, predicción y resultado. Un equipo interpreta la pieza de otro y marca si la leyenda es suficiente para repetirla.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu la peça a partir d’una pregunta concreta del grup visitant: canvieu l’ordre d’una nota o la duració d’una figura rítmica, però no dues variables alhora. Graveu o presenteu la versió final només amb autorització del centre; no inclogueu noms ni veus identificables si no són necessaris.
+Revisad la pieza a partir de una pregunta concreta del grupo visitante: cambiad el orden de una nota o la duración de una figura rítmica, pero no dos variables a la vez. Grabad o presentad la versión final solo con autorización del centro; no incluyáis nombres ni voces identificables si no son necesarios.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** partitura revisada, llegenda, registre de prova i nota que identifica el mitjà real emprat (MatataBot amb Musician, veu, percussió o altre instrument). Cada equip explica una decisió musical i una limitació del seu muntatge.
+**Evidencia:** partitura revisada, leyenda, registro de prueba y nota que identifica el medio real empleado (MatataBot con Musician, voz, percusión u otro instrumento). Cada equipo explica una decisión musical y una limitación de su montaje.
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Observeu si cada alumne localitza línies i espais; relaciona posició alta/baixa amb altura; compara dos sons sense confondre altura i volum; transcriu una seqüència segons una llegenda comuna; i revisa una nota o una duració a partir d’una prova. Recolliu les quatre evidències de sessió i una autoavaluació breu: «ho puc llegir», «ho puc ordenar» i «ho puc explicar». Valoreu el raonament, la claredat de la notació, la cooperació i l’ús de proves, no la qualitat vocal ni l’agudesa auditiva individual.
+Observad si cada alumno localiza líneas y espacios; relaciona posición alta/baja con altura; compara dos sonidos sin confundir altura y volumen; transcribe una secuencia según una leyenda común; y revisa una nota o una duración a partir de una prueba. Recoged las cuatro evidencias de sesión y una autoevaluación breve: «lo puedo leer», «lo puedo ordenar» y «lo puedo explicar». Valorad el razonamiento, la claridad de la notación, la cooperación y el uso de pruebas, no la calidad vocal ni la agudeza auditiva individual.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Oferiu pentagrames grans, notes en relleu, formes diferenciades a més del color, fletxes d’altura i prediccions visuals. Permeteu participar col·locant targetes, ordenant sons, portant el registre o descrivint una regla. L’escolta i la veu són opcions, mai requisits únics: una parella pot completar les comparacions amb pictogrames i moviments de mà. Manteniu el volum moderat, feu pauses si el so resulta molest i no connecteu auriculars sense seguir les normes del centre. No useu melodies protegides com a producte final; les composicions i els materials d’aquesta proposta són originals.
+Ofreced pentagramas grandes, notas en relieve, formas diferenciadas además del color, flechas de altura y predicciones visuales. Permitid participar colocando tarjetas, ordenando sonidos, llevando el registro o describiendo una regla. La escucha y la voz son opciones, nunca requisitos únicos: una pareja puede completar las comparaciones con pictogramas y movimientos de mano. Mantened el volumen moderado, haced pausas si el sonido resulta molesto y no conectéis auriculares sin seguir las normas del centro. No uséis melodías protegidas como producto final; las composiciones y los materiales de esta propuesta son originales.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [Musician Add-On](https://matatalab.com/en/node/65): descriu els blocs de nota d'alt i de sol, els blocs de melodia predefinida, selectors 1–7 i la relació entre blocs de nota i nombre per modificar el pols. Es consulta per validar funcions del complement, no com a pla docent complet.
-- Matatalab, [Musician Add-on Activity Cards · Music Teacher i Music Player I (PDF oficial)](https://matatalab.com/cdn/ff/Ecee9VUTy4hPQNW2Vq3TPoDZ5mjzubwFIH9Hvla33oE/1637739674/public/2021-11/Musician%20Add-on%20Activity%20Cards.pdf): la primera targeta compara els blocs de clau d'alt i de sol, relaciona els selectors Do–Ti, proposa repartir targetes, cridar notes, agrupar-se i després seguir una notació numèrica reproduïda per MatataBot. La segona demana llegir/cantar una partitura i programar-la amb blocs de nota; permet dividir el programa en fins a tres execucions o col·laborar entre dos grups. Ací es conserva la seqüència didàctica i es reemplaça la cançó de mostra per una composició original.
-- Matatalab, [Musician Add-On Set Curriculum, Lesson 1 · Staff Notes and Pitches (PDF oficial de mostra)](https://matatalab.com/sites/default/files/2020-07/Musician%20Add-On%20Set%20Curriculum.pdf): identifica les cinc línies/quatre espais, les set notes de la sèrie major, la comparació de les posicions 3 i 5 i la construcció d’un pentagrama amb materials quotidians. Aquesta adaptació canvia les fitxes i el context per un paisatge sonor local i crea una composició pròpia.
-- MatataStudio, [guia autoguiada](https://www.matatastudio.com/Self-Guided.html): confirma que l’add-on es combina amb Coding Set i descriu l’ús de blocs de nota, blocs *Melody* i nombre per a composició.
+- Matatalab, [Musician Add-On](https://matatalab.com/en/node/65): describe los bloques de nota de alto y de sol, los bloques de melodía predefinida, selectores 1–7 y la relación entre bloques de nota y número para modificar el pulso. Se consulta para validar funciones del complemento, no como plan docente completo.
+- Matatalab, [Musician Add-on Activity Cards · Music Teacher y Music Player I (PDF oficial)](https://matatalab.com/cdn/ff/Ecee9VUTy4hPQNW2Vq3TPoDZ5mjzubwFIH9Hvla33oE/1637739674/public/2021-11/Musician%20Add-on%20Activity%20Cards.pdf): la primera tarjeta compara los bloques de clave de alto y de sol, relaciona los selectores Do–Ti, propone repartir tarjetas, llamar notas, agruparse y después seguir una notación numérica reproducida por MatataBot. La segunda pide leer/cantar una partitura y programarla con bloques de nota; permite dividir el programa en hasta tres ejecuciones o colaborar entre dos grupos. Aquí se conserva la secuencia didáctica y se reemplaza la canción de muestra por una composición original.
+- Matatalab, [Musician Add-On Set Curriculum, Lesson 1 · Staff Notes and Pitches (PDF oficial de muestra)](https://matatalab.com/sites/default/files/2020-07/Musician%20Add-On%20Set%20Curriculum.pdf): identifica las cinco líneas/cuatro espacios, las siete notas de la serie mayor, la comparación de las posiciones 3 y 5 y la construcción de un pentagrama con materiales cotidianos. Esta adaptación cambia las fichas y el contexto por un paisaje sonoro local y crea una composición propia.
+- MatataStudio, [guía autoguiada](https://www.matatastudio.com/Self-Guided.html): confirma que el add-on se combina con Coding Set y describe el uso de bloques de nota, bloques *Melody* y número para composición.
 
-La mostra consultada del currículum conté la lliçó 1, no les dotze lliçons completes. El PDF de targetes consultat conté deu activitats; aquesta situació adapta les mecàniques verificables de *Music Teacher* i *Music Player I* i les combina amb la lliçó de pentagrama, però no es presenta com a cobertura integral del currículum ni de les deu targetes oficials Musician.
+La muestra consultada del currículo contiene la lección 1, no las doce lecciones completas. El PDF de tarjetas consultado contiene diez actividades; esta situación adapta las mecánicas verificables de *Music Teacher* y *Music Player I* y las combina con la lección de pentagrama, pero no se presenta como cobertura integral del currículo ni de las diez tarjetas oficiales Musician.

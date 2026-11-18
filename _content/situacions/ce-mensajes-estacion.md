@@ -15,130 +15,130 @@ challenge: "¿Qué información necesita cada estación para recibir el tren y c
 official_source: "https://education.lego.com/en-us/lessons/preschool-coding-express/train-sound/"
 ---
 
-![El tren Coding Express arriba a una estació amb pictogrames de campana, ocell i petjades.](../../_assets/situacions/ce-missatges-estacio.webp)
+![El tren Coding Express llega a una estación con pictogramas de campana, pájaro y huellas.](../../_assets/situacions/ce-missatges-estacio.webp)
 
-_El tren Coding Express arriba a una estació amb pictogrames de campana, ocell i petjades._
+_El tren Coding Express llega a una estación con pictogramas de campana, pájaro y huellas._
 
-## ❓ Repte i intenció
+## ❓ Reto e intención
 
-El tren de la biblioteca escolar visitarà dos espais pròxims: el jardí i el punt de lectura. El grup ha de preparar una seqüència amb avisos i parades, observar què fan els maons d’acció groc, blau i blanc, i explicar el recorregut amb un codi visual compartit. La història és inventada; no presentem la ruta com un servei de transport real.
+El tren de la biblioteca escolar visitará dos espacios próximos: el jardín y el punto de lectura. El grupo debe preparar una secuencia con avisos y paradas, observar qué hacen los ladrillos de acción amarillo, azul y blanco, y explicar el recorrido con un código visual compartido. La historia es inventada; no presentamos la ruta como un servicio de transporte real.
 
-La situació treballa seqüenciació, categorització, vocabulari d’arribada/pausa/continuació i comunicació amb diversos canals. Els sons poden enriquir el joc, però cada so té una targeta visual equivalent i ningú necessita escoltar-lo per seguir el trajecte.
+La situación trabaja secuenciación, categorización, vocabulario de llegada/pausa/continuación y comunicación con varios canales. Los sonidos pueden enriquecer el juego, pero cada sonido tiene una tarjeta visual equivalente y nadie necesita escucharlo para seguir el trayecto.
 
-## 🎯 Què aprendrem?
+## 🎯 Aprendizajes y vocabulario
 
-- Descriure un viatge com una seqüència d’instruccions amb inici, parada i final.
+- Describir un viaje como una secuencia de instrucciones con inicio, parada y final.
 
-- Observar i comprovar la funció dels maons d’acció disponibles, sense deduir-la només pel color.
+- Observar y comprobar la función de los ladrillos de acción disponibles, sin deducirla solo por el color.
 
-- Triar on col·locar un avís i una parada perquè tinguen sentit en la ruta.
+- Elegir dónde colocar un aviso y una parada para que tengan sentido en la ruta.
 
-- Relacionar una acció del tren amb una paraula, so o pictograma entés pel grup.
+- Relacionar una acción del tren con una palabra, sonido o pictograma entendido por el grupo.
 
-- Revisar una predicció quan el que fa el tren no coincideix amb el que esperàvem.
+- Revisar una predicción cuando lo que hace el tren no coincide con lo que esperábamos.
 
-Per a l’observació docent, busquem tres indicis: l’infant participa en la seqüència o el relat; associa almenys un maó amb un efecte que ha vist; i usa eixa observació per a explicar o canviar la ruta.
+Para la observación docente, buscamos tres indicios: el niño o la niña participa en la secuencia o el relato; asocia al menos un ladrillo con un efecto que ha visto; y usa esa observación para explicar o cambiar la ruta.
 
-## 🧰 Abans de començar
+## 🧰 Antes de empezar
 
-Comproveu el Coding Express físic i l’app disponible: nombre de vies, figuretes, maons d’acció i capacitat sonora del model. Prepareu una via de doble extrem (LEGO recomana huit trams), una estació inicial, el jardí i la biblioteca com a destinacions, i targetes amb eixida, avís, pausa i arribada. Reserveu els maons roig i verd per a l’extensió només si el grup ja n’ha investigat la funció en una lliçó anterior.
+Comprobad el Coding Express físico y la app disponible: número de vías, figuras, ladrillos de acción y capacidad sonora del modelo. Preparad una vía de doble extremo (LEGO recomienda ocho tramos), una estación inicial, el jardín y la biblioteca como destinos, y tarjetas con salida, aviso, pausa y llegada. Reservad los ladrillos rojo y verde para la ampliación solo si el grupo ya ha investigado su función en una lección anterior.
 
-Si només hi ha un set, feu torns curts de muntatge i observació amb la resta del grup treballant la seqüència sobre un mapa de paper. No afegiu un maó absent de la caixa ni expliqueu una funció que encara no s’ha comprovat.
+Si solo hay un set, haced turnos cortos de montaje y observación con el resto del grupo trabajando la secuencia sobre un mapa de papel. No añadáis un ladrillo ausente de la caja ni expliquéis una función que todavía no se ha comprobado.
 
-## 📅 Seqüència didàctica · 3 sessions de 40 minuts
+## 📅 Secuencia didáctica · 3 sesiones de 40 minutos
 
-### **Sessió 1 · Preparem un codi d’avís i pausa.**
+### **Sesión 1 · Preparamos un código de aviso y pausa.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Inicieu una conversa sobre estacions que el grup conega: què ens avisa que alguna cosa s’acosta?, com podem saber que és moment d’esperar? No cal imitar moviments físics; feu el joc amb targetes, figures o gestos voluntaris.
+Iniciad una conversación sobre estaciones que el grupo conozca: ¿qué nos avisa de que algo se acerca?, ¿cómo podemos saber que es momento de esperar? No hace falta imitar movimientos físicos; haced el juego con tarjetas, figuras o gestos voluntarios.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Acordeu tres senyals: el groc significa «avís» i acompanya el so que el model reprodueix; el blau indica la pausa per a la parada de servei del relat; una targeta de fletxa assenyala que el tren continua. Cada parella posa les targetes en l’ordre del viatge jardí → biblioteca.
+Acordad tres señales: el amarillo significa «aviso» y acompaña el sonido que reproduce el modelo; el azul indica la pausa para la parada de servicio del relato; una tarjeta de flecha señala que el tren continúa. Cada pareja pone las tarjetas en el orden del viaje jardín → biblioteca.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Expliqueu què passarà després de cada senyal. Representeu la seqüència amb tres o quatre pictogrames i conserveu-la com a codi de referència per a les proves següents.
+Explicad qué pasará después de cada señal. Representad la secuencia con tres o cuatro pictogramas y conservadla como código de referencia para las pruebas siguientes.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Abans d’encendre el tren, feu que una altra parella intente llegir la seqüència només amb les targetes. Si hi ha més d’una interpretació possible, simplifiqueu el codi. Com a suport, oferiu dues destinacions i dues targetes; com a ampliació, afegiu una tercera parada sense canviar el significat dels símbols.
+Antes de encender el tren, haced que otra pareja intente leer la secuencia solo con las tarjetas. Si hay más de una interpretación posible, simplificad el código. Como apoyo, ofreced dos destinos y dos tarjetas; como ampliación, añadid una tercera parada sin cambiar el significado de los símbolos.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** seqüència de pictogrames i explicació oral, assenyalada o representada amb peces. Quina targeta ha ajudat més a anticipar què passarà i com ho sabem?
+**Evidencia:** secuencia de pictogramas y explicación oral, señalada o representada con piezas. ¿Qué tarjeta ha ayudado más a anticipar qué pasará y cómo lo sabemos?
 
-### **Sessió 2 · Provem maons d’acció i construïm la ruta.**
+### **Sesión 2 · Probamos ladrillos de acción y construimos la ruta.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Munteu l’estació i les dues destinacions amb figures de passatgers i una via de doble extrem. Abans de provar cada maó, pregunteu què penseu que farà i assenyaleu el senyal que s’hi relaciona.
+Montad la estación y los dos destinos con figuras de pasajeros y una vía de doble extremo. Antes de probar cada ladrillo, preguntad qué pensáis que hará y señalad la señal que se relaciona con él.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Poseu un maó groc en un tram curt i observeu què passa; retireu-lo i repetiu la prova amb el maó blau. En la versió descrita per LEGO, el groc fa sonar l’avís i el blau representa la parada de servei. Compareu-ho amb les targetes de la primera sessió.
+Poned un ladrillo amarillo en un tramo corto y observad qué pasa; retiradlo y repetid la prueba con el ladrillo azul. En la versión descrita por LEGO, el amarillo hace sonar el aviso y el azul representa la parada de servicio. Comparadlo con las tarjetas de la primera sesión.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Completeu una taula visual amb «maó / predicció / què hem vist / on el col·loquem». Si el model del centre respon d’una altra manera, anoteu la diferència i useu com a referència el comportament real del set.
+Completad una tabla visual con «ladrillo / predicción / qué hemos visto / dónde lo colocamos». Si el modelo del centro responde de otra manera, anotad la diferencia y usad como referencia el comportamiento real del set.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Col·loqueu els maons en els llocs que millor expliquen el relat jardí → biblioteca. Abans de cada passada, una persona assenyala la seqüència prevista, una altra observa el tren i una tercera descriu què ha passat. Eviteu bloquejar el tren amb les mans o posar-les davant de la via en moviment.
+Colocad los ladrillos en los lugares que mejor explican el relato jardín → biblioteca. Antes de cada pasada, una persona señala la secuencia prevista, otra observa el tren y una tercera describe qué ha pasado. Evitad bloquear el tren con las manos o ponerlas delante de la vía en movimiento.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** taula visual completa i una passada del jardí a la biblioteca. Quina observació ha confirmat la predicció i quina funció encara necessitem comprovar amb el model del centre?
+**Evidencia:** tabla visual completa y una pasada del jardín a la biblioteca. ¿Qué observación ha confirmado la predicción y qué función todavía necesitamos comprobar con el modelo del centro?
 
-### **Sessió 3 · Fem un túnel, afegim llum i contem el viatge.**
+### **Sesión 3 · Hacemos un túnel, añadimos luz y contamos el viaje.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Construïu un túnel de cartó o useu una targeta de túnel amb espai suficient sobre la via. Predieu què farà la llum del tren quan hi entre i quan n’isca.
+Construid un túnel de cartón o usad una tarjeta de túnel con espacio suficiente sobre la vía. Predecid qué hará la luz del tren cuando entre y cuando salga.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Col·loqueu un maó blanc abans i un després del túnel, si el set els inclou. Feu una sola passada i compareu el resultat amb la predicció. La peça blanca controla la llum en aquest sistema; si no hi ha túnel o maons blancs, representeu el canvi amb una targeta «llum encesa/apagada» i identifiqueu-ho com a model de paper.
+Colocad un ladrillo blanco antes y uno después del túnel, si el set los incluye. Haced una sola pasada y comparad el resultado con la predicción. La pieza blanca controla la luz en este sistema; si no hay túnel o ladrillos blancos, representad el cambio con una tarjeta «luz encendida/apagada» e identificadlo como modelo de papel.
 
-![El tren real de Coding Express passa per un túnel de cartó, amb maons blancs de llum abans i després i pictogrames de jardí i biblioteca.](../../_assets/situacions/sa-ce-missatges-tunel-llum.webp)
+![El tren real de Coding Express pasa por un túnel de cartón, con ladrillos blancos de luz antes y después y pictogramas de jardín y biblioteca.](../../_assets/situacions/sa-ce-missatges-tunel-llum.webp)
 
-_La il·lustració mostra el muntatge de prova: comproveu en el tren del centre quan s’encén i s’apaga la llum._
+_La ilustración muestra el montaje de prueba: comprobad en el tren del centro cuándo se enciende y se apaga la luz._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Afegiu al mapa el túnel, els maons i el resultat observat. Diferencieu la funció comprovada en el tren físic de la que s’ha representat amb targetes.
+Añadid al mapa el túnel, los ladrillos y el resultado observado. Diferenciad la función comprobada en el tren físico de la que se ha representado con tarjetas.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Completeu una ruta amb avís groc, pausa blava i canvi de llum, afegint les destinacions en l’ordre acordat. Un equip narra amb pictogrames o paraules i un altre comprova si cada senyal coincideix amb el moviment observat. Milloreu la ruta canviant un maó de lloc, una targeta o l’ordre.
+Completad una ruta con aviso amarillo, pausa azul y cambio de luz, añadiendo los destinos en el orden acordado. Un equipo narra con pictogramas o palabras y otro comprueba si cada señal coincide con el movimiento observado. Mejorad la ruta cambiando un ladrillo de sitio, una tarjeta o el orden.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa de ruta, predicció del túnel, registre de resultat i relat final sincronitzat amb la seqüència. Quina part del viatge hem observat directament i quina hem representat?
+**Evidencia:** mapa de ruta, predicción del túnel, registro de resultado y relato final sincronizado con la secuencia. ¿Qué parte del viaje hemos observado directamente y qué parte hemos representado?
 
-## 📋 Avaluació i evidències
+## 📋 Evaluación y evidencias
 
-Recolliu les targetes ordenades, la construcció de les destinacions, la seqüència física de la via, la taula de maons i la predicció de llum. Observeu si l’infant:
+Recoged las tarjetas ordenadas, la construcción de los destinos, la secuencia física de la vía, la tabla de ladrillos y la predicción de luz. Observad si el niño o la niña:
 
-- classifica peces o destinacions i explica amb què s’ha basat;
+- clasifica piezas o destinos y explica en qué se ha basado;
 
-- descompon el trajecte en passos que es poden representar;
+- descompone el trayecto en pasos que se pueden representar;
 
-- fa una predicció abans de l’execució i compara el que esperava amb el que ha vist;
+- hace una predicción antes de la ejecución y compara lo que esperaba con lo que ha visto;
 
-- descriu el so/llum amb paraules, símbols, gestos o comunicació augmentativa;
+- describe el sonido/luz con palabras, símbolos, gestos o comunicación aumentativa;
 
-- participa en una decisió de millora o ajuda a una altra parella a seguir el codi.
+- participa en una decisión de mejora o ayuda a otra pareja a seguir el código.
 
-Documenteu frases o accions concretes («ha posat el groc abans del pont perquè vol avisar») en lloc d’una nota general de participació. Per a tancar, completeu en grup «pensàvem que…», «hem vist que…» i «la pròxima ruta…».
+Documentad frases o acciones concretas («ha puesto el amarillo antes del puente porque quiere avisar») en lugar de una nota general de participación. Para cerrar, completad en grupo «pensábamos que…», «hemos visto que…» y «la próxima ruta…».
 
-## ♿ Més d’una manera de participar i jugar amb seguretat
+## ♿ Más de una forma de participar y jugar con seguridad
 
-Oferiu equivalent visual per a cada so, volum baix o silenci, vies i pictogrames amb bon contrast, targetes tàctils i torns previsibles. Una persona pot narrar, ordenar targetes, observar o construir sense haver d’operar el tren. No és necessari que l’alumnat forme una fila tocant-se; es poden representar passatgers amb figures, com fa l’activitat amb les figuretes.
+Ofreced equivalente visual para cada sonido, volumen bajo o silencio, vías y pictogramas con buen contraste, tarjetas táctiles y turnos previsibles. Una persona puede narrar, ordenar tarjetas, observar o construir sin tener que operar el tren. No es necesario que el alumnado forme una fila tocándose; se pueden representar pasajeros con figuras, como hace la actividad con las figuras.
 
-Comproveu que la via és estable, manteniu els dits fora del tren en moviment i pareu-lo amb el control de l’app quan calga. No bloquegeu rodes ni forceu peces. Si una funció no està present o el so no es percep, completeu la mateixa seqüència amb targetes, deixant clar què s’ha observat físicament i què s’ha representat.
+Comprobad que la vía es estable, mantened los dedos fuera del tren en movimiento y paradlo con el control de la app cuando haga falta. No bloqueéis ruedas ni forcéis piezas. Si una función no está presente o el sonido no se percibe, completad la misma secuencia con tarjetas, dejando claro qué se ha observado físicamente y qué se ha representado.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta [Train Sound](https://education.lego.com/en-us/lessons/preschool-coding-express/train-sound/), lliçó 2 de 8 de Coding Express, destinada a PreK–K i pensada per a 30–45 minuts. La proposta oficial treballa seqüenciació, joc d’avís groc i pausa blava, estació/destinació amb via de doble extrem, ús dels maons d’acció groc/blau i, a l’ampliació, recorregut més llarg i maons blancs que encenen/apaguen la llum en passar pel túnel. També suggereix categoritzar elements del kit per destinacions i descompondre trajectes amb diverses parades. La ruta jardí–biblioteca, els pictogrames, la taula d’observació i les alternatives sensorials són propis; la funció concreta es contrasta amb el tren físic del centre.
+Adapta [Train Sound](https://education.lego.com/en-us/lessons/preschool-coding-express/train-sound/), lección 2 de 8 de Coding Express, destinada a PreK–K y pensada para 30–45 minutos. La propuesta oficial trabaja secuenciación, juego de aviso amarillo y pausa azul, estación/destino con vía de doble extremo, uso de los ladrillos de acción amarillo/azul y, en la ampliación, recorrido más largo y ladrillos blancos que encienden/apagan la luz al pasar por el túnel. También sugiere categorizar elementos del kit por destinos y descomponer trayectos con varias paradas. La ruta jardín–biblioteca, los pictogramas, la tabla de observación y las alternativas sensoriales son propios; la función concreta se contrasta con el tren físico del centro.

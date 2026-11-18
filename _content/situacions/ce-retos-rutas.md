@@ -14,129 +14,129 @@ duration: "4 sesiones · 195 min"
 challenge: "¿Cómo diseñamos una ruta por nuestro pueblo y la mejoramos cuando aparece un problema?"
 ---
 
-![El tren Coding Express arriba a una bifurcació en una maqueta de barri amb una ruta alternativa marcada.](../../_assets/situacions/ce-reptes-rutes.webp)
+![El tren Coding Express llega a una bifurcación en una maqueta de barrio con una ruta alternativa marcada.](../../_assets/situacions/ce-reptes-rutes.webp)
 
-_Una bifurcació ofereix opcions: cal conéixer el mapa, justificar una tria i provar-la._
+_Una bifurcación ofrece opciones: hay que conocer el mapa, justificar una elección y probarla._
 
-## ❓ Repte i intenció
+## ❓ Reto e intención
 
-Les quatre sessions amplien la seqüenciació amb observació del sistema, bifurcacions, planificació de desviaments i representació de rutes en un mapa del poble: l’escola, el mercat, la biblioteca, l’horta o altres llocs que l’alumnat conega. Trieu topònims reals del municipi o del barri i marqueu-los en un plànol simplificat, sense atribuir al tren una navegació autònoma. L’alumnat documenta què ha fet i què ha passat abans d’atribuir una causa. Les vies i blocs disponibles varien segons el set; es poden simular les alternatives amb targetes si el tren no permet controlar una bifurcació de manera directa.
+Las cuatro sesiones amplían la secuenciación con observación del sistema, bifurcaciones, planificación de desvíos y representación de rutas en un mapa del pueblo: la escuela, el mercado, la biblioteca, la huerta u otros lugares que el alumnado conozca. Elegid topónimos reales del municipio o del barrio y marcadlos en un plano simplificado, sin atribuir al tren una navegación autónoma. El alumnado documenta qué ha hecho y qué ha pasado antes de atribuir una causa. Las vías y los bloques disponibles varían según el set; se pueden simular las alternativas con tarjetas si el tren no permite controlar una bifurcación de manera directa.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Llegir una ruta en un mapa i descompondre-la en trams i decisions verificables.
-- Comparar dues alternatives davant d’una bifurcació o incidència representada.
-- Provar una solució amb les vies i els blocs disponibles, o simular-la amb targetes si el set no la permet.
-- Justificar una revisió del pla amb el resultat observat i distingir-la d’una funció que el robot no té.
+- Leer una ruta en un mapa y descomponerla en tramos y decisiones verificables.
+- Comparar dos alternativas ante una bifurcación o incidencia representada.
+- Probar una solución con las vías y los bloques disponibles, o simularla con tarjetas si el set no la permite.
+- Justificar una revisión del plan con el resultado observado y distinguirla de una función que el robot no tiene.
 
-## Abans de començar
+## Antes de empezar
 
-Prepareu el tren Coding Express, vies i peces del vostre lot, targetes de direcció, cinta de paper per al mapa i obstacles tous separats de la via. Reviseu les instruccions del fabricant abans del muntatge. No forceu les unions ni poseu peces que bloquegen rodes o sensors. Si una funció no és present al kit, convertiu-la en una decisió humana amb targetes.
+Preparad el tren Coding Express, vías y piezas de vuestro lote, tarjetas de dirección, cinta de papel para el mapa y obstáculos blandos separados de la vía. Revisad las instrucciones del fabricante antes del montaje. No forcéis las uniones ni pongáis piezas que bloqueen ruedas o sensores. Si una función no está presente en el kit, convertidla en una decisión humana con tarjetas.
 
-## 📅 Seqüència didàctica · 4 lliçons adaptades
+## 📅 Secuencia didáctica · 4 lecciones adaptadas
 
-### **Com funciona el sistema? · How Does It Work? (45 min)**
+### **¿Cómo funciona el sistema? · How Does It Work? (45 min)**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu el tren i pregunteu com creuen que interacciona amb la via i els maons. Dibuixeu una predicció sobre què passarà sense maó, fora de la via i quan passe per damunt d’un maó de color.
+Mostrad el tren y preguntad cómo creen que interacciona con la vía y los ladrillos. Dibujad una predicción sobre qué pasará sin ladrillo, fuera de la vía y cuando pase por encima de un ladrillo de color.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Observeu el tren en cadascuna d’aquestes condicions. Identifiqueu el sensor de color de la part inferior i diferencieu les parts físiques —tren, sensor, via i tauleta— del programa de l’app.
+Observad el tren en cada una de estas condiciones. Identificad el sensor de color de la parte inferior y diferenciad las partes físicas —tren, sensor, vía y tableta— del programa de la app.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Proveu l’app amb els maons disponibles i registreu què fa el tren. Expliqueu que el maquinari llig el color i que el programari n’indica la resposta.
+Probad la app con los ladrillos disponibles y registrad qué hace el tren. Explicad que el hardware lee el color y que el software indica la respuesta.
 
-Si el set inclou un vagó que roda solt, compareu sobre una superfície plana una empenta suau i una estirada curta amb el tren apagat; si no, feu-ho amb una fitxa de paper. Separeu aquest model de forces del funcionament del motor: no empenyeu ni estireu el tren quan estiga encés.
+Si el set incluye un vagón que rueda suelto, comparad sobre una superficie plana un empujón suave y un tirón corto con el tren apagado; si no, hacedlo con una ficha de papel. Separad este modelo de fuerzas del funcionamiento del motor: no empujéis ni tiréis del tren cuando esté encendido.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Amb el tren aturat, tapeu temporalment el sensor amb una cartolina fosca i feu una prova supervisada: prediu si podrà llegir els maons, comproveu-ho a baixa velocitat i retireu la cartolina quan el tren estiga parat.
+Con el tren detenido, tapad temporalmente el sensor con una cartulina oscura y haced una prueba supervisada: predecid si podrá leer los ladrillos, comprobadlo a baja velocidad y retirad la cartulina cuando el tren esté parado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dibuix abans/després, vocabulari maquinari–programari–sensor–app i explicació de la prova. Què ha canviat respecte de la predicció?
+**Evidencia:** dibujo antes/después, vocabulario hardware–software–sensor–app y explicación de la prueba. ¿Qué ha cambiado respecto a la predicción?
 
-### **La bifurcació cap al mercat · Y-Shaped Track (45 min)**
+### **La bifurcación hacia el mercado · Y-Shaped Track (45 min)**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Comenceu amb un joc de bitllets: trieu almenys tres llocs pròxims —per exemple, l’escola, el mercat municipal i la biblioteca—, poseu una fitxa de color a cada destinació i doneu un bitllet del mateix color a cada passatger. Predigueu quin ramal correspondrà a cada bitllet.
+Empezad con un juego de billetes: elegid al menos tres lugares próximos —por ejemplo, la escuela, el mercado municipal y la biblioteca—, poned una ficha de color en cada destino y dad un billete del mismo color a cada pasajero. Predecid qué ramal corresponderá a cada billete.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construïu una via Y amb dues o més parades i col·loqueu maons d’acció perquè el tren es puga aturar. Verbalitzeu la condició «si el bitllet és de ___, aleshores anem a ___».
+Construid una vía en Y con dos o más paradas y colocad ladrillos de acción para que el tren se pueda detener. Verbalizad la condición «si el billete es de ___, entonces vamos a ___».
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Per torns, feu de conductor movent la palanca roja de la via per seleccionar la branca. Una persona comprova si el bitllet, la palanca i la destinació coincideixen; la resta descriuen el trajecte i el representen en un mapa.
+Por turnos, haced de conductor moviendo la palanca roja de la vía para seleccionar la rama. Una persona comprueba si el billete, la palanca y el destino coinciden; el resto describen el trayecto y lo representan en un mapa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Com a ampliació, proveu els dos desviaments per crear una tercera branca o una Q i useu el maó verd disponible per representar el retorn a altres parades. Compareu la via Y amb una de bucle i una de doble extrem.
+Como ampliación, probad los dos desvíos para crear una tercera rama o una Q y usad el ladrillo verde disponible para representar el retorno a otras paradas. Comparad la vía en Y con una de bucle y una de doble extremo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** parelles bitllet–destinació, instrucció condicional i mapa dels camins provats. Quines parts de la decisió depenen de la persona que mou l’agulla?
+**Evidencia:** parejas billete–destino, instrucción condicional y mapa de los caminos probados. ¿Qué partes de la decisión dependen de la persona que mueve la aguja?
 
-### **Obres en el camí · Journey—Trouble on the Road (45 min)**
+### **Obras en el camino · Journey—Trouble on the Road (45 min)**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Converseu sobre per què les normes de trànsit ajuden a coordinar-se i interpreteu els quatre senyals de trànsit inclosos en el set amb el seu significat comprovat. Representeu decisions a escala de maqueta, sense córrer ni simular perills reals. Si el lot no té algun senyal, feu una targeta pròpia i marqueu-la com a substitució.
+Conversad sobre por qué las normas de tráfico ayudan a coordinarse e interpretad las cuatro señales de tráfico incluidas en el set con su significado comprobado. Representad decisiones a escala de maqueta, sin correr ni simular peligros reales. Si el lote no tiene alguna señal, haced una tarjeta propia y marcadla como sustitución.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Al costat d’una via Y i de models propis, col·loqueu a l’atzar els maons d’acció. Connecteu el tren a l’app i exploreu-ne els botons abans de començar el recorregut. Trieu un maó que l’app permeta configurar, anoteu-ne el comportament inicial i canvieu una sola opció; repetiu el mateix tram per comprovar si la resposta s’ha modificat. Si la versió de l’app o el set no ofereix aquest control, registreu-ho i manteniu l’observació com a exploració, sense simular un canvi físic.
+Junto a una vía en Y y a modelos propios, colocad al azar los ladrillos de acción. Conectad el tren a la app y explorad sus botones antes de empezar el recorrido. Elegid un ladrillo que la app permita configurar, anotad su comportamiento inicial y cambiad una sola opción; repetid el mismo tramo para comprobar si la respuesta se ha modificado. Si la versión de la app o el set no ofrece este control, registradlo y mantened la observación como exploración, sin simular un cambio físico.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu circular el tren per torns. Quan aparega un problema fictici en l’app o una targeta d’incidència, identifiqueu què ha passat i registreu la predicció, el senyal triat, el maó/app que l’equip ha programat i la resposta observada. Els senyals físics són models per a interpretar una situació: el tren llig el color dels maons, no reconeix ni interpreta els senyals de trànsit.
+Haced circular el tren por turnos. Cuando aparezca un problema ficticio en la app o una tarjeta de incidencia, identificad qué ha pasado y registrad la predicción, la señal elegida, el ladrillo/app que el equipo ha programado y la respuesta observada. Las señales físicas son modelos para interpretar una situación: el tren lee el color de los ladrillos, no reconoce ni interpreta las señales de tráfico.
 
-![El tren Coding Express de la dotació recorre una via en Y amb maons d’acció, mentre targetes de senyal i una tauleta serveixen de recursos per a planificar la ruta.](../../_assets/situacions/sa-ce-reptes-rutes-senyals-app.webp)
+![El tren Coding Express de la dotación recorre una vía en Y con ladrillos de acción, mientras tarjetas de señal y una tableta sirven de recursos para planificar la ruta.](../../_assets/situacions/sa-ce-reptes-rutes-senyals-app.webp)
 
-_Les targetes representen senyals per a la conversa de classe; el tren detecta els maons de color de la via, no les targetes._
+_Las tarjetas representan señales para la conversación de clase; el tren detecta los ladrillos de color de la vía, no las tarjetas._
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proveu la resposta, empreu els quatre senyals disponibles en una nova ronda i inventeu-ne un de propi amb un model o pictograma. Poseu-lo al mapa i justifiqueu-ne la ubicació. Compareu una seqüència repetida de parades i expliqueu quina instrucció o configuració canvia quan l’incident és diferent.
+Probad la respuesta, emplead las cuatro señales disponibles en una nueva ronda e inventad una propia con un modelo o pictograma. Ponedla en el mapa y justificad su ubicación. Comparad una secuencia repetida de paradas y explicad qué instrucción o configuración cambia cuando el incidente es diferente.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** incidència, senyal triat, maó/configuració triada, predicció, resposta observada i explicació de per què la ubicació ajuda. La maqueta no és una guia viària real.
+**Evidencia:** incidencia, señal elegida, ladrillo/configuración elegida, predicción, respuesta observada y explicación de por qué la ubicación ayuda. La maqueta no es una guía viaria real.
 
-### **Un mapa per compartir · Story Maps (60 min)**
+### **Un mapa para compartir · Story Maps (60 min)**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Llegiu un relat breu propi o de lliure ús i identifiqueu-ne personatges, escenari, inici, nus i desenllaç. Predigueu quines accions del tren poden representar els esdeveniments.
+Leed un relato breve propio o de libre uso e identificad personajes, escenario, inicio, nudo y desenlace. Predecid qué acciones del tren pueden representar los acontecimientos.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Ompliu un mapa de conte amb una fila per esdeveniment: què passa, quina acció ha de fer el tren i quin maó o tram de via la provoca. Trieu la forma de la via i col·loqueu els maons necessaris; per exemple, el maó blanc activa o desactiva els llums si així ho confirma el kit.
+Rellenad un mapa de cuento con una fila por acontecimiento: qué pasa, qué acción debe hacer el tren y qué ladrillo o tramo de vía la provoca. Elegid la forma de la vía y colocad los ladrillos necesarios; por ejemplo, el ladrillo blanco activa o desactiva las luces si así lo confirma el kit.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Proveu de contar la història seguint el pla. Registreu si l’acció observada coincideix amb el que volíeu i on es produeix qualsevol diferència.
+Probad a contar la historia siguiendo el plan. Registrad si la acción observada coincide con lo que queríais y dónde se produce cualquier diferencia.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si la resposta no coincideix, depureu una decisió cada vegada —ordre d’escenes, ubicació del maó o instrucció— i torneu a executar-la. Després, creeu en grups un relat nou; qui necessite suport pot partir d’un mapa parcial amb personatge, lloc i colors d’accions suggerits.
+Si la respuesta no coincide, depurad una decisión cada vez —orden de escenas, ubicación del ladrillo o instrucción— y volved a ejecutarla. Después, cread en grupos un relato nuevo; quien necesite apoyo puede partir de un mapa parcial con personaje, lugar y colores de acciones sugeridos.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Intercanvieu els mapes perquè un altre equip conte la història sense explicacions addicionals. **Evidència:** mapa d’esdeveniments, seqüència tren–acció–maó, una errada corregida i retorn del grup lector.
+Intercambiad los mapas para que otro equipo cuente la historia sin explicaciones adicionales. **Evidencia:** mapa de acontecimientos, secuencia tren–acción–ladrillo, un error corregido y comentarios del grupo lector.
 
-## 📋 Avaluació i evidències
+## 📋 Evaluación y evidencias
 
-Recolliu els esquemes del sistema, mapes de bifurcació, desviaments i relats cartografiats. Valoreu si l’equip identifica parts i relacions, considera més d’una ruta, prova una decisió amb seguretat i comunica instruccions reproduïbles. Registreu també quina limitació del model encara no s’ha resolt.
+Recoged los esquemas del sistema, mapas de bifurcación, desvíos y relatos cartografiados. Valorad si el equipo identifica partes y relaciones, considera más de una ruta, prueba una decisión con seguridad y comunica instrucciones reproducibles. Registrad también qué limitación del modelo todavía no se ha resuelto.
 
-## ♿ Més d’una manera de participar
+## ♿ Más de una manera de participar
 
-Reduïu el mapa a dos camins ben diferenciats i useu símbols tàctils o amb alt contrast. Es pot dirigir el tren, col·locar targetes, contar el relat o comprovar el mapa amb un itinerari de fitxa. Doneu temps de planificació i permeteu assajar sense moviment quan aquest siga una barrera.
+Reducid el mapa a dos caminos bien diferenciados y usad símbolos táctiles o de alto contraste. Se puede dirigir el tren, colocar tarjetas, contar el relato o comprobar el mapa con un itinerario de ficha. Dad tiempo de planificación y permitid ensayar sin movimiento cuando este sea una barrera.
 
-## 🔗 Unitat oficial i adaptació
+## 🔗 Unidad oficial y adaptación
 
-Adaptació de les quatre lliçons de [Advancing with Coding Express](https://education.lego.com/en-us/product-resources/coding-express/additional-lesson-plans/computer-science-lessons/): How Does It Work?, Y-Shaped Track, Journey—Trouble on the Road i Story Maps, contrastades amb el [pla docent oficial en PDF](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt02986198e04c3fad/634fbf21885d1d218e487e79/Advancing_with_Coding_Express_Unit_Grade_K.pdf?locale=en-us). Els reptes mantenen investigació, bifurcació, desviament i mapatge amb exemples i recursos propis, ajustats al kit real del centre; la prova de configuració de l’app és condicional a les opcions que mostre la versió disponible.
+Adaptación de las cuatro lecciones de [Advancing with Coding Express](https://education.lego.com/en-us/product-resources/coding-express/additional-lesson-plans/computer-science-lessons/): How Does It Work?, Y-Shaped Track, Journey—Trouble on the Road y Story Maps, contrastadas con el [plan docente oficial en PDF](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt02986198e04c3fad/634fbf21885d1d218e487e79/Advancing_with_Coding_Express_Unit_Grade_K.pdf?locale=en-us). Los retos mantienen investigación, bifurcación, desvío y mapeo con ejemplos y recursos propios, ajustados al kit real del centro; la prueba de configuración de la app es condicional a las opciones que muestre la versión disponible.

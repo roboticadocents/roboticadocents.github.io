@@ -14,215 +14,215 @@ duration: "8 lecciones · 9–12 sesiones"
 challenge: "¿Qué pruebas y datos necesitamos antes de decir que un prototipo funciona o que un robot es mejor para una tarea?"
 ---
 
-![Base mòbil LEGO SPIKE Prime pujant per una rampa lleugera al costat d'una regla i un gràfic de proves.](../../_assets/situacions/sp-proves-avaluacio.webp)
+![Base móvil LEGO SPIKE Prime subiendo por una rampa ligera junto a una regla y un gráfico de pruebas.](../../_assets/situacions/sp-proves-avaluacio.webp)
 
-_Comparar prototips demana controls comuns, mesures útils i conclusions proporcionades a les proves._
+_Comparar prototipos exige controles comunes, medidas útiles y conclusiones proporcionadas a las pruebas._
 
-## 🌱 Repte i intenció
+## 🌱 Reto e intención
 
-La classe obri un laboratori d’enginyeria que investiga quan una màquina és útil, com les proves milloren un disseny i quines decisions tenen conseqüències per a les persones i el medi. La unitat adapta les vuit lliçons de *Testing and Evaluating Solutions* en el curs LEGO Education *Foundations of Physical Computing*. Cada pràctica formula criteris observables, manté condicions de comparació justes i separa dades mesurades d’interpretacions. Els models són prototips escolars, no dispositius mèdics ni recomanacions per a agricultura real.
+La clase abre un laboratorio de ingeniería que investiga cuándo una máquina es útil, cómo las pruebas mejoran un diseño y qué decisiones tienen consecuencias para las personas y el medio. La unidad adapta las ocho lecciones de *Testing and Evaluating Solutions* del curso LEGO Education *Foundations of Physical Computing*. Cada práctica formula criterios observables, mantiene condiciones de comparación justas y separa datos medidos de interpretaciones. Los modelos son prototipos escolares, no dispositivos médicos ni recomendaciones para agricultura real.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Definir una pregunta de prova, variables i criteris abans de comparar dos prototips.
-- Registrar intents repetits amb unitats i condicions constants i descriure la variabilitat.
-- Comparar una tasca humana i una robòtica sense convertir el resultat en una classificació general.
-- Usar evidències per revisar un prototip i explicar quan les dades són insuficients.
+- Definir una pregunta de prueba, variables y criterios antes de comparar dos prototipos.
+- Registrar intentos repetidos con unidades y condiciones constantes y describir la variabilidad.
+- Comparar una tarea humana y una robótica sin convertir el resultado en una clasificación general.
+- Usar evidencias para revisar un prototipo y explicar cuándo los datos son insuficientes.
 
-## 📅 Seqüència didàctica · huit lliçons
+## 📅 Secuencia didáctica · ocho lecciones
 
-### **Lliçó 1 · Provar prototips: el pont mòbil de l’escola (45 min).**
+### **Lección 1 · Probar prototipos: el puente móvil de la escuela (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Definiu el repte: travessar una separació entre dues taules amb una carretera que s’òbriga per deixar passar una caixa alta de cartó. Acordeu dos criteris mesurables —per exemple, salvar uns 20 cm i sostenir una càrrega lleugera— i el límit de materials.
+Definid el reto: cruzar una separación entre dos mesas con una carretera que se abra para dejar pasar una caja alta de cartón. Acordad dos criterios medibles —por ejemplo, salvar unos 20 cm y sostener una carga ligera— y el límite de materiales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Observeu imatges o esquemes d’un pont mòbil, registreu una observació i dibuixeu dues solucions. Trieu-ne una amb una raó i feu-ne una primera versió amb SPIKE Prime i cartó.
+Observad imágenes o esquemas de un puente móvil, registrad una observación y dibujad dos soluciones. Elegid una con una razón y haced una primera versión con SPIKE Prime y cartón.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Si el prototip es mou, planifiqueu el codi i assigneu rols. Mesureu la separació i proveu una càrrega comuna de fitxes o tela durant un temps acordat; registreu si aguanta i on falla.
+Si el prototipo se mueve, planificad el código y asignad roles. Medid la separación y probad una carga común de fichas o tela durante un tiempo acordado; registrad si aguanta y dónde falla.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Afegiu el requisit que el tauler s’òbriga prou per a una caixa alta. Modifiqueu només la zona necessària, torneu a provar estabilitat i moviment i depureu el codi en relació amb el mecanisme.
+Añadid el requisito de que el tablero se abra lo suficiente para una caja alta. Modificad solo la zona necesaria, volved a probar estabilidad y movimiento y depurad el código en relación con el mecanismo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** criteris, dos esbossos, prototip, programa i taula abans/després. Mostreu una dada i el canvi que ha millorat el resultat; no cal que el primer pont funcione. Useu taula estable, càrrega petita i mans fora de davall; si només hi ha cartó, feu una maqueta manual.
+**Evidencia:** criterios, dos bocetos, prototipo, programa y tabla antes/después. Mostrad un dato y el cambio que ha mejorado el resultado; no hace falta que el primer puente funcione. Usad una mesa estable, carga pequeña y las manos fuera de debajo; si solo hay cartón, haced una maqueta manual.
 
-### **Lliçó 2 · Persona i robot davant de la mateixa tasca (90 min).**
+### **Lección 2 · Persona y robot ante la misma tarea (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Observeu imatges de braços robòtics en fabricació, classificació o enviament. Anoteu tasques, entorns i per què es podria triar una màquina encara que una persona siga més ràpida.
+Observad imágenes de brazos robóticos en fabricación, clasificación o envío. Anotad tareas, entornos y por qué se podría elegir una máquina aunque una persona sea más rápida.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Marqueu dues safates separades uns 30 cm i poseu tres blocs iguals drets dins d’un marc. Acordeu transferir-ne un cada vegada mantenint-lo dret; si cau, torna a l’origen. Munteu una mà robòtica d’obrir/tancar i ajusteu el motor si cal.
+Marcad dos bandejas separadas unos 30 cm y poned tres bloques iguales de pie dentro de un marco. Acordad transferir uno cada vez manteniéndolo de pie; si cae, vuelve al origen. Montad una mano robótica de abrir/cerrar y ajustad el motor si hace falta.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Cadascú fa tres intents amb el gripper i tres amb la mà pròpia. Una persona transfereix i l’altra cronometra; canvieu rols. Anoteu tots els temps, caigudes i observacions, sense eliminar cap intent.
+Cada persona hace tres intentos con el gripper y tres con la mano propia. Una persona transfiere y la otra cronometra; cambiad los roles. Anotad todos los tiempos, las caídas y las observaciones, sin eliminar ningún intento.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Calculeu mitjana o rang, feu un gràfic i redacteu una afirmació condicionada: quin mètode és més ràpid o constant en aquestes condicions? Afegiu una altra tasca on una persona puga adaptar-se millor.
+Calculad la media o el rango, haced un gráfico y redactad una afirmación condicionada: ¿qué método es más rápido o constante en estas condiciones? Añadid otra tarea en la que una persona pueda adaptarse mejor.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** protocol, dades completes, gràfic i conclusió amb una limitació. Discutiu supervisió, accessibilitat, seguretat i qualitat; no feu un rànquing de capacitats humanes. Es pot participar amb programació, cronometratge o anàlisi, sense fer el moviment.
+**Evidencia:** protocolo, datos completos, gráfico y conclusión con una limitación. Discutid supervisión, accesibilidad, seguridad y calidad; no hagáis un ranking de capacidades humanas. Se puede participar con programación, cronometraje o análisis, sin hacer el movimiento.
 
-### **Lliçó 3 · Comparar pinces i agafadors (90 min).**
+### **Lección 3 · Comparar pinzas y agarradores (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta d’enginyeria:** quin agafador convé per a cada objecte i quins efectes socials té automatitzar la recollida? Observeu imatges de braços en classificació i neteja i anoteu avantatges/costos possibles de seguretat, temps, manteniment, inversió i tasques laborals.
+**Pregunta de ingeniería:** ¿qué agarrador conviene para cada objeto y qué efectos sociales tiene automatizar la recogida? Observad imágenes de brazos en clasificación y limpieza y anotad posibles ventajas y costes de seguridad, tiempo, mantenimiento, inversión y tareas laborales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En parelles, dissenyeu dues terminacions per al mateix braç SPIKE —per exemple pinça suau i pala ampla— i una comparació manual. Trieu objectes nets i segurs: forma rígida, peça ampla i plana, i peça lleugera deformable; registreu dimensions i massa aproximada.
+En parejas, diseñad dos terminaciones para el mismo brazo SPIKE —por ejemplo, pinza suave y pala ancha— y una comparación manual. Elegid objetos limpios y seguros: forma rígida, pieza ancha y plana, y pieza ligera deformable; registrad dimensiones y masa aproximada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Manteniu constants distància, orientació i safata. Feu tres intents per objecte i mètode; si cau, torna a l’origen i compta. Registreu èxit, caigudes, temps i marques/deformació.
+Mantened constantes la distancia, la orientación y la bandeja. Haced tres intentos por objeto y método; si cae, vuelve al origen y cuenta. Registrad éxito, caídas, tiempo y marcas/deformación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu dades en taula o gràfic i determineu quin agafador és més ràpid, fiable o suau per a cada objecte; pot no haver-hi un únic guanyador. Proposeu una millora per al cas més feble i expliqueu a qui ajudaria i quin límit conserva.
+Comparad los datos en una tabla o un gráfico y determinad qué agarrador es más rápido, fiable o suave para cada objeto; puede no haber un único ganador. Proponed una mejora para el caso más débil y explicad a quién ayudaría y qué límite conserva.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** esbossos, criteris, dades completes, gràfic i afirmació amb una dada. Autoavalueu si l’argument usa proves i feedback. No proveu amb persones, aliments o residus reals; el prototip no és una eina de neteja operativa.
+**Evidencia:** bocetos, criterios, datos completos, gráfico y afirmación con un dato. Autoevaluaos sobre si el argumento usa pruebas y feedback. No probéis con personas, alimentos o residuos reales; el prototipo no es una herramienta de limpieza operativa.
 
-![Robot mòbil de LEGO SPIKE Prime amb un braç de peces i una pinça que transfereix un bloc lleuger entre safates.](../../_assets/situacions/sa-sp-proves-agafador.webp)
+![Robot móvil de LEGO SPIKE Prime con un brazo de piezas y una pinza que transfiere un bloque ligero entre bandejas.](../../_assets/situacions/sa-sp-proves-agafador.webp)
 
-_Per comparar dos agafadors, manteniu constant el trajecte i registreu cada intent, incloses les caigudes._
+_Para comparar dos agarradores, mantened constante el trayecto y registrad cada intento, incluidas las caídas._
 
-### **Lliçó 4 · Tasques repetitives, potència i precisió (90 min).**
+### **Lección 4 · Tareas repetitivas, potencia y precisión (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Parleu de tasques repetitives i exposició a riscos. Predigueu com canviarà el recorregut si varia la potència; l’activitat és observacional i ningú no ha de repetir gestos corporals.
+Hablad de tareas repetitivas y exposición a riesgos. Predecid cómo cambiará el recorrido si varía la potencia; la actividad es observacional y nadie debe repetir gestos corporales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construïu una base mòbil, mesureu la circumferència de les rodes i estimeu distància a partir de rotacions. Registreu rotacions, potència i distància real; aclariu que «speed» ajusta potència del motor.
+Construid una base móvil, medid la circunferencia de las ruedas y estimad la distancia a partir de las rotaciones. Registrad rotaciones, potencia y distancia real; aclarad que «speed» ajusta la potencia del motor.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Repetiu a 100%, 60%, 30% i 10% mantenint recorregut, bateria, superfície i inici constants. Proveu el sensor de força com a topall i anoteu si a baixa potència no l’activa.
+Repetid al 100 %, 60 %, 30 % y 10 % manteniendo constantes el recorrido, la batería, la superficie y el inicio. Probad el sensor de fuerza como tope y anotad si a baja potencia no lo activa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Fixeu un marcador en paper gran i programeu avant-enrere-avant per dibuixar el mateix traç. Compareu línies a cada potència, ajusteu una variable i estimeu l’error; eviteu que la tinta travesse el paper.
+Fijad un rotulador en papel grande y programad adelante-atrás-adelante para dibujar el mismo trazo. Comparad las líneas a cada potencia, ajustad una variable y estimad el error; evitad que la tinta traspase el papel.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** circumferència, taula, gràfic distància/rotacions/potència i traços superposats. Expliqueu què altera la precisió i quines condicions humanes continuen necessàries; el programa no mesura energia ni substitueix un estudi de seguretat laboral.
+**Evidencia:** circunferencia, tabla, gráfico distancia/rotaciones/potencia y trazos superpuestos. Explicad qué altera la precisión y qué condiciones humanas continúan siendo necesarias; el programa no mide energía ni sustituye un estudio de seguridad laboral.
 
-### **Lliçó 5 · Gir, velocitat i precisió (90 min).**
+### **Lección 5 · Giro, velocidad y precisión (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Useu una demostració corporal opcional i sense contacte amb vara lleugera, o fletxes i peces. Predigueu la trajectòria i l’espai que necessiten tres girs: gir de punt amb rodes en sentits oposats, pivot amb una roda parada i arc ambdues rodes en el mateix sentit a velocitats diferents.
+Usad una demostración corporal opcional y sin contacto con una vara ligera, o flechas y piezas. Predecid la trayectoria y el espacio que necesitan tres giros: giro sobre el punto con las ruedas en sentidos opuestos, pivote con una rueda parada y arco con ambas ruedas en el mismo sentido a velocidades distintas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Programeu una base de dues rodes per a cada tipus de gir. Marqueu una cantonada i estimeu l’angle i la desviació de la trajectòria.
+Programad una base de dos ruedas para cada tipo de giro. Marcad una esquina y estimad el ángulo y la desviación de la trayectoria.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Repetiu tres vegades amb potència baixa i alta, mantenint superfície, rodes, càrrega, inici i bateria constants. Registreu totes les desviacions, no sols el millor intent.
+Repetid tres veces con potencia baja y alta, manteniendo constantes la superficie, las ruedas, la carga, el inicio y la batería. Registrad todas las desviaciones, no solo el mejor intento.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Dissenyeu una ruta amb obstacle lleuger, trieu on convé cada gir i demaneu a un altre equip una observació concreta. Reviseu un únic valor i citeu qualsevol codi o idea reutilitzada.
+Diseñad una ruta con un obstáculo ligero, elegid dónde conviene cada giro y pedid a otro equipo una observación concreta. Revisad un único valor y citad cualquier código o idea reutilizada.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dibuix dels girs, programa comentat i taula d’angles/desviacions amb justificació. No convertiu graus de motor en angle garantit sense calibratge; autoavalueu cooperació, repeticions i feedback incorporat.
+**Evidencia:** dibujo de los giros, programa comentado y tabla de ángulos/desviaciones con justificación. No convirtáis grados de motor en un ángulo garantizado sin calibración; autoevaluaos en cooperación, repeticiones y feedback incorporado.
 
-### **Lliçó 6 · Pujada, dades i energia potencial (90 min).**
+### **Lección 6 · Subida, datos y energía potencial (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Compareu dues rodes unides per un eix en pla i en una rampa baixa. Predigueu com canviaran moviment i velocitat i repetiu la predicció per a un pendent major.
+Comparad dos ruedas unidas por un eje en plano y en una rampa baja. Predecid cómo cambiarán el movimiento y la velocidad y repetid la predicción para una pendiente mayor.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Mesureu massa del vehicle i desnivell de la rampa de cartó. Construïu el model de pujada SPIKE i programeu l’ascens; repetiu amb diverses inclinacions.
+Medid la masa del vehículo y el desnivel de la rampa de cartón. Construid el modelo de subida SPIKE y programad el ascenso; repetid con distintas inclinaciones.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Registreu potència, temps, arribada al cim i dades del hub. Relacioneu la traça amb inici, tram pla i baixada; expliqueu per què el sensor pot no marcar zero o mostrar una corba inicial.
+Registrad potencia, tiempo, llegada a la cima y datos del hub. Relacionad la traza con el inicio, el tramo plano y el descenso; explicad por qué el sensor puede no marcar cero o mostrar una curva inicial.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Calculeu per a cada desnivell l’estimació d’energia potencial *Eₚ = m·g·h* i representeu-la. Si el robot no puja, separeu hipòtesis de tracció, càrrega, pendent i potència; manteniu massa/superfície constants.
+Calculad para cada desnivel la estimación de energía potencial *Eₚ = m · g · h* y representadla. Si el robot no sube, separad hipótesis de tracción, carga, pendiente y potencia; mantened constantes la masa y la superficie.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** gràfic i explicació del canvi observat, una incertesa i una millora. Compareu l’estimació amb el model sense dir que el sensor ha mesurat energia. Assegureu la rampa i no poseu pesos al robot ni mans en la trajectòria.
+**Evidencia:** gráfico y explicación del cambio observado, una incertidumbre y una mejora. Comparad la estimación con el modelo sin decir que el sensor ha medido energía. Asegurad la rampa y no pongáis pesos en el robot ni las manos en la trayectoria.
 
-### **Lliçó 7 · Dissenyar per a una necessitat (90–135 min).**
+### **Lección 7 · Diseñar para una necesidad (90–135 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Partiu del repte oficial sobre una pròtesi amb aquest marc: no simuleu una discapacitat, no demaneu que ningú es pose un aparell i no afirmeu que una maqueta serveix a una persona. Investigueu amb fonts públiques com codisseny, materials, confort i control intervenen en dispositius assistius; compartir experiències personals és opcional.
+Partid del reto oficial sobre una prótesis con este marco: no simuléis una discapacidad, no pidáis a nadie que se ponga un aparato y no afirméis que una maqueta sirve a una persona. Investigad con fuentes públicas cómo intervienen el codiseño, los materiales, la comodidad y el control en los dispositivos asistivos; compartir experiencias personales es opcional.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Trieu un escenari fictici amb objecte de maqueta, com un suport de taula per a una targeta o un agafador fix per a obrir una capsa gran. Genereu tres solucions, compareu pros/contres i trieu-ne una amb criteris.
+Elegid un escenario ficticio con un objeto de maqueta, como un soporte de mesa para una tarjeta o un agarrador fijo para abrir una caja grande. Generad tres soluciones, comparad pros y contras y elegid una con criterios.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu esbós, pseudocodi o diagrama de flux i distribuïu tasques. Construïu un mecanisme SPIKE que no s’acoble al cos i proveu-lo amb diverses formes lleugeres; registreu criteri, prova i canvi de cada iteració.
+Haced un boceto, pseudocódigo o diagrama de flujo y distribuid las tareas. Construid un mecanismo SPIKE que no se acople al cuerpo y probadlo con distintas formas ligeras; registrad criterio, prueba y cambio de cada iteración.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Una altra parella dona feedback amb preguntes i descripció, sense reconstruir ni programar el mecanisme. Reviseu-lo i expliqueu què resol, què no i com s’allibera manualment.
+Otra pareja da feedback con preguntas y descripción, sin reconstruir ni programar el mecanismo. Revisadlo y explicad qué resuelve, qué no y cómo se libera manualmente.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** alternatives, criteris, esbós, pseudocodi, proves i presentació. Expliqueu què requeriria codissenyar amb persones usuàries, professionals clínics o de rehabilitació i proves especialitzades; és una maqueta de baixa força, no un producte mèdic ni una recomanació d’ús.
+**Evidencia:** alternativas, criterios, boceto, pseudocódigo, pruebas y presentación. Explicad qué requeriría codiseñar con personas usuarias, profesionales clínicos o de rehabilitación y pruebas especializadas; es una maqueta de baja fuerza, no un producto médico ni una recomendación de uso.
 
-### **Lliçó 8 · Professions de salut, agricultura i recursos naturals (90 min).**
+### **Lección 8 · Profesiones de salud, agricultura y recursos naturales (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-La docent comparteix imatges o targetes d’ocupacions i fonts actuals sobre tasques/formació a la Comunitat Valenciana. No atribuïu al context local dades o llicències d’altres països. Classifiqueu ciències de salut i agricultura/alimentació/recursos naturals i connecteu-les amb proves, disseny assistiu, energia, materials i sensors.
+La docente comparte imágenes o tarjetas de ocupaciones y fuentes actuales sobre tareas/formación en la Comunidad Valenciana. No atribuyáis al contexto local datos o licencias de otros países. Clasificad ciencias de la salud y agricultura/alimentación/recursos naturales y conectadlas con pruebas, diseño asistivo, energía, materiales y sensores.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En grups de quatre, investigueu ocupacions conegudes i una de nova; anoteu tasques, competències, entorn, itinerari/acreditacions i font datada. Si la font inclou perspectives d’ocupació, registreu any i territori; si no, deixeu-ho en blanc.
+En grupos de cuatro, investigad ocupaciones conocidas y una de nueva; anotad tareas, competencias, entorno, itinerario/acreditaciones y fuente fechada. Si la fuente incluye perspectivas de empleo, registrad año y territorio; si no, dejadlo en blanco.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Construïu amb peces o cartó un model visual d’una via professional i expliqueu com diverses feines cooperen en una necessitat concreta, com producció hortícola sostenible o tecnologia de rehabilitació sense dades de salut. Prepareu una presentació d’un minut.
+Construid con piezas o cartón un modelo visual de una vía profesional y explicad cómo varios trabajos cooperan en una necesidad concreta, como producción hortícola sostenible o tecnología de rehabilitación sin datos de salud. Preparad una presentación de un minuto.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Presenteu el model i responeu preguntes sobre les feines, allò que comparteixen i allò propi d’una ocupació. Feu una xarxa de paraules sobre una família professional i afegiu una feina descoberta.
+Presentad el modelo y responded preguntas sobre los trabajos, lo que comparten y lo propio de una ocupación. Haced una red de palabras sobre una familia profesional y añadid un trabajo descubierto.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** graella amb fonts/datació, model, presentació i xarxa. La reflexió individual sobre interessos és privada i voluntària; la docent valora qualitat de fonts i connexions entre rols.
+**Evidencia:** cuadrícula con fuentes/fechado, modelo, presentación y red. La reflexión individual sobre intereses es privada y voluntaria; la docente valora la calidad de las fuentes y las conexiones entre roles.
 
-## 🧰 Materials i controls
+## 🧰 Materiales y controles
 
-Set SPIKE Prime 45678, hub, dos motors, sensor de força si es prova l’aturada, app SPIKE i els models de Driving Base/Going the Distance; cartró, regle, paper quadriculat, fitxes lleugeres, safates i quadern de dades. Mesureu només allò que l’instrument pot observar: distància, temps, encerts, massa i alçada quan hi haja balança/regle. Les dades d’energia són estimacions amb supòsits explícits. El sensor de força no és una cèl·lula de càrrega calibrada i el sensor de distància no mesura pressió, duresa ni força.
+Set SPIKE Prime 45678, hub, dos motores, sensor de fuerza si se prueba la detención, app SPIKE y los modelos de Driving Base/Going the Distance; cartón, regla, papel cuadriculado, fichas ligeras, bandejas y cuaderno de datos. Medid solo lo que el instrumento puede observar: distancia, tiempo, aciertos, masa y altura cuando haya balanza o regla. Los datos de energía son estimaciones con supuestos explícitos. El sensor de fuerza no es una célula de carga calibrada y el sensor de distancia no mide presión, dureza ni fuerza.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Recolliu els criteris inicials, esbossos, taules de proves, mesures comunes, programes, registre de modificacions, gràfic de pujada, comparació persona/robot i presentació de la maqueta d’agafador. Valoreu el control de variables, la repetició d’intents, la lectura de dades, la interpretació proporcionada i la capacitat d’anomenar incerteses. Autoavaluació de col·laboració, temps i cura dels materials; coavaluació que demana una dada favorable, una limitació i una prova futura.
+Recoged los criterios iniciales, bocetos, tablas de pruebas, medidas comunes, programas, registro de modificaciones, gráfico de subida, comparación persona/robot y presentación de la maqueta de agarrador. Valorad el control de variables, la repetición de intentos, la lectura de datos, la interpretación proporcionada y la capacidad de nombrar incertidumbres. Autoevaluación de colaboración, tiempo y cuidado de los materiales; coevaluación que pide un dato favorable, una limitación y una prueba futura.
 
-## ♿ Accessibilitat, ètica i seguretat
+## ♿ Accesibilidad, ética y seguridad
 
-Permeteu participar des de rols de muntatge, codi, mesura, anàlisi o comunicació, sense exigir moviments repetitius a l’alumnat. La comparació humà/robot tracta adequació d’una tasca concreta i no de valor o capacitat de les persones. Les pròtesis es tracten amb llenguatge respectuós, sense simulacions de discapacitat ni testimonis personals obligatoris; no es prova cap mecanisme sobre el cos. Manteniu càrregues lleugeres, rampa baixa i prototips aturats mentre s’ajusten.
+Permitid participar desde roles de montaje, código, medida, análisis o comunicación, sin exigir movimientos repetitivos al alumnado. La comparación humano/robot trata de la adecuación a una tarea concreta y no del valor o la capacidad de las personas. Las prótesis se tratan con lenguaje respetuoso, sin simulaciones de discapacidad ni testimonios personales obligatorios; no se prueba ningún mecanismo sobre el cuerpo. Mantened cargas ligeras, rampa baja y prototipos detenidos mientras se ajustan.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta les huit lliçons de *Testing and Evaluating Solutions* del curs [*Foundations of Physical Computing*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb): *Testing Prototypes*, *Human vs. Robot*, *Comparing Robotic Grabbers*, *Repetitive Tasks*, *Turns, Speed, & Accuracy*, *Uphill Climb*, *Mini-Challenge: Design for Someone* i *Connecting to Careers: Health Science, Agriculture, Food, & Natural Resources*. Conserva la progressió de provar, comparar, mesurar i iterar, la relació entre velocitat i precisió, els girs, la pujada amb gràfiques i el repte de mà programable; adapta la càrrega a proves escolars segures i explicita els límits d’ús del prototip.
+Adapta las ocho lecciones de *Testing and Evaluating Solutions* del curso [*Foundations of Physical Computing*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb): *Testing Prototypes*, *Human vs. Robot*, *Comparing Robotic Grabbers*, *Repetitive Tasks*, *Turns, Speed, & Accuracy*, *Uphill Climb*, *Mini-Challenge: Design for Someone* y *Connecting to Careers: Health Science, Agriculture, Food, & Natural Resources*. Conserva la progresión de probar, comparar, medir e iterar, la relación entre velocidad y precisión, los giros, la subida con gráficas y el reto de mano programable; adapta la carga a pruebas escolares seguras y explicita los límites de uso del prototipo.

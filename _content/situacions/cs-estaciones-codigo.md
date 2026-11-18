@@ -15,533 +15,507 @@ challenge: "¿Cómo podemos pasar de unas órdenes tangibles a una historia y un
 official_source: "https://matatalab.com/zh-hans/node/66"
 ---
 
-![MatataBot, la torre de control, els blocs tangibles, una graella de mapa amb bandera i targetes de creació artística representen les dotze sessions de Learning Station.](../../_assets/situacions/cs-estacions-codi.webp)
+![MatataBot, la torre de control, los bloques tangibles, una cuadrícula de mapa con bandera y tarjetas de creación artística representan las doce sesiones de Learning Station.](../../_assets/situacions/cs-estacions-codi.webp)
 
-_Les peces i el MatataBot de la dotació connecten seqüències, mapes i propostes creatives; els complements artístics només s’utilitzen si el centre en disposa._
+_Las piezas y el MatataBot de la dotación conectan secuencias, mapas y propuestas creativas; los complementos artísticos solo se utilizan si el centro dispone de ellos._
 
-## 🌱 Situació, repte i intenció
+## 🌱 Situación, reto e intención
 
-La biblioteca del centre vol preparar un recorregut de descobertes per a una altra classe. Primer cal entendre com llegeix MatataBot les ordres; després, dissenyar un laberint, representar un espai conegut amb una graella i construir un itinerari que tinga sentit. En acabar, cada equip crearà una peça artística o sonora amb els materials compatibles que tinga el centre.
+La biblioteca del centro quiere preparar un recorrido de descubrimientos para otra clase. Primero hay que entender cómo lee MatataBot las órdenes; después, diseñar un laberinto, representar un espacio conocido con una cuadrícula y construir un itinerario que tenga sentido. Al terminar, cada equipo creará una pieza artística o sonora con los materiales compatibles que tenga el centro.
 
-La proposta pren com a referència el currículum oficial **Learning Station** de Matatalab: dotze lliçons, amb una progressió pública que va de la familiarització amb el Coding Set i els blocs (1–4), als obstacles, banderes i laberints amb històries o poemes (5–7), als mapes i les graelles (8–10), i a la creació artística o musical amb accessoris (11–12). Hem localitzat el PDF docent oficial de 2021, que publica l’índex complet i situa els blocs de lliçons 5–7, 8–10 i 11–12 a partir de les pàgines 30, 41 i 55. La còpia de 29 pàgines que hem pogut extraure acaba abans d’aquests plans; el lector web tampoc ha pogut obrir el PDF complet per la mida del fitxer. Per tant, podem contrastar directament els objectius i l’organització de les lliçons 1–4; les sessions 5–12 continuen sent adaptacions pròpies basades en l’índex públic i en guies tècniques separades, no una afirmació de correspondència integral amb els plans docents que encara no hem pogut llegir.
+La propuesta toma como referencia el currículo oficial **Learning Station** de Matatalab: doce lecciones, con una progresión pública que va de la familiarización con el Coding Set y los bloques (1–4), a los obstáculos, banderas y laberintos con historias o poemas (5–7), a los mapas y las cuadrículas (8–10), y a la creación artística o musical con accesorios (11–12). Hemos localizado el PDF docente oficial de 2021, que publica el índice completo y sitúa los bloques de lecciones 5–7, 8–10 y 11–12 a partir de las páginas 30, 41 y 55. La copia de 29 páginas que hemos podido extraer termina antes de esos planes; el lector web tampoco ha podido abrir el PDF completo por el tamaño del archivo. Por tanto, podemos contrastar directamente los objetivos y la organización de las lecciones 1–4; las sesiones 5–12 continúan siendo adaptaciones propias basadas en el índice público y en guías técnicas separadas, no una afirmación de correspondencia integral con los planes docentes que todavía no hemos podido leer.
 
-La [guia docent pública](https://matatalab.com/zh-hans/node/66) i el [curs autoguiat oficial en anglès](https://www.matatastudio.com/Self-Guided.html) concreten els quatre primers objectius i activitats: (1) vocabulari de robot, robòtica i comunicació; (2) enviar i rebre missatges i relacionar-ho amb torre i robot; (3) classificar blocs de moviment, nombres, bucles, funcions, música/dansa, obstacles i banderes; i (4) resoldre reptes il·lustrats del *Challenge Booklet* de nivell 1 amb blocs i bandera, comprovant la posició final. Les dues guies descriuen una estructura de lliçó amb objectius essencials i d’aprenentatge, estàndards, temps, materials, preparació docent, gestió de l’alumnat, vocabulari i activitats; recomanen grups cooperatius de quatre amb rols com programador/a i inspector/a, i indiquen uns 20 minuts per lliçó. La guia també demana superfície anivellada, robot i torre carregats i materials impresos preparats abans de la sessió. Ací ampliem cada lliçó a 45 minuts per afegir context valencià, prediccions, proves repetides, registre i revisió per una altra parella; aquesta duració és una decisió local, no l’oficial. El quadern de reptes no està disponible per comprovar cada exercici, així que la sessió 4 usa targetes pròpies i no s’afirma que adapte els seus reptes exactes.
+La [guía docente pública](https://matatalab.com/zh-hans/node/66) y el [curso autoguiado oficial en inglés](https://www.matatastudio.com/Self-Guided.html) concretan los cuatro primeros objetivos y actividades: (1) vocabulario de robot, robótica y comunicación; (2) enviar y recibir mensajes y relacionarlo con torre y robot; (3) clasificar bloques de movimiento, números, bucles, funciones, música/danza, obstáculos y banderas; y (4) resolver retos ilustrados del *Challenge Booklet* de nivel 1 con bloques y bandera, comprobando la posición final. Las dos guías describen una estructura de lección con objetivos esenciales y de aprendizaje, estándares, tiempo, materiales, preparación docente, gestión del alumnado, vocabulario y actividades; recomiendan grupos cooperativos de cuatro con roles como programador/a e inspector/a, e indican unos 20 minutos por lección. La guía también pide superficie nivelada, robot y torre cargados y materiales impresos preparados antes de la sesión. Aquí ampliamos cada lección a 45 minutos para añadir contexto valenciano, predicciones, pruebas repetidas, registro y revisión por otra pareja; esta duración es una decisión local, no la oficial. El cuaderno de retos no está disponible para comprobar cada ejercicio, así que la sesión 4 usa tarjetas propias y no se afirma que adapte sus retos exactos.
 
-**Pregunta guia:** quines instruccions i quina informació necessita una altra classe per arribar al lloc que hem triat i entendre què hi passa?
+**Pregunta guía:** ¿qué instrucciones y qué información necesita otra clase para llegar al lugar que hemos elegido y entender qué pasa allí?
 
+## 🎯 Aprendizajes y vocabulario
 
+anticipar el efecto de una secuencia, distinguir orden y orientación, probar y depurar una ruta, representar espacios en una cuadrícula, comunicar un itinerario con vocabulario espacial y revisar una creación a partir de las pruebas.
 
-## 🎯 Aprenentatges i vocabulari
+## 🧰 Materiales y preparación
 
-anticipar l’efecte d’una seqüència, distingir ordre i orientació, provar i depurar una ruta, representar espais en una graella, comunicar un itinerari amb vocabulari espacial i revisar una creació a partir de les proves.
+- Coding Set completo: MatataBot, torre de control, tablero de programación y bloques tangibles disponibles en el kit. Cargad los dos dispositivos y comprobad el enlace entre torre y robot antes de la sesión.
+- Cinta de pintor, cartulinas, tarjetas de casillas, cuadrícula grande creada por el aula y los obstáculos y las banderas físicos del Coding Set. Si MatataBot recorrerá físicamente un mapa propio, marcad casillas de **10 × 10 cm**: es la medida que Matatalab indica para que coincida con el movimiento del robot. Si falta alguna pieza, usad una tarjeta plana propia y anotadla como sustitución; no presentéis el papel como si fuera una pieza del kit.
+- Fotografías o dibujos autorizados de lugares próximos: biblioteca, patio, plaza o camino de la huerta. Evitad incluir caras, direcciones particulares o recorridos identificables de niños y niñas.
+- Hoja de registro con cuatro columnas: **predicción**, **órdenes**, **resultado observado** y **cambio probado**. Preparad también tarjetas con las palabras *delante*, *detrás*, *giro*, *casilla*, *inicio* y *destino*.
+- El Artist Add-On y el Musician Add-On son opcionales y no se presuponen en la dotación. Las sesiones 11 y 12 ofrecen una vía completa con materiales de papel si no están.
 
-## 🧰 Materials i preparació
+**Organización común contrastada con el curso autoguiado oficial, lección 2.7:** trabajad en equipos de hasta cuatro con roles explícitos de programador/a e inspector/a; los roles locales de mapa y portavoz se rotan para repartir la participación. Reservad tiempo para que el grupo explore y usad preguntas para orientarlo sin anticiparle la solución. La propuesta amplía los 20 minutos oficiales de cada lección a 45 para incluir predicción, prueba, registro y retorno entre iguales.
 
-- Coding Set complet: MatataBot, torre de control, tauler de programació i blocs tangibles disponibles al kit. Carregueu els dos dispositius i comproveu l’enllaç entre torre i robot abans de la sessió.
-- Cinta de pintor, cartolines, targetes de caselles, quadrícula gran creada per l’aula i els obstacles i les banderes físics del Coding Set. Si MatataBot recorrerà físicament un mapa propi, marqueu caselles de **10 × 10 cm**: és la mida que Matatalab indica perquè coincidisca amb el moviment del robot. Si alguna peça falta, useu una targeta plana pròpia i anoteu-la com a substitució; no presenteu el paper com si fora una peça del kit.
-- Fotografies o dibuixos autoritzats de llocs pròxims: biblioteca, pati, plaça o camí de l’horta. Eviteu incloure cares, adreces particulars o recorreguts identificables d’infants.
-- Full de registre amb quatre columnes: **predicció**, **ordres**, **resultat observat** i **canvi provat**. Prepareu també targetes amb les paraules *davant*, *darrere*, *gir*, *casella*, *inici* i *destí*.
-- L’Artist Add-On i el Musician Add-On són opcionals i no es pressuposen en la dotació. Les sessions 11 i 12 ofereixen una via completa amb materials de paper si no hi són.
+Antes de iniciar la secuencia, comprobad con una orden corta que el robot recorre una casilla de 10 cm y anotad cualquier desviación del modelo, la superficie o la alineación. Mantened la medida oficial de la cuadrícula; si el movimiento observado no se corresponde, revisad la posición inicial, el estado del robot y la superficie antes de empezar. Un mapa de casillas simbólicas con otra escala se puede usar para planificar o simular, pero no como mapa de recorrido físico.
 
-**Organització comuna contrastada amb el curs autoguiat oficial, lliçó 2.7:** treballeu en equips de fins a quatre amb rols explícits de programador/a i inspector/a; els rols locals de mapa i portaveu es roten per repartir la participació. Reserveu temps perquè el grup explore i useu preguntes per a orientar-lo sense anticipar-li la solució. La proposta amplia els 20 minuts oficials de cada lliçó a 45 per incloure predicció, prova, registre i retorn entre iguals.
+## 📅 Secuencia didáctica · doce sesiones
 
-Abans d’iniciar la seqüència, comproveu amb una ordre curta que el robot recorre una casella de 10 cm i anoteu qualsevol desviació del model, la superfície o l’alineació. Manteniu la mida oficial de la quadrícula; si el moviment observat no hi correspon, reviseu la posició inicial, l’estat del robot i la superfície abans de començar. Un mapa de caselles simbòliques amb una altra escala es pot usar per a planificar o simular, però no com a mapa de recorregut físic.
+### Sesión 1 · ¿Qué piezas hacen posible el viaje?
 
-## 🎯 Itinerari de dotze sessions
+**Objetivos de aprendizaje:** Identificar las partes reales del Coding Set, explicar cómo circula una orden de la torre al MatataBot y representar el vocabulario inicial con un dibujo.
 
-### Sessió 1 · Quines peces fan possible el viatge?
+**Preparación docente:** Cargad MatataBot y la torre, poned el kit en una superficie plana y preparad una lámina muda de las piezas; verificad la conexión antes de que llegue el alumnado.
 
+**Vocabulario clave:** robot, robótica, programación, orden, torre, enviar, recibir.
 
+**Tiempo orientativo local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minutos (45 min). La guía oficial de Learning Station indica 20 minutos por lección; este reparto amplía el tiempo para pruebas, registro y retorno entre parejas.
 
+#### Fase 1 · Activamos y predecimos
 
-**Objectius d’aprenentatge:** Identificar les parts reals del Coding Set, explicar com circula una ordre de la torre al MatataBot i representar el vocabulari inicial amb un dibuix.
+Presentad el reto de preparar una ruta para que otra clase pueda descubrir la biblioteca o un rincón del patio. Haced una breve introducción guiada al vocabulario *programación*, *robot*, *robótica*, *enviar* y *recibir*; mostrad el kit cerrado y recoged predicciones sobre qué puede hacer cada pieza. La guía oficial reserva unos 20 minutos a esta lección; esta versión la amplía dentro de la sesión local de 45 minutos.
 
-**Preparació docent:** Carregueu MatataBot i la torre, poseu el kit en una superfície plana i prepareu una làmina muda de les peces; verifiqueu la connexió abans que arribe l’alumnat.
+#### Fase 2 · Exploramos y construimos
 
-**Vocabulari clau:** robot, robòtica, programació, ordre, torre, enviar, rebre.
+En equipos de cuatro, identificad robot, torre y tablero. Repartid y rotad los roles de programador/a, inspector/a, responsable del mapa y portavoz; observad qué piezas necesitan carga y qué órdenes tangibles reconoce el kit. Cada miembro dibuja o escribe un símbolo propio para una palabra del vocabulario y lo explica al grupo antes de probar nada.
 
-**Temps orientatiu local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minuts (45 min). La guia oficial de Learning Station indica 20 minuts per lliçó; aquest repartiment amplia el temps per a proves, registre i retorn entre parelles.
+![MatataBot y torre reales del Coding Set con los bloques de movimiento, de acción y de repetición, más una tarjeta de flecha hecha en clase.](../../_assets/situacions/sa-cs-parts-coding-set.webp)
 
-#### Fase 1 · Activem i prediem
+_La tarjeta es una representación del alumnado; las piezas y el robot corresponden al kit real._
 
-Presenteu el repte de preparar una ruta perquè una altra classe puga descobrir la biblioteca o un racó del pati. Feu una breu introducció guiada al vocabulari *programació*, *robot*, *robòtica*, *enviar* i *rebre*; mostreu el kit tancat i recolliu prediccions sobre què pot fer cada peça. La guia oficial reserva uns 20 minuts a aquesta lliçó; aquesta versió l’amplia dins de la sessió local de 45 minuts.
+#### Fase 3 · Explicamos y registramos
 
-#### Fase 2 · Explorem i construïm
+Ejecutad una orden sencilla desde una casilla marcada y observad qué pasa cuando la torre lee el tablero y envía la instrucción al robot. Repetid solo después de volver a colocar el robot en la misma posición inicial.
 
-En equips de quatre, identifiqueu robot, torre i tauler. Repartiu i roteu els rols de programador/a, inspector/a, responsable del mapa i portaveu; observeu quines peces necessiten càrrega i quines ordres tangibles reconeix el kit. Cada membre dibuixa o escriu un símbol propi per a una paraula del vocabulari i l’explica al grup abans de provar res.
+#### Fase 4 · Aplicamos y mejoramos
 
-![MatataBot i torre reals del Coding Set amb els blocs de moviment, d’acció i de repetició, més una targeta de fletxa feta a classe.](../../_assets/situacions/sa-cs-parts-coding-set.webp)
+Dibujad el recorrido y completad la frase «La torre… / el robot…». Distinguid la lectura del programa del movimiento físico, y compartid los dibujos de vocabulario con otro equipo.
 
-_La targeta és una representació de l’alumnat; les peces i el robot corresponen al kit real._
+#### Fase 5 · Comprobamos y reflexionamos
 
-#### Fase 3 · Expliquem i registrem
+**Evidencia:** Dibujo de las tres partes del sistema, una función observada y una pregunta para investigar.
 
-Executeu una ordre senzilla des d’una casella marcada i observeu què passa quan la torre llig el tauler i envia la instrucció al robot. Repetiu només després de tornar a col·locar el robot en la mateixa posició inicial.
+### Sesión 2 · Enviar y recibir una instrucción
 
-#### Fase 4 · Apliquem i millorem
+**Objetivos de aprendizaje:** Representar el proceso de envío y recepción de un mensaje, distinguir emisor y receptor, y comunicar una orden sin perder su sentido.
 
-Dibuixeu el recorregut i completeu la frase «La torre… / el robot…». Distingiu la lectura del programa del moviment físic, i compartiu els dibuixos de vocabulari amb un altre equip.
+**Preparación docente:** Preparad tarjetas con símbolos inequívocos y un espacio amplio sin obstáculos; formad grupos de cuatro y haced visibles los roles rotativos de emisor, receptor, programador/a e inspector/a.
 
-#### Fase 5 · Comprovem i reflexionem
+**Vocabulario clave:** mensaje, emisor, receptor, torre, robot, instrucción.
 
-**Evidència:** Dibuix de les tres parts del sistema, una funció observada i una pregunta per a investigar.
-### Sessió 2 · Enviar i rebre una instrucció
+**Tiempo orientativo local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minutos (45 min). La guía oficial de Learning Station indica 20 minutos por lección; este reparto amplía el tiempo para pruebas, registro y retorno entre parejas.
 
+#### Fase 1 · Activamos y predecimos
 
+Acordad al menos tres mensajes cortos y neutros sobre espacios del centro (por ejemplo, «la biblioteca está abierta» o «el patio está cerrado»). No uséis información personal. La guía oficial propone grupos de hasta cuatro y mensajes sencillos preparados antes de ir a un espacio amplio.
 
+#### Fase 2 · Exploramos y construimos
 
-**Objectius d’aprenentatge:** Representar el procés d’enviament i recepció d’un missatge, distingir emissor i receptor, i comunicar una ordre sense perdre’n el sentit.
+En equipos de cuatro, situad a dos personas a cada lado de un espacio amplio: una pareja envía los tres mensajes oralmente y la otra los recibe y los anota; después cambiad los roles. Comparad qué pasa cuando un mensaje llega incompleto o en un orden diferente.
 
-**Preparació docent:** Prepareu targetes amb símbols inequívocs i un espai ample sense obstacles; formeu grups de quatre i feu visibles els rols rotatius d’emissor, receptor, programador/a i inspector/a.
+#### Fase 3 · Explicamos y registramos
 
-**Vocabulari clau:** missatge, emissor, receptor, torre, robot, instrucció.
+Representad una ruta con bloques en el tablero. La torre lee la disposición y envía instrucciones al robot; una pareja hace de programadora y la otra de inspectora: antes de ejecutar, la receptora describe qué espera que haga el robot. Repetid con una sola orden cambiada e identificad el mensaje diferente.
 
-**Temps orientatiu local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minuts (45 min). La guia oficial de Learning Station indica 20 minuts per lliçó; aquest repartiment amplia el temps per a proves, registre i retorn entre parelles.
+![Un equipo prepara tarjetas de flecha, la torre Coding Set real lee los bloques y MatataBot espera en una casilla de inicio.](../../_assets/situacions/sa-cs-missatge-torre-matata.webp)
 
-#### Fase 1 · Activem i prediem
+_Las flechas grandes son una ayuda visual de papel. La torre lee los bloques físicos; el robot no lee las tarjetas._
 
-Acordeu almenys tres missatges curts i neutres sobre espais del centre (per exemple, «la biblioteca està oberta» o «el pati està tancat»). No useu informació personal. La guia oficial proposa grups de fins a quatre i missatges senzills preparats abans d’anar a un espai ampli.
+#### Fase 4 · Aplicamos y mejoramos
 
-#### Fase 2 · Explorem i construïm
+Dibujad dos símbolos propios, uno para «enviar» y otro para «recibir», y explicad la relación entre torre, programa y robot.
 
-En equips de quatre, situeu dues persones a cada costat d’un espai ampli: una parella envia els tres missatges oralment i l’altra els rep i els anota; després canvieu els rols. Compareu què passa quan un missatge arriba incomplet o en un ordre diferent.
+#### Fase 5 · Comprobamos y reflexionamos
 
-#### Fase 3 · Expliquem i registrem
+**Evidencia:** Mensaje transmitido y recibido, dibujo de la ruta y una explicación de la función de la torre y del robot.
 
-Representeu una ruta amb blocs en el tauler. La torre llig la disposició i envia instruccions al robot; una parella fa de programadora i l’altra d’inspectora: abans d’executar, la receptora descriu què espera que faça el robot. Repetiu amb una sola ordre canviada i identifiqueu el missatge diferent.
+### Sesión 3 · Clasificar bloques, obstáculos y destinos
 
-![Un equip prepara targetes de fletxa, la torre Coding Set real llig els blocs i MatataBot espera en una casella d’inici.](../../_assets/situacions/sa-cs-missatge-torre-matata.webp)
+**Objetivos de aprendizaje:** Clasificar las piezas presentes según la función observada, reconocer los elementos opcionales y justificar la clasificación con una prueba o una fuente.
 
-_Les fletxes grans són una ajuda visual de paper. La torre llig els blocs físics; el robot no llig les targetes._
+**Preparación docente:** Poned sobre la mesa solo las piezas del kit disponible y preparad tarjetas de categoría y una bandeja separada para elementos ausentes o no verificados.
 
-#### Fase 4 · Apliquem i millorem
+**Vocabulario clave:** movimiento, número, bucle, función, obstáculo, bandera, accesorio.
 
-Dibuixeu dos símbols propis, un per a «enviar» i un per a «rebre», i expliqueu la relació entre torre, programa i robot.
+**Tiempo orientativo local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minutos (45 min). La guía oficial de Learning Station indica 20 minutos por lección; este reparto amplía el tiempo para pruebas, registro y retorno entre parejas.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 1 · Activamos y predecimos
 
-**Evidència:** Missatge transmés i rebut, dibuix de la ruta i una explicació de la funció de la torre i del robot.
-### Sessió 3 · Classificar blocs, obstacles i destinacions
+Mostrad el Coding Set preparado sobre una mesa plana. Antes de tocar las piezas, cada equipo propone criterios para agruparlas.
 
+#### Fase 2 · Exploramos y construimos
 
+Repartid tarjetas propias con estas categorías: movimiento/dirección, números/parámetros, repetición, funciones, música/danza y obstáculos/banderas. En grupos de cuatro, clasificad las piezas que realmente hay en el kit y poned cada tarjeta junto al grupo correspondiente. Si una categoría depende de un accesorio ausente, dejad la tarjeta como «no disponible en esta dotación»; no la completéis con piezas imaginarias.
 
+![MatataBot y torre reales del Coding Set con bloques tangibles agrupados por movimiento y repetición; las banderas y los obstáculos aparecen en tarjetas dibujadas.](../../_assets/situacions/sa-cs-classifica-peces.webp)
 
-**Objectius d’aprenentatge:** Classificar les peces presents segons la funció observada, reconéixer els elements opcionals i justificar la classificació amb una prova o una font.
+_Los dibujos de bandera y obstáculo son tarjetas de papel, no accesorios adicionales mostrados como piezas del kit._
 
-**Preparació docent:** Poseu sobre la taula només les peces del kit disponible i prepareu targetes de categoria i una safata separada per a elements absents o no verificats.
+#### Fase 3 · Explicamos y registramos
 
-**Vocabulari clau:** moviment, nombre, bucle, funció, obstacle, bandera, accessori.
+Explicad para qué podría servir cada categoría y haced un dibujo original que la represente. Comparad dos clasificaciones y justificad cualquier diferencia con una pieza concreta, una instrucción del manual o una prueba observada.
 
-**Temps orientatiu local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minuts (45 min). La guia oficial de Learning Station indica 20 minuts per lliçó; aquest repartiment amplia el temps per a proves, registre i retorn entre parelles.
+#### Fase 4 · Aplicamos y mejoramos
 
-#### Fase 1 · Activem i prediem
+Reunid las tarjetas y preparad un inventario de clase: nombre, función comprobada y dependencia de accesorio si la hay.
 
-Mostreu el Coding Set preparat sobre una taula plana. Abans de tocar les peces, cada equip proposa criteris per a agrupar-les.
+#### Fase 5 · Comprobamos y reflexionamos
 
-#### Fase 2 · Explorem i construïm
+**Evidencia:** Tabla ilustrada de categorías con piezas observadas y una lista separada de elementos ausentes o pendientes de verificar.
 
-Repartiu targetes pròpies amb aquestes categories: moviment/direcció, nombres/paràmetres, repetició, funcions, música/dansa i obstacles/banderes. En grups de quatre, classifiqueu les peces que realment hi ha al kit i poseu cada targeta al costat del grup corresponent. Si una categoria depén d’un accessori absent, deixeu la targeta com a «no disponible en aquesta dotació»; no la completeu amb peces imaginàries.
+### Sesión 4 · Resolver retos de código con banderas
 
-![MatataBot i torre reals del Coding Set amb blocs tangibles agrupats per moviment i repetició; les banderes i els obstacles apareixen en targetes dibuixades.](../../_assets/situacions/sa-cs-classifica-peces.webp)
+**Objetivos de aprendizaje:** Leer una ruta ilustrada, construir una secuencia de bloques, predecir el destino y depurar una instrucción a partir de la posición observada.
 
-_Els dibuixos de bandera i obstacle són targetes de paper, no accessoris addicionals mostrats com a peces del kit._
+**Preparación docente:** Tened a punto tres tarjetas propias y, si el centro conserva el cuaderno oficial, seleccionad tres retos de nivel 1 sin alterar sus órdenes. Marcad con 10 × 10 cm las cuadrículas físicas.
 
-#### Fase 3 · Expliquem i registrem
+**Vocabulario clave:** predicción, secuencia, orientación, destino, bandera, depuración.
 
-Expliqueu per a què podria servir cada categoria i feu un dibuix original que la represente. Compareu dues classificacions i justifiqueu qualsevol diferència amb una peça concreta, una instrucció del manual o una prova observada.
+**Tiempo orientativo local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minutos (45 min). La guía oficial de Learning Station indica 20 minutos por lección; este reparto amplía el tiempo para pruebas, registro y retorno entre parejas.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 1 · Activamos y predecimos
 
-Reuniu les targetes i prepareu un inventari de classe: nom, funció comprovada i dependència d’accessori si n’hi ha.
+La guía oficial propone completar los retos ilustrados del *Challenge Booklet* de nivel 1: seguir la imagen, colocar bloques y una bandera de destino, pulsar el botón grande y comprobar la posición final del robot. No disponemos de una copia legible del cuaderno para contrastar cada ejercicio. Si el centro conserva el cuaderno, seleccionad tres retos y adaptad su contexto sin alterar las instrucciones; si no, usad las tarjetas originales siguientes. En ningún caso se presentan estas tarjetas propias como los retos exactos del cuaderno.
 
-#### Fase 5 · Comprovem i reflexionem
+Dibujad una cuadrícula de cuatro por cuatro con casillas de 10 × 10 cm si se va a hacer una prueba física, y con destinos ficticios inspirados en espacios próximos —biblioteca, huerto escolar y plaza—. Preparad tres tarjetas propias con inicio, bandera y secuencia representada con símbolos. Si las tarjetas son esquemáticas y no están a escala, identificadlas como planificación o simulación. Antes de colocar bloques, cada equipo traza la ruta con el dedo y anota dónde espera que termine el robot.
 
-**Evidència:** Taula il·lustrada de categories amb peces observades i una llista separada d’elements absents o pendents de verificar.
-### Sessió 4 · Resoldre reptes de codi amb banderes
+#### Fase 2 · Exploramos y construimos
 
+En grupos de cuatro, repartid los roles de programador/a, inspector/a, responsable del mapa y portavoz; cambiadlos después del primer reto. Resolved tres retos: primero, el reto ilustrado elegido del cuaderno oficial, si está disponible, o una tarjeta propia para llegar con una secuencia corta; después, una tarjeta con giro y orientación inicial marcada; finalmente, comparad dos secuencias válidas para el mismo destino. La persona inspectora comprueba que la secuencia física coincide con la imagen antes de pulsar el botón grande de ejecución. Después, comparad la posición final del robot con el destino dibujado y corregid una sola pieza si no coinciden.
 
+#### Fase 3 · Explicamos y registramos
 
+Cada equipo dibuja una ruta original con bloques y bandera para otro equipo. Quien la recibe la programa sin que el equipo autor le dé instrucciones orales. Registrad la predicción, las órdenes colocadas, el destino observado y la primera diferencia entre el mapa y la ejecución; si la ruta no funciona, identificad la primera instrucción que hay que revisar antes de cambiarla.
 
-**Objectius d’aprenentatge:** Llegir una ruta il·lustrada, construir una seqüència de blocs, predir el destí i depurar una instrucció a partir de la posició observada.
+![El MatataBot y la torre Coding Set de la dotación resuelven una tarjeta propia de cuadrícula: bandera azul como destino y obstáculos físicos fuera del camino programado.](../../_assets/situacions/sa-cs-aprenentatge-bandera-v2.webp)
 
-**Preparació docent:** Teniu a punt tres targetes pròpies i, si el centre conserva el quadern oficial, seleccioneu tres reptes de nivell 1 sense alterar-ne les ordres. Marqueu amb 10 × 10 cm les graelles físiques.
+_La ruta y los marcadores son una maqueta propia; el equipo planifica los obstáculos porque el robot no los detecta automáticamente._
 
-**Vocabulari clau:** predicció, seqüència, orientació, destí, bandera, depuració.
+#### Fase 4 · Aplicamos y mejoramos
 
-**Temps orientatiu local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minuts (45 min). La guia oficial de Learning Station indica 20 minuts per lliçó; aquest repartiment amplia el temps per a proves, registre i retorn entre parelles.
+Añadid una restricción nueva —un obstáculo fuera del camino, otra bandera o un inicio con orientación diferente— y haced que una pareja visite el reto. La pareja autora explica la regla del mapa, pero no dicta las órdenes. Después, discutid qué ha sido claro, cread una versión revisada y compartidla con otro equipo. Como conexión con el mundo real, elegid un recorrido cotidiano seguro entre dos espacios del centro y representad solo sus relaciones básicas; no incluyáis ubicaciones privadas ni afirmaciones de accesibilidad sin comprobarlas.
 
-#### Fase 1 · Activem i prediem
+#### Fase 5 · Comprobamos y reflexionamos
 
-La guia oficial proposa completar els reptes il·lustrats del *Challenge Booklet* de nivell 1: seguir la imatge, col·locar blocs i una bandera de destinació, prémer el botó gran i comprovar la posició final del robot. No disposem d’una còpia llegible del quadern per a contrastar-ne cada exercici. Si el centre conserva el quadern, seleccioneu-ne tres reptes i adapteu-ne el context sense alterar les instruccions; si no, useu les targetes originals següents. En cap cas es presenten aquestes targetes pròpies com els reptes exactes del quadern.
+Cerrad la sesión con una autoevaluación: «mi predicción…», «la prueba ha mostrado…» y «he revisado…». Cada equipo comparte una solución, una dificultad y la modificación que ha hecho el reto más comprensible para otra pareja.
 
-Dibuixeu una graella de quatre per quatre amb caselles de 10 × 10 cm si es farà una prova física, i amb destinacions fictícies inspirades en espais pròxims —biblioteca, hort escolar i plaça—. Prepareu tres targetes pròpies amb inici, bandera i seqüència representada amb símbols. Si les targetes són esquemàtiques i no estan a escala, identifiqueu-les com a planificació o simulació. Abans de col·locar blocs, cada equip traça la ruta amb el dit i anota on espera que acabe el robot.
+**Evidencia:** tarjeta original revisada, disposición comprobada de bloques, predicción y destino observado, ruta trazada después de la prueba y comentario de una pareja visitante.
 
-#### Fase 2 · Explorem i construïm
+### Sesión 5 · Descubrir qué hace que un mapa sea un laberinto
 
-En grups de quatre, repartiu els rols de programador/a, inspector/a, responsable del mapa i portaveu; canvieu-los després del primer repte. Resoleu tres reptes: primer, el repte il·lustrat triat del quadern oficial, si és disponible, o una targeta pròpia per arribar amb una seqüència curta; després, una targeta amb gir i orientació inicial marcada; finalment, compareu dues seqüències vàlides per a la mateixa destinació. La persona inspectora comprova que la seqüència física coincideix amb la imatge abans de prémer el botó gran d’execució. Després, compareu la posició final del robot amb el destí dibuixat i corregiu una sola peça si no coincideixen.
+**Objetivos de aprendizaje:** Distinguir un camino de un laberinto, localizar inicio, cruces y callejones sin salida, y verificar en una representación corporal que hay un camino viable.
 
-#### Fase 3 · Expliquem i registrem
+**Preparación docente:** Preparad una cuadrícula amplia con cinta o piezas de papel, una ficha que haga de robot y dos mapas de dificultad gradual; no pongáis obstáculos en el recorrido físico.
 
-Cada equip dibuixa una ruta original amb blocs i bandera per a un altre equip. Qui la rep la programa sense que l’equip autor li done instruccions orals. Registreu la predicció, les ordres col·locades, el destí observat i la primera diferència entre el mapa i l’execució; si la ruta no funciona, identifiqueu la primera instrucció que cal revisar abans de canviar-la.
+**Vocabulario clave:** laberinto, camino, cruce, callejón sin salida, inicio, salida.
 
-![El MatataBot i la torre Coding Set de la dotació resolen una targeta pròpia de graella: bandera blava com a destí i obstacles físics fora del camí programat.](../../_assets/situacions/sa-cs-aprenentatge-bandera-v2.webp)
+**Tiempo orientativo local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minutos (45 min). La guía oficial de Learning Station indica 20 minutos por lección; este reparto amplía el tiempo para pruebas, registro y retorno entre parejas.
 
-_La ruta i els marcadors són una maqueta pròpia; l’equip planifica els obstacles perquè el robot no els detecta automàticament._
+#### Fase 1 · Activamos y predecimos
 
-#### Fase 4 · Apliquem i millorem
+Presentad un camino abierto y un laberinto dibujado con calles de papel. Pedid que localicen inicio, destino, cruces y callejones sin salida.
 
-Afegiu una restricció nova —un obstacle fora del camí, una altra bandera o un inici amb orientació diferent— i feu que una parella visite el repte. La parella autora explica la regla del mapa, però no dicta les ordres. Després, discutiu què ha sigut clar, creeu una versió revisada i compartiu-la amb un altre equip. Com a connexió amb el món real, trieu un recorregut quotidià segur entre dos espais del centre i representeu-ne només les relacions bàsiques; no inclogueu ubicacions privades ni afirmacions d’accessibilitat sense comprovar-les.
+#### Fase 2 · Exploramos y construimos
 
-#### Fase 5 · Comprovem i reflexionem
+En grupos de cuatro, una persona hace de robot sobre una cuadrícula de cinta y las demás le dan instrucciones de una en una. Marcad en el mapa dónde hay más de una opción y dónde hay que volver atrás; no pongáis obstáculos físicos en el recorrido.
 
-Tanqueu la sessió amb una autoavaluació: «la meua predicció…», «la prova ha mostrat…» i «he revisat…». Cada equip comparteix una solució, una dificultat i la modificació que ha fet el repte més comprensible per a una altra parella.
+#### Fase 3 · Explicamos y registramos
 
-**Evidència:** targeta original revisada, disposició comprovada de blocs, predicció i destí observat, ruta traçada després de la prova i comentari d’una parella visitant.
-### Sessió 5 · Descobrir què fa que un mapa siga un laberint
+Cada equipo dibuja un primer laberinto sencillo de calles amplias con más de un itinerario posible. Una ficha recorre la ruta y el grupo comprueba que al menos una opción conecta entrada y salida.
 
+#### Fase 4 · Aplicamos y mejoramos
 
+Intercambiad mapas y pedid a otra pareja que trace un camino posible sin que el equipo autor se lo marque.
 
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Objectius d’aprenentatge:** Distingir un camí d’un laberint, localitzar inici, cruïlles i carrerons sense eixida, i verificar en una representació corporal que hi ha un camí viable.
+**Evidencia:** Laberinto con leyenda, dos caminos identificados y una explicación de por qué uno es viable.
 
-**Preparació docent:** Prepareu una quadrícula ampla amb cinta o peces de paper, una fitxa que faça de robot i dos mapes de dificultat gradual; no poseu obstacles al recorregut físic.
+![Laberinto de papel en una cuadrícula con inicio, obstáculos bajos y una bandera de destino.](../../_assets/situacions/sa-cs-laberint-paper.webp)
 
-**Vocabulari clau:** laberint, camí, cruïlla, carreró sense eixida, inici, eixida.
+_La ruta se planifica y se revisa en papel antes de probar el robot._
 
-**Temps orientatiu local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minuts (45 min). La guia oficial de Learning Station indica 20 minuts per lliçó; aquest repartiment amplia el temps per a proves, registre i retorn entre parelles.
+### Sesión 6 · Añadir obstáculos y banderas
 
-#### Fase 1 · Activem i prediem
+**Objetivos de aprendizaje:** Diferenciar obstáculos y destinos, planificar un recorrido que evite las piezas y comprobar que el robot sigue las órdenes sin atribuirle detección automática.
 
-Presenteu un camí obert i un laberint dibuixat amb carrers de paper. Demaneu que localitzen inici, destinació, cruïlles i carrerons sense eixida.
+**Preparación docente:** Comprobad qué obstáculos y qué banderas del kit hay; preparad una ruta inicial y una alternativa plana de papel. Revisad que ninguna pieza interfiera con las ruedas.
 
-#### Fase 2 · Explorem i construïm
+**Vocabulario clave:** obstáculo, bandera, destino, ruta, prueba, límite del robot.
 
-En grups de quatre, una persona fa de robot sobre una quadrícula de cinta i les altres li donen instruccions d’una en una. Marqueu en el mapa on hi ha més d’una opció i on cal tornar arrere; no poseu obstacles físics al recorregut.
+**Tiempo orientativo local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minutos (45 min). La guía oficial de Learning Station indica 20 minutos por lección; este reparto amplía el tiempo para pruebas, registro y retorno entre parejas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 1 · Activamos y predecimos
 
-Cada equip dibuixa un primer laberint senzill de carrers amples amb més d’un itinerari possible. Una fitxa recorre la ruta i el grup comprova que almenys una opció connecta entrada i eixida.
+Recuperad el laberinto de la sesión anterior y distinguid un obstáculo, una bandera de destino y una calle transitable. La bandera indica dónde llegar; no es un bloque de movimiento.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 2 · Exploramos y construimos
 
-Intercanvieu mapes i demaneu a una altra parella que trace un camí possible sense que l’equip autor li’l marque.
+Cada equipo observa y clasifica las piezas de obstáculo y las banderas reales del set. Colocad una pieza de obstáculo en una casilla y la bandera en otra como destino; si el grupo no tiene alguna pieza, sustituidla por una tarjeta plana y registrad la diferencia. Comprobad que la cuadrícula deja espacio para que el robot pueda girar y que ninguna pieza queda enganchada a las ruedas.
 
-#### Fase 5 · Comprovem i reflexionem
+![El MatataBot real del Coding Set recorre una cuadrícula con obstáculos bajos y una bandera de destino; los bloques tangibles se ven al margen.](../../_assets/situacions/sa-cs-learning-station-laberint.webp)
 
-**Evidència:** Laberint amb llegenda, dos camins identificats i una explicació de per què un és viable.
+_El obstáculo y la bandera son piezas físicas del kit; MatataBot no las detecta, de modo que el equipo planifica y verifica el recorrido._
 
-![Laberint de paper en una graella amb inici, obstacles baixos i una bandera de destinació.](../../_assets/situacions/sa-cs-laberint-paper.webp)
+#### Fase 3 · Explicamos y registramos
 
-_La ruta es planifica i es revisa en paper abans de provar el robot._
-### Sessió 6 · Afegir obstacles i banderes
+Situad el robot en un inicio marcado, poned una bandera en la casilla de destino y colocad hasta tres obstáculos del kit fuera de las casillas de paso. Dibujad un camino que los evite, convertidlo en instrucciones y probadlo a velocidad normal y en una superficie plana. El Coding Set no detecta los obstáculos automáticamente: el equipo tiene que planificar la ruta y observar si el programa la respeta. Registrad el primer punto en que el camino previsto y la ejecución divergen; cambiad una orden cada vez.
 
+#### Fase 4 · Aplicamos y mejoramos
 
+Cambiad la bandera de casilla sin mover los obstáculos y explicad qué ha cambiado en la ruta necesaria. Antes de la segunda ejecución, otra pareja valida que el camino no atraviesa ninguna pieza y que la bandera es visible desde el inicio.
 
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Objectius d’aprenentatge:** Diferenciar obstacles i destinacions, planificar un recorregut que evite les peces i comprovar que el robot segueix les ordres sense atribuir-li detecció automàtica.
+**Evidencia:** Mapa con leyenda, distinción obstáculo/destino, secuencia probada y anotación de una depuración.
 
-**Preparació docent:** Comproveu quins obstacles i quines banderes del kit hi ha; prepareu una ruta inicial i una alternativa plana de paper. Reviseu que cap peça interferisca amb les rodes.
+### Sesión 7 · Crear un laberinto con inicio y final
 
-**Vocabulari clau:** obstacle, bandera, destinació, ruta, prova, límit del robot.
+**Objetivos de aprendizaje:** Diseñar y explicar un laberinto con al menos una ruta viable, programarla, contrastar el resultado entre equipos y crear un relato o poema breve en el que las paradas y los movimientos del MatataBot formen parte de la historia.
 
-**Temps orientatiu local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minuts (45 min). La guia oficial de Learning Station indica 20 minuts per lliçó; aquest repartiment amplia el temps per a proves, registre i retorn entre parelles.
+**Preparación docente:** Preparad papel o cuadrícula física de 10 × 10 cm, leyenda accesible, inicio, bandera y piezas reales disponibles. Reservad tiempo para que otro equipo interprete el reto sin ayuda oral.
 
-#### Fase 1 · Activem i prediem
+**Vocabulario clave:** leyenda, ruta viable, programa, revisión, Albufera, destino.
 
-Recupereu el laberint de la sessió anterior i distingiu un obstacle, una bandera de destí i un carrer transitable. La bandera indica on arribar; no és un bloc de moviment.
+**Tiempo orientativo local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minutos (45 min). La guía oficial de Learning Station indica 20 minutos por lección; este reparto amplía el tiempo para pruebas, registro y retorno entre parejas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 1 · Activamos y predecimos
 
-Cada equip observa i classifica les peces d’obstacle i les banderes reals del set. Col·loqueu una peça d’obstacle en una casella i la bandera en una altra com a destí; si el grup no té alguna peça, substituïu-la per una targeta plana i registreu la diferència. Comproveu que la quadrícula deixa espai perquè el robot puga girar i que cap peça queda enganxada a les rodes.
+Cada equipo elige un espacio valenciano imaginario —una marjal, un jardín escolar o un camino entre paradas del mercado— y fija una entrada y una bandera final. Acordad una leyenda que diferencie camino, pieza de obstáculo y destino sin depender solo del color. Presentad también el reto narrativo: cada parada importante del recorrido tendrá que hacer avanzar una historia o un poema del lugar.
 
-![El MatataBot real del Coding Set recorre una graella amb obstacles baixos i una bandera de destinació; els blocs tangibles es veuen al marge.](../../_assets/situacions/sa-cs-learning-station-laberint.webp)
+#### Fase 2 · Exploramos y construimos
 
-_L’obstacle i la bandera són peces físiques del kit; MatataBot no les detecta, de manera que l’equip planifica i verifica el recorregut._
+Diseñad un laberinto propio con calles amplias y dos o tres obstáculos reales del set; añadid una bandera de destino y comprobad con una ficha que hay al menos una ruta completa. Si no disponéis de las piezas, las tarjetas planas son la alternativa. Otra pareja revisa que inicio, obstáculo, bandera y leyenda sean inequívocos antes de programar. Elegid tres paradas y escribid una frase o un verso breve para cada una; las frases tienen que poder leerse en el orden del recorrido.
 
-#### Fase 3 · Expliquem i registrem
+![MatataBot y la torre de control Coding Set de la dotación junto a un laberinto de papel de la Albufera, con ruta marcada y una bandera final.](../../_assets/situacions/sa-cs-laberint-amb-matata.webp)
 
-Situeu el robot en un inici marcat, poseu una bandera en la casella de destí i col·loqueu fins a tres obstacles del kit fora de les caselles de pas. Dibuixeu un camí que els evite, convertiu-lo en instruccions i proveu-lo a velocitat normal i en una superfície plana. El Coding Set no detecta els obstacles automàticament: l’equip ha de planificar la ruta i observar si el programa la respecta. Registreu el primer punt on el camí previst i l’execució divergeixen; canvieu una ordre cada vegada.
+_Ilustración IA propia con el modelo de MatataBot de la dotación; el mapa, la ruta y las piezas de cartón son una propuesta de clase._
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 3 · Explicamos y registramos
 
-Canvieu la bandera de casella sense moure els obstacles i expliqueu què ha canviat en la ruta necessària. Abans de la segona execució, una altra parella valida que el camí no travessa cap peça i que la bandera és visible des de l’inici.
+Colocad la secuencia de bloques y ejecutadla desde el mismo inicio. Comparad la posición final con la bandera y comprobad que el robot no ha chocado con ningún obstáculo. Si el programa no llega, cambiad una sola instrucción y repetid la prueba. Después, cread una segunda solución si el laberinto permite más de un camino; el robot no identifica qué camino es seguro, lo decide quien programa. Vinculad cada verso o frase a una casilla o parada para que el texto se pueda narrar mientras una persona ejecuta la ruta.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Evidència:** Mapa amb llegenda, distinció obstacle/destí, seqüència provada i anotació d’una depuració.
-### Sessió 7 · Crear un laberint amb inici i final
+Intercambiad laberintos y relatos. El equipo visitante interpreta la leyenda, reconstruye la ruta, prueba el programa y narra el texto en las paradas acordadas; el equipo autor registra una mejora del mapa, de las instrucciones o del orden narrativo. Esta combinación de laberinto, movimiento y creación de relatos/poemas adapta el propósito general publicado para las lecciones 5–7; las tres paradas y el formato breve son decisiones propias de esta propuesta.
 
+#### Fase 5 · Comprobamos y reflexionamos
 
+**Evidencia:** Laberinto con inicio/final, ruta dibujada, programa probado, relato o poema vinculado a al menos tres paradas y una revisión posterior al retorno.
 
+### Sesión 8 · Crear un mapa esquemático del entorno (45 min)
 
-**Objectius d’aprenentatge:** Dissenyar i explicar un laberint amb almenys una ruta viable, programar-la, contrastar el resultat entre equips i crear un relat o poema breu en què les parades i els moviments del MatataBot formen part de la història.
+**Objetivos de aprendizaje:** Representar relaciones espaciales con símbolos y leyenda, separar observaciones de decisiones de diseño y comunicar un itinerario sin afirmar distancias reales.
 
-**Preparació docent:** Prepareu paper o graella física de 10 × 10 cm, llegenda accessible, inici, bandera i peces reals disponibles. Reserveu temps perquè un altre equip interprete el repte sense ajuda oral.
+**Preparación docente:** Elegid una imagen pública o un dibujo de la marjal; tapad nombres propios y ubicaciones privadas. Preparad papel grande, rotuladores y símbolos táctiles o de alto contraste.
 
-**Vocabulari clau:** llegenda, ruta viable, programa, revisió, Albufera, destinació.
+**Vocabulario clave:** mapa, símbolo, leyenda, lugar, camino, representación esquemática.
 
-**Temps orientatiu local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minuts (45 min). La guia oficial de Learning Station indica 20 minuts per lliçó; aquest repartiment amplia el temps per a proves, registre i retorn entre parelles.
+**Tiempo orientativo local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minutos (45 min). La guía oficial de Learning Station indica 20 minutos por lección; este reparto amplía el tiempo para pruebas, registro y retorno entre parejas.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Cada equip tria un espai valencià imaginari —una marjal, un jardí escolar o un camí entre parades del mercat— i fixa una entrada i una bandera final. Acordeu una llegenda que diferencie camí, peça d’obstacle i destí sense dependre només del color. Presenteu també el repte narratiu: cada parada important del recorregut haurà de fer avançar una història o un poema del lloc.
+Esta sesión adapta el tema oficial «Introducing Maps»: representar un espacio con símbolos y leyenda antes de convertirlo en una cuadrícula. El mapa es una maqueta didáctica, no un plano de orientación real.
 
-#### Fase 2 · Explorem i construïm
+Comparad un dibujo panorámico y una lista de lugares del centro o de un pueblo imaginario. ¿Qué información hace falta para que otra clase entienda cómo se relacionan los lugares? Usad espacios públicos o inventados, nunca direcciones particulares.
 
-Dissenyeu un laberint propi amb carrers amples i dos o tres obstacles reals del set; afegiu una bandera de destí i comproveu amb una fitxa que hi ha almenys una ruta completa. Si no disposeu de les peces, les targetes planes són l’alternativa. Una altra parella revisa que inici, obstacle, bandera i llegenda siguen inequívocs abans de programar. Trieu tres parades i escriviu una frase o un vers breu per a cadascuna; les frases han de poder-se llegir en l’ordre del recorregut.
+#### Fase 2 · Exploramos y construimos
 
-![MatataBot i la torre de control Coding Set de la dotació al costat d’un laberint de paper de l’Albufera, amb ruta marcada i una bandera final.](../../_assets/situacions/sa-cs-laberint-amb-matata.webp)
+Observad una imagen o un dibujo de referencia de la Albufera e identificad elementos que se pueden representar sin afirmar distancias exactas: agua, caminos, huerta, puente, plaza o biblioteca. Separad lo observado de lo que el grupo propone como símbolo.
 
-_Il·lustració IA pròpia amb el model de MatataBot de la dotació; el mapa, la ruta i les peces de cartó són una proposta de classe._
+#### Fase 3 · Explicamos y registramos
 
-#### Fase 3 · Expliquem i registrem
+Acordad una leyenda con símbolos diferenciados para lugar, camino, inicio y destino. Anotad qué significa cada símbolo y qué información deja fuera el mapa; todavía no añadáis coordenadas ni una escala geográfica.
 
-Col·loqueu la seqüència de blocs i executeu-la des del mateix inici. Compareu la posició final amb la bandera i comproveu que el robot no ha xocat amb cap obstacle. Si el programa no arriba, canvieu una sola instrucció i repetiu la prova. Després, creeu una segona solució si el laberint permet més d’un camí; el robot no identifica quin camí és segur, ho decideix qui programa. Vinculeu cada vers o frase a una casella o parada perquè el text es puga narrar mentre una persona executa la ruta.
+#### Fase 4 · Aplicamos y mejoramos
 
-#### Fase 4 · Apliquem i millorem
+Dibujad un mapa esquemático con cuatro o cinco lugares y un camino continuo. Otra pareja lo interpreta sin ayuda y marca con una ficha una ruta posible. Si no puede distinguir caminos, lugares y destino, revisad la leyenda o la organización antes de añadir instrucciones para el robot.
 
-Intercanvieu laberints i relats. L’equip visitant interpreta la llegenda, reconstrueix la ruta, prova el programa i narra el text en les parades acordades; l’equip autor registra una millora del mapa, de les instruccions o de l’ordre narratiu. Aquesta combinació de laberint, moviment i creació de relats/poemes adapta el propòsit general publicat per a les lliçons 5–7; les tres parades i el format breu són decisions pròpies d’aquesta proposta.
+#### Fase 5 · Comprobamos y reflexionamos
 
-#### Fase 5 · Comprovem i reflexionem
+Explicad una decisión de representación y una limitación del mapa. Guardad la versión inicial y el retorno de la pareja para que se pueda transformar en cuadrícula en la sesión siguiente.
 
-**Evidència:** Laberint amb inici/final, ruta dibuixada, programa provat, relat o poema vinculat a almenys tres parades i una revisió posterior al retorn.
-### Sessió 8 · Crear un mapa esquemàtic de l’entorn (45 min)
+**Evidencia:** mapa original con leyenda, ruta verbalizada por otra pareja y una nota que diferencia representación esquemática de distancia real.
 
+![El MatataBot y la torre del Coding Set junto a un mapa didáctico de la marjal cubierto con una cuadrícula transparente; una alumna completa la leyenda.](../../_assets/situacions/sa-cs-mapa-graella.webp)
 
+_La cuadrícula es una herramienta de representación creada para el aula; el mapa no es geográfico ni incluye coordenadas reales._
 
+![Mapa esquemático de la marjal con cuadrícula, caminos, núcleo habitado y campos, sin coordenadas reales.](../../_assets/situacions/sa-cs-mapa-marjal.webp)
 
-**Objectius d’aprenentatge:** Representar relacions espacials amb símbols i llegenda, separar observacions de decisions de disseny i comunicar un itinerari sense afirmar distàncies reals.
+_El mapa es una maqueta didáctica: no representa rutas reales ni datos de ningún niño o niña._
 
-**Preparació docent:** Trieu una imatge pública o un dibuix de la marjal; tapeu noms propis i ubicacions privades. Prepareu paper gran, retoladors i símbols tàctils o d’alt contrast.
+### Sesión 9 · Convertir el mapa en una cuadrícula (45 min)
 
-**Vocabulari clau:** mapa, símbol, llegenda, lloc, camí, representació esquemàtica.
+**Objetivos de aprendizaje:** Convertir un mapa propio en casillas, identificar posiciones con una referencia acordada y traducir una ruta a órdenes teniendo en cuenta la orientación del robot.
 
-**Temps orientatiu local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minuts (45 min). La guia oficial de Learning Station indica 20 minuts per lliçó; aquest repartiment amplia el temps per a proves, registre i retorn entre parelles.
+**Preparación docente:** Recuperad el mapa de la sesión 8 y preparad una cuadrícula transparente. Si se va a hacer movimiento real, recortadla a 10 × 10 cm por casilla y comprobad espacio de giro.
 
-#### Fase 1 · Activem i prediem
+**Vocabulario clave:** cuadrícula, fila, columna, coordenada, orientación, casilla, simulación.
 
-Aquesta sessió adapta el tema oficial «Introducing Maps»: representar un espai amb símbols i llegenda abans de convertir-lo en una quadrícula. El mapa és una maqueta didàctica, no un plànol d’orientació real.
+**Tiempo orientativo local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minutos (45 min). La guía oficial de Learning Station indica 20 minutos por lección; este reparto amplía el tiempo para pruebas, registro y retorno entre parejas.
 
-Compareu un dibuix panoràmic i una llista de llocs del centre o d’un poble imaginari. Quina informació cal perquè una altra classe entenga com es relacionen els llocs? Useu espais públics o inventats, mai adreces particulars.
+#### Fase 1 · Activamos y predecimos
 
-#### Fase 2 · Explorem i construïm
+La segunda lección del bloque oficial trata las cuadrículas. Aquí transformamos el mapa de la sesión 8 en una representación regular que permite describir posiciones e instrucciones sin confundir coordenadas con órdenes directas del Coding Set.
 
-Observeu una imatge o un dibuix de referència de l’Albufera i identifiqueu elements que es poden representar sense afirmar distàncies exactes: aigua, camins, horta, pont, plaça o biblioteca. Separeu allò observat d’allò que el grup proposa com a símbol.
+Recuperad el mapa esquemático y elegid un recorrido corto. Predecid qué se perderá y qué se ganará si se dibuja sobre casillas iguales.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 2 · Exploramos y construimos
 
-Acordeu una llegenda amb símbols diferenciats per a lloc, camí, inici i destinació. Anoteu què significa cada símbol i quina informació deixa fora el mapa; encara no afegiu coordenades ni una escala geogràfica.
+Poned una cuadrícula transparente o de papel encima del mapa. Marcad filas y columnas con símbolos grandes, una flecha de orientación y las posiciones de inicio/destino. Si se va a hacer una prueba física, usad casillas de 10 × 10 cm y mantened el recorrido libre para que el robot pueda girar; una cuadrícula con otra escala es solo representación o simulación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 3 · Explicamos y registramos
 
-Dibuixeu un mapa esquemàtic amb quatre o cinc llocs i un camí continu. Una altra parella l’interpreta sense ajuda i marca amb una fitxa una ruta possible. Si no pot distingir camins, llocs i destí, reviseu la llegenda o l’organització abans d’afegir instruccions per al robot.
+Describid tres lugares con referencias de fila/columna y practicad una ruta con delante, detrás y giro. Acordad el punto de vista del robot; una coordenada señala una casilla, pero no indica hacia dónde mira ni sustituye los bloques de movimiento.
 
-#### Fase 5 · Comprovem i reflexionem
+![MatataBot y la torre reales del Coding Set junto a una cuadrícula didáctica de la marjal, con una flecha de orientación, tarjetas de ruta y una mano que prepara un bloque de movimiento.](../../_assets/situacions/sa-cs-graella-matata.webp)
 
-Expliqueu una decisió de representació i una limitació del mapa. Deseu la versió inicial i el retorn de la parella perquè es puga transformar en graella en la sessió següent.
+_La cuadrícula, la leyenda y los símbolos son materiales de clase; no son un mapa geográfico ni funciones automáticas del robot._
 
-**Evidència:** mapa original amb llegenda, ruta verbalitzada per una altra parella i una nota que diferencia representació esquemàtica de distància real.
+#### Fase 4 · Aplicamos y mejoramos
 
-![El MatataBot i la torre del Coding Set al costat d’un mapa didàctic de la marjal cobert amb una quadrícula transparent; una alumna completa la llegenda.](../../_assets/situacions/sa-cs-mapa-graella.webp)
+Una pareja da la ruta con referencias de cuadrícula y la otra la traduce a bloques físicos. Predecid las casillas de paso, ejecutad desde una misma orientación inicial y anotad la primera diferencia entre posición prevista y observada. Corregid una sola instrucción y probad de nuevo.
 
-_La graella és una eina de representació creada per a l’aula; el mapa no és geogràfic ni inclou coordenades reals._
+#### Fase 5 · Comprobamos y reflexionamos
 
-![Mapa esquemàtic de la marjal amb graella, camins, nucli habitat i camps, sense coordenades reals.](../../_assets/situacions/sa-cs-mapa-marjal.webp)
+Comparad mapa y cuadrícula: ¿qué detalles del lugar han quedado simplificados? ¿Qué información hay que añadir para que un equipo visitante pueda reconstruir la ruta?
 
-_El mapa és una maqueta didàctica: no representa rutes reals ni dades de cap infant._
-### Sessió 9 · Convertir el mapa en una graella (45 min)
+**Evidencia:** mapa en cuadrícula con leyenda y orientación, tabla de tres posiciones y secuencia de bloques probada o marcada explícitamente como simulación.
 
+### Sesión 10 · Reducir una ruta con bucles y funciones (45 min)
 
+**Objetivos de aprendizaje:** Comparar una secuencia explícita con una representación con bucle o función, probar la equivalencia y valorar la legibilidad para otra pareja.
 
+**Preparación docente:** Ved en el manual de la versión local la disposición de los bloques de bucle y función. Separad las piezas reales de las tarjetas de papel y preparad una ruta corta repetible.
 
-**Objectius d’aprenentatge:** Convertir un mapa propi en caselles, identificar posicions amb una referència acordada i traduir una ruta a ordres tenint en compte l’orientació del robot.
+**Vocabulario clave:** secuencia, repetición, bucle, definición, llamada, función, equivalencia.
 
-**Preparació docent:** Recupereu el mapa de la sessió 8 i prepareu una quadrícula transparent. Si es farà moviment real, retalleu-la a 10 × 10 cm per casella i comproveu espai de gir.
+**Tiempo orientativo local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minutos (45 min). La guía oficial de Learning Station indica 20 minutos por lección; este reparto amplía el tiempo para pruebas, registro y retorno entre parejas.
 
-**Vocabulari clau:** graella, fila, columna, coordenada, orientació, casella, simulació.
+#### Fase 1 · Activamos y predecimos
 
-**Temps orientatiu local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minuts (45 min). La guia oficial de Learning Station indica 20 minuts per lliçó; aquest repartiment amplia el temps per a proves, registre i retorn entre parelles.
+Esta sesión adapta «Introducing More Advanced Coding Blocks». Los recursos oficiales de Matatalab describen el uso de bucles con movimiento y número, y de funciones con otros bloques o bucles; usamos esas reglas publicadas, pero no afirmamos que sean los pasos exactos del plan docente de la lección 10. Antes de empezar, comprobad que los bloques de bucle y función del kit local estén completos y sean reconocidos por el tablero.
 
-#### Fase 1 · Activem i prediem
+Mostrad dos secuencias propias para llegar al mismo destino: una larga y una con un tramo repetido. El alumnado predice cuál es más fácil de revisar e identifica qué parte se repite.
 
-La segona lliçó del bloc oficial tracta les graelles. Ací transformem el mapa de la sessió 8 en una representació regular que permet descriure posicions i instruccions sense confondre coordenades amb ordres directes del Coding Set.
+#### Fase 2 · Exploramos y construimos
 
-Recupereu el mapa esquemàtic i trieu un recorregut curt. Predigueu què es perdrà i què es guanyarà si es dibuixa sobre caselles iguals.
+Con los bloques disponibles, observad que un bucle se forma con inicio y final en pareja; el número va debajo del bloque de inicio y controla cuántas veces se repiten las órdenes interiores. Para las funciones, consultad el manual de la versión local: la guía de Matatalab indica que definición y llamada se usan en pareja, que la definición se sitúa en la fila inferior a la llamada y que no se combina en ella un bloque numérico. No improviséis una disposición si las piezas del centro difieren.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 3 · Explicamos y registramos
 
-Poseu una quadrícula transparent o de paper damunt del mapa. Marqueu files i columnes amb símbols grans, una fletxa d’orientació i les posicions d’inici/destí. Si es farà una prova física, useu caselles de 10 × 10 cm i manteniu el recorregut lliure perquè el robot puga girar; una quadrícula amb una altra escala és només representació o simulació.
+Representad el mismo tramo repetido como una secuencia explícita y como un bucle, anotando qué órdenes quedan dentro de la pareja. Después, identificad un recorrido que pueda encapsularse en una función y dibujad dónde aparece la definición y dónde se llama. Si falta algún bloque, haced esta comparación con tarjetas propias y marcadla como simulación.
 
-#### Fase 3 · Expliquem i registrem
+![El MatataBot y la torre del Coding Set con tres representaciones de papel de una ruta equivalente: secuencia explícita, repetición agrupada y patrón reutilizable.](../../_assets/situacions/sa-cs-sequencia-bucle-funcio.webp)
 
-Descriviu tres llocs amb referències de fila/columna i practiqueu una ruta amb davant, darrere i gir. Acordeu el punt de vista del robot; una coordenada assenyala una casella, però no indica cap a on mira ni substitueix els blocs de moviment.
+_Las tarjetas agrupadas son una explicación visual propia; no sustituyen la disposición física de los bloques de función del kit._
 
-![MatataBot i la torre reals del Coding Set al costat d’una graella didàctica de la marjal, amb una fletxa d’orientació, targetes de ruta i una mà que prepara un bloc de moviment.](../../_assets/situacions/sa-cs-graella-matata.webp)
+#### Fase 4 · Aplicamos y mejoramos
 
-_La quadrícula, la llegenda i els símbols són materials de classe; no són un mapa geogràfic ni funcions automàtiques del robot._
+Programad la ruta de la cuadrícula de la sesión 9 con el método más legible para el kit real. Probad primero la versión sin comprimir; después, usad un bucle o una función, una a la vez, y comparad si el robot llega a las mismas casillas. Registrad órdenes, errores y diferencias; una ruta más corta no se considera mejor si deja de ser interpretable para el equipo visitante.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Una parella dona la ruta amb referències de graella i l’altra la tradueix a blocs físics. Predigueu les caselles de pas, executeu des d’una mateixa orientació inicial i anoteu la primera diferència entre posició prevista i observada. Corregiu una sola instrucció i proveu de nou.
+Cada equipo justifica qué representación reutilizaría y por qué. Separad la función realmente ejecutada por el robot de la que solo se ha representado en papel.
 
-#### Fase 5 · Comprovem i reflexionem
+**Evidencia:** dos versiones de un programa equivalente, registro de la prueba y explicación del papel del número del bucle o de la llamada a función.
 
-Compareu mapa i graella: quins detalls del lloc han quedat simplificats? Quina informació cal afegir perquè un equip visitant puga reconstruir la ruta?
+### Sesión 11 · Ángulos y estrellas de nuestro entorno (45 min)
 
-**Evidència:** mapa en quadrícula amb llegenda i orientació, taula de tres posicions i seqüència de blocs provada o marcada explícitament com a simulació.
-### Sessió 10 · Reduir una ruta amb bucles i funcions (45 min)
+**Objetivos de aprendizaje:** Distinguir ángulo interior y giro del robot, descomponer una roseta o estrella en tramos repetidos y probar el trazado solo con el accesorio compatible disponible.
 
+**Preparación docente:** Preparad una plantilla propia, papel y flechas. Si se utiliza Artist Add-On, inventariad piezas y lápices y seguid el manual; sin complemento, haced la prueba en papel o con una ficha.
 
+**Vocabulario clave:** ángulo interior, giro, vértice, patrón, estrella, Artist Add-On.
 
+**Tiempo orientativo local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minutos (45 min). La guía oficial de Learning Station indica 20 minutos por lección; este reparto amplía el tiempo para pruebas, registro y retorno entre parejas.
 
-**Objectius d’aprenentatge:** Comparar una seqüència explícita amb una representació amb bucle o funció, provar l’equivalència i valorar la llegibilitat per a una altra parella.
+#### Fase 1 · Activamos y predecimos
 
-**Preparació docent:** Vegeu al manual de la versió local la disposició dels blocs de bucle i funció. Separeu les peces reals de les targetes de paper i prepareu una ruta curta repetible.
+El índice de Learning Station incluye ángulos y pentagramas/estrellas en el tramo de creación con Artist y Musician Add-Ons. La guía oficial complementaria [Artist](https://matatalab.com/en/node/64) concreta el objetivo de combinar bloques de ángulo y movimiento, el inventario de 20 bloques (diez valores, dos de cada), tres lápices de colores y tres tarjetas de calentamiento con seis muestras. También especifica que MatataBot traza el ángulo suplementario del bloque y que este solo se combina con giro izquierda/derecha; movimiento y bucle completan el trazado. La ficha adapta la progresión con una muestra de calentamiento si está el complemento y, después, una roseta propia inspirada en azulejos y plazas valencianas, sin copiar las muestras ni presuponer accesorios.
 
-**Vocabulari clau:** seqüència, repetició, bucle, definició, crida, funció, equivalència.
+Mostrad una roseta dibujada por el equipo docente y preguntad qué repeticiones y giros pueden explicar su forma. Cada pareja marca con flechas el recorrido que espera e indica qué entiende por ángulo; no confundáis el ángulo de giro del robot con el ángulo interior del polígono.
 
-**Temps orientatiu local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minuts (45 min). La guia oficial de Learning Station indica 20 minuts per lliçó; aquest repartiment amplia el temps per a proves, registre i retorn entre parelles.
+#### Fase 2 · Exploramos y construimos
 
-#### Fase 1 · Activem i prediem
+Con papel, regla y transportador opcional, comparad un giro recto con giros más abiertos o más cerrados. Dibujad un pentagrama (estrella de cinco puntas) con los vértices marcados y trazad el orden que sigue el lápiz. Si el centro dispone del Artist Add-On compatible, inventariad los 20 bloques de ángulo, los tres lápices de colores y las tres tarjetas de calentamiento (seis muestras) que realmente hay. Elegid una muestra de triángulo o cuadrado para comprobar el montaje y la relación entre orden y trazado antes de crear una forma propia; revisad las instrucciones antes de montar el lápiz. La guía del fabricante enumera diez valores de ángulo (30°, 36°, 45°, 60°, 72°, 108°, 120°, 135°, 144° y 150°), cada uno con dos bloques; usad solo los valores presentes y haced una plantilla original de prueba. La ficha de Learning Station no es accesible completa, así que esta muestra se toma de la guía técnica oficial Artist y no se presenta como el paso exacto del plan de la lección 11.
 
-Aquesta sessió adapta «Introducing More Advanced Coding Blocks». Els recursos oficials de Matatalab descriuen l’ús de bucles amb moviment i nombre, i de funcions amb altres blocs o bucles; fem servir eixes regles publicades, però no afirmem que siguen els passos exactes del pla docent de la lliçó 10. Abans de començar, comproveu que els blocs de bucle i funció del kit local estiguen complets i siguen reconeguts pel tauler.
+![MatataBot real junto a una estrella y una roseta dibujadas sobre papel con flechas que indican los giros; los bloques tangibles están separados del dibujo.](../../_assets/situacions/sa-cs-angulos-estrella.webp)
 
-Mostreu dues seqüències pròpies per arribar a la mateixa destinació: una llarga i una amb un tram repetit. L’alumnat prediu quina és més fàcil de revisar i identifica quina part es repetix.
+_La ilustración muestra la alternativa de papel del kit base: el robot no lleva ningún lápiz ni accesorio Artist._
 
-#### Fase 2 · Explorem i construïm
+#### Fase 3 · Explicamos y registramos
 
-Amb els blocs disponibles, observeu que un bucle es forma amb inici i final en parella; el nombre va davall del bloc d’inici i controla quantes vegades es repetixen les ordres interiors. Per a les funcions, consulteu el manual de la versió local: la guia de Matatalab indica que definició i crida s’usen en parella, que la definició se situa en la fila inferior a la crida i que no s’hi combina un bloc numèric. No improviseu una disposició si les peces del centre difereixen.
+Descomponed la roseta en tramos repetidos. En una tabla, anotad número de tramos, giro observado, predicción y resultado. Haced una primera simulación con flechas sobre una cuadrícula; una secuencia de giros en la cuadrícula no se presenta como una orden en grados si el kit base no permite introducirla.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 4 · Aplicamos y mejoramos
 
-Representeu el mateix tram repetit com una seqüència explícita i com un bucle, anotant quines ordres queden dins del parell. Després, identifiqueu un recorregut que puga encapsular-se en una funció i dibuixeu on apareix la definició i on es crida. Si falta algun bloc, feu aquesta comparació amb targetes pròpies i marqueu-la com a simulació.
+Con el complemento verificado, combinad bloques de movimiento, giro, ángulo y bucle para probar un triángulo y una estrella propios. Predecid la relación entre ángulo interior y giro suplementario, cambiad un parámetro cada vez y comprobad el trazo sobre papel. Sin complemento, mantened el mismo objetivo con una composición de papel: programad MatataBot para que visite los vértices numerados de una estrella grande o representad el trazado con una ficha; registrad esta alternativa como simulación, no como dibujo del robot. Una pareja revisa si el patrón se puede repetir y si el dibujo coincide con la ruta prevista.
 
-![El MatataBot i la torre del Coding Set amb tres representacions de paper d’una ruta equivalent: seqüència explícita, repetició agrupada i patró reutilitzable.](../../_assets/situacions/sa-cs-sequencia-bucle-funcio.webp)
+#### Fase 5 · Comprobamos y reflexionamos
 
-_Les targetes agrupades són una explicació visual pròpia; no substitueixen la disposició física dels blocs de funció del kit._
+Cada equipo muestra el patrón y completa «Hemos podido comprobar… / Todavía no podemos afirmar…». Comparad el dibujo, la secuencia y el movimiento observado; guardad la plantilla propia y anotad si se ha usado el complemento o una alternativa.
 
-#### Fase 4 · Apliquem i millorem
+**Evidencia:** diseño original con vértices y flechas, registro de predicción/prueba y explicación de la diferencia entre ángulo geométrico, giro del robot y funciones del complemento disponible.
 
-Programeu la ruta de la graella de la sessió 9 amb el mètode més llegible per al kit real. Proveu primer la versió sense comprimir; després, useu un bucle o una funció, una a la vegada, i compareu si el robot arriba a les mateixes caselles. Registreu ordres, errors i diferències; una ruta més curta no es considera millor si deixa de ser interpretable per l’equip visitant.
+### Sesión 12 · Juego creativo libre: una obra que otra clase pueda explorar (45 min)
 
-#### Fase 5 · Comprovem i reflexionem
+**Objetivos de aprendizaje:** Crear una propuesta original para otra clase, integrar lo que el kit disponible permite, recibir retorno y aplicar una mejora comprobable.
 
-Cada equip justifica quina representació reutilitzaria i per què. Separeu la funció realment executada pel robot de la que només s’ha representat en paper.
+**Preparación docente:** Preparad materiales de papel accesibles y una selección de mapas, bloques o tarjetas. Verificad los accesorios antes de ofrecerlos; la ruta o composición tiene que tener una alternativa completa sin complementos.
 
-**Evidència:** dues versions d’un programa equivalent, registre de la prova i explicació del paper del nombre del bucle o de la crida a funció.
-### Sessió 11 · Angles i estrelles del nostre entorn (45 min)
+**Vocabulario clave:** creación, destinatario, prototipo, retorno, mejora, función comprobada.
 
+**Tiempo orientativo local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minutos (45 min). La guía oficial de Learning Station indica 20 minutos por lección; este reparto amplía el tiempo para pruebas, registro y retorno entre parejas.
 
+#### Fase 1 · Activamos y predecimos
 
+La guía oficial cierra el currículo con «Introducing Creative Free Play». Aquí el alumnado elige una idea y combina libremente las habilidades trabajadas en una creación para otra clase. Como conexión técnica complementaria, la guía Musician explica cómo combinar bloques de nota y melodía con números para modificar el compás; solo se aplica si el complemento está presente y verificado. Si no, el reto continúa con secuencias de papel, símbolos y una alternativa silenciosa.
 
-**Objectius d’aprenentatge:** Distingir angle interior i gir del robot, descompondre una roseta o estrella en trams repetits i provar el traçat només amb l’accessori compatible disponible.
+Abrid tres posibilidades sin imponer ninguna: una historia en un mapa, un laberinto con más de una ruta o una composición de patrones/estrellas. Cada equipo elige destinatario, propósito y una cosa que quiere probar; la propuesta tiene que poder explicarse con las piezas que realmente tiene. Si el centro dispone del Musician Add-On compatible, introducid el objetivo de crear música con bloques de nota o de melodía; el producto es una composición propia, no la reproducción de una canción publicada.
 
-**Preparació docent:** Prepareu una plantilla pròpia, paper i fletxes. Si s’utilitza Artist Add-On, inventarieu peces i llapis i seguiu el manual; sense complement, feu la prova en paper o amb una fitxa.
+#### Fase 2 · Exploramos y construimos
 
-**Vocabulari clau:** angle interior, gir, vèrtex, patró, estrella, Artist Add-On.
+Haced un esbozo con inicio, hitos y final o con las partes del patrón. Asignad roles rotativos y preparad una leyenda. Si se incorpora el Musician Add-On, comprobad que están los 16 bloques de notas de clave de do y los 16 de clave de sol, los 10 bloques de melodía predefinida y las tarjetas de calentamiento; el Coding Set sigue siendo necesario. Si el centro no dispone del complemento, ofreced la alternativa en papel y silenciosa sin penalización.
 
-**Temps orientatiu local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minuts (45 min). La guia oficial de Learning Station indica 20 minuts per lliçó; aquest repartiment amplia el temps per a proves, registre i retorn entre parelles.
+#### Fase 3 · Explicamos y registramos
 
-#### Fase 1 · Activem i prediem
+Convertid el diseño en una secuencia legible: orden de bloques, repeticiones que el kit base admita, giros, obstáculos representados y mensaje final. Si hay Musician, distinguid la nota (elección de tono) de la melodía predefinida; para las notas, mezclad los bloques de Do a Ti para seleccionar la escala y comprobad el orden con una tarjeta de práctica. La guía oficial indica que cada bloque de música tiene un valor rítmico predeterminado de 1/4; combinado con el bloque numérico 2, pasa a 2/4. Aquí «1/4» y «2/4» indican el valor que describe la guía, no un compás completo. Registrad el patrón corto de notas y ritmos como creación original y contrastad qué cambia al variar solo el número. En una ficha propia, distinguid «función comprobada», «simulación» e «idea por probar». Antes de ejecutar, una pareja predice qué hará el robot o cómo recorrerá el visitante la obra.
 
-L’índex de Learning Station inclou angles i pentagrames/estrelles en el tram de creació amb Artist i Musician Add-Ons. La guia oficial complementària [Artist](https://matatalab.com/en/node/64) concreta l’objectiu de combinar blocs d’angle i moviment, l’inventari de 20 blocs (deu valors, dos de cada), tres llapis de colors i tres targetes d’escalfament amb sis mostres. També especifica que MatataBot traça l’angle suplementari del bloc i que aquest només es combina amb gir esquerra/dreta; moviment i bucle completen el traçat. La fitxa adapta la progressió amb una mostra d’escalfament si hi ha el complement i, després, una roseta pròpia inspirada en rajoles i places valencianes, sense copiar les mostres ni pressupostar accessoris.
+![MatataBot y torre Coding Set reales junto a un mapa creado por el alumnado con humedal, caminos y tarjetas de símbolos; las órdenes tangibles se ven sobre la torre.](../../_assets/situacions/sa-cs-creacio-oberta.webp)
 
-Mostreu una roseta dibuixada per l’equip docent i pregunteu quines repeticions i girs poden explicar-ne la forma. Cada parella marca amb fletxes el recorregut que espera i indica què entén per angle; no confongueu l’angle de gir del robot amb l’angle interior del polígon.
+_El mapa y las tarjetas son una creación propia de papel. La ilustración no presupone los complementos Artist o Musician: el MatataBot solo ejecuta las órdenes de movimiento programadas._
 
-#### Fase 2 · Explorem i construïm
+#### Fase 4 · Aplicamos y mejoramos
 
-Amb paper, regle i transportador opcional, compareu un gir recte amb girs més oberts o més tancats. Dibuixeu un pentagrama (estrela de cinc puntes) amb els vèrtexs marcats i traceu l’ordre que seguix el llapis. Si el centre disposa de l’Artist Add-On compatible, inventarieu-ne els 20 blocs d’angle, els tres llapis de colors i les tres targetes d’escalfament (sis mostres) que realment hi ha. Trieu-ne una mostra de triangle o quadrat per comprovar el muntatge i la relació entre ordre i traçat abans de crear una forma pròpia; reviseu les instruccions abans de muntar el llapis. La guia del fabricant enumera deu valors d’angle (30°, 36°, 45°, 60°, 72°, 108°, 120°, 135°, 144° i 150°), cadascun amb dos blocs; useu només els valors presents i feu una plantilla original de prova. La fitxa de Learning Station no és accessible completa, així que aquesta mostra es pren de la guia tècnica oficial Artist i no es presenta com el pas exacte del pla de la lliçó 11.
+Haced una prueba con MatataBot si el diseño usa rutas; mantened el mismo inicio y comparad predicción/resultado. Si es una composición sonora y hay Musician Add-On, probad primero un patrón corto con un bloque de música (valor rítmico 1/4); repetidlo con el bloque numérico 2 (valor 2/4) y comparad la duración percibida. Después, comparadlo con un bloque de melodía predefinida y explicad qué podéis modificar y qué ya viene fijado. No copiéis una canción publicada. Si no hay complemento, representad el patrón con papel, ritmo silencioso y símbolos. Una clase visitante prueba o interpreta la propuesta sin indicaciones del equipo autor; el grupo registra un comentario y aplica una mejora concreta.
 
-![MatataBot real al costat d’una estrella i una roseta dibuixades sobre paper amb fletxes que indiquen els girs; els blocs tangibles estan separats del dibuix.](../../_assets/situacions/sa-cs-angulos-estrella.webp)
+![MatataBot, torre y tablero reales del Coding Set junto a una tira de colores creada en papel y unos bloques abstractos sin símbolos para representar el Musician Add-On opcional.](../../_assets/situacions/sa-cs-composicio-musical-v1.webp)
 
-_La il·lustració mostra l’alternativa de paper del kit base: el robot no porta cap llapis ni accessori Artist._
+_La tira de colores es una partitura visual propia y los bloques abstractos solo representan el accesorio opcional: no son piezas Musician exactas ni forman parte del kit base._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Descomponeu la roseta en trams repetits. En una taula, anoteu nombre de trams, gir observat, predicció i resultat. Feu una primera simulació amb fletxes sobre una quadrícula; una seqüència de girs a la graella no es presenta com una ordre en graus si el kit base no permet introduir-la.
+Presentad el producto y explicad una decisión basada en la prueba, una limitación del modelo y qué parte dependía de un accesorio. Guardad el mapa o plantilla, la secuencia y el retorno recibido para la muestra de clase.
 
-#### Fase 4 · Apliquem i millorem
+**Evidencia:** creación original probada o identificada como modelo, instrucciones que otra pareja puede seguir, retorno aplicado y reflexión sobre materiales disponibles.
 
-Amb el complement verificat, combineu blocs de moviment, gir, angle i bucle per provar un triangle i una estrella propis. Predigueu la relació entre angle interior i gir suplementari, canvieu un paràmetre cada vegada i comproveu el traç sobre paper. Sense complement, manteniu el mateix objectiu amb una composició de paper: programeu MatataBot perquè visite els vèrtexs numerats d’una estrella gran o representeu el traçat amb una fitxa; registreu aquesta alternativa com a simulació, no com a dibuix del robot. Una parella revisa si el patró es pot repetir i si el dibuix coincideix amb la ruta prevista.
+## 🧪 Evidencias y evaluación
 
-#### Fase 5 · Comprovem i reflexionem
+Recoged evidencias a lo largo de la secuencia, no solo el producto final:
 
-Cada equip mostra el patró i completa «Hem pogut comprovar… / Encara no podem afirmar…». Compareu el dibuix, la seqüència i el moviment observat; guardeu la plantilla pròpia i anoteu si s’ha usat el complement o una alternativa.
+- **Representación:** predicciones, leyendas, orientación y mapas con inicio y destino identificables.
+- **Programación:** secuencias tangibles que otra pareja pueda leer y probar.
+- **Depuración:** registro de la primera divergencia observada y del cambio aislado que se ha comprobado.
+- **Comunicación:** poema, relato o instrucciones espaciales con símbolos explicados.
+- **Colaboración:** rotación de los roles de planificación, programación y observación; cada niño o niña tiene que tener una manera accesible de participar.
+- **Reflexión:** diferencia entre el espacio real y la maqueta, entre orden prevista y movimiento observado, y entre kit base y accesorios opcionales.
 
-**Evidència:** disseny original amb vèrtexs i fletxes, registre de predicció/prova i explicació de la diferència entre angle geomètric, gir del robot i funcions del complement disponible.
-### Sessió 12 · Joc creatiu lliure: una obra que una altra classe puga explorar (45 min)
+Usad una escala de tres niveles —todavía necesita apoyo, lo resuelve con un andamiaje, lo explica y lo transfiere— con descriptores concretos. No evaluéis la rapidez, la calidad del dibujo ni la capacidad de hablar en público como sustitutos del pensamiento computacional.
 
+## ♿ Participación, accesibilidad y seguridad
 
+Asignad roles rotativos sin reservar siempre los bloques a la misma persona. Ofreced instrucciones con flechas grandes, contraste suficiente, casillas táctiles o una explicación oral alternativa. Un equipo puede planificar en papel mientras espera el kit y validar su ruta cuando le toque el turno.
 
+Mantened el robot sobre una superficie plana, dejad libre su recorrido y poned las piezas de obstáculo solo en casillas que el programa no atraviese. Antes de ejecutar, una persona adulta comprueba que las piezas están estables y no rozan las ruedas; si falta alguna pieza, la tarjeta plana es una sustitución. No levantéis ni forcéis la torre o el robot mientras están conectados. Si aparece un error de comunicación o de lectura, el adulto revisa batería, alineación y piezas antes de atribuirlo al alumnado.
 
-**Objectius d’aprenentatge:** Crear una proposta original per a una altra classe, integrar allò que el kit disponible permet, rebre retorn i aplicar una millora comprovable.
+## 🔗 Referentes y adaptación
 
-**Preparació docent:** Prepareu materials de paper accessibles i una selecció de mapes, blocs o targetes. Verifiqueu els accessoris abans d’oferir-los; la ruta o composició ha de tindre una alternativa completa sense complements.
+- Matatalab, [Learning Station Curriculum](https://matatalab.com/zh-hans/node/66): fuente pública que describe 12 lecciones, el Coding Set como producto principal y la progresión general entre bloques, obstáculos/laberintos, mapas/cuadrículas y creaciones con Artist/Musician Add-Ons.
+- Matatalab, [Teacher Resource Guide · Learning Station Curriculum (PDF completo publicado)](https://matatalab.com/cdn/ff/Vz0MsyTfj9_BIp7xKGB0hyr_QXjABpbIlXHSS3VcPg4/1637831178/public/2021-11/Learning%20Station%20Curriculum.pdf): guía docente oficial de 2021. El índice público sitúa las lecciones 5–7, 8–10 y 11–12 en las páginas 30, 41 y 55. La copia de 29 páginas disponible para lectura termina antes; el lector web no ha podido extraer el PDF completo (11 MB). Se han contrastado directamente los objetivos y las actividades de las lecciones 1–4 en las páginas 19–23; las 5–12 continúan sin verificación paso a paso.
+- Matatalab, [Matatalab Edu Teacher’s Resource Guide (2020)](https://matatalab.com/cdn/ff/2HgegdEsgGGg2k9OhY4VH1UCq-RXiPAr0YQxIO0n3KQ/1596512886/public/2020-08/The%C2%A0Teacher%C2%A0Resource%C2%A0Guide.pdf): guía institucional alternativa de 24 páginas. Describe el Learning Station a nivel de currículo y unidades, pero no incluye los planes docentes detallados de las lecciones 5–12.
+- Matatalab, [guía oficial del Coding Set](https://matatalab.com/en/node/60): enumera los obstáculos y las banderas entre los elementos del kit base y describe las categorías de bloques. La propuesta usa estas piezas para planificar las rutas; no atribuye a MatataBot detección automática de obstáculos.
+- Matatalab, [Loop](https://matatalab.com/en/node/62), [Function](https://matatalab.com/en/node/63), [Artist](https://matatalab.com/en/node/64) y [Musician](https://matatalab.com/en/node/65): guías oficiales complementarias que verifican las combinaciones de bloques, las restricciones de disposición de bucles/funciones, los valores de ángulo, las tres tarjetas de calentamiento (seis muestras) y las funciones de notas/melodías. Musician especifica 16 bloques para cada una de las dos claves, 10 melodías, selección de notas Do–Ti y el valor rítmico de 1/4 que pasa a 2/4 con el bloque numérico 2; por eso no se describe como un compás. No se presentan como el plan docente completo de las lecciones 10–12 de Learning Station.
+- MatataStudio, [curso oficial autoguiado](https://www.matatastudio.com/Self-Guided.html), lecciones 2.3–2.6: explica la pareja inicio/final y el número del bucle, la colocación de definición y llamada de función, el uso de los bloques de ángulo con movimiento y los complementos Artist y Musician. Se ha utilizado para contrastar las instrucciones técnicas de las sesiones 10–12; es una guía de producto para el profesorado y no sustituye los planes de clase completos de Learning Station.
+- MatataStudio, [curso oficial autoguiado](https://www.matatastudio.com/Self-Guided.html), lección 2.7 «Learning Station Curriculum»: confirma que son 12 lecciones de 20 minutos y que la guía docente recomienda grupos de cuatro, roles de programador/a e inspector/a, tiempo suficiente de exploración y preguntas de apoyo. Es una orientación metodológica común, no el desarrollo de las tareas particulares de las lecciones 5–12.
+- MatataStudio, [lista oficial de descargas](https://www.matatastudio.com/download.html): el 13 de octubre de 2026 muestra «MatataStudio Learning Station TG-sample.pdf», de 70,09 MB y 108 páginas, actualizado el 2 de diciembre de 2025. El enlace de descarga se resuelve dinámicamente y no se ha podido recuperar en esta consulta; el contenido de la muestra nueva queda pendiente de comparación.
+- Matatalab, [catálogo de actividades Coding Set](https://matatalab.com/en/activity): fuente complementaria para comprobar el producto y las actividades públicas; no sustituye el plan docente completo.
 
-**Vocabulari clau:** creació, destinatari, prototip, retorn, millora, funció comprovada.
-
-**Temps orientatiu local:** fases 1–5: 7 + 10 + 10 + 12 + 6 minuts (45 min). La guia oficial de Learning Station indica 20 minuts per lliçó; aquest repartiment amplia el temps per a proves, registre i retorn entre parelles.
-
-#### Fase 1 · Activem i prediem
-
-La guia oficial tanca el currículum amb «Introducing Creative Free Play». Ací l’alumnat tria una idea i combina lliurement les habilitats treballades en una creació per a una altra classe. Com a connexió tècnica complementària, la guia Musician explica com combinar blocs de nota i melodia amb nombres per modificar el compàs; només s’aplica si el complement està present i verificat. Si no, el repte continua amb seqüències de paper, símbols i una alternativa silenciosa.
-
-Obriu tres possibilitats sense imposar-ne cap: una història en un mapa, un laberint amb més d’una ruta o una composició de patrons/estrelles. Cada equip tria destinatari, propòsit i una cosa que vol provar; la proposta ha de poder-se explicar amb les peces que realment té. Si el centre disposa del Musician Add-On compatible, introduïu l’objectiu de crear música amb blocs de nota o de melodia; el producte és una composició pròpia, no la reproducció d’una cançó publicada.
-
-#### Fase 2 · Explorem i construïm
-
-Feu un esbós amb inici, fites i final o amb les parts del patró. Assigneu rols rotatius i prepareu una llegenda. Si s’incorpora el Musician Add-On, comproveu que hi ha els 16 blocs de notes de clau d’ut i els 16 de clau de sol, els 10 blocs de melodia predefinida i les targetes d’escalfament; el Coding Set continua sent necessari. Si el centre no disposa del complement, oferiu l’alternativa en paper i silenciosa sense penalització.
-
-#### Fase 3 · Expliquem i registrem
-
-Convertiu el disseny en una seqüència llegible: ordre de blocs, repeticions que el kit base admeta, girs, obstacles representats i missatge final. Si hi ha Musician, distingiu la nota (tria de to) de la melodia predefinida; per a les notes, barregeu els blocs de Do a Ti per seleccionar l’escala i comproveu l’ordre amb una targeta de pràctica. La guia oficial indica que cada bloc de música té un valor rítmic predeterminat d’1/4; combinat amb el bloc numèric 2, passa a 2/4. Ací «1/4» i «2/4» indiquen el valor que descriu la guia, no un compàs complet. Registreu el patró curt de notes i ritmes com a creació original i contrasteu què canvia en variar només el nombre. En una fitxa pròpia, distingiu «funció comprovada», «simulació» i «idea per provar». Abans d’executar, una parella predix què farà el robot o com recorrerà el visitant l’obra.
-
-![MatataBot i torre Coding Set reals al costat d’un mapa creat per l’alumnat amb aiguamoll, camins i targetes de símbols; les ordres tangibles es veuen sobre la torre.](../../_assets/situacions/sa-cs-creacio-oberta.webp)
-
-_El mapa i les targetes són una creació pròpia de paper. La il·lustració no pressuposa els complements Artist o Musician: el MatataBot només executa les ordres de moviment programades._
-
-#### Fase 4 · Apliquem i millorem
-
-Feu una prova amb MatataBot si el disseny usa rutes; manteniu el mateix inici i compareu predicció/resultat. Si és una composició sonora i hi ha Musician Add-On, proveu primer un patró curt amb un bloc de música (valor rítmic 1/4); repetiu-lo amb el bloc numèric 2 (valor 2/4) i compareu la duració percebuda. Després, compareu-lo amb un bloc de melodia predefinida i expliqueu què podeu modificar i què ja ve fixat. No copieu una cançó publicada. Si no hi ha complement, representeu el patró amb paper, ritme silenciós i símbols. Una classe visitant prova o interpreta la proposta sense indicacions de l’equip autor; el grup registra un comentari i aplica una millora concreta.
-
-![MatataBot, torre i tauler reals del Coding Set al costat d’una tira de colors creada en paper i d’uns blocs abstractes sense símbols per representar el Musician Add-On opcional.](../../_assets/situacions/sa-cs-composicio-musical-v1.webp)
-
-_La tira de colors és una partitura visual pròpia i els blocs abstractes només representen l’accessori opcional: no són peces Musician exactes ni formen part del kit base._
-
-#### Fase 5 · Comprovem i reflexionem
-
-Presenteu el producte i expliqueu una decisió basada en la prova, una limitació del model i quina part depenia d’un accessori. Deseu el mapa o plantilla, la seqüència i el retorn rebut per a la mostra de classe.
-
-**Evidència:** creació original provada o identificada com a model, instruccions que una altra parella pot seguir, retorn aplicat i reflexió sobre materials disponibles.
-## 🧪 Avaluació i evidències
-
-Recolliu evidències al llarg de la seqüència, no sols el producte final:
-
-- **Representació:** prediccions, llegendes, orientació i mapes amb inici i destí identificables.
-- **Programació:** seqüències tangibles que una altra parella puga llegir i provar.
-- **Depuració:** registre de la primera divergència observada i del canvi aïllat que s’ha comprovat.
-- **Comunicació:** poema, relat o instruccions espacials amb símbols explicats.
-- **Col·laboració:** rotació dels rols de planificació, programació i observació; cada infant ha de tindre una manera accessible de participar.
-- **Reflexió:** diferència entre l’espai real i la maqueta, entre ordre prevista i moviment observat, i entre kit base i accessoris opcionals.
-
-Useu una escala de tres nivells —encara necessita suport, ho resol amb una bastida, ho explica i ho transferix— amb descriptors concrets. No avalueu la rapidesa, la qualitat del dibuix ni la capacitat de parlar en públic com a substituts del pensament computacional.
-
-## ♿ Participació, accessibilitat i seguretat
-
-Assigneu rols rotatius sense reservar sempre els blocs a la mateixa persona. Oferiu instruccions amb fletxes grans, contrast suficient, caselles tàctils o una explicació oral alternativa. Un equip pot planificar en paper mentre espera el kit i validar la seua ruta quan li toque el torn.
-
-Manteniu el robot sobre una superfície plana, deixeu lliure el seu recorregut i poseu les peces d’obstacle només en caselles que el programa no travesse. Abans d’executar, una persona adulta comprova que les peces estan estables i no freguen les rodes; si falta alguna peça, la targeta plana és una substitució. No alceu ni forceu la torre o el robot mentre estan connectats. Si apareix un error de comunicació o de lectura, l’adult revisa bateria, alineació i peces abans d’atribuir-lo a l’alumnat.
-
-## 🔗 Referent oficial i adaptació
-
-- Matatalab, [Learning Station Curriculum](https://matatalab.com/zh-hans/node/66): font pública que descriu 12 lliçons, el Coding Set com a producte principal i la progressió general entre blocs, obstacles/laberints, mapes/graelles i creacions amb Artist/Musician Add-Ons.
-- Matatalab, [Teacher Resource Guide · Learning Station Curriculum (PDF complet publicat)](https://matatalab.com/cdn/ff/Vz0MsyTfj9_BIp7xKGB0hyr_QXjABpbIlXHSS3VcPg4/1637831178/public/2021-11/Learning%20Station%20Curriculum.pdf): guia docent oficial de 2021. L’índex públic situa les lliçons 5–7, 8–10 i 11–12 a les pàgines 30, 41 i 55. La còpia de 29 pàgines disponible per a lectura acaba abans; el lector web no ha pogut extraure el PDF complet (11 MB). S’han contrastat directament els objectius i les activitats de les lliçons 1–4 a les pàgines 19–23; les 5–12 continuen sense verificació pas a pas.
-- Matatalab, [Matatalab Edu Teacher’s Resource Guide (2020)](https://matatalab.com/cdn/ff/2HgegdEsgGGg2k9OhY4VH1UCq-RXiPAr0YQxIO0n3KQ/1596512886/public/2020-08/The%C2%A0Teacher%C2%A0Resource%C2%A0Guide.pdf): guia institucional alternativa de 24 pàgines. Descriu el Learning Station a nivell de currículum i unitats, però no inclou els plans docents detallats de les lliçons 5–12.
-- Matatalab, [guia oficial del Coding Set](https://matatalab.com/en/node/60): enumera els obstacles i les banderes entre els elements del kit base i descriu les categories de blocs. La proposta usa estes peces per a planificar les rutes; no atribueix a MatataBot detecció automàtica d’obstacles.
-- Matatalab, [Loop](https://matatalab.com/en/node/62), [Function](https://matatalab.com/en/node/63), [Artist](https://matatalab.com/en/node/64) i [Musician](https://matatalab.com/en/node/65): guies oficials complementàries que verifiquen les combinacions de blocs, les restriccions de disposició de bucles/funcions, els valors d’angle, les tres targetes d’escalfament (sis mostres) i les funcions de notes/melodies. Musician especifica 16 blocs per a cadascuna de les dues claus, 10 melodies, selecció de notes Do–Ti i el valor rítmic d’1/4 que passa a 2/4 amb el bloc numèric 2; per això no es descriu com un compàs. No es presenten com el pla docent complet de les lliçons 10–12 de Learning Station.
-- MatataStudio, [curs oficial autoguiat](https://www.matatastudio.com/Self-Guided.html), lliçons 2.3–2.6: explica la parella inici/final i el nombre del bucle, la col·locació de definició i crida de funció, l’ús dels blocs d’angle amb moviment i els complements Artist i Musician. S’ha utilitzat per contrastar les instruccions tècniques de les sessions 10–12; és una guia de producte per al professorat i no substitueix els plans de classe complets de Learning Station.
-- MatataStudio, [curs oficial autoguiat](https://www.matatastudio.com/Self-Guided.html), lliçó 2.7 «Learning Station Curriculum»: confirma que són 12 lliçons de 20 minuts i que la guia docent recomana grups de quatre, rols de programador/a i inspector/a, temps suficient d’exploració i preguntes de suport. És una orientació metodològica comuna, no el desenvolupament de les tasques particulars de les lliçons 5–12.
-- MatataStudio, [llista oficial de descàrregues](https://www.matatastudio.com/download.html): el 13 d’octubre de 2026 mostra «MatataStudio Learning Station TG-sample.pdf», de 70,09 MB i 108 pàgines, actualitzat el 2 de desembre de 2025. L’enllaç de descàrrega es resol dinàmicament i no s’ha pogut recuperar en aquesta consulta; el contingut de la mostra nova queda pendent de comparació.
-- Matatalab, [catàleg d’activitats Coding Set](https://matatalab.com/en/activity): font complementària per comprovar el producte i les activitats públiques; no substituïx el pla docent complet.
-
-La seqüència local conserva la progressió temàtica pública i crea context, materials de paper, consignes, registres i avaluació originals. Per a les sessions 11–12, la pàgina oficial i l’índex del PDF enumeren angles, pentagrames o estrelles i creació lliure; la proposta els converteix en una roseta de l’entorn i una obra oberta, sense afirmar una correspondència exacta de cada subtema amb una lliçó perquè no s’ha pogut inspeccionar el PDF complet. Les dues sessions separen l’ús real d’un accessori de l’alternativa desconnectada. Continua pendent el contrast integral de les lliçons 5–12 i dels exercicis individuals del quadern, ja que la descàrrega oficial excedeix el límit de lectura disponible.
+La secuencia local conserva la progresión temática pública y crea contexto, materiales de papel, consignas, registros y evaluación originales. Para las sesiones 11–12, la página oficial y el índice del PDF enumeran ángulos, pentagramas o estrellas y creación libre; la propuesta los convierte en una roseta del entorno y una obra abierta, sin afirmar una correspondencia exacta de cada subtema con una lección porque no se ha podido inspeccionar el PDF completo. Las dos sesiones separan el uso real de un accesorio de la alternativa desconectada. Sigue pendiente el contraste integral de las lecciones 5–12 y de los ejercicios individuales del cuaderno, ya que la descarga oficial excede el límite de lectura disponible.

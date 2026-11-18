@@ -14,138 +14,138 @@ duration: "4 sesiones"
 challenge: "¿Cómo podemos programar una ruta que visite varios espacios y nos ayude a observarlos sin tocar ni molestar a los seres vivos?"
 ---
 
-![MatataBot i la torre del Coding Set al costat d’un mapa de parc amb camins, arbre, font i estany.](../../_assets/situacions/cs-parc-observadors.webp)
+![MatataBot y la torre del Coding Set junto a un mapa de parque con caminos, árbol, fuente y estanque.](../../_assets/situacions/cs-parc-observadors.webp)
 
-_El mapa és una maqueta didàctica: cada parada convida a observar, representar i cuidar l’entorn._
+_El mapa es una maqueta didáctica: cada parada invita a observar, representar y cuidar el entorno._
 
-## 🌿 Repte, context i aprenentatges
+## 🌿 Reto, contexto y aprendizajes
 
-Els equips dissenyen un mapa de parc inspirat en els espais verds i aiguamolls de la Comunitat Valenciana. MatataBot ix d’un punt d’inici, visita llocs triats pel grup —una zona d’ombra, una bassa de paper, un arbre o una font— i en cada parada deixa una targeta amb una pregunta observable. Es pot treballar amb un plànol de l’Albufera o amb un parc completament fictici; si s’observa un espai real, l’alumnat mira i registra sense arrancar plantes, tocar animals ni eixir dels recorreguts autoritzats.
+Los equipos diseñan un mapa de parque inspirado en los espacios verdes y humedales de la Comunidad Valenciana. MatataBot sale de un punto de inicio, visita lugares elegidos por el grupo —una zona de sombra, una balsa de papel, un árbol o una fuente— y en cada parada deja una tarjeta con una pregunta observable. Se puede trabajar con un plano de la Albufera o con un parque completamente ficticio; si se observa un espacio real, el alumnado mira y registra sin arrancar plantas, tocar animales ni salir de los recorridos autorizados.
 
 
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-llegir una graella, transformar un itinerari en ordres tangibles, anticipar la posició final, depurar una seqüència, comparar rutes i distingir observació directa d’inferència. El robot recorre el mapa; no és un sensor ambiental i no identifica plantes, espècies, qualitat d’aigua ni presència d’animals.
+leer una cuadrícula, transformar un itinerario en órdenes tangibles, anticipar la posición final, depurar una secuencia, comparar rutas y distinguir la observación directa de la inferencia. El robot recorre el mapa; no es un sensor ambiental y no identifica plantas, especies, calidad del agua ni presencia de animales.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Prepareu el MatataBot i la torre de programació del Coding Set, un mapa original en quadrícula, blocs físics de moviment, targetes amb símbols per a les parades, fitxes d’observació i una figura lleugera per representar el «quadern de camp». Reviseu la càrrega i les instruccions del kit. Si MatataBot recorrerà el mapa, feu caselles de 10 × 10 cm, com indica el fabricant perquè coincidisquen amb el moviment del robot; comproveu amb una ordre d’avanç que el model s’alinea amb la casella sobre la superfície disponible i registreu qualsevol desviació abans de continuar. Si el mapa és esquemàtic i no està a escala, useu-lo per a planificar o simular, no com a recorregut físic.
+Preparad el MatataBot y la torre de programación del Coding Set, un mapa original en cuadrícula, bloques físicos de movimiento, tarjetas con símbolos para las paradas, fichas de observación y una figura ligera para representar el «cuaderno de campo». Revisad la carga y las instrucciones del kit. Si MatataBot va a recorrer el mapa, haced casillas de 10 × 10 cm, como indica el fabricante para que coincidan con el movimiento del robot; comprobad con una orden de avance que el modelo se alinea con la casilla sobre la superficie disponible y registrad cualquier desviación antes de continuar. Si el mapa es esquemático y no está a escala, usadlo para planificar o simular, no como recorrido físico.
 
-Fixeu el mapa sobre una superfície plana, poseu cada destí al centre d’una casella i manteniu les caselles i ordres visibles per a tot el grup. Comenceu amb un recorregut curt, sense obstacles estrets. Si la torre o el robot no està disponible, una fitxa sobre la mateixa graella i targetes de fletxa permeten fer el mateix treball de seqüenciació, però la prova física del robot quedarà pendent.
+Fijad el mapa sobre una superficie plana, poned cada destino en el centro de una casilla y mantened las casillas y las órdenes visibles para todo el grupo. Empezad con un recorrido corto, sin obstáculos estrechos. Si la torre o el robot no están disponibles, una ficha sobre la misma cuadrícula y tarjetas de flecha permiten hacer el mismo trabajo de secuenciación, pero la prueba física del robot quedará pendiente.
 
-**Vocabulari:** mapa, casella, origen, destinació, avançar, retrocedir, girar, ordre, seqüència, observar, inferir i cuidar. Modeleu la diferència entre «veig ombra al costat de l’arbre» i «ací segurament fa més fresc» com a observació i hipòtesi.
+**Vocabulario:** mapa, casilla, origen, destino, avanzar, retroceder, girar, orden, secuencia, observar, inferir y cuidar. Modelad la diferencia entre «veo sombra junto al árbol» y «aquí seguramente hace más fresco» como observación e hipótesis.
 
-## 📅 Seqüència didàctica · quatre sessions de 45 minuts
+## 📅 Secuencia didáctica · cuatro sesiones de 45 minutos
 
-### **Preparem el quadern d’observació (45 min).**
+### **Preparamos el cuaderno de observación (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu fotografies pròpies o autoritzades de l’Albufera, d’un parc de l’entorn o d’un mapa fictici. Cada equip tria tres espais que es puguen representar sense manipular éssers vius: ombra i sol, superfície pavimentada, aigua representada en paper, plantes dibuixades o un banc.
+Mostrad fotografías propias o autorizadas de la Albufera, de un parque del entorno o de un mapa ficticio. Cada equipo elige tres espacios que se puedan representar sin manipular seres vivos: sombra y sol, superficie pavimentada, agua representada en papel, plantas dibujadas o un banco.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Formuleu una pregunta que es puga respondre mirant, com «on arriba l’ombra?» o «quines formes de fulla veiem en la fotografia?». Eviteu preguntes que requerisquen tocar, capturar o identificar amb certesa una espècie.
+Formulad una pregunta que se pueda responder mirando, como «¿hasta dónde llega la sombra?» o «¿qué formas de hoja vemos en la fotografía?». Evitad preguntas que requieran tocar, capturar o identificar con certeza una especie.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Assigneu a cada parada un símbol i prepareu una fitxa amb camps «què veig», «què pense que podria significar» i «què no puc saber encara».
+Asignad a cada parada un símbolo y preparad una ficha con los campos «qué veo», «qué pienso que podría significar» y «qué no puedo saber todavía».
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Ordeneu les tres destinacions en un mapa i acordeu una norma de cura. Comproveu que una altra parella pot entendre la pregunta i trobar cada parada amb els símbols.
+Ordenad los tres destinos en un mapa y acordad una norma de cuidado. Comprobad que otra pareja puede entender la pregunta y encontrar cada parada con los símbolos.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa inicial, tres símbols i una pregunta observable per parada. Pregunteu: «Què podem saber només mirant? Quina part és una idea que encara hauríem de comprovar?»
+**Evidencia:** mapa inicial, tres símbolos y una pregunta observable por parada. Preguntad: «¿Qué podemos saber solo mirando? ¿Qué parte es una idea que todavía tendríamos que comprobar?»
 
-### **Dissenyem i simulem l’itinerari (45 min).**
+### **Diseñamos y simulamos el itinerario (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Situeu MatataBot al punt d’inici de la quadrícula i identifiqueu la direcció cap on mira. Predigueu quin bloc farà girar el robot i on acabarà la primera ruta.
+Situad MatataBot en el punto de inicio de la cuadrícula e identificad la dirección hacia la que mira. Predecid qué bloque hará girar el robot y dónde terminará la primera ruta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Abans d’usar la torre, cada parella mou una fitxa casella a casella i registra les ordres físiques necessàries per arribar a la primera parada. Continueu fins a les altres dues, anotant els girs i les visites en l’ordre triat.
+Antes de usar la torre, cada pareja mueve una ficha casilla a casilla y registra las órdenes físicas necesarias para llegar a la primera parada. Continuad hasta las otras dos, anotando los giros y las visitas en el orden elegido.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Comproveu les distàncies en el mapa del centre i anoteu la relació entre cada casella i l’espai representat. No pressuposeu que la quadrícula coincideix amb la longitud del moviment del robot.
+Comprobad las distancias en el mapa del centro y anotad la relación entre cada casilla y el espacio representado. No presupongáis que la cuadrícula coincide con la longitud del movimiento del robot.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu dues rutes: una que visita totes les parades i una que n’omet una. Comenteu el nombre d’ordres, la claredat i si el trajecte passa per llocs estrets. Ordeneu els blocs de moviment i una targeta de parada entre trams.
+Comparad dos rutas: una que visita todas las paradas y una que omite una. Comentad el número de órdenes, la claridad y si el trayecto pasa por lugares estrechos. Ordenad los bloques de movimiento y una tarjeta de parada entre tramos.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dues rutes representades, seqüència de blocs i predicció de la casella final. Pregunteu: «Quina ordre farà girar el robot? Si comença mirant cap a una altra banda, què haurem de canviar?»
+**Evidencia:** dos rutas representadas, secuencia de bloques y predicción de la casilla final. Preguntad: «¿Qué orden hará girar el robot? Si empieza mirando hacia otro lado, ¿qué tendremos que cambiar?»
 
-### **Programem, provem i depurem amb MatataBot (45 min).**
+### **Programamos, probamos y depuramos con MatataBot (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Col·loqueu els blocs físics a la torre seguint la seqüència acordada. Una persona llig les ordres, una altra comprova l’orientació dels blocs i una tercera prediu la ruta.
+Colocad los bloques físicos en la torre siguiendo la secuencia acordada. Una persona lee las órdenes, otra comprueba la orientación de los bloques y una tercera predice la ruta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Executeu primer un trajecte fins a una sola parada. Si MatataBot acaba en una casella diferent, compareu pas a pas la seqüència esperada i la real: orientació inicial, recompte de moviments, gir i alineació amb la graella.
+Ejecutad primero un trayecto hasta una sola parada. Si MatataBot termina en una casilla diferente, comparad paso a paso la secuencia esperada y la real: orientación inicial, recuento de movimientos, giro y alineación con la cuadrícula.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu la casella d’arribada i l’últim punt en què el robot seguia el pla. Identifiqueu quin bloc o quina condició d’alineació cal revisar.
+Anotad la casilla de llegada y el último punto en el que el robot seguía el plan. Identificad qué bloque o qué condición de alineación hay que revisar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una sola instrucció abans de repetir. Quan la primera part funciona, afegiu les altres destinacions i les targetes d’observació, sempre fora del camí del robot.
+Cambiad una sola instrucción antes de repetir. Cuando la primera parte funciona, añadid los otros destinos y las tarjetas de observación, siempre fuera del camino del robot.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-En cada parada, trieu la pregunta que investigaria l’equip i anoteu el símbol al quadern. **Evidència:** seqüència depurada, casella d’arribada real i ajust justificat. Pregunteu: «Quina ordre concreta revisarem?»
+En cada parada, elegid la pregunta que investigaría el equipo y anotad el símbolo en el cuaderno. **Evidencia:** secuencia depurada, casilla de llegada real y ajuste justificado. Preguntad: «¿Qué orden concreta revisaremos?»
 
-### **Fem la ronda i compartim una proposta de cura (45 min).**
+### **Hacemos la ronda y compartimos una propuesta de cuidado (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans de l’última ronda, reviseu la ruta i prediu quines preguntes d’observació es podran respondre en cada parada.
+Antes de la última ronda, revisad la ruta y predecid qué preguntas de observación se podrán responder en cada parada.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Executeu la ruta completa. En cada parada, una persona llig la pregunta i una altra registra una dada del mapa, una fotografia o una observació real autoritzada. Si treballeu amb maqueta, marqueu les dades com a simulades, no com a observacions de camp.
+Ejecutad la ruta completa. En cada parada, una persona lee la pregunta y otra registra un dato del mapa, una fotografía o una observación real autorizada. Si trabajáis con maqueta, marcad los datos como simulados, no como observaciones de campo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Trieu una proposta de cura del parc que no requerisca instruccions de seguretat inventades, com mantindre’s en un camí autoritzat o no deixar residus. Anoteu quina observació o font la sosté.
+Elegid una propuesta de cuidado del parque que no requiera instrucciones de seguridad inventadas, como mantenerse en un camino autorizado o no dejar residuos. Anotad qué observación o fuente la sostiene.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu mapes entre equips. L’altre grup reconstrueix la ruta i identifica quines observacions són dades i quines són interpretacions. Reviseu el mapa si una parada no s’entén o si la seqüència queda confusa.
+Intercambiad mapas entre equipos. El otro grupo reconstruye la ruta e identifica qué observaciones son datos y cuáles son interpretaciones. Revisad el mapa si una parada no se entiende o si la secuencia queda confusa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** ruta final, tres fitxes d’observació i proposta de cura sustentada en una observació. Pregunteu: «Quina dada heu vist o consultat? Quina proposta necessita una font o una persona experta?»
+**Evidencia:** ruta final, tres fichas de observación y propuesta de cuidado sustentada en una observación. Preguntad: «¿Qué dato habéis visto o consultado? ¿Qué propuesta necesita una fuente o una persona experta?»
 
-## 📋 Avaluació i evidències
+## 📋 Evaluación y evidencias
 
-Recolliu el mapa, la seqüència inicial i revisada, la predicció de la casella final i les fitxes d’observació. Observeu si l’alumnat:
+Recoged el mapa, la secuencia inicial y revisada, la predicción de la casilla final y las fichas de observación. Observad si el alumnado:
 
-- situa origen, orientació i destinacions amb referència a la quadrícula;
+- sitúa origen, orientación y destinos con referencia a la cuadrícula;
 
-- ordena blocs per a descriure una ruta i anticipa on acabarà el robot;
+- ordena bloques para describir una ruta y anticipa dónde terminará el robot;
 
-- compara el recorregut real amb el previst i troba una instrucció revisable;
+- compara el recorrido real con el previsto y encuentra una instrucción revisable;
 
-- separa observació, inferència i dada simulada;
+- separa observación, inferencia y dato simulado;
 
-- explica una pràctica de cura sense atribuir al robot coneixements ambientals.
+- explica una práctica de cuidado sin atribuir al robot conocimientos ambientales.
 
-Una seqüència més llarga no és necessàriament millor: es valora que siga provable, llegible i adequada al mapa. Si el robot falla per alineació, registreu la condició en lloc d’atribuir-ho automàticament a un error de raonament.
+Una secuencia más larga no es necesariamente mejor: se valora que sea comprobable, legible y adecuada al mapa. Si el robot falla por alineación, registrad la condición en lugar de atribuirlo automáticamente a un error de razonamiento.
 
-## ♿ Participació i respecte per l’entorn
+## ♿ Participación y respeto por el entorno
 
-Useu fotografies o pictogrames per preparar l’observació, simplifiqueu el mapa i oferiu rols de cartografia, programació, lectura d’ordres, registre o relat. No és necessari eixir del centre si l’espai no és accessible; la ruta es pot fer completament sobre una maqueta. Feu caselles grans i d’alt contrast, i permeteu dictar o assenyalar les ordres. En qualsevol observació real, seguiu les indicacions del centre i de l’espai natural, manteniu-vos en recorreguts autoritzats i no toqueu animals ni plantes.
+Usad fotografías o pictogramas para preparar la observación, simplificad el mapa y ofreced roles de cartografía, programación, lectura de órdenes, registro o relato. No es necesario salir del centro si el espacio no es accesible; la ruta se puede hacer completamente sobre una maqueta. Haced casillas grandes y de alto contraste, y permitid dictar o señalar las órdenes. En cualquier observación real, seguid las indicaciones del centro y del espacio natural, manteneos en recorridos autorizados y no toquéis animales ni plantas.
 
-## 🔗 Referent oficial i adaptació pròpia
+## 🔗 Referente oficial y adaptación propia
 
-El treball amb destinacions, blocs de moviment, obstacles, memòria de les parades i relat propi s’inspira en l’activitat oficial [Delivery Animals](https://matatalab.com/en/node/86) del Coding Set, que proposa transportar figures entre llocs comunitaris i explicar per què hi van. Aquesta adaptació canvia completament el mapa i la història: les parades són espais de natura pròxima i cada arribada activa una observació responsable, sense imitar ni reutilitzar les targetes oficials.
+El trabajo con destinos, bloques de movimiento, obstáculos, memoria de las paradas y relato propio se inspira en la actividad oficial [Delivery Animals](https://matatalab.com/en/node/86) del Coding Set, que propone transportar figuras entre lugares comunitarios y explicar por qué van allí. Esta adaptación cambia completamente el mapa y la historia: las paradas son espacios de naturaleza cercana y cada llegada activa una observación responsable, sin imitar ni reutilizar las tarjetas oficiales.

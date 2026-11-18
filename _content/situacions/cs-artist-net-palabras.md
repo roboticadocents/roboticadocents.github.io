@@ -15,148 +15,148 @@ challenge: "¿Cómo podemos pasar de una cuadrícula plana a una forma 3D y repr
 official_source: "https://matatalab.com/cdn/ff/2HgegdEsgGGg2k9OhY4VH1UCq-RXiPAr0YQxIO0n3KQ/1596512886/public/2020-08/The%C2%A0Teacher%C2%A0Resource%C2%A0Guide.pdf"
 ---
 
-![MatataBot i la torre reals del Coding Set al costat d’una xarxa de sis quadrats plegada en un cub i una graella amb recorreguts de lletres.](../../_assets/situacions/cs-artist-net-paraules.webp)
+![MatataBot y la torre reales del Coding Set junto a una red de seis cuadrados plegada en un cubo y una cuadrícula con recorridos de letras.](../../_assets/situacions/cs-artist-net-paraules.webp)
 
-_La xarxa i les lletres són materials de paper. El robot recorre ordres de moviment; no dibuixa ni plega la cartolina._
+_La red y las letras son materiales de papel. El robot recorre órdenes de movimiento; no dibuja ni dobla la cartulina._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-La classe prepara una xicoteta exposició escolar sobre l’Albufera. Cada equip vol presentar una idea amb una maqueta geomètrica i una paraula clau, com ara **AIGUA**, escrita amb lletres de trams rectes. Primer cal decidir quines xarxes planes es poden plegar per formar un cub; després, una parella programa MatataBot perquè visite les caselles que corresponen a les cares de la xarxa. En una segona part, l’alumnat planifica en una graella el traçat ortogonal de la paraula i una persona el passa a paper.
+La clase prepara una pequeña exposición escolar sobre la Albufera. Cada equipo quiere presentar una idea con una maqueta geométrica y una palabra clave, como **AGUA**, escrita con letras de tramos rectos. Primero hay que decidir qué redes planas se pueden doblar para formar un cubo; después, una pareja programa MatataBot para que visite las casillas que corresponden a las caras de la red. En una segunda parte, el alumnado planifica en una cuadrícula el trazado ortogonal de la palabra y una persona lo pasa a papel.
 
-La proposta s’alinea amb dos objectius que el resum oficial de l’Artist Add-On Curriculum identifica explícitament: en la lliçó 11, transformar un disseny 2D en una xarxa geomètrica que l’alumnat puga muntar com una forma 3D; en la lliçó 12, crear i mostrar paraules amb MatataBot. El resum oficial no conté els passos complets d’aquestes lliçons. Per això, aquesta fitxa desenvolupa activitats pròpies a partir d’aquests objectius i no afirma reproduir instruccions, materials o preguntes docents que no s’han pogut consultar.
+La propuesta se alinea con dos objetivos que el resumen oficial del Artist Add-On Curriculum identifica explícitamente: en la lección 11, transformar un diseño 2D en una red geométrica que el alumnado pueda montar como una forma 3D; en la lección 12, crear y mostrar palabras con MatataBot. El resumen oficial no contiene los pasos completos de estas lecciones. Por eso, esta ficha desarrolla actividades propias a partir de esos objetivos y no afirma reproducir instrucciones, materiales o preguntas docentes que no se han podido consultar.
 
-El traçat directe de figures necessita l’Artist Add-On compatible. Com que la presència del complement no està confirmada, la seqüència principal usa el Coding Set base per a comprovar rutes sobre una graella i separa el recorregut del dibuix manual. Si el centre verifica l’accessori i segueix el manual del model, es pot afegir una comparació tècnica; aquesta ampliació no és necessària per a completar la situació.
+El trazado directo de figuras necesita el Artist Add-On compatible. Como la presencia del complemento no está confirmada, la secuencia principal usa el Coding Set base para comprobar rutas sobre una cuadrícula y separa el recorrido del dibujo manual. Si el centro verifica el accesorio y sigue el manual del modelo, se puede añadir una comparación técnica; esta ampliación no es necesaria para completar la situación.
 
-**Pregunta guia:** quines evidències ens permeten saber que una xarxa es pot plegar i que la seqüència del robot visita les caselles en l’ordre acordat?
+**Pregunta guía:** ¿qué evidencias nos permiten saber que una red se puede doblar y que la secuencia del robot visita las casillas en el orden acordado?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Reconéixer que una xarxa de sis cares quadrades ha de tindre una disposició que permeta plegar-les sense superposicions.
-- Representar en una graella la posició de les cares i planificar una ruta amb inici, moviments, girs i parades.
-- Descompondre una paraula en segments horitzontals i verticals i convertir l’ordre dels segments en instruccions verificables.
-- Comparar predicció i execució, trobar la primera divergència i canviar una sola instrucció abans de tornar a provar.
-- Distingir el treball geomètric i artístic de les persones de les ordres de moviment que executa MatataBot.
+- Reconocer que una red de seis caras cuadradas debe tener una disposición que permita doblarlas sin superposiciones.
+- Representar en una cuadrícula la posición de las caras y planificar una ruta con inicio, movimientos, giros y paradas.
+- Descomponer una palabra en segmentos horizontales y verticales y convertir el orden de los segmentos en instrucciones verificables.
+- Comparar predicción y ejecución, encontrar la primera divergencia y cambiar una sola instrucción antes de volver a probar.
+- Distinguir el trabajo geométrico y artístico de las personas de las órdenes de movimiento que ejecuta MatataBot.
 
-**Paraules clau:** xarxa, cara, aresta, vèrtex, pla, volum, plegar, graella, segment, lletra, seqüència, depuració.
+**Palabras clave:** red, cara, arista, vértice, plano, volumen, doblar, cuadrícula, segmento, letra, secuencia, depuración.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Coding Set de la dotació: MatataBot, torre, tauler i blocs de moviment. Comproveu càrrega, connexió, orientació i la distància real entre caselles abans de la classe.
-- Cartolina amb quadrats de 10 × 10 cm, pestanyes de muntatge, llapis, regle i tisores d’aula; la persona adulta prepara o supervisa els talls.
-- Una graella de paper amb l’escala provada, targetes de casella i un full de registre amb **cara o lletra**, **posició**, **ordre**, **predicció**, **resultat** i **revisió**.
-- Retoladors de colors, plantilles de lletres ortogonals i una llegenda visual per a representar inici, parada, avanç i gir. La paraula pot ser **AIGUA** o una altra triada pel grup.
-- L’Artist Add-On només és una extensió opcional si el centre confirma físicament el complement compatible i el seu manual; no l’inclogueu entre els materials obligatoris.
+- Coding Set de la dotación: MatataBot, torre, tablero y bloques de movimiento. Comprobad carga, conexión, orientación y la distancia real entre casillas antes de la clase.
+- Cartulina con cuadrados de 10 × 10 cm, pestañas de montaje, lápiz, regla y tijeras de aula; la persona adulta prepara o supervisa los cortes.
+- Una cuadrícula de papel con la escala probada, tarjetas de casilla y una hoja de registro con **cara o letra**, **posición**, **orden**, **predicción**, **resultado** y **revisión**.
+- Rotuladores de colores, plantillas de letras ortogonales y una leyenda visual para representar inicio, parada, avance y giro. La palabra puede ser **AGUA** u otra elegida por el grupo.
+- El Artist Add-On solo es una extensión opcional si el centro confirma físicamente el complemento compatible y su manual; no lo incluyáis entre los materiales obligatorios.
 
-Prepareu un exemple de xarxa vàlida i un de no plegable, tots dos dibuixats per l’equip docent. Marqueu la quadrícula i l’orientació inicial, i feu una prova del robot amb una seqüència curta. Les lletres es construeixen amb trams rectes i girs; si s’usa una grafia diferent, accepteu-la mentre la ruta quede especificada i provable.
+Preparad un ejemplo de red válida y uno no doblable, los dos dibujados por el equipo docente. Marcad la cuadrícula y la orientación inicial, y haced una prueba del robot con una secuencia corta. Las letras se construyen con tramos rectos y giros; si se usa una grafía diferente, aceptadla mientras la ruta quede especificada y sea comprobable.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Sessió 1 · Sis cares que poden plegar-se (45 min)
+### Sesión 1 · Seis caras que se pueden doblar (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu un cub de paper i una xarxa plana. Demaneu que l’alumnat prediga quantes cares té la forma i quines peces de la xarxa es convertiran en cares, sense plegar-la encara. Compareu dos dissenys i marqueu una possible superposició o un espai buit.
+Mostrad un cubo de papel y una red plana. Pedid al alumnado que prediga cuántas caras tiene la forma y qué piezas de la red se convertirán en caras, sin doblarla todavía. Comparad dos diseños y marcad una posible superposición o un espacio vacío.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En equips, retalleu una xarxa de sis quadrats iguals amb pestanyes menudes en les vores necessàries. Plegueu-la seguint les arestes i fixeu-la amb cinta. Després, proveu una segona disposició i observeu si les cares es tanquen sense solapar-se; no és necessari usar el robot per a decidir si el model físic tanca.
+En equipos, recortad una red de seis cuadrados iguales con pestañas pequeñas en los bordes necesarios. Dobladla siguiendo las aristas y fijadla con cinta. Después, probad una segunda disposición y observad si las caras se cierran sin solaparse; no es necesario usar el robot para decidir si el modelo físico cierra.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Numereu o acoloriu les sis cares en una còpia de paper i anoteu l’ordre en què es troben en la xarxa. Expliqueu quina cara queda al centre del muntatge, quines s’alcen al voltant i quina tapa la part superior. Registreu una predicció abans de plegar i el resultat observat.
+Numerad o coloread las seis caras en una copia de papel y anotad el orden en que se encuentran en la red. Explicad qué cara queda en el centro del montaje, cuáles se levantan alrededor y cuál tapa la parte superior. Registrad una predicción antes de doblar y el resultado observado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu una xarxa amb una altra parella, que ha de decidir si la pot plegar abans de tallar-la. Si la previsió falla, marqueu la primera aresta que impedeix el tancament, canvieu la disposició de dos quadrats i torneu a provar amb una còpia nova.
+Intercambiad una red con otra pareja, que tiene que decidir si la puede doblar antes de cortarla. Si la previsión falla, marcad la primera arista que impide el cierre, cambiad la disposición de dos cuadrados y volved a probar con una copia nueva.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dues xarxes anotades, una maqueta muntada i una justificació basada en el plegat. **Pregunta:** quina observació ens permet distingir una xarxa viable d’una que se superposa?
+**Evidencia:** dos redes anotadas, una maqueta montada y una justificación basada en el doblado. **Pregunta:** ¿qué observación nos permite distinguir una red viable de una que se superpone?
 
-### Sessió 2 · La ruta recorre les cares (45 min)
+### Sesión 2 · La ruta recorre las caras (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Poseu en una graella de paper els mateixos sis quadrats de la xarxa plana. Trieu una cara com a inici i assenyaleu les altres cinc en ordre. Abans de moure cap fitxa, cada parella prediu quants avanços i girs necessita MatataBot per a arribar a cadascuna.
+Poned en una cuadrícula de papel los mismos seis cuadrados de la red plana. Elegid una cara como inicio y señalad las otras cinco en orden. Antes de mover ninguna ficha, cada pareja predice cuántos avances y giros necesita MatataBot para llegar a cada una.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dibuixeu una ruta entre caselles contigües. Una persona llig les ordres i una altra mou una fitxa que representa el robot; comproveu l’orientació després de cada gir. Si la ruta torna a una casella ja visitada, marqueu-ho: repetir una casella és vàlid si l’equip pot explicar per què la necessita.
+Dibujad una ruta entre casillas contiguas. Una persona lee las órdenes y otra mueve una ficha que representa el robot; comprobad la orientación después de cada giro. Si la ruta vuelve a una casilla ya visitada, marcadlo: repetir una casilla es válido si el equipo puede explicar por qué la necesita.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Traduïu la ruta a blocs físics del Coding Set i associeu cada parada a una cara acolorida. Una parella revisora comprova el programa sobre el paper abans de l’execució. Registreu el moviment previst, la cara de destinació i quines caselles es visiten més d’una vegada.
+Traducid la ruta a bloques físicos del Coding Set y asociad cada parada a una cara coloreada. Una pareja revisora comprueba el programa sobre el papel antes de la ejecución. Registrad el movimiento previsto, la cara de destino y qué casillas se visitan más de una vez.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu el programa amb la xarxa plana ben fixada i l’espai lliure. El robot només recorre la graella: no llig nombres, no reconeix cares i no plega paper. Si la posició observada divergeix, localitzeu la primera ordre incorrecta, canvieu-ne una i repetiu la prova des del mateix inici.
+Ejecutad el programa con la red plana bien fijada y el espacio libre. El robot solo recorre la cuadrícula: no lee nombres, no reconoce caras y no dobla papel. Si la posición observada diverge, localizad la primera orden incorrecta, cambiad una y repetid la prueba desde el mismo inicio.
 
-![Un únic MatataBot de la dotació recorre una graella de paper al costat d’una xarxa de sis cares i d’un cub plegat a mà.](../../_assets/situacions/sa-cs-artist-net-ruta-v1.webp)
+![Un único MatataBot de la dotación recorre una cuadrícula de papel junto a una red de seis caras y un cubo doblado a mano.](../../_assets/situacions/sa-cs-artist-net-ruta-v1.webp)
 
-_La ruta és una representació de paper; MatataBot no dibuixa les línies ni munta la forma 3D._
+_La ruta es una representación de papel; MatataBot no dibuja las líneas ni monta la forma 3D._
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** seqüència provada, registre de les sis parades i comparació entre predicció i execució. **Pregunta:** si la ruta visita totes les cares però una es repeteix, com podem demostrar que no n’hem omés cap?
+**Evidencia:** secuencia probada, registro de las seis paradas y comparación entre predicción y ejecución. **Pregunta:** si la ruta visita todas las caras pero una se repite, ¿cómo podemos demostrar que no hemos omitido ninguna?
 
-### Sessió 3 · Una paraula es descompon en segments (45 min)
+### Sesión 3 · Una palabra se descompone en segmentos (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu **AIGUA** com a paraula de l’exposició o acordeu-ne una altra. Mostreu lletres de pal i demaneu que l’alumnat identifique quins segments són horitzontals, quins verticals i on cal canviar de direcció. La grafia és una convenció del repte, no una única manera correcta d’escriure.
+Elegid **AGUA** como palabra de la exposición o acordad otra. Mostrad letras de palo y pedid al alumnado que identifique qué segmentos son horizontales, cuáles verticales y dónde hay que cambiar de dirección. La grafía es una convención del reto, no una única manera correcta de escribir.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Prepareu una plantilla en què cada lletra ocupe una àrea separada de la graella. Marqueu inici i final de cada segment, i decidiu si MatataBot farà una execució curta per lletra o una ruta contínua. Per a la lletra A, useu una forma ortogonal amb dos pals i una barra central; expliqueu que és una versió geomètrica simplificada.
+Preparad una plantilla en la que cada letra ocupe un área separada de la cuadrícula. Marcad inicio y final de cada segmento, y decidid si MatataBot hará una ejecución corta por letra o una ruta continua. Para la letra A, usad una forma ortogonal con dos palos y una barra central; explicad que es una versión geométrica simplificada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Convertiu cada grafia en una seqüència de moviments i girs. Un equip dicta la ruta i un altre la simula amb una fitxa; anoteu orientació inicial, nombre de caselles i punts en què el traçat canvia de direcció. Si la ruta exigeix una diagonal que el programa no pot fer, representeu-la com a alternativa manual i no l’atribuïu al robot.
+Convertid cada grafía en una secuencia de movimientos y giros. Un equipo dicta la ruta y otro la simula con una ficha; anotad orientación inicial, número de casillas y puntos en los que el trazado cambia de dirección. Si la ruta exige una diagonal que el programa no puede hacer, representadla como alternativa manual y no la atribuyáis al robot.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu una lletra en una graella fixa. Després, una persona dibuixa manualment la lletra a partir del recorregut anotat. Compareu el resultat amb la plantilla: si hi ha una diferència, corregiu el programa o la convenció de la grafia, però no canvieu totes dues coses alhora.
+Ejecutad una letra en una cuadrícula fija. Después, una persona dibuja manualmente la letra a partir del recorrido anotado. Comparad el resultado con la plantilla: si hay una diferencia, corregid el programa o la convención de la grafía, pero no cambiéis las dos cosas a la vez.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** una lletra en paper, la seua seqüència de blocs i un registre de la prova. **Pregunta:** quines decisions depenen del codi i quines de la convenció gràfica que ha triat l’equip?
+**Evidencia:** una letra en papel, su secuencia de bloques y un registro de la prueba. **Pregunta:** ¿qué decisiones dependen del código y cuáles de la convención gráfica que ha elegido el equipo?
 
-### Sessió 4 · Exposem forma, paraula i evidències (45 min)
+### Sesión 4 · Exponemos forma, palabra y evidencias (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu una taula d’exposició amb la xarxa plana, la forma plegada, la paraula i el mapa de la ruta. Cada equip prediu quines instruccions necessitarà una parella visitant per a comprovar tant la maqueta com el programa.
+Preparad una mesa de exposición con la red plana, la forma doblada, la palabra y el mapa de la ruta. Cada equipo predice qué instrucciones necesitará una pareja visitante para comprobar tanto la maqueta como el programa.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Acabeu una maqueta de cartolina que represente una parada d’exposició sobre l’Albufera. En cada cara, dibuixeu un símbol original i una llegenda breu. Afegiu al costat, no damunt de MatataBot, la paraula triada i la seqüència que porta per la graella.
+Acabad una maqueta de cartulina que represente una parada de exposición sobre la Albufera. En cada cara, dibujad un símbolo original y una leyenda breve. Añadid al lado, no encima de MatataBot, la palabra elegida y la secuencia que lleva por la cuadrícula.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Intercanvieu els materials amb una altra parella. L’equip visitant comprova si pot reconstruir l’ordre de les cares, plegar la xarxa de paper i executar o simular la ruta de la paraula sense instruccions orals de l’autoria. Registreu per separat els resultats de geometria, programació i lectura de la llegenda.
+Intercambiad los materiales con otra pareja. El equipo visitante comprueba si puede reconstruir el orden de las caras, doblar la red de papel y ejecutar o simular la ruta de la palabra sin instrucciones orales de la autoría. Registrad por separado los resultados de geometría, programación y lectura de la leyenda.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu una instrucció, una cara o una llegenda a partir de l’evidència de la prova. Si canvieu la xarxa, torneu a plegar-la; si canvieu la ruta, torneu a executar-la des del mateix inici. Marqueu quina versió és la final i què ha canviat.
+Revisad una instrucción, una cara o una leyenda a partir de la evidencia de la prueba. Si cambiáis la red, volved a doblarla; si cambiáis la ruta, volved a ejecutarla desde el mismo inicio. Marcad qué versión es la final y qué ha cambiado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** maqueta desplegable, paraula en paper, programa provat i retorn d’una altra parella. **Tancament:** «Hem comprovat que…; el robot ha fet…; nosaltres hem construït…».
+**Evidencia:** maqueta desplegable, palabra en papel, programa probado y retorno de otra pareja. **Cierre:** «Hemos comprobado que…; el robot ha hecho…; nosotros hemos construido…».
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu els esbossos de xarxa, les prediccions abans de plegar, la maqueta final, el mapa de cares, el programa de ruta, la plantilla de lletres i el retorn extern. Observeu si l’alumnat (1) justifica el plegat a partir de les cares i les arestes, (2) marca inici i orientació, (3) tradueix segments a ordres de moviment, (4) corregeix la primera divergència amb una prova repetida i (5) distingeix què executa el robot del que construeix o dibuixa la persona.
+Recoged los bocetos de red, las predicciones antes de doblar, la maqueta final, el mapa de caras, el programa de ruta, la plantilla de letras y el retorno externo. Observad si el alumnado (1) justifica el doblado a partir de las caras y las aristas, (2) marca inicio y orientación, (3) traduce segmentos a órdenes de movimiento, (4) corrige la primera divergencia con una prueba repetida y (5) distingue qué ejecuta el robot de lo que construye o dibuja la persona.
 
-Autoavaluació: «he comprovat la xarxa abans d’exposar-la», «sé explicar un canvi de direcció en el codi» i «puc indicar què hem dibuixat a mà». Coavaluació: la parella visitant deixa una marca en cada comprovació que ha pogut repetir i formula una pregunta sobre la llegenda.
+Autoevaluación: «he comprobado la red antes de exponerla», «sé explicar un cambio de dirección en el código» y «puedo indicar qué hemos dibujado a mano». Coevaluación: la pareja visitante deja una marca en cada comprobación que ha podido repetir y formula una pregunta sobre la leyenda.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Oferiu xarxes ja retallades, línies de plegat en relleu, graelles ampliades, lletres en targetes manipulables i instruccions visuals d’alt contrast. Es pot participar predient, ordenant cares, moure una fitxa, programar, plegar amb ajuda, dibuixar o registrar. La prova de ruta té una alternativa amb fitxa de paper i conserva els mateixos objectius de predicció i depuració. Useu tisores amb supervisió, cartolina sense vores tallants i peces de mida que no puguen entrar en el robot. No calen dades personals ni enregistraments de veu.
+Ofreced redes ya recortadas, líneas de doblado en relieve, cuadrículas ampliadas, letras en tarjetas manipulables e instrucciones visuales de alto contraste. Se puede participar prediciendo, ordenando caras, moviendo una ficha, programando, doblando con ayuda, dibujando o registrando. La prueba de ruta tiene una alternativa con ficha de papel y conserva los mismos objetivos de predicción y depuración. Usad tijeras con supervisión, cartulina sin bordes cortantes y piezas de tamaño que no puedan entrar en el robot. No hacen falta datos personales ni grabaciones de voz.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [*Artist Add-On Curriculum* — resum oficial del quadern docent](https://matatalab.com/cdn/ff/2HgegdEsgGGg2k9OhY4VH1UCq-RXiPAr0YQxIO0n3KQ/1596512886/public/2020-08/The%C2%A0Teacher%C2%A0Resource%C2%A0Guide.pdf): el resum descriu les lliçons 1–5 com a formes simples, les lliçons 6–10 com a dissenys complexos, la lliçó 11 com a transformació d’un disseny 2D en una xarxa geomètrica que l’alumnat munta en 3D, i la lliçó 12 com a creació i presentació de paraules. Aquesta proposta desenvolupa localment els objectius de 11–12, però el text complet de les consignes, materials i preguntes d’aquestes dues lliçons no ha sigut consultable; no es declara una adaptació literal ni cobertura de les altres deu.
-- Matatalab, [Artist Add-On: guia autoguiada oficial](https://www.matatastudio.com/Self-Guided.html): la lliçó tècnica 2.5 descriu l’ús dels blocs d’angle amb moviment, els deu valors d’angle, els tres llapis i les sis mostres de les targetes d’escalfament; especifica que el robot traça l’angle suplementari i que els blocs d’angle s’usen amb girs esquerra/dreta. S’utilitza com a referència tècnica separada, no com a guió de les lliçons 11–12.
-- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): referència complementària per a comprovar el moviment tangible del Coding Set. La seqüència de paper no atribueix dibuix directe ni muntatge 3D al robot base.
+- Matatalab, [*Artist Add-On Curriculum* — resumen oficial del cuaderno docente](https://matatalab.com/cdn/ff/2HgegdEsgGGg2k9OhY4VH1UCq-RXiPAr0YQxIO0n3KQ/1596512886/public/2020-08/The%C2%A0Teacher%C2%A0Resource%C2%A0Guide.pdf): el resumen describe las lecciones 1–5 como formas simples, las lecciones 6–10 como diseños complejos, la lección 11 como transformación de un diseño 2D en una red geométrica que el alumnado monta en 3D, y la lección 12 como creación y presentación de palabras. Esta propuesta desarrolla localmente los objetivos de 11–12, pero el texto completo de las consignas, materiales y preguntas de estas dos lecciones no ha sido consultable; no se declara una adaptación literal ni cobertura de las otras diez.
+- Matatalab, [Artist Add-On: guía autoguiada oficial](https://www.matatastudio.com/Self-Guided.html): la lección técnica 2.5 describe el uso de los bloques de ángulo con movimiento, los diez valores de ángulo, los tres lápices y las seis muestras de las tarjetas de calentamiento; especifica que el robot traza el ángulo suplementario y que los bloques de ángulo se usan con giros izquierda/derecha. Se utiliza como referencia técnica separada, no como guion de las lecciones 11–12.
+- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): referencia complementaria para comprobar el movimiento tangible del Coding Set. La secuencia de papel no atribuye dibujo directo ni montaje 3D al robot base.
 
-Les imatges IA pròpies mostren el MatataBot i la torre reals de la dotació, la xarxa i la ruta com a maquetes de paper. Les formes i paraules s’elaboren manualment; no s’hi representa un llapis acoblat ni un accessori Artist no confirmat.
+Las imágenes de IA propias muestran MatataBot y la torre reales de la dotación, la red y la ruta como maquetas de papel. Las formas y palabras se elaboran manualmente; no se representa en ellas un lápiz acoplado ni un accesorio Artist no confirmado.

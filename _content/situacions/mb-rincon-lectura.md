@@ -14,205 +14,205 @@ duration: "6 sesiones"
 challenge: "¿Cómo podemos combinar entradas, salidas, sensores y aleatoriedad para crear seis proyectos útiles y lúdicos para la biblioteca?"
 ---
 
-![Una placa micro:bit entre llibres il·lustra un laboratori de projectes digitals per a la biblioteca escolar.](../../_assets/situacions/mb-raco-lectura.webp)
+![Una placa micro:bit entre libros ilustra un laboratorio de proyectos digitales para la biblioteca escolar.](../../_assets/situacions/mb-raco-lectura.webp)
 
-_Una mateixa placa dona lloc a sis projectes; la ruta es pot programar amb blocs o amb Python._
+_Una misma placa da lugar a seis proyectos; la ruta se puede programar con bloques o con Python._
 
-## 🌱 Situació i intenció
+## 🌱 Situación y intención
 
-La biblioteca escolar obri un laboratori de projectes digitals per explicar què pot fer una micro:bit. Cada sessió resol un repte curt amb una eixida, una entrada, una estructura de control o un sensor. Els projectes parteixen de la unitat oficial *First lessons with MakeCode and the micro:bit*; es pot repetir la ruta amb el curs paral·lel de Python. Les paraules i personatges dels exemples són ficticis: no es mostren noms ni emocions reals de l’alumnat.
+La biblioteca escolar abre un laboratorio de proyectos digitales para explicar qué puede hacer una micro:bit. Cada sesión resuelve un reto corto con una salida, una entrada, una estructura de control o un sensor. Los proyectos parten de la unidad oficial *First lessons with MakeCode and the micro:bit*; se puede repetir la ruta con el curso paralelo de Python. Las palabras y personajes de los ejemplos son ficticios: no se muestran nombres ni emociones reales del alumnado.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Identificar l’entrada i l’eixida de cadascun dels sis projectes de biblioteca.
-- Programar una insígnia, una animació, un comptador o un joc amb seqüència, bucle, botó, sensor o aleatorietat.
-- Comparar una versió amb blocs i una versió Python mantenint el mateix objectiu i els mateixos casos de prova.
-- Dissenyar prototips amb contingut fictici, sense guardar dades personals de lectores o visitants.
+- Identificar la entrada y la salida de cada uno de los seis proyectos de biblioteca.
+- Programar una insignia, una animación, un contador o un juego con secuencia, bucle, botón, sensor o aleatoriedad.
+- Comparar una versión con bloques y una versión Python manteniendo el mismo objetivo y los mismos casos de prueba.
+- Diseñar prototipos con contenido ficticio, sin guardar datos personales de lectores o visitantes.
 
-## 📅 Seqüència didàctica · 6 sessions
+## 📅 Secuencia didáctica · 6 sesiones
 
-### **Sessió 1 · Identificador fictici (Name badge).**
+### **Sesión 1 · Identificador ficticio (Name badge).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu una paraula inventada, una paraula comuna o una icona de personatge. Predigueu com apareixerà a la matriu LED i què pot passar si el text és massa llarg.
+Elegid una palabra inventada, una palabra común o un icono de personaje. Predecid cómo aparecerá en la matriz LED y qué puede pasar si el texto es demasiado largo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Programeu el text o la icona per comprendre instruccions, seqüència, càrrega del programa i matriu LED. Per a la via Python, obriu l’editor i feu que la placa mostre un símbol propi.
+Programad el texto o el icono para comprender instrucciones, secuencia, carga del programa y matriz LED. Para la vía Python, abrid el editor y haced que la placa muestre un símbolo propio.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Identifiqueu l’entrada, el procés i l’eixida i anoteu el comportament del text i de la imatge. Deseu el programa breu o una captura impresa.
+Identificad la entrada, el proceso y la salida y anotad el comportamiento del texto y de la imagen. Guardad el programa breve o una captura impresa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu text i icona i reviseu el missatge si el desplaçament o la durada en dificulten la lectura.
+Comparad texto e icono y revisad el mensaje si el desplazamiento o la duración dificultan la lectura.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu quina informació pot mostrar la placa i què es podria comunicar millor en una targeta impresa. **Evidència:** programa d’identificador fictici i diagrama entrada-procés-eixida.
+Explicad qué información puede mostrar la placa y qué se podría comunicar mejor en una tarjeta impresa. **Evidencia:** programa de identificador ficticio y diagrama entrada-proceso-salida.
 
-### **Sessió 2 · Animació amb bucle (Beating heart).**
+### **Sesión 2 · Animación con bucle (Beating heart).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Dibuixeu dos fotogrames i decidiu-ne l’ordre. Predigueu com canviarà la percepció del moviment amb pauses curtes o llargues.
+Dibujad dos fotogramas y decidid su orden. Predecid cómo cambiará la percepción del movimiento con pausas cortas o largas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Programeu dues imatges senzilles que alternen i useu un bucle per repetir-les. Manteniu la mateixa seqüència visual si compareu blocs amb una versió Python.
+Programad dos imágenes sencillas que se alternen y usad un bucle para repetirlas. Mantened la misma secuencia visual si comparáis bloques con una versión Python.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu l’ordre, les pauses i el nombre de repeticions. Compareu el guió visual amb el programa executat.
+Anotad el orden, las pausas y el número de repeticiones. Comparad el guion visual con el programa ejecutado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Ajusteu una pausa i torneu a provar. Oferiu una versió estàtica si els LED intermitents no són accessibles o còmodes.
+Ajustad una pausa y volved a probar. Ofreced una versión estática si los LED intermitentes no son accesibles o cómodos.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu com el bucle redueix instruccions repetides i si l’animació manté el patró previst. **Evidència:** dos fotogrames, programa amb bucle i comparació de pauses.
+Explicad cómo el bucle reduce instrucciones repetidas y si la animación mantiene el patrón previsto. **Evidencia:** dos fotogramas, programa con bucle y comparación de pausas.
 
-### **Sessió 3 · Insígnia amb entrada (Emotion badge).**
+### **Sesión 3 · Insignia con entrada (Emotion badge).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Dissenyeu dues icones per a preferències lectores de personatges ficticis. Predigueu quina eixida apareixerà en prémer A o B; les imatges no representen ni revelen estats emocionals de companys.
+Diseñad dos iconos para preferencias lectoras de personajes ficticios. Predecid qué salida aparecerá al pulsar A o B; las imágenes no representan ni revelan estados emocionales de compañeros.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Programeu els botons A/B com a entrades i la matriu LED com a eixida. Creeu dues imatges pròpies i assigneu-ne una a cada botó.
+Programad los botones A/B como entradas y la matriz LED como salida. Cread dos imágenes propias y asignad una a cada botón.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una persona provadora prem cada botó i comprova la icona prevista. Registreu l’entrada, la resposta i qualsevol discrepància.
+Una persona probadora pulsa cada botón y comprueba el icono previsto. Registrad la entrada, la respuesta y cualquier discrepancia.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu la icona o l’assignació si les dues opcions no es distingeixen prou. Torneu a provar A i B en un ordre diferent.
+Revisad el icono o la asignación si las dos opciones no se distinguen lo suficiente. Volved a probar A y B en un orden distinto.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu què ha activat cada imatge i per què el programa no pot inferir emocions de ningú. **Evidència:** dues icones fictícies, codi i taula de proves dels botons.
+Explicad qué ha activado cada imagen y por qué el programa no puede inferir emociones de nadie. **Evidencia:** dos iconos ficticios, código y tabla de pruebas de los botones.
 
-### **Sessió 4 · Comptador de recorreguts (Step counter).**
+### **Sesión 4 · Contador de recorridos (Step counter).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Dibuixeu una ruta curta per una maqueta de prestatgeries i predigueu quants passos de fitxa hi ha. Expliqueu que el recompte descriu la prova del model, no l’activitat d’una persona.
+Dibujad una ruta corta por una maqueta de estanterías y predecid cuántos pasos de ficha hay. Explicad que el recuento describe la prueba del modelo, no la actividad de una persona.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Feu la ruta amb una fitxa mòbil i compareu-la amb un comptador de sacsejades de la placa. Definiu l’algorisme, incrementeu una variable i reinicieu-la entre assaigs.
+Haced la ruta con una ficha móvil y comparadla con un contador de sacudidas de la placa. Definid el algoritmo, incrementad una variable y reiniciadla entre ensayos.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu recompte manual i automàtic i anoteu falses deteccions o moviments que no s’han comptat. Manteniu el registre sense noms.
+Comparad el recuento manual y el automático y anotad falsas detecciones o movimientos que no se han contado. Mantened el registro sin nombres.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu una condició i repetiu la ruta. Si sacsejar la placa no és accessible, useu el botó, la fitxa o una simulació.
+Revisad una condición y repetid la ruta. Si sacudir la placa no es accesible, usad el botón, la ficha o una simulación.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Descriviu què compta i quines limitacions té el model, sense presentar-lo com un podòmetre validat. **Evidència:** algorisme, variable, registre comparatiu i errors identificats.
+Describid qué cuenta y qué limitaciones tiene el modelo, sin presentarlo como un podómetro validado. **Evidencia:** algoritmo, variable, registro comparativo y errores identificados.
 
-### **Sessió 5 · Senyal que respon a la llum (Nightlight).**
+### **Sesión 5 · Señal que responde a la luz (Nightlight).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Predigueu què ocorrerà quan la lectura de llum baixe del llindar acordat. Recordeu que l’eixida LED no il·lumina prou per llegir ni és un dispositiu de seguretat.
+Predecid qué ocurrirá cuando la lectura de luz baje del umbral acordado. Recordad que la salida LED no ilumina lo suficiente para leer ni es un dispositivo de seguridad.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Useu la lectura de llum disponible per encendre una icona quan el nivell baixa del llindar. Col·loqueu la placa en dos punts de prova de la biblioteca.
+Usad la lectura de luz disponible para encender un icono cuando el nivel baja del umbral. Colocad la placa en dos puntos de prueba de la biblioteca.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu el valor observat i si la icona s’ha activat en cada lloc. Incloeu proves de lectura baixa, alta i de frontera.
+Anotad el valor observado y si el icono se ha activado en cada lugar. Incluid pruebas de lectura baja, alta y de frontera.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu el llindar si hi ha falsos activaments i torneu a provar les tres condicions. Manteniu constants els altres elements del programa.
+Cambiad el umbral si hay falsas activaciones y volved a probar las tres condiciones. Mantened constantes los demás elementos del programa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu què indica el sensor en les condicions provades i què no podem concloure d’una mesura local. **Evidència:** codi condicional, taula de tres casos i llindar revisat.
+Explicad qué indica el sensor en las condiciones probadas y qué no podemos concluir de una medida local. **Evidencia:** código condicional, tabla de tres casos y umbral revisado.
 
-### **Sessió 6 · Joc de mans (Rock, paper, scissors).**
+### **Sesión 6 · Juego de manos (Rock, paper, scissors).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Predigueu quines opcions pot mostrar el joc i què vol dir que el resultat siga aleatori. Recordeu que és una simulació lúdica, no una predicció.
+Predecid qué opciones puede mostrar el juego y qué significa que el resultado sea aleatorio. Recordad que es una simulación lúdica, no una predicción.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Useu el gest «sacsejar» o un botó per iniciar una simulació amb nombre aleatori, variable i selecció. Associeu cada valor a una eixida del joc.
+Usad el gesto «sacudir» o un botón para iniciar una simulación con número aleatorio, variable y selección. Asociad cada valor a una salida del juego.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Proveu una seqüència de casos, incloent-hi el valor mínim i màxim del rang. Registreu nombre, condició i eixida resultant.
+Probad una secuencia de casos, incluidos el valor mínimo y máximo del rango. Registrad el número, la condición y la salida resultante.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu l’algorisme si alguna opció no té correspondència o queda exclosa per un límit incorrecte. Torneu a provar els extrems i l’associació de cada valor.
+Revisad el algoritmo si alguna opción no tiene correspondencia o queda excluida por un límite incorrecto. Volved a probar los extremos y la asociación de cada valor.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu si totes les opcions poden aparéixer i què significa justícia en aquesta simulació. **Evidència:** programa, taula de proves i explicació dels límits.
+Explicad si todas las opciones pueden aparecer y qué significa justicia en esta simulación. **Evidencia:** programa, tabla de pruebas y explicación de los límites.
 
-## 💻 Dues vies de programació
+## 💻 Dos vías de programación
 
-MakeCode permet construir els sis projectes amb blocs i transferir-los a la placa. La ruta Python recorre els mateixos objectius amb codi textual: mostrar text/icones, bucles d’animació, lectura de botons, variables de recompte, condicions de llum i nombres aleatoris. En cada sessió, l’alumnat pot comparar el diagrama de blocs amb una versió Python preparada pel docent o adaptada a l’editor vigent; la situació no substitueix els tutorials específics de sintaxi.
+MakeCode permite construir los seis proyectos con bloques y transferirlos a la placa. La ruta Python recorre los mismos objetivos con código textual: mostrar texto/iconos, bucles de animación, lectura de botones, variables de recuento, condiciones de luz y números aleatorios. En cada sesión, el alumnado puede comparar el diagrama de bloques con una versión Python preparada por el docente o adaptada al editor vigente; la situación no sustituye los tutoriales específicos de sintaxis.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Guardeu sis programes breus o captures impreses, el diagrama d’entrada-procés-eixida, una taula de proves i una revisió final de la ruta. Valoreu l’ordre dels passos, l’ús de bucles, variables i condicions, la depuració i si el grup pot explicar què limita cada projecte.
+Guardad seis programas breves o capturas impresas, el diagrama de entrada-proceso-salida, una tabla de pruebas y una revisión final de la ruta. Valorad el orden de los pasos, el uso de bucles, variables y condiciones, la depuración y si el grupo puede explicar qué limita cada proyecto.
 
-## Guió comú per als sis prototips
+## Guion común para los seis prototipos
 
-En cada sessió, seguiu la mateixa rutina: llegir la targeta del repte, dibuixar una predicció, construir o programar una primera versió, provar dos casos, anotar una diferència i fer una revisió. La micro:bit és l'objecte d'estudi; no necessita quedar permanentment instal·lada a la biblioteca ni mostrar informació d'usuaris. Cada fitxa de projecte indica quina entrada rep, quin procés aplica i quina eixida s'observa.
+En cada sesión, seguid la misma rutina: leer la tarjeta del reto, dibujar una predicción, construir o programar una primera versión, probar dos casos, anotar una diferencia y hacer una revisión. La micro:bit es el objeto de estudio; no necesita quedar permanentemente instalada en la biblioteca ni mostrar información de usuarios. Cada ficha de proyecto indica qué entrada recibe, qué proceso aplica y qué salida se observa.
 
-### **Insígnia fictícia:**
+### **Insignia ficticia:**
 
-useu un nom inventat de personatge, una paraula comuna o una icona. Compareu text i imatge a la matriu LED i expliqueu per què un missatge llarg pot desplaçar-se.
+usad un nombre inventado de personaje, una palabra común o un icono. Comparad texto e imagen en la matriz LED y explicad por qué un mensaje largo puede desplazarse.
 
-### **Animació:**
+### **Animación:**
 
-dibuixeu dos fotogrames, decidiu-ne l'ordre i compareu una animació amb pausa curta i una de pausa més llarga. La repetició del bucle ha de correspondre amb el guió visual.
+dibujad dos fotogramas, decidid su orden y comparad una animación con pausa corta y una de pausa más larga. La repetición del bucle debe corresponder con el guion visual.
 
-### **Insígnia d'opcions:**
+### **Insignia de opciones:**
 
-representeu dos personatges ficticis amb botons A i B. Una persona provadora prem cada botó i comprova si apareix la icona prevista; no s'infereixen emocions de ningú.
+representad dos personajes ficticios con botones A y B. Una persona probadora pulsa cada botón y comprueba si aparece el icono previsto; no se infieren emociones de nadie.
 
-### **Comptador de maqueta:**
+### **Contador de maqueta:**
 
-una fitxa recorre un plànol de prestatgeries i el grup compara el recompte manual amb un programa d'entrada de moviment. Registreu falses deteccions i reinicieu la variable entre assaigs.
+una ficha recorre un plano de estanterías y el grupo compara el recuento manual con un programa de entrada de movimiento. Registrad falsas detecciones y reiniciad la variable entre ensayos.
 
-### **Indicador de llum:**
+### **Indicador de luz:**
 
-col·loqueu la placa en dos punts de prova i ajusteu un llindar local. Proveu lectura baixa, lectura alta i una situació de frontera; expliqueu que l'eixida no il·lumina prou per llegir ni certifica la il·luminació.
+colocad la placa en dos puntos de prueba y ajustad un umbral local. Probad lectura baja, lectura alta y una situación de frontera; explicad que la salida no ilumina lo suficiente para leer ni certifica la iluminación.
 
-### **Joc aleatori:**
+### **Juego aleatorio:**
 
-proveu les tres opcions del joc en una seqüència de casos, incloent el mínim i el màxim del rang. Comproveu que la condició associa cada nombre amb una eixida i que cap opció ha quedat sense correspondència.
+probad las tres opciones del juego en una secuencia de casos, incluidos el mínimo y el máximo del rango. Comprobad que la condición asocia cada número con una salida y que ninguna opción ha quedado sin correspondencia.
 
-## Comparar MakeCode i Python sense duplicar la dificultat
+## Comparar MakeCode y Python sin duplicar la dificultad
 
-Per a qui ja estiga preparat per a codi textual, mostreu un únic projecte equivalent en blocs i Python i associeu cada part visible amb la instrucció textual corresponent. Manteniu els objectius de la sessió estables: primer la lògica i la prova, després la sintaxi. El docent pot proporcionar un esquelet de codi perquè la classe complete una línia o una condició; la situació no pressuposa experiència prèvia en Python ni un editor concret.
+Para quien ya esté preparado para código textual, mostrad un único proyecto equivalente en bloques y Python y asociad cada parte visible con la instrucción textual correspondiente. Mantened estables los objetivos de la sesión: primero la lógica y la prueba, después la sintaxis. El docente puede proporcionar un esqueleto de código para que la clase complete una línea o una condición; la situación no presupone experiencia previa en Python ni un editor concreto.
 
-En acabar, cada equip tria un dels sis prototips i el presenta en una targeta amb repte, entrada, eixida, dos casos provats i una limitació. La classe pot muntar una petita exposició de projectes amb plaques desconnectades o simulacions, sense recollir dades personals dels visitants.
+Al terminar, cada equipo elige uno de los seis prototipos y lo presenta en una tarjeta con reto, entrada, salida, dos casos probados y una limitación. La clase puede montar una pequeña exposición de proyectos con placas desconectadas o simulaciones, sin recoger datos personales de los visitantes.
 
-## 🧰 Materials, versions i inclusió
+## 🧰 Materiales, versiones e inclusión
 
-BBC micro:bit, MakeCode o Python Editor, llibres i targetes de la maqueta. Confirmeu les funcions de la placa i l’entorn, especialment el sensor de llum i l’acceleròmetre. Si sacsejar o observar LED parpellejant no és accessible, oferiu botó, targeta estàtica o simulació. Cap activitat necessita guardar dades d’alumnes.
+BBC micro:bit, MakeCode o Python Editor, libros y tarjetas de la maqueta. Confirmad las funciones de la placa y el entorno, especialmente el sensor de luz y el acelerómetro. Si sacudir o mirar LED parpadeantes no es accesible, ofreced botón, tarjeta estática o simulación. Ninguna actividad necesita guardar datos de alumnos.
 
-## ♿ Participació, accessibilitat i seguretat
+## ♿ Participación, accesibilidad y seguridad
 
-Si sacsejar la placa, mirar LED intermitents o llegir codi textual no és accessible per a alguna persona, oferiu una targeta estàtica, un botó o un programa de mostra equivalent. La via Python és opcional i no condiciona l’accés als mateixos objectius. Els prototips de lectura usen identificadors ficticis i no guarden dades de visitants.
+Si sacudir la placa, mirar LED intermitentes o leer código textual no es accesible para alguna persona, ofreced una tarjeta estática, un botón o un programa de muestra equivalente. La vía Python es opcional y no condiciona el acceso a los mismos objetivos. Los prototipos de lectura usan identificadores ficticios y no guardan datos de visitantes.
 
-## 🔗 Unitats oficials adaptades
+## 🔗 Unidades oficiales adaptadas
 
-La seqüència cobreix els sis projectes de micro:bit [First lessons with MakeCode and the micro:bit](https://microbit.org/teach/lessons/first-lessons-with-makecode-and-the-microbit/): *Name badge*, *Beating heart*, *Emotion badge*, *Step counter*, *Nightlight* i *Rock, paper, scissors*. La mateixa seqüència ofereix la via paral·lela de [First lessons with Python and the micro:bit](https://microbit.org/teach/lessons/first-lessons-with-python-and-the-microbit/), que reutilitza aquests sis projectes per introduir codi textual. La narrativa de biblioteca i les proves són pròpies.
+La secuencia cubre los seis proyectos de micro:bit [First lessons with MakeCode and the micro:bit](https://microbit.org/teach/lessons/first-lessons-with-makecode-and-the-microbit/): *Name badge*, *Beating heart*, *Emotion badge*, *Step counter*, *Nightlight* y *Rock, paper, scissors*. La misma secuencia ofrece la vía paralela de [First lessons with Python and the micro:bit](https://microbit.org/teach/lessons/first-lessons-with-python-and-the-microbit/), que reutiliza estos seis proyectos para introducir código textual. La narrativa de biblioteca y las pruebas son propias.

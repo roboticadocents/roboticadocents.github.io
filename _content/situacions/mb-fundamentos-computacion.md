@@ -14,169 +14,169 @@ duration: "6 sesiones"
 challenge: "¿Cómo pasamos de un problema cotidiano a un algoritmo preciso, un programa probado y una explicación de cómo cooperan hardware y software?"
 ---
 
-![Micro:bit de la dotació, amb matriu LED, botons A/B i contactes daurats, al costat d’una pantalla amb blocs visuals i un diagrama de flux en paper.](../../_assets/situacions/mb-fonaments-computacio.webp)
+![Micro:bit del lote, con matriz LED, botones A/B y contactos dorados, junto a una pantalla con bloques visuales y un diagrama de flujo en papel.](../../_assets/situacions/mb-fonaments-computacio.webp)
 
-_La placa és el maquinari; els blocs de la pantalla i el diagrama són representacions del programa, no funcions que la placa detecte automàticament._
+_La placa es el hardware; los bloques de la pantalla y el diagrama son representaciones del programa, no funciones que la placa detecte automáticamente._
 
-## 🌱 Situació i intenció
+## 🌱 Situación y intención
 
-Una mostra escolar demana a cada equip explicar com un dispositiu senzill rep instruccions i produeix una resposta. L’alumnat parteix d’un repte manual, el descompon, escriu i prova algorismes i acaba amb una micro:bit programada i un breu vídeo explicatiu. Les activitats comencen sense ordinador i avancen cap als blocs de MakeCode, sense pressuposar coneixements previs.
+Una muestra escolar pide a cada equipo explicar cómo un dispositivo sencillo recibe instrucciones y produce una respuesta. El alumnado parte de un reto manual, lo descompone, escribe y prueba algoritmos y termina con una micro:bit programada y un breve vídeo explicativo. Las actividades empiezan sin ordenador y avanzan hacia los bloques de MakeCode, sin presuponer conocimientos previos.
 
-## 📅 Seqüència didàctica · 6 sessions de 45 min
+## 📅 Secuencia didáctica · 6 sesiones de 45 min
 
-Cada sessió passa d’una predicció a una prova i acaba amb una evidència que es pot revisar. Les primeres activitats són desconnectades; la placa s’incorpora quan el grup ja ha explicat l’algorisme amb targetes o pseudocodi.
+Cada sesión pasa de una predicción a una prueba y termina con una evidencia que se puede revisar. Las primeras actividades son desconectadas; la placa se incorpora cuando el grupo ya ha explicado el algoritmo con tarjetas o pseudocódigo.
 
-### **Sessió 1 · Pensament computacional I: instruccions que una altra classe pot seguir.**
+### **Sesión 1 · Pensamiento computacional I: instrucciones que otra clase puede seguir.**
 
-#### Fase 1 · Activem i prediem (5 min)
+#### Fase 1 · Activamos y predecimos (5 min)
 
-En equips, trieu entre dissenyar un avió de paper gegant o una construcció plegada per a taula. Acordeu objectiu, materials, espai i restriccions. Llançar l’objecte és opcional; cap equip necessita fer-ho per demostrar el que ha aprés.
+En equipos, elegid entre diseñar un avión de papel gigante o una construcción doblada para mesa. Acordad objetivo, materiales, espacio y restricciones. Lanzar el objeto es opcional; ningún equipo necesita hacerlo para demostrar lo que ha aprendido.
 
-#### Fase 2 · Explorem i construïm (15 min)
+#### Fase 2 · Exploramos y construimos (15 min)
 
-Dividiu la tasca en accions petites i escriviu instruccions numerades en targetes. Separeu materials, preparació, execució i observació. Eviteu paraules ambigües com «bé», «a prop» o «una mica» si l’equip no n’ha acordat el significat.
+Dividid la tarea en acciones pequeñas y escribid instrucciones numeradas en tarjetas. Separad materiales, preparación, ejecución y observación. Evitad palabras ambiguas como «bien», «cerca» o «un poco» si el equipo no ha acordado su significado.
 
-#### Fase 3 · Expliquem i registrem (15 min)
+#### Fase 3 · Explicamos y registramos (15 min)
 
-Intercanvieu les targetes amb un altre equip, que les seguirà literalment i sense preguntes. Registreu el primer punt on ha d’improvisar; no li doneu pistes durant l’execució. Després, compareu el resultat amb la intenció inicial.
+Intercambiad las tarjetas con otro equipo, que las seguirá literalmente y sin preguntas. Registrad el primer punto en el que tenga que improvisar; no le deis pistas durante la ejecución. Después, comparad el resultado con la intención inicial.
 
-#### Fase 4 · Apliquem i millorem (5 min)
+#### Fase 4 · Aplicamos y mejoramos (5 min)
 
-Canvieu una instrucció cada vegada i demaneu a l’equip visitant que torne a seguir-la literalment. Comproveu si ara pot completar la tasca sense improvisar.
+Cambiad una instrucción cada vez y pedid al equipo visitante que vuelva a seguirla literalmente. Comprobad si ahora puede completar la tarea sin improvisar.
 
-#### Fase 5 · Comprovem i reflexionem (5 min)
+#### Fase 5 · Comprobamos y reflexionamos (5 min)
 
-**Evidència:** seqüència inicial, ambigüitat detectada, versió corregida i una explicació de per què ara és més precisa.
+**Evidencia:** secuencia inicial, ambigüedad detectada, versión corregida y una explicación de por qué ahora es más precisa.
 
-### **Sessió 2 · Pensament computacional II: modelar un sistema.**
+### **Sesión 2 · Pensamiento computacional II: modelar un sistema.**
 
-#### Fase 1 · Activem i prediem (5 min)
+#### Fase 1 · Activamos y predecimos (5 min)
 
-Recupereu el repte anterior i pregunteu quina informació necessita una altra persona per entendre’l. Decidiu què és central i què es pot deixar fora del model.
+Recuperad el reto anterior y preguntad qué información necesita otra persona para entenderlo. Decidid qué es central y qué se puede dejar fuera del modelo.
 
-#### Fase 2 · Explorem i construïm (15 min)
+#### Fase 2 · Exploramos y construimos (15 min)
 
-Transformeu la tasca en parts —preparar material, executar una acció, observar i decidir un canvi— i ordeneu-les en targetes. Marqueu patrons que es repetixen i informació que es pot resumir sense perdre el propòsit.
+Transformad la tarea en partes —preparar material, ejecutar una acción, observar y decidir un cambio— y ordenadlas en tarjetas. Marcad patrones que se repiten e información que se puede resumir sin perder el propósito.
 
-#### Fase 3 · Expliquem i registrem (15 min)
+#### Fase 3 · Explicamos y registramos (15 min)
 
-Feu un diagrama amb entrada, procés i eixida. Expliqueu amb un exemple què rep el sistema, què fa el programa o la persona i quin resultat es pot observar. Useu les paraules *abstracció*, *descomposició*, *patró* i *algorisme* per posar nom a decisions que ja heu pres.
+Haced un diagrama con entrada, proceso y salida. Explicad con un ejemplo qué recibe el sistema, qué hace el programa o la persona y qué resultado se puede observar. Usad las palabras *abstracción*, *descomposición*, *patrón* y *algoritmo* para poner nombre a decisiones que ya habéis tomado.
 
-#### Fase 4 · Apliquem i millorem (5 min)
+#### Fase 4 · Aplicamos y mejoramos (5 min)
 
-Intercanvieu diagrames i demaneu a una altra parella que reconstruïsca el procés sense afegir informació. Marqueu qualsevol fletxa o entrada que no s’entenga.
+Intercambiad diagramas y pedid a otra pareja que reconstruya el proceso sin añadir información. Marcad cualquier flecha o entrada que no se entienda.
 
-#### Fase 5 · Comprovem i reflexionem (5 min)
+#### Fase 5 · Comprobamos y reflexionamos (5 min)
 
-**Evidència:** diagrama anotat i justificació d’una dada inclosa i una altra deixada fora.
+**Evidencia:** diagrama anotado y justificación de un dato incluido y otro dejado fuera.
 
-### **Sessió 3 · Programació I: passar del diagrama als blocs.**
+### **Sesión 3 · Programación I: pasar del diagrama a los bloques.**
 
-#### Fase 1 · Activem i prediem (5 min)
+#### Fase 1 · Activamos y predecimos (5 min)
 
-Mostreu una targeta d’esdeveniment «en prémer A» i una icona LED. Abans de programar, cada parella dibuixa què espera veure quan es prema el botó i què passarà si no es prem.
+Mostrad una tarjeta de evento «al pulsar A» y un icono LED. Antes de programar, cada pareja dibuja qué espera ver cuando se pulse el botón y qué pasará si no se pulsa.
 
-#### Fase 2 · Explorem i construïm (10 min)
+#### Fase 2 · Exploramos y construimos (10 min)
 
-Seguiu un diagrama de flux amb targetes: inici, esdeveniment, acció i final. Una persona fa de micro:bit i només executa les instruccions escrites; l’altra anota qualsevol pas absent o contradictori.
+Seguid un diagrama de flujo con tarjetas: inicio, evento, acción y final. Una persona hace de micro:bit y solo ejecuta las instrucciones escritas; la otra anota cualquier paso ausente o contradictorio.
 
-#### Fase 3 · Expliquem i registrem (20 min)
+#### Fase 3 · Explicamos y registramos (20 min)
 
-Creeu en MakeCode un programa que mostre una icona quan es prem el botó A. Distingiu l’algorisme del programa de blocs que l’implementa. Abans de connectar la placa, llegiu els blocs en ordre i expliqueu quin esdeveniment activa l’eixida.
+Cread en MakeCode un programa que muestre un icono cuando se pulse el botón A. Distinguid el algoritmo del programa de bloques que lo implementa. Antes de conectar la placa, leed los bloques en orden y explicad qué evento activa la salida.
 
-#### Fase 4 · Apliquem i millorem (5 min)
+#### Fase 4 · Aplicamos y mejoramos (5 min)
 
-Compareu el comportament quan es prem A, quan es prem B i quan no es prem cap botó. Canvieu una instrucció si la resposta no coincidix amb la predicció.
+Comparad el comportamiento cuando se pulsa A, cuando se pulsa B y cuando no se pulsa ningún botón. Cambiad una instrucción si la respuesta no coincide con la predicción.
 
-#### Fase 5 · Comprovem i reflexionem (5 min)
+#### Fase 5 · Comprobamos y reflexionamos (5 min)
 
-**Evidència:** diagrama o pseudocodi, predicció, programa i taula de casos amb un canvi justificat, inclosa una prova després de reiniciar.
+**Evidencia:** diagrama o pseudocódigo, predicción, programa y tabla de casos con un cambio justificado, incluida una prueba después de reiniciar.
 
-### **Sessió 4 · Programació II: seqüència, repetició i selecció.**
+### **Sesión 4 · Programación II: secuencia, repetición y selección.**
 
-#### Fase 1 · Activem i prediem (5 min)
+#### Fase 1 · Activamos y predecimos (5 min)
 
-Representeu una animació curta amb tres accions. Pregunteu què canviaria si es repetira una acció o si el programa haguera de triar entre dues eixides.
+Representad una animación corta con tres acciones. Preguntad qué cambiaría si se repitiera una acción o si el programa tuviera que elegir entre dos salidas.
 
-#### Fase 2 · Explorem i construïm (10 min)
+#### Fase 2 · Exploramos y construimos (10 min)
 
-En targetes, construïu tres versions equivalents: una seqüència de tres accions, una repetició i una selecció entre dos casos. Predigueu quina acció s’executarà en cada entrada i compareu quina estructura es llig millor.
+En tarjetas, construid tres versiones equivalentes: una secuencia de tres acciones, una repetición y una selección entre dos casos. Predecid qué acción se ejecutará en cada entrada y comparad qué estructura se lee mejor.
 
-#### Fase 3 · Expliquem i registrem (20 min)
+#### Fase 3 · Explicamos y registramos (20 min)
 
-Creeu una animació curta amb pausa i un botó que permeta aturar-la. Useu una repetició només quan les accions es repeteixen; useu una condició quan l’eixida depenga d’un esdeveniment. Llegiu el programa en veu alta o amb suport visual abans d’executar-lo.
+Cread una animación corta con pausa y un botón que permita detenerla. Usad una repetición solo cuando las acciones se repiten; usad una condición cuando la salida dependa de un evento. Leed el programa en voz alta o con apoyo visual antes de ejecutarlo.
 
-#### Fase 4 · Apliquem i millorem (5 min)
+#### Fase 4 · Aplicamos y mejoramos (5 min)
 
-Intercanvieu la seqüència i expliqueu si una altra parella pot anticipar l’animació sense veure-la. Reviseu l’ús de pausa i aturada.
+Intercambiad la secuencia y explicad si otra pareja puede anticipar la animación sin verla. Revisad el uso de pausa y parada.
 
-#### Fase 5 · Comprovem i reflexionem (5 min)
+#### Fase 5 · Comprobamos y reflexionamos (5 min)
 
-Proveu inici, repetició, aturada i una entrada ràpida o inesperada. **Evidència:** tres representacions, programa, taula de proves i explicació d’una decisió d’estructura. La versió textual és pseudocodi; no pressuposeu que és Python executable en micro:bit.
+Probad inicio, repetición, detención y una entrada rápida o inesperada. **Evidencia:** tres representaciones, programa, tabla de pruebas y explicación de una decisión de estructura. La versión textual es pseudocódigo; no presupongáis que es Python ejecutable en micro:bit.
 
-### **Sessió 5 · Sistemes informàtics I: maquinari i programari.**
+### **Sesión 5 · Sistemas informáticos I: hardware y software.**
 
-#### Fase 1 · Activem i prediem (5 min)
+#### Fase 1 · Activamos y predecimos (5 min)
 
-Presenteu una micro:bit i targetes amb *maquinari*, *programari*, *entrada*, *procés*, *emmagatzematge* i *eixida*. Pregunteu quines peces es poden observar físicament i quines instruccions només es veuen al programa.
+Presentad una micro:bit y tarjetas con *hardware*, *software*, *entrada*, *proceso*, *almacenamiento* y *salida*. Preguntad qué piezas se pueden observar físicamente y qué instrucciones solo se ven en el programa.
 
-#### Fase 2 · Explorem i construïm (15 min)
+#### Fase 2 · Exploramos y construimos (15 min)
 
-Useu el cas «prémer A per mostrar una icona». En equips, col·loqueu les targetes perquè expliquen què detecta el botó, què executa el programa i què mostra la matriu LED. Si una peça o funció no es pot comprovar, marqueu-la com a hipòtesi.
+Usad el caso «pulsar A para mostrar un icono». En equipos, colocad las tarjetas para que expliquen qué detecta el botón, qué ejecuta el programa y qué muestra la matriz LED. Si una pieza o función no se puede comprobar, marcadla como hipótesis.
 
-#### Fase 3 · Expliquem i registrem (15 min)
+#### Fase 3 · Explicamos y registramos (15 min)
 
-Programeu una resposta a un botó i assenyaleu sobre un dibuix els components que hi intervenen. Després canvieu el botó per una lectura del sensor de llum integrat i expliqueu quina part del programa cal adaptar. No afegiu sensors externs ni atribuïu a la placa funcions que no s’han verificat.
+Programad una respuesta a un botón y señalad sobre un dibujo los componentes que intervienen. Después cambiad el botón por una lectura del sensor de luz integrado y explicad qué parte del programa hay que adaptar. No añadáis sensores externos ni atribuyáis a la placa funciones que no se han verificado.
 
-#### Fase 4 · Apliquem i millorem (5 min)
+#### Fase 4 · Aplicamos y mejoramos (5 min)
 
-Canvieu només l’entrada del botó per la lectura del sensor de llum i compareu la predicció amb el resultat. Marqueu al mapa quin component detecta l’entrada nova.
+Cambiad solo la entrada del botón por la lectura del sensor de luz y comparad la predicción con el resultado. Marcad en el mapa qué componente detecta la entrada nueva.
 
-#### Fase 5 · Comprovem i reflexionem (5 min)
+#### Fase 5 · Comprobamos y reflexionamos (5 min)
 
-Una altra parella segueix les fletxes i comprova el programa en la placa o en el simulador. **Evidència:** mapa entrada–procés–eixida, programa i una comparació entre l’entrada del botó i la del sensor de llum.
+Otra pareja sigue las flechas y comprueba el programa en la placa o en el simulador. **Evidencia:** mapa entrada–proceso–salida, programa y una comparación entre la entrada del botón y la del sensor de luz.
 
-### **Sessió 6 · Sistemes informàtics II: explicar un sistema amb claredat.**
+### **Sesión 6 · Sistemas informáticos II: explicar un sistema con claridad.**
 
-#### Fase 1 · Activem i prediem (5 min)
+#### Fase 1 · Activamos y predecimos (5 min)
 
-Trieu una persona destinatària fictícia —una altra classe que no ha treballat amb micro:bit— i decidiu quina pregunta voleu contestar: què rep el sistema, què fa el programa i quin resultat produeix?
+Elegid una persona destinataria ficticia —otra clase que no ha trabajado con micro:bit— y decidid qué pregunta queréis contestar: ¿qué recibe el sistema, qué hace el programa y qué resultado produce?
 
-#### Fase 2 · Explorem i construïm (10 min)
+#### Fase 2 · Exploramos y construimos (10 min)
 
-Trieu el diagrama, la placa i el programa d’una sessió anterior. Prepareu un cas de prova reeixit, un error que hàgeu corregit i una limitació del sistema. No inclogueu noms, cares, veus ni dades personals.
+Elegid el diagrama, la placa y el programa de una sesión anterior. Preparad un caso de prueba exitoso, un error que hayáis corregido y una limitación del sistema. No incluyáis nombres, caras, voces ni datos personales.
 
-#### Fase 3 · Expliquem i registrem (15 min)
+#### Fase 3 · Explicamos y registramos (15 min)
 
-Prepareu un vídeo breu o una exposició accessible que mostre micro:bit, programa i recorregut entrada–procés–eixida. Si no es poden gravar imatges o veus, useu una seqüència de diapositives amb text, una demostració en directe o vinyetes.
+Preparad un vídeo breve o una exposición accesible que muestre micro:bit, programa y recorrido entrada–proceso–salida. Si no se pueden grabar imágenes o voces, usad una secuencia de diapositivas con texto, una demostración en directo o viñetas.
 
-#### Fase 4 · Apliquem i millorem (10 min)
+#### Fase 4 · Aplicamos y mejoramos (10 min)
 
-La parella revisora usa tres criteris: claredat del recorregut de dades, precisió dels noms tècnics i una opció accessible per seguir l’explicació. L’equip autor revisa una part a partir del retorn.
+La pareja revisora usa tres criterios: claridad del recorrido de datos, precisión de los nombres técnicos y una opción accesible para seguir la explicación. El equipo autor revisa una parte a partir del retorno.
 
-#### Fase 5 · Comprovem i reflexionem (5 min)
+#### Fase 5 · Comprobamos y reflexionamos (5 min)
 
-**Evidència:** mostra revisada, rúbrica breu, cas de prova i reflexió sobre què fa el maquinari i què fa el programari.
+**Evidencia:** muestra revisada, rúbrica breve, caso de prueba y reflexión sobre qué hace el hardware y qué hace el software.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Descompondre una tasca, escriure instruccions inequívoces i comprovar-les amb una altra parella.
-- Explicar amb un model simple com cooperen maquinari, programari, entrada, procés i eixida.
-- Transformar un diagrama en blocs i distingir seqüència, repetició i selecció.
-- Provar casos, depurar errors i comunicar què fa el programa i quines limitacions té.
+- Descomponer una tarea, escribir instrucciones inequívocas y comprobarlas con otra pareja.
+- Explicar con un modelo simple cómo cooperan hardware, software, entrada, proceso y salida.
+- Transformar un diagrama en bloques y distinguir secuencia, repetición y selección.
+- Probar casos, depurar errores y comunicar qué hace el programa y qué limitaciones tiene.
 
-## 🧰 Materials i conceptes
+## 🧰 Materiales y conceptos
 
-Paper, targetes, retoladors, micro:bit, ordinador amb MakeCode i cable USB. La placa inclou botons, matriu LED, sensor de llum, temperatura aproximada, brúixola, acceleròmetre i pins; les activitats només empren els components indicats. Simulador i targetes permeten continuar sense dispositiu físic. Conceptes: algoritme, pseudocodi, diagrama de flux, seqüència, selecció, iteració, depuració, maquinari, programari i entrada/eixida.
+Papel, tarjetas, rotuladores, micro:bit, ordenador con MakeCode y cable USB. La placa incluye botones, matriz LED, sensor de luz, temperatura aproximada, brújula, acelerómetro y pines; las actividades solo emplean los componentes indicados. El simulador y las tarjetas permiten continuar sin dispositivo físico. Conceptos: algoritmo, pseudocódigo, diagrama de flujo, secuencia, selección, iteración, depuración, hardware, software y entrada/salida.
 
-## 🛡️ Accessibilitat i cura
+## 🛡️ Accesibilidad y cuidado
 
-Oferiu rols diversos (disseny, lectura, proves, documentació), alternativa a l’activitat de llançament i opcions sense enregistrar persones. Permeteu demostrar l’aprenentatge amb text, diagrama, presentació o vídeo. No useu dades personals: les proves s’apliquen al programa i al dispositiu.
+Ofreced roles diversos (diseño, lectura, pruebas, documentación), alternativa a la actividad de lanzamiento y opciones sin registrar personas. Permitid demostrar el aprendizaje con texto, diagrama, presentación o vídeo. No uséis datos personales: las pruebas se aplican al programa y al dispositivo.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Instruccions revisades, descomposició del problema, diagrama, pseudocodi, programa de blocs, taula de proves, mapa del sistema i vídeo o exposició. Valoreu precisió, ús justificat de repetició i selecció, depuració, comprensió maquinari-programari i comunicació clara.
+Instrucciones revisadas, descomposición del problema, diagrama, pseudocódigo, programa de bloques, tabla de pruebas, mapa del sistema y vídeo o exposición. Valorad precisión, uso justificado de repetición y selección, depuración, comprensión hardware-software y comunicación clara.
 
-## 🔗 Unitat oficial adaptada
+## 🔗 Unidad oficial adaptada
 
-Adapta les sis lliçons de [Computing fundamentals](https://microbit.org/teach/lessons/computing-fundamentals-unit-of-work/): *Computational thinking 1*, *Computational thinking 2*, *Programming 1*, *Programming 2*, *Computer systems 1* i *Computer systems 2*. Les proves, el prototip i els criteris de comunicació són contextualitzats per a l’aula.
+Adapta las seis lecciones de [Computing fundamentals](https://microbit.org/teach/lessons/computing-fundamentals-unit-of-work/): *Computational thinking 1*, *Computational thinking 2*, *Programming 1*, *Programming 2*, *Computer systems 1* y *Computer systems 2*. Las pruebas, el prototipo y los criterios de comunicación están contextualizados para el aula.

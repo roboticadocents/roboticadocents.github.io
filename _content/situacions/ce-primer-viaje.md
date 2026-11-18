@@ -15,122 +15,122 @@ challenge: "¿Qué elementos necesitamos para preparar una ruta clara para que e
 official_source: "https://education.lego.com/en-us/lessons/preschool-coding-express/first-trip/"
 ---
 
-![El tren Coding Express de la dotació recorre una via amb una estació i maons d’acció de colors.](../../_assets/situacions/ce-primer-viatge.webp)
+![El tren Coding Express de la dotación recorre una vía con una estación y ladrillos de acción de colores.](../../_assets/situacions/ce-primer-viatge.webp)
 
-_El tren Coding Express de la dotació recorre una via amb una estació i maons d’acció de colors._
+_El tren Coding Express de la dotación recorre una vía con una estación y ladrillos de acción de colores._
 
-## ❓ Repte i intenció
+## ❓ Reto e intención
 
-La primera exploració de Coding Express introdueix les peces de construcció i els maons d’acció. En aquesta adaptació, el grup construeix una destinació pròpia de l’entorn pròxim —com el jardí de l’escola, una parada de mercat o el port—, planifica una seqüència perquè una passatgera hi arribe i compara les formes disponibles d’aturar el tren. Cada idea es prova amb el material real: el color no s’utilitza com a explicació fins que s’ha observat què fa la peça.
+La primera exploración de Coding Express introduce las piezas de construcción y los ladrillos de acción. En esta adaptación, el grupo construye un destino propio del entorno próximo —como el jardín de la escuela, una parada de mercado o el puerto—, planifica una secuencia para que una pasajera llegue y compara las formas disponibles de detener el tren. Cada idea se prueba con el material real: el color no se utiliza como explicación hasta que se ha observado qué hace la pieza.
 
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Identificar les peces del set que s’han comprovat i construir una via estable en equip.
-- Descompondre una ruta en ordres i anticipar l’arribada a una destinació de la maqueta.
-- Provar les opcions d’aturada disponibles i registrar què fa realment cada maó.
-- Explicar com l’evidència d’una prova confirma o modifica la seqüència prevista.
+- Identificar las piezas del set que se han comprobado y construir una vía estable en equipo.
+- Descomponer una ruta en órdenes y anticipar la llegada a un destino de la maqueta.
+- Probar las opciones de parada disponibles y registrar qué hace realmente cada ladrillo.
+- Explicar cómo la evidencia de una prueba confirma o modifica la secuencia prevista.
 
-## Abans de començar
+## Antes de empezar
 
-La lliçó LEGO està dissenyada per a grups de fins a sis. Prepareu vies suficients per a una línia de doble extrem que puga incloure l’estació i la destinació; la font suggereix huit trams, però adapteu el muntatge a la caixa real. Afegiu la figura de passatger, peces de construcció i els maons rojos i verds que efectivament estiguen disponibles. Feu una prova del tren i comproveu que la superfície siga plana, estable i fora del pas.
+La lección LEGO está diseñada para grupos de hasta seis personas. Preparad vías suficientes para una línea de doble extremo que pueda incluir la estación y el destino; la fuente sugiere ocho tramos, pero adaptad el montaje a la caja real. Añadid la figura del pasajero, piezas de construcción y los ladrillos rojos y verdes que efectivamente estén disponibles. Haced una prueba del tren y comprobad que la superficie sea plana, estable y esté fuera del paso.
 
-No cal disposar de targetes oficials de construcció: cada equip pot crear una destinació nova. Verifiqueu al manual la diferència entre els maons rojos disponibles, que poden no ser iguals, i no deduïu funcions només a partir del color. Si una de les tres modalitats d’aturada de la lliçó no forma part de la dotació, marqueu-la com a no disponible i investigueu les altres. No poseu mans, roba ni objectes davant d’un tren en moviment, ni bloquegeu rodes o motor per forçar-ne l’aturada.
+No hace falta disponer de tarjetas oficiales de construcción: cada equipo puede crear un destino nuevo. Verificad en el manual la diferencia entre los ladrillos rojos disponibles, que pueden no ser iguales, y no deduzcáis funciones solo a partir del color. Si una de las tres modalidades de parada de la lección no forma parte de la dotación, marcadla como no disponible e investigad las otras. No pongáis manos, ropa ni objetos delante de un tren en movimiento, ni bloqueéis ruedas o motor para forzar su parada.
 
-**Vocabulari:** estació, destinació, passatger/a, trajecte, via de doble extrem, maó d’acció, aturar-se, predir i comprovar. Introduïu les paraules amb peces i moviments curts: «eixim», «avancem», «arribem» i «tornem».
+**Vocabulario:** estación, destino, pasajero/a, trayecto, vía de doble extremo, ladrillo de acción, detenerse, predecir y comprobar. Introducid las palabras con piezas y movimientos cortos: «salimos», «avanzamos», «llegamos» y «volvemos».
 
-## 📅 Seqüència didàctica · tres sessions de 40 minuts
+## 📅 Secuencia didáctica · tres sesiones de 40 minutos
 
-### **Construïm la destinació i el trajecte (40 min).**
+### **Construimos el destino y el trayecto (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Activeu idees prèvies preguntant quan han vist un tren, tramvia o autobús i com saben on cal baixar. Qui no vulga compartir experiències pot triar una fotografia o un pictograma. Presenteu el joc del tren amb moviment en fila només si resulta còmode i segur; l’alternativa és moure una figura sobre caselles amb senyals visuals «avança» i «para». Cada parella tria un lloc pròxim o inventat i prediu quina ruta el connectaria amb l’estació.
+Activad ideas previas preguntando cuándo han visto un tren, tranvía o autobús y cómo identifican dónde hay que bajar. Quien no quiera compartir experiencias puede elegir una fotografía o un pictograma. Presentad el juego del tren con movimiento en fila solo si resulta cómodo y seguro; la alternativa es mover una figura sobre casillas con señales visuales «avanza» y «para». Cada pareja elige un lugar próximo o inventado y predice qué ruta lo conectaría con la estación.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construïu la destinació amb peces, munteu l’estació, col·loqueu-hi la figura passatgera i prepareu una via de doble extrem entre l’estació i el destí. Abans d’encendre el tren, representeu el trajecte amb el dit, peces o pictogrames; intercanvieu destinacions entre equips perquè cada grup prove també un model diferent.
+Construid el destino con piezas, montad la estación, colocad en ella la figura pasajera y preparad una vía de doble extremo entre la estación y el destino. Antes de encender el tren, representad el trayecto con el dedo, piezas o pictogramas; intercambiad destinos entre equipos para que cada grupo pruebe también un modelo diferente.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Descriviu la ruta amb un punt d’inici i un destí. Feu una predicció observable: on quedarà el tren i quines peces o ordres calen perquè la passatgera hi arribe? Una persona explica la seqüència i una altra la segueix sobre la maqueta.
+Describid la ruta con un punto de inicio y un destino. Haced una predicción observable: ¿dónde quedará el tren y qué piezas u órdenes hacen falta para que la pasajera llegue? Una persona explica la secuencia y otra la sigue sobre la maqueta.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu el trajecte a baixa velocitat i compareu el resultat amb la predicció. Si no arriba al lloc acordat, torneu al mapa, localitzeu l’últim punt correcte i canvieu una sola part de la ruta abans de repetir.
+Ejecutad el trayecto a baja velocidad y comparad el resultado con la predicción. Si no llega al lugar acordado, volved al mapa, localizad el último punto correcto y cambiad una sola parte de la ruta antes de repetir.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** model construït, ruta representada i predicció del punt d’arribada. **Preguntes docents:** «Què és el principi de la ruta? Com sabrem que la passatgera ja ha arribat?»
+**Evidencia:** modelo construido, ruta representada y predicción del punto de llegada. **Preguntas docentes:** «¿Qué es el principio de la ruta? ¿Cómo sabremos que la pasajera ya ha llegado?»
 
-### **Compareu maneres d’aturar el tren (40 min).**
+### **Comparad formas de detener el tren (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu la ruta i pregunteu com es pot aturar el tren amb seguretat. En una via curta i a velocitat adequada, cada equip col·loca una fitxa al punt on pensa que s’aturarà amb la modalitat manual practicada en la preparació bàsica.
+Recuperad la ruta y preguntad cómo se puede detener el tren con seguridad. En una vía corta y a velocidad adecuada, cada equipo coloca una ficha en el punto donde piensa que se detendrá con la modalidad manual practicada en la preparación básica.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-La persona conductora executa la prova; l’observadora assenyala el lloc real i la registradora marca el resultat amb una icona o una paraula. Repetiu el protocol amb el maó d’acció roig i el maó roig d’aturada només si tots dos formen part de la dotació.
+La persona conductora ejecuta la prueba; la observadora señala el lugar real y la registradora marca el resultado con un icono o una palabra. Repetid el protocolo con el ladrillo de acción rojo y el ladrillo rojo de parada solo si los dos forman parte de la dotación.
 
-![Tres escenes amb el Coding Express real comparen l’aturada manual, el maó d’acció roig i el maó roig d’aturada.](../../_assets/situacions/sa-ce-primer-viatge-aturades.webp)
+![Tres escenas con el Coding Express real comparan la parada manual, el ladrillo de acción rojo y el ladrillo rojo de parada.](../../_assets/situacions/sa-ce-primer-viatge-aturades.webp)
 
-_Els panells representen les tres modalitats descrites per LEGO; comproveu quines peces roges hi ha en el set del centre i on s’atura realment el tren._
+_Los paneles representan las tres modalidades descritas por LEGO; comprobad qué piezas rojas hay en el set del centro y dónde se detiene realmente el tren._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu «opció provada / predicció / què hem vist / punt d’aturada». Expliqueu si ha calgut una acció de la persona o si la peça ha provocat l’aturada, i quina diferència observable hi ha entre les opcions disponibles.
+Comparad «opción probada / predicción / qué hemos visto / punto de parada». Explicad si ha hecho falta una acción de la persona o si la pieza ha provocado la parada, y qué diferencia observable hay entre las opciones disponibles.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Repetiu només quan necessiteu confirmar una observació. Si una peça no existeix en el kit, poseu una targeta «no disponible» al registre; no n’invente el comportament ni la substituïu per una peça que no tinga la mateixa funció. Manteniu constants la via i la velocitat per fer una comparació justa.
+Repetid solo cuando necesitéis confirmar una observación. Si una pieza no existe en el kit, poned una tarjeta «no disponible» en el registro; no inventéis su comportamiento ni la sustituyáis por una pieza que no tenga la misma función. Mantened constantes la vía y la velocidad para hacer una comparación justa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** taula visual amb les opcions, les prediccions i els punts d’aturada. **Preguntes docents:** «Què s’ha mantingut igual en cada prova? Quina prova dona suport a la vostra explicació?»
+**Evidencia:** tabla visual con las opciones, las predicciones y los puntos de parada. **Preguntas docentes:** «¿Qué se ha mantenido igual en cada prueba? ¿Qué prueba apoya vuestra explicación?»
 
-### **Allarguem el viatge i investiguem altres maons (40 min).**
+### **Alargamos el viaje e investigamos otros ladrillos (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu les observacions dels maons rojos i pregunteu què voldria comprovar el grup amb un maó verd. Afegiu trams i una o dues parades pròpies; dibuixeu la nova ruta i ordeneu-ne les accions abans de circular.
+Recuperad las observaciones de los ladrillos rojos y preguntad qué querría comprobar el grupo con un ladrillo verde. Añadid tramos y una o dos paradas propias; dibujad la nueva ruta y ordenad sus acciones antes de circular.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Situeu un maó verd, d’un en un, en un punt visible i segur. Observeu què fa al tren concret del centre i compareu-ho amb la resposta del maó roig. Descriviu el canvi observat: no deduïu la funció només pel color.
+Situad un ladrillo verde, de uno en uno, en un punto visible y seguro. Observad qué hace al tren concreto del centro y comparadlo con la respuesta del ladrillo rojo. Describid el cambio observado: no deduzcáis la función solo por el color.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Proposeu el repte de tornar a l’estació. Representeu el camí de retorn i decidiu en quin sentit hauria d’anar el tren. Anoteu què fa el maó provat i quin efecte té en la ruta completa.
+Proponed el reto de volver a la estación. Representad el camino de vuelta y decidid en qué sentido debería ir el tren. Anotad qué hace el ladrillo probado y qué efecto tiene en la ruta completa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proveu una modificació cada vegada. Si la ruta no es completa, torneu al dibuix, localitzeu el darrer punt correcte i planifiqueu només el pas següent. Reviseu la seqüència després de cada prova i expliqueu què ha canviat.
+Probad una modificación cada vez. Si la ruta no se completa, volved al dibujo, localizad el último punto correcto y planificad solo el paso siguiente. Revisad la secuencia después de cada prueba y explicad qué ha cambiado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** ruta allargada, seqüència revisada i explicació basada en una observació real del maó verd. **Preguntes docents:** «Què ha passat després del maó? Quina part del nostre pla caldria canviar per tornar a l’estació?» Acabeu amb una ronda breu en què cada equip explique una diferència observada i una decisió que ha canviat gràcies a la prova.
+**Evidencia:** ruta alargada, secuencia revisada y explicación basada en una observación real del ladrillo verde. **Preguntas docentes:** «¿Qué ha pasado después del ladrillo? ¿Qué parte de nuestro plan habría que cambiar para volver a la estación?» Terminad con una ronda breve en la que cada equipo explique una diferencia observada y una decisión que ha cambiado gracias a la prueba.
 
-## 📋 Avaluació i evidències
+## 📋 Evaluación y evidencias
 
-Recolliu el model, la representació seqüenciada, la taula comparativa i una explicació final. Observeu si l’alumnat:
+Recoged el modelo, la representación secuenciada, la tabla comparativa y una explicación final. Observad si el alumnado:
 
-- coopera en la construcció de la destinació i la via;
+- coopera en la construcción del destino y la vía;
 
-- descriu una ruta amb principi i final en un ordre comprensible;
+- describe una ruta con principio y final en un orden comprensible;
 
-- anticipa on pararà el tren i compara la predicció amb el resultat;
+- anticipa dónde se detendrá el tren y compara la predicción con el resultado;
 
-- distingeix el comportament observat dels maons disponibles;
+- distingue el comportamiento observado de los ladrillos disponibles;
 
-- fa servir una prova per confirmar, matisar o canviar una idea.
+- utiliza una prueba para confirmar, matizar o cambiar una idea.
 
-És suficient mostrar-ho amb gestos, fotografies de la seqüència, peces, pictogrames o paraules pròpies. Valoreu l’explicació i l’ús curós del material, no la complexitat del model ni la rapidesa de la construcció.
+Es suficiente mostrarlo con gestos, fotografías de la secuencia, piezas, pictogramas o palabras propias. Valorad la explicación y el uso cuidadoso del material, no la complejidad del modelo ni la rapidez de la construcción.
 
-## ♿ Més d’una manera de participar
+## ♿ Más de una manera de participar
 
-Useu trams de via grans i contrastats, demostreu l’acció peça per peça i oferiu fotos ampliades o una maqueta tàctil. Els rols de construcció, planificació, conducció i registre roten en cada prova; una persona pot dictar instruccions perquè una altra programe el tren. Permeteu resposta amb mirada, elecció entre pictogrames, gest o comunicació augmentativa. Manteniu l’alumnat a distància segura durant la marxa i oferiu l’opció d’observar en lloc d’acostar-se al moviment.
+Usad tramos de vía grandes y contrastados, demostrad la acción pieza por pieza y ofreced fotos ampliadas o una maqueta táctil. Los roles de construcción, planificación, conducción y registro rotan en cada prueba; una persona puede dictar instrucciones para que otra programe el tren. Permitid respuesta con la mirada, elección entre pictogramas, gesto o comunicación aumentativa. Mantened al alumnado a distancia segura durante la marcha y ofreced la opción de observar en lugar de acercarse al movimiento.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta [First Trip](https://education.lego.com/en-us/lessons/preschool-coding-express/first-trip/), la lliçó inicial de Coding Express: construir estació i destinació, crear una via de doble extrem, guiar una passatgera fins al destí, comparar tres maneres d’aturar el tren i explorar després els maons verds i una ruta amb més parades. El jardí o la biblioteca, els pictogrames, el full de registre i les preguntes d’aula són propis; les accions dels maons s’han de verificar amb el model que té el centre.
+Adapta [First Trip](https://education.lego.com/en-us/lessons/preschool-coding-express/first-trip/), la lección inicial de Coding Express: construir estación y destino, crear una vía de doble extremo, guiar a una pasajera hasta el destino, comparar tres formas de detener el tren y explorar después los ladrillos verdes y una ruta con más paradas. El jardín o la biblioteca, los pictogramas, la hoja de registro y las preguntas de aula son propios; las acciones de los ladrillos se deben verificar con el modelo que tiene el centro.

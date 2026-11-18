@@ -14,182 +14,182 @@ duration: "6 lecciones · 5–6 sesiones"
 challenge: "¿Cómo podemos localizar si un comportamiento inesperado proviene del diseño, de una conexión, de un error de sintaxis o de la lógica del programa Python?"
 ---
 
-![Base mòbil LEGO SPIKE Prime aturada en una pista de prova de taula amb sensor de color i targetes de comprovació.](../../_assets/situacions/sp-python-depuracio.webp)
+![Base móvil LEGO SPIKE Prime detenida en una pista de prueba de mesa con sensor de color y tarjetas de comprobación.](../../_assets/situacions/sp-python-depuracio.webp)
 
-_Depurar és reunir evidència: observar la maqueta, provar el codi i modificar una causa cada vegada._
+_Depurar es reunir evidencia: observar la maqueta, probar el código y modificar una causa cada vez._
 
-## 🌱 Repte i intenció
+## 🌱 Reto e intención
 
-Un equip prepara una maqueta interactiva d’indicacions per a una fira escolar. Una base SPIKE Prime recorre una ruta curta, llig targetes de color i comunica l’estat mitjançant llum, so o un moviment controlat. El repte no és fer que funcione a la primera: cal poder determinar per què una prova ha fallat, si la causa és la construcció, un cable/port, la sintaxi Python, la lògica, les dades del sensor o la interacció d’aquestes parts. La situació adapta les sis lliçons de la unitat 6 *Troubleshooting and Debugging* de LEGO Education *Introduction to Python Programming · Course 2*. A diferència de les situacions SPIKE basades en blocs, totes les proves de programa d’aquesta fitxa es fan en Python textual i s’acompanyen de pseudocodi, consola i registre d’errors. Els programes motors funcionen a velocitat baixa i en una pista de taula delimitada.
+Un equipo prepara una maqueta interactiva de indicaciones para una feria escolar. Una base SPIKE Prime recorre una ruta corta, lee tarjetas de color y comunica el estado mediante luz, sonido o un movimiento controlado. El reto no es hacer que funcione a la primera: hay que poder determinar por qué ha fallado una prueba, si la causa es la construcción, un cable/puerto, la sintaxis Python, la lógica, los datos del sensor o la interacción de estas partes. La situación adapta las seis lecciones de la unidad 6 *Troubleshooting and Debugging* de LEGO Education *Introduction to Python Programming · Course 2*. A diferencia de las situaciones SPIKE basadas en bloques, todas las pruebas de programa de esta ficha se hacen en Python textual y se acompañan de pseudocódigo, consola y registro de errores. Los programas de motores funcionan a velocidad baja y en una pista de mesa delimitada.
 
-## 🎯 Objectius i vocabulari
+## 🎯 Objetivos y vocabulario
 
-- Aplicar un procés de disseny: definir el problema, investigar, idear, triar una solució, construir un prototip, provar-lo, comunicar-lo i redissenyar-lo.
+- Aplicar un proceso de diseño: definir el problema, investigar, idear, elegir una solución, construir un prototipo, probarlo, comunicarlo y rediseñarlo.
 
-- Distingir entre prototip físic i programa; verificar la mecànica sense codi abans d’executar Python.
+- Distinguir entre prototipo físico y programa; verificar la mecánica sin código antes de ejecutar Python.
 
-- Llegir un traceback i identificar la línia que orienta una investigació; fer hipòtesis i provar-les sense canviar moltes coses alhora.
+- Leer un traceback e identificar la línea que orienta una investigación; formular hipótesis y probarlas sin cambiar muchas cosas a la vez.
 
-- Diferenciar error de sintaxi (gramàtica Python), error d’execució (excepció mentre corre) i error de lògica (el codi s’executa però el resultat no és l’esperat).
+- Diferenciar error de sintaxis (gramática Python), error de ejecución (excepción mientras corre) y error de lógica (el código se ejecuta pero el resultado no es el esperado).
 
-- Diagnosticar problemes de maquinari revisant muntatge, ports, connexions i peça mòbil de manera ordenada.
+- Diagnosticar problemas de hardware revisando montaje, puertos, conexiones y pieza móvil de manera ordenada.
 
-- Escriure pseudocodi/comentaris, usar casos esperats i inesperats, registrar canvis i oferir feedback específic i aplicable.
+- Escribir pseudocódigo/comentarios, usar casos esperados e inesperados, registrar cambios y ofrecer retroalimentación específica y aplicable.
 
-**Bug:** defecte en el codi o muntatge que causa un resultat no desitjat. **Depuració:** procés de localitzar, entendre i corregir una causa amb proves. **Prototip:** model inicial usat per comprovar una idea, no producte final certificat. **Iteració:** canvi informat seguit d’una nova prova.
+**Bug:** defecto en el código o montaje que causa un resultado no deseado. **Depuración:** proceso de localizar, entender y corregir una causa con pruebas. **Prototipo:** modelo inicial usado para comprobar una idea, no producto final certificado. **Iteración:** cambio informado seguido de una nueva prueba.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Un set SPIKE Prime 45678, hub carregat, dispositiu amb la versió de l’app SPIKE que permeta obrir projectes Python i consola, base mòbil senzilla amb sensor de color opcional, cables i motors, targetes mate d’alt contrast, cinta de paper, cartó i diari d’enginyeria. Confirmeu abans de classe que l’entorn Python detecta el hub i quina API de SPIKE està disponible; les funcions concretes i missatges d’error poden variar entre versions. Consulteu la documentació/Knowledge Base integrada en la mateixa versió, i no copieu codi sense llegir-lo. Prepareu una pista que no requerisca precisió mil·limètrica, una llista de ports/muntatge previstos, dues proves positives, dues negatives i fragments d’error deliberadament segurs que l’alumnat només corregirà en un entorn desconnectat abans de fer-los córrer. No provoqueu fallades que puguen fer eixir el robot de la taula o atrapar dits.
+Un set SPIKE Prime 45678, hub cargado, dispositivo con la versión de la app SPIKE que permita abrir proyectos Python y consola, base móvil sencilla con sensor de color opcional, cables y motores, tarjetas mate de alto contraste, cinta de papel, cartón y diario de ingeniería. Confirmad antes de clase que el entorno Python detecta el hub y qué API de SPIKE está disponible; las funciones concretas y mensajes de error pueden variar entre versiones. Consultad la documentación/Knowledge Base integrada en la misma versión, y no copiéis código sin leerlo. Preparad una pista que no requiera precisión milimétrica, una lista de puertos/montaje previstos, dos pruebas positivas, dos negativas y fragmentos de error deliberadamente seguros que el alumnado solo corregirá en un entorno desconectado antes de hacerlos correr. No provoquéis fallos que puedan hacer salir el robot de la mesa o atrapar dedos.
 
-En parelles, alterneu rols cada 10–15 minuts: pilot de teclat i observador/a que llig el pseudocodi, comprova la consola i registra predicció/observació. L’equip també necessita una persona responsable del maquinari en cada prova; cap cable es canvia amb motors en marxa.
+En parejas, alternad roles cada 10–15 minutos: piloto de teclado y observador/a que lee el pseudocódigo, comprueba la consola y registra predicción/observación. El equipo también necesita una persona responsable del hardware en cada prueba; ningún cable se cambia con motores en marcha.
 
-## 📅 Seqüència didàctica · sis lliçons
+## 📅 Secuencia didáctica · seis lecciones
 
-### **Lliçó 1 · Provar un prototip abans de programar (45 min).**
+### **Lección 1 · Probar un prototipo antes de programar (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Activació:** compareu objectes de disseny que funcionen a la primera amb aquells que necessiten millores i introduïu el cicle: definir, investigar, idear, seleccionar, construir, provar, comunicar i redissenyar.
+**Activación:** comparad objetos de diseño que funcionan a la primera con aquellos que necesitan mejoras e introducid el ciclo: definir, investigar, idear, seleccionar, construir, probar, comunicar y rediseñar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Repte:** crear amb cartó i peces una senyalística de taula per a una fira escolar: el missatge ha de ser llegible a una distància acordada, mantindre’s dret i donar una indicació equivalent en dues modalitats (per exemple, llum i forma visible). Definiu criteris mesurables i restriccions (temps, peces i mida) abans de construir; dibuixeu dues solucions possibles i trieu-ne una amb raó.
+**Reto:** crear con cartón y piezas una señalización de mesa para una feria escolar: el mensaje debe ser legible a una distancia acordada, mantenerse recto y dar una indicación equivalente en dos modalidades (por ejemplo, luz y forma visible). Definid criterios medibles y restricciones (tiempo, piezas y tamaño) antes de construir; dibujad dos soluciones posibles y elegid una con criterio.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Prova:** poseu a prova estabilitat amb una bufada suau o un toc lleuger estandarditzat, llegibilitat des de dos punts i comprensió amb targetes de resposta voluntàries i anònimes. No es fa prova amb peses o líquids.
+**Prueba:** poned a prueba la estabilidad con un soplido suave o un toque ligero estandarizado, la legibilidad desde dos puntos y la comprensión con tarjetas de respuesta voluntarias y anónimas. No se hace prueba con pesas o líquidos.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Registre:** fotografieu/dibuixeu versió 1, anoteu què ha passat i canvieu una propietat; una nova prova comprova si el canvi ha millorat el criteri. En una mini-extensió, decidiu quin senyal podria mostrar la SPIKE hub matrix i quin missatge necessita una targeta o text alié al hub.
+**Registro:** fotografiad/dibujad la versión 1, anotad qué ha pasado y cambiad una propiedad; una nueva prueba comprueba si el cambio ha mejorado el criterio. En una miniextensión, decidid qué señal podría mostrar la SPIKE hub matrix y qué mensaje necesita una tarjeta o texto ajeno al hub.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Reflexió:** què ha ensenyat una fallada que no s’hauria pogut saber mirant només l’esbós? Per què cap mesura sola demostra que el senyal és comprensible per a tothom?
+**Reflexión:** ¿qué ha enseñado un fallo que no se habría podido saber mirando solo el esbozo? ¿Por qué ninguna medida sola demuestra que la señal es comprensible para todo el mundo?
 
-### **Lliçó 2 · El moviment esperat i el primer traceback (45 min).**
+### **Lección 2 · El movimiento esperado y el primer traceback (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Activació:** mireu un moviment mecànic curt triat per la docent o analitzeu una base real LEGO SPIKE parada; descriviu cada moviment en verbs i ordre. Abans d’encendre motors, gireu cada element a mà només si el muntatge ho permet amb seguretat i anoteu punts d’encallament, joc mecànic o moviment asimètric.
+**Activación:** mirad un movimiento mecánico corto elegido por la docente o analizad una base real LEGO SPIKE parada; describid cada movimiento en verbos y orden. Antes de encender motores, girad cada elemento a mano solo si el montaje lo permite con seguridad y anotad puntos de atascamiento, holgura mecánica o movimiento asimétrico.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Pseudocodi:** “posiciona el mecanisme; repeteix tres vegades: avança el braç una quantitat fixa; torna’l; pausa”. Traduïu només aquest fragment a Python amb funcions de la Knowledge Base de l’app instal·lada.
+**Pseudocódigo:** «coloca el mecanismo; repite tres veces: avanza el brazo una cantidad fija; devuélvelo; pausa». Traducid solo este fragmento a Python con funciones de la Knowledge Base de la app instalada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Després la docent proporciona una còpia incompleta que té un error de sintaxi deliberat (puntuació o indentació) en un fragment curt de prova; no executeu l’original fins a revisar-lo. Llegiu la consola, localitzeu la línia indicada i corregiu el caràcter necessari; compareu la interpretació amb pseudocodi.
+Después la docente proporciona una copia incompleta que tiene un error de sintaxis deliberado (puntuación o indentación) en un fragmento corto de prueba; no ejecutéis el original hasta revisarlo. Leed la consola, localizad la línea indicada y corregid el carácter necesario; comparad la interpretación con el pseudocódigo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Debugging a pas curt:** deseu una còpia inicial, feu una sola edició, torneu a executar amb l’eixida assegurada i anoteu error abans/després. Si apareix un altre missatge, llegiu-lo complet abans d’editar.
+**Depuración paso a paso:** guardad una copia inicial, haced una sola edición, volved a ejecutar con la salida asegurada y anotad el error antes/después. Si aparece otro mensaje, leedlo completo antes de editar.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Preguntes:** què fa el traceback i què no pot dir? Per què provar el moviment sense programa redueix possibles causes? Tanqueu amb una explicació de sintaxi com a “gramàtica que Python pot llegir”, no com a mesura d’intel·ligència.
+**Preguntas:** ¿qué hace el traceback y qué no puede decir? ¿Por qué probar el movimiento sin programa reduce posibles causas? Cerrad con una explicación de la sintaxis como «gramática que Python puede leer», no como medida de inteligencia.
 
-### **Lliçó 3 · Una resposta per cada entrada: depuració lògica (45 min).**
+### **Lección 3 · Una respuesta por cada entrada: depuración lógica (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Planificació de proves:** creeu pseudocodi i una taula entrada → resposta esperada per a tres o quatre targetes del sistema de senyalística.
+**Planificación de pruebas:** cread pseudocódigo y una tabla entrada → respuesta esperada para tres o cuatro tarjetas del sistema de señalización.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Una targeta pot activar llum A, una altra so opcional i una altra el moviment d’un motor; les targetes no assignades han de deixar el mecanisme aturat i donar una indicació neutral.
+Una tarjeta puede activar la luz A, otra el sonido opcional y otra el movimiento de un motor; las tarjetas no asignadas deben dejar el mecanismo detenido y dar una indicación neutra.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Implementació:** programau en Python la lectura del sensor de color segons les funcions documentades en l’app. Comenceu amb un color, proveu lectura en viu amb sensor fix i registreu el valor retornat, després afegiu una segona condició.
+**Implementación:** programad en Python la lectura del sensor de color según las funciones documentadas en la app. Empezad con un color, probad lectura en vivo con el sensor fijo y registrad el valor devuelto, después añadid una segunda condición.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-No suposeu que paper, impressió i llum ambiental produeixen valors exactes: feu una targeta de referència i un mecanisme d’entrada manual com a alternativa.
+No supongáis que papel, impresión y luz ambiental producen valores exactos: haced una tarjeta de referencia y un mecanismo de entrada manual como alternativa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Prova sistemàtica:** compareu el resultat real amb la taula: cada color esperat; un color no assignat; absència de targeta; targeta girada o amb llum canviada. Si no apareix una excepció però la resposta no correspon a l’especificació, és un possible error de lògica o calibratge, no un error de sintaxi. Canvieu una condició/llindar i repetiu; no retoqueu programa i llum alhora. Registreu cada entrada, valor llegit, branca executada i canvi fet. Acabeu explicant per què “el programa acaba sense error” no prova que faça el que volíem.
+**Prueba sistemática:** comparad el resultado real con la tabla: cada color esperado; un color no asignado; ausencia de tarjeta; tarjeta girada o con luz cambiada. Si no aparece una excepción pero la respuesta no corresponde a la especificación, es un posible error de lógica o calibración, no un error de sintaxis. Cambiad una condición/umbral y repetid; no retoquéis programa y luz a la vez. Registrad cada entrada, valor leído, rama ejecutada y cambio hecho. Acabad explicando por qué «el programa termina sin error» no prueba que haga lo que queríamos.
 
-![Prototip SPIKE Prime aturat al costat de targetes de color, amb el programa i una alerta de prova a la pantalla de l’ordinador.](../../_assets/situacions/sa-sp-python-depuracio-debug-v1.webp)
+![Prototipo SPIKE Prime detenido junto a tarjetas de color, con el programa y una alerta de prueba en la pantalla del ordenador.](../../_assets/situacions/sa-sp-python-depuracio-debug-v1.webp)
 
-_La il·lustració representa una comprovació controlada: el robot no interpreta el missatge de l’ordinador; l’equip contrasta cada entrada amb el resultat esperat._
+_La ilustración representa una comprobación controlada: el robot no interpreta el mensaje del ordenador; el equipo contrasta cada entrada con el resultado esperado._
 
-### **Lliçó 4 · Quan el problema és el maquinari? (90 min).**
+### **Lección 4 · ¿Cuándo el problema es el hardware? (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Investigació:** la base rep una ruta de prova que hauria de desplaçar-se fins a una marca, però no ho fa. Primer confirmeu el programa de referència amb motors aturats o valors de prova segurs; després seguiu una llista de verificació sense reescriure codi: hub carregat/connectat, port declarat vs port ocupat, connector complet, motor lliure, orientació del sensor, cable sense tensió i muntatge sense fricció.
+**Investigación:** la base recibe una ruta de prueba que debería desplazarse hasta una marca, pero no lo hace. Primero confirmad el programa de referencia con motores detenidos o valores de prueba seguros; después seguid una lista de verificación sin reescribir código: hub cargado/conectado, puerto declarado frente a puerto ocupado, conector completo, motor libre, orientación del sensor, cable sin tensión y montaje sin fricción.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dividiu cada diagnòstic en subcomponents i proveu-los per separat.
+Dividid cada diagnóstico en subcomponentes y probadlos por separado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Casos de fallada controlats:** feu que la docent prepare estacions amb un cable desconnectat (hub aturat), port intencionadament incorrecte al codi però sense activar motors, i sensor que no arriba a veure la marca. Cada equip descriu el símptoma abans de corregir una cosa. Si hi ha codi d’error d’API o port buit, deseu el traceback i relacioneu-lo amb el mapa de ports.
+**Casos de fallo controlados:** haced que la docente prepare estaciones con un cable desconectado (hub detenido), puerto intencionadamente incorrecto en el código pero sin activar motores, y sensor que no llega a ver la marca. Cada equipo describe el síntoma antes de corregir una cosa. Si hay código de error de API o puerto vacío, guardad el traceback y relacionadlo con el mapa de puertos.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Proves:** manteniu la mateixa ruta i una velocitat baixa; després d’una correcció, feu tres intents i anoteu inici, port/sensor usat, resultat i variació. En cada prova, assegureu una aturada manual i manteniu mans fora de rodes/engranatges.
+**Pruebas:** mantened la misma ruta y una velocidad baja; después de una corrección, haced tres intentos y anotad inicio, puerto/sensor usado, resultado y variación. En cada prueba, asegurad una parada manual y mantened las manos fuera de ruedas/engranajes.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Conclusió:** distingiu “Python ha demanat el motor equivocat”, “el motor no respon per connexió/muntatge” i “el sistema es mou però la ruta no arriba a la marca”. Digueu quina evidència us permet afirmar cada diagnòstic, i quina alternativa cal si la peça o el sensor no està disponible.
+**Conclusión:** distinguid «Python ha pedido el motor equivocado», «el motor no responde por conexión/montaje» y «el sistema se mueve pero la ruta no llega a la marca». Decid qué evidencia os permite afirmar cada diagnóstico, y qué alternativa hace falta si la pieza o el sensor no está disponible.
 
-### **Lliçó 5 · Debug-inator: caçar errors sense crear risc (45 min).**
+### **Lección 5 · Debug-inator: cazar errores sin crear riesgo (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Estacions de codi desconnectades:** rebeu tres fragments Python de la maqueta amb un error cadascun: (1) sintaxi, com una puntuació/indentació que impedeix interpretar el programa; (2) execució, com una adreça de port no ocupada; (3) lògica, com una comparació amb el valor de color equivocat.
+**Estaciones de código desconectadas:** recibid tres fragmentos Python de la maqueta con un error cada uno: (1) sintaxis, como una puntuación/indentación que impide interpretar el programa; (2) ejecución, como una dirección de puerto no ocupada; (3) lógica, como una comparación con el valor de color equivocado.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Predigueu abans si el programa arriba a executar-se, si s’aturarà amb excepció o si produirà resultat equivocat; marqueu la línia o condició sospitosa i escriviu una prova que ho confirme.
+Predecid antes si el programa llega a ejecutarse, si se detendrá con excepción o si producirá un resultado equivocado; marcad la línea o condición sospechosa y escribid una prueba que lo confirme.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Laboratori segur:** els errors de sintaxi/lògica es poden corregir en simulació o paper; només correu fragments de maquinari després de comprovar connexions, velocitat i espai. L’error de runtime del port buit s’investiga amb el motor aturat i la consola disponible, no es deixa girar un muntatge mal connectat.
+**Laboratorio seguro:** los errores de sintaxis/lógica se pueden corregir en simulación o papel; solo corréis fragmentos de hardware después de comprobar conexiones, velocidad y espacio. El error de runtime del puerto vacío se investiga con el motor detenido y la consola disponible, no se deja girar un montaje mal conectado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Repte:** cada parella dissenya un cas de depuració amb una entrada, un resultat esperat i una observació que permet diferenciar dues causes possibles; intercanvieu casos amb altra parella.
+**Reto:** cada pareja diseña un caso de depuración con una entrada, un resultado esperado y una observación que permite diferenciar dos causas posibles; intercambiad casos con otra pareja.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Registre:** tipus d’error, missatge o símptoma, hipòtesi, experiment mínim, correcció i resultat posterior. La consola no pot revelar per si sola un error de lògica: l’especificació i les proves donen el resultat esperat contra el qual comparar.
+**Registro:** tipo de error, mensaje o síntoma, hipótesis, experimento mínimo, corrección y resultado posterior. La consola no puede revelar por sí sola un error de lógica: la especificación y las pruebas dan el resultado esperado contra el que comparar.
 
-### **Lliçó 6 · Feedback que ajuda a depurar (30–45 min).**
+### **Lección 6 · Retroalimentación que ayuda a depurar (30–45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Preparació:** cada equip tria una funció petita del prototip i prepara un programa comentat, un cas de prova i una incertesa; no cal mostrar codi personal ni tota la maqueta.
+**Preparación:** cada equipo elige una función pequeña del prototipo y prepara un programa comentado, un caso de prueba y una incertidumbre; no hace falta mostrar código personal ni toda la maqueta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Intercanvi:** l’equip revisor executa (o traça en paper) el test sense tocar el projecte original, descriu el resultat i ofereix feedback específic: “he observat…”, “esperava…”, “potser falta provar…”. No dona ordres ni altera el codi/robot alié.
+**Intercambio:** el equipo revisor ejecuta (o traza en papel) la prueba sin tocar el proyecto original, describe el resultado y ofrece retroalimentación específica: «he observado…», «esperaba…», «quizá falta probar…». No da órdenes ni altera el código/robot ajeno.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-L’equip autor llig el comentari i el relaciona amb el cas de prova: què s’ha observat, què s’esperava i quina diferència hi ha? Classifiqueu cada aportació com a aclariment, hipòtesi o proposta de canvi. L’equip decideix quin suggeriment adopta, quin deixa pendent i per què; registreu la decisió abans d’editar el codi, de manera que quede visible si el canvi respon a una evidència o només a una preferència.
+El equipo autor lee el comentario y lo relaciona con el caso de prueba: ¿qué se ha observado, qué se esperaba y qué diferencia hay? Clasificad cada aportación como aclaración, hipótesis o propuesta de cambio. El equipo decide qué sugerencia adopta, cuál deja pendiente y por qué; registrad la decisión antes de editar el código, de manera que quede visible si el cambio responde a una evidencia o solo a una preferencia.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Redisseny:** apliqueu una millora, torneu a executar el mateix cas i un cas inesperat, i registreu si el canvi va resoldre el problema o va crear-ne un altre.
+**Rediseño:** aplicad una mejora, volved a ejecutar el mismo caso y un caso inesperado, y registrad si el cambio resolvió el problema o creó otro.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Reflexió individual:** descriviu una contribució pròpia i com vau donar o rebre feedback; escala d’1–3 per a ús del temps i cura de peces, sense classificar habilitats personals. Tanqueu amb una ronda oral o escrita: una pràctica que ajuda a detectar errors, un límit de la consola i una prova que falta abans de dir que el prototip està llest.
+**Reflexión individual:** describid una contribución propia y cómo disteis o recibisteis retroalimentación; escala del 1–3 para uso del tiempo y cuidado de piezas, sin clasificar habilidades personales. Cerrad con una ronda oral o escrita: una práctica que ayuda a detectar errores, un límite de la consola y una prueba que falta antes de decir que el prototipo está listo.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-El quadern conserva cicle de disseny, pseudocodi, criteris del prototip, fragments Python comentats, traceback o símptoma, classificació de cada error, mapa de ports, casos esperats/inesperats, registre de tres intents després d’una reparació, feedback rebut i decisió de redisseny. Avalueu si l’alumne (1) diferencia disseny, maquinari i programari; (2) interpreta error de sintaxi, d’execució o de lògica amb evidències; (3) canvia una causa cada vegada; (4) prova casos rellevants i documenta; i (5) explica què queda sense resoldre. L’avaluació docent usa preguntes i observació, coavaluació específica i autoavaluació privada, com recomana la guia. Un programa no rep valoració alta només perquè acaba sense excepció: s’ha de comparar amb les especificacions i les proves.
+El cuaderno conserva ciclo de diseño, pseudocódigo, criterios del prototipo, fragmentos Python comentados, traceback o síntoma, clasificación de cada error, mapa de puertos, casos esperados/inesperados, registro de tres intentos después de una reparación, retroalimentación recibida y decisión de rediseño. Evaluad si el alumno (1) diferencia diseño, hardware y software; (2) interpreta error de sintaxis, de ejecución o de lógica con evidencias; (3) cambia una causa cada vez; (4) prueba casos relevantes y documenta; y (5) explica qué queda sin resolver. La evaluación docente usa preguntas y observación, coevaluación específica y autoevaluación privada, como recomienda la guía. Un programa no recibe valoración alta solo porque termina sin excepción: debe compararse con las especificaciones y las pruebas.
 
-## ♿ Inclusió, privacitat i seguretat
+## ♿ Inclusión, privacidad y seguridad
 
-Oferiu l’opció de seguir pseudocodi en paper, usar simulació o fer rol d’observació, sense excloure ningú de la resolució. Compartiu fragments de codi preparats, no dades personals ni projectes identificables. Feedback dirigit al codi i al resultat, mai a la capacitat de la persona. Llums i sons tenen alternativa visual/textual i volum baix. Limiteu velocitat, immobilitzeu el vehicle abans de canviar ports i no poseu mans en engranatges; no provoqueu errors de port amb motor en marxa. Abans de la sessió, docent verifica compatibilitat de biblioteca/API amb la versió de l’app usada per l’alumnat.
+Ofreced la opción de seguir pseudocódigo en papel, usar simulación o hacer rol de observación, sin excluir a nadie de la resolución. Compartid fragmentos de código preparados, no datos personales ni proyectos identificables. Retroalimentación dirigida al código y al resultado, nunca a la capacidad de la persona. Luces y sonidos tienen alternativa visual/textual y volumen bajo. Limitad la velocidad, inmovilizad el vehículo antes de cambiar puertos y no pongáis las manos en los engranajes; no provoquéis errores de puerto con el motor en marcha. Antes de la sesión, el docente verifica la compatibilidad de biblioteca/API con la versión de la app usada por el alumnado.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta les sis lliçons de la unitat 6 *Troubleshooting and Debugging* del curs LEGO Education [*Introduction to Python Programming · Course 2*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us): *Testing Prototypes*, *Break Dancer Break Down*, *Dance to the Beat?*, *Testing for Trouble*, *Debug-inator* i *Ideas to Help with the Debug-inator*. Manté disseny iteratiu, diagnòstic separat de model/programa, lectura de traceback, sintaxi/lògica/runtime, resposta per color, verificació de ports i peces, proves fora de rang i feedback de companys; transforma pont i ball en senyalística i trajecte escolar propis. La guia usa l’API Python de SPIKE i consola; aquesta adaptació demana verificar funcions en la versió local abans d’executar codi.
+Adapta las seis lecciones de la unidad 6 *Troubleshooting and Debugging* del curso LEGO Education [*Introduction to Python Programming · Course 2*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us): *Testing Prototypes*, *Break Dancer Break Down*, *Dance to the Beat?*, *Testing for Trouble*, *Debug-inator* e *Ideas to Help with the Debug-inator*. Mantiene diseño iterativo, diagnóstico separado de modelo/programa, lectura de traceback, sintaxis/lógica/runtime, respuesta por color, verificación de puertos y piezas, pruebas fuera de rango y retroalimentación de compañeros; transforma puente y baile en señalización y trayecto escolar propios. La guía usa la API Python de SPIKE y consola; esta adaptación pide verificar funciones en la versión local antes de ejecutar código.

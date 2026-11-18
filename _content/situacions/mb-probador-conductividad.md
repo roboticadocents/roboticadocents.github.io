@@ -14,161 +14,161 @@ duration: "5 sesiones"
 challenge: "¿Cómo podemos usar una entrada de micro:bit y una condición para investigar qué materiales conducen electricidad?"
 ---
 
-![Una placa micro:bit al costat de mostres seques de paper, plàstic, fusta i paper d’alumini per a una investigació de conductivitat.](../../_assets/situacions/mb-provador-conductivitat.webp)
+![Una placa micro:bit junto a muestras secas de papel, plástico, madera y papel de aluminio para una investigación de conductividad.](../../_assets/situacions/mb-provador-conductivitat.webp)
 
-_La prova és de baixa tensió i només usa mostres aïllades i circuits revisats pel docent._
+_La prueba es de baja tensión y solo usa muestras aisladas y circuitos revisados por el docente._
 
-## 🌱 Situació i intenció
+## 🌱 Situación y intención
 
-El taller de ciències vol saber quins materials podrien formar part d’un interruptor senzill per a una maqueta. L’alumnat compara circuits de baixa tensió, representa decisions amb diagrames de flux i programa una entrada perquè micro:bit mostre una icona. La situació adapta les cinc lliçons oficials de *Electrical conductors*; els materials es proven com a mostres, no com a objectes connectats a instal·lacions elèctriques.
+El taller de ciencias quiere saber qué materiales podrían formar parte de un interruptor sencillo para una maqueta. El alumnado compara circuitos de baja tensión, representa decisiones con diagramas de flujo y programa una entrada para que micro:bit muestre un icono. La situación adapta las cinco lecciones oficiales de *Electrical conductors*; los materiales se prueban como muestras, no como objetos conectados a instalaciones eléctricas.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Formular una predicció sobre la conductivitat d’una mostra segura i registrar les condicions de prova.
-- Construir un circuit de baixa tensió i descriure l’entrada i l’eixida de micro:bit.
-- Programar una selecció condicional i provar materials coneguts, secs i no perillosos.
-- Distingir el resultat del prototip de l’evidència científica i rebutjar proves amb endolls, líquids o materials desconeguts.
+- Formular una predicción sobre la conductividad de una muestra segura y registrar las condiciones de prueba.
+- Construir un circuito de baja tensión y describir la entrada y la salida de micro:bit.
+- Programar una selección condicional y probar materiales conocidos, secos y no peligrosos.
+- Distinguir el resultado del prototipo de la evidencia científica y rechazar pruebas con enchufes, líquidos o materiales desconocidos.
 
-## 📅 Seqüència didàctica · 5 sessions
+## 📅 Secuencia didáctica · 5 sesiones
 
-### **Sessió 1 · Selecció i conductivitat (Selection & conductivity investigation).**
+### **Sesión 1 · Selección y conductividad (Selection & conductivity investigation).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu mostres segures i predigueu quines podrien conduir electricitat en un circuit escolar de baixa tensió. Identifiqueu què es mantindrà igual entre proves: mida aproximada de la mostra, punts de contacte i circuit.
+Presentad muestras seguras y predecid cuáles podrían conducir electricidad en un circuito escolar de baja tensión. Identificad qué se mantendrá igual entre pruebas: tamaño aproximado de la muestra, puntos de contacto y circuito.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Amb un circuit de baixa tensió revisat prèviament pel docent, observeu què passa quan s’inclou una mostra conductora o aïllant. No canvieu connexions mentre el circuit està alimentat.
+Con un circuito de baja tensión revisado previamente por el docente, observad qué pasa cuando se incluye una muestra conductora o aislante. No cambiéis conexiones mientras el circuito está alimentado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Identifiqueu entrada, procés i eixida i escriviu una regla «si… aleshores…» que descriga la resposta. Registreu nom genèric de la mostra, predicció, resultat observat, repetició i possible causa d’error.
+Identificad entrada, proceso y salida y escribid una regla «si… entonces…» que describa la respuesta. Registrad el nombre genérico de la muestra, la predicción, el resultado observado, la repetición y la posible causa de error.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si una prova és inconsistent, marqueu-la com a «no concloent». Reviseu per separat els punts de contacte o les condicions del muntatge i repetiu-la; no esborreu un resultat perquè no encaixe amb la predicció.
+Si una prueba es inconsistente, marcadla como «no concluyente». Revisad por separado los puntos de contacto o las condiciones del montaje y repetidla; no borréis un resultado porque no encaje con la predicción.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu què permet afirmar la prova i què no es pot generalitzar a altres objectes. **Evidència:** dibuix inicial del circuit, taula de prediccions i regla condicional.
+Explicad qué permite afirmar la prueba y qué no se puede generalizar a otros objetos. **Evidencia:** dibujo inicial del circuito, tabla de predicciones y regla condicional.
 
-### **Sessió 2 · Caixes de decisió (Decision boxes).**
+### **Sesión 2 · Cajas de decisión (Decision boxes).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu la regla de la primera sessió i predigueu quines dues respostes ha de mostrar el diagrama segons que el circuit es tanque o continue obert.
+Recuperad la regla de la primera sesión y predecid qué dos respuestas debe mostrar el diagrama según que el circuito se cierre o permanezca abierto.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Convertiu la regla en un diagrama de flux amb una caixa de decisió i dues eixides etiquetades «sí» i «no». Associeu cada branca a una icona LED diferent.
+Convertid la regla en un diagrama de flujo con una caja de decisión y dos salidas etiquetadas «sí» y «no». Asociad cada rama a un icono LED distinto.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una parella executa l’algorisme amb targetes de valors simulats abans de connectar cap circuit. Marqueu qualsevol branca que no tinga resposta o instrucció següent.
+Una pareja ejecuta el algoritmo con tarjetas de valores simulados antes de conectar ningún circuito. Marcad cualquier rama que no tenga respuesta o instrucción siguiente.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu el diagrama quan una instrucció siga ambigua o una branca quede sense eixida. Torneu a intercanviar-lo amb un altre equip perquè el seguisca pas a pas.
+Revisad el diagrama cuando una instrucción sea ambigua o una rama quede sin salida. Volved a intercambiarlo con otro equipo para que lo ejecute paso a paso.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Comproveu que els dos valors simulats activen respostes diferents i que el diagrama es pot seguir sense ajuda oral. **Evidència:** diagrama inicial i versió revisada amb les dues branques provades.
+Comprobad que los dos valores simulados activan respuestas distintas y que el diagrama se puede seguir sin ayuda oral. **Evidencia:** diagrama inicial y versión revisada con las dos ramas probadas.
 
-### **Sessió 3 · Entrades i eixides de micro:bit (Inputs).**
+### **Sesión 3 · Entradas y salidas de micro:bit (Inputs).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Exploreu amb MakeCode els botons i, si la placa i els accessoris ho permeten, les entrades dels pins. Predigueu quina eixida LED hauria d’aparéixer quan canvia l’entrada.
+Explorad con MakeCode los botones y, si la placa y los accesorios lo permiten, las entradas de los pines. Predecid qué salida LED tendría que aparecer cuando cambia la entrada.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Relacioneu el canvi de pin amb una eixida LED. Dibuixeu el circuit abans de tocar connexions i identifiqueu quines parts són internes i quines externes. Si falta un accessori segur, simuleu els valors d’entrada amb els botons.
+Relacionad el cambio de pin con una salida LED. Dibujad el circuito antes de tocar conexiones e identificad qué partes son internas y cuáles externas. Si falta un accesorio seguro, simulad los valores de entrada con los botones.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu entrada, condició i resposta observada. Una parella llig el programa i una altra segueix el diagrama per comprovar que la seqüència concorda.
+Anotad entrada, condición y respuesta observada. Una pareja lee el programa y otra sigue el diagrama para comprobar que la secuencia concuerda.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Comenceu amb una condició i una eixida LED. Després afegiu una segona mostra i una rutina de reinici perquè les proves no arrosseguen el valor anterior.
+Empezad con una condición y una salida LED. Después añadid una segunda muestra y una rutina de reinicio para que las pruebas no arrastren el valor anterior.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Executeu tant valors reals del muntatge aprovat com valors simulats si s’ha triat l’alternativa. **Evidència:** esquema del circuit, programa amb una condició i registre d’entrades i eixides.
+Ejecutad tanto valores reales del montaje aprobado como valores simulados si se ha elegido la alternativa. **Evidencia:** esquema del circuito, programa con una condición y registro de entradas y salidas.
 
-### **Sessió 4 · Construïm i depurem el provador (Making a conductivity tester).**
+### **Sesión 4 · Construimos y depuramos el probador (Making a conductivity tester).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu mostres menudes, seques i separades —paper, plàstic, fusta o una làmina menuda d’alumini— i predigueu el resultat. Confirmeu que el muntatge ha sigut revisat pel docent i que els accessoris són compatibles.
+Elegid muestras pequeñas, secas y separadas —papel, plástico, madera o una lámina pequeña de aluminio— y predecid el resultado. Confirmad que el montaje ha sido revisado por el docente y que los accesorios son compatibles.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Només amb un muntatge aprovat, proveu les mostres i programeu la lectura d’entrada amb selecció. Comenceu amb una condició i una eixida; si no hi ha accessori protector, simuleu els valors amb els botons en lloc de fer la prova física.
+Solo con un montaje aprobado, probad las muestras y programad la lectura de entrada con selección. Empezad con una condición y una salida; si no hay accesorio protector, simulad los valores con los botones en lugar de hacer la prueba física.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Useu una mostra coneguda conductora i una d’aïllant. Anoteu lectura d’entrada, resultat mostrat i si coincideix amb la predicció; reinicieu entre casos.
+Usad una muestra conocida conductora y una aislante. Anotad la lectura de entrada, el resultado mostrado y si coincide con la predicción; reiniciad entre casos.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si dues mostres donen la mateixa resposta, reviseu per separat: canvi de lectura en tancar circuit, contacte de la pinça amb superfície neta, moment de mostrar l’eixida i reinici entre casos. Canvieu una variable per prova i torneu a executar.
+Si dos muestras dan la misma respuesta, revisad por separado: cambio de lectura al cerrar el circuito, contacto de la pinza con una superficie limpia, momento de mostrar la salida y reinicio entre casos. Cambiad una variable por prueba y volved a ejecutar.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compareu el codi inicial i el depurat i limiteu la conclusió als objectes provats i a les condicions del circuit escolar. **Evidència:** codi amb selecció, resultats de dues mostres de referència i registre de depuració.
+Comparad el código inicial y el depurado y limitad la conclusión a los objetos probados y a las condiciones del circuito escolar. **Evidencia:** código con selección, resultados de dos muestras de referencia y registro de depuración.
 
-### **Sessió 5 · Revisió i reflexió (Review & reflection).**
+### **Sesión 5 · Revisión y reflexión (Review & reflection).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Amb l’alimentació desconnectada, predigueu quines parts de l’algorisme descriuen entrada, condició i eixida. Prepareu targetes «circuit obert/tancat» per poder fer la revisió sense manipular components.
+Con la alimentación desconectada, predecid qué partes del algoritmo describen entrada, condición y salida. Preparad tarjetas «circuito abierto/cerrado» para poder hacer la revisión sin manipular componentes.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Desmunteu el prototip amb l’alimentació desconnectada. Reescriviu l’algorisme en passos menuts i marqueu entrades, condicions i eixides.
+Desmontad el prototipo con la alimentación desconectada. Reescribid el algoritmo en pasos pequeños y marcad entradas, condiciones y salidas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu el diagrama inicial amb el programa final i indiqueu quines condicions s’han provat. Anoteu quins factors caldria controlar per repetir la prova de manera justa.
+Comparad el diagrama inicial con el programa final e indicad qué condiciones se han probado. Anotad qué factores habría que controlar para repetir la prueba de manera justa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Una parella segueix l’algorisme amb les targetes de circuit obert/tancat i detecta qualsevol pas que falte. Reviseu-lo perquè cada valor tinga una eixida definida.
+Una pareja sigue el algoritmo con las tarjetas de circuito abierto/cerrado y detecta cualquier paso que falte. Revisadlo para que cada valor tenga una salida definida.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu què es pot concloure sobre les mostres i què requeriria una investigació més controlada. **Evidència:** algorisme revisat, diagrama i reflexió sobre els límits de la prova.
+Explicad qué se puede concluir sobre las muestras y qué requeriría una investigación más controlada. **Evidencia:** algoritmo revisado, diagrama y reflexión sobre los límites de la prueba.
 
-## 🧰 Materials i condicions
+## 🧰 Materiales y condiciones
 
-BBC micro:bit, MakeCode, mostres menudes, seques i aïllades, pinces/ponts adequats i el circuit protector especificat pel fabricant o pel centre. Les pinces de cocodril i components externs només s’usen si formen part de la dotació i el docent ha verificat el muntatge. Sense aquests materials, feu la prova amb simulació de botons i diagrames.
+BBC micro:bit, MakeCode, muestras pequeñas, secas y aisladas, pinzas/puentes adecuados y el circuito protector especificado por el fabricante o por el centro. Las pinzas de cocodrilo y los componentes externos solo se usan si forman parte de la dotación y el docente ha verificado el montaje. Sin estos materiales, haced la prueba con simulación de botones y diagramas.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Recolliu circuit esquemàtic, diagrama de flux, taula de prediccions, codi amb condició, resultats de dues mostres conegudes i revisió de depuració. Valoreu si l’algorisme es pot seguir, si les entrades i eixides estan identificades i si les conclusions es limiten a les mostres i condicions provades.
+Recoged circuito esquemático, diagrama de flujo, tabla de predicciones, código con condición, resultados de dos muestras conocidas y revisión de depuración. Valorad si el algoritmo se puede seguir, si las entradas y salidas están identificadas y si las conclusiones se limitan a las muestras y condiciones probadas.
 
-## Quadern d'investigació
+## Cuaderno de investigación
 
-Abans de tocar el muntatge, cada equip dibuixa el circuit previst i identifica font d'energia, camí conductor, punt on s'interromp el circuit, entrada de micro:bit i eixida LED. En una taula, registreu nom genèric de la mostra, predicció, resultat observat, repetició i possible causa d'error. Useu peces de mida semblant i subjecteu-les sempre pels mateixos punts quan siga possible. Una prova inconsistent es marca com a «no concloent»; no s'esborra perquè no encaixe amb la predicció.
+Antes de tocar el montaje, cada equipo dibuja el circuito previsto e identifica la fuente de energía, el camino conductor, el punto en el que se interrumpe el circuito, la entrada de micro:bit y la salida LED. En una tabla, registrad el nombre genérico de la muestra, la predicción, el resultado observado, la repetición y la posible causa de error. Usad piezas de tamaño parecido y sujetadlas siempre por los mismos puntos cuando sea posible. Una prueba inconsistente se marca como «no concluyente»; no se borra porque no encaje con la predicción.
 
-En el diagrama de flux, la pregunta de decisió ha de tindre dues eixides etiquetades, «sí» i «no». Una parella executa l'algorisme amb targetes de valors simulats abans de connectar cap circuit. Això permet trobar una branca sense resposta i comprovar que cada resultat activa una icona diferent. En la sessió de MakeCode, comenceu amb una condició i una eixida LED, després afegiu-hi una segona mostra i una rutina de reinici perquè les proves no arrosseguen el valor anterior.
+En el diagrama de flujo, la pregunta de decisión debe tener dos salidas etiquetadas, «sí» y «no». Una pareja ejecuta el algoritmo con tarjetas de valores simulados antes de conectar ningún circuito. Esto permite encontrar una rama sin respuesta y comprobar que cada resultado activa un icono distinto. En la sesión de MakeCode, empezad con una condición y una salida LED; después añadid una segunda muestra y una rutina de reinicio para que las pruebas no arrastren el valor anterior.
 
-## Depuració i lectura de resultats
+## Depuración y lectura de resultados
 
-Si dues mostres semblen donar la mateixa resposta, reviseu per separat el programa i el muntatge: la lectura d'entrada canvia quan es tanca el circuit?, la pinça toca una superfície neta?, el programa mostra l'eixida després de llegir el pin?, s'ha reiniciat entre casos? Canvieu una variable per prova i anoteu el resultat. La conclusió es limita als objectes provats i a les condicions del circuit escolar; no es generalitza automàticament a totes les peces del mateix material ni a productes reals.
+Si dos muestras parecen dar la misma respuesta, revisad por separado el programa y el montaje: ¿la lectura de entrada cambia cuando se cierra el circuito?, ¿la pinza toca una superficie limpia?, ¿el programa muestra la salida después de leer el pin?, ¿se ha reiniciado entre casos? Cambiad una variable por prueba y anotad el resultado. La conclusión se limita a los objetos probados y a las condiciones del circuito escolar; no se generaliza automáticamente a todas las piezas del mismo material ni a productos reales.
 
-Com a ampliació desconnectada, doneu a l'equip targetes «circuit obert/tancat» i feu que seguisca el diagrama de decisió. També es pot comparar el resultat amb una predicció inicial i explicar quin tipus de dada addicional ajudaria a confiar més en la prova. No cal manipular cap component per demostrar la comprensió dels algorismes.
+Como ampliación desconectada, dad al equipo tarjetas «circuito abierto/cerrado» y haced que ejecute el diagrama de decisión. También se puede comparar el resultado con una predicción inicial y explicar qué tipo de dato adicional ayudaría a confiar más en la prueba. No hace falta manipular ningún componente para demostrar la comprensión de los algoritmos.
 
-## Rols i protocol de seguretat
+## Roles y protocolo de seguridad
 
-Assigneu rols de lector/a del diagrama, encarregat/da de les mostres, observador/a del LED i registrador/a. Només l'adult connecta o revisa el prototip si les peces no són específicament compatibles o el grup no pot verificar el muntatge. Manteniu mans i taula seques, treballeu amb baixa tensió, desconnecteu l'alimentació abans de canviar mostres i no connecteu mai la micro:bit a la xarxa elèctrica. Si no hi ha accessori de protecció adequat, substituïu tota la prova física per dades simulades; el repte d'entrades, condicions i fluxos continua complet.
+Asignad roles de lector/a del diagrama, encargado/a de las muestras, observador/a del LED y registrador/a. Solo la persona adulta conecta o revisa el prototipo si las piezas no son específicamente compatibles o el grupo no puede verificar el montaje. Mantened las manos y la mesa secas, trabajad con baja tensión, desconectad la alimentación antes de cambiar muestras y no conectéis nunca la micro:bit a la red eléctrica. Si no hay un accesorio de protección adecuado, sustituid toda la prueba física por datos simulados; el reto de entradas, condiciones y flujos sigue completo.
 
-## ⚡ Seguretat elèctrica
+## ⚡ Seguridad eléctrica
 
-Només s’utilitzen circuits educatius de baixa tensió i accessoris compatibles, amb revisió del docent. Mai connecteu la placa a la xarxa elèctrica ni uniu directament els pins d’alimentació 3V i GND. No proveu líquids, cossos, piles, endolls, aparells, objectes connectats ni materials calents o tallants. Desconnecteu abans de canviar mostres i manteniu-ho tot sec.
+Solo se utilizan circuitos educativos de baja tensión y accesorios compatibles, con revisión del docente. Nunca conectéis la placa a la red eléctrica ni unáis directamente los pines de alimentación 3V y GND. No probéis líquidos, cuerpos, pilas, enchufes, aparatos, objetos conectados ni materiales calientes o cortantes. Desconectad antes de cambiar muestras y mantenedlo todo seco.
 
-## 🔗 Unitat oficial adaptada
+## 🔗 Unidad oficial adaptada
 
-Aquesta situació adapta les cinc lliçons de micro:bit [Electrical conductors](https://microbit.org/teach/lessons/electrical-conductors-unit-of-work/): investigació de circuits i selecció, caixes de decisió, exploració d’entrades, provador programat amb MakeCode i reflexió desconnectada. El context del taller, la selecció de mostres i els criteris són propis.
+Esta situación adapta las cinco lecciones de micro:bit [Electrical conductors](https://microbit.org/teach/lessons/electrical-conductors-unit-of-work/): investigación de circuitos y selección, cajas de decisión, exploración de entradas, probador programado con MakeCode y reflexión desconectada. El contexto del taller, la selección de muestras y los criterios son propios.

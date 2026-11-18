@@ -14,225 +14,225 @@ duration: "8 sesiones"
 challenge: "¿Cómo podemos crear un temporizador de maqueta con aprendizaje automático y explicar con honestidad cuándo falla?"
 ---
 
-![Una placa micro:bit i una maqueta interactiva amb targetes de dades representen un temporitzador d’activitats basat en patrons de moviment.](../../_assets/situacions/mb-ia-exercici-responsable.webp)
+![Una placa micro:bit y una maqueta interactiva con tarjetas de datos representan un temporizador de actividades basado en patrones de movimiento.](../../_assets/situacions/mb-ia-exercici-responsable.webp)
 
-_El sistema és una demostració de classificació i temporització; no és un entrenador ni una eina de salut._
+_El sistema es una demostración de clasificación y temporización; no es un entrenador ni una herramienta de salud._
 
-## 🌱 Situació i intenció
+## 🌱 Situación y intención
 
-La fira de ciència del centre vol mostrar com dades i decisions de disseny afecten un sistema d’IA. Els equips creen un temporitzador que reacciona a moviments assignats a una maqueta, no a perfils d’alumnat. La seqüència adapta les vuit lliçons oficials de *Developing AI literacy with the micro:bit*, incloent-hi activitats desconnectades, CreateAI, codi MakeCode, biaix i una targeta del model.
+La feria de ciencia del centro quiere mostrar cómo datos y decisiones de diseño afectan a un sistema de IA. Los equipos crean un temporizador que reacciona a movimientos asignados a una maqueta, no a perfiles de alumnado. La secuencia adapta las ocho lecciones oficiales de *Developing AI literacy with the micro:bit*, incluyendo actividades desconectadas, CreateAI, código MakeCode, sesgo y una tarjeta del modelo.
 
-## 📅 Seqüència didàctica · 8 sessions
+## 📅 Secuencia didáctica · 8 sesiones
 
-### **Sessió 1 · Parlar d’IA (Talking about AI).**
+### **Sesión 1 · Hablar de IA (Talking about AI).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu la fira de ciència i el temporitzador de maqueta. Abans de definir IA, l’alumnat dibuixa què imagina que passa entre una inclinació de la base i una icona que apareix a la placa. Pregunteu quines parts creuen que decideixen persones i quines podria fer el sistema.
+Presentad la feria de ciencia y el temporizador de maqueta. Antes de definir IA, el alumnado dibuja qué imagina que pasa entre una inclinación de la base y un icono que aparece en la placa. Preguntad qué partes creen que deciden las personas y qué podría hacer el sistema.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Classifiqueu targetes de tecnologies familiars —alarma, calculadora, mapa digital, llum amb sensor— segons si segueixen una regla explícita o si aprenen patrons amb dades. Reviseu missatges publicitaris que diuen que una màquina «entén» o «decideix com una persona» i marqueu quines afirmacions caldria comprovar.
+Clasificad tarjetas de tecnologías familiares —alarma, calculadora, mapa digital, luz con sensor— según si aplican una regla explícita o si aprenden patrones con datos. Revisad mensajes publicitarios que dicen que una máquina «entiende» o «decide como una persona» y marcad qué afirmaciones habría que comprobar.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu les classificacions i descriviu una regla fixa amb l’estructura «si passa X, fes Y». Distingiu aquesta instrucció d’un model entrenat amb exemples i anoteu en un diagrama qui defineix les classes, tria les dades i decideix què significa el resultat.
+Comparad las clasificaciones y describid una regla fija con la estructura «si pasa X, haz Y». Distinguid esta instrucción de un modelo entrenado con ejemplos y anotad en un diagrama quién define las clases, elige los datos y decide qué significa el resultado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Escriviu en equip una definició pròpia d’IA i una de ML per a la fira. Reviseu-les amb una parella: elimineu expressions que atribuïsquen intencions o comprensió humana al model i afegiu-hi un exemple de regla fixa per contrastar-les.
+Escribid en equipo una definición propia de IA y una de ML para la feria. Revisadlas con una pareja: eliminad expresiones que atribuyan intenciones o comprensión humana al modelo y añadid un ejemplo de regla fija para contrastarlas.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** classificació de tecnologies, diagrama de decisions humanes i dues definicions revisades. Comproveu si l’alumnat pot explicar la diferència entre regla i aprenentatge amb un exemple. Pregunta de tancament: «Qui és responsable quan el sistema dona una resposta inesperada?».
+**Evidencia:** clasificación de tecnologías, diagrama de decisiones humanas y dos definiciones revisadas. Comprobad si el alumnado puede explicar la diferencia entre regla y aprendizaje con un ejemplo. Pregunta de cierre: «¿Quién es responsable cuando el sistema da una respuesta inesperada?».
 
-### **Sessió 2 · Importància de les dades (Exploring AI: the importance of data).**
+### **Sesión 2 · Importancia de los datos (Exploring AI: the importance of data).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu el temporitzador i pregunteu quina informació necessitaria per mostrar una icona. Cada equip prediu si cal registrar la identitat, l’edat o qualsevol dada personal per reconéixer l’orientació d’una maqueta.
+Recuperad el temporizador y preguntad qué información necesitaría para mostrar un icono. Cada equipo predice si hace falta registrar la identidad, la edad o cualquier dato personal para reconocer la orientación de una maqueta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Ordeneu targetes fictícies amb diverses regles —per exemple, direcció, angle o durada— i proveu una classificació que use només una característica cada vegada. Incloeu targetes incompletes o amb dues característiques barrejades perquè el grup decidisca si pot classificar-les.
+Ordenad tarjetas ficticias con diversas reglas —por ejemplo, dirección, ángulo o duración— y probad una clasificación que use solo una característica cada vez. Incluid tarjetas incompletas o con dos características mezcladas para que el grupo decida si puede clasificarlas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu els resultats de cada regla i anoteu quines targetes canvien de grup. Parleu de consentiment, context, minimització i usos inesperats; identifiqueu les dades que no caldria recollir per a un temporitzador d’exposició.
+Comparad los resultados de cada regla y anotad qué tarjetas cambian de grupo. Hablad de consentimiento, contexto, minimización y usos inesperados; identificad los datos que no haría falta recoger para un temporizador de exposición.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Revisiteu el protocol del temporitzador i traieu qualsevol dada que no servisca per a respondre a l’orientació de l’objecte. Escriviu una regla d’eliminació de dades i una situació en què no s’hauria de reutilitzar el conjunt recollit.
+Revisad el protocolo del temporizador y quitad cualquier dato que no sirva para responder a la orientación del objeto. Escribid una regla de eliminación de datos y una situación en la que no se debería reutilizar el conjunto recogido.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dues classificacions, comparació de resultats i llista de dades necessàries/innecessàries. Pregunteu: «Què canvia quan canviem la regla? Qui hauria de donar permís per a recollir una dada i per a quin ús?».
+**Evidencia:** dos clasificaciones, comparación de resultados y lista de datos necesarios/innecesarios. Preguntad: «¿Qué cambia cuando cambiamos la regla? ¿Quién debería dar permiso para recoger un dato y para qué uso?».
 
-### **Sessió 3 · Avaluar les dades (Exploring ML: evaluating data).**
+### **Sesión 3 · Evaluar los datos (Exploring ML: evaluating data).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Definiu el propòsit limitat: reconéixer dues orientacions d’una maqueta per canviar un panell. Acordeu què vol dir cada etiqueta i quina posició quedarà «sense classe». Predigueu quina mostra podria resultar ambigua si es comença des d’una posició diferent.
+Definid el propósito limitado: reconocer dos orientaciones de una maqueta para cambiar un panel. Acordad qué significa cada etiqueta y qué posición quedará «sin clase». Predecid qué muestra podría resultar ambigua si se empieza desde una posición diferente.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Poseu la micro:bit sobre una base de cartó marcada amb dos angles i recolliu mostres amb el seu acceleròmetre en CreateAI. Manteniu la mateixa posició inicial per al primer conjunt, useu codis anònims i registreu diverses repeticions de cada orientació. No demaneu que ningú faça un gest corporal concret.
+Poned la micro:bit sobre una base de cartón marcada con dos ángulos y recoged muestras con su acelerómetro en CreateAI. Mantened la misma posición inicial para el primer conjunto, usad códigos anónimos y registrad varias repeticiones de cada orientación. No pidáis que nadie haga un gesto corporal concreto.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Reviseu les dades i localitzeu mostres amb orientació errònia o amb dues classes barrejades. Per a cada mostra dubtosa, anoteu si el problema és l’etiqueta, el moviment de la placa durant la captura o una mostra incompleta.
+Revisad los datos y localizad muestras con orientación errónea o con dos clases mezcladas. Para cada muestra dudosa, anotad si el problema es la etiqueta, el movimiento de la placa durante la captura o una muestra incompleta.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Netegeu les mostres que no representen la classe definida i documenteu el motiu d’exclusió. Si la confusió ve del protocol, corregiu la posició inicial i feu una nova captura controlada en lloc d’afegir dades indistintes.
+Limpiad las muestras que no representan la clase definida y documentad el motivo de exclusión. Si la confusión viene del protocolo, corregid la posición inicial y haced una nueva captura controlada en lugar de añadir datos indistintos.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** definicions d’etiqueta, taula de mostres acceptades/excloses i motius verificables. Comproveu que les categories descriuen l’orientació de l’objecte, no una persona. Pregunta final: «Quina decisió nostra ha canviat el conjunt de dades?».
+**Evidencia:** definiciones de etiqueta, tabla de muestras aceptadas/excluidas y motivos verificables. Comprobad que las categorías describen la orientación del objeto, no una persona. Pregunta final: «¿Qué decisión nuestra ha cambiado el conjunto de datos?».
 
-### **Sessió 4 · Provar l’exactitud (Exploring ML: testing accuracy).**
+### **Sesión 4 · Probar la exactitud (Exploring ML: testing accuracy).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Separeu abans d’entrenar les mostres que es reservaran per a la prova. Predigueu quina classe podria confondre’s i expliqueu per què no s’haurien d’usar les dades de prova per ajustar el model.
+Separad antes de entrenar las muestras que se reservarán para la prueba. Predecid qué clase podría confundirse y explicad por qué no se deberían usar los datos de prueba para ajustar el modelo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Entreneu el model amb el conjunt assignat i proveu-lo amb mostres que no s’han usat per entrenar. Per cada intent, anoteu classe esperada, resposta del model i si és encert, error o dubte.
+Entrenad el modelo con el conjunto asignado y probadlo con muestras que no se han usado para entrenar. Por cada intento, anotad clase esperada, respuesta del modelo y si es acierto, error o duda.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Completeu una targeta de resultats amb recompte per classe. Debateu què permet concloure eixa mostra i què no, especialment si hi ha pocs casos o una classe té menys exemples. Distingiu exactitud del model i validesa del propòsit.
+Completad una tarjeta de resultados con recuento por clase. Debated qué permite concluir esa muestra y qué no, especialmente si hay pocos casos o una clase tiene menos ejemplos. Distinguid exactitud del modelo y validez del propósito.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu si les dades de moviment del dispositiu són apropiades per al prototip i quin consentiment i control calen. Proposeu una millora concreta del protocol i torneu a provar amb un conjunt nou, sense barrejar-lo amb les mostres reservades inicialment.
+Revisad si los datos de movimiento del dispositivo son apropiados para el prototipo y qué consentimiento y control hacen falta. Proponed una mejora concreta del protocolo y volved a probar con un conjunto nuevo, sin mezclarlo con las muestras reservadas inicialmente.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** separació dels conjunts, targeta d’encerts/errors/dubtes i justificació de l’ús de dades. Pregunteu: «Quina prova addicional necessitaríem abans de dir que el prototip és fiable?».
+**Evidencia:** separación de los conjuntos, tarjeta de aciertos/errores/dudas y justificación del uso de datos. Preguntad: «¿Qué prueba adicional necesitaríamos antes de decir que el prototipo es fiable?».
 
-### **Sessió 5 · Considerar biaixos (Exploring ML: considering bias).**
+### **Sesión 5 · Considerar sesgos (Exploring ML: considering bias).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu un cas fictici: el model ha vist només una orientació estable i confon una altra inclinació de la base. Predigueu què pot passar si el temporitzador s’exposa en una taula diferent o si la maqueta es mou més lentament.
+Presentad un caso ficticio: el modelo ha visto solo una orientación estable y confunde otra inclinación de la base. Predecid qué puede pasar si el temporizador se expone en una mesa diferente o si la maqueta se mueve más lentamente.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Amb targetes de prova inventades, variegeu angle, velocitat o suport, una característica cada vegada. Classifiqueu els resultats correctes, les confusions i els casos sense resposta; no useu dades personals ni inferiu característiques de qui manipula el dispositiu.
+Con tarjetas de prueba inventadas, variad ángulo, velocidad o soporte, una característica cada vez. Clasificad los resultados correctos, las confusiones y los casos sin respuesta; no uséis datos personales ni inferáis características de quien manipula el dispositivo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Formuleu preguntes per revisar biaix i dades absents: quines condicions no apareixen?, quina classe té menys mostres?, a qui podria perjudicar un fals resultat si algú l’aplicara fora de la maqueta? Registreu cada hipòtesi amb una evidència del conjunt fictici.
+Formulad preguntas para revisar sesgo y datos ausentes: ¿qué condiciones no aparecen?, ¿qué clase tiene menos muestras?, ¿a quién podría perjudicar un falso resultado si alguien lo aplicara fuera de la maqueta? Registrad cada hipótesis con una evidencia del conjunto ficticio.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Redissenyeu el protocol perquè represente millor les variacions de la maqueta i proposeu una prova que podria refutar la vostra hipòtesi. Manteniu l’avís que el model no classifica persones ni serveix per a prendre decisions sobre elles.
+Rediseñad el protocolo para que represente mejor las variaciones de la maqueta y proponed una prueba que podría refutar vuestra hipótesis. Mantened el aviso de que el modelo no clasifica personas ni sirve para tomar decisiones sobre ellas.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** cas de biaix analitzat, condició absent i prova proposada. Expliqueu per què el biaix pot aparéixer per les decisions de recollida i etiquetatge. Pregunta de tancament: «Quin ús hauríem de rebutjar encara que el model semblara encertar?».
+**Evidencia:** caso de sesgo analizado, condición ausente y prueba propuesta. Explicad por qué el sesgo puede aparecer por las decisiones de recogida y etiquetado. Pregunta de cierre: «¿Qué uso deberíamos rechazar aunque el modelo pareciera acertar?».
 
-### **Sessió 6 · Fer millores (Exploring ML: making improvements).**
+### **Sesión 6 · Hacer mejoras (Exploring ML: making improvements).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Reviseu la targeta de resultats i trieu un buit concret observat, com una orientació que apareix poc o una transició confosa. Escriviu quina classe podria millorar i quin resultat indicaria que la predicció era incorrecta.
+Revisad la tarjeta de resultados y elegid un hueco concreto observado, como una orientación que aparece poco o una transición confusa. Escribid qué clase podría mejorar y qué resultado indicaría que la predicción era incorrecta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Afegiu només les dades que resolen el buit observat. Comproveu etiquetes, condicions de captura i proporció entre classes abans d’entrenar de nou; no augmenteu totes les dades sense una justificació.
+Añadid solo los datos que resuelven el hueco observado. Comprobad etiquetas, condiciones de captura y proporción entre clases antes de entrenar de nuevo; no aumentéis todos los datos sin una justificación.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu la targeta d’exactitud abans i després, amb nombre de casos per classe, encerts, errors i dubtes. Marqueu si el resultat millora en la classe prevista i si apareix una regressió en una altra.
+Comparad la tarjeta de exactitud antes y después, con número de casos por clase, aciertos, errores y dudas. Marcad si el resultado mejora en la clase prevista y si aparece una regresión en otra.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si la millora no és consistent, preserveu la versió original, repetiu la prova amb un conjunt diferent i expliqueu la incertesa. Decidiu si convé redefinir l’etiqueta, corregir el muntatge o mantindre l’eixida neutral.
+Si la mejora no es consistente, conservad la versión original, repetid la prueba con un conjunto diferente y explicad la incertidumbre. Decidid si conviene redefinir la etiqueta, corregir el montaje o mantener la salida neutra.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** comparació abans/després i justificació de conservar o rebutjar el canvi. Pregunteu: «Quines proves sostenen la millora? Quines dades encara falten per valorar-la?».
+**Evidencia:** comparación antes/después y justificación de conservar o rechazar el cambio. Preguntad: «¿Qué pruebas sostienen la mejora? ¿Qué datos faltan todavía para valorarla?».
 
-### **Sessió 7 · Programar amb el model (Exploring ML: coding with your model).**
+### **Sesión 7 · Programar con el modelo (Exploring ML: coding with your model).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu les classes del model i dibuixeu què hauria de mostrar el temporitzador per a cada orientació. Predigueu també què veurà l’usuari quan no hi haja classificació i com podrà aturar o reiniciar el sistema.
+Recuperad las clases del modelo y dibujad qué debería mostrar el temporizador para cada orientación. Predecid también qué verá el usuario cuando no haya clasificación y cómo podrá detener o reiniciar el sistema.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Incorporeu les etiquetes ML a MakeCode i programeu un temporitzador visual curt per a la maqueta. Definiu tres estats clars: preparat, activitat de maqueta i pausa/aturat; useu una icona i una durada breu, sense calcular puntuacions.
+Incorporad las etiquetas ML a MakeCode y programad un temporizador visual corto para la maqueta. Definid tres estados claros: preparado, actividad de maqueta y pausa/detenido; usad un icono y una duración breve, sin calcular puntuaciones.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Traceu el flux de les entrades del model fins a cada estat. Afegiu «sense classificar» com a eixida neutral i comproveu que no activa el temporitzador per error. Registreu les transicions esperades abans d’executar el programa.
+Trazad el flujo de las entradas del modelo hasta cada estado. Añadid «sin clasificar» como salida neutra y comprobad que no activa el temporizador por error. Registrad las transiciones esperadas antes de ejecutar el programa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Afegiu pausa manual i botó d’aturada, que ha de funcionar des de qualsevol estat. Proveu el codi en micro:bit i verifiqueu que es pot usar sense seguir cap activitat corporal real; si no hi ha dispositiu compatible, marqueu clarament la prova com a simulació.
+Añadid pausa manual y botón de parada, que debe funcionar desde cualquier estado. Probad el código en micro:bit y verificad que se puede usar sin seguir ninguna actividad corporal real; si no hay dispositivo compatible, marcad claramente la prueba como simulación.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** programa anotat i taula de transicions amb classificació coneguda, desconeguda, pausa i aturada. Expliqueu quina part aporta el model i quina respon a regles de MakeCode. No envieu alertes ni calculeu cap puntuació de rendiment.
+**Evidencia:** programa anotado y tabla de transiciones con clasificación conocida, desconocida, pausa y parada. Explicad qué parte aporta el modelo y qué parte responde a reglas de MakeCode. No enviéis alertas ni calculéis ninguna puntuación de rendimiento.
 
-### **Sessió 8 · Avaluar disseny i impactes (Evaluating AI project design and impacts).**
+### **Sesión 8 · Evaluar diseño e impactos (Evaluating AI project design and impacts).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans de presentar el prototip, cada equip prediu quina pregunta crítica pot fer una persona visitant sobre dades, errors o ús del temporitzador. Reviseu el propòsit i confirmeu que està restringit a la maqueta.
+Antes de presentar el prototipo, cada equipo predice qué pregunta crítica puede hacer una persona visitante sobre datos, errores o uso del temporizador. Revisad el propósito y confirmad que está restringido a la maqueta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Completeu una fitxa del model amb propòsit, origen i tractament de dades, categories, resultats, límits i impactes possibles. Incloeu les dades excloses, el conjunt de prova separat i les opcions d’aturada manual.
+Completad una ficha del modelo con propósito, origen y tratamiento de datos, categorías, resultados, límites e impactos posibles. Incluid los datos excluidos, el conjunto de prueba separado y las opciones de parada manual.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Presenteu el sistema com una combinació de dades, model, codi i maquinari. Mostreu els resultats agregats, expliqueu una confusió i responeu quines parts continuen sota control humà; no projecteu dades brutes ni identificables.
+Presentad el sistema como una combinación de datos, modelo, código y hardware. Mostrad los resultados agregados, explicad una confusión y responded qué partes permanecen bajo control humano; no proyectéis datos brutos ni identificables.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Rebeu preguntes d’una altra parella i reviseu la fitxa per fer explícit qualsevol límit que no s’havia entés. Decidiu quines circumstàncies invalidarien una resposta o exigirien aturar el temporitzador.
+Recibid preguntas de otra pareja y revisad la ficha para hacer explícito cualquier límite que no se había entendido. Decidid qué circunstancias invalidarían una respuesta o exigirían detener el temporizador.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** fitxa final del model, presentació i decisió documentada sobre quan no s’ha d’utilitzar. Una parella revisora ha de poder identificar en menys d’un minut per a què serveix i per a què no. Tanqueu preguntant: «Quin impacte podria tindre una resposta incorrecta si algú ignorara els límits?».
+**Evidencia:** ficha final del modelo, presentación y decisión documentada sobre cuándo no se debe utilizar. Una pareja revisora debe poder identificar en menos de un minuto para qué sirve y para qué no. Cerrad preguntando: «¿Qué impacto podría tener una respuesta incorrecta si alguien ignorara los límites?».
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Distingir un sistema basat en regles d’un model que aprén patrons a partir de dades.
-- Netejar i separar conjunts d’entrenament i prova, documentant exclusions i condicions.
-- Calcular encerts, errors i dubtes, revisar biaixos i iterar sense usar dades personals o biomètriques.
-- Construir una eixida controlable per a una maqueta i presentar una model card amb usos, riscos i límits.
+- Distinguir un sistema basado en reglas de un modelo que aprende patrones a partir de datos.
+- Limpiar y separar conjuntos de entrenamiento y prueba, documentando exclusiones y condiciones.
+- Calcular aciertos, errores y dudas, revisar sesgos e iterar sin usar datos personales o biométricos.
+- Construir una salida controlable para una maqueta y presentar una model card con usos, riesgos y límites.
 
-## 🧰 Requisits i alternativa didàctica
+## 🧰 Requisitos y alternativa didáctica
 
-CreateAI, MakeCode, navegador o app compatible, micro:bit V2, alimentació i cable de dades; una segona placa pot ser necessària segons el Bluetooth de l’ordinador. El servei guarda projectes al navegador o dispositiu i el fitxer HEX pot incloure dades, model i codi. Si no es pot usar l’eina, les lliçons 1, 2, 5 i 8 continuen amb targetes; les sessions de ML es poden fer amb un classificador en paper identificat com a simulació, sense afirmar que s’ha entrenat un model.
+CreateAI, MakeCode, navegador o app compatible, micro:bit V2, alimentación y cable de datos; una segunda placa puede ser necesaria según el Bluetooth del ordenador. El servicio guarda proyectos en el navegador o dispositivo y el archivo HEX puede incluir datos, modelo y código. Si no se puede usar la herramienta, las lecciones 1, 2, 5 y 8 continúan con tarjetas; las sesiones de ML se pueden hacer con un clasificador en papel identificado como simulación, sin afirmar que se ha entrenado un modelo.
 
-## 🔒 Consentiment, seguretat i benestar
+## 🔒 Consentimiento, seguridad y bienestar
 
-Useu dades anònimes de moviments d’un objecte o maqueta sempre que siga possible. No enregistreu noms, imatges, veu ni dades de salut; cap moviment ni prova és obligatori. No compartiu fitxers amb dades brutes fora del dispositiu del centre i esborreu-los segons la pauta docent. El temporitzador no és un assessor d’exercici, no mesura rendiment i no ha de classificar persones.
+Usad datos anónimos de movimientos de un objeto o maqueta siempre que sea posible. No registréis nombres, imágenes, voz ni datos de salud; ningún movimiento ni prueba es obligatorio. No compartáis archivos con datos brutos fuera del dispositivo del centro y borradlos según la pauta docente. El temporizador no es un asesor de ejercicio, no mide rendimiento y no debe clasificar personas.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Carpeta amb classificació desconnectada, categories i etiquetes, mostres netejades, targetes de prova, codi amb estat neutral, model card i reflexió sobre impacte. Valoreu la comprensió del paper de les dades, la diversitat de proves, la depuració i la comunicació dels límits, no l’exactitud absoluta del model.
+Carpeta con clasificación desconectada, categorías y etiquetas, muestras limpias, tarjetas de prueba, código con estado neutro, model card y reflexión sobre el impacto. Valorad la comprensión del papel de los datos, la diversidad de pruebas, la depuración y la comunicación de los límites, no la exactitud absoluta del modelo.
 
-## Registre de dades i seqüència de proves
+## Registro de datos y secuencia de pruebas
 
-En les sessions 1 i 2, distingiu una regla fixa («si la targeta mostra una inclinació, classifica-la com a A») d'un model que ajusta patrons a exemples. Classifiqueu targetes fictícies de moviments i discutiu dues ordenacions possibles. Acordeu abans de recollir res què significa cada classe, qui controla les dades i com s'elimina el fitxer de prova. Si CreateAI no està disponible, conserveu les discussions i useu fitxes com a simulació; no anomeneu «entrenat» el classificador de paper.
+En las sesiones 1 y 2, distinguid una regla fija («si la tarjeta muestra una inclinación, clasifícala como A») de un modelo que ajusta patrones a ejemplos. Clasificad tarjetas ficticias de movimientos y discutid dos ordenaciones posibles. Acordad antes de recoger nada qué significa cada clase, quién controla los datos y cómo se elimina el archivo de prueba. Si CreateAI no está disponible, conservad las discusiones y usad fichas como simulación; no llaméis «entrenado» al clasificador de papel.
 
-En la sessió 3, poseu la micro:bit damunt d'una base de cartó marcada amb dos angles i recolliu diverses mostres de cada orientació, sempre amb la mateixa posició inicial. Identifiqueu una mostra mal etiquetada o un moviment que barreja les dues categories. Abans d'eliminar-la, escriviu una raó verificable: etiqueta equivocada, placa que s'ha mogut durant la captura o mostra incompleta. Eviteu noms de fitxer amb identitats i no demaneu que cap alumne faça un gest físic concret.
+En la sesión 3, poned la micro:bit encima de una base de cartón marcada con dos ángulos y recoged varias muestras de cada orientación, siempre con la misma posición inicial. Identificad una muestra mal etiquetada o un movimiento que mezcla las dos categorías. Antes de eliminarla, escribid una razón verificable: etiqueta equivocada, placa que se ha movido durante la captura o muestra incompleta. Evitad nombres de archivo con identidades y no pidáis que ningún alumno haga un gesto físico concreto.
 
-En la sessió 4, separeu les mostres de prova de les dades d'entrenament. Registreu nombre de proves, encerts, errors i casos dubtosos; expliqueu què no es pot inferir d'una mostra petita. En la sessió 5, reviseu un cas de biaix de dades fictici: un model ha vist només una orientació i classifica malament una altra. Pregunteu qui podria quedar fora si el prototip s'utilitzara amb persones i decidiu no fer eixe ús. En la sessió 6, afegiu exemples que cobreixen la variació de la maqueta, torneu a provar amb un conjunt nou i compareu els resultats sense ocultar cap regressió.
+En la sesión 4, separad las muestras de prueba de los datos de entrenamiento. Registrad número de pruebas, aciertos, errores y casos dudosos; explicad qué no se puede inferir de una muestra pequeña. En la sesión 5, revisad un caso de sesgo de datos ficticio: un modelo ha visto solo una orientación y clasifica mal otra. Preguntad quién podría quedar fuera si el prototipo se utilizara con personas y decidid no hacer ese uso. En la sesión 6, añadid ejemplos que cubren la variación de la maqueta, volved a probar con un conjunto nuevo y comparad los resultados sin ocultar ninguna regresión.
 
-## Codi del temporitzador i model card
+## Código del temporizador y model card
 
-En la sessió 7, definiu tres estats: «preparat», «activitat de maqueta» i «pausa/aturat». El programa només mostra una icona i una durada breu després d'una classificació prevista; quan el model no reconeix el patró, roman en estat neutral i espera una acció manual. Proveu cada transició i assegureu-vos que el botó d'aturada funciona des de qualsevol estat. No s'envia cap alerta ni es calcula cap puntuació.
+En la sesión 7, definid tres estados: «preparado», «actividad de maqueta» y «pausa/detenido». El programa solo muestra un icono y una duración breve tras una clasificación prevista; cuando el modelo no reconoce el patrón, permanece en estado neutro y espera una acción manual. Probad cada transición y asegurad que el botón de parada funciona desde cualquier estado. No se envía ninguna alerta ni se calcula ninguna puntuación.
 
-La targeta del model final conté: propòsit restringit, dades usades i dades excloses, etiquetes i qui les va definir, com s'han netejat mostres, conjunt de prova separat, encerts/errors/dubtes, limitacions i possibles efectes si algú intentara usar-lo amb persones. Una parella revisora ha de poder identificar en menys d'un minut per a què serveix el model i per a què no serveix. L'exposició mostra només resultats anònims del prototip, sense dades brutes identificables.
+La tarjeta del modelo final contiene: propósito restringido, datos usados y datos excluidos, etiquetas y quién las definió, cómo se han limpiado las muestras, conjunto de prueba separado, aciertos/errores/dudas, limitaciones y posibles efectos si alguien intentara usarlo con personas. Una pareja revisora debe poder identificar en menos de un minuto para qué sirve el modelo y para qué no sirve. La exposición muestra solo resultados anónimos del prototipo, sin datos brutos identificables.
 
-## 🔗 Unitat oficial adaptada
+## 🔗 Unidad oficial adaptada
 
-Aquesta situació adapta les vuit lliçons de micro:bit [Developing AI literacy with the micro:bit](https://microbit.org/teach/lessons/developing-ai-literacy-with-the-microbit/): parlar d’IA, dades, recollir/netejar, provar, biaix, millorar, programar amb el model i avaluar disseny/impacte. El context de maqueta, l’ús de dades d’objecte i els criteris del temporitzador són propis.
+Esta situación adapta las ocho lecciones de micro:bit [Developing AI literacy with the micro:bit](https://microbit.org/teach/lessons/developing-ai-literacy-with-the-microbit/): hablar de IA, datos, recoger/limpiar, probar, sesgo, mejorar, programar con el modelo y evaluar diseño/impacto. El contexto de maqueta, el uso de datos de objeto y los criterios del temporizador son propios.

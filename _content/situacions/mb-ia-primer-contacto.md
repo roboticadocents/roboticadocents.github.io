@@ -14,97 +14,97 @@ duration: "2 sesiones"
 challenge: "¿Cómo podemos explicar qué es la IA y probar si un modelo reconoce dos movimientos que no ha visto antes?"
 ---
 
-![Una placa micro:bit i targetes de classificar patrons representen una introducció a la IA i l’aprenentatge automàtic.](../../_assets/situacions/mb-ia-tastet.webp)
+![Una placa micro:bit y tarjetas de clasificar patrones representan una introducción a la IA y al aprendizaje automático.](../../_assets/situacions/mb-ia-tastet.webp)
 
-_El model classifica patrons de moviment del dispositiu; no pensa, entén ni coneix les persones._
+_El modelo clasifica patrones de movimiento del dispositivo; no piensa, entiende ni conoce a las personas._
 
-## 🌱 Situació i intenció
+## 🌱 Situación y intención
 
-Una exposició local de ciència prepara una demostració sobre com les màquines classifiquen exemples. L’alumnat diferencia automatització i IA, ordena dades i usa micro:bit CreateAI per entrenar i provar un model senzill amb moviments del dispositiu. L’objectiu és entendre dades, etiquetes i límits; no es tracta de construir una aplicació per avaluar persones.
+Una exposición local de ciencia prepara una demostración sobre cómo las máquinas clasifican ejemplos. El alumnado diferencia automatización e IA, ordena datos y usa micro:bit CreateAI para entrenar y probar un modelo sencillo con movimientos del dispositivo. El objetivo es entender datos, etiquetas y límites; no se trata de construir una aplicación para evaluar personas.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Distingir una instrucció programada d’un model que aprén patrons a partir d’exemples.
-- Preparar exemples etiquetats de dos moviments ficticis i comprovar quines diferències pot usar el model.
-- Provar el model amb exemples que no han format part de l’entrenament i registrar encerts i confusions.
-- Explicar que el resultat depén de les dades i no permet identificar ni valorar persones.
+- Distinguir una instrucción programada de un modelo que aprende patrones a partir de ejemplos.
+- Preparar ejemplos etiquetados de dos movimientos ficticios y comprobar qué diferencias puede usar el modelo.
+- Probar el modelo con ejemplos que no han formado parte del entrenamiento y registrar aciertos y confusiones.
+- Explicar que el resultado depende de los datos y no permite identificar ni valorar personas.
 
-## 📅 Seqüència didàctica · 2 sessions
+## 📅 Secuencia didáctica · 2 sesiones
 
-### **Sessió 1 · Introducció a la IA (Introduction to AI).**
+### **Sesión 1 · Introducción a la IA (Introduction to AI).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu una regla senzilla —«si la targeta té ales, posa-la al grup A»— i una altra que necessita interpretació —«si el moviment sembla ràpid»—. Predigueu quina serà més fàcil de seguir i qui decideix què vol dir «ràpid».
+Mostrad una regla sencilla —«si la tarjeta tiene alas, ponla en el grupo A»— y otra que necesita interpretación —«si el movimiento parece rápido»—. Predecid cuál será más fácil de seguir y quién decide qué significa «rápido».
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Classifiqueu exemples inventats de tecnologia que usa o no usa IA i justifiqueu cada decisió. Separeu els casos clars dels dubtosos; no forceu una resposta única quan la informació no basta.
+Clasificad ejemplos inventados de tecnología que usa o no usa IA y justificad cada decisión. Separad los casos claros de los dudosos; no forcéis una respuesta única cuando la información no basta.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Descriviu la regla aplicada i les dades que heu observat. Expliqueu que una regla programada respon a condicions escrites per una persona, mentre que un sistema d’aprenentatge automàtic ajusta un model a partir d’exemples etiquetats.
+Describid la regla aplicada y los datos que habéis observado. Explicad que una regla programada responde a condiciones escritas por una persona, mientras que un sistema de aprendizaje automático ajusta un modelo a partir de ejemplos etiquetados.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu frases que atribueixen intencions humanes a una màquina i reescriviu-les amb precisió: el sistema processa dades i produeix una eixida segons el seu disseny. Compareu si la nova formulació diferencia millor automatització, regla i model.
+Revisad frases que atribuyen intenciones humanas a una máquina y reescribidlas con precisión: el sistema procesa datos y produce una salida según su diseño. Comparad si la nueva formulación diferencia mejor automatización, regla y modelo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compartiu una definició pròpia d’IA i un cas en què no es pot decidir només amb la informació disponible. **Evidència:** classificació inicial, justificacions i definició revisada amb una limitació identificada.
+Compartid una definición propia de IA y un caso en el que no se puede decidir solo con la información disponible. **Evidencia:** clasificación inicial, justificaciones y definición revisada con una limitación identificada.
 
-### **Sessió 2 · Introducció a l’aprenentatge automàtic (Introduction to machine learning).**
+### **Sesión 2 · Introducción al aprendizaje automático (Introduction to machine learning).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu targetes amb dibuixos esquemàtics de dos gestos geomètrics: «moure la placa en línia» i «fer un moviment circular». Abans de classificar els casos nous, cada equip prediu quins exemples seran fàcils de separar i en quins dubtarà.
+Presentad tarjetas con dibujos esquemáticos de dos gestos geométricos: «mover la placa en línea» y «hacer un movimiento circular». Antes de clasificar los casos nuevos, cada equipo predice qué ejemplos serán fáciles de separar y en cuáles dudará.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Separeu les targetes en conjunt d’exemples i conjunt de prova. Descriviu les característiques observades —direcció, ritme dibuixat o nombre de canvis— i acordeu etiquetes clares. No useu fotografies, noms ni perfils d’alumnes.
+Separad las tarjetas en conjunto de ejemplos y conjunto de prueba. Describid las características observadas —dirección, ritmo dibujado o número de cambios— y acordad etiquetas claras. No uséis fotografías, nombres ni perfiles de alumnado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu com dues regles diferents poden classificar una mateixa targeta. Registreu la classe esperada, la regla aplicada, el resultat i si hi ha acord entre observadors. Marqueu les targetes amb més d’una interpretació.
+Comparad cómo dos reglas diferentes pueden clasificar una misma tarjeta. Registrad la clase esperada, la regla aplicada, el resultado y si hay acuerdo entre observadores. Marcad las tarjetas con más de una interpretación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si l’etiqueta és ambigua o els exemples no representen bé els casos, reviseu la definició de les categories o afegiu una targeta fictícia. Torneu a provar la classificació i expliqueu si el canvi ha reduït la confusió. Aquesta lliçó continua desconnectada, com en la seqüència oficial; l’entrenament amb CreateAI queda per a les lliçons següents del curs ampliat.
+Si la etiqueta es ambigua o los ejemplos no representan bien los casos, revisad la definición de las categorías o añadid una tarjeta ficticia. Volved a probar la clasificación y explicad si el cambio ha reducido la confusión. Esta lección continúa desconectada, como en la secuencia oficial; el entrenamiento con CreateAI queda para las lecciones siguientes del curso ampliado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu com una màquina podria ajustar un model a partir d’exemples i per què les etiquetes depenen de decisions humanes. Concloeu: «Amb aquests exemples, el classificador separa…, però no podem assegurar…». **Evidència:** dues classificacions, les seues regles, taula de proves amb casos nous i una limitació identificada.
+Explicad cómo una máquina podría ajustar un modelo a partir de ejemplos y por qué las etiquetas dependen de decisiones humanas. Concluid: «Con estos ejemplos, el clasificador separa…, pero no podemos asegurar…». **Evidencia:** dos clasificaciones, sus reglas, tabla de pruebas con casos nuevos y una limitación identificada.
 
-## 🧰 Materials i accés a CreateAI
+## 🧰 Materiales y acceso a CreateAI
 
-Les dues sessions es poden fer amb targetes i exemples de tecnologia, sense dispositius ni connexió. Per a continuar amb les sessions pràctiques del curs complet, useu CreateAI en navegador Chrome o Edge amb Bluetooth habilitat, o l’app oficial compatible en tauleta, i una placa micro:bit per a recollir dades. La V2 és necessària per executar després el model amb MakeCode sobre la placa. Comproveu l’accés del centre abans de planificar aquesta extensió.
+Las dos sesiones se pueden hacer con tarjetas y ejemplos de tecnología, sin dispositivos ni conexión. Para continuar con las sesiones prácticas del curso completo, usad CreateAI en navegador Chrome o Edge con Bluetooth habilitado, o la app oficial compatible en tableta, y una placa micro:bit para recoger datos. La V2 es necesaria para ejecutar después el modelo con MakeCode sobre la placa. Comprobad el acceso del centro antes de planificar esta extensión.
 
-## 🔒 Dades, consentiment i prova
+## 🔒 Datos, consentimiento y prueba
 
-Useu el moviment d’un objecte o de la placa i no captureu imatges, veu, noms ni perfils. Els projectes CreateAI es guarden al dispositiu o navegador; descarregar un fitxer HEX pot incloure les dades, el model i el codi, de manera que el docent decideix com es conserva i s’esborra. La participació corporal és voluntària i es pot substituir per un dispositiu sobre una maqueta. No useu el resultat per classificar habilitats o salut.
+Usad el movimiento de un objeto o de la placa y no capturéis imágenes, voz, nombres ni perfiles. Los proyectos CreateAI se guardan en el dispositivo o navegador; descargar un archivo HEX puede incluir los datos, el modelo y el código, de manera que el docente decide cómo se conserva y se borra. La participación corporal es voluntaria y se puede sustituir por un dispositivo sobre una maqueta. No uséis el resultado para clasificar habilidades o salud.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Recolliu una definició d’IA en paraules pròpies, classificació de targetes, diagrama d’etiquetes i taula de proves amb casos nous, resultat correcte o erroni i possible explicació. Valoreu si l’equip reconeix el paper de les persones que trien categories i dades i descriu incertesa sense antropomorfitzar el model.
+Recoged una definición de IA en palabras propias, clasificación de tarjetas, diagrama de etiquetas y tabla de pruebas con casos nuevos, resultado correcto o erróneo y posible explicación. Valorad si el equipo reconoce el papel de las personas que eligen categorías y datos y describe incertidumbre sin antropomorfizar el modelo.
 
-## Guió d’aula i preguntes per investigar
+## Guion de aula y preguntas para investigar
 
-**Inici de la primera sessió:** mostreu una regla senzilla, com ara «si la targeta té ales, posa-la al grup A», i una altra que necessita interpretació, com ara «si el moviment sembla ràpid». Pregunteu quina és més fàcil de seguir i qui decideix què vol dir «ràpid». Expliqueu que una regla programada respon a condicions escrites per una persona, mentre que un sistema d'aprenentatge automàtic ajusta un model a partir d'exemples etiquetats. Eviteu dir que el model aprén com un infant: la comparació pot ajudar, però amaga diferències importants.
+**Inicio de la primera sesión:** mostrad una regla sencilla, como «si la tarjeta tiene alas, ponla en el grupo A», y otra que necesita interpretación, como «si el movimiento parece rápido». Preguntad cuál es más fácil de seguir y quién decide qué significa «rápido». Explicad que una regla programada responde a condiciones escritas por una persona, mientras que un sistema de aprendizaje automático ajusta un modelo a partir de ejemplos etiquetados. Evitad decir que el modelo aprende como un niño: la comparación puede ayudar, pero esconde diferencias importantes.
 
-Per al joc de targetes, prepareu exemples ficticis de dos gestos geomètrics: «moure la placa en línia» i «fer un moviment circular». Comenceu amb dibuixos esquemàtics, no amb fotografies d'alumnes. Dividiu les targetes en conjunt d'exemples i conjunt de prova. Poseu en comú quins trets s'han fet servir —direcció, ritme dibuixat, nombre de canvis— i marqueu les targetes amb més d'una interpretació. Si el grup no pot acordar una etiqueta consistent, reviseu la tasca en lloc de forçar una resposta única.
+Para el juego de tarjetas, preparad ejemplos ficticios de dos gestos geométricos: «mover la placa en línea» y «hacer un movimiento circular». Empezad con dibujos esquemáticos, no con fotografías de alumnado. Dividid las tarjetas en conjunto de ejemplos y conjunto de prueba. Poned en común qué rasgos se han usado —dirección, ritmo dibujado, número de cambios— y marcad las tarjetas con más de una interpretación. Si el grupo no puede acordar una etiqueta consistente, revisad la tarea en lugar de forzar una respuesta única.
 
-**Segona sessió:** expliqueu amb targetes la idea de dades d'entrenament, etiqueta i predicció. Cada equip redacta una predicció abans de classificar els casos nous: quins reconeixerà el model?, en quins dubtem? Si el centre disposa de CreateAI i micro:bit, la classe pot continuar amb el curs ampliat en una activitat posterior; aquesta situació de dues sessions no pressuposa la disponibilitat d'eixa eina. La pàgina oficial i els dispositius compatibles poden canviar, així que el docent ha de comprovar l'accés tècnic abans de programar una extensió.
+**Segunda sesión:** explicad con tarjetas la idea de datos de entrenamiento, etiqueta y predicción. Cada equipo redacta una predicción antes de clasificar los casos nuevos: ¿qué reconocerá el modelo?, ¿en cuáles dudamos? Si el centro dispone de CreateAI y micro:bit, la clase puede continuar con el curso ampliado en una actividad posterior; esta situación de dos sesiones no presupone la disponibilidad de esa herramienta. La página oficial y los dispositivos compatibles pueden cambiar, así que el docente debe comprobar el acceso técnico antes de programar una extensión.
 
-## Taula de proves i lectura crítica
+## Tabla de pruebas y lectura crítica
 
-Per cada cas nou, anoteu la classe que el grup esperava, la predicció obtinguda en la demostració i si hi ha acord entre observadors. Classifiqueu les discrepàncies: etiqueta ambigua, pocs exemples, un cas diferent dels d'entrenament o limitació del sistema. No cal calcular una «precisió» amb un conjunt xicotet; n'hi ha prou amb comptar encerts i errors i explicar què no es pot concloure. Una prova curta no demostra que el sistema funcione igual amb qualsevol persona, context o dispositiu.
+Por cada caso nuevo, anotad la clase que el grupo esperaba, la predicción obtenida en la demostración y si hay acuerdo entre observadores. Clasificad las discrepancias: etiqueta ambigua, pocos ejemplos, un caso diferente de los de entrenamiento o limitación del sistema. No hace falta calcular una «precisión» con un conjunto pequeño; basta con contar aciertos y errores y explicar qué no se puede concluir. Una prueba corta no demuestra que el sistema funcione igual con cualquier persona, contexto o dispositivo.
 
-Preguntes de conversa: qui ha triat les categories?, qui no queda representat en els exemples?, una etiqueta descriu l'acció o jutja la persona?, què passa quan un cas queda entre les dues classes?, i com hauria de poder respondre un sistema quan no n'està segur? Concloeu amb una frase precisa: «Amb aquests exemples, el classificador separa…, però no podem assegurar…».
+Preguntas de conversación: ¿quién ha elegido las categorías?, ¿quién no queda representado en los ejemplos?, ¿una etiqueta describe la acción o juzga a la persona?, ¿qué pasa cuando un caso queda entre las dos clases?, y ¿cómo debería poder responder un sistema cuando no está seguro? Concluid con una frase precisa: «Con estos ejemplos, el clasificador separa…, pero no podemos asegurar…».
 
-## Organització, inclusió i producte final
+## Organización, inclusión y producto final
 
-En equips de tres, repartiu els rols de curador/a de dades, classificador/a i verificador/a; canvieu-los entre rondes. Les accions corporals són voluntàries: es poden representar amb una targeta, un objecte sobre una maqueta o una descripció del docent. Oferiu exemples amb pictogrames, lectura en veu alta i temps suficient per negociar les categories. El producte final és un cartell per a l'exposició amb quatre parts: què classifica el model, quins exemples usem, què ha passat en les proves i quines conclusions no podem traure.
+En equipos de tres, repartid los roles de curador/a de datos, clasificador/a y verificador/a; cambiadlos entre rondas. Las acciones corporales son voluntarias: se pueden representar con una tarjeta, un objeto sobre una maqueta o una descripción del docente. Ofreced ejemplos con pictogramas, lectura en voz alta y tiempo suficiente para negociar las categorías. El producto final es un cartel para la exposición con cuatro partes: qué clasifica el modelo, qué ejemplos usamos, qué ha pasado en las pruebas y qué conclusiones no podemos sacar.
 
-## 🔗 Unitat oficial adaptada
+## 🔗 Unidad oficial adaptada
 
-Aquesta situació adapta les dues lliçons de micro:bit [CreateAI taster lessons](https://microbit.org/teach/lessons/createai-taster-lessons/): *Introduction to AI* i *Introduction to machine learning*. Les categories, els exemples i la prova de moviments són propis; el contingut cobreix definicions, entrenament, prova i límits d’un model.
+Esta situación adapta las dos lecciones de micro:bit [CreateAI taster lessons](https://microbit.org/teach/lessons/createai-taster-lessons/): *Introduction to AI* e *Introduction to machine learning*. Las categorías, los ejemplos y la prueba de movimientos son propios; el contenido cubre definiciones, entrenamiento, prueba y límites de un modelo.

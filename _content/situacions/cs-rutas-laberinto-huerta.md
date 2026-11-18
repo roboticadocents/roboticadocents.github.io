@@ -15,111 +15,111 @@ challenge: "¿Cómo podemos planificar y probar una ruta tangible, primero con �
 official_source: "https://www.matatastudio.com/teaching-materials.html"
 ---
 
-![El Coding Set real de MatataStudio al costat d’un mapa propi en quadrícula que connecta una plantació de l’horta amb la biblioteca de l’escola.](../../_assets/situacions/cs-rutes-laberint-horta.webp)
+![El Coding Set real de MatataStudio junto a un mapa propio en cuadrícula que conecta una plantación de la huerta con la biblioteca de la escuela.](../../_assets/situacions/cs-rutes-laberint-horta.webp)
 
-_Il·lustració IA basada en el Coding Set de la dotació. El mapa és una maqueta pròpia: cal dibuixar-lo a escala de 10 cm per casella si s’hi vol provar el moviment físic._
+_Ilustración IA basada en el Coding Set de la dotación. El mapa es una maqueta propia: hay que dibujarlo a escala de 10 cm por casilla si se quiere probar el movimiento físico._
 
-## 🌱 Situació, repte i intenció
+## 🌱 Situación, reto e intención
 
-La classe prepara una ruta d’orientació entre una plantació, el mercat i la biblioteca del centre. Abans de moure MatataBot, l’alumnat haurà d’explicar com la torre llig els blocs, què vol dir enviar i rebre instruccions i com es pot representar una ruta amb ordres físiques. En una segona sessió, resoldrà un laberint de paper i comprovarà com els paràmetres, els bucles i les funcions permeten expressar recorreguts més llargs amb menys peces.
+La clase prepara una ruta de orientación entre una plantación, el mercado y la biblioteca del centro. Antes de mover MatataBot, el alumnado deberá explicar cómo la torre lee los bloques, qué significa enviar y recibir instrucciones y cómo se puede representar una ruta con órdenes físicas. En una segunda sesión, resolverá un laberinto de papel y comprobará cómo los parámetros, los bucles y las funciones permiten expresar recorridos más largos con menos piezas.
 
-La proposta adapta dues lliçons del manual extracurricular de Coding Set: la primera introdueix els components, la comunicació Bluetooth i les ordres direccionals; la segona treballa laberints, paràmetres, bucles i funcions amb mapes i reptes del *Challenge Booklet*. El context valencià, els mapes i els casos de prova són originals. No es reprodueixen les pàgines del quadern de reptes.
+La propuesta adapta dos lecciones del manual extracurricular de Coding Set: la primera introduce los componentes, la comunicación Bluetooth y las órdenes direccionales; la segunda trabaja laberintos, parámetros, bucles y funciones con mapas y retos del *Challenge Booklet*. El contexto valenciano, los mapas y los casos de prueba son originales. No se reproducen las páginas del cuaderno de retos.
 
-**Pregunta guia:** què ha de saber qui programa i qui executa una ruta perquè el robot arribe al lloc previst, i com podem escurçar el programa sense canviar el recorregut?
+**Pregunta guía:** ¿qué debe saber quien programa y quien ejecuta una ruta para que el robot llegue al lugar previsto, y cómo podemos acortar el programa sin cambiar el recorrido?
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Reconéixer la torre de comandament, el tauler de control, els blocs i MatataBot i explicar quin paper té cadascun.
-- Distingir qui envia una instrucció de qui la rep i descriure la comunicació entre torre i robot.
-- Planificar, executar i depurar seqüències amb avançar, retrocedir i girar.
-- Usar el bloc numèric per repetir una instrucció i els blocs de bucle per repetir una seqüència.
-- Definir una seqüència amb el bloc de funció i invocar-la des de la segona línia, segons el funcionament descrit en el manual.
-- Registrar la posició inicial i final, comparar la predicció amb el resultat i corregir una instrucció cada vegada.
+- Reconocer la torre de control, el tablero de control, los bloques y MatataBot y explicar qué papel tiene cada uno.
+- Distinguir quién envía una instrucción de quién la recibe y describir la comunicación entre torre y robot.
+- Planificar, ejecutar y depurar secuencias con avanzar, retroceder y girar.
+- Usar el bloque numérico para repetir una instrucción y los bloques de bucle para repetir una secuencia.
+- Definir una secuencia con el bloque de función e invocarla desde la segunda línea, según el funcionamiento descrito en el manual.
+- Registrar la posición inicial y final, comparar la predicción con el resultado y corregir una instrucción cada vez.
 
-**Vocabulari clau:** torre, tauler, bloc, enviar, rebre, Bluetooth, seqüència, orientació, laberint, obstacle, bandera, paràmetre, bucle, funció, coordenada i depuració.
+**Vocabulario clave:** torre, tablero, bloque, enviar, recibir, Bluetooth, secuencia, orientación, laberinto, obstáculo, bandera, parámetro, bucle, función, coordenada y depuración.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Un Coding Set per equip: torre, tauler, MatataBot i blocs de moviment; per a la segona sessió, també blocs numèrics, de bucle i de funció, obstacles i banderes, si formen part del kit disponible.
-- Fulls amb targetes de fletxes, paper quadriculat, llapis, quadern d’equip i una graella pròpia amb caselles de **10 × 10 cm** per a les proves físiques.
-- Mapes propis amb inici, destinació i obstacles de paper; marcadors de biblioteca, plantació, séquia i mercat. Aquests elements són representacions manuals, no són detectats pel robot.
+- Un Coding Set por equipo: torre, tablero, MatataBot y bloques de movimiento; para la segunda sesión, también bloques numéricos, de bucle y de función, obstáculos y banderas, si forman parte del kit disponible.
+- Hojas con tarjetas de flechas, papel cuadriculado, lápices, cuaderno de equipo y una cuadrícula propia con casillas de **10 × 10 cm** para las pruebas físicas.
+- Mapas propios con inicio, destino y obstáculos de papel; marcadores de biblioteca, plantación, acequia y mercado. Estos elementos son representaciones manuales, no son detectados por el robot.
 
-Abans de començar, carregueu i aparelleu torre i MatataBot segons el manual del kit. Proveu l’orientació dels blocs, el tauler, el botó d’inici i una ruta curta sobre una superfície plana. Comproveu que la torre llig la disposició real dels blocs i que no hi haja objectes ni mans al recorregut. Si no disposeu d’algun bloc avançat o de la bandera, representeu-lo amb targetes i expliqueu el programa sobre paper; no presenteu la simulació com una execució física.
+Antes de empezar, cargad y emparejad la torre y MatataBot según el manual del kit. Probad la orientación de los bloques, el tablero, el botón de inicio y una ruta corta sobre una superficie plana. Comprobad que la torre lee la disposición real de los bloques y que no haya objetos ni manos en el recorrido. Si no disponéis de algún bloque avanzado o de la bandera, representadlo con tarjetas y explicad el programa sobre papel; no presentéis la simulación como una ejecución física.
 
-Organitzeu equips de tres o quatre amb rols rotatius: lector/a del mapa, constructor/a del programa, operador/a del robot i observador/a que anota la predicció i el resultat. Ajusteu la ruta i el nombre de blocs a les possibilitats del grup.
+Organizad equipos de tres o cuatro con roles rotativos: lector/a del mapa, constructor/a del programa, operador/a del robot y observador/a que anota la predicción y el resultado. Ajustad la ruta y el número de bloques a las posibilidades del grupo.
 
-## 📅 Seqüència didàctica · dues sessions de 60 minuts
+## 📅 Secuencia didáctica · dos sesiones de 60 minutos
 
-### **Sessió 1 · La torre envia, MatataBot rep (60 min · lliçó extracurricular 1).**
+### **Sesión 1 · La torre envía, MatataBot recibe (60 min · lección extracurricular 1).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Movem-nos amb instruccions (10 min):** parleu de per a què serveixen els intermitents d’un vehicle i quins moviments indiquen. En una zona sense obstacles, l’alumnat forma una fila amb distància de seguretat i segueix una seqüència corporal: avançar un pas, girar a la dreta, retrocedir un pas i girar a l’esquerra. Repetiu-la una vegada i pregunteu què passa quan algú canvia l’ordre. No es corre ni s’imiten maniobres amb vehicles reals.
+**Nos movemos con instrucciones (10 min):** hablad de para qué sirven los intermitentes de un vehículo y qué movimientos indican. En una zona sin obstáculos, el alumnado forma una fila con distancia de seguridad y sigue una secuencia corporal: avanzar un paso, girar a la derecha, retroceder un paso y girar a la izquierda. Repetidla una vez y preguntad qué pasa cuando alguien cambia el orden. No se corre ni se imitan maniobras con vehículos reales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Identifiquem el sistema (15 min):** mostreu la torre, el tauler, els blocs i MatataBot. Amb el kit del centre, ensenyeu com s’engeguen i s’aparellen els dos dispositius, com es col·loquen els blocs amb la marca d’orientació cap avall i com s’inicia el programa. Expliqueu que la torre captura la disposició dels blocs i envia les instruccions per Bluetooth; MatataBot les rep i les executa. La càmera de la torre llig els blocs: el mapa de paper no és un sensor ni una ordre.
+**Identificamos el sistema (15 min):** mostrad la torre, el tablero, los bloques y MatataBot. Con el kit del centro, enseñad cómo se encienden y se emparejan los dos dispositivos, cómo se colocan los bloques con la marca de orientación hacia abajo y cómo se inicia el programa. Explicad que la torre captura la disposición de los bloques y envía las instrucciones por Bluetooth; MatataBot las recibe y las ejecuta. La cámara de la torre lee los bloques: el mapa de papel no es un sensor ni una orden.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**De la targeta al programa (10 min):** cada equip ordena targetes amb avançar, retrocedir i girar per arribar a una destinació. Una persona llig la seqüència; la resta la representa amb el cos o sobre la graella, sense robot. Anoteu quina peça representa cada instrucció i qui envia i qui rep el missatge.
+**De la tarjeta al programa (10 min):** cada equipo ordena tarjetas con avanzar, retroceder y girar para llegar a un destino. Una persona lee la secuencia; el resto la representa con el cuerpo o sobre la cuadrícula, sin robot. Anotad qué pieza representa cada instrucción y quién envía y quién recibe el mensaje.
 
-![La torre i el tauler del Coding Set al costat d’un laberint de paper amb hortalisses, obstacles de cartó, una bandera i una seqüència repetida de blocs.](../../_assets/situacions/sa-cs-laberint-horta-v1.webp)
+![La torre y el tablero del Coding Set junto a un laberinto de papel con hortalizas, obstáculos de cartón, una bandera y una secuencia repetida de bloques.](../../_assets/situacions/sa-cs-laberint-horta-v1.webp)
 
-_Laberint i marques creats per a aquesta proposta. Els símbols del mapa els interpreta l’alumnat; MatataBot només executa els blocs que la torre ha llegit._
+_Laberinto y marcas creados para esta propuesta. Los símbolos del mapa los interpreta el alumnado; MatataBot solo ejecuta los bloques que la torre ha leído._
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Provem una ruta curta (20 min):** dibuixeu una graella de 10 cm per casella. Amb una primera prova, poseu MatataBot en una casella inicial orientat cap a una destinació adjacent i trieu un bloc d’avanç. Predigueu el moviment, executeu-lo i registreu la posició final. Després afegiu un gir i una segona instrucció. Si el resultat no coincideix, comproveu l’orientació inicial, la col·locació dels blocs i l’ordre abans de canviar res; canvieu una sola instrucció i repetiu la prova. Retireu els blocs abans de preparar un repte nou.
+**Probamos una ruta corta (20 min):** dibujad una cuadrícula de 10 cm por casilla. Con una primera prueba, poned MatataBot en una casilla inicial orientado hacia un destino adyacente y elegid un bloque de avance. Predecid el movimiento, ejecutadlo y registrad la posición final. Después añadid un giro y una segunda instrucción. Si el resultado no coincide, comprobad la orientación inicial, la colocación de los bloques y el orden antes de cambiar nada; cambiad una sola instrucción y repetid la prueba. Retirad los bloques antes de preparar un reto nuevo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Tanquem amb evidències (5 min):** responeu en el quadern: per a què serveixen les marques dels blocs?, què envia la torre i què rep MatataBot?, què ha canviat quan hem alterat l’ordre? Dibuixeu la seqüència utilitzada i marqueu inici i final. **Evidència:** mapa curt, predicció, programa amb blocs i resultat observat. Com a ampliació desconnectada, creeu un cartell il·lustrat dels blocs direccionals o un joc de transmissió de missatges entre equips.
+**Cerramos con evidencias (5 min):** responded en el cuaderno: ¿para qué sirven las marcas de los bloques?, ¿qué envía la torre y qué recibe MatataBot?, ¿qué ha cambiado cuando hemos alterado el orden? Dibujad la secuencia utilizada y marcad inicio y final. **Evidencia:** mapa corto, predicción, programa con bloques y resultado observado. Como ampliación desconectada, cread un cartel ilustrado de los bloques direccionales o un juego de transmisión de mensajes entre equipos.
 
-### **Sessió 2 · Resolem un laberint amb blocs avançats (60 min · lliçó extracurricular 2).**
+### **Sesión 2 · Resolvemos un laberinto con bloques avanzados (60 min · lección extracurricular 2).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Llegim un laberint (10 min):** cada alumne traça amb llapis una ruta pròpia des de l’inici fins al final d’un laberint de paper, sense alçar el llapis ni esborrar els errors. Compareu les rutes: on calia retrocedir, girar o replantejar una instrucció? El docent mostra una solució possible i recorda que una ruta correcta pot tindre més d’un programa.
+**Leemos un laberinto (10 min):** cada alumno traza con lápiz una ruta propia desde el inicio hasta el final de un laberinto de papel, sin levantar el lápiz ni borrar los errores. Comparad las rutas: ¿dónde había que retroceder, girar o replantear una instrucción? El docente muestra una solución posible y recuerda que una ruta correcta puede tener más de un programa.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Coneixem paràmetre, bucle i funció (15 min):** presenteu els blocs nous disponibles al kit. El bloc numèric només acompanya avançar o retrocedir, no els girs. Els blocs `Loop Begin` i `Loop End` s’usen en parella per repetir les instruccions que queden dins; quan s’empra un nombre, el manual tècnic indica que va sota `Loop Begin`. Per a una funció, distingiu el bloc de definir-la del bloc que la crida: la guia tècnica oficial actual indica que la crida va en una línia i la definició en la línia de baix; la definició es pot cridar diverses vegades, però una funció no es combina amb un bloc numèric. Aquesta disposició no coincideix del tot amb la manera com la còpia del manual de la lliçó explica l’ordre de definició i crida; contrasteu el diagrama del kit concret abans de la classe i feu que l’alumnat prove la seua lectura. No confongueu els blocs `Function` amb els blocs `Fun`, que seleccionen moviments, música o danses predefinides. El bloc musical apareix a la llista de materials del manual, però no és necessari per a resoldre aquest repte.
+**Conocemos parámetro, bucle y función (15 min):** presentad los bloques nuevos disponibles en el kit. El bloque numérico solo acompaña a avanzar o retroceder, no a los giros. Los bloques `Loop Begin` y `Loop End` se usan en pareja para repetir las instrucciones que quedan dentro; cuando se emplea un número, el manual técnico indica que va debajo de `Loop Begin`. Para una función, distinguid el bloque de definirla del bloque que la llama: la guía técnica oficial actual indica que la llamada va en una línea y la definición en la línea de abajo; la definición se puede llamar varias veces, pero una función no se combina con un bloque numérico. Esta disposición no coincide del todo con la manera en que la copia del manual de la lección explica el orden de definición y llamada; contrastad el diagrama del kit concreto antes de la clase y haced que el alumnado pruebe su lectura. No confundáis los bloques `Function` con los bloques `Fun`, que seleccionan movimientos, música o bailes predefinidos. El bloque musical aparece en la lista de materiales del manual, pero no es necesario para resolver este reto.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Planifiquem la ruta de l’horta (10 min):** sobre una graella local amb inici, destinació i obstacles, cada equip dibuixa una ruta i escriu la seqüència de fletxes. Marqueu una secció repetida i compareu tres representacions: moviments desplegats, un paràmetre numèric i un bucle. Si hi ha bloc de funció, trieu una seqüència que es repetisca en dos punts. Registreu també la casella final com a coordenada de fila i columna; no cal desenvolupar tot el concepte de pla cartesià.
+**Planificamos la ruta de la huerta (10 min):** sobre una cuadrícula local con inicio, destino y obstáculos, cada equipo dibuja una ruta y escribe la secuencia de flechas. Marcad una sección repetida y comparad tres representaciones: movimientos desplegados, un parámetro numérico y un bucle. Si hay bloque de función, elegid una secuencia que se repita en dos puntos. Registrad también la casilla final como coordenada de fila y columna; no hace falta desarrollar todo el concepto de plano cartesiano.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Programem, provem i depurem (20 min):** primer executeu una ruta que evite un obstacle; després, resoleu un trajecte més llarg amb un bucle i proveu una crida de funció en una línia separada. Si el codi falla, localitzeu la primera instrucció en què la ruta prevista i la real divergeixen i canvieu només eixa part. Feu almenys dues proves, inclosa una amb un destí diferent, i expliqueu per què el paràmetre, el bucle o la funció redueix peces sense canviar el resultat. La bandera és un marcador col·locat per l’equip; no la detecta MatataBot. Si el centre no disposa d’un bloc o el muntatge no es comporta com el descrit, completeu eixa comparació amb targetes i deixeu constància de la limitació.
+**Programamos, probamos y depuramos (20 min):** primero ejecutad una ruta que evite un obstáculo; después, resolved un trayecto más largo con un bucle y probad una llamada de función en una línea separada. Si el código falla, localizad la primera instrucción en la que la ruta prevista y la real divergen y cambiad solo esa parte. Haced al menos dos pruebas, incluida una con un destino diferente, y explicad por qué el parámetro, el bucle o la función reducen piezas sin cambiar el resultado. La bandera es un marcador colocado por el equipo; no la detecta MatataBot. Si el centro no dispone de un bloque o el montaje no se comporta como se describe, completad esa comparación con tarjetas y dejad constancia de la limitación.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Compartim i revisem (5 min):** cada equip presenta un mapa, la ruta i una comparació entre codi desplegat i codi abreujat. Responeu: com s’assembla el laberint a un mapa?, quin error hem trobat?, quina evidència mostra que la correcció ha funcionat? **Evidència final:** mapa amb coordenada, programa o targetes, taula de dues proves i explicació d’una depuració. Com a ampliació, creeu un laberint original amb inici i final i intercanvieu-lo amb un altre equip; l’alumnat prova de resoldre’l sense modificar el disseny de qui l’ha creat.
+**Compartimos y revisamos (5 min):** cada equipo presenta un mapa, la ruta y una comparación entre código desplegado y código abreviado. Responded: ¿en qué se parece el laberinto a un mapa?, ¿qué error hemos encontrado?, ¿qué evidencia muestra que la corrección ha funcionado? **Evidencia final:** mapa con coordenada, programa o tarjetas, tabla de dos pruebas y explicación de una depuración. Como ampliación, cread un laberinto original con inicio y final e intercambiadlo con otro equipo; el alumnado intenta resolverlo sin modificar el diseño de quien lo ha creado.
 
-## 📊 Evidències i avaluació
+## 📊 Evidencias y evaluación
 
-Recolliu la seqüència corporal o amb targetes, els mapes, la predicció, els programes i la taula de proves. Observeu si cada alumne:
+Recoged la secuencia corporal o con tarjetas, los mapas, la predicción, los programas y la tabla de pruebas. Observad si cada alumno:
 
-- identifica la funció dels components i diferencia enviar de rebre;
-- representa l’orientació i ordena instruccions direccionals;
-- explica què canvia quan incorpora un nombre, un bucle o una funció;
-- localitza el punt de divergència entre ruta prevista i ruta observada;
-- justifica una correcció amb una prova repetida.
+- identifica la función de los componentes y diferencia enviar de recibir;
+- representa la orientación y ordena instrucciones direccionales;
+- explica qué cambia cuando incorpora un número, un bucle o una función;
+- localiza el punto de divergencia entre ruta prevista y ruta observada;
+- justifica una corrección con una prueba repetida.
 
-Valoreu la claredat del raonament, la col·laboració i l’ús d’evidències. No avalueu la rapidesa del robot ni una única solució al laberint.
+Valorad la claridad del razonamiento, la colaboración y el uso de evidencias. No evaluéis la rapidez del robot ni una única solución al laberinto.
 
-## ♿ Participació, accessibilitat i seguretat
+## ♿ Participación, accesibilidad y seguridad
 
-Oferiu mapes d’alt contrast, caselles grans, fletxes tàctils i la possibilitat d’anticipar la ruta oralment o amb targetes. Els rols es roten i l’operació física pot quedar en mans d’una parella mentre altres persones fan prediccions i comprovacions. Manteniu la taula plana i el recorregut lliure; no poseu les mans davant del robot mentre s’executa. La persona adulta gestiona càrrega, aparellament i incidències de connexió.
+Ofreced mapas de alto contraste, casillas grandes, flechas táctiles y la posibilidad de anticipar la ruta oralmente o con tarjetas. Los roles se rotan y la operación física puede quedar en manos de una pareja mientras otras personas hacen predicciones y comprobaciones. Mantened la mesa plana y el recorrido libre; no pongáis las manos delante del robot mientras se ejecuta. La persona adulta gestiona la carga, el emparejamiento y las incidencias de conexión.
 
-## 🔗 Referents i adaptació
+## 🔗 Referentes y adaptación
 
-- MatataStudio, [Lesson 2.8: Extracurricular Curriculum](https://matatalab.com/en/node/67): confirma que el currículum té 12 lliçons de 60 minuts, recomana equips de quatre amb rols de programació i inspecció, i descriu l’estructura general d’introducció, activitat, tancament, extensió i connexions amb el món real. La pàgina no publica el procediment detallat de les lliçons 5–12.
-- MatataStudio, [Teaching Materials](https://www.matatastudio.com/teaching-materials.html): la pàgina oficial llista el recurs *MatataStudio Extracurricular Lesson TG-Sample* i n’ofereix la descàrrega. El PDF oficial consultable és una mostra de les lliçons 3 i 4, no el currículum complet.
-- [Còpia llegible de mostra del manual extracurricular](https://infotastic.academy/wp-content/uploads/2024/12/MatataStudio-Extracurricular-Lesson-TG-Sample.pdf), consultada per contrastar les lliçons 1 i 2 (components, missatges, moviments, laberint, blocs avançats, preguntes de tancament i extensions). La còpia està titulada *Extracurricular Manual for Coding Set Pro* i allotjada per un tercer, no en el servidor oficial; per això es conserva l’enllaç de l’editorial com a referència principal i es comproven els blocs disponibles abans de transferir el procediment al kit del centre.
-- MatataStudio, [suport de Coding Set](https://matatalab.com/en/product-support): referència tècnica per a les peces, el tauler i l’escala de la graella.
-- MatataStudio, [curs autoguiat Coding Set](https://www.matatastudio.com/Self-Guided.html): confirma els usos i límits del bloc numèric, l’estructura dels bucles i la disposició separada de definició i crida de les funcions.
+- MatataStudio, [Lesson 2.8: Extracurricular Curriculum](https://matatalab.com/en/node/67): confirma que el currículo tiene 12 lecciones de 60 minutos, recomienda equipos de cuatro con roles de programación e inspección, y describe la estructura general de introducción, actividad, cierre, extensión y conexiones con el mundo real. La página no publica el procedimiento detallado de las lecciones 5–12.
+- MatataStudio, [Teaching Materials](https://www.matatastudio.com/teaching-materials.html): la página oficial lista el recurso *MatataStudio Extracurricular Lesson TG-Sample* y ofrece su descarga. El PDF oficial consultable es una muestra de las lecciones 3 y 4, no el currículo completo.
+- [Copia legible de muestra del manual extracurricular](https://infotastic.academy/wp-content/uploads/2024/12/MatataStudio-Extracurricular-Lesson-TG-Sample.pdf), consultada para contrastar las lecciones 1 y 2 (componentes, mensajes, movimientos, laberinto, bloques avanzados, preguntas de cierre y extensiones). La copia está titulada *Extracurricular Manual for Coding Set Pro* y alojada por un tercero, no en el servidor oficial; por eso se conserva el enlace de la editorial como referencia principal y se comprueban los bloques disponibles antes de transferir el procedimiento al kit del centro.
+- MatataStudio, [soporte de Coding Set](https://matatalab.com/en/product-support): referencia técnica para las piezas, el tablero y la escala de la cuadrícula.
+- MatataStudio, [curso autoguiado Coding Set](https://www.matatastudio.com/Self-Guided.html): confirma los usos y límites del bloque numérico, la estructura de los bucles y la disposición separada de definición y llamada de las funciones.
 
-La situació adapta **les lliçons 1 i 2** del manual extracurricular. La proposta local substitueix el mapa i els reptes del quadern per una graella pròpia de l’horta i de l’escola; no afirma que els materials del *Challenge Booklet* estiguen inclosos ni accessibles. Les lliçons 3 i 4 del mateix manual tenen una adaptació separada en [Un circuit de l’horta per a un cotxe de paper](../../situacion/index.html?id=cs-circuito-carrera-huerta); no es declara cobert el currículum extracurricular complet de dotze lliçons.
+La situación adapta **las lecciones 1 y 2** del manual extracurricular. La propuesta local sustituye el mapa y los retos del cuaderno por una cuadrícula propia de la huerta y de la escuela; no afirma que los materiales del *Challenge Booklet* estén incluidos ni sean accesibles. Las lecciones 3 y 4 del mismo manual tienen una adaptación separada en [Un circuito de la huerta para un coche de papel](../../situacion/index.html?id=cs-circuito-carrera-huerta); no se declara cubierto el currículo extracurricular completo de doce lecciones.

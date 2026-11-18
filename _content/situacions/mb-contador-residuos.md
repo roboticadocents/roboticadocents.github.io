@@ -14,109 +14,109 @@ duration: "3 sesiones · 150 min"
 challenge: "¿Cómo podemos diseñar un contador de micro:bit que registre residuos por categoría y nos ayude a hacer una propuesta responsable?"
 ---
 
-![Una placa micro:bit acompanya una llibreta de recompte, pinces de recollida i exemples nets de residus de paper separats per tipus.](../../_assets/situacions/mb-comptador-residus.webp)
+![Una placa micro:bit acompaña a una libreta de recuento, pinzas de recogida y ejemplos limpios de residuos de papel separados por tipo.](../../_assets/situacions/mb-comptador-residus.webp)
 
-_El registre és anònim i se centra en objectes; la placa no identifica qui els ha deixat._
+_El registro es anónimo y se centra en objetos; la placa no identifica quién los ha dejado._
 
-## 🌱 Situació i intenció
+## 🌱 Situación e intención
 
-La brigada verda del centre vol saber quins residus visibles apareixen en una zona delimitada del pati i proposar una millora de prevenció o separació. L’alumnat aprén a llegir entrades, guardar comptatges en variables i construir un comptador de categories amb micro:bit. Primer el prova amb materials nets preparats; després l’utilitza en una observació guiada del centre i presenta dades agregades. No es registra qui ha deixat cap objecte ni s’afirma que una mostra xicoteta descriga tot el centre.
+La brigada verde del centro quiere saber qué residuos visibles aparecen en una zona delimitada del patio y proponer una mejora de prevención o separación. El alumnado aprende a leer entradas, guardar recuentos en variables y construir un contador de categorías con micro:bit. Primero lo prueba con materiales limpios preparados; después lo utiliza en una observación guiada del centro y presenta datos agregados. No se registra quién ha dejado ningún objeto ni se afirma que una muestra pequeña describa todo el centro.
 
-La proposta adapta les dues lliçons de *Barefoot · Litter hunt*, adreçades a alumnat d’uns 9–11 anys: usar botons i sensors per mostrar icones, modificar variables i jugar amb una entrada; després dissenyar, programar i usar un comptador de residus reciclables en l’entorn local. La tercera sessió és una ampliació pròpia per separar disseny tècnic, treball de camp i interpretació.
+La propuesta adapta las dos lecciones de *Barefoot · Litter hunt*, dirigidas a alumnado de unos 9–11 años: usar botones y sensores para mostrar iconos, modificar variables y jugar con una entrada; después diseñar, programar y usar un contador de residuos reciclables en el entorno local. La tercera sesión es una ampliación propia para separar diseño técnico, trabajo de campo e interpretación.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Definir categories observables i registrar recomptes amb un procediment consistent.
-- Programar entrades, variables i eixides per a representar un comptador de mostres segures.
-- Provar valors inicials, increments i límits per detectar errors de recompte.
-- Usar els resultats per plantejar una millora local sense tocar residus perillosos ni atribuir causalitat a dades limitades.
+- Definir categorías observables y registrar recuentos con un procedimiento consistente.
+- Programar entradas, variables y salidas para representar un contador de muestras seguras.
+- Probar valores iniciales, incrementos y límites para detectar errores de recuento.
+- Usar los resultados para plantear una mejora local sin tocar residuos peligrosos ni atribuir causalidad a datos limitados.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Micro:bit física amb portapiles, MakeCode, 3 targetes d’icones de categoria, mostres simulades netes de paper/cartró i envasos buits nets, graella o taula de dades, llapis, guants i pinces només si el centre autoritza la recollida segura. La font oficial demana plaques físiques i alimentació per al projecte de camp: el simulador serveix per a preparar i provar el codi però no equival a usar el comptador en una recollida real. Si no hi ha placa o portapiles, manteniu la mateixa activitat amb targetes i etiqueteu-la com a simulació.
+Micro:bit física con portapilas, MakeCode, 3 tarjetas de iconos de categoría, muestras simuladas limpias de papel/cartón y envases vacíos limpios, cuadrícula o tabla de datos, lápiz, guantes y pinzas solo si el centro autoriza la recogida segura. La fuente oficial pide placas físicas y alimentación para el proyecto de campo: el simulador sirve para preparar y probar el código, pero no equivale a usar el contador en una recogida real. Si no hay placa o portapilas, mantened la misma actividad con tarjetas y etiquetadla como simulación.
 
-Abans d’eixir, consulteu la guia de separació del municipi o del servei de residus del centre, anoteu font i data i convertiu-la en tres categories amb una opció “no sabem / consultar”. Les normes de separació poden variar; no classifiqueu automàticament un objecte com a reciclable només pel seu aspecte. Delimiteu una zona privada i autoritzada del pati, acordant límits de recorregut, temps, rols i contacte amb residus. La persona adulta revisa el protocol de riscos i decideix quins objectes no es toquen.
+Antes de salir, consultad la guía de separación del municipio o del servicio de residuos del centro, anotad fuente y fecha y convertidla en tres categorías con una opción “no sabemos / consultar”. Las normas de separación pueden variar; no clasifiquéis automáticamente un objeto como reciclable solo por su aspecto. Delimitad una zona privada y autorizada del patio, acordando límites de recorrido, tiempo, roles y contacto con residuos. La persona adulta revisa el protocolo de riesgos y decide qué objetos no se tocan.
 
-## 📅 Seqüència didàctica · tres sessions de 50 minuts
+## 📅 Secuencia didáctica · tres sesiones de 50 minutos
 
-### **Sessió 1 · Entrades, eixides i variables (Litter hunt, lesson 1).**
+### **Sesión 1 · Entradas, salidas y variables (Litter hunt, lesson 1).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Localitzeu botons A/B, matriu LED, pins i un sensor integrat rellevant, com l’acceleròmetre. Predigueu què és una entrada i què és una eixida i com pot una inclinació o una sacsejada activar una resposta sense identificar cap persona.
+Localizad los botones A/B, la matriz LED, los pines y un sensor integrado relevante, como el acelerómetro. Predecid qué es una entrada y qué es una salida y cómo una inclinación o una sacudida pueden activar una respuesta sin identificar a ninguna persona.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Programeu A per mostrar una icona i B una altra. Proveu el moviment d’inclinació o sacsejada per a mostrar una tercera resposta. Després, inicialitzeu un comptador en zero, feu que un esdeveniment el modifique i mostreu-ne el valor; predigueu el resultat abans de cada prova.
+Programad A para mostrar un icono y B otro. Probad el movimiento de inclinación o sacudida para mostrar una tercera respuesta. Después, inicializad un contador en cero, haced que un evento lo modifique y mostrad su valor; predecid el resultado antes de cada prueba.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Adapteu el joc d’entrada per torns: una targeta indica l’entrada, cada participant anticipa quina icona o valor apareixerà i executa el torn quan li toca. Registreu les entrades i el valor esperat i observat.
+Adaptad el juego de entrada por turnos: una tarjeta indica la entrada, cada participante anticipa qué icono o valor aparecerá y ejecuta el turno cuando le toca. Registrad las entradas y el valor esperado y observado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu si totes les entrades es detecten i si el comptador es modifica una sola vegada. Si hi ha increments no desitjats, canvieu una condició o l’esdeveniment d’entrada i repetiu el mateix torn. No mesureu qui és més ràpid ni feu rànquings.
+Comparad si todas las entradas se detectan y si el contador se modifica una sola vez. Si hay incrementos no deseados, cambiad una condición o el evento de entrada y repetid el mismo turno. No midáis quién es más rápido ni hagáis clasificaciones.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu com es guarda el nombre i quina entrada podria provocar un increment accidental. **Evidència:** mapa entrada-processament-eixida, variable anotada, predicció i taula d’esdeveniments.
+Explicad cómo se guarda el número y qué entrada podría provocar un incremento accidental. **Evidencia:** mapa entrada-procesamiento-salida, variable anotada, predicción y tabla de eventos.
 
-### **Sessió 2 · Dissenyem i verifiquem el comptador.**
+### **Sesión 2 · Diseñamos y verificamos el contador.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Useu una situació inventada de recollida del pati. Consulteu la guia local de separació, anoteu-ne font i data i trieu tres categories verificables, per exemple paper/cartó, envasos lleugers i dubtós/altre. Predigueu què ha de passar quan es canvia de categoria sense comptar cap objecte.
+Usad una situación inventada de recogida del patio. Consultad la guía local de separación, anotad su fuente y fecha y elegid tres categorías verificables, por ejemplo papel/cartón, envases ligeros y dudoso/otro. Predecid qué debe pasar cuando se cambia de categoría sin contar ningún objeto.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dissenyeu la interfície: A canvia la categoria, B suma una unitat i una combinació d’ordres reinicia el recompte; associeu una icona constant a cada categoria. Creeu variables independents per categoria i, si és útil, un total derivat. Eviteu que canviar de categoria incremente el recompte.
+Diseñad la interfaz: A cambia la categoría, B suma una unidad y una combinación de órdenes reinicia el recuento; asociad un icono constante a cada categoría. Cread variables independientes por categoría y, si es útil, un total derivado. Evitad que cambiar de categoría incremente el recuento.
 
-![Una micro:bit de la dotació mostra una icona mentre l’alumnat tria una categoria en una graella de recompte amb mostres netes i un apartat per a casos dubtosos.](../../_assets/situacions/sa-mb-comptador-residus-prova.webp)
+![Una micro:bit de la dotación muestra un icono mientras el alumnado elige una categoría en una cuadrícula de recuento con muestras limpias y un apartado para casos dudosos.](../../_assets/situacions/sa-mb-comptador-residus-prova.webp)
 
-_La placa registra la categoria que tria una persona amb els botons; no identifica ni classifica els residus automàticament._
+_La placa registra la categoría que elige una persona con los botones; no identifica ni clasifica los residuos automáticamente._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Escriviu una taula de proves amb entrada, categoria seleccionada, valor previst i valor mostrat. Incloeu una entrada de cada tipus, dos elements seguits de la mateixa categoria, canvi de categoria abans d’incrementar, reinici i categoria dubtosa.
+Escribid una tabla de pruebas con entrada, categoría seleccionada, valor previsto y valor mostrado. Incluid una entrada de cada tipo, dos elementos seguidos de la misma categoría, cambio de categoría antes de incrementar, reinicio y categoría dudosa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu els casos, compareu resultat previst i real i corregiu un error. Torneu a executar exactament els mateixos casos per comprovar que la correcció resol el problema sense alterar les altres categories.
+Ejecutad los casos, comparad resultado previsto y real y corregid un error. Volved a ejecutar exactamente los mismos casos para comprobar que la corrección resuelve el problema sin alterar las otras categorías.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Una altra parella segueix les instruccions i explica si pot saber què està comptant. **Evidència:** codi, interfície amb icones, taula de proves completa i un canvi justificat.
+Otra pareja sigue las instrucciones y explica si puede saber qué está contando. **Evidencia:** código, interfaz con iconos, tabla de pruebas completa y un cambio justificado.
 
-### **Sessió 3 · Observem amb seguretat i fem una proposta local (adaptació de Litter hunt, lesson 2).**
+### **Sesión 3 · Observamos con seguridad y hacemos una propuesta local (adaptación de Litter hunt, lesson 2).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recordeu els límits, la zona, el recorregut i el senyal d’aturada. Assigneu rols d’operació del comptador, lectura de la guia, registre, observació i supervisió adulta. Predigueu quines categories es podran identificar visualment i quins casos quedaran com a dubtosos.
+Recordad los límites, la zona, el recorrido y la señal de parada. Asignad roles de operación del contador, lectura de la guía, registro, observación y supervisión adulta. Predecid qué categorías se podrán identificar visualmente y qué casos quedarán como dudosos.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En una ruta curta i autoritzada, classifiqueu només allò que es pot identificar visualment amb la guia local. Una persona registra cada observació amb el comptador i una altra porta el recompte de comprovació en paper. No fotografieu persones ni toqueu objectes desconeguts. La persona adulta, no l’alumnat, gestiona residus potencialment perillosos; si no hi ha protocol aprovat, feu només observació i useu mostres netes de classe.
+En una ruta corta y autorizada, clasificad solo aquello que se puede identificar visualmente con la guía local. Una persona registra cada observación con el contador y otra lleva el recuento de comprobación en papel. No fotografiéis personas ni toquéis objetos desconocidos. La persona adulta, no el alumnado, gestiona residuos potencialmente peligrosos; si no hay protocolo aprobado, haced solo observación y usad muestras limpias de clase.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu el total micro:bit amb el registre manual. Identifiqueu discrepàncies, conserveu-les en el registre i descriviu una causa possible, com doble recompte, categoria incerta o botó premut dues vegades.
+Comparad el total de micro:bit con el registro manual. Identificad discrepancias, conservadlas en el registro y describid una causa posible, como doble recuento, categoría incierta o botón pulsado dos veces.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Convertiu els resultats en una taula i un gràfic senzill; indiqueu zona, data i durada de la mostra, sense extrapolar al centre sencer. Escriviu una millora que el centre puga provar —com ubicar millor un contenidor o fer un recordatori visual— i concreteu quina dada futura permetria comprovar-la.
+Convertid los resultados en una tabla y un gráfico sencillo; indicad zona, fecha y duración de la muestra, sin extrapolar al centro entero. Escribid una mejora que el centro pueda probar —como ubicar mejor un contenedor o hacer un recordatorio visual— y concretad qué dato futuro permitiría comprobarla.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Presenteu la proposta amb els límits de la mostra i expliqueu com una nova observació permetria valorar-la. **Evidència:** registres agregats, discrepància documentada, gràfic i proposta local.
+Presentad la propuesta con los límites de la muestra y explicad cómo una nueva observación permitiría valorarla. **Evidencia:** registros agregados, discrepancia documentada, gráfico y propuesta local.
 
-## 📊 Criteris d’èxit i avaluació
+## 📊 Criterios de éxito y evaluación
 
-Recolliu diagrama de components, variables, icones, codi, casos de prova, pauta local de separació, recompte de micro:bit i paper, gràfic i proposta. Valoreu si l’alumnat (1) diferencia sensor/botó i entrada/eixida; (2) inicialitza i modifica variables sense perdre categories; (3) segueix una guia datada i deixa dubtes com a dubtes; (4) detecta discrepàncies entre recompte automàtic i manual; i (5) formula una conclusió proporcional a una zona i un període observats. El dispositiu ajuda a registrar, però no classifica residus per si mateix: la persona decideix la categoria i pot marcar incertesa.
+Recoged diagrama de componentes, variables, iconos, código, casos de prueba, pauta local de separación, recuento de micro:bit y papel, gráfico y propuesta. Valorad si el alumnado (1) diferencia sensor/botón y entrada/salida; (2) inicializa y modifica variables sin perder categorías; (3) sigue una guía fechada y deja dudas como dudas; (4) detecta discrepancias entre recuento automático y manual; y (5) formula una conclusión proporcional a una zona y un periodo observados. El dispositivo ayuda a registrar, pero no clasifica residuos por sí mismo: la persona decide la categoría y puede marcar incertidumbre.
 
-## ♿ Participació, seguretat i privacitat
+## ♿ Participación, seguridad y privacidad
 
-Oferiu icones tàctils o d’alt contrast, targetes de categoria, dictat de dades, rol de verificació en paper i una ruta accessible o observació des d’un punt fix. No cronometreu velocitat ni publiqueu rànquings d’alumnes o grups. Manteniu-vos en zona autoritzada, useu pinces/guants només amb supervisió i no toqueu vidre, xeringues, piles, femta, objectes tallants, substàncies ni residus d’origen desconegut. Si hi ha qualsevol dubte, l’alumnat no l’arreplega: la persona adulta el deixa, aïlla la zona segons el protocol del centre i ho comunica al servei responsable. No registreu noms, cares ni qui podria haver deixat un residu; les dades es guarden agregades. Renteu-vos les mans després de la pràctica.
+Ofreced iconos táctiles o de alto contraste, tarjetas de categoría, dictado de datos, rol de verificación en papel y una ruta accesible u observación desde un punto fijo. No cronometréis la velocidad ni publiquéis clasificaciones de alumnos o grupos. Manteneos en zona autorizada, usad pinzas/guantes solo con supervisión y no toquéis vidrio, jeringuillas, pilas, heces, objetos cortantes, sustancias ni residuos de origen desconocido. Si hay cualquier duda, el alumnado no lo recoge: la persona adulta lo deja, aísla la zona según el protocolo del centro y lo comunica al servicio responsable. No registréis nombres, caras ni quién podría haber dejado un residuo; los datos se guardan agregados. Lavaos las manos después de la práctica.
 
-## 🔗 Unitat oficial adaptada
+## 🔗 Unidad oficial adaptada
 
-[Barefoot · Litter hunt](https://microbit.org/teach/lessons/barefoot-litter-hunt/) consta de dues lliçons oficials per a 7–11 anys amb MakeCode. La [primera](https://microbit.org/teach/lessons/barefoot-litter-hunt-lesson-1/) fixa com a objectius explicar botons i sensors, programar-los i guardar dades amb variables; la pàgina descriu també imatges a la matriu i un joc de prémer el botó ràpidament. La [segona](https://microbit.org/teach/lessons/barefoot-litter-hunt-lesson-2/) demana dissenyar i programar un comptador i usar-lo per registrar residus locals, inclosa la identificació dels que es poden reciclar. Aquesta proposta conserva els objectius de programació i registre, adapta el joc sense rànquing de velocitat, consulta la normativa local de separació i separa l’observació de la manipulació segura de residus. La tercera sessió de verificació i proposta és una ampliació pròpia; no reutilitza els materials visuals oficials. Els plans docents descarregables apareixen enllaçats a les pàgines, però no s’han pogut recuperar en aquesta auditoria; per això la correspondència es limita als objectius i la descripció pública i no afirma una adaptació pas a pas dels documents docents.
+[Barefoot · Litter hunt](https://microbit.org/teach/lessons/barefoot-litter-hunt/) consta de dos lecciones oficiales para 7–11 años con MakeCode. La [primera](https://microbit.org/teach/lessons/barefoot-litter-hunt-lesson-1/) fija como objetivos explicar botones y sensores, programarlos y guardar datos con variables; la página describe también imágenes en la matriz y un juego de pulsar el botón rápidamente. La [segunda](https://microbit.org/teach/lessons/barefoot-litter-hunt-lesson-2/) pide diseñar y programar un contador y usarlo para registrar residuos locales, incluida la identificación de los que se pueden reciclar. Esta propuesta conserva los objetivos de programación y registro, adapta el juego sin clasificación de velocidad, consulta la normativa local de separación y separa la observación de la manipulación segura de residuos. La tercera sesión de verificación y propuesta es una ampliación propia; no reutiliza los materiales visuales oficiales. Los planes docentes descargables aparecen enlazados en las páginas, pero no se han podido recuperar en esta auditoría; por eso la correspondencia se limita a los objetivos y la descripción pública y no afirma una adaptación paso a paso de los documentos docentes.

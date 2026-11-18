@@ -7,156 +7,156 @@ robot_label: "micro:bit"
 cycle: "segon-cicle"
 cycle_label: "Segundo ciclo"
 subject: "medi"
-subject_label: "Ciencias, Geografia y Tecnología"
+subject_label: "Ciencias, Geografía y Tecnología"
 theme: "ciencia"
 theme_label: "Fenómenos geológicos y animación"
 duration: "5 sesiones · 225 min"
 challenge: "¿Cómo podemos descomponer un proceso en fotogramas y repetirlos en una animación LED comprensible?"
 ---
 
-![Una placa micro:bit al costat d’una maqueta de volcà de paper i un flipbook abstracte de plomall ascendent.](../../_assets/situacions/mb-animacio-volca.webp)
+![Una placa micro:bit junto a una maqueta de volcán de papel y un flipbook abstracto de penacho ascendente.](../../_assets/situacions/mb-animacio-volca.webp)
 
-_És una maqueta d’aula per parlar d’animació, no una simulació de risc ni un model predictiu._
+_Es una maqueta de aula para hablar de animación, no una simulación de riesgo ni un modelo predictivo._
 
-## 🌱 Situació i intenció
+## 🌱 Situación e intención
 
-El museu escolar prepara una peça digital per explicar com una animació simplifica un procés natural. L’alumnat descompon un moviment, escriu un diagrama de flux, planifica una seqüència de fotogrames i la programa amb LEDs de micro:bit. La idea parteix dels volcans però situa la recerca en dues escales: casos volcànics documentats en l’Estat espanyol i referents geològics propers. L’IGN enumera Cofrentes (València) i les illes Columbretes (Castelló) entre les àrees volcàniques documentades; això no implica activitat eruptiva actual ni risc per a la població.
+El museo escolar prepara una pieza digital para explicar cómo una animación simplifica un proceso natural. El alumnado descompone un movimiento, escribe un diagrama de flujo, planifica una secuencia de fotogramas y la programa con LEDs de micro:bit. La idea parte de los volcanes, pero sitúa la investigación en dos escalas: casos volcánicos documentados en el Estado español y referentes geológicos cercanos. El IGN enumera Cofrentes (Valencia) y las islas Columbretes (Castellón) entre las áreas volcánicas documentadas; esto no implica actividad eruptiva actual ni riesgo para la población.
 
-La seqüència conserva les cinc lliçons de *Volcano animations* per a alumnat d’uns 8–9 anys: animació i descomposició amb dansa/flipbook, diagrama i repetició, planificació de l’erupció, programació/prova/depuració i reflexió. L’animació del projecte és un model gràfic de quatre estats triats, no una seqüència universal ni una eina de predicció geològica.
+La secuencia conserva las cinco lecciones de *Volcano animations* para alumnado de unos 8–9 años: animación y descomposición con danza/flipbook, diagrama y repetición, planificación de la erupción, programación/prueba/depuración y reflexión. La animación del proyecto es un modelo gráfico de cuatro estados elegidos, no una secuencia universal ni una herramienta de predicción geológica.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Descompondre un fenomen en fotogrames i ordenar-los perquè una altra persona puga reconstruir-ne el canvi.
-- Representar moviment amb una matriu de 5×5 i controlar què canvia entre dos fotogrames.
-- Usar una repetició per a mostrar un patró i relacionar-lo amb el diagrama o l’algorisme.
-- Provar l’animació en la placa, depurar una transició i explicar que és un model gràfic, no una simulació científica d’una erupció.
+- Descomponer un fenómeno en fotogramas y ordenarlos para que otra persona pueda reconstruir el cambio.
+- Representar movimiento con una matriz de 5×5 y controlar qué cambia entre dos fotogramas.
+- Usar una repetición para mostrar un patrón y relacionarlo con el diagrama o el algoritmo.
+- Probar la animación en la placa, depurar una transición y explicar que es un modelo gráfico, no una simulación científica de una erupción.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-BBC micro:bit física o simulador MakeCode, projector opcional, paper per a diagrames i flipbooks, quadrícula 5 × 5, llapis de colors, cartolina per a la maqueta seca i targetes amb els termes *magma*, *lava*, *erupció* i *animació*. Reviseu abans una font de l’Institut Geogràfic Nacional sobre el fenomen i la seua cartografia; distingiu magma subterrani de lava que arriba a la superfície. Per al vincle valencià, podeu consultar la documentació de l’IGN que identifica zones volcàniques documentades, inclosos Cofrentes i Columbretes. No suposeu que el volcà de la maqueta representa cap d’aquestes àrees.
+micro:bit física de la BBC o simulador MakeCode, proyector opcional, papel para diagramas y flipbooks, cuadrícula de 5 × 5, lápices de colores, cartulina para la maqueta seca y tarjetas con los términos *magma*, *lava*, *erupción* y *animación*. Revisad antes una fuente del Instituto Geográfico Nacional sobre el fenómeno y su cartografía; distinguid magma subterráneo de lava que llega a la superficie. Para el vínculo valenciano, podéis consultar la documentación del IGN que identifica zonas volcánicas documentadas, incluidos Cofrentes y Columbretes. No supongáis que el volcán de la maqueta representa ninguna de estas áreas.
 
-Decidiu si tota la classe treballarà amb simulador o si hi haurà transferència a placa; prepareu un projecte base i una alternativa impresa. No useu calor, pólvores, líquids, reaccions químiques ni models que expulsen material. La maqueta és de paper o cartolina i roman estàtica durant la programació.
+Decidid si toda la clase trabajará con simulador o si habrá transferencia a la placa; preparad un proyecto base y una alternativa impresa. No uséis calor, polvos, líquidos, reacciones químicas ni modelos que expulsen material. La maqueta es de papel o cartulina y permanece estática durante la programación.
 
-## 📅 Seqüència didàctica · cinc sessions de 45 minuts
+## 📅 Secuencia didáctica · cinco sesiones de 45 minutos
 
-### **Sessió 1 · Animació i descomposició.**
+### **Sesión 1 · Animación y descomposición.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Feu una xarxa de paraules al voltant d’“animació” i separeu moviment real, moviment dibuixat i seqüència de fotogrames.
+Haced una red de palabras alrededor de «animación» y separad movimiento real, movimiento dibujado y secuencia de fotogramas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Una persona demostra un pas de dansa senzill i el grup l’explica com a inici, moviment, pausa i final; no cal que l’alumnat el faça físicament, també pot usar una fitxa o dirigir-lo.
+Una persona demuestra un paso de danza sencillo y el grupo lo explica como inicio, movimiento, pausa y final; no hace falta que el alumnado lo haga físicamente, también puede usar una ficha o dirigirlo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Trieu tres poses que comuniquen el canvi i dibuixeu-les amb el mateix enquadrament.
+Elegid tres poses que comuniquen el cambio y dibujadlas con el mismo encuadre.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu un llibret de tres o quatre imatges amb un canvi menut entre pàgines i proveu-lo sense llançar-lo ni sacsejar-lo prop de la cara.
+Haced un librillo de tres o cuatro imágenes con un cambio pequeño entre páginas y probadlo sin lanzarlo ni sacudirlo cerca de la cara.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu quina part s’ha descompost i què s’ha omés. Evidència: mapa d’idees, poses numerades i flipbook.
+Explicad qué parte se ha descompuesto y qué se ha omitido. Evidencia: mapa de ideas, poses numeradas y flipbook.
 
-### **Sessió 2 · Diagrames de flux i repetició.**
+### **Sesión 2 · Diagramas de flujo y repetición.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Ordeneu les imatges del flipbook i detecteu si alguna queda fora de seqüència.
+Ordenad las imágenes del flipbook y detectad si alguna queda fuera de secuencia.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Convertiu les poses en un diagrama de flux amb inici, mostrar fotograma A, mostrar fotograma B, repetir i final; representeu amb una fletxa de retorn el fragment que es repeteix.
+Convertid las poses en un diagrama de flujo con inicio, mostrar fotograma A, mostrar fotograma B, repetir y final; representad con una flecha de retorno el fragmento que se repite.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Un equip llig només el diagrama i un altre fa de “pantalla”; anoteu què resulta ambigu.
+Un equipo lee solo el diagrama y otro hace de «pantalla»; anotad qué resulta ambiguo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Traslladeu els dos fotogrames a la matriu LED, afegiu pauses i compareu un programa que duplica les instruccions amb un altre que usa bucle.
+Trasladad los dos fotogramas a la matriz LED, añadid pausas y comparad un programa que duplica las instrucciones con otro que usa un bucle.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Indiqueu què ha fet més curt el bucle i quines ordres continuen sent úniques. Evidència: diagrama inicial/depurat i comparació de programes amb/sense repetició.
+Indicad qué ha hecho más corto el bucle y qué órdenes continúan siendo únicas. Evidencia: diagrama inicial/depurado y comparación de programas con/sin repetición.
 
-### **Sessió 3 · Planificar l’animació del volcà.**
+### **Sesión 3 · Planificar la animación del volcán.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Consulteu una infografia o text de l’IGN; localitzeu un cas documentat i una àrea volcànica històrica de la Comunitat Valenciana. Anoteu font i data i no deduïu activitat o perill actual a partir d’un mapa geològic.
+Consultad una infografía o un texto del IGN; localizad un caso documentado y un área volcánica histórica de la Comunidad Valenciana. Anotad fuente y fecha y no deduzcáis actividad o peligro actual a partir de un mapa geológico.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Associeu magma amb material fos sota la superfície i lava amb el material que hi arriba; distingiu aquests termes de la columna de gasos o cendra que pot aparéixer en alguns tipus d’erupció.
+Asociad magma con material fundido bajo la superficie y lava con el material que llega a ella; distinguid estos términos de la columna de gases o ceniza que puede aparecer en algunos tipos de erupción.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-En equips, definiu quatre estats gràfics —superfície, inici de l’emissió, plomall o flux representat, i escena que es calma— com una convenció visual inventada, sense afirmar que tots els volcans passen per una mateixa seqüència.
+En equipos, definid cuatro estados gráficos —superficie, inicio de la emisión, penacho o flujo representado, y escena que se calma— como una convención visual inventada, sin afirmar que todos los volcanes pasan por una misma secuencia.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Dibuixeu cada estat en 5 × 5 píxels, identifiqueu quins quadres es repeteixen i en quin ordre, i creeu un diagrama amb pauses/repetició.
+Dibujad cada estado en 5 × 5 píxeles, identificad qué cuadros se repiten y en qué orden, y cread un diagrama con pausas/repetición.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Una parella comprova que el diagrama coincideix amb l’storyboard. Evidència: font citada, targeta de vocabulari, quatre graelles i algoritme.
+Una pareja comprueba que el diagrama coincide con el storyboard. Evidencia: fuente citada, tarjeta de vocabulario, cuatro cuadrículas y algoritmo.
 
-### **Sessió 4 · Programar, provar i depurar.**
+### **Sesión 4 · Programar, probar y depurar.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans de programar, llegiu el diagrama i assenyaleu quin fotograma apareixerà després de la repetició.
+Antes de programar, leed el diagrama y señalad qué fotograma aparecerá después de la repetición.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Escriviu les icones en MakeCode amb LEDs individuals o graella de disseny; mostreu-les en ordre dins d’un bucle adequat i useu pauses suficients per llegir-les.
+Escribid los iconos en MakeCode con LEDs individuales o cuadrícula de diseño; mostradlos en orden dentro de un bucle adecuado y usad pausas suficientes para leerlos.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Executeu al simulador o transferiu a micro:bit, marqueu cada eixida respecte del storyboard i comproveu si el bucle repeteix exactament el fragment indicat.
+Ejecutad en el simulador o transferid a micro:bit, marcad cada salida respecto al storyboard y comprobad si el bucle repite exactamente el fragmento indicado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proveu tres casos: fotograma canviat d’ordre, una repetició de més i pausa massa curta; canvieu una cosa cada vegada i registreu el resultat.
+Probad tres casos: fotograma cambiado de orden, una repetición de más y pausa demasiado corta; cambiad una cosa cada vez y registrad el resultado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Justifiqueu una correcció i una simplificació. Evidència: codi, prediccions i registre de tres casos provats.
+Justificad una corrección y una simplificación. Evidencia: código, predicciones y registro de tres casos probados.
 
-### **Sessió 5 · Reflexió i revisió.**
+### **Sesión 5 · Reflexión y revisión.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Feu un mapa de pensament des de la font fins a l’animació: investigar, seleccionar fases gràfiques, dissenyar píxels, escriure algoritme, programar, provar i revisar.
+Haced un mapa de pensamiento desde la fuente hasta la animación: investigar, seleccionar fases gráficas, diseñar píxeles, escribir algoritmo, programar, probar y revisar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Cada equip mostra el mapa, el codi i el vídeo/demostració de la seqüència; si no es grava, la mostra es fa en directe o amb una sèrie de captures autoritzades, sense fotografiar alumnat.
+Cada equipo muestra el mapa, el código y el vídeo/demostración de la secuencia; si no se graba, la muestra se hace en directo o con una serie de capturas autorizadas, sin fotografiar alumnado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-El públic comenta una cosa clara i formula una pregunta sobre el model científic o el bucle.
+El público comenta una cosa clara y formula una pregunta sobre el modelo científico o el bucle.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu el storyboard i el programa amb el retorn rebut. Trieu una proposta concreta, com ara fer més llegible una transició o allargar una pausa, i decidiu si millora la representació del procés. Abans de canviar el codi, anoteu què espereu que passe; després, compareu el resultat nou amb l’anterior. Si rebutgeu la proposta, justifiqueu-ho amb un criteri del projecte (claredat, coherència amb la font o ritme de lectura), no amb una preferència personal sense explicar.
+Revisad el storyboard y el programa con el retorno recibido. Elegid una propuesta concreta, como hacer más legible una transición o alargar una pausa, y decidid si mejora la representación del proceso. Antes de cambiar el código, anotad qué esperáis que pase; después, comparad el resultado nuevo con el anterior. Si rechazáis la propuesta, justificadlo con un criterio del proyecto (claridad, coherencia con la fuente o ritmo de lectura), no con una preferencia personal sin explicar.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Completa “el meu codi representa…, no pot predir…, la repetició m’ha servit per…”. Evidència: mapa final, retorn i reflexió.
+Se completa la frase «mi código representa…, no puede predecir…, la repetición me ha servido para…». Evidencia: mapa final, retorno y reflexión.
 
-## 📊 Criteris d’èxit i avaluació
+## 📊 Criterios de éxito y evaluación
 
-Recolliu mapa d’idees, flipbook, diagrama de flux, font geològica citada, storyboard, quatre graelles, MakeCode, registre de proves i mapa de reflexió. Observeu si l’equip (1) divideix una acció en passos representables; (2) mostra en el diagrama què es repeteix; (3) tradueix fidelment l’algoritme a blocs i comprova tres casos; (4) usa el vocabulari magma/lava de manera coherent amb la font; i (5) identifica què ha simplificat la seua animació. No s’avalua si la seqüència és una reconstrucció universal d’una erupció: és una interpretació didàctica.
+Recoged mapa de ideas, flipbook, diagrama de flujo, fuente geológica citada, storyboard, cuatro cuadrículas, MakeCode, registro de pruebas y mapa de reflexión. Observad si el equipo (1) divide una acción en pasos representables; (2) muestra en el diagrama qué se repite; (3) traduce fielmente el algoritmo a bloques y comprueba tres casos; (4) usa el vocabulario magma/lava de manera coherente con la fuente; y (5) identifica qué ha simplificado su animación. No se evalúa si la secuencia es una reconstrucción universal de una erupción: es una interpretación didáctica.
 
-## ♿ Ritme, accés i seguretat
+## ♿ Ritmo, acceso y seguridad
 
-Oferiu storyboard imprés, animació estàtica, simulador i pauses llargues; no és necessari veure estímuls ràpids. Rols possibles: lector/a de font, dibuixant de graelles, autor/a de flux, programador/a, provador/a o narrador/a. Es pot dictar o ordenar targetes en lloc de fer un flipbook manual. No hi ha cap experiment físic volcànic, foc, calor ni substàncies. Si el tema de riscos naturals resulta sensible per a alguna persona, es pot animar un procés geològic no amenaçador amb els mateixos conceptes d’algoritme.
+Ofreced storyboard impreso, animación estática, simulador y pausas largas; no es necesario ver estímulos rápidos. Roles posibles: lector/a de fuente, dibujante de cuadrículas, autor/a de flujo, programador/a, probador/a o narrador/a. Se puede dictar u ordenar tarjetas en lugar de hacer un flipbook manual. No hay ningún experimento físico volcánico, fuego, calor ni sustancias. Si el tema de riesgos naturales resulta sensible para alguna persona, se puede animar un proceso geológico no amenazador con los mismos conceptos de algoritmo.
 
-## 🔗 Unitat oficial i context valencià
+## 🔗 Unidad oficial y contexto valenciano
 
-[Volcano animations](https://microbit.org/teach/lessons/volcano-animations-unit-of-work/) té cinc lliçons: mapa d’idees i descomposició d’una dansa en flipbook; diagrama de flux i repetició en MakeCode; planificació desconnectada de fases d’una erupció; programació, prova i depuració LED; i revisió descomposta del procés. Aquesta proposta conserva l’ordre i els aprenentatges, crea el storyboard i els criteris i afegeix una comparació contextual basada en fonts geològiques. L’IGN documenta Cofrentes i Columbretes dins de les àrees volcàniques de l’Estat; es presenten com a patrimoni geològic, no com a volcans en erupció o perill immediat. Consulteu la [catàleg històric de l’IGN](https://www.ign.es/web/resources/acercaDe/libDigPub/Catalogo-150-aniversario-IGN.pdf) i la seua [secció educativa de volcans](https://www.ign.es/web/ign/portal/recursos-educativos).
+[Volcano animations](https://microbit.org/teach/lessons/volcano-animations-unit-of-work/) tiene cinco lecciones: mapa de ideas y descomposición de una danza en flipbook; diagrama de flujo y repetición en MakeCode; planificación desconectada de fases de una erupción; programación, prueba y depuración LED; y revisión descompuesta del proceso. Esta propuesta conserva el orden y los aprendizajes, crea el storyboard y los criterios y añade una comparación contextual basada en fuentes geológicas. El IGN documenta Cofrentes y Columbretes dentro de las áreas volcánicas del Estado; se presentan como patrimonio geológico, no como volcanes en erupción o peligro inmediato. Consultad el [catálogo histórico del IGN](https://www.ign.es/web/resources/acercaDe/libDigPub/Catalogo-150-aniversario-IGN.pdf) y su [sección educativa de volcanes](https://www.ign.es/web/ign/portal/recursos-educativos).

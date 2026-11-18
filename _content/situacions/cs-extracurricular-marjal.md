@@ -15,500 +15,500 @@ challenge: "¿Cómo podemos crear una experiencia de juego y descubrimiento de l
 official_source: "https://matatalab.com/zh-hans/node/67"
 ---
 
-![El MatataBot, la torre i el tauler reals del Coding Set al costat d’un mapa de la marjal, targetes d’història i un prototip de joc de paper.](../../_assets/situacions/cs-extracurricular-marjal.webp)
+![El MatataBot, la torre y el tablero reales del Coding Set junto a un mapa de la marjal, tarjetas de historia y un prototipo de juego de papel.](../../_assets/situacions/cs-extracurricular-marjal.webp)
 
-_El mapa, les targetes i el joc són materials creats a mà; el robot executa les ordres tangibles i no interpreta imatges ni construeix els materials._
+_El mapa, las tarjetas y el juego son materiales creados a mano; el robot ejecuta las órdenes tangibles y no interpreta imágenes ni construye los materiales._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-El centre prepara una jornada de descobertes sobre la marjal. En dotze sessions, els equips aprenen a planificar i comprovar moviments, crear una seqüència musical si hi ha el complement compatible, contar una història amb un mapa, dissenyar una peça visual i convertir el que han aprés en un joc i un projecte triat pel grup.
+El centro prepara una jornada de descubrimientos sobre la marjal. En doce sesiones, los equipos aprenden a planificar y comprobar movimientos, crear una secuencia musical si existe el complemento compatible, contar una historia con un mapa, diseñar una pieza visual y convertir lo que han aprendido en un juego y un proyecto elegido por el grupo.
 
-La situació parteix del resum oficial del currículum *Matatalab Extracurricular*: 12 lliçons; les lliçons 1–4 treballen seqüències i moviments direccionals amb Coding Set, les 5–6 combinen blocs musicals amb Coding Set, les 7–8 creen històries amb mapes, les 9–10 usen blocs avançats i Artist Add-On per a creacions artístiques, i les dues últimes proposen un joc de taula original i un projecte d’interés. La pàgina oficial indica que les sessions són de 60 minuts i que cada lliçó segueix una estructura d’introducció, activitat Matatalab, tancament, extensions i connexions amb el món real.
+La situación parte del resumen oficial del currículo *Matatalab Extracurricular*: 12 lecciones; las lecciones 1–4 trabajan secuencias y movimientos direccionales con Coding Set, las 5–6 combinan bloques musicales con Coding Set, las 7–8 crean historias con mapas, las 9–10 usan bloques avanzados y Artist Add-On para creaciones artísticas, y las dos últimas proponen un juego de mesa original y un proyecto de interés. La página oficial indica que las sesiones son de 60 minutos y que cada lección sigue una estructura de introducción, actividad Matatalab, cierre, extensiones y conexiones con el mundo real.
 
-El manual complet i els materials annexos no s’han pogut contrastar. Per això, les dotze sessions d’aquesta fitxa són desenvolupaments locals alineats amb els blocs d’objectius públics, no una reproducció ni una adaptació integral dels passos, preguntes o materials originals. Els títols i els reptes concrets són propis. Les guies tècniques de Matatalab s’usen per validar el funcionament del robot i dels complements, no com a substitut dels guions docents que falten.
+El manual completo y los materiales anexos no se han podido contrastar. Por eso, las doce sesiones de esta ficha son desarrollos locales alineados con los bloques de objetivos públicos, no una reproducción ni una adaptación integral de los pasos, preguntas o materiales originales. Los títulos y los retos concretos son propios. Las guías técnicas de Matatalab se usan para validar el funcionamiento del robot y de los complementos, no como sustituto de los guiones docentes que faltan.
 
-El currículum oficial inclou Musician i Artist Add-On. La dotació local no confirma que aquests accessoris estiguen disponibles. Les sessions 5–6 i 9–10 ofereixen una alternativa completa amb paper, ritme oral i dibuix manual; no s’hi atribueixen les funcions dels complements al Coding Set base. Si el centre comprova que té l’accessori compatible, pot fer la variant robòtica descrita, seguint el seu manual i registrant el material exacte.
+El currículo oficial incluye Musician y Artist Add-On. La dotación local no confirma que estos accesorios estén disponibles. Las sesiones 5–6 y 9–10 ofrecen una alternativa completa con papel, ritmo oral y dibujo manual; no se atribuyen las funciones de los complementos al Coding Set base. Si el centro comprueba que tiene el accesorio compatible, puede hacer la variante robótica descrita, siguiendo su manual y registrando el material exacto.
 
-**Pregunta guia:** quines proves necessitem perquè una altra classe puga entendre, jugar i millorar una creació nostra?
+**Pregunta guía:** ¿qué pruebas necesitamos para que otra clase pueda entender, jugar y mejorar una creación nuestra?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Construir, llegir i depurar seqüències de moviment amb inici, orientació, destí i una prova repetible.
-- Comparar una seqüència musical o artística planificada amb el resultat, distingint què depén del robot, del complement i de les persones.
-- Representar un espai en una graella, ordenar escenes i explicar una ruta amb referents comprensibles.
-- Dissenyar regles de joc provables, detectar ambigüitats i revisar-les a partir del joc d’un altre equip.
-- Gestionar un projecte breu des de la pregunta d’interés fins a la presentació d’evidències i una proposta de millora.
+- Construir, leer y depurar secuencias de movimiento con inicio, orientación, destino y una prueba repetible.
+- Comparar una secuencia musical o artística planificada con el resultado, distinguiendo qué depende del robot, del complemento y de las personas.
+- Representar un espacio en una cuadrícula, ordenar escenas y explicar una ruta con referentes comprensibles.
+- Diseñar reglas de juego comprobables, detectar ambigüedades y revisarlas a partir del juego de otro equipo.
+- Gestionar un proyecto breve desde la pregunta de interés hasta la presentación de evidencias y una propuesta de mejora.
 
-**Vocabulari clau:** seqüència, ordre, orientació, repetició, patró, compàs, mapa, graella, escena, regla, prototip, prova, revisió.
+**Vocabulario clave:** secuencia, orden, orientación, repetición, patrón, compás, mapa, cuadrícula, escena, regla, prototipo, prueba, revisión.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Coding Set de la dotació: MatataBot, torre de control, tauler i blocs físics disponibles. Comproveu càrrega, connexió, reconeixement i l’estat de les peces abans de cada sessió.
-- Graelles físiques de 10 × 10 cm quan el robot les recórrega, cartolina, cinta de pintor, targetes, retoladors, llapis, regle, fitxes de joc i fulls de registre.
-- Materials locals sobre la marjal: mapa esquemàtic sense adreces particulars, targetes dibuixades de séquia, ullal, hort, observatori i camins. No useu fotografies identificables d’infants ni dades de localització personal.
-- Els complements Musician i Artist són opcionals. No els inclogueu com a materials necessaris fins que el centre n’haja verificat model, peces i instruccions.
-- Organitzeu equips de quatre amb rols rotatius: programació, inspecció de seqüència, registre de proves i portaveu/materials. Amb un sol robot, feu torns curts i manteniu la simulació en paper per a la resta.
+- Coding Set de la dotación: MatataBot, torre de control, tablero y bloques físicos disponibles. Comprobad carga, conexión, reconocimiento y el estado de las piezas antes de cada sesión.
+- Cuadrículas físicas de 10 × 10 cm cuando el robot las recorra, cartulina, cinta de pintor, tarjetas, rotuladores, lápices, regla, fichas de juego y hojas de registro.
+- Materiales locales sobre la marjal: mapa esquemático sin direcciones particulares, tarjetas dibujadas de acequia, ullal, huerto, observatorio y caminos. No uséis fotografías identificables de niños y niñas ni datos de localización personal.
+- Los complementos Musician y Artist son opcionales. No los incluyáis como materiales necesarios hasta que el centro haya verificado modelo, piezas e instrucciones.
+- Organizad equipos de cuatro con roles rotativos: programación, inspección de secuencia, registro de pruebas y portavoz/materiales. Con un solo robot, haced turnos cortos y mantened la simulación en papel para el resto.
 
-Abans de la primera sessió, proveu una ordre i un gir en una casella de 10 cm sobre una superfície plana. Prepareu una fitxa de predicció/resultat i un exemple de mapa en paper. En les sessions creatives, marqueu clarament qualsevol seqüència que siga simulada, dibuixada o interpretada per persones.
+Antes de la primera sesión, probad una orden y un giro en una casilla de 10 cm sobre una superficie plana. Preparad una ficha de predicción/resultado y un ejemplo de mapa en papel. En las sesiones creativas, marcad claramente cualquier secuencia que sea simulada, dibujada o interpretada por personas.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Sessió 1 · El missatge arriba al robot (60 min)
+### Sesión 1 · El mensaje llega al robot (60 min)
 
-**Objectiu local:** entendre el camí d’una ordre tangible des de la torre fins al MatataBot i acordar una prova bàsica.
+**Objetivo local:** entender el camino de una orden tangible desde la torre hasta el MatataBot y acordar una prueba básica.
 
-**Temps de referència local:** 8 + 12 + 12 + 18 + 10 minuts (60 min). La font oficial indica 60 minuts per lliçó; aquest repartiment és una proposta d’aula.
+**Tiempo de referencia local:** 8 + 12 + 12 + 18 + 10 minutos (60 min). La fuente oficial indica 60 minutos por lección; este reparto es una propuesta de aula.
 
-**Preparació docent:** Carregueu i connecteu el kit; deixeu una seqüència curta visible per a observar el flux de missatges.
+**Preparación docente:** Cargad y conectad el kit; dejad una secuencia corta visible para observar el flujo de mensajes.
 
-**Materials de la sessió:** Coding Set, blocs bàsics, targetes de vocabulari i full de registre.
+**Materiales de la sesión:** Coding Set, bloques básicos, tarjetas de vocabulario y hoja de registro.
 
-**Vocabulari clau:** robot, torre, ordre, missatge, executar.
+**Vocabulario clave:** robot, torre, orden, mensaje, ejecutar.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu l’encàrrec de la jornada del marjal. L’alumnat observa el kit sense executar-lo i dibuixa qui creu que envia, rep i fa cada acció. Recolliu les prediccions sobre què passa quan es canvia l’ordre d’una peça.
+Presentad el encargo de la jornada de la marjal. El alumnado observa el kit sin ejecutarlo y dibuja quién cree que envía, recibe y hace cada acción. Recoged las predicciones sobre qué pasa cuando se cambia el orden de una pieza.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En equips, identifiqueu torre, tauler, robot i blocs que realment hi ha al kit. Una parella posa una ordre curta; la persona inspectora la llig en veu alta i anticipa el moviment. Executeu-la només després de comprovar que el tauler està ben orientat.
+En equipos, identificad torre, tablero, robot y bloques que realmente hay en el kit. Una pareja pone una orden corta; la persona inspectora la lee en voz alta y anticipa el movimiento. Ejecutadla solo después de comprobar que el tablero está bien orientado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Dibuixeu el flux «bloc col·locat → torre el llig → robot es mou». Anoteu l’ordre, la predicció i el resultat observat. Distingiu la lectura de blocs de la interpretació humana del mapa.
+Dibujad el flujo «bloque colocado → la torre lo lee → el robot se mueve». Anotad la orden, la predicción y el resultado observado. Distinguid la lectura de bloques de la interpretación humana del mapa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu el programa amb un altre equip perquè el llija abans d’executar-lo. Si la predicció falla, localitzeu la primera diferència i canvieu una sola peça.
+Intercambiad el programa con otro equipo para que lo lea antes de ejecutarlo. Si la predicción falla, localizad la primera diferencia y cambiad una sola pieza.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dibuix del flux i registre d’una ordre provada. **Pregunta:** quina part del sistema ha rebut la seqüència i quina part ha fet el moviment?
+**Evidencia:** dibujo del flujo y registro de una orden probada. **Pregunta:** ¿qué parte del sistema ha recibido la secuencia y qué parte ha hecho el movimiento?
 
-**Extensió:** Afegiu una ordre nova i demaneu a un altre equip que explique quin missatge rebrà el robot.
+**Ampliación:** Añadid una orden nueva y pedid a otro equipo que explique qué mensaje recibirá el robot.
 
-**Connexió amb el món real:** Relacioneu el sistema d’ordres amb una instrucció clara que done una persona en una activitat quotidiana.
+**Conexión con el mundo real:** Relacionad el sistema de órdenes con una instrucción clara que dé una persona en una actividad cotidiana.
 
-### Sessió 2 · Girs i orientació en una ruta (60 min)
+### Sesión 2 · Giros y orientación en una ruta (60 min)
 
-**Objectiu local:** planificar des d’una orientació inicial i justificar els girs en relació amb el robot.
+**Objetivo local:** planificar desde una orientación inicial y justificar los giros en relación con el robot.
 
-**Temps de referència local:** 8 + 12 + 12 + 18 + 10 minuts (60 min). La font oficial indica 60 minuts per lliçó; aquest repartiment és una proposta d’aula.
+**Tiempo de referencia local:** 8 + 12 + 12 + 18 + 10 minutos (60 min). La fuente oficial indica 60 minutos por lección; este reparto es una propuesta de aula.
 
-**Preparació docent:** Marqueu inici i orientació en una graella de 10 cm i prepareu una ruta amb dos girs.
+**Preparación docente:** Marcad inicio y orientación en una cuadrícula de 10 cm y preparad una ruta con dos giros.
 
-**Materials de la sessió:** Coding Set, graella de 10 cm, fitxa de robot, fletxes i retoladors.
+**Materiales de la sesión:** Coding Set, cuadrícula de 10 cm, ficha de robot, flechas y rotuladores.
 
-**Vocabulari clau:** orientació, gir, davant, dreta, esquerra.
+**Vocabulario clave:** orientación, giro, delante, derecha, izquierda.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Poseu una fitxa de MatataBot en una graella i assenyaleu l’orientació inicial. Abans de col·locar cap bloc, cada equip marca una ruta cap a una fita del marjal i dibuixa on espera que quede el robot després de cada gir.
+Poned una ficha de MatataBot en una cuadrícula y señalad la orientación inicial. Antes de colocar ningún bloque, cada equipo marca una ruta hacia un hito de la marjal y dibuja dónde espera que quede el robot después de cada giro.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Traduïu la ruta a blocs físics disponibles. Una persona segueix les ordres amb el dit sobre el mapa; una altra gira físicament una fitxa de paper per no confondre el gir del robot amb un canvi de direcció del mapa.
+Traducid la ruta a bloques físicos disponibles. Una persona sigue las órdenes con el dedo sobre el mapa; otra gira físicamente una ficha de papel para no confundir el giro del robot con un cambio de dirección del mapa.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Registreu posició inicial, orientació, blocs i posició final prevista. Compareu rutes diferents que arriben al mateix punt i compteu moviments i girs sense valorar-ne la rapidesa.
+Registrad posición inicial, orientación, bloques y posición final prevista. Comparad rutas distintas que llegan al mismo punto y contad movimientos y giros sin valorar su rapidez.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu una ruta en el tauler adequat. Si el resultat no coincideix, identifiqueu si l’error és de lectura, orientació, col·locació o execució; torneu a provar des del mateix inici.
+Ejecutad una ruta en el tablero adecuado. Si el resultado no coincide, identificad si el error es de lectura, orientación, colocación o ejecución; volved a probar desde el mismo inicio.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dues rutes anotades i una comprovació física o simulada. **Pregunta:** com podem explicar un gir a algú que mira el mapa des d’un altre costat?
+**Evidencia:** dos rutas anotadas y una comprobación física o simulada. **Pregunta:** ¿cómo podemos explicar un giro a alguien que mira el mapa desde otro lado?
 
-**Extensió:** Proveu una ruta equivalent amb un inici diferent i torneu a justificar l’orientació.
+**Ampliación:** Probad una ruta equivalente con un inicio distinto y volved a justificar la orientación.
 
-**Connexió amb el món real:** Compareu les instruccions de la graella amb les indicacions que caldria donar a una visita del centre.
+**Conexión con el mundo real:** Comparad las instrucciones de la cuadrícula con las indicaciones que habría que dar a una visita del centro.
 
-### Sessió 3 · Una seqüència que podem llegir (60 min)
+### Sesión 3 · Una secuencia que podemos leer (60 min)
 
-**Objectiu local:** fer programes llegibles i provar estratègies de depuració pas a pas.
+**Objetivo local:** hacer programas legibles y probar estrategias de depuración paso a paso.
 
-**Temps de referència local:** 8 + 12 + 12 + 18 + 10 minuts (60 min). La font oficial indica 60 minuts per lliçó; aquest repartiment és una proposta d’aula.
+**Tiempo de referencia local:** 8 + 12 + 12 + 18 + 10 minutos (60 min). La fuente oficial indica 60 minutos por lección; este reparto es una propuesta de aula.
 
-**Preparació docent:** Prepareu dues seqüències equivalents, una d’elles amb una ordre incorrecta identificable.
+**Preparación docente:** Preparad dos secuencias equivalentes, una de ellas con una orden incorrecta identificable.
 
-**Materials de la sessió:** Blocs disponibles, mapa curt, fitxes, full de predicció i registre.
+**Materiales de la sesión:** Bloques disponibles, mapa corto, fichas, hoja de predicción y registro.
 
-**Vocabulari clau:** seqüència, depurar, ordre, predicció, divergència.
+**Vocabulario clave:** secuencia, depurar, orden, predicción, divergencia.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu dues seqüències diferents per arribar a una mateixa fita. L’alumnat prediu quin programa serà més fàcil de revisar i justifica la tria amb el nombre de moviments, els girs i la disposició visual dels blocs.
+Mostrad dos secuencias distintas para llegar a una misma meta. El alumnado predice qué programa será más fácil de revisar y justifica la elección con el número de movimientos, los giros y la disposición visual de los bloques.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Cada grup crea una ruta amb inici, fita i un punt on cal canviar de direcció. La seqüència només pot usar peces existents en el kit. Marqueu amb una fitxa el punt de partida i eviteu obstacles que no siguen necessaris per a la prova.
+Cada grupo crea una ruta con inicio, hito y un punto donde hay que cambiar de dirección. La secuencia solo puede usar piezas existentes en el kit. Marcad con una ficha el punto de partida y evitad obstáculos que no sean necesarios para la prueba.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una persona llig cada bloc i una altra anota el moviment esperat. Feu una simulació amb fitxa abans de connectar la torre; guardeu el primer programa i la seua predicció.
+Una persona lee cada bloque y otra anota el movimiento esperado. Haced una simulación con ficha antes de conectar la torre; guardad el primer programa y su predicción.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu, compareu i marqueu la primera ordre que no coincideix amb el resultat. Modifiqueu només eixa ordre, repetiu la mateixa ruta i anoteu si la correcció ha resolt la divergència.
+Ejecutad, comparad y marcad la primera orden que no coincide con el resultado. Modificad solo esa orden, repetid la misma ruta y anotad si la corrección ha resuelto la divergencia.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** versió inicial i revisada, amb resultat de les dues proves. **Pregunta:** per què convé canviar una sola instrucció cada vegada?
+**Evidencia:** versión inicial y revisada, con resultado de las dos pruebas. **Pregunta:** ¿por qué conviene cambiar una sola instrucción cada vez?
 
-**Extensió:** Introduïu una segona errada en una còpia i compareu estratègies per a trobar la primera divergència.
+**Ampliación:** Introducid un segundo error en una copia y comparad estrategias para encontrar la primera divergencia.
 
-**Connexió amb el món real:** Useu el mateix protocol de prova–observació–correcció quan una instrucció de treball no s’entén.
+**Conexión con el mundo real:** Usad el mismo protocolo de prueba–observación–corrección cuando una instrucción de trabajo no se entiende.
 
-### Sessió 4 · El recorregut de les quatre fites (60 min)
+### Sesión 4 · El recorrido de los cuatro hitos (60 min)
 
-**Objectiu local:** combinar diverses instruccions direccionals en una missió de principi a final.
+**Objetivo local:** combinar varias instrucciones direccionales en una misión de principio a fin.
 
-**Temps de referència local:** 8 + 12 + 12 + 18 + 10 minuts (60 min). La font oficial indica 60 minuts per lliçó; aquest repartiment és una proposta d’aula.
+**Tiempo de referencia local:** 8 + 12 + 12 + 18 + 10 minutos (60 min). La fuente oficial indica 60 minutos por lección; este reparto es una propuesta de aula.
 
-**Preparació docent:** Col·loqueu quatre fites de paper i comproveu que la ruta física cap en la superfície de treball.
+**Preparación docente:** Colocad cuatro hitos de papel y comprobad que la ruta física cabe en la superficie de trabajo.
 
-**Materials de la sessió:** Coding Set, mapa de 10 cm, quatre fites i llegenda de símbols.
+**Materiales de la sesión:** Coding Set, mapa de 10 cm, cuatro hitos y leyenda de símbolos.
 
-**Vocabulari clau:** inici, fita, destí, llegenda, ruta.
+**Vocabulario clave:** inicio, hito, destino, leyenda, ruta.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu quatre fites de paper —biblioteca, séquia, hort i observatori— al voltant d’una ruta curta. Els equips trien una destinació i expliquen quines fites han de passar i quines no formen part de la missió.
+Presentad cuatro hitos de papel —biblioteca, acequia, huerto y observatorio— alrededor de una ruta corta. Los equipos eligen un destino y explican qué hitos tienen que pasar y cuáles no forman parte de la misión.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dissenyeu una ruta en una graella física amb la mida adequada. Si falten peces, representeu-les amb targetes pròpies en la simulació i no les poseu en el tauler com si foren blocs reconeguts.
+Diseñad una ruta en una cuadrícula física con el tamaño adecuado. Si faltan piezas, representadlas con tarjetas propias en la simulación y no las pongáis en el tablero como si fueran bloques reconocidos.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Escriviu el programa amb llegenda dels símbols, orientació inicial i destí. Un equip revisor ha de poder predir el final sense escoltar l’explicació oral de qui l’ha dissenyat.
+Escribid el programa con leyenda de los símbolos, orientación inicial y destino. Un equipo revisor tiene que poder predecir el final sin escuchar la explicación oral de quien lo ha diseñado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu o simuleu l’itinerari. Si la parella revisora no pot seguir-lo, aclarim la llegenda; si el robot acaba en una altra casella, depurem la seqüència a partir de la primera divergència.
+Ejecutad o simulad el itinerario. Si la pareja revisora no puede seguirlo, aclaramos la leyenda; si el robot acaba en otra casilla, depuramos la secuencia a partir de la primera divergencia.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** ruta provada i llegenda comprensible per a un altre grup. **Pregunta:** quina informació del programa ha de quedar escrita perquè una altra persona puga repetir-lo?
+**Evidencia:** ruta probada y leyenda comprensible para otro grupo. **Pregunta:** ¿qué información del programa tiene que quedar escrita para que otra persona pueda repetirlo?
 
-**Extensió:** Afegiu una fita opcional i comproveu si canvia el programa o només la llegenda.
+**Ampliación:** Añadid un hito opcional y comprobad si cambia el programa o solo la leyenda.
 
-**Connexió amb el món real:** Relacioneu la ruta amb un itinerari accessible del centre o d’un espai comunitari, sense publicar localitzacions personals.
+**Conexión con el mundo real:** Relacionad la ruta con un itinerario accesible del centro o de un espacio comunitario, sin publicar localizaciones personales.
 
-### Sessió 5 · Un ritme per a la marjal (60 min)
+### Sesión 5 · Un ritmo para la marjal (60 min)
 
-**Objectiu local:** relacionar una seqüència de sons i moviments amb un patró rítmic, distingint la variant amb Musician Add-On.
+**Objetivo local:** relacionar una secuencia de sonidos y movimientos con un patrón rítmico, distinguiendo la variante con Musician Add-On.
 
-**Temps de referència local:** 8 + 12 + 12 + 18 + 10 minuts (60 min). La font oficial indica 60 minuts per lliçó; aquest repartiment és una proposta d’aula.
+**Tiempo de referencia local:** 8 + 12 + 12 + 18 + 10 minutos (60 min). La fuente oficial indica 60 minutos por lección; este reparto es una propuesta de aula.
 
-**Preparació docent:** Comproveu si hi ha Musician Add-On i prepareu en paral·lel una partitura manual de quatre pulsacions.
+**Preparación docente:** Comprobad si hay Musician Add-On y preparad en paralelo una partitura manual de cuatro pulsaciones.
 
-**Materials de la sessió:** Targetes de ritme, paper, instruments d’aula i Musician només si està verificat.
+**Materiales de la sesión:** Tarjetas de ritmo, papel, instrumentos de aula y Musician solo si está verificado.
 
-**Vocabulari clau:** pulsació, ritme, compàs, seqüència, interpretació.
+**Vocabulario clave:** pulsación, ritmo, compás, secuencia, interpretación.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Escolteu o llegiu un patró de quatre pulsacions fet amb palmes i targetes. Cada grup prediu com el podria representar amb símbols i quina repetició hi reconeix.
+Escuchad o leed un patrón de cuatro pulsaciones hecho con palmas y tarjetas. Cada grupo predice cómo podría representarlo con símbolos y qué repetición reconoce.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Sense Musician, creeu una partitura de paper amb símbols i interpreteu-la amb veu, palmes o instruments d’aula, sense atribuir el so al MatataBot. Si l’accessori compatible està confirmat, exploreu les peces musicals disponibles amb el seu manual i construïu una seqüència curta.
+Sin Musician, cread una partitura de papel con símbolos e interpretadla con voz, palmas o instrumentos de aula, sin atribuir el sonido al MatataBot. Si el accesorio compatible está confirmado, explorad las piezas musicales disponibles con su manual y construid una secuencia corta.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Representeu el patró en una graella de pulsacions. Anoteu què és una instrucció del robot, què és una peça de l’accessori i què és una acció humana; si hi ha complement, registreu les peces exactes que s’han provat.
+Representad el patrón en una cuadrícula de pulsaciones. Anotad qué es una instrucción del robot, qué es una pieza del accesorio y qué es una acción humana; si hay complemento, registrad las piezas exactas que se han probado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu les partitures. El grup que les rep les interpreta sense explicació addicional. Canvieu una pulsació o una repetició i compareu si el nou patró continua sent llegible.
+Intercambiad las partituras. El grupo que las recibe las interpreta sin explicación adicional. Cambiad una pulsación o una repetición y comparad si el nuevo patrón sigue siendo legible.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** partitura i interpretació o seqüència de l’accessori verificada. **Pregunta:** quina diferència hi ha entre un so interpretat per una persona i un so que realment reprodueix el kit?
+**Evidencia:** partitura e interpretación o secuencia del accesorio verificada. **Pregunta:** ¿qué diferencia hay entre un sonido interpretado por una persona y un sonido que realmente reproduce el kit?
 
-**Extensió:** Canvieu l’ordre de dues pulsacions i interpreteu de nou la partitura; no presenteu la interpretació humana com a eixida del robot.
+**Ampliación:** Cambiad el orden de dos pulsaciones e interpretad de nuevo la partitura; no presentéis la interpretación humana como salida del robot.
 
-**Connexió amb el món real:** Busqueu patrons rítmics en una activitat musical o una cançó de domini públic coneguda per la classe.
+**Conexión con el mundo real:** Buscad patrones rítmicos en una actividad musical o una canción de dominio público conocida por la clase.
 
-![El MatataBot i la torre de la dotació al costat d’una partitura de ritme dibuixada a mà i un mapa de graella.](../../_assets/situacions/sa-cs-extracurricular-musica-v1.webp)
+![El MatataBot y la torre de la dotación junto a una partitura de ritmo dibujada a mano y un mapa de cuadrícula.](../../_assets/situacions/sa-cs-extracurricular-musica-v1.webp)
 
-_La partitura és de paper; només s’usa Musician Add-On si el centre en confirma el model i la disponibilitat._
+_La partitura es de papel; solo se usa Musician Add-On si el centro confirma el modelo y la disponibilidad._
 
-### Sessió 6 · Compondre i revisar una seqüència (60 min)
+### Sesión 6 · Componer y revisar una secuencia (60 min)
 
-**Objectiu local:** crear una composició curta i aplicar una revisió basada en evidències.
+**Objetivo local:** crear una composición corta y aplicar una revisión basada en evidencias.
 
-**Temps de referència local:** 8 + 12 + 12 + 18 + 10 minuts (60 min). La font oficial indica 60 minuts per lliçó; aquest repartiment és una proposta d’aula.
+**Tiempo de referencia local:** 8 + 12 + 12 + 18 + 10 minutos (60 min). La fuente oficial indica 60 minutos por lección; este reparto es una propuesta de aula.
 
-**Preparació docent:** Prepareu un patró regular i una variació; si hi ha Musician, reviseu el manual i les peces abans de la classe.
+**Preparación docente:** Preparad un patrón regular y una variación; si hay Musician, revisad el manual y las piezas antes de la clase.
 
-**Materials de la sessió:** Partitura de 8–12 pulsacions, full comparatiu i accessori només si està confirmat.
+**Materiales de la sesión:** Partitura de 8–12 pulsaciones, hoja comparativa y accesorio solo si está confirmado.
 
-**Vocabulari clau:** patró, durada, repetició, variació, versió.
+**Vocabulario clave:** patrón, duración, repetición, variación, versión.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Compareu dos patrons de ritme: un amb repetició regular i un amb una variació final. Predigueu quina part recordarà millor l’oient i quina peça es pot canviar per a comprovar-ho.
+Comparad dos patrones de ritmo: uno con repetición regular y otro con una variación final. Predecid qué parte recordará mejor quien escucha y qué pieza se puede cambiar para comprobarlo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dissenyeu una composició pròpia de 8 a 12 pulsacions amb inici, desenvolupament i final. Amb Musician confirmat, programeu només les notes i funcions que apareixen al complement disponible; sense ell, feu la interpretació amb paper i instruments d’aula.
+Diseñad una composición propia de 8 a 12 pulsaciones con inicio, desarrollo y final. Con Musician confirmado, programad solo las notas y funciones que aparecen en el complemento disponible; sin él, haced la interpretación con papel e instrumentos de aula.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Marqueu els blocs o símbols en ordre i anoteu qui interpreta cada part. Una altra parella llig la partitura i assenyala si hi ha instruccions amb més d’una interpretació.
+Marcad los bloques o símbolos en orden y anotad quién interpreta cada parte. Otra pareja lee la partitura y señala si hay instrucciones con más de una interpretación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Interpreteu o executeu la composició i canvieu una sola variable —durada, ordre o repetició— per comparar les versions. Deseu la primera i la segona partitura amb el mateix sistema de registre.
+Interpretad o ejecutad la composición y cambiad una sola variable —duración, orden o repetición— para comparar las versiones. Guardad la primera y la segunda partitura con el mismo sistema de registro.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dues versions i una justificació del canvi. **Pregunta:** quina prova ens ajuda a saber si la variació que hem introduït és la que ha canviat el resultat?
+**Evidencia:** dos versiones y una justificación del cambio. **Pregunta:** ¿qué prueba nos ayuda a saber si la variación que hemos introducido es la que ha cambiado el resultado?
 
-**Extensió:** Presenteu les dues versions a un grup diferent i demaneu-li que descriga la variació sense saber quina s’ha canviat.
+**Ampliación:** Presentad las dos versiones a un grupo distinto y pedidle que describa la variación sin saber cuál se ha cambiado.
 
-**Connexió amb el món real:** Connecteu l’estructura inici–desenvolupament–final amb una composició o una rutina del dia a dia.
+**Conexión con el mundo real:** Conectad la estructura inicio–desarrollo–final con una composición o una rutina del día a día.
 
-### Sessió 7 · Un mapa que conta una història (60 min)
+### Sesión 7 · Un mapa que cuenta una historia (60 min)
 
-**Objectiu local:** representar un entorn pròxim i ordenar escenes en una ruta comprensible.
+**Objetivo local:** representar un entorno próximo y ordenar escenas en una ruta comprensible.
 
-**Temps de referència local:** 8 + 12 + 12 + 18 + 10 minuts (60 min). La font oficial indica 60 minuts per lliçó; aquest repartiment és una proposta d’aula.
+**Tiempo de referencia local:** 8 + 12 + 12 + 18 + 10 minutos (60 min). La fuente oficial indica 60 minutos por lección; este reparto es una propuesta de aula.
 
-**Preparació docent:** Prepareu targetes locals de tema i un mapa sense dades privades; seleccioneu una història de tres o quatre escenes.
+**Preparación docente:** Preparad tarjetas locales de tema y un mapa sin datos privados; seleccionad una historia de tres o cuatro escenas.
 
-**Materials de la sessió:** Graella, targetes d’escena, llapis, blocs i full per a ordenar la narració.
+**Materiales de la sesión:** Cuadrícula, tarjetas de escena, lápices, bloques y hoja para ordenar la narración.
 
-**Vocabulari clau:** escena, mapa, graella, narració, ordre.
+**Vocabulario clave:** escena, mapa, cuadrícula, narración, orden.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu un tema de marjal —l’aigua, els cultius, les aus o els camins— i acordeu quines tres o quatre escenes necessita una història breu. Predigueu quina informació ha de mostrar el mapa perquè una altra parella la puga seguir.
+Elegid un tema de marjal —el agua, los cultivos, las aves o los caminos— y acordad qué tres o cuatro escenas necesita una historia breve. Predecid qué información tiene que mostrar el mapa para que otra pareja pueda seguirla.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dibuixeu un mapa esquemàtic en una graella i col·loqueu targetes d’escena en caselles diferents. Les targetes són contingut creat per l’alumnat: el robot no les llig ni en reconeix el tema.
+Dibujad un mapa esquemático en una cuadrícula y colocad tarjetas de escena en casillas distintas. Las tarjetas son contenido creado por el alumnado: el robot no las lee ni reconoce el tema.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Escriviu l’ordre narratiu i traceu un recorregut que visite les escenes en eixe ordre. Una altra parella verifica la ruta amb una fitxa abans de programar-la.
+Escribid el orden narrativo y trazad un recorrido que visite las escenas en ese orden. Otra pareja verifica la ruta con una ficha antes de programarla.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu MatataBot amb els blocs disponibles, sense atribuir-li comprensió de la història. En una ruta física, manteniu la quadrícula a escala adequada; si no, declareu la prova com a simulació sobre paper.
+Programad MatataBot con los bloques disponibles, sin atribuirle comprensión de la historia. En una ruta física, mantened la cuadrícula a escala adecuada; si no, declarad la prueba como simulación sobre papel.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa, targetes ordenades, ruta i narració breu. **Pregunta:** quines parts de la història depenen de les persones i quina part és una seqüència de moviment?
+**Evidencia:** mapa, tarjetas ordenadas, ruta y narración breve. **Pregunta:** ¿qué partes de la historia dependen de las personas y qué parte es una secuencia de movimiento?
 
-**Extensió:** Afegiu una escena que canvie el sentit del relat i comproveu si cal alterar també la ruta.
+**Ampliación:** Añadid una escena que cambie el sentido del relato y comprobad si hay que alterar también la ruta.
 
-**Connexió amb el món real:** Relacioneu les targetes amb observacions documentades de l’entorn; distingiu informació consultada de ficció.
+**Conexión con el mundo real:** Relacionad las tarjetas con observaciones documentadas del entorno; distinguid información consultada de ficción.
 
-### Sessió 8 · Una història que una altra parella puga recórrer (60 min)
+### Sesión 8 · Una historia que otra pareja pueda recorrer (60 min)
 
-**Objectiu local:** validar un mapa narratiu amb una persona que no ha participat en el disseny.
+**Objetivo local:** validar un mapa narrativo con una persona que no ha participado en el diseño.
 
-**Temps de referència local:** 8 + 12 + 12 + 18 + 10 minuts (60 min). La font oficial indica 60 minuts per lliçó; aquest repartiment és una proposta d’aula.
+**Tiempo de referencia local:** 8 + 12 + 12 + 18 + 10 minutos (60 min). La fuente oficial indica 60 minutos por lección; este reparto es una propuesta de aula.
 
-**Preparació docent:** Prepareu dos mapes per a intercanviar i una pauta de revisió amb inici, llegenda, ordre i destí.
+**Preparación docente:** Preparad dos mapas para intercambiar y una pauta de revisión con inicio, leyenda, orden y destino.
 
-**Materials de la sessió:** Mapes de la sessió 7, fitxa de revisió, fitxes de robot i blocs disponibles.
+**Materiales de la sesión:** Mapas de la sesión 7, ficha de revisión, fichas de robot y bloques disponibles.
 
-**Vocabulari clau:** revisió, llegenda, ambigüitat, prova, millora.
+**Vocabulario clave:** revisión, leyenda, ambigüedad, prueba, mejora.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Cada equip intercanvia el mapa sense explicar-lo. Qui el rep prediu el punt d’inici, l’ordre de les escenes i el destí final a partir de la llegenda disponible.
+Cada equipo intercambia el mapa sin explicarlo. Quien lo recibe predice el punto de inicio, el orden de las escenas y el destino final a partir de la leyenda disponible.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-La parella revisora recorre el mapa amb una fitxa. Marca una casella amb més d’una lectura, una transició que falta o una escena fora d’ordre; no canvia el material de l’altre equip.
+La pareja revisora recorre el mapa con una ficha. Marca una casilla con más de una lectura, una transición que falta o una escena fuera de orden; no cambia el material del otro equipo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Retorneu el mapa amb comentaris concrets: «he interpretat aquesta fletxa com…» o «no he trobat…». L’equip autor classifica el retorn com a problema de llegenda, de seqüència o de ruta.
+Devolved el mapa con comentarios concretos: «he interpretado esta flecha como…» o «no he encontrado…». El equipo autor clasifica el retorno como problema de leyenda, de secuencia o de ruta.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu una part del mapa i torneu a fer la prova en les mateixes condicions. Si el canvi afecta la ruta, actualitzeu també el programa del MatataBot o la simulació.
+Revisad una parte del mapa y volved a hacer la prueba en las mismas condiciones. Si el cambio afecta la ruta, actualizad también el programa del MatataBot o la simulación.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa abans/després i registre del retorn extern. **Pregunta:** com sabem que una millora ha ajudat una persona que no coneixia la nostra idea?
+**Evidencia:** mapa antes/después y registro del retorno externo. **Pregunta:** ¿cómo sabemos que una mejora ha ayudado a una persona que no conocía nuestra idea?
 
-**Extensió:** Demaneu a una tercera parella que use la nova versió i compareu el nombre d’aclariments necessaris.
+**Ampliación:** Pedid a una tercera pareja que use la nueva versión y comparad el número de aclaraciones necesarias.
 
-**Connexió amb el món real:** Apliqueu el mateix cicle de retorn a un cartell o una instrucció de l’escola.
+**Conexión con el mundo real:** Aplicad el mismo ciclo de retorno a un cartel o una instrucción de la escuela.
 
-### Sessió 9 · Una figura geomètrica amb blocs i paper (60 min)
+### Sesión 9 · Una figura geométrica con bloques y papel (60 min)
 
-**Objectiu local:** explorar una creació geomètrica, separant traçat amb Artist Add-On de la planificació manual.
+**Objetivo local:** explorar una creación geométrica, separando el trazado con Artist Add-On de la planificación manual.
 
-**Temps de referència local:** 8 + 12 + 12 + 18 + 10 minuts (60 min). La font oficial indica 60 minuts per lliçó; aquest repartiment és una proposta d’aula.
+**Tiempo de referencia local:** 8 + 12 + 12 + 18 + 10 minutos (60 min). La fuente oficial indica 60 minutos por lección; este reparto es una propuesta de aula.
 
-**Preparació docent:** Comproveu la disponibilitat d’Artist Add-On; deixeu una plantilla de paper equivalent i no munteu llapis no verificats.
+**Preparación docente:** Comprobad la disponibilidad de Artist Add-On; dejad una plantilla de papel equivalente y no montéis lápices no verificados.
 
-**Materials de la sessió:** Paper, regle, llapis, plantilla geomètrica; Artist només si està confirmat.
+**Materiales de la sesión:** Papel, regla, lápices, plantilla geométrica; Artist solo si está confirmado.
 
-**Vocabulari clau:** segment, vèrtex, angle, traçat, complement.
+**Vocabulario clave:** segmento, vértice, ángulo, trazado, complemento.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Observeu una estrella o una roseta dibuixada en paper. Identifiqueu segments, girs i repeticions possibles; no pressuposarem que el robot puga dibuixar només perquè el disseny sembla una ruta.
+Observad una estrella o una roseta dibujada en papel. Identificad segmentos, giros y repeticiones posibles; no presupongamos que el robot pueda dibujar solo porque el diseño parece una ruta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Sense Artist Add-On, traceu la figura amb regle i llapis i planifiqueu al costat una ruta que visite els seus vèrtexs. Amb el complement compatible confirmat, reviseu les peces i limitacions del manual abans de programar un traçat curt.
+Sin Artist Add-On, trazad la figura con regla y lápices y planificad al lado una ruta que visite sus vértices. Con el complemento compatible confirmado, revisad las piezas y limitaciones del manual antes de programar un trazado corto.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu quina part és dibuix manual, quina és recorregut i quines peces s’han emprat. Si s’utilitza Artist, registreu angle, moviment i llapis segons la instrucció del fabricant; no infereixis funcions per analogia amb els blocs base.
+Anotad qué parte es dibujo manual, qué parte es recorrido y qué piezas se han empleado. Si se utiliza Artist, registrad ángulo, movimiento y lápiz según la instrucción del fabricante; no inferáis funciones por analogía con los bloques base.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proveu una figura i compareu la predicció amb el paper final o amb la ruta observada. Modifiqueu una instrucció o una mesura, repetiu una vegada i guardeu les dues versions.
+Probad una figura y comparad la predicción con el papel final o con la ruta observada. Modificad una instrucción o una medida, repetid una vez y guardad las dos versiones.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** disseny, programa o ruta i registre de prova. **Pregunta:** quines accions ha fet el robot i quines ha fet la persona?
+**Evidencia:** diseño, programa o ruta y registro de prueba. **Pregunta:** ¿qué acciones ha hecho el robot y cuáles ha hecho la persona?
 
-**Extensió:** Compareu la figura dibuixada amb una altra mida i calculeu quines proporcions es mantenen.
+**Ampliación:** Comparad la figura dibujada con otro tamaño y calculad qué proporciones se mantienen.
 
-**Connexió amb el món real:** Observeu formes geomètriques en rajoles o elements de l’arquitectura local sense atribuir-ne l’autoria si no es coneix.
+**Conexión con el mundo real:** Observad formas geométricas en baldosas o elementos de la arquitectura local sin atribuirles autoría si no se conoce.
 
-![El MatataBot i la torre de la dotació al costat d’una figura geomètrica i d’una xarxa de paper dibuixades manualment.](../../_assets/situacions/sa-cs-extracurricular-arte-v1.webp)
+![El MatataBot y la torre de la dotación junto a una figura geométrica y una red de papel dibujadas manualmente.](../../_assets/situacions/sa-cs-extracurricular-arte-v1.webp)
 
-_Sense Artist Add-On, la figura es dibuixa a mà; el Coding Set base no porta llapis ni traça formes._
+_Sin Artist Add-On, la figura se dibuja a mano; el Coding Set base no lleva lápiz ni traza formas._
 
-### Sessió 10 · Repeticions que creen una obra (60 min)
+### Sesión 10 · Repeticiones que crean una obra (60 min)
 
-**Objectiu local:** transformar una idea artística en una repetició comprovable i compartir-ne les decisions.
+**Objetivo local:** transformar una idea artística en una repetición comprobable y compartir sus decisiones.
 
-**Temps de referència local:** 8 + 12 + 12 + 18 + 10 minuts (60 min). La font oficial indica 60 minuts per lliçó; aquest repartiment és una proposta d’aula.
+**Tiempo de referencia local:** 8 + 12 + 12 + 18 + 10 minutos (60 min). La fuente oficial indica 60 minutos por lección; este reparto es una propuesta de aula.
 
-**Preparació docent:** Prepareu dues unitats gràfiques repetibles i un exemple de registre de les repeticions.
+**Preparación docente:** Preparad dos unidades gráficas repetibles y un ejemplo de registro de las repeticiones.
 
-**Materials de la sessió:** Cartolina, plantilles, retoladors, graella i blocs compatibles verificats.
+**Materiales de la sesión:** Cartulina, plantillas, rotuladores, cuadrícula y bloques compatibles verificados.
 
-**Vocabulari clau:** unitat, repetició, patró, bucle, regla.
+**Vocabulario clave:** unidad, repetición, patrón, bucle, regla.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu una composició de paper feta amb una unitat que es repeteix. L’alumnat marca la unitat mínima i prediu què canviarà si se n’altera el nombre de repeticions o l’angle.
+Mostrad una composición de papel hecha con una unidad que se repite. El alumnado marca la unidad mínima y predice qué cambiará si se altera el número de repeticiones o el ángulo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construïu la composició amb peces de paper i descriviu la unitat repetida. Si Artist està confirmat, feu una prova tècnica breu amb el manual i les peces pròpies del complement; si no, convertiu la repetició en un patró dibuixat i en una ruta de caselles independents.
+Construid la composición con piezas de papel y describid la unidad repetida. Si Artist está confirmado, haced una prueba técnica breve con el manual y las piezas propias del complemento; si no, convertid la repetición en un patrón dibujado y en una ruta de casillas independientes.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu la unitat, les repeticions, les instruccions i el resultat esperat. Distingiu la idea matemàtica de repetir del bucle físic que el kit puga executar només si els blocs corresponents estan disponibles.
+Anotad la unidad, las repeticiones, las instrucciones y el resultado esperado. Distinguid la idea matemática de repetir del bucle físico que el kit pueda ejecutar solo si los bloques correspondientes están disponibles.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu el patró amb una altra parella perquè el reconstruïsca. Reviseu una instrucció ambigua i comproveu si la segona versió es pot seguir sense ajuda oral.
+Intercambiad el patrón con otra pareja para que lo reconstruya. Revisad una instrucción ambigua y comprobad si la segunda versión se puede seguir sin ayuda oral.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** patró inicial i revisat, amb el registre de la prova. **Pregunta:** què cal repetir perquè l’obra conserve la mateixa regla?
+**Evidencia:** patrón inicial y revisado, con el registro de la prueba. **Pregunta:** ¿qué hay que repetir para que la obra conserve la misma regla?
 
-**Extensió:** Canvieu només el nombre de repeticions i compareu dues composicions resultants.
+**Ampliación:** Cambiad solo el número de repeticiones y comparad dos composiciones resultantes.
 
-**Connexió amb el món real:** Busqueu patrons en mosaics, teixits o elements naturals i representeu-ne una unitat.
+**Conexión con el mundo real:** Buscad patrones en mosaicos, tejidos o elementos naturales y representad una unidad.
 
-### Sessió 11 · Inventem un joc de taula (60 min)
+### Sesión 11 · Inventamos un juego de mesa (60 min)
 
-**Objectiu local:** crear regles, torns i una condició de final que es puguen comprovar.
+**Objetivo local:** crear reglas, turnos y una condición de final que se puedan comprobar.
 
-**Temps de referència local:** 8 + 12 + 12 + 18 + 10 minuts (60 min). La font oficial indica 60 minuts per lliçó; aquest repartiment és una proposta d’aula.
+**Tiempo de referencia local:** 8 + 12 + 12 + 18 + 10 minutos (60 min). La fuente oficial indica 60 minutos por lección; este reparto es una propuesta de aula.
 
-**Preparació docent:** Prepareu una plantilla de regles i un prototip en blanc; comproveu que el recorregut i el final siguen jugables.
+**Preparación docente:** Preparad una plantilla de reglas y un prototipo en blanco; comprobad que el recorrido y el final sean jugables.
 
-**Materials de la sessió:** Cartó, fitxes grans, regles, mapa, llegenda i robot opcional.
+**Materiales de la sesión:** Cartón, fichas grandes, reglas, mapa, leyenda y robot opcional.
 
-**Vocabulari clau:** torn, regla, obstacle, condició de final, prototip.
+**Vocabulario clave:** turno, regla, obstáculo, condición de final, prototipo.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Compareu un joc amb regles clares i un amb una regla ambigua. Cada equip prediu què preguntaria una persona que no coneix el joc abans de començar.
+Comparad un juego con reglas claras y otro con una regla ambigua. Cada equipo predice qué preguntaría una persona que no conoce el juego antes de empezar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dissenyeu un joc de recorregut sobre un tema local: cuidar una séquia, preparar una visita o connectar espais de la marjal. Definiu objectiu, inici, torn, moviments vàlids, obstacles, condició de final i materials; el robot és una fitxa programable opcional, no l’àrbitre del joc.
+Diseñad un juego de recorrido sobre un tema local: cuidar una acequia, preparar una visita o conectar espacios de la marjal. Definid objetivo, inicio, turno, movimientos válidos, obstáculos, condición de final y materiales; el robot es una ficha programable opcional, no el árbitro del juego.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Escriviu les regles en passos curts i proveu un torn amb una fitxa. Si hi ha robot, convertiu únicament els moviments compatibles en blocs; les decisions de joc continuen a càrrec de les persones.
+Escribid las reglas en pasos cortos y probad un turno con una ficha. Si hay robot, convertid únicamente los movimientos compatibles en bloques; las decisiones de juego continúan a cargo de las personas.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Una altra parella juga un torn amb les regles sense que els autors les expliquen. Registreu les preguntes, els casos sense resposta i si el final es pot determinar; reviseu una regla i repetiu la prova.
+Otra pareja juega un turno con las reglas sin que los autores las expliquen. Registrad las preguntas, los casos sin respuesta y si el final se puede determinar; revisad una regla y repetid la prueba.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** prototip, regles i acta d’una prova externa. **Pregunta:** quin cas inesperat ha obligat a precisar una regla?
+**Evidencia:** prototipo, reglas y acta de una prueba externa. **Pregunta:** ¿qué caso inesperado ha obligado a precisar una regla?
 
-**Extensió:** Afegiu una regla opcional i proveu si crea una situació sense resposta o un final impossible.
+**Ampliación:** Añadid una regla opcional y probad si crea una situación sin respuesta o un final imposible.
 
-**Connexió amb el món real:** Relacioneu les regles del joc amb normes de convivència que necessiten ser comprensibles per a tothom.
+**Conexión con el mundo real:** Relacionad las reglas del juego con normas de convivencia que necesitan ser comprensibles para todo el mundo.
 
-### Sessió 12 · Un projecte d’interés per a la comunitat (60 min)
+### Sesión 12 · Un proyecto de interés para la comunidad (60 min)
 
-**Objectiu local:** integrar una pregunta pròpia, una seqüència provada i una presentació amb evidències.
+**Objetivo local:** integrar una pregunta propia, una secuencia probada y una presentación con evidencias.
 
-**Temps de referència local:** 8 + 12 + 12 + 18 + 10 minuts (60 min). La font oficial indica 60 minuts per lliçó; aquest repartiment és una proposta d’aula.
+**Tiempo de referencia local:** 8 + 12 + 12 + 18 + 10 minutos (60 min). La fuente oficial indica 60 minutos por lección; este reparto es una propuesta de aula.
 
-**Preparació docent:** Prepareu un llenç de projecte amb pregunta, producte, prova i evidència; acordeu opcions de presentació.
+**Preparación docente:** Preparad un lienzo de proyecto con pregunta, producto, prueba y evidencia; acordad opciones de presentación.
 
-**Materials de la sessió:** Materials triats per l’equip, full de planificació, registre i kit o alternativa desconnectada.
+**Materiales de la sesión:** Materiales elegidos por el equipo, hoja de planificación, registro y kit o alternativa desconectada.
 
-**Vocabulari clau:** pregunta, prototip, evidència, iteració, transferència.
+**Vocabulario clave:** pregunta, prototipo, evidencia, iteración, transferencia.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Cada equip tria un tema que li interesse del seu entorn: aigua, lectura, accessibilitat, biodiversitat o convivència. Formula una pregunta concreta i prediu quin producte podrà compartir al final de la sessió.
+Cada equipo elige un tema que le interese de su entorno: agua, lectura, accesibilidad, biodiversidad o convivencia. Formula una pregunta concreta y predice qué producto podrá compartir al final de la sesión.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Prepareu un prototip de mapa, joc, història, ritme o figura que responga a la pregunta. Trieu explícitament si la prova serà amb Coding Set base, amb un complement verificat o desconnectada; no barregeu les capacitats dels tres casos.
+Preparad un prototipo de mapa, juego, historia, ritmo o figura que responda a la pregunta. Elegid explícitamente si la prueba será con Coding Set base, con un complemento verificado o desconectada; no mezcléis las capacidades de los tres casos.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu la pregunta, els materials, els passos, una predicció i un criteri observable d’èxit. Feu una prova curta amb una parella externa i registreu el resultat sense substituir-lo per una opinió general.
+Anotad la pregunta, los materiales, los pasos, una predicción y un criterio observable de éxito. Haced una prueba corta con una pareja externa y registrad el resultado sin sustituirlo por una opinión general.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu una iteració a partir de l’evidència. Prepareu una explicació de dos minuts que conte què s’ha construït, què s’ha provat, què ha fet el robot i què s’ha fet manualment.
+Haced una iteración a partir de la evidencia. Preparad una explicación de dos minutos que cuente qué se ha construido, qué se ha probado, qué ha hecho el robot y qué se ha hecho manualmente.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** pregunta, prototip, programa o simulació, registre de prova i canvi final. **Tancament:** «La nostra pregunta era…; hem comprovat…; el robot ha…; nosaltres hem…; la següent millora seria…».
+**Evidencia:** pregunta, prototipo, programa o simulación, registro de prueba y cambio final. **Cierre:** «Nuestra pregunta era…; hemos comprobado…; el robot ha…; nosotros hemos…; la siguiente mejora sería…».
 
-**Extensió:** Planifiqueu una segona iteració amb un usuari diferent i una prova més específica.
+**Ampliación:** Planificad una segunda iteración con un usuario distinto y una prueba más específica.
 
-**Connexió amb el món real:** Proposeu un pas següent que puga millorar l’experiència d’una comunitat real del centre.
+**Conexión con el mundo real:** Proponed un paso siguiente que pueda mejorar la experiencia de una comunidad real del centro.
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu els registres de predicció i execució de les sessions 1–4, les partitures i interpretacions de les sessions 5–6, els mapes i les rutes de les sessions 7–8, els patrons de les sessions 9–10, les regles del joc de la sessió 11 i el diari breu de projecte de la sessió 12.
+Recoged los registros de predicción y ejecución de las sesiones 1–4, las partituras e interpretaciones de las sesiones 5–6, los mapas y las rutas de las sesiones 7–8, los patrones de las sesiones 9–10, las reglas del juego de la sesión 11 y el diario breve de proyecto de la sesión 12.
 
-Valoreu si l’alumnat pot (1) llegir una seqüència abans de provar-la, (2) indicar l’orientació inicial i localitzar la primera divergència, (3) explicar què depén del robot, del complement i de les persones, (4) fer que una altra parella entenga el mapa o les regles, i (5) revisar una decisió amb una evidència concreta. Admeteu resposta oral, dibuix, manipulació o text breu com a formes equivalents de mostrar comprensió.
+Valorad si el alumnado puede (1) leer una secuencia antes de probarla, (2) indicar la orientación inicial y localizar la primera divergencia, (3) explicar qué depende del robot, del complemento y de las personas, (4) hacer que otra pareja entienda el mapa o las reglas, y (5) revisar una decisión con una evidencia concreta. Admitid respuesta oral, dibujo, manipulación o texto breve como formas equivalentes de mostrar comprensión.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Oferiu graelles ampliades i d’alt contrast, ordres amb símbol i paraula, torns previsibles, peces de paper grans, plantilles amb inici marcat i possibilitat de respondre assenyalant o dictant. Roteu els rols de manera que cap alumne quede fixat en una única tasca. Les sessions creatives tenen una alternativa desconnectada amb els mateixos objectius de seqüenciació, representació i revisió.
+Ofreced cuadrículas ampliadas y de alto contraste, órdenes con símbolo y palabra, turnos previsibles, piezas de papel grandes, plantillas con inicio marcado y posibilidad de responder señalando o dictando. Rotad los roles de manera que ningún alumno quede fijado en una única tarea. Las sesiones creativas tienen una alternativa desconectada con los mismos objetivos de secuenciación, representación y revisión.
 
-Manteniu el robot sobre una superfície plana i lliure d’obstacles no previstos; retireu peces menudes que puguen interferir amb les rodes. Les persones manipulen tisores i materials de tall amb supervisió. No publiqueu dades personals ni ubicacions privades en els mapes.
+Mantened el robot sobre una superficie plana y libre de obstáculos no previstos; retirad piezas pequeñas que puedan interferir con las ruedas. Las personas manipulan tijeras y materiales de corte con supervisión. No publiquéis datos personales ni ubicaciones privadas en los mapas.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [*Lesson 2.8: Extracurricular Curriculum*](https://matatalab.com/zh-hans/node/67): identifica un currículum de 12 lliçons, productes i preparació; indica 60 minuts per lliçó i descriu l’estructura, materials docents, treball cooperatiu i connexions amb el món real. El resum agrupa els objectius en els trams 1–4 (seqüència i moviments), 5–6 (Musician), 7–8 (mapes i històries), 9–10 (Artist) i 11–12 (joc i projecte d’interés). El guió docent complet i les fitxes annexes no s’han pogut consultar. Aquesta situació és una proposta pròpia informada per eixe resum; no afirma correspondència literal ni cobertura integral dels seus passos.
-- Matatalab, [pàgina oficial de currículums](https://matatalab.com/en/curriculum) i [mostra *Extracurricular Curriculum* en la pàgina de descàrregues](https://www.matatastudio.com/download.html): el fabricant publica una mostra docent actualitzada; no s’ha pogut obtindre el contingut complet per a verificar lliçó a lliçó.
-- Les guies tècniques i l’inventari local del [Coding Set](../../robot/index.html?id=coding-set) s’han de consultar per confirmar els blocs i complements concrets abans d’executar les variants de Musician o Artist.
+- Matatalab, [*Lesson 2.8: Extracurricular Curriculum*](https://matatalab.com/zh-hans/node/67): identifica un currículo de 12 lecciones, productos y preparación; indica 60 minutos por lección y describe la estructura, materiales docentes, trabajo cooperativo y conexiones con el mundo real. El resumen agrupa los objetivos en los tramos 1–4 (secuencia y movimientos), 5–6 (Musician), 7–8 (mapas e historias), 9–10 (Artist) y 11–12 (juego y proyecto de interés). El guion docente completo y las fichas anexas no se han podido consultar. Esta situación es una propuesta propia informada por ese resumen; no afirma correspondencia literal ni cobertura integral de sus pasos.
+- Matatalab, [página oficial de currículos](https://matatalab.com/en/curriculum) y [muestra *Extracurricular Curriculum* en la página de descargas](https://www.matatastudio.com/download.html): el fabricante publica una muestra docente actualizada; no se ha podido obtener el contenido completo para verificar lección a lección.
+- Las guías técnicas y el inventario local del [Coding Set](../../robot/index.html?id=coding-set) se tienen que consultar para confirmar los bloques y complementos concretos antes de ejecutar las variantes de Musician o Artist.
 
-Les tres il·lustracions IA pròpies mostren el MatataBot i la torre reals de la dotació. El mapa, la partitura, la figura i el joc són prototips de paper; les imatges no representen accessoris no confirmats ni funcions automàtiques de lectura o interpretació.
+Las tres ilustraciones de IA propias muestran el MatataBot y la torre reales de la dotación. El mapa, la partitura, la figura y el juego son prototipos de papel; las imágenes no representan accesorios no confirmados ni funciones automáticas de lectura o interpretación.

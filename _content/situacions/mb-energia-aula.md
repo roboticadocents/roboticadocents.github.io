@@ -14,185 +14,185 @@ duration: "6 sesiones"
 challenge: "¿Qué nos dicen las lecturas de luz sobre el uso de la iluminación y qué propuesta podemos defender con datos?"
 ---
 
-![Una placa micro:bit sobre la taula acompanya un llum de sobretaula i un gràfic de barres en blanc.](../../_assets/situacions/mb-energia-aula.webp)
+![Una placa micro:bit sobre la mesa acompaña a una lámpara de sobremesa y un gráfico de barras en blanco.](../../_assets/situacions/mb-energia-aula.webp)
 
-_El sensor de llum registra lectures ambientals; cal separar-les del consum elèctric real._
+_El sensor de luz registra lecturas ambientales; hay que separarlas del consumo eléctrico real._
 
-## 🌱 Situació i intenció
+## 🌱 Situación e intención
 
-La comissió ambiental del centre vol entendre millor quan s’encén la il·luminació d’una aula. L’alumnat planifica una recollida de lectures amb micro:bit, estableix una línia de base, processa dades i prepara una proposta raonada. La placa estima la llum que arriba al sensor: no és un comptador elèctric ni permet atribuir consum sense dades addicionals de potència i temps d’ús.
+La comisión ambiental del centro quiere entender mejor cuándo se enciende la iluminación de un aula. El alumnado planifica una recogida de lecturas con micro:bit, establece una línea de base, procesa datos y prepara una propuesta razonada. La placa estima la luz que llega al sensor: no es un contador eléctrico ni permite atribuir consumo sin datos adicionales de potencia y tiempo de uso.
 
-## 📅 Seqüència didàctica · 6 sessions
+## 📅 Secuencia didáctica · 6 sesiones
 
-### **Sessió 1 · Energia al nostre voltant (Energy around us).**
+### **Sesión 1 · Energía a nuestro alrededor (Energy around us).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Obriu la conversa amb una ronda d’exemples: on s’utilitza llum elèctrica al centre i quines fonts de llum natural hi ha? Connecteu l’observació amb l’acció climàtica (Objectiu Global 13) i pregunteu què voldríem saber abans de proposar un canvi.
+Abrid la conversación con una ronda de ejemplos: ¿dónde se utiliza luz eléctrica en el centro y qué fuentes de luz natural hay? Conectad la observación con la acción climática (Objetivo Global 13) y preguntad qué nos gustaría saber antes de proponer un cambio.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En un plànol senzill, marqueu espais possibles —aula buida amb permís, biblioteca en un moment acordat o una maqueta d’aula— i els punts on es podria col·locar la micro:bit sense molestar. Trieu una ubicació autoritzada i definiu una pregunta investigable, per exemple com varia la lectura en un punt fix entre llum natural i llum de la maqueta.
+En un plano sencillo, marcad espacios posibles —aula vacía con permiso, biblioteca en un momento acordado o una maqueta de aula— y los puntos donde se podría colocar la micro:bit sin molestar. Elegid una ubicación autorizada y definid una pregunta investigable, por ejemplo cómo varía la lectura en un punto fijo entre luz natural y luz de la maqueta.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Acordeu què voldrà dir «lectura baixa» i «lectura alta» només dins d’aquesta prova, i quines condicions anotareu. Separeu la mesura ambiental de la idea de consum: el sensor observa la llum que li arriba, no l’electricitat utilitzada.
+Acordad qué querrá decir «lectura baja» y «lectura alta» solo dentro de esta prueba, y qué condiciones anotaréis. Separad la medida ambiental de la idea de consumo: el sensor observa la luz que le llega, no la electricidad utilizada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu la pregunta amb una altra parella: pot respondre’s amb lectures de llum?, necessita registrar persones o horaris?, es pot fer sense tocar interruptors? Simplifiqueu la recerca si depén d’una dada que el sensor no pot mesurar.
+Revisad la pregunta con otra pareja: ¿puede responderse con lecturas de luz?, ¿necesita registrar personas u horarios?, ¿se puede hacer sin tocar interruptores? Simplificad la investigación si depende de un dato que el sensor no puede medir.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** pregunta d’investigació, punt autoritzat al mapa i definició operativa de les lectures altes/baixes. Relacioneu el projecte amb una acció climàtica prudent sense atribuir consum a persones o grups. Pregunta final: «Quina informació ens falta abans de suggerir una mesura d’estalvi?».
+**Evidencia:** pregunta de investigación, punto autorizado en el mapa y definición operativa de las lecturas altas/bajas. Relacionad el proyecto con una acción climática prudente sin atribuir consumo a personas o grupos. Pregunta final: «¿Qué información nos falta antes de sugerir una medida de ahorro?».
 
-### **Sessió 2 · Planificar les dades (Energy data planning).**
+### **Sesión 2 · Planificar los datos (Energy data planning).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu la pregunta i predigueu quines variables poden fer canviar la lectura encara que la llum no varie: posició, orientació, ombra, hora o llum natural. Trieu quina condició canviareu i quines mantindreu constants.
+Recuperad la pregunta y predecid qué variables pueden hacer cambiar la lectura aunque la luz no varíe: posición, orientación, sombra, hora o luz natural. Elegid qué condición cambiaréis y cuáles mantendréis constantes.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Planifiqueu ubicació, orientació de la placa, interval, durada, moments amb llum natural i una situació de referència. Feu una fitxa de camp amb codi de lloc no identificador, condició, lectura i incidències; excloeu noms, presència i horaris personals.
+Planificad ubicación, orientación de la placa, intervalo, duración, momentos con luz natural y una situación de referencia. Haced una ficha de campo con código de lugar no identificador, condición, lectura e incidencias; excluid nombres, presencia y horarios personales.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Programeu micro:bit perquè mostre o registre valors del sensor de llum, segons el model i l’entorn de programació disponibles. Practiqueu una lectura i anoteu com s’interpreta l’escala de la placa; no l’etiqueteu com a lux si no és una mesura calibrada.
+Programad micro:bit para que muestre o registre valores del sensor de luz, según el modelo y el entorno de programación disponibles. Practicad una lectura y anotad cómo se interpreta la escala de la placa; no la etiquetéis como lux si no es una medida calibrada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Repetiu lectures en condicions conegudes, per exemple en la mateixa posició amb la llum de la maqueta apagada i encesa. Compareu-les i ajuste el protocol si l’orientació o la base canvien entre intents. Anoteu les limitacions del model de placa.
+Repetid lecturas en condiciones conocidas, por ejemplo en la misma posición con la luz de la maqueta apagada y encendida. Comparadlas y ajustad el protocolo si la orientación o la base cambian entre intentos. Anotad las limitaciones del modelo de placa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** pla de mostreig, programa inicial i lectures repetides de referència. Comproveu que es pot repetir el procediment i que la dada respon a la pregunta. Pregunteu: «Quina variable hem de mantindre fixa perquè la comparació siga justa?».
+**Evidencia:** plan de muestreo, programa inicial y lecturas repetidas de referencia. Comprobad que se puede repetir el procedimiento y que el dato responde a la pregunta. Preguntad: «¿Qué variable tenemos que mantener fija para que la comparación sea justa?».
 
-### **Sessió 3 · Recollir i calibrar (Energy data collecting).**
+### **Sesión 3 · Recoger y calibrar (Energy data collecting).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans d’eixir al punt autoritzat, reviseu el pla de mostreig i predigueu què podria alterar la línia de base (núvol, ombra, porta oberta o canvi de posició). Assigneu rols de preparació, lectura, registre i comprovació, i acordeu quan s’atura la recollida.
+Antes de salir al punto autorizado, revisad el plan de muestreo y predecid qué podría alterar la línea de base (nube, sombra, puerta abierta o cambio de posición). Asignad roles de preparación, lectura, registro y comprobación, y acordad cuándo se detiene la recogida.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Calibreu el registre amb diverses lectures consecutives en el mateix punt i poseu en marxa la micro:bit com a temporitzador o registrador segons el programa. Recolliu dades en intervals curts acordats; el prototip queda supervisat i no obstaculitza l’activitat del centre.
+Calibrad el registro con varias lecturas consecutivas en el mismo punto y poned en marcha la micro:bit como temporizador o registrador según el programa. Recoged datos en intervalos cortos acordados; el prototipo queda supervisado y no obstaculiza la actividad del centro.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu la línia de base amb una prova controlada de llum de maqueta encesa i apagada. Per cada lectura, anoteu condició, orientació i incidències; marqueu canvis de llum natural i repeticions sense gravar ni registrar presència, horaris personals o noms.
+Comparad la línea de base con una prueba controlada de luz de maqueta encendida y apagada. Para cada lectura, anotad condición, orientación e incidencias; marcad cambios de luz natural y repeticiones sin grabar ni registrar presencia, horarios personales o nombres.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu si la base s’ha mogut o si una ombra inesperada afecta una tanda. Repetiu només la comparació afectada i conserveu les lectures originals amb una nota d’incidència, en lloc de substituir-les silenciosament.
+Revisad si la base se ha movido o si una sombra inesperada afecta a una tanda. Repetid solo la comparación afectada y conservad las lecturas originales con una nota de incidencia, en lugar de sustituirlas en silencio.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** taula de camp amb valors, condicions, repeticions i incidències, més una nota de calibratge. Pregunteu: «Quines dades són comparables? Quines hauríem de marcar com a dubtoses i per què?».
+**Evidencia:** tabla de campo con valores, condiciones, repeticiones e incidencias, más una nota de calibración. Preguntad: «¿Qué datos son comparables? ¿Cuáles deberíamos marcar como dudosos y por qué?».
 
-### **Sessió 4 · Processar i interpretar (Energy data processing).**
+### **Sesión 4 · Procesar e interpretar (Energy data processing).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mireu les lectures i prediu quin patró podríeu veure entre la línia de base i les proves controlades. Abans de calcular, decidiu quines columnes i condicions necessiteu per respondre la pregunta sense exposar dades personals.
+Mirad las lecturas y predecid qué patrón podríais ver entre la línea de base y las pruebas controladas. Antes de calcular, decidid qué columnas y condiciones necesitáis para responder la pregunta sin exponer datos personales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Passeu les lectures a una taula neta, manteniu els codis de lloc no identificadors i calculeu un valor representatiu (mitjana o mediana, segons el nivell) per a cada condició. Conserveu el rang i el nombre de repeticions al costat del resum.
+Pasad las lecturas a una tabla limpia, mantened los códigos de lugar no identificadores y calculad un valor representativo (media o mediana, según el nivel) para cada condición. Conservad el rango y el número de repeticiones junto al resumen.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Dibuixeu un gràfic amb títol, eixos i escala descrits. Detecteu valors atípics, canvis de posició i moments amb il·luminació externa; no elimineu una lectura sense deixar constància del motiu. Distingiu observació («la lectura va pujar») d’interpretació («hi havia més llum natural»).
+Dibujad un gráfico con título, ejes y escala descritos. Detectad valores atípicos, cambios de posición y momentos con iluminación externa; no eliminéis una lectura sin dejar constancia del motivo. Distinguid observación («la lectura subió») de interpretación («había más luz natural»).
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Escriviu una inferència prudent i, al costat, una explicació alternativa abans de recomanar cap canvi. Si les dades no permeten distingir llum natural de llum elèctrica, proposeu una nova mesura controlada en lloc d’afirmar una causa.
+Escribid una inferencia prudente y, al lado, una explicación alternativa antes de recomendar ningún cambio. Si los datos no permiten distinguir luz natural de luz eléctrica, proponed una nueva medida controlada en lugar de afirmar una causa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** taula processada, gràfic i dues explicacions possibles vinculades a les lectures. Comproveu que una altra parella pot reconstruir el càlcul i entendre les limitacions. Pregunteu: «Quina part és mesura i quina part és inferència?».
+**Evidencia:** tabla procesada, gráfico y dos explicaciones posibles vinculadas a las lecturas. Comprobad que otra pareja puede reconstruir el cálculo y entender las limitaciones. Preguntad: «¿Qué parte es medida y qué parte es inferencia?».
 
-### **Sessió 5 · Estimar energia i cost (Energy use calculations).**
+### **Sesión 5 · Estimar energía y coste (Energy use calculations).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Separeu la lectura del sensor de llum de la dada de potència: la micro:bit no mesura kWh. Predigueu quines dades calen per calcular energia i cost (potència, temps d’ús i tarifa) i identifiqueu quines són fictícies o autoritzades pel centre.
+Separad la lectura del sensor de luz del dato de potencia: la micro:bit no mide kWh. Predecid qué datos hacen falta para calcular energía y coste (potencia, tiempo de uso y tarifa) e identificad cuáles son ficticios o autorizados por el centro.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Trieu la potència nominal documentada d’una lluminària fictícia o facilitada pel centre i un temps estimat d’ús. Convertiu watts a quilowatts i apliqueu **energia (kWh) = potència (kW) × temps (h)**; després multipliqueu per una tarifa d’exemple explicitada pel docent.
+Elegid la potencia nominal documentada de una luminaria ficticia o facilitada por el centro y un tiempo estimado de uso. Convertid vatios a kilovatios y aplicad **energía (kWh) = potencia (kW) × tiempo (h)**; después multiplicad por una tarifa de ejemplo explicitada por el docente.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Reproduïu el càlcul de l’exemple: lluminària hipotètica de 40 W = 0,04 kW; ús durant 3 hores = 0,12 kWh; amb 0,30 €/kWh, cost il·lustratiu de 0,036 €. Anoteu les unitats en cada pas i distingiu el càlcul de les dades de llum recollides.
+Reproducid el cálculo del ejemplo: luminaria hipotética de 40 W = 0,04 kW; uso durante 3 horas = 0,12 kWh; con 0,30 €/kWh, coste ilustrativo de 0,036 €. Anotad las unidades en cada paso y distinguid el cálculo de los datos de luz recogidos.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu l’estimació d’un dia amb una setmana de cinc dies i reviseu els decimals. Completeu una llista del que faltaria per estimar millor un cas real: nombre de lluminàries, potència efectiva, hores d’ús, tarifa aplicable i altres consums. No useu factures ni tarifes familiars.
+Comparad la estimación de un día con una semana de cinco días y revisad los decimales. Completad una lista de lo que faltaría para estimar mejor un caso real: número de luminarias, potencia efectiva, horas de uso, tarifa aplicable y otros consumos. No uséis facturas ni tarifas familiares.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** full de càlcul amb fórmula, unitats, tarifa declarada i etiqueta «dades d’exemple». Comproveu que ningú multiplica directament la lectura ambiental per un factor de consum. Pregunteu: «Què podem calcular amb aquestes dades i què encara no sabem?».
+**Evidencia:** hoja de cálculo con fórmula, unidades, tarifa declarada y etiqueta «datos de ejemplo». Comprobad que nadie multiplica directamente la lectura ambiental por un factor de consumo. Preguntad: «¿Qué podemos calcular con estos datos y qué aún no sabemos?».
 
-### **Sessió 6 · Presentar una proposta (Energy presentations).**
+### **Sesión 6 · Presentar una propuesta (Energy presentations).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Definiu l’audiència escolar acordada —classe, comissió ambiental o equip directiu— i predigueu quina informació necessitarà per valorar la proposta. Seleccioneu una recomanació de baix cost que no requerisca manipular la instal·lació.
+Definid la audiencia escolar acordada —clase, comisión ambiental o equipo directivo— y predecid qué información necesitará para valorar la propuesta. Seleccionad una recomendación de bajo coste que no requiera manipular la instalación.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Prepareu un pòster o exposició breu amb cinc peces: pregunta, mètode, gràfic, estimació fictícia separada de les lectures i proposta de prova. Afegiu les condicions de mesura, repeticions i possibles errors perquè el públic puga valorar la fiabilitat.
+Preparad un póster o exposición breve con cinco piezas: pregunta, método, gráfico, estimación ficticia separada de las lecturas y propuesta de prueba. Añadid las condiciones de medida, repeticiones y posibles errores para que el público pueda valorar la fiabilidad.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Presenteu les dades i expliqueu què s’ha observat, quina inferència és prudent i quina estimació econòmica és només un exemple. Indiqueu què caldria mesurar millor per comprovar l’efecte d’una acció.
+Presentad los datos y explicad qué se ha observado, qué inferencia es prudente y qué estimación económica es solo un ejemplo. Indicad qué habría que medir mejor para comprobar el efecto de una acción.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Una altra parella revisa si cada afirmació se sosté en una dada, si les limitacions són visibles i si la proposta podria provar-se amb autorització. Reviseu el material amb el retorn i traieu qualsevol conclusió que excedisca les lectures.
+Otra pareja revisa si cada afirmación se sostiene en un dato, si las limitaciones son visibles y si la propuesta podría probarse con autorización. Revisad el material con el retorno y quitad cualquier conclusión que exceda las lecturas.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** presentació revisada i resposta del públic acordat. Comproveu que l’audiència pot distingir el sensor de llum del comptador elèctric i identificar la dada que falta. Tanqueu amb «Quina prova real seria necessària abans de dir que s’ha estalviat energia?».
+**Evidencia:** presentación revisada y respuesta del público acordado. Comprobad que la audiencia puede distinguir el sensor de luz del contador eléctrico e identificar el dato que falta. Cerrad con «¿Qué prueba real sería necesaria antes de decir que se ha ahorrado energía?».
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Planificar una recollida de dades de llum amb lloc, hora i condicions comparables.
-- Calibrar i repetir lectures, representar-les i distingir valors observats de dades fictícies.
-- Argumentar una proposta d’ús de la il·luminació basada en el conjunt de dades disponible.
-- Explicar que el sensor de micro:bit no certifica lux, eficiència energètica ni confort visual.
+- Planificar una recogida de datos de luz con lugar, hora y condiciones comparables.
+- Calibrar y repetir lecturas, representarlas y distinguir valores observados de datos ficticios.
+- Argumentar una propuesta de uso de la iluminación basada en el conjunto de datos disponible.
+- Explicar que el sensor de micro:bit no certifica lux, eficiencia energética ni confort visual.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-BBC micro:bit amb sensor de llum disponible en la versió del centre, cable o alimentació adequada, ordinador amb MakeCode o Python, cronòmetre i full de registre. Si la placa és v1 o no exposa les lectures requerides a l’entorn instal·lat, useu un sensor extern verificat per separat o feu una simulació amb dades de prova identificades com a simulades.
+BBC micro:bit con sensor de luz disponible en la versión del centro, cable o alimentación adecuada, ordenador con MakeCode o Python, cronómetro y hoja de registro. Si la placa es v1 o no expone las lecturas requeridas al entorno instalado, usad un sensor externo verificado por separado o haced una simulación con datos de prueba identificados como simulados.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Recolliu pregunta i pla de mesura, programa del registre, taula datada amb unitats i condicions, gràfic, càlcul d’exemple i proposta amb límits explícits. Valoreu qualitat de les repeticions, tractament de dades incertes, càlcul coherent i adequació de la comunicació al públic.
+Recoged pregunta y plan de medida, programa del registro, tabla fechada con unidades y condiciones, gráfico, cálculo de ejemplo y propuesta con límites explícitos. Valorad la calidad de las repeticiones, el tratamiento de datos inciertos, el cálculo coherente y la adecuación de la comunicación al público.
 
-## Guió de treball de camp i registre
+## Guion de trabajo de campo y registro
 
-**Sessions 1–2:** feu un mapa senzill dels espais possibles i trieu-ne un que el centre autoritze. Acordeu la pregunta abans d'obrir MakeCode: per exemple, «com canvia la lectura del sensor en un punt fix quan hi ha llum natural o quan encenem la llum de la maqueta?». Definiu què mantindreu constant —posició i orientació de la placa— i quina condició canvia. Creeu un programa que mostre una lectura actual o la guarde a intervals adequats a l'eina. Proveu primer amb la placa en el mateix lloc i compareu lectures repetides; anoteu que la lectura és un valor relatiu del sensor i que no és una mesura professional d'il·luminació.
+**Sesiones 1–2:** haced un mapa sencillo de los espacios posibles y elegid uno que el centro autorice. Acordad la pregunta antes de abrir MakeCode: por ejemplo, «¿cómo cambia la lectura del sensor en un punto fijo cuando hay luz natural o cuando encendemos la luz de la maqueta?». Definid qué mantendréis constante —posición y orientación de la placa— y qué condición cambia. Cread un programa que muestre una lectura actual o la guarde a intervalos adecuados a la herramienta. Probad primero con la placa en el mismo lugar y comparad lecturas repetidas; anotad que la lectura es un valor relativo del sensor y que no es una medida profesional de iluminación.
 
-**Sessions 3–4:** recolliu les dades en períodes curts i supervisats. Cada fila inclou codi de lloc no identificador, hora aproximada, condició de llum, orientació, valor i incidències com ara un núvol o una ombra. No anoteu noms, presència, ús d'espais per grups ni horaris personals. Després, calculeu la mitjana o la mediana segons el nivell, marqueu rang i possibles lectures anòmales i feu un gràfic amb eixos i unitats descrits. Separeu observació («la lectura va pujar») d'interpretació («hi havia més llum natural») i d'hipòtesi («potser no calia encendre el llum»).
+**Sesiones 3–4:** recoged los datos en periodos cortos y supervisados. Cada fila incluye código de lugar no identificador, hora aproximada, condición de luz, orientación, valor e incidencias como una nube o una sombra. No anotéis nombres, presencia, uso de espacios por grupos ni horarios personales. Después, calculad la media o la mediana según el nivel, marcad rango y posibles lecturas anómalas y haced un gráfico con ejes y unidades descritos. Separad observación («la lectura subió») de interpretación («había más luz natural») y de hipótesis («quizá no hacía falta encender la luz»).
 
-## Estimació d'energia: exemple amb dades fictícies
+## Estimación de energía: ejemplo con datos ficticios
 
-La lectura del sensor no es transforma en kWh. Per practicar el càlcul de la lliçó oficial, useu una lluminària fictícia o una potència nominal autoritzada pel centre. Convertiu watts a quilowatts i multipliqueu per les hores d'ús: energia (kWh) = potència (kW) × temps (h). Per exemple, una lluminària hipotètica de 40 W és 0,04 kW; si s'utilitza 3 hores, el càlcul dona 0,12 kWh. Amb una tarifa d'exemple de 0,30 €/kWh, el cost il·lustratiu és 0,036 €. Indiqueu en el full que potència, temps i tarifa són valors de pràctica i que no representen la factura del centre.
+La lectura del sensor no se transforma en kWh. Para practicar el cálculo de la lección oficial, usad una luminaria ficticia o una potencia nominal autorizada por el centro. Convertid vatios a kilovatios y multiplicad por las horas de uso: energía (kWh) = potencia (kW) × tiempo (h). Por ejemplo, una luminaria hipotética de 40 W es 0,04 kW; si se utiliza 3 horas, el cálculo da 0,12 kWh. Con una tarifa de ejemplo de 0,30 €/kWh, el coste ilustrativo es 0,036 €. Indicad en la hoja que potencia, tiempo y tarifa son valores de práctica y que no representan la factura del centro.
 
-Compareu una estimació per un dia i per una setmana de cinc dies i reviseu les unitats. Pregunteu què falta per fer una estimació millor: nombre de lluminàries, potència real, hores d'ús, tarifa aplicable i altres consums. No multipliqueu directament la lectura ambiental del micro:bit per cap factor de consum.
+Comparad una estimación para un día y para una semana de cinco días y revisad las unidades. Preguntad qué falta para hacer una estimación mejor: número de luminarias, potencia real, horas de uso, tarifa aplicable y otros consumos. No multipliquéis directamente la lectura ambiental del micro:bit por ningún factor de consumo.
 
-## Proposta, revisió i avaluació
+## Propuesta, revisión y evaluación
 
-En la sessió final, prepareu una presentació amb cinc peces: pregunta, mètode, gràfic, estimació fictícia separada de les lectures i proposta de prova. La recomanació pot ser tan modesta com «repetir la lectura en dos dies més» o «comprovar si hi ha llum natural abans d'encendre», i ha d'indicar qui podria autoritzar una prova real. Una altra parella revisa si cada afirmació es recolza en una dada i si les limitacions són visibles.
+En la sesión final, preparad una presentación con cinco piezas: pregunta, método, gráfico, estimación ficticia separada de las lecturas y propuesta de prueba. La recomendación puede ser tan modesta como «repetir la lectura en dos días más» o «comprobar si hay luz natural antes de encender», y debe indicar quién podría autorizar una prueba real. Otra pareja revisa si cada afirmación se apoya en un dato y si las limitaciones son visibles.
 
-La graella d'avaluació observa: planifica variables i repeticions; representa la dada amb unitats o escala explicades; diferencia lectura, inferència i càlcul; usa correctament kWh i euros en l'exemple; comunica una proposta prudent. Accepteu pòster, presentació oral, gràfic digital o maqueta anotada. No valoreu l'estalvi real aconseguit perquè aquesta activitat no mesura el comptador elèctric.
+La cuadrícula de evaluación observa: planifica variables y repeticiones; representa el dato con unidades o escala explicadas; diferencia lectura, inferencia y cálculo; usa correctamente kWh y euros en el ejemplo; comunica una propuesta prudente. Aceptad póster, presentación oral, gráfico digital o maqueta anotada. No valoréis el ahorro real conseguido porque esta actividad no mide el contador eléctrico.
 
-## 🔒 Dades, seguretat i límits
+## 🔒 Datos, seguridad y límites
 
-Demaneu autorització abans de mesurar dins del centre i no registreu dades personals ni presència. No toqueu interruptors o instal·lacions, no tapeu eixides ni bloquegeu passadissos. La lectura de llum varia amb l’orientació, les ombres i la llum natural; una correlació no demostra per si sola quanta energia s’ha consumit ni qui n’és responsable.
+Pedid autorización antes de medir dentro del centro y no registréis datos personales ni presencia. No toquéis interruptores o instalaciones, no tapéis salidas ni bloqueéis pasillos. La lectura de luz varía con la orientación, las sombras y la luz natural; una correlación no demuestra por sí sola cuánta energía se ha consumido ni quién es responsable.
 
-## 🔗 Unitat oficial adaptada
+## 🔗 Unidad oficial adaptada
 
-Aquesta situació cobreix les sis lliçons de micro:bit [Energy awareness](https://www.microbit.org/teach/lessons/energy-awareness/): *Energy around us*, *Energy data planning*, *Energy data collecting*, *Energy data processing*, *Energy use calculations* i *Energy presentations*. La recerca al centre, les dades d’exemple, la proposta i la imatge són propis; la seqüència manté els objectius de planificar, calibrar, recollir, analitzar, calcular i comunicar.
+Esta situación cubre las seis lecciones de micro:bit [Energy awareness](https://www.microbit.org/teach/lessons/energy-awareness/): *Energy around us*, *Energy data planning*, *Energy data collecting*, *Energy data processing*, *Energy use calculations* y *Energy presentations*. La investigación en el centro, los datos de ejemplo, la propuesta y la imagen son propios; la secuencia mantiene los objetivos de planificar, calibrar, recoger, analizar, calcular y comunicar.

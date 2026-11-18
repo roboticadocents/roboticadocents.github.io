@@ -1,49 +1,49 @@
 ---
 active: false
-title: "Títol clar del repte"
-description: "Resum breu per a catàleg i cercadors."
+title: "Título claro del reto"
+description: "Resumen breve para catálogo y buscadores."
 robot: "spike"
 robot_label: "SPIKE Prime"
 cycle: "tercer-cicle"
-cycle_label: "Tercer cicle"
+cycle_label: "Tercer ciclo"
 subject: "tecnologia"
-subject_label: "Tecnologia, Matemàtiques i Medi"
+subject_label: "Tecnología, Matemáticas y Medio"
 theme: "dades"
-theme_label: "Tema local de la situació"
-duration: "5 sessions · 300 minuts"
-challenge: "Quina pregunta investigable guiarà el repte?"
+theme_label: "Tema local de la situación"
+duration: "5 sesiones · 300 minutos"
+challenge: "¿Qué pregunta investigable guiará el reto?"
 ---
 
-![Il·lustració pertinent, amb robot real de la dotació o cap robot si la tasca és desconnectada.](../../_assets/situacions/nom-imatge.webp)
+![Ilustración pertinente, con robot real de la dotación o sin robot si la tarea es desconectada.](../../_assets/situacions/nom-imatge.webp)
 
-_Peu que explica què ha de mirar l’alumnat en la imatge._
+_Pie que explica qué debe mirar el alumnado en la imagen._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-Descriu el context local, el destinatari del producte i els límits del model.
+Describe el contexto local, el destinatario del producto y los límites del modelo.
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Què aprendrà l’alumnat i quina evidència observable mostrarà cada aprenentatge?
-- Inclou criteris d’èxit que l’alumnat puga revisar durant el procés.
+- ¿Qué aprenderá el alumnado y qué evidencia observable mostrará cada aprendizaje?
+- Incluye criterios de éxito que el alumnado pueda revisar durante el proceso.
 
-## Materials i preparació
+## Materiales y preparación
 
-Enumera els elements exactes del kit, el muntatge necessari, la comprovació del sensor i les alternatives disponibles.
+Enumera los elementos exactos del kit, el montaje necesario, la comprobación del sensor y las alternativas disponibles.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Títol de la sessió (50 min)
+### Título de la sesión (50 min)
 
-No escrigues el número «Sessió 1», «S1» o equivalent: el navegador compartit ja numera els passos. Mantín la durada entre parèntesis al final del títol quan siga coneguda. Tots els passos es mostren amb el mateix encapçalament, indicador, navegació i progrés; usa subtítols H4 només per a fases amb una funció didàctica clara.
+No se escribe el número «Sesión 1», «S1» o equivalente: el navegador compartido ya numera los pasos. Mantén la duración entre paréntesis al final del título cuando sea conocida. Todos los pasos se muestran con el mismo encabezado, indicador, navegación y progreso; usa subtítulos H4 solo para fases con una función didáctica clara.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Indica què prepara el docent, què fa l’alumnat, la pregunta que orienta la fase i com s’activen els coneixements previs.
+Indica qué prepara el docente, qué hace el alumnado, la pregunta que orienta la fase y cómo se activan los conocimientos previos.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Descriu els passos en ordre, les decisions, els materials i la manera de registrar resultats.
+Describe los pasos en orden, las decisiones, los materiales y la forma de registrar resultados.
 
 ```blocks
 quan comença
@@ -53,47 +53,47 @@ quan comença
     decideix l’acció
 ```
 
-![Il·lustració de suport per a l’exploració o el muntatge.](../../_assets/situacions/nom-imatge-pas.webp)
+![Ilustración de apoyo para la exploración o el montaje.](../../_assets/situacions/nom-imatge-pas.webp)
 
-_Peu breu que connecta la imatge amb la decisió o el material que s’està provant._
+_Pie breve que conecta la imagen con la decisión o el material que se está probando._
 
-> **Evidència:** producte, registre o explicació que es guardarà.
+> **Evidencia:** producto, registro o explicación que se guardará.
 >
-> **Pregunta docent:** pregunta concreta per fer avançar la investigació.
+> **Pregunta docente:** pregunta concreta para hacer avanzar la investigación.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Inclou una comparació entre equips, una comprovació dels criteris i una reflexió sobre les dades i els límits.
+Incluye una comparación entre equipos, una comprobación de los criterios y una reflexión sobre los datos y los límites.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Descriu una segona prova, transferència o iteració que use el retorn o les dades de la fase anterior.
+Describe una segunda prueba, transferencia o iteración que use el retorno o los datos de la fase anterior.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Explicita l’evidència que es guardarà, el criteri d’èxit que s’ha comprovat i una pregunta de tancament.
+Explicita la evidencia que se guardará, el criterio de éxito que se ha comprobado y una pregunta de cierre.
 
-### Un altre títol de sessió (50 min)
+### Otro título de sesión (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Introduïu el repte d’aquesta sessió i feu que cada equip en registre una predicció.
+Introducid el reto de esta sesión y haced que cada equipo registre una predicción.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Descriviu les accions, els materials i les decisions que prendrà l’alumnat.
+Describid las acciones, los materiales y las decisiones que tomará el alumnado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu que l’alumnat compare la predicció amb les dades o el resultat observat.
+Haced que el alumnado compare la predicción con los datos o el resultado observado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proposeu una iteració o transferència del que s’ha aprés en la sessió.
+Proponed una iteración o transferencia de lo aprendido en la sesión.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Indiqueu l’evidència, el criteri d’èxit i una reflexió final.
+Indicad la evidencia, el criterio de éxito y una reflexión final.
 
 ```python
 # Exemple textual opcional; identifica quan no és codi executable al robot.
@@ -103,14 +103,14 @@ for intent in range(3):
 print(resultats)
 ```
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Descriu què es recull, quan s’observa, criteris o rúbrica, autoavaluació i coavaluació.
+Describe qué se recoge, cuándo se observa, criterios o rúbrica, autoevaluación y coevaluación.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Detalla diverses formes de participar, les alternatives equivalents, la seguretat física i l’ús de dades fictícies o mínimes.
+Detalla diversas formas de participar, las alternativas equivalentes, la seguridad física y el uso de datos ficticios o mínimos.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-Enllaça les fonts oficials consultades i indica com es transforma cada repte, seqüència, producte, recurs visual i requisit del maquinari.
+Enlaza las fuentes oficiales consultadas e indica cómo se transforma cada reto, secuencia, producto, recurso visual y requisito del hardware.

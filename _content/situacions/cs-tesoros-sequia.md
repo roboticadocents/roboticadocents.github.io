@@ -15,127 +15,127 @@ challenge: "¿Cómo podemos diseñar un laberinto claro y programar MatataBot pa
 official_source: "https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf"
 ---
 
-![MatataBot i la torre del Coding Set reals al costat d’un laberint de paper inspirat en séquies, amb dos tresors de cartó en punts diferents.](../../_assets/situacions/cs-tresors-sequia.webp)
+![MatataBot y la torre del Coding Set reales junto a un laberinto de papel inspirado en acequias, con dos tesoros de cartón en puntos distintos.](../../_assets/situacions/cs-tresors-sequia.webp)
 
-_Il·lustració IA pròpia basada en el kit real. El laberint i els tresors són materials de paper; el robot executa els blocs i no detecta, arreplega ni identifica les peces._
+_Ilustración de IA propia basada en el kit real. El laberinto y los tesoros son materiales de papel; el robot ejecuta los bloques y no detecta, recoge ni identifica las piezas._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-Una classe dissenya un mapa de séquies per a una missió fictícia de l’aiguamoll. En una quadrícula plastificada, cada equip dibuixa canals i marges que deixen un passadís continu des de l’inici fins a un tresor. MatataBot ha de recórrer el passadís i arribar a la casella del testimoni. Quan la ruta funciona amb un tresor, l’equip n’afegeix un segon i adapta el programa perquè visite tots dos abans d’acabar.
+Una clase diseña un mapa de acequias para una misión ficticia del humedal. En una cuadrícula plastificada, cada equipo dibuja canales y márgenes que dejan un pasillo continuo desde el inicio hasta un tesoro. MatataBot debe recorrer el pasillo y llegar a la casilla del tesoro. Cuando la ruta funciona con un tesoro, el equipo añade un segundo y adapta el programa para que visite los dos antes de acabar.
 
-La situació adapta la targeta oficial **B-1 · Maze Adventure I** de les *Coding Activity Cards*. El procediment visible demana crear laberints amb retoladors esborrables, posar-hi tresors en punts indicats, programar MatataBot amb blocs de moviment i nombre per trobar-los i afegir un tresor més a cada mapa per provar si es poden trobar tots dos amb un programa. El mapa, el vocabulari local, els tresors de paper, les proves entre parelles i la seqüència didàctica són propis. El robot no segueix les línies ni detecta tresors: les persones planifiquen el camí i comproven la casella final.
+La situación adapta la tarjeta oficial **B-1 · Maze Adventure I** de las *Coding Activity Cards*. El procedimiento visible pide crear laberintos con rotuladores borrables, poner tesoros en puntos indicados, programar MatataBot con bloques de movimiento y número para encontrarlos y añadir un tesoro más a cada mapa para probar si se pueden encontrar los dos con un programa. El mapa, el vocabulario local, los tesoros de papel, las pruebas entre parejas y la secuencia didáctica son propios. El robot no sigue las líneas ni detecta tesoros: las personas planifican el camino y comprueban la casilla final.
 
-**Pregunta guia:** com podem passar d’un laberint dibuixat a una seqüència de blocs que arribe al tresor, i què cal canviar quan n’afegim un altre?
+**Pregunta guía:** ¿cómo podemos pasar de un laberinto dibujado a una secuencia de bloques que llegue al tesoro, y qué hay que cambiar cuando añadimos otro?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Dissenyar un laberint amb inici, passadís accessible i una o més destinacions.
-- Llegir una ruta en quadrícula i traduir trams rectes a blocs de moviment i nombre disponibles.
-- Registrar la posició i l’orientació després de cada gir.
-- Provar una seqüència, localitzar la primera divergència i revisar-la amb una nova prova.
-- Ampliar una ruta perquè visite dos tresors amb un únic programa.
-- Diferenciar la planificació humana de la detecció o recollida automàtica, que el robot no fa.
+- Diseñar un laberinto con inicio, pasillo accesible y uno o más destinos.
+- Leer una ruta en cuadrícula y traducir tramos rectos a bloques de movimiento y número disponibles.
+- Registrar la posición y la orientación después de cada giro.
+- Probar una secuencia, localizar la primera divergencia y revisarla con una nueva prueba.
+- Ampliar una ruta para que visite dos tesoros con un único programa.
+- Diferenciar la planificación humana de la detección o recogida automática, que el robot no hace.
 
-**Vocabulari clau:** laberint, passadís, marge, casella, tresor, destinació, orientació, moviment, nombre, ruta, seqüència, depuració.
+**Vocabulario clave:** laberinto, pasillo, margen, casilla, tesoro, destino, orientación, movimiento, número, ruta, secuencia, depuración.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Coding Set de la dotació: MatataBot, torre de control, tauler i blocs de moviment. Useu blocs de nombre només si el kit els inclou i la torre els reconeix.
-- Mapa propi plastificat o funda esborrable amb quadrícula; retolador esborrable i drap suau. Feu una prova d’esborrat en un racó abans de la sessió.
-- Fitxes de paper o cartó grans com a tresors, amb una cara d’inici i una de meta; no són codis que el robot puga llegir.
-- Plantilla amb **dibuix del laberint**, **ruta prevista**, **blocs**, **orientació**, **tresor visitat**, **resultat observat** i **canvi provat**.
-- Fitxa de robot de paper i targetes de fletxes per a resoldre el mapa sense activar el dispositiu.
+- Coding Set de la dotación: MatataBot, torre de control, tablero y bloques de movimiento. Usad bloques de número solo si el kit los incluye y la torre los reconoce.
+- Mapa propio plastificado o funda borrable con cuadrícula; rotulador borrable y paño suave. Haced una prueba de borrado en un rincón antes de la sesión.
+- Fichas de papel o cartón grandes como tesoros, con una cara de inicio y una de meta; no son códigos que el robot pueda leer.
+- Plantilla con **dibujo del laberinto**, **ruta prevista**, **bloques**, **orientación**, **tesoro visitado**, **resultado observado** y **cambio probado**.
+- Ficha de robot de papel y tarjetas de flechas para resolver el mapa sin activar el dispositivo.
 
-Dibuixeu una quadrícula gran i assegureu-vos que les caselles que corresponen a un desplaçament físic tenen l’escala adequada al model i la superfície. Deixeu passadissos prou amples per a les rodes i eviteu cruïlles massa estretes. Fixeu el mapa a una taula plana, col·loqueu els tresors al centre de les caselles acordades i carregueu MatataBot i la torre. No poseu retoladors, dits ni tresors menuts al recorregut mentre el robot es mou.
+Dibujad una cuadrícula grande y aseguraos de que las casillas que corresponden a un desplazamiento físico tienen la escala adecuada al modelo y la superficie. Dejad pasillos suficientemente anchos para las ruedas y evitad cruces demasiado estrechos. Fijad el mapa a una mesa plana, colocad los tesoros en el centro de las casillas acordadas y cargad MatataBot y la torre. No pongáis rotuladores, dedos ni tesoros pequeños en el recorrido mientras el robot se mueve.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Sessió 1 · Dibuixem i resolem el primer laberint (45 min)
+### Sesión 1 · Dibujamos y resolvemos el primer laberinto (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu un mapa en blanc amb una casella d’inici i una meta. Pregunteu quines decisions cal prendre perquè una altra parella puga trobar el tresor sense que l’autoria li explique el camí. Acordeu com es representen els passadissos, els marges i les caselles bloquejades.
+Mostrad un mapa en blanco con una casilla de inicio y una meta. Preguntad qué decisiones hay que tomar para que otra pareja pueda encontrar el tesoro sin que la autoría le explique el camino. Acordad cómo se representan los pasillos, los márgenes y las casillas bloqueadas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En parelles, dibuixeu amb retolador esborrable un laberint original amb una única entrada, almenys dos girs i un passadís continu fins al tresor. Poseu el testimoni en una casella marcada. Una altra persona ressegueix el passadís amb la fitxa de paper i assenyala qualsevol bifurcació que permeta més d’una lectura.
+Por parejas, dibujad con rotulador borrable un laberinto original con una única entrada, al menos dos giros y un pasillo continuo hasta el tesoro. Poned la ficha del tesoro en una casilla marcada. Otra persona recorre el pasillo con la ficha de papel y señala cualquier bifurcación que permita más de una lectura.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Marqueu al mapa la posició inicial i cap on mira MatataBot. Dibuixeu una ruta possible sense alçar la fitxa ni travessar els marges. Anoteu cada tram recte i cada canvi d’orientació en una taula; si hi ha dues rutes, compareu-les sense declarar-ne cap com l’única solució correcta.
+Marcad en el mapa la posición inicial y hacia dónde mira MatataBot. Dibujad una ruta posible sin levantar la ficha ni atravesar los márgenes. Anotad cada tramo recto y cada cambio de orientación en una tabla; si hay dos rutas, comparadlas sin declarar ninguna como la única solución correcta.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu mapes. La parella visitant ha de poder arribar al tresor amb les seues fletxes. Si no pot, l’equip autor revisa una bifurcació o fa més ample el passadís i torna a donar el mapa a una tercera parella. No modifiqueu el mapa mentre l’altre equip el resol.
+Intercambiad mapas. La pareja visitante debe poder llegar al tesoro con sus flechas. Si no puede, el equipo autor revisa una bifurcación o hace más ancho el pasillo y vuelve a dar el mapa a una tercera pareja. No modifiquéis el mapa mientras el otro equipo lo resuelve.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** laberint propi, ruta traçada i una revisió a partir de la lectura d’un altre equip. **Pregunta:** quina part del mapa ha fet que la ruta fora ambigua o impossible?
+**Evidencia:** laberinto propio, ruta trazada y una revisión a partir de la lectura de otro equipo. **Pregunta:** ¿qué parte del mapa ha hecho que la ruta fuera ambigua o imposible?
 
-### Sessió 2 · Programem la ruta fins a un tresor (45 min)
+### Sesión 2 · Programamos la ruta hasta un tesoro (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu un mapa validat i col·loqueu-hi el robot al punt inicial. Abans de construir els blocs, cada equip prediu la casella després de tres ordres i assenyala quan MatataBot haurà de girar per seguir el passadís.
+Elegid un mapa validado y colocad el robot en el punto inicial. Antes de construir los bloques, cada equipo predice la casilla después de tres órdenes y señala cuándo tendrá que girar MatataBot para seguir el pasillo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Traduïu els trams rectes a blocs de moviment. Si el vostre Coding Set té blocs numèrics, useu-los només amb avançar o retrocedir segons les instruccions del kit; els nombres no s’apliquen als girs. Col·loqueu els blocs en l’ordre de lectura del tauler i simuleu la seqüència amb la fitxa de robot abans d’executar-la.
+Traducid los tramos rectos a bloques de movimiento. Si vuestro Coding Set tiene bloques numéricos, usadlos solo con avanzar o retroceder según las instrucciones del kit; los números no se aplican a los giros. Colocad los bloques en el orden de lectura del tablero y simulad la secuencia con la ficha de robot antes de ejecutarla.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Registreu bloc a bloc les caselles previstes i l’orientació després de cada gir. Una parella observadora segueix el programa sobre el mapa i comprova si travessa una vora, entra en un passadís tancat o arriba a la casella del tresor.
+Registrad bloque a bloque las casillas previstas y la orientación después de cada giro. Una pareja observadora sigue el programa sobre el mapa y comprueba si atraviesa un borde, entra en un pasillo cerrado o llega a la casilla del tesoro.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu la ruta física amb el robot i observeu-ne la posició final. Si no coincideix amb la predicció, identifiqueu la primera instrucció divergent i reviseu només eixe tram. Torneu a començar des de la mateixa posició inicial; no desplaceu el tresor per fer que el resultat parega correcte.
+Ejecutad la ruta física con el robot y observad su posición final. Si no coincide con la predicción, identificad la primera instrucción divergente y revisad solo ese tramo. Volved a empezar desde la misma posición inicial; no desplacéis el tesoro para hacer que el resultado parezca correcto.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** seqüència de blocs i taula de posicions previstes i observades. **Pregunta:** quina ordre ha determinat el gir o el nombre de caselles avançades?
+**Evidencia:** secuencia de bloques y tabla de posiciones previstas y observadas. **Pregunta:** ¿qué orden ha determinado el giro o el número de casillas avanzadas?
 
-### Sessió 3 · Afegim un segon tresor al mateix programa (45 min)
+### Sesión 3 · Añadimos un segundo tesoro al mismo programa (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Afegiu un segon testimoni al mapa sense canviar l’inici. Cada equip decideix en quin ordre visitarà els tresors i prediu si el programa actual pot arribar als dos sense esborrar-se ni iniciar una segona execució.
+Añadid una segunda ficha del tesoro al mapa sin cambiar el inicio. Cada equipo decide en qué orden visitará los tesoros y predice si el programa actual puede llegar a los dos sin borrarse ni iniciar una segunda ejecución.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Planifiqueu una única ruta que passe per la primera i la segona casella amb tresor. Afegiu els blocs necessaris i registreu cada segment. Si les dues destinacions exigeixen un gir o una seqüència llarga, compteu els moviments abans d’executar; el robot no s’aturarà en veure el primer testimoni.
+Planificad una única ruta que pase por la primera y la segunda casilla con tesoro. Añadid los bloques necesarios y registrad cada segmento. Si los dos destinos exigen un giro o una secuencia larga, contad los movimientos antes de ejecutar; el robot no se detendrá al ver la primera ficha del tesoro.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una altra parella comprova que el programa complet visita les dues caselles en l’ordre acordat. Marqueu **tresor 1 visitat** i **tresor 2 visitat** només a partir del recorregut observat. Distingiu “passar per la casella” de “recollir el testimoni”: una persona el retira després que el robot s’haja aturat.
+Otra pareja comprueba que el programa completo visita las dos casillas en el orden acordado. Marcad **tesoro 1 visitado** y **tesoro 2 visitado** solo a partir del recorrido observado. Distinguid «pasar por la casilla» de «recoger la ficha del tesoro»: una persona la retira después de que el robot se haya detenido.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu el programa únic i anoteu si arriba als dos punts. Si la ruta no completa el segon tresor, localitzeu l’última casella correcta, corregiu el tram final i repetiu des de l’inici. Com a extensió, afegiu un tercer testimoni al mapa i discutiu quina informació caldria registrar per a verificar-lo sense confondre aquesta extensió amb el pas oficial de dos tresors.
+Ejecutad el programa único y anotad si llega a los dos puntos. Si la ruta no completa el segundo tesoro, localizad la última casilla correcta, corregid el tramo final y repetid desde el inicio. Como extensión, añadid una tercera ficha del tesoro al mapa y discutid qué información habría que registrar para verificarla sin confundir esta extensión con el paso oficial de dos tesoros.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència final:** mapa revisat, un programa que visita dos tresors, resultats observats i targeta de límits del robot. Tanqueu amb: «Hem comprovat els dos tresors perquè…» i «El robot no els ha identificat ni recollit; nosaltres…».
+**Evidencia final:** mapa revisado, un programa que visita dos tesoros, resultados observados y tarjeta de límites del robot. Cerrad con: «Hemos comprobado los dos tesoros porque…» y «El robot no los ha identificado ni recogido; nosotros…».
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu els mapes de paper, la ruta de fletxes, la seqüència física, la taula de proves i una nota sobre la revisió feta després del primer intent. Observeu si l’alumnat:
+Recoged los mapas de papel, la ruta de flechas, la secuencia física, la tabla de pruebas y una nota sobre la revisión hecha después del primer intento. Observad si el alumnado:
 
-- dibuixa un passadís continu i situacions reproduïbles;
-- conserva la posició i l’orientació inicials en planificar;
-- utilitza blocs de nombre només en els trams compatibles del kit;
-- visita dos punts amb una sola execució del programa;
-- justifica una correcció amb la primera diferència observada;
-- separa arribada al tresor de la seua retirada manual.
+- dibuja un pasillo continuo y situaciones reproducibles;
+- conserva la posición y la orientación iniciales al planificar;
+- utiliza bloques de número solo en los tramos compatibles del kit;
+- visita dos puntos con una sola ejecución del programa;
+- justifica una corrección con la primera diferencia observada;
+- separa la llegada al tesoro de su retirada manual.
 
-No avalueu la rapidesa, l’estètica del laberint ni l’encert al primer intent.
+No evaluéis la rapidez, la estética del laberinto ni el acierto al primer intento.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Oferiu laberints preparats amb alt contrast i pocs passadissos, quadrícula gran, parets tàctils o fletxes amples. Es pot participar dibuixant, dictant una seqüència, movent la fitxa de paper, col·locant blocs o registrant les proves. Eviteu superfícies brillants que dificulten la lectura de la torre; netegeu el retolador abans de guardar el mapa. Retireu els testimonis només amb el robot aturat i useu peces grans que no puguen entrar sota les rodes.
+Ofreced laberintos preparados con alto contraste y pocos pasillos, cuadrícula grande, paredes táctiles o flechas anchas. Se puede participar dibujando, dictando una secuencia, moviendo la ficha de papel, colocando bloques o registrando las pruebas. Evitad superficies brillantes que dificultan la lectura de la torre; limpiad el rotulador antes de guardar el mapa. Retirad las fichas del tesoro solo con el robot detenido y usad piezas grandes que no puedan entrar bajo las ruedas.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [*Coding Activity Cards*, targeta B-1 · *Maze Adventure I* (PDF oficial)](https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf): proposa fer laberints amb retoladors esborrables, col·locar tresors, programar MatataBot amb blocs de moviment i nombre i afegir un segon tresor per trobar-ne dos en un únic programa. La mostra consultada inclou exemples gràfics de dos mapes; aquesta proposta crea mapes locals propis i no n’assegura una correspondència geomètrica exacta.
-- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): font de comprovació per a la lectura dels blocs direccionals, l’orientació i els girs del Coding Set.
+- Matatalab, [*Coding Activity Cards*, tarjeta B-1 · *Maze Adventure I* (PDF oficial)](https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf): propone hacer laberintos con rotuladores borrables, colocar tesoros, programar MatataBot con bloques de movimiento y número y añadir un segundo tesoro para encontrar dos en un único programa. La muestra consultada incluye ejemplos gráficos de dos mapas; esta propuesta crea mapas locales propios y no asegura una correspondencia geométrica exacta.
+- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): fuente de comprobación para la lectura de los bloques direccionales, la orientación y los giros del Coding Set.
 
-La proposta manté el cicle complet de la targeta: crear un laberint esborrable, posar-hi un tresor, trobar-lo amb blocs de moviment i nombre i afegir-ne un altre per resoldre dues destinacions amb un sol programa. El mapa i les peces són materials locals; la presa de decisions és humana i el MatataBot només executa la seqüència.
+La propuesta mantiene el ciclo completo de la tarjeta: crear un laberinto borrable, poner un tesoro, encontrarlo con bloques de movimiento y número y añadir otro para resolver dos destinos con un solo programa. El mapa y las piezas son materiales locales; la toma de decisiones es humana y MatataBot solo ejecuta la secuencia.

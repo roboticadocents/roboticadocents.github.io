@@ -14,208 +14,208 @@ duration: "7 sesiones"
 challenge: "¿Cómo podemos preparar, trazar, proteger y verificar un paquete de libros en una maqueta sin exponer datos personales?"
 ---
 
-![Un prototip LEGO SPIKE Prime mou fitxes de llibres per una ruta de cartró amb diverses destinacions.](../../_assets/situacions/sp-biblioteca-circulant.webp)
+![Un prototipo LEGO SPIKE Prime mueve fichas de libros por una ruta de cartón con varios destinos.](../../_assets/situacions/sp-biblioteca-circulant.webp)
 
-_Una biblioteca escolar permet explorar rutes, verificació i privacitat amb paquets ficticis._
+_Una biblioteca escolar permite explorar rutas, verificación y privacidad con paquetes ficticios._
 
-## 🌱 Situació i intenció
+## 🌱 Situación y intención
 
-Adaptació de la unitat *Kickstart a Business* per al context d’un centre educatiu valencià. Cada sessió conserva l’objectiu oficial i el tradueix en un repte, materials i criteris propis; quan una activitat del pla és híbrida o no requereix el hub, s’indica expressament en la sessió.
+Adaptación de la unidad *Kickstart a Business* para el contexto de un centro educativo valenciano. Cada sesión conserva el objetivo oficial y lo traduce en un reto, unos materiales y unos criterios propios; cuando una actividad del plan es híbrida o no requiere el hub, se indica expresamente en la sesión.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Aplicar criteris de qualitat per preparar i verificar un paquet fictici de llibres.
-- Planificar i depurar una ruta de lliurament amb distàncies i punts de control observables.
-- Registrar cada transferència de la maqueta sense incorporar noms, préstecs ni dades de lectores reals.
-- Explicar quines parts del procés pot executar el robot i quines decisions continuen sent humanes.
+- Aplicar criterios de calidad para preparar y verificar un paquete ficticio de libros.
+- Planificar y depurar una ruta de entrega con distancias y puntos de control observables.
+- Registrar cada transferencia de la maqueta sin incorporar nombres, préstamos ni datos de lectores reales.
+- Explicar qué partes del proceso puede ejecutar el robot y qué decisiones continúan siendo humanas.
 
-## 📅 Seqüència didàctica · 7 sessions
+## 📅 Secuencia didáctica · 7 sesiones
 
-Durada orientativa: una sessió per a les activitats d’inici i depuració; dues per al traçador X-Y, la capsa lògica i el repte final d’automatització. Abans de cada repte, l’equip formula una predicció; després prova, registra el resultat i explica un canvi. Les fitxes de comanda, claus i paquets són inventades: el robot només treballa en una maqueta i no s’utilitza per controlar serveis reals.
+Duración orientativa: una sesión para las actividades de inicio y depuración; dos para el trazador X-Y, la caja lógica y el reto final de automatización. Antes de cada reto, el equipo formula una predicción; después prueba, registra el resultado y explica un cambio. Las fichas de pedido, claves y paquetes son inventadas: el robot solo trabaja en una maqueta y no se utiliza para controlar servicios reales.
 
-### **S1 · El control de qualitat de la mediateca ([Place Your Order](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/place-your-order/), 45–60 min).**
+### **S1 · El control de calidad de la mediateca ([Place Your Order](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/place-your-order/), 45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Repartiu una comanda fictícia de llibres i descomponeu «comprovar que el paquet està preparat» en accions observables: posar el sistema en marxa, llegir una fitxa de color, respondre amb moviment i donar un senyal final. Pregunteu quin ordre d’accions esperen veure al vídeo i què hauria de passar si la fitxa canvia.
+Repartid un pedido ficticio de libros y descomponed «comprobar que el paquete está preparado» en acciones observables: poner el sistema en marcha, leer una ficha de color, responder con movimiento y dar una señal final. Preguntad qué orden de acciones esperan ver en el vídeo y qué tendría que pasar si la ficha cambia.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En parelles, feu una construcció en tàndem: una persona prepara les peces i reconeix les accions del vídeo de guia; l’altra munta el capçal. Després canvieu o compartiu tasques perquè totes dues puguen explicar el model. Alineeu els motors abans d’executar-lo i comproveu que el sensor de color veu la fitxa sense que els dits queden darrere: els pot detectar com un color violeta.
+En parejas, haced una construcción en tándem: una persona prepara las piezas y reconoce las acciones del vídeo de guía; la otra monta el cabezal. Después cambiad o compartid tareas para que las dos puedan explicar el modelo. Alinead los motores antes de ejecutarlo y comprobad que el sensor de color ve la ficha sin que los dedos queden detrás: los puede detectar como un color violeta.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Mireu el primer vídeo tantes vegades com calga, anoteu només les accions observades en pseudocodi i convertiu-les en la primera pila de blocs. Mireu el segon vídeo, distingiu les accions noves i escriviu pseudocodi i piles addicionals. Registreu què s’ha afegit i què s’ha mantingut igual entre versions.
+Mirad el primer vídeo tantas veces como haga falta, anotad solo las acciones observadas en pseudocódigo y convertidlas en la primera pila de bloques. Mirad el segundo vídeo, distinguid las acciones nuevas y escribid pseudocódigo y pilas adicionales. Registrad qué se ha añadido y qué se ha mantenido igual entre versiones.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Demaneu a una altra parella que seguisca les instruccions sense que les completeu oralment. Compareu la precisió del pseudocodi i el funcionament del model, localitzeu una ambigüitat i reviseu-la. Si queda temps, graveu un tutorial breu propi o feu una guia il·lustrada per muntar i programar el control de qualitat.
+Pedid a otra pareja que ejecute las instrucciones sin que las completéis oralmente. Comparad la precisión del pseudocódigo y el funcionamiento del modelo, localizad una ambigüedad y revisadla. Si queda tiempo, grabad un tutorial breve propio o haced una guía ilustrada para montar y programar el control de calidad.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dues versions de pseudocodi, les piles corresponents i la comprovació de lectura del color. Autoavaluació amb tres graons propis (reproduïsc una acció / diverses / en cree d’originals) i retorn entre parelles amb una millora concreta. El repte conserva la descomposició i la traducció d’observació a programa, amb una comanda de biblioteca pròpia.
+**Evidencia:** dos versiones de pseudocódigo, las pilas correspondientes y la comprobación de lectura del color. Autoevaluación con tres peldaños propios (reproduzco una acción / varias / creo otras originales) y retorno entre parejas con una mejora concreta. El reto conserva la descomposición y la traducción de observación a programa, con un pedido de biblioteca propio.
 
-### **S2 · El carretó que feia una ruta inesperada ([Out of Order](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/out-of-order/), 45 min).**
+### **S2 · La carretilla que hacía una ruta inesperada ([Out of Order](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/out-of-order/), 45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu el carretó de repartiment de la maqueta —dos motors mitjans al davant per avançar o recular i un motor gran al darrere per dirigir-lo— i un programa intencionadament defectuós. Abans d’executar-lo, cada parella dibuixa la ruta que espera i prediu quin tram pot resultar incorrecte.
+Presentad la carretilla de reparto de la maqueta —dos motores medianos delante para avanzar o retroceder y un motor grande detrás para dirigirla— y un programa intencionadamente defectuoso. Antes de ejecutarlo, cada pareja dibuja la ruta que espera y predice qué tramo puede resultar incorrecto.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Executeu el codi sense modificar-lo i descriviu el símptoma; marqueu cada acció real sobre el mapa de ruta propi. El moviment pot ser una mica imprevisible: és una propietat del model i no una fallada que l’alumnat haja de «corregir» mecànicament.
+Ejecutad el código sin modificarlo y describid el síntoma; marcad cada acción real sobre el mapa de ruta propio. El movimiento puede ser algo imprevisible: es una propiedad del modelo y no un fallo que el alumnado tenga que «corregir» mecánicamente.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-En parelles, feu una llista d’errors possibles i proposeu una causa per a cadascun. Anoteu el símptoma observat, la hipòtesi i quin bloc o valor podria explicar-lo; contrasteu les hipòtesis abans de tocar el programa.
+En parejas, haced una lista de errores posibles y proponed una causa para cada uno. Anotad el síntoma observado, la hipótesis y qué bloque o valor podría explicarlo; contrastad las hipótesis antes de tocar el programa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu un únic bloc o valor cada vegada i torneu a provar. Compareu les estratègies i programeu el carretó perquè seguisca un segon trajecte nou. Anoteu els canvis amb comentaris clars perquè una altra parella puga continuar el treball.
+Cambiad un único bloque o valor cada vez y volved a probar. Comparad las estrategias y programad la carretilla para que recorra un segundo trayecto nuevo. Anotad los cambios con comentarios claros para que otra pareja pueda continuar el trabajo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** taula «símptoma / hipòtesi / canvi / resultat», codi abans i després, i llista de comprovació. El docent pot donar pistes graduades o una targeta amb diversos errors ordenats per complexitat. El repte adapta la cerca, correcció i documentació d’errors, no una ruta literal del fabricant.
+**Evidencia:** tabla «síntoma / hipótesis / cambio / resultado», código antes y después, y lista de comprobación. El docente puede dar pistas graduadas o una tarjeta con varios errores ordenados por complejidad. El reto adapta la búsqueda, corrección y documentación de errores, no una ruta literal del fabricante.
 
-### **S3 · Traçador de rutes entre prestatgeries ([Track Your Packages](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/track-your-packages/), 2 sessions de 45–60 min).**
+### **S3 · Trazador de rutas entre estanterías ([Track Your Packages](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/track-your-packages/), 2 sesiones de 45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu el repte de traçar el mapa de passadissos de la mediateca i predigueu com es pot traduir cada tram a moviment dels motors. Dibuixeu una ruta curta amb angles rectes i marqueu quins trams seran verticals i quins horitzontals.
+Presentad el reto de trazar el mapa de pasillos de la mediateca y predecid cómo se puede traducir cada tramo a movimiento de los motores. Dibujad una ruta corta con ángulos rectos y marcad qué tramos serán verticales y cuáles horizontales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Munteu un traçador X-Y amb una agulla ampla que llisque sobre paper. En tàndem, una persona construeix la part superior del traçador i l’altra la base i l’agulla; després inspeccionen juntes que el conjunt es moga lliurement. Practiqueu com carregar el full sense arrugar-lo i comproveu primer cada pila de codi per separat. Comenceu amb línies verticals i horitzontals; reserveu diagonals per a una segona prova. Registreu les rotacions del motor i la longitud que ha traçat cada intent.
+Montad un trazador X-Y con una aguja ancha que deslice sobre papel. En tándem, una persona construye la parte superior del trazador y la otra la base y la aguja; después inspeccionan juntas que el conjunto se mueva libremente. Practicad cómo cargar la hoja sin arrugarla y comprobad primero cada pila de código por separado. Empezad con líneas verticales y horizontales; reservad las diagonales para una segunda prueba. Registrad las rotaciones del motor y la longitud que ha trazado cada intento.
 
-![Model SPIKE Prime de la dotació al costat d’un traçador X-Y construït amb bigues i motors, amb una ruta de prova dibuixada sobre paper.](../../_assets/situacions/sa-sp-tracador-xy.webp)
+![Modelo SPIKE Prime de la dotación junto a un trazador X-Y construido con vigas y motores, con una ruta de prueba dibujada sobre papel.](../../_assets/situacions/sa-sp-tracador-xy.webp)
 
-_Il·lustració conceptual per a entendre els eixos i el traçat; no és una instrucció de muntatge. Comproveu el model i les peces disponibles abans de construir._
+_Ilustración conceptual para entender los ejes y el trazado; no es una instrucción de montaje. Comprobad el modelo y las piezas disponibles antes de construir._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Combineu les piles en un sol programa reutilitzant blocs i ajustant paràmetres. Traceu el mapa propi de passadissos i una diagonal cap a una prestatgeria fictícia. Compareu la longitud prevista amb la traçada i representeu en una gràfica almenys dos parells (rotacions, centímetres).
+Combinad las pilas en un solo programa reutilizando bloques y ajustando parámetros. Trazad el mapa propio de pasillos y una diagonal hacia una estantería ficticia. Comparad la longitud prevista con la trazada y representad en una gráfica al menos dos pares (rotaciones, centímetros).
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-A la segona sessió, feu un segon mapa i comenteu el codi reutilitzat. A partir dels dos parells registrats, proposeu una regla aproximada del tipus *distància = p × rotacions + q* i mesureu una tercera ruta per comprovar la predicció o recalibrar. Si les diagonals dificulten l’entrada, comenceu amb verticals i horitzontals; com a ampliació, convertiu el traçador en plòter, dibuixeu un símbol original i resoleu una forma més complexa.
+En la segunda sesión, haced un segundo mapa y comentad el código reutilizado. A partir de los dos pares registrados, proponed una regla aproximada del tipo *distancia = p × rotaciones + q* y medid una tercera ruta para comprobar la predicción o recalibrar. Si las diagonales dificultan la entrada, empezad con verticales y horizontales; como ampliación, convertid el trazador en plóter, dibujad un símbolo original y resolved una forma más compleja.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa anotat, piles de codi combinades, taula de rotacions/longituds i comentaris que atribueixen qualsevol programa reutilitzat. Comproveu tres criteris: reconéixer trams horitzontals, verticals i diagonals; reutilitzar i ajustar blocs per a una ruta nova; i identificar la procedència dels blocs adaptats. Cada alumne s’autoavalua amb tres nivells (encara ho prove amb ajuda / ho faig amb blocs existents / reutilitze i adapte el codi explicant-ne la font) i rep una observació d’una altra parella per a la prova següent.
+**Evidencia:** mapa anotado, pilas de código combinadas, tabla de rotaciones/longitudes y comentarios que atribuyen cualquier programa reutilizado. Comprobad tres criterios: reconocer tramos horizontales, verticales y diagonales; reutilizar y ajustar bloques para una ruta nueva; e identificar la procedencia de los bloques adaptados. Cada alumno se autoevalúa con tres niveles (todavía lo pruebo con ayuda / lo hago con bloques existentes / reutilizo y adapto el código explicando su fuente) y recibe una observación de otra pareja para la prueba siguiente.
 
-### **S4 · Una condició per controlar l’accés a la capsa de préstec ([Keep It Safe](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/keep-it-safe/), 90–120 min).**
+### **S4 · Una condición para controlar el acceso a la caja de préstamo ([Keep It Safe](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/keep-it-safe/), 90–120 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Temps orientatiu · 10 min.** Activeu la conversa amb tres preguntes: «Quin dispositiu de seguretat coneixes?», «Què fa que una contrasenya siga fàcil o difícil d’endevinar?» i «Què és una condició?». Mireu el vídeo de la lliçó oficial i formuleu el repte propi: com podem fer que una capsa de maqueta responga a una regla clara? Cada equip dibuixa una predicció amb dos estats —porta tancada i porta oberta— i escriu què espera que faça la capsa quan rep l’ordre triada.
+**Tiempo orientativo · 10 min.** Activad la conversación con tres preguntas: «¿Qué dispositivo de seguridad conoces?», «¿Qué hace que una contraseña sea fácil o difícil de adivinar?» y «¿Qué es una condición?». Mirad el vídeo de la lección oficial y formulad el reto propio: ¿cómo podemos hacer que una caja de maqueta responda a una regla clara? Cada equipo dibuja una predicción con dos estados —puerta cerrada y puerta abierta— y escribe qué espera que haga la caja cuando recibe la orden elegida.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Temps orientatiu · 35 min.** En tàndem, una persona munta la porta i l’altra el cos de la capsa; després revisen juntes les unions i connecten el motor segons les instruccions de construcció disponibles al centre. Executeu el programa inicial per observar el mecanisme abans de modificar-lo. Localitzeu la clau manual per recuperar la porta si el motor queda bloquejat i deixeu preparat el motor addicional per a la lliçó següent, amb el cable fixat darrere del model. Registreu en un dibuix quin moviment obri i quin tanca, sense introduir objectes de valor ni codis reals.
+**Tiempo orientativo · 35 min.** En tándem, una persona monta la puerta y la otra el cuerpo de la caja; después revisan juntas las uniones y conectan el motor según las instrucciones de construcción disponibles en el centro. Ejecutad el programa inicial para observar el mecanismo antes de modificarlo. Localizad la llave manual para recuperar la puerta si el motor queda bloqueado y dejad preparado el motor adicional para la lección siguiente, con el cable fijado detrás del modelo. Registrad en un dibujo qué movimiento abre y qué movimiento cierra, sin introducir objetos de valor ni códigos reales.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Temps orientatiu · 15 min.** Representeu la regla inicial com un diagrama de flux amb una condició i dues eixides: «si es prem A, obri; si no, es queda tancada». Identifiqueu l’entrada, la condició vertadera o falsa i l’acció del motor. Abans de programar, completeu una taula amb tres casos: A premut, A no premut i una segona pulsació després d’obrir. Compareu la predicció amb el comportament observat i anoteu qualsevol diferència.
+**Tiempo orientativo · 15 min.** Representad la regla inicial como un diagrama de flujo con una condición y dos salidas: «si se pulsa A, abre; si no, se queda cerrada». Identificad la entrada, la condición verdadera o falsa y la acción del motor. Antes de programar, completad una tabla con tres casos: A pulsado, A no pulsado y una segunda pulsación después de abrir. Comparad la predicción con el comportamiento observado y anotad cualquier diferencia.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Temps orientatiu · 35–45 min.** Programeu la regla i executeu els tres casos de la taula, reiniciant el mecanisme entre intents quan calga. Afegiu una segona condició senzilla —per exemple, prémer A i després B en l’ordre acordat— i compareu-la amb la versió inicial. Feu una prova creuada: un altre equip rep la capsa sense conéixer la regla, proposa quines entrades provarà i registra si ha pogut deduir el patró. Si el moviment no és repetible, reviseu la posició inicial i el gir del motor abans d’atribuir el resultat al programa. Personalitzeu, si hi ha temps, la matriu de llum o el so perquè el feedback indique «prova acceptada» o «torna-ho a provar» sense revelar cap dada.
+**Tiempo orientativo · 35–45 min.** Programad la regla y ejecutad los tres casos de la tabla, reiniciando el mecanismo entre intentos cuando haga falta. Añadid una segunda condición sencilla —por ejemplo, pulsar A y después B en el orden acordado— y comparadla con la versión inicial. Haced una prueba cruzada: otro equipo recibe la caja sin conocer la regla, propone qué entradas va a probar y registra si ha podido deducir el patrón. Si el movimiento no es repetible, revisad la posición inicial y el giro del motor antes de atribuir el resultado al programa. Personalizad, si hay tiempo, la matriz de luz o el sonido para que el feedback indique «prueba aceptada» o «vuelve a probarlo» sin revelar ningún dato.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Temps orientatiu · 10–15 min.** Recolliu el diagrama, la taula de casos i el programa revisat. Observeu si cada alumne pot explicar què és una condició, utilitzar-la en el programa i parlar amb precisió dels límits de la maqueta. Autoavaluació amb tres nivells: «he provat una condició», «n’he provat dues» o «n’he provat més de dues»; una parella deixa un retorn concret per a S5. Com a extensió lingüística, feu un glossari breu de *booleà, condició, xifratge* i *distingeix majúscules*; són conceptes de seguretat digital, no propietats que implemente aquesta maqueta. Reserveu cinc minuts per a desconnectar i ordenar les peces.
+**Tiempo orientativo · 10–15 min.** Recoged el diagrama, la tabla de casos y el programa revisado. Observad si cada alumno puede explicar qué es una condición, utilizarla en el programa y hablar con precisión de los límites de la maqueta. Autoevaluación con tres niveles: «he probado una condición», «he probado dos» o «he probado más de dos»; una pareja deja un retorno concreto para S5. Como extensión lingüística, haced un glosario breve de *booleano, condición, cifrado* y *distingue mayúsculas*; son conceptos de seguridad digital, no propiedades que implemente esta maqueta. Reservad cinco minutos para desconectar y ordenar las piezas.
 
-La font oficial pauta Engage (5 min), Explore (20 min), Explain (5 min), Elaborate (15 min) i avaluació; la planificació local amplia la construcció, les proves i l’avaluació fins a 90–120 minuts. La capsa només usa autoritzacions inventades: no és un pany segur ni guarda objectes de valor, contrasenyes reals o dades personals.
+La fuente oficial pauta Engage (5 min), Explore (20 min), Explain (5 min), Elaborate (15 min) y evaluación; la planificación local amplía la construcción, las pruebas y la evaluación hasta 90–120 minutos. La caja solo usa autorizaciones inventadas: no es un candado seguro ni guarda objetos de valor, contraseñas reales o datos personales.
 
-### **S5 · Dues condicions i una regla transparent ([Keep It Really Safe!](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/keep-it-really-safe/), 90–120 min en dues sessions).**
+### **S5 · Dos condiciones y una regla transparente ([Keep It Really Safe!](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/keep-it-really-safe/), 90–120 min en dos sesiones).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu la regla simple de S4 i pregunteu què pot passar si algú descobreix una contrasenya. El repte és ampliar la maqueta de caixa forta amb una condició composta: la porta només s’obri si coincideixen dues entrades. Escriviu què hauria de passar quan només n’hi ha una, quan no n’hi ha cap i quan totes dues són certes.
+Recuperad la regla simple de S4 y preguntad qué puede pasar si alguien descubre una contraseña. El reto es ampliar la maqueta de caja fuerte con una condición compuesta: la puerta solo se abre si coinciden dos entradas. Escribid qué tendría que pasar cuando solo hay una, cuando no hay ninguna y cuando las dos son ciertas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En parelles i per tasques complementàries, una persona construeix el cos de la caixa i l’altra la porta amb el braç motoritzat. Abans d’executar el programa, alceu el braç a la posició inicial correcta, proveu el recorregut amb cura i localitzeu la clau manual de desbloqueig. Executeu el programa inicial per observar el mecanisme; la maqueta només utilitza autoritzacions fictícies i no és un pany real.
+En parejas y por tareas complementarias, una persona construye el cuerpo de la caja y la otra la puerta con el brazo motorizado. Antes de ejecutar el programa, alzad el brazo a la posición inicial correcta, probad el recorrido con cuidado y localizad la llave manual de desbloqueo. Ejecutad el programa inicial para observar el mecanismo; la maqueta solo utiliza autorizaciones ficticias y no es un candado real.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu *AND* i *OR* amb targetes d’entrada i predigueu els quatre casos de la regla «botó A **i** sensor de força activat»:
+Comparad *AND* y *OR* con tarjetas de entrada y predecid los cuatro casos de la regla «botón A **y** sensor de fuerza activado»:
 
-- A no premut + sensor inactiu → la porta queda tancada.
-- A no premut + sensor actiu → la porta queda tancada.
-- A premut + sensor inactiu → la porta queda tancada.
-- A premut + sensor actiu → el programa permet obrir la porta.
+- A no pulsado + sensor inactivo → la puerta queda cerrada.
+- A no pulsado + sensor activo → la puerta queda cerrada.
+- A pulsado + sensor inactivo → la puerta queda cerrada.
+- A pulsado + sensor activo → el programa permite abrir la puerta.
 
-Expliqueu per què *AND* és més restrictiu que *OR* en aquesta regla i dibuixeu el flux abans de programar.
+Explicad por qué *AND* es más restrictivo que *OR* en esta regla y dibujad el flujo antes de programar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Afegiu la condició composta al programa i proveu, una per una, les quatre combinacions previstes; anoteu predicció, resposta del motor i diferència. Després desafieu una altra parella a obrir la caixa de maqueta explicant quines entrades ha provat. Si la primera regla funciona, creeu una segona amb *OR* i una altra amb *NOT* per a generar un avís quan falta una autorització. Com a ampliació, connecteu un altre sensor del set SPIKE Prime —de distància o força— i expliqueu per què l’heu triat. Reserveu temps per a guardar el material; el treball complet es distribueix en dues sessions.
+Añadid la condición compuesta al programa y probad, una por una, las cuatro combinaciones previstas; anotad predicción, respuesta del motor y diferencia. Después desafiad a otra pareja a abrir la caja de maqueta explicando qué entradas ha probado. Si la primera regla funciona, cread una segunda con *OR* y otra con *NOT* para generar un aviso cuando falta una autorización. Como ampliación, conectad otro sensor del set SPIKE Prime —de distancia o fuerza— y explicad por qué lo habéis elegido. Reservad tiempo para guardar el material; el trabajo completo se distribuye en dos sesiones.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Criteris d’èxit:** explicar què és una condició composta; programar i provar una regla; interpretar els quatre resultats; parlar de seguretat digital amb precisió. Autoavalieu-vos segons si heu creat una, dues o més condicions compostes i rebeu d’una altra parella una observació concreta i una millora aplicable. Completeu un glossari propi amb *booleà, condició, condició composta, AND, OR, NOR, NOT, xifratge* i *sensibilitat a majúscules*, amb un exemple de la maqueta. **Evidència:** taula de veritat anotada, prediccions i resultats, programa, explicació del comportament i glossari. No useu contrasenyes reals ni guardeu informació personal: la maqueta no protegeix objectes ni dades de valor.
+**Criterios de éxito:** explicar qué es una condición compuesta; programar y probar una regla; interpretar los cuatro resultados; hablar de seguridad digital con precisión. Autoevaluaos según si habéis creado una, dos o más condiciones compuestas y recibid de otra pareja una observación concreta y una mejora aplicable. Completad un glosario propio con *booleano, condición, condición compuesta, AND, OR, NOR, NOT, cifrado* y *sensibilidad a mayúsculas*, con un ejemplo de la maqueta. **Evidencia:** tabla de verdad anotada, predicciones y resultados, programa, explicación del comportamiento y glosario. No uséis contraseñas reales ni guardéis información personal: la maqueta no protege objetos ni datos de valor.
 
-### **S6 · Classificació assistida de retorns ([Automate It!](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/automate-it/), 2–3 sessions, 120+ min).**
+### **S6 · Clasificación asistida de devoluciones ([Automate It!](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/automate-it/), 2–3 sesiones, 120+ min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-En els deu minuts inicials, pregunteu com treballen els robots de fàbrica: què poden detectar, com saben on estan i quines decisions milloren la precisió i la repetibilitat. Delimiteu una àrea per a guardar els prototips entre classes i prepareu una llibreta d’inventor amb espais per a esbossos, pseudocodi, prediccions, problemes i proves. Definiu el repte propi: enviar fitxes-paquet fictícies a tres destinacions de la mediateca segons el seu color. Acordeu quina relació hi ha entre cada color i cada safata, i quins criteris indiquen una classificació correcta.
+En los diez minutos iniciales, preguntad cómo trabajan los robots de fábrica: qué pueden detectar, cómo determinan dónde están y qué decisiones mejoran la precisión y la repetibilidad. Delimitad un área para guardar los prototipos entre clases y preparad un cuaderno de inventor con espacios para bocetos, pseudocódigo, predicciones, problemas y pruebas. Definid el reto propio: enviar fichas-paquete ficticias a tres destinos de la mediateca según su color. Acordad qué relación hay entre cada color y cada bandeja, y qué criterios indican una clasificación correcta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Durant 35–55 minuts, cada equip identifica les parts clau del problema, genera idees, esbossa almenys dues solucions i en tria una amb criteris explícits: llegir el color assignat, dirigir la fitxa a la safata corresponent, repetir el moviment amb precisió i facilitar la revisió. Escriviu pseudocodi abans de construir i programeu només la detecció de color que permet el sensor. La forma, el text o el símbol de la fitxa són pistes per a les persones i no entren en la decisió automàtica: el sensor no llig paraules ni reconeix formes. Combineu rols i anoteu els problemes en lloc d’amagar-los. Si cal suport, comenceu d’un model base i milloreu-lo.
+Durante 35–55 minutos, cada equipo identifica las partes clave del problema, genera ideas, esboza al menos dos soluciones y elige una con criterios explícitos: leer el color asignado, dirigir la ficha a la bandeja correspondiente, repetir el movimiento con precisión y facilitar la revisión. Escribid pseudocódigo antes de construir y programad solo la detección de color que permite el sensor. La forma, el texto o el símbolo de la ficha son pistas para las personas y no entran en la decisión automática: el sensor no lee palabras ni reconoce formas. Combinad roles y anotad los problemas en lugar de esconderlos. Si hace falta apoyo, empezad con un modelo base y mejoradlo.
 
-![Model SPIKE Prime de la dotació comprova targetes de retorn de colors i les deriva cap a tres safates de prova.](../../_assets/situacions/sa-sp-classificador-retorns.webp)
+![Modelo SPIKE Prime de la dotación comprueba tarjetas de devolución de colores y las deriva hacia tres bandejas de prueba.](../../_assets/situacions/sa-sp-classificador-retorns.webp)
 
-_Prototip conceptual amb fitxes i safates fictícies; el sensor i el mecanisme s’han d’ajustar i calibrar amb les peces reals del centre. No classifica llibres, persones ni dades reals._
+_Prototipo conceptual con fichas y bandejas ficticias; el sensor y el mecanismo se tienen que ajustar y calibrar con las piezas reales del centro. No clasifica libros, personas ni datos reales._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Reserveu deu minuts per identificar i documentar els problemes que han aparegut durant el desenvolupament. Descriviu què hauria d’haver passat, què ha passat realment i quina part del mecanisme, la calibració o el programa podria explicar la diferència. Trieu una hipòtesi i modifiqueu una variable per tanda; anoteu la relació entre canvi i resultat en la llibreta d’inventor.
+Reservad diez minutos para identificar y documentar los problemas que han aparecido durante el desarrollo. Describid qué tendría que haber pasado, qué ha pasado realmente y qué parte del mecanismo, la calibración o el programa podría explicar la diferencia. Elegid una hipótesis y modificad una variable por tanda; anotad la relación entre cambio y resultado en el cuaderno de inventor.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-En una segona o tercera sessió d’uns 60 minuts, completeu el programa i el mecanisme. Proveu primer una fitxa de cada color; després, repetiu el test canviant la forma o la paraula impresa però mantenint el mateix color per comprovar que el sistema continua classificant únicament per color. Registreu encerts, errors i calibratge. Presenteu la solució a la classe i, quan els prototips siguen prou estables, connecteu-los en una línia de triatge o afegiu un carretó de lliurament entre estacions. L’ampliació pot afegir funcions noves, però cadascuna ha d’estar descrita en el pseudocodi i comprovada amb una prova pròpia. Reserveu temps per a ordenar el material.
+En una segunda o tercera sesión de unos 60 minutos, completad el programa y el mecanismo. Probad primero una ficha de cada color; después, repetid el test cambiando la forma o la palabra impresa pero manteniendo el mismo color para comprobar que el sistema sigue clasificando únicamente por color. Registrad aciertos, errores y calibración. Presentad la solución a la clase y, cuando los prototipos sean suficientemente estables, conectadlos en una línea de triaje o añadid una carretilla de entrega entre estaciones. La ampliación puede añadir funciones nuevas, pero cada una tiene que estar descrita en el pseudocódigo y comprobada con una prueba propia. Reservad tiempo para ordenar el material.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** llibreta amb idees alternatives, pseudocodi, taula amb color previst/color llegit/destinació/resultat, decisió de redisseny i presentació amb esquemes o fotografies pròpies i límits identificats. Observeu si l’alumnat identifica els elements del problema, treballa amb autonomia per a crear una solució funcional i creativa, i comunica clarament les idees. Autoavaluació individual: **blau**, he creat un ajudant funcional; **groc**, resol el problema d’una manera creativa; **violeta**, a més, he presentat les idees clarament. Una altra parella aporta feedback concret i una proposta de millora. El sistema classifica les fitxes de joc pel color; les formes i paraules només les interpreten les persones. No classifica persones ni substitueix la catalogació real.
+**Evidencia:** cuaderno con ideas alternativas, pseudocódigo, tabla con color previsto/color leído/destino/resultado, decisión de rediseño y presentación con esquemas o fotografías propias y límites identificados. Observad si el alumnado identifica los elementos del problema, trabaja con autonomía para crear una solución funcional y creativa, y comunica claramente las ideas. Autoevaluación individual: **azul**, he creado un ayudante funcional; **amarillo**, resuelve el problema de una manera creativa; **violeta**, además, he presentado las ideas claramente. Otra pareja aporta feedback concreto y una propuesta de mejora. El sistema clasifica las fichas de juego por el color; las formas y palabras solo las interpretan las personas. No clasifica personas ni sustituye la catalogación real.
 
-### **S7 · Instruccions d’esquena a esquena ([Back to Back](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/back-to-back/), 45 min, híbrida i desconnectada).**
+### **S7 · Instrucciones de espaldas ([Back to Back](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/back-to-back/), 45 min, híbrida y desconectada).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Dediqueu deu minuts a recuperar les idees prèvies amb «què és un codi?» i construir definicions compartides d’algorisme, error, descomposició i pseudocodi. Compareu una instrucció quotidiana amb una seqüència de blocs explicada amb paraules: què fa que les instruccions siguen clares, ordenades i executables? Cada persona tindrà dos fulls per a esbossar i escriure el seu pseudocodi.
+Dedicad diez minutos a recuperar las ideas previas con «¿qué es un código?» y a construir definiciones compartidas de algoritmo, error, descomposición y pseudocódigo. Comparad una instrucción cotidiana con una secuencia de bloques explicada con palabras: ¿qué hace que las instrucciones sean claras, ordenadas y ejecutables? Cada persona tendrá dos hojas para esbozar y escribir su pseudocódigo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En quinze minuts, cadascú tria fins a cinc peces i construeix, sense instruccions, un animal inventat inspirat en la fauna de l’aiguamoll valencià; l’exemple docent pot inspirar, però no cal copiar-lo. Després escriu en un full els passos necessaris perquè una altra persona el puga muntar exactament. Es pot fer amb peces de SPIKE Prime o altres peces de construcció. Si no hi ha peces disponibles, l’alumnat dibuixa o retalla formes i les usa com a components; el repte continua sent ordenar instruccions per a construir. No cal hub, sensor ni programari.
+En quince minutos, cada cual elige hasta cinco piezas y construye, sin instrucciones, un animal inventado inspirado en la fauna del marjal valenciano; el ejemplo docente puede inspirar, pero no hace falta copiarlo. Después escribe en una hoja los pasos necesarios para que otra persona pueda montarlo exactamente. Se puede hacer con piezas de SPIKE Prime u otras piezas de construcción. Si no hay piezas disponibles, el alumnado dibuja o recorta formas y las usa como componentes; el reto sigue siendo ordenar instrucciones para construir. No hace falta hub, sensor ni software.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Durant deu minuts, en parelles, una persona llig el pseudocodi i l’altra construeix seguint-lo exactament, sense completar passos de memòria ni demanar informació que no aparega escrita. Després canvieu els rols amb el segon model. Compareu original i reconstrucció i doneu feedback respectuós amb un exemple: «aquesta instrucció era clara» o «ací faltava indicar…». Identifiqueu una ambigüitat o pas absent i anoteu com el resultat ajuda a depurar el pseudocodi. Pregunteu-vos quins passos es poden agrupar i quins detalls són necessaris per a evitar interpretacions diferents.
+Durante diez minutos, en parejas, una persona lee el pseudocódigo y la otra construye siguiéndolo exactamente, sin completar pasos de memoria ni pedir información que no aparezca escrita. Después cambiad los roles con el segundo modelo. Comparad original y reconstrucción y dad feedback respetuoso con un ejemplo: «esta instrucción era clara» o «aquí faltaba indicar…». Identificad una ambigüedad o un paso ausente y anotad cómo el resultado ayuda a depurar el pseudocódigo. Preguntaos qué pasos se pueden agrupar y qué detalles son necesarios para evitar interpretaciones distintas.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-En cinc minuts, imagineu un segon animal o una altra figura i reviseu com faríeu les instruccions més fàcils de seguir. Marqueu una frase que caldria reescriure o dos passos que es podrien agrupar; si no hi ha temps per a una nova construcció, guardeu la proposta per a la pròxima classe. Relacioneu l’exercici amb la programació per parelles: una persona escriu i l’altra executa. En modalitat remota síncrona, es pot fer la lectura en veu alta a una parella o grup reduït; en modalitat asíncrona, es comparteix només el pseudocodi i una reflexió escrita o dibuixada, sense exigir una videotrucada ni fotografies de casa.
+En cinco minutos, imaginad un segundo animal u otra figura y revisad cómo haríais las instrucciones más fáciles de seguir. Marcad una frase que habría que reescribir o dos pasos que se podrían agrupar; si no hay tiempo para una nueva construcción, guardad la propuesta para la próxima clase. Relacionad el ejercicio con la programación por parejas: una persona escribe y la otra ejecuta. En modalidad remota síncrona, se puede hacer la lectura en voz alta a una pareja o grupo reducido; en modalidad asíncrona, se comparte solo el pseudocódigo y una reflexión escrita o dibujada, sin exigir una videollamada ni fotografías de casa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-En els cinc minuts finals, cada alumne comparteix un exemple d’instrucció que descriu un algorisme pas a pas i un problema que ha identificat i corregit. Autoavaluació privada amb tres colors: **roig**, amb ajuda puc escriure pseudocodi i depurar-lo; **groc**, puc explicar com escriure’l i depurar-lo; **verd**, puc ensenyar-ho a una altra persona. **Evidència:** model original de cinc peces com a màxim, pseudocodi inicial, reconstrucció del company, error detectat i versió revisada.
+En los cinco minutos finales, cada alumno comparte un ejemplo de instrucción que describe un algoritmo paso a paso y un problema que ha identificado y corregido. Autoevaluación privada con tres colores: **rojo**, con ayuda puedo escribir pseudocódigo y depurarlo; **amarillo**, puedo explicar cómo escribirlo y depurarlo; **verde**, puedo enseñarlo a otra persona. **Evidencia:** modelo original de cinco piezas como máximo, pseudocódigo inicial, reconstrucción del compañero, error detectado y versión revisada.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Per a S1–S6: SPIKE Prime, graella de paper, fitxes fictícies, cartró i els sensors que cada repte requerisca, comprovats amb el hub i l’app del centre. Per a S7: dos fulls per alumne i llapis; les peces de construcció són opcionals i no s’utilitza hub ni programari. Aquesta situació és una maqueta didàctica: no gestiona préstecs, panys ni comandes reals de la biblioteca.
+Para S1–S6: SPIKE Prime, cuadrícula de papel, fichas ficticias, cartón y los sensores que cada reto requiera, comprobados con el hub y la app del centro. Para S7: dos hojas por alumno y lápiz; las piezas de construcción son opcionales y no se utiliza hub ni software. Esta situación es una maqueta didáctica: no gestiona préstamos, candados ni pedidos reales de la biblioteca.
 
-## 🎯 Evidències i avaluació
+## 🎯 Evidencias y evaluación
 
-Incloem protocol de comanda, depuració abans/després, mapa X-Y, taula de proves amb condicions simples i compostes, llibreta d’inventor amb diverses iteracions, resultats de classificació i pseudocodi revisat. En cada sessió, el grup tria un indicador observable del progrés i rep una observació útil d’una altra parella; la valoració no depén de si el mecanisme «guanya» ni si la primera solució funciona. La mostra final explica una decisió que conserva privacitat o evita una automatització injusta.
+Incluimos protocolo de pedido, depuración antes/después, mapa X-Y, tabla de pruebas con condiciones simples y compuestas, cuaderno de inventor con varias iteraciones, resultados de clasificación y pseudocódigo revisado. En cada sesión, el grupo elige un indicador observable del progreso y recibe una observación útil de otra pareja; la valoración no depende de si el mecanismo «gana» ni de si la primera solución funciona. La muestra final explica una decisión que conserva privacidad o evita una automatización injusta.
 
-## ♿ Participació i inclusió
+## ♿ Participación e inclusión
 
-Les etiquetes combinen color amb forma i símbol. Es pot seguir la ruta amb un mapa tàctil o una fitxa desplaçable, i participar com a cartògraf, programador, verificador o narrador. Totes les dades de persones i llibres són inventades.
+Las etiquetas combinan color con forma y símbolo. Se puede seguir la ruta con un mapa táctil o una ficha desplazable, y participar como cartógrafo, programador, verificador o narrador. Todos los datos de personas y libros son inventados.
 
-## 🔗 Unitat oficial i traçabilitat
+## 🔗 Unidad oficial y trazabilidad
 
-La unitat conté set lliçons que s’han contrastat individualment en les seues [fitxes públiques de LEGO Education](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/): observació de vídeos i pseudocodi per a descompondre el control de qualitat; depuració documentada d’un carretó de repartiment; reutilització de piles de codi en un traçador X-Y; condicions en una caixa amb clau manual; condicions compostes amb AND/OR; un projecte obert d’ajudant automatitzat al llarg de 2–3 sessions; i pseudocodi sense ordinador en una lliçó híbrida amb peces flexibles. També hem incorporat la construcció en tàndem, els objectius d’avaluació i les ampliacions públiques compatibles amb la dotació. Les instruccions detallades de l’alumnat i els models de LEGO remeten a l’app i no es reprodueixen: la proposta, la maqueta de biblioteca, les dades, els criteris, les targetes i la imatge són propis. Els muntatges i sensors es comproven amb el set disponible al centre.
+La unidad contiene siete lecciones que se han contrastado individualmente en sus [fichas públicas de LEGO Education](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/): observación de vídeos y pseudocódigo para descomponer el control de calidad; depuración documentada de una carretilla de reparto; reutilización de pilas de código en un trazador X-Y; condiciones en una caja con llave manual; condiciones compuestas con AND/OR; un proyecto abierto de ayudante automatizado a lo largo de 2–3 sesiones; y pseudocódigo sin ordenador en una lección híbrida con piezas flexibles. También hemos incorporado la construcción en tándem, los objetivos de evaluación y las ampliaciones públicas compatibles con la dotación. Las instrucciones detalladas del alumnado y los modelos de LEGO remiten a la app y no se reproducen: la propuesta, la maqueta de biblioteca, los datos, los criterios, las tarjetas y la imagen son propios. Los montajes y sensores se comprueban con el set disponible en el centro.

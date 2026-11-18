@@ -14,130 +14,130 @@ duration: "3 sesiones · 120 min"
 challenge: "¿Cómo podemos escuchar diferentes interpretaciones de un personaje de ficción y representarlas sin decidir qué siente una persona real?"
 ---
 
-![El tren Coding Express està al costat de tres targetes iguals de color crema amb diferents il·lustracions d’una erugueta de ficció.](../../_assets/situacions/ce-parades-emocions.webp)
+![El tren Coding Express está junto a tres tarjetas iguales de color crema con diferentes ilustraciones de una oruga de ficción.](../../_assets/situacions/ce-parades-emocions.webp)
 
-_El personatge és fictici; les targetes no associen una emoció a un color determinat._
+_El personaje es ficticio; las tarjetas no asocian una emoción a un color determinado._
 
-## ❓ Repte i intenció
+## ❓ Reto e intención
 
-La classe crea una història local breu sobre una erugueta de ficció que visita l’hort escolar, juga, espera, es cansa i demana companyia. El tren Coding Express fa de suport narratiu; en l’app, el grup observa com es pot canviar el comportament associat als maons d’acció. Després representa moments del relat amb escenaris i targetes pròpies.
+La clase crea una historia local breve sobre una oruga de ficción que visita el huerto escolar, juega, espera, se cansa y pide compañía. El tren Coding Express hace de apoyo narrativo; en la app, el grupo observa cómo se puede cambiar el comportamiento asociado a los ladrillos de acción. Después representa momentos del relato con escenarios y tarjetas propias.
 
-La història no és una prova per descobrir emocions reals: una expressió dibuixada no permet saber amb certesa com se sent una persona. El grup pot proposar lectures diferents, basar-les en pistes del relat i decidir quines formes de suport tindrien sentit per al personatge.
+La historia no es una prueba para descubrir emociones reales: una expresión dibujada no permite saber con certeza cómo se siente una persona. El grupo puede proponer lecturas diferentes, basarlas en pistas del relato y decidir qué formas de apoyo tendrían sentido para el personaje.
 
-## 🎯 Objectius i criteris
+## 🎯 Objetivos y criterios
 
-- Ordenar esdeveniments d’un conte i diferenciar allò que passa d’allò que interpretem.
+- Ordenar acontecimientos de un cuento y diferenciar lo que pasa de lo que interpretamos.
 
-- Explorar amb l’app com es configuren els comportaments vinculats als maons d’acció.
+- Explorar con la app cómo se configuran los comportamientos vinculados a los ladrillos de acción.
 
-- Observar el tren en passar per maons de cada color i registrar el comportament configurat.
+- Observar el tren al pasar por ladrillos de cada color y registrar el comportamiento configurado.
 
-- Reconéixer emocions possibles en una figura de ficció sense assignar-ne una a cada color.
+- Reconocer emociones posibles en una figura de ficción sin asignar una a cada color.
 
-- Crear models i una història col·lectiva sobre amistat, descans i cura quotidiana.
+- Crear modelos y una historia colectiva sobre amistad, descanso y cuidado cotidiano.
 
-- Explicar una decisió de configuració amb una pista narrativa i una observació del tren.
+- Explicar una decisión de configuración con una pista narrativa y una observación del tren.
 
-La lliçó oficial recomana paraules com *trist*, *enfadat*, *esternudar*, *saludable* i *jugar a fet i amagar*. Introduïu-les només si són útils per al conte i permeteu alternatives com «necessita una pausa» o «vol que l’acompanyen».
+La lección oficial recomienda palabras como *triste*, *enfadado*, *estornudar*, *saludable* y *jugar al escondite*. Introducidlas solo si son útiles para el cuento y permitid alternativas como «necesita una pausa» o «quiere que le acompañen».
 
-## 🧰 Preparació i materials
+## 🧰 Preparación y materiales
 
-El pla LEGO està dissenyat per a l’app Coding Express i grups de fins a quatre infants. Prepareu un set Coding Express, dispositiu amb l’app compatible, una via curta, figura/personatge de la dotació si n’hi ha, targetes de cada maó d’acció i materials de construcció lleugers per als models. Comproveu abans de la sessió que l’app permet canviar els comportaments i que el tren i els maons responen com espereu. Si una versió de l’app no inclou la personalització, feu la part de configuració amb targetes i identifiqueu-la com a simulació en paper.
+El plan LEGO está diseñado para la app Coding Express y grupos de hasta cuatro niños y niñas. Preparad un set Coding Express, dispositivo con la app compatible, una vía corta, figura o personaje de la dotación si lo hay, tarjetas de cada ladrillo de acción y materiales de construcción ligeros para los modelos. Comprobad antes de la sesión que la app permite cambiar los comportamientos y que el tren y los ladrillos responden como esperáis. Si una versión de la app no incluye la personalización, haced la parte de configuración con tarjetas e identificadla como simulación en papel.
 
-Prepareu una tira de quatre vinyetes per al conte, targetes amb la mateixa paleta neutra i expressions diferents, i una taula: «color/maó», «configuració triada», «què ha fet el tren», «moment del relat». Roteu els torns de qui configura, col·loca el maó, observa, narra i construeix. Amb una sola caixa, mentre un equip experimenta, la resta ordena el conte amb figures o pictogrames.
+Preparad una tira de cuatro viñetas para el cuento, tarjetas con la misma paleta neutra y expresiones diferentes, y una tabla: «color/ladrillo», «configuración elegida», «qué ha hecho el tren», «momento del relato». Rotad los turnos de quien configura, coloca el ladrillo, observa, narra y construye. Con una sola caja, mientras un equipo experimenta, el resto ordena el cuento con figuras o pictogramas.
 
-## 📅 Seqüència didàctica · 3 sessions de 40 minuts
+## 📅 Secuencia didáctica · 3 sesiones de 40 minutos
 
-### **Sessió 1 · Inventem la història de l’erugueta.**
+### **Sesión 1 · Inventamos la historia de la oruga.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu un personatge fictici que recorre l’hort del centre. Al principi juga a buscar ombres i fulles; després d’una estona, s’atura, seu i busca companyia. Pregunteu què creuen que està passant, sense demanar que ningú parle d’una experiència pròpia.
+Presentad un personaje ficticio que recorre el huerto del centro. Al principio juega a buscar sombras y hojas; después de un rato, se detiene, se sienta y busca compañía. Preguntad qué creen que está pasando, sin pedir que nadie hable de una experiencia propia.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-El grup ordena quatre vinyetes i separa un fet observat («s’ha assegut») d’una interpretació possible («potser està cansada», «potser espera algú»). Afegiu diverses hipòtesis i pregunteu quina altra pista ajudaria a entendre la història.
+El grupo ordena cuatro viñetas y separa un hecho observado («se ha sentado») de una interpretación posible («quizá está cansada», «quizá espera a alguien»). Añadid varias hipótesis y preguntad qué otra pista ayudaría a entender la historia.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Trieu dos moments que el tren puga representar i anoteu quina acció observable del model podria correspondre a cada escena. Manteniu separada la configuració tècnica de la interpretació narrativa.
+Elegid dos momentos que el tren pueda representar y anotad qué acción observable del modelo podría corresponder a cada escena. Mantened separada la configuración técnica de la interpretación narrativa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Decidiu com acaba el conte: amb una pausa, una invitació a jugar o un espai tranquil. No hi ha una resposta emocional correcta. Com a suport, proporcioneu vinyetes amb pictogrames; com a ampliació, creeu una interpretació diferent de la mateixa escena i justifiqueu-la amb una pista nova.
+Decidid cómo acaba el cuento: con una pausa, una invitación a jugar o un espacio tranquilo. No hay una respuesta emocional correcta. Como apoyo, proporcionad viñetas con pictogramas; como ampliación, cread una interpretación diferente de la misma escena y justificadla con una pista nueva.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** vinyetes ordenades, un fet i dues interpretacions possibles. Quina part hem observat en la història i quina hem inferit?
+**Evidencia:** viñetas ordenadas, un hecho y dos interpretaciones posibles. ¿Qué parte hemos observado en la historia y qué parte hemos inferido?
 
-### **Sessió 2 · Configurem i observem el tren.**
+### **Sesión 2 · Configuramos y observamos el tren.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Construïu un tram curt de via i col·loqueu-hi un maó d’acció de cada color disponible. Abans de cada prova, trieu quin comportament espereu i quin moment del conte podria representar.
+Construid un tramo corto de vía y colocad en él un ladrillo de acción de cada color disponible. Antes de cada prueba, elegid qué comportamiento esperáis y qué momento del cuento podría representar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Exploreu primer els botons de l’app i observeu com controlen el personatge. A continuació, canvieu el comportament configurat d’un maó i passeu el tren per la via. Canvieu el rol d’operació perquè més d’una persona puga provar-ho.
+Explorad primero los botones de la app y observad cómo controlan el personaje. A continuación, cambiad el comportamiento configurado de un ladrillo y pasad el tren por la vía. Cambiad el rol de operación para que más de una persona pueda probarlo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu el canvi fet, la predicció i què ha fet el tren. Compareu la configuració de l’app, el senyal físic i el resultat observat; repetiu amb un altre maó. **Evidència:** dues files de registre amb predicció, configuració i resultat.
+Anotad el cambio hecho, la predicción y qué ha hecho el tren. Comparad la configuración de la app, la señal física y el resultado observado; repetid con otro ladrillo. **Evidencia:** dos filas de registro con predicción, configuración y resultado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Decidiu quin moment del conte pot representar cada comportament. Si l’app no ofereix la funció, mostreu amb targetes com es configuraria i feu la passada com una prova diferent; anoteu que el comportament no s’ha canviat dins de l’app. No afirmeu que el tren ha guardat una configuració si no ho heu verificat amb aquesta versió.
+Decidid qué momento del cuento puede representar cada comportamiento. Si la app no ofrece la función, mostrad con tarjetas cómo se configuraría y haced la pasada como una prueba diferente; anotad que el comportamiento no se ha cambiado dentro de la app. No afirméis que el tren ha guardado una configuración si no lo habéis verificado con esta versión.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Un mateix color pot rebre comportaments diferents. No el presenteu com si sempre significara «trist» o «content»: la configuració és una regla del sistema i el sentiment és una interpretació del personatge, no un diagnòstic. Quina dada de la prova és observable i quina part és lectura narrativa?
+Un mismo color puede recibir comportamientos diferentes. No lo presentéis como si siempre significara «triste» o «contento»: la configuración es una regla del sistema y el sentimiento es una interpretación del personaje, no un diagnóstico. ¿Qué dato de la prueba es observable y qué parte es lectura narrativa?
 
-### **Sessió 3 · Construïm models i conten entre totes.**
+### **Sesión 3 · Construimos modelos y contamos entre todos.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu les vinyetes i els registres anteriors. Decidiu en quin moment de la història hauria d’aparéixer cada comportament configurat i expliqueu què espereu veure.
+Recuperad las viñetas y los registros anteriores. Decidid en qué momento de la historia debería aparecer cada comportamiento configurado y explicad qué esperáis ver.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En equips, construïu dos o tres escenaris amb peces, cartó o pictogrames per a representar moments diferents. Ajunteu-los en una seqüència amb inici, canvi i final.
+En equipos, construid dos o tres escenarios con piezas, cartón o pictogramas para representar momentos diferentes. Juntadlos en una secuencia con inicio, cambio y final.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Un equip narra i un altre comprova si el tren passa pel maó indicat i si el model construït ajuda a entendre el relat. Anoteu qualsevol diferència entre la predicció i l’acció observada.
+Un equipo narra y otro comprueba si el tren pasa por el ladrillo indicado y si el modelo construido ayuda a entender el relato. Anotad cualquier diferencia entre la predicción y la acción observada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu l’ordre de les escenes, la ubicació dels maons o la configuració si el relat no s’entén. Parleu de què podria fer una amistat quan el personatge fictici està cansat o vol companyia: oferir repòs, preguntar què vol o compartir el joc. Accepteu més d’una resposta i no convertiu les estratègies en obligacions per a l’alumnat.
+Revisad el orden de las escenas, la ubicación de los ladrillos o la configuración si el relato no se entiende. Hablad de qué podría hacer una amistad cuando el personaje ficticio está cansado o quiere compañía: ofrecer descanso, preguntar qué quiere o compartir el juego. Aceptad más de una respuesta y no convirtáis las estrategias en obligaciones para el alumnado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** història completa, escenaris i explicació de la relació entre configuració de l’app, maó i acció observada. Cada participant pot contar amb veu, targetes, pictogrames, gestos, dispositiu de comunicació o mostrant els models. Quina decisió ha fet el relat més comprensible?
+**Evidencia:** historia completa, escenarios y explicación de la relación entre configuración de la app, ladrillo y acción observada. Cada participante puede contar con voz, tarjetas, pictogramas, gestos, dispositivo de comunicación o mostrando los modelos. ¿Qué decisión ha hecho el relato más comprensible?
 
-## 📋 Avaluació i evidències
+## 📋 Evaluación y evidencias
 
-Recolliu les vinyetes, les interpretacions, la taula de configuració, models i relat final. Observeu si l’infant:
+Recoged las viñetas, las interpretaciones, la tabla de configuración, modelos y relato final. Observad si el niño o la niña:
 
-- ordena esdeveniments i diferencia observació d’interpretació;
+- ordena acontecimientos y diferencia observación de interpretación;
 
-- segueix un torn de configuració i identifica què canvia a l’app;
+- sigue un turno de configuración e identifica qué cambia en la app;
 
-- associa una observació concreta del tren amb un maó d’acció;
+- asocia una observación concreta del tren con un ladrillo de acción;
 
-- representa més d’un moment narratiu sense fixar una emoció a un color;
+- representa más de un momento narrativo sin fijar una emoción a un color;
 
-- escolta una interpretació alternativa o crea un canal propi per a expressar la seua idea;
+- escucha una interpretación alternativa o crea un canal propio para expresar su idea;
 
-- proposa una forma de companyia o cura adequada al personatge del relat.
+- propone una forma de compañía o cuidado adecuada al personaje del relato.
 
-Feu anotacions descriptives i breus («ha canviat la configuració blava i ha vist que el tren…») en lloc de qualificar l’expressió emocional de l’infant. L’app pot emmagatzemar configuracions per representar el comportament dels maons: tracteu-ho com a dades del programa, no com a dades personals o afectives.
+Haced anotaciones descriptivas y breves («ha cambiado la configuración azul y ha visto que el tren…») en lugar de calificar la expresión emocional del niño o la niña. La app puede almacenar configuraciones para representar el comportamiento de los ladrillos: tratadlo como datos del programa, no como datos personales o afectivos.
 
-## ♿ Més d’una manera de participar
+## ♿ Más de una manera de participar
 
-Oferiu un conte completament fictici, un final neutre o l’opció d’observar en silenci. Useu pictogrames, targetes de text, peces tàctils i expressions en el mateix color de paper per a evitar codis cromàtics rígids. Anticipeu sons, reduïu el volum o feu l’activitat sense so. Un infant pot participar com a narrador/a, constructor/a, operador/a, observador/a o responsable de les targetes.
+Ofreced un cuento completamente ficticio, un final neutro o la opción de observar en silencio. Usad pictogramas, tarjetas de texto, piezas táctiles y expresiones en el mismo color de papel para evitar códigos cromáticos rígidos. Anticipad sonidos, reducid el volumen o haced la actividad sin sonido. Un niño o una niña puede participar como narrador o narradora, constructor o constructora, operador u operadora, observador u observadora o responsable de las tarjetas.
 
-Feu les proves amb via curta i tren a baixa velocitat. Manteniu els dits fora del tren i dels maons mentre es mou i pareu el model abans de reconfigurar-lo. No recolliu emocions, històries familiars ni informació personal de l’alumnat.
+Haced las pruebas con vía corta y tren a baja velocidad. Mantened los dedos fuera del tren y de los ladrillos mientras se mueve y parad el modelo antes de reconfigurarlo. No recojáis emociones, historias familiares ni información personal del alumnado.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta [Character – Caterpillar](https://education.lego.com/en-us/lessons/preschool-coding-express/character-caterpillar/), lliçó 5 de 8 de Coding Express, de 30–45 minuts per a PreK–K i dissenyada per a grups de fins a quatre infants. El pla oficial presenta una erugueta de colors amb moments de joc, cansament, descans i malaltia; construeix el personatge i la via; explora els botons de l’app i un maó de cada color; canvia els comportaments dels maons en l’app; conversa sobre emocions, crea models per a representar-les i combina’ls en una història sobre amistat i cura. També avalua si l’alumnat reconeix el canvi de comportament i comprén que l’app guarda dades per representar-lo. El conte de l’hort, les targetes, les bastides, les alternatives d’accés i la cautela sobre interpretacions emocionals són propis; la personalització real es verifica amb l’app del centre.
+Adapta [Character – Caterpillar](https://education.lego.com/en-us/lessons/preschool-coding-express/character-caterpillar/), lección 5 de 8 de Coding Express, de 30–45 minutos para PreK–K y diseñada para grupos de hasta cuatro niños y niñas. El plan oficial presenta una oruga de colores con momentos de juego, cansancio, descanso y enfermedad; construye el personaje y la vía; explora los botones de la app y un ladrillo de cada color; cambia los comportamientos de los ladrillos en la app; conversa sobre emociones, crea modelos para representarlas y los combina en una historia sobre amistad y cuidado. También evalúa si el alumnado reconoce el cambio de comportamiento y comprende que la app guarda datos para representarlo. El cuento del huerto, las tarjetas, los andamiajes, las alternativas de acceso y la cautela sobre interpretaciones emocionales son propios; la personalización real se verifica con la app del centro.

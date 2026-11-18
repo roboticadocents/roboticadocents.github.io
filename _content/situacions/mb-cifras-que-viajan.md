@@ -14,152 +14,152 @@ duration: "4 sesiones · 200 min"
 challenge: "¿Cómo podemos codificar y descodificar un mensaje con un algoritmo, y qué límites tiene el cifrado de César?"
 ---
 
-![Una placa micro:bit acompanya un disc de xifrat de paper i un missatge plegat sense text llegible.](../../_assets/situacions/mb-xifres-que-viatgen.webp)
+![Una placa micro:bit acompaña a un disco de cifrado de papel y un mensaje doblado sin texto legible.](../../_assets/situacions/mb-xifres-que-viatgen.webp)
 
-_Els missatges són inventats i els xifrats històrics s’estudien com a algoritmes, no com a protecció moderna._
+_Los mensajes son inventados y los cifrados históricos se estudian como algoritmos, no como protección moderna._
 
-## 🌱 Situació i intenció
+## 🌱 Situación e intención
 
-L’arxiu imaginari d’un museu local prepara una xicoteta exposició sobre com les persones han transformat missatges per transmetre’ls. Cada equip crea una peça didàctica: una nota inventada, un disc de Cèsar, una explicació de l’algorisme i una demostració programada. Per donar-li arrelament, la nota pot contenir una dada cultural comprovada en una font pública de la localitat —un nom, una data o una ubicació—, però mai informació personal ni cap secret real.
+El archivo imaginario de un museo local prepara una pequeña exposición sobre cómo las personas han transformado mensajes para transmitirlos. Cada equipo crea una pieza didáctica: una nota inventada, un disco de César, una explicación del algoritmo y una demostración programada. Para darle arraigo, la nota puede contener un dato cultural comprobado en una fuente pública de la localidad —un nombre, una fecha o una ubicación—, pero nunca información personal ni ningún secreto real.
 
-La proposta combina història, llengua, matemàtiques i programació. Està seqüenciada per al tercer cicle de primària; la unitat oficial de micro:bit s’adreça a alumnat d’11 a 14 anys, de manera que ací el context i el codi s’introdueixen amb passos guiats. La programació textual és una ampliació: si el grup encara no coneix Python, pot completar la mateixa lògica amb pseudocodi i taules de seguiment.
+La propuesta combina historia, lengua, matemáticas y programación. Está secuenciada para el tercer ciclo de primaria; la unidad oficial de micro:bit se dirige a alumnado de 11 a 14 años, de manera que aquí el contexto y el código se introducen con pasos guiados. La programación textual es una ampliación: si el grupo todavía no conoce Python, puede completar la misma lógica con pseudocódigo y tablas de seguimiento.
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-- Distingir missatge original, regla de transformació, clau, xifrat i desxifrat.
+- Distinguir mensaje original, regla de transformación, clave, cifrado y descifrado.
 
-- Descriure i executar un algorisme reversible, incloent-hi el retorn de Z a A.
+- Describir y ejecutar un algoritmo reversible, incluido el retorno de Z a A.
 
-- Comparar el resultat manual amb una traça de programa i corregir errors amb proves.
+- Comparar el resultado manual con una traza de programa y corregir errores con pruebas.
 
-- Explicar per què un xifrat de Cèsar és un model didàctic feble i no protegeix dades actuals.
+- Explicar por qué un cifrado de César es un modelo didáctico débil y no protege datos actuales.
 
-- Documentar la procedència d’una dada cultural pública i comunicar-la sense revelar dades personals.
+- Documentar la procedencia de un dato cultural público y comunicarlo sin revelar datos personales.
 
-## 📅 Seqüència didàctica · 4 sessions de 50 minuts
+## 📅 Secuencia didáctica · 4 sesiones de 50 minutos
 
-### **Sessió 1 · Una història, moltes claus (50 min).**
+### **Sesión 1 · Una historia, muchas claves (50 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Ordeneu quatre targetes —missatge, clau, transformació i resultat— i predigueu què necessita saber qui rep el missatge per recuperar-lo. Plantegeu la pregunta de la sessió: què pot amagar una regla senzilla i què pot revelar-la?
+Ordenad cuatro tarjetas —mensaje, clave, transformación y resultado— y predecid qué necesita saber quien recibe el mensaje para recuperarlo. Plantead la pregunta de la sesión: ¿qué puede esconder una regla sencilla y qué puede revelarla?
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En grups, construïu una línia del temps breu amb exemples documentats de comunicació secreta: un xifrat de substitució antic i el treball de desxiframent durant la Segona Guerra Mundial. Consulteu fonts per situar Alan Turing dins del treball col·lectiu de Bletchley Park i reconéixer les investigacions poloneses anteriors que també el van fer possible.
+En grupos, construid una línea del tiempo breve con ejemplos documentados de comunicación secreta: un cifrado de sustitución antiguo y el trabajo de descifrado durante la Segunda Guerra Mundial. Consultad fuentes para situar a Alan Turing dentro del trabajo colectivo de Bletchley Park y reconocer las investigaciones polacas anteriores que también lo hicieron posible.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Expliqueu amb les targetes què es coneix en cada etapa i quina informació necessita el receptor per recuperar el text. Anoteu al costat de cada fita de la línia del temps la font i una idea que hàgeu verificat.
+Explicad con las tarjetas qué se conoce en cada etapa y qué información necesita el receptor para recuperar el texto. Anotad junto a cada hito de la línea del tiempo la fuente y una idea que hayáis verificado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu els exemples de la línia del temps i reviseu si la seqüència confon xifrat, desxiframent i desxiframent per anàlisi. Afegiu una nota o canvieu l’ordre quan la font indique una relació diferent.
+Comparad los ejemplos de la línea del tiempo y revisad si la secuencia confunde cifrado, descifrado y descifrado por análisis. Añadid una nota o cambiad el orden cuando la fuente indique una relación diferente.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compartiu una cosa que pot amagar una regla de substitució i una pista que en podria revelar el missatge. **Evidència:** línia del temps amb fonts i ordenació justificada de missatge, clau, transformació i resultat.
+Compartid una cosa que puede esconder una regla de sustitución y una pista que podría revelar el mensaje. **Evidencia:** línea del tiempo con fuentes y ordenación justificada de mensaje, clave, transformación y resultado.
 
-### **Sessió 2 · El disc i les convencions (50 min).**
+### **Sesión 2 · El disco y las convenciones (50 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans de construir el disc, decidiu quines lletres i signes es transformaran. Acordeu per a tota la seqüència: alfabet A–Z en majúscula; espais, accents, Ç, números i signes es conserven sense canvis.
+Antes de construir el disco, decidid qué letras y signos se transformarán. Acordad para toda la secuencia: alfabeto A–Z en mayúscula; espacios, acentos, `Ç`, números y signos se conservan sin cambios.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Fabriqueu dos cercles de cartó amb les lletres A–Z i marqueu un desplaçament acordat. Xifreu una frase breu inventada i intercanvieu-la amb un altre equip, que l’ha de desxifrar amb la mateixa clau. En «PLAÇA», per exemple, només es transformen P, L i A; la Ç es manté.
+Fabricad dos círculos de cartón con las letras A–Z y marcad un desplazamiento acordado. Cifrad una frase breve inventada e intercambiadla con otro equipo, que debe descifrarla con la misma clave. En `PLAÇA`, por ejemplo, solo se transforman P, L y A; la `Ç` se mantiene.
 
-![Disc de Cèsar de paper en una il·lustració 3D, amb dos cercles superposats, marques de colors esquemàtiques, una fletxa i tires de missatge en blanc.](../../_assets/situacions/sa-mb-xifres-disc-caesar-v2.webp)
+![Disco de César de papel en una ilustración 3D, con dos círculos superpuestos, marcas de colores esquemáticas, una flecha y tiras de mensaje en blanco.](../../_assets/situacions/sa-mb-xifres-disc-caesar-v2.webp)
 
-_Les marques de la il·lustració són esquemàtiques i no s’han de comptar; el disc de classe es construeix amb les 26 posicions A–Z acordades._
+_Las marcas de la ilustración son esquemáticas y no se deben contar; el disco de clase se construye con las 26 posiciones A–Z acordadas._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu la convenció al costat de cada missatge i descriviu els passos que heu seguit per xifrar-lo. Registreu la clau, el text original i el resultat per poder repetir el procés en sentit invers.
+Anotad la convención junto a cada mensaje y describid los pasos que habéis seguido para cifrarlo. Registrad la clave, el texto original y el resultado para poder repetir el proceso en sentido inverso.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si dos equips obtenen resultats diferents, compareu primer la convenció i després la posició del disc. Corregiu una instrucció ambigua i torneu a xifrar o desxifrar la mateixa frase per comprovar l’efecte.
+Si dos equipos obtienen resultados diferentes, comparad primero la convención y después la posición del disco. Corregid una instrucción ambigua y volved a cifrar o descifrar la misma frase para comprobar el efecto.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Verifiqueu si l’altre equip pot recuperar el missatge amb la clau i les instruccions escrites. **Evidència:** disc, convenció explícita i missatge inventat xifrat i desxifrat.
+Verificad si el otro equipo puede recuperar el mensaje con la clave y las instrucciones escritas. **Evidencia:** disco, convención explícita y mensaje inventado cifrado y descifrado.
 
-### **Sessió 3 · De la regla al pseudocodi (50 min).**
+### **Sesión 3 · De la regla al pseudocódigo (50 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Representeu cada lletra com una posició de 0 a 25. Predigueu què passa en els casos de frontera: A amb desplaçament −1 i Z amb desplaçament +1. Recordeu que el resultat ha de tornar a l’inici de l’alfabet.
+Representad cada letra como una posición de 0 a 25. Predecid qué pasa en los casos de frontera: A con desplazamiento −1 y Z con desplazamiento +1. Recordad que el resultado debe volver al inicio del alfabeto.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Escriviu el pseudocodi: per xifrar, sumeu el desplaçament i feu la volta a l’alfabet quan el valor supera 25; per desxifrar, resteu-lo i feu la volta en sentit contrari. Ompliu una taula de traça amb lletra, posició, desplaçament i resultat. Proveu desplaçaments 0, 1, 3 i 25; afegiu espais i puntuació per comprovar que queden intactes.
+Escribid el pseudocódigo: para cifrar, sumad el desplazamiento y dad la vuelta al alfabeto cuando el valor supera 25; para descifrar, restadlo y dad la vuelta en sentido contrario. Rellenad una tabla de traza con letra, posición, desplazamiento y resultado. Probad desplazamientos 0, 1, 3 y 25; añadid espacios y puntuación para comprobar que quedan intactos.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Intercanvieu el pseudocodi amb una parella, que el seguirà pas a pas. Una parella rep una targeta amb un error deliberat —no fer la volta de Z a A— i el detecta amb un cas mínim; anoteu quin pas causa el resultat incorrecte.
+Intercambiad el pseudocódigo con una pareja, que lo seguirá paso a paso. Una pareja recibe una tarjeta con un error deliberado —no hacer la vuelta de Z a A— y lo detecta con un caso mínimo; anotad qué paso causa el resultado incorrecto.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Corregiu el pas identificat i repetiu la traça dels casos de frontera. Com a extensió, proveu totes les claus possibles sobre una frase inventada i observeu com el context pot revelar el missatge.
+Corregid el paso identificado y repetid la traza de los casos de frontera. Como extensión, probad todas las claves posibles sobre una frase inventada y observad cómo el contexto puede revelar el mensaje.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compareu el pseudocodi inicial i el corregit i expliqueu quina prova ha fet visible l’error. **Evidència:** pseudocodi, taula de traça amb casos normals i de frontera i explicació de la correcció.
+Comparad el pseudocódigo inicial y el corregido y explicad qué prueba ha hecho visible el error. **Evidencia:** pseudocódigo, tabla de traza con casos normales y de frontera y explicación de la corrección.
 
-### **Sessió 4 · Programar, comparar i explicar (50 min).**
+### **Sesión 4 · Programar, comparar y explicar (50 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu un missatge breu ja xifrat amb el disc i prediu el resultat del programa. Identifiqueu els casos que s’han de conservar sense canvis —espais, accents, Ç, números i signes— segons la convenció acordada.
+Elegid un mensaje breve ya cifrado con el disco y predecid el resultado del programa. Identificad los casos que se deben conservar sin cambios —espacios, acentos, `Ç`, números y signos— según la convención acordada.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Escriviu funcions separades per xifrar i desxifrar. El programa passa el text a majúscules, transforma només les lletres A–Z i conserva la resta; per a cada lletra, calcula la posició amb la regla modular. La micro:bit pot executar el programa, però la matriu LED no és adequada per mostrar frases llargues: useu la consola de l’entorn quan estiga disponible o una traça impresa o visualitzada en l’ordinador.
+Escribid funciones separadas para cifrar y descifrar. El programa pasa el texto a mayúsculas, transforma solo las letras A–Z y conserva el resto; para cada letra, calcula la posición con la regla modular. La micro:bit puede ejecutar el programa, pero la matriz LED no es adecuada para mostrar frases largas: usad la consola del entorno cuando esté disponible o una traza impresa o visualizada en el ordenador.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Executeu les mateixes proves que al disc i compareu, caràcter per caràcter, el resultat manual i el del programa. Registreu qualsevol discrepància, el cas que l’ha produïda i la correcció aplicada.
+Ejecutad las mismas pruebas que en el disco y comparad, carácter por carácter, el resultado manual y el del programa. Registrad cualquier discrepancia, el caso que la ha producido y la corrección aplicada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Depureu el programa a partir d’una prova fallida i torneu a executar els casos de retorn circular i conservació dels signes. Prepareu una cartel·la amb la clau, la convenció i una prova de reversibilitat.
+Depurad el programa a partir de una prueba fallida y volved a ejecutar los casos de retorno circular y conservación de los signos. Preparad una cartela con la clave, la convención y una prueba de reversibilidad.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Presenteu la cartel·la i expliqueu per què el xifrat de Cèsar és un model didàctic feble, que es pot trencar provant les claus i que no protegeix informació actual. **Evidència:** codi o model de paper, comparació amb el disc, prova de reversibilitat i advertència sobre els límits del mètode.
+Presentad la cartela y explicad por qué el cifrado de César es un modelo didáctico débil, que se puede romper probando las claves y que no protege información actual. **Evidencia:** código o modelo de papel, comparación con el disco, prueba de reversibilidad y advertencia sobre los límites del método.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Micro:bit, ordinador amb un entorn Python compatible, paper o cartolina, tisores, enquadernador o llapis per al centre del disc, retoladors i targetes de proves. Prepareu missatges inventats i una plantilla amb l’alfabet A–Z. Si no hi ha plaques, ordinadors o experiència prèvia amb Python, les sessions 3 i 4 es poden completar amb pseudocodi, taula de traça i targetes de paper; l’objectiu conceptual continua sent el mateix.
+micro:bit, ordenador con un entorno Python compatible, papel o cartulina, tijeras, encuadernador o lápiz para el centro del disco, rotuladores y tarjetas de pruebas. Preparad mensajes inventados y una plantilla con el alfabeto A–Z. Si no hay placas, ordenadores o experiencia previa con Python, las sesiones 3 y 4 se pueden completar con pseudocódigo, tabla de traza y tarjetas de papel; el objetivo conceptual sigue siendo el mismo.
 
-Abans de començar, comproveu que tot el grup usa la mateixa convenció d’alfabet i que les frases no inclouen noms, contrasenyes, ubicacions privades ni informació identificable. Si s’incorpora una dada del patrimoni local, l’equip n’anota la font pública i la contrasta amb la fitxa original.
+Antes de empezar, comprobad que todo el grupo usa la misma convención de alfabeto y que las frases no incluyen nombres, contraseñas, ubicaciones privadas ni información identificable. Si se incorpora un dato del patrimonio local, el equipo anota su fuente pública y lo contrasta con la ficha original.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Recolliu una línia del temps amb fonts, el disc i la convenció escrita, un exemple xifrat i desxifrat, el pseudocodi, una taula de traça amb casos normals i de frontera, el codi o model de paper i la cartel·la final. Observeu si l’alumnat:
+Recoged una línea del tiempo con fuentes, el disco y la convención escrita, un ejemplo cifrado y descifrado, el pseudocódigo, una tabla de traza con casos normales y de frontera, el código o modelo de papel y la cartela final. Observad si el alumnado:
 
-- identifica correctament clau, missatge i transformació;
+- identifica correctamente clave, mensaje y transformación;
 
-- aplica el desplaçament i el retorn circular sense perdre caràcters que no són lletres;
+- aplica el desplazamiento y el retorno circular sin perder caracteres que no son letras;
 
-- usa proves que inclouen límits i explica què revela cada prova;
+- usa pruebas que incluyen límites y explica qué revela cada prueba;
 
-- compara el resultat manual amb el programa i localitza un error de manera raonada;
+- compara el resultado manual con el programa y localiza un error de manera razonada;
 
-- comunica amb precisió que el mètode és vulnerable i cita les fonts de les dades culturals.
+- comunica con precisión que el método es vulnerable y cita las fuentes de los datos culturales.
 
-Per a l’autoavaluació, cada alumne completa: «La meua regla és reversible perquè…», «el cas que més m’ha ajudat a trobar errors és…» i «no compartiria aquest mètode per a…».
+Para la autoevaluación, cada alumno completa: «Mi regla es reversible porque…», «el caso que más me ha ayudado a encontrar errores es…» y «no compartiría este método para…».
 
-## ♿ Accés i participació
+## ♿ Acceso y participación
 
-Oferiu el disc amb lletres grans i contrastades, una plantilla ja retallada, lectura en veu alta de les instruccions i una versió digital accessible. Repartiu rols rotatius —historiador/a de fonts, operador/a del disc, verificador/a i programador/a— perquè la manipulació, la lectura i l’escriptura de codi no recaiguen sempre en la mateixa persona. Qui necessite més suport pot treballar amb un desplaçament fix i frases curtes; qui avance amb facilitat pot implementar una segona convenció o provar l’atac per força bruta i explicar-ne el cost.
+Ofreced el disco con letras grandes y contrastadas, una plantilla ya recortada, lectura en voz alta de las instrucciones y una versión digital accesible. Repartid roles rotativos —historiador/a de fuentes, operador/a del disco, verificador/a y programador/a— para que la manipulación, la lectura y la escritura de código no recaigan siempre en la misma persona. Quien necesite más apoyo puede trabajar con un desplazamiento fijo y frases cortas; quien avance con facilidad puede implementar una segunda convención o probar el ataque por fuerza bruta y explicar su coste.
 
-## 🔒 Límits i ús responsable
+## 🔒 Límites y uso responsable
 
-El xifrat de Cèsar té només 25 desplaçaments útils i es pot trencar provant-los tots o aprofitant paraules previsibles. Serveix per estudiar algoritmes, modularitat i història; no és una protecció per a comptes, missatges reals o dades personals. Tots els textos de prova són inventats. La mostra de patrimoni local, si n’hi ha, és una dada ja pública i es publica amb la seua font, mai associada a una persona.
+El cifrado de César tiene solo 25 desplazamientos útiles y se puede romper probándolos todos o aprovechando palabras previsibles. Sirve para estudiar algoritmos, modularidad e historia; no es una protección para cuentas, mensajes reales o datos personales. Todos los textos de prueba son inventados. La muestra de patrimonio local, si la hay, es un dato ya público y se publica con su fuente, nunca asociada a una persona.
 
-## 🔗 Unitat oficial adaptada
+## 🔗 Unidad oficial adaptada
 
-Aquesta situació adapta la unitat de micro:bit [Introduction to cryptography](https://www.microbit.org/teach/lessons/cryptography/) i les seues tres lliçons: [What is cryptography?](https://www.microbit.org/teach/lessons/cryptography-what-is/), [Caesar cipher algorithms](https://www.microbit.org/teach/lessons/cryptography-caesar-cipher/) i [Ciphers and text-based programming](https://www.microbit.org/teach/lessons/cryptography-text-based-programming/). Es conserven els eixos de context històric, creació i descodificació del xifrat de Cèsar, disseny i depuració d’algorismes i programació textual amb Python; la seqüència, els missatges, les proves i la narrativa del museu són propis. L’original està pensat per a 11–14 anys: ací s’adapta al tercer cicle amb bastides, convencions explícites i l’opció de fer l’extensió de Python de manera guiada.
+Esta situación adapta la unidad de micro:bit [Introduction to cryptography](https://www.microbit.org/teach/lessons/cryptography/) y sus tres lecciones: [What is cryptography?](https://www.microbit.org/teach/lessons/cryptography-what-is/), [Caesar cipher algorithms](https://www.microbit.org/teach/lessons/cryptography-caesar-cipher/) y [Ciphers and text-based programming](https://www.microbit.org/teach/lessons/cryptography-text-based-programming/). Se conservan los ejes de contexto histórico, creación y descodificación del cifrado de César, diseño y depuración de algoritmos y programación textual con Python; la secuencia, los mensajes, las pruebas y la narrativa del museo son propios. El original está pensado para 11–14 años: aquí se adapta al tercer ciclo con andamiajes, convenciones explícitas y la opción de hacer la extensión de Python de manera guiada.

@@ -14,122 +14,122 @@ duration: "3 sesiones"
 challenge: "¿Cómo podemos crear una secuencia sonora breve inspirada en el patio y ordenarla para que cada sonido aparezca en el momento acordado?"
 ---
 
-![El tren LEGO Education Coding Express de la dotació recorre una via circular amb maons d’acció prop d’un xicotet escenari de titelles.](../../_assets/situacions/ce-concert-pati.webp)
+![El tren LEGO Education Coding Express de la dotación recorre una vía circular con ladrillos de acción cerca de un pequeño escenario de títeres.](../../_assets/situacions/ce-concert-pati.webp)
 
-_Els maons d’acció poden activar respostes del tren segons el model; les figures i l’escenari són recursos narratius de l’aula._
+_Los ladrillos de acción pueden activar respuestas del tren según el modelo; las figuras y el escenario son recursos narrativos del aula._
 
-## ❓ Repte i intenció
+## ❓ Reto e intención
 
-El grup investiga què fa cada maó d’acció amb la configuració disponible de l’app, relaciona sons amb models d’animals i crea una composició pròpia. El focus és pensar en seqüències: anticipar un ordre, provar-lo, escoltar o observar el resultat i revisar-lo. Un so suggeridor no és una identificació científica de l’animal: les associacions es presenten com a joc de representació.
+El grupo investiga qué hace cada ladrillo de acción con la configuración disponible de la app, relaciona sonidos con modelos de animales y crea una composición propia. El foco es pensar en secuencias: anticipar un orden, probarlo, escuchar u observar el resultado y revisarlo. Un sonido sugerente no es una identificación científica del animal: las asociaciones se presentan como juego de representación.
 
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Escoltar i comparar sons sense atribuir-los una identificació científica que no s’ha comprovat.
-- Ordenar esdeveniments sonors i anticipar què passarà quan canvie la seqüència.
-- Crear i revisar un patró musical propi amb els maons i les funcions disponibles.
-- Comunicar una intenció artística i respectar els torns durant la composició col·lectiva.
+- Escuchar y comparar sonidos sin atribuirles una identificación científica que no se ha comprobado.
+- Ordenar acontecimientos sonoros y anticipar qué pasará cuando cambie la secuencia.
+- Crear y revisar un patrón musical propio con los ladrillos y las funciones disponibles.
+- Comunicar una intención artística y respetar los turnos durante la composición colectiva.
 
-## Abans de començar
+## Antes de empezar
 
-La proposta adapta una lliçó prevista per a fins a quatre participants. Prepareu un tren/vagó Coding Express, les peces necessàries per a una via tancada, els maons d’acció de diversos colors, l’app oficial en un dispositiu compatible, figures o targetes d’animals i una superfície on es puga ordenar la composició. Comproveu abans de la sessió si l’app s’instal·la, si es connecta al tren i quines respostes sonores produeix cada maó; les funcions poden dependre de la versió i de la configuració.
+La propuesta adapta una lección prevista para hasta cuatro participantes. Preparad un tren/vagón Coding Express, las piezas necesarias para una vía cerrada, los ladrillos de acción de varios colores, la app oficial en un dispositivo compatible, figuras o tarjetas de animales y una superficie donde se pueda ordenar la composición. Comprobad antes de la sesión si la app se instala, si se conecta al tren y qué respuestas sonoras produce cada ladrillo; las funciones pueden depender de la versión y de la configuración.
 
-No cal que cada maó tinga un animal assignat ni que els sons siguen gravacions reals. Registreu el comportament observat, sense prometre una correspondència fixa entre color i so. Prepareu una alternativa sense pantalla: targetes amb símbols, instruments suaus, veu, palmades o sons triats pel grup. Demaneu permís abans de reproduir sons intensos, manteniu el volum moderat i no enregistreu veus de l’alumnat.
+No hace falta que cada ladrillo tenga un animal asignado ni que los sonidos sean grabaciones reales. Registrad el comportamiento observado, sin prometer una correspondencia fija entre color y sonido. Preparad una alternativa sin pantalla: tarjetas con símbolos, instrumentos suaves, voz, palmas o sonidos elegidos por el grupo. Pedid permiso antes de reproducir sonidos intensos, mantened el volumen moderado y no grabéis voces del alumnado.
 
-**Vocabulari útil:** so, ritme, melodia, seqüència, repetir, maó d’acció, composició i concert. Introduïu les paraules amb gestos o pictogrames i deixeu que els xiquets expliquen les seues idees oralment, assenyalant o ordenant targetes.
+**Vocabulario útil:** sonido, ritmo, melodía, secuencia, repetir, ladrillo de acción, composición y concierto. Introducid las palabras con gestos o pictogramas y dejad que los niños y niñas expliquen sus ideas oralmente, señalando u ordenando tarjetas.
 
-## 📅 Seqüència didàctica · tres sessions de 40 minuts
+## 📅 Secuencia didáctica · tres sesiones de 40 minutos
 
-### **Escoltem i imaginem el concert (40 min).**
+### **Escuchamos e imaginamos el concierto (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Obriu amb una conversa breu: quins sons escoltem al pati, al jardí o prop d’una séquia? Diferencieu el que s’ha sentit realment («he sentit un ocell») del que s’imagina («potser era una merla»).
+Abrid con una conversación breve: ¿qué sonidos escuchamos en el patio, en el jardín o cerca de una acequia? Diferenciad lo que se ha oído realmente («he oído un pájaro») de lo que se imagina («quizá era un mirlo»).
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Trieu tres animals coneguts de l’entorn de l’Albufera —per exemple, granota, ocell o insecte— i observeu-ne imatges. Useu un recurs sonor educatiu revisat pel docent o representeu les veus amb instruments suaus; expliqueu que la imitació no substitueix l’escolta de la fauna real.
+Elegid tres animales conocidos del entorno de la Albufera —por ejemplo, rana, pájaro o insecto— y observad sus imágenes. Usad un recurso sonoro educativo revisado por el docente o representad las voces con instrumentos suaves; explicad que la imitación no sustituye la escucha de la fauna real.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Escolteu o marqueu el ritme d’una cançó d’animals que el grup ja conega. Feu un mapa de tres entrades: animal, so real o inventat, i com el representarem. Deixeu la imitació vocal com una opció, no com una obligació.
+Escuchad o marcad el ritmo de una canción de animales que el grupo ya conozca. Haced un mapa de tres entradas: animal, sonido real o inventado, y cómo lo representaremos. Dejad la imitación vocal como una opción, no como una obligación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-El docent proposa que un autobús imaginari visite un concert a la marjal; el grup decideix quins animals hi participaran i com pot mostrar-los sense capturar-los ni molestar-los. Reviseu el mapa perquè quede clar què és una observació i què és una representació inventada.
+El docente propone que un autobús imaginario visite un concierto en el marjal; el grupo decide qué animales participarán y cómo puede mostrarlos sin capturarlos ni molestarlos. Revisad el mapa para que quede claro qué es una observación y qué es una representación inventada.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa de so amb tres animals i una representació acordada. Pregunteu: «Quina part sabem perquè l’hem observada i quina hem inventat per al concert?»
+**Evidencia:** mapa de sonido con tres animales y una representación acordada. Preguntad: «¿Qué parte sabemos porque la hemos observado y qué hemos inventado para el concierto?»
 
-### **Investiguem les respostes de la via (40 min).**
+### **Investigamos las respuestas de la vía (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-En equip de fins a quatre, construïu una via circular i situeu al voltant les figures o targetes. Col·loqueu un maó d’acció de cada color disponible, d’un en un, en punts fàcils de veure. Abans de conduir, cada participant tria com fer avançar el tren amb l’app i prediu què podria passar quan travesse un maó.
+En equipo de hasta cuatro, construid una vía circular y situad alrededor las figuras o tarjetas. Colocad un ladrillo de acción de cada color disponible, de uno en uno, en puntos fáciles de ver. Antes de conducir, cada participante elige cómo hacer avanzar el tren con la app y predice qué podría pasar cuando atraviese un ladrillo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Feu una volta de prova. Si cal, afegiu un autobús de paper o una figura com a passatger: no cal construir un vehicle diferent del tren del kit. Torneu a passar quan una resposta no s’haja pogut escoltar bé.
+Haced una vuelta de prueba. Si hace falta, añadid un autobús de papel o una figura como pasajero: no hace falta construir un vehículo distinto del tren del kit. Volved a pasar cuando una respuesta no se haya podido escuchar bien.
 
-![El tren Coding Express real travessa una via circular amb els quatre colors de maons d’acció i una tauleta amb controls de so.](../../_assets/situacions/sa-ce-concert-maons-app.webp)
+![El tren Coding Express real atraviesa una vía circular con los cuatro colores de ladrillos de acción y una tableta con controles de sonido.](../../_assets/situacions/sa-ce-concert-maons-app.webp)
 
-_La il·lustració orienta la prova del recorregut; la resposta sonora i la configuració de cada maó s’han de comprovar en l’app disponible al centre._
+_La ilustración orienta la prueba del recorrido; la respuesta sonora y la configuración de cada ladrillo se deben comprobar en la app disponible en el centro._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Registreu «maó provat / què hem sentit o observat / animal que ens recorda / ho hem comprovat?». Després, useu l’app per explorar o canviar el comportament dels maons i anoteu què canvia.
+Registrad «ladrillo probado / qué hemos oído u observado / animal que nos recuerda / ¿lo hemos comprobado?». Después, usad la app para explorar o cambiar el comportamiento de los ladrillos y anotad qué cambia.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Expliqueu que el color, per si sol, no identifica cap espècie, i que l’app pot produir sons representatius o musicals, no enregistraments de la fauna local. Si els sons no corresponen als animals esperats, convertiu-ho en una pregunta d’investigació, no en un error de l’alumnat.
+Explicad que el color, por sí solo, no identifica ninguna especie, y que la app puede producir sonidos representativos o musicales, no grabaciones de la fauna local. Si los sonidos no corresponden a los animales esperados, convertidlo en una pregunta de investigación, no en un error del alumnado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** registre de dues o més proves, amb una predicció i una observació diferenciades. Pregunteu: «Què ha canviat quan hem canviat la configuració? Com ho podem saber?»
+**Evidencia:** registro de dos o más pruebas, con una predicción y una observación diferenciadas. Preguntad: «¿Qué ha cambiado cuando hemos cambiado la configuración? ¿Cómo lo podemos saber?»
 
-### **Composem, repetim i compartim (40 min).**
+### **Componemos, repetimos y compartimos (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Cada equip tria una idea que vol comunicar: matí tranquil, pluja que arriba, festa de l’horta o passeig per la marjal. Abans d’iniciar el tren, dibuixa o dicta la seqüència i prediu què transmetrà.
+Cada equipo elige una idea que quiere comunicar: mañana tranquila, lluvia que llega, fiesta de la huerta o paseo por el marjal. Antes de iniciar el tren, dibuja o dicta la secuencia y predice qué transmitirá.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Ordeneu els maons d’acció a la via i proveu la composició. Convideu el grup a identificar un fragment que es repetisca. Si la volta tancada repeteix tota la seqüència, distingiu-la del patró més curt que l’equip ha decidit compondre.
+Ordenad los ladrillos de acción en la vía y probad la composición. Invitad al grupo a identificar un fragmento que se repita. Si la vuelta cerrada repite toda la secuencia, distinguidla del patrón más corto que el equipo ha decidido componer.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Canvieu només l’ordre d’un maó i compareu les dues versions: quin so apareix abans?, què es repeteix?, quina transmet millor la idea? Recolliu una frase o marca visual sobre una decisió que l’equip ha canviat després d’escoltar el resultat.
+Cambiad solo el orden de un ladrillo y comparad las dos versiones: ¿qué sonido aparece antes?, ¿qué se repite?, ¿qué transmite mejor la idea? Recoged una frase o marca visual sobre una decisión que el equipo ha cambiado después de escuchar el resultado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Presenteu la composició amb el tren, amb pictogrames o amb instruments de taula. Qui no vulga actuar pot ordenar la seqüència, donar l’entrada o mostrar el cartell.
+Presentad la composición con el tren, con pictogramas o con instrumentos de mesa. Quien no quiera actuar puede ordenar la secuencia, dar la entrada o mostrar el cartel.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** partitura visual, seqüència provada, patró repetit identificat i revisió justificada. Pregunteu: «Què volíeu expressar? Quina decisió us ha ajudat a aconseguir-ho?»
+**Evidencia:** partitura visual, secuencia probada, patrón repetido identificado y revisión justificada. Preguntad: «¿Qué queríais expresar? ¿Qué decisión os ha ayudado a conseguirlo?»
 
-## 📋 Avaluació i evidències
+## 📋 Evaluación y evidencias
 
-Observeu el procés i no la qualitat musical ni la capacitat d’imitar sons. Feu una anotació breu per equip o participant en aquests indicadors:
+Observad el proceso y no la calidad musical ni la capacidad de imitar sonidos. Haced una anotación breve por equipo o participante en estos indicadores:
 
-- Anticipa o descriu l’ordre de dos o més esdeveniments abans de provar-lo.
+- Anticipa o describe el orden de dos o más acontecimientos antes de probarlo.
 
-- Registra què ha passat distingint observació, predicció i interpretació.
+- Registra qué ha pasado distinguiendo observación, predicción e interpretación.
 
-- Canvia una variable cada vegada per comparar dues seqüències.
+- Cambia una variable cada vez para comparar dos secuencias.
 
-- Reconeix una repetició i pot assenyalar-la amb peces, gestos o pictogrames.
+- Reconoce una repetición y puede señalarla con piezas, gestos o pictogramas.
 
-- Comunica una intenció i explica una decisió de composició amb el suport que necessite.
+- Comunica una intención y explica una decisión de composición con el apoyo que necesite.
 
-La carpeta d’evidències pot incloure el mapa sonor inicial, la taula d’exploració, les dues partitures visuals i una nota docent sobre la conversa final. Una resposta inesperada de l’app també és una evidència vàlida si l’equip la descriu i la comprova.
+La carpeta de evidencias puede incluir el mapa sonoro inicial, la tabla de exploración, las dos partituras visuales y una nota docente sobre la conversación final. Una respuesta inesperada de la app también es una evidencia válida si el equipo la describe y la comprueba.
 
-## ♿ Més d’una manera de participar
+## ♿ Más de una manera de participar
 
-Permeteu observar sense escoltar sons, useu volum baix i oferiu una representació visual equivalent. Per a alumnat amb sensibilitat auditiva, es pot desactivar l’àudio i treballar amb llums/maons com a marcadors, o fer servir auriculars només si són còmodes i acceptats. Per a alumnat amb dificultats motrius, un company pot conduir el tren seguint instruccions dictades, o es pot fer tota la seqüència amb targetes de taula. Oferiu rols rotatius —ordenar, predir, conduir, registrar o presentar— i no exigiu cantar, ballar, parlar en públic ni compartir vivències personals.
+Permitid observar sin escuchar sonidos, usad volumen bajo y ofreced una representación visual equivalente. Para alumnado con sensibilidad auditiva, se puede desactivar el audio y trabajar con luces/ladrillos como marcadores, o usar auriculares solo si son cómodos y aceptados. Para alumnado con dificultades motrices, un compañero puede conducir el tren siguiendo instrucciones dictadas, o se puede hacer toda la secuencia con tarjetas de mesa. Ofreced roles rotativos —ordenar, predecir, conducir, registrar o presentar— y no exijáis cantar, bailar, hablar en público ni compartir vivencias personales.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta [Music – Animal Concert](https://education.lego.com/en-us/lessons/preschool-coding-express/music-animal-concert/): reconéixer sons d’animals, explorar amb l’app els controls i l’efecte de cada maó, relacionar els sons amb models d’animals, ordenar els maons per a compondre una melodia, identificar-hi un patró repetit i expressar què comunica la música. El concert de la marjal, els animals i les targetes són propis; la disponibilitat de l’app i dels sons es comprova al centre, amb una alternativa desconnectada prevista.
+Adapta [Music – Animal Concert](https://education.lego.com/en-us/lessons/preschool-coding-express/music-animal-concert/): reconocer sonidos de animales, explorar con la app los controles y el efecto de cada ladrillo, relacionar los sonidos con modelos de animales, ordenar los ladrillos para componer una melodía, identificar un patrón repetido y expresar qué comunica la música. El concierto del marjal, los animales y las tarjetas son propios; la disponibilidad de la app y de los sonidos se comprueba en el centro, con una alternativa desconectada prevista.

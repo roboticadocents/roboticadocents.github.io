@@ -14,113 +14,113 @@ duration: "3 sesiones de 45–60 min"
 challenge: "¿Cómo podemos transformar la previsión de lluvia de una semana en un indicador calibrado y útil para tomar una decisión sobre una maqueta de huerto?"
 ---
 
-![Hub i mecanisme motoritzat SPIKE Prime al costat d'una maqueta de tomaqueres i una pantalla amb icones de previsió meteorològica.](../../_assets/situacions/sp-reg-hort.webp)
+![Hub y mecanismo motorizado SPIKE Prime junto a una maqueta de tomateras y una pantalla con iconos de previsión meteorológica.](../../_assets/situacions/sp-reg-hort.webp)
 
-_L’indicador representa una dada de previsió; no mesura la humitat del sòl ni decideix el reg d’un hort real._
+_El indicador representa un dato de previsión; no mide la humedad del suelo ni decide el riego de un huerto real._
 
-## 🌱 Repte i intenció
+## 🌱 Reto e intención
 
-La classe prepara un indicador visual que ajude a parlar de les necessitats d’aigua d’un hort escolar. La situació adapta *Veggie Love* de LEGO Education: construïm un «tomato-meter», consultem dades meteorològiques quantitatives del núvol per a una ciutat i fem que una agulla represente la precipitació prevista acumulada per a la setmana. Investiguem la relació entre dada, escala i decisió sense convertir la maqueta en una recomanació agronòmica: el reg real depén també del sòl, l’espècie, el cultiu i les observacions de l’hort. La conversa inicial també contrasta per què alguns cultius o regions tenen períodes de creixement diferents; no s’assumeix que una previsió setmanal determine per si sola la necessitat d’aigua.
+La clase prepara un indicador visual que ayude a hablar de las necesidades de agua de un huerto escolar. La situación adapta *Veggie Love* de LEGO Education: construimos un «tomato-meter», consultamos datos meteorológicos cuantitativos de la nube para una ciudad y hacemos que una aguja represente la precipitación prevista acumulada para la semana. Investigamos la relación entre dato, escala y decisión sin convertir la maqueta en una recomendación agronómica: el riego real depende también del suelo, la especie, el cultivo y las observaciones del huerto. La conversación inicial también contrasta por qué algunos cultivos o regiones tienen periodos de crecimiento diferentes; no se asume que una previsión semanal determine por sí sola la necesidad de agua.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Interpretar una sèrie setmanal de precipitació amb font, dates i unitats explícites.
-- Calibrar una escala de maqueta i provar els valors als límits i entre intervals.
-- Programar un indicador que represente les dades sense confondre previsió amb mesura del sòl.
-- Argumentar una decisió per a un hort de maqueta i deixar clar que no controla un reg real.
+- Interpretar una serie semanal de precipitación con fuente, fechas y unidades explícitas.
+- Calibrar una escala de maqueta y probar los valores en los límites y entre intervalos.
+- Programar un indicador que represente los datos sin confundir previsión con medida del suelo.
+- Argumentar una decisión para un huerto de maqueta y dejar claro que no controla un riego real.
 
-## 📅 Seqüència didàctica · 3 sessions de 45–60 min
+## 📅 Secuencia didáctica · 3 sesiones de 45–60 min
 
-### **S1 · De la previsió a una pregunta investigable (45–60 min).**
+### **S1 · De la previsión a una pregunta investigable (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Activeu idees prèvies sobre estacions, cultius i pluja: què necessitaria saber una persona que cuida tomaqueres? Distingiu precipitació prevista, pluja observada i humitat del sòl.
+Activad ideas previas sobre estaciones, cultivos y lluvia: ¿qué necesitaría saber una persona que cuida tomateras? Distinguid precipitación prevista, lluvia observada y humedad del suelo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En parelles, construïu o adapteu un indicador de paper amb agulla motoritzada. Trieu una ciutat i executeu el programa amb els blocs de dades meteorològiques disponibles a l’app SPIKE. Si no hi ha connexió o els blocs no estan disponibles, useu una captura datada o una taula docent i etiqueteu-la com a dada arxivada.
+En parejas, construid o adaptad un indicador de papel con aguja motorizada. Elegid una ciudad y ejecutad el programa con los bloques de datos meteorológicos disponibles en la app SPIKE. Si no hay conexión o los bloques no están disponibles, usad una captura fechada o una tabla docente y etiquetadla como dato archivado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu ciutat, data i hora, unitat i període de la dada. Comproveu si el bloc proporciona el total setmanal o set valors diaris; si són diaris, sumeu una sola vegada els set dies del mateix període i escriviu l’operació. No barregeu dies incomplets ni una previsió amb observacions. Dibuixeu l’esquema i indiqueu quina variable no es mesura: el model no incorpora humitat del sòl.
+Anotad ciudad, fecha y hora, unidad y periodo del dato. Comprobad si el bloque proporciona el total semanal o siete valores diarios; si son diarios, sumad una sola vez los siete días del mismo periodo y escribid la operación. No mezcléis días incompletos ni una previsión con observaciones. Dibujad el esquema e indicad qué variable no se mide: el modelo no incorpora humedad del suelo.
 
-![Model SPIKE Prime real al costat de tres representacions separades: previsió meteorològica, pluja observada i perfil de sòl amb una planta de maqueta.](../../_assets/situacions/sa-sp-reg-hort-dades.webp)
+![Modelo SPIKE Prime real junto a tres representaciones separadas: previsión meteorológica, lluvia observada y perfil de suelo con una planta de maqueta.](../../_assets/situacions/sa-sp-reg-hort-dades.webp)
 
-_El model motoritzat representa una dada triada; no mesura la pluja ni la humitat del sòl._
+_El modelo motorizado representa un dato elegido; no mide la lluvia ni la humedad del suelo._
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu la dada amb el que representa l’agulla i reviseu l’escala inicial si les unitats o el període no queden clars. Manteniu separats les dades en viu i les arxivades.
+Comparad el dato con lo que representa la aguja y revisad la escala inicial si las unidades o el periodo no quedan claros. Mantened separados los datos en vivo y los archivados.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu què representa l’indicador i què no permet concloure sobre el reg. **Evidència:** diagrama de maqueta i fitxa que diferencia dada en viu, dada guardada i variable no mesurada.
+Explicad qué representa el indicador y qué no permite concluir sobre el riego. **Evidencia:** diagrama de maqueta y ficha que diferencia dato en vivo, dato guardado y variable no medida.
 
-### **S2 · Calibrem el tomato-meter amb la precipitació setmanal (45–60 min).**
+### **S2 · Calibramos el tomato-meter con la precipitación semanal (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Llegiu el total setmanal de precipitació prevista i decidiu quina escala física el representarà. Per a una primera prova comuna, useu una escala didàctica de **0–60 mm** en **0–180°**; no és un màxim meteorològic ni una necessitat de reg. Marqueu els dos extrems i les divisions abans de moure l’agulla. Predigueu on cauran 0, 15, 30, 45 i 60 mm.
+Leed el total semanal de precipitación prevista y decidid qué escala física lo representará. Para una primera prueba común, usad una escala didáctica de **0–60 mm** en **0–180°**; no es un máximo meteorológico ni una necesidad de riego. Marcad los dos extremos y las divisiones antes de mover la aguja. Predecid dónde caerán 0, 15, 30, 45 y 60 mm.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Programeu una resposta proporcional entre la dada `p` i l’angle del motor, després d’alinear i posar l’agulla a zero: `angle = (p / 60) × 180`. Així, 0, 15, 30, 45 i 60 mm han d’apuntar, respectivament, a 0°, 45°, 90°, 135° i 180°. Si l’entrada és absent, negativa o no numèrica, indiqueu error i no la convertiu en zero. Si `p` supera 60 mm, mostreu «fora d’escala» i decidiu si amplieu el màxim; no retalleu silenciosament la dada a 60. Com a ampliació, canvieu el rang amb una regla documentada.
+Programad una respuesta proporcional entre el dato `p` y el ángulo del motor, después de alinear y poner la aguja a cero: `angle = (p / 60) × 180`. Así, 0, 15, 30, 45 y 60 mm deben apuntar, respectivamente, a 0°, 45°, 90°, 135° y 180°. Si la entrada está ausente, es negativa o no es numérica, indicad error y no la convirtáis en cero. Si `p` supera 60 mm, mostrad «fuera de escala» y decidid si ampliáis el máximo; no recortéis silenciosamente el dato a 60. Como ampliación, cambiad el rango con una regla documentada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Proveu els cinc valors de referència (0, 15, 30, 45 i 60 mm) i anoteu valor, angle esperat, angle observat i diferència. Reinicieu la posició del motor abans de cada prova i feu dues lectures per cas. Una altra parella revisa els desajustos i n’explica una causa possible: alineament inicial, lectura de la dada, sentit de gir o relació de conversió.
+Probad los cinco valores de referencia (0, 15, 30, 45 y 60 mm) y anotad valor, ángulo esperado, ángulo observado y diferencia. Reiniciad la posición del motor antes de cada prueba y haced dos lecturas por caso. Otra pareja revisa los desajustes y explica una causa posible: alineación inicial, lectura del dato, sentido de giro o relación de conversión.
 
-![Model SPIKE Prime de la dotació al costat d’un indicador semicircular de paper amb agulla motoritzada i cinc targetes de gotes per a provar una escala proporcional.](../../_assets/situacions/sa-sp-reg-hort-calibratge.webp)
+![Modelo SPIKE Prime de la dotación junto a un indicador semicircular de papel con aguja motorizada y cinco tarjetas de gotas para probar una escala proporcional.](../../_assets/situacions/sa-sp-reg-hort-calibratge.webp)
 
-_La il·lustració és una guia conceptual: l’escala impresa i el muntatge s’han de construir i validar amb el kit del centre._
+_La ilustración es una guía conceptual: la escala impresa y el montaje se deben construir y validar con el kit del centro._
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una sola regla d’escala cada vegada i torneu a provar els mateixos valors de referència. Si amplieu el rang perquè la previsió el supera, actualitzeu alhora l’etiqueta de l’escala i la conversió del programa. Documenteu una iteració i comproveu si la nova conversió millora la lectura sense ocultar dades fora de rang.
+Cambiad una sola regla de escala cada vez y volved a probar los mismos valores de referencia. Si ampliáis el rango porque la previsión lo supera, actualizad a la vez la etiqueta de la escala y la conversión del programa. Documentad una iteración y comprobad si la nueva conversión mejora la lectura sin ocultar datos fuera de rango.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu com la dada s’ha transformat en moviment i què significa l’error de l’escala. **Evidència:** taula de valors, posicions previstes/observades i iteració documentada.
+Explicad cómo el dato se ha transformado en movimiento y qué significa el error de la escala. **Evidencia:** tabla de valores, posiciones previstas/observadas e iteración documentada.
 
-### **S3 · Recalibrem per a una altra dada i comuniquem els límits (45–60 min).**
+### **S3 · Recalibramos para otro dato y comunicamos los límites (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Sense canviar el muntatge, predigueu per què no es pot reutilitzar directament la conversió de precipitació: pluja setmanal acumulada en mil·límetres i temperatura en graus són magnituds i unitats diferents. Identifiqueu la nova variable, la unitat que mostra l’app i un rang que incloga els valors previstos; si treballeu en °C, no pressuposeu que la temperatura mínima siga zero. Trieu també una targeta pròpia de necessitats d’aigua per a un cultiu fictici i distingiu-la de les dades meteorològiques: és una condició del repte, no una dada científica ni una ordre de reg.
+Sin cambiar el montaje, predecid por qué no se puede reutilizar directamente la conversión de precipitación: lluvia semanal acumulada en milímetros y temperatura en grados son magnitudes y unidades diferentes. Identificad la nueva variable, la unidad que muestra la app y un rango que incluya los valores previstos; si trabajáis en °C, no presupongáis que la temperatura mínima sea cero. Elegid también una tarjeta propia de necesidades de agua para un cultivo ficticio y distinguidla de los datos meteorológicos: es una condición del reto, no un dato científico ni una orden de riego.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Recalibreu l’escala per a la temperatura prevista: definiu `t_min` i `t_max`, assigneu-los als dos extrems angulars i useu `angle = ((t − t_min) / (t_max − t_min)) × 180`. En una prova didàctica de −5 a 35 °C, −5, 15 i 35 °C han de donar 0°, 90° i 180°; si el rang real de la previsió queda fora, marqueu «fora d’escala» i torneu a calibrar. Manteniu aquesta conversió separada de la precipitació. Com a ampliació, creeu targetes pròpies de necessitats d’aigua per a cultius ficticis o representeu velocitat del vent/temperatura en moments diferents, definint de nou la variable, la unitat i el rang.
+Recalibrad la escala para la temperatura prevista: definid `t_min` y `t_max`, asignadlos a los dos extremos angulares y usad `angle = ((t − t_min) / (t_max − t_min)) × 180`. En una prueba didáctica de −5 a 35 °C, −5, 15 y 35 °C deben dar 0°, 90° y 180°; si el rango real de la previsión queda fuera, marcad «fuera de escala» y volved a calibrar. Mantened esta conversión separada de la precipitación. Como ampliación, cread tarjetas propias de necesidades de agua para cultivos ficticios o representad velocidad del viento/temperatura en momentos diferentes, definiendo de nuevo la variable, la unidad y el rango.
 
-![Model SPIKE Prime de la dotació al costat d’un indicador motoritzat i dues targetes separades: precipitació amb gotes i temperatura amb termòmetre; una tomaquera de maqueta completa l’escena.](../../_assets/situacions/sa-sp-reg-hort-recalibratge-v2.webp)
+![Modelo SPIKE Prime de la dotación junto a un indicador motorizado y dos tarjetas separadas: precipitación con gotas y temperatura con termómetro; una tomatera de maqueta completa la escena.](../../_assets/situacions/sa-sp-reg-hort-recalibratge-v2.webp)
 
-_Les targetes representen entrades de dades diferents; el prototip recalibra l’escala i no mesura ni la pluja ni la temperatura._
+_Las tarjetas representan entradas de datos diferentes; el prototipo recalibra la escala y no mide ni la lluvia ni la temperatura._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu ciutats o períodes amb dades datades. Prepareu una targeta amb font, data, variable, unitats i la regla d’escala. Si és possible, contrasteu l’indicador amb una entrevista a una persona agricultora o horticultora; si no, useu una font divulgativa fiable, sense demanar ubicacions privades ni recomanacions per a un cultiu concret. Pregunteu quins instruments reals s’utilitzen i compareu-los amb el tomato-meter: quina magnitud mesuren, quines unitats donen i quina informació addicional necessitaria una decisió de reg? Les professions i els instruments són una extensió d’investigació, no una validació del prototip.
+Comparad ciudades o periodos con datos fechados. Preparad una tarjeta con fuente, fecha, variable, unidades y la regla de escala. Si es posible, contrastad el indicador con una entrevista a una persona agricultora u horticultora; si no, usad una fuente divulgativa fiable, sin pedir ubicaciones privadas ni recomendaciones para un cultivo concreto. Preguntad qué instrumentos reales se utilizan y comparadlos con el tomato-meter: ¿qué magnitud miden, qué unidades dan y qué información adicional necesitaría una decisión de riego? Las profesiones y los instrumentos son una extensión de investigación, no una validación del prototipo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu l’explicació perquè separe dada prevista, representació de l’escala i decisió pendent. Comproveu que els valors negatius de temperatura siguen possibles dins del rang i que no s’hagen interpretat com a error; només una entrada absent o incompatible es rebutja. Indiqueu què caldria comprovar abans de prendre una decisió real: la previsió no és una mesura del sòl ni una instrucció de reg.
+Revisad la explicación para que separe dato previsto, representación de la escala y decisión pendiente. Comprobad que los valores negativos de temperatura sean posibles dentro del rango y que no se hayan interpretado como error; solo una entrada ausente o incompatible se rechaza. Indicad qué habría que comprobar antes de tomar una decisión real: la previsión no es una medida del suelo ni una instrucción de riego.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Presenteu les dues escales calibrades i la conclusió amb els seus límits. Cada persona tria una autoavaluació: **blau**, puc moure l’agulla segons una dada; **groc**, represente correctament el total setmanal; **violeta**, puc mostrar una temperatura en una escala recalibrada. Una parella aporta un comentari concret i una proposta de millora per a la prova següent. **Evidència:** dues escales, targeta de necessitats fictícia, fitxa explicativa amb font i data, comparació amb un instrument o una font professional i conclusió que separa observació, interpretació i decisió pendent.
+Presentad las dos escalas calibradas y la conclusión con sus límites. Cada persona elige una autoevaluación: **azul**, puedo mover la aguja según un dato; **amarillo**, represento correctamente el total semanal; **violeta**, puedo mostrar una temperatura en una escala recalibrada. Una pareja aporta un comentario concreto y una propuesta de mejora para la prueba siguiente. **Evidencia:** dos escalas, tarjeta de necesidades ficticia, ficha explicativa con fuente y fecha, comparación con un instrumento o una fuente profesional y conclusión que separa observación, interpretación y decisión pendiente.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Set SPIKE Prime, hub, motor i peces per a un indicador de paper; ordinador o tauleta amb l’app SPIKE i els blocs de previsió meteorològica activats; paper, retoladors i regla. Abans de classe, comproveu que la connexió, la ubicació seleccionable i les dades requerides funcionen en el dispositiu del centre. Prepareu una taula meteorològica datada com a alternativa equivalent per a analitzar dades quan el servei no estiga disponible. No cal sensor d’humitat: el kit SPIKE Prime no el proporciona.
+Set SPIKE Prime, hub, motor y piezas para un indicador de papel; ordenador o tableta con la app SPIKE y los bloques de previsión meteorológica activados; papel, rotuladores y regla. Antes de clase, comprobad que la conexión, la ubicación seleccionable y los datos requeridos funcionan en el dispositivo del centro. Preparad una tabla meteorológica fechada como alternativa equivalente para analizar datos cuando el servicio no esté disponible. No hace falta sensor de humedad: el kit SPIKE Prime no lo proporciona.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Recolliu l’esbós i el muntatge, el registre de consulta, les dues regles de conversió, les taules amb valors esperats i observats, l’error d’escala, les dades fora de rang, la recalibració i la comunicació final. Valoreu si l’alumnat diferencia suma setmanal i temperatura, tria unitats i rang coherents, prova valors de referència, explica un error i recalibra sense reutilitzar una conversió incompatible. Autoavaluació: **blau**, faig moure l’agulla segons una dada; **groc**, represente el total setmanal amb una escala provada; **violeta**, recalibre per a temperatura i explique què faig amb valors negatius o fora de rang. El retorn entre parelles ha d’indicar una millora concreta i una limitació.
+Recoged el boceto y el montaje, el registro de consulta, las dos reglas de conversión, las tablas con valores esperados y observados, el error de escala, los datos fuera de rango, la recalibración y la comunicación final. Valorad si el alumnado diferencia suma semanal y temperatura, elige unidades y rango coherentes, prueba valores de referencia, explica un error y recalibra sin reutilizar una conversión incompatible. Autoevaluación: **azul**, hago mover la aguja según un dato; **amarillo**, represento el total semanal con una escala probada; **violeta**, recalibro para temperatura y explico qué hago con valores negativos o fuera de rango. El retorno entre parejas debe indicar una mejora concreta y una limitación.
 
-## ♿ Participació, privacitat i límits
+## ♿ Participación, privacidad y límites
 
-Repartiu rols de consulta, programació, lectura d’escala i documentació, amb instruccions visuals i codis redundants a color. Consulteu només ciutats públiques, no ubicacions personals. L’indicador comunica una previsió i la seua transformació; no és un pluviòmetre ni un sensor de sòl, no determina si una planta necessita aigua i no substitueix l’observació de les persones responsables de l’hort.
+Repartid roles de consulta, programación, lectura de escala y documentación, con instrucciones visuales y códigos redundantes en color. Consultad solo ciudades públicas, no ubicaciones personales. El indicador comunica una previsión y su transformación; no es un pluviómetro ni un sensor de suelo, no determina si una planta necesita agua y no sustituye la observación de las personas responsables del huerto.
 
-## 🔗 Lliçó oficial adaptada
+## 🔗 Lección oficial adaptada
 
-Aquesta fitxa adapta [Veggie Love](https://education.lego.com/en-us/lessons/prime-life-hacks/veggie-love/), cinquena lliçó de [Life Hacks](https://education.lego.com/en-us/lessons/prime-life-hacks/): muntatge en parelles del tomato-meter, selecció d’una ciutat, lectura de precipitació prevista, moviment proporcional de l’agulla, suma setmanal, ajuda entre parelles, extensió a la temperatura, recalibració, targetes de necessitats d’aigua i avaluació de la fiabilitat de l’escala. La proposta fa observable la proporcionalitat amb una escala d’exemple 0–60 mm → 0–180°, cinc punts de prova i detecció d’entrades fora de rang; la temperatura usa una conversió separada que admet valors negatius. Aquestes escales són eines didàctiques, no paràmetres universals ni recomanacions agronòmiques. La situació, les explicacions, els registres i la imatge són propis; les instruccions i el full d’alumnat del fabricant continuen a l’app SPIKE.
+Esta ficha adapta [Veggie Love](https://education.lego.com/en-us/lessons/prime-life-hacks/veggie-love/), quinta lección de [Life Hacks](https://education.lego.com/en-us/lessons/prime-life-hacks/): montaje en parejas del tomato-meter, selección de una ciudad, lectura de precipitación prevista, movimiento proporcional de la aguja, suma semanal, ayuda entre parejas, extensión a la temperatura, recalibración, tarjetas de necesidades de agua y evaluación de la fiabilidad de la escala. La propuesta hace observable la proporcionalidad con una escala de ejemplo 0–60 mm → 0–180°, cinco puntos de prueba y detección de entradas fuera de rango; la temperatura usa una conversión separada que admite valores negativos. Estas escalas son herramientas didácticas, no parámetros universales ni recomendaciones agronómicas. La situación, las explicaciones, los registros y la imagen son propios; las instrucciones y la hoja del alumnado del fabricante continúan en la app SPIKE.

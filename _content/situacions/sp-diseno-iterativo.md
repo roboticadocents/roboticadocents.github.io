@@ -14,171 +14,171 @@ duration: "6 lecciones · 7–9 sesiones"
 challenge: "¿Cómo transformamos una idea útil en un prototipo probado y en una explicación que ayude a otras personas a valorarla?"
 ---
 
-![Prototip SPIKE Prime al costat de targetes visuals pròpies per a ideació, iteració i registre de proves.](../../_assets/situacions/sp-disseny-iteratiu.webp)
+![Prototipo SPIKE Prime junto a tarjetas visuales propias para ideación, iteración y registro de pruebas.](../../_assets/situacions/sp-disseny-iteratiu.webp)
 
-_Una idea millora quan definim criteris, fem proves i escoltem comentaris concrets._
+_Una idea mejora cuando definimos criterios, hacemos pruebas y escuchamos comentarios concretos._
 
-## 🌱 Repte i intenció
+## 🌱 Reto e intención
 
-Una cooperativa escolar prepara una fira de solucions útils per al centre. Els equips aprenen a crear un primer prototip, donar-se retorn respectuós i modificar el disseny amb evidències; escriuen pseudocodi abans de programar; valoren si una tasca és adequada per a l’automatització; i presenten una proposta amb claredat i sense promeses exagerades. La fitxa adapta les sis lliçons de la unitat 2 *Improving a Design* de LEGO Education *Foundations of Physical Computing*. Té punts de contacte amb *Ideas, the LEGO way!* i altres recursos, però conserva la seqüència i els objectius específics d’aquesta unitat.
+Una cooperativa escolar prepara una feria de soluciones útiles para el centro. Los equipos aprenden a crear un primer prototipo, darse retorno respetuoso y modificar el diseño con evidencias; escriben pseudocódigo antes de programar; valoran si una tarea es adecuada para la automatización; y presentan una propuesta con claridad y sin promesas exageradas. La ficha adapta las seis lecciones de la unidad 2 *Improving a Design* de LEGO Education *Foundations of Physical Computing*. Tiene puntos de contacto con *Ideas, the LEGO way!* y otros recursos, pero conserva la secuencia y los objetivos específicos de esta unidad.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Convertir una necessitat en requisits i una proposta de prototip que es puga provar.
-- Usar pseudocodi per explicar el procés abans de programar-lo.
-- Iterar el disseny mecànic o digital a partir de dades i retorn d’altres equips.
-- Comunicar els usos, les limitacions i les decisions d’automatització d’una proposta.
+- Convertir una necesidad en requisitos y en una propuesta de prototipo que se pueda probar.
+- Usar pseudocódigo para explicar el proceso antes de programarlo.
+- Iterar el diseño mecánico o digital a partir de datos y retorno de otros equipos.
+- Comunicar los usos, las limitaciones y las decisiones de automatización de una propuesta.
 
-## 📅 Seqüència didàctica · sis lliçons
+## 📅 Secuencia didáctica · seis lecciones
 
-### **Lliçó 1 · Iteració i perseverança: el saltador de l’aiguamoll ([Hopper Race](https://education.lego.com/en-us/lessons/prime-invention-squad/hopper-race/), 90 min)**
+### **Lección 1 · Iteración y perseverancia: el saltador de la marjal ([Hopper Race](https://education.lego.com/en-us/lessons/prime-invention-squad/hopper-race/), 90 min)**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Repte:** Construir i programar un robot sense rodes que avance per un tram de proves inspirat en les passarel·les sobre zones humides valencianes. La cursa és una maqueta segura, no una simulació d’un animal real. **Preparació:** Carregueu hubs i marqueu al terra un inici i una meta separats aproximadament 90 cm, amb un corredor lliure al voltant; prepareu quadern, cinta i una taula amb espai per a tres proves. Mostreu imatges o un vídeo breu d’éssers vius o robots que es desplacen sense rodes i pregunteu com ho aconsegueixen.
+**Reto:** Construir y programar un robot sin ruedas que avance por un tramo de pruebas inspirado en las pasarelas sobre zonas húmedas valencianas. La carrera es una maqueta segura, no una simulación de un animal real. **Preparación:** Cargad los hubs y marcad en el suelo un inicio y una meta separados aproximadamente 90 cm, con un corredor libre alrededor; preparad cuaderno, cinta y una mesa con espacio para tres pruebas. Mostrad imágenes o un vídeo breve de seres vivos o robots que se desplazan sin ruedas y preguntad cómo lo consiguen.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Per parelles, munteu un saltador SPIKE Prime amb el mecanisme disponible a l’app com a punt de partida o amb una solució pròpia de potes articulades; no pot usar rodes ni peces que facen de roda. Executeu el programa inicial i registreu si arriba a la meta, el temps i si es desvia. Feu tres proves comparables amb dos valors de velocitat/potència (per exemple, 50% i 100%) i manteniu la mateixa línia, superfície i posició inicial. Modifiqueu després la geometria de les potes (una variable cada vegada) i observeu si la llargària de la gambada, l’adherència o la fricció canvien el desplaçament. Anoteu cada versió amb esbós o fotografia, canvi, predicció, resultat i explicació; useu la taula per decidir quin disseny és més eficient, no sols quin arriba primer.
+Por parejas, montad un saltador SPIKE Prime con el mecanismo disponible en la app como punto de partida o con una solución propia de patas articuladas; no puede usar ruedas ni piezas que hagan de rueda. Ejecutad el programa inicial y registrad si llega a la meta, el tiempo y si se desvía. Haced tres pruebas comparables con dos valores de velocidad/potencia (por ejemplo, 50% y 100%) y mantened la misma línea, superficie y posición inicial. Modificad después la geometría de las patas (una variable cada vez) y observad si la longitud de la zancada, la adherencia o la fricción cambian el desplazamiento. Anotad cada versión con un boceto o una fotografía, cambio, predicción, resultado y explicación; usad la tabla para decidir qué diseño es más eficiente, no solo cuál llega primero.
 
-![Prototip saltador de SPIKE Prime amb potes articulades, sense rodes, sobre una pista de proves amb fites.](../../_assets/situacions/sa-sp-disseny-saltador.webp)
+![Prototipo saltador de SPIKE Prime con patas articuladas, sin ruedas, sobre una pista de pruebas con hitos.](../../_assets/situacions/sa-sp-disseny-saltador.webp)
 
-_El repte compara prototips sense rodes i documenta com canvien amb cada iteració._
+_El reto compara prototipos sin ruedas y documenta cómo cambian con cada iteración._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu una cursa curta per torns. Una parella observa la prova d’una altra i dona feedback concret basat en el que ha vist («amb les potes llargues s’ha desviat després de la segona gambada»); no toca el muntatge ni escriu en el programa alié.
+Haced una carrera corta por turnos. Una pareja observa la prueba de otra y da feedback concreto basado en lo que ha visto («con las patas largas se ha desviado después de la segunda zancada»); no toca el montaje ni escribe en el programa ajeno.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-L’equip repeteix la seua predicció, incorpora o rebutja el suggeriment amb una raó i fa una segona cursa amb tots els models. Si s’entrellacen o ixen del corredor, el docent els retorna a l’inici només després d’aturar la prova.
+El equipo repite su predicción, incorpora o rechaza la sugerencia con una razón y hace una segunda carrera con todos los modelos. Si se enredan o se salen del corredor, el docente los devuelve al inicio solo después de detener la prueba.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compareu els resultats abans/després, expliqueu com una decisió de maquinari o codi ha afectat el moviment, i identifiqueu si el feedback ha millorat el prototip. Autoavaluació: què he canviat, com ho sé, quin comentari he donat/rebut i com hem gestionat torns i peces (escala pròpia 1–3). Per a qui necessite bastida, oferiu dues formes de pota i una taula ja preparada; ampliació: variar una sola relació de potència/temps, afegir una prova sobre dues superfícies segures o dissenyar una segona fita accessible. Manteniu els prototips lleugers, velocitat baixa i mans fora del mecanisme durant l’execució.
+Comparad los resultados antes/después, explicad cómo una decisión de hardware o código ha afectado al movimiento e identificad si el feedback ha mejorado el prototipo. Autoevaluación: qué he cambiado, cómo lo sé, qué comentario he dado/recibido y cómo hemos gestionado turnos y piezas (escala propia 1–3). Para quien necesite andamiaje, ofreced dos formas de pata y una tabla ya preparada; ampliación: variar una sola relación de potencia/tiempo, añadir una prueba sobre dos superficies seguras o diseñar un segundo hito accesible. Mantened los prototipos ligeros, la velocidad baja y las manos fuera del mecanismo durante la ejecución.
 
-### **Lliçó 2 · Escriure pseudocodi ([Place Your Order](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/place-your-order/), 45 min)**
+### **Lección 2 · Escribir pseudocódigo ([Place Your Order](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/place-your-order/), 45 min)**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Compareu abreviatures de missatges amb instruccions completes: quan estalvien temps i quan creen confusió? Acordeu que el pseudocodi descriu accions amb llenguatge clar abans de programar.
+Comparad abreviaturas de mensajes con instrucciones completas: ¿cuándo ahorran tiempo y cuándo crean confusión? Acordad que el pseudocódigo describe acciones con lenguaje claro antes de programar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Observeu una seqüència de blocs de motor, llum i so (projecte SPIKE ja preparat pel docent) i escriviu què penseu que farà, sense executar-la encara. Compareu predicció i codi, detecteu instruccions absents o ambigües i convertiu-la en pseudocodi ordenat.
+Observad una secuencia de bloques de motor, luz y sonido (proyecto SPIKE ya preparado por el docente) y escribid qué pensáis que hará, sin ejecutarla todavía. Comparad predicción y código, detectad instrucciones ausentes o ambiguas y convertidla en pseudocódigo ordenado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Cada parella tria una acció d’un prototip propi —arrancar, moure una distància curta, mostrar un senyal i aturar-se— i redacta passos verificables. Intercanvieu el full: l’altra parella els ha de poder seguir sense preguntes addicionals.
+Cada pareja elige una acción de un prototipo propio —arrancar, mover una distancia corta, mostrar una señal y detenerse— y redacta pasos verificables. Intercambiad la hoja: la otra pareja debe poder seguirlos sin preguntas adicionales.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Traduïu el pla a blocs, executeu-lo i marqueu qualsevol diferència entre el que deia el pseudocodi i el comportament; reviseu primer el pla i després el codi, sense esborrar l’original.
+Traducid el plan a bloques, ejecutadlo y marcad cualquier diferencia entre lo que decía el pseudocódigo y el comportamiento; revisad primero el plan y después el código, sin borrar el original.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compartiu dues versions possibles del mateix pseudocodi i expliqueu què han de tindre en comú (ordre, accions, valors necessaris), encara que no usen exactament les mateixes paraules. Deseu pseudocodi inicial/revisat, codi i una nota sobre l’error que ha ajudat a trobar. El docent comprova que els hubs estan carregats; si el maquinari no està disponible, es pot fer la predicció amb captura impresa i executar la seqüència amb cartes de blocs.
+Compartid dos versiones posibles del mismo pseudocódigo y explicad qué deben tener en común (orden, acciones, valores necesarios), aunque no usen exactamente las mismas palabras. Guardad el pseudocódigo inicial/revisado, el código y una nota sobre el error que ha ayudado a encontrar. El docente comprueba que los hubs están cargados; si el hardware no está disponible, se puede hacer la predicción con una captura impresa y ejecutar la secuencia con cartas de bloques.
 
-### **Lliçó 3 · Crear un producte nou: una màquina, moltes interpretacions (45 min)**
+### **Lección 3 · Crear un producto nuevo: una máquina, muchas interpretaciones (45 min)**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Tots els equips observen el mateix mecanisme SPIKE Prime preparat pel docent: hub, motor i un braç curt que fa un moviment repetible. No s’hi afegeixen peces ni es canvia el muntatge; es pot editar el moviment, la llum o el so. mostreu només el moviment i pregunteu «què podria ser aquest aparell?». Com a escalfament, doneu una forma familiar (un cercle o una roda) i un minut per escriure deu interpretacions diferents, sense jutjar-les.
+Todos los equipos observan el mismo mecanismo SPIKE Prime preparado por el docente: hub, motor y un brazo corto que hace un movimiento repetible. No se añaden piezas ni se cambia el montaje; se puede editar el movimiento, la luz o el sonido. Mostrad solo el movimiento y preguntad «¿qué podría ser este aparato?». Como calentamiento, dad una forma familiar (un círculo o una rueda) y un minuto para escribir diez interpretaciones diferentes, sin juzgarlas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En parella, inventeu usos per al mecanisme comú en un servei local —per exemple, avisador de torn, indicador de sala o distribuïdor de fitxes— i trieu-ne un; expliqueu qui el necessitaria i quina necessitat resol. Prepareu un nom i un anunci breu, però separeu la funció demostrada de la promesa imaginada.
+En pareja, inventad usos para el mecanismo común en un servicio local —por ejemplo, avisador de turno, indicador de sala o distribuidor de fichas— y elegid uno; explicad quién lo necesitaría y qué necesidad resuelve. Preparad un nombre y un anuncio breve, pero separad la función demostrada de la promesa imaginada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Presenteu el concepte sense revelar massa detalls abans que els altres equips imaginen què pot ser; el públic identifica què comunica el moviment, si la idea és útil i quina prova voldria veure.
+Presentad el concepto sin revelar demasiados detalles antes de que los otros equipos imaginen qué puede ser; el público identifica qué comunica el movimiento, si la idea es útil y qué prueba querría ver.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Incorporeu una idea escoltada canviant només programa, llum o so; no afegiu peces per mantindre una restricció comuna. Feu una presentació en directe o un guió/storyboard de comercial; vídeo opcional i sense enregistrar ningú sense autorització.
+Incorporad una idea escuchada cambiando solo programa, luz o sonido; no añadáis piezas para mantener una restricción común. Haced una presentación en directo o un guion/storyboard de anuncio; vídeo opcional y sin grabar a nadie sin autorización.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compareu quines presentacions han resultat memorables i per què, sense confondre persuasió amb evidència. Cada alumne registra què ha aportat, com ha gestionat temps/materials i una idea que milloraria. **Evidència:** llista de deu interpretacions, idea triada, programa modificat i comercial amb «què és» i «per què podria ser útil». El producte és una proposta creativa de classe, no un article llest per a vendre.
+Comparad qué presentaciones han resultado memorables y por qué, sin confundir persuasión con evidencia. Cada alumno registra qué ha aportado, cómo ha gestionado tiempo/materiales y una idea que mejoraría. **Evidencia:** lista de diez interpretaciones, idea elegida, programa modificado y anuncio con «qué es» y «por qué podría ser útil». El producto es una propuesta creativa de clase, no un artículo listo para vender.
 
-### **Lliçó 4 · Compartir idees i decidir què automatitzar (45 min)**
+### **Lección 4 · Compartir ideas y decidir qué automatizar (45 min)**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Penseu una tasca repetitiva del centre o del trajecte escolar que voldríeu simplificar, sense incloure dades personals.
+Pensad en una tarea repetitiva del centro o del trayecto escolar que querríais simplificar, sin incluir datos personales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En parelles, genereu diverses idees sense descartar-les d’entrada; després trieu-ne una i analitzeu si té una entrada detectable, una resposta clara, una persona usuària i un risc o límit. Feu un esbós o proveu un subcomponent amb SPIKE; no cal construir el producte complet.
+En parejas, generad varias ideas sin descartarlas de entrada; después elegid una y analizad si tiene una entrada detectable, una respuesta clara, una persona usuaria y un riesgo o límite. Haced un boceto o probad un subcomponente con SPIKE; no hace falta construir el producto completo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Expliqueu la proposta a una altra parella i escolteu preguntes aclaridores i suggeriments amables («heu considerat…?»). El grup receptor assenyala una idea interessant i demana qui supervisa l’automatització o com es recupera si falla.
+Explicad la propuesta a otra pareja y escuchad preguntas aclaratorias y sugerencias amables («¿habéis considerado…?»). El grupo receptor señala una idea interesante y pregunta quién supervisa la automatización o cómo se recupera si falla.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Integreu una aportació i prepareu un pitch d’un minut amb necessitat, usuari, idea i raó per a donar-li suport. Es pot presentar en viu o amb un guió il·lustrat.
+Integrad una aportación y preparad un pitch de un minuto con necesidad, usuario, idea y razón para apoyarlo. Se puede presentar en vivo o con un guion ilustrado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Si la classe ho considera útil, cada alumne vota anònimament una proposta; compteu vots en una taula de freqüències i representeu-los en un gràfic de barres, comentant què mesura i què no mesura el vot. Tanqueu amb una reflexió sobre com les idees d’altres han canviat la vostra. Evidència: llista inicial, esbós, preguntes i suggeriments, versió revisada i decisió argumentada. Una majoria no demostra que una automatització siga segura o adequada: no automatitzem vigilància, cura ni decisions sobre persones.
+Si la clase lo considera útil, cada alumno vota anónimamente una propuesta; contad los votos en una tabla de frecuencias y representadlos en un gráfico de barras, comentando qué mide y qué no mide el voto. Cerrad con una reflexión sobre cómo las ideas de otros han cambiado la vuestra. Evidencia: lista inicial, boceto, preguntas y sugerencias, versión revisada y decisión argumentada. Una mayoría no demuestra que una automatización sea segura o adecuada: no automaticemos vigilancia, cuidado ni decisiones sobre personas.
 
-### **Lliçó 5 · Mini-repte: creativitat en un projecte (45–90 min)**
+### **Lección 5 · Mini-reto: creatividad en un proyecto (45–90 min)**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Sou un equip d’un estudi cooperatiu de disseny del barri que presenta una idea útil a una mostra escolar; necessiteu suport per a continuar desenvolupant-la, no diners reals. analitzeu un anunci o una campanya pública: quin problema presenta, quina informació dona i quina emoció o argument usa per convéncer? Distingiu una afirmació comprovable d’un reclam.
+Sois un equipo de un estudio cooperativo de diseño del barrio que presenta una idea útil en una muestra escolar; necesitáis apoyo para seguir desarrollándola, no dinero real. Analizad un anuncio o una campaña pública: ¿qué problema presenta, qué información da y qué emoción o argumento usa para convencer? Distinguid una afirmación comprobable de un reclamo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Trieu una necessitat no sensible del centre o de la comunitat, feu pluja d’idees i convertiu una en un prototip SPIKE Prime amb una funció demostrable (o model físic i pseudocodi si falta temps). Definiu l’usuari, dues proves i una limitació; el robot nou pot combinar hub, motor, sensor, llum i so segons el repte.
+Elegid una necesidad no sensible del centro o de la comunidad, haced una lluvia de ideas y convertid una en un prototipo SPIKE Prime con una función demostrable (o modelo físico y pseudocódigo si falta tiempo). Definid el usuario, dos pruebas y una limitación; el robot nuevo puede combinar hub, motor, sensor, luz y sonido según el reto.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Mostreu un primer esbós/programa a un altre equip i demaneu preguntes i una proposta de millora. Registreu què decidiu incorporar i què descarteu.
+Mostrad un primer boceto/programa a otro equipo y pedid preguntas y una propuesta de mejora. Registrad qué decidís incorporar y qué descartáis.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Presenteu un pitch en viu o comercial breu (vídeo opcional i consentit) que explique per què es necessita, què és la idea i per què el públic podria donar-li suport. Podeu fer una votació anònima amb notes i un gràfic de barres; interpreteu els resultats com a resposta d’aquesta classe, no com a prova de mercat.
+Presentad un pitch en vivo o un anuncio breve (vídeo opcional y consentido) que explique por qué se necesita, qué es la idea y por qué el público podría apoyarla. Podéis hacer una votación anónima con notas y un gráfico de barras; interpretad los resultados como respuesta de esta clase, no como prueba de mercado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Identifiqueu quina presentació va convèncer i per què, una dada que falta i què canviariareu en una iteració següent. L’avaluació valora idea i prototip, prova verificable, ús del feedback i comunicació clara, no popularitat ni acabat estètic. Autoavaluació breu de cooperació, gestió del temps i peces. La proposta és un prototip didàctic i no un producte de venda; anuncis i imatges han de ser originals o tindre font atribuïda.
+Identificad qué presentación convenció y por qué, un dato que falta y qué cambiaríais en una iteración siguiente. La evaluación valora idea y prototipo, prueba verificable, uso del feedback y comunicación clara, no popularidad ni acabado estético. Autoevaluación breve de cooperación, gestión del tiempo y piezas. La propuesta es un prototipo didáctico y no un producto de venta; los anuncios y las imágenes deben ser originales o tener la fuente atribuida.
 
-### **Lliçó 6 · Professions de màrqueting i comunicació (90 min)**
+### **Lección 6 · Profesiones de marketing y comunicación (90 min)**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Reuniu fonts fiables i actuals sobre formació i ocupacions locals, i prepareu una graella de font, tasca, habilitat i itinerari; equips de quatre reparteixen rols que roten. connecteu les activitats d’aquesta unitat (idear, prototipar, recollir feedback, fer un anunci i presentar) amb màrqueting i arts, tecnologia audiovisual i comunicació. Feu una pluja de feines conegudes i inesperades.
+Reunid fuentes fiables y actuales sobre formación y ocupaciones locales, y preparad una cuadrícula de fuente, tarea, habilidad e itinerario; equipos de cuatro reparten roles que rotan. Conectad las actividades de esta unidad (idear, prototipar, recoger feedback, hacer un anuncio y presentar) con marketing y artes, tecnología audiovisual y comunicación. Haced una lluvia de trabajos conocidos e inesperados.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Cada equip investiga totes dues famílies professionals: què fa una persona en eixa ocupació, amb qui treballa, quines habilitats aplica, quina formació o acreditació cal comprovar i quines dades d’ocupació hi ha disponibles. Anoteu font i data; si no hi ha una dada valenciana fiable, indiqueu-ho en lloc d’extrapolar xifres d’altres llocs. trieu màrqueting o comunicació audiovisual i representeu el procés amb peces SPIKE i un esquema: necessitat de públic → idea → contingut accessible → comprovació → difusió. Cada grup prepara una presentació d’un minut i identifica un rol creatiu, un tècnic i un d’organització.
+Cada equipo investiga las dos familias profesionales: qué hace una persona en esa ocupación, con quién trabaja, qué habilidades aplica, qué formación o acreditación hay que comprobar y qué datos de ocupación hay disponibles. Anotad fuente y fecha; si no hay un dato valenciano fiable, indicadlo en lugar de extrapolar cifras de otros lugares. Elegid marketing o comunicación audiovisual y representad el proceso con piezas SPIKE y un esquema: necesidad de público → idea → contenido accesible → comprobación → difusión. Cada grupo prepara una presentación de un minuto e identifica un rol creativo, uno técnico y uno de organización.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Presenteu els models i contrasteu ocupació concreta amb família professional; pregunteu quins interessos, tasques i habilitats comparteixen.
+Presentad los modelos y contrastad ocupación concreta con familia profesional; preguntad qué intereses, tareas y habilidades comparten.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Completeu un diagrama de Venn propi per als dos àmbits, situant al centre habilitats compartides (com explicar una idea a un públic) i als extrems rols o tasques distintius; afegiu una relació d’interdependència entre dues professions.
+Completad un diagrama de Venn propio para los dos ámbitos, situando en el centro las habilidades compartidas (como explicar una idea a un público) y en los extremos los roles o tareas distintivos; añadid una relación de interdependencia entre dos profesiones.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Autoavaluació privada sobre habilitats que voldria practicar i una pregunta per a investigar; compartir és opcional. L’observació docent comprova ús de fonts, exemples de rols i capacitat de relacionar ocupacions. Evidència: graella documentada, model, presentació i Venn. Aquesta lliçó tracta dues famílies de les setze que el curs recorre al llarg del temps; no representa el catàleg sencer de professions.\n+
+Autoevaluación privada sobre habilidades que querríais practicar y una pregunta para investigar; compartir es opcional. La observación docente comprueba el uso de fuentes, ejemplos de roles y capacidad de relacionar ocupaciones. Evidencia: cuadrícula documentada, modelo, presentación y Venn. Esta lección trata dos familias de las dieciséis que el curso recorre a lo largo del tiempo; no representa el catálogo entero de profesiones.\n+
 
-## 🧰 Materials i condicions
+## 🧰 Materiales y condiciones
 
-Set SPIKE Prime 45678, app SPIKE i dispositiu per parella; peces de cartó i paper, llapis, targetes de criteris, quadern de procés i una maqueta d’aula o biblioteca. Per a la mostra audiovisual, un dispositiu de gravació és opcional i sempre pot substituir-se per una presentació en directe o una seqüència de diapositives. No cal BricQ Motion ni expansió 45681. Comproveu hubs, ports i programes abans de provar el mecanisme; limiteu velocitat i massa, i atureu el hub abans de fer canvis físics.
+Set SPIKE Prime 45678, app SPIKE y dispositivo por pareja; piezas de cartón y papel, lápices, tarjetas de criterios, cuaderno de proceso y una maqueta de aula o biblioteca. Para la muestra audiovisual, un dispositivo de grabación es opcional y siempre puede sustituirse por una presentación en directo o una secuencia de diapositivas. No hace falta BricQ Motion ni la expansión 45681. Comprobad hubs, puertos y programas antes de probar el mecanismo; limitad la velocidad y la masa, y detened el hub antes de hacer cambios físicos.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Conserveu el criteri inicial, esbossos, prototip, pseudocodi, versions del programa, prova reproduïble, feedback rebut, registre del canvi, anàlisi d’automatització i presentació revisada. Valoreu que les decisions de millora es basen en dades o comentaris específics; que el pseudocodi es puga executar i corresponga amb el codi; que s’identifique quan automatitzar no és adient; i que el missatge separe prova i hipòtesi. L’autoavaluació d’1 a 3 revisa torns, gestió del temps i cura de peces, amb un objectiu per al repte següent.
+Conservad el criterio inicial, bocetos, prototipo, pseudocódigo, versiones del programa, prueba reproducible, feedback recibido, registro del cambio, análisis de automatización y presentación revisada. Valorad que las decisiones de mejora se basan en datos o comentarios específicos; que el pseudocódigo se pueda ejecutar y corresponda con el código; que se identifique cuándo automatizar no es adecuado; y que el mensaje separe prueba e hipótesis. La autoevaluación de 1 a 3 revisa turnos, gestión del tiempo y cuidado de piezas, con un objetivo para el reto siguiente.
 
-## ♿ Participació i comunicació responsable
+## ♿ Participación y comunicación responsable
 
-Repartiu rols rotatius i permeteu produir la idea amb dibuix, maqueta, pseudocodi, programació o narració. El feedback descriu accions i efectes, no qualifica les persones; ningú modifica el muntatge o el programa d’un altre equip. No es publiquen imatges, veu, interessos personals ni dades d’usuaris sense autorització. Els anuncis han d’identificar el prototip com a escolar i indicar què no s’ha provat.
+Repartid roles rotativos y permitid producir la idea con dibujo, maqueta, pseudocódigo, programación o narración. El feedback describe acciones y efectos, no califica a las personas; nadie modifica el montaje o el programa de otro equipo. No se publican imágenes, voz, intereses personales ni datos de usuarios sin autorización. Los anuncios deben identificar el prototipo como escolar e indicar qué no se ha probado.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta les sis lliçons de *Improving a Design* en [*Foundations of Physical Computing*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb): *Iteration and Perseverance*, *Pseudocode*, *Create a New Product*, *Share Your Ideas*, *Mini-Challenge: Creativity in Business* i *Connecting to Careers: Marketing and Arts, A/V Technology & Communications*. Manté el prototipat iteratiu, feedback concret, pseudocodi anterior a la programació, decisió d’automatitzar, idea lliure, presentació persuasiva i exploració professional; canvia la temàtica i el producte. No es copien els fulls de LEGO ni els muntatges de l’app.
+Adapta las seis lecciones de *Improving a Design* en [*Foundations of Physical Computing*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb): *Iteration and Perseverance*, *Pseudocode*, *Create a New Product*, *Share Your Ideas*, *Mini-Challenge: Creativity in Business* y *Connecting to Careers: Marketing and Arts, A/V Technology & Communications*. Mantiene el prototipado iterativo, el feedback concreto, el pseudocódigo anterior a la programación, la decisión de automatizar, la idea libre, la presentación persuasiva y la exploración profesional; cambia la temática y el producto. No se copian las hojas de LEGO ni los montajes de la app.

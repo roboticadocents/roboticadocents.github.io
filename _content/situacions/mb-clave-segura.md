@@ -14,127 +14,127 @@ duration: "4 sesiones · 200 min"
 challenge: "¿Cómo podemos explicar los riesgos digitales y probar un algoritmo de contraseñas con datos completamente ficticios?"
 ---
 
-![Una placa BBC micro:bit sobre una taula amb targetes en blanc i un cadenat de paper per parlar de contrasenyes.](../../_assets/situacions/mb-clau-segura.webp)
+![Una placa BBC micro:bit sobre una mesa con tarjetas en blanco y un candado de papel para hablar de contraseñas.](../../_assets/situacions/mb-clau-segura.webp)
 
-_La placa representa estats i passos d’un algorisme; no guarda ni protegeix contrasenyes reals._
+_La placa representa estados y pasos de un algoritmo; no guarda ni protege contraseñas reales._
 
-## 🌱 Situació i intenció
+## 🌱 Situación e intención
 
-La biblioteca escolar prepara una guia perquè la comunitat reconega riscos digitals i entenga com es dissenya un algorisme per generar una combinació fictícia. Els equips treballen amb missatges inventats, decideixen quins indicis cal verificar, descriuen els límits del “hacking ètic” i prototipen una seqüència de tokens amb micro:bit. El dispositiu mostra índexs o icones de demostració: no és un gestor de contrasenyes, no desa credencials i no produeix claus adequades per a comptes reals.
+La biblioteca escolar prepara una guía para que la comunidad reconozca riesgos digitales y entienda cómo se diseña un algoritmo para generar una combinación ficticia. Los equipos trabajan con mensajes inventados, deciden qué indicios hay que verificar, describen los límites del “hacking ético” y prototipan una secuencia de tokens con micro:bit. El dispositivo muestra índices o iconos de demostración: no es un gestor de contraseñas, no guarda credenciales y no produce claves adecuadas para cuentas reales.
 
-La unitat oficial té tres lliçons per a 11–14 anys i s’imparteix idealment després de *Computing fundamentals*. Aquesta versió local per a tercer cicle incorpora una activació de pseudocodi, targetes de suport i casos preparats; manté la progressió de ciberseguretat, contrasenyes fortes, algorisme amb variables/selecció i programació, prova, depuració i avaluació.
+La unidad oficial tiene tres lecciones para 11–14 años y se imparte idealmente después de *Computing fundamentals*. Esta versión local para tercer ciclo incorpora una activación de pseudocódigo, tarjetas de apoyo y casos preparados; mantiene la progresión de ciberseguridad, contraseñas fuertes, algoritmo con variables/selección y programación, prueba, depuración y evaluación.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Identificar riscos digitals i distingir una demostració escolar d’una protecció de seguretat real.
-- Descompondre un algorisme didàctic que combina caràcters ficticis i regles de selecció.
-- Programar una eixida simbòlica i provar casos sense introduir credencials o dades reals.
-- Explicar per què una seqüència aleatòria de micro:bit no és una clau criptogràfica segura.
+- Identificar riesgos digitales y distinguir una demostración escolar de una protección de seguridad real.
+- Descomponer un algoritmo didáctico que combina caracteres ficticios y reglas de selección.
+- Programar una salida simbólica y probar casos sin introducir credenciales o datos reales.
+- Explicar por qué una secuencia aleatoria de micro:bit no es una clave criptográfica segura.
 
-## 🧰 Preparació, dades i materials
+## 🧰 Preparación, datos y materiales
 
-Micro:bit, MakeCode, targetes de missatges totalment ficticis, graelles d’algoritme, full de prova i targetes de tokens neutres (paraules sense referència personal, símbols i dígits). No useu serveis en línia, comptes, credencials reals ni dades de l’alumnat. El generador queda desconnectat de xarxes i la placa esborra la pantalla al final de cada prova. Prepareu exemples de missatges sense URL activa, fitxer adjunt, codi QR ni instrucció que l’alumnat puga seguir.
+Micro:bit, MakeCode, tarjetas de mensajes totalmente ficticios, cuadrículas de algoritmo, hoja de prueba y tarjetas de tokens neutros (palabras sin referencia personal, símbolos y dígitos). No uséis servicios en línea, cuentas, credenciales reales ni datos del alumnado. El generador queda desconectado de redes y la placa borra la pantalla al final de cada prueba. Preparad ejemplos de mensajes sin URL activa, archivo adjunto, código QR ni instrucción que el alumnado pueda seguir.
 
-En la part de programació, useu una selecció aleatòria de MakeCode només com a recurs didàctic: no té garantia criptogràfica i pot ser reproduïble o previsible. L’eixida representa categories/índexs per provar el flux; no deseu ni aprofiteu cap combinació generada com a contrasenya. Si la versió d’editor no permet mostrar una seqüència segura i efímera, l’alumnat simula els tokens amb targetes i deixa la placa en una eixida simbòlica.
+En la parte de programación, usad una selección aleatoria de MakeCode solo como recurso didáctico: no tiene garantía criptográfica y puede ser reproducible o previsible. La salida representa categorías/índices para probar el flujo; no guardéis ni aprovechéis ninguna combinación generada como contraseña. Si la versión de editor no permite mostrar una secuencia segura y efímera, el alumnado simula los tokens con tarjetas y deja la placa en una salida simbólica.
 
-## 📅 Seqüència didàctica · quatre sessions de 50 minuts
+## 📅 Secuencia didáctica · cuatro sesiones de 50 minutos
 
-### **Sessió 1 · Ciberseguretat, malware i hacking ètic (What is cyber security?).**
+### **Sesión 1 · Ciberseguridad, malware y hacking ético (What is cyber security?).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Distingiu dades públiques, privades i d’accés restringit amb targetes inventades. Predigueu quins indicis farien sospitós un missatge i quin pas segur es pot fer sense obrir-lo.
+Distinguid datos públicos, privados y de acceso restringido con tarjetas inventadas. Predecid qué indicios harían sospechoso un mensaje y qué paso seguro se puede dar sin abrirlo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Classifiqueu sis exemples impresos: missatge esperat, avís urgent, adjunt no sol·licitat, petició de credencial, premi inesperat i remitent desconegut. Per a cadascun, marqueu indicis, què no podeu saber només mirant-lo i una resposta segura: no clicar, no descarregar, no respondre o consultar una persona adulta o el canal oficial escrit. No obriu cap contingut real.
+Clasificad seis ejemplos impresos: mensaje esperado, aviso urgente, adjunto no solicitado, petición de credencial, premio inesperado y remitente desconocido. Para cada uno, marcad indicios, qué no podéis saber solo mirándolo y una respuesta segura: no hacer clic, no descargar, no responder o consultar a una persona adulta o el canal oficial escrito. No abráis ningún contenido real.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu una auditoria autoritzada en un entorn de pràctica amb l’accés al compte d’una altra persona. Registreu qui dona permís, quin sistema s’inclou i on acaba la prova; no feu escanejos, proves de contrasenya ni connexions a xarxes reals.
+Comparad una auditoría autorizada en un entorno de práctica con el acceso a la cuenta de otra persona. Registrad quién da permiso, qué sistema se incluye y dónde acaba la prueba; no hagáis escaneos, pruebas de contraseña ni conexiones a redes reales.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Dibuixeu dispositiu, compte fictici, dada i persona de suport. Afegiu una mesura preventiva i una resposta si hi ha dubte; reviseu el mapa perquè no continga cap dada real.
+Dibujad dispositivo, cuenta ficticia, dato y persona de apoyo. Añadid una medida preventiva y una respuesta si hay duda; revisad el mapa para que no contenga ningún dato real.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Practiqueu una frase de report segur sense reenviar el missatge i justifiqueu una frontera d’autorització. **Evidència:** classificació raonada, límit d’autorització i diagrama de dades.
+Practicad una frase de reporte segura sin reenviar el mensaje y justificad una frontera de autorización. **Evidencia:** clasificación razonada, límite de autorización y diagrama de datos.
 
-### **Sessió 2 · Contrasenyes i planificació de l’algorisme (Strong passwords).**
+### **Sesión 2 · Contraseñas y planificación del algoritmo (Strong passwords).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Contrasteu longitud, imprevisibilitat, unicitat i no reutilització amb exemples abstractes. Predigueu quina característica importa en cada cas; no proclameu «forta» una cadena només perquè conté símbols.
+Contrastad longitud, imprevisibilidad, unicidad y no reutilización con ejemplos abstractos. Predecid qué característica importa en cada caso; no proclaméis «fuerte» una cadena solo porque contiene símbolos.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Definiu el prototip com un patró didàctic de tres posicions amb un token de cada conjunt neutre, mai una clau d’ús real. Prepareu llistes fictícies curtes de paraules o índexs, símbols inventats i dígits de prova. Cap token pot provindre de noms, dates o preferències personals.
+Definid el prototipo como un patrón didáctico de tres posiciones con un token de cada conjunto neutro, nunca una clave de uso real. Preparad listas ficticias cortas de palabras o índices, símbolos inventados y dígitos de prueba. Ningún token puede provenir de nombres, fechas o preferencias personales.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Escriviu pseudocodi: inicialitzeu variables per a posició i token; seleccioneu una opció d’un conjunt; avanceu la posició; repetiu fins a omplir tres llocs; mostreu només l’índex simbòlic i esborreu-lo en acabar. Anoteu què hauria de passar en cada pas.
+Escribid pseudocódigo: inicializad variables para posición y token; seleccionad una opción de un conjunto; avanzad la posición; repetid hasta llenar tres lugares; mostrad solo el índice simbólico y borradlo al terminar. Anotad qué debería pasar en cada paso.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Planifiqueu casos amb conjunt buit o longitud no permesa, índex mínim i màxim, selecció fora de rang i categoria omesa. Reviseu el pseudocodi si algun cas no té una resposta definida.
+Planificad casos con conjunto vacío o longitud no permitida, índice mínimo y máximo, selección fuera de rango y categoría omitida. Revisad el pseudocódigo si algún caso no tiene una respuesta definida.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Una altra parella segueix l’algorisme amb les llistes de prova i comprova les prediccions. **Evidència:** pseudocodi, llistes fictícies i prediccions dels casos de prova.
+Otra pareja sigue el algoritmo con las listas de prueba y comprueba las predicciones. **Evidencia:** pseudocódigo, listas ficticias y predicciones de los casos de prueba.
 
-### **Sessió 3 · Programem el prototip amb micro:bit (Making a password generator).**
+### **Sesión 3 · Programamos el prototipo con micro:bit (Making a password generator).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Assigneu una variable a cada posició i compareu-la amb el pseudocodi. Predigueu quins índexs simbòlics mostraria una ronda amb tokens de demostració i què ha de fer l’ordre d’esborrat.
+Asignad una variable a cada posición y comparadla con el pseudocódigo. Predecid qué índices simbólicos mostraría una ronda con tokens de demostración y qué debe hacer la orden de borrado.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Programeu inicialització, selecció, condició i repetició limitada. Cada botó inicia una única generació de prova o esborra l’eixida. No mostreu una cadena completa que algú puga confondre amb una credencial real; si l’editor no permet una eixida efímera, simuleu els tokens amb targetes i deixeu la placa en una eixida simbòlica.
+Programad inicialización, selección, condición y repetición limitada. Cada botón inicia una única generación de prueba o borra la salida. No mostréis una cadena completa que alguien pueda confundir con una credencial real; si el editor no permite una salida efímera, simulad los tokens con tarjetas y dejad la placa en una salida simbólica.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Executeu tres rondes amb tokens d’aula, anoteu els índexs i comproveu que cada posició es completa. Compareu el resultat amb la predicció i el pseudocodi.
+Ejecutad tres rondas con tokens de aula, anotad los índices y comprobad que cada posición se completa. Comparad el resultado con la predicción y el pseudocódigo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Assenyaleu una diferència entre el codi i l’algorisme. Canvieu una part —inicialització, límit, ordre o esborrat— i torneu a executar la mateixa prova.
+Señalad una diferencia entre el código y el algoritmo. Cambiad una parte —inicialización, límite, orden o borrado— y volved a ejecutar la misma prueba.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Torneu a l’estat neutre i confirmeu que no hi ha cap credencial real ni historial guardat. **Evidència:** codi anotat, diagrama, resultats de les rondes i comprovació d’esborrat de la pantalla.
+Volved al estado neutro y confirmad que no hay ninguna credencial real ni historial guardado. **Evidencia:** código anotado, diagrama, resultados de las rondas y comprobación de borrado de la pantalla.
 
-### **Sessió 4 · Provem, depurem i avaluem sense afirmar seguretat real.**
+### **Sesión 4 · Probamos, depuramos y evaluamos sin afirmar seguridad real.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu una matriu de proves amb conjunt buit, índex mínim i màxim, categoria omesa, reinici, entrada inesperada i repetició de tokens. Anoteu l’eixida prevista abans d’executar cada cas.
+Preparad una matriz de pruebas con conjunto vacío, índice mínimo y máximo, categoría omitida, reinicio, entrada inesperada y repetición de tokens. Anotad la salida prevista antes de ejecutar cada caso.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Executeu els casos en el prototip didàctic i compareu les eixides previstes i observades. Si una prova no es pot fer de manera efímera o local, representeu-la amb targetes; no introduïu serveis, comptes ni credencials reals.
+Ejecutad los casos en el prototipo didáctico y comparad las salidas previstas y observadas. Si una prueba no se puede hacer de manera efímera o local, representadla con tarjetas; no introduzcáis servicios, cuentas ni credenciales reales.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Classifiqueu cada error com a problema d’inicialització, límit, ordre o estat de reinici. Registreu el cas, el resultat i la causa que l’equip considera més probable.
+Clasificad cada error como problema de inicialización, límite, orden o estado de reinicio. Registrad el caso, el resultado y la causa que el equipo considera más probable.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una part del programa i repetiu el mateix cas, així com els casos relacionats. Reviseu si la correcció manté el flux previst sense guardar ni mostrar una cadena completa.
+Cambiad una parte del programa y repetid el mismo caso, así como los casos relacionados. Revisad si la corrección mantiene el flujo previsto sin guardar ni mostrar una cadena completa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Avalueu si el prototip segueix l’algorisme i expliqueu tres límits: aleatorietat no criptogràfica, eixida visible i absència d’emmagatzematge o gestió segura. Presenteu una pràctica de protecció basada en una font fiable i expliqueu per què no usaríeu el resultat de la placa en un compte. **Evidència:** matriu amb sis casos, versions abans/després, retorn d’un altre equip i declaració de límits.
+Evaluad si el prototipo sigue el algoritmo y explicad tres límites: aleatoriedad no criptográfica, salida visible y ausencia de almacenamiento o gestión segura. Presentad una práctica de protección basada en una fuente fiable y explicad por qué no usaríais el resultado de la placa en una cuenta. **Evidencia:** matriz con seis casos, versiones antes/después, retorno de otro equipo y declaración de límites.
 
-## 📊 Criteris d’èxit i avaluació
+## 📊 Criterios de éxito y evaluación
 
-Recolliu targetes classificades amb justificació, mapa de dades i permisos, pseudocodi, variables, taula de proves, codi revisat i declaració de límits. Valoreu si l’equip (1) reconeix indicis de risc i sap aturar-se/consultar; (2) diferencia prova autoritzada de l’accés no permés; (3) planifica un algorisme amb selecció, variables i repetició delimitada; (4) prova límits i depura amb evidències; i (5) no confon un prototip amb un generador segur. No s’avalua la “qualitat” d’una contrasenya d’ús real ni es demana mostrar cap secret.
+Recoged tarjetas clasificadas con justificación, mapa de datos y permisos, pseudocódigo, variables, tabla de pruebas, código revisado y declaración de límites. Valorad si el equipo (1) reconoce indicios de riesgo y sabe detenerse/consultar; (2) diferencia prueba autorizada de acceso no permitido; (3) planifica un algoritmo con selección, variables y repetición delimitada; (4) prueba límites y depura con evidencias; y (5) no confunde un prototipo con un generador seguro. No se evalúa la “calidad” de una contraseña de uso real ni se pide mostrar ningún secreto.
 
-## 🔐 Privacitat, benestar i resposta a incidents
+## 🔐 Privacidad, bienestar y respuesta a incidentes
 
-No demaneu a ningú que compartisca o introduïsca contrasenyes reals, que reutilitze dades d’un compte o que revele quin servei utilitza. No fotografeu credencials ni guardeu les combinacions de prova; esborreu eixides i targetes en finalitzar. Cap missatge de classe s’envia, s’obre o es reenvia. Si apareix una situació real, pareu, no investigueu el compte pel vostre compte i seguiu el protocol del centre amb una persona adulta responsable. Eviteu etiquetar o culpabilitzar qui rep un missatge enganyós: l’anàlisi és del disseny del missatge i de la resposta segura.
+No pidáis a nadie que comparta o introduzca contraseñas reales, que reutilice datos de una cuenta o que revele qué servicio utiliza. No fotografiéis credenciales ni guardéis las combinaciones de prueba; borrad salidas y tarjetas al finalizar. Ningún mensaje de clase se envía, se abre o se reenvía. Si aparece una situación real, paraos, no investiguéis la cuenta por vuestra cuenta y seguid el protocolo del centro con una persona adulta responsable. Evitad etiquetar o culpabilizar a quien recibe un mensaje engañoso: el análisis es del diseño del mensaje y de la respuesta segura.
 
-## 🔗 Unitat oficial adaptada
+## 🔗 Unidad oficial adaptada
 
-[Introduction to cyber security](https://www.microbit.org/teach/lessons/cyber-security/) consta de tres lliçons i recomana haver treballat abans *Computing fundamentals*. [What is cyber security?](https://microbit.org/teach/lessons/cyber-security-what-is/) tracta importància, hacking ètic, malware i protecció de dades/dispositius; [Strong passwords](https://microbit.org/teach/lessons/cyber-security-strong-passwords/) demana dissenyar, provar i depurar un generador amb selecció i variables; [Making a password generator](https://microbit.org/teach/lessons/cyber-security-password-generator/) porta el pseudocodi a MakeCode i avalua la depuració. Aquesta adaptació conserva els objectius i crea casos ficticis, bastida de pseudocodi i proves específiques. La font s’adreça a 11–14 anys; la seqüència de tercer cicle redueix l’abast, evita comptes reals i no presenta el producte didàctic com a generador criptogràfic.
+[Introduction to cyber security](https://www.microbit.org/teach/lessons/cyber-security/) consta de tres lecciones y recomienda haber trabajado antes *Computing fundamentals*. [What is cyber security?](https://microbit.org/teach/lessons/cyber-security-what-is/) trata la importancia, el hacking ético, el malware y la protección de datos/dispositivos; [Strong passwords](https://microbit.org/teach/lessons/cyber-security-strong-passwords/) pide diseñar, probar y depurar un generador con selección y variables; [Making a password generator](https://microbit.org/teach/lessons/cyber-security-password-generator/) lleva el pseudocódigo a MakeCode y evalúa la depuración. Esta adaptación conserva los objetivos y crea casos ficticios, andamiaje de pseudocódigo y pruebas específicas. La fuente se dirige a 11–14 años; la secuencia de tercer ciclo reduce el alcance, evita cuentas reales y no presenta el producto didáctico como generador criptográfico.

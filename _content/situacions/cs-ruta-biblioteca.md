@@ -15,145 +15,145 @@ challenge: "¿Cómo podemos programar MatataBot para visitar cuatro espacios mie
 official_source: "https://matatalab.com/en/node/95"
 ---
 
-![MatataBot i el Coding Set recorren caselles entre un punt de préstec, un racó de lectura i una prestatgeria.](../../_assets/situacions/cs-ruta-biblioteca.webp)
+![MatataBot y el Coding Set recorren casillas entre un punto de préstamo, un rincón de lectura y una estantería.](../../_assets/situacions/cs-ruta-biblioteca.webp)
 
-_MatataBot i el Coding Set recorren caselles entre un punt de préstec, un racó de lectura i una prestatgeria._
+_MatataBot y el Coding Set recorren casillas entre un punto de préstamo, un rincón de lectura y una estantería._
 
-## ❓ Repte i intenció
+## ❓ Reto e intención
 
-MatataBot és el visitant nou. Cada equip investiga quatre espais públics del centre, representa’n la distribució en un plànol simplificat, crea maquetes lleugeres de paper i codifica una ruta per a guiar la classe. El grup prepara un discurs breu amb informació contrastada i divideix la guia en parades; un llibre fictici pot fer de fil narratiu, però el robot no transporta càrrega. La seqüència localitza i reinterpreta els objectius de *MatataBot’s Guide* en un itinerari de benvinguda propi.
+MatataBot es el visitante nuevo. Cada equipo investiga cuatro espacios públicos del centro, representa su distribución en un plano simplificado, crea maquetas ligeras de papel y codifica una ruta para guiar a la clase. El grupo prepara un discurso breve con información contrastada y divide la guía en paradas; un libro ficticio puede hacer de hilo narrativo, pero el robot no transporta carga. La secuencia localiza y reinterpreta los objetivos de *MatataBot’s Guide* en un itinerario de bienvenida propio.
 
-La guia oficial parteix de l’experiència prèvia amb el mode de programació de Matatalab Lite. Aquesta adaptació trasllada el projecte al Coding Set de la dotació: l’alumnat tradueix la ruta del mapa a blocs tangibles de moviment. Les coordenades serveixen per a comunicar llocs a les persones, no són ordres que el robot puga llegir.
+La guía oficial parte de la experiencia previa con el modo de programación de Matatalab Lite. Esta adaptación traslada el proyecto al Coding Set de la dotación: el alumnado traduce la ruta del mapa a bloques tangibles de movimiento. Las coordenadas sirven para comunicar lugares a las personas, no son órdenes que el robot pueda leer.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Observar l’espai i representar-ne punts d’interés en un mapa miniatura i una graella.
-- Programar una seqüència que visite quatre espais del centre i comprovar-ne el recorregut.
-- Escriure una recomanació original per a un llibre inventat sense copiar sinopsis ni usar dades de lectores.
-- Guiar una altra persona, recollir-ne el retorn i revisar tant el mapa com les ordres.
+- Observar el espacio y representar sus puntos de interés en un mapa en miniatura y una cuadrícula.
+- Programar una secuencia que visite cuatro espacios del centro y comprobar su recorrido.
+- Escribir una recomendación original para un libro inventado sin copiar sinopsis ni usar datos de lectores.
+- Guiar a otra persona, recoger sus comentarios y revisar tanto el mapa como las órdenes.
 
-## 🧰 Materials i preparació docent
+## 🧰 Materiales y preparación docente
 
-Prepareu el Coding Set complet, paper gran per al mapa, regles, retalls de cartó i paper, cinta de pintor, targetes de símbols, llapis, fulls de recerca i un full de registre. Demaneu abans a l’escola informació pública o autoritzada sobre la història i cultura del centre, i delimiteu quins espais es poden observar i representar. No fotografieu persones ni inclogueu horaris, codis d’accés, noms complets o informació de seguretat. Si no hi ha plànol compartible, mesureu o estimeu només relacions de proximitat entre espais amb permís docent, i indiqueu que el mapa és esquemàtic. Per a una prova física, dibuixeu la quadrícula amb caselles de 10 × 10 cm segons l’especificació de Matatalab; comproveu l’alineació del pas del model local amb una ordre curta i registreu desviacions abans de programar la ruta. Un mapa a escala diferent només s’usa per a planificar o simular.
+Preparad el Coding Set completo, papel grande para el mapa, reglas, recortes de cartón y papel, cinta de pintor, tarjetas de símbolos, lápices, hojas de investigación y una hoja de registro. Pedid antes a la escuela información pública o autorizada sobre la historia y cultura del centro, y delimitad qué espacios se pueden observar y representar. No fotografiéis personas ni incluyáis horarios, códigos de acceso, nombres completos o información de seguridad. Si no hay plano compartible, medid o estimad solo relaciones de proximidad entre espacios con permiso docente, e indicad que el mapa es esquemático. Para una prueba física, dibujad la cuadrícula con casillas de 10 × 10 cm según la especificación de Matatalab; comprobad la alineación del paso del modelo local con una orden corta y registrad desviaciones antes de programar la ruta. Un mapa a escala diferente solo se usa para planificar o simular.
 
-Les coordenades (x, y) són una eina per a trobar i comunicar una ubicació en el mapa; MatataBot no rep parelles de coordenades com a codi. L’alumnat tradueix un itinerari entre punts en blocs físics d’avanç, retrocés i gir, tenint en compte l’orientació inicial.
+Las coordenadas (x, y) son una herramienta para encontrar y comunicar una ubicación en el mapa; MatataBot no recibe parejas de coordenadas como código. El alumnado traduce un itinerario entre puntos en bloques físicos de avance, retroceso y giro, teniendo en cuenta la orientación inicial.
 
-## 📅 Seqüència didàctica · quatre sessions de 45 minuts
+## 📅 Secuencia didáctica · cuatro sesiones de 45 minutos
 
-Les quatre sessions sumen 180 minuts, com la durada publicada del projecte de referència: 45 minuts per investigar i iniciar la visita, 90 per al mapa, les maquetes i la programació, i 45 per a les presentacions i la reflexió. La distribució en quatre trobades permet assecar, revisar i provar els materials entre sessions. La proposta local concreta quatre parades; manteniu la mateixa quantitat en el mapa, el guió, el programa i la visita.
+Las cuatro sesiones suman 180 minutos, como la duración publicada del proyecto de referencia: 45 minutos para investigar e iniciar la visita, 90 para el mapa, las maquetas y la programación, y 45 para las presentaciones y la reflexión. La distribución en cuatro encuentros permite secar, revisar y probar los materiales entre sesiones. La propuesta local concreta cuatro paradas; mantened la misma cantidad en el mapa, el guion, el programa y la visita.
 
-### **Sessió 1 · Investiguem el centre que presentarem.**
+### **Sesión 1 · Investigamos el centro que vamos a presentar.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Comenceu amb l’encàrrec: qui arriba per primera vegada i quina informació li seria útil? Cada equip anota què ja sap del centre i quines dades necessita confirmar.
+Empezad con el encargo: ¿quién llega por primera vez y qué información le sería útil? Cada equipo anota qué sabe ya del centro y qué datos necesita confirmar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Consulteu una font del centre o pregunteu a una persona autoritzada sobre la història, cultura o ús compartit de quatre espais. Anoteu font, data i allò que encara no sabeu.
+Consultad una fuente del centro o preguntad a una persona autorizada sobre la historia, cultura o uso compartido de cuatro espacios. Anotad la fuente, la fecha y lo que todavía no sabéis.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu una observació docent guiada o useu notes/esbossos preparats. Identifiqueu entrades, passadissos i llocs visitables sense entrar en zones restringides; registreu només la informació necessària per al plànol.
+Haced una observación docente guiada o usad notas y bocetos preparados. Identificad entradas, pasillos y lugares visitables sin entrar en zonas restringidas; registrad solo la información necesaria para el plano.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Decidiu quina distància representarà cada tram i dibuixeu límits i quatre punts d’interés. Un altre equip comprova si pot trobar l’inici i les destinacions i assenyala què cal aclarir.
+Decidid qué distancia representará cada tramo y dibujad límites y cuatro puntos de interés. Otro equipo comprueba si puede encontrar el inicio y los destinos y señala qué hay que aclarar.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** notes de recerca amb fonts, esbós amb llegenda i escala declarada. Quina informació continua pendent de confirmar?
+**Evidencia:** notas de investigación con fuentes, boceto con leyenda y escala declarada. ¿Qué información sigue pendiente de confirmar?
 
-### **Sessió 2 · Fem el mapa miniatura i les maquetes.**
+### **Sesión 2 · Hacemos el mapa en miniatura y las maquetas.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Reviseu l’esbós de la sessió anterior i prediu quina informació ha de mantindre’s perquè el mapa siga llegible i conserve l’escala.
+Revisad el boceto de la sesión anterior y predecid qué información debe mantenerse para que el mapa sea legible y conserve la escala.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Traslladeu passadissos i ubicacions amb la mateixa escala. Afegiu títol, nord o orientació inicial, llegenda i una quadrícula amb lletres i nombres.
+Trasladad pasillos y ubicaciones con la misma escala. Añadid título, norte u orientación inicial, leyenda y una cuadrícula con letras y números.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Creeu maquetes tridimensionals simples de paper per als edificis o espais representats; manteniu-les baixes i fora de la trajectòria del robot o substituïu-les per símbols plans. Assigneu coordenades als llocs.
+Cread maquetas tridimensionales sencillas de papel para los edificios o espacios representados; mantenedlas bajas y fuera de la trayectoria del robot o sustituidlas por símbolos planos. Asignad coordenadas a los lugares.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu que cada persona trobe una destinació a partir d’una parella ordenada. Contrasteu que les maquetes i els símbols conserven la posició relativa al mapa i que l’escala no ha canviat.
+Haced que cada persona encuentre un destino a partir de una pareja ordenada. Contrastad que las maquetas y los símbolos conservan la posición relativa en el mapa y que la escala no ha cambiado.
 
-![MatataBot, la torre i el tauler Coding Set de la dotació al costat d’un mapa miniatura de biblioteca, racó de lectura i hort escolar.](../../_assets/situacions/sa-cs-ruta-biblioteca-plano.webp)
+![MatataBot, la torre y el tablero Coding Set de la dotación junto a un mapa en miniatura de biblioteca, rincón de lectura y huerto escolar.](../../_assets/situacions/sa-cs-ruta-biblioteca-plano.webp)
 
-_La graella localitza els espais al mapa; l’alumnat tradueix la ruta a fitxes físiques perquè MatataBot es moga, ja que el robot no rep coordenades ni transporta llibres._
+_La cuadrícula localiza los espacios en el mapa; el alumnado traduce la ruta a fichas físicas para que MatataBot se mueva, ya que el robot no recibe coordenadas ni transporta libros._
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa llegible amb quatre maquetes o símbols i targetes de coordenades. Quina informació ens dona la coordenada i quina informació necessitarà el robot per moure’s?
+**Evidencia:** mapa legible con cuatro maquetas o símbolos y tarjetas de coordenadas. ¿Qué información nos da la coordenada y qué información necesitará el robot para moverse?
 
-### **Sessió 3 · Codifiquem i escrivim la visita guiada.**
+### **Sesión 3 · Codificamos y escribimos la visita guiada.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu un punt d’inici, l’ordre de les quatre parades i una ruta que el robot puga recórrer sense xocar. Marqueu amb una fletxa la seua orientació inicial i predigueu cada gir.
+Elegid un punto de inicio, el orden de las cuatro paradas y una ruta que el robot pueda recorrer sin chocar. Marcad con una flecha su orientación inicial y predecid cada giro.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Convertiu la ruta dibuixada en blocs de moviment. Col·loqueu la seqüència d’esquerra a dreta i proveu un tram cada vegada.
+Convertid la ruta dibujada en bloques de movimiento. Colocad la secuencia de izquierda a derecha y probad un tramo cada vez.
 
-![MatataBot i torre reals del Coding Set al costat d’un mapa miniatura amb ruta i d’una seqüència de blocs físics.](../../_assets/situacions/sa-cs-biblioteca-codi-mapa-v1.webp)
+![MatataBot y la torre reales del Coding Set junto a un mapa en miniatura con ruta y a una secuencia de bloques físicos.](../../_assets/situacions/sa-cs-biblioteca-codi-mapa-v1.webp)
 
-_El mapa guia les persones; el programa tangible envia ordres de moviment al robot. Les coordenades no són una entrada directa del Coding Set._
+_El mapa guía a las personas; el programa tangible envía órdenes de movimiento al robot. Las coordenadas no son una entrada directa del Coding Set._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Redacteu quatre fragments de visita guiada de dues o tres frases: nom de l’espai, un fet verificat i què pot descobrir-hi el visitant. Citeu oralment la font o assenyaleu-la en una targeta docent; no inventeu fets locals.
+Redactad cuatro fragmentos de visita guiada de dos o tres frases: nombre del espacio, un hecho verificado y qué puede descubrir allí el visitante. Citad oralmente la fuente o señaladla en una tarjeta docente; no inventéis hechos locales.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si MatataBot s’allunya de la ruta, registreu la casella, l’orientació i el primer bloc que cal revisar. Depureu una instrucció i practiqueu la narració sincronitzada amb les parades.
+Si MatataBot se aleja de la ruta, registrad la casilla, la orientación y el primer bloque que hay que revisar. Depurad una instrucción y practicad la narración sincronizada con las paradas.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** guió de visita, programa i registre d’una prova. El mapa de coordenades i les ordres del robot descriuen la mateixa ruta de maneres diferents?
+**Evidencia:** guion de visita, programa y registro de una prueba. ¿El mapa de coordenadas y las órdenes del robot describen la misma ruta de maneras diferentes?
 
-### **Sessió 4 · Guiem MatataBot i revisem el projecte.**
+### **Sesión 4 · Guiamos a MatataBot y revisamos el proyecto.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Situeu mapa, maquetes i senyal d’inici; assigneu qui programa, qui narra i qui registra. Predigueu si el públic podrà seguir la ruta només amb el mapa i el discurs.
+Situad mapa, maquetas y señal de inicio; asignad quién programa, quién narra y quién registra. Predecid si el público podrá seguir la ruta solo con el mapa y el discurso.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Cada equip mostra el codi, fa el recorregut i presenta els espais amb el discurs. El públic segueix el mapa i marca les quatre parades.
+Cada equipo muestra el código, hace el recorrido y presenta los espacios con el discurso. El público sigue el mapa y marca las cuatro paradas.
 
-![MatataBot i torre reals del Coding Set al costat del mapa final de quatre espais i de targetes visuals per a la presentació.](../../_assets/situacions/sa-cs-biblioteca-visita-v1.webp)
+![MatataBot y la torre reales del Coding Set junto al mapa final de cuatro espacios y a tarjetas visuales para la presentación.](../../_assets/situacions/sa-cs-biblioteca-visita-v1.webp)
 
-_La persona guia narra les parades i el públic consulta les targetes; MatataBot només recorre la ruta programada i no transporta el llibre fictici._
+_La persona guía narra las paradas y el público consulta las tarjetas; MatataBot solo recorre la ruta programada y no transporta el libro ficticio._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una altra parella indica un punt fort i formula una pregunta concreta sobre escala, informació o ruta. Registreu el retorn i la parada a què fa referència.
+Otra pareja indica un punto fuerte y formula una pregunta concreta sobre escala, información o ruta. Registrad los comentarios y la parada a la que se refieren.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Corregiu una part del mapa o del programa a partir del retorn i torneu a comprovar que el recorregut es pot seguir.
+Corregid una parte del mapa o del programa a partir de los comentarios y volved a comprobar que el recorrido se puede seguir.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Responeu: què ens ha costat, quina font hem utilitzat i com ens hem repartit el treball? **Evidència:** visita completa, mapa final, programa revisat i reflexió individual o dictada.
+Responded: ¿qué nos ha costado, qué fuente hemos utilizado y cómo nos hemos repartido el trabajo? **Evidencia:** visita completa, mapa final, programa revisado y reflexión individual o dictada.
 
-## 🧭 Registre, rúbrica i evidències
+## 🧭 Registro, rúbrica y evidencias
 
-Conserveu la font i data de cada dada, l’esbós, l’escala escrita, la quadrícula, la llegenda, les coordenades de les parades, les maquetes, el guió, la seqüència de blocs i els resultats de les proves. Valoreu amb tres nivells —amb modelatge, amb alguna pista, de manera autònoma i explicada— si l’equip (1) representa posicions relatives i usa l’escala amb coherència; (2) localitza llocs en una graella sense confondre (x, y) amb una ordre del robot; (3) programa i depura la ruta considerant orientació; i (4) comparteix dades verificades amb una audiència. L’èxit no depén de la ruta més curta: també compten una visita segura, comprensible i fidel al mapa.
+Conservad la fuente y la fecha de cada dato, el boceto, la escala escrita, la cuadrícula, la leyenda, las coordenadas de las paradas, las maquetas, el guion, la secuencia de bloques y los resultados de las pruebas. Valorad con tres niveles —con modelado, con alguna pista, de manera autónoma y explicada— si el equipo (1) representa posiciones relativas y usa la escala con coherencia; (2) localiza lugares en una cuadrícula sin confundir (x, y) con una orden del robot; (3) programa y depura la ruta considerando la orientación; y (4) comparte datos verificados con una audiencia. El éxito no depende de la ruta más corta: también cuentan una visita segura, comprensible y fiel al mapa.
 
-## ♿ Participació, accessibilitat i seguretat
+## ♿ Participación, accesibilidad y seguridad
 
-Oferiu plànol d’alt contrast, símbols en relleu, coordenades en targetes grans i versions de ruta amb menys parades. Els rols poden ser investigador/a, cartògraf/a, constructor/a, programador/a, guia oral, narrador/a amb comunicació augmentativa o auditor/a de fonts; no cal fer la visita física per participar. En lloc d’una excursió, podeu treballar amb notes i esbossos de llocs públics preparats pel centre. Manteniu models lluny dels passadissos de moviment, no tapeu sensors o rodes i atureu el robot abans de moure maquetes. La visita real es fa només en zones autoritzades i amb les normes habituals del centre.
+Ofreced plano de alto contraste, símbolos en relieve, coordenadas en tarjetas grandes y versiones de ruta con menos paradas. Los roles pueden ser investigador/a, cartógrafo/a, constructor/a, programador/a, guía oral, narrador/a con comunicación aumentativa o auditor/a de fuentes; no hace falta hacer la visita física para participar. En lugar de una excursión, podéis trabajar con notas y bocetos de lugares públicos preparados por el centro. Mantened las maquetas lejos de los pasillos de movimiento, no tapéis sensores ni ruedas y detened el robot antes de mover maquetas. La visita real se hace solo en zonas autorizadas y con las normas habituales del centro.
 
-## 📚 Connexió cultural pròpia
+## 📚 Conexión cultural propia
 
-La classe pot vincular el recorregut a un espai de lectura, un pati, una aula taller o un element de memòria del centre. Si es vol afegir patrimoni de la localitat, useu fonts municipals, de biblioteca o d’una entitat cultural i distingiu el que està documentat del que és una narració inventada. Els personatges i el fil del llibre són creats per l’alumnat; els fets de la visita es verifiquen per separat.
+La clase puede vincular el recorrido a un espacio de lectura, un patio, un aula taller o un elemento de memoria del centro. Si se quiere añadir patrimonio de la localidad, usad fuentes municipales, de biblioteca o de una entidad cultural y distinguid lo que está documentado de lo que es una narración inventada. Los personajes y el hilo del libro son creados por el alumnado; los hechos de la visita se verifican por separado.
 
-## 🔗 Referents oficials i adaptació
+## 🔗 Referentes oficiales y adaptación
 
-[MatataBot’s Guide](https://matatalab.com/en/node/95) és un projecte per a presentar l’escola a un robot visitant: la guia publicada proposa 45 minuts d’investigació i visita, 90 minuts per a dibuixar el recinte a escala, crear maquetes de paper i codificar ruta/discurs, i 45 minuts de presentació i retorn. La pàgina esmenta com a coneixement previ el mode de programació de Matatalab Lite; aquesta adaptació el trasllada a una seqüència física del Coding Set, sense confondre les dues interfícies. Conserva investigació de la cultura i distribució del centre, mini-plànol a escala, maquetes tridimensionals, ruta programada i discurs de guia; els converteix en una benvinguda pròpia amb fets locals verificats i protocols de privacitat. A diferència de la font, ofereix opcions basades en esbossos preparats quan la visita no és possible i explicita que les coordenades són de mapa, no instruccions que MatataBot entenga directament. Els personatges, guió, mapa, pictogrames i visuals intercalats són originals i basats en el robot i la torre reals. La parada de préstec connecta també amb la idea de destinacions de [Delivery Animals](https://matatalab.com/en/node/86), sense afirmar que el robot transporte llibres.
+[MatataBot’s Guide](https://matatalab.com/en/node/95) es un proyecto para presentar la escuela a un robot visitante: la guía publicada propone 45 minutos de investigación y visita, 90 minutos para dibujar el recinto a escala, crear maquetas de papel y codificar ruta y discurso, y 45 minutos de presentación y comentarios. La página menciona como conocimiento previo el modo de programación de Matatalab Lite; esta adaptación lo traslada a una secuencia física del Coding Set, sin confundir las dos interfaces. Conserva la investigación de la cultura y distribución del centro, el miniplano a escala, las maquetas tridimensionales, la ruta programada y el discurso de guía; los convierte en una bienvenida propia con hechos locales verificados y protocolos de privacidad. A diferencia de la fuente, ofrece opciones basadas en bocetos preparados cuando la visita no es posible y explicita que las coordenadas son de mapa, no instrucciones que MatataBot entienda directamente. Los personajes, guion, mapa, pictogramas y visuales intercalados son originales y se basan en el robot y la torre reales. La parada de préstamo conecta también con la idea de destinos de [Delivery Animals](https://matatalab.com/en/node/86), sin afirmar que el robot transporte libros.

@@ -15,142 +15,142 @@ challenge: "¿Cómo podemos programar un giro interior concreto y comprobar qué
 official_source: "https://matatalab.com/en/node/84"
 ---
 
-![MatataBot i la torre del Coding Set al costat d'una làmina de triangles i una roseta geomètrica inspirada en la ceràmica valenciana.](../../_assets/situacions/cs-angles-ceramica.webp)
+![MatataBot y la torre del Coding Set junto a una lámina de triángulos y una roseta geométrica inspirada en la cerámica valenciana.](../../_assets/situacions/cs-angles-ceramica.webp)
 
-_La làmina és una composició pròpia. El dibuix amb tinta només es fa si el centre disposa de l'Artist Add-On; amb el kit base, MatataBot recorre la seqüència sense dibuixar._
+_La lámina es una composición propia. El dibujo con tinta solo se hace si el centro dispone del Artist Add-On; con el kit base, MatataBot recorre la secuencia sin dibujar._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-El grup prepara una mostra de geometria per a un passadís de l'escola. A partir de patrons de ceràmica i rajoles de l'entorn, cada parella dissenya una roseta pròpia i investiga com representar-hi triangles diferents. El repte és distingir l'angle interior de la figura del gir que executa el robot: quan MatataBot completa un costat i gira per continuar el contorn, el bloc d'angle representa el gir exterior suplementari.
+El grupo prepara una muestra de geometría para un pasillo de la escuela. A partir de patrones de cerámica y baldosas del entorno, cada pareja diseña una roseta propia e investiga cómo representar en ella triángulos diferentes. El reto es distinguir el ángulo interior de la figura del giro que ejecuta el robot: cuando MatataBot completa un lado y gira para continuar el contorno, el bloque de ángulo representa el giro exterior suplementario.
 
-La proposta adapta l'activitat pública *Draw triangles* de Matatalab: recupera el triangle equilàter, la suma dels angles interiors, la prova amb angles rectes, aguts i obtusos, el treball per parelles i l'extensió amb un pentagrama o paral·lelogram. La seqüència, la roseta, les targetes de repte i els registres són originals. Si no hi ha Artist Add-On, les parelles fan que el robot recórrega una quadrícula sense llapis i traslladen el traçat al paper; aquesta alternativa no atribueix dibuix al Coding Set base.
+La propuesta adapta la actividad pública *Draw triangles* de Matatalab: recupera el triángulo equilátero, la suma de los ángulos interiores, la prueba con ángulos rectos, agudos y obtusos, el trabajo por parejas y la extensión con un pentagrama o paralelogramo. La secuencia, la roseta, las tarjetas de reto y los registros son originales. Si no hay Artist Add-On, las parejas hacen que el robot recorra una cuadrícula sin lápiz y trasladan el trazado al papel; esta alternativa no atribuye dibujo al Coding Set base.
 
-**Pregunta guia:** com podem saber quin gir ha de fer el robot quan volem construir un angle interior determinat?
+**Pregunta guía:** ¿cómo podemos saber qué giro debe hacer el robot cuando queremos construir un ángulo interior determinado?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Classificar angles aguts, rectes i obtusos, i reconéixer-los dins de triangles.
-- Comprovar que els angles interiors d'un triangle sumen 180° i que els tres angles d'un triangle equilàter mesuren 60°.
-- Relacionar l'angle interior amb el gir exterior suplementari que necessita el robot per continuar el contorn.
-- Escriure, provar i depurar una seqüència de blocs d'angle i moviment amb una predicció explícita.
-- Crear una composició geomètrica original i comunicar quina part és una ruta del robot i quina part és decoració manual.
+- Clasificar ángulos agudos, rectos y obtusos, y reconocerlos dentro de triángulos.
+- Comprobar que los ángulos interiores de un triángulo suman 180° y que los tres ángulos de un triángulo equilátero miden 60°.
+- Relacionar el ángulo interior con el giro exterior suplementario que necesita el robot para continuar el contorno.
+- Escribir, probar y depurar una secuencia de bloques de ángulo y movimiento con una predicción explícita.
+- Crear una composición geométrica original y comunicar qué parte es una ruta del robot y qué parte es decoración manual.
 
-**Vocabulari clau:** vèrtex, costat, angle interior, gir exterior, suplementari, agut, recte, obtús, equilàter, programa, repetició.
+**Vocabulario clave:** vértice, lado, ángulo interior, giro exterior, suplementario, agudo, recto, obtuso, equilátero, programa, repetición.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Coding Set: MatataBot, torre, tauler, blocs de moviment, gir, angle i bucle disponibles al centre.
-- Artist Add-On compatible només si el centre el té: suport, llapis i blocs d'angle. La guia oficial enumera deu valors amb dos blocs per valor (30°, 36°, 45°, 60°, 72°, 108°, 120°, 135°, 144° i 150°); inventarieu les peces físiques abans de planificar el traçat i no forceu cap bloc.
-- Paper gran, regla, llapis, cartolina, targetes originals amb angles interiors i una quadrícula amb punt d'inici i orientació marcats.
-- Full de registre amb columnes **figura**, **angle interior previst**, **bloc de gir**, **predicció**, **resultat observat** i **revisió**.
+- Coding Set: MatataBot, torre, tablero y bloques de movimiento, giro, ángulo y bucle disponibles en el centro.
+- Artist Add-On compatible solo si el centro lo tiene: soporte, lápiz y bloques de ángulo. La guía oficial enumera diez valores con dos bloques por valor (30°, 36°, 45°, 60°, 72°, 108°, 120°, 135°, 144° y 150°); inventariad las piezas físicas antes de planificar el trazado y no forcéis ningún bloque.
+- Papel grande, regla, lápiz, cartulina, tarjetas originales con ángulos interiores y una cuadrícula con punto de inicio y orientación marcados.
+- Hoja de registro con columnas **figura**, **ángulo interior previsto**, **bloque de giro**, **predicción**, **resultado observado** y **revisión**.
 
-Comproveu el terra o la superfície del tauler, la càrrega del robot i la lectura correcta de la torre. En la prova amb llapis, assegureu el paper perquè no es desplace. No confongueu el nombre imprés en un bloc d'angle amb l'angle interior dibuixat: la guia del fabricant indica que el robot traça el seu suplementari. Amb el kit base, feu la mateixa prova com a recorregut sobre quadrícula i registreu que la figura de paper l'ha dibuixada l'alumnat.
+Comprobad el suelo o la superficie del tablero, la carga del robot y la lectura correcta de la torre. En la prueba con lápiz, asegurad el papel para que no se desplace. No confundáis el número impreso en un bloque de ángulo con el ángulo interior dibujado: la guía del fabricante indica que el robot traza su suplementario. Con el kit base, haced la misma prueba como recorrido sobre cuadrícula y registrad que la figura de papel la ha dibujado el alumnado.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### De la rajola al triangle (50 min)
+### De la baldosa al triángulo (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu una rajola o una fotografia de ceràmica i una plantilla original amb tres triangles. L'alumnat marca vèrtexs i costats, classifica els angles com a aguts, rectes o obtusos i prediu si tots els triangles poden tindre els mateixos angles.
+Mostrad una baldosa o una fotografía de cerámica y una plantilla original con tres triángulos. El alumnado marca vértices y lados, clasifica los ángulos como agudos, rectos u obtusos y predice si todos los triángulos pueden tener los mismos ángulos.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Amb regle i transportador opcional, construïu un triangle equilàter gran sobre paper. Mesureu els tres angles i anoteu les dades abans de provar el robot. Una parella construeix una segona còpia amb tires de paper; si les longituds són iguals, compareu-ne els angles sense dependre del color de la plantilla.
+Con regla y transportador opcional, construid un triángulo equilátero grande sobre papel. Medid los tres ángulos y anotad los datos antes de probar el robot. Una pareja construye una segunda copia con tiras de papel; si las longitudes son iguales, comparad sus ángulos sin depender del color de la plantilla.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Completeu una taula amb els tres angles interiors. Comproveu que cadascun és de 60° i que junts sumen 180°. Dibuixeu una fletxa al vèrtex per indicar la direcció en què continuarà el robot després d'arribar-hi.
+Completad una tabla con los tres ángulos interiores. Comprobad que cada uno es de 60° y que juntos suman 180°. Dibujad una flecha en el vértice para indicar la dirección en la que continuará el robot después de llegar a él.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Un equip explica la figura sense dir la resposta i l'altre comprova les mesures. Si els costats o angles no concorden, reviseu la construcció abans de programar; així separeu un error de dibuix d'un error de seqüència.
+Un equipo explica la figura sin decir la respuesta y el otro comprueba las medidas. Si los lados o ángulos no concuerdan, revisad la construcción antes de programar; así separáis un error de dibujo de un error de secuencia.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** triangle amb vèrtexs i mesures anotades, suma dels angles i predicció escrita. **Pregunta docent:** quina prova tenim que la figura és equilàtera i no només sembla regular?
+**Evidencia:** triángulo con vértices y medidas anotadas, suma de los ángulos y predicción escrita. **Pregunta docente:** ¿qué prueba tenemos de que la figura es equilátera y no solo parece regular?
 
-### Un gir exterior per a cada vèrtex (50 min)
+### Un giro exterior para cada vértice (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Col·loqueu MatataBot amb el nas orientat al primer costat del triangle. En un vèrtex, compareu l'angle interior de 60° amb el canvi de direcció necessari per seguir el contorn. Cada parella dibuixa les dues mesures en colors o símbols diferents i prediu quin valor haurà d'indicar el bloc d'angle.
+Colocad MatataBot con la nariz orientada al primer lado del triángulo. En un vértice, comparad el ángulo interior de 60° con el cambio de dirección necesario para seguir el contorno. Cada pareja dibuja las dos medidas en colores o símbolos diferentes y predice qué valor deberá indicar el bloque de ángulo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Reviseu la guia del fabricant i prepareu la seqüència amb tres costats i girs repetits. En la versió amb Artist Add-On, feu primer una prova curta sobre paper; en la versió base, col·loqueu el robot sobre una quadrícula i compteu els passos de cada costat. La proposta oficial assenyala que per al triangle equilàter es fan servir blocs de gir de 120°, no de 60°, perquè el valor del traç interior i el gir del robot són suplementaris.
+Revisad la guía del fabricante y preparad la secuencia con tres lados y giros repetidos. En la versión con Artist Add-On, haced primero una prueba corta sobre papel; en la versión base, colocad el robot sobre una cuadrícula y contad los pasos de cada lado. La propuesta oficial señala que para el triángulo equilátero se usan bloques de giro de 120°, no de 60°, porque el valor del trazado interior y el giro del robot son suplementarios.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Registreu la relació 60° + 120° = 180°. Indiqueu clarament en quina columna està l'angle de la figura i en quina el bloc que utilitza el robot. Si la interfície o el bloc del centre no mostra un valor comprovat, descriviu el gir observat i no inventeu la peça necessària.
+Registrad la relación 60° + 120° = 180°. Indicad claramente en qué columna está el ángulo de la figura y en cuál el bloque que utiliza el robot. Si la interfaz o el bloque del centro no muestra un valor comprobado, describid el giro observado y no inventéis la pieza necesaria.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu o simuleu una volta completa i observeu si el robot torna prop del punt inicial i amb una orientació coherent. Canvieu una variable cada vegada: angle del bloc, longitud del costat o punt d'inici. Amb l'accessori, retireu el llapis durant les proves de posició per evitar marques superposades.
+Ejecutad o simulad una vuelta completa y observad si el robot vuelve cerca del punto inicial y con una orientación coherente. Cambiad una variable cada vez: ángulo del bloque, longitud del lado o punto de inicio. Con el accesorio, retirad el lápiz durante las pruebas de posición para evitar marcas superpuestas.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** seqüència anotada, dibuix dels dos angles i comparació entre predicció i resultat. **Criteri:** l'equip explica per què 60° és l'angle interior mentre 120° és el gir exterior del triangle equilàter.
+**Evidencia:** secuencia anotada, dibujo de los dos ángulos y comparación entre predicción y resultado. **Criterio:** el equipo explica por qué 60° es el ángulo interior mientras que 120° es el giro exterior del triángulo equilátero.
 
-![MatataBot i la torre reals del Coding Set al costat d’un triangle equilàter: el sector interior i la fletxa exterior representen dos angles diferents en el mateix vèrtex.](../../_assets/situacions/sa-cs-angulos-gir-exterior-v1.webp)
+![MatataBot y la torre reales del Coding Set junto a un triángulo equilátero: el sector interior y la flecha exterior representan dos ángulos diferentes en el mismo vértice.](../../_assets/situacions/sa-cs-angulos-gir-exterior-v1.webp)
 
-_Esquema conceptual del gir: el bloc d’angle només es prova amb Artist Add-On; amb el kit base es valida la seqüència com a recorregut, sense dibuix amb tinta._
+_Esquema conceptual del giro: el bloque de ángulo solo se prueba con Artist Add-On; con el kit base se valida la secuencia como recorrido, sin dibujo con tinta._
 
-### Reptes de triangles: recte, agut i obtús (50 min)
+### Retos de triángulos: recto, agudo y obtuso (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu tres targetes originals amb reptes de triangle: un amb un angle recte, un amb angles aguts i un amb un angle obtús. Abans de col·locar blocs, cada parella dibuixa l'angle interior desitjat i escriu quin gir exterior l'ajudaria a continuar el costat.
+Preparad tres tarjetas originales con retos de triángulo: uno con un ángulo recto, uno con ángulos agudos y uno con un ángulo obtuso. Antes de colocar bloques, cada pareja dibuja el ángulo interior deseado y escribe qué giro exterior le ayudaría a continuar el lado.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Per torns, una persona proposa el repte i l'altra prepara primer el gir al vèrtex i després una seqüència de moviment per completar els costats. La guia oficial planteja que el costat final pot quedar inicialment massa llarg o curt: useu-ho com a dada de calibratge, mesureu la diferència i anoteu quin bloc cal ajustar. Si no hi ha Artist Add-On, el robot recorre la ruta en la quadrícula i l'equip completa el triangle en paper.
+Por turnos, una persona propone el reto y la otra prepara primero el giro en el vértice y después una secuencia de movimiento para completar los lados. La guía oficial plantea que el lado final puede quedar inicialmente demasiado largo o corto: usadlo como dato de calibración, medid la diferencia y anotad qué bloque hay que ajustar. Si no hay Artist Add-On, el robot recorre la ruta en la cuadrícula y el equipo completa el triángulo en papel.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu l'angle interior del dibuix amb el gir codificat. Classifiqueu el resultat i expliqueu què ha passat amb el tancament del triangle. No canvieu alhora longitud i gir; manteniu el registre prou clar perquè una altra parella puga repetir la prova.
+Comparad el ángulo interior del dibujo con el giro codificado. Clasificad el resultado y explicad qué ha pasado con el cierre del triángulo. No cambiéis a la vez longitud y giro; mantened el registro lo bastante claro para que otra pareja pueda repetir la prueba.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu les targetes amb una altra parella. L'equip visitant comprova si el programa correspon al repte i prova una sola millora. Si el tauler del centre només admet girs en valors fixos, trieu un repte possible amb els blocs reals o presenteu la part no executable com a model de paper, no com a funció provada del robot.
+Intercambiad las tarjetas con otra pareja. El equipo visitante comprueba si el programa corresponde al reto y prueba una sola mejora. Si el tablero del centro solo admite giros en valores fijos, elegid un reto posible con los bloques reales o presentad la parte no ejecutable como modelo de papel, no como función probada del robot.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** tres targetes amb mesures, seqüències i una nota de depuració. **Pregunta docent:** com has distingit que calia canviar l'angle d'un vèrtex i no la llargària del costat?
+**Evidencia:** tres tarjetas con medidas, secuencias y una nota de depuración. **Pregunta docente:** ¿cómo has distinguido que había que cambiar el ángulo de un vértice y no la longitud del lado?
 
-### Una roseta pròpia per a l'escola (50 min)
+### Una roseta propia para la escuela (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Observeu les proves i identifiqueu una figura que es puga repetir al voltant d'un centre. Cada equip dibuixa una roseta geomètrica inspirada en formes de l'entorn, sense copiar una rajola concreta; marqueu quins elements es poden recórrer amb el robot i quins es completaran a mà.
+Observad las pruebas e identificad una figura que se pueda repetir alrededor de un centro. Cada equipo dibuja una roseta geométrica inspirada en formas del entorno, sin copiar una baldosa concreta; marcad qué elementos se pueden recorrer con el robot y cuáles se completarán a mano.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dissenyeu una composició pròpia amb triangles i una repetició senzilla. Si el centre disposa de l'accessori, proveu el traçat amb blocs d'angle i bucle seguint el manual; sense ell, programeu el recorregut de vèrtexs i dibuixeu la roseta amb regla i llapis. L'extensió opcional és plantejar un paral·lelogram o pentagrama com a problema per a una altra sessió, no assumir que el programa quedarà resolt amb una seqüència que no s'ha comprovat.
+Diseñad una composición propia con triángulos y una repetición sencilla. Si el centro dispone del accesorio, probad el trazado con bloques de ángulo y bucle siguiendo el manual; sin él, programad el recorrido de vértices y dibujad la roseta con regla y lápiz. La extensión opcional es plantear un paralelogramo o pentagrama como problema para otra sesión, no asumir que el programa quedará resuelto con una secuencia que no se ha comprobado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Afegiu una llegenda amb els angles interiors mesurats i els girs provats. Una altra parella ha de poder identificar el punt d'inici, l'ordre de les peces i quines parts de la composició són manuals.
+Añadid una leyenda con los ángulos interiores medidos y los giros probados. Otra pareja debe poder identificar el punto de inicio, el orden de las piezas y qué partes de la composición son manuales.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu una prova d'intercanvi: el grup visitant interpreta la llegenda i reconstrueix el recorregut o la simulació. Registreu on dubta, reviseu una instrucció i torneu-la a provar. Manteniu els materials de retall i adhesiu en una estació amb supervisió.
+Haced una prueba de intercambio: el grupo visitante interpreta la leyenda y reconstruye el recorrido o la simulación. Registrad dónde duda, revisad una instrucción y volved a probarla. Mantened los materiales de recorte y adhesivo en una estación con supervisión.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** roseta, llegenda, seqüència, registre de la prova d'una altra parella i una explicació del límit entre accessori i kit base. **Tancament:** «El gir que més ens ha sorprés és… perquè…».
+**Evidencia:** roseta, leyenda, secuencia, registro de la prueba de otra pareja y una explicación del límite entre accesorio y kit base. **Cierre:** «El giro que más nos ha sorprendido es… porque…».
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu les plantilles mesurades, les targetes de repte, els programes o simulacions, les proves abans/després i la roseta final. Valoreu si l'alumnat classifica els angles, comprova la suma de 180°, distingeix interior i exterior, canvia una variable cada vegada i comunica els límits de la seua prova. La precisió de dibuix, l'ús del color i la velocitat no són criteris d'èxit.
+Recoged las plantillas medidas, las tarjetas de reto, los programas o simulaciones, las pruebas antes/después y la roseta final. Valorad si el alumnado clasifica los ángulos, comprueba la suma de 180°, distingue interior y exterior, cambia una variable cada vez y comunica los límites de su prueba. La precisión de dibujo, el uso del color y la velocidad no son criterios de éxito.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Oferiu plantilles amb angles en relleu, peces grans per a representar vèrtexs, quadrícules d'alt contrast i mesures impreses per a qui no puga usar el transportador. Es pot participar com a programador/a, mesurador/a, verificador/a, relator/a o dissenyador/a de targetes. L'audició i la manipulació fina no són necessàries. Manteniu els dits fora de la trajectòria del robot, assegureu el paper i useu tisores escolars amb supervisió; no munteu l'accessori de llapis si no teniu el model i les instruccions compatibles.
+Ofreced plantillas con ángulos en relieve, piezas grandes para representar vértices, cuadrículas de alto contraste y medidas impresas para quien no pueda usar el transportador. Se puede participar como programador/a, medidor/a, verificador/a, relator/a o diseñador/a de tarjetas. La audición y la manipulación fina no son necesarias. Mantened los dedos fuera de la trayectoria del robot, asegurad el papel y usad tijeras escolares con supervisión; no montéis el accesorio de lápiz si no tenéis el modelo y las instrucciones compatibles.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [Draw triangles](https://matatalab.com/en/node/84): activitat pública que treballa classificació d'angles i triangles, suma de 180°, triangle equilàter, gir de 120° per al contorn, proves amb triangles rectangles/aguts/obtusos, intercanvi de reptes en parelles i extensió amb paral·lelogram o pentagrama.
-- Matatalab, [Artist Add-On](https://matatalab.com/en/node/64): inventari de deu valors de bloc d'angle, instruccions per combinar blocs d'angle amb moviment i gir, i aclariment que el bloc descriu el gir suplementari.
+- Matatalab, [Draw triangles](https://matatalab.com/en/node/84): actividad pública que trabaja la clasificación de ángulos y triángulos, la suma de 180°, el triángulo equilátero, el giro de 120° para el contorno, pruebas con triángulos rectángulos/agudos/obtusos, intercambio de retos en parejas y extensión con paralelogramo o pentagrama.
+- Matatalab, [Artist Add-On](https://matatalab.com/en/node/64): inventario de diez valores de bloque de ángulo, instrucciones para combinar bloques de ángulo con movimiento y giro, y aclaración de que el bloque describe el giro suplementario.
 
-Aquesta situació amplia els objectius i procediments públics amb una seqüència original de quatre sessions, proves calibrables, una temàtica de ceràmica local, accessibilitat i una alternativa completa amb el kit base. No reprodueix les imatges, materials gràfics ni redacció de Matatalab; el traçat amb tinta queda condicionat a l'Artist Add-On real i compatible del centre.
+Esta situación amplía los objetivos y procedimientos públicos con una secuencia original de cuatro sesiones, pruebas calibrables, una temática de cerámica local, accesibilidad y una alternativa completa con el kit base. No reproduce las imágenes, materiales gráficos ni la redacción de Matatalab; el trazado con tinta queda condicionado al Artist Add-On real y compatible del centro.

@@ -14,33 +14,33 @@ duration: "6 lecciones · 8–12 sesiones"
 challenge: "¿Cómo puede una lista Python organizar datos en orden, comparar colecciones y convertir señales de color en piezas de una historia colaborativa?"
 ---
 
-![Robot LEGO SPIKE Prime amb sensor de color davant de targetes geomètriques ordenades sobre una taula de biblioteca escolar.](../../_assets/situacions/sp-python-llistes.webp)
+![Robot LEGO SPIKE Prime con sensor de color frente a tarjetas geométricas ordenadas sobre una mesa de biblioteca escolar.](../../_assets/situacions/sp-python-llistes.webp)
 
-_Les llistes donen ordre i estructura a les dades; les targetes i la lectura del sensor fan visible la seqüència._
+_Las listas dan orden y estructura a los datos; las tarjetas y la lectura del sensor hacen visible la secuencia._
 
-## 🌱 Repte i relat
+## 🌱 Reto y relato
 
-La biblioteca prepara una activitat de microrelats del barri: cada grup crea una seqüència curta a partir de targetes de lloc, objecte i acció, i una maqueta SPIKE ajuda a triar o revelar la pròxima targeta. En Python, les targetes s’organitzen en llistes; el programa consulta posicions, compara una llista d’elements amb una altra i usa una lectura de color per donar una pista d’índex. Cada història és fictícia, acordada i sense dades personals. No usem els textos de l’alumnat com a dades d’entrenament ni els publiquem sense permís.
+La biblioteca prepara una actividad de microrrelatos del barrio: cada grupo crea una secuencia corta a partir de tarjetas de lugar, objeto y acción, y una maqueta SPIKE ayuda a elegir o revelar la próxima tarjeta. En Python, las tarjetas se organizan en listas; el programa consulta posiciones, compara una lista de elementos con otra y usa una lectura de color para dar una pista de índice. Cada historia es ficticia, acordada y sin datos personales. No usamos los textos del alumnado como datos de entrenamiento ni los publicamos sin permiso.
 
-La situació adapta les sis lliçons de la unitat 10 *Lists* de LEGO Education *Introduction to Python Programming · Course 2*: crear i consultar llistes de lletres amb condicions; construir una rutina seqüenciada amb valors del sensor de moviment; comparar dues llistes en un joc de raonament; afegir a una llista dades de proves d’un mecanisme; fer un joc de paraules amb més d’una llista i el sensor de color; i donar/usar feedback. Canviem ioga, salts i jocs de marca per seqüències de moviment de maqueta, mesures mecàniques no corporals i microrelats de llocs imaginaris o coneguts del municipi, mantenint explícits l’ordre, les dades i la comparació.
+La situación adapta las seis lecciones de la unidad 10 *Lists* de LEGO Education *Introduction to Python Programming · Course 2*: crear y consultar listas de letras con condiciones; construir una rutina secuenciada con valores del sensor de movimiento; comparar dos listas en un juego de razonamiento; añadir a una lista datos de pruebas de un mecanismo; hacer un juego de palabras con más de una lista y el sensor de color; y dar/usar retroalimentación. Cambiamos yoga, saltos y juegos de marca por secuencias de movimiento de maqueta, medidas mecánicas no corporales y microrrelatos de lugares imaginarios o conocidos del municipio, manteniendo explícitos el orden, los datos y la comparación.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Crear una llista en Python, accedir a valors per índex i explicar que la numeració comença en zero.
+- Crear una lista en Python, acceder a valores por índice y explicar que la numeración empieza en cero.
 
-- Usar una variable d’índex i una condició composta per recórrer o validar elements triats.
+- Usar una variable de índice y una condición compuesta para recorrer o validar elementos elegidos.
 
-- Organitzar dues llistes relacionades (per exemple, llocs i accions), comparar-les i detectar correspondències, diferències o posicions sense parella.
+- Organizar dos listas relacionadas (por ejemplo, lugares y acciones), compararlas y detectar correspondencias, diferencias o posiciones sin pareja.
 
-- Afegir dades mesurades de proves a una col·lecció i documentar-ne unitats, condicions i interpretació.
+- Añadir datos medidos de pruebas a una colección y documentar sus unidades, condiciones e interpretación.
 
-- Combinar una lectura de sensor amb una selecció de llista de manera que l’entrada no reconeguda tinga resposta explícita.
+- Combinar una lectura de sensor con una selección de lista de manera que la entrada no reconocida tenga respuesta explícita.
 
-- Descompondre el joc en lectura, selecció, verificació, missatge i moviment; provar funcions i condicions sense dependre que el mecanisme funcione perfectament.
+- Descomponer el juego en lectura, selección, verificación, mensaje y movimiento; probar funciones y condiciones sin depender de que el mecanismo funcione perfectamente.
 
-- Fer feedback específic sobre l’ordre, la regla i l’accessibilitat del joc, i revisar el codi sense reescriure el treball d’un altre equip.
+- Hacer retroalimentación específica sobre el orden, la regla y la accesibilidad del juego, y revisar el código sin reescribir el trabajo de otro equipo.
 
-**Llista:** seqüència ordenada de valors que es guarda amb un sol nom. **Element:** una dada dins d’una llista. **Índex:** posició numèrica d’un element, habitualment des de 0 en Python. **Correspondència:** relació prevista entre elements de dues llistes. **Lectura del sensor:** valor que el dispositiu detecta en unes condicions concretes; no és una etiqueta semàntica que Python entenga automàticament.
+**Lista:** secuencia ordenada de valores que se guarda con un solo nombre. **Elemento:** un dato dentro de una lista. **Índice:** posición numérica de un elemento, habitualmente desde 0 en Python. **Correspondencia:** relación prevista entre elementos de dos listas. **Lectura del sensor:** valor que el dispositivo detecta en unas condiciones concretas; no es una etiqueta semántica que Python entienda automáticamente.
 
 ```python
 llocs = ["plaça", "hort", "biblioteca"]
@@ -50,158 +50,158 @@ posicio = 1
 print(llocs[posicio], accions[posicio])
 ```
 
-Aquest exemple general associa valors que comparteixen índex; si les llistes no tenen la mateixa llargària, cal tractar-ho abans d’accedir-hi. En SPIKE, la lectura del sensor, els ports i les funcions de llum/so/motor s’han de consultar en la Knowledge Base de la versió local.
+Este ejemplo general asocia valores que comparten índice; si las listas no tienen la misma longitud, hay que tratarlo antes de acceder a ellas. En SPIKE, la lectura del sensor, los puertos y las funciones de luz/sonido/motor deben consultarse en la Knowledge Base de la versión local.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Un set SPIKE Prime per equip, hub carregat, app SPIKE amb Python disponible, sensor de color, sensor de força opcional per a una entrada de confirmació, sensor de moviment de l’hub si es prova una seqüència de gir del dispositiu, motor i peces Technic per a un indicador lent opcional, targetes grans de formes/colors, cartó i cinta de paper, regle, diari de programació i ordinador o paper per a codi compartit. La construcció pot ser estàtica: cap activitat depén d’un robot mòbil ni de reproduir instruccions LEGO.
+Un set SPIKE Prime por equipo, hub cargado, app SPIKE con Python disponible, sensor de color, sensor de fuerza opcional para una entrada de confirmación, sensor de movimiento del hub si se prueba una secuencia de giro del dispositivo, motor y piezas Technic para un indicador lento opcional, tarjetas grandes de formas/colores, cartón y cinta de papel, regla, diario de programación y ordenador o papel para código compartido. La construcción puede ser estática: ninguna actividad depende de un robot móvil ni de reproducir instrucciones LEGO.
 
-Prepareu paquets de targetes amb símbol, color i paraula impresos amb contrast suficient; un color no reconegut; exemples on les llistes tenen llargàries diferents; i llistes buides per parlar de límits. Comproveu quins colors reconeix el sensor sota la llum de l’aula, amb targetes planes i a una distància fixa. El sensor pot retornar valors inestables segons el material, per això prevegeu mode de selecció manual. Per a les proves del mecanisme, useu una fitxa gran i lleugera, recorregut curt i motor a baixa potència. Eviteu registrar dades de moviment o salut d’alumnes; si es gira l’hub per obtindre valors d’orientació, subjecteu-lo amb un suport i considereu-los dades del dispositiu.
+Preparad paquetes de tarjetas con símbolo, color y palabra impresos con contraste suficiente; un color no reconocido; ejemplos en los que las listas tienen longitudes diferentes; y listas vacías para hablar de límites. Comprobad qué colores reconoce el sensor bajo la luz del aula, con tarjetas planas y a una distancia fija. El sensor puede devolver valores inestables según el material, por eso preved un modo de selección manual. Para las pruebas del mecanismo, usad una ficha grande y ligera, recorrido corto y motor a baja potencia. Evitad registrar datos de movimiento o salud del alumnado; si se gira el hub para obtener valores de orientación, sujetadlo con un soporte y consideradlos datos del dispositivo.
 
-Organitzeu rols rotatius: qui redacta i explica la llista; qui prova índexs i casos buits; qui prepara targetes/sensor; qui registra resultats i accés a la història. Acordeu prèviament que qualsevol relat inventat és voluntari, respectuós i revisat pel grup.
+Organizad roles rotatorios: quién redacta y explica la lista; quién prueba índices y casos vacíos; quién prepara tarjetas/sensor; quién registra resultados y acceso a la historia. Acordad previamente que cualquier relato inventado es voluntario, respetuoso y revisado por el grupo.
 
-## 📅 Seqüència didàctica · sis lliçons
+## 📅 Secuencia didáctica · seis lecciones
 
-### **Lliçó 1 · Lletres, targetes i índexs (45 min).**
+### **Lección 1 · Letras, tarjetas e índices (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Activació (7 min):** mostreu una paraula curta formada per targetes separades i demaneu com indicar-ne “la tercera lletra”. Compareu comptar des d’un o des de zero amb una llista d’índexos dibuixada.
+**Activación (7 min):** mostrad una palabra corta formada por tarjetas separadas y pedid cómo indicar «la tercera letra». Comparad contar desde uno o desde cero con una lista de índices dibujada.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Modelatge (8 min):** en Python, creeu una llista petita de lletres i accediu als primers, darrers i intermedis valors amb índex. Proveu què passa amb índex 0, índex igual a la llargària i llista buida, primer a paper i després en una còpia al dispositiu. Expliqueu l’error fora de rang sense tractar-lo com un fracàs personal.
+**Modelado (8 min):** en Python, cread una lista pequeña de letras y acceded a los primeros, últimos e intermedios valores con índice. Probad qué pasa con índice 0, índice igual a la longitud y lista vacía, primero en papel y después en una copia en el dispositivo. Explicad el error fuera de rango sin tratarlo como un fracaso personal.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Repte (20 min):** inventeu un títol de microrelat amb un repertori de targetes de llocs o objectes. Escriviu una llista de símbols admissibles, una condició que determine si una entrada està present i una alternativa si no ho està. Per exemple, una condició composta revisa que l’índex siga major o igual que zero *i* menor que la longitud de la llista abans d’accedir-hi. L’alumnat no guarda noms ni paraules atribuïbles a companys.
+**Reto (20 min):** inventad un título de microrrelato con un repertorio de tarjetas de lugares u objetos. Escribid una lista de símbolos admisibles, una condición que determine si una entrada está presente y una alternativa si no lo está. Por ejemplo, una condición compuesta revisa que el índice sea mayor o igual que cero *y* menor que la longitud de la lista antes de acceder a ella. El alumnado no guarda nombres ni palabras atribuibles a compañeros.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Proves i documentació (7 min):** feu una taula d’índex → element esperat amb mínim cinc casos, inclosos els límits.
+**Pruebas y documentación (7 min):** haced una tabla de índice → elemento esperado con un mínimo de cinco casos, incluidos los límites.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Sortida (3 min):** expliqueu per què l’índex 2 selecciona el tercer element.
+**Salida (3 min):** explicad por qué el índice 2 selecciona el tercer elemento.
 
-### **Lliçó 2 · Seqüències amb moviment i dades del hub (90 min).**
+### **Lección 2 · Secuencias con movimiento y datos del hub (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Entrada (10 min):** observeu un patró de moviments d’un personatge de paper o d’una fletxa articulada: inclinació, retorn, pausa; escriviu-lo com una seqüència ordenada.
+**Entrada (10 min):** observad un patrón de movimientos de un personaje de papel o de una flecha articulada: inclinación, retorno, pausa; escribidlo como una secuencia ordenada.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Sensor i valors (15 min):** consulteu la documentació del sensor de moviment integrat al hub, feu una lectura amb hub quiet sobre la taula i una altra després d’una rotació controlada en un suport. Registreu eixos, valors i convenció de la biblioteca local; no confongueu un valor angular amb una instrucció d’orientació. Si la funció no està disponible, useu valors sintètics lliurats per la docent.
+**Sensor y valores (15 min):** consultad la documentación del sensor de movimiento integrado en el hub, haced una lectura con el hub quieto sobre la mesa y otra después de una rotación controlada en un soporte. Registrad ejes, valores y convención de la biblioteca local; no confundáis un valor angular con una instrucción de orientación. Si la función no está disponible, usad valores sintéticos entregados por la docente.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Llistes i programa (25 min):** creeu una llista curta d’estats/angles de mostra i associeu-los amb una llista de missatges o accions per a una seqüència de moviment representada per una fletxa/maqueta. Mostreu com un bucle i un índex poden visitar cada element per ordre; per a qui ja ho domineu, compareu un bucle amb crides repetides. No convertiu els valors a posicions motores sense calibratge.
+**Listas y programa (25 min):** cread una lista corta de estados/ángulos de muestra y asociadlos con una lista de mensajes o acciones para una secuencia de movimiento representada por una flecha/maqueta. Mostrad cómo un bucle y un índice pueden visitar cada elemento por orden; para quien ya lo domine, comparad un bucle con llamadas repetidas. No convirtáis los valores en posiciones de motor sin calibración.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Disseny (15 min):** cada equip proposa una seqüència de tres gestos del senyal escolar, amb alternativa visual equivalent.
+**Diseño (15 min):** cada equipo propone una secuencia de tres gestos de la señal escolar, con una alternativa visual equivalente.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Proves (15 min):** proveu la llista amb valors repetits, una llista més curta i una lectura inesperada; comproveu que no se sol·licita un índex inexistent. Si s’activa motor, manteniu-lo en mode lent amb topall. **Reflexió (10 min):** quines dades es van recollir? quines es van inventar? quina acció del prototip és simbòlica i quina està realment connectada al moviment mesurat?
+**Pruebas (15 min):** probad la lista con valores repetidos, una lista más corta y una lectura inesperada; comprobad que no se solicita un índice inexistente. Si se activa un motor, mantenedlo en modo lento con tope. **Reflexión (10 min):** ¿qué datos se recogieron? ¿cuáles se inventaron? ¿qué acción del prototipo es simbólica y cuál está realmente conectada al movimiento medido?
 
-### **Lliçó 3 · Comparar dues llistes: joc de parelles (90 min).**
+### **Lección 3 · Comparar dos listas: juego de parejas (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Repte (8 min):** una guia fictícia combina llista de llocs amb llista de pistes, però les correspondències s’han desordenat. L’equip ha de detectar què concorda, què falta i què sobra.
+**Reto (8 min):** una guía ficticia combina una lista de lugares con una lista de pistas, pero las correspondencias se han desordenado. El equipo debe detectar qué concuerda, qué falta y qué sobra.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Creació de llistes (15 min):** definiu `llocs` i `pistes` amb valors de ficció i una taula de parelles esperades; incloeu un valor que aparega en una sola llista i un element duplicat deliberat.
+**Creación de listas (15 min):** definid `llocs` y `pistes` con valores de ficción y una tabla de parejas esperadas; incluid un valor que aparezca en una sola lista y un elemento duplicado deliberado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Programa de comparació (25 min):** recorregueu les llistes amb índex i compareu elements a cada posició; marqueu parella correcta, discrepància i llargària desigual. Distingeix “les llistes són iguals element a element” de “cada llista conté els mateixos valors en qualsevol ordre”. Si l’alumnat fa servir operadors de pertinença o mètodes no ensenyats en aquest entorn, verifiqueu-los en Python general; documenteu clarament qualsevol funció usada.
+**Programa de comparación (25 min):** recorred las listas con índice y comparad elementos en cada posición; marcad pareja correcta, discrepancia y longitud desigual. Distinguid «las listas son iguales elemento a elemento» de «cada lista contiene los mismos valores en cualquier orden». Si el alumnado usa operadores de pertenencia o métodos no enseñados en este entorno, verificadlos en Python general; documentad claramente cualquier función usada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Joc per torns (20 min):** una parella crea una ronda de parelles amb targetes, l’altra executa el codi o fa traça manualment. Es permeten pistes accessibles en paraules i símbols; no es cronometra la lectura.
+**Juego por turnos (20 min):** una pareja crea una ronda de parejas con tarjetas, la otra ejecuta el código o hace la traza manualmente. Se permiten pistas accesibles en palabras y símbolos; no se cronometra la lectura.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Validació (15 min):** proveu llistes iguals, una discrepància en primera/última posició, llistes de llargària diferent, duplicats i llista buida. **Tancament (7 min):** cada equip diu quin cas el codi detecta i quin cas encara no cobreix.
+**Validación (15 min):** probad listas iguales, una discrepancia en primera/última posición, listas de longitud diferente, duplicados y lista vacía. **Cierre (7 min):** cada equipo dice qué caso detecta el código y qué caso todavía no cubre.
 
-### **Lliçó 4 · Una col·lecció de proves per a un mecanisme (90 min).**
+### **Lección 4 · Una colección de pruebas para un mecanismo (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta (8 min):** quantes proves fan falta per saber si un indicador motoritzat obri prou una portella de cartó sense eixir del seu recorregut?
+**Pregunta (8 min):** ¿cuántas pruebas hacen falta para saber si un indicador motorizado abre lo suficiente una portezuela de cartón sin salirse de su recorrido?
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Modelatge de dades (12 min):** dissenyeu una taula d’intents amb valor de comandament (graus/velocitat), posició manual observada i resultat (arriba a la marca: sí/no). Acordeu unitats i escala; no mesureu força humana.
+**Modelado de datos (12 min):** diseñad una tabla de intentos con valor de comando (grados/velocidad), posición manual observada y resultado (llega a la marca: sí/no). Acordad unidades y escala; no midáis fuerza humana.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Experiment (15 min):** munteu un braç articulat segur amb peces disponibles, fixe el cos del mecanisme i utilitzeu fitxes lleugeres. Enregistreu una línia base amb tres ordres i cinc repeticions d’un valor seleccionat.
+**Experimento (15 min):** montad un brazo articulado seguro con las piezas disponibles, fijad el cuerpo del mecanismo y usad fichas ligeras. Registrad una línea base con tres órdenes y cinco repeticiones de un valor seleccionado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Llistes Python (20 min):** guardeu els resultats simulats o recollits en una llista amb valors uniformes (per exemple, tots enters o tots booleans per separat). Recorreu la llista per comptar quantes proves han arribat i quantificar la proporció d’èxit; parleu de per què barrejar paraules, valors buits i nombres en una sola llista complica càlculs.
+**Listas Python (20 min):** guardad los resultados simulados o recogidos en una lista con valores uniformes (por ejemplo, todos enteros o todos booleanos por separado). Recorred la lista para contar cuántas pruebas han llegado y cuantificar la proporción de éxito; hablad de por qué mezclar palabras, valores vacíos y números en una sola lista complica los cálculos.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Anàlisi i millora (20 min):** compareu valors i modifiqueu una variable cada vegada. Mostreu com la llista canvia quan es repeteix el test i per què cal separar dades inicials de dades posteriors. **Comunicació (15 min):** feu un gràfic senzill, descriviu variació, i redacteu una afirmació proporcional a les dades: “en aquesta mostra, el mecanisme va…”, no “sempre funciona”. Si no hi ha temps o materials, useu un conjunt de dades fictici identificat com a simulat.
+**Análisis y mejora (20 min):** comparad valores y modificad una variable cada vez. Mostrad cómo cambia la lista cuando se repite el test y por qué hay que separar los datos iniciales de los posteriores. **Comunicación (15 min):** haced un gráfico sencillo, describid la variación y redactad una afirmación proporcional a los datos: «en esta muestra, el mecanismo va…», no «siempre funciona». Si no hay tiempo o materiales, usad un conjunto de datos ficticio identificado como simulado.
 
-### **Lliçó 5 · Joc de paraules amb sensor de color i llistes (90 min).**
+### **Lección 5 · Juego de palabras con sensor de color y listas (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Idea i llenguatge (10 min):** creeu microfrases en llenguatge respectuós a partir de tres conjunts de paraules: llocs, accions i objectes. L’escenari pot ser la biblioteca, la plaça fictícia, un mercat o un lloc inventat per la classe; no s’hi inclouen noms de persones ni informació privada.
+**Idea y lenguaje (10 min):** cread microfrases en un lenguaje respetuoso a partir de tres conjuntos de palabras: lugares, acciones y objetos. El escenario puede ser la biblioteca, la plaza ficticia, un mercado o un lugar inventado por la clase; no se incluyen nombres de personas ni información privada.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Arquitectura de dades (15 min):** prepareu diverses llistes amb elements ordenats i una taula color → índex o categoria. Manteniu-les de longitud coneguda, no buides, i definiu una eixida neutra per a color no reconegut. Expliqueu com l’ordre altera les possibles combinacions.
+**Arquitectura de datos (15 min):** preparad varias listas con elementos ordenados y una tabla color → índice o categoría. Mantenedlas de longitud conocida, no vacías, y definid una salida neutra para color no reconocido. Explicad cómo el orden altera las posibles combinaciones.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Sensor i codi (25 min):** fixeu el sensor de color sobre un suport i passeu una targeta a la vegada. Python llig el color amb API comprovada en l’app, el transforma en un índex acordat i selecciona una paraula de la llista si l’índex és vàlid. Connecteu la lectura amb una matriu de llum o senyal d’un motor només si afegeix informació; el text generat pot mostrar-se a consola i targeta física. No suposeu que una lectura de color equival a una lletra.
+**Sensor y código (25 min):** fijad el sensor de color sobre un soporte y pasad una tarjeta cada vez. Python lee el color con una API comprobada en la app, lo transforma en un índice acordado y selecciona una palabra de la lista si el índice es válido. Conectad la lectura con una matriz de luz o una señal de un motor solo si añade información; el texto generado puede mostrarse en la consola y en una tarjeta física. No supongáis que una lectura de color equivale a una letra.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Creació del joc (15 min):** cada equip escriu regles clares (nombre de targetes, ordre de selecció, repeticions permeses) i prova amb entrada manual i sensorial.
+**Creación del juego (15 min):** cada equipo escribe reglas claras (número de tarjetas, orden de selección, repeticiones permitidas) y prueba con entrada manual y sensorial.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Partides i cobertura (15 min):** una altra parella juga; l’equip registra si totes les combinacions previstes es poden executar, si apareix índex fora de rang o si una paraula queda descontextualitzada. **Revisió lingüística (10 min):** l’equip comprova que el resultat és respectuós i s’entén sense una pista cultural desconeguda. Ofereix alternativa de lectura, pictogrames o dictat si és necessari.
+**Partidas y cobertura (15 min):** otra pareja juega; el equipo registra si todas las combinaciones previstas se pueden ejecutar, si aparece un índice fuera de rango o si una palabra queda descontextualizada. **Revisión lingüística (10 min):** el equipo comprueba que el resultado es respetuoso y se entiende sin una pista cultural desconocida. Ofreced una alternativa de lectura, pictogramas o dictado si es necesario.
 
-### **Lliçó 6 · Feedback que millora codi i joc (30–45 min).**
+### **Lección 6 · Retroalimentación que mejora código y juego (30–45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Mostra curta (5 min):** cada grup prepara targetes, llistes, comentaris del programa, una prova que ha passat, una que ha fallat i una pregunta.
+**Muestra corta (5 min):** cada grupo prepara tarjetas, listas, comentarios del programa, una prueba que ha pasado, una que ha fallado y una pregunta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Feedback modelat (8 min):** practiqueu “he observat que la llista…”, “esperava que el color…”, “potser falta provar la llista buida…”. No reconstruïu el model ni editeu el programa d’un altre equip.
+**Retroalimentación modelada (8 min):** practicad «he observado que la lista…», «esperaba que el color…», «quizá falta probar la lista vacía…». No reconstruyáis el modelo ni editéis el programa de otro equipo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Intercanvi (10–15 min):** parelles d’equips roten pel joc, anoten què és clar i quins casos no es resolen; no copien ni fotografien textos d’alumnes.
+**Intercambio (10–15 min):** parejas de equipos rotan por el juego, anotan qué es claro y qué casos no se resuelven; no copian ni fotografían textos de alumnos.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Decisió i iteració (7–10 min):** l’equip autor decideix quina idea incorpora, explica per què i modifica una part de la llista, condició o instrucció. Repetiu el mateix cas que va generar el feedback i un cas nou.
+**Decisión e iteración (7–10 min):** el equipo autor decide qué idea incorpora, explica por qué y modifica una parte de la lista, condición o instrucción. Repetid el mismo caso que generó la retroalimentación y un caso nuevo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Autoavaluació (5 min):** expliqueu amb un exemple el paper de l’índex i com una entrada de sensor s’ha convertit en element; assenyaleu un límit del generador de microrelats i un següent pas de millora.
+**Autoevaluación (5 min):** explicad con un ejemplo el papel del índice y cómo una entrada de sensor se ha convertido en elemento; señalad un límite del generador de microrrelatos y un siguiente paso de mejora.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Portafolis d’equip: llistes anotades; taula índex–element; codi amb comentaris i gestió d’índex fora de rang; diagrama que relaciona colors amb índexs; lectures de sensor i condicions de calibratge; llistes comparades amb casos iguals/diferents i llargàries distintes; dades de proves mecàniques amb unitats; resultat del joc de paraules; instruccions de partida; feedback rebut i canvi incorporat. Valoreu quatre dimensions: **ús de llista i índex** (consulta valors i preveu límits); **comparació i condicions** (distingeix ordre, correspondència i casos absents); **integració de dades** (relaciona sensor, valor, regla i sortida); **disseny col·laboratiu** (documenta, prova, incorpora o justifica feedback i ofereix accés alternatiu). Una execució afortunada no substitueix la prova de llistes buides, divergents o no reconegudes.
+Portafolio de equipo: listas anotadas; tabla índice–elemento; código con comentarios y gestión de índice fuera de rango; diagrama que relaciona colores con índices; lecturas de sensor y condiciones de calibración; listas comparadas con casos iguales/diferentes y longitudes distintas; datos de pruebas mecánicas con unidades; resultado del juego de palabras; instrucciones de partida; retroalimentación recibida y cambio incorporado. Valorad cuatro dimensiones: **uso de lista e índice** (consulta valores y prevé límites); **comparación y condiciones** (distingue orden, correspondencia y casos ausentes); **integración de datos** (relaciona sensor, valor, regla y salida); **diseño colaborativo** (documenta, prueba, incorpora o justifica la retroalimentación y ofrece acceso alternativo). Una ejecución afortunada no sustituye la prueba de listas vacías, divergentes o no reconocidas.
 
-## ♿ Accessibilitat, privacitat i seguretat
+## ♿ Accesibilidad, privacidad y seguridad
 
-Les llistes es poden treballar amb targetes físiques grans, text ampliat, dictat, símbols i seqüències d’àudio opcional; no cal llegir ràpid ni distingir colors sense alternativa. La sortida del sensor també es pot seleccionar manualment. Els microrelats són ficticis o de llocs públics triats amb cura; no s’hi guarden noms, domicilis, històries personals ni trajectes. Eviteu compartir codi o text fora de l’aula sense acord. Manteniu el robot sobre taula i freneu abans de manipular-lo; si hi ha moviment, establiu límits suaus i allunyeu les mans. La seqüència de moviments és d’una maqueta, no una rutina física obligatòria ni una avaluació corporal.
+Las listas se pueden trabajar con tarjetas físicas grandes, texto ampliado, dictado, símbolos y secuencias de audio opcionales; no hace falta leer rápido ni distinguir colores sin alternativa. La salida del sensor también se puede seleccionar manualmente. Los microrrelatos son ficticios o de lugares públicos elegidos con cuidado; no se guardan en ellos nombres, domicilios, historias personales ni trayectos. Evitad compartir código o texto fuera del aula sin acuerdo. Mantened el robot sobre la mesa y frenadlo antes de manipularlo; si hay movimiento, estableced límites suaves y alejad las manos. La secuencia de movimientos es de una maqueta, no una rutina física obligatoria ni una evaluación corporal.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta les sis lliçons de la unitat 10 *Lists* del curs LEGO Education [*Introduction to Python Programming · Course 2*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us): *Listing Letters*, *Stretch Your Muscles and Lists*, *Mind Games*, *Jumping for Lists*, *Word Games with Lists* i *Ideas to Help with Word Games with Lists*. Manté l’estructura de llista/índex i condicions compostes, valors de sensor i seqüenciació, comparació de dues llistes, registre de dades de proves, integració de llistes i sensor de color en un joc, i feedback entre equips. Les referències a ioga/salts es transformen en estats d’un mecanisme de taula i mesures de prototip, sense capturar informació corporal d’alumnes. L’escenari de vocabulari, fitxes, dades d’exemple i imatge són propis; el programa i la construcció s’adapten a la dotació real i no copien instruccions oficials. L’app i l’API s’han de verificar en el dispositiu local.
+Adapta las seis lecciones de la unidad 10 *Lists* del curso LEGO Education [*Introduction to Python Programming · Course 2*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us): *Listing Letters*, *Stretch Your Muscles and Lists*, *Mind Games*, *Jumping for Lists*, *Word Games with Lists* e *Ideas to Help with Word Games with Lists*. Mantiene la estructura de lista/índice y condiciones compuestas, valores de sensor y secuenciación, comparación de dos listas, registro de datos de pruebas, integración de listas y sensor de color en un juego, y retroalimentación entre equipos. Las referencias a yoga/saltos se transforman en estados de un mecanismo de mesa y medidas de prototipo, sin capturar información corporal del alumnado. El escenario de vocabulario, las fichas, los datos de ejemplo y la imagen son propios; el programa y la construcción se adaptan a la dotación real y no copian instrucciones oficiales. La app y la API deben verificarse en el dispositivo local.

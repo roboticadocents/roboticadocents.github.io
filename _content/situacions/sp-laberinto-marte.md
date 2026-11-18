@@ -9,264 +9,264 @@ cycle_label: "Tercer ciclo"
 subject: "tecnologia"
 subject_label: "Tecnología, Matemáticas y Ciencias"
 theme: "entorn"
-theme_label: "La Albufera y la cuidado del entorno"
+theme_label: "La Albufera y el cuidado del entorno"
 duration: "12–15 sesiones"
 challenge: "¿Cómo podemos diseñar un robot fiable que complete misiones de cuidado del entorno y explique con pruebas las decisiones del equipo?"
 ---
 
-![Robot LEGO SPIKE Prime en un camp de proves amb una ruta marcada i objectes lleugers per a una missió de l'entorn.](../../_assets/situacions/sp-laberint-mart.webp)
+![Robot LEGO SPIKE Prime en un campo de pruebas con una ruta marcada y objetos ligeros para una misión del entorno.](../../_assets/situacions/sp-laberint-mart.webp)
 
-_El camp, les peces de missió i la puntuació són originals. La proposta treballa amb una maqueta escolar inspirada en la cura de l’Albufera._
+_El campo, las piezas de misión y la puntuación son originales. La propuesta trabaja con una maqueta escolar inspirada en el cuidado de la Albufera._
 
-## 🌱 Situació i intenció
+## 🌱 Reto e intención
 
-La unitat oficial *Competition Ready* de LEGO Education introdueix la conducció autònoma, l’ús de sensors, la construcció en equip, els blocs reutilitzables i la resolució iterativa de missions. Aquesta adaptació conserva eixa progressió en un projecte de centre: una maqueta de l’Albufera on el robot transporta mostres fictícies, retira residus de maqueta i activa punts d’observació. No s’intervé en l’aiguamoll ni s’hi proven robots.
+La unidad oficial *Competition Ready* de LEGO Education introduce la conducción autónoma, el uso de sensores, la construcción en equipo, los bloques reutilizables y la resolución iterativa de misiones. Esta adaptación conserva esa progresión en un proyecto de centro: una maqueta de la Albufera donde el robot transporta muestras ficticias, retira residuos de la maqueta y activa puntos de observación. No se interviene en el humedal ni se prueban robots en él.
 
-La seqüència oficial inclou en 2026–27 una missió guiada vinculada a FIRST LEGO League. La sessió 4 conserva l’estructura didàctica de preparar una ruta, alinear el robot, activar un model i valorar fiabilitat i estratègia, però usa un repte, un camp i models propis. No reprodueix ni representa la missió, el tapet o els materials oficials de la temporada.
+La secuencia oficial incluye en 2026–27 una misión guiada vinculada a FIRST LEGO League. La sesión 4 conserva la estructura didáctica de preparar una ruta, alinear el robot, activar un modelo y valorar fiabilidad y estrategia, pero usa un reto, un campo y modelos propios. No reproduce ni representa la misión, el tapete o los materiales oficiales de la temporada.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Construir i calibrar una base mòbil, i registrar com canvien la ruta i la precisió quan s’ajusta una variable.
-- Integrar moviment, sensors de línia i mecanismes per resoldre missions de camp amb rols cooperatius.
-- Comparar intents, localitzar una fallada i justificar la revisió amb dades de proves repetides.
-- Comunicar què ha resolt el robot, quina decisió ha pres l’equip i quins límits conserva la maqueta ambiental.
+- Construir y calibrar una base móvil, y registrar cómo cambian la ruta y la precisión cuando se ajusta una variable.
+- Integrar movimiento, sensores de línea y mecanismos para resolver misiones de campo con roles cooperativos.
+- Comparar intentos, localizar un fallo y justificar la revisión con datos de pruebas repetidas.
+- Comunicar qué ha resuelto el robot, qué decisión ha tomado el equipo y qué límites conserva la maqueta ambiental.
 
-## 📅 Seqüència didàctica · 12–15 sessions
+## 📅 Secuencia didáctica · 12–15 sesiones
 
-### **S1 · Base i conducció precisa · [Training Camp 1: Driving Around](https://education.lego.com/en-us/lessons/prime-competition-ready/training-camp-1-driving-around/) (30–45 min).**
+### **S1 · Base y conducción precisa · [Training Camp 1: Driving Around](https://education.lego.com/en-us/lessons/prime-competition-ready/training-camp-1-driving-around/) (30–45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** com fem una base simple que avance, gire i es detinga de manera controlada? Predigueu què haurà de canviar per dibuixar un quadrat amb quatre girs.
+**Pregunta:** ¿cómo hacemos una base simple que avance, gire y se detenga de manera controlada? Predecid qué tendrá que cambiar para dibujar un cuadrado con cuatro giros.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En parelles, munteu una base de dos motors sense sensors i proveu els programes de mostra. Varieu distància, gir o velocitat d’una cosa cada vegada.
+En parejas, montad una base de dos motores sin sensores y probad los programas de muestra. Variad la distancia, el giro o la velocidad de una cosa cada vez.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Escriviu pseudocodi per al quadrat, mesureu la circumferència de la roda (π × diàmetre) i relacioneu-la amb la distància avançada. Registreu el recorregut en segons, graus i rotacions; el giroscopi és una ampliació opcional.
+Escribid pseudocódigo para el cuadrado, medid la circunferencia de la rueda (π × diámetro) y relacionadla con la distancia avanzada. Registrad el recorrido en segundos, grados y rotaciones; el giroscopio es una ampliación opcional.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Afegiu un recorregut entre obstacles grans. Feu tres passades amb paràmetres iguals i després canvieu un control; com a ampliació, recorreu dos metres i compareu també el sensor disponible.
+Añadid un recorrido entre obstáculos grandes. Haced tres pasadas con parámetros iguales y después cambiad un control; como ampliación, recorred dos metros y comparad también el sensor disponible.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** diagrama, programa de moviment i taula d’error. Expliqueu quan convé cada control; el giroscopi i la base avançada no són requisits d’aquesta sessió.
+**Evidencia:** diagrama, programa de movimiento y tabla de error. Explicad cuándo conviene cada control; el giroscopio y la base avanzada no son requisitos de esta sesión.
 
-### **S2 · Acostar-se, agafar i tornar · [Training Camp 2: Playing with Objects](https://education.lego.com/en-us/lessons/prime-competition-ready/training-camp-2-playing-with-objects/) (30–45 min).**
+### **S2 · Acercarse, agarrar y volver · [Training Camp 2: Playing with Objects](https://education.lego.com/en-us/lessons/prime-competition-ready/training-camp-2-playing-with-objects/) (30–45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** com decideix el robot quan està prou prop d’un objecte? Predigueu quina lectura podria activar l’aturada i com sabreu que el cub ha sigut arreplegat.
+**Pregunta:** ¿cómo decide el robot cuándo está lo bastante cerca de un objeto? Predecid qué lectura podría activar la parada y cómo sabréis que el cubo ha sido recogido.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Afegiu sensor de distància, braç lleuger, marcador i cub tou a la base. Compareu dos programes per parar davant del marcador; després programeu el braç perquè baixe, arreplegue el cub a almenys 30 cm i el retorne.
+Añadid un sensor de distancia, un brazo ligero, un marcador y un cubo blando a la base. Comparad dos programas para parar delante del marcador; después programad el brazo para que baje, recoja el cubo a al menos 30 cm y lo devuelva.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Ajusteu l’alçada del braç perquè passe per damunt del cub sense interferir amb el sensor. Registreu tres intents i observeu com canvia la lectura en modificar el llindar.
+Ajustad la altura del brazo para que pase por encima del cubo sin interferir con el sensor. Registrad tres intentos y observad cómo cambia la lectura al modificar el umbral.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu un relleu: el robot porta un testimoni, una persona el retira i la base continua. Prioritzeu detecció fiable per damunt del temps; proveu comparacions > / < amb distància, llum reflectida o giroscopi només si estan disponibles.
+Haced un relevo: el robot lleva un testigo, una persona lo retira y la base continúa. Priorizad la detección fiable por encima del tiempo; probad comparaciones > / < con distancia, luz reflejada o giroscopio solo si están disponibles.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** esquema sensor–condició–motor i ajust justificat. Com a extensió, inventeu regles per al relleu, il·lustreu-les i convideu una altra parella.
+**Evidencia:** esquema sensor–condición–motor y ajuste justificado. Como extensión, inventad reglas para el relevo, ilustradlas e invitad a otra pareja.
 
-### **S3 · Detectar i seguir línies del camp · [Training Camp 3: Reacting to Lines](https://education.lego.com/en-us/lessons/prime-competition-ready/training-camp-3-react-to-lines/) (30–45 min).**
+### **S3 · Detectar y seguir líneas del campo · [Training Camp 3: Reacting to Lines](https://education.lego.com/en-us/lessons/prime-competition-ready/training-camp-3-react-to-lines/) (30–45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** com pot el sensor fer autònoma una part del recorregut? Predigueu què passarà quan la base trobe una línia negra perpendicular.
+**Pregunta:** ¿cómo puede el sensor hacer autónoma una parte del recorrido? Predecid qué pasará cuando la base encuentre una línea negra perpendicular.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Munteu el sensor de color i proveu una línia negra ampla sobre superfície clara. Programeu la base perquè avance i pare en detectar-la; després proveu una segona pila i descriviu la diferència.
+Montad el sensor de color y probad una línea negra ancha sobre una superficie clara. Programad la base para que avance y pare al detectarla; después probad una segunda pila y describid la diferencia.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Observeu lectures en mode de color i d’intensitat reflectida sobre blanc i negre. Anoteu què llig el sensor i no confongueu el nom de color amb el valor reflectit.
+Observad lecturas en modo de color y de intensidad reflejada sobre blanco y negro. Anotad qué lee el sensor y no confundáis el nombre del color con el valor reflejado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Per al seguiment continu, alterneu detecció de fosc i clar amb moviments ràpids. Proveu línies primes, angles rectes, cruïlles T, interrupcions i línies de color; canvieu llindar o velocitat d’un en un.
+Para el seguimiento continuo, alternad la detección de oscuro y claro con movimientos rápidos. Probad líneas finas, ángulos rectos, cruces en T, interrupciones y líneas de color; cambiad el umbral o la velocidad de uno en uno.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** lectures, ruta anotada i explicació de la millora. L’extensió de S4 és comparar els modes de sensor; el color i la llum reflectida són lectures diferents.
+**Evidencia:** lecturas, ruta anotada y explicación de la mejora. La extensión de S4 es comparar los modos de sensor; el color y la luz reflejada son lecturas diferentes.
 
-### **S4 · Missió guiada: elevar el pont de mostreig · [The Guided Mission 2026–27](https://education.lego.com/en-us/lessons/prime-competition-ready/spike-prime-guided-mission-2627/) (90 min; versió breu 45 min).**
+### **S4 · Misión guiada: elevar el puente de muestreo · [The Guided Mission 2026–27](https://education.lego.com/en-us/lessons/prime-competition-ready/spike-prime-guided-mission-2627/) (90 min; versión breve 45 min).**
 
-#### Fase 1 · Activem i prediem (10 min)
+#### Fase 1 · Activamos y predecimos (10 min)
 
-**Pregunta:** com equilibrem velocitat i precisió per a seguir una línia, accionar un mecanisme i acabar en una zona concreta? En un camp propi de la marjal, la base ix de l’àrea esquerra, passa al costat de dues estacions de cartó inactives, arriba al pont de mostreig i acaba a la zona dreta. Abans de construir, dibuixeu el recorregut, assenyaleu on caldrà alinear la base i definiu què vol dir «missió completada»: el pont articulat s’alça, la ruta no desplaça cap estació i el robot s’atura dins de la zona final.
+**Pregunta:** ¿cómo equilibramos velocidad y precisión para seguir una línea, accionar un mecanismo y acabar en una zona concreta? En un campo propio del marjal, la base sale del área izquierda, pasa junto a dos estaciones de cartón inactivas, llega al puente de muestreo y acaba en la zona derecha. Antes de construir, dibujad el recorrido, señalad dónde habrá que alinear la base y definid qué significa «misión completada»: el puente articulado se eleva, la ruta no desplaza ninguna estación y el robot se detiene dentro de la zona final.
 
-#### Fase 2 · Explorem i construïm (25 min)
+#### Fase 2 · Exploramos y construimos (25 min)
 
-Munteu la base de conducció amb el sensor de color SPIKE Prime i reviseu-ne l’orientació i l’alçada respecte del camp. Feu una línia negra ampla sobre una pista clara i un model original amb una palanca de cartó articulada: una peça lleugera a la part frontal empeny la palanca perquè eleve el pont; no useu el model ni el tapet LEGO de la temporada. Proveu la palanca a mà i després amb el robot a potència baixa. Afegiu una zona d’eixida a cada costat i marqueu dos punts d’alineament propers al mecanisme. El pont ha de ser lleuger, estable i sense vores tallants.
+Montad la base de conducción con el sensor de color SPIKE Prime y revisad su orientación y su altura respecto al campo. Haced una línea negra ancha sobre una pista clara y un modelo original con una palanca de cartón articulada: una pieza ligera en la parte frontal empuja la palanca para que eleve el puente; no uséis el modelo ni el tapete LEGO de la temporada. Probad la palanca a mano y después con el robot a potencia baja. Añadid una zona de salida a cada lado y marcad dos puntos de alineación cercanos al mecanismo. El puente debe ser ligero, estable y sin bordes cortantes.
 
-![Robot SPIKE Prime de la dotació segueix una línia fins a una palanca de cartó que eleva un pont de mostreig entre dues zones de prova.](../../_assets/situacions/sa-sp-missio-pont.webp)
+![Robot SPIKE Prime de la dotación sigue una línea hasta una palanca de cartón que eleva un puente de muestreo entre dos zonas de prueba.](../../_assets/situacions/sa-sp-missio-pont.webp)
 
-_Il·lustració generada amb IA del prototip local; el muntatge és conceptual i no reprodueix cap model oficial de FIRST LEGO League._
+_Ilustración generada con IA del prototipo local; el montaje es conceptual y no reproduce ningún modelo oficial de FIRST LEGO League._
 
-#### Fase 3 · Expliquem i registrem (15 min)
+#### Fase 3 · Explicamos y registramos (15 min)
 
-Calibreu el sensor sobre la línia i el fons en el mode triat —color o intensitat de llum reflectida— i anoteu lectures repetides. Escriviu un programa propi: iniciar en la zona esquerra; seguir la línia amb girs curts a baixa potència; arribar al punt de contacte; empényer la palanca fins que el pont s’alce; continuar cap a la zona dreta i parar. Registreu la posició de partida, el llindar o color seleccionat, la velocitat, l’estat del pont i el lloc d’aturada. Si el sensor no discrimina amb estabilitat, useu una línia més ampla i torneu a mesurar abans de canviar el programa.
+Calibrad el sensor sobre la línea y el fondo en el modo elegido —color o intensidad de luz reflejada— y anotad lecturas repetidas. Escribid un programa propio: iniciar en la zona izquierda; seguir la línea con giros cortos a baja potencia; llegar al punto de contacto; empujar la palanca hasta que el puente se eleve; continuar hacia la zona derecha y parar. Registrad la posición de partida, el umbral o color seleccionado, la velocidad, el estado del puente y el lugar de parada. Si el sensor no discrimina con estabilidad, usad una línea más ancha y volved a medir antes de cambiar el programa.
 
-#### Fase 4 · Apliquem i millorem (30 min)
+#### Fase 4 · Aplicamos y mejoramos (30 min)
 
-Feu quatre intents comparables: dos a baixa velocitat i dos a velocitat moderada, amb la mateixa col·locació inicial i el mateix camp. En cada prova, anoteu si segueix la línia, activa la palanca, passa al costat de les dues estacions sense tocar-les i arriba a la zona final; mesureu també la desviació lateral en acabar i, si és viable, el temps del mateix equip. Després canvieu una sola variable —alineament, llindar o velocitat— i repetiu dues vegades. Compareu la fiabilitat amb la rapidesa i justifiqueu quin ajust és més útil; el temps només compara les iteracions del mateix equip i no es publica ni s’utilitza per ordenar grups. Com a extensió, afegiu una segona parada pròpia després del pont i comproveu si la base pot completar les dues tasques en una mateixa ruta; o comenceu des de la zona dreta i redissenyeu el seguiment.
+Haced cuatro intentos comparables: dos a baja velocidad y dos a velocidad moderada, con la misma colocación inicial y el mismo campo. En cada prueba, anotad si sigue la línea, activa la palanca, pasa junto a las dos estaciones sin tocarlas y llega a la zona final; medid también la desviación lateral al terminar y, si es viable, el tiempo del mismo equipo. Después cambiad una sola variable —alineación, umbral o velocidad— y repetid dos veces. Comparad la fiabilidad con la rapidez y justificad qué ajuste es más útil; el tiempo solo compara las iteraciones del mismo equipo y no se publica ni se utiliza para ordenar grupos. Como extensión, añadid una segunda parada propia después del puente y comprobad si la base puede completar las dos tareas en una misma ruta; o empezad desde la zona derecha y rediseñad el seguimiento.
 
-#### Fase 5 · Comprovem i reflexionem (10 min)
+#### Fase 5 · Comprobamos y reflexionamos (10 min)
 
-Cada membre explica una part de la missió mostrant el robot, el programa i les dades de prova. La graella docent observa quatre indicadors: seguir la línia amb un criteri mesurat; activar el pont; completar la ruta evitant les estacions; explicar una decisió de velocitat/alineament amb evidència. En l’autoavaluació individual, marqueu «hem completat una missió», «hem completat també una segona parada» o «totes les persones hem presentat programa i estratègia». Una altra parella dona un retorn constructiu amb una observació i una proposta comprovable per al següent intent. Com a extensió de llengua i orientació professional, l’equip explica quina estratègia ha reduït el temps del seu propi recorregut sense perdre precisió i relaciona el treball amb disseny d’enginyeria o programació; no es comparen ni publiquen temps entre equips.
+Cada miembro explica una parte de la misión mostrando el robot, el programa y los datos de prueba. La cuadrícula docente observa cuatro indicadores: seguir la línea con un criterio medido; activar el puente; completar la ruta evitando las estaciones; explicar una decisión de velocidad/alineación con evidencia. En la autoevaluación individual, marcad «hemos completado una misión», «hemos completado también una segunda parada» o «todas las personas hemos presentado programa y estrategia». Otra pareja da un retorno constructivo con una observación y una propuesta comprobable para el siguiente intento. Como extensión de lengua y orientación profesional, el equipo explica qué estrategia ha reducido el tiempo de su propio recorrido sin perder precisión y relaciona el trabajo con diseño de ingeniería o programación; no se comparan ni se publican tiempos entre equipos.
 
-**Evidència:** camp i palanca propis, programa anotat, taula dels sis intents (quatre inicials i dos després de revisar una variable), mesura de desviació, graella d’observació i explicació col·laborativa. La pàgina LEGO indica que la lliçó oficial prepara la Driving Base amb Color Sensor, configura un model de missió, activa el connector, practica l’eixida esquerra–arribada dreta, evita altres missions i conversa sobre la compensació entre rapidesa i precisió. Aquesta proposta adapta eixos d’aprenentatge semblants en un camp i un mecanisme locals, sense reproduir el tapet, el model ni la missió de FIRST LEGO League.
+**Evidencia:** campo y palanca propios, programa anotado, tabla de los seis intentos (cuatro iniciales y dos después de revisar una variable), medida de desviación, cuadrícula de observación y explicación colaborativa. La página de LEGO indica que la lección oficial prepara la Driving Base con Color Sensor, configura un modelo de misión, activa el conector, practica la salida izquierda–llegada derecha, evita otras misiones y conversa sobre la compensación entre rapidez y precisión. Esta propuesta adapta ejes de aprendizaje similares en un campo y un mecanismo locales, sin reproducir el tapete, el modelo ni la misión de FIRST LEGO League.
 
-### **S5 · Una base modular construïda en equip · [Assembling an Advanced Driving Base](https://education.lego.com/en-us/lessons/prime-competition-ready/assembling-an-advanced-driving-base/) (90–120 min).**
+### **S5 · Una base modular construida en equipo · [Assembling an Advanced Driving Base](https://education.lego.com/en-us/lessons/prime-competition-ready/assembling-an-advanced-driving-base/) (90–120 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** com unim mòduls individuals en una base robusta i fem visible la contribució de cadascú? Mireu una base de pràctica i identifiqueu quines característiques poden fer-la estable i fàcil de modificar. En un equip de quatre, repartiu les quatre instruccions de muntatge i prediu què caldrà comprovar en ajuntar les parts.
+**Pregunta:** ¿cómo unimos módulos individuales en una base robusta y hacemos visible la contribución de cada cual? Mirad una base de práctica e identificad qué características pueden hacerla estable y fácil de modificar. En un equipo de cuatro, repartid las cuatro instrucciones de montaje y predecid qué habrá que comprobar al juntar las partes.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Cada persona construeix la part assignada en la seua instrucció; després, l’equip uneix les quatre parts, comprova les connexions de cables i els ordena perquè no freguen les rodes ni s’enganxen. La base avançada usa dos motors grans per a propulsió, dos motors mitjans per als útils i dos sensors de color, i requereix l’Expansion Set 45681 a més del 45678. Abans d’engegar, compareu les rodes amb la base de pràctica i reviseu que cada mòdul quede ferm.
+Cada persona construye la parte asignada en su instrucción; después, el equipo une las cuatro partes, comprueba las conexiones de cables y las ordena para que no rocen las ruedas ni se enganchen. La base avanzada usa dos motores grandes para la propulsión, dos motores medianos para los útiles y dos sensores de color, y requiere el Expansion Set 45681 además del 45678. Antes de encender, comparad las ruedas con la base de práctica y revisad que cada módulo quede firme.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Executeu primer el programa inicial i després els altres programes d’exemple per observar com es mou la base. Registreu qui ha muntat cada part, quin port o cable connecta i una característica estructural que aporta al conjunt. Separeu els errors de muntatge dels errors del programa: abans de reprogramar, inspeccioneu la unió, el port i el recorregut del cable.
+Ejecutad primero el programa inicial y después los otros programas de ejemplo para observar cómo se mueve la base. Registrad quién ha montado cada parte, qué puerto o cable conecta y una característica estructural que aporta al conjunto. Separad los errores de montaje de los errores del programa: antes de reprogramar, inspeccionad la unión, el puerto y el recorrido del cable.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si no hi ha Expansion Set, feu els rols modulars sobre la base de dos motors i marqueu-la com a adaptació reduïda; no afirmeu que heu muntat la base avançada. Per adaptar la dificultat, treballeu les parts de les instruccions per parelles. Com a extensió, doneu a l’equip les instruccions d’un sol costat de l’eix i demaneu que complete l’altre per simetria; després, programeu una ruta entre obstacles grans sense colpejar-los. Cada membre ha d’explicar quina part ha construït i com contribueix a la base.
+Si no hay Expansion Set, haced los roles modulares sobre la base de dos motores y marcadla como adaptación reducida; no afirméis que habéis montado la base avanzada. Para adaptar la dificultad, trabajad las partes de las instrucciones por parejas. Como extensión, dad al equipo las instrucciones de un solo lado del eje y pedid que complete el otro por simetría; después, programad una ruta entre obstáculos grandes sin golpearlos. Cada miembro debe explicar qué parte ha construido y cómo contribuye a la base.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** esquema de les quatre parts, registre de ports i gestió dels cables, prova del programa inicial i dels exemples, presentació on cadascú explica la seua contribució i una coavaluació amb observació i suggeriment concret. Autoavaluació individual: **blau**, he treballat amb l’equip per construir i unir la base; **groc**, també l’he provada; **violeta**, l’he presentada explicant la meua aportació. Connecteu el disseny amb ocupacions de muntatge mecànic, enginyeria o manteniment de transport. No anomeneu «base avançada» la versió reduïda.
+**Evidencia:** esquema de las cuatro partes, registro de puertos y gestión de los cables, prueba del programa inicial y de los ejemplos, presentación en la que cada cual explica su contribución y una coevaluación con observación y sugerencia concreta. Autoevaluación individual: **azul**, he trabajado con el equipo para construir y unir la base; **amarillo**, también la he probado; **violeta**, la he presentado explicando mi aportación. Conectad el diseño con ocupaciones de montaje mecánico, ingeniería o mantenimiento del transporte. No llaméis «base avanzada» a la versión reducida.
 
-### **S6 · El meu bloc, el nostre programa · [My Code, Our Program](https://education.lego.com/en-us/lessons/prime-competition-ready/my-code-our-program/) (90–120 min en la seqüència oficial; adaptar la durada al kit disponible).**
+### **S6 · Mi bloque, nuestro programa · [My Code, Our Program](https://education.lego.com/en-us/lessons/prime-competition-ready/my-code-our-program/) (90–120 min en la secuencia oficial; adaptar la duración al kit disponible).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** com fem que totes les persones entenguen i reorganitzen el programa? Observeu una missió de maqueta i discutiu per què convé completar les tasques en un ordre acordat i tornar a una zona d’inici entre grups de missions. Predigueu quines instruccions es repetiran en una ruta quadrada, quines canvien per al cercle i el triangle, i com un bloc amb nom pot ajudar un altre membre de l’equip a entendre-les.
+**Pregunta:** ¿cómo hacemos que todas las personas entiendan y reorganicen el programa? Observad una misión de maqueta y discutid por qué conviene completar las tareas en un orden acordado y volver a una zona de inicio entre grupos de misiones. Predecid qué instrucciones se repetirán en una ruta cuadrada, cuáles cambian para el círculo y el triángulo, y cómo un bloque con nombre puede ayudar a otro miembro del equipo a entenderlas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Amb la base avançada o la base de pràctica amb limitació escrita, construïu dos marcadors i proveu el programa *My Block* de mostra. Creeu un bloc propi per a una ruta quadrada i expliqueu què queda dins del bloc i què continua en el programa principal.
+Con la base avanzada o la base de práctica con limitación escrita, construid dos marcadores y probad el programa *My Block* de muestra. Cread un bloque propio para una ruta cuadrada y explicad qué queda dentro del bloque y qué continúa en el programa principal.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu blocs separats per a cercle aproximat i triangle, decidiu la mida amb els marcadors i registreu quines ordres queden reutilitzades. Abans de programar cada figura, cada persona ha de poder predir quin bloc s’executarà i descriure què fa; així es comprova que el codi compartit és comprensible per tot l’equip.
+Haced bloques separados para un círculo aproximado y un triángulo, decidid el tamaño con los marcadores y registrad qué órdenes quedan reutilizadas. Antes de programar cada figura, cada persona debe poder predecir qué bloque se ejecutará y describir qué hace; así se comprueba que el código compartido es comprensible para todo el equipo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu programes amb una altra parella perquè els execute sense explicació oral. Reordeneu els blocs per a una missió diferent i compareu llegibilitat i facilitat de modificació. Com a ampliació matemàtica, mesureu la distància recorreguda en una rotació o un nombre de graus, calculeu la circumferència de la roda amb `π × diàmetre` i useu-la per estimar la distància; el giroscopi i un recorregut complex cronometrat són extensions opcionals, sense classificar equips.
+Intercambiad programas con otra pareja para que los ejecute sin explicación oral. Reordenad los bloques para una misión diferente y comparad legibilidad y facilidad de modificación. Como ampliación matemática, medid la distancia recorrida en una rotación o un número de grados, calculad la circunferencia de la rueda con `π × diámetro` y usadla para estimar la distancia; el giroscopio y un recorrido complejo cronometrado son extensiones opcionales, sin clasificar equipos.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Cada persona presenta un programa i explica com un *My Block* ordena, simplifica o permet reordenar les instruccions. Autoavaluació individual: **blau**, he creat un *My Block*; **groc**, n’he creat dos o més; **violeta**, he preparat diversos programes i els he reordenat per canviar l’acció de la base. Una parella revisora dona una puntuació formativa i un comentari constructiu per a la pròxima prova. **Evidència:** blocs per a quadrat/cercle/triangle, registre de prova, programa reordenat i presentació individual de la contribució.
+Cada persona presenta un programa y explica cómo un *My Block* ordena, simplifica o permite reordenar las instrucciones. Autoevaluación individual: **azul**, he creado un *My Block*; **amarillo**, he creado dos o más; **violeta**, he preparado varios programas y los he reordenado para cambiar la acción de la base. Una pareja revisora da una puntuación formativa y un comentario constructivo para la próxima prueba. **Evidencia:** bloques para cuadrado/círculo/triángulo, registro de prueba, programa reordenado y presentación individual de la contribución.
 
-### **S7 · Dos útils i un programa amb arrays · [Time for an Upgrade](https://education.lego.com/en-us/lessons/prime-competition-ready/time-for-an-upgrade/) (90–120 min).**
+### **S7 · Dos útiles y un programa con arrays · [Time for an Upgrade](https://education.lego.com/en-us/lessons/prime-competition-ready/time-for-an-upgrade/) (90–120 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** per què un robot de missió canvia d’útil i per què cal tornar els motors a una posició coneguda? Compareu la pala i el braç elevador segons precisió, força i disseny; predigueu quin convé per a cada una de quatre caixes lleugeres.
+**Pregunta:** ¿por qué un robot de misión cambia de útil y por qué hay que devolver los motores a una posición conocida? Comparad la pala y el brazo elevador según precisión, fuerza y diseño; predecid cuál conviene para cada una de cuatro cajas ligeras.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En la versió completa, munteu la pala i el braç elevador, fixeu-los amb els connectors rojos i connecteu-los a la base avançada; construïu quatre caixes lleugeres. Executeu el programa de prova i observeu que el braç s’alça. Abans de cada tasca, establiu com reinicialitzar la posició dels motors i comproveu que l’útil queda bloquejat i no interfereix amb el sensor.
+En la versión completa, montad la pala y el brazo elevador, fijadlos con los conectores rojos y conectadlos a la base avanzada; construid cuatro cajas ligeras. Ejecutad el programa de prueba y observad que el brazo se eleva. Antes de cada tarea, estableced cómo reinicializar la posición de los motores y comprobad que el útil queda bloqueado y no interfiere con el sensor.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Descomponeu la tasca en acostar, elevar/baixar, empényer o alçar, alliberar i reiniciar; programeu ordres perquè cada útil puga pujar i baixar i compareu-les amb el comportament de mostra. Creeu dos arrays paral·lels: el primer guarda l’operació prevista per a cadascuna de les quatre caixes i el segon, el resultat observat. Compareu els elements del mateix índex i expliqueu què significa cada posició; si l’entorn disponible no ofereix arrays en blocs, feu aquesta part en Python o amb dues llistes de targetes i declareu la representació usada.
+Descomponed la tarea en acercarse, elevar/bajar, empujar o alzar, liberar y reiniciar; programad órdenes para que cada útil pueda subir y bajar y comparadlas con el comportamiento de muestra. Cread dos arrays paralelos: el primero guarda la operación prevista para cada una de las cuatro cajas y el segundo, el resultado observado. Comparad los elementos del mismo índice y explicad qué significa cada posición; si el entorno disponible no ofrece arrays en bloques, haced esta parte en Python o con dos listas de tarjetas y declarad la representación usada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proveu els quatre casos i compareu precisió, força i encaix de cada útil. Canvieu una propietat cada vegada i repetiu les proves. Com a extensió, adapteu un útil per a una càrrega diferent o acosteu-vos a les caixes en angle amb un giroscopi disponible i una prova de posicionament. Sense Expansion Set, useu una base de dos motors i útils de cartó, i declareu el canvi: no replica la base motoritzada ni els seus resultats.
+Probad los cuatro casos y comparad precisión, fuerza y encaje de cada útil. Cambiad una propiedad cada vez y repetid las pruebas. Como extensión, adaptad un útil para una carga diferente o acercaos a las cajas en ángulo con un giroscopio disponible y una prueba de posicionamiento. Sin Expansion Set, usad una base de dos motores y útiles de cartón, y declarad el cambio: no replica la base motorizada ni sus resultados.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Cada persona presenta com la base usa els útils i com la seua forma ajuda a completar la tasca. Autoavaluació individual: **blau**, he usat un array; **groc**, n’he creat un segon; **violeta**, he fet més d’una operació amb arrays. Una parella revisa el resultat i dona un comentari constructiu amb una prova següent. **Evidència:** diagrama dels dos útils, reinici verificat, arrays comentats, taula dels quatre índexs, resultats de les proves i presentació. L’abordatge en angle amb giroscopi és una ampliació opcional.
+Cada persona presenta cómo la base usa los útiles y cómo su forma ayuda a completar la tarea. Autoevaluación individual: **azul**, he usado un array; **amarillo**, he creado un segundo; **violeta**, he hecho más de una operación con arrays. Una pareja revisa el resultado y da un comentario constructivo con una prueba siguiente. **Evidencia:** diagrama de los dos útiles, reinicio verificado, arrays comentados, tabla de los cuatro índices, resultados de las pruebas y presentación. El abordaje en ángulo con giroscopio es una ampliación opcional.
 
-### **S8 · Repte de camp complet i cronometrat · [Mission Ready](https://education.lego.com/en-us/lessons/prime-competition-ready/mission-ready/) (120+ min, més d’una sessió).**
+### **S8 · Reto de campo completo y cronometrado · [Mission Ready](https://education.lego.com/en-us/lessons/prime-competition-ready/mission-ready/) (120+ min, más de una sesión).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** podem combinar conducció, sensors, útils i blocs per completar una missió? Dissenyeu un camp escolar amb estació, ruta i marcadors propis; definiu fites i predigueu quines poden requerir més d’un intent.
+**Pregunta:** ¿podemos combinar conducción, sensores, útiles y bloques para completar una misión? Diseñad un campo escolar con estación, ruta y marcadores propios; definid metas y predecid cuáles pueden requerir más de un intento.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Prepareu un mòdul de joc de cartó, un camí propi i dos marcadors de camp. Les cinc fites originals són: (1) empényer un actuador per alliberar el pas; (2) pressionar una palanca; (3) passar entre els marcadors sense tocar-los; (4) seguir la ruta i arreplegar quatre mostres fictícies de llavor; (5) deixar-ne almenys una en una zona segura, a 50 cm del model de niu. Useu pala i braç només amb el kit avançat; amb el set bàsic, simplifiqueu les accions i documenteu-ho.
+Preparad un módulo de juego de cartón, un camino propio y dos marcadores de campo. Las cinco metas originales son: (1) empujar un actuador para liberar el paso; (2) presionar una palanca; (3) pasar entre los marcadores sin tocarlos; (4) seguir la ruta y recoger cuatro muestras ficticias de semilla; (5) dejar al menos una en una zona segura, a 50 cm del modelo de nido. Usad pala y brazo solo con el kit avanzado; con el set básico, simplificad las acciones y documentadlo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Escriviu pseudocodi abans de programar cada fita, reutilitzeu *My Blocks* i poseu noms clars a variables i blocs. L’equip guanya una marca per cada fita completada, una marca addicional si arreplega les quatre mostres, i en guanya una altra per al lliurament segur de 50 cm. Prepareu fins a sis fitxes d’incidència: cada contacte amb un marcador o cada vegada que una persona alça/recol·loca el robot consumeix una fitxa i obliga a registrar la causa abans de reprendre. Les fitxes no resten punts ni serveixen per comparar equips; el criteri és revisar el programa i completar amb seguretat. Les mostres són peces fictícies i no impliquen animals.
+Escribid pseudocódigo antes de programar cada meta, reutilizad *My Blocks* y poned nombres claros a variables y bloques. El equipo gana una marca por cada meta completada, una marca adicional si recoge las cuatro muestras, y gana otra más por la entrega segura de 50 cm. Preparad hasta seis fichas de incidencia: cada contacto con un marcador o cada vez que una persona levanta/recoloca el robot consume una ficha y obliga a registrar la causa antes de reanudar. Las fichas no restan puntos ni sirven para comparar equipos; el criterio es revisar el programa y completar con seguridad. Las muestras son piezas ficticias y no implican animales.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu intents sense cronòmetre fins que el programa siga estable; després, si l’equip vol, mesureu el seu propi temps en una execució final. Registreu les fites completades, les fitxes d’incidència consumides, el temps propi i les fallades; canvieu una sola cosa i repetiu almenys la prova que havia fallat. El temps s’usa per explicar l’estratègia de l’equip, mai per fer una classificació.
+Haced intentos sin cronómetro hasta que el programa sea estable; después, si el equipo quiere, medid su propio tiempo en una ejecución final. Registrad las metas completadas, las fichas de incidencia consumidas, el tiempo propio y los fallos; cambiad una sola cosa y repetid al menos la prueba que había fallado. El tiempo se usa para explicar la estrategia del equipo, nunca para hacer una clasificación.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Cada membre presenta una part del robot, del programa o de l’estratègia. Autoavaluació individual: **blau**, he completat almenys una fita; **groc**, l’equip ha completat les cinc; **violeta**, totes les persones han presentat robot, programa i estratègia. Una altra parella dona retorn constructiu amb una observació i una millora comprovable. Com a extensió de llengua i orientació professional, prepareu una presentació de l’estratègia més eficient i relacioneu el disseny amb enginyeria o emprenedoria. **Evidència:** mapa i regles originals, pseudocodi, programa comentat, registre de les cinc fites, incidències, repetició d’una fallada i presentació amb contribucions individuals. La seqüència adapta els tipus de missió i el procés de planificació de la lliçó, però el camp, els objectes, les fitxes i les regles són propis; no copieu els models ni el camp oficials.
+Cada miembro presenta una parte del robot, del programa o de la estrategia. Autoevaluación individual: **azul**, he completado al menos una meta; **amarillo**, el equipo ha completado las cinco; **violeta**, todas las personas han presentado robot, programa y estrategia. Otra pareja da retorno constructivo con una observación y una mejora comprobable. Como extensión de lengua y orientación profesional, preparad una presentación de la estrategia más eficiente y relacionad el diseño con ingeniería o emprendimiento. **Evidencia:** mapa y reglas originales, pseudocódigo, programa comentado, registro de las cinco metas, incidencias, repetición de un fallo y presentación con contribuciones individuales. La secuencia adapta los tipos de misión y el proceso de planificación de la lección, pero el campo, los objetos, las fichas y las reglas son propios; no copiéis los modelos ni el campo oficiales.
 
-### **S9 · Taller desconnectat de resolució creativa · [Mission Training: Creative Problem-Solving](https://education.lego.com/en-us/lessons/prime-competition-ready/mission-training-creative-problem-solving/) (45 min, híbrida).**
+### **S9 · Taller desconectado de resolución creativa · [Mission Training: Creative Problem-Solving](https://education.lego.com/en-us/lessons/prime-competition-ready/mission-training-creative-problem-solving/) (45 min, híbrida).**
 
-La sessió trasllada al context de l’Albufera el procés de disseny d’enginyeria de la lliçó: definir criteris, idear, fer i provar un prototip, iterar i comunicar què s’ha descobert. **No calen el set SPIKE Prime, peces LEGO ni programari.** Es treballa amb materials reutilitzats i una solució manipulable de baixa complexitat; cap repte requereix construir un robot.
+La sesión traslada al contexto de la Albufera el proceso de diseño de ingeniería de la lección: definir criterios, idear, hacer y probar un prototipo, iterar y comunicar qué se ha descubierto. **No hacen falta el set SPIKE Prime, piezas LEGO ni software.** Se trabaja con materiales reutilizados y una solución manipulable de baja complejidad; ningún reto requiere construir un robot.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Reserveu 10 minuts. Mostreu la imatge del nus que cal desfer i doneu temps perquè tothom pense abans de parlar. Acordeu una definició compartida de *resoldre creativament* i demaneu que el grup identifique el problema, propose almenys dues maneres d’abordar-lo, trie què provaria primer i anticipe què canviaria si no funciona. Tanqueu amb una definició breu d’**iteració**: repetir un procés per acostar-se al resultat desitjat, avaluant i revisant la solució quan cal.
+Reservad 10 minutos. Mostrad la imagen del nudo que hay que deshacer y dad tiempo para que todo el mundo piense antes de hablar. Acordad una definición compartida de *resolver creativamente* y pedid que el grupo identifique el problema, proponga al menos dos maneras de abordarlo, elija qué probaría primero y anticipe qué cambiaría si no funciona. Cerrad con una definición breve de **iteración**: repetir un proceso para acercarse al resultado deseado, evaluando y revisando la solución cuando hace falta.
 
-![Nus de corda, esbós de solució i prototip de cartó amb materials reutilitzats per a representar el procés d’idear, provar i millorar.](../../_assets/situacions/sa-sp-mission-training-prototip.webp)
+![Nudo de cuerda, boceto de solución y prototipo de cartón con materiales reutilizados para representar el proceso de idear, probar y mejorar.](../../_assets/situacions/sa-sp-mission-training-prototip.webp)
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Reserveu 15 minuts. Cada alumne o equip tria **un** repte i escriu primer què ha de passar perquè la solució siga vàlida. Les quatre opcions inspirades en la lliçó són: **A)** portar una mostra fictícia fins a una persona o punt de recepció; **B)** activar un dispositiu de maqueta prement-lo; **C)** rescatar una llavor de paper d’una zona delimitada, empenyent-la, estirant-la o subjectant-la; **D)** voltejar una fitxa plana, que representa una targeta de mostreig. Són tasques de manipulació sobre una taula; no s’usen líquids, animals ni objectes fràgils.
+Reservad 15 minutos. Cada alumno o equipo elige **un** reto y escribe primero qué tiene que pasar para que la solución sea válida. Las cuatro opciones inspiradas en la lección son: **A)** llevar una muestra ficticia hasta una persona o punto de recepción; **B)** activar un dispositivo de maqueta presionándolo; **C)** rescatar una semilla de papel de una zona delimitada, empujándola, estirándola o sujetándola; **D)** voltear una ficha plana, que representa una tarjeta de muestreo. Son tareas de manipulación sobre una mesa; no se usan líquidos, animales ni objetos frágiles.
 
-Seguiu en equip aquests cinc moviments, deixant una traça en el quadern:
+Seguid en equipo estos cinco movimientos, dejando un rastro en el cuaderno:
 
-1. **Identifiquem:** triem el repte i formulem el resultat observable.
-2. **Ideem:** dibuixem dues solucions possibles amb els materials disponibles i n’escollim una segons els criteris acordats.
-3. **Creem:** fem un primer prototip amb cartó, paper, cordill o altres materials reutilitzats.
-4. **Iterem:** provem-lo, anotem què ha passat i canviem una característica; tornem a provar-lo.
-5. **Comuniquem:** expliquem què ha funcionat, què hem descobert i com la prova ha guiat la millora.
+1. **Identificamos:** elegimos el reto y formulamos el resultado observable.
+2. **Ideamos:** dibujamos dos soluciones posibles con los materiales disponibles y elegimos una según los criterios acordados.
+3. **Creamos:** hacemos un primer prototipo con cartón, papel, cordel u otros materiales reutilizados.
+4. **Iteramos:** lo probamos, anotamos qué ha pasado y cambiamos una característica; volvemos a probarlo.
+5. **Comunicamos:** explicamos qué ha funcionado, qué hemos descubierto y cómo la prueba ha guiado la mejora.
 
-El prototip no ha de funcionar a la primera. Si l’alumnat és a casa, pot treballar sobre una superfície plana i neta amb el material que tinga; si no disposa de materials, pot fer el disseny i la iteració amb dibuixos seqüenciats.
+El prototipo no tiene que funcionar a la primera. Si el alumnado está en casa, puede trabajar sobre una superficie plana y limpia con el material que tenga; si no dispone de materiales, puede hacer el diseño y la iteración con dibujos secuenciados.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Reserveu 10 minuts. Feu una ronda breu de comunicació: cada equip explica com va planificar la solució i quins criteris va definir, mostra la idea creativa, relata una descoberta feta durant les proves i identifica una millora concreta del prototip. Demaneu exemples observables —«la fitxa va caure quan…», «hem canviat l’angle i ara…»— en compte d’afirmacions generals. La resta escolta i formula una pregunta respectuosa; el retorn ha d’ajudar a comprendre el procés, no a jutjar qui ha acabat abans.
+Reservad 10 minutos. Haced una ronda breve de comunicación: cada equipo explica cómo planificó la solución y qué criterios definió, muestra la idea creativa, relata un descubrimiento hecho durante las pruebas e identifica una mejora concreta del prototipo. Pedid ejemplos observables —«la ficha cayó cuando…», «hemos cambiado el ángulo y ahora…»— en lugar de afirmaciones generales. El resto escucha y formula una pregunta respetuosa; el retorno debe ayudar a comprender el proceso, no a juzgar quién ha acabado antes.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reserveu 5 minuts. Cada equip documenta el procés amb un pòster, una pàgina del quadern o un vídeo breu: problema i criteris, esbós inicial, prototip, resultat de la prova i canvi introduït. Feu una galeria de treballs. En modalitat presencial es poden visitar les taules; en línia, mostrar el prototip en una reunió o compartir-ne una fotografia; en modalitat asíncrona, publicar el dibuix, l’explicació escrita o una gravació curta perquè els companys la puguen comentar.
+Reservad 5 minutos. Cada equipo documenta el proceso con un póster, una página del cuaderno o un vídeo breve: problema y criterios, boceto inicial, prototipo, resultado de la prueba y cambio introducido. Haced una galería de trabajos. En modalidad presencial se pueden visitar las mesas; en línea, mostrar el prototipo en una reunión o compartir una fotografía; en modalidad asíncrona, publicar el dibujo, la explicación escrita o una grabación corta para que los compañeros puedan comentarla.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Reserveu 5 minuts. Cada alumne comparteix una iteració o una solució creativa descoberta i s’autoavalua: **una mà** si encara necessita ajuda per explicar estratègies i iteracions; **dues mans** si ja les pot descriure; **mans enlaire** si pot ensenyar a una altra persona com descriure-les. Accepteu com a resposta una explicació oral, escrita, dibuixada o gravada.
+Reservad 5 minutos. Cada alumno comparte una iteración o una solución creativa descubierta y se autoevalúa: **una mano** si todavía necesita ayuda para explicar estrategias e iteraciones; **dos manos** si ya puede describirlas; **manos en alto** si puede enseñar a otra persona cómo describirlas. Aceptad como respuesta una explicación oral, escrita, dibujada o grabada.
 
-**Evidències:** criteris de disseny, dues idees inicials, esbós, prototip, registre de prova i millora, explicació del descobriment i autoavaluació individual. La temporització suma 45 minuts (10 + 15 + 10 + 5 + 5); la fase de construcció pot continuar en una altra sessió sense canviar els criteris. Adaptació pròpia de la lliçó híbrida: es mantenen el cicle de disseny, els quatre tipus de repte, la prova iterativa, la comunicació, la documentació i l’autoavaluació; el context, els objectes, les instruccions i la imatge són originals.
+**Evidencias:** criterios de diseño, dos ideas iniciales, boceto, prototipo, registro de prueba y mejora, explicación del descubrimiento y autoevaluación individual. La temporalización suma 45 minutos (10 + 15 + 10 + 5 + 5); la fase de construcción puede continuar en otra sesión sin cambiar los criterios. Adaptación propia de la lección híbrida: se mantienen el ciclo de diseño, los cuatro tipos de reto, la prueba iterativa, la comunicación, la documentación y la autoevaluación; el contexto, los objetos, las instrucciones y la imagen son originales.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Per a les sessions amb robot: set SPIKE Prime 45678, base de conducció, sensor de distància i sensor de color, cinta negra, cartó, retoladors, mostres grans i lleugeres i cinta per al camp. La base avançada oficial consta de dos motors grans per a la propulsió, dos motors mitjans per als útils i dos sensors de color; necessita l’Expansion Set 45681 a més del set 45678. Les sessions 5–8 indiquen aquesta dependència i no afirmen que la base de dos motors siga equivalent. Sense l’expansió, es pot seguir l’objectiu didàctic amb un únic motor mitjà del set base i útils alternats/passius; anoteu aquesta reducció. La sessió 9 només necessita paper, llapis i cartó.
+Para las sesiones con robot: set SPIKE Prime 45678, base de conducción, sensor de distancia y sensor de color, cinta negra, cartón, rotuladores, muestras grandes y ligeras y cinta para el campo. La base avanzada oficial consta de dos motores grandes para la propulsión, dos motores medianos para los útiles y dos sensores de color; necesita el Expansion Set 45681 además del set 45678. Las sesiones 5–8 indican esta dependencia y no afirman que la base de dos motores sea equivalente. Sin la expansión, se puede seguir el objetivo didáctico con un único motor mediano del set base y útiles alternos/pasivos; anotad esta reducción. La sesión 9 solo necesita papel, lápiz y cartón.
 
-Prepareu el camp sobre taules o al terra, amb carrils prou amples, objectes grans i zones de mans fora del moviment. La referència a l’Albufera és una contextualització educativa: useu dades i mostres fictícies i no feu proves ni recollides al medi natural.
+Preparad el campo sobre mesas o en el suelo, con carriles lo bastante anchos, objetos grandes y zonas de manos fuera del movimiento. La referencia a la Albufera es una contextualización educativa: usad datos y muestras ficticias y no hagáis pruebas ni recogidas en el medio natural.
 
-## 🎯 Evidències i avaluació
+## 🎯 Evidencias y evaluación
 
-Recolliu pseudocodi, taules de calibratge, lectures del sensor, mapa de missió, esquemes de construcció, blocs propis, comparació d’accessoris, dades de fiabilitat i prototip desconnectat. Valoreu si l’equip pot predir i explicar el comportament, aïllar una variable, justificar una revisió amb dades, documentar el codi i repartir les decisions. Una missió fallida aporta evidència útil quan queda registrada i ajuda a formular la prova següent; els punts i el temps no són l’únic criteri.
+Recoged pseudocódigo, tablas de calibración, lecturas del sensor, mapa de misión, esquemas de construcción, bloques propios, comparación de accesorios, datos de fiabilidad y prototipo desconectado. Valorad si el equipo puede predecir y explicar el comportamiento, aislar una variable, justificar una revisión con datos, documentar el código y repartir las decisiones. Una misión fallida aporta evidencia útil cuando queda registrada y ayuda a formular la prueba siguiente; los puntos y el tiempo no son el único criterio.
 
-## ♿ Participació i inclusió
+## ♿ Participación e inclusión
 
-Abans del robot es pot resoldre cada ruta amb una maqueta i targetes de moviment. Oferiu rols rotatius de construcció, programació, pilotatge de proves i registre; faciliteu instruccions visuals, carrils d’alt contrast, marques tàctils fora de la trajectòria i temps addicional per documentar. Les missions no depenen de velocitat manual: una persona pot dictar o validar el codi mentre una altra manipula el robot. El repte desconnectat és una sessió completa, no un premi de consol ni un requisit per accedir a la resta.
+Antes del robot se puede resolver cada ruta con una maqueta y tarjetas de movimiento. Ofreced roles rotativos de construcción, programación, pilotaje de pruebas y registro; facilitad instrucciones visuales, carriles de alto contraste, marcas táctiles fuera de la trayectoria y tiempo adicional para documentar. Las misiones no dependen de la velocidad manual: una persona puede dictar o validar el código mientras otra manipula el robot. El reto desconectado es una sesión completa, no un premio de consolación ni un requisito para acceder al resto.
 
-## 🔗 Correspondència amb la unitat oficial
+## 🔗 Correspondencia con la unidad oficial
 
-La seqüència adapta les nou lliçons de [Competition Ready · SPIKE Prime](https://education.lego.com/en-us/lessons/prime-competition-ready/): [Driving Around](https://education.lego.com/en-us/lessons/prime-competition-ready/training-camp-1-driving-around/), [Playing with Objects](https://education.lego.com/en-us/lessons/prime-competition-ready/training-camp-2-playing-with-objects/), [Reacting to Lines](https://education.lego.com/en-us/lessons/prime-competition-ready/training-camp-3-react-to-lines/), [The Guided Mission 2026–27](https://education.lego.com/en-us/lessons/prime-competition-ready/spike-prime-guided-mission-2627/), [Assembling an Advanced Driving Base](https://education.lego.com/en-us/lessons/prime-competition-ready/assembling-an-advanced-driving-base/), [My Code, Our Program](https://education.lego.com/en-us/lessons/prime-competition-ready/my-code-our-program/), [Time for an Upgrade](https://education.lego.com/en-us/lessons/prime-competition-ready/time-for-an-upgrade/), [Mission Ready](https://education.lego.com/en-us/lessons/prime-competition-ready/mission-ready/) i la lliçó híbrida [Mission Training](https://education.lego.com/en-us/lessons/prime-competition-ready/mission-training-creative-problem-solving/). El catàleg indica durades d’entre 30 i 120+ minuts; per això les activitats de construcció, projecte i missió s’estenen en més d’una classe. Els textos, el context, les missions, el camp, les regles i els materials visuals són propis. Les especificacions de components es basen en la pàgina oficial de [maquinari SPIKE Prime](https://education.lego.com/en-us/teacher-resources/lego-education-spike-prime/support-technical-info/lego-education-spike-prime-support-technical-info-product-info/); comproveu sempre la dotació física del centre.
+La secuencia adapta las nueve lecciones de [Competition Ready · SPIKE Prime](https://education.lego.com/en-us/lessons/prime-competition-ready/): [Driving Around](https://education.lego.com/en-us/lessons/prime-competition-ready/training-camp-1-driving-around/), [Playing with Objects](https://education.lego.com/en-us/lessons/prime-competition-ready/training-camp-2-playing-with-objects/), [Reacting to Lines](https://education.lego.com/en-us/lessons/prime-competition-ready/training-camp-3-react-to-lines/), [The Guided Mission 2026–27](https://education.lego.com/en-us/lessons/prime-competition-ready/spike-prime-guided-mission-2627/), [Assembling an Advanced Driving Base](https://education.lego.com/en-us/lessons/prime-competition-ready/assembling-an-advanced-driving-base/), [My Code, Our Program](https://education.lego.com/en-us/lessons/prime-competition-ready/my-code-our-program/), [Time for an Upgrade](https://education.lego.com/en-us/lessons/prime-competition-ready/time-for-an-upgrade/), [Mission Ready](https://education.lego.com/en-us/lessons/prime-competition-ready/mission-ready/) y la lección híbrida [Mission Training](https://education.lego.com/en-us/lessons/prime-competition-ready/mission-training-creative-problem-solving/). El catálogo indica duraciones de entre 30 y 120+ minutos; por eso las actividades de construcción, proyecto y misión se extienden en más de una clase. Los textos, el contexto, las misiones, el campo, las reglas y los materiales visuales son propios. Las especificaciones de componentes se basan en la página oficial de [hardware SPIKE Prime](https://education.lego.com/en-us/teacher-resources/lego-education-spike-prime/support-technical-info/lego-education-spike-prime-support-technical-info-product-info/); comprobad siempre la dotación física del centro.

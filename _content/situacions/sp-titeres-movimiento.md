@@ -14,172 +14,172 @@ duration: "5 sesiones · 250 min"
 challenge: "¿Cómo podemos transformar el giro de un motor en el movimiento expresivo de un títere que cuenta una historia local?"
 ---
 
-![Un hub SPIKE Prime amb matriu de llums, un motor i bigues LEGO mou una titella plana d’ocell de paper.](../../_assets/situacions/sp-titelles-moviment.webp)
+![Un hub SPIKE Prime con matriz de luces, un motor y vigas LEGO mueve un títere plano de pájaro de papel.](../../_assets/situacions/sp-titelles-moviment.webp)
 
-_La silueta de paper és un personatge escènic; el hub i el motor visibles són components del set SPIKE Prime._
+_La silueta de papel es un personaje escénico; el hub y el motor visibles son componentes del set SPIKE Prime._
 
-## 🌱 Situació i intenció
+## 🌱 Situación e intención
 
-La biblioteca escolar prepara una mostra de relats breus del territori. Els equips creen una titella mecànica inspirada en l’Albufera: pot ser un animal real representat a partir d’una font pública, un paisatge personificat o una criatura inventada que es declara com a ficció. La Generalitat presenta l’Albufera com un parc natural amb llacuna, marjal, devesa i costa; aquestes formes ofereixen idees de color, ritme i moviment sense haver de copiar una espècie concreta. Si un grup n’usa el nom, contrasta’l amb recursos del [Parc Natural de l’Albufera](https://parquesnaturales.gva.es/va/web/pn-l-albufera) i anota la font.
+La biblioteca escolar prepara una muestra de relatos breves del territorio. Los equipos crean un títere mecánico inspirado en la Albufera: puede ser un animal real representado a partir de una fuente pública, un paisaje personificado o una criatura inventada que se declara como ficción. La Generalitat presenta la Albufera como un parque natural con laguna, marjal, dehesa y costa; estas formas ofrecen ideas de color, ritmo y movimiento sin tener que copiar una especie concreta. Si un grupo usa su nombre, contrastadlo con recursos del [Parque Natural de la Albufera](https://parquesnaturales.gva.es/va/web/pn-l-albufera) y anotad la fuente.
 
-La titella pot moure un bec o una ala, girar, inclinar-se o aparéixer darrere d’una pantalla de paper. El hub i el motor SPIKE Prime fan el moviment; la figura és de cartó lleuger. El repte connecta disseny, literatura, arts escèniques i enginyeria, i deixa oberta la forma de contar: narració oral, subtítols, seqüència d’imatges o so opcional.
+El títere puede mover un pico o un ala, girar, inclinarse o aparecer detrás de una pantalla de papel. El hub y el motor SPIKE Prime hacen el movimiento; la figura es de cartón ligero. El reto conecta diseño, literatura, artes escénicas e ingeniería, y deja abierta la forma de contar: narración oral, subtítulos, secuencia de imágenes o sonido opcional.
 
-## 🎯 Objectius i criteris
+## 🎯 Objetivos y criterios
 
-- Descompondre un personatge en silueta, articulació, moviment i seqüència narrativa.
+- Descomponer un personaje en silueta, articulación, movimiento y secuencia narrativa.
 
-- Construir una manovella o biela que transforme el gir del motor en un moviment recognoscible.
+- Construir una manivela o biela que transforme el giro del motor en un movimiento reconocible.
 
-- Relacionar el punt d’unió i la longitud del braç amb l’amplitud i la trajectòria de la titella.
+- Relacionar el punto de unión y la longitud del brazo con la amplitud y la trayectoria del títere.
 
-- Programar pausa, repetició finita i comportaments diferents amb els botons disponibles.
+- Programar pausa, repetición finita y comportamientos diferentes con los botones disponibles.
 
-- Provar una escena amb una altra parella, revisar el codi o mecanisme i documentar una millora.
+- Probar una escena con otra pareja, revisar el código o mecanismo y documentar una mejora.
 
-- Representar fauna amb respecte i distingir una dada documentada d’un element narratiu inventat.
+- Representar fauna con respeto y distinguir un dato documentado de un elemento narrativo inventado.
 
-Criteris de disseny: el moviment es pot descriure amb un verb; l’estructura aguanta la figura sense carregar el motor; la seqüència té inici i final recognoscibles; el públic disposa d’una via visual per seguir el relat; i el prototip pot aturar-se abans de tocar-se o ajustar-se.
+Criterios de diseño: el movimiento se puede describir con un verbo; la estructura aguanta la figura sin cargar el motor; la secuencia tiene inicio y final reconocibles; el público dispone de una vía visual para seguir el relato; y el prototipo puede detenerse antes de tocarse o ajustarse.
 
-## 📅 Seqüència didàctica · 5 sessions de 50 minuts
+## 📅 Secuencia didáctica · 5 sesiones de 50 minutos
 
-### **Sessió 1 · Del lloc a un personatge.**
+### **Sesión 1 · Del lugar a un personaje.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Consulteu un mapa o pàgines divulgatives del Parc Natural de l’Albufera. Trieu una idea visual —aigua, canyís, dunes, barca o silueta animal— i prepareu una targeta de font: què hem vist, què sabem per la font i què inventarem per al relat. Si representeu una espècie, no li atribuïu comportaments biològics sense font; també podeu crear una criatura fictícia i declarar-ho.
+Consultad un mapa o páginas divulgativas del Parque Natural de la Albufera. Elegid una idea visual —agua, cañaveral, dunas, barca o silueta animal— y preparad una tarjeta de fuente: qué hemos visto, qué sabemos por la fuente y qué inventaremos para el relato. Si representáis una especie, no le atribuyáis comportamientos biológicos sin fuente; también podéis crear una criatura ficticia y declararlo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dibuixeu tres poses i assigneu un verb a cadascuna: alçar, girar, inclinar, avançar o amagar-se. En una tira de paper, marqueu quatre moments del relat i decidiu quin necessita moviment mecànic.
+Dibujad tres poses y asignad un verbo a cada una: alzar, girar, inclinar, avanzar o esconderse. En una tira de papel, marcad cuatro momentos del relato y decidid cuál necesita movimiento mecánico.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu una animació desconnectada passant les figures per una finestra de paper, sense representar el gest amb el cos. Anoteu l’ordre de les vinyetes i el verb associat a cada pose.
+Haced una animación desconectada pasando las figuras por una ventana de papel, sin representar el gesto con el cuerpo. Anotad el orden de las viñetas y el verbo asociado a cada pose.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu les poses si el moviment triat no es distingeix del personatge quiet. Separeu trets consultats a la font dels elements inventats.
+Revisad las poses si el movimiento elegido no se distingue del personaje quieto. Separad los rasgos consultados en la fuente de los elementos inventados.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu quin moment necessita moviment i què aporta a la història. **Evidència:** targeta de font/ficció, esbossos i guió de quatre moments.
+Explicad qué momento necesita movimiento y qué aporta a la historia. **Evidencia:** tarjeta de fuente/ficción, bocetos y guion de cuatro momentos.
 
-### **Sessió 2 · Del motor a la titella.**
+### **Sesión 2 · Del motor al títere.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu un format: titella de vareta amb moviment directe, silueta darrere d’una pantalla o titella de fils amb un moviment senzill i fils curts subjectes. Dibuixeu l’eix de rotació i prediu el recorregut de la figura.
+Elegid un formato: títere de varilla con movimiento directo, silueta detrás de una pantalla o títere de hilos con un movimiento sencillo e hilos cortos sujetos. Dibujad el eje de rotación y predecid el recorrido de la figura.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construïu primer el suport i el punt de gir amb cartó lleuger. En SPIKE Prime, fixeu un motor i una manovella o biela que faça avançar i retrocedir la vareta. El moviment es pot resoldre també amb una vareta unida al braç motor.
+Construid primero el soporte y el punto de giro con cartón ligero. En SPIKE Prime, fijad un motor y una manivela o biela que haga avanzar y retroceder la varilla. El movimiento se puede resolver también con una varilla unida al brazo del motor.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Proveu dues longituds de braç o dos punts d’unió amb una mateixa figura. Mesureu l’arc aproximat en una graella i anoteu si la titella gira massa, es queda curta o colpeja l’escenari.
+Probad dos longitudes de brazo o dos puntos de unión con una misma figura. Medid el arco aproximado en una cuadrícula y anotad si el títere gira demasiado, se queda corto o golpea el escenario.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reduïu la massa de la figura abans d’augmentar la potència. Ajusteu el punt d’unió o el braç i torneu a provar. Comproveu que l’estructura aguanta sense carregar el motor.
+Reducid la masa de la figura antes de aumentar la potencia. Ajustad el punto de unión o el brazo y volved a probar. Comprobad que la estructura aguanta sin cargar el motor.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compareu predicció i moviment observat i expliqueu com la manovella transforma el gir en trajectòria. **Evidència:** esquema mecànic, predicció i comparació de dues configuracions.
+Comparad predicción y movimiento observado y explicad cómo la manivela transforma el giro en trayectoria. **Evidencia:** esquema mecánico, predicción y comparación de dos configuraciones.
 
-### **Sessió 3 · Escrivim i provem la partitura de codi.**
+### **Sesión 3 · Escribimos y probamos la partitura de código.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans de programar, redacteu una seqüència amb inici, pausa i retorn: per exemple, «posició de repòs; alçar una vegada; esperar; tornar a repòs». Predigueu on estarà la titella al final.
+Antes de programar, redactad una secuencia con inicio, pausa y retorno: por ejemplo, «posición de reposo; alzar una vez; esperar; volver a reposo». Predecid dónde estará el títere al final.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En blocs, programeu una repetició finita per al gest que es repeteix. Si el grup ja treballa amb Python, useu un `for` amb nombre limitat de repeticions per a la partitura principal. Estudieu `while` només amb condició de parada explícita i una acció curta; mai amb motor atrapat en un bucle sense eixida.
+En bloques, programad una repetición finita para el gesto que se repite. Si el grupo ya trabaja con Python, usad un `for` con número limitado de repeticiones para la partitura principal. Estudiad `while` solo con condición de parada explícita y una acción corta; nunca con el motor atrapado en un bucle sin salida.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Executeu a baixa velocitat i marqueu si cada pas coincideix amb la targeta del relat. Registreu pseudocodi, programa o blocs i tres observacions.
+Ejecutad a baja velocidad y marcad si cada paso coincide con la tarjeta del relato. Registrad pseudocódigo, programa o bloques y tres observaciones.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una variable per intent —rotacions, duració o pausa— i compareu la previsibilitat. Verifiqueu l’app local abans d’usar Python, ja que la sintaxi del brief depén de SPIKE Legacy.
+Cambiad una variable por intento —rotaciones, duración o pausa— y comparad la previsibilidad. Verificad la app local antes de usar Python, ya que la sintaxis del brief depende de SPIKE Legacy.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu quin valor ha donat més control al moviment i si la seqüència té inici i final recognoscibles. **Evidència:** pseudocodi, programa o blocs i tres observacions comparables.
+Explicad qué valor ha dado más control al movimiento y si la secuencia tiene inicio y final reconocibles. **Evidencia:** pseudocódigo, programa o bloques y tres observaciones comparables.
 
-### **Sessió 4 · Botons, so i lectura del públic.**
+### **Sesión 4 · Botones, sonido y lectura del público.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Si l’app local ho permet, assigneu comportaments diferents als botons A i B del hub, com una pose d’atenció i un moviment d’ala. Predigueu què passarà en cada cas; els botons creen variants, no una puntuació o resposta correcta.
+Si la app local lo permite, asignad comportamientos diferentes a los botones A y B del hub, como una pose de atención y un movimiento de ala. Predecid qué pasará en cada caso; los botones crean variantes, no una puntuación o respuesta correcta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Prepareu un guió de mostra i proveu si la figura es pot llegir des de dos llocs marcats de l’aula. Podeu sincronitzar un so curt amb el moviment si l’app i el dispositiu ho permeten; també és vàlid fer el so en directe o usar una targeta visual. El so no és necessari per entendre l’escena.
+Preparad un guion de muestra y probad si la figura se puede leer desde dos lugares marcados del aula. Podéis sincronizar un sonido corto con el movimiento si la app y el dispositivo lo permiten; también es válido hacer el sonido en directo o usar una tarjeta visual. El sonido no es necesario para entender la escena.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una altra parella veu l’assaig sense rebre el títol i tria quin verb descriu millor el gest. Recolliu una pregunta concreta de millora i anoteu si el públic ha pogut seguir l’escena per via visual.
+Otra pareja ve el ensayo sin recibir el título y elige qué verbo describe mejor el gesto. Recoged una pregunta concreta de mejora y anotad si el público ha podido seguir la escena por vía visual.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu una pose, el control d’un botó o la sincronització a partir del retorn. Manteniu una alternativa visual per a qui no use so.
+Revisad una pose, el control de un botón o la sincronización a partir del retorno. Mantened una alternativa visual para quien no use sonido.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Comproveu si el moviment es llig des dels dos punts de l’aula. **Evidència:** mapa de botons, prova de sincronització o alternativa, retorn i nota de revisió.
+Comprobad si el movimiento se lee desde los dos puntos del aula. **Evidencia:** mapa de botones, prueba de sincronización o alternativa, retorno y nota de revisión.
 
-### **Sessió 5 · Reescrivim i presentem.**
+### **Sesión 5 · Reescribimos y presentamos.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu una millora —modificar el mecanisme, canviar el ritme, afegir una pausa, reduir la figura o aclarir una targeta— i prediu què canviarà en la lectura de l’escena.
+Elegid una mejora —modificar el mecanismo, cambiar el ritmo, añadir una pausa, reducir la figura o aclarar una tarjeta— y predecid qué cambiará en la lectura de la escena.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Apliqueu la millora i repetiu l’escena. Prepareu una presentació de dos minuts amb el personatge, la font local si escau, explicació del moviment, codi o esquema i un límit del prototip.
+Aplicad la mejora y repetid la escena. Preparad una presentación de dos minutos con el personaje, la fuente local si procede, explicación del movimiento, código o esquema y un límite del prototipo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Organitzeu una mostra en estacions. La persona que presenta pot parlar, mostrar subtítols o col·locar targetes; una altra pot operar el botó si qui narra no vol tocar l’equip.
+Organizad una muestra en estaciones. La persona que presenta puede hablar, mostrar subtítulos o colocar tarjetas; otra puede operar el botón si quien narra no quiere tocar el equipo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Useu el retorn per aclarir una part de la narració o del mecanisme. Registreu una dada de la font que hàgeu contrastat i una prova que encara falta.
+Usad el retorno para aclarar una parte de la narración o del mecanismo. Registrad un dato de la fuente que hayáis contrastado y una prueba que todavía falta.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compareu la primera escena amb la revisada i completeu: «una decisió artística que afecta el mecanisme», «una dada contrastada» i «una prova pendent». **Evidència:** escena revisada, cartel·la i reflexió.
+Comparad la primera escena con la revisada y completad: «una decisión artística que afecta al mecanismo», «un dato contrastado» y «una prueba pendiente». **Evidencia:** escena revisada, cartela y reflexión.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Set SPIKE Prime 45678, hub, un motor, bigues i connectors; cartó o cartolina, varetes lleugeres de paper, fils curts si s’opta per una titella de fils, pantalla de paper, cinta, retoladors, targetes de guió i regle. Altaveu o so programat és opcional. No cal expansió; el moviment es pot resoldre amb un motor i el hub.
+Set SPIKE Prime 45678, hub, un motor, vigas y conectores; cartón o cartulina, varillas ligeras de papel, hilos cortos si se opta por un títere de hilos, pantalla de papel, cinta, rotuladores, tarjetas de guion y regla. Altavoz o sonido programado es opcional. No hace falta expansión; el movimiento se puede resolver con un motor y el hub.
 
-Carregueu hubs, reviseu la construcció i comproveu quins botons i ordres de so estan disponibles en l’app local. Retalleu figures menudes i lleugeres perquè no sobrecarreguen la transmissió. Prepareu una còpia impresa d’una font del Parc Natural per als equips sense internet i una plantilla de quatre vinyetes. Roteu els rols d’autoria, construcció, programació, operació, narració i documentació.
+Cargad los hubs, revisad la construcción y comprobad qué botones y órdenes de sonido están disponibles en la app local. Recortad figuras pequeñas y ligeras para que no sobrecarguen la transmisión. Preparad una copia impresa de una fuente del Parque Natural para los equipos sin internet y una plantilla de cuatro viñetas. Rotad los roles de autoría, construcción, programación, operación, narración y documentación.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Carpeta de procés: targeta de font o ficció, guió gràfic, esquema mecànic, hipòtesi de moviment, pseudocodi/programa, registre de proves, retorn d’audiència i revisió final. Observeu si l’alumnat:
+Carpeta de proceso: tarjeta de fuente o ficción, guion gráfico, esquema mecánico, hipótesis de movimiento, pseudocódigo/programa, registro de pruebas, retorno de audiencia y revisión final. Observad si el alumnado:
 
-- distingeix una dada consultada d’una invenció narrativa;
+- distingue un dato consultado de una invención narrativa;
 
-- explica com la manovella o biela transforma el gir en trajectòria;
+- explica cómo la manivela o biela transforma el giro en trayectoria;
 
-- usa pauses, repeticions limitades i controls per a donar intenció al moviment;
+- usa pausas, repeticiones limitadas y controles para dar intención al movimiento;
 
-- prova l’escena des de perspectives diferents i ajusta una decisió a partir del feedback;
+- prueba la escena desde perspectivas diferentes y ajusta una decisión a partir del feedback;
 
-- comunica el relat amb més d’un canal i descriu una limitació del prototip.
+- comunica el relato con más de un canal y describe una limitación del prototipo.
 
-Autoavaluació: «el moviment es llig com a… perquè…», «la longitud/punt d’unió que he triat és…» i «per a entendre el meu relat també puc…». El feedback entre equips concreta una fortalesa visual i una pregunta, no una valoració de l’espècie o de la interpretació personal.
+Autoevaluación: «el movimiento se lee como… porque…», «la longitud/punto de unión que he elegido es…» y «para entender mi relato también puedo…». El feedback entre equipos concreta una fortaleza visual y una pregunta, no una valoración de la especie o de la interpretación personal.
 
-## ♿ Participació i seguretat
+## ♿ Participación y seguridad
 
-Permeteu narrar, subtitular, dissenyar, programar, operar o observar; cap rol exigeix actuar davant del públic. Proporcioneu guió en text i pictogrames, contrast de siluetes i alternativa sense so. Els fils han de ser curts i no envoltar mans o coll; pareu el motor abans de desfer nusos o ajustar l’eix. Manteniu el mecanisme sobre una base ferma, a baixa velocitat, i allunyeu dits de les parts articulades.
+Permitid narrar, subtitular, diseñar, programar, operar u observar; ningún rol exige actuar ante el público. Proporcionad guion en texto y pictogramas, contraste de siluetas y alternativa sin sonido. Los hilos deben ser cortos y no envolver manos o cuello; parad el motor antes de deshacer nudos o ajustar el eje. Mantened el mecanismo sobre una base firme, a baja velocidad, y alejad los dedos de las partes articuladas.
 
-La titella no és un model científic de locomoció animal, i el robot no imita una espècie. Si un personatge es basa en fauna local, la fitxa diferencia trets consultats i elements inventats; l’activitat no requereix observar o molestar animals al seu hàbitat.
+El títere no es un modelo científico de locomoción animal, y el robot no imita una especie. Si un personaje se basa en fauna local, la ficha diferencia rasgos consultados y elementos inventados; la actividad no requiere observar o molestar animales en su hábitat.
 
-## 🔗 Brief oficial adaptat
+## 🔗 Brief oficial adaptado
 
-Aquesta situació adapta el repte [SPIKE Activity Brief: Puppet Show](https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltec6e8b8eef367bb0/6324c3f02343d638c6940874/LE_14x8.5_LessonMat_Puppet_Show_WB_Mech2_NoCrops.pdf?locale=en-us) i el seu [exemple de codi Python per a la titella de vareta](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt0065e3f0ed027e5a/5f880121b8b59a77a945d126/le_activitybrief_puppet_show_python.pdf?locale=en-us). Conserva la creació de personatges i el disseny obert, les idees de titella de fils, ombres i vareta, la pregunta biològica de com es mouen diferents criatures, la transformació del gir en moviment lineal, la prova/millora, música, botons per a moviments alternatius, so simultani i bucles `for`/`while`. La narració de l’Albufera, les targetes, les proves, la rúbrica i la il·lustració són pròpies. El codi Python del fabricant requereix SPIKE Legacy; s’ofereix una seqüència de blocs equivalent.
+Esta situación adapta el reto [SPIKE Activity Brief: Puppet Show](https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltec6e8b8eef367bb0/6324c3f02343d638c6940874/LE_14x8.5_LessonMat_Puppet_Show_WB_Mech2_NoCrops.pdf?locale=en-us) y su [ejemplo de código Python para el títere de varilla](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt0065e3f0ed027e5a/5f880121b8b59a77a945d126/le_activitybrief_puppet_show_python.pdf?locale=en-us). Conserva la creación de personajes y el diseño abierto, las ideas de títere de hilos, sombras y varilla, la pregunta biológica de cómo se mueven diferentes criaturas, la transformación del giro en movimiento lineal, la prueba/mejora, música, botones para movimientos alternativos, sonido simultáneo y bucles `for`/`while`. La narración de la Albufera, las tarjetas, las pruebas, la rúbrica y la ilustración son propias. El código Python del fabricante requiere SPIKE Legacy; se ofrece una secuencia de bloques equivalente.

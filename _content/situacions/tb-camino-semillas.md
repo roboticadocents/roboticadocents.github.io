@@ -14,138 +14,138 @@ duration: "4 sesiones"
 challenge: "¿Cómo podemos preparar una ruta para cada semilla de papel y contar qué necesitará la planta cuando empiece a crecer?"
 ---
 
-![Tale-Bot Pro de la dotació segueix una graella fins a tres bancals amb flors, carlotes i raves representats en paper.](../../_assets/situacions/tb-cami-llavors.webp)
+![Tale-Bot Pro de la dotación sigue una cuadrícula hasta tres bancales con flores, zanahorias y rábanos representados en papel.](../../_assets/situacions/tb-cami-llavors.webp)
 
-_Les llavors i els cultius del mapa són símbols de paper; la ruta ajuda a parlar de cura i creixement._
+_Las semillas y los cultivos del mapa son símbolos de papel; la ruta ayuda a hablar de cuidado y crecimiento._
 
-## 🌱 Repte, context i aprenentatges
+## 🌱 Reto, contexto y aprendizajes
 
-El grup prepara un hort escolar imaginari amb bancals de flors, hortalisses i plantes aromàtiques pròpies del context local. Tale-Bot transporta una fitxa de llavor —no una llavor real— des del viver dibuixat fins al bancal triat. A cada parada, l’equip conta què podria passar a continuació i quines condicions ajudaran una planta a créixer: llum, aigua, aire i condicions adequades per a l’espècie. Les necessitats concretes varien entre plantes; no totes es planten o es reguen de la mateixa manera.
+El grupo prepara un huerto escolar imaginario con bancales de flores, hortalizas y plantas aromáticas propias del contexto local. Tale-Bot transporta una ficha de semilla —no una semilla real— desde el semillero dibujado hasta el bancal elegido. En cada parada, el equipo cuenta qué podría pasar a continuación y qué condiciones ayudarán a una planta a crecer: luz, agua, aire y condiciones adecuadas para la especie. Las necesidades concretas varían entre plantas; no todas se plantan o se riegan de la misma manera.
 
 
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-seqüenciar ordres, orientar-se en una graella, anticipar el destí, revisar una instrucció, observar plantes de manera respectuosa i ordenar una explicació temporal: llavor, germinació, creixement i cura. El robot segueix les ordres introduïdes; no sap què necessita la llavor ni pot comprovar si una planta està sana.
+secuenciar órdenes, orientarse en una cuadrícula, anticipar el destino, revisar una instrucción, observar plantas de manera respetuosa y ordenar una explicación temporal: semilla, germinación, crecimiento y cuidado. El robot sigue las órdenes introducidas; no sabe qué necesita la semilla ni puede comprobar si una planta está sana.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Prepareu un Tale-Bot Pro carregat, una quadrícula gran amb un punt de partida i tres bancals, targetes pròpies de plantes i fitxes planes de llavor, pictogrames de llum/aigua/aire/cura, fletxes grans i un full d’observació amb espai per dibuixar. Abans de la classe, comproveu que les caselles coincidisquen aproximadament amb un moviment del robot. En el sistema de targetes oficial, les ordres bàsiques inclouen avançar o retrocedir aproximadament 10 cm i girar 90°; verifiqueu el comportament del model del centre sobre la superfície que fareu servir.
+Preparad un Tale-Bot Pro cargado, una cuadrícula grande con un punto de partida y tres bancales, tarjetas propias de plantas y fichas planas de semilla, pictogramas de luz/agua/aire/cuidado, flechas grandes y una hoja de observación con espacio para dibujar. Antes de la clase, comprobad que las casillas coincidan aproximadamente con un movimiento del robot. En el sistema de tarjetas oficial, las órdenes básicas incluyen avanzar o retroceder aproximadamente 10 cm y girar 90°; verificad el comportamiento del modelo del centro sobre la superficie que vais a usar.
 
-Trieu fotos pròpies o autoritzades de plantes de l’hort o l’entorn. No colliu plantes ni demaneu tocar terra, fertilitzants o eines. No feu servir llavors reals si hi ha risc d’ingestió, al·lèrgia o confusió amb aliments; aquesta SDA funciona completament amb targetes. Els bancals es dibuixen amb espai suficient perquè el robot gire i perquè les fitxes no bloquegen els botons ni les rodes.
+Elegid fotos propias o autorizadas de plantas del huerto o del entorno. No recojáis plantas ni pidáis tocar tierra, fertilizantes o herramientas. No uséis semillas reales si hay riesgo de ingestión, alergia o confusión con alimentos; esta SDA funciona completamente con tarjetas. Los bancales se dibujan con espacio suficiente para que el robot gire y para que las fichas no bloqueen los botones ni las ruedas.
 
-**Vocabulari:** llavor, bancal, hort, germinar, créixer, llum, aigua, aire, davant, darrere, gir, ordre i ruta. Acompanyeu les paraules amb gestos i pictogrames i diferencieu «ho hem observat» de «pensem que passarà».
+**Vocabulario:** semilla, bancal, huerto, germinar, crecer, luz, agua, aire, delante, detrás, giro, orden y ruta. Acompañad las palabras con gestos y pictogramas y diferenciad «lo hemos observado» de «pensamos que pasará».
 
-## 📅 Seqüència didàctica · quatre sessions de 40 minuts
+## 📅 Secuencia didáctica · cuatro sesiones de 40 minutos
 
-### **Observem i fem preguntes sobre les plantes (40 min).**
+### **Observamos y hacemos preguntas sobre las plantas (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Observeu una planta del pati des d’un espai permés o mireu fotografies de l’hort escolar i de conreus de l’entorn valencià. Predigueu què podríeu observar abans d’apropar-vos-hi.
+Observad una planta del patio desde un espacio permitido o mirad fotografías del huerto escolar y de cultivos del entorno valenciano. Predecid qué podríais observar antes de acercaros.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Descriviu el que veieu directament: fulles, tija, flor, ombra, terra o recipient. No arrenqueu fulles ni toqueu plantes desconegudes. En assemblea, trieu tres bancals ficticis i associeu-los a imatges, com flor, carlota i rave.
+Describid lo que veis directamente: hojas, tallo, flor, sombra, tierra o recipiente. No arranquéis hojas ni toquéis plantas desconocidas. En asamblea, elegid tres bancales ficticios y asociadlos a imágenes, como flor, zanahoria y rábano.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Separeu observacions de prediccions: «veig una fulla nova» és diferent de «potser necessita més llum». Cada equip crea una fitxa de llavor de paper i redacta una pregunta de cura que puga investigar després amb una persona adulta.
+Separad observaciones de predicciones: «veo una hoja nueva» es distinto de «quizá necesita más luz». Cada equipo crea una ficha de semilla de papel y redacta una pregunta de cuidado que pueda investigar después con una persona adulta.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu la pregunta perquè es puga investigar sense danyar la planta ni assumir-ne les necessitats. Si no hi ha una planta accessible, baseu l’observació en fotografies o fonts del centre.
+Revisad la pregunta para que se pueda investigar sin dañar la planta ni asumir sus necesidades. Si no hay una planta accesible, basad la observación en fotografías o fuentes del centro.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dibuix d’una planta, observació directa o documentada i pregunta de cura. «Què podem veure sense tocar? Què ens agradaria investigar abans de decidir com cuidar-la?»
+**Evidencia:** dibujo de una planta, observación directa o documentada y pregunta de cuidado. «¿Qué podemos ver sin tocar? ¿Qué nos gustaría investigar antes de decidir cómo cuidarla?»
 
-### **Dissenyem el mapa i planifiquem les ordres (40 min).**
+### **Diseñamos el mapa y planificamos las órdenes (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Col·loqueu el viver a la casella inicial i els tres bancals en destinacions diferents. Trieu un bancal i assenyaleu l’orientació inicial del robot; predigueu la casella final.
+Colocad el semillero en la casilla inicial y los tres bancales en destinos diferentes. Elegid un bancal y señalad la orientación inicial del robot; predecid la casilla final.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Abans d’usar Tale-Bot, feu avançar una fitxa de paper sobre la graella. Compteu cada moviment com una casella adjacent i marqueu els girs amb fitxes.
+Antes de usar Tale-Bot, haced avanzar una ficha de papel sobre la cuadrícula. Contad cada movimiento como una casilla adyacente y marcad los giros con fichas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Ordeneu fletxes o targetes d’instrucció per arribar al bancal. Anoteu dues rutes alternatives i la predicció de destinació per a cadascuna.
+Ordenad flechas o tarjetas de instrucción para llegar al bancal. Anotad dos rutas alternativas y la predicción de destino para cada una.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu quina ruta evita l’obstacle, usa menys instruccions i és més fàcil de llegir per una altra parella. La ruta més curta no sempre és la millor si confon la seqüència. Reviseu les instruccions abans d’executar-les.
+Comparad qué ruta evita el obstáculo, usa menos instrucciones y es más fácil de leer por otra pareja. La ruta más corta no siempre es la mejor si confunde la secuencia. Revisad las instrucciones antes de ejecutarlas.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa amb inici/destinació, dues seqüències i predicció de casella final. «Cap a on mira Tale-Bot al començament? Què hem de fer abans de dir-li que gire?»
+**Evidencia:** mapa con inicio/destino, dos secuencias y predicción de casilla final. «¿Hacia dónde mira Tale-Bot al principio? ¿Qué tenemos que hacer antes de decirle que gire?»
 
-### **Programem el lliurament i depurem la ruta (40 min).**
+### **Programamos la entrega y depuramos la ruta (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu la seqüència triada i predigueu quina ordre pot ser més difícil d’executar o comprovar.
+Recuperad la secuencia elegida y predecid qué orden puede ser más difícil de ejecutar o comprobar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Introduïu les instruccions amb els botons de Tale-Bot. Una persona dicta o assenyala la seqüència, una altra la comprova amb les targetes i una tercera observa la ruta.
+Introducid las instrucciones con los botones de Tale-Bot. Una persona dicta o señala la secuencia, otra la comprueba con las tarjetas y una tercera observa la ruta.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu un trajecte curt fins al primer bancal. Registreu posició inicial, orientació, nombre de moviments i girs, casella final prevista i casella observada.
+Haced un trayecto corto hasta el primer bancal. Registrad posición inicial, orientación, número de movimientos y giros, casilla final prevista y casilla observada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si el robot no acaba on s’esperava, torneu a situar-lo a l’inici, localitzeu l’última casella correcta i corregiu només les ordres necessàries. Quan funcione, repetiu el procés per a un altre bancal.
+Si el robot no acaba donde se esperaba, volved a situarlo en el inicio, localizad la última casilla correcta y corregid solo las órdenes necesarias. Cuando funcione, repetid el proceso para otro bancal.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** seqüència revisada i explicació del pas corregit. En arribar, col·loqueu la fitxa de llavor i trieu pictogrames de condicions que podrien ajudar la planta; no programeu diagnòstic ni reg automàtic. «Quina és l’última casella correcta? Quin canvi provaràs ara?»
+**Evidencia:** secuencia revisada y explicación del paso corregido. Al llegar, colocad la ficha de semilla y elegid pictogramas de condiciones que podrían ayudar a la planta; no programéis diagnóstico ni riego automático. «¿Cuál es la última casilla correcta? ¿Qué cambio vas a probar ahora?»
 
-### **Contem el cicle de creixement (40 min).**
+### **Contamos el ciclo de crecimiento (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu la ruta i predigueu quins quatre moments ajudaran a explicar el creixement sense convertir-los en una regla universal per a totes les plantes.
+Recuperad la ruta y predecid qué cuatro momentos ayudarán a explicar el crecimiento sin convertirlos en una regla universal para todas las plantas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Creeu una història oral, gràfica o dictada amb quatre moments: llavor al viver, arribada al bancal, germinació i planta en creixement.
+Cread una historia oral, gráfica o dictada con cuatro momentos: semilla en el semillero, llegada al bancal, germinación y planta en crecimiento.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-A cada parada, afegiu una imatge o pictograma de llum, aigua, aire o cura. Expliqueu que són idees generals i que les necessitats reals depenen de la planta i de l’observació concreta. Una altra parella reconstrueix l’ordre del relat amb el mapa.
+En cada parada, añadid una imagen o pictograma de luz, agua, aire o cuidado. Explicad que son ideas generales y que las necesidades reales dependen de la planta y de la observación concreta. Otra pareja reconstruye el orden del relato con el mapa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proposeu una cura per a l’hort del centre que puga comprovar una persona responsable: observar abans de regar, respectar la zona de pas o preguntar quina planta s’hi cultiva. Si no hi ha hort, formuleu-la com a pregunta o disseny, no com una instrucció per plantar sense permís.
+Proponed un cuidado para el huerto del centro que pueda comprobar una persona responsable: observar antes de regar, respetar la zona de paso o preguntar qué planta se cultiva allí. Si no hay huerto, formuladla como pregunta o diseño, no como una instrucción para plantar sin permiso.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** ruta final, història de quatre moments i pregunta o proposta de cura validable. «Què sabem d’aquesta planta? Què hauríem de preguntar o observar abans d’actuar?»
+**Evidencia:** ruta final, historia de cuatro momentos y pregunta o propuesta de cuidado validable. «¿Qué sabemos de esta planta? ¿Qué deberíamos preguntar u observar antes de actuar?»
 
-## 📋 Avaluació i evidències
+## 📋 Evaluación y evidencias
 
-Guardeu el mapa, les targetes d’ordres, la seqüència corregida i el relat en quatre moments. Observeu si l’alumnat:
+Guardad el mapa, las tarjetas de órdenes, la secuencia corregida y el relato en cuatro momentos. Observad si el alumnado:
 
-- identifica l’orientació inicial i tria una destinació de la graella;
+- identifica la orientación inicial y elige un destino de la cuadrícula;
 
-- ordena instruccions i anticipa una casella d’arribada;
+- ordena instrucciones y anticipa una casilla de llegada;
 
-- compara el moviment real amb el previst i prova una correcció;
+- compara el movimiento real con el previsto y prueba una corrección;
 
-- diferencia una observació d’una predicció sobre el creixement;
+- diferencia una observación de una predicción sobre el crecimiento;
 
-- proposa una cura respectuosa que es pot consultar amb una persona adulta.
+- propone un cuidado respetuoso que se puede consultar con una persona adulta.
 
-No s’avalua memoritzar una llista universal de cures ni encertar totes les rutes al primer intent. Es valora explicar què s’ha provat i com s’ha revisat amb el mapa.
+No se evalúa memorizar una lista universal de cuidados ni acertar todas las rutas al primer intento. Se valora explicar qué se ha probado y cómo se ha revisado con el mapa.
 
-## ♿ Participació i cura
+## ♿ Participación y cuidado
 
-Oferiu caselles grans i contrastades, un mapa tàctil amb vores suaus i pictogrames per a les ordres. Es pot participar dibuixant, triant destinació, dictant la seqüència, comprovant una predicció o observant la prova; no cal manipular el robot per demostrar aprenentatge. Roteu els rols sense pressa i doneu temps d’espera. Tota l’activitat es pot fer en aula amb fotografies i targetes. No es manipulen plantes, llavors ni eines si el centre no ho ha autoritzat.
+Ofreced casillas grandes y contrastadas, un mapa táctil con bordes suaves y pictogramas para las órdenes. Se puede participar dibujando, eligiendo destino, dictando la secuencia, comprobando una predicción u observando la prueba; no hace falta manipular el robot para demostrar aprendizaje. Rotad los roles sin prisa y dad tiempo de espera. Toda la actividad se puede hacer en el aula con fotografías y tarjetas. No se manipulan plantas, semillas ni herramientas si el centro no lo ha autorizado.
 
-## 🔗 Referent i autoria de l’adaptació
+## 🔗 Referente y autoría de la adaptación
 
-La proposta s’inspira en l’ús de mapes, blocs tangibles de moviment, destinacions i narració que apareix en les [targetes oficials d’activitat de Tale-Bot Pro](https://matatalab.com/en/lesson4.4) i en l’activitat de Coding Set [Delivery Animals](https://matatalab.com/en/node/86). El viver, l’hort, les preguntes de cura i els materials gràfics són propis. Les ordres es comproven amb el model físic i la fitxa evita atribuir coneixements botànics al robot.
+La propuesta se inspira en el uso de mapas, bloques tangibles de movimiento, destinos y narración que aparece en las [tarjetas oficiales de actividad de Tale-Bot Pro](https://matatalab.com/en/lesson4.4) y en la actividad de Coding Set [Delivery Animals](https://matatalab.com/en/node/86). El semillero, el huerto, las preguntas de cuidado y los materiales gráficos son propios. Las órdenes se comprueban con el modelo físico y la ficha evita atribuir conocimientos botánicos al robot.

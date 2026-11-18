@@ -14,129 +14,129 @@ duration: "4 sesiones"
 challenge: "¿Cómo podemos planificar la compra de frutas y verduras de temporada en el mercado gastando el presupuesto justo y haciendo el camino más corto?"
 ---
 
-![MatataBot de cúpula taronja i Control Tower reals del Coding Set recorren una graella pròpia amb dues parades de mercat.](../../_assets/situacions/cs-mercat-tangible.webp)
+![MatataBot de cúpula naranja y Control Tower reales del Coding Set recorren una cuadrícula propia con dos paradas de mercado.](../../_assets/situacions/cs-mercat-tangible.webp)
 
-_La graella i les parades són una adaptació pròpia; els preus ficticis permeten practicar càlcul sense jutjar cap família._
+_La cuadrícula y las paradas son una adaptación propia; los precios ficticios permiten practicar el cálculo sin juzgar a ninguna familia._
 
-## ❓ Repte i intenció
+## ❓ Reto e intención
 
-La classe organitza el mercat de proximitat d’una cooperativa escolar. Quatre targetes de producte viatgen juntes sobre un suport pla del robot; en cada parada es retira la targeta corresponent i es conta una microhistòria sobre qui la necessita i per què. El repte combina orientació i programació tangible amb una extensió matemàtica de quantitats, suma de preus ficticis i comparació de rutes. Els aliments són targetes il·lustrades: no es manipula ni es jutja el menjar de ningú.
+La clase organiza el mercado de proximidad de una cooperativa escolar. Cuatro tarjetas de producto viajan juntas sobre un soporte plano del robot; en cada parada se retira la tarjeta correspondiente y se cuenta una microhistoria sobre quién la necesita y por qué. El reto combina orientación y programación tangible con una ampliación matemática de cantidades, suma de precios ficticios y comparación de rutas. Los alimentos son tarjetas ilustradas: no se manipula ni se juzga la comida de nadie.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Llegir una graella i descompondre encàrrecs en parades, ordres i destinacions.
-- Planificar una compra fictícia respectant un pressupost i les quantitats acordades.
-- Comparar recorreguts amb una mateixa unitat i comprovar que cap encàrrec s’ha omés.
-- Inventar i compartir una missió de mercat amb aliments locals i opcions no estigmatitzants.
+- Leer una cuadrícula y descomponer encargos en paradas, órdenes y destinos.
+- Planificar una compra ficticia respetando un presupuesto y las cantidades acordadas.
+- Comparar recorridos con una misma unidad y comprobar que no se ha omitido ningún encargo.
+- Inventar y compartir una misión de mercado con alimentos locales y opciones no estigmatizantes.
 
-## 🧰 Preparació i materials
+## 🧰 Preparación y materiales
 
-Prepareu MatataBot, torre de comandaments i tauler del Coding Set; una quadrícula pròpia de 5 × 5 caselles; quatre parades amb noms i pictogrames (fruita de temporada, hortalisses, cooperativa i cuina escolar); quatre targetes de producte que càpiguen planes sobre un suport de paper lleuger; targetes de comanda, fletxes, llapis, moneda simbòlica i full de registre. Situeu parades i obstacles amb espai perquè el robot puga avançar, retrocedir i girar sense enganxar-se. Comproveu primer que el suport no tapa sensors, rodes ni elements de programació. Si no es pot carregar amb estabilitat, una persona transporta les targetes mentre MatataBot guia la ruta, i l’equip anota aquesta variant.
+Preparad MatataBot, torre de comandos y tablero del Coding Set; una cuadrícula propia de 5 × 5 casillas; cuatro paradas con nombres y pictogramas (fruta de temporada, hortalizas, cooperativa y cocina escolar); cuatro tarjetas de producto que quepan planas sobre un soporte de papel ligero; tarjetas de comando, flechas, lápiz, moneda simbólica y hoja de registro. Situad las paradas y los obstáculos con espacio para que el robot pueda avanzar, retroceder y girar sin engancharse. Comprobad primero que el soporte no tapa sensores, ruedas ni elementos de programación. Si no se puede cargar con estabilidad, una persona transporta las tarjetas mientras MatataBot guía la ruta, y el equipo anota esta variante.
 
-Useu valors inventats per a l’exercici: quatre productes amb preus enters entre 1 i 5 monedes i un pressupost de 12. Es pot canviar el pressupost o treballar amb preus sense moneda per adaptar el càlcul; no són preus reals del mercat ni recomanacions de compra.
+Usad valores inventados para el ejercicio: cuatro productos con precios enteros entre 1 y 5 monedas y un presupuesto de 12. Se puede cambiar el presupuesto o trabajar con precios sin moneda para adaptar el cálculo; no son precios reales del mercado ni recomendaciones de compra.
 
-## 📅 Seqüència didàctica · quatre sessions de 45 minuts
+## 📅 Secuencia didáctica · cuatro sesiones de 45 minutos
 
-### **Sessió 1 · Llegir la graella i arribar a una parada.**
+### **Sesión 1 · Leer la cuadrícula y llegar a una parada.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu quatre encàrrecs ficticis i pregunteu què ha d’incloure una instrucció perquè una altra parella la puga seguir.
+Presentad cuatro encargos ficticios y preguntad qué debe incluir una instrucción para que otra pareja pueda seguirla.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Marqueu l’inici, una parada i dos obstacles; poseu una fletxa davant del robot i descriviu cap a on mira. Modeleu ordres de pas endavant, pas arrere i gir a esquerra/dreta de 90°.
+Marcad el inicio, una parada y dos obstáculos; poned una flecha delante del robot y describid hacia dónde mira. Modelad órdenes de paso adelante, paso atrás y giro a izquierda/derecha de 90°.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Verbalitzeu que un gir canvia l’orientació però no trasllada el robot a una altra casella. Les parelles dibuixen una ruta i construeixen la seqüència amb targetes de comanda abans de posar-la al tauler.
+Verbalizad que un giro cambia la orientación pero no traslada el robot a otra casilla. Las parejas dibujan una ruta y construyen la secuencia con tarjetas de comando antes de ponerla en el tablero.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu la seqüència, compareu la posició prevista amb la real i corregiu l’ordre en el primer punt de desviació.
+Ejecutad la secuencia, comparad la posición prevista con la real y corregid la orden en el primer punto de desviación.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa amb inici, orientació, obstacles i seqüència corregida. Quina instrucció ha calgut revisar perquè una altra parella poguera seguir la ruta?
+**Evidencia:** mapa con inicio, orientación, obstáculos y secuencia corregida. ¿Qué instrucción ha hecho falta revisar para que otra pareja pudiera seguir la ruta?
 
-### **Sessió 2 · Quatre encàrrecs, quatre històries.**
+### **Sesión 2 · Cuatro encargos, cuatro historias.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Col·loqueu les quatre parades i associeu a cadascuna un producte i una targeta-personatge pròpia, com qui cuina el dinar col·lectiu o prepara un tast de temporada. Decidiu en quin ordre visitareu les parades.
+Colocad las cuatro paradas y asociad a cada una un producto y una tarjeta-personaje propia, como quien cocina la comida colectiva o prepara una degustación de temporada. Decidid en qué orden visitaréis las paradas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Decidiu on es descarregarà cada targeta i prepareu la seqüència de moviments. Podeu carregar les quatre targetes planes o repartir-les a una persona missatgera.
+Decidid dónde se descargará cada tarjeta y preparad la secuencia de movimientos. Podéis cargar las cuatro tarjetas planas o repartirlas a una persona mensajera.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Cada persona verbalitza una part de l’itinerari. Proveu el recorregut i, en cada parada, retireu una única targeta, llegiu la microhistòria corresponent i marqueu el lliurament.
+Cada persona verbaliza una parte del itinerario. Probad el recorrido y, en cada parada, retirad una única tarjeta, leed la microhistoria correspondiente y marcad la entrega.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si una ordre porta a una parada incorrecta, atureu el robot, reconstruïu l’orientació actual i repreneu des d’allí. Ordeneu les destinacions de nou amb les pistes de cada microhistòria.
+Si una orden lleva a una parada incorrecta, detened el robot, reconstruid la orientación actual y retomad desde allí. Ordenad de nuevo los destinos con las pistas de cada microhistoria.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** llista ordenada de parades, registre dels lliuraments i relat de quatre frases. Quina pista us ajuda a recordar cada lliurament?
+**Evidencia:** lista ordenada de paradas, registro de las entregas y relato de cuatro frases. ¿Qué pista os ayuda a recordar cada entrega?
 
-### **Sessió 3 · Comparar cost i recorregut sense perdre cap encàrrec.**
+### **Sesión 3 · Comparar coste y recorrido sin perder ningún encargo.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Llegiu la carta fictícia, sumeu els quatre productes i decidiu si el total respecta 12 monedes; representeu la suma amb monedes o una recta numèrica. Si supera el límit, compareu alternatives que encara complisquen el repte, sense parlar de la capacitat adquisitiva real de les famílies.
+Leed la carta ficticia, sumad los cuatro productos y decidid si el total respeta 12 monedas; representad la suma con monedas o una recta numérica. Si supera el límite, comparad alternativas que todavía cumplan el reto, sin hablar de la capacidad adquisitiva real de las familias.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dibuixeu dos ordres de visita possibles i calculeu passos i girs a partir de la graella. Anoteu una predicció de cost i una altra de recorregut.
+Dibujad dos órdenes de visita posibles y calculad pasos y giros a partir de la cuadrícula. Anotad una predicción de coste y otra de recorrido.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Executeu les dues rutes en les mateixes condicions i anoteu desplaçaments, errors d’orientació, encàrrecs lliurats i cost.
+Ejecutad las dos rutas en las mismas condiciones y anotad desplazamientos, errores de orientación, encargos entregados y coste.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Expliqueu quina ruta és més curta segons el recompte i si això canvia la decisió de cost. Distingiu longitud del recorregut, preu i quantitat de productes: són mesures diferents.
+Explicad qué ruta es más corta según el recuento y si eso cambia la decisión de coste. Distinguid longitud del recorrido, precio y cantidad de productos: son medidas diferentes.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dues prediccions, taula de resultats i conclusió limitada a aquesta maqueta. Què podem concloure amb les dades i què no hem provat?
+**Evidencia:** dos predicciones, tabla de resultados y conclusión limitada a esta maqueta. ¿Qué podemos concluir con los datos y qué no hemos probado?
 
-### **Sessió 4 · Canviar l’inici, crear i compartir una missió.**
+### **Sesión 4 · Cambiar el inicio, crear y compartir una misión.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Canvieu l’orientació inicial o moveu una parada. Cada parella anticipa quines ordres deixaran de servir i per què.
+Cambiad la orientación inicial o moved una parada. Cada pareja anticipa qué órdenes dejarán de servir y por qué.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Modifiqueu el programa. Si el recorregut repeteix un tram, representeu-lo amb una targeta de repetició quan el set i el nivell del grup ho permeten.
+Modificad el programa. Si el recorrido repite un tramo, representadlo con una tarjeta de repetición cuando el set y el nivel del grupo lo permitan.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu la notació de repetició amb l’expansió ordre per ordre i anoteu quins moviments comprimeix.
+Comparad la notación de repetición con la expansión orden por orden y anotad qué movimientos comprime.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Inventeu una cinquena destinació o una targeta d’encàrrec pròpia i reviseu que siga assolible sense col·lisions. Una altra parella executa les instruccions i deixa una pregunta o proposta de millora; decidiu si la incorporeu i justifiqueu la decisió.
+Inventad un quinto destino o una tarjeta de encargo propia y revisad que sea alcanzable sin colisiones. Otra pareja ejecuta las instrucciones y deja una pregunta o propuesta de mejora; decidid si la incorporáis y justificad la decisión.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa final, programa provat, canvi respecte de l’original i microhistòria local. Quina prova confirma que l’encàrrec es pot completar?
+**Evidencia:** mapa final, programa probado, cambio respecto del original y microhistoria local. ¿Qué prueba confirma que el encargo se puede completar?
 
-## 📋 Avaluació i evidències
+## 📋 Evaluación y evidencias
 
-Recolliu el mapa anotat, les seqüències en targetes, les prediccions de ruta, la suma del pressupost fictici, la taula de proves i les microhistòries. Observeu si l’alumnat (1) relaciona orientació, girs i desplaçaments; (2) programa i depura una ruta a partir del punt concret on divergeix; (3) recorda i lliura els quatre encàrrecs en l’ordre acordat; i (4) representa cost i distància amb unitats diferenciades i explica les limitacions de la prova. Es pot valorar amb tres nivells: ho resol amb modelatge; ho resol amb alguna pista; ho resol i ho explica de manera autònoma. No es puntua la velocitat ni que la ruta siga la més curta si la prova no compara totes les alternatives.
+Recoged el mapa anotado, las secuencias en tarjetas, las predicciones de ruta, la suma del presupuesto ficticio, la tabla de pruebas y las microhistorias. Observad si el alumnado (1) relaciona orientación, giros y desplazamientos; (2) programa y depura una ruta a partir del punto concreto en el que diverge; (3) recuerda y entrega los cuatro encargos en el orden acordado; y (4) representa coste y distancia con unidades diferenciadas y explica las limitaciones de la prueba. Se puede valorar con tres niveles: lo resuelve con modelado; lo resuelve con alguna pista; lo resuelve y lo explica de forma autónoma. No se puntúa la velocidad ni que la ruta sea la más corta si la prueba no compara todas las alternativas.
 
-## ♿ Participació i opcions
+## ♿ Participación y opciones
 
-Oferiu mapa gran, alt contrast, fletxes tàctils, pictogrames de parades, peces mòbils i lectura en veu alta. Es pot participar com a planificador/a, programador/a de peces, responsable de parades, narrador/a, observador/a d’orientació o registrador/a; feu rotar les responsabilitats sense exigir manipulació fina ni exposició oral individual. Reduïu el mapa a tres parades o retireu obstacles si cal, i amplieu-lo amb una ruta alternativa o una repetició si el grup està preparat. Permeteu calcular amb objectes, dibuix, recta numèrica o nombres. Les històries són fictícies i no demanen revelar hàbits, salut o situació econòmica personal.
+Ofreced un mapa grande, alto contraste, flechas táctiles, pictogramas de paradas, piezas móviles y lectura en voz alta. Se puede participar como planificador/a, programador/a de piezas, responsable de paradas, narrador/a, observador/a de orientación o registrador/a; haced rotar las responsabilidades sin exigir manipulación fina ni exposición oral individual. Reducid el mapa a tres paradas o retirad obstáculos si hace falta, y ampliadlo con una ruta alternativa o una repetición si el grupo está preparado. Permitid calcular con objetos, dibujo, recta numérica o números. Las historias son ficticias y no piden revelar hábitos, salud o situación económica personal.
 
-## 🌱 Connexió local i ús responsable
+## 🌱 Conexión local y uso responsable
 
-Les parades poden representar un mercat de la comarca i les targetes poden parlar de productes de temporada consultats en una font local que el centre date i cite. Si no s’ha fet aquesta verificació, etiqueteu la selecció com a exemple fictici i no afirmeu que un producte és de temporada. El pressupost és una variable matemàtica de joc, no una prova de com compra una família; es pot substituir per “nombre màxim d’encàrrecs” per evitar parlar de diners.
+Las paradas pueden representar un mercado de la comarca y las tarjetas pueden hablar de productos de temporada consultados en una fuente local que el centro date y cite. Si no se ha hecho esta verificación, etiquetad la selección como ejemplo ficticio y no afirméis que un producto es de temporada. El presupuesto es una variable matemática de juego, no una prueba de cómo compra una familia; se puede sustituir por “número máximo de encargos” para evitar hablar de dinero.
 
-## 🔗 Referent i adaptació
+## 🔗 Referente y adaptación
 
-La fitxa oficial [Delivery Animals](https://matatalab.com/en/node/86) proposa una sessió de 45 minuts: revisar moviments, preparar quatre llocs i quatre animals, situar obstacles i transportar cada figura fins a la destinació, amb un relat per visita; amplia després a quatre destinacions en un mateix recorregut i a celebrar lliuraments amb música. Aquesta proposta conserva quatre càrregues, quatre destinacions, obstacles, ordre de visita, canvi d’orientació i narració; transforma els animals i llocs en encàrrecs i parades d’un mercat local, i hi afegeix una investigació de preus ficticis i comparació de rutes. Els mapes, targetes, històries i imatge són propis; la possible repetició de codi és una extensió i depén dels blocs reals del set.
+La ficha oficial [Delivery Animals](https://matatalab.com/en/node/86) propone una sesión de 45 minutos: revisar movimientos, preparar cuatro lugares y cuatro animales, situar obstáculos y transportar cada figura hasta el destino, con un relato por visita; amplía después a cuatro destinos en un mismo recorrido y a celebrar las entregas con música. Esta propuesta conserva cuatro cargas, cuatro destinos, obstáculos, orden de visita, cambio de orientación y narración; transforma los animales y lugares en encargos y paradas de un mercado local, y añade una investigación de precios ficticios y comparación de rutas. Los mapas, tarjetas, historias e imagen son propios; la posible repetición de código es una ampliación y depende de los bloques reales del set.

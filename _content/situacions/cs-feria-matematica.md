@@ -14,177 +14,177 @@ duration: "5 sesiones"
 challenge: "¿Cómo podemos convertir las órdenes de MatataBot en una feria donde clasifiquemos formas, escribamos números y dibujemos constelaciones?"
 ---
 
-![La torre i el tauler reals del Coding Set, amb MatataBot sobre una graella de cel nocturn i targetes de formes i recorreguts.](../../_assets/situacions/cs-fira-matematica.webp)
+![La torre y el tablero reales del Coding Set, con MatataBot sobre una cuadrícula de cielo nocturno y tarjetas de formas y recorridos.](../../_assets/situacions/cs-fira-matematica.webp)
 
-_La torre llig els blocs físics del tauler; les formes, els nombres i les figures del mapa són materials de paper que interpreta l’alumnat, no senyals que MatataBot reconega._
+_La torre lee los bloques físicos del tablero; las formas, los números y las figuras del mapa son materiales de papel que interpreta el alumnado, no señales que MatataBot reconozca._
 
-## ❓ Repte i intenció
+## ❓ Reto e intención
 
-La classe organitza tres espais de descoberta. En cada un, els equips fan una predicció, preparen una seqüència amb els blocs tangibles i comproven què ha fet MatataBot. La fira posa el focus en explicar les decisions i comparar procediments, no en acabar primer.
+La clase organiza tres espacios de descubrimiento. En cada uno, los equipos hacen una predicción, preparan una secuencia con los bloques tangibles y comprueban qué ha hecho MatataBot. La feria pone el foco en explicar las decisiones y comparar procedimientos, no en terminar primero.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Interpretar ordres tangibles i convertir-les en instruccions que una altra persona puga seguir.
-- Classificar formes i representar nombres amb les peces, la graella i les convencions de la fira.
-- Aplicar girs i repeticions per construir una figura geomètrica i una constel·lació pròpia.
-- Explicar les estratègies matemàtiques als visitants i revisar una estació a partir del retorn rebut.
+- Interpretar órdenes tangibles y convertirlas en instrucciones que otra persona pueda seguir.
+- Clasificar formas y representar números con las piezas, la cuadrícula y las convenciones de la feria.
+- Aplicar giros y repeticiones para construir una figura geométrica y una constelación propia.
+- Explicar las estrategias matemáticas a los visitantes y revisar una estación a partir del retorno recibido.
 
-## Abans de començar
+## Antes de empezar
 
-Comproveu que el Coding Set inclou el robot, la torre de control i la taula de programació. Prepareu una graella pròpia, targetes grans amb aliments ficticis i formes, paper quadriculat, retoladors solubles i cartolines. Per al joc de la parada, afegiu una graella física 4 × 4 de 10 × 10 cm, setze targetes planes d’aliments amb silueta clara, quatre mòduls de forma, una segona còpia de les quatre formes per a triar el repte a l’atzar, un dau manual de sis cares i un full de registre de torns. Aquesta segona còpia i el registre són materials propis per fer transparent el sorteig. Per a les activitats de traçat, useu l’Artist Add-On només si forma part de la dotació; si no, el robot recorre la figura sobre una quadrícula i l’alumnat dibuixa el resultat en paper.
+Comprobad que el Coding Set incluye el robot, la torre de control y la mesa de programación. Preparad una cuadrícula propia, tarjetas grandes con alimentos ficticios y formas, papel cuadriculado, rotuladores solubles y cartulinas. Para el juego de la parada, añadid una cuadrícula física 4 × 4 de 10 × 10 cm, dieciséis tarjetas planas de alimentos con silueta clara, cuatro módulos de forma, una segunda copia de las cuatro formas para elegir el reto al azar, un dado manual de seis caras y una hoja de registro de turnos. Esta segunda copia y el registro son materiales propios para hacer transparente el sorteo. Para las actividades de trazado, usad el Artist Add-On solo si forma parte de la dotación; si no, el robot recorre la figura sobre una cuadrícula y el alumnado dibuja el resultado en papel.
 
-Useu caselles de **10 × 10 cm** quan MatataBot haja de recórrer físicament la graella: és la mida recomanada pel fabricant perquè coincidisca amb un avanç. Abans de començar, comproveu l’alineació amb una ordre curta i registreu qualsevol desviació; no canvieu l’escala del mapa per compensar-la. Les làmines de xifres són representacions originals sobre graella, no programes oficials ni una promesa que el robot puga dibuixar sense accessori.
+Usad casillas de **10 × 10 cm** cuando MatataBot tenga que recorrer físicamente la cuadrícula: es la medida recomendada por el fabricante para que coincida con un avance. Antes de empezar, comprobad la alineación con una orden corta y registrad cualquier desviación; no cambiéis la escala del mapa para compensarla. Las láminas de cifras son representaciones originales sobre cuadrícula, no programas oficiales ni una promesa de que el robot pueda dibujar sin accesorio.
 
-## 📅 Seqüència didàctica
+## 📅 Secuencia didáctica
 
-### **Obrim la fira i llegim ordres.**
+### **Abrimos la feria y leemos órdenes.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu les tres parts principals del Coding Set: MatataBot, torre de control i tauler. En grups de quatre, assigneu els rols de connexió, observació, programació i registre; identifiqueu cada peça i expliqueu com penseu que es comuniquen. Comproveu que el robot i la torre estan carregats, engegueu-los i feu l’aparellament segons la guia del model del centre. Abans d’executar, cada equip prediu què llegirà la torre i què farà MatataBot amb una ordre.
+Mostrad las tres partes principales del Coding Set: MatataBot, torre de control y tablero. En grupos de cuatro, asignad los roles de conexión, observación, programación y registro; identificad cada pieza y explicad cómo pensáis que se comunican. Comprobad que el robot y la torre están cargados, encendedlos y haced el emparejamiento según la guía del modelo del centro. Antes de ejecutar, cada equipo predice qué leerá la torre y qué hará MatataBot con una orden.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En una quadrícula pròpia, marqueu una casella d’inici, una bandera com a destinació i dues banderes d’altres equips que no es poden travessar. Llegiu els blocs disponibles d’esquerra a dreta i feu que cada grup cree una seqüència amb avançar, retrocedir, girar a l’esquerra o girar a la dreta. Primer assageu la ruta amb el dit; després, col·loqueu les peces al tauler, comproveu que la seqüència està completa i executeu-la. MatataBot no llig les banderes ni evita les d’altres equips: les persones han de planificar i validar el recorregut.
+En una cuadrícula propia, marcad una casilla de inicio, una bandera como destino y dos banderas de otros equipos que no se pueden atravesar. Leed los bloques disponibles de izquierda a derecha y haced que cada grupo cree una secuencia con avanzar, retroceder, girar a la izquierda o girar a la derecha. Primero ensayad la ruta con el dedo; después, colocad las piezas en el tablero, comprobad que la secuencia está completa y ejecutadla. MatataBot no lee las banderas ni evita las de otros equipos: las personas tienen que planificar y validar el recorrido.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Distingiu amb el cos i amb una fitxa de robot dos conceptes: «gira a l’esquerra» canvia l’orientació sobre la mateixa casella; «avança» desplaça el robot cap a la casella que té davant. No existeix una ordre de desplaçament lateral en aquest repte. Registreu la seqüència i dibuixeu l’orientació de MatataBot abans i després de cada gir.
+Distinguid con el cuerpo y con una ficha de robot dos conceptos: «gira a la izquierda» cambia la orientación sobre la misma casilla; «avanza» desplaza el robot hacia la casilla que tiene delante. No existe una orden de desplazamiento lateral en este reto. Registrad la secuencia y dibujad la orientación de MatataBot antes y después de cada giro.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Busqueu una segona ruta vàlida fins a la mateixa bandera sense travessar les destinacions dels altres equips. Compareu les dues seqüències i comproveu quina usa menys ordres de moviment, mantenint separats els girs del recompte. Si la posició final no coincideix amb la predicció, localitzeu la primera ordre que ha provocat la diferència, canvieu només eixa peça i repetiu la prova.
+Buscad una segunda ruta válida hasta la misma bandera sin atravesar los destinos de los otros equipos. Comparad las dos secuencias y comprobad cuál usa menos órdenes de movimiento, manteniendo separados los giros del recuento. Si la posición final no coincide con la predicción, localizad la primera orden que ha provocado la diferencia, cambiad solo esa pieza y repetid la prueba.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Abans de canviar de repte, amb l’acompanyament docent, retireu els blocs del tauler i torneu-los al seu lloc; així el programa anterior no es barreja amb el següent. Tanqueu amb preguntes concretes: com s’anomenen les tres parts del set?, quina peça fa girar sense avançar?, heu arribat a la bandera sense travessar-ne cap altra?, i quina prova us ha permés confirmar-ho?
+Antes de cambiar de reto, con el acompañamiento docente, retirad los bloques del tablero y devolvedlos a su sitio; así el programa anterior no se mezcla con el siguiente. Cerrad con preguntas concretas: ¿cómo se llaman las tres partes del set?, ¿qué pieza hace girar sin avanzar?, ¿habéis llegado a la bandera sin atravesar ninguna otra?, y ¿qué prueba os ha permitido confirmarlo?
 
-**Evidència:** programa ordenat, predicció i ruta observada, comparació amb una segona solució i explicació d’un gir. L’objectiu és una ruta vàlida i comprensible, no ser el grup més ràpid.
+**Evidencia:** programa ordenado, predicción y ruta observada, comparación con una segunda solución y explicación de un giro. El objetivo es una ruta válida y comprensible, no ser el grupo más rápido.
 
-### **La parada de formes del mercat.**
+### **La parada de formas del mercado.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Introduïu una parada fictícia del mercat de l’horta amb targetes d’aliments representats com a formes senzilles: una coca triangular, un formatge quadrat, una taronja circular i un pa rectangular. Aclariu que són pictogrames de joc: no afirmen que els aliments reals tinguen sempre eixa forma. Mostreu com es juga, expliqueu les regles i modeleu una ruta fins a una targeta. **Temps orientatiu:** 10 minuts de presentació guiada, com en el pla oficial.
+Introducid una parada ficticia del mercado de la huerta con tarjetas de alimentos representados como formas sencillas: una coca triangular, un queso cuadrado, una naranja circular y un pan rectangular. Aclarad que son pictogramas de juego: no afirman que los alimentos reales tengan siempre esa forma. Mostrad cómo se juega, explicad las reglas y modelad una ruta hasta una tarjeta. **Tiempo orientativo:** 10 minutos de presentación guiada, como en el plan oficial.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Prepareu una graella de 4 × 4 caselles de 10 × 10 cm per a la prova física i repartiu-hi targetes planes d’aliments. Col·loqueu els quatre mòduls de forma —triangle, quadrat, cercle i rectangle— aleatòriament al costat oposat al punt d’inici. Barregeu la segona còpia de formes perquè qui juga trie una categoria pendent a l’atzar. El dau té quatre cares de forma, una cara «atura la ronda» i una «torna a tirar». En parelles, alterneu qui tria el repte, qui programa i qui comprova la ruta. Cada persona té un llançament per ronda; interpreteu «torna a tirar» com l’única excepció permesa, amb una tirada addicional com a màxim. Si ix «atura», la ronda acaba; si ix una forma diferent de la seleccionada, espereu el torn següent. Si la categoria ja s’ha completat, la persona registra el torn i passa el dau; no queda eliminada del joc.
+Preparad una cuadrícula de 4 × 4 casillas de 10 × 10 cm para la prueba física y repartid en ella tarjetas planas de alimentos. Colocad los cuatro módulos de forma —triángulo, cuadrado, círculo y rectángulo— aleatoriamente en el lado opuesto al punto de inicio. Mezclad la segunda copia de formas para que quien juega elija una categoría pendiente al azar. El dado tiene cuatro caras de forma, una cara «para la ronda» y una «vuelve a tirar». En parejas, alternad quién elige el reto, quién programa y quién comprueba la ruta. Cada persona tiene un lanzamiento por ronda; interpretad «vuelve a tirar» como la única excepción permitida, con una tirada adicional como máximo. Si sale «para», la ronda acaba; si sale una forma distinta de la seleccionada, esperad el turno siguiente. Si la categoría ya se ha completado, la persona registra el turno y pasa el dado; no queda eliminada del juego.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Quan el dau coincidisca amb la categoria seleccionada, busqueu en la graella una targeta d’aliment amb eixa silueta. Si el camí que té davant no porta a cap targeta d’eixa forma, traslladeu MatataBot a un altre punt d’inici al costat del mapa, orientat cap a l’objectiu; no modifiqueu les ordres per a simular un sensor. Anoteu forma, ubicació inicial, orientació i seqüència prevista. Planifiqueu el recorregut amb els blocs de moviment i gir de 90° del kit, i comproveu la ruta amb el dit abans de programar.
+Cuando el dado coincida con la categoría seleccionada, buscad en la cuadrícula una tarjeta de alimento con esa silueta. Si el camino que tiene delante no lleva a ninguna tarjeta de esa forma, trasladad MatataBot a otro punto de inicio junto al mapa, orientado hacia el objetivo; no modifiquéis las órdenes para simular un sensor. Anotad forma, ubicación inicial, orientación y secuencia prevista. Planificad el recorrido con los bloques de movimiento y giro de 90° del kit, y comprobad la ruta con el dedo antes de programar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Completeu la programació en un sol intent. Si MatataBot arriba a la targeta, una persona l’arreplega manualment i la posa al mòdul de forma corresponent; el robot no reconeix la silueta ni recull l’aliment. Si no hi arriba, registreu la primera diferència i no torneu a programar dins d’eixe torn, tal com indica el repte oficial. Reviseu l’error després de la ronda o en una estació de pràctica sense dau; així es conserva la regla del joc sense penalitzar l’aprenentatge. Si una targeta admet més d’una interpretació, l’equip justifica la seua classificació amb el contorn geomètric acordat.
+Completad la programación en un solo intento. Si MatataBot llega a la tarjeta, una persona la recoge manualmente y la pone en el módulo de forma correspondiente; el robot no reconoce la silueta ni recoge el alimento. Si no llega, registrad la primera diferencia y no volváis a programar dentro de ese turno, tal como indica el reto oficial. Revisad el error después de la ronda o en una estación de práctica sin dado; así se conserva la regla del juego sin penalizar el aprendizaje. Si una tarjeta admite más de una interpretación, el equipo justifica su clasificación con el contorno geométrico acordado.
 
-![MatataBot, torre i tauler reals del Coding Set al costat d’una graella amb pictogrames plans d’aliments i quatre categories geomètriques per al joc cooperatiu del mercat.](../../_assets/situacions/sa-cs-biga-eater-mercat-v1.webp)
+![MatataBot, torre y tablero reales del Coding Set junto a una cuadrícula con pictogramas planos de alimentos y cuatro categorías geométricas para el juego cooperativo del mercado.](../../_assets/situacions/sa-cs-biga-eater-mercat-v1.webp)
 
-_Les targetes i el dau són materials de paper. Una persona retira la targeta quan el robot hi arriba; MatataBot no reconeix formes ni arreplega aliments._
+_Las tarjetas y el dado son materiales de papel. Una persona retira la tarjeta cuando el robot llega; MatataBot no reconoce formas ni recoge alimentos._
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Continueu fins que les quatre categories tinguen una targeta o s’acabe el temps acordat. Una categoria ja completada no rep una segona targeta; si el dau la torna a indicar, qui té el torn passa a ser observador/a i registra la ruta abans de cedir-lo. **Temps orientatiu:** 30 minuts de joc en parelles i 5 minuts de retorn. Tanqueu amb preguntes concretes: quins altres aliments o objectes tenen estes formes?, què canvia quan el punt d’inici és fix?, i com heu planificat una ruta des de l’orientació inicial? **Evidència:** quatre categories amb targeta, registre de torns, una ruta prevista i el resultat observat. La rapidesa no puntua.
+Continuad hasta que las cuatro categorías tengan una tarjeta o se acabe el tiempo acordado. Una categoría ya completada no recibe una segunda tarjeta; si el dado la vuelve a indicar, quien tiene el turno pasa a ser observador/a y registra la ruta antes de cederlo. **Tiempo orientativo:** 30 minutos de juego en parejas y 5 minutos de retorno. Cerrad con preguntas concretas: ¿qué otros alimentos u objetos tienen estas formas?, ¿qué cambia cuando el punto de inicio es fijo?, y ¿cómo habéis planificado una ruta desde la orientación inicial? **Evidencia:** cuatro categorías con tarjeta, registro de turnos, una ruta prevista y el resultado observado. La rapidez no puntúa.
 
-### **Del 0 al 9: xifres en ruta.**
+### **Del 0 al 9: cifras en ruta.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Compareu una xifra escrita a mà amb una xifra construïda sobre una graella de trams rectes. Expliqueu que les formes de la fitxa són glifs geomètrics simplificats: no reprodueixen el traç cal·ligràfic de cada persona. Predigueu quins trams requereixen avançar, retrocedir o girar i quins no es poden unir en un únic recorregut sense alçar el llapis o reposicionar el robot.
+Comparad una cifra escrita a mano con una cifra construida sobre una cuadrícula de tramos rectos. Explicad que las formas de la ficha son glifos geométricos simplificados: no reproducen el trazo caligráfico de cada persona. Predecid qué tramos requieren avanzar, retroceder o girar y cuáles no se pueden unir en un único recorrido sin levantar el lápiz o reposicionar el robot.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En equips, descomposeu les deu xifres (0–9) en trams ortogonals d’una graella pròpia. Comenceu amb 0, 1 i 7; després repartiu 2–6, 8 i 9 entre els equips i intercanvieu les targetes perquè una altra parella reconstruïsca cada forma. Marqueu l’orientació inicial, numereu els trams i convertiu-los en ordres disponibles del kit. Per a una línia discontínua o una xifra que exigisca alçar el llapis, tanqueu el programa, reposicioneu el robot i registreu cada subtraçat per separat.
+En equipos, descomponed las diez cifras (0–9) en tramos ortogonales de una cuadrícula propia. Empezad con 0, 1 y 7; después repartid 2–6, 8 y 9 entre los equipos e intercambiad las tarjetas para que otra pareja reconstruya cada forma. Marcad la orientación inicial, numerad los tramos y convertidlos en órdenes disponibles del kit. Para una línea discontinua o una cifra que exija levantar el lápiz, cerrad el programa, reposicionad el robot y registrad cada subtrazo por separado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Registreu els trams, els girs i el nombre d’ordres de cada xifra. Creeu una xifra de l’aula inventada, sense utilitzar una data personal real.
+Registrad los tramos, los giros y el número de órdenes de cada cifra. Cread una cifra de aula inventada, sin utilizar una fecha personal real.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu cada recorregut des del mateix punt inicial i compareu-lo amb la targeta. Si hi ha Artist Add-On compatible, fixeu-hi el retolador segons les instruccions del fabricant i proveu el traçat sobre paper gran; amb el kit base, MatataBot recorre les caselles sense dibuixar i l’alumnat ressegueix o marca el camí a mà. Identifiqueu una repetició útil —per exemple, els quatre costats d’un contorn quadrat— i compareu la seqüència desplegada amb el bucle. Després, creeu un codi de data fictícia triat per la classe (com ara el número d’una setmana o d’una parada), mai una data de naixement o una altra dada personal.
+Ejecutad cada recorrido desde el mismo punto inicial y comparadlo con la tarjeta. Si hay Artist Add-On compatible, fijad en él el rotulador según las instrucciones del fabricante y probad el trazado sobre papel grande; con el kit base, MatataBot recorre las casillas sin dibujar y el alumnado repasa o marca el camino a mano. Identificad una repetición útil —por ejemplo, los cuatro lados de un contorno cuadrado— y comparad la secuencia desplegada con el bucle. Después, cread un código de fecha ficticia elegido por la clase (como el número de una semana o de una parada), nunca una fecha de nacimiento u otro dato personal.
 
-![MatataBot del Coding Set i les seues peces al costat de deu targetes originals de xifres geomètriques sobre una graella.](../../_assets/situacions/sa-cs-xifres-graella.webp)
+![MatataBot del Coding Set y sus piezas junto a diez tarjetas originales de cifras geométricas sobre una cuadrícula.](../../_assets/situacions/sa-cs-xifres-graella.webp)
 
-_Les xifres són models didàctics sobre quadrícula; el MatataBot del kit base recorre les caselles, però no deixa tinta sense el complement de dibuix._
+_Las cifras son modelos didácticos sobre cuadrícula; el MatataBot del kit base recorre las casillas, pero no deja tinta sin el complemento de dibujo._
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** col·lecció de les deu targetes 0–9 amb orientació, trams i seqüència; prova o simulació identificada de cada ruta; i una data fictícia codificada. Quina xifra ha requerit més subtraçats i quines ordres heu pogut substituir per un bucle?
+**Evidencia:** colección de las diez tarjetas 0–9 con orientación, tramos y secuencia; prueba o simulación identificada de cada ruta; y una fecha ficticia codificada. ¿Qué cifra ha requerido más subtrazos y qué órdenes habéis podido sustituir por un bucle?
 
-### **Triangles que giren: angle interior i gir del robot ([Draw triangles](https://matatalab.com/en/node/84)).**
+### **Triángulos que giran: ángulo interior y giro del robot ([Draw triangles](https://matatalab.com/en/node/84)).**
 
-**Objectiu:** comprovar que els tres angles interiors d’un triangle equilàter són de 60° i sumen 180°, i descobrir per què el bloc de gir ha de mesurar 120°. La fitxa oficial pressuposa que l’alumnat ja coneix els tipus d’angles i triangles; en aquesta adaptació, oferiu una plantilla visual i una construcció corporal abans de passar a la programació. La proposta oficial s’adreça a 6–11 anys; ací les ajudes i la complexitat es regulen per l’edat i els coneixements del grup.
+**Objetivo:** comprobar que los tres ángulos interiores de un triángulo equilátero son de 60° y suman 180°, y descubrir por qué el bloque de giro tiene que medir 120°. La ficha oficial presupone que el alumnado ya conoce los tipos de ángulos y triángulos; en esta adaptación, ofreced una plantilla visual y una construcción corporal antes de pasar a la programación. La propuesta oficial se dirige a 6–11 años; aquí las ayudas y la complejidad se regulan por la edad y los conocimientos del grupo.
 
-**Materials:** Coding Set; si n’hi ha, Artist Add-On o Pro Set amb els blocs d’angle i retolador compatible; paper blanc, retoladors esborrables a l’aigua i ceres. Sense el complement, feu les proves de gir sobre la graella i representeu les figures en paper.
+**Materiales:** Coding Set; si los hay, Artist Add-On o Pro Set con los bloques de ángulo y rotulador compatible; papel blanco, rotuladores borrables al agua y ceras. Sin el complemento, haced las pruebas de giro sobre la cuadrícula y representad las figuras en papel.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Temps orientatiu: 5 minuts.** Repasseu angles aguts, rectes i obtusos i els triangles que els contenen. Amb una plantilla, modeleu un triangle equilàter i mostreu un programa que en recórrega el contorn. Pregunteu quina magnitud representa el bloc: l’angle interior dibuixat o el gir que fa el robot per continuar.
+**Tiempo orientativo: 5 minutos.** Repasad ángulos agudos, rectos y obtusos y los triángulos que los contienen. Con una plantilla, modelad un triángulo equilátero y mostrad un programa que recorra su contorno. Preguntad qué magnitud representa el bloque: el ángulo interior dibujado o el giro que hace el robot para continuar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Temps orientatiu: 30 minuts per a les fases 2–4.** Amb el complement, traceu un triangle equilàter sobre paper: useu un bloc de gir de 120° en cada vèrtex i compareu-lo amb l’angle interior de 60°. Representeu els tres angles interiors i comproveu que sumen 180°. Expliqueu que el valor del bloc és l’angle suplementari al de la figura: `180° − 120° = 60°`. Amb el kit base, feu el gir en una graella de prova i dibuixeu el contorn a mà; no afirmeu que MatataBot dibuixa sense l’accessori.
+**Tiempo orientativo: 30 minutos para las fases 2–4.** Con el complemento, trazad un triángulo equilátero sobre papel: usad un bloque de giro de 120° en cada vértice y comparadlo con el ángulo interior de 60°. Representad los tres ángulos interiores y comprobad que suman 180°. Explicad que el valor del bloque es el ángulo suplementario al de la figura: `180° − 120° = 60°`. Con el kit base, haced el giro en una cuadrícula de prueba y dibujad el contorno a mano; no afirméis que MatataBot dibuja sin el accesorio.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-![MatataBot i torre reals del Coding Set al costat d’un triangle equilàter i targetes que representen els girs als vèrtexs.](../../_assets/situacions/sa-cs-triangles-girs-v1.webp)
+![MatataBot y torre reales del Coding Set junto a un triángulo equilátero y tarjetas que representan los giros en los vértices.](../../_assets/situacions/sa-cs-triangles-girs-v1.webp)
 
-_El triangle i les targetes són representacions de paper. El traçat automàtic requereix Artist Add-On o Pro Set; amb el kit base, la figura es dibuixa a mà._
+_El triángulo y las tarjetas son representaciones de papel. El trazado automático requiere Artist Add-On o Pro Set; con el kit base, la figura se dibuja a mano._
 
-Proveu també blocs per a girs de 90°, aguts i obtusos. Anoteu el valor del bloc i l’angle interior observat en una taula amb les columnes **gir programat**, **angle interior**, **tipus de triangle** i **resultat del traç**. Compareu si l’angle dibuixat és sempre suplementari al gir programat.
+Probad también bloques para giros de 90°, agudos y obtusos. Anotad el valor del bloque y el ángulo interior observado en una tabla con las columnas **giro programado**, **ángulo interior**, **tipo de triángulo** y **resultado del trazo**. Comparad si el ángulo dibujado es siempre suplementario al giro programado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-En parelles, una persona planteja un repte —triangle rectangle, agut o obtús— i l’altra programa primer el gir i després usa blocs d’avanç per a completar el tercer costat; accepteu que el costat final puga quedar més llarg o més curt en la primera prova. Canvieu els rols i compareu les figures. Com a depuració, reviseu una ordre de gir cada vegada. Si el model del centre ho permet, proveu i anoteu si els blocs numèrics poden combinar-se amb els de gir; no pressuposeu que un paràmetre d’avanç modifica l’angle.
+En parejas, una persona plantea un reto —triángulo rectángulo, agudo u obtuso— y la otra programa primero el giro y después usa bloques de avance para completar el tercer lado; aceptad que el lado final pueda quedar más largo o más corto en la primera prueba. Cambiad los roles y comparad las figuras. Como depuración, revisad una orden de giro cada vez. Si el modelo del centro lo permite, probad y anotad si los bloques numéricos pueden combinarse con los de giro; no presupongáis que un parámetro de avance modifica el ángulo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Temps orientatiu: 10 minuts.** Compartiu les figures i reviseu la diferència entre gir i angle interior. **Evidència:** una figura anotada, la taula de valors i l’explicació de per què el triangle equilàter usa un gir de 120° per a obtindre un angle interior de 60°. **Preguntes:** què passaria amb un triangle equilàter més gran? Per què un bucle és útil per a repetir tres girs i tres costats? Podríeu adaptar la idea a un paral·lelogram o a un pentagrama? Aquestes dues figures són extensions opcionals, no requisits de la tasca principal.
+**Tiempo orientativo: 10 minutos.** Compartid las figuras y revisad la diferencia entre giro y ángulo interior. **Evidencia:** una figura anotada, la tabla de valores y la explicación de por qué el triángulo equilátero usa un giro de 120° para obtener un ángulo interior de 60°. **Preguntas:** ¿qué pasaría con un triángulo equilátero más grande? ¿Por qué un bucle es útil para repetir tres giros y tres lados? ¿Podríais adaptar la idea a un paralelogramo o a un pentagrama? Estas dos figuras son ampliaciones opcionales, no requisitos de la tarea principal.
 
-### **El cel de la fira: viatgem per l’univers ([Travel in universe](https://matatalab.com/en/node/83)).**
+### **El cielo de la feria: viajamos por el universo ([Travel in universe](https://matatalab.com/en/node/83)).**
 
-**Objectiu:** crear en equip una imatge de l’univers amb formes programades, acolorir-la i explicar-ne els elements. El pla oficial no requereix coneixements previs; en aquesta versió, abans de programar recordem les formes bàsiques i els girs practicats en les sessions anteriors.
+**Objetivo:** crear en equipo una imagen del universo con formas programadas, colorearla y explicar sus elementos. El plan oficial no requiere conocimientos previos; en esta versión, antes de programar recordamos las formas básicas y los giros practicados en las sesiones anteriores.
 
-**Materials:** un full blanc gran, ceres i retoladors esborrables a l’aigua; Coding Set; i, només si el centre en disposa, Artist Add-On o Pro Set amb els retoladors compatibles. Prepareu també paper de prova per a calibrar el traçat i targetes pròpies de cercle, triangle, quadrat i estrela de cinc puntes.
+**Materiales:** una hoja blanca grande, ceras y rotuladores borrables al agua; Coding Set; y, solo si el centro dispone de ellos, Artist Add-On o Pro Set con los rotuladores compatibles. Preparad también papel de prueba para calibrar el trazado y tarjetas propias de círculo, triángulo, cuadrado y estrella de cinco puntas.
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Temps orientatiu: 5 minuts.** Observeu una imatge de l’univers i repasseu com s’usa MatataBot per a dibuixar formes. Presenteu el vocabulari *univers*, *triangle*, *quadrat*, *cercle* i *pentagrama*; cada equip tria quins elements vol incloure en el mural i els situa en un esbós. El robot no necessita «entendre» l’univers: són les persones qui decideixen i expliquen què representa cada forma.
+**Tiempo orientativo: 5 minutos.** Observad una imagen del universo y repasad cómo se usa MatataBot para dibujar formas. Presentad el vocabulario *universo*, *triángulo*, *cuadrado*, *círculo* y *pentagrama*; cada equipo elige qué elementos quiere incluir en el mural y los sitúa en un esbozo. El robot no necesita «entender» el universo: son las personas quienes deciden y explican qué representa cada forma.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Temps orientatiu: 30 minuts.** Repartiu els rols de disseny, programació, observació i acolorit. Amb Artist Add-On o Pro Set disponible, proveu primer cada forma sobre paper esborrable i, quan la ruta siga llegible, traceu-la en el full gran; programeu figures per separat i afegiu-les a una composició conjunta. Sense el complement, useu el robot per a recórrer una ruta en la graella i dibuixeu les formes a mà sobre el mural: aquesta alternativa no presenta el Coding Set base com un robot que dibuixa.
+**Tiempo orientativo: 30 minutos.** Repartid los roles de diseño, programación, observación y coloreado. Con Artist Add-On o Pro Set disponible, probad primero cada forma sobre papel borrable y, cuando la ruta sea legible, trazadla en la hoja grande; programad figuras por separado y añadidlas a una composición conjunta. Sin el complemento, usad el robot para recorrer una ruta en la cuadrícula y dibujad las formas a mano sobre el mural: esta alternativa no presenta el Coding Set base como un robot que dibuja.
 
-![MatataBot i la torre reals del Coding Set al costat d’un mural de l’univers acolorit a mà amb cercle, triangle, quadrat i estrela.](../../_assets/situacions/sa-cs-univers-mural-v1.webp)
+![MatataBot y la torre reales del Coding Set junto a un mural del universo coloreado a mano con círculo, triángulo, cuadrado y estrella.](../../_assets/situacions/sa-cs-univers-mural-v1.webp)
 
-_El mural és una creació manual de l’alumnat. El traçat amb robot requereix Artist Add-On o Pro Set; amb el kit base, MatataBot només recorre una ruta i el dibuix es fa a mà._
+_El mural es una creación manual del alumnado. El trazado con robot requiere Artist Add-On o Pro Set; con el kit base, MatataBot solo recorre una ruta y el dibujo se hace a mano._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu quines ordres i valors s’han emprat per a cada figura, qui l’ha programada i si s’ha traçat amb accessori o completat a mà. Cada equip explica una forma geomètrica i assenyala quina part del dibuix és pròpia; no presenteu els valors de gir com si foren els angles interiors de la figura.
+Anotad qué órdenes y valores se han empleado para cada figura, quién la ha programado y si se ha trazado con accesorio o completado a mano. Cada equipo explica una forma geométrica y señala qué parte del dibujo es propia; no presentéis los valores de giro como si fueran los ángulos interiores de la figura.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu el traç sobre el paper de prova; si la figura no tanca, canvieu una sola ordre o duració i torneu a provar-la. Acoloreu el mural amb ceres i retoladors i connecteu les figures en una composició d’equip. Si s’intercanvien «gir a l’esquerra» i «gir a la dreta», predigueu si canvia la figura, l’orientació o totes dues coses i comproveu-ho en una mostra menuda.
+Revisad el trazo sobre el papel de prueba; si la figura no cierra, cambiad una sola orden o duración y volved a probarla. Coloread el mural con ceras y rotuladores y conectad las figuras en una composición de equipo. Si se intercambian «girar a la izquierda» y «girar a la derecha», predecid si cambia la figura, la orientación o las dos cosas y comprobadlo en una muestra pequeña.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Temps orientatiu: 10 minuts.** Presenteu els elements del mural i conteu un viatge imaginat per l’univers. Mostreu una predicció i el canvi que ha fet falta per a millorar el resultat. **Evidència:** obra col·laborativa acolorida, registre d’ordres i una explicació oral o visual. **Preguntes per al retorn:** el bloc de graus indica l’angle interior de la figura o el gir del robot? Què passa al dibuix si canviem esquerra i dreta? Si poguéreu viatjar per l’univers, triaríeu MatataBot o una nau imaginària, i per què?
+**Tiempo orientativo: 10 minutos.** Presentad los elementos del mural y contad un viaje imaginado por el universo. Mostrad una predicción y el cambio que ha hecho falta para mejorar el resultado. **Evidencia:** obra colaborativa coloreada, registro de órdenes y una explicación oral o visual. **Preguntas para el retorno:** ¿el bloque de grados indica el ángulo interior de la figura o el giro del robot? ¿Qué pasa en el dibujo si cambiamos izquierda y derecha? Si pudierais viajar por el universo, ¿elegiríais MatataBot o una nave imaginaria, y por qué?
 
-## 📋 Avaluació i evidències
+## 📋 Evaluación y evidencias
 
-Recolliu la predicció inicial, el programa tangible, el registre de proves i l’explicació final. Observeu si l’alumnat: classifica formes amb un criteri explícit; ordena moviments i girs; relaciona l’angle exterior de gir amb l’angle interior del triangle; identifica una repetició útil; i revisa el programa a partir del resultat observat. Valoreu també que l’explicació siga comprensible per a un altre equip.
+Recoged la predicción inicial, el programa tangible, el registro de pruebas y la explicación final. Observad si el alumnado: clasifica formas con un criterio explícito; ordena movimientos y giros; relaciona el ángulo exterior de giro con el ángulo interior del triángulo; identifica una repetición útil; y revisa el programa a partir del resultado observado. Valorad también que la explicación sea comprensible para otro equipo.
 
-## Rotació de grups i retorn
+## Rotación de grupos y retorno
 
-Organitzeu equips de tres: planificador/a, operador/a i observador/a. Amb un sol kit, els grups passen per les estacions en rotació; mentre esperen, poden provar el programa amb una fitxa sobre la quadrícula o resoldre la classificació i la predicció en paper. En cada canvi de rol, la persona observadora registra si el robot es va desviar, quin indici van usar i quina instrucció van canviar. En la mostra final, cada equip explica una decisió matemàtica i una limitació del dibuix automatitzat. La coavaluació se centra en claredat de la llegenda, coherència entre predicció i resultat i respecte dels torns, no en la bellesa ni la velocitat.
+Organizad equipos de tres: planificador/a, operador/a y observador/a. Con un solo kit, los grupos pasan por las estaciones en rotación; mientras esperan, pueden probar el programa con una ficha sobre la cuadrícula o resolver la clasificación y la predicción en papel. En cada cambio de rol, la persona observadora registra si el robot se desvió, qué indicio usaron y qué instrucción cambiaron. En la muestra final, cada equipo explica una decisión matemática y una limitación del dibujo automatizado. La coevaluación se centra en la claridad de la leyenda, la coherencia entre predicción y resultado y el respeto de los turnos, no en la belleza ni en la velocidad.
 
-## ♿ Més d’una manera de participar
+## ♿ Más de una manera de participar
 
-Oferiu targetes amb contrast alt i relleu, quadrícules grans amb punt de partida marcat i programes amb menys ordres. Qui no manipule les peces pot fer de persona que prediu, de registradora de proves, de narradora o de responsable de comprovar les formes. L’Artist Add-On és opcional: totes les missions es poden completar amb el Coding Set i materials de paper.
+Ofreced tarjetas con contraste alto y relieve, cuadrículas grandes con punto de partida marcado y programas con menos órdenes. Quien no manipule las piezas puede hacer de persona que predice, de registradora de pruebas, de narradora o de responsable de comprobar las formas. El Artist Add-On es opcional: todas las misiones se pueden completar con el Coding Set y materiales de papel.
 
-## 🔗 Referents oficials i adaptació
+## 🔗 Referentes oficiales y adaptación
 
-La primera sessió reinterpreta la presentació del robot, la torre, la taula de control i les ordres de [Hello Matatalab Robots!](https://matatalab.com/en/node/88). La segona adapta [Big Eater](https://matatalab.com/en/node/80): classificar quatre tipus d’aliments per forma; preparar una graella de 16 caselles, quatre mòduls i un dau amb quatre formes, «atura» i «torna a tirar»; triar una categoria, planificar i programar una ruta en un sol intent; i retirar manualment la targeta només quan el robot hi arriba. El pla oficial indica 10 minuts de modelatge, 30 de joc en parelles i 5 de retorn, i inclou una extensió amb inici fix i la cerca de formes en objectes quotidians. La pàgina també diu que cada alumne té una tirada per ronda i inclou una cara de «torna a tirar»; ací interpretem aquesta cara com una excepció d’una única tirada addicional i ho marquem com a decisió local. Les sessions següents adapten, en un context propi, [Draw Arabic numbers with Matatalab!](https://matatalab.com/en/node/87) (traçat de xifres amb moviments i bucles), [Draw triangles](https://matatalab.com/en/node/84) (girs exteriors i angles interiors) i [Travel in universe](https://matatalab.com/en/node/83) (composició d’una obra geomètrica col·laborativa). Les targetes, graelles, preguntes i imatges són originals; les activitats de dibuix directe requereixen Artist Add-On, per això s’ofereix una alternativa completa amb paper.
+La primera sesión reinterpreta la presentación del robot, la torre, la mesa de control y las órdenes de [Hello Matatalab Robots!](https://matatalab.com/en/node/88). La segunda adapta [Big Eater](https://matatalab.com/en/node/80): clasificar cuatro tipos de alimentos por forma; preparar una cuadrícula de 16 casillas, cuatro módulos y un dado con cuatro formas, «para» y «vuelve a tirar»; elegir una categoría, planificar y programar una ruta en un solo intento; y retirar manualmente la tarjeta solo cuando el robot llega. El plan oficial indica 10 minutos de modelado, 30 de juego en parejas y 5 de retorno, e incluye una ampliación con inicio fijo y la búsqueda de formas en objetos cotidianos. La página también dice que cada alumno tiene una tirada por ronda e incluye una cara de «vuelve a tirar»; aquí interpretamos esta cara como una excepción de una única tirada adicional y lo marcamos como decisión local. Las sesiones siguientes adaptan, en un contexto propio, [Draw Arabic numbers with Matatalab!](https://matatalab.com/en/node/87) (trazado de cifras con movimientos y bucles), [Draw triangles](https://matatalab.com/en/node/84) (giros exteriores y ángulos interiores) y [Travel in universe](https://matatalab.com/en/node/83) (composición de una obra geométrica colaborativa). Las tarjetas, cuadrículas, preguntas e imágenes son originales; las actividades de dibujo directo requieren Artist Add-On, por eso se ofrece una alternativa completa con papel.

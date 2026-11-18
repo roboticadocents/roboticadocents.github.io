@@ -14,172 +14,172 @@ duration: "5 sesiones · 250 min"
 challenge: "¿Cómo podemos prototipar un ayudante mecánico para una tarea de cocina y hacer que sea fácil y seguro de usar?"
 ---
 
-![Un muntatge LEGO SPIKE Prime mou targetes de recepta i fitxes de menjar sobre una maqueta de taula.](../../_assets/situacions/sp-ajudant-receptes.webp)
+![Un montaje LEGO SPIKE Prime mueve tarjetas de receta y fichas de comida sobre una maqueta de mesa.](../../_assets/situacions/sp-ajudant-receptes.webp)
 
-_El prototip treballa amb targetes i aliments simulats; no toca menjar ni prepara receptes reals._
+_El prototipo trabaja con tarjetas y alimentos simulados; no toca comida ni prepara recetas reales._
 
-## 🌱 Situació i intenció
+## 🌱 Situación y intención
 
-La biblioteca escolar prepara una mostra titulada «De l’horta a la taula» amb receptes inventades a partir de targetes d’ingredients. L’encàrrec és dissenyar un ajudant mecànic de taula que resolga una part concreta de la preparació representada: fer avançar una targeta, prémer una fitxa d’un recorregut o remenar peces lleugeres dins d’una zona de paper. Els aliments, les safates i els estris només apareixen dibuixats; el robot no toca menjar ni participa en una cuina real.
+La biblioteca escolar prepara una muestra titulada «De la huerta a la mesa» con recetas inventadas a partir de tarjetas de ingredientes. El encargo es diseñar un ayudante mecánico de mesa que resuelva una parte concreta de la preparación representada: hacer avanzar una tarjeta, pulsar una ficha de un recorrido o remover piezas ligeras dentro de una zona de papel. Los alimentos, las bandejas y los utensilios solo aparecen dibujados; el robot no toca comida ni participa en una cocina real.
 
-Per arrelar el repte al territori, cada equip tria una hortalissa o un altre producte que puga documentar amb una font pública de la Comunitat Valenciana, com les fitxes de cultiu del [Portal Agrari de la Generalitat](https://portalagrari.gva.es/va/formacio-i-transferencia/cerca-divulgacio-tecnica), i prepara una targeta que en cita la procedència. La recepta i el procés són ficticis: no s’hi fan afirmacions sobre temporada, nutrició o tècniques culinàries sense una font contrastada. L’objectiu tecnològic és convertir una necessitat d’ús en un prototip fàcil d’activar, repetible, revisable i segur.
+Para arraigar el reto en el territorio, cada equipo elige una hortaliza u otro producto que pueda documentar con una fuente pública de la Comunitat Valenciana, como las fichas de cultivo del [Portal Agrari de la Generalitat](https://portalagrari.gva.es/va/formacio-i-transferencia/cerca-divulgacio-tecnica), y prepara una tarjeta que cita su procedencia. La receta y el proceso son ficticios: no se hacen afirmaciones sobre temporada, nutrición o técnicas culinarias sin una fuente contrastada. El objetivo tecnológico es convertir una necesidad de uso en un prototipo fácil de activar, repetible, revisable y seguro.
 
-## 🎯 Objectius i criteris de disseny
+## 🎯 Objetivos y criterios de diseño
 
-- Definir una tasca delimitada i identificar qui l’utilitzaria i en quin punt del procés.
+- Definir una tarea delimitada e identificar quién la utilizaría y en qué punto del proceso.
 
-- Transformar el gir del motor en una acció útil mitjançant una palanca, corró o mecanisme de moviment.
+- Transformar el giro del motor en una acción útil mediante una palanca, un rodillo o un mecanismo de movimiento.
 
-- Relacionar la longitud del braç amb el recorregut i comparar configuracions amb una prova justa.
+- Relacionar la longitud del brazo con el recorrido y comparar configuraciones con una prueba justa.
 
-- Ajustar velocitat, durada o rotacions a materials de maqueta diferents, registrar resultats i iterar.
+- Ajustar velocidad, duración o rotaciones a materiales de maqueta diferentes, registrar resultados e iterar.
 
-- Reutilitzar una part del programa en una eina nova i explicar què cal adaptar.
+- Reutilizar una parte del programa en una herramienta nueva y explicar qué hay que adaptar.
 
-- Comunicar la limitació del prototip i distingir la maqueta d’un dispositiu alimentari real.
+- Comunicar la limitación del prototipo y distinguir la maqueta de un dispositivo alimentario real.
 
-Abans de construir, l’equip acorda quatre criteris observables: l’acció s’entén sense una explicació llarga; s’activa amb un control accessible; completa la tasca tres vegades de manera semblant; i s’atura sense colpejar, atrapar dits ni eixir de la zona de prova.
+Antes de construir, el equipo acuerda cuatro criterios observables: la acción se entiende sin una explicación larga; se activa con un control accesible; completa la tarea tres veces de manera parecida; y se detiene sin golpear, atrapar dedos ni salir de la zona de prueba.
 
-## 📅 Seqüència didàctica · 5 sessions de 50 minuts
+## 📅 Secuencia didáctica · 5 sesiones de 50 minutos
 
-### **Sessió 1 · Investiguem la tasca i qui la farà servir.**
+### **Sesión 1 · Investigamos la tarea y quién la va a usar.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Observeu les targetes de la recepta de mostra i marqueu el pas que podria beneficiar-se d’una ajuda: allisar una tira de paper, avançar una targeta o moure fitxes d’un recorregut. No reproduïu cap tasca real amb aliments.
+Observad las tarjetas de la receta de muestra y marcad el paso que podría beneficiarse de una ayuda: alisar una tira de papel, avanzar una tarjeta o mover fichas de un recorrido. No reproduzcáis ninguna tarea real con alimentos.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Completeu en parella un mapa «persona / tasca / dificultat / ajuda possible». Formuleu la necessitat amb la frase «Una persona que ___ necessita que ___ perquè ___». Ordeneu les targetes del procés i trieu una sola acció per al primer prototip.
+Completad en pareja un mapa «persona / tarea / dificultad / ayuda posible». Formulad la necesidad con la frase «Una persona que ___ necesita que ___ porque ___». Ordenad las tarjetas del proceso y elegid una sola acción para el primer prototipo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu els exemples del brief —corró sense mànec, sandvitxera i batedor automàtic— i valoreu quins es poden representar amb seguretat. Dibuixeu dues solucions i assenyaleu entrada, acció, zona de treball i aturada.
+Comparad los ejemplos del brief —rodillo sin mango, sandwichera y batidor automático— y valorad cuáles se pueden representar con seguridad. Dibujad dos soluciones y señalad entrada, acción, zona de trabajo y parada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Seleccioneu una solució segons els criteris acordats: acció comprensible, activació accessible, tres execucions semblants i aturada sense colps, dits atrapats ni eixida de la zona de prova. Oferiu targetes visuals i frases iniciadores si cal.
+Seleccionad una solución según los criterios acordados: acción comprensible, activación accesible, tres ejecuciones parecidas y parada sin golpes, dedos atrapados ni salida de la zona de prueba. Ofreced tarjetas visuales y frases iniciadoras si hace falta.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu quina part ha de fer el robot i quina convé deixar a la persona. **Evidència:** mapa de necessitat, dues idees anotades i decisió raonada.
+Explicad qué parte tiene que hacer el robot y cuál conviene dejar a la persona. **Evidencia:** mapa de necesidad, dos ideas anotadas y decisión razonada.
 
-### **Sessió 2 · Fem una primera maqueta mecànica.**
+### **Sesión 2 · Hacemos una primera maqueta mecánica.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Construïu una base SPIKE Prime estable amb un motor i un corró o braç que actue sobre paper. En el repte del corró sense mànec, connecteu una peça LEGO llarga al radi del motor, tal com proposa el brief. Dibuixeu què espereu que faça el paper i marqueu línies d’inici i final.
+Construid una base SPIKE Prime estable con un motor y un rodillo o brazo que actúe sobre papel. En el reto del rodillo sin mango, conectad una pieza LEGO larga al radio del motor, tal como propone el brief. Dibujad qué esperáis que haga el papel y marcad líneas de inicio y final.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Comproveu que cap peça puga caure sobre les mans i que hi haja espai per desconnectar l’alimentació o aturar el programa. Feu girar el mecanisme a mà només si el muntatge ho permet sense forçar-lo.
+Comprobad que ninguna pieza pueda caer sobre las manos y que haya espacio para desconectar la alimentación o detener el programa. Haced girar el mecanismo a mano solo si el montaje lo permite sin forzarlo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu un braç curt i un de llarg mantenint iguals material, velocitat i temps d’activació. Anoteu la distància del punt final i si l’estructura es balanceja.
+Comparad un brazo corto y uno largo manteniendo iguales material, velocidad y tiempo de activación. Anotad la distancia del punto final y si la estructura se balancea.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu el muntatge si es desestabilitza. Expliqueu el compromís: un braç llarg pot ampliar el recorregut i alhora reduir estabilitat o control; no conclogueu que «més llarg és sempre millor».
+Revisad el montaje si se desestabiliza. Explicad el compromiso: un brazo largo puede ampliar el recorrido y a la vez reducir estabilidad o control; no concluyáis que «más largo es siempre mejor».
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compareu predicció i resultat i decidiu quina configuració provar després. **Evidència:** esbós, dues configuracions i predicció. Si no hi ha motor lliure, feu primer la comparació amb palanca manual.
+Comparad predicción y resultado y decidid qué configuración probar después. **Evidencia:** boceto, dos configuraciones y predicción. Si no hay motor libre, haced primero la comparación con palanca manual.
 
-### **Sessió 3 · Programem una acció controlada.**
+### **Sesión 3 · Programamos una acción controlada.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Activeu el motor amb el botó del hub o una ordre inicial simple. Predigueu què ocorrerà amb quatre rotacions o una duració acordada i marqueu la distància esperada.
+Activad el motor con el botón del hub o una orden inicial simple. Predecid qué ocurrirá con cuatro rotaciones o una duración acordada y marcad la distancia esperada.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Creeu una seqüència d’inici, moviment i aturada, primer amb blocs i, si hi ha experiència, amb Python. Proveu durada i nombre de rotacions com a maneres de delimitar l’acció; useu baixa velocitat en la primera execució.
+Cread una secuencia de inicio, movimiento y parada, primero con bloques y, si hay experiencia, con Python. Probad duración y número de rotaciones como formas de delimitar la acción; usad baja velocidad en la primera ejecución.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Cada intent parteix d’una predicció i registra valor programat, distància, desviació i incidència. Feu tres intents comparables i canvieu una sola variable en cada prova.
+Cada intento parte de una predicción y registra valor programado, distancia, desviación e incidencia. Haced tres intentos comparables y cambiad una sola variable en cada prueba.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si el corró patina, comproveu contacte, base i valor del programa abans de reconstruir-ho tot. Afegiu una pausa o una ordre d’aturada clara quan es complete l’acció.
+Si el rodillo patina, comprobad contacto, base y valor del programa antes de reconstruirlo todo. Añadid una pausa o una orden de parada clara cuando se complete la acción.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu quin canvi heu triat a partir de les dades. **Evidència:** codi comentat o diagrama, tres intents comparables i decisió de millora. Com a ampliació, feu que l’acció es puga repetir amb un segon botó només si es conserva una aturada accessible.
+Explicad qué cambio habéis elegido a partir de los datos. **Evidencia:** código comentado o diagrama, tres intentos comparables y decisión de mejora. Como ampliación, haced que la acción se pueda repetir con un segundo botón solo si se conserva una parada accesible.
 
-### **Sessió 4 · Adaptem el programa i el reutilitzem.**
+### **Sesión 4 · Adaptamos el programa y lo reutilizamos.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu dues tires de prova —per exemple, paper fi i cartolina lleugera— i anoteu les diferències. Predigueu quina configuració del motor funcionarà millor; no les descrigueu com a aliments ni atribuïu al sensor una lectura de duresa.
+Preparad dos tiras de prueba —por ejemplo, papel fino y cartulina ligera— y anotad las diferencias. Predecid qué configuración del motor funcionará mejor; no las describáis como alimentos ni atribuyáis al sensor una lectura de dureza.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Modifiqueu només la configuració del motor —velocitat, potència o durada— i determineu quina funciona millor per a cada tira. Després canvieu l’eina: reutilitzeu la lògica del corró en una palanca que mou una fitxa o un remenador de peces dins d’un cercle dibuixat.
+Modificad solo la configuración del motor —velocidad, potencia o duración— y determinad cuál funciona mejor para cada tira. Después cambiad la herramienta: reutilizad la lógica del rodillo en una palanca que mueve una ficha o un removedor de piezas dentro de un círculo dibujado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Ressalteu al codi quines instruccions es conserven i quines depenen del mecanisme nou. Registreu les configuracions i els resultats per a cada material simulat.
+Resaltad en el código qué instrucciones se conservan y cuáles dependen del mecanismo nuevo. Registrad las configuraciones y los resultados para cada material simulado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Com a extensió, afegiu un sensor del set només si aporta una entrada comprensible. El sensor de color pot llegir una marca gran de la targeta i seleccionar una configuració; calibreu-lo amb la llum de l’aula i oferiu un botó manual equivalent. El color és una etiqueta de l’equip, no una identificació d’ingredient ni una mesura del material.
+Como extensión, añadid un sensor del set solo si aporta una entrada comprensible. El sensor de color puede leer una marca grande de la tarjeta y seleccionar una configuración; calibradlo con la luz del aula y ofreced un botón manual equivalente. El color es una etiqueta del equipo, no una identificación de ingrediente ni una medida del material.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu com es pot reutilitzar el programa i què cal adaptar en canviar el mecanisme. **Evidència:** taula de dues configuracions i esquema «codi que reutilitze / codi que canvie».
+Explicad cómo se puede reutilizar el programa y qué hay que adaptar al cambiar el mecanismo. **Evidencia:** tabla de dos configuraciones y esquema «código que reutilizo / código que cambio».
 
-### **Sessió 5 · Combinem, provem i presentem.**
+### **Sesión 5 · Combinamos, probamos y presentamos.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Combineu dues accions senzilles —per exemple, ordenar una targeta i avançar una fitxa— sense fer el prototip més complex del que podeu provar. Predigueu l’ordre i la manera d’aturar-lo.
+Combinad dos acciones sencillas —por ejemplo, ordenar una tarjeta y avanzar una ficha— sin hacer el prototipo más complejo de lo que podéis probar. Predecid el orden y la manera de detenerlo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Un altre equip rep la consigna sense veure l’esbós i ha d’explicar què fa l’ajudant, trobar el control i assenyalar com s’atura. Feu tres execucions amb la mateixa configuració.
+Otro equipo recibe la consigna sin ver el boceto y tiene que explicar qué hace el ayudante, encontrar el control y señalar cómo se detiene. Haced tres ejecuciones con la misma configuración.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Registreu els resultats i el retorn de l’altre equip. Si les execucions varien, identifiqueu si cal ajustar la base, el recorregut o la instrucció.
+Registrad los resultados y el retorno del otro equipo. Si las ejecuciones varían, identificad si hay que ajustar la base, el recorrido o la instrucción.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu una part i repetiu la prova. Prepareu una cartel·la amb nom de la tasca, esquema d’entrada/eixida, font de la targeta local, una dada de prova i una limitació explícita.
+Revisad una parte y repetid la prueba. Preparad una cartela con nombre de la tarea, esquema de entrada/salida, fuente de la tarjeta local, un dato de prueba y una limitación explícita.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Demostreu el prototip i compareu-lo amb la seqüència manual. Expliqueu què fa amb més repetibilitat, què continua fent la persona i quines comprovacions serien necessàries abans de qualsevol ús fora de la maqueta. **Evidència:** demostració, registre final, retorn d’un altre equip i reflexió individual.
+Demostrad el prototipo y comparadlo con la secuencia manual. Explicad qué hace con más repetibilidad, qué sigue haciendo la persona y qué comprobaciones serían necesarias antes de cualquier uso fuera de la maqueta. **Evidencia:** demostración, registro final, retorno de otro equipo y reflexión individual.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Set LEGO Education SPIKE Prime 45678 per equip o parella, hub carregat, un motor, peces estructurals, paper fi i cartolina lleugera, targetes pròpies amb símbols, retoladors, regla i full de registre. Sensor de color opcional si forma part de la dotació disponible. No cal expansió, utensili de cuina, menjar, líquid ni peça addicional no indicada.
+Set LEGO Education SPIKE Prime 45678 por equipo o pareja, hub cargado, un motor, piezas estructurales, papel fino y cartulina ligera, tarjetas propias con símbolos, rotuladores, regla y hoja de registro. Sensor de color opcional si forma parte de la dotación disponible. No hace falta expansión, utensilio de cocina, comida, líquido ni pieza adicional no indicada.
 
-Abans de la sessió, reviseu l’app i la versió del kit, proveu el port del motor, prepareu una base estable de demostració i una alternativa manual per a les targetes. Retalleu les proves a mida que no puga quedar atrapada dins del mecanisme. Organitzeu rols rotatius —disseny, muntatge, programació, registre i portaveu— perquè cada membre participe en la predicció i la prova, no sols en la construcció.
+Antes de la sesión, revisad la app y la versión del kit, probad el puerto del motor, preparad una base estable de demostración y una alternativa manual para las tarjetas. Recortad las pruebas a una medida que no pueda quedar atrapada dentro del mecanismo. Organizad roles rotativos —diseño, montaje, programación, registro y portavoz— para que cada miembro participe en la predicción y la prueba, no solo en la construcción.
 
-## 🧪 Evidències i criteris d’avaluació
+## 🧪 Evidencias y criterios de evaluación
 
-La carpeta de procés reuneix mapa de necessitat, esbossos, criteris, esquema mecànic, codi o pseudocodi, taula de proves, adaptació a un segon material, tros de programa reutilitzat, font local i cartel·la. Useu aquesta escala breu per donar retorn durant la feina:
+La carpeta de proceso reúne mapa de necesidad, bocetos, criterios, esquema mecánico, código o pseudocódigo, tabla de pruebas, adaptación a un segundo material, fragmento de programa reutilizado, fuente local y cartela. Usad esta escala breve para dar retorno durante el trabajo:
 
-- **Necessitat i ús:** identifica una tasca concreta i descriu qui la faria servir; comprova si una altra persona entén l’acció.
+- **Necesidad y uso:** identifica una tarea concreta y describe quién la usaría; comprueba si otra persona entiende la acción.
 
-- **Mecanisme:** relaciona braç/radi i recorregut amb mesures i reconeix el compromís amb estabilitat.
+- **Mecanismo:** relaciona brazo/radio y recorrido con medidas y reconoce el compromiso con la estabilidad.
 
-- **Programació i iteració:** delimita l’acció, registra almenys tres proves comparables i modifica una variable amb una raó.
+- **Programación e iteración:** delimita la acción, registra al menos tres pruebas comparables y modifica una variable con una razón.
 
-- **Adaptació:** diferencia entre canviar el programa i canviar el mecanisme, i justifica què reutilitza.
+- **Adaptación:** diferencia entre cambiar el programa y cambiar el mecanismo, y justifica qué reutiliza.
 
-- **Comunicació responsable:** cita la font d’una dada local i declara que la maqueta no prepara aliments ni valida seguretat alimentària.
+- **Comunicación responsable:** cita la fuente de un dato local y declara que la maqueta no prepara alimentos ni valida seguridad alimentaria.
 
-Autoavaluació: «La prova que més m’ha ensenyat és…», «el canvi que he fet a partir d’una dada és…» i «una persona encara ha de…». El retorn entre equips ha d’incloure una fortalesa observada i una pregunta que ajude a millorar.
+Autoevaluación: «La prueba que más me ha enseñado es…», «el cambio que he hecho a partir de un dato es…» y «una persona todavía tiene que…». El retorno entre equipos tiene que incluir una fortaleza observada y una pregunta que ayude a mejorar.
 
-## ♿ Participació, cura i límits
+## ♿ Participación, cuidado y límites
 
-Presenteu consignes en text i pictogrames, deixeu que la persona trie entre programació, construcció, documentació o presentació i permeteu participar sense manipular el mecanisme. Marqueu la zona de moviment amb una base clara, useu baixa velocitat i peces de prova lleugeres; ningú posa els dits davant del corró ni bloqueja el motor amb la mà. Atureu i desconnecteu el hub abans d’ajustar engranatges o retirar paper encallat. Si una peça es desprén o el muntatge es mou, pareu la prova i estabilitzeu-lo abans de continuar.
+Presentad consignas en texto y pictogramas, dejad que la persona elija entre programación, construcción, documentación o presentación y permitid participar sin manipular el mecanismo. Marcad la zona de movimiento con una base clara, usad baja velocidad y piezas de prueba ligeras; nadie pone los dedos delante del rodillo ni bloquea el motor con la mano. Detened y desconectad el hub antes de ajustar engranajes o retirar papel atascado. Si una pieza se suelta o el montaje se mueve, parad la prueba y estabilizadlo antes de continuar.
 
-Aquest prototip no és apte per a cuinar, manipular aliments, líquids, ganivets, superfícies calentes o recipients. Una lectura de color només reconeix la marca preparada per a l’activitat. Les targetes de recepta són una representació educativa, no consell nutricional ni recepta per a consumir.
+Este prototipo no es apto para cocinar, manipular alimentos, líquidos, cuchillos, superficies calientes o recipientes. Una lectura de color solo reconoce la marca preparada para la actividad. Las tarjetas de receta son una representación educativa, no un consejo nutricional ni una receta para consumir.
 
-## 🔗 Referent oficial i correspondència
+## 🔗 Referente oficial y correspondencia
 
-Partim del [SPIKE Activity Brief: RoboChef](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5cf523e9f737c7ac/6324c446556fbc660c8ca4ba/LE_14x8.5_LessonMat_RoboChef_WB_Mech_NoCrops.pdf?locale=en-us) de LEGO Education. La proposta conserva el repte obert d’ajudar en una tasca de preparació, les preguntes sobre què costa fer i quines eines serien útils, els tres exemples del full —corró sense mànec, sandvitxera i batedor—, el criteri de disseny fàcil d’usar, la peça LEGO llarga que amplia el radi del motor, el canvi de configuració segons el material, la reutilització del programa en altres eines, la incorporació opcional de sensors i el repte de combinar més d’una tasca. Aquests elements apareixen en el brief oficial de dues pàgines; la seqüència de cinc sessions, la temàtica valenciana, les targetes, les proves, els criteris i la il·lustració són elaboració pròpia. La programació per blocs o Python es tria segons la versió de l’app i l’experiència de l’equip.
+Partimos del [SPIKE Activity Brief: RoboChef](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5cf523e9f737c7ac/6324c446556fbc660c8ca4ba/LE_14x8.5_LessonMat_RoboChef_WB_Mech_NoCrops.pdf?locale=en-us) de LEGO Education. La propuesta conserva el reto abierto de ayudar en una tarea de preparación, las preguntas sobre qué cuesta hacer y qué herramientas serían útiles, los tres ejemplos de la hoja —rodillo sin mango, sandwichera y batidor—, el criterio de diseño fácil de usar, la pieza LEGO larga que amplía el radio del motor, el cambio de configuración según el material, la reutilización del programa en otras herramientas, la incorporación opcional de sensores y el reto de combinar más de una tarea. Estos elementos aparecen en el brief oficial de dos páginas; la secuencia de cinco sesiones, la temática valenciana, las tarjetas, las pruebas, los criterios y la ilustración son elaboración propia. La programación por bloques o Python se elige según la versión de la app y la experiencia del equipo.

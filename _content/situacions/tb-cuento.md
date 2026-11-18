@@ -14,140 +14,140 @@ duration: "4 sesiones"
 challenge: "¿Cómo podemos ordenar las escenas y las órdenes para que Tale-Bot cruce el puente y otras personas puedan seguir nuestro cuento?"
 ---
 
-![Tale-Bot Pro de la dotació recorre un camí amb pont de paper mentre un personatge de conte espera a l’altra banda.](../../_assets/situacions/tb-conte.webp)
+![Tale-Bot Pro de la dotación recorre un camino con puente de papel mientras un personaje de cuento espera al otro lado.](../../_assets/situacions/tb-conte.webp)
 
-_El grup crea els personatges i la narració; el robot ajuda a ordenar i representar el recorregut._
+_El grupo crea los personajes y la narración; el robot ayuda a ordenar y representar el recorrido._
 
-## 📖 Repte, context i aprenentatges
+## 📖 Reto, contexto y aprendizajes
 
-La classe inventa una història que passa en un paisatge de marjal imaginat: un personatge vol visitar una amistat, travessar un pont de paper i arribar a una festa de poble. Els llocs i personatges són de ficció; no es presenten com una descripció científica de la fauna ni del Parc Natural de l’Albufera. L’alumnat crea un inici, un canvi i un final, representa cada escena en un mapa propi i programa Tale-Bot amb ordres físiques de moviment.
+La clase inventa una historia que transcurre en un paisaje de marjal imaginado: un personaje quiere visitar a una amistad, cruzar un puente de papel y llegar a una fiesta de pueblo. Los lugares y personajes son de ficción; no se presentan como una descripción científica de la fauna ni del Parque Natural de la Albufera. El alumnado crea un inicio, un cambio y un final, representa cada escena en un mapa propio y programa Tale-Bot con órdenes físicas de movimiento.
 
-La narració pot fer-se en directe, amb pictogrames o amb una gravació molt breu del Tale-Bot Pro si el centre confirma que la funció de micròfon està disponible i el grup tria usar-la. L’enregistrament és opcional i s’elimina després de la sessió. Ningú no ha de posar la seua veu al robot per participar.
+La narración puede hacerse en directo, con pictogramas o con una grabación muy breve del Tale-Bot Pro si el centro confirma que la función de micrófono está disponible y el grupo elige usarla. La grabación es opcional y se elimina después de la sesión. Nadie tiene que poner su voz al robot para participar.
 
 
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-ordenar esdeveniments; descriure lloc, personatge i acció; relacionar moviment i relat; anticipar destinacions; comprovar i depurar una instrucció; expressar-se amb llenguatge oral, visual o corporal; escoltar i revisar una història per a una audiència.
+ordenar acontecimientos; describir lugar, personaje y acción; relacionar movimiento y relato; anticipar destinos; comprobar y depurar una instrucción; expresarse con lenguaje oral, visual o corporal; escuchar y revisar una historia para una audiencia.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Prepareu Tale-Bot Pro carregat, mapa de quadrícula en blanc, targetes de personatge i lloc, tires d’ordres, peces planes per al pont de paper i pictogrames per al guió. Si s’usa l’enregistrament, consulteu el manual del model i comproveu abans de classe com s’inicia, es reprodueix i s’esborra una pista amb la targeta de micròfon. La disponibilitat de la targeta i la durada de les gravacions depenen del contingut del kit; no afegiu accessoris desconeguts.
+Preparad Tale-Bot Pro cargado, mapa de cuadrícula en blanco, tarjetas de personaje y lugar, tiras de órdenes, piezas planas para el puente de papel y pictogramas para el guion. Si se usa la grabación, consultad el manual del modelo y comprobad antes de clase cómo se inicia, se reproduce y se borra una pista con la tarjeta de micrófono. La disponibilidad de la tarjeta y la duración de las grabaciones dependen del contenido del kit; no añadáis accesorios desconocidos.
 
-Proveu en la superfície de l’aula que una casella siga adequada per a un avanç del robot. Les ordres bàsiques habituals inclouen avançar o retrocedir aproximadament 10 cm i girar 90°; confirmeu distància, orientació inicial i funcionament amb el Tale-Bot del centre. El pont és una part visual del mapa, no cal que el robot el puge: col·loqueu-lo sobre una casella plana prou ampla perquè el trajecte no es bloquege.
+Probad en la superficie del aula que una casilla sea adecuada para un avance del robot. Las órdenes básicas habituales incluyen avanzar o retroceder aproximadamente 10 cm y girar 90°; confirmad distancia, orientación inicial y funcionamiento con el Tale-Bot del centro. El puente es una parte visual del mapa, no hace falta que el robot lo suba: colocadlo sobre una casilla plana lo bastante amplia para que el trayecto no se bloquee.
 
-**Vocabulari:** personatge, escenari, inici, canvi, final, casella, avançar, girar, ordre, seqüència i narrador/a. Useu imatges per introduir les paraules i distingiu «què fa el personatge» de «què fa el robot».
+**Vocabulario:** personaje, escenario, inicio, cambio, final, casilla, avanzar, girar, orden, secuencia y narrador/a. Usad imágenes para introducir las palabras y distinguid «qué hace el personaje» de «qué hace el robot».
 
-## 📅 Seqüència didàctica · quatre sessions de 30 minuts
+## 📅 Secuencia didáctica · cuatro sesiones de 30 minutos
 
-### **Inventem personatge, lloc i problema (30 min).**
+### **Inventamos personaje, lugar y problema (30 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Obriu una conversa a partir d’una imatge pròpia o autoritzada d’un paisatge amb aigua, camins i vegetació. Expliqueu que el conte serà imaginari i que no cal conéixer noms d’espècies per crear-lo. Cada grup tria un personatge de paper, un lloc d’eixida i un destí.
+Abrid una conversación a partir de una imagen propia o autorizada de un paisaje con agua, caminos y vegetación. Explicad que el cuento será imaginario y que no hace falta conocer nombres de especies para crearlo. Cada grupo elige un personaje de papel, un lugar de salida y un destino.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Decidiu quin problema menut fa necessari el viatge: s’ha perdut una invitació, falta una peça per a la festa o el personatge vol tornar un llibre. Ordeneu tres pictogrames: «comença», «passa una cosa» i «arriba a una solució».
+Decidid qué problema pequeño hace necesario el viaje: se ha perdido una invitación, falta una pieza para la fiesta o el personaje quiere devolver un libro. Ordenad tres pictogramas: «empieza», «pasa algo» y «llega a una solución».
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Dicteu o dibuixeu una frase per a cada escena. Anoteu què vol el personatge, què canvia al mig del conte i què sabrà qui l’escolte al final.
+Dictad o dibujad una frase para cada escena. Anotad qué quiere el personaje, qué cambia en medio del cuento y qué sabrá quien lo escuche al final.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu els guions gràfics amb un altre equip. Reviseu una escena si no queda clar el propòsit, el canvi o la solució, sense necessitat d’allargar el relat.
+Intercambiad los guiones gráficos con otro equipo. Revisad una escena si no queda claro el propósito, el cambio o la solución, sin necesidad de alargar el relato.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Comproveu que les tres escenes formen una seqüència amb inici, canvi i final. **Evidència:** guió gràfic amb protagonista, propòsit i tres moments.
+Comprobad que las tres escenas forman una secuencia con inicio, cambio y final. **Evidencia:** guion gráfico con protagonista, propósito y tres momentos.
 
-### **Convertim el conte en un mapa de ruta (30 min).**
+### **Convertimos el cuento en un mapa de ruta (30 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Poseu el mapa en blanc sobre la taula i marqueu inici, pont i destinació. Col·loqueu les targetes de les tres escenes i predigueu on s’aturarà el robot per poder contar el moment central.
+Poned el mapa en blanco sobre la mesa y marcad inicio, puente y destino. Colocad las tarjetas de las tres escenas y predecid dónde se detendrá el robot para poder contar el momento central.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Moveu primer una fitxa de paper una casella cada vegada. Trieu les ordres de Tale-Bot i poseu-les en una tira visual abans de tocar el robot. Identifiqueu cap a on mira al començament i representeu cada gir amb el cos o amb una fletxa gran.
+Moved primero una ficha de papel una casilla cada vez. Elegid las órdenes de Tale-Bot y ponedlas en una tira visual antes de tocar el robot. Identificad hacia dónde mira al principio y representad cada giro con el cuerpo o con una flecha grande.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Dibuixeu la ruta al mapa i anoteu l’ordre de moviments que connecta cada escena. Una altra parella llig la tira i assenyala on espera cada parada.
+Dibujad la ruta en el mapa y anotad el orden de movimientos que conecta cada escena. Otra pareja lee la tira y señala dónde espera cada parada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu dues rutes possibles fins al mateix destí. Trieu la que siga més fàcil de llegir i mantinga l’ordre narratiu; reviseu una ordre si la fitxa o la tira no coincideix amb el mapa.
+Comparad dos rutas posibles hasta el mismo destino. Elegid la que sea más fácil de leer y mantenga el orden narrativo; revisad una orden si la ficha o la tira no coincide con el mapa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu quina ordre travessa el pont i com sabeu que el robot ha arribat a la casella correcta. **Evidència:** mapa amb escenes i seqüència d’ordres anticipada.
+Explicad qué orden cruza el puente y cómo sabéis que el robot ha llegado a la casilla correcta. **Evidencia:** mapa con escenas y secuencia de órdenes anticipada.
 
-### **Programem, narrem i depurem (30 min).**
+### **Programamos, narramos y depuramos (30 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Reviseu la tira d’ordres i predigueu la casella final i la posició del robot després de cada gir. Assigneu rols de programació, observació i narració, amb rotació breu.
+Revisad la tira de órdenes y predecid la casilla final y la posición del robot después de cada giro. Asignad roles de programación, observación y narración, con rotación breve.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Introduïu les ordres en Tale-Bot i feu una execució curta fins al pont. Si el model ho permet i el grup ho tria, prepareu una frase fictícia per a cada escena; l’enregistrament és opcional i es pot substituir per narració en directe, pictogrames o gestos.
+Introducid las órdenes en Tale-Bot y haced una ejecución corta hasta el puente. Si el modelo lo permite y el grupo lo elige, preparad una frase ficticia para cada escena; la grabación es opcional y se puede sustituir por narración en directo, pictogramas o gestos.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu la casella real amb la prevista. Si hi ha una diferència, anoteu posició, orientació, nombre d’avançaments i girs. Registreu quina instrucció s’ha de revisar.
+Comparad la casilla real con la prevista. Si hay una diferencia, anotad posición, orientación, número de avances y giros. Registrad qué instrucción hay que revisar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una instrucció cada vegada i torneu a provar. Si s’utilitza el micròfon —després de comprovar que està disponible—, graveu només una frase amb la veu del docent o d’una persona voluntària amb consentiment. No inclogueu noms ni informació personal; escolteu-la una vegada i esborreu-la en acabar.
+Cambiad una instrucción cada vez y volved a probar. Si se utiliza el micrófono —después de comprobar que está disponible—, grabad solo una frase con la voz del docente o de una persona voluntaria con consentimiento. No incluyáis nombres ni información personal; escuchadla una vez y borradla al terminar.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu quina instrucció heu revisat i mostreu com contar la mateixa escena sense enregistrar cap veu. **Evidència:** ruta depurada i narració representada d’una manera triada.
+Explicad qué instrucción habéis revisado y mostrad cómo contar la misma escena sin grabar ninguna voz. **Evidencia:** ruta depurada y narración representada de una manera elegida.
 
-### **Presentem el conte a una audiència (30 min).**
+### **Presentamos el cuento a una audiencia (30 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Una parella o un altre grup mira el mapa i prediu quina serà la ruta sense rebre abans l’explicació dels autors.
+Una pareja u otro grupo mira el mapa y predice cuál será la ruta sin recibir antes la explicación de los autores.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Executeu Tale-Bot en el mapa. En cada parada, presenteu l’escena amb narració, pictograma o una pista sonora opcional. L’audiència segueix el recorregut i ordena després les tres targetes.
+Ejecutad Tale-Bot en el mapa. En cada parada, presentad la escena con narración, pictograma o una pista sonora opcional. La audiencia sigue el recorrido y ordena después las tres tarjetas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Demaneu quina pista ha ajudat a entendre la història i quina escena ha sigut més fàcil de seguir. Anoteu el retorn sense valorar l’expressivitat vocal individual ni la longitud del conte.
+Preguntad qué pista ha ayudado a entender la historia y qué escena ha sido más fácil de seguir. Anotad el retorno sin valorar la expresividad vocal individual ni la longitud del cuento.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si una escena no s’entén, reviseu-ne la posició al mapa, el text oral o el pictograma. Tanqueu amb la frase «Hem canviat… perquè…» i comproveu que qualsevol gravació temporal s’ha esborrat.
+Si una escena no se entiende, revisad su posición en el mapa, el texto oral o el pictograma. Cerrad con la frase «Hemos cambiado… porque…» y comprobad que cualquier grabación temporal se ha borrado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Verifiqueu que el públic pot ordenar inici, canvi i final i que les veus no s’han compartit fora del grup. **Evidència:** ruta llegible, guió final i una millora justificada per l’audiència.
+Verificad que el público puede ordenar inicio, cambio y final y que las voces no se han compartido fuera del grupo. **Evidencia:** ruta legible, guion final y una mejora justificada por la audiencia.
 
-## 📋 Avaluació i evidències
+## 📋 Evaluación y evidencias
 
-Guardeu el guió gràfic, el mapa, les tires d’ordres i una nota d’observació de l’audiència. Observeu si l’alumnat:
+Guardad el guion gráfico, el mapa, las tiras de órdenes y una nota de observación de la audiencia. Observad si el alumnado:
 
-- ordena tres esdeveniments amb inici, canvi i final;
+- ordena tres acontecimientos con inicio, cambio y final;
 
-- relaciona una acció narrativa amb una parada del mapa;
+- relaciona una acción narrativa con una parada del mapa;
 
-- prediu el recorregut i identifica una instrucció que cal revisar;
+- predice el recorrido e identifica una instrucción que hay que revisar;
 
-- tria una manera de narrar adequada al grup i respecta l’opció de no enregistrar-se;
+- elige una manera de narrar adecuada al grupo y respeta la opción de no grabarse;
 
-- incorpora retorn d’una audiència per millorar la claredat.
+- incorpora el retorno de una audiencia para mejorar la claridad.
 
-No s’avalua l’expressivitat vocal individual, la longitud del conte ni que Tale-Bot arribe a la primera. Es valora la seqüència, la comprensió del mapa i la revisió del relat.
+No se evalúa la expresividad vocal individual, la longitud del cuento ni que Tale-Bot llegue a la primera. Se valora la secuencia, la comprensión del mapa y la revisión del relato.
 
-## ♿ Accessibilitat, privacitat i cura
+## ♿ Accesibilidad, privacidad y cuidado
 
-Feu servir pictogrames grans, caselles contrastades i guions tàctils si són útils. Oferiu narració compartida, veu del docent, senyals no sonors o resposta amb targetes. Ningú no ha de parlar en públic, gravar-se ni identificar-se al conte. Si useu enregistrament, expliqueu-ne el propòsit, demaneu consentiment segons les normes del centre, escolteu-lo només dins de la sessió i esborreu-lo després. Repartiu rols de narrador/a, ordenació, comprovació i programació; no cal manipular el robot per participar.
+Usad pictogramas grandes, casillas contrastadas y guiones táctiles si son útiles. Ofreced narración compartida, voz del docente, señales no sonoras o respuesta con tarjetas. Nadie tiene que hablar en público, grabarse ni identificarse en el cuento. Si usáis grabación, explicad su propósito, pedid consentimiento según las normas del centro, escuchadla solo dentro de la sesión y borradla después. Repartid roles de narrador/a, ordenación, comprobación y programación; no hace falta manipular el robot para participar.
 
-## 🔗 Referent oficial i adaptació pròpia
+## 🔗 Referente oficial y adaptación propia
 
-Tale-Bot Pro ofereix una funció d’enregistrament de veu i narració creativa; el [fabricant la descriu en la fitxa del producte](https://matatalab.com/en/node/774). Les [Activity Cards oficials](https://matatalab.com/en/lesson4.4) s’adrecen a infants de 3–5 anys i suggereixen sessions de 20–30 minuts. Aquesta proposta crea el conte, mapa i seqüència de proves propis i deixa l’enregistrament com a opció amb alternativa completa.
+Tale-Bot Pro ofrece una función de grabación de voz y narración creativa; el [fabricante la describe en la ficha del producto](https://matatalab.com/en/node/774). Las [Activity Cards oficiales](https://matatalab.com/en/lesson4.4) se dirigen a niños y niñas de 3–5 años y sugieren sesiones de 20–30 minutos. Esta propuesta crea el cuento, el mapa y la secuencia de pruebas propios y deja la grabación como opción con alternativa completa.

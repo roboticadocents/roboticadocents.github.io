@@ -14,148 +14,148 @@ duration: "4 sesiones de 20–25 minutos"
 challenge: "¿Cómo podemos representar sonidos y voces de un barrio imaginario sin confundir el mapa con una grabación real de nuestro entorno?"
 ---
 
-![Tale-Bot recorre un mapa inventat amb una font, un arbre amb un ocell i una parada d’autobús.](../../_assets/situacions/tb-mapa-sonor.webp)
+![Tale-Bot recorre un mapa inventado con una fuente, un árbol con un pájaro y una parada de autobús.](../../_assets/situacions/tb-mapa-sonor.webp)
 
-_Mapa de ficció amb tres punts sonors. Els sons es representen amb pictogrames o missatges preparats; no es graven converses del barri._
+_Mapa de ficción con tres puntos sonoros. Los sonidos se representan con pictogramas o mensajes preparados; no se graban conversaciones del barrio._
 
-## Repte i intenció
+## Reto e intención
 
-En aquest barri inventat, una gota d'aigua, un ocell i un autobús són pistes per contar què passa en cada lloc. Els infants dissenyen un mapa senzill, inventen una veu per a cada escena i programen Tale-Bot per visitar-les en ordre. En lloc de demanar una gravació de l'entorn, poden usar instruments, onomatopeies dites en directe, targetes o àudios ficticis enregistrats per l'adult. El repte combina escolta, llenguatge oral, representació simbòlica, orientació i seqüenciació.
+En este barrio inventado, una gota de agua, un pájaro y un autobús son pistas para contar qué pasa en cada lugar. Los niños y niñas diseñan un mapa sencillo, inventan una voz para cada escena y programan Tale-Bot para visitarlas en orden. En lugar de pedir una grabación del entorno, pueden usar instrumentos, onomatopeyas dichas en directo, tarjetas o audios ficticios grabados por el adulto. El reto combina escucha, lenguaje oral, representación simbólica, orientación y secuenciación.
 
-La proposta es calibra per a l'edat de 3–5 anys indicada pel fabricant, amb trobades breus i un objectiu principal per sessió. El robot ajuda a fer visible l'ordre de les instruccions: si la ruta no arriba al lloc previst, el grup observa, revisa i torna a provar sense valorar l'error com a fracàs.
+La propuesta se calibra para la edad de 3–5 años indicada por el fabricante, con encuentros breves y un objetivo principal por sesión. El robot ayuda a hacer visible el orden de las instrucciones: si la ruta no llega al lugar previsto, el grupo observa, revisa y vuelve a probar sin valorar el error como un fracaso.
 
-## Aprenentatges i criteris d'èxit
+## Aprendizajes y criterios de éxito
 
-- Relacionar un símbol amb un lloc i explicar que la representació no és el lloc real.
+- Relacionar un símbolo con un lugar y explicar que la representación no es el lugar real.
 
-- Escoltar, imitar o descriure sons i crear una frase breu que situe qui parla i què ocorre.
+- Escuchar, imitar o describir sonidos y crear una frase breve que sitúe quién habla y qué ocurre.
 
-- Planificar un trajecte de dues o tres parades i ordenar les instruccions abans de prémer el botó de reproducció.
+- Planificar un trayecto de dos o tres paradas y ordenar las instrucciones antes de pulsar el botón de reproducción.
 
-- Observar el recorregut i localitzar una instrucció que cal afegir, llevar o canviar.
+- Observar el recorrido y localizar una instrucción que hay que añadir, quitar o cambiar.
 
-- Respectar el torn de veu i triar lliurement entre parlar, assenyalar, usar un pictograma o no enregistrar.
+- Respetar el turno de palabra y elegir libremente entre hablar, señalar, usar un pictograma o no grabar.
 
-## Preparació i materials
+## Preparación y materiales
 
-Prepareu un mapa gran i estable amb caselles prou àmplies per al moviment del Tale-Bot, tres pictogrames (aigua, ocell, transport), fitxes de direcció, targetes de frase i instruments suaus com ara un triangle, una campaneta o un tub de pluja. Afegiu una quarta casella d'inici ben visible. Carregueu i comproveu el robot abans de la sessió, reviseu que el mapa quede pla i assageu una ruta curta per estimar quantes pulsacions calen en el vostre suport.
+Preparad un mapa grande y estable con casillas lo bastante amplias para el movimiento del Tale-Bot, tres pictogramas (agua, pájaro, transporte), fichas de dirección, tarjetas de frase e instrumentos suaves como un triángulo, una campanilla o un tubo de lluvia. Añadid una cuarta casilla de inicio bien visible. Cargad y comprobad el robot antes de la sesión, revisad que el mapa quede plano y ensayad una ruta corta para estimar cuántas pulsaciones hacen falta en vuestro soporte.
 
-Si el centre vol provar la funció de gravació de Tale-Bot Pro, feu-ho només amb un missatge inventat i amb el procediment de consentiment i eliminació que use el centre. L'activitat és completa sense enregistrar: l'adult pot llegir el missatge quan el robot arriba a la parada, o el grup pot alçar la targeta corresponent. No graveu veus ambientals ni converses espontànies.
+Si el centro quiere probar la función de grabación de Tale-Bot Pro, hacedlo solo con un mensaje inventado y con el procedimiento de consentimiento y eliminación que use el centro. La actividad está completa sin grabar: el adulto puede leer el mensaje cuando el robot llega a la parada, o el grupo puede levantar la tarjeta correspondiente. No grabéis voces ambientales ni conversaciones espontáneas.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Sessió 1 — Escoltem i imaginem (20–25 min)
+### Sesión 1 — Escuchamos e imaginamos (20–25 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu les tres targetes sense anomenar-les. Cada infant prediu quin lloc fictici podria representar.
+Mostrad las tres tarjetas sin nombrarlas. Cada niño o niña predice qué lugar ficticio podría representar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Feu sonar un instrument o proposeu una onomatopeia. Els infants trien quin lloc podria produir aquell so i poden proposar interpretacions diferents.
+Haced sonar un instrumento o proponed una onomatopeya. Los niños y niñas eligen qué lugar podría producir ese sonido y pueden proponer interpretaciones diferentes.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-En grup, dibuixeu un símbol per a cada escena i dicteu una frase curta: «A la font, l’aigua fa…».
+En grupo, dibujad un símbolo para cada escena y dictad una frase corta: «En la fuente, el agua hace…».
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Col·loqueu les targetes al mapa i expliqueu què representa cada símbol. Una altra parella intenta interpretar-los abans que els autors els expliquen.
+Colocad las tarjetas en el mapa y explicad qué representa cada símbolo. Otra pareja intenta interpretarlos antes de que sus autores los expliquen.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** tres targetes, símbols i frases associades. Quina pista sonora o visual ajudaria a entendre una interpretació diferent?
+**Evidencia:** tres tarjetas, símbolos y frases asociadas. ¿Qué pista sonora o visual ayudaría a entender una interpretación diferente?
 
-### Sessió 2 — El mapa té un ordre (20–25 min)
+### Sesión 2 — El mapa tiene un orden (20–25 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recordeu el punt d’inici i trieu dues parades. Predigueu quina visitarà Tale-Bot primer i quina després.
+Recordad el punto de inicio y elegid dos paradas. Predecid cuál visitará Tale-Bot primero y cuál después.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Col·loqueu una fitxa de direcció per cada moviment necessari. Una persona segueix la ruta amb el dit, una altra mou una fitxa de paper i una tercera comprova si el robot cabria per aquell camí.
+Colocad una ficha de dirección por cada movimiento necesario. Una persona sigue la ruta con el dedo, otra mueve una ficha de papel y una tercera comprueba si el robot cabría por ese camino.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Descriviu l’ordre amb frases com «primer anirà a…, després…». Registreu les targetes i la ruta prevista.
+Describid el orden con frases como «primero irá a…, después…». Registrad las tarjetas y la ruta prevista.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si dues targetes poden significar el mateix so, afegiu una pista visual o una frase que ajude una altra classe a distingir-les.
+Si dos tarjetas pueden significar el mismo sonido, añadid una pista visual o una frase que ayude a otra clase a distinguirlas.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa amb punt d’inici, dues parades i targetes ordenades. La ruta és clara per a qui no l’ha dissenyada?
+**Evidencia:** mapa con punto de inicio, dos paradas y tarjetas ordenadas. ¿La ruta está clara para quien no la ha diseñado?
 
-### Sessió 3 — Programem i depurem (20–25 min)
+### Sesión 3 — Programamos y depuramos (20–25 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu la ruta i feu una predicció de la casella final abans de programar-la.
+Recuperad la ruta y haced una predicción de la casilla final antes de programarla.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Introduïu les instruccions a Tale-Bot amb una tira visual d’ordres. El docent acompanya la planificació i cedeix els controls en torns curts.
+Introducid las instrucciones en Tale-Bot con una tira visual de órdenes. El docente acompaña la planificación y cede los controles en turnos cortos.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Observeu el robot i marqueu la casella on ha arribat. Compareu-la amb la prevista i localitzeu l’últim moviment que coincidia.
+Observad el robot y marcad la casilla a la que ha llegado. Comparadla con la prevista y localizad el último movimiento que coincidía.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si la ruta no coincideix, reviseu la tira: falta un moviment, n’hi ha un de més o la direcció és incorrecta? Canvieu una instrucció cada vegada i repetiu. En arribar a una parada, representeu el so en directe o mostreu-ne la targeta i la frase.
+Si la ruta no coincide, revisad la tira: ¿falta un movimiento, hay uno de más o la dirección es incorrecta? Cambiad una instrucción cada vez y repetid. Al llegar a una parada, representad el sonido en directo o mostrad su tarjeta y la frase.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** seqüència inicial i corregida amb una diferència explicada. Quina ordre ha canviat el resultat?
+**Evidencia:** secuencia inicial y corregida con una diferencia explicada. ¿Qué orden ha cambiado el resultado?
 
-### Sessió 4 — Contem el barri a una altra classe (20–25 min)
+### Sesión 4 — Contamos el barrio a otra clase (20–25 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu una passejada de tres parades i prediu quines instruccions i símbols necessitarà un altre grup.
+Preparad un paseo de tres paradas y predecid qué instrucciones y símbolos necesitará otro grupo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Cada equip presenta el mapa a un altre grup. Aquest intenta seguir la ruta i interpretar els símbols sense explicacions addicionals.
+Cada equipo presenta el mapa a otro grupo. Este intenta seguir la ruta e interpretar los símbolos sin explicaciones adicionales.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu quines parades ha trobat el grup visitant i què ha entés de cada símbol o so.
+Anotad qué paradas ha encontrado el grupo visitante y qué ha entendido de cada símbolo o sonido.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Després del primer intent, afegiu una pista visual o canvieu l’ordre de les parades. Repetiu el recorregut per comprovar si el missatge s’entén millor.
+Después del primer intento, añadid una pista visual o cambiad el orden de las paradas. Repetid el recorrido para comprobar si el mensaje se entiende mejor.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa final, interpretació del grup visitant i canvi aplicat. Quin so heu inventat, quin símbol l’acompanya i què heu canviat perquè el missatge s’entenguera millor?
+**Evidencia:** mapa final, interpretación del grupo visitante y cambio aplicado. ¿Qué sonido habéis inventado, qué símbolo lo acompaña y qué habéis cambiado para que el mensaje se entendiera mejor?
 
-## Rols i organització
+## Roles y organización
 
-Feu equips xicotets amb rols rotatius: qui tria la targeta, qui ordena les instruccions, qui observa el trajecte i qui presenta el missatge. Els rols no exigeixen parlar: la persona portaveu pot assenyalar pictogrames o usar una frase model. Amb un sol robot, tot el grup pot planificar en paral·lel amb una fitxa de paper mentre un equip executa.
+Haced equipos pequeños con roles rotativos: quién elige la tarjeta, quién ordena las instrucciones, quién observa el trayecto y quién presenta el mensaje. Los roles no exigen hablar: la persona portavoz puede señalar pictogramas o usar una frase modelo. Con un solo robot, todo el grupo puede planificar en paralelo con una ficha de papel mientras un equipo ejecuta.
 
-## Observació i evidències
+## Observación y evidencias
 
-- Mapa amb inici, llocs i pictogrames que el grup pot explicar.
+- Mapa con inicio, lugares y pictogramas que el grupo puede explicar.
 
-- Seqüència d'ordres representada abans de la prova i corregida si cal.
+- Secuencia de órdenes representada antes de la prueba y corregida si hace falta.
 
-- Relació oral, gestual o visual entre lloc, símbol i missatge.
+- Relación oral, gestual o visual entre lugar, símbolo y mensaje.
 
-- Una observació de depuració: què esperàvem, què ha fet el robot i quina instrucció hem revisat.
+- Una observación de depuración: qué esperábamos, qué ha hecho el robot y qué instrucción hemos revisado.
 
-Useu una graella breu per anotar si cada infant participa en una elecció, anticipa una part de la ruta, interpreta almenys un símbol i comunica una idea per algun canal. L'evidència pot ser una fotografia del mapa buit, una anotació docent o una frase dictada; no cal enregistrar les veus per avaluar el procés.
+Usad una cuadrícula breve para anotar si cada niño o niña participa en una elección, anticipa una parte de la ruta, interpreta al menos un símbolo y comunica una idea por algún canal. La evidencia puede ser una fotografía del mapa vacío, una anotación docente o una frase dictada; no hace falta grabar las voces para evaluar el proceso.
 
-## Inclusió i variacions
+## Inclusión y variaciones
 
-Comenceu amb dues parades, reduïu les distàncies i useu fletxes grans amb forma i color. Oferiu símbols tàctils i temps d'espera per respondre. L'alumnat pot crear un so amb un objecte, imitar-lo, seleccionar una targeta o deixar que una parella el represente. Per ampliar, afegiu una ruta alternativa i compareu quina instrucció permet arribar al mateix lloc; també es pot repetir un motiu sonor com a patró rítmic.
+Empezad con dos paradas, reducid las distancias y usad flechas grandes con forma y color. Ofreced símbolos táctiles y tiempos de espera para responder. El alumnado puede crear un sonido con un objeto, imitarlo, seleccionar una tarjeta o dejar que una pareja lo represente. Para ampliar, añadid una ruta alternativa y comparad qué instrucción permite llegar al mismo lugar; también se puede repetir un motivo sonoro como patrón rítmico.
 
-## Privacitat
+## Privacidad
 
-El barri i els seus habitants són imaginaris; les targetes no inclouen adreces, noms ni informació d'infants reals. L'enregistrament és opcional, mai necessari per completar la situació, i s'ha de gestionar segons les normes del centre.
+El barrio y sus habitantes son imaginarios; las tarjetas no incluyen direcciones, nombres ni información de niños y niñas reales. La grabación es opcional, nunca necesaria para completar la situación, y se debe gestionar según las normas del centro.
 
-## 🔗 Referents i adaptació
+## 🔗 Referentes y adaptación
 
-La funció de gravar històries i les targetes de micròfon formen part de les possibilitats descrites per [Matatalab per a Tale-Bot Pro](https://matatalab.com/en/node/774). Aquesta versió crea un mapa sonor original a partir d'eixes possibilitats; no reutilitza mapes ni imatges del fabricant.
+La función de grabar historias y las tarjetas de micrófono forman parte de las posibilidades descritas por [Matatalab para Tale-Bot Pro](https://matatalab.com/en/node/774). Esta versión crea un mapa sonoro original a partir de esas posibilidades; no reutiliza mapas ni imágenes del fabricante.

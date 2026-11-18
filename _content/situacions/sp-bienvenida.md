@@ -14,170 +14,170 @@ duration: "5 sesiones · 250 min"
 challenge: "¿Cómo podemos diseñar una máquina con SPIKE Prime que reciba a las personas con un movimiento amable y fácil de entender?"
 ---
 
-![Un hub SPIKE Prime amb matriu lluminosa, motor i bigues LEGO mou un braç articulat que alça una bandera sense text sobre una taula clara.](../../_assets/situacions/sp-benvinguda.webp)
+![Un hub SPIKE Prime con matriz luminosa, motor y vigas LEGO mueve un brazo articulado que alza una bandera sin texto sobre una mesa clara.](../../_assets/situacions/sp-benvinguda.webp)
 
-_El gest s’activa a distància; el hub, el motor i les bigues representen components SPIKE Prime de la dotació._
+_El gesto se activa a distancia; el hub, el motor y las vigas representan componentes SPIKE Prime de la dotación._
 
-## 🌱 Situació i intenció
+## 🌱 Situación y intención
 
-La biblioteca del centre rep classes convidades i vol un senyal visual d’acollida que es puga entendre de lluny i que no exigisca cap contacte físic. Cada equip dissenya un mecanisme SPIKE Prime amb un moviment de benvinguda: una salutació, una inclinació o una bandera que s’alça i torna a la posició inicial. El robot és una maqueta de comunicació: no substitueix la salutació de les persones ni decideix qui pot entrar.
+La biblioteca del centro recibe clases invitadas y quiere una señal visual de acogida que se pueda entender de lejos y que no exija ningún contacto físico. Cada equipo diseña un mecanismo SPIKE Prime con un movimiento de bienvenida: un saludo, una inclinación o una bandera que se alza y vuelve a la posición inicial. El robot es una maqueta de comunicación: no sustituye el saludo de las personas ni decide quién puede entrar.
 
-El repte combina expressió visual, moviment i programació. La pregunta central és com les decisions sobre la forma, l’amplitud i el ritme canvien la lectura del gest. Partim d’un espai pròxim —la biblioteca escolar— i pensem també com es podria rebre un grup visitant d’un altre centre de la localitat. No gravem ni identifiquem visitants: les proves es fan amb targetes o amb persones voluntàries que poden observar des de la distància i retirar-se quan vulguen.
+El reto combina expresión visual, movimiento y programación. La pregunta central es cómo las decisiones sobre la forma, la amplitud y el ritmo cambian la lectura del gesto. Partimos de un espacio próximo —la biblioteca escolar— y pensamos también en cómo se podría recibir a un grupo visitante de otro centro de la localidad. No grabamos ni identificamos visitantes: las pruebas se hacen con tarjetas o con personas voluntarias que pueden observar desde la distancia y retirarse cuando quieran.
 
-## 🎯 Objectius i criteris de disseny
+## 🎯 Objetivos y criterios de diseño
 
-- Generar diverses idees de gest i justificar quina comunica millor l’acollida.
+- Generar varias ideas de gesto y justificar cuál comunica mejor la acogida.
 
-- Construir un braç o bandera articulada i relacionar la posició del motor amb el moviment observat.
+- Construir un brazo o una bandera articulada y relacionar la posición del motor con el movimiento observado.
 
-- Comparar control per temps i control per rotacions amb repeticions mesurables.
+- Comparar control por tiempo y control por rotaciones con repeticiones medibles.
 
-- Programar una entrada i una resposta amb una aturada clara i una posició de repòs segura.
+- Programar una entrada y una respuesta con una parada clara y una posición de reposo segura.
 
-- Recollir feedback sense jutjar l’expressió personal de qui participa, i modificar el prototip a partir d’evidències.
+- Recoger feedback sin juzgar la expresión personal de quien participa, y modificar el prototipo a partir de evidencias.
 
-Abans del muntatge, cada equip defineix com comprovarà aquests criteris: el gest es reconeix a distància; el moviment no resulta brusc ni envaeix l’espai personal; torna de manera repetible a una posició segura; i hi ha una alternativa si no es vol activar el sensor o participar en la prova.
+Antes del montaje, cada equipo define cómo comprobará estos criterios: el gesto se reconoce a distancia; el movimiento no resulta brusco ni invade el espacio personal; vuelve de manera repetible a una posición segura; y hay una alternativa si no se quiere activar el sensor o participar en la prueba.
 
-## 📅 Seqüència didàctica · 5 sessions de 50 minuts
+## 📅 Secuencia didáctica · 5 sesiones de 50 minutos
 
-### **Sessió 1 · Què fa que una benvinguda siga llegible?**
+### **Sesión 1 · ¿Qué hace que una bienvenida sea legible?**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Observeu tres targetes amb gestos dibuixats —braç que saluda, bandera que s’alça i inclinació breu— i descriviu què veieu sense endevinar intencions. Predigueu quin es reconeixerà millor des de la distància.
+Observad tres tarjetas con gestos dibujados —brazo que saluda, bandera que se alza e inclinación breve— y describid qué veis sin adivinar intenciones. Predecid cuál se reconocerá mejor desde la distancia.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En grups, esbosseu tres propostes i anoteu per a cadascuna què es mou, qui inicia el moviment, des de quina distància es veu i com acaba. Compareu una forma amable i recognoscible amb una de més abstracta.
+En grupos, esbozad tres propuestas y anotad para cada una qué se mueve, quién inicia el movimiento, desde qué distancia se ve y cómo acaba. Comparad una forma amable y reconocible con una más abstracta.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Trieu un gest que es puga representar amb un motor i una peça lleugera. Marqueu base, eix, part mòbil i recorregut màxim. Anoteu qui inicia el moviment i com arriba a la posició segura de repòs.
+Elegid un gesto que se pueda representar con un motor y una pieza ligera. Marcad base, eje, parte móvil y recorrido máximo. Anotad quién inicia el movimiento y cómo llega a la posición segura de reposo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu el disseny amb criteris d’accessibilitat: el senyal ha de ser visible sense so i una targeta fixa de benvinguda ha de continuar disponible. No cal afegir una cara o ulls perquè el moviment comunique.
+Revisad el diseño con criterios de accesibilidad: la señal tiene que ser visible sin sonido y una tarjeta fija de bienvenida tiene que seguir disponible. No hace falta añadir una cara o unos ojos para que el movimiento comunique.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu per què heu seleccionat el gest i com es pot entendre a distància. **Evidència:** tres esbossos, anotacions de lectura i selecció argumentada.
+Explicad por qué habéis seleccionado el gesto y cómo se puede entender a distancia. **Evidencia:** tres bocetos, anotaciones de lectura y selección argumentada.
 
-### **Sessió 2 · Del gir del motor al gest.**
+### **Sesión 2 · Del giro del motor al gesto.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu una bandera o braç articulat i dibuixeu l’eix de rotació. Predigueu quin recorregut farà la figura en moure’s.
+Elegid una bandera o un brazo articulado y dibujad el eje de rotación. Predecid qué recorrido hará la figura al moverse.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construïu una base ferma amb un motor SPIKE Prime i un braç o bandera de cartó lleuger subjecte amb peces del kit. Comenceu amb l’articulació més simple. Desplaceu el motor o canvieu la posició de l’eix per observar com varia l’arc; mesureu-ne l’amplitud aproximada en una graella.
+Construid una base firme con un motor SPIKE Prime y un brazo o una bandera de cartón ligero sujeto con piezas del kit. Empezad con la articulación más simple. Desplazad el motor o cambiad la posición del eje para observar cómo varía el arco; medid su amplitud aproximada en una cuadrícula.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu una extensió curta amb una de llarga i anoteu recorregut, oscil·lació de la base i estabilitat en començar i parar. Si feu una tisora amb peces en X, mesureu l’abast en repòs i desplegada.
+Comparad una extensión corta con una larga y anotad recorrido, oscilación de la base y estabilidad al empezar y parar. Si hacéis una tijera con piezas en X, medid el alcance en reposo y desplegada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Afegiu una mà geomètrica o una peça terminal només si ajuda a llegir el gest i no fa el muntatge massa pesant. Reviseu l’estructura si és inestable; si cal, conserveu la tisora com a model de paper i feu el gest amb un braç directe.
+Añadid una mano geométrica o una pieza terminal solo si ayuda a leer el gesto y no hace el montaje demasiado pesado. Revisad la estructura si es inestable; si hace falta, conservad la tijera como modelo de papel y haced el gesto con un brazo directo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu quina configuració és més visible i estable a partir de les proves. **Evidència:** muntatge anotat, esquema de l’eix i comparació de dues formes.
+Explicad qué configuración es más visible y estable a partir de las pruebas. **Evidencia:** montaje anotado, esquema del eje y comparación de dos formas.
 
-### **Sessió 3 · Programem el ritme i la tornada.**
+### **Sesión 3 · Programamos el ritmo y la vuelta.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Escriviu una seqüència: posició inicial, moviment fins a una amplitud acordada, pausa breu i retorn. Predigueu si l’element arribarà al punt previst i tornarà al repòs sense colpejar el suport.
+Escribid una secuencia: posición inicial, movimiento hasta una amplitud acordada, pausa breve y retorno. Predecid si el elemento llegará al punto previsto y volverá al reposo sin golpear el soporte.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Programeu-la amb blocs; si el grup té experiència, representeu-la també en Python. Creeu dues versions, una basada en temps i una altra en rotacions del motor, mantenint constants la forma i la velocitat.
+Programadla con bloques; si el grupo tiene experiencia, representadla también en Python. Cread dos versiones, una basada en tiempo y otra en rotaciones del motor, manteniendo constantes la forma y la velocidad.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Executeu cada versió tres vegades i registreu si l’element arriba al punt previst i torna al repòs. Guardeu pseudocodi, captura o diagrama del programa.
+Ejecutad cada versión tres veces y registrad si el elemento llega al punto previsto y vuelve al reposo. Guardad pseudocódigo, captura o diagrama del programa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si el braç no retorna o es mou massa, canvieu una sola cosa —rotació, duració o orientació inicial— i repetiu la prova. Eviteu accelerar el moviment com a primera solució.
+Si el brazo no retorna o se mueve demasiado, cambiad una sola cosa —rotación, duración u orientación inicial— y repetid la prueba. Evitad acelerar el movimiento como primera solución.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compareu previsibilitat i repetibilitat entre temps i rotacions. **Evidència:** programa i taula de tres execucions. Com a ampliació, programeu dos moviments amb pausa i expliqueu quin es perdria si la pausa fora massa curta.
+Comparad previsibilidad y repetibilidad entre tiempo y rotaciones. **Evidencia:** programa y tabla de tres ejecuciones. Como ampliación, programad dos movimientos con pausa y explicad qué se perdería si la pausa fuera demasiado corta.
 
-### **Sessió 4 · Decidim quan s’activa.**
+### **Sesión 4 · Decidimos cuándo se activa.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Predigueu en quines distàncies s’hauria d’activar el gest i quantes vegades hauria de respondre mentre l’objecte continua davant del sensor. No apunteu sensors a persones.
+Predecid a qué distancias tendría que activarse el gesto y cuántas veces tendría que responder mientras el objeto sigue delante del sensor. No apuntéis sensores a personas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Useu una targeta gran o un objecte de cartó davant del sensor de distància SPIKE. Definiu una distància d’activació i una altra de separació i feu proves des de tres punts marcats. Si el sensor no forma part del set o no està disponible, useu el botó del hub o un inici manual.
+Usad una tarjeta grande o un objeto de cartón delante del sensor de distancia SPIKE. Definid una distancia de activación y otra de separación y haced pruebas desde tres puntos marcados. Si el sensor no forma parte del set o no está disponible, usad el botón del hub o un inicio manual.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu les distàncies, resposta esperada i observada, i si el gest s’activa una vegada o repetidament. Registreu possibles errors: objecte massa menut, angle diferent, obstacle del fons o distància fora del rang provat.
+Anotad las distancias, respuesta esperada y observada, y si el gesto se activa una vez o repetidamente. Registrad posibles errores: objeto demasiado pequeño, ángulo distinto, obstáculo del fondo o distancia fuera del rango probado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Ajusteu el llindar només després d’escriure què espereu que canvie. Compareu una entrada automatitzada amb una d’explícita; l’alternativa manual manté el control de la persona i és igualment vàlida.
+Ajustad el umbral solo después de escribir qué esperáis que cambie. Comparad una entrada automatizada con una explícita; la alternativa manual mantiene el control de la persona y es igualmente válida.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu què pot i què no pot detectar el sistema. **Evidència:** diagrama entrada/resposta, taula de distàncies i nota sobre falses activacions. El sensor no identifica qui està davant ni si vol interactuar.
+Explicad qué puede y qué no puede detectar el sistema. **Evidencia:** diagrama entrada/respuesta, tabla de distancias y nota sobre falsas activaciones. El sensor no identifica quién está delante ni si quiere interactuar.
 
-### **Sessió 5 · Fem una prova d’ús i revisem.**
+### **Sesión 5 · Hacemos una prueba de uso y revisamos.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu una demostració en taula estable. Una parella que no ha construït el model observarà el gest des d’un punt marcat i triarà una targeta de retorn: «he entés el senyal», «el moviment m’ha sorprés» o «preferisc el senyal estàtic».
+Preparad una demostración en una mesa estable. Una pareja que no ha construido el modelo observará el gesto desde un punto marcado y elegirá una tarjeta de retorno: «he entendido la señal», «el movimiento me ha sorprendido» o «prefiero la señal estática».
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Proveu el gest sense demanar si el robot sembla personalment acollidor i sense gravar la resposta. El grup constructor recull el retorn sobre el disseny i la llegibilitat.
+Probad el gesto sin preguntar si el robot parece personalmente acogedor y sin grabar la respuesta. El grupo constructor recoge el retorno sobre el diseño y la legibilidad.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu què ha observat el públic i quina característica podria revisar-se: amplitud, posició del motor, durada o forma terminal.
+Anotad qué ha observado el público y qué característica podría revisarse: amplitud, posición del motor, duración o forma terminal.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una sola característica i torneu a provar el prototip. Prepareu un cartell amb el gest triat, resum del programa i una limitació.
+Cambiad una sola característica y volved a probar el prototipo. Preparad un cartel con el gesto elegido, resumen del programa y una limitación.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compareu el muntatge directe amb el braç de tisora, si s’ha construït, i expliqueu quina versió és més estable i clara. **Evidència:** prototip revisat, retorn anònim no identificable, canvi documentat i explicació oral o escrita.
+Comparad el montaje directo con el brazo de tijera, si se ha construido, y explicad qué versión es más estable y clara. **Evidencia:** prototipo revisado, retorno anónimo no identificable, cambio documentado y explicación oral o escrita.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Set LEGO Education SPIKE Prime 45678 per parella o equip, hub carregat, un motor, peces estructurals, cartó lleuger per a bandera o mà, paper quadriculat, retoladors, regle i targetes de feedback. Sensor de distància opcional, només si forma part de la dotació i funciona en la versió local de l’app; si no, el botó del hub és suficient. No cal una expansió ni cap objecte addicional que interactue amb el cos.
+Set LEGO Education SPIKE Prime 45678 por pareja o equipo, hub cargado, un motor, piezas estructurales, cartón ligero para bandera o mano, papel cuadriculado, rotuladores, regla y tarjetas de feedback. Sensor de distancia opcional, solo si forma parte de la dotación y funciona en la versión local de la app; si no, el botón del hub es suficiente. No hace falta una expansión ni ningún objeto adicional que interactúe con el cuerpo.
 
-Abans de la classe, proveu el port i l’orientació del motor, prepareu una base estable i marqueu una zona de moviment segura. Deixeu targetes de gest disponibles per a anticipar la seqüència i un mode manual perquè el prototip no depenga del sensor. Roten els rols de disseny, muntatge, programació, registre i observació; cada alumne pot aportar una prova encara que no vulga activar ni veure el gest en directe.
+Antes de la clase, probad el puerto y la orientación del motor, preparad una base estable y marcad una zona de movimiento segura. Dejad tarjetas de gesto disponibles para anticipar la secuencia y un modo manual para que el prototipo no dependa del sensor. Rotan los roles de diseño, montaje, programación, registro y observación; cada alumno puede aportar una prueba aunque no quiera activar ni ver el gesto en directo.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Recolliu esbossos i criteris, diagrama mecànic, codi o pseudocodi, comparació temps/rotacions, registre de proves del sensor (si s’usa), retorn d’ús i revisió final. La rúbrica formativa observa:
+Recoged bocetos y criterios, diagrama mecánico, código o pseudocódigo, comparación tiempo/rotaciones, registro de pruebas del sensor (si se usa), retorno de uso y revisión final. La rúbrica formativa observa:
 
-- **Comunicació:** explica quin gest vol representar i justifica forma i amplitud amb criteris observables.
+- **Comunicación:** explica qué gesto quiere representar y justifica forma y amplitud con criterios observables.
 
-- **Mecànica:** identifica eix i braç, compara dues configuracions i usa una mesura per descriure’n el canvi.
+- **Mecánica:** identifica eje y brazo, compara dos configuraciones y usa una medida para describir el cambio.
 
-- **Programació:** implementa moviment, pausa i retorn, i depura el comportament modificant una variable cada vegada.
+- **Programación:** implementa movimiento, pausa y retorno, y depura el comportamiento modificando una variable cada vez.
 
-- **Prova:** repeteix les execucions en condicions semblants, documenta incidències i aplica feedback sense identificar participants.
+- **Prueba:** repite las ejecuciones en condiciones parecidas, documenta incidencias y aplica feedback sin identificar participantes.
 
-- **Inclusió i seguretat:** conserva una alternativa estàtica/manual, delimita la zona i evita moviment cap a les persones.
+- **Inclusión y seguridad:** conserva una alternativa estática/manual, delimita la zona y evita el movimiento hacia las personas.
 
-Autoavaluació: «El gest es llig des de…», «he triat temps/rotacions perquè…» i «una alternativa que continua disponible és…». El feedback es refereix al disseny i a la llegibilitat, mai a la personalitat o a les emocions de qui observa.
+Autoevaluación: «El gesto se lee desde…», «he elegido tiempo/rotaciones porque…» y «una alternativa que sigue disponible es…». El feedback se refiere al diseño y a la legibilidad, nunca a la personalidad o a las emociones de quien observa.
 
-## ♿ Participació, cura i límits
+## ♿ Participación, cuidado y límites
 
-Oferiu instruccions escrites i visuals, demostració lenta i opció d’anticipar els moviments amb targetes. El missatge ha de combinar moviment amb un senyal estàtic visible; el so no és necessari. Les persones poden observar des de la distància que trien, participar a través del registre o no acostar-se al mecanisme. No useu el sensor per detectar o seguir visitants i no associeu cap moviment amb l’estat d’ànim de les persones.
+Ofreced instrucciones escritas y visuales, demostración lenta y opción de anticipar los movimientos con tarjetas. El mensaje tiene que combinar movimiento con una señal estática visible; el sonido no es necesario. Las personas pueden observar desde la distancia que elijan, participar a través del registro o no acercarse al mecanismo. No uséis el sensor para detectar o seguir visitantes y no asociéis ningún movimiento con el estado de ánimo de las personas.
 
-Proveu el braç a baixa velocitat, sobre una superfície estable i sense ningú dins del seu recorregut. Atureu i desconnecteu el hub abans d’ajustar l’eix o retirar peces. El prototip no és un sistema de control d’accés ni un dispositiu per a espais públics; la recepció real continua sent responsabilitat de les persones del centre.
+Probad el brazo a baja velocidad, sobre una superficie estable y sin nadie dentro de su recorrido. Detened y desconectad el hub antes de ajustar el eje o retirar piezas. El prototipo no es un sistema de control de acceso ni un dispositivo para espacios públicos; la recepción real sigue siendo responsabilidad de las personas del centro.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Partim del [SPIKE Activity Brief: Greetings, Earthling](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt52090884117e954a/6324c3b5258fb55f6b2169d0/LE_14x8.5_LessonMat_GreetingsEarthling_WB_Mech_NoCrops.pdf?locale=en-us), elaborat amb el Tufts Center for Engineering Education and Outreach. El brief proposa saludar amb una salutació de mà, un puny o un xoc de mans; pensar com fer un aspecte amable, on situar el motor perquè el braç es moga amb naturalitat, i controlar la quantitat de moviment amb temps o rotacions. També suggereix afegir una mà, activar-se amb sensor ultrasònic i allargar el braç amb una tisora de peces en X. Aquesta adaptació conserva eixos i extensions, però representa el gest a distància per no requerir contacte corporal. La narrativa de biblioteca, seqüència, proves, criteris i il·lustració són propis; el sensor s’assaaja només amb objectes.
+Partimos del [SPIKE Activity Brief: Greetings, Earthling](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt52090884117e954a/6324c3b5258fb55f6b2169d0/LE_14x8.5_LessonMat_GreetingsEarthling_WB_Mech_NoCrops.pdf?locale=en-us), elaborado con el Tufts Center for Engineering Education and Outreach. El brief propone saludar con un saludo de mano, un puño o un choque de manos; pensar cómo hacer un aspecto amable, dónde situar el motor para que el brazo se mueva con naturalidad, y controlar la cantidad de movimiento con tiempo o rotaciones. También sugiere añadir una mano, activarse con sensor ultrasónico y alargar el brazo con una tijera de piezas en X. Esta adaptación conserva ejes y extensiones, pero representa el gesto a distancia para no requerir contacto corporal. La narrativa de biblioteca, la secuencia, las pruebas, los criterios y la ilustración son propios; el sensor se ensaya solo con objetos.

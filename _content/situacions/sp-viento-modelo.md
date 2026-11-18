@@ -14,145 +14,145 @@ duration: "3 sesiones de 45–60 min"
 challenge: "¿Cómo podemos convertir la velocidad prevista del viento en una representación calibrada, comparable y comprensible?"
 ---
 
-![Hub SPIKE Prime i indicador mecànic de vent al costat d'una pantalla que representa dades meteorològiques per categories.](../../_assets/situacions/sp-vent-model.webp)
+![Hub SPIKE Prime e indicador mecánico de viento junto a una pantalla que representa datos meteorológicos por categorías.](../../_assets/situacions/sp-vent-model.webp)
 
-_La maqueta mostra dades consultades al núvol; no mesura el vent que fa al pati._
+_La maqueta muestra datos consultados en la nube; no mide el viento que hace en el patio._
 
-## 🌬️ Repte i intenció
+## 🌬️ Reto e intención
 
-**Situació:** Transformem una previsió meteorològica en una representació que es puga llegir i comparar. En equips, construïm un indicador accionat per motor, calibrem l’escala i programem condicions per classificar quatre intervals inspirats en l’escala Beaufort.
+**Situación:** Transformamos una previsión meteorológica en una representación que se pueda leer y comparar. En equipos, construimos un indicador accionado por motor, calibramos la escala y programamos condiciones para clasificar cuatro intervalos inspirados en la escala Beaufort.
 
-> **Pregunta guia:** Com podem convertir una dada de velocitat del vent en una representació calibrada, comparable i comprensible?
+> **Pregunta guía:** ¿Cómo podemos convertir un dato de velocidad del viento en una representación calibrada, comparable y comprensible?
 
-> **Límit del model:** La maqueta representa dades d’una previsió per a una ubicació i una hora. No mesura el vent del pati ni és un dispositiu d’avís o seguretat.
+> **Límite del modelo:** La maqueta representa datos de una previsión para una ubicación y una hora. No mide el viento del patio ni es un dispositivo de aviso o seguridad.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Interpretar una dada quantitativa de velocitat del vent i identificar-ne la font i les unitats.
-- Construir i calibrar un indicador amb intervals que es puguen distingir i provar.
-- Afegir una segona condició o direcció i comprovar com canvia la representació.
-- Comunicar que el prototip representa dades i no mesura el vent ni substitueix els avisos oficials.
-- Elaborar un missatge divulgatiu breu amb font, ubicació, hora i límits de la previsió; relacionar el treball amb tasques de meteorologia, ciència de dades i enginyeria.
+- Interpretar un dato cuantitativo de velocidad del viento e identificar su fuente y sus unidades.
+- Construir y calibrar un indicador con intervalos que se puedan distinguir y probar.
+- Añadir una segunda condición o dirección y comprobar cómo cambia la representación.
+- Comunicar que el prototipo representa datos y no mide el viento ni sustituye los avisos oficiales.
+- Elaborar un mensaje divulgativo breve con fuente, ubicación, hora y límites de la previsión; relacionar el trabajo con tareas de meteorología, ciencia de datos e ingeniería.
 
-## 📅 Seqüència didàctica · 3 sessions
+## 📅 Secuencia didáctica · 3 sesiones
 
-### **S1 · Construïm i interpretem un indicador (45–60 min).**
+### **S1 · Construimos e interpretamos un indicador (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Parleu de com canvien les activitats quotidianes quan fa vent i de com distingim una brisa d’un vent fort. Presenteu l’escala Beaufort com una classificació de referència, no com una mesura del pati. Cada equip prediu quina posició o categoria mostrarà l’indicador davant d’una velocitat triada.
+Hablad de cómo cambian las actividades cotidianas cuando hace viento y de cómo distinguimos una brisa de un viento fuerte. Presentad la escala Beaufort como una clasificación de referencia, no como una medida del patio. Cada equipo predice qué posición o categoría mostrará el indicador ante una velocidad elegida.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En parelles, munteu una base estable amb una agulla o placa lleugera i un motor SPIKE. Alineeu el motor perquè l’angle programat corresponga al sentit de la fletxa. Trieu una ciutat pública a l’app, llegiu la velocitat i executeu el programa inicial. Si no hi ha consulta en viu, feu servir una taula de valors datada i identifiqueu-la com una simulació arxivada.
+En parejas, montad una base estable con una aguja o placa ligera y un motor SPIKE. Alinead el motor para que el ángulo programado corresponda al sentido de la flecha. Elegid una ciudad pública en la app, leed la velocidad y ejecutad el programa inicial. Si no hay consulta en vivo, usad una tabla de valores fechada e identificadla como una simulación archivada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Descriviu què mostra l’indicador i com es relaciona la dada amb la posició. Registreu ciutat, data, hora, unitat i font; dibuixeu el mecanisme i assenyaleu quina part és entrada de dades, procés i eixida del model.
+Describid qué muestra el indicador y cómo se relaciona el dato con la posición. Registrad ciudad, fecha, hora, unidad y fuente; dibujad el mecanismo y señalad qué parte es entrada de datos, proceso y salida del modelo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu la lectura inicial amb una segona velocitat. Si l’agulla no assenyala la categoria prevista, reviseu l’alineament o el programa i canvieu una sola cosa abans de repetir la prova.
+Comparad la lectura inicial con una segunda velocidad. Si la aguja no señala la categoría prevista, revisad la alineación o el programa y cambiad una sola cosa antes de repetir la prueba.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu què representa l’agulla i què no permet concloure la maqueta. **Evidència:** dibuix del mecanisme, ciutat, data, hora i unitats consultades, predicció i dues lectures comparades.
+Explicad qué representa la aguja y qué no permite concluir la maqueta. **Evidencia:** dibujo del mecanismo, ciudad, fecha, hora y unidades consultadas, predicción y dos lecturas comparadas.
 
-### **S2 · Calibrem quatre intervals amb condicions (45–60 min).**
+### **S2 · Calibramos cuatro intervalos con condiciones (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Ordeneu targetes de velocitat i associeu cada banda amb el color acordat. Manteniu les unitats visibles: **calma · força 0:** 0–<0,5 m/s; **blau · forces 1–3:** 0,5–<5,5 m/s; **verd · forces 4–6:** 5,5–<13,8 m/s; **groc · forces 7–9:** 13,8–<24,4 m/s; **roig · forces 10–12:** ≥24,4 m/s. Els quatre colors agrupen forces segons el resum de LEGO; no són els tretze trams complets de l’escala Beaufort. La força 12 no té límit superior. Predigueu el resultat en cada frontera.
+Ordenad tarjetas de velocidad y asociad cada banda con el color acordado. Mantened las unidades visibles: **calma · fuerza 0:** 0–<0,5 m/s; **azul · fuerzas 1–3:** 0,5–<5,5 m/s; **verde · fuerzas 4–6:** 5,5–<13,8 m/s; **amarillo · fuerzas 7–9:** 13,8–<24,4 m/s; **rojo · fuerzas 10–12:** ≥24,4 m/s. Los cuatro colores agrupan fuerzas según el resumen de LEGO; no son los trece tramos completos de la escala Beaufort. La fuerza 12 no tiene límite superior. Predecid el resultado en cada frontera.
 
-![Quatre grups de línies de vent que augmenten d’intensitat, de blau a verd, groc i roig.](../../_assets/situacions/sa-sp-vent-beaufort.webp)
+![Cuatro grupos de líneas de viento que aumentan de intensidad, de azul a verde, amarillo y rojo.](../../_assets/situacions/sa-sp-vent-beaufort.webp)
 
-_Representació qualitativa dels quatre trams; no és una escala de mesura. Per programar, useu els valors i les unitats._
+_Representación cualitativa de los cuatro tramos; no es una escala de medida. Para programar, usad los valores y las unidades._
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Com a bastida, podeu començar amb dos intervals; el repte compartit és arribar als quatre i verificar-los.
+Como andamiaje, podéis empezar con dos intervalos; el reto compartido es llegar a los cuatro y verificarlos.
 
-1. Escriviu una taula de llindars amb unitats coherents i decidiu a quin tram pertany cada valor de frontera.
-2. Programeu condicions *si / si no* perquè cada tram active el color o l’angle assignat.
-3. Tracteu **0 ≤ velocitat < 0,5 m/s com a calma (força 0)**, separada dels quatre colors.
-4. Proveu 0; 0,49; 0,5; 5,49; 5,5; 13,79; 13,8; 24,39; 24,4; 32,7 i 32,71 m/s. Cada valor vàlid ha de rebre una sola classificació; una dada absent, negativa o no numèrica s’ha de marcar com a invàlida, no com a calma.
-5. Anoteu si cada cas queda classificat com esperàveu i corregiu les condicions quan calga.
+1. Escribid una tabla de umbrales con unidades coherentes y decidid a qué tramo pertenece cada valor de frontera.
+2. Programad condiciones *si / si no* para que cada tramo active el color o el ángulo asignado.
+3. Tratad **0 ≤ velocidad < 0,5 m/s como calma (fuerza 0)**, separada de los cuatro colores.
+4. Probad 0; 0,49; 0,5; 5,49; 5,5; 13,79; 13,8; 24,39; 24,4; 32,7 y 32,71 m/s. Cada valor válido debe recibir una sola clasificación; un dato ausente, negativo o no numérico se debe marcar como inválido, no como calma.
+5. Anotad si cada caso queda clasificado como esperabais y corregid las condiciones cuando haga falta.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Descriviu com les condicions transformen dades contínues en grups discrets. Deseu la taula, el pseudocodi o l’esquema de condicions i indiqueu què fa cada frontera.
+Describid cómo las condiciones transforman datos continuos en grupos discretos. Guardad la tabla, el pseudocódigo o el esquema de condiciones e indicad qué hace cada frontera.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Repetiu les proves de frontera, inclòs un valor superior a 32,7 m/s, que continua dins de la força 12. Comproveu també que l’entrada invàlida queda diferenciada de la calma. Anoteu si cada cas es classifica com esperàveu i corregiu les condicions quan calga; torneu a executar els casos afectats.
+Repetid las pruebas de frontera, incluido un valor superior a 32,7 m/s, que continúa dentro de la fuerza 12. Comprobad también que la entrada inválida queda diferenciada de la calma. Anotad si cada caso se clasifica como esperabais y corregid las condiciones cuando haga falta; volved a ejecutar los casos afectados.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Una altra parella revisa si les quatre bandes cobreixen els casos previstos i si la calma i els valors fora de rang tenen una resposta definida. **Evidència:** taula de llindars, pseudocodi, casos de prova i una correcció explicada.
+Otra pareja revisa si las cuatro bandas cubren los casos previstos y si la calma y los valores fuera de rango tienen una respuesta definida. **Evidencia:** tabla de umbrales, pseudocódigo, casos de prueba y una corrección explicada.
 
-### **S3 · Comparem ubicacions i afegim direcció (45–60 min).**
+### **S3 · Comparamos ubicaciones y añadimos dirección (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans d’executar el programa, compareu dues velocitats en cadascuna de tres ciutats públiques i predigueu quina categoria correspondrà a cada dada. Distingiu aquestes dades de les condicions meteorològiques locals del centre.
+Antes de ejecutar el programa, comparad dos velocidades en cada una de tres ciudades públicas y predecid qué categoría corresponderá a cada dato. Distinguid estos datos de las condiciones meteorológicas locales del centro.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Executeu el mateix programa amb almenys dues velocitats diferents en cadascuna de les tres ciutats. Afegiu la direcció del vent amb fletxes a la matriu LED del hub. Si hi ha temps, amplieu l’indicador fins a 180° i mesureu quant tarda l’equip a recalibrar-lo; un segon motor per al dial és opcional. Per a l’ampliació, convertiu les dades a una altra unitat (per exemple, km/h), feu explícit el factor de conversió i comproveu un valor de frontera.
+Ejecutad el mismo programa con al menos dos velocidades diferentes en cada una de las tres ciudades. Añadid la dirección del viento con flechas a la matriz LED del hub. Si hay tiempo, ampliad el indicador hasta 180° y medid cuánto tarda el equipo en recalibrarlo; un segundo motor para el dial es opcional. Para la ampliación, convertid los datos a otra unidad (por ejemplo, km/h), haced explícito el factor de conversión y comprobad un valor de frontera.
 
-![Hub SPIKE Prime connectat a un motor que mou una agulla davant de quatre trams de colors: blau, verd, groc i roig; una cinta blanca representa el vent.](../../_assets/situacions/sa-sp-vent-indicador.webp)
+![Hub SPIKE Prime conectado a un motor que mueve una aguja ante cuatro tramos de colores: azul, verde, amarillo y rojo; una cinta blanca representa el viento.](../../_assets/situacions/sa-sp-vent-indicador.webp)
 
-_L’agulla representa la categoria de la previsió seleccionada; la maqueta no capta el vent de l’aula ni del pati._
+_La aguja representa la categoría de la previsión seleccionada; la maqueta no capta el viento del aula ni del patio._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Prepareu una taula que compare ubicació, hora, font, velocitat, categoria i direcció. Expliqueu què pot inferir el model a partir d’aquestes dades i què queda fora del seu abast.
+Preparad una tabla que compare ubicación, hora, fuente, velocidad, categoría y dirección. Explicad qué puede inferir el modelo a partir de estos datos y qué queda fuera de su alcance.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu una categoria o recalibreu l’indicador si els resultats de dues ubicacions no concorden amb les dades. Si useu un segon motor, proveu el dial de direcció; si no, manteniu la matriu LED com a opció base. Contrasteu l’explicació amb una font divulgativa fiable o una persona experta, si és possible. Com a extensió de comunicació, prepareu un missatge oral, escrit o pictogràfic de 30 segons amb la ciutat, l’hora, la velocitat prevista, la direcció, la font i una limitació del model. Ha de presentar-se com una previsió didàctica, mai com una alerta meteorològica ni una indicació per a suspendre activitats. Si hi ha temps, investigueu una tasca concreta de meteorologia, ciència de dades o enginyeria relacionada amb mesurar o comunicar el vent, i contrasteu-la amb una font identificada.
+Revisad una categoría o recalibrad el indicador si los resultados de dos ubicaciones no concuerdan con los datos. Si usáis un segundo motor, probad el dial de dirección; si no, mantened la matriz LED como opción base. Contrastad la explicación con una fuente divulgativa fiable o una persona experta, si es posible. Como extensión de comunicación, preparad un mensaje oral, escrito o pictográfico de 30 segundos con la ciudad, la hora, la velocidad prevista, la dirección, la fuente y una limitación del modelo. Debe presentarse como una previsión didáctica, nunca como una alerta meteorológica ni una indicación para suspender actividades. Si hay tiempo, investigad una tarea concreta de meteorología, ciencia de datos o ingeniería relacionada con medir o comunicar el viento, y contrastadla con una fuente identificada.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Presenteu la comparació citant font, ubicació i hora. Indiqueu que la previsió correspon a un lloc i moment determinats i que la maqueta no mesura el vent de l’aula o del pati ni substitueix avisos oficials. Apagueu i retorneu els materials al set. **Evidència:** comparació de tres ubicacions, programa amb velocitat i direcció, registre de calibratge, missatge divulgatiu amb la seua limitació i, si s’ha fet l’extensió, una nota amb la professió investigada i la font.
+Presentad la comparación citando fuente, ubicación y hora. Indicad que la previsión corresponde a un lugar y momento determinados y que la maqueta no mide el viento del aula o del patio ni sustituye avisos oficiales. Apagad y devolved los materiales al set. **Evidencia:** comparación de tres ubicaciones, programa con velocidad y dirección, registro de calibración, mensaje divulgativo con su limitación y, si se ha hecho la extensión, una nota con la profesión investigada y la fuente.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-**Materials:** Prepareu els elements necessaris per al muntatge, la consulta de dades i les proves.
+**Materiales:** Preparad los elementos necesarios para el montaje, la consulta de datos y las pruebas.
 
-- Hub SPIKE Prime, un motor i peces per a una base estable i un indicador lleuger.
-- Ordinador o tauleta amb l’app i els blocs meteorològics al núvol.
-- Targetes, paper, regla i plantilla d’angles per a l’ampliació a 180°.
-- Taula de valors datada i amb unitats per si no hi ha connexió.
-- Un segon motor per al dial de direcció, opcional; la matriu LED ja permet representar-la.
+- Hub SPIKE Prime, un motor y piezas para una base estable y un indicador ligero.
+- Ordenador o tableta con la app y los bloques meteorológicos en la nube.
+- Tarjetas, papel, regla y plantilla de ángulos para la ampliación a 180°.
+- Tabla de valores fechada y con unidades por si no hay conexión.
+- Un segundo motor para el dial de dirección, opcional; la matriz LED ya permite representarla.
 
-Abans de la sessió, confirmeu l’accés a les dades, la ciutat consultable, la unitat disponible i el funcionament del programa. Prepareu també les targetes de classificació desconnectada.
+Antes de la sesión, confirmad el acceso a los datos, la ciudad consultable, la unidad disponible y el funcionamiento del programa. Preparad también las tarjetas de clasificación desconectada.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Recolliu una carpeta de procés amb:
+Recoged una carpeta de proceso con:
 
-- Predicció inicial i dibuix del muntatge.
-- Registre de dades, ubicació, hora i unitats; incloeu la conversió si és necessària.
-- Taula de quatre categories i programa condicional.
-- Proves dels llindars, casos de frontera i revisió d’una condició.
-- Comparació de tres ciutats i representació de la direcció.
+- Predicción inicial y dibujo del montaje.
+- Registro de datos, ubicación, hora y unidades; incluid la conversión si es necesaria.
+- Tabla de cuatro categorías y programa condicional.
+- Pruebas de los umbrales, casos de frontera y revisión de una condición.
+- Comparación de tres ciudades y representación de la dirección.
 
-**Criteris d’èxit:** l’alumnat calibra l’indicador per a la unitat emprada, justifica els límits, classifica els casos de prova i revisa el programa a partir dels resultats. En l’ampliació, combina velocitat i direcció en el programa. El retorn entre parelles assenyala una prova que falta.
+**Criterios de éxito:** el alumnado calibra el indicador para la unidad empleada, justifica los límites, clasifica los casos de prueba y revisa el programa a partir de los resultados. En la ampliación, combina velocidad y dirección en el programa. El retorno entre parejas señala una prueba que falta.
 
-**Autoavaluació:**
+**Autoevaluación:**
 
-- **En procés:** represente dues velocitats en tres ubicacions.
-- **Assolit:** classifique les quatre bandes en tres ubicacions i comprove els llindars.
-- **Ampliació:** afegisc la direcció; si dispose d’un segon motor, la mostre amb un dial i el recalibre fins a 180°.
+- **En proceso:** represento dos velocidades en tres ubicaciones.
+- **Alcanzado:** clasifico las cuatro bandas en tres ubicaciones y compruebo los umbrales.
+- **Ampliación:** añado la dirección; si dispongo de un segundo motor, la muestro con un dial y lo recalibro hasta 180°.
 
-## ♿ Participació i límits
+## ♿ Participación y límites
 
-- Mostreu cada categoria amb color **i** amb una paraula, símbol, explicació oral o targeta tàctil; no depengueu només del color.
-- Consulteu ciutats públiques i no introduïu ubicacions personals.
-- Expliqueu que la previsió correspon a una ubicació i una hora, i no descriu necessàriament el pati.
-- Davant d’una situació meteorològica adversa, seguiu els canals oficials i les indicacions del centre.
+- Mostrad cada categoría con color **y** con una palabra, símbolo, explicación oral o tarjeta táctil; no dependáis solo del color.
+- Consultad ciudades públicas y no introduzcáis ubicaciones personales.
+- Explicad que la previsión corresponde a una ubicación y una hora, y no describe necesariamente el patio.
+- Ante una situación meteorológica adversa, seguid los canales oficiales y las indicaciones del centro.
 
-## 🔗 Lliçó oficial adaptada
+## 🔗 Lección oficial adaptada
 
-La seqüència adapta [Wind Speed](https://education.lego.com/en-us/lessons/prime-life-hacks/wind-speed/), quarta lliçó de [Life Hacks](https://education.lego.com/en-us/lessons/prime-life-hacks/). Conserva el muntatge en parelles i l’alineament del motor, la consulta d’una ciutat, la representació de dades del núvol, les quatre bandes de color, la comparació d’ubicacions, l’ampliació a la direcció del vent i el recalibratge a 180°. Les bandes de color reprodueixen l’agrupació resumida de LEGO per a forces 1–12; la calma (força 0) es tracta a banda i la força 12 no té màxim. Les fronteres es proven amb intervals sense buits ni solapaments, d’acord amb la [taula de l’escala Beaufort del Met Office](https://weather.metoffice.gov.uk/guides/coast-and-sea/beaufort-scale) i la [referència del National Weather Service](https://www.weather.gov/media/wrh/online_publications/TMs/TM-218.pdf). També adapta l’extensió oficial de comunicació i els itineraris professionals, sense convertir la previsió en una alerta real; incorpora classificació desconnectada, registre de dades i límits d’ús. La situació, el registre, la programació i les il·lustracions són propis; els materials docents complets remeten a l’app SPIKE.
+La secuencia adapta [Wind Speed](https://education.lego.com/en-us/lessons/prime-life-hacks/wind-speed/), cuarta lección de [Life Hacks](https://education.lego.com/en-us/lessons/prime-life-hacks/). Conserva el montaje en parejas y la alineación del motor, la consulta de una ciudad, la representación de datos de la nube, las cuatro bandas de color, la comparación de ubicaciones, la ampliación a la dirección del viento y la recalibración a 180°. Las bandas de color reproducen la agrupación resumida de LEGO para fuerzas 1–12; la calma (fuerza 0) se trata aparte y la fuerza 12 no tiene máximo. Las fronteras se prueban con intervalos sin huecos ni solapamientos, de acuerdo con la [tabla de la escala Beaufort del Met Office](https://weather.metoffice.gov.uk/guides/coast-and-sea/beaufort-scale) y la [referencia del National Weather Service](https://www.weather.gov/media/wrh/online_publications/TMs/TM-218.pdf). También adapta la extensión oficial de comunicación y los itinerarios profesionales, sin convertir la previsión en una alerta real; incorpora clasificación desconectada, registro de datos y límites de uso. La situación, el registro, la programación y las ilustraciones son propios; los materiales docentes completos remiten a la app SPIKE.

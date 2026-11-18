@@ -9,36 +9,36 @@ cycle_label: "Tercer ciclo"
 subject: "tecnologia"
 subject_label: "Tecnología, Ciencias y Ciudadanía"
 theme: "sostenibilitat"
-theme_label: "Retos de diseño amb impacto"
+theme_label: "Retos de diseño con impacto"
 duration: "10–15 sesiones · selección de retos"
 challenge: "¿Qué prototipo podemos diseñar para responder a un reto real sin prometer una protección que la tecnología no puede garantizar?"
 ---
 
-![Micro:bit real de la dotació al centre de quatre maquetes de taula: aiguamoll, mapa oceànic, camí costaner i pista escolar de proves.](../../_assets/situacions/mb-reptes-planeta.webp)
+![Micro:bit real de la dotación del centro rodeada de cuatro maquetas de mesa: humedal, mapa oceánico, camino costero y pista escolar de pruebas.](../../_assets/situacions/mb-reptes-planeta.webp)
 
-_Les escenes són maquetes de paper i cartó al voltant de la placa real; no representen dispositius instal·lats, proves en trànsit o protecció de fauna._
+_Las escenas son maquetas de papel y cartón alrededor de la placa real; no representan dispositivos instalados, pruebas en tránsito o protección de fauna._
 
-## 🌍 Com usar aquesta col·lecció
+## 🌍 Cómo usar esta colección
 
-Aquesta fitxa adapta cinc reptes de disseny de micro:bit, cadascun amb les seues activitats identificades. El docent pot triar un repte complet (dues o tres activitats) i dedicar-hi entre dues i tres sessions per activitat. Comenceu amb recerca i criteris, seguiu amb pseudocodi i prototip, i tanqueu amb proves i comunicació dels límits. Les dades són simulades o de maquetes; no es fan proves amb fauna, persones en risc, carrers oberts ni aigua real.
+Esta ficha adapta cinco retos de diseño de micro:bit, cada uno con sus actividades identificadas. El docente puede elegir un reto completo (dos o tres actividades) y dedicarle entre dos y tres sesiones por actividad. Empezad con investigación y criterios, seguid con pseudocódigo y prototipo, y cerrad con pruebas y comunicación de los límites. Los datos son simulados o de maquetas; no se hacen pruebas con fauna, personas en riesgo, calles abiertas ni agua real.
 
-## 🐾 Repte 1 · Biodiversitat terrestre
+## 🐾 Reto 1 · Biodiversidad terrestre
 
-Adapta [Protecting animals on land](https://microbit.org/teach/lessons/protecting-animals/) i les seues dues activitats:
+Adapta [Protecting animals on land](https://microbit.org/teach/lessons/protecting-animals/) y sus dos actividades:
 
-### **Detectius d’espècies (Spot the species).**
+### **Detectives de especies (Spot the species).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu un hàbitat pròxim i una pregunta sobre espècies que el grup puga investigar amb fonts fiables. Predigueu quins trets observables permetrien distingir-ne dues.
+Elegid un hábitat próximo y una pregunta sobre especies que el grupo pueda investigar con fuentes fiables. Predecid qué rasgos observables permitirían distinguir dos.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Consulteu fonts seleccionades i creeu una clau d’identificació amb observacions accessibles, com forma, mida aproximada o nombre de fulles, sempre que la font les documente. Trieu dues espècies observables en un hàbitat pròxim —o dues espècies de fitxes docents si no hi ha eixida— i feu una targeta de llegenda. 
+Consultad fuentes seleccionadas y cread una clave de identificación con observaciones accesibles, como forma, tamaño aproximado o número de hojas, siempre que la fuente las documente. Elegid dos especies observables en un hábitat próximo —o dos especies de fichas docentes si no hay salida— y haced una tarjeta de leyenda. 
 
-En MakeCode, creeu dos comptadors: el botó A suma una observació de l’espècie 1 i el botó B suma una observació de l’espècie 2. 
+En MakeCode, cread dos contadores: el botón A suma una observación de la especie 1 y el botón B suma una observación de la especie 2. 
 
-La micro:bit registra l’acció de polsar els botons; no reconeix ni identifica l’espècie.
+La micro:bit registra la acción de pulsar los botones; no reconoce ni identifica la especie.
 
 ```javascript
 let especie1 = 0
@@ -62,31 +62,31 @@ input.onGesture(Gesture.Shake, function () {
 })
 ```
 
-![Una micro:bit real de la dotació amb targetes de dues espècies de la marjal, una clau d’identificació i una fitxa de registre de botons A i B.](../../_assets/situacions/sa-mb-comptador-especies.webp)
+![Una micro:bit real de la dotación con tarjetas de dos especies del marjal, una clave de identificación y una ficha de registro de botones A y B.](../../_assets/situacions/sa-mb-comptador-especies.webp)
 
-_La placa només suma les observacions que introdueix una persona; les targetes i la llegenda són materials propis._
+_La placa solo suma las observaciones que introduce una persona; las tarjetas y la leyenda son materiales propios._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Proveu cada botó tres vegades, agiteu la placa per consultar els dos totals i compareu-los amb un recompte manual en paper. Feu una prova amb zero, una observació i una observació repetida; decidiu com evitar comptar dues vegades el mateix indici. Anoteu espècie, lloc general (sense coordenades sensibles), data, font, criteri i si cada pressió ha incrementat només el comptador corresponent. Si useu fitxes, etiqueteu el registre com a simulat.
+Probad cada botón tres veces, agitad la placa para consultar los dos totales y comparadlos con un recuento manual en papel. Haced una prueba con cero, una observación y una observación repetida; decidid cómo evitar contar dos veces el mismo indicio. Anotad especie, lugar general (sin coordenadas sensibles), fecha, fuente, criterio y si cada pulsación ha incrementado solo el contador correspondiente. Si usáis fichas, etiquetad el registro como simulado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu les classificacions entre equips i reviseu una descripció ambigua. Diferencieu el nombre registrat de la presència real de l’espècie.
+Comparad las clasificaciones entre equipos y revisad una descripción ambigua. Diferenciad el número registrado de la presencia real de la especie.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** clau, registre i font consultada. No publiqueu ubicacions sensibles ni presenteu el recompte escolar com un cens de biodiversitat.
+**Evidencia:** clave, registro y fuente consultada. No publiquéis ubicaciones sensibles ni presentéis el recuento escolar como un censo de biodiversidad.
 
-### **Alerta de protecció del bosc (Anti-poaching collar).**
+### **Alerta de protección del bosque (Anti-poaching collar).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-La proposta oficial parteix de la caça furtiva i planteja explorar com la tecnologia podria ajudar a protegir espècies. Consulteu una font de conservació i distingiu tres coses: què afirma la font, quines dades desconeixem i quina part es podria representar a l’aula sense acostar-se a un animal. No suposeu que hi ha caça furtiva al vostre municipi. En una història fictícia d’una reserva, formuleu la pregunta: «Com podem avisar una persona responsable que s’ha activat un senyal de prova, sense afirmar que hem detectat cap perill?»
+La propuesta oficial parte de la caza furtiva y plantea explorar cómo la tecnología podría ayudar a proteger especies. Consultad una fuente de conservación y distinguid tres cosas: qué afirma la fuente, qué datos desconocemos y qué parte se podría representar en el aula sin acercarse a un animal. No supongáis que hay caza furtiva en vuestro municipio. En una historia ficticia de una reserva, formulad la pregunta: «¿Cómo podemos avisar a una persona responsable de que se ha activado una señal de prueba, sin afirmar que hemos detectado ningún peligro?»
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Feu una maqueta seca amb una silueta plana d’animal de cartó, una tira de paper al seu voltant —sense posar-la a cap ésser viu— i dues micro:bit: emissora i estació receptora. El botó A serà l’únic activador manual de la prova; la placa no incorpora un sensor que detecte caça furtiva. En MakeCode, programeu `radio.setGroup(42)` en totes dues plaques, envieu `PROVA-ALERTA` en prémer A i feu que la receptora mostre un símbol només quan rep exactament eixe missatge. El text té menys de 19 caràcters, límit de `radio.sendString`. La ràdio funciona com un canal compartit: el mateix grup permet comunicar-se, però no xifra ni autentica el missatge.
+Haced una maqueta seca con una silueta plana de animal de cartón, una tira de papel alrededor —sin ponerla a ningún ser vivo— y dos micro:bit: emisora y estación receptora. El botón A será el único activador manual de la prueba; la placa no incorpora un sensor que detecte caza furtiva. En MakeCode, programad `radio.setGroup(42)` en ambas placas, enviad `PROVA-ALERTA` al pulsar A y haced que la receptora muestre un símbolo solo cuando reciba exactamente ese mensaje. El texto tiene menos de 19 caracteres, límite de `radio.sendString`. La radio funciona como un canal compartido: el mismo grupo permite comunicarse, pero no cifra ni autentica el mensaje.
 
 ```javascript
 radio.setGroup(42)
@@ -106,91 +106,91 @@ radio.onReceivedString(function (message) {
 })
 ```
 
-![Dues plaques micro:bit de la dotació es comuniquen per ràdio entre una estació de cartó i una taula de control; al fons hi ha un mapa esquemàtic i una silueta de fauna, sense cap dispositiu sobre l’animal.](../../_assets/situacions/sa-mb-radio-estacio-fauna-v2.webp)
+![Dos placas micro:bit de la dotación se comunican por radio entre una estación de cartón y una mesa de control; al fondo hay un mapa esquemático y una silueta de fauna, sin ningún dispositivo sobre el animal.](../../_assets/situacions/sa-mb-radio-estacio-fauna-v2.webp)
 
-_És una maqueta escolar de comunicació activada manualment: no es col·loca cap dispositiu sobre la fauna i el sistema no detecta animals ni incidents._
+_Es una maqueta escolar de comunicación activada manualmente: no se coloca ningún dispositivo sobre la fauna y el sistema no detecta animales ni incidentes._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Executeu tres intents per cas i registreu si la placa emissora envia, si la receptora mostra l’acceptació o el rebuig i quina condició heu canviat. Proveu: missatge correcte i grup igual; missatge desconegut amb el grup igual; missatge correcte amb un grup diferent; dos enviaments seguits; i cap pressió de botó. Anoteu «sense missatge rebut» quan no s’activa l’esdeveniment de recepció: no inventeu un temps de resposta ni interpreteu el silenci com a prova que tot està bé. Compareu els resultats amb una taula de predicció i observació.
+Ejecutad tres intentos por caso y registrad si la placa emisora envía, si la receptora muestra la aceptación o el rechazo y qué condición habéis cambiado. Probad: mensaje correcto y grupo igual; mensaje desconocido con el grupo igual; mensaje correcto con un grupo diferente; dos envíos seguidos; y ninguna pulsación de botón. Anotad «sin mensaje recibido» cuando no se activa el evento de recepción: no inventéis un tiempo de respuesta ni interpretéis el silencio como prueba de que todo está bien. Comparad los resultados con una tabla de predicción y observación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una sola condició cada vegada i depureu primer el cas de grups diferents; després, torneu al mateix grup i investigueu els missatges desconeguts i repetits. Afegiu una resposta visual clara per a «avís de prova rebut» i una altra per a «missatge no reconegut». La ràdio envia missatges als dispositius del mateix grup, però aquesta activitat no implementa confirmació de recepció garantida, xifratge ni control d’identitat. Per això, qualsevol avís en el relat requeriria revisió humana i una via de comunicació validada; la maqueta mai no ordena una intervenció.
+Cambiad una sola condición cada vez y depurad primero el caso de grupos diferentes; después, volved al mismo grupo e investigad los mensajes desconocidos y repetidos. Añadid una respuesta visual clara para «aviso de prueba recibido» y otra para «mensaje no reconocido». La radio envía mensajes a los dispositivos del mismo grupo, pero esta actividad no implementa confirmación de recepción garantizada, cifrado ni control de identidad. Por eso, cualquier aviso en el relato requeriría revisión humana y una vía de comunicación validada; la maqueta nunca ordena una intervención.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidències:** diagrama emissor–canal–receptor, programa amb el grup compartit, taula dels cinc casos amb tres repeticions i una explicació d’un límit tècnic i un límit ètic. La proposta adapta el repte oficial de crear una alarma sense reproduir-ne els materials; les històries, la maqueta i el codi són propis. El prototip només comunica una ordre manual de prova: no detecta caça, tala ni moviment, no localitza fauna i no garanteix que cada missatge arribe. No poseu dispositius a cap animal. [La lliçó oficial Anti-poaching collar](https://microbit.org/teach/lessons/protecting-animals-poaching/) presenta un repte de disseny amb ràdio per a alumnat de 7–11 anys; l’adaptació manté aquest focus i canvia el desplegament animal per una simulació escolar segura. Com a referència tècnica complementària, la guia oficial [Investigating biodiversity](https://microbit.org/teach/playground-survey/investigating-biodiversity/) mostra dos comptadors amb variables, botons A/B i una consulta separada dels totals; ací s’adapta aquesta mecànica per a dos comptadors etiquetats per l’equip, sense atribuir-la al codi de la lliçó original.
+**Evidencias:** diagrama emisor–canal–receptor, programa con el grupo compartido, tabla de los cinco casos con tres repeticiones y una explicación de un límite técnico y un límite ético. La propuesta adapta el reto oficial de crear una alarma sin reproducir sus materiales; las historias, la maqueta y el código son propios. El prototipo solo comunica una orden manual de prueba: no detecta caza, tala ni movimiento, no localiza fauna y no garantiza que cada mensaje llegue. No pongáis dispositivos en ningún animal. [La lección oficial Anti-poaching collar](https://microbit.org/teach/lessons/protecting-animals-poaching/) presenta un reto de diseño con radio para alumnado de 7–11 años; la adaptación mantiene este enfoque y cambia el despliegue animal por una simulación escolar segura. Como referencia técnica complementaria, la guía oficial [Investigating biodiversity](https://microbit.org/teach/playground-survey/investigating-biodiversity/) muestra dos contadores con variables, botones A/B y una consulta separada de los totales; aquí se adapta esta mecánica para dos contadores etiquetados por el equipo, sin atribuirla al código de la lección original.
 
-## 🌊 Repte 2 · Criatures marines
+## 🌊 Reto 2 · Criaturas marinas
 
 Adapta [Saving sea creatures](https://microbit.org/teach/lessons/sea-creatures/):
 
-### **Xarxes més selectives (Light-up fishing nets).**
+### **Redes más selectivas (Light-up fishing nets).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Llegiu la descripció oficial del repte i definiu *captura accidental* amb un exemple verificat: una xarxa captura una espècie diferent de la que es volia pescar. Situeu el cas en una llotja o port valencià fictici, sense atribuir-lo a una confraria concreta. En una graella, separeu què sabem per la font, què és una pregunta i què voldríem provar amb una maqueta. Pregunta guia: «Quin senyal podria mostrar una xarxa de prova quan la llum ambiental baixa?»
+Leed la descripción oficial del reto y definid *captura accidental* con un ejemplo verificado: una red captura una especie distinta de la que se quería pescar. Situad el caso en una lonja o puerto valenciano ficticio, sin atribuirlo a una cofradía concreta. En una cuadrícula, separad qué sabemos por la fuente, qué es una pregunta y qué querríamos probar con una maqueta. Pregunta guía: «¿Qué señal podría mostrar una red de prueba cuando baja la luz ambiental?»
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construïu una xarxa de paper o cordill damunt d’una safata seca i feu servir fitxes planes per a representar espècies; no hi poseu animals vius ni acerqueu la placa a l’aigua. Programeu la lectura ambiental amb `input.lightLevel()` —la matriu LED fa també de sensor de llum— i comenceu amb el llindar oficial `50`: si la lectura és menor, mostreu un patró de LEDs; altrament, esborreu la pantalla. Llegiu la llum abans d’encendre el patró, perquè la mateixa matriu fa també d’entrada i d’eixida. Cada grup pot cobrir parcialment la placa amb una cartolina per simular menys llum, sense embolicar-la ni tapar-la completament.
+Construid una red de papel o cordel sobre una bandeja seca y usad fichas planas para representar especies; no pongáis animales vivos ni acerquéis la placa al agua. Programad la lectura ambiental con `input.lightLevel()` —la matriz LED hace también de sensor de luz— y empezad con el umbral oficial `50`: si la lectura es menor, mostrad un patrón de LED; de lo contrario, borrad la pantalla. Leed la luz antes de encender el patrón, porque la misma matriz hace también de entrada y de salida. Cada grupo puede cubrir parcialmente la placa con una cartulina para simular menos luz, sin envolverla ni taparla por completo.
 
-![Una micro:bit de la dotació mostra un senyal LED al costat d’una maqueta seca de xarxa amb fitxes de peix, tortuga i au, i una cartolina que simula ombra.](../../_assets/situacions/sa-mb-xarxes-llum-prototip.webp)
+![Una micro:bit de la dotación muestra una señal LED junto a una maqueta seca de red con fichas de pez, tortuga y ave, y una cartulina que simula sombra.](../../_assets/situacions/sa-mb-xarxes-llum-prototip.webp)
 
-_És un model de taula amb fitxes planes: no prova ni demostra l’eficàcia d’una xarxa real._
+_Es un modelo de mesa con fichas planas: no prueba ni demuestra la eficacia de una red real._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu almenys cinc proves en cada condició: placa descoberta, parcialment ombrejada i coberta per la cartolina. Registreu la lectura `0–255`, si és `< 50`, `= 50` o `> 50`, el patró esperat, el resultat observat i si la pantalla s’ha esborrat quan tocava. Repetiu una prova pròxima al llindar i anoteu si la llum de l’aula fa variar la lectura. Si hi ha micro:bit V2 o un altaveu extern disponible, proveu el so com una eixida separada i opcional; manteniu-lo silenciat per defecte i no l’activeu prop d’oïdes sensibles. V1 sense altaveu conserva el repte amb els LEDs.
+Haced al menos cinco pruebas en cada condición: placa descubierta, parcialmente sombreada y cubierta por la cartulina. Registrad la lectura `0–255`, si es `< 50`, `= 50` o `> 50`, el patrón esperado, el resultado observado y si la pantalla se ha borrado cuando tocaba. Repetid una prueba próxima al umbral y anotad si la luz del aula hace variar la lectura. Si hay micro:bit V2 o un altavoz externo disponible, probad el sonido como una salida separada y opcional; mantenedlo silenciado por defecto y no lo activéis cerca de oídos sensibles. V1 sin altavoz conserva el reto con los LED.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu les proves entre equips i canvieu només una variable cada vegada: llindar, duració del senyal o patró LED. Si `50` activa el patró massa sovint o massa poques vegades en la llum del centre, proveu un valor nou i justifiqueu-lo amb les lectures, no amb una suposada profunditat marina exacta. El so que mostra el tutorial oficial és una idea de prototip; la classe no pot inferir d’aquesta maqueta que les llums o el so eviten captures reals. Manteniu una versió sense so i assegureu que el senyal visual es pot distingir sense color.
+Comparad las pruebas entre equipos y cambiad solo una variable cada vez: umbral, duración de la señal o patrón LED. Si `50` activa el patrón demasiado a menudo o demasiado pocas veces con la luz del centro, probad un valor nuevo y justificadlo con las lecturas, no con una supuesta profundidad marina exacta. El sonido que muestra el tutorial oficial es una idea de prototipo; la clase no puede inferir de esta maqueta que las luces o el sonido evitan capturas reales. Mantened una versión sin sonido y asegurad que la señal visual se puede distinguir sin color.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidències:** maqueta seca, programa amb la condició, taula de cinc o més proves, font consultada i una comparació abans/després del canvi triat. Expliqueu què mesura la micro:bit, com es decideix mostrar o apagar el patró i quin resultat continua sense poder afirmar-se. No useu animals ni proveu res dins de la mar. El prototip no està validat per a pesca ni acredita que una llum o un so protegisquen fauna.
+**Evidencias:** maqueta seca, programa con la condición, tabla de cinco o más pruebas, fuente consultada y una comparación antes/después del cambio elegido. Explicad qué mide la micro:bit, cómo se decide mostrar o apagar el patrón y qué resultado sigue sin poder afirmarse. No uséis animales ni probéis nada dentro del mar. El prototipo no está validado para pesca ni acredita que una luz o un sonido protejan fauna.
 
-### **Platja segura per a tortugues (Sea safe turtles).**
+### **Playa segura para tortugas (Sea safe turtles).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Llegiu la proposta oficial: les cries de tortuga utilitzen la llum de la lluna per orientar-se cap a la mar, i els llums alts o brillants poden desorientar-les. Consulteu una font de conservació i anoteu quina afirmació prové de la font i quina és una pregunta del grup. Situeu el repte en una maqueta fictícia de camí costaner valencià, sense atribuir cap problema concret a una platja local. Predigueu quin senyal baix i discret podria orientar caminants sense imitar una lluna intensa.
+Leed la propuesta oficial: las crías de tortuga utilizan la luz de la luna para orientarse hacia el mar, y las luces altas o brillantes pueden desorientarlas. Consultad una fuente de conservación y anotad qué afirmación proviene de la fuente y cuál es una pregunta del grupo. Situad el reto en una maqueta ficticia de camino costero valenciano, sin atribuir ningún problema concreto a una playa local. Predecid qué señal baja y discreta podría orientar a quienes caminan sin imitar una luna intensa.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En una maqueta seca, col·loqueu la micro:bit a nivell del camí, al costat d’una fitxa que represente una persona caminant. Llegiu la llum ambiental amb la matriu LED i useu `input.lightLevel() < 100` com a llindar inicial oficial: en foscor, mostreu una icona pròpia de tortuga en la matriu; amb llum igual o superior a 100, esborreu-la. Preneu la lectura abans de mostrar la icona i repetiu el cicle cada dos segons, com en el projecte de referència. No afegiu una llum alta, pampallugues ni una llanterna real; la pantalla és un indicador de maqueta, no un llum de camí homologat.
+En una maqueta seca, colocad la micro:bit a la altura del camino, junto a una ficha que represente una persona caminando. Leed la luz ambiental con la matriz LED y usad `input.lightLevel() < 100` como umbral inicial oficial: en oscuridad, mostrad un icono propio de tortuga en la matriz; con luz igual o superior a 100, borradlo. Tomad la lectura antes de mostrar el icono y repetid el ciclo cada dos segundos, como en el proyecto de referencia. No añadáis una luz alta, parpadeos ni una linterna real; la pantalla es un indicador de maqueta, no una luz de camino homologada.
 
-![Una micro:bit de la dotació mostra una icona roja de tortuga al costat d’un marcador baix en una maqueta seca de camí costaner.](../../_assets/situacions/sa-mb-tortugues-platja-microbit.webp)
+![Una micro:bit de la dotación muestra un icono rojo de tortuga junto a un marcador bajo en una maqueta seca de camino costero.](../../_assets/situacions/sa-mb-tortugues-platja-microbit.webp)
 
-_La imatge representa un prototip de taula; no és un dispositiu desplegable ni una llum validada per a platges._
+_La imagen representa un prototipo de mesa; no es un dispositivo desplegable ni una luz validada para playas._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu cinc lectures o més en cadascuna de tres condicions: placa descoberta, ombrejada i amb llum intermèdia. Anoteu `0–255`, si la lectura queda `< 100`, `= 100` o `> 100`, quin patró s’espera i si la pantalla queda fosca quan toca. Mostreu la icona a una altra parella i pregunteu què interpreta sense donar-li la resposta; registreu si veu la tortuga i si entén que és un símbol de maqueta, no una instrucció de caminar per una platja real.
+Haced cinco lecturas o más en cada una de tres condiciones: placa descubierta, sombreada y con luz intermedia. Anotad `0–255`, si la lectura queda `< 100`, `= 100` o `> 100`, qué patrón se espera y si la pantalla queda oscura cuando toca. Mostrad el icono a otra pareja y preguntad qué interpreta sin darle la respuesta; registrad si ve la tortuga y si entiende que es un símbolo de maqueta, no una instrucción de caminar por una playa real.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si l’icona no s’entén, canvieu-ne un detall i torneu-la a provar; si la lectura activa la pantalla massa prompte o tard en la llum de l’aula, canvieu només el llindar i repetiu els casos propers al valor nou. Compareu un patró estàtic amb una opció sense llum, i justifiqueu quin comunica millor amb menys eixida lluminosa. No compareu la intensitat LED de la placa amb una lluminària real ni afirmeu que una llum roja concreta és segura per a les tortugues: aquesta propietat no s’ha provat en la maqueta.
+Si el icono no se entiende, cambiad un detalle y volved a probarlo; si la lectura activa la pantalla demasiado pronto o tarde con la luz del aula, cambiad solo el umbral y repetid los casos próximos al valor nuevo. Comparad un patrón estático con una opción sin luz, y justificad cuál comunica mejor con menos salida luminosa. No comparéis la intensidad LED de la placa con una luminaria real ni afirméis que una luz roja concreta es segura para las tortugas: esta propiedad no se ha probado en la maqueta.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidències:** programa amb selecció `< 100`, icona pròpia, taula de lectures i una decisió argumentada entre patró, llum mínima o absència de llum. Expliqueu què mesura la placa, com es mostra o s’esborra la icona i quina afirmació de protecció no podem fer. El projecte és un prototip educatiu inspirat en la font, no una llum que protegisca tortugues ni una autorització per a intervenir en una platja.
+**Evidencias:** programa con selección `< 100`, icono propio, tabla de lecturas y una decisión argumentada entre patrón, luz mínima o ausencia de luz. Explicad qué mide la placa, cómo se muestra o se borra el icono y qué afirmación de protección no podemos hacer. El proyecto es un prototipo educativo inspirado en la fuente, no una luz que proteja tortugas ni una autorización para intervenir en una playa.
 
-## 🏃 Repte 3 · Activitat amb autonomia
+## 🏃 Reto 3 · Actividad con autonomía
 
-Adapta [Being active](https://microbit.org/teach/lessons/being-active/) amb tres activitats:
+Adapta [Being active](https://microbit.org/teach/lessons/being-active/) con tres actividades:
 
-### **Recordatori triat per l’usuari (Fitness friend).**
+### **Recordatorio elegido por el usuario (Fitness friend).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-La proposta oficial demana dissenyar i provar un dispositiu wearable que recorde fer activitat física a intervals regulars. Adapteu la idea a una pausa voluntària durant una estona de treball: un avís pot oferir una opció de moviment suau, estirament assegut o descans, però no dir què ha de fer cada persona. Llegiu la descripció oficial i feu una llista de decisions de disseny: qui activa el recordatori, com el cancel·la, quin missatge apareix i quines dades no cal registrar. Predigueu què ha de passar si ningú l’activa o si la persona prem el botó d’aturada.
+La propuesta oficial pide diseñar y probar un dispositivo wearable que recuerde hacer actividad física a intervalos regulares. Adaptad la idea a una pausa voluntaria durante un rato de trabajo: un aviso puede ofrecer una opción de movimiento suave, estiramiento sentado o descanso, pero no decir qué debe hacer cada persona. Leed la descripción oficial y haced una lista de decisiones de diseño: quién activa el recordatorio, cómo lo cancela, qué mensaje aparece y qué datos no hace falta registrar. Predecid qué debe pasar si nadie lo activa o si la persona pulsa el botón de parada.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Abans de programar, escriviu l’algorisme: inactiu en iniciar; A activa el temporitzador; quan transcorre l’interval de prova, mostra una icona breu; B l’atura i esborra la pantalla. Useu una placa sobre una taula o un suport de cartó com el de la imatge, no cal portar-la al cos. El valor de 10 segons del codi només facilita provar-lo a classe; cada usuari pot canviar l’interval i l’avís no prescriu exercici.
+Antes de programar, escribid el algoritmo: inactivo al iniciar; A activa el temporizador; cuando transcurre el intervalo de prueba, muestra un icono breve; B lo detiene y borra la pantalla. Usad una placa sobre una mesa o un soporte de cartón como el de la imagen, no hace falta llevarla al cuerpo. El valor de 10 segundos del código solo facilita probarlo en clase; cada usuario puede cambiar el intervalo y el aviso no prescribe ejercicio.
 
 ```javascript
 let enabled = false
@@ -217,31 +217,31 @@ basic.forever(function () {
 })
 ```
 
-![Una micro:bit de la dotació en un suport ample de cartó amb botons visuals d’inici i aturada i una seqüència de pictogrames que ofereix una pausa o un estirament assegut.](../../_assets/situacions/sa-mb-fitness-friend-control.webp)
+![Una micro:bit de la dotación en un soporte amplio de cartón con botones visuales de inicio y parada y una secuencia de pictogramas que ofrece una pausa o un estiramiento sentado.](../../_assets/situacions/sa-mb-fitness-friend-control.webp)
 
-_Prototip de taula amb inici i aturada voluntaris; no mesura l’activitat ni recomana una rutina de salut._
+_Prototipo de mesa con inicio y parada voluntarios; no mide la actividad ni recomienda una rutina de salud._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Prepareu una taula de prova amb estat inicial, entrada, temps simulat, resultat esperat i resultat observat. Comproveu almenys: deixar el dispositiu inactiu; prémer A i esperar menys de 10 segons; esperar fins que aparega l’avís; prémer B abans de l’avís; prémer B després de l’avís; i tornar a prémer A després d’aturar-lo. Repetiu cada cas tres vegades i registreu si la pantalla queda apagada quan el sistema està inactiu. Demaneu a una altra parella que interprete el missatge, sense demanar-li que faça cap exercici.
+Preparad una tabla de prueba con estado inicial, entrada, tiempo simulado, resultado esperado y resultado observado. Comprobad al menos: dejar el dispositivo inactivo; pulsar A y esperar menos de 10 segundos; esperar hasta que aparezca el aviso; pulsar B antes del aviso; pulsar B después del aviso; y volver a pulsar A después de detenerlo. Repetid cada caso tres veces y registrad si la pantalla queda apagada cuando el sistema está inactivo. Pedid a otra pareja que interprete el mensaje, sin pedirle que haga ningún ejercicio.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si el missatge sembla una ordre, canvieu-lo per una invitació que incloga l’opció «ara no». Proveu un interval diferent i calculeu quant tarda cada variant, però no compareu persones ni registres d’activitat. Depureu qualsevol cas en què B no ature el programa; reviseu també que reiniciar amb A comence un interval nou i que el recordatori no s’acumule quan el dispositiu estava aturat. El suport físic ha de deixar els botons accessibles i no atrapar la placa ni dificultar desconnectar la bateria.
+Si el mensaje parece una orden, cambiadlo por una invitación que incluya la opción «ahora no». Probad un intervalo diferente y calculad cuánto tarda cada variante, pero no comparéis personas ni registros de actividad. Depurad cualquier caso en el que B no detenga el programa; revisad también que reiniciar con A empiece un intervalo nuevo y que el recordatorio no se acumule cuando el dispositivo estaba detenido. El soporte físico debe dejar los botones accesibles y no atrapar la placa ni dificultar desconectar la batería.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidències:** algorisme anotat, programa amb temporitzador i control d’aturada, prototip de taula, resultats dels sis casos i una revisió del missatge després de rebre feedback. La font oficial tracta de wearables i recordatoris regulars; aquesta versió local transforma l’avís en una invitació cancel·lable amb alternatives equivalents. No mesura pols, moviment ni rendiment, no desa dades personals, no prescriu activitat física i no avalua qui participa. Consulteu les necessitats d’accessibilitat amb la persona usuària i manteniu sempre l’opció de no començar o parar. [Fitness friend](https://microbit.org/teach/lessons/being-active/) és la primera activitat de la unitat oficial *Being active*.
+**Evidencias:** algoritmo anotado, programa con temporizador y control de parada, prototipo de mesa, resultados de los seis casos y una revisión del mensaje tras recibir feedback. La fuente oficial trata de wearables y recordatorios regulares; esta versión local transforma el aviso en una invitación cancelable con alternativas equivalentes. No mide pulso, movimiento ni rendimiento, no guarda datos personales, no prescribe actividad física y no evalúa a quien participa. Consultad las necesidades de accesibilidad con la persona usuaria y mantened siempre la opción de no empezar o parar. [Fitness friend](https://microbit.org/teach/lessons/being-active/) es la primera actividad de la unidad oficial *Being active*.
 
-### **Mesura crítica de pols (Heart rate monitor).**
+### **Medición crítica del pulso (Heart rate monitor).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-La fitxa oficial planteja observar com activitats diferents poden afectar la freqüència cardíaca i dissenyar, provar i avaluar un prototip amb micro:bit. Convertiu el repte en una investigació de sistemes: quina entrada detecta el dispositiu, com filtra el senyal, quin càlcul fa i què mostra? Separeu «comptar esdeveniments d’una vibració de prova» de «mesurar el pols d’una persona». La micro:bit no incorpora un sensor cardíac; el seu acceleròmetre registra moviment. Predigueu quines vibracions artificials podrien ser confoses amb un batec i quines conclusions serien injustificades.
+La ficha oficial plantea observar cómo actividades diferentes pueden afectar la frecuencia cardíaca y diseñar, probar y evaluar un prototipo con micro:bit. Convertid el reto en una investigación de sistemas: ¿qué entrada detecta el dispositivo, cómo filtra la señal, qué cálculo hace y qué muestra? Separad «contar eventos de una vibración de prueba» de «medir el pulso de una persona». La micro:bit no incorpora un sensor cardíaco; su acelerómetro registra movimiento. Predecid qué vibraciones artificiales podrían confundirse con un latido y qué conclusiones serían injustificadas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Fixeu la placa en un suport estable de cartó sobre la taula i definiu un protocol de senyal conegut: primer 10 segons sense tocar res, després una sèrie de tocs lleugers al costat del suport i finalment silenci. No col·loqueu la placa sobre el cos ni colpegeu els components. Registreu l’acceleració en repòs i durant els tocs; trieu un llindar entre les dues distribucions només si les mesures se separen prou. Si se solapen, anoteu que el sensor no discrimina el senyal amb fiabilitat. L’algorisme de mostra compta només el flanc de pujada, espera que el senyal baixe del llindar abans de tornar a comptar i converteix els esdeveniments d’una finestra de 10 segons en esdeveniments per minut (`recompte × 6`).
+Fijad la placa en un soporte estable de cartón sobre la mesa y definid un protocolo de señal conocida: primero 10 segundos sin tocar nada, después una serie de toques ligeros junto al soporte y finalmente silencio. No coloquéis la placa sobre el cuerpo ni golpeéis los componentes. Registrad la aceleración en reposo y durante los toques; elegid un umbral entre las dos distribuciones solo si las medidas se separan lo suficiente. Si se solapan, anotad que el sensor no discrimina la señal con fiabilidad. El algoritmo de muestra cuenta solo el flanco de subida, espera que la señal baje del umbral antes de volver a contar y convierte los eventos de una ventana de 10 segundos en eventos por minuto (`recuento × 6`).
 
 ```javascript
 let threshold = 1050 // valor inicial de prova; calibreu-lo amb el vostre muntatge
@@ -267,31 +267,31 @@ basic.forever(function () {
 })
 ```
 
-![Una micro:bit de la dotació, fixa en un suport de cartó, registra tocs simulats a la taula mentre la pantalla LED i un full mostren un patró d’acceleració de prova.](../../_assets/situacions/sa-mb-heart-rate-accelerometre.webp)
+![Una micro:bit de la dotación, fija en un soporte de cartón, registra toques simulados en la mesa mientras la pantalla LED y una hoja muestran un patrón de aceleración de prueba.](../../_assets/situacions/sa-mb-heart-rate-accelerometre.webp)
 
-_Prova de moviment sobre una taula. El nombre mostrat és una extrapolació de tocs simulats, no una freqüència cardíaca._
+_Prueba de movimiento sobre una mesa. El número mostrado es una extrapolación de toques simulados, no una frecuencia cardíaca._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Prepareu una matriu de proves amb cinc situacions: muntatge quiet durant 10 segons; 10 tocs lents coneguts; 10 tocs més ràpids; una sacsejada no periòdica; i una segona execució quieta després de moure el suport. Feu tres repeticions per cas i registreu el llindar, el nombre de deteccions, l’esperat, el resultat i els falsos positius/negatius. Compareu el recompte amb els tocs previstos i calculeu l’error absolut del model; escriviu el resultat com a «esdeveniments simulats per minut», mai com a `bpm`. No mesureu el pols de companys, no feu l’activitat després d’exercici ni deseu dades biomètriques.
+Preparad una matriz de pruebas con cinco situaciones: montaje quieto durante 10 segundos; 10 toques lentos conocidos; 10 toques más rápidos; una sacudida no periódica; y una segunda ejecución quieta después de mover el soporte. Haced tres repeticiones por caso y registrad el umbral, el número de detecciones, lo esperado, el resultado y los falsos positivos/negativos. Comparad el recuento con los toques previstos y calculad el error absoluto del modelo; escribid el resultado como «eventos simulados por minuto», nunca como `bpm`. No midáis el pulso de compañeros, no hagáis la actividad después de ejercicio ni guardéis datos biométricos.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu només el llindar o el temps de bloqueig entre deteccions, no tots dos alhora, i repetiu les proves lenta, ràpida i de sacsejada. Analitzeu el compromís: un llindar baix pot comptar soroll; un llindar alt pot perdre tocs menuts. Si els dos tipus de senyal continuen confonent-se, canvieu la conclusió i expliqueu que la maqueta no compleix un criteri de monitoratge. Com a exercici de dades, compareu sèries fictícies o una taula pública seleccionada pel docent, sempre amb origen identificat; distingiu correlació, mostra i inferència, sense deduir salut individual.
+Cambiad solo el umbral o el tiempo de bloqueo entre detecciones, no ambos a la vez, y repetid las pruebas lenta, rápida y de sacudida. Analizad el compromiso: un umbral bajo puede contar ruido; un umbral alto puede perder toques pequeños. Si los dos tipos de señal continúan confundiéndose, cambiad la conclusión y explicad que la maqueta no cumple un criterio de monitorización. Como ejercicio de datos, comparad series ficticias o una tabla pública seleccionada por el docente, siempre con origen identificado; distinguid correlación, muestra e inferencia, sin deducir salud individual.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidències:** diagrama entrada–procés–eixida, programa amb llindar calibrat, registre de cinc situacions amb tres repeticions i una decisió sobre si el model passa els criteris de prova. La proposta oficial demana explorar el cor i prototipar un monitor; aquesta adaptació manté el treball d’acceleròmetre, càlcul i display com a banc de proves amb vibracions simulades. L’IET descriu, en un recurs tècnic complementari per a 11–14 anys, un prototip d’acceleròmetre, pantalla LED i càlcul aproximat, però cap de les dues fitxes converteix la placa en instrument clínic. El muntatge d’aula no mesura pols real, no avalua l’efecte de l’exercici en l’alumnat i no permet diagnòstics; no el porteu al cos ni publiqueu dades de salut. [Heart rate monitor](https://microbit.org/teach/lessons/heart-rate-monitor/) és la segona activitat oficial de *Being active*; el recurs complementari de l’[IET](https://education.theiet.org/secondary/teaching-resources/design-a-personal-heart-monitoring-system-microbit) detalla el flux de disseny amb acceleròmetre.
+**Evidencias:** diagrama entrada–proceso–salida, programa con umbral calibrado, registro de cinco situaciones con tres repeticiones y una decisión sobre si el modelo pasa los criterios de prueba. La propuesta oficial pide explorar el corazón y prototipar un monitor; esta adaptación mantiene el trabajo de acelerómetro, cálculo y display como banco de pruebas con vibraciones simuladas. La IET describe, en un recurso técnico complementario para 11–14 años, un prototipo de acelerómetro, pantalla LED y cálculo aproximado, pero ninguna de las dos fichas convierte la placa en instrumento clínico. El montaje de aula no mide pulso real, no evalúa el efecto del ejercicio en el alumnado y no permite diagnósticos; no lo llevéis al cuerpo ni publiquéis datos de salud. [Heart rate monitor](https://microbit.org/teach/lessons/heart-rate-monitor/) es la segunda actividad oficial de *Being active*; el recurso complementario de la [IET](https://education.theiet.org/secondary/teaching-resources/design-a-personal-heart-monitoring-system-microbit) detalla el flujo de diseño con acelerómetro.
 
-### **Comptador d’un trajecte (Walking for water).**
+### **Contador de un trayecto (Walking for water).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Partiu de l’accés quotidià a l’aigua potable al centre i contrasteu-lo amb una font pública sobre infants que han de fer trajectes per a obtindre’n. La situació oficial *Walking for water* (7–11 anys) proposa dissenyar un comptador de passos; no convertiu eixa experiència en una cursa ni la compareu com si una ruta escolar valenciana fora equivalent. Pregunteu què pot mostrar un comptador i què deixa fora: disponibilitat, càrrega, terreny, temps i condicions de vida.
+Partid del acceso cotidiano al agua potable en el centro y contrastadlo con una fuente pública sobre niños y niñas que tienen que hacer trayectos para obtenerla. La situación oficial *Walking for water* (7–11 años) propone diseñar un contador de pasos; no convirtáis esa experiencia en una carrera ni la comparéis como si una ruta escolar valenciana fuera equivalente. Preguntad qué puede mostrar un contador y qué deja fuera: disponibilidad, carga, terreno, tiempo y condiciones de vida.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construïu un comptador de polsos simulats amb la micro:bit. Cada pressió d’A representa una fitxa que avança una casella en un itinerari de paper entre l’aula i un punt d’aigua del centre; B reinicia el total. Aquest model permet practicar la variable i l’esdeveniment sense portar la placa al cos, caminar ni carregar aigua. No l’anomeneu mesurador de passos reals: el programa no llig el moviment de la persona.
+Construid un contador de pulsos simulados con la micro:bit. Cada pulsación de A representa una ficha que avanza una casilla en un itinerario de papel entre el aula y un punto de agua del centro; B reinicia el total. Este modelo permite practicar la variable y el evento sin llevar la placa al cuerpo, caminar ni cargar agua. No lo llaméis medidor de pasos reales: el programa no lee el movimiento de la persona.
 
 ```javascript
 let polsosSimulats = 0
@@ -307,35 +307,35 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-![Una micro:bit de la dotació al costat d’un itinerari de paper amb fitxes de polsos i gotes d’aigua, preparat com a simulació de taula.](../../_assets/situacions/sa-mb-comptador-trajecte.webp)
+![Una micro:bit de la dotación junto a un itinerario de papel con fichas de pulsos y gotas de agua, preparado como simulación de mesa.](../../_assets/situacions/sa-mb-comptador-trajecte.webp)
 
-_Cada pols és una entrada manual de prova; no representa els passos ni l’experiència real de cap persona._
+_Cada pulso es una entrada manual de prueba; no representa los pasos ni la experiencia real de ninguna persona._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Executeu quatre sèries de 0, 1, 5 i 10 polsos. Una persona prem A, una altra mou una fitxa per cada pressió i una tercera anota el recompte manual; després, consulteu el total amb B i compareu-lo. Repetiu una sèrie amb dues pressions seguides i comproveu que el programa suma dues entrades, no una distància ni un temps. Registreu cada resultat com a «polsos simulats».
+Ejecutad cuatro series de 0, 1, 5 y 10 pulsos. Una persona pulsa A, otra mueve una ficha por cada pulsación y una tercera anota el recuento manual; después, consultad el total con B y comparadlo. Repetid una serie con dos pulsaciones seguidas y comprobad que el programa suma dos entradas, no una distancia ni un tiempo. Registrad cada resultado como «pulsos simulados».
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu dobles pressions i esborrats, i expliqueu què representa i què no representa cada pols simulat. Compareu el plànol del centre amb la informació de la font sense calcular distàncies o càrregues a partir del model. Connecteu el debat amb l’accés equitatiu a l’aigua potable sense dramatitzar ni representar físicament l’esforç d’altres infants.
+Revisad dobles pulsaciones y borrados, y explicad qué representa y qué no representa cada pulso simulado. Comparad el plano del centro con la información de la fuente sin calcular distancias o cargas a partir del modelo. Conectad el debate con el acceso equitativo al agua potable sin dramatizar ni representar físicamente el esfuerzo de otros niños y niñas.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidències:** codi funcional, quatre sèries de polsos simulats, comparació amb el registre manual, font consultada i una reflexió sobre allò que el comptador no mesura. La proposta adapta l’objectiu oficial de dissenyar un comptador i en canvia l’entrada per una simulació accessible; no afirma que mesure passos reals. No convertiu experiències de pobresa en joc ni feu competicions de distància. [Walking for water](https://microbit.org/teach/lessons/walking-for-water/) és la tercera activitat oficial de *Being active*.
+**Evidencias:** código funcional, cuatro series de pulsos simulados, comparación con el registro manual, fuente consultada y una reflexión sobre lo que el contador no mide. La propuesta adapta el objetivo oficial de diseñar un contador y cambia su entrada por una simulación accesible; no afirma que mida pasos reales. No convirtáis experiencias de pobreza en juego ni hagáis competiciones de distancia. [Walking for water](https://microbit.org/teach/lessons/walking-for-water/) es la tercera actividad oficial de *Being active*.
 
-## 🌙 Repte 4 · Visibilitat i desplaçaments nocturns
+## 🌙 Reto 4 · Visibilidad y desplazamientos nocturnos
 
-Adapta [Night safety](https://microbit.org/teach/lessons/night-safety/) en tres prototips:
+Adapta [Night safety](https://microbit.org/teach/lessons/night-safety/) en tres prototipos:
 
-### **Recordatori de visibilitat (Night sensor).**
+### **Recordatorio de visibilidad (Night sensor).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-El repte oficial demana comprendre els riscos de visibilitat nocturna i dissenyar un *Night sensor* que recorde «Be Safe: Be Seen». Llegiu la descripció de [micro:bit Foundation](https://microbit.org/teach/lessons/night-sensor/) i consulteu una font pública de seguretat viària. En una situació fictícia de camí escolar, distingiu visibilitat, il·luminació i seguretat: un senyal no evita col·lisions ni substitueix infraestructura, supervisió o elements homologats. Acordeu tres criteris observables per al prototip de taula: activar-se amb un llindar acordat, mostrar un símbol fàcil d’identificar i poder comprovar en quines condicions falla.
+El reto oficial pide comprender los riesgos de visibilidad nocturna y diseñar un *Night sensor* que recuerde «Be Safe: Be Seen». Leed la descripción de [micro:bit Foundation](https://microbit.org/teach/lessons/night-sensor/) y consultad una fuente pública de seguridad vial. En una situación ficticia de camino escolar, distinguid visibilidad, iluminación y seguridad: una señal no evita colisiones ni sustituye infraestructura, supervisión o elementos homologados. Acordad tres criterios observables para el prototipo de mesa: activarse con un umbral acordado, mostrar un símbolo fácil de identificar y poder comprobar en qué condiciones falla.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Situeu la micro:bit sobre una maqueta de cartó al costat d’una bossa de paper; feu ombra amb una targeta, mai amb una llanterna potent apuntada als ulls. La lectura [`input.lightLevel()`](https://makecode.microbit.org/reference/input/light-level) usa la matriu LED com a sensor aproximat de 0 a 255, no un sensor de llum separat. En V1 i V2, la placa i la seua orientació poden canviar la lectura; en V2 es pot cobrir la fila superior i obtindre una lectura pròxima a zero ([detall tècnic oficial](https://support.microbit.org/support/solutions/articles/19000024023-how-does-the-light-sensing-feature-on-the-micro-bit-work-)). Buideu la pantalla abans de mesurar i feu una primera lectura d’escalfament, perquè la primera crida pot retornar zero. El llindar `80` d’aquest exemple és una elecció local de partida, que s’ha de calibrar a l’aula; no és una xifra oficial ni una norma de seguretat.
+Situad la micro:bit sobre una maqueta de cartón junto a una bolsa de papel; haced sombra con una tarjeta, nunca con una linterna potente apuntada a los ojos. La lectura [`input.lightLevel()`](https://makecode.microbit.org/reference/input/light-level) usa la matriz LED como sensor aproximado de 0 a 255, no un sensor de luz separado. En V1 y V2, la placa y su orientación pueden cambiar la lectura; en V2 se puede cubrir la fila superior y obtener una lectura próxima a cero ([detalle técnico oficial](https://support.microbit.org/support/solutions/articles/19000024023-how-does-the-light-sensing-feature-on-the-micro-bit-work-)). Vaciad la pantalla antes de medir y haced una primera lectura de calentamiento, porque la primera llamada puede devolver cero. El umbral `80` de este ejemplo es una elección local de partida, que se debe calibrar en el aula; no es una cifra oficial ni una norma de seguridad.
 
 ```javascript
 let llindar = 80
@@ -357,33 +357,33 @@ basic.forever(function () {
 })
 ```
 
-La icona només queda encesa breument després de cada lectura per no mantindre la matriu il·luminada mentre es torna a mesurar. Aquesta seqüència és una demostració de llindar, no una llum portàtil contínua ni un dispositiu per a circular.
+El icono solo queda encendido brevemente después de cada lectura para no mantener la matriz iluminada mientras se vuelve a medir. Esta secuencia es una demostración de umbral, no una luz portátil continua ni un dispositivo para circular.
 
-![Una micro:bit de la dotació mesura la llum sobre la taula al costat d’una bossa de paper i una maqueta de pas de vianants; una targeta crea una ombra controlada.](../../_assets/situacions/sa-mb-night-sensor-maqueta.webp)
+![Una micro:bit de la dotación mide la luz sobre la mesa junto a una bolsa de papel y una maqueta de paso de peatones; una tarjeta crea una sombra controlada.](../../_assets/situacions/sa-mb-night-sensor-maqueta.webp)
 
-_La maqueta permet provar el llindar en condicions controlades; no s’utilitza en cap trajecte real._
+_La maqueta permite probar el umbral en condiciones controladas; no se utiliza en ningún trayecto real._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu cinc lectures en cadascuna de tres condicions repetibles: llum de l’aula, ombra parcial amb cartó i ombra més ampla. Abans de cada intent, deixeu la pantalla apagada, espereu 200 ms i anoteu la lectura, l’estat esperat de la icona i el resultat observat. Afegiu dos casos de frontera: lectura igual al llindar i una pròxima per damunt. Compareu la icona amb una mostra de material reflector sota la mateixa llum; registreu quina es veu millor des de tres costats del model i no confongueu una prova a poca distància amb visibilitat viària.
+Haced cinco lecturas en cada una de tres condiciones repetibles: luz del aula, sombra parcial con cartón y sombra más amplia. Antes de cada intento, dejad la pantalla apagada, esperad 200 ms y anotad la lectura, el estado esperado del icono y el resultado observado. Añadid dos casos de frontera: lectura igual al umbral y una próxima por encima. Comparad el icono con una muestra de material reflectante bajo la misma luz; registrad cuál se ve mejor desde tres lados del modelo y no confundáis una prueba a corta distancia con visibilidad vial.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu només una decisió per iteració: llindar, icona o duració de l’avís. Repetiu els mateixos casos i compareu falses activacions, absència d’avís i facilitat d’interpretació. Si la lectura canvia en girar la placa, documenteu l’orientació i expliqueu que la matriu LED també fa d’eixida. Demaneu a una altra parella que identifique què vol dir el símbol sense donar-li pistes. No proveu el prototip en una persona ni en un desplaçament real.
+Cambiad solo una decisión por iteración: umbral, icono o duración del aviso. Repetid los mismos casos y comparad falsas activaciones, ausencia de aviso y facilidad de interpretación. Si la lectura cambia al girar la placa, documentad la orientación y explicad que la matriz LED también hace de salida. Pedid a otra pareja que identifique qué significa el símbolo sin darle pistas. No probéis el prototipo en una persona ni en un desplazamiento real.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidències:** programa MakeCode, taula de quinze lectures amb condicions i orientació, comparació amb el reflector i una decisió de millora justificada per resultats. Expliqueu almenys dos límits: la lectura de la matriu és aproximada i sensible a la posició; una micro:bit no és un element homologat ni garanteix que una persona siga vista.
+**Evidencias:** programa MakeCode, tabla de quince lecturas con condiciones y orientación, comparación con el reflector y una decisión de mejora justificada por resultados. Explicad al menos dos límites: la lectura de la matriz es aproximada y sensible a la posición; una micro:bit no es un elemento homologado ni garantiza que una persona sea vista.
 
-### **Roda visible en maqueta (Flashing wheels).**
+### **Rueda visible en maqueta (Flashing wheels).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-La lliçó oficial proposa dissenyar, provar i presentar un prototip de llum intermitent per a millorar la visibilitat nocturna d’una persona usuària de cadira de rodes. Llegiu els seus objectius a [Flashing wheels](https://microbit.org/teach/lessons/flashing-wheels/), consulteu criteris de disseny inclusiu i separeu què podem avaluar en una maqueta del que només pot valorar una persona usuària en context real. No demaneu a l’alumnat que simule una discapacitat ni parle en nom de persones amb experiències diferents. Acordeu requisits de prototip: senyal distingible, control d’encesa/apagat accessible, absència de pampallugues ràpides i cap peça que puga tocar rodes o enganxar-se.
+La lección oficial propone diseñar, probar y presentar un prototipo de luz intermitente para mejorar la visibilidad nocturna de una persona usuaria de silla de ruedas. Leed sus objetivos en [Flashing wheels](https://microbit.org/teach/lessons/flashing-wheels/), consultad criterios de diseño inclusivo y separad qué podemos evaluar en una maqueta de lo que solo puede valorar una persona usuaria en contexto real. No pidáis al alumnado que simule una discapacidad ni habléis en nombre de personas con experiencias diferentes. Acordad requisitos de prototipo: señal distinguible, control de encendido/apagado accesible, ausencia de parpadeos rápidos y ninguna pieza que pueda tocar ruedas o engancharse.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construïu una roda i una estructura de cartó, amb una micro:bit fixada al suport de taula, no a una cadira real. En la versió base, la matriu mostra una icona durant un segon i queda apagada durant un segon; A activa la seqüència i B l’atura. Aquest patró lent és només per comparar dissenys en classe, no una recomanació per a trànsit. Un LED extern és una ampliació opcional: només useu-lo amb resistor adequat, connexió revisada per una persona adulta i placa desconnectada durant el muntatge.
+Construid una rueda y una estructura de cartón, con una micro:bit fijada al soporte de mesa, no a una silla real. En la versión base, la matriz muestra un icono durante un segundo y queda apagada durante un segundo; A activa la secuencia y B la detiene. Este patrón lento es solo para comparar diseños en clase, no una recomendación para el tráfico. Un LED externo es una ampliación opcional: solo usadlo con la resistencia adecuada, conexión revisada por una persona adulta y placa desconectada durante el montaje.
 
 ```javascript
 let activa = false
@@ -408,31 +408,31 @@ basic.forever(function () {
 })
 ```
 
-![Micro:bit de la dotació sobre una maqueta de cadira de rodes de cartó, al costat de mostres reflectores i una fitxa de comprovació d’angles.](../../_assets/situacions/sa-mb-flashing-wheels-maqueta.webp)
+![Micro:bit de la dotación sobre una maqueta de silla de ruedas de cartón, junto a muestras reflectantes y una ficha de comprobación de ángulos.](../../_assets/situacions/sa-mb-flashing-wheels-maqueta.webp)
 
-_La placa i les mostres només es proven en un model de taula, mai sobre una cadira real o en circulació._
+_La placa y las muestras solo se prueban en un modelo de mesa, nunca sobre una silla real o en circulación._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Executeu cinc intents d’encesa amb A i cinc d’aturada amb B; anoteu si l’estat observat coincideix amb l’esperat. Situeu el model en tres orientacions i observeu la matriu des de davant, costat i darrere; repetiu amb llum ambiental diferent. Registreu visibilitat de la peça reflectora, senyal LED, estabilitat del suport i si es pot aturar sense moure el model. La prova mesura només la maqueta i el punt de vista de l’aula, no una distància de detecció en carretera.
+Ejecutad cinco intentos de encendido con A y cinco de parada con B; anotad si el estado observado coincide con el esperado. Situad el modelo en tres orientaciones y observad la matriz desde delante, lado y detrás; repetid con luz ambiental diferente. Registrad visibilidad de la pieza reflectante, señal LED, estabilidad del soporte y si se puede detener sin mover el modelo. La prueba mide solo la maqueta y el punto de vista del aula, no una distancia de detección en carretera.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu dues solucions: reflector sense codi i matriu programada amb reflector. Demaneu retorn a una parella que no haja construït el model; reviseu una característica per torn (posició, estabilitat, patró o control) i torneu a provar els mateixos casos. Si alguna persona necessita evitar llum intermitent, useu la versió estàtica o només el reflector. No augmenteu freqüència ni intensitat per a «guanyar» visibilitat.
+Comparad dos soluciones: reflector sin código y matriz programada con reflector. Pedid retorno a una pareja que no haya construido el modelo; revisad una característica por turno (posición, estabilidad, patrón o control) y volved a probar los mismos casos. Si alguna persona necesita evitar luz intermitente, usad la versión estática o solo el reflector. No aumentéis frecuencia ni intensidad para «ganar» visibilidad.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidències:** prototip de cartó, programa amb controls A/B, taula d’encesa/aturada, registre de visibilitat en tres orientacions i canvi fet després del retorn. Presenteu què no s’ha provat: ús per una persona real, fixació segura, visibilitat a distància i adequació normativa. No s’utilitza en trànsit real ni representa l’experiència d’una persona usuària.
+**Evidencias:** prototipo de cartón, programa con controles A/B, tabla de encendido/parada, registro de visibilidad en tres orientaciones y cambio hecho tras el retorno. Presentad qué no se ha probado: uso por una persona real, fijación segura, visibilidad a distancia y adecuación normativa. No se utiliza en tráfico real ni representa la experiencia de una persona usuaria.
 
-### **Bossa per a un trajecte (A bag for Juliane).**
+### **Bolsa para un trayecto (A bag for Juliane).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-La [proposta oficial *A bag for Juliane*](https://microbit.org/teach/lessons/a-bag-for-juliane/) conta que Juliane, una xiqueta refugiada de Zimbàbue, ha arribat a Anglaterra i planteja dissenyar-li una bossa més visible per al camí a l’escola. Presenteu la història amb respecte, sense dramatitzar-la ni demanar a ningú que compartisca experiències pròpies de migració o refugi. Després, traslladeu el repte de disseny a un itinerari fictici de barri valencià: qui usa la bossa tria què necessita i pot rebutjar qualsevol funció. Distingiu ajuda visual, reflector i mesures comunitàries de seguretat.
+La [propuesta oficial *A bag for Juliane*](https://microbit.org/teach/lessons/a-bag-for-juliane/) cuenta que Juliane, una niña refugiada de Zimbabue, ha llegado a Inglaterra y plantea diseñarle una bolsa más visible para el camino a la escuela. Presentad la historia con respeto, sin dramatizarla ni pedir a nadie que comparta experiencias propias de migración o refugio. Después, trasladad el reto de diseño a un itinerario ficticio de barrio valenciano: quien usa la bolsa elige qué necesita y puede rechazar cualquier función. Distinguid ayuda visual, reflector y medidas comunitarias de seguridad.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Creeu una bossa de paper o una mostra plana de tela, tres opcions reflectores i un suport de cartó per a la micro:bit. En el model base, A mostra una icona i B l’apaga: el senyal és una funció que l’usuari controla, no un rastrejador ni una balisa de localització. El reflector funciona sense placa i queda com a alternativa si el centre no té micro:bit disponible.
+Cread una bolsa de papel o una muestra plana de tela, tres opciones reflectantes y un soporte de cartón para la micro:bit. En el modelo base, A muestra un icono y B lo apaga: la señal es una función que el usuario controla, no un rastreador ni una baliza de localización. El reflector funciona sin placa y queda como alternativa si el centro no tiene micro:bit disponible.
 
 ```javascript
 basic.clearScreen() // comença sense senyal actiu
@@ -445,35 +445,35 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-![Micro:bit de la dotació al costat d’una bossa de cartó, materials reflectors i un itinerari escolar fictici dibuixat com a maqueta.](../../_assets/situacions/sa-mb-bag-juliane-prototip.webp)
+![Micro:bit de la dotación junto a una bolsa de cartón, materiales reflectantes y un itinerario escolar ficticio dibujado como maqueta.](../../_assets/situacions/sa-mb-bag-juliane-prototip.webp)
 
-_El mapa i la bossa són models didàctics; no mostren una adreça ni un recorregut real de Juliane o de cap alumne._
+_El mapa y la bolsa son modelos didácticos; no muestran una dirección ni un recorrido real de Juliane o de ningún alumno._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-En encendre la placa, comproveu primer que la matriu està apagada. Feu una prova de taula amb la bossa sense afegits, amb reflector, amb icona LED i amb reflector més icona. Des de davant, darrere i un costat, anoteu què es veu en llum d’aula i en ombra parcial, si A activa el senyal i si B l’apaga. Repetiu tres vegades i manteniu la mateixa distància i posició del llum; no useu foscor completa, persones en moviment ni llanternes dirigides als ulls. Registreu també una limitació del disseny que no siga resoluble amb la placa, com ara el traçat, l’enllumenat o l’acompanyament.
+Al encender la placa, comprobad primero que la matriz está apagada. Haced una prueba de mesa con la bolsa sin añadidos, con reflector, con icono LED y con reflector más icono. Desde delante, detrás y un lado, anotad qué se ve con luz de aula y en sombra parcial, si A activa la señal y si B la apaga. Repetid tres veces y mantened la misma distancia y posición de la luz; no uséis oscuridad completa, personas en movimiento ni linternas dirigidas a los ojos. Registrad también una limitación del diseño que no sea resoluble con la placa, como el trazado, el alumbrado o el acompañamiento.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Una altra parella revisa si el senyal és recognoscible, si la persona fictícia conserva el control i si la bossa evita dades personals. Canvieu una sola peça —posició del reflector, mida del símbol o control— i repetiu la prova. Prepareu un missatge curt per a una audiència escolar que presente la millora sense prometre seguretat: compareu què pot fer un objecte individual i què depén de l’entorn, l’accessibilitat i les decisions comunitàries.
+Otra pareja revisa si la señal es reconocible, si la persona ficticia conserva el control y si la bolsa evita datos personales. Cambiad una sola pieza —posición del reflector, tamaño del símbolo o control— y repetid la prueba. Preparad un mensaje corto para una audiencia escolar que presente la mejora sin prometer seguridad: comparad qué puede hacer un objeto individual y qué depende del entorno, la accesibilidad y las decisiones comunitarias.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidències:** bossa de paper, programa amb activació i cancel·lació, matriu de resultats de quatre versions, retorn d’una parella i missatge públic amb límits. Preserveu el context de la història oficial sense convertir-lo en joc de rols: l’activitat escolar no resol la situació de refugi ni garanteix un trajecte segur. La seguretat depén també de l’entorn i de les responsabilitats col·lectives.
+**Evidencias:** bolsa de papel, programa con activación y cancelación, matriz de resultados de cuatro versiones, retorno de una pareja y mensaje público con límites. Conservad el contexto de la historia oficial sin convertirlo en juego de roles: la actividad escolar no resuelve la situación de refugio ni garantiza un trayecto seguro. La seguridad depende también del entorno y de las responsabilidades colectivas.
 
-## 🐬 Repte 5 · Salut dels oceans
+## 🐬 Reto 5 · Salud de los océanos
 
-Adapta [Healthy oceans](https://microbit.org/teach/lessons/healthy-oceans/) i les activitats avançades:
+Adapta [Healthy oceans](https://microbit.org/teach/lessons/healthy-oceans/) y las actividades avanzadas:
 
-### **Xarxa de sensors en maqueta (Ocean health monitor).**
+### **Red de sensores en maqueta (Ocean health monitor).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-La fitxa oficial proposa construir prototips de sensors sense fils per a representar l’onatge i l’oratge marí, entendre la transmissió de dades i situar els nodes dins d’una xarxa amb passarel·la. Connecteu el repte amb l’ODS 14 i mostreu un mapa esquemàtic de la costa valenciana, sense atribuir-hi cap lectura ni problema ambiental real. Cada equip rep valors ficticis (per exemple, «ona = 3» i «vent = 2», sense unitats físiques) i prediu quin registre hauria d’arribar a una estació receptora.
+La ficha oficial propone construir prototipos de sensores inalámbricos para representar el oleaje y el tiempo marítimo, entender la transmisión de datos y situar los nodos dentro de una red con pasarela. Conectad el reto con el ODS 14 y mostrad un mapa esquemático de la costa valenciana, sin atribuirle ninguna lectura ni problema ambiental real. Cada equipo recibe valores ficticios (por ejemplo, «ola = 3» y «viento = 2», sin unidades físicas) y predice qué registro debería llegar a una estación receptora.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construïu una xarxa de taula amb dues micro:bit com a nodes, una tercera com a passarel·la i un mapa de paper. Useu el mateix grup de ràdio, però noms de camp diferents per identificar les dades simulades. En MakeCode, el botó A envia una mostra manual: una placa envia `ONA` i valor `3`; l’altra envia `VENT` i valor `2`. La passarel·la rep el parell nom–valor i el mostra. Els valors no tenen unitats ni provenen de sensors: el micro:bit no és per si mateix un sensor de marees, vent o temperatura marina.
+Construid una red de mesa con dos micro:bit como nodos, una tercera como pasarela y un mapa de papel. Usad el mismo grupo de radio, pero nombres de campo diferentes para identificar los datos simulados. En MakeCode, el botón A envía una muestra manual: una placa envía `ONA` y valor `3`; la otra envía `VENT` y valor `2`. La pasarela recibe el par nombre–valor y lo muestra. Los valores no tienen unidades ni provienen de sensores: la micro:bit no es por sí misma un sensor de mareas, viento o temperatura marina.
 
 ```javascript
 radio.setGroup(42)
@@ -490,67 +490,67 @@ radio.onReceivedValue(function (name, value) {
 })
 ```
 
-![Dues micro:bit de la dotació funcionen com a nodes amb dades simulades d’onatge i oratge i envien mostres per ràdio a una tercera placa en una maqueta seca de passarel·la cap a Internet.](../../_assets/situacions/sa-mb-ocean-health-network.webp)
+![Dos micro:bit de la dotación funcionan como nodos con datos simulados de oleaje y tiempo marítimo y envían muestras por radio a una tercera placa en una maqueta seca de pasarela hacia Internet.](../../_assets/situacions/sa-mb-ocean-health-network.webp)
 
-_El mapa, les icones i els valors són una simulació escolar; no s’ha connectat cap sensor marí ni cap servei d’Internet._
+_El mapa, los iconos y los valores son una simulación escolar; no se ha conectado ningún sensor marino ni ningún servicio de Internet._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu tres intents per cadascun dels dos nodes i anoteu en una taula: nom del camp, valor enviat, valor mostrat per la passarel·la, ordre de recepció i si el missatge s’ha rebut. Afegiu proves amb un nom desconegut, valors repetits, un node configurat en un grup diferent i cap pressió de botó. Compareu la predicció amb el resultat observat. En el diagrama, traceu el recorregut «node → ràdio → passarel·la → representació d’Internet» i marqueu clarament que l’últim tram només és una maqueta de paper.
+Haced tres intentos por cada uno de los dos nodos y anotad en una tabla: nombre del campo, valor enviado, valor mostrado por la pasarela, orden de recepción y si el mensaje se ha recibido. Añadid pruebas con un nombre desconocido, valores repetidos, un nodo configurado en un grupo diferente y ninguna pulsación de botón. Comparad la predicción con el resultado observado. En el diagrama, trazad el recorrido «nodo → radio → pasarela → representación de Internet» y marcad claramente que el último tramo solo es una maqueta de papel.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si els registres s’intercanvien o no arriben, reviseu el nom del camp, el grup i la seqüència d’assaig, canviant-ne un cada vegada. Afegiu a la pantalla de la passarel·la un indicador de «SIMULACIÓ» o una fitxa visible al costat de la placa perquè ningú confonga els valors amb mesures reals. Discutiu què necessitaria una instal·lació marina: sensor adequat, calibratge, alimentació, caixa resistent, comunicació de llarg abast i manteniment; una passarel·la real també requeriria connexió i un servei que emmagatzemara les dades. No presenteu el diagrama com una xarxa desplegada ni publiqueu ubicacions de fauna.
+Si los registros se intercambian o no llegan, revisad el nombre del campo, el grupo y la secuencia de ensayo, cambiando uno cada vez. Añadid a la pantalla de la pasarela un indicador de «SIMULACIÓN» o una ficha visible junto a la placa para que nadie confunda los valores con medidas reales. Discutid qué necesitaría una instalación marina: sensor adecuado, calibración, alimentación, caja resistente, comunicación de largo alcance y mantenimiento; una pasarela real también requeriría conexión y un servicio que almacenara los datos. No presentéis el diagrama como una red desplegada ni publiquéis ubicaciones de fauna.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidències:** esquema anotat de node, ràdio i passarel·la; programa emissor i receptor; registre dels cinc casos amb tres repeticions; i una explicació de quina part del sistema només està dibuixada. La font oficial descriu una activitat de nodes de dades sense fils connectats a passarel·les d’Internet; aquesta proposta n’adapta l’arquitectura a una maqueta seca i dades fictícies. Una xarxa real requeriria sensors ambientals externs, calibratge, energia, protecció contra l’aigua, connectivitat i manteniment. La micro:bit i el prototip no mesuren l’oceà ni serveixen per a monitorar-lo. [Ocean health monitor](https://microbit.org/teach/lessons/healthy-oceans-monitor/) és la primera de les dues activitats oficials *Healthy oceans*, orientada a prototips de nodes sense fils per a l’onatge i l’oratge marí.
+**Evidencias:** esquema anotado de nodo, radio y pasarela; programa emisor y receptor; registro de los cinco casos con tres repeticiones; y una explicación de qué parte del sistema solo está dibujada. La fuente oficial describe una actividad de nodos de datos inalámbricos conectados a pasarelas de Internet; esta propuesta adapta su arquitectura a una maqueta seca y datos ficticios. Una red real requeriría sensores ambientales externos, calibración, energía, protección contra el agua, conectividad y mantenimiento. La micro:bit y el prototipo no miden el océano ni sirven para monitorizarlo. [Ocean health monitor](https://microbit.org/teach/lessons/healthy-oceans-monitor/) es la primera de las dos actividades oficiales *Healthy oceans*, orientada a prototipos de nodos inalámbricos para el oleaje y el tiempo marítimo.
 
-### **Ruta eficient per a una taca simulada (Oil spill cleaner-upper).**
+### **Ruta eficiente para una mancha simulada (Oil spill cleaner-upper).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-La font oficial divideix *Oil spill cleaner-upper* en dues parts: primer, un repte d’algorismes per netejar una zona marina que es pot resoldre sense micro:bit ni maquinari; després, un disseny de vehicle autònom. Comenceu per la part desconnectada, que és completa per si mateixa. En una quadrícula de paper representeu una costa fictícia, una taca amb fitxes negres, un escull protegit amb una cel·la verda, un punt d’inici i una zona de recollida. Acordeu els criteris abans de dibuixar rutes: visitar totes les fitxes, no entrar a l’escull, minimitzar moviments i, en cas d’empat, fer menys girs. Són criteris del model escolar, no una mètrica de neteja real.
+La fuente oficial divide *Oil spill cleaner-upper* en dos partes: primero, un reto de algoritmos para limpiar una zona marina que se puede resolver sin micro:bit ni hardware; después, un diseño de vehículo autónomo. Empezad por la parte desconectada, que es completa por sí misma. En una cuadrícula de papel representad una costa ficticia, una mancha con fichas negras, un arrecife protegido con una celda verde, un punto de inicio y una zona de recogida. Acordad los criterios antes de dibujar rutas: visitar todas las fichas, no entrar en el arrecife, minimizar movimientos y, en caso de empate, hacer menos giros. Son criterios del modelo escolar, no una métrica de limpieza real.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Prepareu dues rutes diferents amb targetes de fletxes i escriviu-les també com a instruccions pas a pas. Un marcador de cartó representa el vehicle i una fitxa blanca seca, el material de recollida; l’alumnat mou el model només quan l’algorisme ho indica. No useu oli, aigua, detergents ni altres líquids. Si el centre vol explorar un vehicle motoritzat, tracteu-lo com una ampliació separada: cal identificar abans el controlador, els motors, l’alimentació i la compatibilitat reals, i cap d’aquests accessoris s’atribueix a la placa micro:bit sola.
+Preparad dos rutas diferentes con tarjetas de flechas y escribidlas también como instrucciones paso a paso. Un marcador de cartón representa el vehículo y una ficha blanca seca, el material de recogida; el alumnado mueve el modelo solo cuando el algoritmo lo indica. No uséis aceite, agua, detergentes ni otros líquidos. Si el centro quiere explorar un vehículo motorizado, tratadlo como una ampliación separada: hace falta identificar antes el controlador, los motores, la alimentación y la compatibilidad reales, y ninguno de estos accesorios se atribuye a la placa micro:bit sola.
 
-![Una micro:bit de la dotació al costat d’una quadrícula seca amb fitxes planes que representen una taca fictícia, una zona protegida i dues rutes de neteja comparables.](../../_assets/situacions/sa-mb-vessament-rutes-grid.webp)
+![Una micro:bit de la dotación junto a una cuadrícula seca con fichas planas que representan una mancha ficticia, una zona protegida y dos rutas de limpieza comparables.](../../_assets/situacions/sa-mb-vessament-rutes-grid.webp)
 
-_La il·lustració mostra un algorisme de taula amb peces de paper, no un vessament ni un vehicle autònom funcional._
+_La ilustración muestra un algoritmo de mesa con piezas de papel, no un vertido ni un vehículo autónomo funcional._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Executeu cada ruta tres vegades amb la mateixa quadrícula i registreu, en una taula, l’ordre de les cel·les, les fitxes visitades, les repeticions, el nombre de moviments i els girs. Compareu la predicció amb el recorregut efectiu: l’algorisme cobreix totes les fitxes? Ha entrat alguna vegada a l’escull? Dues parelles poden executar la mateixa llista d’instruccions per comprovar si s’interpreta igual. Marqueu qualsevol diferència com un error de seqüència o una ambigüitat, no com una errada de la persona que segueix les instruccions.
+Ejecutad cada ruta tres veces con la misma cuadrícula y registrad, en una tabla, el orden de las celdas, las fichas visitadas, las repeticiones, el número de movimientos y los giros. Comparad la predicción con el recorrido efectivo: ¿el algoritmo cubre todas las fichas? ¿Ha entrado alguna vez en el arrecife? Dos parejas pueden ejecutar la misma lista de instrucciones para comprobar si se interpreta igual. Marcad cualquier diferencia como un error de secuencia o una ambigüedad, no como un fallo de la persona que sigue las instrucciones.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu un sol element del mapa —per exemple, afegiu una cel·la prohibida o traslladeu una fitxa— i predigueu què passaria amb les dues rutes. Reviseu les instruccions si deixen una fitxa sense visitar, travessen l’escull o repeteixen moviments evitables; després torneu a executar-les amb els mateixos criteris. Compareu cobertura, moviments, girs i seguretat de la ruta en lloc de declarar un únic algorisme «millor» sense explicar per a quin objectiu ho és. Si creeu una extensió motoritzada, valideu-la en una pista seca i tancada amb supervisió i parada accessible.
+Cambiad un solo elemento del mapa —por ejemplo, añadid una celda prohibida o trasladad una ficha— y predecid qué pasaría con las dos rutas. Revisad las instrucciones si dejan una ficha sin visitar, atraviesan el arrecife o repiten movimientos evitables; después volved a ejecutarlas con los mismos criterios. Comparad cobertura, movimientos, giros y seguridad de la ruta en lugar de declarar un único algoritmo «mejor» sin explicar para qué objetivo lo es. Si creáis una extensión motorizada, validadla en una pista seca y cerrada con supervisión y parada accesible.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidències:** quadrícula anotada, dos algorismes executables, taula de tres intents per ruta, diagrama de flux d’una ruta revisada i explicació dels límits del model. La segona part de la font oficial proposa passar del disseny de l’algorisme a un vehicle autònom; ací queda com a extensió condicionada a maquinari real compatible i una validació de seguretat, no com una funció de micro:bit inclosa. Cap robot escolar es presenta com a resposta suficient a un vessament ni s’aboca cap substància. [Oil spill cleaner-upper](https://microbit.org/teach/lessons/healthy-oceans-oil-spill/) és la segona activitat oficial *Healthy oceans* i permet separar la part d’algorisme de la construcció del vehicle.
+**Evidencias:** cuadrícula anotada, dos algoritmos ejecutables, tabla de tres intentos por ruta, diagrama de flujo de una ruta revisada y explicación de los límites del modelo. La segunda parte de la fuente oficial propone pasar del diseño del algoritmo a un vehículo autónomo; aquí queda como extensión condicionada a hardware real compatible y una validación de seguridad, no como una función de micro:bit incluida. Ningún robot escolar se presenta como respuesta suficiente a un vertido ni se vierte ninguna sustancia. [Oil spill cleaner-upper](https://microbit.org/teach/lessons/healthy-oceans-oil-spill/) es la segunda actividad oficial *Healthy oceans* y permite separar la parte de algoritmo de la construcción del vehículo.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Analitzar un repte ambiental o de benestar i delimitar què pot comprovar una maqueta escolar.
-- Dissenyar una entrada, una regla i una eixida amb micro:bit, registrant les condicions de prova.
-- Comparar les prediccions amb resultats repetits i comunicar errors, riscos i casos no coberts.
-- Proposar una alternativa que no manipule fauna ni dades personals i que no prometa protecció real.
+- Analizar un reto ambiental o de bienestar y delimitar qué puede comprobar una maqueta escolar.
+- Diseñar una entrada, una regla y una salida con micro:bit, registrando las condiciones de prueba.
+- Comparar las predicciones con resultados repetidos y comunicar errores, riesgos y casos no cubiertos.
+- Proponer una alternativa que no manipule fauna ni datos personales y que no prometa protección real.
 
-## 🧰 Materials, prototips i avaluació
+## 🧰 Materiales, prototipos y evaluación
 
-Micro:bit, MakeCode, cartó, mapa, materials reflectants, peces de maqueta i fitxes de dades simulades. Les ràdios funcionen entre plaques dins dels límits de l’entorn; sensors d’humitat, llum externs, relés, motors o altres elements no formen part de la placa i necessiten maquinari compatible addicional. Cada equip lliura mapa del problema, font d’informació, criteris, diagrama/pseudocodi, prototip, proves i un apartat «què no pot fer».
+Micro:bit, MakeCode, cartón, mapa, materiales reflectantes, piezas de maqueta y fichas de datos simulados. Las radios funcionan entre placas dentro de los límites del entorno; sensores de humedad, luz externos, relés, motores u otros elementos no forman parte de la placa y necesitan hardware compatible adicional. Cada equipo entrega mapa del problema, fuente de información, criterios, diagrama/pseudocódigo, prototipo, pruebas y un apartado «qué no puede hacer».
 
-## 🛡️ Salvaguardes
+## 🛡️ Salvaguardas
 
-No captureu dades personals ni biomètriques. No poseu dispositius a animals ni proveu prototips en carreteres, espais naturals sensibles o aigua. Useu LEDs sense pampallugues ràpides i atureu qualsevol activitat que incomode. Les necessitats de seguretat, salut i conservació s’han de consultar amb persones expertes i comunitats afectades; una maqueta escolar no és un producte validat.
+No capturéis datos personales ni biométricos. No pongáis dispositivos en animales ni probéis prototipos en carreteras, espacios naturales sensibles o agua. Usad LED sin parpadeos rápidos y detened cualquier actividad que incomode. Las necesidades de seguridad, salud y conservación se deben consultar con personas expertas y comunidades afectadas; una maqueta escolar no es un producto validado.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Rúbrica compartida: comprensió del problema, qualitat de les fonts, algorisme, elecció de components reals, proves repetibles, cooperació i comunicació de límits. Avalueu també qui podria quedar exclòs, quines conseqüències no previstes hi ha i quina alternativa de baix cost o desconnectada existeix.
+Rúbrica compartida: comprensión del problema, calidad de las fuentes, algoritmo, elección de componentes reales, pruebas repetibles, cooperación y comunicación de límites. Evaluad también quién podría quedar excluido, qué consecuencias no previstas hay y qué alternativa de bajo coste o desconectada existe.
 
-## 🔗 Fonts oficials i abast de l’adaptació
+## 🔗 Fuentes oficiales y alcance de la adaptación
 
-La col·lecció reinterpreta els reptes públics de [Protecting animals on land](https://www.microbit.org/teach/lessons/protecting-animals/), [Saving sea creatures](https://www.microbit.org/teach/lessons/sea-creatures/), [Being active](https://www.microbit.org/teach/lessons/being-active/), [Night safety](https://www.microbit.org/teach/lessons/night-safety/), [Healthy oceans](https://www.microbit.org/teach/lessons/healthy-oceans/) i [Helping plants grow](https://microbit.org/teach/lessons/helping-plants-grow/). La sessió de xarxes s’ha contrastat també amb el [projecte oficial Light-up fishing nets](https://www.microbit.org/projects/make-it-code-it/light-up-fishing-nets/): manté la lectura de llum amb la matriu, el llindar inicial 50, la resposta LED i el so opcional, però situa la prova en una maqueta seca i comunica que no s’ha demostrat cap efecte sobre captures reals. La de tortugues s’alinea amb el projecte [Saving sea turtles](https://microbit.org/projects/make-it-code-it/saving-sea-turtles/): lectura de llum per la matriu, llindar inicial 100, icona de tortuga en foscor, esborrat de pantalla amb més llum i cicle de dos segons; la proposta local afegeix proves accessibles i declara que no valida una llum ambiental. Cada repte conserva el tema i el punt de partida descrits en les pàgines oficials, però canvia els escenaris, les dades, els materials i els prototips per al context local. Els sensors ambientals, motors i altres accessoris s’identifiquen com a externs quan no formen part de la placa. Les activitats que requeririen desplegament real es resolen amb simulacions i maquetes segures.
+La colección reinterpreta los retos públicos de [Protecting animals on land](https://www.microbit.org/teach/lessons/protecting-animals/), [Saving sea creatures](https://www.microbit.org/teach/lessons/sea-creatures/), [Being active](https://www.microbit.org/teach/lessons/being-active/), [Night safety](https://www.microbit.org/teach/lessons/night-safety/), [Healthy oceans](https://www.microbit.org/teach/lessons/healthy-oceans/) y [Helping plants grow](https://microbit.org/teach/lessons/helping-plants-grow/). La sesión de redes se ha contrastado también con el [proyecto oficial Light-up fishing nets](https://www.microbit.org/projects/make-it-code-it/light-up-fishing-nets/): mantiene la lectura de luz con la matriz, el umbral inicial 50, la respuesta LED y el sonido opcional, pero sitúa la prueba en una maqueta seca y comunica que no se ha demostrado ningún efecto sobre capturas reales. La de tortugas se alinea con el proyecto [Saving sea turtles](https://microbit.org/projects/make-it-code-it/saving-sea-turtles/): lectura de luz por la matriz, umbral inicial 100, icono de tortuga en oscuridad, borrado de pantalla con más luz y ciclo de dos segundos; la propuesta local añade pruebas accesibles y declara que no valida una luz ambiental. Cada reto conserva el tema y el punto de partida descritos en las páginas oficiales, pero cambia los escenarios, los datos, los materiales y los prototipos para el contexto local. Los sensores ambientales, motores y otros accesorios se identifican como externos cuando no forman parte de la placa. Las actividades que requerirían despliegue real se resuelven con simulaciones y maquetas seguras.

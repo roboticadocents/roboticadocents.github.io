@@ -15,141 +15,141 @@ challenge: "¿Cómo podemos crear un distintivo que represente el encargo de nue
 official_source: "https://matatalab.com/en/node/82"
 ---
 
-![MatataBot i la torre reals del Coding Set recorren una graella de paper al costat d’un distintiu geomètric dibuixat a mà amb formes de l’Albufera.](../../_assets/situacions/cs-distintiu-marjal.webp)
+![MatataBot y la torre reales del Coding Set recorren una cuadrícula de papel junto a un distintivo geométrico dibujado a mano con formas de la Albufera.](../../_assets/situacions/cs-distintiu-marjal.webp)
 
-_El robot recorre una seqüència de caselles i les persones traslladen el recorregut al distintiu de paper. No hi ha un llapis ni un accessori de dibuix instal·lat._
+_El robot recorre una secuencia de casillas y las personas trasladan el recorrido al distintivo de papel. No hay un lápiz ni un accesorio de dibujo instalado._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-La classe prepara una exposició escolar sobre l’Albufera i es divideix en equips d’investigació: observació de l’aigua, plantes del marjal, patrimoni de la barca i cura de la maqueta. Cada equip necessita un distintiu visual que explique la seua missió. El distintiu combina formes geomètriques, un símbol triat pel grup i una breu explicació; no representa una insígnia oficial ni acredita coneixements sobre el parc.
+La clase prepara una exposición escolar sobre la Albufera y se divide en equipos de investigación: observación del agua, plantas de la marjal, patrimonio de la barca y cuidado de la maqueta. Cada equipo necesita un distintivo visual que explique su misión. El distintivo combina formas geométricas, un símbolo elegido por el grupo y una breve explicación; no representa una insignia oficial ni acredita conocimientos sobre el parque.
 
-La proposta adapta *Team Badge Design*, una activitat de Matatalab que demana conéixer exemples d’insígnies, conversar en equip, fer un esborrany, dibuixar les formes principals amb Matatalab, decorar-les i presentar-ne el concepte en un mural compartit. El fabricant indica que el dibuix programat depén del Coding Set amb Artist Add-On, del Pro Set o de l’Animation Add-On. Com que la disponibilitat d’aquests complements no està confirmada en la dotació, aquesta versió usa només el Coding Set base: l’equip codifica una ruta per una graella de formes, una altra parella la comprova i una persona dibuixa manualment el distintiu en paper. El robot no traça línies, selecciona símbols ni identifica equips.
+La propuesta adapta *Team Badge Design*, una actividad de Matatalab que pide conocer ejemplos de insignias, conversar en equipo, hacer un boceto, dibujar las formas principales con Matatalab, decorarlas y presentar su concepto en un mural compartido. El fabricante indica que el dibujo programado depende del Coding Set con Artist Add-On, del Pro Set o del Animation Add-On. Como la disponibilidad de estos complementos no está confirmada en la dotación, esta versión usa solo el Coding Set base: el equipo codifica una ruta por una cuadrícula de formas, otra pareja la comprueba y una persona dibuja manualmente el distintivo en papel. El robot no traza líneas, selecciona símbolos ni identifica equipos.
 
-**Pregunta guia:** com podem representar una missió d’equip amb formes que siguen comprensibles i convertir-ne l’ordre en una seqüència de moviment comprovable?
+**Pregunta guía:** ¿cómo podemos representar una misión de equipo con formas que sean comprensibles y convertir su orden en una secuencia de movimiento comprobable?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Identificar figures geomètriques i combinar-les en una composició visual amb una intenció comunicativa.
-- Descompondre un distintiu en formes i ordenar-les per construir un esborrany coherent.
-- Convertir una ruta entre caselles en blocs de moviment del Coding Set i revisar l’orientació en cada gir.
-- Comprovar la seqüència amb una altra parella, localitzar la primera divergència i corregir una ordre cada vegada.
-- Distingir el recorregut que executa el robot del dibuix manual i del significat que l’equip atribueix al distintiu.
+- Identificar figuras geométricas y combinarlas en una composición visual con una intención comunicativa.
+- Descomponer un distintivo en formas y ordenarlas para construir un boceto coherente.
+- Convertir una ruta entre casillas en bloques de movimiento del Coding Set y revisar la orientación en cada giro.
+- Comprobar la secuencia con otra pareja, localizar la primera divergencia y corregir una orden cada vez.
+- Distinguir el recorrido que ejecuta el robot del dibujo manual y del significado que el equipo atribuye al distintivo.
 
-**Paraules clau:** distintiu, símbol, forma, composició, seqüència, orientació, casella, codi, depuració, presentació.
+**Palabras clave:** distintivo, símbolo, forma, composición, secuencia, orientación, casilla, código, depuración, presentación.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Coding Set de la dotació: MatataBot, torre, tauler i blocs de moviment. Comproveu càrrega, connexió, orientació i una seqüència curta abans de començar.
-- Graella pròpia de 5 × 5 caselles ajustada al pas real del robot, amb inici marcat i quatre formes de paper en caselles diferents. Manteniu el corredor de moviment lliure.
-- Paper A3 o cartolina, llapis, retoladors i plantilles de cercle, triangle, quadrat i rectangle; targetes amb missions escolars fictícies i full de planificació del distintiu.
-- Full de registre amb **missió**, **forma**, **casella**, **ordre**, **predicció**, **resultat** i **revisió**; targetes de fletxes per a provar el recorregut sense robot.
-- Opcional, només si el centre confirma que en disposa i les instruccions del model ho permeten: Artist Add-On o Animation Add-On. La seqüència principal no els necessita i la fitxa no n’atribueix cap funció al kit base.
+- Coding Set de la dotación: MatataBot, torre, tablero y bloques de movimiento. Comprobad carga, conexión, orientación y una secuencia corta antes de empezar.
+- Cuadrícula propia de 5 × 5 casillas ajustada al paso real del robot, con inicio marcado y cuatro formas de papel en casillas diferentes. Mantened el pasillo de movimiento libre.
+- Papel A3 o cartulina, lápiz, rotuladores y plantillas de círculo, triángulo, cuadrado y rectángulo; tarjetas con misiones escolares ficticias y hoja de planificación del distintivo.
+- Hoja de registro con **misión**, **forma**, **casilla**, **orden**, **predicción**, **resultado** y **revisión**; tarjetas de flechas para probar el recorrido sin robot.
+- Opcional, solo si el centro confirma que dispone de ellos y las instrucciones del modelo lo permiten: Artist Add-On o Animation Add-On. La secuencia principal no los necesita y la ficha no les atribuye ninguna función al kit base.
 
-Prepareu targetes de missió que no depenguen de dades ambientals reals, per exemple: «explicar la maqueta», «ordenar imatges de plantes» o «presentar una barca de paper». Situeu les formes en caselles assolibles des del mateix inici. Si useu l’accessori de dibuix, feu una prova prèvia i manteniu l’activitat de paper com a alternativa equivalent per a participar; no barregeu les instruccions de complements amb les del robot base.
+Preparad tarjetas de misión que no dependan de datos ambientales reales, por ejemplo: «explicar la maqueta», «ordenar imágenes de plantas» o «presentar una barca de papel». Situad las formas en casillas alcanzables desde el mismo inicio. Si usáis el accesorio de dibujo, haced una prueba previa y mantened la actividad de papel como alternativa equivalente para participar; no mezcléis las instrucciones de complementos con las del robot base.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Sessió 1 · Què conta un distintiu? (45 min)
+### Sesión 1 · ¿Qué cuenta un distintivo? (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu distintius de classe inventats i exemples geomètrics sense logotips comercials. Pregunteu quines formes es reconeixen de lluny i quina informació no es pot deduir només mirant-les. Cada alumne tria una missió fictícia de l’exposició i anticipa dues formes que podrien representar-la.
+Mostrad distintivos de clase inventados y ejemplos geométricos sin logotipos comerciales. Preguntad qué formas se reconocen de lejos y qué información no se puede deducir solo mirándolas. Cada alumno elige una misión ficticia de la exposición y anticipa dos formas que podrían representarla.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En equips, compareu cercle, triangle, quadrat i rectangle amb plantilles. Distingiu forma, mida i orientació, i feu tres esbossos ràpids. Afegiu una llegenda oral o escrita que explique el significat que l’equip dona a cada forma; eviteu presentar un símbol com si tinguera un significat universal.
+En equipos, comparad círculo, triángulo, cuadrado y rectángulo con plantillas. Distinguid forma, tamaño y orientación, y haced tres bocetos rápidos. Añadid una leyenda oral o escrita que explique el significado que el equipo da a cada forma; evitad presentar un símbolo como si tuviera un significado universal.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Cada equip explica un esbós a una parella veïna sense dir el nom de la missió. La parella assenyala quina part ha pogut interpretar i quina pregunta li falta. Registreu una decisió gràfica que es mantindrà i una que caldrà revisar.
+Cada equipo explica un boceto a una pareja vecina sin decir el nombre de la misión. La pareja señala qué parte ha podido interpretar y qué pregunta le falta. Registrad una decisión gráfica que se mantendrá y una que habrá que revisar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una forma o la seua disposició i torneu a mostrar el distintiu. Comproveu si la parella pot distingir els elements sense que el grup autor li assenyale cada detall. La claredat es prova amb explicacions, no amb votacions sobre quina missió és «millor».
+Cambiad una forma o su disposición y volved a mostrar el distintivo. Comprobad si la pareja puede distinguir los elementos sin que el grupo autor le señale cada detalle. La claridad se prueba con explicaciones, no con votaciones sobre qué misión es «mejor».
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** tres esbossos, una missió triada i una nota de retorn d’una altra parella. **Pregunta:** quina decisió del disseny ha canviat la manera com s’entén el distintiu?
+**Evidencia:** tres bocetos, una misión elegida y una nota de retorno de otra pareja. **Pregunta:** ¿qué decisión del diseño ha cambiado la manera en que se entiende el distintivo?
 
-### Sessió 2 · De les formes a una ruta programable (45 min)
+### Sesión 2 · De las formas a una ruta programable (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Poseu les quatre formes en caselles diferents de la graella. Trieu un ordre de visita que represente el distintiu i traceu-lo amb el dit des de l’inici. Predigueu els blocs d’avanç i gir abans de muntar el programa.
+Poned las cuatro formas en casillas diferentes de la cuadrícula. Elegid un orden de visita que represente el distintivo y trazadlo con el dedo desde el inicio. Predecid los bloques de avance y giro antes de montar el programa.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Col·loqueu targetes de fletxa sobre el mapa per descriure la ruta. Recordeu que un gir canvia l’orientació i no trasllada MatataBot a una altra casella. Una persona llig les ordres mentre una altra mou una fitxa de paper; després canvieu els rols i reviseu les caselles ambigües.
+Colocad tarjetas de flecha sobre el mapa para describir la ruta. Recordad que un giro cambia la orientación y no traslada a MatataBot a otra casilla. Una persona lee las órdenes mientras otra mueve una ficha de papel; después cambiad los roles y revisad las casillas ambiguas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu la seqüència i la forma que hi ha en cada parada. Una parella revisora ha de poder reconstruir l’ordre del distintiu només amb el mapa, la llegenda i les fletxes. Separeu els moviments, els girs i la interpretació artística en tres columnes.
+Anotad la secuencia y la forma que hay en cada parada. Una pareja revisora debe poder reconstruir el orden del distintivo solo con el mapa, la leyenda y las flechas. Separad los movimientos, los giros y la interpretación artística en tres columnas.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu l’ordre de dues formes i comproveu com varia la ruta. Si la ruta no és assolible, canvieu una posició o una instrucció —no totes alhora— i torneu a simular-la amb la fitxa de paper.
+Cambiad el orden de dos formas y comprobad cómo varía la ruta. Si la ruta no es alcanzable, cambiad una posición o una instrucción —no todas a la vez— y volved a simularla con la ficha de papel.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa amb inici i orientació, seqüència anotada i registre d’una revisió. **Pregunta:** què ha de saber una altra parella per a distingir un gir d’un avanç?
+**Evidencia:** mapa con inicio y orientación, secuencia anotada y registro de una revisión. **Pregunta:** ¿qué debe saber otra pareja para distinguir un giro de un avance?
 
-### Sessió 3 · Programem i traslladem el recorregut al paper (45 min)
+### Sesión 3 · Programamos y trasladamos el recorrido al papel (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans d’executar, cada equip marca en una còpia del mapa on espera que estiga el robot després de les tres primeres ordres. L’equip observador prediu quines formes visitarà i en quin ordre.
+Antes de ejecutar, cada equipo marca en una copia del mapa dónde espera que esté el robot después de las tres primeras órdenes. El equipo observador predice qué formas visitará y en qué orden.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Poseu els blocs de moviment al tauler i executeu la ruta en una superfície plana i lliure. Atureu-vos si el robot ix de la graella o s’acosta a la vora. Compareu cada parada amb la predicció; el recorregut del robot només indica posicions, no dibuixa ni llig les figures.
+Poned los bloques de movimiento en el tablero y ejecutad la ruta en una superficie plana y libre. Deteneos si el robot sale de la cuadrícula o se acerca al borde. Comparad cada parada con la predicción; el recorrido del robot solo indica posiciones, no dibuja ni lee las figuras.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Traslladeu manualment l’ordre verificat a una composició en paper: dibuixeu les formes amb plantilles, poseu-les en la mateixa seqüència que s’ha provat i afegiu-hi el símbol propi de l’equip. Anoteu que el paper és una creació humana separada de l’acció del robot.
+Trasladad manualmente el orden verificado a una composición en papel: dibujad las formas con plantillas, ponedlas en la misma secuencia que se ha probado y añadid el símbolo propio del equipo. Anotad que el papel es una creación humana separada de la acción del robot.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu el mapa, el programa dibuixat i el distintiu amb una altra parella. L’equip visitant executa o simula la ruta i comprova si l’ordre de les formes coincideix amb el paper. Si no coincideix, localitzeu la primera parada divergent i corregiu una instrucció o una etiqueta.
+Intercambiad el mapa, el programa dibujado y el distintivo con otra pareja. El equipo visitante ejecuta o simula la ruta y comprueba si el orden de las formas coincide con el papel. Si no coincide, localizad la primera parada divergente y corregid una instrucción o una etiqueta.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** seqüència executada, distintiu de paper i comprovació creuada. **Pregunta:** quina part del resultat prové del robot i quina depén de les decisions de l’equip?
+**Evidencia:** secuencia ejecutada, distintivo de papel y comprobación cruzada. **Pregunta:** ¿qué parte del resultado proviene del robot y qué parte depende de las decisiones del equipo?
 
-### Sessió 4 · Presentem i revisem la galeria d’equips (45 min)
+### Sesión 4 · Presentamos y revisamos la galería de equipos (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu una exposició de distintius amb les missions fictícies i les llegendes. Cada equip prediu si un visitant podrà relacionar el disseny amb la missió sense ajuda oral inicial.
+Preparad una exposición de distintivos con las misiones ficticias y las leyendas. Cada equipo predice si un visitante podrá relacionar el diseño con la misión sin ayuda oral inicial.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Poseu cada distintiu en una fitxa A4 i afegiu el mapa de la ruta com a material de procés. Els equips preparen una presentació breu que explique formes, seqüència i una decisió revisada. Eviteu noms personals, emblemes institucionals o afirmacions que facen passar el distintiu per una acreditació oficial.
+Poned cada distintivo en una ficha A4 y añadid el mapa de la ruta como material de proceso. Los equipos preparan una presentación breve que explique formas, secuencia y una decisión revisada. Evitad nombres personales, símbolos institucionales o afirmaciones que hagan pasar el distintivo por una acreditación oficial.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Els grups visitants llegeixen les llegendes, recorren una ruta triada amb MatataBot o amb la fitxa de paper i deixen un comentari sobre la claredat de les instruccions. Registren una forma observada, una ordre que han seguit i una pregunta que els ha quedat.
+Los grupos visitantes leen las leyendas, recorren una ruta elegida con MatataBot o con la ficha de papel y dejan un comentario sobre la claridad de las instrucciones. Registran una forma observada, una orden que han seguido y una pregunta que les ha quedado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu una llegenda o una instrucció a partir del retorn rebut i feu que una persona que no ha participat en la revisió torne a comprovar-la. Manteniu el programa fix si només esteu millorant la comunicació; si canvieu la seqüència, registreu una nova versió.
+Revisad una leyenda o una instrucción a partir del retorno recibido y haced que una persona que no ha participado en la revisión vuelva a comprobarla. Mantened el programa fijo si solo estáis mejorando la comunicación; si cambiáis la secuencia, registrad una nueva versión.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** distintiu final, ruta provada, llegenda i revisió posterior a una prova externa. **Tancament:** «La forma que millor comunica la nostra missió és… perquè…; MatataBot ha ajudat a comprovar…».
+**Evidencia:** distintivo final, ruta probada, leyenda y revisión posterior a una prueba externa. **Cierre:** «La forma que mejor comunica nuestra misión es… porque…; MatataBot ha ayudado a comprobar…».
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu els esbossos inicials, la missió triada, el mapa i la seqüència, les prediccions, el resultat de la prova, el distintiu manual i els comentaris de la parella visitant. Observeu si l’alumnat (1) combina formes amb una intenció explicada, (2) transforma l’ordre gràfic en una ruta executable, (3) comprova orientació i moviments, (4) separa la traça del robot del dibuix final i (5) modifica el disseny a partir d’una prova realitzada per una altra persona.
+Recoged los bocetos iniciales, la misión elegida, el mapa y la secuencia, las predicciones, el resultado de la prueba, el distintivo manual y los comentarios de la pareja visitante. Observad si el alumnado (1) combina formas con una intención explicada, (2) transforma el orden gráfico en una ruta ejecutable, (3) comprueba orientación y movimientos, (4) separa la traza del robot del dibujo final y (5) modifica el diseño a partir de una prueba realizada por otra persona.
 
-Autoavaluació: «puc explicar el significat que hem acordat», «he comprovat la ruta abans de presentar-la» i «sé quina part hem fet a mà». Coavaluació: la parella visitant marca quines instruccions ha pogut seguir sense ajuda i quina llegenda necessitava aclariment. No s’avalua la qualitat artística del dibuix ni la rapidesa del recorregut.
+Autoevaluación: «puedo explicar el significado que hemos acordado», «he comprobado la ruta antes de presentarla» y «sé qué parte hemos hecho a mano». Coevaluación: la pareja visitante marca qué instrucciones ha podido seguir sin ayuda y qué leyenda necesitaba aclaración. No se evalúa la calidad artística del dibujo ni la rapidez del recorrido.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Proporcioneu formes de cartó grans, plantilles amb relleu, una llegenda en pictogrames i una còpia ampliada del mapa. Es pot participar triant la missió, ordenant les formes, movent la fitxa, programant, dibuixant, explicant o registrant; no cal parlar davant de tot el grup. Permeteu dictar o assenyalar les instruccions. Fixeu el tauler, deixeu espai lliure al voltant del robot i no col·loqueu peces menudes en la ruta. Useu només missions fictícies i distintius que no identifiquen ni classifiquen l’alumnat.
+Proporcionad formas de cartón grandes, plantillas con relieve, una leyenda en pictogramas y una copia ampliada del mapa. Se puede participar eligiendo la misión, ordenando las formas, moviendo la ficha, programando, dibujando, explicando o registrando; no hace falta hablar delante de todo el grupo. Permitid dictar o señalar las instrucciones. Fijad el tablero, dejad espacio libre alrededor del robot y no coloquéis piezas pequeñas en la ruta. Usad solo misiones ficticias y distintivos que no identifiquen ni clasifiquen al alumnado.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [*Team Badge Design*](https://matatalab.com/en/node/82): planteja mostrar exemples de distintius, conversar en grup, fer un esborrany, dibuixar les formes principals amb Matatalab, decorar-les, presentar-ne el concepte i exposar-les juntes. La font indica que la part de dibuix requereix Coding Set amb Artist Add-On, Pro Set o Animation Add-On. Aquesta proposta conserva el disseny col·laboratiu, l’esborrany, la decoració, la presentació i la galeria, però substitueix el traçat robòtic per una ruta de comprovació amb el Coding Set base i un dibuix manual. Per tant, no és una adaptació de la funció d’Artist/Animation ni atribueix aquesta capacitat al kit base.
-- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): referència complementària per a verificar les ordres tangibles de moviment de MatataBot, la lectura de la seqüència i l’arribada a una destinació.
+- Matatalab, [*Team Badge Design*](https://matatalab.com/en/node/82): plantea mostrar ejemplos de distintivos, conversar en grupo, hacer un boceto, dibujar las formas principales con Matatalab, decorarlas, presentar su concepto y exponerlas juntas. La fuente indica que la parte de dibujo requiere Coding Set con Artist Add-On, Pro Set o Animation Add-On. Esta propuesta conserva el diseño colaborativo, el boceto, la decoración, la presentación y la galería, pero sustituye el trazado robótico por una ruta de comprobación con el Coding Set base y un dibujo manual. Por tanto, no es una adaptación de la función de Artist/Animation ni atribuye esa capacidad al kit base.
+- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): referencia complementaria para verificar las órdenes tangibles de movimiento de MatataBot, la lectura de la secuencia y la llegada a un destino.
 
-La il·lustració IA pròpia representa la torre i MatataBot reals del Coding Set, amb el recorregut en una graella i el distintiu dibuixat a mà en un full separat. No mostra un llapis acoblat al robot ni un complement no confirmat.
+La ilustración IA propia representa la torre y MatataBot reales del Coding Set, con el recorrido en una cuadrícula y el distintivo dibujado a mano en una hoja separada. No muestra un lápiz acoplado al robot ni un complemento no confirmado.

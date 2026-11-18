@@ -9,104 +9,104 @@ cycle_label: "Segundo ciclo"
 subject: "tecnologia"
 subject_label: "Tecnología, Matemáticas y Diseño"
 theme: "horta-valenciana"
-theme_label: "Fira de l'huerta"
+theme_label: "Feria de la huerta"
 duration: "2 sesiones de 60 minutos"
 challenge: "¿Cómo podemos diseñar un vehículo ligero y un circuito de la huerta, y crear una secuencia de bloques que complete una vuelta?"
 official_source: "https://matatalab.com/cdn/ff/CrQPo-NarPZLUtZnP3JKbo4oDvbv3Nr4L9nQ_5l4kdc/1653550757/public/2022-05/Extracurricular%20Curriculum.pdf"
 ---
 
-![MatataBot i torre reals del Coding Set, intactes, al costat d’un circuit de paper i d’una carcassa de cotxe desmuntable que no està col·locada sobre el robot.](../../_assets/situacions/cs-circuit-cursa-horta.webp)
+![MatataBot y torre reales del Coding Set, intactos, junto a un circuito de papel y a una carrocería de coche desmontable que no está colocada sobre el robot.](../../_assets/situacions/cs-circuit-cursa-horta.webp)
 
-_Il·lustració IA basada en el Coding Set real de la dotació. MatataBot i la torre es mostren intactes; el cotxe de paper és una maqueta separada, no una modificació del robot._
+_Ilustración IA basada en el Coding Set real de la dotación. MatataBot y la torre se muestran intactos; el coche de papel es una maqueta separada, no una modificación del robot._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-El centre organitza una fira de circuits inspirats en camins de l'horta. En equips de quatre, l'alumnat dissenya una carcassa lleugera per al MatataBot i un circuit de paper amb eixida, arribada i girs; després programa el robot perquè complete una volta. La carcassa és una peça de manualitat independent: no s'enganxa al robot, no tapa l'ull lector i es retira si el moviment o la lectura de blocs se'n veuen afectats.
+El centro organiza una feria de circuitos inspirados en caminos de la huerta. En equipos de cuatro, el alumnado diseña una carrocería ligera para el MatataBot y un circuito de papel con salida, llegada y giros; después programa el robot para que complete una vuelta. La carrocería es una pieza de manualidad independiente: no se pega al robot, no tapa el ojo lector y se retira si el movimiento o la lectura de bloques se ven afectados.
 
-Aquesta fitxa adapta les lliçons 3 i 4 del currículum extracurricular de Matatalab. La lliçó 3 introdueix el disseny del vehicle i del recorregut, i explora blocs d'angle i altres blocs avançats; la lliçó 4 programa una volta o diverses, prova paràmetres, bucles i funcions, depura i presenta el resultat. La situació conserva el disseny col·laboratiu, els esbossos, la prova dels girs, la volta completa, el diari i les preguntes de reflexió. El circuit, la fira i les targetes de planificació són propis.
+Esta ficha adapta las lecciones 3 y 4 del currículo extracurricular de Matatalab. La lección 3 introduce el diseño del vehículo y del recorrido, y explora bloques de ángulo y otros bloques avanzados; la lección 4 programa una vuelta o varias, prueba parámetros, bucles y funciones, depura y presenta el resultado. La situación conserva el diseño colaborativo, los bocetos, la prueba de los giros, la vuelta completa, el diario y las preguntas de reflexión. El circuito, la feria y las tarjetas de planificación son propios.
 
-**Pregunta guia:** com transformem el mapa d'un circuit en una seqüència que el robot puga executar i revisar?
+**Pregunta guía:** ¿cómo transformamos el mapa de un circuito en una secuencia que el robot pueda ejecutar y revisar?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Representar un circuit amb inici, final, trams, girs i una volta completa.
-- Combinar blocs de moviment amb paràmetres i, si la dotació els inclou, blocs d'angle.
-- Reconéixer una seqüència reutilitzable com a funció i repetir-la amb blocs de bucle.
-- Provar el programa, localitzar una desviació i modificar una instrucció cada vegada.
-- Repartir rols, documentar decisions i presentar un disseny amb evidències de prova.
+- Representar un circuito con inicio, final, tramos, giros y una vuelta completa.
+- Combinar bloques de movimiento con parámetros y, si la dotación los incluye, bloques de ángulo.
+- Reconocer una secuencia reutilizable como función y repetirla con bloques de bucle.
+- Probar el programa, localizar una desviación y modificar una instrucción cada vez.
+- Repartir roles, documentar decisiones y presentar un diseño con evidencias de prueba.
 
-**Vocabulari clau:** mapa, graella, algoritme, seqüència, angle, grau, paràmetre, funció, bucle, inici, meta, volta, prova i depuració.
+**Vocabulario clave:** mapa, cuadrícula, algoritmo, secuencia, ángulo, grado, parámetro, función, bucle, inicio, meta, vuelta, prueba y depuración.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Un Coding Set complet per equip: MatataBot, torre de control, tauler de control i blocs de direcció/moviment, nombre/paràmetre, bucle i funció que estiguen disponibles al centre.
-- Blocs d'angle **només si formen part de la dotació**; no es pressuposa l'Artist Add-On. Sense aquests blocs, adapteu el circuit a girs de 90° sobre quadrícula i manteniu els objectius de seqüència, repetició i funció.
-- Gots de paper o recipients lleugers nets per a una carcassa desmuntable, cartolina, retoladors, tisores d'aula, cinta i cola només per a la maqueta separada; paper gran per al circuit i quadern de registre.
-- Targeta de planificació amb dibuix, inici/meta, ordre dels girs, programa provat, incidència i canvi aplicat.
+- Un Coding Set completo por equipo: MatataBot, torre de control, tablero de control y bloques de dirección/movimiento, número/parámetro, bucle y función que estén disponibles en el centro.
+- Bloques de ángulo **solo si forman parte de la dotación**; no se presupone el Artist Add-On. Sin estos bloques, adaptad el circuito a giros de 90° sobre cuadrícula y mantened los objetivos de secuencia, repetición y función.
+- Vasos de papel o recipientes ligeros limpios para una carrocería desmontable, cartulina, rotuladores, tijeras de aula, cinta y cola solo para la maqueta separada; papel grande para el circuito y cuaderno de registro.
+- Tarjeta de planificación con dibujo, inicio/meta, orden de los giros, programa probado, incidencia y cambio aplicado.
 
-Abans de la classe, carregueu MatataBot i la torre. Proveu els blocs i el circuit en una superfície plana, sense carcassa. Si es construeix una carcassa, comproveu que descansa sense pressió sobre el cos i no toca cap element lector ni bloqueja les rodes. El fabricant especifica que la carcassa de cursa ha d'ajustar-se al robot sense enganxar-s'hi. Manteniu les tisores sota supervisió i no feu competicions de velocitat.
+Antes de la clase, cargad MatataBot y la torre. Probad los bloques y el circuito en una superficie plana, sin carrocería. Si se construye una carrocería, comprobad que descansa sin presión sobre el cuerpo y no toca ningún elemento lector ni bloquea las ruedas. El fabricante especifica que la carrocería de carrera debe ajustarse al robot sin pegarse. Mantened las tijeras bajo supervisión y no hagáis competiciones de velocidad.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Sessió 1 · Dissenyem el cotxe i el circuit (60 min)
+### Sesión 1 · Diseñamos el coche y el circuito (60 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Activació (10 min):** mostreu un mapa senzill d'un camí de l'horta i pregunteu quina informació necessita una persona per seguir-ne la ruta. Relacioneu el traçat amb les ordres de MatataBot: avançar, retrocedir i girar. Compareu un gir recte amb un d'obert i anticipeu què pot passar si l'angle del mapa i el del programa no coincideixen. Presenteu el repte: crear una carcassa que puga retirar-se i un circuit amb inici i meta.
+**Activación (10 min):** mostrad un mapa sencillo de un camino de la huerta y preguntad qué información necesita una persona para seguir la ruta. Relacionad el trazado con las órdenes de MatataBot: avanzar, retroceder y girar. Comparad un giro recto con uno abierto y anticipad qué puede pasar si el ángulo del mapa y el del programa no coinciden. Presentad el reto: crear una carrocería que se pueda retirar y un circuito con inicio y meta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Esbossos i prova (20 min):** en grups de quatre, assigneu rols rotatius de disseny, lectura de mapa, programació i registre. Dibuixeu el cotxe i el circuit al quadern abans d'usar els materials. Feu una carcassa amb un got o cartolina que puga posar-se i llevar-se sense cola; si no encaixa sense forçar ni cobrir l'ull lector, deixeu-la com a maqueta al costat del robot. Sobre paper gran, traceu un circuit que torne al punt d'eixida. Podeu incloure girs oberts només si disposeu dels blocs d'angle reals; si no, useu una graella amb girs de 90°.
+**Bocetos y prueba (20 min):** en grupos de cuatro, asignad roles rotativos de diseño, lectura de mapa, programación y registro. Dibujad el coche y el circuito en el cuaderno antes de usar los materiales. Haced una carrocería con un vaso o cartulina que se pueda poner y quitar sin cola; si no encaja sin forzarla ni cubrir el ojo lector, dejadla como maqueta junto al robot. Sobre papel grande, trazad un circuito que vuelva al punto de salida. Podéis incluir giros abiertos solo si disponéis de los bloques de ángulo reales; si no, usad una cuadrícula con giros de 90°.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Angles i seqüències (10 min):** marqueu cada tram i gir de la ruta. Si hi ha blocs d'angle, proveu-los primer en un tros curt i anoteu que el valor representa el gir codificat segons el bloc, no necessàriament l'angle interior que dibuixa la cantonada. Si no n'hi ha, representeu els girs rectes sobre la quadrícula. Compareu la seqüència dibuixada amb l'ordre físic dels blocs al tauler.
+**Ángulos y secuencias (10 min):** marcad cada tramo y giro de la ruta. Si hay bloques de ángulo, probadlos primero en un trozo corto y anotad que el valor representa el giro codificado según el bloque, no necesariamente el ángulo interior que dibuja la esquina. Si no los hay, representad los giros rectos sobre la cuadrícula. Comparad la secuencia dibujada con el orden físico de los bloques en el tablero.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Primera volta (15 min):** executeu una ruta curta del circuit sense la carcassa. Si el robot se'n desvia, marqueu al mapa on ocorre i canvieu una sola instrucció: nombre de moviments, ordre o gir. Després de comprovar una volta, col·loqueu la carcassa només si l'ajust i la lectura continuen sent fiables; repetiu el mateix tram per comprovar si la maqueta altera el moviment.
+**Primera vuelta (15 min):** ejecutad una ruta corta del circuito sin la carrocería. Si el robot se desvía, marcad en el mapa dónde ocurre y cambiad una sola instrucción: número de movimientos, orden o giro. Después de comprobar una vuelta, colocad la carrocería solo si el ajuste y la lectura continúan siendo fiables; repetid el mismo tramo para comprobar si la maqueta altera el movimiento.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Tancament (5 min):** cada equip dibuixa la ruta que ha provat i encercla el gir més difícil. Responeu al quadern: què és un angle?, per què és important en una ruta?, i quina prova ha ajudat a decidir si el programa funcionava? **Evidència:** esbós del vehicle i del mapa, seqüència inicial i anotació d'una prova.
+**Cierre (5 min):** cada equipo dibuja la ruta que ha probado y rodea el giro más difícil. Responded en el cuaderno: ¿qué es un ángulo?, ¿por qué es importante en una ruta?, y ¿qué prueba ha ayudado a decidir si el programa funcionaba? **Evidencia:** boceto del vehículo y del mapa, secuencia inicial y anotación de una prueba.
 
-![MatataBot i la torre Coding Set reals davant d'un circuit de paper amb inici, meta i girs; la carcassa de paper està separada per mostrar que no s'enganxa al robot.](../../_assets/situacions/sa-cs-circuit-cursa-programa-v1.webp)
+![MatataBot y la torre Coding Set reales frente a un circuito de papel con inicio, meta y giros; la carrocería de papel está separada para mostrar que no se pega al robot.](../../_assets/situacions/sa-cs-circuit-cursa-programa-v1.webp)
 
-_La imatge és una proposta visual de planificació, no una instrucció de muntatge. Comproveu el tauler, els blocs i la lectura real de la torre amb el kit del centre._
+_La imagen es una propuesta visual de planificación, no una instrucción de montaje. Comprobad el tablero, los bloques y la lectura real de la torre con el kit del centro._
 
-### Sessió 2 · Programem una volta i depurem (60 min)
+### Sesión 2 · Programamos una vuelta y depuramos (60 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Recordem els blocs (10 min):** recupereu el mapa i els blocs avançats. Expliqueu amb exemples físics que el paràmetre indica quantes vegades s'aplica un moviment, que el bucle repeteix un grup d'instruccions i que una funció dona un nom a una seqüència que es pot reutilitzar. No presenteu una disposició exacta de blocs si no l'heu comprovat amb la versió concreta del tauler.
+**Recordamos los bloques (10 min):** recuperad el mapa y los bloques avanzados. Explicad con ejemplos físicos que el parámetro indica cuántas veces se aplica un movimiento, que el bucle repite un grupo de instrucciones y que una función da un nombre a una secuencia que se puede reutilizar. No presentéis una disposición exacta de bloques si no la habéis comprobado con la versión concreta del tablero.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Preparem el programa (15 min):** els equips planifiquen una volta completa o una ruta amb diversos trams. Marqueu quines ordres es repeteixen i quina seqüència podria agrupar-se en una funció. Amb els blocs presents al set, munteu primer una versió curta al tauler; una altra persona llig les peces d'esquerra a dreta i de dalt a baix, segons l'ordre que reconeix el kit.
+**Preparamos el programa (15 min):** los equipos planifican una vuelta completa o una ruta con varios tramos. Marcad qué órdenes se repiten y qué secuencia podría agruparse en una función. Con los bloques presentes en el set, montad primero una versión corta en el tablero; otra persona lee las piezas de izquierda a derecha y de arriba abajo, según el orden que reconoce el kit.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Predicció i casos de prova (10 min):** abans d'executar, recorreu el mapa amb el dit i anoteu on hauria d'acabar el robot després de cada seqüència. Afegiu un segon cas: repetir el mateix tram dues vegades o reduir el nombre de repeticions. Registreu què canvia en usar un paràmetre, una funció o un bucle i quina part del codi es manté igual.
+**Predicción y casos de prueba (10 min):** antes de ejecutar, recorred el mapa con el dedo y anotad dónde debería acabar el robot después de cada secuencia. Añadid un segundo caso: repetir el mismo tramo dos veces o reducir el número de repeticiones. Registrad qué cambia al usar un parámetro, una función o un bucle y qué parte del código se mantiene igual.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Completem i depurem la cursa (20 min):** executeu la volta a baixa velocitat d'acord amb el moviment normal del kit. Si no arriba a la meta, compareu posició prevista i real, localitzeu la primera ordre divergent i canvieu-ne una. Repetiu després d'una modificació. Quan complete la volta, proveu una segona volta amb un bucle o una funció reutilitzada, sempre que els blocs estiguen disponibles. Cada grup presenta el cotxe de paper al costat del robot —sense enganxar-lo—, el mapa i la seqüència provada.
+**Completamos y depuramos la carrera (20 min):** ejecutad la vuelta a baja velocidad de acuerdo con el movimiento normal del kit. Si no llega a la meta, comparad posición prevista y real, localizad la primera orden divergente y cambiad una. Repetid tras una modificación. Cuando complete la vuelta, probad una segunda vuelta con un bucle o una función reutilizada, siempre que los bloques estén disponibles. Cada grupo presenta el coche de papel junto al robot —sin pegarlo—, el mapa y la secuencia probada.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Diari i retorn (5 min):** responeu: quins blocs avançats hem utilitzat?, quin ens ha ajudat més a completar la ruta i per què?, què canviaríem per fer el disseny més fiable? Una altra parella aporta una observació concreta i una pregunta. **Evidència final:** programa físic registrat o fotografiat pel centre, mapa amb volta, incidència detectada, canvi provat i explicació del paper dels paràmetres, bucles i funcions.
+**Diario y retorno (5 min):** responded: ¿qué bloques avanzados hemos utilizado?, ¿cuál nos ha ayudado más a completar la ruta y por qué?, ¿qué cambiaríamos para hacer el diseño más fiable? Otra pareja aporta una observación concreta y una pregunta. **Evidencia final:** programa físico registrado o fotografiado por el centro, mapa con vuelta, incidencia detectada, cambio probado y explicación del papel de los parámetros, bucles y funciones.
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu els esbossos, el mapa, la seqüència de blocs, el diari de depuració i la presentació. Observeu si l'alumnat identifica inici i meta; manté el circuit consistent amb les ordres; explica quan una instrucció es repeteix; usa una seqüència reutilitzable quan el bloc de funció està disponible; i argumenta una modificació a partir del punt on s'ha desviat el robot. La carcassa estètica, el temps i la rapidesa no són criteris d'avaluació.
+Recoged los bocetos, el mapa, la secuencia de bloques, el diario de depuración y la presentación. Observad si el alumnado identifica inicio y meta; mantiene el circuito consistente con las órdenes; explica cuándo se repite una instrucción; usa una secuencia reutilizable cuando el bloque de función está disponible; y argumenta una modificación a partir del punto en el que se ha desviado el robot. La carrocería estética, el tiempo y la rapidez no son criterios de evaluación.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Oferiu un mapa d'alt contrast, una ruta curta o una quadrícula tàctil; assigneu rols de disseny, lectura, programació, observació i registre perquè cada persona puga participar sense manipular el robot. L'alumnat pot explicar la ruta oralment, amb fletxes o amb una seqüència de targetes. Useu només carcasses lleugeres i desmuntables, supervisió amb tisores i superfícies planes. No pegueu cap peça al robot ni tapeu l'ull lector; retireu la carcassa si afecta el moviment.
+Ofreced un mapa de alto contraste, una ruta corta o una cuadrícula táctil; asignad roles de diseño, lectura, programación, observación y registro para que cada persona pueda participar sin manipular el robot. El alumnado puede explicar la ruta oralmente, con flechas o con una secuencia de tarjetas. Usad solo carrocerías ligeras y desmontables, supervisión con tijeras y superficies planas. No peguéis ninguna pieza al robot ni tapéis el ojo lector; retirad la carrocería si afecta al movimiento.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [Extracurricular Curriculum · lliçons 3 i 4, *Sequences of Coding* (PDF oficial)](https://matatalab.com/cdn/ff/CrQPo-NarPZLUtZnP3JKbo4oDvbv3Nr4L9nQ_5l4kdc/1653550757/public/2022-05/Extracurricular%20Curriculum.pdf): dues sessions de 60 minuts. La lliçó 3 crea una carcassa de cursa que encaixe sense enganxar-se al robot i un circuit, introdueix els blocs d'angle i prova seqüències; la lliçó 4 programa una o diverses voltes amb paràmetres, bucles, funcions i blocs d'angle, depura i presenta el resultat. També inclou diari, reflexió, extensió a altres vehicles i connexions amb mapes i seqüències quotidianes.
-- Matatalab, [guia autoguiada de Coding Set](https://www.matatastudio.com/Self-Guided.html): referència de consulta per a la lectura i funció dels blocs de moviment, nombre, bucle i funció. Els blocs d'angle i el suport de retolador depenen de l'Artist Add-On.
+- Matatalab, [Extracurricular Curriculum · lecciones 3 y 4, *Sequences of Coding* (PDF oficial)](https://matatalab.com/cdn/ff/CrQPo-NarPZLUtZnP3JKbo4oDvbv3Nr4L9nQ_5l4kdc/1653550757/public/2022-05/Extracurricular%20Curriculum.pdf): dos sesiones de 60 minutos. La lección 3 crea una carrocería de carrera que encaje sin pegarse al robot y un circuito, introduce los bloques de ángulo y prueba secuencias; la lección 4 programa una o varias vueltas con parámetros, bucles, funciones y bloques de ángulo, depura y presenta el resultado. También incluye diario, reflexión, extensión a otros vehículos y conexiones con mapas y secuencias cotidianas.
+- Matatalab, [guía autoguiada de Coding Set](https://www.matatastudio.com/Self-Guided.html): referencia de consulta para la lectura y función de los bloques de movimiento, número, bucle y función. Los bloques de ángulo y el soporte de rotulador dependen del Artist Add-On.
 
-La fira de l'horta, el mapa, els criteris d'avaluació i les imatges IA són originals. Aquesta fitxa adapta **les lliçons 3 i 4**, no les dotze lliçons del currículum extracurricular complet. L'ús de blocs d'angle i de carcassa està condicionat a la dotació real; la versió base amb quadrícula conserva seqüències, nombres, bucles i funcions sense atribuir complements inexistents.
+La feria de la huerta, el mapa, los criterios de evaluación y las imágenes IA son originales. Esta ficha adapta **las lecciones 3 y 4**, no las doce lecciones del currículo extracurricular completo. El uso de bloques de ángulo y de carrocería está condicionado a la dotación real; la versión base con cuadrícula conserva secuencias, números, bucles y funciones sin atribuir complementos inexistentes.

@@ -14,33 +14,33 @@ duration: "6 lecciones · 6–8 sesiones"
 challenge: "¿Cómo podemos combinar comprobaciones en Python para decidir cuándo una maqueta de préstamo de material puede mostrar una respuesta, y cómo probamos que no confunde casos?"
 ---
 
-![Robot LEGO SPIKE Prime real al costat d'una maqueta de cartó amb un passadís de fitxes geomètriques i dos controls de prova.](../../_assets/situacions/sp-python-condicions.webp)
+![Robot LEGO SPIKE Prime real junto a una maqueta de cartón con un pasillo de fichas geométricas y dos controles de prueba.](../../_assets/situacions/sp-python-condicions.webp)
 
-_Una decisió composta és més fàcil d’explicar si fem visibles les condicions i provem cada combinació._
+_Una decisión compuesta es más fácil de explicar si hacemos visibles las condiciones y probamos cada combinación._
 
-## 🌱 Repte i context
+## 🌱 Reto y contexto
 
-La biblioteca de l’aula vol provar una estació didàctica que indica si una caixa de material compartit està preparada per a una activitat. En una maqueta de cartó, les fitxes de color representen un codi d’activitat inventat per la classe, un sensor de força representa una confirmació física i la matriu de llums de la SPIKE hub comunica l’estat. L’alumnat defineix quines condicions s’han de complir perquè aparega una resposta, construeix una maqueta sense cap pany funcional i programa una simulació en Python.
+La biblioteca del aula quiere probar una estación didáctica que indica si una caja de material compartido está preparada para una actividad. En una maqueta de cartón, las fichas de color representan un código de actividad inventado por la clase, un sensor de fuerza representa una confirmación física y la matriz de luces del SPIKE hub comunica el estado. El alumnado define qué condiciones deben cumplirse para que aparezca una respuesta, construye una maqueta sin ninguna cerradura funcional y programa una simulación en Python.
 
-La situació adapta la unitat 8 *Compound Conditionals and Logic Operators* de LEGO Education *Introduction to Python Programming · Course 2*. Parteix d’una conversa segura sobre privacitat i controls digitals, practica condicions imbricades i operadors lògics amb taules de veritat, investiga una seqüència de dues comprovacions amb sensors i culmina en un joc cooperatiu de pistes dissenyat i provat per un altre equip. No és un sistema de seguretat ni valida contrasenyes reals; no es recopila ni es comparteix cap credencial personal.
+La situación adapta la unidad 8 *Compound Conditionals and Logic Operators* de LEGO Education *Introduction to Python Programming · Course 2*. Parte de una conversación segura sobre privacidad y controles digitales, practica condiciones anidadas y operadores lógicos con tablas de verdad, investiga una secuencia de dos comprobaciones con sensores y culmina en un juego cooperativo de pistas diseñado y probado por otro equipo. No es un sistema de seguridad ni valida contraseñas reales; no se recopila ni se comparte ninguna credencial personal.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Representar una decisió com a condicions observables, resultats possibles i casos que han de continuar bloquejats.
+- Representar una decisión como condiciones observables, resultados posibles y casos que deben seguir bloqueados.
 
-- Escriure i explicar `if`, `elif`, `else`, condicions imbricades i expressions booleanes en Python.
+- Escribir y explicar `if`, `elif`, `else`, condiciones anidadas y expresiones booleanas en Python.
 
-- Combinar expressions amb `and`, `or` i `not`; distingir “totes”, “almenys una” i “cap/aquesta no”.
+- Combinar expresiones con `and`, `or` y `not`; distinguir «todas», «al menos una» y «ninguna/esta no».
 
-- Construir taules de veritat i taules de proves per cobrir cada combinació pertinent, incloses entrades absents o desconegudes.
+- Construir tablas de verdad y tablas de pruebas para cubrir cada combinación pertinente, incluidas entradas ausentes o desconocidas.
 
-- Separar comprovació digital, acció del mecanisme i senyal de feedback per a poder provar i revisar cada part.
+- Separar comprobación digital, acción del mecanismo y señal de retroalimentación para poder probar y revisar cada parte.
 
-- Descriure amb exemples com els controls físics i digitals poden protegir informació, i explicar què no garanteix una maqueta.
+- Describir con ejemplos cómo los controles físicos y digitales pueden proteger información, y explicar qué no garantiza una maqueta.
 
-- Donar i incorporar feedback sense revelar dades reals, ni presentar el prototip com un dispositiu apte per a protegir béns o persones.
+- Dar e incorporar retroalimentación sin revelar datos reales, ni presentar el prototipo como un dispositivo apto para proteger bienes o personas.
 
-**Booleà:** valor de veritat `True` o `False`. **Condició composta:** expressió que combina condicions més simples. **Imbricada:** condició dins d’una altra branca. **Cas de prova:** conjunt d’entrades i resultat esperat. **Autenticació:** comprovació d’identitat en un sistema; en aquesta activitat no s’autentica cap persona, només es simulen entrades fictícies.
+**Booleano:** valor de verdad `True` o `False`. **Condición compuesta:** expresión que combina condiciones más simples. **Anidada:** condición dentro de otra rama. **Caso de prueba:** conjunto de entradas y resultado esperado. **Autenticación:** comprobación de identidad en un sistema; en esta actividad no se autentica a ninguna persona, solo se simulan entradas ficticias.
 
 ```python
 codi_valid = (fitxa == "blava")
@@ -52,158 +52,158 @@ else:
     print("Revisa les entrades")
 ```
 
-El fragment és Python general il·lustratiu; `boto_premut` i `fitxa` són valors de simulació. L’accés a ports i sensors SPIKE s’ha d’escriure segons la Knowledge Base de la versió de l’app instal·lada.
+El fragmento es Python general ilustrativo; `boto_premut` y `fitxa` son valores de simulación. El acceso a puertos y sensores SPIKE debe escribirse según la Knowledge Base de la versión de la app instalada.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Un set SPIKE Prime per equip, hub carregat, dispositiu amb app SPIKE i Python disponibles, sensor de força i sensor de color, cables, peces Technic per a un indicador mòbil opcional, cartó reutilitzat per a una estació oberta de taula, fitxes grans amb símbols i colors, fulls per a taules de veritat, diari d’equip i temporitzador de classe. Tot el sistema és visible i accessible: no construïu panys, caixes tancades ni mecanismes que retinguen objectes. També es pot fer tota la seqüència sense motor, només amb sensors, LEDs o simulació en paper.
+Un set SPIKE Prime por equipo, hub cargado, dispositivo con app SPIKE y Python disponibles, sensor de fuerza y sensor de color, cables, piezas Technic para un indicador móvil opcional, cartón reutilizado para una estación abierta de mesa, fichas grandes con símbolos y colores, hojas para tablas de verdad, diario de equipo y temporizador de clase. Todo el sistema es visible y accesible: no construyáis cerraduras, cajas cerradas ni mecanismos que retengan objetos. También se puede hacer toda la secuencia sin motor, solo con sensores, LED o simulación en papel.
 
-Prepareu entrades fictícies i comprovables: tres fitxes de símbols geomètrics, un polsador/sensor de confirmació, un cas sense fitxa i un cas de valor desconegut. No useu contrasenyes reals, noms, inicials, dates de naixement ni codis d’accés del centre. Si voleu tractar bons hàbits de contrasenya, feu servir un exemple inventat en paper i parleu de llargària i unicitat sense demanar que ningú revele les seues. Comproveu els sensors, ports i forma d’aturar el programa amb l’app local; les API i funcions canvien entre versions. No connecteu ni desconnecteu sensors amb l’execució activa.
+Preparad entradas ficticias y comprobables: tres fichas de símbolos geométricos, un pulsador/sensor de confirmación, un caso sin ficha y un caso de valor desconocido. No uséis contraseñas reales, nombres, iniciales, fechas de nacimiento ni códigos de acceso del centro. Si queréis tratar buenos hábitos de contraseña, usad un ejemplo inventado en papel y hablad de longitud y unicidad sin pedir que nadie revele las suyas. Comprobad los sensores, puertos y forma de detener el programa con la app local; las API y funciones cambian entre versiones. No conectéis ni desconectéis sensores con la ejecución activa.
 
-Rols rotatius: qui escriu la condició; qui llig els casos de prova; qui cuida la maqueta i el hub; qui registra resultats. Abans de cada execució, tot l’equip prediu la branca que s’activarà. No hi ha cap moviment motoritzat obligatori.
+Roles rotativos: quién escribe la condición; quién lee los casos de prueba; quién cuida la maqueta y el hub; quién registra resultados. Antes de cada ejecución, todo el equipo predice la rama que se activará. No hay ningún movimiento motorizado obligatorio.
 
-## 📅 Seqüència didàctica · sis lliçons
+## 📅 Secuencia didáctica · seis lecciones
 
-### **Lliçó 1 · Protegim la informació sense compartir secrets (45 min).**
+### **Lección 1 · Protegemos la información sin compartir secretos (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Conversa d’entrada (8 min):** presenteu targetes amb situacions fictícies: un dispositiu demana un codi inventat; una persona comparteix la clau amb tota la classe; una pantalla mostra un nom; un usuari crea una clau llarga única. L’alumnat classifica què podria protegir la informació i què caldria esborrar o no compartir. No es demana que ensenyen cap codi real.
+**Conversación de entrada (8 min):** presentad tarjetas con situaciones ficticias: un dispositivo pide un código inventado; una persona comparte la clave con toda la clase; una pantalla muestra un nombre; un usuario crea una clave larga única. El alumnado clasifica qué podría proteger la información y qué habría que borrar o no compartir. No se pide que muestren ningún código real.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Descomposició (10 min):** identifiqueu el problema del programa fictici: la resposta “correcte/incorrecte” no explica què passa si falta una dada o si la sessió acaba. Escriviu una especificació simple: una fitxa de prova concreta activa un missatge neutre; qualsevol altra entrada, inclòs cap valor, mostra “revisa la consigna”.
+**Descomposición (10 min):** identificad el problema del programa ficticio: la respuesta «correcto/incorrecto» no explica qué pasa si falta un dato o si la sesión termina. Escribid una especificación simple: una ficha de prueba concreta activa un mensaje neutro; cualquier otra entrada, incluido ningún valor, muestra «revisa la consigna».
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Python en paper i editor (20 min):** traceu `if/elif/else` amb tres valors simulats i representeu cada pas amb fletxes.
+**Python en papel y editor (20 min):** trazad `if/elif/else` con tres valores simulados y representad cada paso con flechas.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-En parelles, traduïu una regla a pseudocodi i a Python general sense guardar la dada introduïda en cap fitxer ni consola. Si useu editor real, tots els valors són de mostra.
+En parejas, traducid una regla a pseudocódigo y a Python general sin guardar el dato introducido en ningún archivo ni consola. Si usáis editor real, todos los valores son de muestra.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Tancament (7 min):** classifiqueu les afirmacions “el programa compara aquesta entrada” i “el programa sap qui és la persona”; expliqueu per què la primera no demostra la segona. Feu una llista de coses que la maqueta mai no farà.
+**Cierre (7 min):** clasificad las afirmaciones «el programa compara esta entrada» y «el programa sabe quién es la persona»; explicad por qué la primera no demuestra la segunda. Haced una lista de cosas que la maqueta nunca hará.
 
-### **Lliçó 2 · Una condició dins d’una altra, amb límits visibles (45 min).**
+### **Lección 2 · Una condición dentro de otra, con límites visibles (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Activació (5 min):** joc de decisions desendollat: s’avança a la següent targeta només si es compleix la condició externa; dins de l’espai habilitat, una segona condició selecciona una de dues respostes. L’alumnat explica quan la segona regla ni tan sols es consulta.
+**Activación (5 min):** juego de decisiones desconectado: se avanza a la siguiente tarjeta solo si se cumple la condición externa; dentro del espacio habilitado, una segunda condición selecciona una de dos respuestas. El alumnado explica cuándo la segunda regla ni siquiera se consulta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Disseny (10 min):** dibuixeu una maqueta d’estació oberta per retornar material de joc a una safata. Regla d’exemple: si hi ha sessió activa, aleshores comprova que el color siga un dels dos acceptats; si no hi ha sessió, mostra instruccions d’inici. El color no representa una identitat.
+**Diseño (10 min):** dibujad una maqueta de estación abierta para devolver material de juego a una bandeja. Regla de ejemplo: si hay sesión activa, entonces comprobad que el color sea uno de los dos aceptados; si no hay sesión, mostrad instrucciones de inicio. El color no representa una identidad.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Python (20 min):** escriviu una condició imbricada amb valors introduïts manualment i marqueu amb claudàtors l’abast de cada bloc. Proveu les rutes: sessió inactiva; activa amb color A; activa amb color B; activa amb color no admés. Compareu-la amb una cadena de `if/elif/else` i discutiu quina forma fa més clara la regla en aquest cas.
+**Python (20 min):** escribid una condición anidada con valores introducidos manualmente y marcad con corchetes el alcance de cada bloque. Probad las rutas: sesión inactiva; activa con color A; activa con color B; activa con color no admitido. Comparadla con una cadena de `if/elif/else` y discutid qué forma hace más clara la regla en este caso.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Prova física opcional (5 min):** useu el sensor de color amb targetes grans; manteniu motor inactiu i compareu el valor llegit amb l’entrada esperada.
+**Prueba física opcional (5 min):** usad el sensor de color con tarjetas grandes; mantened el motor inactivo y comparad el valor leído con la entrada esperada.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Registre (5 min):** anoteu quina condició es consulta primer, quina branca no s’ha visitat i per què una condició imbricada pot ser difícil de llegir si acumula massa nivells.
+**Registro (5 min):** anotad qué condición se consulta primero, qué rama no se ha visitado y por qué una condición anidada puede ser difícil de leer si acumula demasiados niveles.
 
-### **Lliçó 3 · AND, OR i NOT en una taula de veritat (45 min).**
+### **Lección 3 · AND, OR y NOT en una tabla de verdad (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Modelatge corporal (8 min):** representeu amb dos gestos la condició A “fitxa de pràctica blava” i B “polsador físic activat”. El grup mostra `and` només quan A i B són certes, `or` quan almenys una és certa i `not` quan una condició no es compleix. Parleu explícitament de què significa OR inclusiu: si les dues són certes, continua sent cert.
+**Modelado corporal (8 min):** representad con dos gestos la condición A «ficha de práctica azul» y B «pulsador físico activado». El grupo muestra `and` solo cuando A y B son ciertas, `or` cuando al menos una es cierta y `not` cuando una condición no se cumple. Hablad explícitamente de qué significa OR inclusivo: si las dos son ciertas, sigue siendo cierto.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Taula en equip (12 min):** completeu les quatre combinacions de A/B i els resultats esperats per A and B i A or B; afegiu una columna per not A. Compareu entre equips i expliqueu qualsevol fila discrepant.
+**Tabla en equipo (12 min):** completad las cuatro combinaciones de A/B y los resultados esperados para A and B y A or B; añadid una columna para not A. Comparad entre equipos y explicad cualquier fila discrepante.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Programa de simulació (18 min):** feu que un indicador de llum/console comunique els quatre estats: cap comprovació; només A; només B; totes dues.
+**Programa de simulación (18 min):** haced que un indicador de luz/consola comunique los cuatro estados: ninguna comprobación; solo A; solo B; ambas.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Useu `and`, `or` i `not` en regles amb propòsit distint; no els afegiu tots a una única expressió sense necessitat. Si connecteu sensor i botó, manteniu el motor desactivat.
+Usad `and`, `or` y `not` en reglas con propósito distinto; no los añadáis todos a una única expresión sin necesidad. Si conectáis sensor y botón, mantened el motor desactivado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Minirepte (7 min):** trobeu i corregiu una regla amb `or` on l’especificació demana `and`. Predigueu quin cas incorrecte passava abans de canviar-la i com la taula permet demostrar la correcció.
+**Minirreto (7 min):** encontrad y corregid una regla con `or` donde la especificación pide `and`. Predecid qué caso incorrecto ocurría antes de cambiarla y cómo la tabla permite demostrar la corrección.
 
-### **Lliçó 4 · Dues comprovacions, una resposta prudent (45–90 min).**
+### **Lección 4 · Dos comprobaciones, una respuesta prudente (45–90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta de disseny (10 min):** com podem combinar una fitxa de color i la pressió d’un sensor de força per donar una resposta de prova? Definiu primer la regla en llenguatge natural, per exemple: l’assaig s’accepta si la fitxa és blava *i* el sensor es prem després que aparega la fitxa; si la fitxa no es reconeix, el sistema no interpreta el polsador com a acceptació.
+**Pregunta de diseño (10 min):** ¿cómo podemos combinar una ficha de color y la presión de un sensor de fuerza para dar una respuesta de prueba? Definid primero la regla en lenguaje natural, por ejemplo: el ensayo se acepta si la ficha es azul *y* el sensor se pulsa después de que aparezca la ficha; si la ficha no se reconoce, el sistema no interpreta el pulsador como aceptación.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Maqueta i pseudocodi (10–15 min):** col·loqueu el sensor de color de manera fixa i reserveu el sensor de força com a entrada manual; representeu en paper què vol dir “després” (estat/ordre de passos) en lloc de fingir simultaneïtat si el codi no l’està comprovant. Un equip pot prototipar amb fitxes mentre un altre dissenya l’arbre de decisions.
+**Maqueta y pseudocódigo (10–15 min):** colocad el sensor de color de forma fija y reservad el sensor de fuerza como entrada manual; representad en papel qué significa «después» (estado/orden de pasos) en lugar de fingir simultaneidad si el código no la está comprobando. Un equipo puede prototipar con fichas mientras otro diseña el árbol de decisiones.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Implementació (15–30 min):** convertiu la regla en funcions petites, una per llegir cada entrada i una per decidir/mostrar estat. Creeu variables booleans amb noms que descriguen la condició. Afegiu branca per a sensor sense lectura, pressió abans d’hora, pressió absent i una combinació no prevista. Només la consola, la llum o una bandera mecànica de recorregut curt mostren la decisió; el dispositiu no controla cap accés real.
+**Implementación (15–30 min):** convertid la regla en funciones pequeñas, una para leer cada entrada y una para decidir/mostrar estado. Cread variables booleanas con nombres que describan la condición. Añadid rama para sensor sin lectura, presión antes de tiempo, presión ausente y una combinación no prevista. Solo la consola, la luz o una bandera mecánica de recorrido corto muestran la decisión; el dispositivo no controla ningún acceso real.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Proves (10–25 min):** executeu una taula de casos, incloent totes dues entrades falses, només A, només B i totes dues certes. Repetiu una combinació tres vegades per observar si el sensor dona lectures estables, i indiqueu si cada cas passa al codi o a la lectura del sensor.
+**Pruebas (10–25 min):** ejecutad una tabla de casos, incluyendo ambas entradas falsas, solo A, solo B y ambas ciertas. Repetid una combinación tres veces para observar si el sensor da lecturas estables, e indicad si cada caso se debe al código o a la lectura del sensor.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Reflexió:** quina dada rep el programa? quina regla ha definit l’equip? quina afirmació no podem fer sobre la seguretat d’un objecte real?
+**Reflexión:** ¿qué dato recibe el programa? ¿qué regla ha definido el equipo? ¿qué afirmación no podemos hacer sobre la seguridad de un objeto real?
 
-### **Lliçó 5 · Escape room de l’aula: obrir una ruta de pistes simulada (90 min).**
+### **Lección 5 · Escape room del aula: abrir una ruta de pistas simulada (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Encàrrec (10 min):** cada equip crearà una estació de repte de taula amb dues comprovacions lògiques, un senyal clar i una via alternativa perquè el joc es puga completar sense sensor si cal. No es tanca ningú dins d’un espai ni es creen claus secretes. Les “pistes” són fitxes públiques i fictícies; el resultat activa una targeta de pròxima instrucció, no un pany. **Ideació (12 min):** cada membre esbossa una microprova; l’equip n’escull una amb tres criteris: comprensible sense ajuda, comprovable amb quatre o més casos i resoluble amb els sensors presents. Escriviu instruccions curtes i la resposta correcta en un sobre docent separat.
+**Encargo (10 min):** cada equipo creará una estación de reto de mesa con dos comprobaciones lógicas, una señal clara y una vía alternativa para que el juego se pueda completar sin sensor si hace falta. No se encierra a nadie dentro de un espacio ni se crean claves secretas. Las «pistas» son fichas públicas y ficticias; el resultado activa una tarjeta de próxima instrucción, no una cerradura. **Ideación (12 min):** cada miembro esboza una microprueba; el equipo elige una con tres criterios: comprensible sin ayuda, comprobable con cuatro o más casos y resoluble con los sensores presentes. Escribid instrucciones cortas y la respuesta correcta en un sobre docente separado.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Construcció (18 min):** feu un escenari o recorregut de cartó i col·loqueu estacions d’entrada; si un motor mou una fletxa o senyal, delimiteu recorregut i velocitat. L’estació sempre queda oberta i l’aturada és accessible.
+**Construcción (18 min):** haced un escenario o recorrido de cartón y colocad estaciones de entrada; si un motor mueve una flecha o señal, delimitad recorrido y velocidad. La estación siempre queda abierta y la parada es accesible.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Programa (20 min):** formuleu almenys una regla amb `and` i una amb `or` o `not`, comenteu-les amb una frase de llenguatge natural i tracteu explícitament entrada invàlida o desconeguda. Dibuixeu arbre de decisió i convertiu-lo a blocs Python indentats.
+**Programa (20 min):** formulad al menos una regla con `and` y una con `or` o `not`, comentadlas con una frase de lenguaje natural y tratad explícitamente entrada inválida o desconocida. Dibujad el árbol de decisión y convertidlo a bloques Python indentados.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Validació entre equips (20 min):** un altre equip intenta resoldre el repte sense que li expliquen la resposta; prova cas correcte, incomplet, ambigu i no previst. Registra si les instruccions són clares, si el programa ofereix una resposta sense revelar dades i si cada pista és accessible.
+**Validación entre equipos (20 min):** otro equipo intenta resolver el reto sin que le expliquen la respuesta; prueba caso correcto, incompleto, ambiguo y no previsto. Registra si las instrucciones son claras, si el programa ofrece una respuesta sin revelar datos y si cada pista es accesible.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Iteració i mostra (10 min):** l’equip creador millora una instrucció o una condició i demostra la versió revisada. Si no es pot provar amb sensor, marca clarament aquella part com a simulada en paper.
+**Iteración y muestra (10 min):** el equipo creador mejora una instrucción o una condición y demuestra la versión revisada. Si no se puede probar con sensor, marcad claramente esa parte como simulada en papel.
 
-### **Lliçó 6 · Feedback, revisió i límits del prototip (30–45 min).**
+### **Lección 6 · Retroalimentación, revisión y límites del prototipo (30–45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Visita de prova (10 min):** una altra parella usa l’estació de pistes; l’equip autor observa sense donar indicacions i anota els punts on cal ajuda o la lògica produeix una eixida sorprenent. No s’enregistren veus, noms ni respostes personals.
+**Visita de prueba (10 min):** otra pareja usa la estación de pistas; el equipo autor observa sin dar indicaciones y anota los puntos donde hace falta ayuda o la lógica produce una salida sorprendente. No se registran voces, nombres ni respuestas personales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Feedback específic (8 min):** feu servir “he observat…”, “la regla diu…”, “aquest cas encara no està provat…”. El feedback tracta d’una condició, una instrucció o una resposta, no de la capacitat dels autors.
+**Retroalimentación específica (8 min):** usad «he observado…», «la regla dice…», «este caso todavía no está probado…». La retroalimentación trata de una condición, una instrucción o una respuesta, no de la capacidad de los autores.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Decisió (5 min):** l’equip marca suggeriments adoptats o rebutjats i la raó basada en especificació/prova.
+**Decisión (5 min):** el equipo marca sugerencias adoptadas o rechazadas y la razón basada en especificación/prueba.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Revisió (10 min):** canvieu una branca, una expressió o el text de la indicació; repetiu la mateixa fila de la taula i una fila diferent.
+**Revisión (10 min):** cambiad una rama, una expresión o el texto de la indicación; repetid la misma fila de la tabla y una fila distinta.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Autoavaluació (5–12 min):** expliqueu la diferència entre la condició del programa i una garantia de ciberseguretat; identifiqueu una entrada que hauria de continuar sense resposta. Puntueu en privat treball col·laboratiu, documentació i gestió del temps, amb una acció de millora per al següent repte.
+**Autoevaluación (5–12 min):** explicad la diferencia entre la condición del programa y una garantía de ciberseguridad; identificad una entrada que debería seguir sin respuesta. Puntuaos en privado trabajo colaborativo, documentación y gestión del tiempo, con una acción de mejora para el siguiente reto.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Recolliu la conversa inicial amb idees anònimes, diagrama de decisions, taules de veritat per `and/or/not`, pseudocodi, codi Python amb comentaris, configuració del sensor, matriu de proves esperades/no previstes, registre de falsos resultats o lectures inestables, instruccions de l’estació i una nota sobre privacitat i límits. El repte final es valora en quatre dimensions: **raonament lògic** (interpreta cada operador i explica la precedència/agrupació amb parèntesis si cal); **programació i proves** (condicions correctes, alternatives i entrades absents cobertes); **disseny d’interacció** (instrucció i feedback entenedors, recorregut o control inclusiu); **responsabilitat** (no demana dades reals i no atribueix garanties al prototip). Useu descriptors “amb suport / en progrés / autònom / ho justifica i transfereix”. La maqueta no es qualifica com a dispositiu de seguretat real.
+Recoged la conversación inicial con ideas anónimas, diagrama de decisiones, tablas de verdad para `and/or/not`, pseudocódigo, código Python con comentarios, configuración del sensor, matriz de pruebas esperadas/no previstas, registro de falsos resultados o lecturas inestables, instrucciones de la estación y una nota sobre privacidad y límites. El reto final se valora en cuatro dimensiones: **razonamiento lógico** (interpreta cada operador y explica la precedencia/agrupación con paréntesis si hace falta); **programación y pruebas** (condiciones correctas, alternativas y entradas ausentes cubiertas); **diseño de interacción** (instrucción y retroalimentación comprensibles, recorrido o control inclusivo); **responsabilidad** (no pide datos reales y no atribuye garantías al prototipo). Usad descriptores «con apoyo / en progreso / autónomo / lo justifica y transfiere». La maqueta no se califica como dispositivo de seguridad real.
 
-## ♿ Inclusió, privacitat i seguretat
+## ♿ Inclusión, privacidad y seguridad
 
-Cap alumne revela contrasenyes, patrons de desbloqueig o comptes; tots els codis de la situació són públics i temporals. No useu dades identificables ni pantalles amb informació privada. Presenteu condicions amb text, símbols, gest i color alhora; oferiu versions de gran format, lectura assistida, paper i entrada manual. Les pistes no requereixen rapidesa física, audició, distinció de colors ni moviment per l’aula. L’estació és oberta, sense pany, atrapament o obstacle a les eixides; cap prova bloqueja el pas ni exclou una persona d’una activitat. Els motors, si s’usen, mouen només una fletxa lleugera dins d’un recorregut curt i delimitat. Atureu-los abans de tocar la maqueta.
+Ningún alumno revela contraseñas, patrones de desbloqueo o cuentas; todos los códigos de la situación son públicos y temporales. No uséis datos identificables ni pantallas con información privada. Presentad condiciones con texto, símbolos, gesto y color a la vez; ofreced versiones de gran formato, lectura asistida, papel y entrada manual. Las pistas no requieren rapidez física, audición, distinción de colores ni movimiento por el aula. La estación está abierta, sin cerradura, atrapamiento ni obstáculo en las salidas; ninguna prueba bloquea el paso ni excluye a una persona de una actividad. Los motores, si se usan, mueven solo una flecha ligera dentro de un recorrido corto y delimitado. Detenedlos antes de tocar la maqueta.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta les sis lliçons de la unitat 8 *Compound Conditionals and Logic Operators* del curs LEGO Education [*Introduction to Python Programming · Course 2*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us): *Password Protection*, *Make it Physically Safe*, *Make a Safer Safe*, *Security Operating with Logic*, *Escape Room* i *Ideas to Help with Escape Room*. Manté l’exploració de protecció digital i física, condicions imbricades, operadors lògics, entrades de sensor en dos passos, restriccions de disseny, proves, col·laboració i retorn entre equips. L’adaptació transforma la caixa forta i l’escapada en un joc de taula obert per a la biblioteca/aula, evita representar panys reals i substitueix qualsevol contrasenya per valors ficticis que no s’emmagatzemen. La guia marca lliçons de 45 minuts, dues de 45–90 minuts i el projecte Escape Room de 90 minuts; ací la durada flexible es dedica a construcció, combinacions de prova i revisió accessible.
+Adapta las seis lecciones de la unidad 8 *Compound Conditionals and Logic Operators* del curso LEGO Education [*Introduction to Python Programming · Course 2*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us): *Password Protection*, *Make it Physically Safe*, *Make a Safer Safe*, *Security Operating with Logic*, *Escape Room* e *Ideas to Help with Escape Room*. Mantiene la exploración de protección digital y física, condiciones anidadas, operadores lógicos, entradas de sensor en dos pasos, restricciones de diseño, pruebas, colaboración y retorno entre equipos. La adaptación transforma la caja fuerte y el escape en un juego de mesa abierto para la biblioteca/aula, evita representar cerraduras reales y sustituye cualquier contraseña por valores ficticios que no se almacenan. La guía marca lecciones de 45 minutos, dos de 45–90 minutos y el proyecto Escape Room de 90 minutos; aquí la duración flexible se dedica a construcción, combinaciones de prueba y revisión accesible.

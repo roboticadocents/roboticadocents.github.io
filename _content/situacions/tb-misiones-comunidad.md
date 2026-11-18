@@ -9,300 +9,300 @@ cycle_label: "Educación Infantil"
 subject: "pensament-computacional"
 subject_label: "Lenguaje, Medio Social y Pensamiento Computacional"
 theme: "entorn"
-theme_label: "Relatos y servicios comunitaris"
+theme_label: "Relatos y servicios comunitarios"
 duration: "10 actividades · 20–30 min cada una"
 challenge: "¿Cómo organizamos un recorrido que visite varios lugares y cuente una historia que el grupo pueda cambiar?"
 ---
 
-![Tale-Bot Pro real al costat d’un llibre il·lustrat i de targetes pròpies amb escenes de granja, mercat, castell, zoològic i tresor, preparades per a crear relats amb una ruta de paper.](../../_assets/situacions/tb-missions-comunitat.webp)
+![Tale-Bot Pro real junto a un libro ilustrado y a tarjetas propias con escenas de granja, mercado, castillo, zoológico y tesoro, preparadas para crear relatos con una ruta de papel.](../../_assets/situacions/tb-missions-comunitat.webp)
 
-_El llibre, les targetes i la ruta són materials propis de paper; Tale-Bot executa una seqüència de comandaments i no reconeix les escenes ni tria les destinacions._
+_El libro, las tarjetas y la ruta son materiales propios de papel; Tale-Bot ejecuta una secuencia de comandos y no reconoce las escenas ni elige los destinos._
 
-## 🌱 Punt de partida
+## 🌱 Punto de partida
 
-La biblioteca del barri prepara un festival de relats itinerants. Els infants creen llocs, personatges i missatges i programen visites en un ordre triat pel grup. Els deu reptes adapten la categoria D de les Activity Cards: combina seqüències, bucles, expressió oral i orientació, però manté totes les històries obertes a diferents finals. Seguint les orientacions oficials, cada proposta es planifica per a infants de 3–5 anys, parelles i 20–30 minuts; alterneu els rols i permeteu explicar el relat amb paraules, pictogrames o una seqüència de targetes. Abans de cada repte, carregueu Tale-Bot, comproveu la versió del robot i prepareu una taula o terra nets i plans. Les històries i mapes d’aquesta adaptació són propis; useu adhesius OID o funcions de l’Activity Box només quan el centre en tinga i els haja verificat.
+La biblioteca del barrio prepara un festival de relatos itinerantes. La infancia crea lugares, personajes y mensajes y programa visitas en un orden elegido por el grupo. Los diez retos adaptan la categoría D de las Activity Cards: combinan secuencias, bucles, expresión oral y orientación, pero mantienen todas las historias abiertas a distintos finales. Siguiendo las orientaciones oficiales, cada propuesta se planifica para niños y niñas de 3–5 años, parejas y 20–30 minutos; alternad los roles y permitid explicar el relato con palabras, pictogramas o una secuencia de tarjetas. Antes de cada reto, cargad Tale-Bot, comprobad la versión del robot y preparad una mesa o suelo limpios y planos. Las historias y mapas de esta adaptación son propios; usad adhesivos OID o funciones de la Activity Box solo cuando el centro los tenga y los haya verificado.
 
-## 📚 Deu reptes globals
+## 📚 Diez retos globales
 
-### **D-1 · El meu poble.**
-![Tale-Bot Pro real recorre un mapa tridimensional de paper amb plaça, escola, mercat i biblioteca mentre una mà prepara targetes de direcció.](../../_assets/situacions/sa-tb-poble-d1-v1.webp)
+### **D-1 · Mi pueblo.**
+![Tale-Bot Pro real recorre un mapa tridimensional de papel con plaza, escuela, mercado y biblioteca mientras una mano prepara tarjetas de dirección.](../../_assets/situacions/sa-tb-poble-d1-v1.webp)
 
-_El poble és una maqueta pròpia i les parades les tria l’alumnat; el robot no reconeix edificis ni redacta el relat._
-
-
-#### Fase 1 · Activem i prediem
-
-Trieu una plaça, una escola, un mercat i una biblioteca per al mapa. Predigueu quin ordre de visita ajudarà a contar una història del poble.
-
-#### Fase 2 · Explorem i construïm
-
-Col·loqueu les quatre destinacions i marqueu un inici. Prepareu targetes de direcció abans d’introduir les ordres en Tale-Bot.
-
-#### Fase 3 · Expliquem i registrem
-
-En cada parada, conteu una funció del lloc amb dibuix, paraula o pictograma. Registreu l’ordre de les destinacions i el missatge associat.
-
-#### Fase 4 · Apliquem i millorem
-
-Executeu el recorregut i comproveu les parades. Canvieu una destinació d’ordre i observeu com canvia el relat.
-
-#### Fase 5 · Comprovem i reflexionem
-
-**Evidència:** mapa, seqüència i relat breu. Expliqueu per què el grup ha triat eixe ordre.
-
-### **D-2 · Visitem un parc zoològic.**
-![Tale-Bot Pro real segueix una ruta de paper entre targetes il·lustrades de girafa, elefant i pingüí.](../../_assets/situacions/sa-tb-zoo-d2-v1.webp)
-
-_Els animals són targetes, no hi ha fauna real; el robot no identifica animals ni els seus hàbitats._
+_El pueblo es una maqueta propia y las paradas las elige el alumnado; el robot no reconoce edificios ni redacta el relato._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Escolteu una visita breu narrada per la docent i identifiqueu-ne les parades. Predigueu quines targetes d’animals apareixeran primer i al final.
+Elegid una plaza, una escuela, un mercado y una biblioteca para el mapa. Predecid qué orden de visita ayudará a contar una historia del pueblo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Ordeneu les parades en el mapa propi i prepareu la seqüència amb targetes d’ordres. Si hi ha mapa interactiu oficial disponible, compareu-ne els modes d’instruccions, codi i creació.
+Colocad los cuatro destinos y marcad un inicio. Preparad tarjetas de dirección antes de introducir las órdenes en Tale-Bot.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu l’ordre de les targetes i una dada o observació de cada parada. Diferencieu el que diu la història del que observeu en les imatges.
+En cada parada, contad una función del lugar con dibujo, palabra o pictograma. Registrad el orden de los destinos y el mensaje asociado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu Tale-Bot perquè repetisca el recorregut. Després canvieu l’ordre dels animals i inventeu una visita alternativa.
+Ejecutad el recorrido y comprobad las paradas. Cambiad un destino de orden y observad cómo cambia el relato.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** seqüència programada i relat d’una visita pròpia. L’activitat no requereix animals reals ni apropar-se a fauna.
+**Evidencia:** mapa, secuencia y relato breve. Explicad por qué el grupo ha elegido ese orden.
 
-### **D-3 · El xicotet missatger.**
-![Tale-Bot Pro real recorre una quadrícula de paper entre una targeta de sobre i dos personatges retallables.](../../_assets/situacions/sa-tb-missatger-d3-v1.webp)
+### **D-2 · Visitamos un parque zoológico.**
+![Tale-Bot Pro real sigue una ruta de papel entre tarjetas ilustradas de jirafa, elefante y pingüino.](../../_assets/situacions/sa-tb-zoo-d2-v1.webp)
 
-_El sobre i els personatges són materials narratius; el missatge el porta la seqüència programada o una persona, no una xarxa._
+_Los animales son tarjetas, no hay fauna real; el robot no identifica animales ni sus hábitats._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Col·loqueu una icona de sobre i dos personatges en caselles triades a l’atzar. Predigueu quines parades necessita la missió per a portar el missatge.
+Escuchad una visita breve narrada por la docente e identificad sus paradas. Predecid qué tarjetas de animales aparecerán primero y al final.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Trieu un missatge breu inventat. Graveu-lo només si el model ho permet i hi ha consentiment; altrament, prepareu una targeta escrita o un pictograma.
+Ordenad las paradas en el mapa propio y preparad la secuencia con tarjetas de órdenes. Si hay un mapa interactivo oficial disponible, comparad sus modos de instrucciones, código y creación.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Marqueu l’ordre: punt d’inici, sobre i destinatari. Assageu la narració o lectura del missatge que correspon a cada parada.
+Anotad el orden de las tarjetas y un dato u observación de cada parada. Diferenciad lo que dice la historia de lo que observáis en las imágenes.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu Tale-Bot fins al sobre i des d’allí fins al destinatari. Si el trajecte falla, localitzeu la primera ordre incorrecta i repetiu-lo.
+Programad Tale-Bot para que repita el recorrido. Después cambiad el orden de los animales e inventad una visita alternativa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** ruta completa i missatge transmés amb gravació consentida, targeta o narració en directe.
+**Evidencia:** secuencia programada y relato de una visita propia. La actividad no requiere animales reales ni acercarse a fauna.
+
+### **D-3 · El pequeño mensajero.**
+![Tale-Bot Pro real recorre una cuadrícula de papel entre una tarjeta de sobre y dos personajes recortables.](../../_assets/situacions/sa-tb-missatger-d3-v1.webp)
+
+_El sobre y los personajes son materiales narrativos; el mensaje lo lleva la secuencia programada o una persona, no una red._
+
+
+#### Fase 1 · Activamos y predecimos
+
+Colocad un icono de sobre y dos personajes en casillas elegidas al azar. Predecid qué paradas necesita la misión para llevar el mensaje.
+
+#### Fase 2 · Exploramos y construimos
+
+Elegid un mensaje breve inventado. Grabarlo solo si el modelo lo permite y hay consentimiento; de lo contrario, preparad una tarjeta escrita o un pictograma.
+
+#### Fase 3 · Explicamos y registramos
+
+Marcad el orden: punto de inicio, sobre y destinatario. Ensayad la narración o lectura del mensaje que corresponde a cada parada.
+
+#### Fase 4 · Aplicamos y mejoramos
+
+Programad Tale-Bot hasta el sobre y desde allí hasta el destinatario. Si el trayecto falla, localizad la primera orden incorrecta y repetidlo.
+
+#### Fase 5 · Comprobamos y reflexionamos
+
+**Evidencia:** ruta completa y mensaje transmitido con grabación consentida, tarjeta o narración en directo.
 
 ### **D-4 · La granja I.**
-![Tale-Bot Pro real segueix una ruta de paper entre una targeta de tractor i una ovella en una maqueta de granja.](../../_assets/situacions/sa-tb-granja-d4-v1.webp)
+![Tale-Bot Pro real sigue una ruta de papel entre una tarjeta de tractor y una oveja en una maqueta de granja.](../../_assets/situacions/sa-tb-granja-d4-v1.webp)
 
-_El tractor i l’animal són targetes estàtiques; Tale-Bot no els identifica ni interactua amb animals._
-
-
-#### Fase 1 · Activem i prediem
-
-Poseu al mapa una icona de tractor i una d’animal. Predigueu quina ordre de parades permetrà visitar-les totes dues.
-
-#### Fase 2 · Explorem i construïm
-
-Prepareu la seqüència d’ordres fins al tractor i, després, fins a l’animal. Inventeu un missatge amable per a la segona parada.
-
-#### Fase 3 · Expliquem i registrem
-
-Anoteu l’ordre de les destinacions i el missatge. Si hi ha enregistrament, comproveu el seu ús i demaneu consentiment abans de gravar.
-
-#### Fase 4 · Apliquem i millorem
-
-Programeu el recorregut i canvieu la posició de les icones per a un segon repte. Ajusteu la ruta a la nova distribució.
-
-#### Fase 5 · Comprovem i reflexionem
-
-**Evidència:** dues distribucions provades i un missatge amable, gravat amb consentiment si la funció està disponible o narrat en directe.
-
-### **D-5 · La botiga de queviures.**
-
-#### Fase 1 · Activem i prediem
-
-Trieu una llista de compra inventada per la docent i predigueu quantes parades cal fer abans d’arribar a la caixa.
-
-#### Fase 2 · Explorem i construïm
-
-Col·loqueu els aliments dibuixats i una caixa en el mapa. Prepareu un missatge «Necessite comprar…» amb una gravació consentida si la funció existeix o una targeta de narració.
-
-![Tale-Bot real segueix una ruta de fites en un mercat de barri fictici; les targetes il·lustren l’ordre de visita a la fleca, la fruiteria i la floristeria.](../../_assets/situacions/sa-tb-missions-mercat.webp)
-
-_Les parades i els productes són una maqueta narrativa creada per a l’activitat, no una representació d’un comerç concret._
-
-#### Fase 3 · Expliquem i registrem
-
-Ordeneu les parades segons la llista i poseu una fitxa al costat del robot en cada producte visitat. Manteniu la llista visible per comprovar què falta.
-
-#### Fase 4 · Apliquem i millorem
-
-Programeu una sola seqüència per visitar els productes i acabar a la caixa. Si una parada queda fora de l’ordre, reviseu el programa abans de tornar a començar.
-
-#### Fase 5 · Comprovem i reflexionem
-
-**Evidència:** llista completada i ruta fins a la caixa. Useu només aliments dibuixats; no demaneu informació de compres ni de dietes familiars.
-
-### **D-6 · Ruta de patrulla com a conte.**
-![Tale-Bot Pro real recorre un mapa de ficció entre un pont i un jardí comunitari amb un camí segur.](../../_assets/situacions/sa-tb-conte-patrulla-d6-v1.webp)
-
-_És una història de convivència sobre el mapa, sense vigilància, detencions ni emergències reals._
+_El tractor y el animal son tarjetas estáticas; Tale-Bot no los identifica ni interactúa con animales._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu dues icones neutres d’un mapa de joc i imagineu un relat de convivència que les connecte. Predigueu quina parada convé visitar primer.
+Poned en el mapa un icono de tractor y uno de animal. Predecid qué orden de paradas permitirá visitarlas ambas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Marqueu una ruta que passe per les dues icones i prepareu totes les ordres en una seqüència.
+Preparad la secuencia de órdenes hasta el tractor y, después, hasta el animal. Inventad un mensaje amable para la segunda parada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu què ocorre en cada parada i com es relaciona amb la següent. Comproveu que el relat té un inici, un canvi i un final inventats.
+Anotad el orden de los destinos y el mensaje. Si hay grabación, comprobad su uso y pedid consentimiento antes de grabar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu Tale-Bot amb un sol programa i proveu el recorregut complet. Si una instrucció altera l’ordre, reviseu-la i torneu a narrar la història.
+Programad el recorrido y cambiad la posición de los iconos para un segundo reto. Ajustad la ruta a la nueva distribución.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** ruta i conte de ficció explicats. No representeu detencions, emergències ni vigilància real.
+**Evidencia:** dos distribuciones probadas y un mensaje amable, grabado con consentimiento si la función está disponible o narrado en directo.
+
+### **D-5 · La tienda de comestibles.**
+
+#### Fase 1 · Activamos y predecimos
+
+Elegid una lista de la compra inventada por la docente y predecid cuántas paradas hay que hacer antes de llegar a la caja.
+
+#### Fase 2 · Exploramos y construimos
+
+Colocad los alimentos dibujados y una caja en el mapa. Preparad un mensaje «Necesito comprar…» con una grabación consentida si la función existe, o una tarjeta de narración.
+
+![Tale-Bot real sigue una ruta de hitos en un mercado de barrio ficticio; las tarjetas ilustran el orden de visita a la panadería, la frutería y la floristería.](../../_assets/situacions/sa-tb-missions-mercat.webp)
+
+_Las paradas y los productos son una maqueta narrativa creada para la actividad, no una representación de un comercio concreto._
+
+#### Fase 3 · Explicamos y registramos
+
+Ordenad las paradas según la lista y poned una ficha junto al robot en cada producto visitado. Mantened la lista visible para comprobar qué falta.
+
+#### Fase 4 · Aplicamos y mejoramos
+
+Programad una sola secuencia para visitar los productos y acabar en la caja. Si una parada queda fuera de orden, revisad el programa antes de volver a empezar.
+
+#### Fase 5 · Comprobamos y reflexionamos
+
+**Evidencia:** lista completada y ruta hasta la caja. Usad solo alimentos dibujados; no pidáis información de compras ni de dietas familiares.
+
+### **D-6 · Ruta de patrulla como cuento.**
+![Tale-Bot Pro real recorre un mapa de ficción entre un puente y un jardín comunitario con un camino seguro.](../../_assets/situacions/sa-tb-conte-patrulla-d6-v1.webp)
+
+_Es una historia de convivencia sobre el mapa, sin vigilancia, detenciones ni emergencias reales._
+
+
+#### Fase 1 · Activamos y predecimos
+
+Elegid dos iconos neutros de un mapa de juego e imaginad un relato de convivencia que los conecte. Predecid qué parada conviene visitar primero.
+
+#### Fase 2 · Exploramos y construimos
+
+Marcad una ruta que pase por los dos iconos y preparad todas las órdenes en una secuencia.
+
+#### Fase 3 · Explicamos y registramos
+
+Anotad qué ocurre en cada parada y cómo se relaciona con la siguiente. Comprobad que el relato tiene un inicio, un cambio y un final inventados.
+
+#### Fase 4 · Aplicamos y mejoramos
+
+Programad Tale-Bot con un solo programa y probad el recorrido completo. Si una instrucción altera el orden, revisadla y volved a narrar la historia.
+
+#### Fase 5 · Comprobamos y reflexionamos
+
+**Evidencia:** ruta y cuento de ficción explicados. No representéis detenciones, emergencias ni vigilancia real.
 
 ### **D-7 · La granja II.**
-![Tale-Bot Pro real recorre una ruta entre targetes de paper amb una vaca, una ovella, un ànec i un cavall.](../../_assets/situacions/sa-tb-canço-granja-d7-v1.webp)
+![Tale-Bot Pro real recorre una ruta entre tarjetas de papel con una vaca, una oveja, un pato y un caballo.](../../_assets/situacions/sa-tb-canço-granja-d7-v1.webp)
 
-_La cançó i la seqüència les interpreta l’alumnat; el robot només executa les ordres de moviment._
-
-
-#### Fase 1 · Activem i prediem
-
-Col·loqueu icones d’animals i trieu una cançó de granja coneguda o una alternativa creada pel grup. Predigueu quin animal apareixerà primer.
-
-#### Fase 2 · Explorem i construïm
-
-Escolteu o interpreteu la cançó i anoteu l’ordre en què apareixen els animals. Prepareu una targeta per a cada parada.
-
-#### Fase 3 · Expliquem i registrem
-
-Compareu la seqüència de targetes amb l’ordre de la cançó. Marqueu quin animal apareix primer, quin al final i quins es repeteixen.
-
-#### Fase 4 · Apliquem i millorem
-
-Programeu Tale-Bot perquè visite les icones en l’ordre acordat. Reviseu la seqüència si una parada s’ha omés o repetit.
-
-#### Fase 5 · Comprovem i reflexionem
-
-**Evidència:** ruta i seqüència oral o visual. Conteu-la de nou i expliqueu com heu comprovat l’ordre.
-
-### **D-8 · Una missió cooperativa al castell.**
-![Tale-Bot Pro real recorre targetes d’escenes al costat d’un castell de paper i dos personatges que s’ajuden.](../../_assets/situacions/sa-tb-castell-cooperatiu-d8-v1.webp)
-
-_Les figures i l’ajuda formen un conte inventat; el robot no manipula els personatges ni reconeix les escenes._
+_La canción y la secuencia las interpreta el alumnado; el robot solo ejecuta las órdenes de movimiento._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Inventeu un conte en què un personatge troba una dificultat i rep ajuda amistosa. Predigueu quines escenes caldrà visitar perquè el relat s’entenga.
+Colocad iconos de animales y elegid una canción de granja conocida o una alternativa creada por el grupo. Predecid qué animal aparecerá primero.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Repartiu les icones del relat en caselles triades a l’atzar, inclosa la persona que rep l’ajuda. Trieu una primera escena i prepareu la ruta per etapes.
+Escuchad o interpretad la canción y anotad el orden en que aparecen los animales. Preparad una tarjeta para cada parada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-En cada arribada, retireu la targeta i poseu-la en fila. Registreu la seqüència perquè una altra parella puga reconstruir el conte.
+Comparad la secuencia de tarjetas con el orden de la canción. Marcad qué animal aparece primero, cuál al final y cuáles se repiten.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Continueu fins a completar el recorregut i arribar al desenllaç. Canvieu qui ajuda o el final mantenint la seqüència per etapes i proveu de nou.
+Programad Tale-Bot para que visite los iconos en el orden acordado. Revisad la secuencia si se ha omitido o repetido una parada.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** ruta i relat reconstruït a partir de la fila de targetes. Expliqueu què fa que l’ajuda siga cooperativa.
+**Evidencia:** ruta y secuencia oral o visual. Contadla de nuevo y explicad cómo habéis comprobado el orden.
 
-### **D-9 · Cerca del tresor.**
-![Tale-Bot Pro real segueix un camí de paper cap a targetes de pista i un cofre final.](../../_assets/situacions/sa-tb-tresor-d9-v1.webp)
+### **D-8 · Una misión cooperativa en el castillo.**
+![Tale-Bot Pro real recorre tarjetas de escenas junto a un castillo de papel y dos personajes que se ayudan.](../../_assets/situacions/sa-tb-castell-cooperatiu-d8-v1.webp)
 
-_L’alumnat ordena les pistes i programa el trajecte; Tale-Bot no les troba ni arreplega el tresor._
-
-
-#### Fase 1 · Activem i prediem
-
-Prepareu targetes pròpies de cerca i predigueu quina pista caldrà trobar primer i quina indicarà el tresor final.
-
-#### Fase 2 · Explorem i construïm
-
-Col·loqueu les pistes en ordre aleatori. La primera és el mapa del tresor i l’última el cofre o diamant; trieu la casella d’inici.
-
-#### Fase 3 · Expliquem i registrem
-
-Planifiqueu el trajecte i retireu cada targeta en arribar-hi, posant-la en fila. Manteniu visible l’ordre de les pistes recollides.
-
-#### Fase 4 · Apliquem i millorem
-
-Continueu fins al tresor i reconteu la història seguint les pistes. Creeu una segona distribució i reviseu el recorregut.
-
-#### Fase 5 · Comprovem i reflexionem
-
-**Evidència:** seqüència de pistes, ruta i relat final. L’objectiu és completar i narrar la seqüència, no trobar el camí amb menys ordres.
-
-### **D-10 · El nostre llibre de contes preferit.**
-![Tale-Bot Pro real passa per escenes de paper originals d’una platja, un vaixell, un far i un pícnic.](../../_assets/situacions/sa-tb-contes-d10-v1.webp)
-
-_Les targetes són originals i les crea el grup; el robot no llig el conte ni el narra._
+_Las figuras y la ayuda forman un cuento inventado; el robot no manipula los personajes ni reconoce las escenas._
 
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Escolteu un conte triat per la classe i recordeu-ne les escenes principals. Predigueu quines quatre o cinc targetes basten per a reconstruir-ne l’ordre.
+Inventad un cuento en el que un personaje encuentra una dificultad y recibe ayuda amistosa. Predecid qué escenas habrá que visitar para que se entienda el relato.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dibuixeu targetes originals per als moments clau sense copiar les il·lustracions del llibre. Poseu-les aleatòriament al mapa i prepareu la seqüència narrativa.
+Repartid los iconos del relato en casillas elegidas al azar, incluida la persona que recibe la ayuda. Elegid una primera escena y preparad la ruta por etapas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu l’ordre correcte i una frase o idea que explique cada moment. Si graveu frases, demaneu consentiment i comproveu la funció del model.
+En cada llegada, retirad la tarjeta y ponedla en fila. Registrad la secuencia para que otra pareja pueda reconstruir el cuento.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu Tale-Bot perquè visite les targetes en ordre. En cada parada, reproduïu una frase gravada si és possible o feu que una persona narre en directe; reviseu l’ordre si el conte no s’entén.
+Continuad hasta completar el recorrido y llegar al desenlace. Cambiad quién ayuda o el final manteniendo la secuencia por etapas y probad de nuevo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** conte reconstruït a partir de les targetes i recorregut. Compareu quines escenes heu triat i com l’ordre ajuda a entendre la història.
+**Evidencia:** ruta y relato reconstruido a partir de la fila de tarjetas. Explicad qué hace que la ayuda sea cooperativa.
 
-## 🎯 Aprenentatges i vocabulari
+### **D-9 · Búsqueda del tesoro.**
+![Tale-Bot Pro real sigue un camino de papel hacia tarjetas de pista y un cofre final.](../../_assets/situacions/sa-tb-tresor-d9-v1.webp)
 
-- Planificar una ruta amb diverses parades i un relat que es puga modificar.
-- Usar ordres i bucles per representar un servei comunitari en un mapa fictici.
-- Provar la seqüència, localitzar una ambigüitat i revisar les instruccions en equip.
-- Comunicar la missió amb destinacions inventades, sense adreces ni dades de persones reals.
+_El alumnado ordena las pistas y programa el trayecto; Tale-Bot no las encuentra ni recoge el tesoro._
 
-## 🧰 Materials i model real
 
-Tale-Bot, quadrícula pròpia, icones dibuixades, targetes de personatges i cinta per fixar el mapa. L’enregistrament i el mode de missatge depenen del model Pro; si no hi són, es poden fer servir símbols i narració humana. Els mapes de l’Activity Box no són requisit.
+#### Fase 1 · Activamos y predecimos
 
-## 🧪 Evidències i convivència
+Preparad tarjetas propias de búsqueda y predecid qué pista habrá que encontrar primero y cuál indicará el tesoro final.
 
-Mapa, seqüència de destinacions, programa, conte col·lectiu, prova amb un segon equip i una revisió del final. Avalueu orientació, ordre, capacitat de relatar i escolta mútua; mai la rapidesa o la interpretació personal d’un infant.
+#### Fase 2 · Exploramos y construimos
 
-## ♿ Participació, accessibilitat i seguretat
+Colocad las pistas en orden aleatorio. La primera es el mapa del tesoro y la última el cofre o diamante; elegid la casilla de inicio.
 
-Permeteu aportar idees per veu, dibuix, pictogrames o selecció de targetes; ningú no ha de representar una experiència personal ni parlar en públic. Les missions es resolen amb destinacions fictícies i no incorporen noms o adreces reals. Repartiu els rols de planificació, programació, observació i relat, i feu torns curts amb el robot.
+#### Fase 3 · Explicamos y registramos
 
-## 🔗 Referent oficial adaptat
+Planificad el trayecto y retirad cada tarjeta al llegar, poniéndola en fila. Mantened visible el orden de las pistas recogidas.
 
-Adapta les deu targetes D —*My Town*, *Visit the Zoo*, *The Little Messenger*, *Old McDonald’s Farm I/II*, *Grocery Store*, *Patrol Car*, *Saving the Princess*, *Treasure Hunting* i *My Favorite Story Book*— de les [Activity Cards oficials](https://matatalab.com/en/lesson4.4). S’hi conserven les accions centrals de cada fitxa (visita narrada i modes del mapa; sobre i missatge; tractor i enregistrament; llista, recollida i caixa; ruta per dues icones; ordre de la cançó de granja; seqüència cooperativa d’adhesius; recorregut per pistes fins al mapa del tresor i el cofre, relat per etapes, i conte conegut reconstruït per escenes amb narració opcional en cada parada). Històries, mapes, dades i il·lustracions són originals i contextualitzats.
+#### Fase 4 · Aplicamos y mejoramos
+
+Continuad hasta el tesoro y recontad la historia siguiendo las pistas. Cread una segunda distribución y revisad el recorrido.
+
+#### Fase 5 · Comprobamos y reflexionamos
+
+**Evidencia:** secuencia de pistas, ruta y relato final. El objetivo es completar y narrar la secuencia, no encontrar el camino con menos órdenes.
+
+### **D-10 · Nuestro libro de cuentos preferido.**
+![Tale-Bot Pro real pasa por escenas de papel originales de una playa, un barco, un faro y un pícnic.](../../_assets/situacions/sa-tb-contes-d10-v1.webp)
+
+_Las tarjetas son originales y las crea el grupo; el robot no lee el cuento ni lo narra._
+
+
+#### Fase 1 · Activamos y predecimos
+
+Escuchad un cuento elegido por la clase y recordad sus escenas principales. Predecid qué cuatro o cinco tarjetas bastan para reconstruir su orden.
+
+#### Fase 2 · Exploramos y construimos
+
+Dibujad tarjetas originales para los momentos clave sin copiar las ilustraciones del libro. Ponedlas aleatoriamente en el mapa y preparad la secuencia narrativa.
+
+#### Fase 3 · Explicamos y registramos
+
+Anotad el orden correcto y una frase o idea que explique cada momento. Si grabáis frases, pedid consentimiento y comprobad la función del modelo.
+
+#### Fase 4 · Aplicamos y mejoramos
+
+Programad Tale-Bot para que visite las tarjetas en orden. En cada parada, reproducid una frase grabada si es posible o haced que una persona narre en directo; revisad el orden si no se entiende el cuento.
+
+#### Fase 5 · Comprobamos y reflexionamos
+
+**Evidencia:** cuento reconstruido a partir de las tarjetas y recorrido. Comparad qué escenas habéis elegido y cómo el orden ayuda a entender la historia.
+
+## 🎯 Aprendizajes y vocabulario
+
+- Planificar una ruta con varias paradas y un relato que se pueda modificar.
+- Usar órdenes y bucles para representar un servicio comunitario en un mapa ficticio.
+- Probar la secuencia, localizar una ambigüedad y revisar las instrucciones en equipo.
+- Comunicar la misión con destinos inventados, sin direcciones ni datos de personas reales.
+
+## 🧰 Materiales y modelo real
+
+Tale-Bot, cuadrícula propia, iconos dibujados, tarjetas de personajes y cinta para fijar el mapa. La grabación y el modo de mensaje dependen del modelo Pro; si no están, se pueden usar símbolos y narración humana. Los mapas de la Activity Box no son un requisito.
+
+## 🧪 Evidencias y convivencia
+
+Mapa, secuencia de destinos, programa, cuento colectivo, prueba con un segundo equipo y una revisión del final. Evaluad orientación, orden, capacidad de relatar y escucha mutua; nunca la rapidez o la interpretación personal de un niño o una niña.
+
+## ♿ Participación, accesibilidad y seguridad
+
+Permitid aportar ideas por voz, dibujo, pictogramas o selección de tarjetas; nadie tiene que representar una experiencia personal ni hablar en público. Las misiones se resuelven con destinos ficticios y no incorporan nombres ni direcciones reales. Repartid los roles de planificación, programación, observación y relato, y haced turnos cortos con el robot.
+
+## 🔗 Referente oficial adaptado
+
+Adapta las diez tarjetas D —*My Town*, *Visit the Zoo*, *The Little Messenger*, *Old McDonald’s Farm I/II*, *Grocery Store*, *Patrol Car*, *Saving the Princess*, *Treasure Hunting* y *My Favorite Story Book*— de las [Activity Cards oficiales](https://matatalab.com/en/lesson4.4). Se conservan las acciones centrales de cada ficha (visita narrada y modos del mapa; sobre y mensaje; tractor y grabación; lista, recogida y caja; ruta por dos iconos; orden de la canción de granja; secuencia cooperativa de adhesivos; recorrido por pistas hasta el mapa del tesoro y el cofre, relato por etapas, y cuento conocido reconstruido por escenas con narración opcional en cada parada). Historias, mapas, datos e ilustraciones son originales y contextualizados.

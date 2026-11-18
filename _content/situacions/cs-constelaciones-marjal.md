@@ -15,123 +15,123 @@ challenge: "¿Cómo podemos representar una idea inspirada en la marjal como una
 official_source: "https://matatalab.com/cdn/ff/8WH9-onMKYze-IoBs5maVP6sFW3Yq0SrSJWVzSehBjs/1637739616/public/2021-11/Artist%20Add-on%20Activity%20Cards.pdf"
 ---
 
-![La torre i el MatataBot reals del Coding Set al costat d’una constel·lació de paper creada per l’alumnat, inspirada en la marjal.](../../_assets/situacions/cs-constellacions-marjal.webp)
+![La torre y el MatataBot reales del Coding Set junto a una constelación de papel creada por el alumnado, inspirada en la marjal.](../../_assets/situacions/cs-constellacions-marjal.webp)
 
-_Il·lustració IA pròpia basada en el model real del Coding Set. La constel·lació és una representació artística inventada per a l’aula, no un mapa astronòmic ni una funció de reconeixement del robot._
+_Ilustración IA propia basada en el modelo real del Coding Set. La constelación es una representación artística inventada para el aula, no un mapa astronómico ni una función de reconocimiento del robot._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-La classe prepara una mostra de constel·lacions imaginades a partir de formes de la marjal: una boga, una llavor d’arròs, una barca o un ocell. Cada equip tria punts, decideix en quin ordre els connecta i presenta la seua forma com una creació artística. El repte és fer que una altra parella puga seguir el mateix recorregut a partir d’una representació clara.
+La clase prepara una muestra de constelaciones imaginadas a partir de formas de la marjal: una enea, una semilla de arroz, una barca o un pájaro. Cada equipo elige puntos, decide en qué orden los conecta y presenta su forma como una creación artística. El reto es conseguir que otra pareja pueda seguir el mismo recorrido a partir de una representación clara.
 
-La proposta adapta la targeta oficial **A-1 · Zodiac Constellations** del paquet *Artist Add-on Activity Cards*. En la mostra consultada, el fabricant proposa presentar els blocs de nombre i angle, explicar que els blocs d’angle van sota els girs esquerra/dreta, dibuixar una constel·lació amb blocs de moviment, nombre i angle, crear vectors propis en paper gran i decorar-los amb retoladors de colors. La mostra disponible detalla aquesta targeta, però no les altres nou del paquet. Ací canviem els signes zodiacals per una constel·lació local inventada i afegim planificació, proves entre parelles i una alternativa completa amb el kit base.
+La propuesta adapta la tarjeta oficial **A-1 · Zodiac Constellations** del paquete *Artist Add-on Activity Cards*. En la muestra consultada, el fabricante propone presentar los bloques de número y ángulo, explicar que los bloques de ángulo van debajo de los giros izquierda/derecha, dibujar una constelación con bloques de movimiento, número y ángulo, crear vectores propios en papel grande y decorarlos con rotuladores de colores. La muestra disponible detalla esta tarjeta, pero no las otras nueve del paquete. Aquí cambiamos los signos zodiacales por una constelación local inventada y añadimos planificación, pruebas entre parejas y una alternativa completa con el kit base.
 
-**Pregunta guia:** quina informació necessitem per a reconstruir el recorregut d’una constel·lació i com comprovem si les ordres coincideixen amb el nostre disseny?
+**Pregunta guía:** ¿qué información necesitamos para reconstruir el recorrido de una constelación y cómo comprobamos si las órdenes coinciden con nuestro diseño?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Distingir una constel·lació artística creada a classe d’un mapa astronòmic o d’una observació científica.
-- Representar punts i vectors en un ordre acordat i comunicar-ne l’orientació.
-- Identificar els blocs de moviment, nombre i angle que hi ha realment al kit.
-- Provar una ruta amb els blocs disponibles i comparar el resultat amb la predicció.
-- Explicar quines parts ha executat MatataBot i quines s’han dibuixat o decorat manualment.
+- Distinguir una constelación artística creada en clase de un mapa astronómico o de una observación científica.
+- Representar puntos y vectores en un orden acordado y comunicar su orientación.
+- Identificar los bloques de movimiento, número y ángulo que hay realmente en el kit.
+- Probar una ruta con los bloques disponibles y comparar el resultado con la predicción.
+- Explicar qué partes ha ejecutado MatataBot y cuáles se han dibujado o decorado manualmente.
 
-**Vocabulari clau:** punt, vector, recorregut, orientació, moviment, gir, angle, predicció, prova, constel·lació imaginada.
+**Vocabulario clave:** punto, vector, recorrido, orientación, movimiento, giro, ángulo, predicción, prueba, constelación imaginada.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Coding Set: torre de comandament, tauler, MatataBot i blocs de moviment.
-- Si el centre disposa de l’Artist Add-On compatible: blocs de nombre i d’angle, suport de llapis i retoladors. Inventarieu les peces abans de preparar el programa; no pressuposeu que l’accessori forma part del kit base.
-- Paper gran, llapis, regle, retoladors, targetes amb punts numerats i full de registre amb columnes **punt**, **ordre**, **gir previst**, **prova** i **revisió**.
-- Per a la via sense accessori: quadrícula de paper o de 10 × 10 cm si es farà un recorregut físic, fitxes per a marcar els punts i retoladors per a dibuixar la figura a mà.
+- Coding Set: torre de mando, tablero, MatataBot y bloques de movimiento.
+- Si el centro dispone del Artist Add-On compatible: bloques de número y de ángulo, soporte de lápiz y rotuladores. Inventariad las piezas antes de preparar el programa; no presupongáis que el accesorio forma parte del kit base.
+- Papel grande, lápiz, regla, rotuladores, tarjetas con puntos numerados y hoja de registro con columnas **punto**, **orden**, **giro previsto**, **prueba** y **revisión**.
+- Para la vía sin accesorio: cuadrícula de papel o de 10 × 10 cm si se va a hacer un recorrido físico, fichas para marcar los puntos y rotuladores para dibujar la figura a mano.
 
-Abans de la sessió, carregueu el robot i la torre, comproveu que el tauler llig els blocs disponibles i feu una prova breu en una superfície plana. En el muntatge amb Artist, el manual del complement indica que els blocs d’angle només es col·loquen sota els blocs de gir esquerra/dreta; consulteu les instruccions del model abans de fer la prova. Si el centre no té l’accessori, el robot pot recórrer una ruta amb els blocs base, però no dibuixa amb tinta: l’alumnat crea la constel·lació sobre paper.
+Antes de la sesión, cargad el robot y la torre, comprobad que el tablero lee los bloques disponibles y haced una prueba breve en una superficie plana. En el montaje con Artist, el manual del complemento indica que los bloques de ángulo solo se colocan debajo de los bloques de giro izquierda/derecha; consultad las instrucciones del modelo antes de hacer la prueba. Si el centro no tiene el accesorio, el robot puede recorrer una ruta con los bloques base, pero no dibuja con tinta: el alumnado crea la constelación sobre papel.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Sessió 1 · Imaginem una constel·lació de la marjal (50 min)
+### Sesión 1 · Imaginamos una constelación de la marjal (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu una imatge o una il·lustració del paisatge de la marjal i la targeta de constel·lació oficial com a exemple d’una figura formada per punts connectats. Aclariu que l’equip crearà una figura artística pròpia; no identificarà estrelles reals ni afirmarà que les formes representen animals o plantes observats al cel. Pregunteu què fa que un conjunt de punts es puga llegir com una figura.
+Mostrad una imagen o una ilustración del paisaje de la marjal y la tarjeta de constelación oficial como ejemplo de una figura formada por puntos conectados. Aclarad que el equipo creará una figura artística propia; no identificará estrellas reales ni afirmará que las formas representan animales o plantas observados en el cielo. Preguntad qué hace que un conjunto de puntos se pueda leer como una figura.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En equips de tres o quatre, proposeu quatre inspiracions locals —boga, llavor d’arròs, barca i ocell— i deixeu que cada grup en trie una o en propose una altra. Dibuixeu entre cinc i huit punts grans en un full; numereu-los i decidiu un punt d’inici. Encara no connecteu els punts: cada persona prediu quin ordre farà més recognoscible la forma.
+En equipos de tres o cuatro, proponed cuatro inspiraciones locales —enea, semilla de arroz, barca y pájaro— y dejad que cada grupo elija una o proponga otra. Dibujad entre cinco y ocho puntos grandes en un folio; numeradlos y decidid un punto de inicio. Todavía no conectéis los puntos: cada persona predice qué orden hará más reconocible la forma.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Connecteu els punts amb segments rectes en l’ordre triat. Afegiu fletxes per a indicar el sentit del recorregut i una llegenda que identifique inici i final. Registreu la idea inicial amb un nom propi i una frase que diga que és una constel·lació imaginada.
+Conectad los puntos con segmentos rectos en el orden elegido. Añadid flechas para indicar el sentido del recorrido y una leyenda que identifique inicio y final. Registrad la idea inicial con un nombre propio y una frase que indique que es una constelación imaginada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu els fulls. La parella visitant ha de reconstruir la seqüència dels punts sense que l’equip autor li explique l’ordre. Si hi ha més d’una lectura possible, afegiu una fletxa, un número o un punt d’inici més visible; no canvieu la figura fins que la instrucció siga comprensible.
+Intercambiad los folios. La pareja visitante debe reconstruir la secuencia de los puntos sin que el equipo autor le explique el orden. Si hay más de una lectura posible, añadid una flecha, un número o un punto de inicio más visible; no cambiéis la figura hasta que la instrucción sea comprensible.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** primer disseny amb punts numerats, fletxes i una nota sobre què ha hagut d’aclarir la parella visitant. **Pregunta docent:** una persona que no ha vist el dibuix pot saber on començar i en quin sentit unir els punts?
+**Evidencia:** primer diseño con puntos numerados, flechas y una nota sobre qué ha tenido que aclarar la pareja visitante. **Pregunta docente:** ¿una persona que no ha visto el dibujo puede saber dónde empezar y en qué sentido unir los puntos?
 
-### Sessió 2 · Provem els blocs d’angle disponibles (50 min)
+### Sesión 2 · Probamos los bloques de ángulo disponibles (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu el disseny i localitzeu-ne dos canvis de direcció. Compareu el gir que faria una persona seguint el traçat amb el bloc que podria necessitar el robot. Cada parella marca una predicció sobre el paper abans de tocar les peces.
+Recuperad el diseño y localizad dos cambios de dirección. Comparad el giro que haría una persona siguiendo el trazado con el bloque que podría necesitar el robot. Cada pareja marca una predicción sobre el papel antes de tocar las piezas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Inventarieu els blocs de moviment, nombre i angle presents. Si hi ha Artist Add-On, recordeu que el bloc d’angle se situa sota un gir esquerra/dreta i feu una prova curta en paper gran abans de programar tota la figura. Trieu un vèrtex i proveu un únic canvi de direcció. Si falta l’accessori, representeu el gir amb una fletxa en una quadrícula i anoteu que es tracta d’una simulació en paper.
+Inventariad los bloques de movimiento, número y ángulo presentes. Si hay Artist Add-On, recordad que el bloque de ángulo se sitúa debajo de un giro izquierda/derecha y haced una prueba corta en papel grande antes de programar toda la figura. Elegid un vértice y probad un único cambio de dirección. Si falta el accesorio, representad el giro con una flecha en una cuadrícula y anotad que se trata de una simulación en papel.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Traduïu una secció del dibuix en una llista ordenada de blocs. En el registre, separeu **gir que volem representar**, **bloc disponible** i **resultat observat**. No deduïu un valor que el kit no mostre ni forceu blocs que no encaixen; si el manual o la versió local no permet confirmar una combinació, deixeu-la com a pregunta per a verificar.
+Traducid una sección del dibujo en una lista ordenada de bloques. En el registro, separad **giro que queremos representar**, **bloque disponible** y **resultado observado**. No deduzcáis un valor que el kit no muestre ni forcéis bloques que no encajan; si el manual o la versión local no permite confirmar una combinación, dejadla como pregunta para verificar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Amb l’Artist Add-On compatible, col·loqueu el suport i el llapis segons el manual, programeu només els punts necessaris per a una part de la constel·lació i executeu-la sobre paper subjectat. Compareu el traçat amb la predicció i canvieu una sola instrucció cada vegada. Sense el complement, executeu la ruta sobre una quadrícula amb MatataBot i dibuixeu manualment la línia equivalent al paper; manteniu les dues evidències diferenciades.
+Con el Artist Add-On compatible, colocad el soporte y el lápiz según el manual, programad solo los puntos necesarios para una parte de la constelación y ejecutadla sobre papel sujeto. Comparad el trazado con la predicción y cambiad una sola instrucción cada vez. Sin el complemento, ejecutad la ruta sobre una cuadrícula con MatataBot y dibujad manualmente la línea equivalente en el papel; mantened las dos evidencias diferenciadas.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** seqüència física o simulada, predicció del gir i registre del resultat. **Pregunta docent:** quina part del programa ha determinat el canvi de direcció i quina part de la figura hem completat manualment?
+**Evidencia:** secuencia física o simulada, predicción del giro y registro del resultado. **Pregunta docente:** ¿qué parte del programa ha determinado el cambio de dirección y qué parte de la figura hemos completado manualmente?
 
-### Sessió 3 · Creem i presentem vectors propis (50 min)
+### Sesión 3 · Creamos y presentamos vectores propios (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Cada equip revisa el disseny i tria quins punts pot provar amb el robot segons el kit disponible. Predigueu quina part es podrà executar i quina part requerirà una representació de paper o decoració manual.
+Cada equipo revisa el diseño y elige qué puntos puede probar con el robot según el kit disponible. Predecid qué parte se podrá ejecutar y qué parte requerirá una representación de papel o decoración manual.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Prepareu una versió final en paper gran amb punts, segments, fletxes, nom i llegenda. Si hi ha l’accessori, proveu el traçat del robot per trams, deixant espai entre línies; sense ell, useu el robot per a recórrer els punts de la quadrícula i dibuixeu els segments al paper. Decoreu la constel·lació amb colors o textures després de la prova, de manera que la decoració no tape els punts de pas.
+Preparad una versión final en papel grande con puntos, segmentos, flechas, nombre y leyenda. Si hay accesorio, probad el trazado del robot por tramos, dejando espacio entre líneas; sin él, usad el robot para recorrer los puntos de la cuadrícula y dibujad los segmentos en el papel. Decorad la constelación con colores o texturas después de la prueba, de manera que la decoración no tape los puntos de paso.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Escriviu una instrucció breu perquè una altra parella puga reproduir la ruta: punt inicial, ordre dels punts, blocs de moviment utilitzats i girs que s’han provat. Marqueu de manera visible qualsevol segment que siga una extensió dibuixada a mà.
+Escribid una instrucción breve para que otra pareja pueda reproducir la ruta: punto inicial, orden de los puntos, bloques de movimiento utilizados y giros que se han probado. Marcad de manera visible cualquier segmento que sea una extensión dibujada a mano.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu una mostra entre equips. La parella visitant segueix la seqüència o la simula amb targetes i anota una observació concreta. L’equip autor revisa una instrucció amb retorn de la parella i torna a provar el tram modificat.
+Haced una muestra entre equipos. La pareja visitante sigue la secuencia o la simula con tarjetas y anota una observación concreta. El equipo autor revisa una instrucción con el retorno de la pareja y vuelve a probar el tramo modificado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència final:** constel·lació local imaginada, targeta d’instruccions, registre d’una prova i una explicació de les funcions que depenien de l’Artist Add-On. Tanqueu amb la frase «La nostra figura és una creació artística perquè…» i «El robot ha pogut comprovar…».
+**Evidencia final:** constelación local imaginada, tarjeta de instrucciones, registro de una prueba y una explicación de las funciones que dependían del Artist Add-On. Cerrad con la frase «Nuestra figura es una creación artística porque…» y «El robot ha podido comprobar…».
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu l’esbós inicial, la seqüència ordenada, la prova de lectura entre parelles, el registre de girs i la composició final. Observeu si l’alumnat:
+Recoged el boceto inicial, la secuencia ordenada, la prueba de lectura entre parejas, el registro de giros y la composición final. Observad si el alumnado:
 
-- ordena i comunica els punts sense dependre d’explicacions orals de l’equip autor;
-- prediu un canvi de direcció i comprova què ha executat el robot;
-- identifica si la prova s’ha fet amb l’Artist Add-On, amb el kit base o només sobre paper;
-- diferencia la representació artística d’una afirmació d’observació astronòmica.
+- ordena y comunica los puntos sin depender de explicaciones orales del equipo autor;
+- predice un cambio de dirección y comprueba qué ha ejecutado el robot;
+- identifica si la prueba se ha hecho con el Artist Add-On, con el kit base o solo sobre papel;
+- diferencia la representación artística de una afirmación de observación astronómica.
 
-No s’avaluen l’habilitat per a dibuixar, la rapidesa del robot ni la coincidència amb una constel·lació zodiacal concreta.
+No se evalúan la habilidad para dibujar, la rapidez del robot ni la coincidencia con una constelación zodiacal concreta.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Oferiu punts grans en relleu, fletxes tàctils, plantilles d’alt contrast i rols diversos: disseny, ordre de blocs, lectura de la llegenda, registre i presentació. L’alumnat pot participar sense manipular el llapis ni executar el robot. Subjecteu el paper, manteniu mans i retoladors fora del recorregut mentre el robot es mou i superviseu l’ús de tisores si cal retallar la composició.
+Ofreced puntos grandes en relieve, flechas táctiles, plantillas de alto contraste y roles diversos: diseño, orden de bloques, lectura de la leyenda, registro y presentación. El alumnado puede participar sin manipular el lápiz ni ejecutar el robot. Sujetad el papel, mantened manos y rotuladores fuera del recorrido mientras el robot se mueve y supervisad el uso de tijeras si hay que recortar la composición.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [Artist Add-on Activity Cards](https://matatalab.com/cdn/ff/8WH9-onMKYze-IoBs5maVP6sFW3Yq0SrSJWVzSehBjs/1637739616/public/2021-11/Artist%20Add-on%20Activity%20Cards.pdf), targeta 1 *Zodiac Constellations*: presenta blocs de nombre i angle, indica que els blocs d’angle es col·loquen sota girs esquerra/dreta, proposa traçar una constel·lació amb blocs de moviment/angle/nombre i demana crear vectors propis en paper gran i decorar-los amb retoladors. El PDF oficial consultat és una mostra de sis pàgines: conté l’índex del paquet de deu targetes i el desenvolupament complet visible de les targetes 1 i 2; aquesta fitxa adapta només la targeta 1.
-- Matatalab, [Artist Add-On](https://matatalab.com/en/node/64): guia tècnica per a comprovar els blocs d’angle i les combinacions disponibles al kit del centre.
+- Matatalab, [Artist Add-on Activity Cards](https://matatalab.com/cdn/ff/8WH9-onMKYze-IoBs5maVP6sFW3Yq0SrSJWVzSehBjs/1637739616/public/2021-11/Artist%20Add-on%20Activity%20Cards.pdf), tarjeta 1 *Zodiac Constellations*: presenta bloques de número y ángulo, indica que los bloques de ángulo se colocan debajo de giros izquierda/derecha, propone trazar una constelación con bloques de movimiento/ángulo/número y pide crear vectores propios en papel grande y decorarlos con rotuladores. El PDF oficial consultado es una muestra de seis páginas: contiene el índice del paquete de diez tarjetas y el desarrollo completo visible de las tarjetas 1 y 2; esta ficha adapta solo la tarjeta 1.
+- Matatalab, [Artist Add-On](https://matatalab.com/en/node/64): guía técnica para comprobar los bloques de ángulo y las combinaciones disponibles en el kit del centro.
 
-La temàtica, els punts de partida, les constel·lacions de la marjal, les targetes de registre i la seqüència de tres sessions són propis. L’ús del llapis i el dibuix automatitzat només s’afirma quan s’ha comprovat que el centre disposa de l’Artist Add-On compatible.
+La temática, los puntos de partida, las constelaciones de la marjal, las tarjetas de registro y la secuencia de tres sesiones son propios. El uso del lápiz y el dibujo automatizado solo se afirma cuando se ha comprobado que el centro dispone del Artist Add-On compatible.

@@ -14,167 +14,167 @@ duration: "6 lecciones · 7–10 sesiones"
 challenge: "¿Cómo distinguimos un error de montaje de un error de programa y cómo demostramos que una ruta autónoma funciona de manera fiable?"
 ---
 
-![Base mòbil SPIKE Prime amb sensor de color davant d'una ruta de quadrícula dissenyada amb paper i una barrera baixa.](../../_assets/situacions/sp-debug-rutes.webp)
+![Base móvil SPIKE Prime con sensor de color delante de una ruta de cuadrícula diseñada con papel y una barrera baja.](../../_assets/situacions/sp-debug-rutes.webp)
 
-_Una bona depuració redueix el problema, prova hipòtesis i documenta els canvis._
+_Una buena depuración reduce el problema, prueba hipótesis y documenta los cambios._
 
-## 🌱 Repte i intenció
+## 🌱 Reto e intención
 
-El servei fictici de préstec de la biblioteca necessita traslladar una caixa lleugera entre dues zones sense eixir d’un recorregut marcat. Abans de confiar-hi, la classe aprén a aïllar errors físics, detectar problemes del programa i provar rutes per parts. La seqüència adapta les sis lliçons de la unitat 3 *Troubleshooting and Debugging* de LEGO Education *Foundations of Physical Computing*. Els models i codis concrets de l’app es consulten en el recurs oficial; ací se’n creen recorreguts, casos de prova i registres propis. No es transporten llibres reals ni s’utilitza el robot amb persones en moviment.
+El servicio ficticio de préstamo de la biblioteca necesita trasladar una caja ligera entre dos zonas sin salir de un recorrido marcado. Antes de confiar en él, la clase aprende a aislar errores físicos, detectar problemas del programa y probar rutas por partes. La secuencia adapta las seis lecciones de la unidad 3 *Troubleshooting and Debugging* de LEGO Education *Foundations of Physical Computing*. Los modelos y códigos concretos de la app se consultan en el recurso oficial; aquí se crean recorridos, casos de prueba y registros propios. No se transportan libros reales ni se utiliza el robot con personas en movimiento.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Diferenciar una avaria de muntatge d’un error en la seqüència de programa.
-- Formular una hipòtesi de fallada i canviar una sola variable en cada prova.
-- Construir i depurar una ruta amb sensors, casos límit i registre de resultats repetits.
-- Justificar que un canvi resol el problema sense ocultar els casos que encara fallen.
+- Diferenciar una avería de montaje de un error en la secuencia de programa.
+- Formular una hipótesis de fallo y cambiar una sola variable en cada prueba.
+- Construir y depurar una ruta con sensores, casos límite y registro de resultados repetidos.
+- Justificar que un cambio resuelve el problema sin ocultar los casos que todavía fallan.
 
-## 📅 Seqüència didàctica · sis lliçons
+## 📅 Secuencia didáctica · seis lecciones
 
-### **Lliçó 1 · Depuració del model: el plòter de la mediateca ([Broken](https://education.lego.com/en-us/lessons/prime-invention-squad/broken/), 90–135 min).**
+### **Lección 1 · Depuración del modelo: el plóter de la mediateca ([Broken](https://education.lego.com/en-us/lessons/prime-invention-squad/broken/), 90–135 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Engage desconnectat:** cada equip rep un llapis sense punta, tisores i una fitxa amb quatre ovals pàl·lids que cal traçar i retallar. Abans de començar, demaneu què falla, quina part del sistema està implicada i què cal preparar; en afilar el llapis, parleu de maquinari preparat per fer la tasca. Ajunteu les formes i compareu-ne la regularitat. Connecteu la idea amb màquines CNC que repeteixen moviments amb precisió.
+**Engage desconectado:** cada equipo recibe un lápiz sin punta, tijeras y una ficha con cuatro óvalos pálidos que hay que trazar y recortar. Antes de empezar, preguntad qué falla, qué parte del sistema está implicada y qué hay que preparar; al sacar punta al lápiz, hablad de hardware preparado para hacer la tarea. Juntad las formas y comparad su regularidad. Conectad la idea con máquinas CNC que repiten movimientos con precisión.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Explore amb SPIKE:** useu el plòter X–Y del catàleg SPIKE o una versió esquemàtica en paper. Executeu el programa base sense tocar-lo, descriviu què esperàveu i què ha ocorregut, i identifiqueu les parts que sí que funcionen. Clau docent del model de referència: la roda d’alimentació de l’eix Y falta, el bastidor superior no està fixat, els engranatges d’alimentació estan invertits (el paper avança massa de pressa) i el carro que subjecta el llapis està solt. Presenteu només els símptomes; l’equip decideix quin defecte comprovar primer i prova cada reparació per separat. Si es construeix un plòter propi, prepareu quatre avaries equivalents sense afegir càrrega al motor ni forçar engranatges.
+**Explore con SPIKE:** usad el plóter X–Y del catálogo SPIKE o una versión esquemática en papel. Ejecutad el programa base sin tocarlo, describid qué esperabais y qué ha ocurrido, e identificad las partes que sí funcionan. Clave docente del modelo de referencia: falta la rueda de alimentación del eje Y, el bastidor superior no está fijado, los engranajes de alimentación están invertidos (el papel avanza demasiado deprisa) y el carro que sujeta el lápiz está suelto. Presentad solo los síntomas; el equipo decide qué defecto comprobar primero y prueba cada reparación por separado. Si se construye un plóter propio, preparad cuatro averías equivalentes sin añadir carga al motor ni forzar engranajes.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Rutina de diagnòstic:** «què veig? / què havia de passar? / quina peça o connexió ho podria explicar? / quina prova aïllada ho confirmaria?». Canvieu una sola variable, repetiu la prova i anoteu resultat i pròxim pas; no reprogramem un model que encara té una avaria mecànica.
+**Rutina de diagnóstico:** «¿qué veo? / ¿qué debía pasar? / ¿qué pieza o conexión podría explicarlo? / ¿qué prueba aislada lo confirmaría?». Cambiad una sola variable, repetid la prueba y anotad resultado y próximo paso; no reprogramemos un modelo que todavía tiene una avería mecánica.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Explain i tancament:** distingiu símptoma, causa i solució; dibuixeu el sistema per mòduls (estructura, alimentació del paper, eixos, llapis, cablejat i codi), marqueu la fallada i expliqueu com interaccionen maquinari i programa.
+**Explain y cierre:** distinguid síntoma, causa y solución; dibujad el sistema por módulos (estructura, alimentación del papel, ejes, lápiz, cableado y código), marcad el fallo y explicad cómo interactúan hardware y programa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidències i suport:** full d’ovals, mapa d’avaries, taula hipòtesi-prova-resultat, reparació i reflexió sobre l’ajuda demanada a altres equips, temps i peces. Per començar, el docent facilita dos possibles mòduls; ampliació: redactar instruccions que permeten a un altre equip reproduir la diagnosi sense donar-li la resposta. Conserveu el model per a S2. Durada ajustable: 90 min si es treballa un muntatge preparat; fins a 135 min si cal muntar i verificar-lo.
+**Evidencias y apoyo:** hoja de óvalos, mapa de averías, tabla hipótesis-prueba-resultado, reparación y reflexión sobre la ayuda pedida a otros equipos, tiempo y piezas. Para empezar, el docente facilita dos posibles módulos; ampliación: redactar instrucciones que permitan a otro equipo reproducir el diagnóstico sin darle la respuesta. Conservad el modelo para S2. Duración ajustable: 90 min si se trabaja un montaje preparado; hasta 135 min si hay que montarlo y verificarlo.
 
-### **Lliçó 2 · Depuració del programari: trobar el tram que falla ([Track Your Packages](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/track-your-packages/), 90 min).**
+### **Lección 2 · Depuración del software: encontrar el tramo que falla ([Track Your Packages](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/track-your-packages/), 90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Engage · 5 min:** en una graella, trobeu durant 3–5 minuts camins diferents d’A a B en diagonal, avançant només una casella amunt/avall/esquerra/dreta i evitant les caselles ocupades; escriviu pseudocodi per a una ruta.
+**Engage · 5 min:** en una cuadrícula, encontrad durante 3–5 minutos caminos diferentes de A a B en diagonal, avanzando solo una casilla arriba/abajo/izquierda/derecha y evitando las casillas ocupadas; escribid pseudocódigo para una ruta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Explore · 20 min:** reaprofiteu el plòter X–Y de S1 o munteu-ne la base de traçat; canvieu només la fitxa indicadora per representar un altre mapa de biblioteca. Executeu el programa inicial i observeu que el model sembla bé però el recorregut falla: sospiteu primer del programari i compareu el traç amb la ruta esperada.
+**Explore · 20 min:** reutilizad el plóter X–Y de S1 o montad su base de trazado; cambiad solo la ficha indicadora para representar otro mapa de biblioteca. Ejecutad el programa inicial y observad que el modelo parece correcto pero el recorrido falla: sospechad primero del software y comparad el trazado con la ruta esperada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Explain · 20 min:** llegiu el pseudocodi en parella i apliqueu un protocol comú: 1) descriure el símptoma; 2) dir què s’esperava; 3) comprovar fixacions i cablejat; 4) repetir la prova; 5) verificar ports; 6) revisar l’últim canvi; 7) dividir el programa en blocs petits; 8) explicar el codi a la parella; 9) canviar una sola cosa; 10) tornar a provar i documentar la solució. Si el hardware està correcte, continueu la inspecció del codi; no canvieu diverses distàncies alhora.
+**Explain · 20 min:** leed el pseudocódigo en pareja y aplicad un protocolo común: 1) describir el síntoma; 2) decir qué se esperaba; 3) comprobar fijaciones y cableado; 4) repetir la prueba; 5) verificar puertos; 6) revisar el último cambio; 7) dividir el programa en bloques pequeños; 8) explicar el código a la pareja; 9) cambiar una sola cosa; 10) volver a probar y documentar la solución. Si el hardware está correcto, continuad la inspección del código; no cambiéis varias distancias a la vez.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Elaborate · 35 min:** dissenyeu un nou recorregut d’un paquet fictici en una quadrícula, afegiu una diagonal o un obstacle, escriviu el pla, programeu-lo tram a tram i compareu cada secció amb el pseudocodi. Torneu a l’últim tram fiable quan aparega una desviació.
+**Elaborate · 35 min:** diseñad un nuevo recorrido de un paquete ficticio en una cuadrícula, añadid una diagonal o un obstáculo, escribid el plan, programadlo tramo a tramo y comparad cada sección con el pseudocódigo. Volved al último tramo fiable cuando aparezca una desviación.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evaluate · 10 min:** un altre equip segueix el codi i el protocol sense que li expliqueu la resposta. **Evidència:** ruta dibuixada, pseudocodi, programa comentat, registre «símptoma/expectativa/prova/canvi/resultat» i consell de depuració. Adaptació: oferiu una ruta ortogonal més curta; ampliació: calibrar els moviments diagonals amb dues mesures i explicar-ne l’error.
+**Evaluate · 10 min:** otro equipo sigue el código y el protocolo sin que le expliquéis la respuesta. **Evidencia:** ruta dibujada, pseudocódigo, programa comentado, registro «síntoma/expectativa/prueba/cambio/resultado» y consejo de depuración. Adaptación: ofreced una ruta ortogonal más corta; ampliación: calibrar los movimientos diagonales con dos medidas y explicar su error.
 
-### **Lliçó 3 · Desmuntar els passos de l’error ( *Dancer Break Down*, 45 min).**
+### **Lección 3 · Desmontar los pasos del error ( *Dancer Break Down*, 45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Engage · 5 min:** mireu un model ballarí SPIKE en funcionament i preveieu què pot fallar en la construcció i què pot fallar en el programa.
+**Engage · 5 min:** mirad un modelo bailarín SPIKE en funcionamiento y preved qué puede fallar en la construcción y qué puede fallar en el programa.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Explore · 20 min:** construïu el ballarí de la col·lecció SPIKE o useu el model preparat. Abans de programar, moveu els eixos a mà dins del rang segur i confirmeu quines parts (cames/braços) poden moure’s sense encallar-se. Llegiu la pila de blocs inicial, redacteu-ne pseudocodi i executeu-la; el programa demana un motor al port B mentre el motor de les cames està connectat al port F, per això un dels motors no respon. Comproveu el port i decidiu quina correcció preserva millor el disseny validat; normalment corregiu l’adreça del programa, no desmunteu un mecanisme ben construït.
+**Explore · 20 min:** construid el bailarín de la colección SPIKE o usad el modelo preparado. Antes de programar, moved los ejes a mano dentro del rango seguro y confirmad qué partes (piernas/brazos) pueden moverse sin atascarse. Leed la pila de bloques inicial, redactad su pseudocódigo y ejecutadla; el programa pide un motor en el puerto B mientras el motor de las piernas está conectado al puerto F, por eso uno de los motores no responde. Comprobad el puerto y decidid qué corrección preserva mejor el diseño validado; normalmente corregís la dirección del programa, no desmontáis un mecanismo bien construido.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Explain · 8 min:** contrasteu hipòtesi amb observació i expliqueu per què la prova manual del model precedia la prova del codi.
+**Explain · 8 min:** contrastad hipótesis con observación y explicad por qué la prueba manual del modelo precedía a la prueba del código.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Elaborate · 7 min:** depureu dos casos breus: sincronitzar deu moviments de cames amb un senyal de llum revisant els temps; i substituir un bloc d’inici «quan es prem el sensor de força» per inici de programa quan no hi ha sensor connectat.
+**Elaborate · 7 min:** depurad dos casos breves: sincronizar diez movimientos de piernas con una señal de luz revisando los tiempos; y sustituir un bloque de inicio «cuando se pulsa el sensor de fuerza» por inicio de programa cuando no hay sensor conectado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evaluate · 5 min:** classifiqueu cada cas com a model, programa o interfície entre els dos i escriviu què provàveu abans de corregir. Evidència: pseudocodi extret dels blocs, port real/programat, defecte, canvi i resultat. Si el model no està disponible, simuleu les connexions amb un mapa de ports, però valideu després la compatibilitat amb el kit del centre.
+**Evaluate · 5 min:** clasificad cada caso como modelo, programa o interfaz entre los dos y escribid qué probabais antes de corregir. Evidencia: pseudocódigo extraído de los bloques, puerto real/programado, defecto, cambio y resultado. Si el modelo no está disponible, simulad las conexiones con un mapa de puertos, pero validad después la compatibilidad con el kit del centro.
 
-### **Lliçó 4 · Ballar amb colors ( *Dance to the Color*, 45 min).**
+### **Lección 4 · Bailar con colores ( *Dance to the Color*, 45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Preparació:** manteniu el model de ballarí de S3, connecteu sensor de color i hub carregat, i proveu quins colors detecta de manera estable amb la llum de l’aula i la distància de lectura del vostre muntatge. **Engage · 5 min:** compartiu una experiència en què un pla no haja funcionat i convertiu-la en una estratègia: pseudocodi, comentaris per blocs, proves curtes, entrades esperades i inesperades, canvi aïllat.
+**Preparación:** mantened el modelo de bailarín de S3, conectad el sensor de color y el hub cargado, y probad qué colores detecta de manera estable con la luz del aula y la distancia de lectura de vuestro montaje. **Engage · 5 min:** compartid una experiencia en la que un plan no haya funcionado y convertidla en una estrategia: pseudocódigo, comentarios por bloques, pruebas cortas, entradas esperadas e inesperadas, cambio aislado.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Explore · 20 min:** partiu del programa funcional que mou les cames; afegiu la condició «quan es detecta roig, mou les cames» i compareu pseudocodi amb la pila. Després afegiu braços a eixa mateixa entrada. Comenteu cada secció i registreu on apareix qualsevol error. Si no respon, distingiu lectura incerta del color (sensor/llum/distància) d’una branca o ordre mal programats.
+**Explore · 20 min:** partid del programa funcional que mueve las piernas; añadid la condición «cuando se detecta rojo, mueve las piernas» y comparad pseudocódigo con la pila. Después añadid brazos a esa misma entrada. Comentad cada sección y registrad dónde aparece cualquier error. Si no responde, distinguid lectura incierta del color (sensor/luz/distancia) de una rama u orden mal programadas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Explain · 8 min:** cada parella descriu un error, si pertany al muntatge, al programa o a la interacció, i com ho ha sabut.
+**Explain · 8 min:** cada pareja describe un error, si pertenece al montaje, al programa o a la interacción, y cómo lo ha sabido.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Elaborate · 7 min:** amplieu la coreografia: un color provat activa moviment ràpid i un altre moviment lent quan arranca el programa. No seleccioneu una lectura inestable només perquè el color pareix correcte a ull; registreu els valors observats.
+**Elaborate · 7 min:** ampliad la coreografía: un color probado activa movimiento rápido y otro movimiento lento cuando arranca el programa. No seleccionéis una lectura inestable solo porque el color parezca correcto a ojo; registrad los valores observados.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evaluate · 5 min:** autoavaluació sobre diagnosi, comentaris i ús responsable de la prova; compartiu la coreografia només si el grup vol, amb alternativa silenciosa/visual. Evidència: pseudocodi inicial i final, comentaris, taula de colors/distància/resultat i registre de depuració. La mostra és opcional i no s’enregistra cap alumne.
+**Evaluate · 5 min:** autoevaluación sobre diagnóstico, comentarios y uso responsable de la prueba; compartid la coreografía solo si el grupo quiere, con alternativa silenciosa/visual. Evidencia: pseudocódigo inicial y final, comentarios, tabla de colores/distancia/resultado y registro de depuración. La muestra es opcional y no se registra a ningún alumno.
 
-### **Lliçó 5 · Dissenyar una ruta nova (*Mini-Challenge: New Routes*, 90 min).**
+### **Lección 5 · Diseñar una ruta nueva (*Mini-Challenge: New Routes*, 90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Engage · 10 min:** en una quadrícula local inventada (centre cívic, biblioteca o circuit de l’Albufera), marqueu origen, destí i caselles prohibides; cerqueu en 1–2 minuts diversos camins en passos ortogonals i compareu-ne el pseudocodi.
+**Engage · 10 min:** en una cuadrícula local inventada (centro cívico, biblioteca o circuito de la Albufera), marcad origen, destino y casillas prohibidas; buscad en 1–2 minutos varios caminos en pasos ortogonales y comparad su pseudocódigo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Explore · 20 min:** cada parella modifica una ruta pròpia a llapis, la revisa i la passa a retolador quan el recorregut és executable. Useu el traçador X–Y de S2 per marcar un paquet/destinació o una base mòbil SPIKE compatible amb els ports disponibles; si el sensor de línia no llig consistentment la superfície, programeu trams temporitzats i declareu-ne la precisió limitada.
+**Explore · 20 min:** cada pareja modifica una ruta propia a lápiz, la revisa y la pasa a rotulador cuando el recorrido es ejecutable. Usad el trazador X–Y de S2 para marcar un paquete/destino o una base móvil SPIKE compatible con los puertos disponibles; si el sensor de línea no lee la superficie de forma consistente, programad tramos temporizados y declarad su precisión limitada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Explain · 15 min:** intercanvieu pseudocodis i reviseu si indiquen gir, distància, ordre i aturada amb prou detall. Acordeu protocol de depuració: expressar problema i resultat esperat; verificar model/connexions i ports; repetir; revisar últim codi afegit; descompondre la seqüència; explicar-la a la parella; modificar una sola part i documentar consell après.
+**Explain · 15 min:** intercambiad pseudocódigos y revisad si indican giro, distancia, orden y parada con suficiente detalle. Acordad un protocolo de depuración: expresar problema y resultado esperado; verificar modelo/conexiones y puertos; repetir; revisar el último código añadido; descomponer la secuencia; explicarla a la pareja; modificar una sola parte y documentar el consejo aprendido.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Elaborate · 35 min:** programeu ruta sencera però proveu per trams; compareu codi amb el pla, registreu els fragments que funcionen i els que no, repareu el primer punt de divergència i repetiu. Afegiu després una casella bloquejada o un gir nou com a prova límit. Canvieu precisió i nombre de maniobres abans d’optimitzar la velocitat.
+**Elaborate · 35 min:** programad la ruta entera pero probad por tramos; comparad código con el plan, registrad los fragmentos que funcionan y los que no, reparad el primer punto de divergencia y repetid. Añadid después una casilla bloqueada o un giro nuevo como prueba límite. Cambiad precisión y número de maniobras antes de optimizar la velocidad.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evaluate · 10 min:** un altre equip executa la ruta amb només el diagrama i el protocol escrit. **Evidència:** mapa abans/després, pseudocodi, projecte comentat, almenys dues iteracions i taula de temps/desviació. Valoració docent: el sistema físic i el codi coincideixen amb la predicció; autoavaluació sobre ajuda rebuda, iteració i gestió de peces. Bastida: ruta curta sense obstacles; extensió: dues rutes equivalents, una amb menys girs i una que evita una zona sensible.
+**Evaluate · 10 min:** otro equipo ejecuta la ruta solo con el diagrama y el protocolo escrito. **Evidencia:** mapa antes/después, pseudocódigo, proyecto comentado, al menos dos iteraciones y tabla de tiempo/desviación. Valoración docente: el sistema físico y el código coinciden con la predicción; autoevaluación sobre ayuda recibida, iteración y gestión de piezas. Andamiaje: ruta corta sin obstáculos; ampliación: dos rutas equivalentes, una con menos giros y otra que evita una zona sensible.
 
-### **Lliçó 6 · Professions digitals, justícia i seguretat (90 min).**
+### **Lección 6 · Profesiones digitales, justicia y seguridad (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Preparació:** reuniu imatges o fitxes pròpies d’ocupacions i fonts valencianes fiables sobre formació i tasques; equips de quatre amb rols rotatius i registre de font/data. **Engage · 10 min:** relacioneu la unitat amb tecnologies de la informació i comunicació, serveis jurídics i seguretat pública/protecció civil. Pregunteu qui manté un servei digital, qui respon a una incidència i com es protegeixen drets i dades. Classifiqueu imatges de feines en els dos àmbits i expliqueu per què; distingiu una feina d’una família professional.
+**Preparación:** reunid imágenes o fichas propias de ocupaciones y fuentes valencianas fiables sobre formación y tareas; equipos de cuatro con roles rotativos y registro de fuente/fecha. **Engage · 10 min:** relacionad la unidad con tecnologías de la información y comunicación, servicios jurídicos y seguridad pública/protección civil. Preguntad quién mantiene un servicio digital, quién responde a una incidencia y cómo se protegen derechos y datos. Clasificad imágenes de trabajos en los dos ámbitos y explicad por qué; distinguid un trabajo de una familia profesional.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Explore · 35 min:** connecteu les lliçons de depuració amb funcions com suport TIC, proves de programari, ciberseguretat, accessibilitat digital, gestió d’incidències, assessorament jurídic, emergències i protecció de la comunitat. Cada grup investiga feines concretes, tasques, entorns, habilitats i estudis/acreditacions requerits amb fonts locals datades; una dada salarial o previsió només s’inclou si hi ha font adequada i no es presenta com una promesa individual. Feu una pluja de feines i una graella «tasca / habilitat / formació / font».
+**Explore · 35 min:** conectad las lecciones de depuración con funciones como soporte TIC, pruebas de software, ciberseguridad, accesibilidad digital, gestión de incidencias, asesoramiento jurídico, emergencias y protección de la comunidad. Cada grupo investiga trabajos concretos, tareas, entornos, habilidades y estudios/acreditaciones requeridos con fuentes locales fechadas; un dato salarial o una previsión solo se incluye si hay fuente adecuada y no se presenta como una promesa individual. Haced una lluvia de trabajos y una cuadrícula «tarea / habilidad / formación / fuente».
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Model i presentació · 20 min:** representeu un dels dos àmbits amb peces SPIKE o un mapa visual del cicle d’incidència: detectar → descriure sense culpar → verificar → protegir informació → escalar a la persona responsable. Presenteu el model en un minut i expliqueu com dues professions cooperen; eviteu equiparar depuració de classe amb ciberatac real.
+**Modelo y presentación · 20 min:** representad uno de los dos ámbitos con piezas SPIKE o un mapa visual del ciclo de incidencia: detectar → describir sin culpar → verificar → proteger información → escalar a la persona responsable. Presentad el modelo en un minuto y explicad cómo cooperan dos profesiones; evitad equiparar la depuración de clase con un ciberataque real.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Elaborate · 15 min:** creeu una xarxa de paraules de cinc minuts sobre una família professional i intercanvieu-la amb un altre equip; amplieu-la amb ocupacions noves i descriviu les habilitats compartides.
+**Elaborate · 15 min:** cread una red de palabras de cinco minutos sobre una familia profesional e intercambiadla con otro equipo; ampliadla con ocupaciones nuevas y describid las habilidades compartidas.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evaluate · 10 min:** reflexió individual privada sobre habilitats/interessos, més observació docent de l’ús de fonts, classificació argumentada i connexió amb les lliçons; expressar preferències és voluntari. Evidències: fonts datades, mapa/model, presentació, xarxa i una norma d’equip per registrar incidents sense dades personals ni culpabilitzar ningú. La lliçó cobreix aquestes dues vies dins d’un curs que tracta múltiples famílies professionals, no totes en una sessió.
+**Evaluate · 10 min:** reflexión individual privada sobre habilidades/intereses, más observación docente del uso de fuentes, clasificación argumentada y conexión con las lecciones; expresar preferencias es voluntario. Evidencias: fuentes fechadas, mapa/modelo, presentación, red y una norma de equipo para registrar incidentes sin datos personales ni culpar a nadie. La lección cubre estas dos vías dentro de un curso que trata múltiples familias profesionales, no todas en una sesión.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Un set SPIKE Prime 45678 i dispositiu amb l’app per parella; models oficials Broken, Track Your Packages i Break Dancer disponibles dins l’app quan s’usen; paper quadriculat, retoladors, regla, fulls de depuració i materials per a una ruta de taula. El docent prepara els errors de muntatge sense danyar cap motor, sensor ni cable; si no és segur alterar el kit, empra fotografies o esquemes. Verifiqueu que el sensor de color llig la superfície triada i que el model pot fer la ruta abans de la sessió. Cap obstacle ha de posar en risc persones ni peces.
+Un set SPIKE Prime 45678 y dispositivo con la app por pareja; modelos oficiales Broken, Track Your Packages y Break Dancer disponibles dentro de la app cuando se usan; papel cuadriculado, rotuladores, regla, hojas de depuración y materiales para una ruta de mesa. El docente prepara los errores de montaje sin dañar ningún motor, sensor ni cable; si no es seguro alterar el kit, emplea fotografías o esquemas. Verificad que el sensor de color lee la superficie elegida y que el modelo puede hacer la ruta antes de la sesión. Ningún obstáculo debe poner en riesgo a personas ni a piezas.
 
-## 🧪 Evidències i criteris
+## 🧪 Evidencias y criterios
 
-Diagrama de diagnòstic, pseudocodi, programa anotat, graella de casos de prova, dades del sensor, diari d’errors i reparacions, ruta iterada i presentació professional. Valoreu que l’equip diferencie maquinari i programari, descomponga el problema, prove metòdicament, use casos esperats i inesperats, torne a una versió funcional i explique per què el canvi resol el símptoma. Autoavaluació amb col·laboració, gestió del temps i cura de peces, més retorn entre equips centrat en evidència.
+Diagrama de diagnóstico, pseudocódigo, programa anotado, cuadrícula de casos de prueba, datos del sensor, diario de errores y reparaciones, ruta iterada y presentación profesional. Valorad que el equipo diferencie hardware y software, descomponga el problema, pruebe metódicamente, use casos esperados e inesperados, vuelva a una versión funcional y explique por qué el cambio resuelve el síntoma. Autoevaluación con colaboración, gestión del tiempo y cuidado de piezas, más retorno entre equipos centrado en la evidencia.
 
-## ♿ Seguretat i participació
+## ♿ Seguridad y participación
 
-Doneu alternatives en paper per a les proves de trajecte, rutes accessibles des de la posició asseguda i rols de pilotatge, observació, registre i revisió. Manteniu el robot dins d’una superfície delimitada, amb una càrrega lleugera i sense acostar-lo a vianants, escales o vores. No useu contrasenyes ni dades reals en l’activitat de seguretat; el tema professional és una conversa sobre pràctiques responsables, no una intrusió a sistemes.
+Dad alternativas en papel para las pruebas de trayecto, rutas accesibles desde la posición sentada y roles de pilotaje, observación, registro y revisión. Mantened el robot dentro de una superficie delimitada, con una carga ligera y sin acercarlo a peatones, escaleras o bordes. No uséis contraseñas ni datos reales en la actividad de seguridad; el tema profesional es una conversación sobre prácticas responsables, no una intrusión en sistemas.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta les sis lliçons de la unitat 3 *Troubleshooting and Debugging* del pla oficial [*Foundations of Physical Computing*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb): *Model Debugging*, *Software Debugging*, *Dancer Break Down*, *Dance to the Color*, *Mini-Challenge: New Routes* i *Connecting to Careers: Information Technology and Law, Public Safety, Corrections & Security*. Conserva la diagnosi de maquinari i programari, els models CNC i ballarí de l’app, pseudocodi, comentaris, condicions de color, recorreguts autònoms, iteració i recerca professional; la temàtica, la ruta, els fulls de registre i la il·lustració són propis. Els models i els fulls oficials es consulten a LEGO Education, no es reprodueixen ací.
+Adapta las seis lecciones de la unidad 3 *Troubleshooting and Debugging* del plan oficial [*Foundations of Physical Computing*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb): *Model Debugging*, *Software Debugging*, *Dancer Break Down*, *Dance to the Color*, *Mini-Challenge: New Routes* y *Connecting to Careers: Information Technology and Law, Public Safety, Corrections & Security*. Conserva el diagnóstico de hardware y software, los modelos CNC y bailarín de la app, pseudocódigo, comentarios, condiciones de color, recorridos autónomos, iteración e investigación profesional; la temática, la ruta, las hojas de registro y la ilustración son propios. Los modelos y las hojas oficiales se consultan en LEGO Education, no se reproducen aquí.

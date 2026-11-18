@@ -14,120 +14,120 @@ duration: "3 lecciones · 5–6 sesiones"
 challenge: "¿Qué personas, competencias e itinerarios formativos hacen posible una feria tecnológica accesible, y cómo podemos investigar opciones sin predecir el futuro de nadie?"
 ---
 
-![Robot LEGO SPIKE Prime al costat d’una maqueta modular de fira de ciència i tecnologia feta amb peces de construcció.](../../_assets/situacions/sp-itineraris-professionals.webp)
+![Robot LEGO SPIKE Prime junto a una maqueta modular de feria de ciencia y tecnología hecha con piezas de construcción.](../../_assets/situacions/sp-itineraris-professionals.webp)
 
-_La fira és un mapa de tasques connectades: cap professió ni itinerari és l’únic camí possible._
+_La feria es un mapa de tareas conectadas: ninguna profesión ni itinerario es el único camino posible._
 
-## 🌱 Propòsit i context
+## 🌱 Propósito y contexto
 
-Després d’explorar les 16 famílies professionals del curs LEGO Education *Foundations of Physical Computing*, l’alumnat analitza una situació comunitària propera: organitzar una fira escolar de ciència i tecnologia perquè hi puguen participar visitants amb necessitats diverses. Una fira depén de planificació, accessibilitat, comunicació, transport, energia, manteniment, neteja, alimentació, pressupost, continguts i gestió pública; molts rols són visibles i molts altres treballen abans que arribe el públic. Els equips creen un mapa de professions i una maqueta de la fira, revisen els interessos i habilitats que cadascú ha triat compartir i investiguen opcions formatives vigents al nostre entorn. La situació adapta les tres lliçons de la unitat 9 *Careers Culminating Project*. No és una prova d’aptitud, un consell d’orientació individual ni una predicció laboral: obri possibilitats i ofereix informació contrastable sense exigir que ningú revele expectatives personals.
+Después de explorar las 16 familias profesionales del curso LEGO Education *Foundations of Physical Computing*, el alumnado analiza una situación comunitaria cercana: organizar una feria escolar de ciencia y tecnología para que puedan participar visitantes con necesidades diversas. Una feria depende de planificación, accesibilidad, comunicación, transporte, energía, mantenimiento, limpieza, alimentación, presupuesto, contenidos y gestión pública; muchos roles son visibles y muchos otros trabajan antes de que llegue el público. Los equipos crean un mapa de profesiones y una maqueta de la feria, revisan los intereses y habilidades que cada cual ha elegido compartir e investigan opciones formativas vigentes en nuestro entorno. La situación adapta las tres lecciones de la unidad 9 *Careers Culminating Project*. No es una prueba de aptitud, un consejo de orientación individual ni una predicción laboral: abre posibilidades y ofrece información contrastable sin exigir que nadie revele expectativas personales.
 
-## 🎯 Objectius d’aprenentatge
+## 🎯 Objetivos de aprendizaje
 
-- Analitzar una situació quotidiana i identificar professions de diversos sectors que hi intervenen directament i indirectament.
+- Analizar una situación cotidiana e identificar profesiones de diversos sectores que intervienen en ella directa e indirectamente.
 
-- Classificar feines per tasques, entorns, habilitats, formació i relacions amb altres rols, amb fonts actuals i citades.
+- Clasificar oficios por tareas, entornos, habilidades, formación y relaciones con otros roles, con fuentes actuales y citadas.
 
-- Representar visualment xarxes de treball interdependents i explicar què aporta cada rol a l’experiència dels visitants.
+- Representar visualmente redes de trabajo interdependientes y explicar qué aporta cada rol a la experiencia de los visitantes.
 
-- Reconéixer competències transferibles desenvolupades en el curs (comunicació, col·laboració, creativitat, resolució de problemes, organització i autoregulació) i relacionar-les amb famílies de professions sense reduir-les a una única ocupació.
+- Reconocer competencias transferibles desarrolladas en el curso (comunicación, colaboración, creatividad, resolución de problemas, organización y autorregulación) y relacionarlas con familias de profesiones sin reducirlas a una única ocupación.
 
-- Comparar una primera reflexió opcional sobre interessos amb una revisió final, respectant que les preferències poden canviar o romandre igual.
+- Comparar una primera reflexión opcional sobre intereses con una revisión final, respetando que las preferencias pueden cambiar o permanecer igual.
 
-- Construir un pla d’exploració a curt termini, no una promesa de trajectòria: una pregunta, una font, una experiència segura i una persona o servei professional que podria orientar.
+- Construir un plan de exploración a corto plazo, no una promesa de trayectoria: una pregunta, una fuente, una experiencia segura y una persona o servicio profesional que podría orientar.
 
-## 🔎 Vocabulari i continguts
+## 🔎 Vocabulario y contenidos
 
-**Ocupació:** conjunt concret de tasques i responsabilitats en un lloc de treball. **Família professional:** agrupació àmplia de feines que comparteixen àmbits o competències; les classificacions varien entre sistemes. **Qualificació:** formació, acreditació o experiència requerida per a una ocupació concreta, que cal comprovar amb fonts actuals. **Competència transferible:** habilitat que pot resultar útil en diversos contextos, com comunicar una decisió o treballar amb dades. **Itinerari:** combinació possible d’aprenentatges, pràctica i experiències; no és lineal ni igual per a tothom.
+**Ocupación:** conjunto concreto de tareas y responsabilidades en un puesto de trabajo. **Familia profesional:** agrupación amplia de oficios que comparten ámbitos o competencias; las clasificaciones varían entre sistemas. **Cualificación:** formación, acreditación o experiencia requerida para una ocupación concreta, que hay que comprobar con fuentes actuales. **Competencia transferible:** habilidad que puede resultar útil en diversos contextos, como comunicar una decisión o trabajar con datos. **Itinerario:** combinación posible de aprendizajes, práctica y experiencias; no es lineal ni igual para todo el mundo.
 
-La guia LEGO anomena les famílies d’ocupacions “career clusters” i inclou una primera reflexió de curs per comparar-la al final. L’adaptació usa materials propis, prioritza fonts valencianes i estatals actualitzades, i evita escales de puntuació d’“ocupabilitat”: un autorecompte escolar no permet mesurar el valor ni el futur professional d’una persona.
+La guía LEGO llama a las familias de ocupaciones “career clusters” e incluye una primera reflexión de curso para compararla al final. La adaptación usa materiales propios, prioriza fuentes valencianas y estatales actualizadas, y evita escalas de puntuación de “empleabilidad”: un autorrecuento escolar no permite medir el valor ni el futuro profesional de una persona.
 
-## 🧰 Preparació docent
+## 🧰 Preparación docente
 
-Prepareu una llista gran i neutral de sectors/àmbits professionals i imatges de llocs de treball diversos sense estereotips de gènere, edat, origen o discapacitat. Recopileu enllaços actuals de portals públics d’orientació, catàlegs oficials d’estudis, perfils professionals i serveis municipals o autonòmics. La docent revisa abans la qualitat, data, autoritat i abast de cada font; cap estimació d’ofertes de feina es presenta com a predicció segura. Prepareu cartó, paper, peces de SPIKE, retoladors, notes adhesives i una plantilla de xarxa d’actors que es puga fer en paper o en format digital.
+Preparad una lista grande y neutra de sectores/ámbitos profesionales e imágenes de puestos de trabajo diversos sin estereotipos de género, edad, origen o discapacidad. Recopilad enlaces actuales de portales públicos de orientación, catálogos oficiales de estudios, perfiles profesionales y servicios municipales o autonómicos. La docente revisa antes la calidad, fecha, autoridad y alcance de cada fuente; ninguna estimación de ofertas de trabajo se presenta como predicción segura. Preparad cartón, papel, piezas de SPIKE, rotuladores, notas adhesivas y una plantilla de red de actores que se pueda hacer en papel o en formato digital.
 
-Abans del curs, podeu oferir una fitxa privada i opcional sobre àrees que desperten curiositat, tasques que agraden o habilitats que es volen practicar. Expliqueu que pot quedar en blanc, respondre’s des de la perspectiva d’un personatge fictici o substituir-se per una professió investigada. No arreplegueu les respostes personals ni les compareu entre alumnat. Per a l’alumnat que no tinga una fitxa inicial, useu la reflexió del començament d’aquesta unitat com a primera mostra i deixeu clar que els períodes no són equivalents.
+Antes del curso, podéis ofrecer una ficha privada y opcional sobre áreas que despiertan curiosidad, tareas que gustan o habilidades que se quieren practicar. Explicad que puede quedar en blanco, responderse desde la perspectiva de un personaje ficticio o sustituirse por una profesión investigada. No recojáis las respuestas personales ni las comparéis entre alumnado. Para el alumnado que no tenga una ficha inicial, usad la reflexión del comienzo de esta unidad como primera muestra y dejad claro que los periodos no son equivalentes.
 
-## 📅 Seqüència d’aprenentatge · tres lliçons
+## 📅 Secuencia de aprendizaje · tres lecciones
 
-### **Lliçó 1 · Una fira que funciona per moltes mans (90 min).**
+### **Lección 1 · Una feria que funciona gracias a muchas manos (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Activació (10–15 min):** parleu de fires, jornades de ciència o trobades escolars; mireu imatges de referència seleccionades per la docent i identifiqueu què fa una persona visitant des que planifica el trajecte fins que torna a casa. Anoteu primer necessitats i accions, no noms de professions.
+**Activación (10–15 min):** hablad de ferias, jornadas de ciencia o encuentros escolares; mirad imágenes de referencia seleccionadas por la docente e identificad qué hace una persona visitante desde que planifica el trayecto hasta que vuelve a casa. Anotad primero necesidades y acciones, no nombres de profesiones.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Exploració (25 min):** en equips de quatre, dibuixeu en cartó un mapa de la fira i els serveis del voltant: entrada, espais d’exposició, zona tranquil·la, transport públic, aigua i descans. Assigneu al grup diverses àrees professionals perquè n’investigue els rols visibles i els que preparen l’esdeveniment per avançat; exemples a explorar: muntatge, electricitat, manteniment, mediació científica, accessibilitat, disseny, gestió cultural, neteja, restauració, transport, comunicació i emergències. Cada afirmació de rol es recolza amb una font o s’etiqueta com a hipòtesi a verificar.
+**Exploración (25 min):** en equipos de cuatro, dibujad en cartón un mapa de la feria y los servicios del entorno: entrada, espacios de exposición, zona tranquila, transporte público, agua y descanso. Asignad al grupo varias áreas profesionales para que investigue los roles visibles y los que preparan el evento por anticipado; ejemplos por explorar: montaje, electricidad, mantenimiento, mediación científica, accesibilidad, diseño, gestión cultural, limpieza, restauración, transporte, comunicación y emergencias. Cada afirmación de rol se apoya en una fuente o se etiqueta como hipótesis por verificar.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Representació:** construïu una maqueta modular amb peces SPIKE i cartó o una xarxa visual amb targetes. Connecteu professió → tasca → necessitat del visitant; indiqueu si el treball és abans, durant o després de la fira.
+**Representación:** construid una maqueta modular con piezas SPIKE y cartón o una red visual con tarjetas. Conectad profesión → tarea → necesidad del visitante; indicad si el trabajo es antes, durante o después de la feria.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Posada en comú:** expliqueu qui es relaciona amb el públic i qui treballa entre bastidors. Altres equips afegeixen rols que falten, per exemple qui manté els lavabos accessibles o verifica el subtitulat.
+**Puesta en común:** explicad quién se relaciona con el público y quién trabaja entre bastidores. Otros equipos añaden roles que faltan, por ejemplo quién mantiene los aseos accesibles o verifica el subtitulado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Elaboració:** amplieu la xarxa amb qüestions de calor, llum, so, trànsit, menjar, connectivitat, salut, neteja i pagament; reviseu si les primeres idees deixaven fora algun servei o feien una suposició estereotipada. **Evidències:** mapa de professions amb fletxes i fonts, maqueta o alternativa plana, llista de tasques visibles/invisibles i una pregunta sense resposta. No es demana a ningú dir quina d’aquestes feines voldria fer.
+**Elaboración:** ampliad la red con cuestiones de calor, luz, sonido, tráfico, comida, conectividad, salud, limpieza y pago; revisad si las primeras ideas dejaban fuera algún servicio o hacían una suposición estereotipada. **Evidencias:** mapa de profesiones con flechas y fuentes, maqueta o alternativa plana, lista de tareas visibles/invisibles y una pregunta sin respuesta. No se pide a nadie que indique cuál de estos oficios le gustaría hacer.
 
-### **Lliçó 2 · Habilitats que es practiquen i interessos que evolucionen (120 min).**
+### **Lección 2 · Habilidades que se practican e intereses que evolucionan (120 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Activació:** useu un cas fictici: organitzar una visita en transport públic, entendre un plànol, revisar accessibilitat, comunicar informació i gestionar un pressupost. L’alumnat identifica sabers escolars, matemàtics, lingüístics, creatius i socials implicats, i quines professions podrien aportar-los.
+**Activación:** usad un caso ficticio: organizar una visita en transporte público, entender un plano, revisar accesibilidad, comunicar información y gestionar un presupuesto. El alumnado identifica saberes escolares, matemáticos, lingüísticos, creativos y sociales implicados, y qué profesiones podrían aportarlos.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Exploració cooperativa:** els grups trien almenys cinc competències transversals de la llista (comunicació oral/escrita, col·laboració, creativitat, pensament crític, resolució de problemes, organització, lideratge distribuït i autoregulació) i construeixen amb peces un símbol, estructura o maqueta que les represente. Per cada habilitat indiquen una activitat del curs on la van practicar i un exemple professional on podria ser útil.
+**Exploración cooperativa:** los grupos eligen al menos cinco competencias transversales de la lista (comunicación oral/escrita, colaboración, creatividad, pensamiento crítico, resolución de problemas, organización, liderazgo distribuido y autorregulación) y construyen con piezas un símbolo, estructura o maqueta que las represente. Para cada habilidad indican una actividad del curso donde la practicaron y un ejemplo profesional donde podría ser útil.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Contrast:** compareu les propostes amb les experiències del curs; si una professió aparentment no necessita una habilitat, investigueu si simplement es manifesta d’una altra manera o si hi ha casos on no és central. Eviteu presentar qualsevol llista com a universal o com a requisit de contractació.
+**Contraste:** comparad las propuestas con las experiencias del curso; si una profesión aparentemente no necesita una habilidad, investigad si simplemente se manifiesta de otra manera o si hay casos donde no es central. Evitad presentar cualquier lista como universal o como requisito de contratación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Reflexió longitudinal privada:** qui ho vulga compara la fitxa inicial del curs amb una versió nova; pot anotar canvis, continuïtats o dubtes. Alternativa equivalent: comentar una professió fictícia o revisar com ha canviat una hipòtesi de l’equip. No arreplegueu ni qualifiqueu els fulls personals.
+**Reflexión longitudinal privada:** quien lo desee compara la ficha inicial del curso con una versión nueva; puede anotar cambios, continuidades o dudas. Alternativa equivalente: comentar una profesión ficticia o revisar cómo ha cambiado una hipótesis del equipo. No recojáis ni califiquéis las hojas personales.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Feedback:** en parelles, cada persona pot oferir una observació basada en el treball compartit (“he vist que vas…”) i una pregunta sobre una habilitat que l’altra persona vulga mostrar; no es diagnostiquen talents ni es comparen notes. **Producte:** xarxa de competències i feines, comentari sobre com ha canviat/continuat una idea i una pregunta futura. L’alumnat no està obligat a compartir el comentari personal.
+**Retroalimentación:** en parejas, cada persona puede ofrecer una observación basada en el trabajo compartido (“he visto que vas…”) y una pregunta sobre una habilidad que la otra persona quiera mostrar; no se diagnostican talentos ni se comparan notas. **Producto:** red de competencias y oficios, comentario sobre cómo ha cambiado/continuado una idea y una pregunta futura. El alumnado no está obligado a compartir el comentario personal.
 
-### **Lliçó 3 · Un pla d’exploració possible (120 min).**
+### **Lección 3 · Un plan de exploración posible (120 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Activació:** planificar una meta quotidiana —com preparar una excursió o triar un curs— requereix passos, informació, opcions i revisió. Compareu un pla rígid amb un pla flexible i identifiqueu dependències i incerteses.
+**Activación:** planificar una meta cotidiana —como preparar una excursión o elegir un curso— requiere pasos, información, opciones y revisión. Comparad un plan rígido con un plan flexible e identificad dependencias e incertidumbres.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Recerca:** cada alumne tria en privat una ocupació per investigar, o selecciona un cas fictici d’una professió de la maqueta. Consulteu fonts actuals per esbrinar tres tasques concretes, estudis o acreditacions que poden requerir-se, competències, entorns de treball, feines relacionades i on trobar més orientació a la Comunitat Valenciana. Citeu data de consulta i distingiu requisits legals d’un anunci o opinió. No s’infereix un futur salari o disponibilitat de feina sense una font actual i contextualitzada.
+**Búsqueda:** cada alumno elige en privado una ocupación por investigar, o selecciona un caso ficticio de una profesión de la maqueta. Consultad fuentes actuales para averiguar tres tareas concretas, estudios o acreditaciones que pueden requerirse, competencias, entornos de trabajo, oficios relacionados y dónde encontrar más orientación en la Comunidad Valenciana. Citad fecha de consulta y distinguid requisitos legales de un anuncio u opinión. No se infiere un futuro salario o disponibilidad de trabajo sin una fuente actual y contextualizada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Reflexió i model:** completeu una plantilla “connecta–crea–canvia”: què connecta aquesta ocupació, què produeix o resol, i què contribueix a millorar. Construïu un model de peces de la professió investigada o, com a alternativa, una infografia, guió o mapa d’itinerari. La comunicació oral és opcional i pot substituir-se per presentació gravada sense imatge personal o exposició del cas fictici.
+**Reflexión y modelo:** completad una plantilla “conecta–crea–cambia”: qué conecta esta ocupación, qué produce o resuelve, y qué contribuye a mejorar. Construid un modelo de piezas de la profesión investigada o, como alternativa, una infografía, guion o mapa de itinerario. La comunicación oral es opcional y puede sustituirse por una presentación grabada sin imagen personal o exposición del caso ficticio.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Pla a curt termini:** escriviu un pas exploratori viable per a les pròximes setmanes (llegir una font, provar una tasca en club escolar, parlar amb orientació o visitar un espai públic), una habilitat que es voldria practicar, una persona/servei que podria ajudar i un pla alternatiu si canvien els interessos. No inclogueu informació de contacte privada ni compromisos amb persones adultes sense mediació docent.
+**Plan a corto plazo:** escribid un paso exploratorio viable para las próximas semanas (leer una fuente, probar una tarea en un club escolar, hablar con orientación o visitar un espacio público), una habilidad que se querría practicar, una persona/servicio que podría ayudar y un plan alternativo si cambian los intereses. No incluyáis información de contacto privada ni compromisos con personas adultas sin mediación docente.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Tancament:** el grup revisa la seua maqueta inicial i afegeix professions invisibilitzades o connexions noves. Guardeu el pla personal només si l’alumne vol; per a l’avaluació, es pot entregar el model de recerca fictici equivalent.
+**Cierre:** el grupo revisa su maqueta inicial y añade profesiones invisibilizadas o conexiones nuevas. Guardad el plan personal solo si el alumno quiere; para la evaluación, se puede entregar el modelo de investigación ficticio equivalente.
 
-## 📚 Fonts i qualitat de la informació
+## 📚 Fuentes y calidad de la información
 
-Per a informació formativa, consulteu portals oficials d’orientació i catàlegs de Formació Professional de la Generalitat Valenciana i del Ministeri d’Educació; per a l’ocupació, useu fonts estadístiques i serveis públics d’ocupació actualitzats. La docent ha de comprovar que la pàgina continua vigent i separar les dades de l’Estat, la Comunitat Valenciana i altres territoris. L’alumnat registra títol, entitat responsable, URL i data de consulta, i compara almenys dues fonts quan parla de requisits o oportunitats. Les professions canvien i el pla personal és revisable; una estimació de vacants no garanteix una plaça futura.
+Para información formativa, consultad portales oficiales de orientación y catálogos de Formación Profesional de la Generalitat Valenciana y del Ministerio de Educación; para el empleo, usad fuentes estadísticas y servicios públicos de empleo actualizados. La docente debe comprobar que la página continúa vigente y separar los datos del Estado, la Comunidad Valenciana y otros territorios. El alumnado registra título, entidad responsable, URL y fecha de consulta, y compara al menos dos fuentes cuando habla de requisitos u oportunidades. Las profesiones cambian y el plan personal es revisable; una estimación de vacantes no garantiza una plaza futura.
 
-## 🧪 Avaluació i evidències
+## 🧪 Evaluación y evidencias
 
-Avalueu els productes públics de l’activitat, no l’autorevelació: xarxa de professions, mapa de necessitats, ús de fonts, representació de la maqueta, relació entre habilitats i tasques, i presentació/esquema final. Criteris: (1) identifica ocupacions abans/durant/després de la fira i explica el seu impacte; (2) distingeix informació verificada d’hipòtesi i cita fonts; (3) reconeix que habilitats i formació poden combinar-se per vies diferents; (4) proposa un següent pas d’exploració concret i flexible en el cas investigat; (5) revisa el mapa a partir de preguntes o evidències. La reflexió personal es queda en mans de l’alumne i no forma part de la rúbrica. Autoavaluació opcional: quina tasca del projecte m’ha agradat practicar, què voldria aprendre encara i quina ajuda podria demanar?
+Evaluad los productos públicos de la actividad, no la autorrevelación: red de profesiones, mapa de necesidades, uso de fuentes, representación de la maqueta, relación entre habilidades y tareas, y presentación/esquema final. Criterios: (1) identifica ocupaciones antes/durante/después de la feria y explica su impacto; (2) distingue información verificada de hipótesis y cita fuentes; (3) reconoce que habilidades y formación pueden combinarse por vías diferentes; (4) propone un siguiente paso de exploración concreto y flexible en el caso investigado; (5) revisa el mapa a partir de preguntas o evidencias. La reflexión personal se queda en manos del alumno y no forma parte de la rúbrica. Autoevaluación opcional: ¿qué tarea del proyecto me ha gustado practicar, qué me gustaría aprender todavía y qué ayuda podría pedir?
 
-## ♿ Inclusió, autonomia i privacitat
+## ♿ Inclusión, autonomía y privacidad
 
-Oferiu alternatives per a la reflexió personal (personatge, professió investigada o resposta en blanc), no demaneu preferències davant del grup i no useu escales de 1–10 com a mesura objectiva de capacitat. Incloeu exemples de professionals diversos i eviteu associar professions amb gènere, origen, condició socioeconòmica o discapacitat. Faciliteu mapes tàctils, lletra clara, versions en lectura fàcil, comunicació escrita/visual i rols accessibles de recerca, construcció i presentació. La docent no guarda plans personals sense motiu pedagògic justificat ni els comparteix. Els comentaris entre companys descriuen conductes observades i no etiqueten les persones.
+Ofreced alternativas para la reflexión personal (personaje, profesión investigada o respuesta en blanco), no pidáis preferencias delante del grupo y no uséis escalas de 1–10 como medida objetiva de capacidad. Incluid ejemplos de profesionales diversos y evitad asociar profesiones con género, origen, condición socioeconómica o discapacidad. Facilitad mapas táctiles, letra clara, versiones en lectura fácil, comunicación escrita/visual y roles accesibles de búsqueda, construcción y presentación. La docente no guarda planes personales sin motivo pedagógico justificado ni los comparte. Los comentarios entre compañeros describen conductas observadas y no etiquetan a las personas.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta les tres lliçons de la unitat 9 *Careers Culminating Project* de LEGO Education [*Foundations of Physical Computing*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb): *Culminating Activity: Careers*, *My Career Interests* i *My Career Reflection and Plan*. Preserva l’anàlisi de professions que intervenen en un esdeveniment, la investigació de tasques/formació/habilitats, la representació física, el mapa de competències compartides, la comparació de reflexions inicials i finals i un pla d’acció; canvia la convenció fictícia per una fira escolar propera i fa privades les respostes d’interessos. Els documents i les il·lustracions són originals.
+Adapta las tres lecciones de la unidad 9 *Careers Culminating Project* de LEGO Education [*Foundations of Physical Computing*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb): *Culminating Activity: Careers*, *My Career Interests* y *My Career Reflection and Plan*. Preserva el análisis de profesiones que intervienen en un evento, la investigación de tareas/formación/habilidades, la representación física, el mapa de competencias compartidas, la comparación de reflexiones iniciales y finales y un plan de acción; cambia la convención ficticia por una feria escolar cercana y hace privadas las respuestas de intereses. Los documentos y las ilustraciones son originales.

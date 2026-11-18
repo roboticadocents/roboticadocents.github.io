@@ -15,145 +15,145 @@ challenge: "¿Cómo podemos completar todos los encargos antes de salir, respeta
 official_source: "https://matatalab.com/en/node/93"
 ---
 
-![MatataBot i la torre de control reals del Coding Set al costat d’un mapa de preparatius amb pictogrames per a l’excursió a l’Albufera.](../../_assets/situacions/cs-eixim-albufera.webp)
+![MatataBot y la torre de control reales del Coding Set junto a un mapa de preparativos con pictogramas para la excursión a la Albufera.](../../_assets/situacions/cs-eixim-albufera.webp)
 
-_El mapa, les parades i la llista són materials propis. MatataBot només executa les ordres de moviment: no identifica els pictogrames ni sap si un encàrrec s’ha completat._
+_El mapa, las paradas y la lista son materiales propios. MatataBot solo ejecuta las órdenes de movimiento: no identifica los pictogramas ni sabe si se ha completado un encargo._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-La classe prepara una eixida escolar a l’Albufera. Abans d’arribar a la porta, el grup ha de completar tres encàrrecs en una casa representada com una graella: passar pel lavabo, vestir-se i preparar i menjar l’esmorzar. La cuina s’ha de visitar en dos moments diferents: primer per preparar l’esmorzar i, després d’haver eixit d’aquesta estança per completar almenys un altre encàrrec, per menjar-lo. El lavabo i el vestidor es poden visitar en qualsevol ordre.
+La clase prepara una salida escolar a la Albufera. Antes de llegar a la puerta, el grupo debe completar tres encargos en una casa representada como una cuadrícula: pasar por el baño, vestirse y preparar y comer el almuerzo. La cocina se debe visitar en dos momentos distintos: primero para preparar el almuerzo y, después de haber salido de esa estancia para completar al menos otro encargo, para comerlo. El baño y el vestidor se pueden visitar en cualquier orden.
 
-La situació adapta el repte oficial *Hurry up!* de planificar una ruta que completa tres tasques, respecta l’única dependència indicada —preparar l’esmorzar abans de menjar-lo—, provar el programa, depurar-lo i intentar simplificar-lo. Canvia la història de partida per una preparació col·lectiva d’una excursió local i transforma la tasca en programació tangible amb Coding Set. MatataBot segueix ordres; les targetes representen les accions i no són sensors ni accessoris del robot.
+La situación adapta el reto oficial *Hurry up!* de planificar una ruta que completa tres tareas, respeta la única dependencia indicada —preparar el almuerzo antes de comerlo—, probar el programa, depurarlo e intentar simplificarlo. Cambia la historia de partida por una preparación colectiva de una excursión local y transforma la tarea en programación tangible con Coding Set. MatataBot sigue órdenes; las tarjetas representan las acciones y no son sensores ni accesorios del robot.
 
-**Pregunta guia:** quines condicions ha de complir una ruta perquè siga vàlida, i com podem comparar-ne dues sense confondre «més curta» amb «més ràpida»?
+**Pregunta guía:** ¿qué condiciones debe cumplir una ruta para que sea válida, y cómo podemos comparar dos sin confundir «más corta» con «más rápida»?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Descompondre un repte en encàrrecs, llocs i condicions que han de complir-se.
-- Representar en una graella una ruta amb un inici, una destinació i parades que poden repetir-se.
-- Escriure una seqüència amb moviments i girs del Coding Set, predir-la i executar-la amb seguretat.
-- Detectar la primera diferència entre una ruta prevista i el recorregut observat, corregir-la i tornar a provar.
-- Comparar la longitud de dues solucions vàlides comptant ordres de moviment; explicar que el recompte de blocs no equival necessàriament al temps real d’execució.
+- Descomponer un reto en encargos, lugares y condiciones que deben cumplirse.
+- Representar en una cuadrícula una ruta con un inicio, un destino y paradas que pueden repetirse.
+- Escribir una secuencia con movimientos y giros del Coding Set, predecirla y ejecutarla con seguridad.
+- Detectar la primera diferencia entre una ruta prevista y el recorrido observado, corregirla y volver a probar.
+- Comparar la longitud de dos soluciones válidas contando órdenes de movimiento; explicar que el recuento de bloques no equivale necesariamente al tiempo real de ejecución.
 
-**Vocabulari clau:** encàrrec, seqüència, condició, abans/després, visita, casella, orientació, gir, depurar, simplificar, evidència.
+**Vocabulario clave:** encargo, secuencia, condición, antes/después, visita, casilla, orientación, giro, depurar, simplificar, evidencia.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Coding Set de la dotació: MatataBot, torre de control, tauler i blocs de moviment disponibles. Carregueu els dispositius i comproveu que la torre llig i envia una seqüència curta.
-- Graella pròpia de 5 × 5 caselles de 10 × 10 cm, amb inici, cuina, lavabo, vestidor i porta de sortida. Marqueu l’orientació inicial del robot i deixeu lliures les interseccions.
-- Targetes grans pròpies amb pictogrames per a cada estança i per als encàrrecs «preparar esmorzar» i «menjar esmorzar»; no cal que el robot les llija.
-- Full de registre amb les columnes **ordre**, **casella**, **encàrrec**, **orientació prevista**, **resultat** i **revisió**; targetes de fletxes per planificar sense robot.
-- Cinta de paper per fixar la graella, llapis i una còpia del mapa per a cada parella. No es necessiten accessoris Artist, Musician, sensors ni una aplicació.
+- Coding Set de la dotación: MatataBot, torre de control, tablero y bloques de movimiento disponibles. Cargad los dispositivos y comprobad que la torre lee y envía una secuencia corta.
+- Cuadrícula propia de 5 × 5 casillas de 10 × 10 cm, con inicio, cocina, baño, vestidor y puerta de salida. Marcad la orientación inicial del robot y dejad libres las intersecciones.
+- Tarjetas grandes propias con pictogramas para cada estancia y para los encargos «preparar el almuerzo» y «comer el almuerzo»; no hace falta que el robot las lea.
+- Hoja de registro con las columnas **orden**, **casilla**, **encargo**, **orientación prevista**, **resultado** y **revisión**; tarjetas de flechas para planificar sin robot.
+- Cinta de papel para fijar la cuadrícula, lápices y una copia del mapa para cada pareja. No se necesitan accesorios Artist, Musician, sensores ni una aplicación.
 
-Prepareu un mapa on les parades siguen assolibles per més d’una ruta i on es puga tornar a la cuina. Abans de la sessió, comproveu la mida física de les caselles i feu una prova de moviment en la mateixa superfície. En aquesta adaptació, «ruta més curta» significa menys ordres de moviment endavant/enrere; els girs es compten a banda. No cronometreu els equips: la velocitat no és el criteri d’èxit.
+Preparad un mapa donde las paradas sean alcanzables por más de una ruta y donde se pueda volver a la cocina. Antes de la sesión, comprobad el tamaño físico de las casillas y haced una prueba de movimiento en la misma superficie. En esta adaptación, «ruta más corta» significa menos órdenes de movimiento adelante/atrás; los giros se cuentan aparte. No cronometréis los equipos: la velocidad no es el criterio de éxito.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Els encàrrecs i les seues condicions (45 min)
+### Los encargos y sus condiciones (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu la invitació a l’excursió i les cinc parades del mapa. En parelles, l’alumnat separa els encàrrecs dels llocs: el lavabo i vestir-se són tasques independents; preparar i menjar l’esmorzar tenen una relació d’ordre. Demaneu que cadascú prediga quina informació necessitaria per donar instruccions a una altra persona.
+Presentad la invitación a la excursión y las cinco paradas del mapa. Por parejas, el alumnado separa los encargos de los lugares: el baño y vestirse son tareas independientes; preparar y comer el almuerzo tienen una relación de orden. Pedid que cada cual prediga qué información necesitaría para dar instrucciones a otra persona.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Col·loqueu les targetes d’encàrrec a la seua estança. Cada parella ordena físicament les targetes i explica per què no pot menjar l’esmorzar abans de preparar-lo. Afegiu la regla pròpia d’aquesta versió: per comptar dues visites a la cuina, MatataBot ha d’eixir-ne i arribar a completar com a mínim un altre encàrrec abans de tornar-hi. Marqueu aquesta interpretació com a regla del repte local.
+Colocad las tarjetas de encargo en su estancia. Cada pareja ordena físicamente las tarjetas y explica por qué no puede comer el almuerzo antes de prepararlo. Añadid la regla propia de esta versión: para contar dos visitas a la cocina, MatataBot debe salir de ella y llegar a completar como mínimo otro encargo antes de volver. Marcad esta interpretación como regla del reto local.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Construïu una llista de comprovació comuna: començar en el punt indicat, completar lavabo i vestidor, preparar esmorzar, eixir de la cuina, completar almenys un altre encàrrec, tornar a la cuina per menjar i acabar a la porta. L’alumnat pot canviar l’ordre del lavabo i del vestidor sempre que es complisquen totes les condicions.
+Construid una lista de verificación común: empezar en el punto indicado, completar baño y vestidor, preparar el almuerzo, salir de la cocina, completar al menos otro encargo, volver a la cocina para comer y acabar en la puerta. El alumnado puede cambiar el orden del baño y del vestidor siempre que se cumplan todas las condiciones.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una targeta de lloc en la maqueta i pregunteu si canvia la validesa de la ruta o només la distància. Les parelles identifiquen quines condicions són obligatòries i quines decisions encara poden prendre lliurement.
+Cambiad una tarjeta de lugar en la maqueta y preguntad si cambia la validez de la ruta o solo la distancia. Las parejas identifican qué condiciones son obligatorias y qué decisiones todavía pueden tomar libremente.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** llista de comprovació amb les dependències i una ruta de targetes sense blocs encara. **Pregunta docent:** quina part de la ruta pot canviar sense incomplir l’encàrrec?
+**Evidencia:** lista de verificación con las dependencias y una ruta de tarjetas todavía sin bloques. **Pregunta docente:** ¿qué parte de la ruta puede cambiar sin incumplir el encargo?
 
-### Del mapa a la seqüència tangible (45 min)
+### Del mapa a la secuencia tangible (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recordeu que el robot parteix orientat cap a una direcció concreta. Cada parella ressegueix amb el dit un camí del punt inicial a la porta i marca en paper cada gir, cada encàrrec i la tornada a la cuina. Abans de posar blocs, prediu si l’itinerari compleix la llista de la sessió anterior.
+Recordad que el robot parte orientado hacia una dirección concreta. Cada pareja recorre con el dedo un camino desde el punto inicial hasta la puerta y marca en papel cada giro, cada encargo y la vuelta a la cocina. Antes de poner bloques, predecid si el itinerario cumple la lista de la sesión anterior.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Traduïu el recorregut a blocs físics del Coding Set: un bloc de gir fa girar el robot sobre el lloc; no el desplaça lateralment. Llegiu la seqüència al tauler de control d’esquerra a dreta i comproveu que cada moviment correspon a una casella de la graella. Assageu primer els girs amb una fitxa de robot de paper.
+Traducid el recorrido a bloques físicos del Coding Set: un bloque de giro hace girar el robot sobre el sitio; no lo desplaza lateralmente. Leed la secuencia en el tablero de control de izquierda a derecha y comprobad que cada movimiento corresponde a una casilla de la cuadrícula. Ensayad primero los giros con una ficha de robot de papel.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una persona llig la seqüència en veu alta i l’altra assenyala la ruta al mapa. Anoteu el nombre d’ordres de moviment i de gir per separat. Abans d’executar-la, un equip visitant comprova que la preparació precedeix el menjar i que hi ha una eixida de la cuina entre les dues visites.
+Una persona lee la secuencia en voz alta y la otra señala la ruta en el mapa. Anotad el número de órdenes de movimiento y de giro por separado. Antes de ejecutarla, un equipo visitante comprueba que la preparación precede a la comida y que hay una salida de la cocina entre las dos visitas.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu una primera part curta des del punt d’inici. Si l’orientació o la posició no coincideix amb la predicció, atureu-vos, identifiqueu la primera ordre diferent i reviseu només eixe tram. Esborreu la seqüència anterior segons el procediment del kit abans de començar una nova prova.
+Ejecutad una primera parte corta desde el punto de inicio. Si la orientación o la posición no coincide con la predicción, paraos, identificad la primera orden diferente y revisad solo ese tramo. Borrad la secuencia anterior según el procedimiento del kit antes de empezar una nueva prueba.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** seqüència tangible fotografiada o dibuixada, ruta marcada i recompte separat de moviments/girs. **Criteri:** una altra parella pot llegir les ordres i seguir el mapa sense que l’autoria li done instruccions addicionals.
+**Evidencia:** secuencia tangible fotografiada o dibujada, ruta marcada y recuento separado de movimientos/giros. **Criterio:** otra pareja puede leer las órdenes y seguir el mapa sin que la autoría le dé instrucciones adicionales.
 
-### Prova, depuració i comparació de rutes (45 min)
+### Prueba, depuración y comparación de rutas (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans de prémer inici, cada equip assenyala on espera que estiga MatataBot després de tres ordres concretes. Identifiqueu el punt en què haurà de deixar la cuina i el punt en què tornarà per menjar l’esmorzar.
+Antes de pulsar inicio, cada equipo señala dónde espera que esté MatataBot después de tres órdenes concretas. Identificad el punto en el que tendrá que dejar la cocina y el punto en el que volverá para comer el almuerzo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Executeu la ruta completa en una superfície plana i amb l’espai lliure. Una persona controla el tauler i l’altra registra les posicions després de cada encàrrec; després intercanvieu els rols. Si el robot se n’ix de la graella, anoteu la primera casella divergent, reviseu el recompte de moviments i l’orientació, i torneu a provar des del punt inicial.
+Ejecutad la ruta completa en una superficie plana y con el espacio libre. Una persona controla el tablero y la otra registra las posiciones después de cada encargo; después intercambiad los roles. Si el robot se sale de la cuadrícula, anotad la primera casilla divergente, revisad el recuento de movimientos y la orientación, y volved a probar desde el punto inicial.
 
-![MatataBot, torre de control i blocs reals del Coding Set durant una prova de ruta al costat d’una targeta de cuina.](../../_assets/situacions/sa-cs-excursio-prova-ruta-v1.webp)
+![MatataBot, torre de control y bloques reales del Coding Set durante una prueba de ruta junto a una tarjeta de cocina.](../../_assets/situacions/sa-cs-excursio-prova-ruta-v1.webp)
 
-_La imatge acompanya el registre d’una prova: la ruta i les caselles són una maqueta de l’aula, no un mapa oficial ni una lectura automàtica del robot._
+_La imagen acompaña el registro de una prueba: la ruta y las casillas son una maqueta del aula, no un mapa oficial ni una lectura automática del robot._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una altra parella valida la ruta amb la llista de comprovació, no amb la rapidesa de l’equip. Registreu tasques completades, ordre entre preparar i menjar, eixida i retorn a la cuina, punt final i nombre de blocs de moviment. Distingiu l’error de programació d’un desplaçament físic causat per una graella mal fixada.
+Otra pareja valida la ruta con la lista de verificación, no con la rapidez del equipo. Registrad tareas completadas, orden entre preparar y comer, salida y retorno a la cocina, punto final y número de bloques de movimiento. Distinguid el error de programación de un desplazamiento físico causado por una cuadrícula mal fijada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Dissenyeu una segona ruta vàlida canviant l’ordre del lavabo i el vestidor o triant un altre camí. Compareu els moviments de les dues versions. Si el grup proposa un programa més curt, l’ha de provar des del mateix inici i demostrar que manté tots els encàrrecs i la dependència de l’esmorzar.
+Diseñad una segunda ruta válida cambiando el orden del baño y el vestidor o eligiendo otro camino. Comparad los movimientos de las dos versiones. Si el grupo propone un programa más corto, lo debe probar desde el mismo inicio y demostrar que mantiene todos los encargos y la dependencia del almuerzo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dos registres de prova amb nombre de moviments, nombre de girs i comprovació de les condicions. **Pregunta docent:** una ruta amb menys moviments és sempre vàlida? Quina evidència ho demostra?
+**Evidencia:** dos registros de prueba con número de movimientos, número de giros y comprobación de las condiciones. **Pregunta docente:** ¿una ruta con menos movimientos es siempre válida? ¿Qué evidencia lo demuestra?
 
-### Creem un repte que es puga verificar (45 min)
+### Creamos un reto que se pueda verificar (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Cada parella rep una nova targeta de destinatari —per exemple, preparar el material de camp abans d’eixir cap a una observació de l’Albufera— i proposa tres encàrrecs, una condició d’ordre i una destinació. No afegiu cap funció automàtica al robot: totes les tasques són parades representades al mapa.
+Cada pareja recibe una nueva tarjeta de destinatario —por ejemplo, preparar el material de campo antes de salir hacia una observación de la Albufera— y propone tres encargos, una condición de orden y un destino. No añadid ninguna función automática al robot: todas las tareas son paradas representadas en el mapa.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dibuixeu el mapa i escriviu les regles en frases curtes que es puguen comprovar. Intercanvieu el repte amb una altra parella, que primer el simula amb una fitxa de paper i després prepara blocs de moviment. El grup autor respon només preguntes de claredat; no revela la ruta.
+Dibujad el mapa y escribid las reglas en frases cortas que se puedan comprobar. Intercambiad el reto con otra pareja, que primero lo simula con una ficha de papel y después prepara bloques de movimiento. El grupo autor responde solo preguntas de claridad; no revela la ruta.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-La parella visitant presenta la ruta, el recompte i una prova de cada condició. Qui ha creat el repte comprova si les regles permeten més d’una solució vàlida i marca qualsevol instrucció ambigua.
+La pareja visitante presenta la ruta, el recuento y una prueba de cada condición. Quien ha creado el reto comprueba si las reglas permiten más de una solución válida y marca cualquier instrucción ambigua.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu una regla o una casella del mapa i torneu a passar el repte a un tercer equip. Si cap programa pot completar-lo, localitzeu si el problema és una ruta bloquejada, una condició incompatible o una instrucció que no especifica l’orientació inicial.
+Revisad una regla o una casilla del mapa y volved a pasar el reto a un tercer equipo. Si ningún programa puede completarlo, localizad si el problema es una ruta bloqueada, una condición incompatible o una instrucción que no especifica la orientación inicial.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa propi, regles verificables, programa provat per una altra parella i una revisió justificada. **Tancament:** «La regla que ha fet més fàcil comprovar el repte és… perquè…».
+**Evidencia:** mapa propio, reglas verificables, programa probado por otra pareja y una revisión justificada. **Cierre:** «La regla que ha hecho más fácil comprobar el reto es… porque…».
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu la llista de condicions, el mapa, les dues seqüències, el registre d’execució, la comprovació entre parelles i el repte final revisat. Valoreu si l’alumnat (1) distingeix tasques de llocs; (2) identifica l’única dependència entre preparar i menjar; (3) tradueix el recorregut a ordres físiques d’acord amb l’orientació; (4) localitza i corregeix la primera divergència; i (5) compara solucions vàlides amb un recompte reproduïble. La rapidesa, l’encert al primer intent i el nombre total de blocs sense explicar no són criteris d’èxit.
+Recoged la lista de condiciones, el mapa, las dos secuencias, el registro de ejecución, la comprobación entre parejas y el reto final revisado. Valorad si el alumnado (1) distingue tareas de lugares; (2) identifica la única dependencia entre preparar y comer; (3) traduce el recorrido a órdenes físicas de acuerdo con la orientación; (4) localiza y corrige la primera divergencia; y (5) compara soluciones válidas con un recuento reproducible. La rapidez, el acierto al primer intento y el número total de bloques sin explicar no son criterios de éxito.
 
-Autoavaluació: «He comprovat totes les condicions», «sé explicar què significa girar i què significa avançar» i «he revisat la ruta amb una prova». Coavaluació: la parella visitant marca les condicions que ha pogut verificar i assenyala una instrucció que es podria aclarir.
+Autoevaluación: «He comprobado todas las condiciones», «sé explicar qué significa girar y qué significa avanzar» y «he revisado la ruta con una prueba». Coevaluación: la pareja visitante marca las condiciones que ha podido verificar y señala una instrucción que se podría aclarar.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Oferiu el mapa en gran format i alt contrast, pictogrames amb formes a més de colors, una fitxa gran de MatataBot i una tira impresa amb les ordres. Es pot participar planificant, col·locant targetes, llegint el programa, comprovant condicions o registrant resultats. Permeteu assenyalar o dictar la seqüència en lloc d’escriure-la; el repte no depén de llegir paraules menudes. Feu proves en taula o al terra només amb espai lliure, manteniu les mans fora del recorregut i no poseu cap persona ni objecte delicat com a obstacle. Tots els encàrrecs són ficticis: no es registren rutines personals, aliments, noms ni necessitats de l’alumnat.
+Ofreced el mapa en gran formato y alto contraste, pictogramas con formas además de colores, una ficha grande de MatataBot y una tira impresa con las órdenes. Se puede participar planificando, colocando tarjetas, leyendo el programa, comprobando condiciones o registrando resultados. Permitid señalar o dictar la secuencia en lugar de escribirla; el reto no depende de leer palabras pequeñas. Haced pruebas en mesa o en el suelo solo con espacio libre, mantened las manos fuera del recorrido y no pongáis a ninguna persona ni ningún objeto delicado como obstáculo. Todos los encargos son ficticios: no se registran rutinas personales, alimentos, nombres ni necesidades del alumnado.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [*Hurry up!*](https://matatalab.com/en/node/93): presenta un problema de ruta amb tres tasques, l’única condició que preparar l’esmorzar precedisca menjar-lo i una visita repetida a la cuina. El pla oficial demana planificar, crear i provar el programa, depurar si cal, simplificar i compartir una solució; també aporta preguntes de tancament i materials com plastilina, paper i llapis. Aquesta proposta conserva eixa estructura i la dependència, i crea un context, mapa, targetes, criteris i seqüència didàctica propis.
-- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): documenta per al Coding Set la connexió entre MatataBot, torre i tauler, les ordres d’avanç/retrocés i gir de 90°, el recorregut fins a una bandera i la possibilitat de provar rutes diferents per arribar-hi. S’utilitza per verificar el maquinari i la programació tangible de la versió local; no s’atribueixen a MatataBot detecció de targetes ni comprovació dels encàrrecs.
+- Matatalab, [*Hurry up!*](https://matatalab.com/en/node/93): presenta un problema de ruta con tres tareas, la única condición de que preparar el almuerzo preceda a comerlo y una visita repetida a la cocina. El plan oficial pide planificar, crear y probar el programa, depurar si hace falta, simplificar y compartir una solución; también aporta preguntas de cierre y materiales como plastilina, papel y lápices. Esta propuesta conserva esa estructura y la dependencia, y crea un contexto, mapa, tarjetas, criterios y secuencia didáctica propios.
+- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): documenta para el Coding Set la conexión entre MatataBot, torre y tablero, las órdenes de avance/retroceso y giro de 90°, el recorrido hasta una bandera y la posibilidad de probar rutas distintas para llegar. Se utiliza para verificar el hardware y la programación tangible de la versión local; no se atribuyen a MatataBot detección de tarjetas ni comprobación de los encargos.
 
-La proposta amplia una activitat oficial breu a quatre sessions per fer visibles les condicions, el registre, la depuració, la comparació de rutes i la transferència entre equips. L’Albufera és el context de l’excursió; el mapa de casa i les seues estances són una maqueta fictícia, no una representació geogràfica ni una instrucció sobre rutines reals.
+La propuesta amplía una actividad oficial breve a cuatro sesiones para hacer visibles las condiciones, el registro, la depuración, la comparación de rutas y la transferencia entre equipos. La Albufera es el contexto de la excursión; el mapa de casa y sus estancias son una maqueta ficticia, no una representación geográfica ni una instrucción sobre rutinas reales.

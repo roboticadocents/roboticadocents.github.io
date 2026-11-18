@@ -15,120 +15,120 @@ challenge: "¿Qué número de la app necesita el tren para llegar a cada estaci�
 official_source: "https://education.lego.com/en-us/lessons/preschool-coding-express/math-distance/"
 ---
 
-![El tren Coding Express de la dotació, amb locomotora groga i blava, vagó blau de sostre roig i via grisa, entre maquetes de biblioteca i mercat.](../../_assets/situacions/ce-distancies-estacions.webp)
+![El tren Coding Express de la dotación, con locomotora amarilla y azul, vagón azul de techo rojo y vía gris, entre maquetas de biblioteca y mercado.](../../_assets/situacions/ce-distancies-estacions.webp)
 
-_El tren es mesura sobre la via de maqueta; les peces blaves són unitats de referència col·locades per l’alumnat, no un sensor de distància del tren._
+_El tren se mide sobre la vía de maqueta; las piezas azules son unidades de referencia colocadas por el alumnado, no un sensor de distancia del tren._
 
-## ❓ Repte i intenció
+## ❓ Reto e intención
 
-La classe prepara una ruta entre espais familiars —per exemple, la biblioteca, el mercat i la plaça— representats en una maqueta de taula. Primer compara distàncies amb una mateixa unitat; després investiga què passa quan tria diferents nombres de moviment en l’app Coding Express. Les comparacions es refereixen al tren i al circuit concret de prova: els nombres de l’app no són metres, no indiquen quant hi ha entre llocs reals i poden variar segons el circuit i la configuració.
+La clase prepara una ruta entre espacios familiares —por ejemplo, la biblioteca, el mercado y la plaza— representados en una maqueta de mesa. Primero compara distancias con una misma unidad; después investiga qué pasa cuando elige diferentes números de movimiento en la app Coding Express. Las comparaciones se refieren al tren y al circuito concreto de prueba: los números de la app no son metros, no indican cuánto hay entre lugares reales y pueden variar según el circuito y la configuración.
 
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Mesurar recorreguts amb unitats no convencionals repetibles i comparar-ne la longitud.
-- Ordenar nombres de moviment i relacionar-los amb el desplaçament observat en una via concreta.
-- Predir una parada, provar-la més d’una vegada i registrar diferències entre intents.
-- Explicar per què els nombres de l’app no són metres ni distàncies reals entre llocs.
+- Medir recorridos con unidades no convencionales repetibles y comparar su longitud.
+- Ordenar números de movimiento y relacionarlos con el desplazamiento observado en una vía concreta.
+- Predecir una parada, probarla más de una vez y registrar diferencias entre intentos.
+- Explicar por qué los números de la app no son metros ni distancias reales entre lugares.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Prepareu un set Coding Express, l’app oficial en una tauleta compatible i el tren connectat abans de provar els nombres; una via de doble extrem; targetes de construcció del set si estan disponibles; models menuts propis de paper o peces; targetes amb noms o pictogrames de tres parades; fitxes d’unitat totes iguals; cinta de paper i un full de registre. La lliçó oficial treballa amb fins a quatre participants, tres models de parada i una ruta de doble extrem. Comproveu quins nombres d’avanç apareixen en la versió d’app del centre i si el tren respon de manera consistent en aquesta via.
+Preparad un set Coding Express, la app oficial en una tableta compatible y el tren conectado antes de probar los números; una vía de doble extremo; tarjetas de construcción del set si están disponibles; modelos pequeños propios de papel o piezas; tarjetas con nombres o pictogramas de tres paradas; fichas de unidad todas iguales; cinta de papel y una hoja de registro. La lección oficial trabaja con hasta cuatro participantes, tres modelos de parada y una ruta de doble extremo. Comprobad qué números de avance aparecen en la versión de app del centro y si el tren responde de manera consistente en esta vía.
 
-Marqueu distàncies sobre la maqueta amb peces iguals o segments de paper de la mateixa llargària. No mesureu el cos de l’alumnat ni exigiu que camine entre punts; qui ho preferisca pot avançar una fitxa sobre un plànol. Si la connexió o la funció numèrica no està disponible, feu la comparació amb unitats de paper i anoteu que es tracta d’un model desconnectat, sense atribuir al tren una lectura que no s’ha produït.
+Marcad distancias sobre la maqueta con piezas iguales o segmentos de papel de la misma longitud. No midáis el cuerpo del alumnado ni exijáis que camine entre puntos; quien lo prefiera puede avanzar una ficha sobre un plano. Si la conexión o la función numérica no está disponible, haced la comparación con unidades de papel y anotad que se trata de un modelo desconectado, sin atribuir al tren una lectura que no se ha producido.
 
-**Vocabulari:** mesurar, distància, pas, unitat, comparar, vehicle, avançar, retrocedir, més curt i més llarg. Comproveu que «pas» puga significar un moviment del tren o una unitat repetida sobre el paper segons el context; no els tracteu com la mateixa mesura.
+**Vocabulario:** medir, distancia, paso, unidad, comparar, vehículo, avanzar, retroceder, más corto y más largo. Comprobad que «paso» pueda significar un movimiento del tren o una unidad repetida sobre el papel según el contexto; no los tratéis como la misma medida.
 
-## 📅 Seqüència didàctica · 3 sessions
+## 📅 Secuencia didáctica · 3 sesiones
 
-### **Quina parada queda més lluny? (40 min)**
+### **¿Qué parada queda más lejos? (40 min)**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu dos o tres punts com a estacions i poseu-los noms propis. Abans de muntar la via, mostreu-los en un plànol o sobre la taula. Cada parella prediu quin tram sembla més curt i com ho podria comprovar.
+Elegid dos o tres puntos como estaciones y ponedles nombres propios. Antes de montar la vía, mostradlos en un plano o sobre la mesa. Cada pareja predice qué tramo parece más corto y cómo lo podría comprobar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Recompteu unitats iguals entre cada parella de punts: col·loqueu-les una darrere l’altra, sense espais ni superposicions. Per a qui preferisca no caminar, una fitxa representa el trajecte en el mapa i es mou una casella cada vegada.
+Recontad unidades iguales entre cada pareja de puntos: colocadlas una detrás de otra, sin espacios ni superposiciones. Para quien prefiera no caminar, una ficha representa el trayecto en el mapa y se mueve una casilla cada vez.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu els resultats i registreu la unitat utilitzada. Si les distàncies no cauen en nombres sencers d’unitats, marqueu-ho i parleu de la diferència sense forçar l’arrodoniment.
+Comparad los resultados y registrad la unidad utilizada. Si las distancias no caen en números enteros de unidades, marcadlo y hablad de la diferencia sin forzar el redondeo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Comproveu que totes les parelles usen la mateixa unitat i el mateix procediment. No compareu longituds de pas entre persones ni presenteu el recompte d’una caminada individual com una mesura exacta.
+Comprobad que todas las parejas usan la misma unidad y el mismo procedimiento. No comparéis longitudes de paso entre personas ni presentéis el recuento de una caminata individual como una medida exacta.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** predicció, recompte amb unitat acordada i comparació «més curt/més llarg». Pregunteu: «Què hem mantingut igual? Quina distància ha resultat més llarga i com ho sabem?»
+**Evidencia:** predicción, recuento con unidad acordada y comparación «más corto/más largo». Preguntad: «¿Qué hemos mantenido igual? ¿Qué distancia ha resultado más larga y cómo lo sabemos?»
 
-### **Construïm i investiguem els nombres de l’app (40 min).**
+### **Construimos e investigamos los números de la app (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans de moure el tren, connecteu-lo a l’app i mireu quins nombres es poden seleccionar. Predieu quin valor farà avançar més el model; no suposeu que els nombres representen centímetres.
+Antes de mover el tren, conectadlo a la app y mirad qué números se pueden seleccionar. Predecid qué valor hará avanzar más el modelo; no supongáis que los números representan centímetros.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En grup menut, construïu dos o tres models senzills de parada i una via de doble extrem. Poseu les destinacions al costat de la via, des de prop de l’origen fins a més lluny. Ordeneu els nombres amb targetes només si coincideix amb la interfície observada.
+En grupo pequeño, construid dos o tres modelos sencillos de parada y una vía de doble extremo. Poned los destinos junto a la vía, desde cerca del origen hasta más lejos. Ordenad los números con tarjetas solo si coincide con la interfaz observada.
 
-![El Coding Express real, tres destinacions de maqueta, unitats de paper iguals i una tauleta amb opcions abstractes de moviment.](../../_assets/situacions/sa-ce-distancies-unitats-app.webp)
+![El Coding Express real, tres destinos de maqueta, unidades de papel iguales y una tableta con opciones abstractas de movimiento.](../../_assets/situacions/sa-ce-distancies-unitats-app.webp)
 
-_Les unitats comparen trams de la maqueta; les opcions de l’app s’han de provar en la via del centre i no equivalen a metres._
+_Las unidades comparan tramos de la maqueta; las opciones de la app se deben probar en la vía del centro y no equivalen a metros._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Proveu cada valor amb un tram lliure i segur, un cada vegada. Registreu on s’ha aturat el tren; no suposeu que el nombre produeix la mateixa distància en qualsevol muntatge.
+Probad cada valor con un tramo libre y seguro, uno cada vez. Registrad dónde se ha detenido el tren; no supongáis que el número produce la misma distancia en cualquier montaje.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Cada equip selecciona un nombre per arribar a una parada, marca la predicció al plànol, executa el trajecte i compara l’arribada amb el resultat esperat. Si cal corregir, canvieu una sola selecció i torneu a provar.
+Cada equipo selecciona un número para llegar a una parada, marca la predicción en el plano, ejecuta el trayecto y compara la llegada con el resultado esperado. Si hay que corregir, cambiad una sola selección y volved a probar.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** taula «parada / nombre triat / predicció / on s’ha aturat / què revisaríem». Pregunteu: «Quin valor creieu que farà avançar més el tren? Què heu observat quan l’heu provat?»
+**Evidencia:** tabla «parada / número elegido / predicción / dónde se ha detenido / qué revisaríamos». Preguntad: «¿Qué valor creéis que hará avanzar más el tren? ¿Qué habéis observado cuando lo habéis probado?»
 
-### **Afegim parades i contem el trajecte (40 min).**
+### **Añadimos paradas y contamos el trayecto (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Afegiu una o dues destinacions i acordeu distàncies de maqueta diferents. Predieu quin tram serà més curt i quin nombre de l’app podria acostar el tren a cada parada.
+Añadid uno o dos destinos y acordad distancias de maqueta diferentes. Predecid qué tramo será más corto y qué número de la app podría acercar el tren a cada parada.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Ordeneu les parades i representeu el trajecte amb targetes: inici, avanç, visita, nova parada i final. Una altra parella reconstrueix el recorregut a partir del mapa.
+Ordenad las paradas y representad el trayecto con tarjetas: inicio, avance, visita, nueva parada y final. Otra pareja reconstruye el recorrido a partir del mapa.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu quin tram és el més curt i el més llarg; expliqueu quin nombre de l’app heu triat i què ha passat. Comproveu una distància amb la mateixa unitat de la primera sessió.
+Comparad qué tramo es el más corto y el más largo; explicad qué número de la app habéis elegido y qué ha pasado. Comprobad una distancia con la misma unidad de la primera sesión.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Per ampliar el repte, compareu dos nombres consecutius de l’app o dissenyeu una ruta amb el valor més gran disponible. Useu «més/menys» només per descriure el moviment observat en aquesta prova, no com a mesura mètrica. Expliqueu quina evidència ha ajudat a decidir el nombre i quina limitació té el model.
+Para ampliar el reto, comparad dos números consecutivos de la app o diseñad una ruta con el valor más grande disponible. Usad «más/menos» solo para describir el movimiento observado en esta prueba, no como medida métrica. Explicad qué evidencia ha ayudado a decidir el número y qué limitación tiene el modelo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa final, seqüència oral o visual i justificació de la comparació. Pregunteu: «Quines parades hem fet i en quin ordre? Què hauríem de mesurar d’una altra manera si volguérem descriure un lloc real?»
+**Evidencia:** mapa final, secuencia oral o visual y justificación de la comparación. Preguntad: «¿Qué paradas hemos hecho y en qué orden? ¿Qué deberíamos medir de otra manera si quisiéramos describir un lugar real?»
 
-## 📋 Avaluació i evidències
+## 📋 Evaluación y evidencias
 
-Recolliu el mapa de parades, les unitats emprades, les prediccions dels nombres, les observacions del moviment i la descripció final del trajecte. Observeu si l’alumnat:
+Recoged el mapa de paradas, las unidades empleadas, las predicciones de los números, las observaciones del movimiento y la descripción final del trayecto. Observad si el alumnado:
 
-- compara distàncies amb «més curt/més llarg» i manté una unitat comuna;
+- compara distancias con «más corto/más largo» y mantiene una unidad común;
 
-- descriu quina part de la mesura és de la maqueta i quina és l’observació del tren;
+- describe qué parte de la medida es de la maqueta y cuál es la observación del tren;
 
-- ordena les destinacions i anticipa una seqüència d’esdeveniments;
+- ordena los destinos y anticipa una secuencia de acontecimientos;
 
-- revisa una tria a partir del resultat observat i pot explicar el canvi.
+- revisa una elección a partir del resultado observado y puede explicar el cambio.
 
-No cal encertar el primer nombre: importa explicar què ha passat i com s’ha pres la decisió. La carpeta pot contindre un full de comparació, una captura o dibuix dels nombres disponibles i la ruta final marcada per una altra parella. Si l’app no funciona, documenteu la versió de paper i no la presenteu com si el tren haguera executat les ordres.
+No hace falta acertar el primer número: importa explicar qué ha pasado y cómo se ha tomado la decisión. La carpeta puede contener una hoja de comparación, una captura o dibujo de los números disponibles y la ruta final marcada por otra pareja. Si la app no funciona, documentad la versión de papel y no la presentéis como si el tren hubiera ejecutado las órdenes.
 
-## ♿ Més d’una manera de participar
+## ♿ Más de una manera de participar
 
-Oferiu nombres i estacions amb pictogrames grans, relleu o una paraula llegida en veu alta. La ruta es pot representar amb una fitxa sobre la taula; ningú ha de caminar una distància ni arribar físicament a un lloc. Separeu les targetes perquè siguen fàcils d’agafar, doneu temps addicional per anticipar la ruta i reduïu el nombre de parades quan hi haja massa estímuls. Permeteu que una persona trie l’ordre, una altra prepare targetes i una tercera observe el moviment o dicte el registre. Es pot respondre assenyalant, amb comunicació augmentativa o mitjançant una demostració compartida.
+Ofreced números y estaciones con pictogramas grandes, relieve o una palabra leída en voz alta. La ruta se puede representar con una ficha sobre la mesa; nadie tiene que caminar una distancia ni llegar físicamente a un lugar. Separad las tarjetas para que sean fáciles de coger, dad tiempo adicional para anticipar la ruta y reducid el número de paradas cuando haya demasiados estímulos. Permitid que una persona elija el orden, otra prepare tarjetas y una tercera observe el movimiento o dicte el registro. Se puede responder señalando, con comunicación aumentativa o mediante una demostración compartida.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta [Math – Distance](https://education.lego.com/en-us/lessons/preschool-coding-express/math-distance/): conversa sobre distàncies, elecció de dos o tres parades, recompte de passos, comparació entre trajectes, construcció de models amb targetes, via de doble extrem, exploració a l’app dels nombres que controlen l’avanç del tren i ampliació amb més parades. La biblioteca, el mercat, les targetes, la maqueta i els instruments de registre són propis. L’app no es tracta com un mesurador de distàncies reals; l’alumnat comprova el moviment del tren i descriu el resultat del model.
+Adapta [Math – Distance](https://education.lego.com/en-us/lessons/preschool-coding-express/math-distance/): conversación sobre distancias, elección de dos o tres paradas, recuento de pasos, comparación entre trayectos, construcción de modelos con tarjetas, vía de doble extremo, exploración en la app de los números que controlan el avance del tren y ampliación con más paradas. La biblioteca, el mercado, las tarjetas, la maqueta y los instrumentos de registro son propios. La app no se trata como un medidor de distancias reales; el alumnado comprueba el movimiento del tren y describe el resultado del modelo.

@@ -14,160 +14,160 @@ duration: "5 lecciones · 7–9 sesiones"
 challenge: "¿Cómo podemos crear un juego de pistas que responda a una secuencia de condiciones sin confundir una simulación con una protección real?"
 ---
 
-![Base mòbil LEGO SPIKE Prime al costat d’un joc de pistes de taula amb estacions de colors, targetes i una capsa de paper oberta.](../../_assets/situacions/sp-condicions-compostes.webp)
+![Base móvil LEGO SPIKE Prime junto a un juego de pistas de mesa con estaciones de colores, tarjetas y una caja de papel abierta.](../../_assets/situacions/sp-condicions-compostes.webp)
 
-_Les condicions compostes coordinen diverses regles; una maqueta permet provar-les sense bloquejar ni protegir res real._
+_Las condiciones compuestas coordinan varias reglas; una maqueta permite probarlas sin bloquear ni proteger nada real._
 
-## 🌱 Repte i context
+## 🌱 Reto y contexto
 
-La classe dissenya una activitat de descoberta per a una mostra de tecnologia. Els visitants, sempre lliures de continuar o aturar-se, resolen una seqüència de pistes sobre una taula; el programa mostra si cada resposta compleix les regles i actualitza una puntuació compartida. Les variables conserven el resultat d’una partida, els operadors combinen requisits, i el SPIKE Prime dona respostes de llum, so o moviment curt. En les sessions centrals, la classe investiga com una condició composta pot simular una contrasenya i compara usabilitat, nombre de combinacions i accessibilitat. Aquesta situació adapta les cinc lliçons de la unitat 8 *Compound Conditionals* de LEGO Education *Foundations of Physical Computing*. “Obrir una caixa” i “eixir d’una sala” s’interpreten com a metàfores de joc en una maqueta: l’alumnat mai queda tancat, cap objecte valuós depén del prototip i no s’hi introdueixen dades o credencials reals.
+La clase diseña una actividad de descubrimiento para una muestra de tecnología. Los visitantes, siempre libres de continuar o detenerse, resuelven una secuencia de pistas sobre una mesa; el programa muestra si cada respuesta cumple las reglas y actualiza una puntuación compartida. Las variables conservan el resultado de una partida, los operadores combinan requisitos, y el SPIKE Prime da respuestas de luz, sonido o movimiento corto. En las sesiones centrales, la clase investiga cómo una condición compuesta puede simular una contraseña y compara usabilidad, número de combinaciones y accesibilidad. Esta situación adapta las cinco lecciones de la unidad 8 *Compound Conditionals* de LEGO Education *Foundations of Physical Computing*. «Abrir una caja» y «salir de una sala» se interpretan como metáforas de juego en una maqueta: el alumnado nunca queda encerrado, ningún objeto valioso depende del prototipo y no se introducen datos ni credenciales reales.
 
-## 🎯 Objectius d’aprenentatge
+## 🎯 Objetivos de aprendizaje
 
-- Dissenyar una activitat de dos participants amb torns i puntuació mantinguda per variables, i comunicar-ne unes regles prou clares perquè un altre grup puga jugar sense explicació oral addicional.
+- Diseñar una actividad de dos participantes con turnos y puntuación mantenida por variables, y comunicar unas reglas lo bastante claras para que otro grupo pueda jugar sin explicación oral adicional.
 
-- Expressar una condició simple i composta amb llenguatge quotidià, diagrama, pseudocodi i blocs; distingir què implica `i`, `o` i `no`.
+- Expresar una condición simple y compuesta con lenguaje cotidiano, diagrama, pseudocódigo y bloques; distinguir qué implican `y`, `o` y `no`.
 
-- Programar una seqüència de comprovacions en l’ordre acordat, incloent casos correctes, incorrectes, incomplets, reinici i límits de repetició.
+- Programar una secuencia de comprobaciones en el orden acordado, incluyendo casos correctos, incorrectos, incompletos, reinicio y límites de repetición.
 
-- Construir un model segur que combine entrades reals del kit —botons del hub, color o distància segons la disponibilitat— amb una resposta comprensible, sense afirmar que és un sistema d’autenticació fiable.
+- Construir un modelo seguro que combine entradas reales del kit —botones del hub, color o distancia según la disponibilidad— con una respuesta comprensible, sin afirmar que es un sistema de autenticación fiable.
 
-- Planificar un repte tipus breakout que es resolga des de fora o al voltant d’una taula oberta, identificar restriccions i iterar el joc a partir de proves d’altres equips.
+- Planificar un reto tipo breakout que se resuelva desde fuera o alrededor de una mesa abierta, identificar restricciones e iterar el juego a partir de pruebas de otros equipos.
 
-- Relacionar els continguts amb tasques d’arquitectura, construcció, enginyeria, ciència i matemàtiques, incloent formació, habilitats i col·laboració entre perfils.
+- Relacionar los contenidos con tareas de arquitectura, construcción, ingeniería, ciencia y matemáticas, incluyendo formación, habilidades y colaboración entre perfiles.
 
-## 🧠 Continguts i llenguatge
+## 🧠 Contenidos y lenguaje
 
-**Variable de puntuació:** valor amb nom que s’inicialitza abans de la partida i s’actualitza segons una regla publicada. **Condició simple:** una expressió que és certa o falsa. **Condició composta:** dues o més condicions relacionades amb un operador lògic. Per exemple, “el color és blau *i* el botó ha sigut premut” exigeix ambdues coses; “el color és groc *o* verd” permet qualsevol dels casos, i en aquesta unitat l’OR és inclusiu. **Seqüència:** ordre de comprovacions que forma part de la regla. **Restricció:** requisit que limita disseny i comportament, com ara poder reiniciar o no usar contrasenyes personals.
+**Variable de puntuación:** valor con nombre que se inicializa antes de la partida y se actualiza según una regla publicada. **Condición simple:** una expresión que es verdadera o falsa. **Condición compuesta:** dos o más condiciones relacionadas con un operador lógico. Por ejemplo, «el color es azul *y* el botón se ha pulsado» exige ambas cosas; «el color es amarillo *o* verde» permite cualquiera de los casos, y en esta unidad el OR es inclusivo. **Secuencia:** orden de comprobaciones que forma parte de la regla. **Restricción:** requisito que limita diseño y comportamiento, como poder reiniciar o no usar contraseñas personales.
 
-La seguretat digital real depén de molts factors que no es modelen en el kit. Una seqüència de colors vista o enregistrada no és un secret segur; l’objectiu matemàtic és comprendre les regles i els compromisos entre facilitat d’ús i complexitat, no ensenyar a protegir comptes mitjançant un robot escolar.
+La seguridad digital real depende de muchos factores que no se modelan en el kit. Una secuencia de colores vista o registrada no es un secreto seguro; el objetivo matemático es comprender las reglas y los compromisos entre facilidad de uso y complejidad, no enseñar a proteger cuentas mediante un robot escolar.
 
-## 🧰 Preparació i materials
+## 🧰 Preparación y materiales
 
-Per equip: set SPIKE Prime 45678, dispositiu amb l’app SPIKE i hub carregat; base mòbil o model senzill amb sensor de color i sensor de distància si estan disponibles; targetes gruixudes de resposta; cartolina, cinta de paper, peces per a una capsa de maqueta que no tanque ni puga bloquejar-se, fulls de regles i diari d’enginyeria. Prepareu una pista de taula amb codis ficticis i un sistema de puntuació que no premie la rapidesa física ni penalitze errors d’accés. Verifiqueu abans quines lectures i botons admet la versió d’app del centre. Si falten sensors o les lectures varien, empreu targetes/observador com a entrada simulada i assenyaleu-ho explícitament. Cap llum o so ha de semblar una alarma d’emergència.
+Por equipo: set SPIKE Prime 45678, dispositivo con la app SPIKE y hub cargado; base móvil o modelo sencillo con sensor de color y sensor de distancia si están disponibles; tarjetas gruesas de respuesta; cartulina, cinta de papel, piezas para una caja de maqueta que no cierre ni pueda bloquearse, hojas de reglas y diario de ingeniería. Preparad una pista de mesa con códigos ficticios y un sistema de puntuación que no premie la rapidez física ni penalice errores de acceso. Verificad antes qué lecturas y botones admite la versión de app del centro. Si faltan sensores o las lecturas varían, usad tarjetas/observador como entrada simulada y señaladlo explícitamente. Ninguna luz o sonido debe parecer una alarma de emergencia.
 
-Feu una anàlisi prèvia de riscos amb l’alumnat: la maqueta queda oberta, la partida no té límit que obligue a córrer i tothom pot eixir de l’activitat en qualsevol moment. En lloc d’un qüestionari personal, recolliu comentaris anònims sobre llegibilitat i opcions de pista. Rols rotatius: responsable de regles, programació, muntatge/seguretat i observació d’usabilitat.
+Haced un análisis previo de riesgos con el alumnado: la maqueta queda abierta, la partida no tiene límite que obligue a correr y todo el mundo puede salir de la actividad en cualquier momento. En lugar de un cuestionario personal, recoged comentarios anónimos sobre legibilidad y opciones de pista. Roles rotativos: responsable de reglas, programación, montaje/seguridad y observación de usabilidad.
 
-## 📅 Seqüència d’aprenentatge · cinc lliçons
+## 📅 Secuencia didáctica · cinco lecciones
 
-### **Lliçó 1 · Joc amb variables: punts que es poden explicar (60–90 min).**
+### **Lección 1 · Juego con variables: puntos que se pueden explicar (60–90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Compareu jocs de taula, cartes, esports i videojocs. Cada persona pot parlar d’un joc conegut o analitzar-ne un de neutre preparat per la docent. Predigueu com se sap que s’ha guanyat i com es registra la puntuació.
+Comparad juegos de mesa, cartas, deportes y videojuegos. Cada persona puede hablar de un juego conocido o analizar uno neutro preparado por la docente. Predecid cómo se sabe que se ha ganado y cómo se registra la puntuación.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Inventeu un joc de taula per a dues persones amb una fitxa que recorre una pista i targetes de situació. Definiu com es guanyen o perden punts, quants torns hi ha i quan acaba. Escriviu les regles en passos numerats i feu una ronda manual.
+Inventad un juego de mesa para dos personas con una ficha que recorre una pista y tarjetas de situación. Definid cómo se ganan o pierden puntos, cuántos turnos hay y cuándo acaba. Escribid las reglas en pasos numerados y haced una ronda manual.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Creeu variables `punts_jugador_a` i `punts_jugador_b`, inicialitzeu-les a zero a l’inici de cada partida, canvieu de torn explícitament i afegiu una resposta de llum o so quan canvia la puntuació. Registreu almenys quatre torns en una taula de traça.
+Cread las variables `punts_jugador_a` y `punts_jugador_b`, inicializadlas a cero al inicio de cada partida, cambiad de turno explícitamente y añadid una respuesta de luz o sonido cuando cambia la puntuación. Registrad al menos cuatro turnos en una tabla de traza.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Un segon equip juga només amb les regles escrites i anota cada desacord. Compareu la puntuació en paper i en el programa després de cada ronda i reviseu una regla a partir del retorn.
+Un segundo equipo juega solo con las reglas escritas y anota cada desacuerdo. Comparad la puntuación en papel y en el programa después de cada ronda y revisad una regla a partir del retorno.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu com sumar, canviar de torn i començar de nou. **Evidència:** regles finals, taula de quatre torns, esquema del programa i nota sobre inicialització de variables.
+Explicad cómo sumar, cambiar de turno y empezar de nuevo. **Evidencia:** reglas finales, tabla de cuatro turnos, esquema del programa y nota sobre inicialización de variables.
 
-### **Lliçó 2 · Dues comprovacions per a una acció (90 min).**
+### **Lección 2 · Dos comprobaciones para una acción (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Cada parella crea un codi fictici de tres xifres i prova d’endevinar els nombres triats per l’altra. No anoteu contrasenyes habituals, PIN personals o dades privades. Calculeu quantes combinacions hi ha per a un, dos i tres dígits si cada posició val 0–9; parleu de l’equilibri entre opcions i facilitat de record.
+Cada pareja crea un código ficticio de tres cifras y trata de adivinar los números elegidos por la otra. No anotéis contraseñas habituales, PIN personales ni datos privados. Calculad cuántas combinaciones hay para uno, dos y tres dígitos si cada posición vale 0–9; hablad del equilibrio entre opciones y facilidad de recuerdo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En un full de decisions, assigneu una regla a una capsa de paper oberta: la peça de joc rep un senyal només quan la targeta de color és la correcta **i** s’ha premut el botó d’inici. Completeu les quatre files de la taula de veritat: color correcte/incorrecte × botó premut/no premut.
+En una hoja de decisiones, asignad una regla a una caja de papel abierta: la pieza de juego recibe una señal solo cuando la tarjeta de color es la correcta **y** se ha pulsado el botón de inicio. Completad las cuatro filas de la tabla de verdad: color correcto/incorrecto × botón pulsado/no pulsado.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Useu una entrada de color i un botó del hub o dues entrades simulades. Feu que el programa responga de manera diferent a acceptació i rebuig i que permeta començar de nou. Deseu taula de veritat, pseudocodi i registre de proves.
+Usad una entrada de color y un botón del hub o dos entradas simuladas. Haced que el programa responda de manera diferente a aceptación y rechazo y que permita empezar de nuevo. Guardad tabla de verdad, pseudocódigo y registro de pruebas.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proveu deliberadament els quatre casos, llegiu cada fila abans d’executar i compareu resultat esperat i real. Afegiu el cas d’una lectura que el sensor no reconeix i decidiu si es repeteix, es demana ajuda o es cancel·la.
+Probad deliberadamente los cuatro casos, leed cada fila antes de ejecutar y comparad resultado esperado y real. Añadid el caso de una lectura que el sensor no reconoce y decidid si se repite, se pide ayuda o se cancela.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu què significa «més segur» en aquest model i què no pot demostrar una maqueta. **Evidència:** taula de veritat, pseudocodi, registre d’errors i límit d’ús explícit.
+Explicad qué significa «más seguro» en este modelo y qué no puede demostrar una maqueta. **Evidencia:** tabla de verdad, pseudocódigo, registro de errores y límite de uso explícito.
 
-### **Lliçó 3 · Compondre regles i pensar en més d’un factor (90 min).**
+### **Lección 3 · Componer reglas y pensar en más de un factor (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Parleu de per què algú voldria protegir informació o materials i qui podria quedar exclòs per una regla mal dissenyada. Amb targetes fictícies, compareu una comprovació amb dues de tipus diferent, com targeta de color i acció deliberada del botó.
+Hablad de por qué alguien querría proteger información o materiales y quién podría quedar excluido por una regla mal diseñada. Con tarjetas ficticias, comparad una comprobación con dos de tipo diferente, como tarjeta de color y acción deliberada del botón.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Representeu les regles com a portes lògiques. Dissenyeu un prototip de taula que autoritza l’avanç d’una fitxa només si coincideixen dos senyals; pot donar un punt de llum o moure una barrera de cartró molt lleugera que no tanque res. Abans de construir, redacteu requisits, diagrama de flux i condicions.
+Representad las reglas como puertas lógicas. Diseñad un prototipo de mesa que autoriza el avance de una ficha solo si coinciden dos señales; puede dar un punto de luz o mover una barrera de cartón muy ligera que no cierre nada. Antes de construir, redactad requisitos, diagrama de flujo y condiciones.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Definiu casos de prova: correcte, entrada tardana, incorrecta, repetida o absent. Combineu operadors booleans en el programa i etiqueteu cada comentari amb el requisit corresponent; incloeu una resposta de recuperació, no un bloqueig permanent.
+Definid casos de prueba: correcto, entrada tardía, incorrecta, repetida o ausente. Combinad operadores booleanos en el programa y etiquetad cada comentario con el requisito correspondiente; incluid una respuesta de recuperación, no un bloqueo permanente.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Un altre equip prova el prototip amb una guia accessible i comenta si entén què ha de fer i com rectificar. Reviseu el disseny: massa factors poden dificultar l’ús legítim, i més combinacions per si soles no fan un sistema segur. Documenteu què recolzen les proves i quines comprovacions professionals faltarien.
+Otro equipo prueba el prototipo con una guía accesible y comenta si entiende qué debe hacer y cómo rectificar. Revisad el diseño: demasiados factores pueden dificultar el uso legítimo, y más combinaciones por sí solas no hacen un sistema seguro. Documentad qué respaldan las pruebas y qué comprobaciones profesionales faltarían.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu els compromisos entre usabilitat, nombre de combinacions i accessibilitat, sense presentar el dispositiu com a autenticació fiable. **Evidència:** requisits, diagrama, codi comentat, matriu de proves i revisió d’usabilitat.
+Explicad los compromisos entre usabilidad, número de combinaciones y accesibilidad, sin presentar el dispositivo como autenticación fiable. **Evidencia:** requisitos, diagrama, código comentado, matriz de pruebas y revisión de usabilidad.
 
-### **Lliçó 4 · Mini-repte: breakout de pistes obertes (90–135 min).**
+### **Lección 4 · Mini-reto: breakout de pistas abiertas (90–135 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu el repte com un joc de taula obert: ningú entra en una sala tancada i cap eixida física depén del programa. Trieu un problema fictici, com ordenar peces d’una exposició abans d’obrir una capsa de cartó. Recolliu comentaris anònims sobre formats de pista agradables —visual, tàctil, text o so opcional— i alternatives per a qui no distingeix colors o prefereix no usar so.
+Presentad el reto como un juego de mesa abierto: nadie entra en una sala cerrada y ninguna salida física depende del programa. Elegid un problema ficticio, como ordenar piezas de una exposición antes de abrir una caja de cartón. Recoged comentarios anónimos sobre formatos de pista agradables —visual, táctil, texto o sonido opcional— y alternativas para quien no distingue colores o prefiere no usar sonido.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Definiu tres restriccions mesurables: una acció segura, dues condicions que s’han de complir i un ordre de pistes; afegiu reinici i pista d’ajuda. Escriviu pseudocodi i esquema de connexions. Creeu una matriu amb camí correcte, un error per cada condició, ordre erroni, entrada no detectada i reinici.
+Definid tres restricciones medibles: una acción segura, dos condiciones que se deben cumplir y un orden de pistas; añadid reinicio y pista de ayuda. Escribid pseudocódigo y esquema de conexiones. Cread una matriz con camino correcto, un error por cada condición, orden erróneo, entrada no detectada y reinicio.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Construïu un mecanisme d’indicació amb peces de baixa energia o només llums/sons del hub i programeu la seqüència amb variables de progrés. Proveu cada subcomponent aïllat abans del codi complet i registreu cada resultat.
+Construid un mecanismo de indicación con piezas de baja energía o solo luces/sonidos del hub y programad la secuencia con variables de progreso. Probad cada subcomponente aislado antes del código completo y registrad cada resultado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una cosa per iteració i torneu a executar tota la matriu. Intercanvieu el joc amb almenys tres equips si el temps ho permet; si no, feu una prova creuada i completeu la resta amb casos en paper. Els participants poden aturar-se sense perdre puntuació ni justificar-se. Reviseu instruccions, dificultat, temps sense compte enrere pressionant i accessibilitat.
+Cambiad una cosa por iteración y volved a ejecutar toda la matriz. Intercambiad el juego con al menos tres equipos si el tiempo lo permite; si no, haced una prueba cruzada y completad el resto con casos en papel. Los participantes pueden detenerse sin perder puntuación ni justificarse. Revisad instrucciones, dificultad, tiempo sin cuenta atrás que presione y accesibilidad.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Lliureu la versió revisada i anoteu què ha canviat a partir de proves reals. **Evidència:** joc, matriu de proves completa, retorn d’usabilitat i registre d’iteracions.
+Entregad la versión revisada y anotad qué ha cambiado a partir de pruebas reales. **Evidencia:** juego, matriz de pruebas completa, retorno de usabilidad y registro de iteraciones.
 
-### **Lliçó 5 · Arquitectura, construcció i STEM (60–90 min).**
+### **Lección 5 · Arquitectura, construcción y STEM (60–90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Repasseu els jocs i localitzeu coneixements d’arquitectura i construcció, enginyeria, ciències i matemàtiques: mesura, estructura, forces, programació, dades, planificació i treball en equip. Predigueu quins perfils professionals podrien col·laborar en un projecte.
+Repasad los juegos y localizad conocimientos de arquitectura y construcción, ingeniería, ciencias y matemáticas: medida, estructura, fuerzas, programación, datos, planificación y trabajo en equipo. Predecid qué perfiles profesionales podrían colaborar en un proyecto.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Classifiqueu targetes de professions: arquitecta, electricista, lampista, fuster/a, enginyera biomèdica, tècnica de manteniment, estadístic/a, química/enginyer químic i personal de construcció. Eviteu associar oficis a un gènere o a un nivell d’estudis únic. Consulteu fonts públiques actuals triades per la docent i descriviu tasques, entorns, habilitats, formació i col·laboracions.
+Clasificad tarjetas de profesiones: arquitecta, electricista, fontanero/a, carpintero/a, ingeniera biomédica, técnica de mantenimiento, estadístico/a, química/ingeniero químico y personal de construcción. Evitad asociar oficios a un género o a un nivel de estudios único. Consultad fuentes públicas actuales elegidas por la docente y describid tareas, entornos, habilidades, formación y colaboraciones.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Trieu dos perfils complementaris i feu una fitxa que relacione les seues tasques amb una evidència o font per afirmació. Construïu amb peces una estructura o mostra interactiva, definiu-ne un requisit i afegiu una regla booleana només si aporta valor.
+Elegid dos perfiles complementarios y haced una ficha que relacione sus tareas con una evidencia o fuente por afirmación. Construid con piezas una estructura o muestra interactiva, definid un requisito y añadid una regla booleana solo si aporta valor.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu la fitxa perquè les fonts sostinguen les afirmacions i el prototip responga al requisit. No cal automatitzar la construcció per parlar de tecnologia.
+Revisad la ficha para que las fuentes sostengan las afirmaciones y el prototipo responda al requisito. No hace falta automatizar la construcción para hablar de tecnología.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Feu una presentació d’un minut amb el problema, dos rols professionals, la decisió lògica i allò que una maqueta no pot certificar. La reflexió individual sobre interessos és privada i voluntària; es pot respondre sobre una professió investigada. **Evidència:** fitxa professional amb fonts, prototip i presentació.
+Haced una presentación de un minuto con el problema, dos roles profesionales, la decisión lógica y lo que una maqueta no puede certificar. La reflexión individual sobre intereses es privada y voluntaria; se puede responder sobre una profesión investigada. **Evidencia:** ficha profesional con fuentes, prototipo y presentación.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Portafolis d’equip: regles del joc i nom triat, taula de puntuacions a mà/codi, taules de veritat, pseudocodi i diagrama, codi comentat, matriu de proves amb resultat esperat i real, fotografies només de models (mai d’alumnat sense autorització), registre d’iteracions, feedback anonimitzat d’usabilitat i fitxa professional amb fonts. Avalueu quatre dimensions amb descriptors: (1) condicions formalitzades sense ambigüitat; (2) variable inicialitzada i actualitzada en el torn correcte; (3) proves que cobreixen èxit, error, entrada absent i reinici; (4) explicació de limitacions i accessibilitat. En autoavaluació privada, puntueu de l’1 al 3 la cura de materials, gestió del temps i contribució; afegiu un exemple concret de col·laboració i una decisió canviada per les dades. La partida no determina la nota ni es fa classificació entre persones.
+Portafolio de equipo: reglas del juego y nombre elegido, tabla de puntuaciones a mano/código, tablas de verdad, pseudocódigo y diagrama, código comentado, matriz de pruebas con resultado esperado y real, fotografías solo de modelos (nunca de alumnado sin autorización), registro de iteraciones, retroalimentación anonimizada de usabilidad y ficha profesional con fuentes. Evaluad cuatro dimensiones con descriptores: (1) condiciones formalizadas sin ambigüedad; (2) variable inicializada y actualizada en el turno correcto; (3) pruebas que cubren éxito, error, entrada ausente y reinicio; (4) explicación de limitaciones y accesibilidad. En autoevaluación privada, puntuad del 1 al 3 el cuidado de materiales, la gestión del tiempo y la contribución; añadid un ejemplo concreto de colaboración y una decisión cambiada por los datos. La partida no determina la nota ni se hace clasificación entre personas.
 
-## ♿ Inclusió, privacitat i seguretat
+## ♿ Inclusión, privacidad y seguridad
 
-Les pistes tenen alternativa no cromàtica (paraula, forma o relleu), les instruccions s’ofereixen en text breu i esquema, i els efectes sonors són opcionals amb equivalent visual. Eviteu codis personals, recollida de credencials, dades d’identitat i enquestes sobre interessos que obliguen a revelar preferències. Els jocs se situen sobre una superfície, no bloquegen passadissos i no impliquen portes, panys, rutes d’evacuació ni espais reals. Poseu a prova el límit entre una regla pedagògica i una afirmació de seguretat: el SPIKE de l’activitat no autentica usuaris ni detecta intrusions. Atureu motors en fer canvis i manteniu peces menudes organitzades.
+Las pistas tienen alternativa no cromática (palabra, forma o relieve), las instrucciones se ofrecen en texto breve y esquema, y los efectos sonoros son opcionales con equivalente visual. Evitad códigos personales, recogida de credenciales, datos de identidad y encuestas sobre intereses que obliguen a revelar preferencias. Los juegos se sitúan sobre una superficie, no bloquean pasillos y no implican puertas, cerraduras, rutas de evacuación ni espacios reales. Poned a prueba el límite entre una regla pedagógica y una afirmación de seguridad: el SPIKE de la actividad no autentica usuarios ni detecta intrusiones. Detened los motores al hacer cambios y mantened las piezas pequeñas organizadas.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta les cinc lliçons de la unitat 8 *Compound Conditionals* de LEGO Education [*Foundations of Physical Computing*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb): *Game with Variables*, *Compound Conditionals*, *Compounding Conditionals*, *Mini-Challenge: Break Out Room* i *Connecting to Careers: Architecture & Construction and Science, Technology, Engineering & Mathematics*. Manté el joc de dos participants amb marcador, l’exploració de codis i combinacions, el disseny d’un dispositiu que interpreta més d’un factor, el repte de seqüència tipus breakout, la prova entre equips i la recerca de professions; canvia els models, codis, context i regles per una mostra escolar segura, oberta i accessible.
+Adapta las cinco lecciones de la unidad 8 *Compound Conditionals* de LEGO Education [*Foundations of Physical Computing*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb): *Game with Variables*, *Compound Conditionals*, *Compounding Conditionals*, *Mini-Challenge: Break Out Room* y *Connecting to Careers: Architecture & Construction and Science, Technology, Engineering & Mathematics*. Mantiene el juego de dos participantes con marcador, la exploración de códigos y combinaciones, el diseño de un dispositivo que interpreta más de un factor, el reto de secuencia tipo breakout, la prueba entre equipos y la búsqueda de profesiones; cambia los modelos, códigos, contexto y reglas por una muestra escolar segura, abierta y accesible.

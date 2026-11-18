@@ -14,177 +14,177 @@ duration: "6 sesiones"
 challenge: "¿Qué podemos inferir sobre energía y movimiento con un vehículo de maqueta, y cómo describimos el error de nuestras medidas?"
 ---
 
-![Un vehicle LEGO SPIKE Prime puja una rampa baixa al costat d’un gràfic de dades.](../../_assets/situacions/sp-rampa-dades.webp)
+![Un vehículo LEGO SPIKE Prime sube una rampa baja junto a un gráfico de datos.](../../_assets/situacions/sp-rampa-dades.webp)
 
-_Les dades descriuen el model mecànic, no l’activitat física ni la salut de l’alumnat._
+_Los datos describen el modelo mecánico, no la actividad física ni la salud del alumnado._
 
-## 🌱 Situació i intenció
+## 🌱 Situación e intención
 
-Adaptació de la unitat *Training Trackers* per al context d’un centre educatiu valencià. Cada sessió conserva l’objectiu oficial i el tradueix en un repte, materials i criteris propis; quan una activitat del pla és híbrida o no requereix el hub, s’indica expressament en la sessió.
+Adaptación de la unidad *Training Trackers* para el contexto de un centro educativo valenciano. Cada sesión conserva el objetivo oficial y lo traduce en un reto, materiales y criterios propios; cuando una actividad del plan es híbrida o no requiere el hub, se indica expresamente en la sesión.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Investigar relacions entre moviment, inclinació, cicles de motor i energia en una maqueta.
-- Repetir proves amb controls i representar les lectures en gràfics amb unitats i condicions descrites.
-- Comparar prediccions i mesures, identificar valors atípics i estimar el marge d’error.
-- Comunicar què permet inferir el model i què no demostra sobre energia o moviment en situacions reals.
+- Investigar relaciones entre movimiento, inclinación, ciclos de motor y energía en una maqueta.
+- Repetir pruebas con controles y representar las lecturas en gráficos con unidades y condiciones descritas.
+- Comparar predicciones y medidas, identificar valores atípicos y estimar el margen de error.
+- Comunicar qué permite inferir el modelo y qué no demuestra sobre energía o movimiento en situaciones reales.
 
-## 📅 Seqüència didàctica · 6 sessions
+## 📅 Secuencia didáctica · 6 sesiones
 
-La unitat oficial combina indagació científica, registre de dades i disseny. En aquesta adaptació, els fenòmens es mesuren en mecanismes de maqueta: ningú no ha de fer exercici ni compartir dades corporals. Cada equip manté un quadern amb hipòtesi, variables controlades, dades repetides, gràfic i una conclusió que indique el marge d’incertesa.
+La unidad oficial combina indagación científica, registro de datos y diseño. En esta adaptación, los fenómenos se miden en mecanismos de maqueta: nadie tiene que hacer ejercicio ni compartir datos corporales. Cada equipo mantiene un cuaderno con hipótesis, variables controladas, datos repetidos, gráfico y una conclusión que indique el margen de incertidumbre.
 
-### **S1 · Gràfiques d’orientació i marge d’error ([Stretch with Data](https://education.lego.com/en-us/lessons/prime-training-trackers/stretch-with-data/), 45–60 min).**
+### **S1 · Gráficos de orientación y margen de error ([Stretch with Data](https://education.lego.com/en-us/lessons/prime-training-trackers/stretch-with-data/), 45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** com podem reproduir un moviment llegint una gràfica generada per un sensor? En lloc de demanar a l’alumnat que seguisca postures de ioga, fixem el hub en un suport rígid i segur i el movem a mà —lentament, sense deixar-lo caure— en tres orientacions acordades.
+**Pregunta:** ¿cómo podemos reproducir un movimiento leyendo un gráfico generado por un sensor? En lugar de pedir al alumnado que adopte posturas de yoga, fijamos el hub en un soporte rígido y seguro y lo movemos a mano —despacio, sin dejarlo caer— en tres orientaciones acordadas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Subjecteu el hub en un suport rígid amb la matriu LED orientada cap a l’equip i marqueu dues posicions que es puguen repetir amb seguretat; no el poseu al cap ni a cap part del cos. Adapteu el programa de l’app perquè transmeta en directe les lectures del giroscopi al gràfic de línies. Feu el primer moviment entre les posicions acordades i anoteu què varia en una sola sèrie (pitch, roll o yaw), d’acord amb l’eix i la convenció que indique la versió de l’app del centre.
+Sujetad el hub en un soporte rígido con la matriz LED orientada hacia el equipo y marcad dos posiciones que se puedan repetir con seguridad; no lo pongáis en la cabeza ni en ninguna parte del cuerpo. Adaptad el programa de la app para que transmita en directo las lecturas del giroscopio al gráfico de líneas. Haced el primer movimiento entre las posiciones acordadas y anotad qué varía en una sola serie (pitch, roll o yaw), de acuerdo con el eje y la convención que indique la versión de la app del centro.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu la traça obtinguda amb una gràfica de mostra pròpia, sense reproduir la làmina LEGO. Marqueu en quin ordre es produeixen els canvis i intenteu seguir una segona gràfica ajustant el moviment del suport. Repetiu el mateix trajecte a dos ritmes i descriviu com la velocitat altera la forma de la línia, encara que les posicions inicial i final siguen iguals.
+Comparad la traza obtenida con un gráfico de muestra propio, sin reproducir la lámina LEGO. Marcad en qué orden se producen los cambios e intentad seguir un segundo gráfico ajustando el movimiento del soporte. Repetid el mismo trayecto a dos ritmos y describid cómo la velocidad altera la forma de la línea, aunque las posiciones inicial y final sean iguales.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Adapteu el programa per a representar dos valors alhora i planifiqueu una seqüència que combine dos moviments. Abans d’executar-la, dibuixeu quina traça espereu; després compareu la predicció amb les dades en directe i canvieu una sola part del moviment per millorar la correspondència.
+Adaptad el programa para representar dos valores a la vez y planificad una secuencia que combine dos movimientos. Antes de ejecutarla, dibujad qué traza esperáis; después comparad la predicción con los datos en directo y cambiad una sola parte del movimiento para mejorar la correspondencia.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Una altra parella interpreta la gràfica sense veure el moviment original i ofereix un comentari concret; qui ha programat anota què canviaria. Autoavalieu tres criteris: el programa registra dades reals en el gràfic, la traça es pot relacionar amb un moviment i l’explicació diferencia pitch, roll i yaw segons el marc de referència emprat. **Evidència:** hipòtesi, programa i gràfica pròpia anotada, comparació de dues velocitats, prova amb dos valors i retorn entre parelles. Si falla la connexió USB/Bluetooth, useu una mostra pròpia identificada com a dada enregistrada abans; la pendent d’un tram recte amb y = mx + b queda com a extensió matemàtica amb temps addicional. No es recullen dades corporals ni es presenta el model com una mesura d’exercici o salut.
+Otra pareja interpreta el gráfico sin ver el movimiento original y ofrece un comentario concreto; quien ha programado anota qué cambiaría. Autoevaluad tres criterios: el programa registra datos reales en el gráfico, la traza se puede relacionar con un movimiento y la explicación diferencia pitch, roll y yaw según el marco de referencia empleado. **Evidencia:** hipótesis, programa y gráfico propio anotado, comparación de dos velocidades, prueba con dos valores y retorno entre parejas. Si falla la conexión USB/Bluetooth, usad una muestra propia identificada como dato registrado antes; la pendiente de un tramo recto con y = mx + b queda como extensión matemática con tiempo adicional. No se recogen datos corporales ni se presenta el modelo como una medida de ejercicio o salud.
 
-### **S2 · Energia elèctrica per pujar ([This Is Uphill](https://education.lego.com/en-us/lessons/prime-training-trackers/this-is-uphill/), 60–75 min).**
+### **S2 · Energía eléctrica para subir ([This Is Uphill](https://education.lego.com/en-us/lessons/prime-training-trackers/this-is-uphill/), 60–75 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** què necessita un vehicle quan puja i volem que mantinga una velocitat semblant? Relacioneu el model amb la transferència d’energia: en la maqueta l’energia prové del motor elèctric; en una bicicleta real, la persona ciclista hi aporta energia amb l’esforç. Escriviu una hipòtesi sobre com canviaran la lectura del motor i l’angle de la rampa.
+**Pregunta:** ¿qué necesita un vehículo cuando sube y queremos que mantenga una velocidad parecida? Relacionad el modelo con la transferencia de energía: en la maqueta la energía proviene del motor eléctrico; en una bicicleta real, la persona ciclista aporta energía con el esfuerzo. Escribid una hipótesis sobre cómo cambiarán la lectura del motor y el ángulo de la rampa.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construïu una bicicleta de maqueta o un vehicle equivalent que registre en directe, amb l’app connectada per USB o Bluetooth, la variable de consum del motor i l’angle de pendent. Primer feu una passada en pla amb la mateixa càrrega i programa que usareu després; anoteu què mostren les dues línies respecte del temps. Manteniu constant el vehicle, la càrrega, la velocitat programada i el punt d’inici. La lectura de consum del programa és una dada del model, no una mesura directa d’energia en joules.
+Construid una bicicleta de maqueta o un vehículo equivalente que registre en directo, con la app conectada por USB o Bluetooth, la variable de consumo del motor y el ángulo de pendiente. Primero haced una pasada en plano con la misma carga y programa que usaréis después; anotad qué muestran las dos líneas respecto al tiempo. Mantened constante el vehículo, la carga, la velocidad programada y el punto de inicio. La lectura de consumo del programa es un dato del modelo, no una medida directa de energía en julios.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Col·loqueu una planxa estable sobre una base baixa i ferma —per exemple, la caixa del set— i feu una passada de pujada sense canviar cap altra variable. Compareu la lectura del motor i l’angle amb la línia base en pla. Expliqueu per què el motor necessita aportar més energia elèctrica per mantindre aproximadament la velocitat mentre el vehicle guanya energia potencial; la gràfica no mesura tota l’energia del sistema ni demostra que la velocitat haja sigut perfectament constant.
+Colocad una plancha estable sobre una base baja y firme —por ejemplo, la caja del set— y haced una pasada de subida sin cambiar ninguna otra variable. Comparad la lectura del motor y el ángulo con la línea base en plano. Explicad por qué el motor necesita aportar más energía eléctrica para mantener aproximadamente la velocidad mientras el vehículo gana energía potencial; el gráfico no mide toda la energía del sistema ni demuestra que la velocidad haya sido perfectamente constante.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Dissenyeu una ruta curta amb tram pla, pujada i baixada. Abans de provar-la, dibuixeu les dues traces que espereu al llarg del temps; després executeu el vehicle, compareu la predicció amb les lectures i expliqueu en quin tram s’ha separat més. Si hi ha temps, exporteu el CSV i representeu el consum del motor respecte de l’angle de pendent; investigueu si les dades donen suport a una relació proporcional, sense pressuposar que siga lineal.
+Diseñad una ruta corta con tramo plano, subida y bajada. Antes de probarla, dibujad las dos trazas que esperáis a lo largo del tiempo; después ejecutad el vehículo, comparad la predicción con las lecturas y explicad en qué tramo se ha separado más. Si hay tiempo, exportad el CSV y representad el consumo del motor respecto al ángulo de pendiente; investigad si los datos apoyan una relación proporcional, sin presuponer que sea lineal.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Comprovació:** el programa registra les dues variables en una gràfica; l’equip interpreta què passa en pla i en pendent; i l’explicació relaciona amb vocabulari científic la transferència d’energia i el límit de la lectura. Cada persona tria un nivell d’autoavaluació (encara necessite ajuda / ho faig amb autonomia / puc dissenyar una prova nova) i una parella aporta una observació i una proposta de millora. **Evidència:** hipòtesi, gràfiques de línia base, pujada i ruta mixta, registre de condicions i conclusió al quadern. Si falla la connexió, useu dades de mostra clarament identificades com a tals.
+**Comprobación:** el programa registra las dos variables en un gráfico; el equipo interpreta qué ocurre en plano y en pendiente; y la explicación relaciona con vocabulario científico la transferencia de energía y el límite de la lectura. Cada persona elige un nivel de autoevaluación (todavía necesito ayuda / lo hago con autonomía / puedo diseñar una prueba nueva) y una pareja aporta una observación y una propuesta de mejora. **Evidencia:** hipótesis, gráficos de línea base, subida y ruta mixta, registro de condiciones y conclusión en el cuaderno. Si falla la conexión, usad datos de muestra claramente identificados como tales.
 
-### **S3 · Alçada màxima i energia potencial ([Time for Squat Jumps](https://education.lego.com/en-us/lessons/prime-training-trackers/time-for-squat-jumps/), 45–60 min).**
+### **S3 · Altura máxima y energía potencial ([Time for Squat Jumps](https://education.lego.com/en-us/lessons/prime-training-trackers/time-for-squat-jumps/), 45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** quina alçada màxima assoleix el nostre model i com la relacionem amb l’energia potencial? Recordeu la relació Ep = m × g × h: coneixem o podem mesurar la massa i usem g com a valor constant; la incògnita és l’altura. Substituïm el salt humà per un elevador de maqueta que mou un marcador lleuger en una guia vertical estable, sense saltar ni mesurar el cos de ningú.
+**Pregunta:** ¿qué altura máxima alcanza nuestro modelo y cómo la relacionamos con la energía potencial? Recordad la relación Ep = m × g × h: conocemos o podemos medir la masa y usamos g como valor constante; la incógnita es la altura. Sustituimos el salto humano por un elevador de maqueta que mueve un marcador ligero en una guía vertical estable, sin saltar ni medir el cuerpo de nadie.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Fixeu el sensor de distància del set a un suport immòbil, alineat amb el marcador, i comproveu que el punt de lectura es manté dins del rang del sensor. Ajusteu el programa perquè registre en directe la distància i compareu-la amb una regla. Marqueu la lectura del marcador en repòs i la lectura mínima mentre puja: si el sensor i el suport no es mouen, l’altura recorreguda és la diferència entre aquestes lectures. Proveu primer dos recorreguts i ajusteu el mecanisme si el marcador ix del feix o s’enganxa.
+Fijad el sensor de distancia del set en un soporte inmóvil, alineado con el marcador, y comprobad que el punto de lectura se mantiene dentro del rango del sensor. Ajustad el programa para que registre en directo la distancia y comparadla con una regla. Marcad la lectura del marcador en reposo y la lectura mínima mientras sube: si el sensor y el soporte no se mueven, la altura recorrida es la diferencia entre estas lecturas. Probad primero dos recorridos y ajustad el mecanismo si el marcador sale del haz o se engancha.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu tres intents per cadascuna de tres altures previstes. Registreu altura prevista, distància inicial, distància mínima, altura calculada i lectura amb regla; compareu la variació entre intents i expliqueu què pot causar-la. Després, com a ampliació, estimeu l’altura a partir de l’acceleròmetre integrat al hub, un vídeo lateral amb escala o el temps de moviment. Anoteu les condicions i compareu cada mètode amb la mesura de regla, que també té un marge d’error.
+Haced tres intentos para cada una de tres alturas previstas. Registrad altura prevista, distancia inicial, distancia mínima, altura calculada y lectura con regla; comparad la variación entre intentos y explicad qué puede causarla. Después, como ampliación, estimad la altura a partir del acelerómetro integrado en el hub, un vídeo lateral con escala o el tiempo de movimiento. Anotad las condiciones y comparad cada método con la medida de regla, que también tiene un margen de error.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Subjecteu al mateix marcador dues masses lleugeres conegudes, d’una en una, i manteniu l’altura final igual. Calculeu Ep amb la massa i l’altura mesurades; compareu els resultats i expliqueu quin factor ha canviat. Si useu acceleració integrada, vídeo o temps, etiqueteu el resultat com a estimació: la integració acumula error i cap d’aquests mètodes dona directament una altura exacta.
+Sujetad al mismo marcador dos masas ligeras conocidas, de una en una, y mantened la altura final igual. Calculad Ep con la masa y la altura medidas; comparad los resultados y explicad qué factor ha cambiado. Si usáis aceleración integrada, vídeo o tiempo, etiquetad el resultado como estimación: la integración acumula error y ninguno de estos métodos da directamente una altura exacta.
 
-![Vehicle SPIKE Prime de la dotació al costat d’un sensor de distància que llig el moviment vertical d’un marcador lleuger; una regla i tres gràfiques buides ajuden a comparar les proves.](../../_assets/situacions/sa-sp-energia-sensor-distancia.webp)
+![Vehículo SPIKE Prime de la dotación junto a un sensor de distancia que registra el movimiento vertical de un marcador ligero; una regla y tres gráficos vacíos ayudan a comparar las pruebas.](../../_assets/situacions/sa-sp-energia-sensor-distancia.webp)
 
-_La il·lustració mostra una configuració conceptual del sensor i del marcador. Cal fixar-los de manera estable amb les peces reals disponibles i comprovar el rang abans de mesurar._
+_La ilustración muestra una configuración conceptual del sensor y del marcador. Hay que fijarlos de forma estable con las piezas reales disponibles y comprobar el rango antes de medir._
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Comprovació:** el programa registra dades del sensor en un gràfic; l’equip interpreta els valors, calcula Ep amb unitats i explica com intervenen massa i altura. Feu una autoavaluació amb els mateixos tres nivells de la unitat i una revisió entre parelles: «Quina dada sosté el càlcul?» i «Quin límit cal explicar?». **Evidència:** codi o blocs, gràfica, taula de nou proves de distància/regla, càlcul amb masses conegudes i nota sobre incertesa. Exportar CSV és opcional. No afirmem haver mesurat un salt humà ni un valor energètic exacte.
+**Comprobación:** el programa registra datos del sensor en un gráfico; el equipo interpreta los valores, calcula Ep con unidades y explica cómo intervienen masa y altura. Haced una autoevaluación con los mismos tres niveles de la unidad y una revisión entre parejas: «¿Qué dato sostiene el cálculo?» y «¿Qué límite hay que explicar?». **Evidencia:** código o bloques, gráfico, tabla de nueve pruebas de distancia/regla, cálculo con masas conocidas y nota sobre incertidumbre. Exportar CSV es opcional. No afirmamos haber medido un salto humano ni un valor energético exacto.
 
-### **S4 · Comptatge de cicles, velocitat i energia cinètica ([Watch Your Steps](https://education.lego.com/en-us/lessons/prime-training-trackers/watch-your-steps/), 60–75 min).**
+### **S4 · Recuento de ciclos, velocidad y energía cinética ([Watch Your Steps](https://education.lego.com/en-us/lessons/prime-training-trackers/watch-your-steps/), 60–75 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** què pot inferir un acceleròmetre sobre un moviment repetit i quina incertesa té el recompte? Substituïm els passos de les persones per cicles d’un carro de maqueta en una guia recta: un cicle és anar d’una marca final a l’altra i tornar, sense eixir de la pista. Si la pista fa 30 cm, cada cicle representa 60 cm de recorregut. Fixem el hub sempre en la mateixa orientació i llegim l’acceleració en els tres eixos.
+**Pregunta:** ¿qué puede inferir un acelerómetro sobre un movimiento repetido y qué incertidumbre tiene el recuento? Sustituimos los pasos de las personas por ciclos de un carro de maqueta en una guía recta: un ciclo es ir de una marca final a la otra y volver, sin salir de la pista. Si la pista mide 30 cm, cada ciclo representa 60 cm de recorrido. Fijamos el hub siempre en la misma orientación y leemos la aceleración en los tres ejes.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Fixeu el hub perpendicular al terra i en la mateixa orientació durant totes les proves. Connecteu-lo a l’app i enregistreu l’acceleració mentre una persona mou el carro entre les dues marques a ritme regular, guiat per un metrònom; no pugeu el carro a cap persona. Observeu la gràfica i acordeu com reconéixer els dos canvis de sentit d’un cicle. Ajusteu els valors mínim/màxim del programa amb una prova curta perquè un pic de retorn no es compte dues vegades; contrasteu el primer resultat amb un recompte manual sobre el vídeo o la gràfica.
+Fijad el hub perpendicular al suelo y en la misma orientación durante todas las pruebas. Conectadlo a la app y registrad la aceleración mientras una persona mueve el carro entre las dos marcas a ritmo regular, guiada por un metrónomo; no subáis el carro a ninguna persona. Observad el gráfico y acordad cómo reconocer los dos cambios de sentido de un ciclo. Ajustad los valores mínimo/máximo del programa con una prueba corta para que un pico de retorno no se cuente dos veces; contrastad el primer resultado con un recuento manual sobre el vídeo o el gráfico.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu tres recorreguts de tres, cinc i set cicles, i registreu per a cada un el temps, els cicles manuals i el recompte automàtic. Compareu les diferències i calculeu l’error relatiu del programa com |automàtic − manual| / manual × 100. En una quarta prova, estimeu la distància com a cicles detectats × 60 cm i la velocitat mitjana com a distància/temps. Per a una massa de maqueta mesurada, calculeu Ek = ½ × m × v². Són estimacions del tram: el carro pot variar de velocitat, els cicles no són idèntics i l’energia calculada amb la velocitat mitjana no és la mitjana exacta de l’energia instantània.
+Haced tres recorridos de tres, cinco y siete ciclos, y registrad para cada uno el tiempo, los ciclos manuales y el recuento automático. Comparad las diferencias y calculad el error relativo del programa como |automático − manual| / manual × 100. En una cuarta prueba, estimad la distancia como ciclos detectados × 60 cm y la velocidad media como distancia/tiempo. Para una masa de maqueta medida, calculad Ek = ½ × m × v². Son estimaciones del tramo: el carro puede variar de velocidad, los ciclos no son idénticos y la energía calculada con la velocidad media no es la media exacta de la energía instantánea.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una sola condició —l’orientació del hub, la textura de la pista o el llindar— i repetiu una passada de la mateixa distància. Anoteu si apareix algun fals recompte i expliqueu com la posició del hub i la variabilitat del moviment alteren els mínims/màxims que usa el programa. Torneu a la configuració inicial i descriviu quina correcció milloraria el recompte sense ocultar les lectures discrepants.
+Cambiad una sola condición —la orientación del hub, la textura de la pista o el umbral— y repetid una pasada de la misma distancia. Anotad si aparece algún falso recuento y explicad cómo la posición del hub y la variabilidad del movimiento alteran los mínimos/máximos que usa el programa. Volved a la configuración inicial y describid qué corrección mejoraría el recuento sin ocultar las lecturas discrepantes.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Comprovació:** el programa registra acceleració en una gràfica, l’equip explica què ha comptat com a cicle i calcula distància/velocitat/energia amb unitats i un límit explícit. Autoavalieu si heu calibrat el recompte, interpretat la gràfica i explicat l’error; una parella revisa una prova i proposa una millora concreta. **Evidència:** gràfica acceleració/temps, registre de les tres proves de calibratge i la quarta prova, recomptes manual i automàtic, càlculs i nota de marge d’error. Si la lectura no és estable, treballeu dades acceleromètriques de mostra LEGO, identificades com a dades proporcionades. Com a ampliació, munteu de manera segura un telèfon o una tauleta al mateix carro i compareu les lectures amb les del hub; cap dispositiu va sobre una persona ni s’hi registren dades personals.
+**Comprobación:** el programa registra aceleración en un gráfico, el equipo explica qué ha contado como ciclo y calcula distancia/velocidad/energía con unidades y un límite explícito. Autoevaluad si habéis calibrado el recuento, interpretado el gráfico y explicado el error; una pareja revisa una prueba y propone una mejora concreta. **Evidencia:** gráfico aceleración/tiempo, registro de las tres pruebas de calibración y la cuarta prueba, recuentos manual y automático, cálculos y nota de margen de error. Si la lectura no es estable, trabajad datos acelerométricos de muestra LEGO, identificados como datos proporcionados. Como ampliación, montad de forma segura un teléfono o una tableta en el mismo carro y comparad las lecturas con las del hub; ningún dispositivo va sobre una persona ni se registran datos personales.
 
-### **S5 · Rotació de roda, distància, velocitat i energia ([Aim for It](https://education.lego.com/en-us/lessons/prime-training-trackers/aim-for-it/), 60–75 min).**
+### **S5 · Rotación de rueda, distancia, velocidad y energía ([Aim for It](https://education.lego.com/en-us/lessons/prime-training-trackers/aim-for-it/), 60–75 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta:** què expliquen tres gràfiques diferents —rotacions de roda, distància i velocitat al llarg del temps— sobre el moviment d’un objecte? Com depén l’energia cinètica de la massa i de la velocitat? Dibuixeu una predicció per a un vehicle de rodes lliures que rep una empenta i després es desplaça sense motor; marqueu on espereu la velocitat màxima.
+**Pregunta:** ¿qué explican tres gráficos diferentes —rotaciones de rueda, distancia y velocidad a lo largo del tiempo— sobre el movimiento de un objeto? ¿Cómo depende la energía cinética de la masa y de la velocidad? Dibujad una predicción para un vehículo de ruedas libres que recibe un empujón y después se desplaza sin motor; marcad dónde esperáis la velocidad máxima.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construïu un vehicle de rodes lliures amb un motor SPIKE connectat a una roda perquè l’encoder registre les rotacions; no activeu el motor durant el recorregut. Connecteu el hub a l’app per USB o Bluetooth, peseu el vehicle complet i mesureu la circumferència de la roda. En una pista horitzontal lliure, inicieu cada prova des de la mateixa línia amb una empenta suau i semblant; deixeu que el vehicle avance i s’ature tot sol, sense perseguir-lo ni bloquejar les rodes. Enregistreu rotacions respecte del temps i anoteu les condicions de cada assaig.
+Construid un vehículo de ruedas libres con un motor SPIKE conectado a una rueda para que el encoder registre las rotaciones; no activéis el motor durante el recorrido. Conectad el hub a la app por USB o Bluetooth, pesad el vehículo completo y medid la circunferencia de la rueda. En una pista horizontal libre, iniciad cada prueba desde la misma línea con un empujón suave y parecido; dejad que el vehículo avance y se detenga solo, sin perseguirlo ni bloquear las ruedas. Registrad rotaciones respecto al tiempo y anotad las condiciones de cada ensayo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Observeu els pics de la gràfica de rotacions i proposeu què poden representar en la lectura del sensor. Convertiu les rotacions en distància (rotacions × circumferència) i traceu distància/temps; després estimeu la velocitat en cada tram amb la pendent de la gràfica. Identifiqueu la velocitat màxima inicial i calculeu-ne una estimació d’energia cinètica amb la massa mesurada: Ek = ½ × m × v². Compareu la predicció amb les dades i expliqueu que la velocitat i l’energia canvien mentre el vehicle perd velocitat; el càlcul no és l’energia exacta de tot el recorregut.
+Observad los picos del gráfico de rotaciones y proponed qué pueden representar en la lectura del sensor. Convertid las rotaciones en distancia (rotaciones × circunferencia) y trazad distancia/tiempo; después estimad la velocidad en cada tramo con la pendiente del gráfico. Identificad la velocidad máxima inicial y calculad una estimación de energía cinética con la masa medida: Ek = ½ × m × v². Comparad la predicción con los datos y explicad que la velocidad y la energía cambian mientras el vehículo pierde velocidad; el cálculo no es la energía exacta de todo el recorrido.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Adapteu el repte de *street curling*: cada equip té tres intents per acostar el vehicle al centre d’una diana ampla i tova. Després de cada intent, mesureu des de la part frontal del vehicle fins al centre; sumeu les tres distàncies i compareu el total entre equips. Manteniu la mateixa línia de llançament. Si investigueu l’efecte de la massa, utilitzeu un impulsor mecànic amb la mateixa posició i recorregut d’alliberament en cada prova; sense un impuls regular, descriviu les diferències com a observacions i no les atribuïu només a la massa. Afegiu peces LEGO lleugeres, peseu de nou el vehicle i actualitzeu les gràfiques i el càlcul de velocitat/energia. Com a ampliació, dissenyeu i compareu l’impulsor amb les empentes manuals; no puntueu la força ni la rapidesa de cap persona.
+Adaptad el reto de *street curling*: cada equipo tiene tres intentos para acercar el vehículo al centro de una diana ancha y blanda. Después de cada intento, medid desde la parte frontal del vehículo hasta el centro; sumad las tres distancias y comparad el total entre equipos. Mantened la misma línea de lanzamiento. Si investigáis el efecto de la masa, utilizad un impulsor mecánico con la misma posición y recorrido de liberación en cada prueba; sin un impulso regular, describid las diferencias como observaciones y no las atribuyáis solo a la masa. Añadid piezas LEGO ligeras, pesad de nuevo el vehículo y actualizad los gráficos y el cálculo de velocidad/energía. Como ampliación, diseñad y comparad el impulsor con los empujones manuales; no puntuéis la fuerza ni la rapidez de ninguna persona.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Comprovació:** el programa registra les rotacions, el grup interpreta les gràfiques, calcula la velocitat i relaciona massa i velocitat amb l’energia cinètica. Autoavalieu si podeu fer cada pas amb les dades del grup; una altra parella revise el càlcul i done una suggerència concreta. **Evidència:** massa i circumferència mesurades, gràfiques rotació/distància/velocitat, càlcul d’Ek amb unitats, les tres distàncies a la diana i una conclusió sobre variabilitat. Si feu la comparació de masses, conserveu les dues gràfiques i els dos càlculs. Useu només càrregues lleugeres ben fixades i una zona d’aturada lliure.
+**Comprobación:** el programa registra las rotaciones, el grupo interpreta los gráficos, calcula la velocidad y relaciona masa y velocidad con la energía cinética. Autoevaluad si podéis hacer cada paso con los datos del grupo; otra pareja revise el cálculo y dé una sugerencia concreta. **Evidencia:** masa y circunferencia medidas, gráficos rotación/distancia/velocidad, cálculo de Ek con unidades, las tres distancias a la diana y una conclusión sobre variabilidad. Si hacéis la comparación de masas, conservad los dos gráficos y los dos cálculos. Usad solo cargas ligeras bien fijadas y una zona de parada libre.
 
-### **S6 · Disseny d’un circuit que mostre transferències ([The Obstacle Course](https://education.lego.com/en-us/lessons/prime-training-trackers/the-obstacle-course/), 2–3 sessions de 45–60 min).**
+### **S6 · Diseño de un circuito que muestre transferencias ([The Obstacle Course](https://education.lego.com/en-us/lessons/prime-training-trackers/the-obstacle-course/), 2–3 sesiones de 45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Repte obert:** dissenyeu per parelles un joc d’obstacles de maqueta que mostre com un objecte passa d’una posició elevada o emmagatzemada a una altra de moviment. Abans de construir, recupereu què heu observat sobre energia potencial i cinètica en les sessions anteriors i escriviu una hipòtesi sobre una lectura que podria mostrar el canvi. El prototip ha d’incloure un moviment de pèndol, balancí o pujada/baixada, una dada que es puga registrar i una manera clara d’explicar el resultat.
+**Reto abierto:** diseñad por parejas un juego de obstáculos de maqueta que muestre cómo un objeto pasa de una posición elevada o almacenada a otra de movimiento. Antes de construir, recuperad qué habéis observado sobre energía potencial y cinética en las sesiones anteriores y escribid una hipótesis sobre una lectura que podría mostrar el cambio. El prototipo tiene que incluir un movimiento de péndulo, balancín o subida/bajada, un dato que se pueda registrar y una manera clara de explicar el resultado.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Cada parella dibuixa dues o tres idees i explica com recollirà dades en cadascuna. Trieu-ne una amb criteris de funcionament, estabilitat, seguretat i llegibilitat de la dada. Per iniciar el disseny es poden oferir cinc models reduïts: una barra horitzontal oscil·lant, un anell que es balanceja, una tirolina de maqueta amb carro lleuger, una plataforma que puja i baixa o un balancí de dues peces. Construïu només una versió de baixa altura amb peces SPIKE Prime i materials lleugers; abans de connectar el hub, comproveu manualment el moviment i subjecteu cordills, eixos i càrregues.
+Cada pareja dibuja dos o tres ideas y explica cómo recogerá datos en cada una. Elegid una con criterios de funcionamiento, estabilidad, seguridad y legibilidad del dato. Para iniciar el diseño se pueden ofrecer cinco modelos reducidos: una barra horizontal oscilante, un anillo que se balancea, una tirolina de maqueta con carro ligero, una plataforma que sube y baja o un balancín de dos piezas. Construid solo una versión de baja altura con piezas SPIKE Prime y materiales ligeros; antes de conectar el hub, comprobad manualmente el movimiento y sujetad cordeles, ejes y cargas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Executeu el prototip més d’una vegada i registreu moltes dades per a la variable triada —per exemple, acceleració, inclinació o rotacions— amb el hub i l’app connectats. Anoteu què representa cada eix i unitat, quina part del moviment espereu que produïsca cada canvi i quines condicions heu mantingut constants. Graveu un vídeo curt del mecanisme en funcionament per poder comparar el moviment visible amb la gràfica; el sensor no mesura directament l’energia potencial o cinètica del sistema.
+Ejecutad el prototipo más de una vez y registrad muchos datos para la variable elegida —por ejemplo, aceleración, inclinación o rotaciones— con el hub y la app conectados. Anotad qué representa cada eje y unidad, qué parte del movimiento esperáis que produzca cada cambio y qué condiciones habéis mantenido constantes. Grabad un vídeo corto del mecanismo en funcionamiento para poder comparar el movimiento visible con el gráfico; el sensor no mide directamente la energía potencial o cinética del sistema.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu si les dades i el vídeo sostenen la hipòtesi. Canvieu una sola part —altura, recorregut, massa lleugera o posició del sensor— i repetiu l’assaig; compareu les gràfiques abans/després i anoteu una limitació. Com a ampliació, compareu el mateix prototip amb un segon dispositiu de registre si està disponible, o proposeu una altra prova de transferència d’energia que no implique persones. Si el centre disposa d’un ascensor i hi ha una activitat supervisada adequada, l’adult pot registrar amb el hub ben subjectat l’acceleració de la cabina i comparar-la amb la d’un elevador de maqueta; no es fixa cap sensor a una persona. En la posada en comú, les parelles s’entrevisten per torns: una presenta el model mentre l’altra pren notes i pregunta; després intercanvien els rols. Poden convertir l’entrevista en una entrada de portafolis o un vídeo sense dades personals ni imatges identificables.
+Revisad si los datos y el vídeo sostienen la hipótesis. Cambiad una sola parte —altura, recorrido, masa ligera o posición del sensor— y repetid el ensayo; comparad los gráficos antes/después y anotad una limitación. Como ampliación, comparad el mismo prototipo con un segundo dispositivo de registro si está disponible, o proponed otra prueba de transferencia de energía que no implique personas. Si el centro dispone de un ascensor y hay una actividad supervisada adecuada, el adulto puede registrar con el hub bien sujeto la aceleración de la cabina y compararla con la de un elevador de maqueta; no se fija ningún sensor a una persona. En la puesta en común, las parejas se entrevistan por turnos: una presenta el modelo mientras la otra toma notas y pregunta; después intercambian los roles. Pueden convertir la entrevista en una entrada de portafolio o un vídeo sin datos personales ni imágenes identificables.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Presenteu el prototip, la gràfica i el vídeo o una seqüència dibuixada; expliqueu quin problema heu identificat, com funciona la solució i quines dades donen suport a la idea de transferència. **Criteris d’èxit:** identificar els elements clau del problema; construir una solució pròpia que funcione; registrar i interpretar una dada rellevant; comunicar el disseny amb claredat. Autoavalieu el procés amb tres nivells i doneu a una altra parella un comentari basat en una evidència i una proposta útil. **Evidència:** esbossos de dues o tres idees, criteris de tria, prototip provat, dades amb eixos/unitats, vídeo, canvi justificat i retorn entre equips.
+Presentad el prototipo, el gráfico y el vídeo o una secuencia dibujada; explicad qué problema habéis identificado, cómo funciona la solución y qué datos apoyan la idea de transferencia. **Criterios de éxito:** identificar los elementos clave del problema; construir una solución propia que funcione; registrar e interpretar un dato relevante; comunicar el diseño con claridad. Autoevaluad el proceso con tres niveles y dad a otra pareja un comentario basado en una evidencia y una propuesta útil. **Evidencia:** bocetos de dos o tres ideas, criterios de elección, prototipo probado, datos con ejes/unidades, vídeo, cambio justificado y retorno entre equipos.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Set SPIKE Prime i l’app compatible per a enregistrar dades del hub, motors i sensors; peces per a vehicle, suport de gir, elevador i pista; taula o rampa curta i estable; masses de maqueta lleugeres, regle, cinta de paper i ordinador opcional per obrir CSV. Abans de classe, proveu els ports, la connexió i els blocs d’adquisició de dades de la versió instal·lada. Fixeu el hub segons cada muntatge, deixeu el recorregut lliure i limiteu altura, velocitat i massa.
+Set SPIKE Prime y la app compatible para registrar datos del hub, motores y sensores; piezas para vehículo, soporte de giro, elevador y pista; mesa o rampa corta y estable; masas de maqueta ligeras, regla, cinta de papel y ordenador opcional para abrir CSV. Antes de clase, probad los puertos, la conexión y los bloques de adquisición de datos de la versión instalada. Fijad el hub según cada montaje, dejad el recorrido libre y limitad altura, velocidad y masa.
 
-## 🎯 Evidències i avaluació
+## 🎯 Evidencias y evaluación
 
-El quadern de cada equip —elaborat ací com a alternativa pròpia al quadern d’inventor de LEGO— mostra una hipòtesi, el protocol i les variables controlades, les dades repetides, una gràfica amb eixos i unitats, el marge o la font d’error i una conclusió limitada al que realment s’ha mesurat. La llista d’observació docent comprova quatre indicadors: el programa registra dades del sensor en una gràfica; l’equip relaciona la traça amb el moviment del model; interpreta la magnitud científica tractada en la sessió (orientació, transferència d’energia, altura, acceleració o velocitat); i comunica una conclusió amb les limitacions de la mesura. No s’avalua el resultat físic ni qui fa moure el model.
+El cuaderno de cada equipo —elaborado aquí como alternativa propia al cuaderno de inventor de LEGO— muestra una hipótesis, el protocolo y las variables controladas, los datos repetidos, un gráfico con ejes y unidades, el margen o la fuente de error y una conclusión limitada a lo que realmente se ha medido. La lista de observación docente comprueba cuatro indicadores: el programa registra datos del sensor en un gráfico; el equipo relaciona la traza con el movimiento del modelo; interpreta la magnitud científica tratada en la sesión (orientación, transferencia de energía, altura, aceleración o velocidad); y comunica una conclusión con las limitaciones de la medida. No se evalúa el resultado físico ni quién hace mover el modelo.
 
-En cada sessió, l’alumnat fa una autoavaluació amb tres nivells visuals: «interprete una gràfica amb ajuda», «dissenye una prova i explique les dades» i «propose una prova nova, en revise el protocol i defense una conclusió». Després, una parella revisora assenyala una evidència concreta i formula una pregunta o suggeriment útil. Aquesta escala pròpia manté la progressió d’autoavaluació i retorn entre iguals dels plans oficials sense copiar-ne els materials.
+En cada sesión, el alumnado hace una autoevaluación con tres niveles visuales: «interpreto un gráfico con ayuda», «diseño una prueba y explico los datos» y «propongo una prueba nueva, reviso el protocolo y defiendo una conclusión». Después, una pareja revisora señala una evidencia concreta y formula una pregunta o sugerencia útil. Esta escala propia mantiene la progresión de autoevaluación y retorno entre iguales de los planes oficiales sin copiar sus materiales.
 
-## ♿ Participació, diferenciació i preparació
+## ♿ Participación, diferenciación y preparación
 
-Abans de les sessions, el docent comprova l’app SPIKE, la connexió USB/Bluetooth, els blocs de registre i la configuració dels sensors del muntatge; prepara dades de mostra datades per si no es pot enregistrar en directe. Les durades de la seqüència corresponen al treball d’aula; la preparació prèvia i la posada en comú posterior es poden distribuir en altres moments. Si l’accés a un set és limitat, l’alumnat completa el quadern amb les dades de la sessió i les mostres pròpies, en lloc de presentar dades inventades com si foren capturades.
+Antes de las sesiones, el docente comprueba la app SPIKE, la conexión USB/Bluetooth, los bloques de registro y la configuración de los sensores del montaje; prepara datos de muestra fechados por si no se puede registrar en directo. Las duraciones de la secuencia corresponden al trabajo de aula; la preparación previa y la puesta en común posterior se pueden distribuir en otros momentos. Si el acceso a un set es limitado, el alumnado completa el cuaderno con los datos de la sesión y las muestras propias, en lugar de presentar datos inventados como si se hubieran capturado.
 
-Les ajudes i ampliacions conserven les opcions de les lliçons originals en contextos de maqueta: a S1 es pot treballar només amb el hub subjectat i un gràfic de mostra, o bé construir un suport propi i intercanviar gràfiques amb una altra parella; a S2 es comença explicant una proporcionalitat directa amb una taula senzilla i s’amplia amb un protocol creat per l’equip; a S3 es redueix el muntatge al hub i al sensor disponible i es comparen estimacions amb vídeo o temps; a S4 es fixa el hub perpendicular a la superfície i es compten cicles manualment abans d’ajustar el programa, amb comparació opcional d’un mateix carro amb hub i tauleta; a S5 es pot limitar l’anàlisi a distància-temps, o dissenyar un vehicle lliure i un impulsor més regular; a S6 es donen quatre o cinc exemples de mecanismes perquè l’equip en trie un, o es fa una pluja d’idees col·lectiva abans del disseny autònom. Vídeos, taules de lectura gran i peces per representar les dades permeten participar sense controlar el robot; els rols de mesura, programació, registre i comunicació roten.
+Las ayudas y ampliaciones conservan las opciones de las lecciones originales en contextos de maqueta: en S1 se puede trabajar solo con el hub sujeto y un gráfico de muestra, o bien construir un soporte propio e intercambiar gráficos con otra pareja; en S2 se empieza explicando una proporcionalidad directa con una tabla sencilla y se amplía con un protocolo creado por el equipo; en S3 se reduce el montaje al hub y al sensor disponible y se comparan estimaciones con vídeo o tiempo; en S4 se fija el hub perpendicular a la superficie y se cuentan ciclos manualmente antes de ajustar el programa, con comparación opcional de un mismo carro con hub y tableta; en S5 se puede limitar el análisis a distancia-tiempo, o diseñar un vehículo libre y un impulsor más regular; en S6 se dan cuatro o cinco ejemplos de mecanismos para que el equipo elija uno, o se hace una lluvia de ideas colectiva antes del diseño autónomo. Vídeos, tablas de lectura grande y piezas para representar los datos permiten participar sin controlar el robot; los roles de medida, programación, registro y comunicación rotan.
 
-## 🔗 Unitat oficial i traçabilitat
+## 🔗 Unidad oficial y trazabilidad
 
-La seqüència es correspon sessió per sessió amb les sis lliçons de la unitat LEGO Education [Training Trackers · SPIKE Prime](https://education.lego.com/en-us/lessons/prime-training-trackers/): *Stretch with Data* treballa pitch/roll/yaw i la lectura de gràfiques; *This Is Uphill* compara consum del motor i pendent; *Time for Squat Jumps* relaciona altura i energia potencial; *Watch Your Steps* explora l’acceleració i la velocitat; *Aim for It* transforma rotació en distància, velocitat i energia cinètica; *The Obstacle Course* integra el disseny d’un repte i el registre de dades. S’adapta el sistema de mesura del cos a models controlats, mantenint aquests objectius científics i computacionals. No es registren moviments, rendiment ni cap dada de salut de persones.
+La secuencia se corresponde sesión por sesión con las seis lecciones de la unidad LEGO Education [Training Trackers · SPIKE Prime](https://education.lego.com/en-us/lessons/prime-training-trackers/): *Stretch with Data* trabaja pitch/roll/yaw y la lectura de gráficos; *This Is Uphill* compara consumo del motor y pendiente; *Time for Squat Jumps* relaciona altura y energía potencial; *Watch Your Steps* explora la aceleración y la velocidad; *Aim for It* transforma rotación en distancia, velocidad y energía cinética; *The Obstacle Course* integra el diseño de un reto y el registro de datos. Se adapta el sistema de medida del cuerpo a modelos controlados, manteniendo estos objetivos científicos y computacionales. No se registran movimientos, rendimiento ni ningún dato de salud de personas.

@@ -14,138 +14,138 @@ duration: "4 sesiones"
 challenge: "¿Cómo podemos comparar la luz de distintos espacios con un procedimiento repetible y explicar los límites de la medida?"
 ---
 
-![Codey Rocky de la dotació entre una finestra i un llum de taula, com a punts de comparació de llum.](../../_assets/situacions/cr-llum-aula.webp)
+![Codey Rocky de la dotación entre una ventana y una lámpara de mesa, como puntos de comparación de luz.](../../_assets/situacions/cr-llum-aula.webp)
 
-_El valor del sensor serveix per comparar proves semblants; no és una mesura certificada d’il·luminació._
+_El valor del sensor sirve para comparar pruebas semejantes; no es una medida certificada de iluminación._
 
-## 💡 Repte, context i aprenentatges
+## 💡 Reto, contexto y aprendizajes
 
-Els equips preparen un mapa d’observació de la llum en espais accessibles de l’escola: prop d’una finestra, al centre de l’aula i en un racó. Codey Rocky mostra en la pantalla el valor que rep del sensor de llum ambiental. L’alumnat compara lectures, apunta les condicions de cada prova i pregunta què pot explicar una diferència: orientació del sensor, cortines, núvols, llums encesos o ombres.
+Los equipos preparan un mapa de observación de la luz en espacios accesibles de la escuela: cerca de una ventana, en el centro del aula y en un rincón. Codey Rocky muestra en la pantalla el valor que recibe del sensor de luz ambiental. El alumnado compara lecturas, apunta las condiciones de cada prueba y pregunta qué puede explicar una diferencia: orientación del sensor, cortinas, nubes, luces encendidas o sombras.
 
 
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-formular prediccions, repetir mesures amb un protocol, controlar variables, representar dades, relacionar una diferència amb possibles factors i distingir lectura del sensor de mesura professional. El número del dispositiu no és lux certificat, no diagnostica confort visual ni determina si un espai és saludable o eficient energèticament.
+formular predicciones, repetir medidas con un protocolo, controlar variables, representar datos, relacionar una diferencia con posibles factores y distinguir la lectura del sensor de una medida profesional. El número del dispositivo no es lux certificado, no diagnostica confort visual ni determina si un espacio es saludable o eficiente energéticamente.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Prepareu un Codey Rocky amb bateria, ordinador amb mBlock 5 i cable USB per carregar el programa, mapa senzill de l’aula o del passadís, full de registre, llapis i pictogrames per indicar finestra, cortina, llum artificial i condicions del cel. La situació pot executar-se amb el mòdul Codey quiet; no cal que el xassís Rocky es desplace. El cas oficial mostra el valor de llum ambiental en la pantalla de Codey mitjançant els blocs Sensing i Looks en mode Upload.
+Preparad un Codey Rocky con batería, un ordenador con mBlock 5 y cable USB para cargar el programa, un mapa sencillo del aula o del pasillo, una hoja de registro, lápices y pictogramas para indicar ventana, cortina, luz artificial y condiciones del cielo. La situación puede ejecutarse con el módulo Codey quieto; no hace falta que el chasis Rocky se desplace. El caso oficial muestra el valor de luz ambiental en la pantalla de Codey mediante los bloques Sensing y Looks en modo Upload.
 
-El sensor de llum de Codey és al xicotet orifici de la part inferior dreta del mòdul, vist de cara. Comproveu que no quede tapat per una mà, una taula o una carcassa. Trieu dos o tres llocs de lectura que no interrompen el pas i no canvieu la il·luminació habitual només per obtenir una puntuació. Si hi ha un llum de taula, que l’utilitze i col·loque sempre una persona adulta; no mireu directament la font ni acosteu el robot a líquids o calor.
+El sensor de luz de Codey está en el pequeño orificio de la parte inferior derecha del módulo, visto de frente. Comprobad que no quede tapado por una mano, una mesa o una carcasa. Elegid dos o tres lugares de lectura que no interrumpan el paso y no cambiéis la iluminación habitual solo para obtener una puntuación. Si hay una lámpara de mesa, que la use y la coloque siempre una persona adulta; no miréis directamente la fuente ni acerquéis el robot a líquidos o calor.
 
-**Vocabulari:** llum ambiental, sensor, lectura, repetició, variable, condició, comparar, interval, ombra, predicció i limitació. Presenteu «el sensor mostra un valor més alt en aquesta prova» en lloc de «ací hi ha més lux».
+**Vocabulario:** luz ambiental, sensor, lectura, repetición, variable, condición, comparar, intervalo, sombra, predicción y limitación. Presentad «el sensor muestra un valor más alto en esta prueba» en lugar de «aquí hay más lux».
 
-## 📅 Seqüència didàctica · quatre sessions de 40 minuts
+## 📅 Secuencia didáctica · cuatro sesiones de 40 minutos
 
-### **Prediem i acordem un protocol (40 min).**
+### **Predecimos y acordamos un protocolo (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu el plànol i marqueu tres punts d’observació accessibles. Cada parella ordena els llocs segons la llum que espera trobar i explica quin indici usa: proximitat a la finestra, cortines o llums que ja estan encesos. Anoteu l’hora aproximada i l’estat del cel amb símbols, sense registrar dades personals.
+Mostrad el plano y marcad tres puntos de observación accesibles. Cada pareja ordena los lugares según la luz que espera encontrar y explica qué indicio usa: proximidad a la ventana, cortinas o luces que ya están encendidas. Anotad la hora aproximada y el estado del cielo con símbolos, sin registrar datos personales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Decidiu com sostindre Codey: mateix costat cap amunt, sensor descobert, mateixa alçada respecte a la taula i mateixa orientació. Assageu com col·locar-lo sense bloquejar el pas ni tapar el sensor.
+Decidid cómo sostener Codey: el mismo lado hacia arriba, sensor descubierto, la misma altura respecto a la mesa y la misma orientación. Ensayad cómo colocarlo sin bloquear el paso ni tapar el sensor.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu una lectura en un únic punt i comproveu que totes les persones poden veure la pantalla. Registreu la posició, l’orientació i les condicions que s’han acordat controlar.
+Haced una lectura en un único punto y comprobad que todas las personas pueden ver la pantalla. Registrad la posición, la orientación y las condiciones que se han acordado controlar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu el protocol amb una segona parella: pot repetir la lectura sense ajuda? Si no, afegiu al mapa un pictograma o una instrucció d’orientació més clara.
+Revisad el protocolo con una segunda pareja: ¿puede repetir la lectura sin ayuda? Si no, añadid al mapa un pictograma o una instrucción de orientación más clara.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa amb punts, predicció inicial i protocol visual compartit. **Preguntes docents:** «Què mantindrem igual en totes les proves? Quines coses poden canviar sense que les controlem?»
+**Evidencia:** mapa con puntos, predicción inicial y protocolo visual compartido. **Preguntas docentes:** «¿Qué mantendremos igual en todas las pruebas? ¿Qué cosas pueden cambiar sin que las controlemos?»
 
-### **Programem i fem la primera ronda (40 min).**
+### **Programamos y hacemos la primera ronda (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans de connectar, predigueu quin dels tres punts donarà una lectura més alta i quin canvi de condicions podria alterar la resposta. Recordeu que no classificarem espais com a «bons» o «dolents».
+Antes de conectar, predecid cuál de los tres puntos dará una lectura más alta y qué cambio de condiciones podría alterar la respuesta. Recordad que no clasificaremos espacios como «buenos» o «malos».
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Connecteu Codey a mBlock 5, seleccioneu el dispositiu correcte i useu el bloc de lectura d’intensitat de llum ambiental amb el bloc Looks que mostra el valor en la pantalla. Carregueu el programa en mode Upload i comproveu la lectura abans de començar.
+Conectad Codey a mBlock 5, seleccionad el dispositivo correcto y usad el bloque de lectura de intensidad de luz ambiental con el bloque Looks que muestra el valor en la pantalla. Cargad el programa en modo Upload y comprobad la lectura antes de empezar.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu la ronda pels tres punts. En cada lloc, espereu que el robot quede quiet i anoteu el valor, l’hora aproximada, els llums encesos, les cortines i l’ombra visible. Registreu les condicions al costat de la lectura, sense anomenar-la lux.
+Haced la ronda por los tres puntos. En cada lugar, esperad que el robot quede quieto y anotad el valor, la hora aproximada, las luces encendidas, las cortinas y la sombra visible. Registrad las condiciones junto a la lectura, sin llamarla lux.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Repetiu cada lectura dues vegades sense canviar la posició. Si varia molt, conserveu tots els valors i investigueu què podia haver canviat; no trieu només el número que confirma la predicció.
+Repetid cada lectura dos veces sin cambiar la posición. Si varía mucho, conservad todos los valores e investigad qué podía haber cambiado; no elijáis solo el número que confirma la predicción.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** taula dels tres llocs amb lectures repetides i condicions. **Preguntes docents:** «Les lectures d’un mateix punt coincideixen? Què podria haver canviat entre una lectura i la següent?»
+**Evidencia:** tabla de los tres lugares con lecturas repetidas y condiciones. **Preguntas docentes:** «¿Coinciden las lecturas de un mismo punto? ¿Qué podría haber cambiado entre una lectura y la siguiente?»
 
-### **Repetim en un altre moment i representem (40 min).**
+### **Repetimos en otro momento y representamos (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Predigueu si el patró de la primera ronda es mantindrà en una altra franja horària o un altre dia i indiqueu quines condicions podrien canviar.
+Predecid si el patrón de la primera ronda se mantendrá en otra franja horaria u otro día e indicad qué condiciones podrían cambiar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Repetiu la ronda sense alterar l’horari habitual de l’aula. Registreu finestra, cortina, llum elèctrica i cel. No tapeu finestres ni apagueu llums necessàries per estudiar; si no es poden comparar condicions, anoteu-ho com a limitació.
+Repetid la ronda sin alterar el horario habitual del aula. Registrad ventana, cortina, luz eléctrica y cielo. No tapéis ventanas ni apaguéis luces necesarias para estudiar; si no se pueden comparar condiciones, anotadlo como limitación.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Ordeneu les dades amb punts i símbols, una línia simple o intervals qualitatius acordats. Si calculeu mitjanes, conserveu també les lectures originals perquè es veja la variació.
+Ordenad los datos con puntos y símbolos, una línea simple o intervalos cualitativos acordados. Si calculáis medias, conservad también las lecturas originales para que se vea la variación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu espais i moments: on es repeteix el patró, què ha canviat i què no es pot separar amb aquestes dades? Trieu una pregunta de seguiment i proposeu una nova ronda que mantinga més condicions constants.
+Comparad espacios y momentos: ¿dónde se repite el patrón, qué ha cambiado y qué no se puede separar con estos datos? Elegid una pregunta de seguimiento y proponed una nueva ronda que mantenga más condiciones constantes.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** gràfic o mapa amb llegenda i comparació entre rondes. **Preguntes docents:** «Quina diferència veiem en les dades? Quina explicació és una hipòtesi i què hauríem de mesurar per provar-la?»
+**Evidencia:** gráfico o mapa con leyenda y comparación entre rondas. **Preguntas docentes:** «¿Qué diferencia vemos en los datos? ¿Qué explicación es una hipótesis y qué deberíamos medir para probarla?»
 
-### **Comuniquem una conclusió amb límits (40 min).**
+### **Comunicamos una conclusión con límites (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu quina afirmació sobre el mapa podeu defensar amb les dades i quina conclusió seria massa forta. Prepareu una fitxa o pòster amb la pregunta i el protocol.
+Elegid qué afirmación sobre el mapa podéis defender con los datos y qué conclusión sería demasiado fuerte. Preparad una ficha o póster con la pregunta y el protocolo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Organitzeu el gràfic o mapa amb llocs, moments, descripció del valor mostrat i condicions de cada lectura. Si useu mitjanes, afegiu-hi els valors originals.
+Organizad el gráfico o mapa con lugares, momentos, descripción del valor mostrado y condiciones de cada lectura. Si usáis medias, añadid los valores originales.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Escriviu una interpretació prudent i una limitació. Per exemple: «en les nostres tres proves el punt de la finestra ha donat lectures superiors a les del racó» o «les mesures han variat quan també ha canviat el cel».
+Escribid una interpretación prudente y una limitación. Por ejemplo: «en nuestras tres pruebas el punto de la ventana ha dado lecturas superiores a las del rincón» o «las medidas han variado cuando también ha cambiado el cielo».
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Una altra parella revisa si la representació permet entendre la comparació. Proposeu una prova de seguiment, com repetir en un dia cobert amb la mateixa orientació del sensor. No deriveu recomanacions per modificar les instal·lacions.
+Otra pareja revisa si la representación permite entender la comparación. Proponed una prueba de seguimiento, como repetir en un día cubierto con la misma orientación del sensor. No derivéis recomendaciones para modificar las instalaciones.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** presentació amb una conclusió sustentada i una pregunta oberta. Eviteu afirmar lux exactes, estalvi d’energia, salut visual o benestar. **Preguntes docents:** «Quina afirmació recolzen les nostres proves? Quina mesura professional necessitaríem per respondre una altra pregunta?»
+**Evidencia:** presentación con una conclusión sustentada y una pregunta abierta. Evitad afirmar lux exactos, ahorro de energía, salud visual o bienestar. **Preguntas docentes:** «¿Qué afirmación respaldan nuestras pruebas? ¿Qué medida profesional necesitaríamos para responder otra pregunta?»
 
-## 📊 Avaluació i evidències
+## 📊 Evaluación y evidencias
 
-Recolliu protocol, taula de lectures, mapa/gràfic i conclusió. Observeu si l’alumnat:
+Recoged protocolo, tabla de lecturas, mapa/gráfico y conclusión. Observad si el alumnado:
 
-- formula una predicció i explica quin indici l’ha motivada;
+- formula una predicción y explica qué indicio la ha motivado;
 
-- manté orientació i posició del sensor semblants entre repeticions;
+- mantiene orientación y posición del sensor semejantes entre repeticiones;
 
-- registra els valors reals, incloses les diferències inesperades;
+- registra los valores reales, incluidas las diferencias inesperadas;
 
-- representa i compara lectures sense convertir-les en lux ni en judici de qualitat;
+- representa y compara lecturas sin convertirlas en lux ni en juicio de calidad;
 
-- distingeix resultat, explicació possible i limitació del procediment.
+- distingue resultado, explicación posible y limitación del procedimiento.
 
-No s’avalua que l’alumnat obtinga el resultat esperat ni que determine quina il·luminació necessita l’aula. Es valora la qualitat del registre i la prudència de les conclusions.
+No se evalúa que el alumnado obtenga el resultado esperado ni que determine qué iluminación necesita el aula. Se valora la calidad del registro y la prudencia de las conclusiones.
 
-## ♿ Dades accessibles i ús responsable
+## ♿ Datos accesibles y uso responsable
 
-Utilitzeu una escala visual de tres rangs acordada pel grup al costat dels valors numèrics, descripcions verbals, etiquetes tàctils i gràfics de formes. Una persona pot llegir la pantalla i una altra registrar; també es pot respondre dictant, assenyalant pictogrames o construint un gràfic físic. Manteniu el robot sobre una taula accessible i oferiu una alternativa amb fotografies o lectures prèviament recollides si moure’s per l’aula no és viable. Les conclusions no s’utilitzen per valorar hàbits, capacitat visual ni necessitats individuals de cap alumne.
+Usad una escala visual de tres rangos acordada por el grupo junto a los valores numéricos, descripciones verbales, etiquetas táctiles y gráficos de formas. Una persona puede leer la pantalla y otra registrar; también se puede responder dictando, señalando pictogramas o construyendo un gráfico físico. Mantened el robot sobre una mesa accesible y ofreced una alternativa con fotografías o lecturas previamente recogidas si moverse por el aula no es viable. Las conclusiones no se utilizan para valorar hábitos, capacidad visual ni necesidades individuales de ningún alumno.
 
-## 🔗 Referent oficial i adaptació pròpia
+## 🔗 Referente oficial y adaptación propia
 
-Adapta [Case 6: Display the ambient light intensity](https://support.makeblock.com/hc/en-us/articles/7462771369367-Case-6-Display-the-ambient-light-intensity), que mostra la lectura del sensor de llum de Codey en la pantalla mitjançant els blocs de lectura i Looks en mBlock 5 Upload. Aquesta proposta amplia l’exemple tècnic amb preguntes, repeticions, control de variables, representació de dades i contextos de l’aula; no tracta la lectura com un luxímetre calibrat.
+Adapta [Case 6: Display the ambient light intensity](https://support.makeblock.com/hc/en-us/articles/7462771369367-Case-6-Display-the-ambient-light-intensity), que muestra la lectura del sensor de luz de Codey en la pantalla mediante los bloques de lectura y Looks en mBlock 5 Upload. Esta propuesta amplía el ejemplo técnico con preguntas, repeticiones, control de variables, representación de datos y contextos del aula; no trata la lectura como un luxómetro calibrado.

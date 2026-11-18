@@ -14,177 +14,177 @@ duration: "5 sesiones"
 challenge: "¿Podemos crear una máquina que clasifique muestras de prueba y explicar con honestidad qué no sabe identificar?"
 ---
 
-![Prototip SPIKE Prime amb sensor de color, mostres de maons i safates de classificació per colors.](../../_assets/situacions/sp-residus-lego.webp)
+![Prototipo SPIKE Prime con sensor de color, muestras de ladrillos y bandejas de clasificación por colores.](../../_assets/situacions/sp-residus-lego.webp)
 
-_El prototip classifica mostres de prova segons el color; no determina per si mateix el material ni el contenidor correcte._
+_El prototipo clasifica muestras de prueba según el color; no determina por sí mismo el material ni el contenedor correcto._
 
-## ♻️ Repte, context i aprenentatges
+## ♻️ Reto, contexto y aprendizajes
 
-En un mercat de barri o en el menjador escolar es generen materials diferents i cal separar-los seguint les normes locals. L’equip dissenya amb SPIKE Prime un prototip de classificació que usa el color com a dada d’entrada. Primer provarà maons o targetes de colors coneguts; després compararà eixa tasca limitada amb el problema real de gestionar residus. Un envàs blau pot ser de diversos materials, i un mateix material pot tindre molts colors: la lectura cromàtica no és una identificació del material ni una instrucció de reciclatge.
+En un mercado de barrio o en el comedor escolar se generan materiales diferentes y hay que separarlos siguiendo las normas locales. El equipo diseña con SPIKE Prime un prototipo de clasificación que usa el color como dato de entrada. Primero probará ladrillos o tarjetas de colores conocidos; después comparará esa tarea limitada con el problema real de gestionar residuos. Un envase azul puede ser de varios materiales, y un mismo material puede tener muchos colores: la lectura cromática no es una identificación del material ni una instrucción de reciclaje.
 
 
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-formular criteris de classificació, relacionar una dada de sensor amb una regla, construir un mecanisme amb motors, provar-lo amb casos variats, calcular resultats sobre un conjunt conegut i comunicar límits i decisions pendents de validació humana.
+formular criterios de clasificación, relacionar un dato de sensor con una regla, construir un mecanismo con motores, probarlo con casos variados, calcular resultados sobre un conjunto conocido y comunicar límites y decisiones pendientes de validación humana.
 
-## 🧰 Materials, preparació i referències locals
+## 🧰 Materiales, preparación y referencias locales
 
-Prepareu un set SPIKE Prime amb hub, motor(s) angular(s), sensor de color i elements de construcció; un dispositiu amb l’app SPIKE; mostres netes de maons o targetes mates de diversos colors; safates buides; regle o separadors per estabilitzar distàncies; full de registre i calculadora opcional. La il·lustració mostra un prototip conceptual fet amb peces compatibles; l’alumnat ha de construir i provar el seu propi mecanisme amb les peces disponibles, no copiar un muntatge oficial.
+Preparad un set SPIKE Prime con hub, motor(es) angular(es), sensor de color y elementos de construcción; un dispositivo con la app SPIKE; muestras limpias de ladrillos o tarjetas mates de varios colores; bandejas vacías; regla o separadores para estabilizar distancias; hoja de registro y calculadora opcional. La ilustración muestra un prototipo conceptual hecho con piezas compatibles; el alumnado tiene que construir y probar su propio mecanismo con las piezas disponibles, no copiar un montaje oficial.
 
-El sensor de color de SPIKE pot llegir color, reflectivitat o llum ambiental. La fitxa tècnica del fabricant dona una distància de lectura òptima aproximada de 16 mm, que pot variar amb la mida, el color i la superfície de l’objecte. Abans de classe, comproveu en el set físic la lectura i el mecanisme proposat; no feu dependre una decisió important d’un valor de sensor sense verificar-lo. Per a una classificació autèntica de residus, consulteu la guia vigent del municipi o centre i useu mostres netes o targetes, mai residus tallants, bruts o desconeguts.
+El sensor de color de SPIKE puede leer color, reflectividad o luz ambiental. La ficha técnica del fabricante da una distancia de lectura óptima aproximada de 16 mm, que puede variar con el tamaño, el color y la superficie del objeto. Antes de clase, comprobad en el set físico la lectura y el mecanismo propuesto; no hagáis depender una decisión importante de un valor de sensor sin verificarlo. Para una clasificación auténtica de residuos, consultad la guía vigente del municipio o centro y usad muestras limpias o tarjetas, nunca residuos cortantes, sucios o desconocidos.
 
-**Vocabulari:** sensor, mostra, criteri, classificar, material, color, excepció, fals positiu, falsa detecció, prototip i validació. Distingiu el vocabulari de la màquina («ha llegit blau») del vocabulari del residu («és un envàs d’un material concret»).
+**Vocabulario:** sensor, muestra, criterio, clasificar, material, color, excepción, falso positivo, falsa detección, prototipo y validación. Distinguid el vocabulario de la máquina («ha leído azul») del vocabulario del residuo («es un envase de un material concreto»).
 
-## 📅 Seqüència didàctica · cinc sessions de 50 minuts
+## 📅 Secuencia didáctica · cinco sesiones de 50 minutos
 
-### **Auditem un problema sense tocar residus (50 min).**
+### **Auditamos un problema sin tocar residuos (50 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu fotografies o una llista de materials del mercat o del menjador escolar. En parelles, l’alumnat proposa com els separaria i anota quina informació li falta. Abans de la sessió, el docent contrasta les propostes amb la guia municipal o la informació vigent del centre.
+Mostrad fotografías o una lista de materiales del mercado o del comedor escolar. En parejas, el alumnado propone cómo los separaría y anota qué información le falta. Antes de la sesión, el docente contrasta las propuestas con la guía municipal o la información vigente del centro.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Compareu dos objectes ficticis de color semblant i parleu de què sabem i què no sabem només mirant-los. Un envàs blau pot estar fet de materials diferents; un material pot tindre colors diversos. La lectura cromàtica no identifica la composició ni determina el contenidor.
+Comparad dos objetos ficticios de color parecido y hablad de qué sabemos y qué no sabemos solo mirándolos. Un envase azul puede estar hecho de materiales diferentes; un material puede tener colores diversos. La lectura cromática no identifica la composición ni determina el contenedor.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Cada equip tria dues o tres categories de color per a una maqueta amb maons o targetes. Dibuixeu entrada, regla i possibles eixides. Afegiu una categoria «per revisar» per a lectures desconegudes, i compareu-la amb la informació que caldria consultar per decidir sobre un residu real.
+Cada equipo elige dos o tres categorías de color para una maqueta con ladrillos o tarjetas. Dibujad entrada, regla y posibles salidas. Añadid una categoría «por revisar» para lecturas desconocidas, y comparadla con la información que habría que consultar para decidir sobre un residuo real.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Completeu un mapa de dues columnes: «què pot fer el prototip» i «què cal confirmar en la guia local». No cal manipular ni portar residus reals a l’aula.
+Completad un mapa de dos columnas: «qué puede hacer el prototipo» y «qué hay que confirmar en la guía local». No hace falta manipular ni llevar residuos reales al aula.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa de criteris amb una decisió del prototip i una dada pendent de verificar.
+**Evidencia:** mapa de criterios con una decisión del prototipo y un dato pendiente de verificar.
 
 
-**Pregunta docent:** El color ens diu de quin material està fet un objecte? Quina font ens ajudaria a decidir què fer amb un residu real?
+**Pregunta docente:** ¿El color nos dice de qué material está hecho un objeto? ¿Qué fuente nos ayudaría a decidir qué hacer con un residuo real?
 
 
-### **Dissenyem i construïm el classificador (50 min).**
+### **Diseñamos y construimos el clasificador (50 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Dibuixeu el recorregut d’una mostra: entrada, lectura, regla i eixida. Trieu un muntatge segur amb una mostra situada davant del sensor i una comporta motoritzada que puga orientar-la cap a una de dues safates. En una primera versió, la comporta es pot moure a mà.
+Dibujad el recorrido de una muestra: entrada, lectura, regla y salida. Elegid un montaje seguro con una muestra situada delante del sensor y una compuerta motorizada que pueda orientarla hacia una de dos bandejas. En una primera versión, la compuerta se puede mover a mano.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Fixeu el sensor en un suport ferm i perpendicular a la mostra. Marqueu una distància estable pròxima a la recomanació tècnica del fabricant, aproximadament 16 mm, i feu una lectura abans de connectar el motor. Useu només peces lleugeres i deixeu espai perquè la mostra no s’encalle.
+Fijad el sensor en un soporte firme y perpendicular a la muestra. Marcad una distancia estable próxima a la recomendación técnica del fabricante, aproximadamente 16 mm, y haced una lectura antes de conectar el motor. Usad solo piezas ligeras y dejad espacio para que la muestra no se atasque.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Moveu la comporta manualment per comprovar-ne l’abast. Identifiqueu on podrien quedar atrapats els dits o la mostra i ajusteu l’estructura abans d’automatitzar-la. L’alumnat no ha de copiar el prototip conceptual de la imatge: construirà una solució pròpia amb les peces disponibles.
+Moved la compuerta manualmente para comprobar su alcance. Identificad dónde podrían quedar atrapados los dedos o la muestra y ajustad la estructura antes de automatizarla. El alumnado no tiene que copiar el prototipo conceptual de la imagen: construirá una solución propia con las piezas disponibles.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Assenyaleu al diagrama el sensor, l’actuador, les safates i la zona d’aturada segura.
+Señalad en el diagrama el sensor, el actuador, las bandejas y la zona de parada segura.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** esbós anotat i prototip mecànic que supera una prova manual sense encallaments.
+**Evidencia:** boceto anotado y prototipo mecánico que supera una prueba manual sin atascos.
 
-**Pregunta docent:** Quina peça ha de moure’s? Com evitarem que una mostra o un dit quede atrapat?
+**Pregunta docente:** ¿Qué pieza tiene que moverse? ¿Cómo evitaremos que una muestra o un dedo quede atrapado?
 
 
-### **Programem i calibrem amb mostres conegudes (50 min).**
+### **Programamos y calibramos con muestras conocidas (50 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Llegiu maons o targetes mates amb colors que el sensor de SPIKE reconega en el model del centre. Registreu el valor que retorna el programa abans d’afegir una comporta. La lectura exacta pot variar amb la distància, la il·luminació i la superfície.
+Leed ladrillos o tarjetas mates con colores que el sensor de SPIKE reconozca en el modelo del centro. Registrad el valor que devuelve el programa antes de añadir una compuerta. La lectura exacta puede variar con la distancia, la iluminación y la superficie.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En l’app SPIKE, creeu una condició per al color triat. Si es detecta, el motor orienta la comporta cap a una eixida; altrament, la mostra queda en una safata de revisió. Ajusteu els blocs al muntatge real i comproveu que la posició inicial del motor siga repetible.
+En la app SPIKE, cread una condición para el color elegido. Si se detecta, el motor orienta la compuerta hacia una salida; de lo contrario, la muestra queda en una bandeja de revisión. Ajustad los bloques al montaje real y comprobad que la posición inicial del motor sea repetible.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Proveu cada cas almenys tres vegades des de la mateixa posició. Després canvieu només una variable —distància, il·luminació o superfície— i compareu el resultat. Incloeu una mostra fora de les categories; el programa ha de poder respondre «no ho sé».
+Probad cada caso al menos tres veces desde la misma posición. Después cambiad solo una variable —distancia, iluminación o superficie— y comparad el resultado. Incluid una muestra fuera de las categorías; el programa tiene que poder responder «no lo sé».
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Completeu la taula amb mostra, color esperat, lectura, eixida i excepció. Afegiu un comentari al codi que explique la regla.
+Completad la tabla con muestra, color esperado, lectura, salida y excepción. Añadid un comentario al código que explique la regla.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** taula de calibratge amb lectures repetides, codi comentat i una ruta de revisió per als casos desconeguts.
+**Evidencia:** tabla de calibración con lecturas repetidas, código comentado y una ruta de revisión para los casos desconocidos.
 
-**Pregunta docent:** Quina lectura es repetix? Què fa el sistema quan apareix un color que no havíem previst?
+**Pregunta docente:** ¿Qué lectura se repite? ¿Qué hace el sistema cuando aparece un color que no habíamos previsto?
 
 
-### **Posem a prova els límits amb casos adversos (50 min).**
+### **Ponemos a prueba los límites con casos adversos (50 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Creeu vint mostres repetibles amb peces LEGO o targetes, no amb residus reals. Incloeu colors coincidents, variacions de to, blanc i negre, i superfícies mates i brillants. Barregeu l’ordre perquè el programa no puga aprofitar una seqüència coneguda.
+Cread veinte muestras repetibles con piezas LEGO o tarjetas, no con residuos reales. Incluid colores coincidentes, variaciones de tono, blanco y negro, y superficies mates y brillantes. Mezclad el orden para que el programa no pueda aprovechar una secuencia conocida.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Una persona que no programa la màquina conserva la clau de les categories de prova. L’equip executa les mostres i registra encerts, errors i casos enviats a revisió. Manteniu constants l’orientació i la distància; si les canvieu, marqueu-ho com una prova diferent.
+Una persona que no programa la máquina conserva la clave de las categorías de prueba. El equipo ejecuta las muestras y registra aciertos, errores y casos enviados a revisión. Mantened constantes la orientación y la distancia; si las cambiáis, marcadlo como una prueba diferente.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Calculeu el percentatge d’encerts sobre el nombre de mostres que el prototip havia de distingir. Compteu a banda les mostres de revisió: no són encerts automàtics. Trieu un fals positiu i un cas ambigu, i decidiu si l’origen probable és la lectura, la regla o el mecanisme.
+Calculad el porcentaje de aciertos sobre el número de muestras que el prototipo tenía que distinguir. Contad aparte las muestras de revisión: no son aciertos automáticos. Elegid un falso positivo y un caso ambiguo, y decidid si el origen probable es la lectura, la regla o el mecanismo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Escriviu un límit que les dades demostren i un risc que encara no s’ha provat. Un resultat amb maons o targetes no valida la classificació de residus reals.
+Escribid un límite que los datos demuestran y un riesgo que todavía no se ha probado. Un resultado con ladrillos o tarjetas no valida la clasificación de residuos reales.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** matriu de vint proves, percentatge amb denominador explícit i dos errors comentats.
+**Evidencia:** matriz de veinte pruebas, porcentaje con denominador explícito y dos errores comentados.
 
-**Pregunta docent:** Quin error seria més greu si la mostra fora un residu real? Quina informació encara falta?
+**Pregunta docente:** ¿Qué error sería más grave si la muestra fuera un residuo real? ¿Qué información falta todavía?
 
 
 
-### **Millorem i comuniquem una conclusió responsable (50 min).**
+### **Mejoramos y comunicamos una conclusión responsable (50 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Reviseu la matriu de proves i trieu una regla o una part mecànica. Escriviu una predicció concreta sobre què hauria de millorar abans de tocar el prototip.
+Revisad la matriz de pruebas y elegid una regla o una parte mecánica. Escribid una predicción concreta sobre qué debería mejorar antes de tocar el prototipo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Canvieu una sola cosa i torneu a provar les mateixes vint mostres en condicions semblants. Si una categoria millora i una altra empitjora, conserveu les dues dades i expliqueu el compromís.
+Cambiad una sola cosa y volved a probar las mismas veinte muestras en condiciones parecidas. Si una categoría mejora y otra empeora, conservad los dos datos y explicad el compromiso.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu la maqueta amb la guia local: què pot automatitzar-se en una prova de color?, què exigix informació sobre composició i etiquetatge?, quan cal una revisió humana? La guia vigent, i no el prototip, és la referència per a les normes locals.
+Comparad la maqueta con la guía local: ¿qué se puede automatizar en una prueba de color?, ¿qué exige información sobre composición y etiquetado?, ¿cuándo hace falta una revisión humana? La guía vigente, y no el prototipo, es la referencia para las normas locales.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Presenteu un diagrama, la taula de proves, el percentatge, un límit del sensor i una millora pendent. Redacteu la conclusió com «classifica aquestes mostres per color en les condicions provades», no com «sap reciclar qualsevol residu».
+Presentad un diagrama, la tabla de pruebas, el porcentaje, un límite del sensor y una mejora pendiente. Redactad la conclusión como «clasifica estas muestras por color en las condiciones probadas», no como «sabe reciclar cualquier residuo».
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** prototip revisat, comparació abans/després i recomanació per a una persona operadora.
+**Evidencia:** prototipo revisado, comparación antes/después y recomendación para una persona operadora.
 
-**Pregunta docent:** Quina afirmació permeten les dades? Quina informació addicional cal per a decidir sobre un objecte real?
+**Pregunta docente:** ¿Qué afirmación permiten los datos? ¿Qué información adicional hace falta para decidir sobre un objeto real?
 
 
-## 📊 Avaluació i evidències
+## 📊 Evaluación y evidencias
 
-Recolliu l’esbós del flux, fotografies del mecanisme sense persones, codi comentat, registres de calibratge i taula comparativa de vint mostres. Observeu si l’alumnat:
+Recoged el boceto del flujo, fotografías del mecanismo sin personas, código comentado, registros de calibración y tabla comparativa de veinte muestras. Observad si el alumnado:
 
-- separa una lectura sensorial d’una conclusió sobre material o contenidor;
+- separa una lectura sensorial de una conclusión sobre material o contenedor;
 
-- construeix una regla que té una eixida per a casos desconeguts;
+- construye una regla que tiene una salida para casos desconocidos;
 
-- repeteix proves en condicions documentades i calcula encerts sobre el total correcte;
+- repite pruebas en condiciones documentadas y calcula aciertos sobre el total correcto;
 
-- identifica si l’error apareix al sensor, a la lògica o al mecanisme;
+- identifica si el error aparece en el sensor, en la lógica o en el mecanismo;
 
-- usa la guia local com a referent per a parlar de residus reals.
+- usa la guía local como referente para hablar de residuos reales.
 
-Es valora la qualitat de les proves i l’explicació dels límits, no una taxa d’encert perfecta. L’equip ha de distingir clarament entre mostra de prova i residu real.
+Se valora la calidad de las pruebas y la explicación de los límites, no una tasa de acierto perfecta. El equipo tiene que distinguir claramente entre muestra de prueba y residuo real.
 
-## ♿ Seguretat i participació accessible
+## ♿ Seguridad y participación accesible
 
-No manipuleu residus reals ni objectes bruts, tallants, amb líquids o d’origen desconegut. Useu peces lleugeres; manteniu dits fora de la comporta i desconnecteu el motor abans d’ajustar engranatges. Manteniu la màquina a baixa velocitat i sota supervisió. Per a participar, oferiu rols de cartografia, muntatge, programació, lectura de dades i auditoria; es poden donar instruccions perquè una altra persona opere el dispositiu. Les categories han de tindre pictogrames i formes a més de colors per no dependre només de la visió cromàtica. Es pot presentar la conclusió amb gràfic, text, comunicació augmentativa o demostració sense contacte amb el mecanisme.
+No manipuleis residuos reales ni objetos sucios, cortantes, con líquidos o de origen desconocido. Usad piezas ligeras; mantened los dedos fuera de la compuerta y desconectad el motor antes de ajustar engranajes. Mantened la máquina a baja velocidad y bajo supervisión. Para participar, ofreced roles de cartografía, montaje, programación, lectura de datos y auditoría; se pueden dar instrucciones para que otra persona opere el dispositivo. Las categorías tienen que tener pictogramas y formas además de colores para no depender solo de la visión cromática. Se puede presentar la conclusión con gráfico, texto, comunicación aumentativa o demostración sin contacto con el mecanismo.
 
-## 🔗 Dotació i fonts tècniques
+## 🔗 Dotación y fuentes técnicas
 
-La proposta usa el sensor de color, hub, motors i elements estructurals del set SPIKE Prime. Consulteu la [fitxa tècnica oficial del sensor de color](https://education.lego.com/en-us/teacher-resources/lego-education-spike-prime/support-technical-info/lego-education-spike-prime-support-technical-info-product-info/) i comproveu-ne el funcionament al set del centre. La guia municipal o del centre sobre residus s’ha de consultar de nou abans d’usar l’activitat, perquè el prototip no determina les normes locals ni substitueix una classificació humana.
+La propuesta usa el sensor de color, hub, motores y elementos estructurales del set SPIKE Prime. Consultad la [ficha técnica oficial del sensor de color](https://education.lego.com/en-us/teacher-resources/lego-education-spike-prime/support-technical-info/lego-education-spike-prime-support-technical-info-product-info/) y comprobad su funcionamiento en el set del centro. La guía municipal o del centro sobre residuos se tiene que consultar de nuevo antes de usar la actividad, porque el prototipo no determina las normas locales ni sustituye una clasificación humana.

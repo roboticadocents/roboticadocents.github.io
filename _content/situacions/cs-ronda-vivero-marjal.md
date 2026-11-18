@@ -15,125 +15,125 @@ challenge: "¿Cómo planificamos una ruta que pase alrededor de más de un objet
 official_source: "https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf"
 ---
 
-![MatataBot i torre de control reals del Coding Set recorren una quadrícula al voltant d’un planter i una regadora de maqueta fins a una bandera.](../../_assets/situacions/cs-ronda-viver-marjal.webp)
+![MatataBot y la torre de control reales del Coding Set recorren una cuadrícula alrededor de un plantel y una regadera de maqueta hasta una bandera.](../../_assets/situacions/cs-ronda-viver-marjal.webp)
 
-_Il·lustració IA pròpia basada en el kit real del Coding Set. Els objectes són marques fixes que les persones col·loquen i el robot evita amb una ruta prèviament programada; no hi ha sensor que els detecte._
+_Ilustración IA propia basada en el kit real del Coding Set. Los objetos son marcas fijas que las personas colocan y el robot evita con una ruta previamente programada; no hay ningún sensor que los detecte._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-El grup prepara una maqueta de viver amb un planter, una regadora i una bandera que marca l’espai on es deixaran les eines. MatataBot ha de fer una ronda al voltant dels objectes sense tocar-los i acabar a la bandera. Els objectes són materials estàtics, no obstacles que el robot puga reconéixer: l’equip observa el mapa, planifica i programa tota la ruta abans de començar.
+El grupo prepara una maqueta de vivero con un plantel, una regadera y una bandera que marca el espacio donde se dejarán las herramientas. MatataBot debe hacer una ronda alrededor de los objetos sin tocarlos y acabar en la bandera. Los objetos son materiales estáticos, no obstáculos que el robot pueda reconocer: el equipo observa el mapa, planifica y programa toda la ruta antes de empezar.
 
-La proposta adapta la targeta oficial **A-4 · MatataBot Guard** de les *Coding Activity Cards*. La targeta situa MatataBot i una joguina sobre una superfície plana, demana programar-lo perquè es moga al voltant de l’objecte i proposa com a ampliació repetir la ruta amb més d’una joguina en un programa. Ací el viver, els marcadors, el mapa, l’objectiu de bandera, el registre i les imatges són propis. La ruta és intencional i fixa: MatataBot no busca, detecta ni esquiva res automàticament.
+La propuesta adapta la tarjeta oficial **A-4 · MatataBot Guard** de las *Coding Activity Cards*. La tarjeta sitúa MatataBot y un juguete sobre una superficie plana, pide programarlo para que se mueva alrededor del objeto y propone como ampliación repetir la ruta con más de un juguete en un programa. Aquí el vivero, los marcadores, el mapa, el objetivo de bandera, el registro y las imágenes son propios. La ruta es intencional y fija: MatataBot no busca, detecta ni esquiva nada automáticamente.
 
-**Pregunta guia:** quines instruccions ens permeten passar al voltant de cada objecte i arribar a la bandera sense dependre que el robot detecte el que hi ha al mapa?
+**Pregunta guía:** ¿qué instrucciones nos permiten pasar alrededor de cada objeto y llegar a la bandera sin depender de que el robot detecte lo que hay en el mapa?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Representar objectes i destinacions en una graella amb inici i orientació marcats.
-- Dissenyar una ruta que passe al voltant d’un marcador sense tocar-lo.
-- Ampliar una seqüència perquè passe al voltant de més d’un objecte en un sol programa.
-- Predir, executar i registrar el moviment real, i revisar el primer punt de divergència.
-- Distingir una ruta programada d’una esquiva automàtica amb sensors.
+- Representar objetos y destinos en una cuadrícula con inicio y orientación marcados.
+- Diseñar una ruta que pase alrededor de un marcador sin tocarlo.
+- Ampliar una secuencia para que pase alrededor de más de un objeto en un solo programa.
+- Predecir, ejecutar y registrar el movimiento real, y revisar el primer punto de divergencia.
+- Distinguir una ruta programada de una esquiva automática con sensores.
 
-**Vocabulari clau:** marcador, obstacle representat, ruta, voltant, inici, orientació, gir, seqüència, bandera, prova, depuració.
+**Vocabulario clave:** marcador, obstáculo representado, ruta, contorno, inicio, orientación, giro, secuencia, bandera, prueba, depuración.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Coding Set real: MatataBot, torre de control, tauler i blocs direccionals disponibles.
-- Graella plana pròpia de 4 × 4 caselles; si s’utilitza una quadrícula física del kit, comproveu-ne escala i dimensions abans de fer prediccions.
-- Un planter de maqueta de base àmplia, una regadora de paper o escuma i una bandera gran; han de ser objectes lleugers, estables, no punxants i més alts que les rodes.
-- Fitxa de robot de paper per a planificar; mapa amb les caselles lliures, els objectes, la meta i la posició inicial del robot.
-- Full de registre amb **objectes**, **inici/orientació**, **seqüència**, **caselles de pas**, **contacte sí/no**, **arribada a la bandera sí/no** i **canvi provat**.
+- Coding Set real: MatataBot, torre de control, tablero y bloques direccionales disponibles.
+- Cuadrícula plana propia de 4 × 4 casillas; si se utiliza una cuadrícula física del kit, comprobad su escala y dimensiones antes de hacer predicciones.
+- Un plantel de maqueta de base amplia, una regadera de papel o espuma y una bandera grande; deben ser objetos ligeros, estables, no punzantes y más altos que las ruedas.
+- Ficha de robot de papel para planificar; mapa con las casillas libres, los objetos, la meta y la posición inicial del robot.
+- Hoja de registro con **objetos**, **inicio/orientación**, **secuencia**, **casillas de paso**, **contacto sí/no**, **llegada a la bandera sí/no** y **cambio probado**.
 
-Carregueu MatataBot i la torre, fixeu la graella i proveu una seqüència curta sobre la mateixa superfície. Situeu els objectes al centre de caselles marcades i deixeu espai de pas superior a l’amplària del robot. No useu aigua real ni plantes vives. Durant la prova, retireu les mans de la graella; atureu el robot abans de moure qualsevol marcador.
+Cargad MatataBot y la torre, fijad la cuadrícula y probad una secuencia corta sobre la misma superficie. Situad los objetos en el centro de casillas marcadas y dejad espacio de paso superior a la anchura del robot. No uséis agua real ni plantas vivas. Durante la prueba, retirad las manos de la cuadrícula; detened el robot antes de mover cualquier marcador.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Sessió 1 · Fem una ronda al voltant d’un objecte (45 min)
+### Sesión 1 · Hacemos una ronda alrededor de un objeto (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu el viver de maqueta, el planter i la bandera. Demaneu com podria passar el robot al voltant del planter sense tocar-lo. Compareu una ruta que passa per davant amb una que fa un recorregut per dos costats; el grup assenyala inici, orientació i final abans de programar.
+Presentad el vivero de maqueta, el plantel y la bandera. Preguntad cómo podría pasar el robot alrededor del plantel sin tocarlo. Comparad una ruta que pasa por delante con una que hace un recorrido por dos lados; el grupo señala inicio, orientación y final antes de programar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Col·loqueu un únic objecte en una casella central i marqueu la bandera en una altra. En parelles, assageu una ruta amb la fitxa de paper i col·loqueu una fletxa en cada canvi d’orientació. Traduïu després el recorregut als blocs físics del Coding Set, tenint present que un bloc de gir fa girar el robot sobre el lloc.
+Colocad un único objeto en una casilla central y marcad la bandera en otra. En parejas, ensayad una ruta con la ficha de papel y colocad una flecha en cada cambio de orientación. Traducid después el recorrido a los bloques físicos del Coding Set, teniendo presente que un bloque de giro hace girar el robot sobre el sitio.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una persona llig la seqüència i l’altra ressegueix la ruta. Marqueu les caselles per on passarà MatataBot i comproveu que la línia no travessa la casella ocupada per l’objecte. Escriviu una predicció observable: «el robot passarà per aquestes caselles i no tocarà el planter».
+Una persona lee la secuencia y la otra sigue la ruta. Marcad las casillas por donde pasará MatataBot y comprobad que la línea no atraviesa la casilla ocupada por el objeto. Escribid una predicción observable: «el robot pasará por estas casillas y no tocará el plantel».
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu la seqüència des del mateix inici. Observeu si el robot passa pels punts previstos i manté separació del marcador. Si el toca o se n’ix de la ruta, registreu la primera diferència entre mapa i moviment real, canvieu una sola ordre i repetiu la prova amb la mateixa disposició.
+Ejecutad la secuencia desde el mismo inicio. Observad si el robot pasa por los puntos previstos y mantiene separación del marcador. Si lo toca o se sale de la ruta, registrad la primera diferencia entre mapa y movimiento real, cambiad una sola orden y repetid la prueba con la misma disposición.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa anotat, programa d’una ronda i registre del resultat. **Pregunta:** com sabem que el robot ha passat al voltant de l’objecte i no simplement per davant?
+**Evidencia:** mapa anotado, programa de una ronda y registro del resultado. **Pregunta:** ¿cómo sabemos que el robot ha pasado alrededor del objeto y no simplemente por delante?
 
-### Sessió 2 · Una ruta per al planter i la regadora (45 min)
+### Sesión 2 · Una ruta para el plantel y la regadera (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Afegiu una regadora de maqueta al mapa. Cada equip prediu com canviarà la ruta perquè passe al voltant dels dos objectes i arribe a la bandera en una sola seqüència. Determineu quina casella serà el punt de gir més exigent.
+Añadid una regadera de maqueta al mapa. Cada equipo predice cómo cambiará la ruta para que pase alrededor de los dos objetos y llegue a la bandera en una sola secuencia. Determinad qué casilla será el punto de giro más exigente.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Torneu a planificar la ruta amb una fitxa de paper, en aquest ordre: iniciar, passar al voltant del planter, allunyar-se’n, passar al voltant de la regadora i acabar a la bandera. Escriviu tota la seqüència abans d’executar-la; no dividiu el repte en dos programes independents.
+Volved a planificar la ruta con una ficha de papel, en este orden: iniciar, pasar alrededor del plantel, alejarse, pasar alrededor de la regadera y acabar en la bandera. Escribid toda la secuencia antes de ejecutarla; no dividáis el reto en dos programas independientes.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una altra parella verifica al mapa que hi ha un tram lliure al voltant de cada objecte i que la ruta arriba a la bandera. Registreu les caselles de pas i feu que qui ha programat explique quina instrucció inicia cada desviació al voltant dels marcadors.
+Otra pareja verifica en el mapa que hay un tramo libre alrededor de cada objeto y que la ruta llega a la bandera. Registrad las casillas de paso y haced que quien ha programado explique qué instrucción inicia cada desvío alrededor de los marcadores.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu el programa complet. Si MatataBot toca un objecte, no el retireu per fer passar el robot: atureu-lo, anoteu el contacte i reviseu la ruta. Podeu moure un marcador i repetir, però tracteu-ho com una prova nova i actualitzeu el mapa abans de canviar el codi.
+Ejecutad el programa completo. Si MatataBot toca un objeto, no lo retiréis para hacer pasar el robot: detenedlo, anotad el contacto y revisad la ruta. Podéis mover un marcador y repetir, pero tratadlo como una prueba nueva y actualizad el mapa antes de cambiar el código.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** ruta única amb dos objectes, caselles previstes i observades, i registre de cada contacte. **Pregunta:** quina instrucció ha permés envoltar cada objecte en un mateix programa?
+**Evidencia:** ruta única con dos objetos, casillas previstas y observadas, y registro de cada contacto. **Pregunta:** ¿qué instrucción ha permitido rodear cada objeto en un mismo programa?
 
-### Sessió 3 · Revisem la ronda d’un altre equip (45 min)
+### Sesión 3 · Revisamos la ronda de otro equipo (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Els equips intercanvien els mapes sense mostrar els programes. La parella visitant prediu una ruta possible i assenyala un lloc on un gir imprecís podria acostar el robot massa al planter o a la regadora.
+Los equipos intercambian los mapas sin mostrar los programas. La pareja visitante predice una ruta posible y señala un lugar donde un giro impreciso podría acercar el robot demasiado al plantel o a la regadera.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-La parella autora entrega la seqüència i la visitant la reconstrueix amb blocs o fletxes. Si les caselles del mapa no permeten una interpretació clara, afegiu orientació inicial, llegenda o coordenada; no interpreteu el moviment del robot com a una decisió autònoma.
+La pareja autora entrega la secuencia y la visitante la reconstruye con bloques o flechas. Si las casillas del mapa no permiten una interpretación clara, añadid orientación inicial, leyenda o coordenada; no interpretéis el movimiento del robot como una decisión autónoma.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Executeu la seqüència amb els dos objectes en les posicions indicades. La parella visitant marca cada pas observat i confirma per separat **ha passat pels dos costats de cada marcador**, **no hi ha hagut contacte** i **ha arribat a la bandera**.
+Ejecutad la secuencia con los dos objetos en las posiciones indicadas. La pareja visitante marca cada paso observado y confirma por separado **ha pasado por los dos lados de cada marcador**, **no ha habido contacto** y **ha llegado a la bandera**.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Retorneu una observació concreta a l’equip autor: una instrucció clara i un punt que convé revisar. L’equip aplica un canvi i torna a provar el programa complet. Si les dades mostren que el robot es desplaça lleugerament, ajusteu el marge de la ruta al mapa i documenteu el canvi.
+Devolved una observación concreta al equipo autor: una instrucción clara y un punto que conviene revisar. El equipo aplica un cambio y vuelve a probar el programa completo. Si los datos muestran que el robot se desplaza ligeramente, ajustad el margen de la ruta en el mapa y documentad el cambio.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència final:** mapa i programa revisats, comprovació per una altra parella i explicació del límit del kit. Tanqueu amb: «La ruta estava planificada perquè…» i «MatataBot no ha detectat els objectes; l’equip…».
+**Evidencia final:** mapa y programa revisados, comprobación por otra pareja y explicación del límite del kit. Cerrad con: «La ruta estaba planificada para que…» y «MatataBot no ha detectado los objetos; el equipo…».
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu els mapes de les dues rondes, les seqüències, la comparació entre predicció i resultat, i la revisió feta després de la prova externa. Observeu si l’alumnat:
+Recoged los mapas de las dos rondas, las secuencias, la comparación entre predicción y resultado, y la revisión hecha después de la prueba externa. Observad si el alumnado:
 
-- representa posició i orientació inicials;
-- traça una ruta que passa al voltant de l’objecte sense travessar-ne la casella;
-- incorpora dos marcadors a un únic programa;
-- localitza i corregeix una divergència a partir d’una observació concreta;
-- explica que els objectes no són detectats automàticament pel robot.
+- representa posición y orientación iniciales;
+- traza una ruta que pasa alrededor del objeto sin atravesar su casilla;
+- incorpora dos marcadores a un único programa;
+- localiza y corrige una divergencia a partir de una observación concreta;
+- explica que los objetos no son detectados automáticamente por el robot.
 
-No avalueu la rapidesa, l’absència d’errors al primer intent ni l’habilitat motriu per a manipular els objectes.
+No evaluéis la rapidez, la ausencia de errores en el primer intento ni la habilidad motriz para manipular los objetos.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Proporcioneu mapes grans, fletxes tàctils, codis de forma a més del color i seqüències impreses. Es pot participar dibuixant la ruta, llegint blocs, observant el moviment o registrant dades. Useu només objectes lleugers i estables; deixeu les mans fora del recorregut mentre MatataBot està actiu i pareu-lo abans de canviar un marcador. No plantegeu el robot com un sistema de vigilància o seguretat del viver: és una seqüència programada dins d’una maqueta escolar.
+Proporcionad mapas grandes, flechas táctiles, códigos de forma además del color y secuencias impresas. Se puede participar dibujando la ruta, leyendo bloques, observando el movimiento o registrando datos. Usad solo objetos ligeros y estables; dejad las manos fuera del recorrido mientras MatataBot está activo y detenedlo antes de cambiar un marcador. No planteéis el robot como un sistema de vigilancia o seguridad del vivero: es una secuencia programada dentro de una maqueta escolar.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [*Coding Activity Cards*, targeta A-4 · *MatataBot Guard* (PDF oficial)](https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf): demana situar MatataBot i una joguina sobre una superfície plana, programar el robot perquè es moga al voltant de l’objecte i proposa com a extensió incloure més d’una joguina en un programa. La mostra és parcial; la proposta local concreta aquesta mecànica amb dos marcadors estàtics i una meta.
-- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): referència per verificar blocs direccionals, girs i orientació en la programació tangible del Coding Set.
+- Matatalab, [*Coding Activity Cards*, tarjeta A-4 · *MatataBot Guard* (PDF oficial)](https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf): pide situar MatataBot y un juguete sobre una superficie plana, programar el robot para que se mueva alrededor del objeto y propone como extensión incluir más de un juguete en un programa. La muestra es parcial; la propuesta local concreta esta mecánica con dos marcadores estáticos y una meta.
+- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): referencia para verificar bloques direccionales, giros y orientación en la programación tangible del Coding Set.
 
-L’adaptació conserva la seqüència oficial d’una joguina i l’ampliació a més d’un objecte en un programa. El viver i els seus elements són una maqueta de l’entorn local; cap objecte és detectat ni esquivat automàticament, i la ruta s’ha de planificar abans d’iniciar el robot.
+La adaptación conserva la secuencia oficial de un juguete y la ampliación a más de un objeto en un programa. El vivero y sus elementos son una maqueta del entorno local; ningún objeto es detectado ni esquivado automáticamente, y la ruta se debe planificar antes de iniciar el robot.

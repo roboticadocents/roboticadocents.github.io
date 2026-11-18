@@ -9,150 +9,150 @@ cycle_label: "Primer ciclo"
 subject: "matematiques"
 subject_label: "Matemáticas y tecnología"
 theme: "horta-valenciana"
-theme_label: "Fira y mercado de l'huerta"
+theme_label: "Feria y mercado de la huerta"
 duration: "4 sesiones de 50 minutos"
 challenge: "¿Cómo podemos programar MatataBot hasta dos cantidades diferentes y justificar cuál es mayor, menor o igual?"
 official_source: "https://matatalab.com/en/node/92"
 ---
 
-![MatataBot i la torre reals del Coding Set al costat d'una graella de mercat amb dues zones de targetes de nombre encara per completar.](../../_assets/situacions/cs-compara-nombres-mercat.webp)
+![MatataBot y la torre reales del Coding Set junto a una cuadrícula de mercado con dos zonas de tarjetas de número todavía por completar.](../../_assets/situacions/cs-compara-nombres-mercat.webp)
 
-_Les targetes de la imatge són espais en blanc: el professorat hi col·loca els nombres exactes. MatataBot no llig ni tria les targetes._
+_Las tarjetas de la imagen son espacios en blanco: el profesorado coloca en ellas los números exactos. MatataBot no lee ni elige las tarjetas._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-La classe organitza una fira de mercat amb dues parades. Cada parada té targetes amb nombres de l'1 al 10, i cada equip tria una quantitat per ronda. Amb un únic MatataBot compartit, els grups programen per torns el trajecte fins a les targetes que han triat. Quan el robot arriba, una persona registra el nombre i retira manualment la targeta; al final de cada ronda, les dues quantitats es comparen i l'equip amb el valor major obté un punt.
+La clase organiza una feria de mercado con dos paradas. Cada parada tiene tarjetas con números del 1 al 10, y cada equipo elige una cantidad por ronda. Con un único MatataBot compartido, los grupos programan por turnos el trayecto hasta las tarjetas que han elegido. Cuando el robot llega, una persona registra el número y retira manualmente la tarjeta; al final de cada ronda, las dos cantidades se comparan y el equipo con el valor mayor obtiene un punto.
 
-La proposta trasllada a la dotació Coding Set l'activitat pública *Compare Numbers*, que està dissenyada per a Matatalab Lite i preveu dos robots, dues graelles de 6 × 6 i moviments simultanis. Ací s'utilitza una sola graella de 6 × 6 dividida en dues zones contigües i un robot que continua des de l'última posició, com indica la font. Els moviments són seqüencials; la parella d'equips tria els nombres abans de començar la ronda i s'alterna quin equip programa primer. La puntuació, els torns seqüencials i les targetes són una adaptació local, no una funció del robot.
+La propuesta traslada a la dotación Coding Set la actividad pública *Compare Numbers*, que está diseñada para Matatalab Lite y prevé dos robots, dos cuadrículas de 6 × 6 y movimientos simultáneos. Aquí se utiliza una sola cuadrícula de 6 × 6 dividida en dos zonas contiguas y un robot que continúa desde la última posición, como indica la fuente. Los movimientos son secuenciales; la pareja de equipos elige los números antes de empezar la ronda y se alterna qué equipo programa primero. La puntuación, los turnos secuenciales y las tarjetas son una adaptación local, no una función del robot.
 
-**Pregunta guia:** com podem decidir quin nombre és major si, a més de comparar les quantitats, hem de planificar i comprovar el recorregut?
+**Pregunta guía:** ¿cómo podemos decidir qué número es mayor si, además de comparar las cantidades, tenemos que planificar y comprobar el recorrido?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Relacionar una quantitat d'objectes amb el seu numeral de l'1 al 10.
-- Comparar dos nombres amb els signes o les expressions **major que**, **menor que** i **igual a**.
-- Llegir una graella, identificar la posició actual del robot, l'orientació i la targeta de destí.
-- Descompondre un trajecte en avanços i girs tangibles i executar-lo amb el Coding Set.
-- Registrar els nombres utilitzats, predir la ruta i revisar una instrucció a partir del resultat observat.
+- Relacionar una cantidad de objetos con su numeral del 1 al 10.
+- Comparar dos números con los signos o las expresiones **mayor que**, **menor que** e **igual a**.
+- Leer una cuadrícula, identificar la posición actual del robot, la orientación y la tarjeta de destino.
+- Descomponer un trayecto en avances y giros tangibles y ejecutarlo con el Coding Set.
+- Registrar los números utilizados, predecir la ruta y revisar una instrucción a partir del resultado observado.
 
-**Vocabulari clau:** quantitat, numeral, major, menor, igual, fila, columna, casella, punt de partida, destí, ruta, orientació, avanç, gir, seqüència i depuració.
+**Vocabulario clave:** cantidad, numeral, mayor, menor, igual, fila, columna, casilla, punto de partida, destino, ruta, orientación, avance, giro, secuencia y depuración.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Coding Set: MatataBot, torre de control, tauler i blocs de moviment reals disponibles al centre.
-- Graella de **6 × 6** caselles de 10 × 10 cm. Dividiu-la en dues zones contigües de 3 × 6 i reserveu una casella compartida d'inici a la vora central.
-- Vint targetes planes: dos jocs dels numerals 1–10, una còpia per parada. Cada valor s'escriu una sola vegada en cada zona; deixeu les altres caselles lliures.
-- Fitxes de quantitat amb objectes dibuixats o punts per a representar el numeral; les quantitats les comprova l'alumnat, no el robot.
-- Full de registre amb **ronda**, **equip que comença**, **nombre triat**, **posició i orientació**, **seqüència prevista**, **resultat**, **comparació** i **punt**.
-- [Activitat oficial *Compare Numbers*](https://matatalab.com/en/node/92), el [PDF oficial de targetes numèriques](https://fast.matatalab.com/cdn/ff/8lLszxkXCVu7f45VhjRXlhDQT9c_-vL28HkD7_JeU78/1595380448/public/2020-07/Number%20Cards.pdf) i [suport de Matatalab](https://matatalab.com/en/product-support) per a comprovar les caselles físiques.
+- Coding Set: MatataBot, torre de control, tablero y bloques de movimiento reales disponibles en el centro.
+- Cuadrícula de **6 × 6** casillas de 10 × 10 cm. Divididla en dos zonas contiguas de 3 × 6 y reservad una casilla compartida de inicio en el borde central.
+- Veinte tarjetas planas: dos juegos de los numerales 1–10, una copia por parada. Cada valor se escribe una sola vez en cada zona; dejad las demás casillas libres.
+- Fichas de cantidad con objetos dibujados o puntos para representar el numeral; las cantidades las comprueba el alumnado, no el robot.
+- Hoja de registro con **ronda**, **equipo que empieza**, **número elegido**, **posición y orientación**, **secuencia prevista**, **resultado**, **comparación** y **punto**.
+- [Actividad oficial *Compare Numbers*](https://matatalab.com/en/node/92), el [PDF oficial de tarjetas numéricas](https://fast.matatalab.com/cdn/ff/8lLszxkXCVu7f45VhjRXlhDQT9c_-vL28HkD7_JeU78/1595380448/public/2020-07/Number%20Cards.pdf) y [soporte de Matatalab](https://matatalab.com/en/product-support) para comprobar las casillas físicas.
 
-Abans de la primera prova, comproveu que cada zona conté els numerals 1–10 una sola vegada i que les fitxes de punts corresponen a cada numeral. Situeu el robot a la casella compartida i marqueu l'orientació. Feu una prova curta per assegurar que cada casella de la graella correspon a un avanç del MatataBot; registreu desviacions en lloc de redimensionar el mapa.
+Antes de la primera prueba, comprobad que cada zona contiene los numerales 1–10 una sola vez y que las fichas de puntos corresponden a cada numeral. Situad el robot en la casilla compartida y marcad la orientación. Haced una prueba corta para asegurar que cada casilla de la cuadrícula corresponde a un avance del MatataBot; registrad desviaciones en lugar de redimensionar el mapa.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### 1. De la quantitat al numeral (50 min)
+### 1. De la cantidad al numeral (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu cinc peces de joc i la targeta amb el numeral 5, com fa la demostració oficial. Pregunteu quina correspondència hi ha entre les peces i el nombre escrit. Després presenteu dos grups d'objectes amb quantitats diferents i demaneu prediccions: quin grup en té més?, quin en té menys?, i què caldria comprovar si semblen iguals?
+Mostrad cinco piezas de juego y la tarjeta con el numeral 5, como hace la demostración oficial. Preguntad qué correspondencia hay entre las piezas y el número escrito. Después presentad dos grupos de objetos con cantidades diferentes y pedid predicciones: ¿qué grupo tiene más?, ¿qué grupo tiene menos?, y ¿qué habría que comprobar si parecen iguales?
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En parelles, repartiu targetes de l'1 al 10 i una col·lecció de fitxes. Construïu les quantitats corresponents i col·loqueu cada numeral al costat del seu conjunt. A continuació, compareu dos valors: primer aparellant objectes un a un i després observant quin conjunt en deixa més sense parella.
+En parejas, repartid tarjetas del 1 al 10 y una colección de fichas. Construid las cantidades correspondientes y colocad cada numeral junto a su conjunto. A continuación, comparad dos valores: primero emparejando objetos uno a uno y después observando qué conjunto deja más sin pareja.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Completeu una línia de registre amb numeral, quantitat i comparació. Introduïu oralment els tres casos: **major que**, **menor que** i **igual a**; associeu-los als signes `>`, `<` i `=` només després d'haver explicat el seu sentit. Una persona diu la comparació amb paraules i una altra comprova els objectes.
+Completad una línea de registro con numeral, cantidad y comparación. Introducid oralmente los tres casos: **mayor que**, **menor que** e **igual a**; asociadlos a los signos `>`, `<` y `=` solo después de haber explicado su sentido. Una persona dice la comparación con palabras y otra comprueba los objetos.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu dues targetes entre parelles i repetiu la comparació sense mirar el registre de l'altre equip. Si hi ha desacord, compteu de nou o aparelleu les peces una a una; no decidiu pel color, la mida de la il·lustració o la posició de les targetes.
+Intercambiad dos tarjetas entre parejas y repetid la comparación sin mirar el registro del otro equipo. Si hay desacuerdo, contad de nuevo o emparejad las piezas una a una; no decidáis por el color, el tamaño de la ilustración o la posición de las tarjetas.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** tres exemples de correspondència numeral-quantitat i una comparació raonada. **Pregunta de tancament:** quina prova t'ha ajudat més a saber que un nombre era major?
+**Evidencia:** tres ejemplos de correspondencia numeral-cantidad y una comparación razonada. **Pregunta de cierre:** ¿qué prueba te ha ayudado más a saber que un número era mayor?
 
-### 2. Llegim el mapa i preparem el trajecte (50 min)
+### 2. Leemos el mapa y preparamos el trayecto (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu la graella de 6 × 6 amb dues parades de mercat, una blava i una taronja. Identifiqueu les files, les columnes, la casella comuna d'inici i l'orientació del MatataBot. Trieu un numeral de cada parada i predigueu quantes caselles i girs caldran per arribar-hi.
+Mostrad la cuadrícula de 6 × 6 con dos paradas de mercado, una azul y una naranja. Identificad las filas, las columnas, la casilla común de inicio y la orientación del MatataBot. Elegid un numeral de cada parada y predecid cuántas casillas y giros harán falta para llegar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Situeu dos jocs dels numerals 1–10, un per zona, i manteniu les altres caselles lliures. El robot comença a la vora entre les parades. Cada equip assenyala la seua targeta triada i planifica el trajecte des de la posició real actual. Traduïu els avanços i girs als blocs físics; els nombres són destinacions triades per l'alumnat, no codis que la torre o el robot lligen.
+Situad dos juegos de los numerales 1–10, uno por zona, y mantened las demás casillas libres. El robot empieza en el borde entre las paradas. Cada equipo señala su tarjeta elegida y planifica el trayecto desde la posición real actual. Traducid los avances y giros a los bloques físicos; los números son destinos elegidos por el alumnado, no códigos que la torre o el robot lean.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Abans d'executar, la persona programadora llig la seqüència i l'observadora recorre-la amb el dit. Anoteu la posició i orientació inicials, el nombre de caselles i cada gir. Comproveu també si el programa continua des de l'última destinació o si algú ha tornat el robot a l'inici per error.
+Antes de ejecutar, la persona programadora lee la secuencia y la observadora la recorre con el dedo. Anotad la posición y la orientación iniciales, el número de casillas y cada giro. Comprobad también si el programa continúa desde el último destino o si alguien ha devuelto el robot al inicio por error.
 
-![El MatataBot i la torre del Coding Set al costat d'una ruta ortogonal entre la casella actual i una targeta de destí en la graella compartida.](../../_assets/situacions/sa-cs-compara-nombres-ruta-v1.webp)
+![El MatataBot y la torre del Coding Set junto a una ruta ortogonal entre la casilla actual y una tarjeta de destino en la cuadrícula compartida.](../../_assets/situacions/sa-cs-compara-nombres-ruta-v1.webp)
 
-_La ruta de caselles és una representació per a planificar les ordres; una persona selecciona el destí i comprova quan s'hi arriba._
+_La ruta de casillas es una representación para planificar las órdenes; una persona selecciona el destino y comprueba cuándo se llega._
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu una prova breu entre dues caselles abans d'iniciar la partida. Si el moviment real no coincideix amb la casella prevista, comproveu alineació, punt de partida i gir, i canvieu una sola variable. No inicieu la ronda fins que l'equip puga explicar la seqüència amb el mapa.
+Haced una prueba breve entre dos casillas antes de iniciar la partida. Si el movimiento real no coincide con la casilla prevista, comprobad alineación, punto de partida y giro, y cambiad una sola variable. No iniciéis la ronda hasta que el equipo pueda explicar la secuencia con el mapa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa amb les dues zones, inici/orientació i una seqüència prevista anotada. **Pregunta de tancament:** per què és important planificar des d'on s'ha quedat el robot?
+**Evidencia:** mapa con las dos zonas, inicio/orientación y una secuencia prevista anotada. **Pregunta de cierre:** ¿por qué es importante planificar desde donde se ha quedado el robot?
 
-### 3. Juguem cinc rondes amb un robot compartit (50 min)
+### 3. Jugamos cinco rondas con un robot compartido (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Organitzeu dos equips cooperatius i trieu qui comença primer en la ronda 1. Cada equip selecciona en secret un numeral encara disponible de la seua zona. Abans de moure el robot, les dues persones registradores anoten la predicció de major, menor o igual; així la ruta no revela la resposta abans de comparar-la.
+Organizad dos equipos cooperativos y elegid quién empieza primero en la ronda 1. Cada equipo selecciona en secreto un numeral todavía disponible de su zona. Antes de mover el robot, las dos personas registradoras anotan la predicción de mayor, menor o igual; así la ruta no revela la respuesta antes de compararla.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-L'equip que comença programa MatataBot des de la posició actual fins a la targeta triada. En arribar-hi, una persona comprova el numeral i retira la targeta manualment. El robot es queda a la casella de destí. A continuació, l'altre equip programa des d'aquesta nova posició fins al seu propi numeral; també es queda allí i retira la targeta només després de verificar l'arribada. En la ronda següent, comença l'altre equip.
+El equipo que empieza programa MatataBot desde la posición actual hasta la tarjeta elegida. Al llegar, una persona comprueba el numeral y retira la tarjeta manualmente. El robot se queda en la casilla de destino. A continuación, el otro equipo programa desde esta nueva posición hasta su propio numeral; también se queda allí y retira la tarjeta solo después de verificar la llegada. En la ronda siguiente, empieza el otro equipo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu els dos numerals amb les targetes de quantitat i escriviu `>`, `<` o `=` amb la lectura verbal corresponent. L'equip amb el valor major obté un punt; si els valors són iguals, marqueu l'empat i cap equip suma. Aquesta regla d'empat és pròpia de la versió local. Anoteu també si les dues rutes han arribat al destí previst.
+Comparad los dos numerales con las tarjetas de cantidad y escribid `>`, `<` o `=` con la lectura verbal correspondiente. El equipo con el valor mayor obtiene un punto; si los valores son iguales, marcad el empate y ningún equipo suma. Esta regla de empate es propia de la versión local. Anotad también si las dos rutas han llegado al destino previsto.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Completeu fins a cinc rondes o fins que s'acabe el temps. Si el robot no arriba a una destinació, conserveu la targeta, registreu la primera diferència i feu una única correcció guiada abans de tancar el torn; el nombre no es compara fins que la posició quede verificada. Si es corregeix el programa, manteniu tant la primera predicció com la versió revisada.
+Completad hasta cinco rondas o hasta que se acabe el tiempo. Si el robot no llega a un destino, conservad la tarjeta, registrad la primera diferencia y haced una única corrección guiada antes de cerrar el turno; el número no se compara hasta que la posición quede verificada. Si se corrige el programa, mantened tanto la primera predicción como la versión revisada.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** cinc comparacions possibles amb les targetes triades, punts, empats i posicions verificades. **Pregunta de tancament:** heu canviat alguna predicció matemàtica després de comprovar la quantitat, o l'error era només en la ruta?
+**Evidencia:** cinco comparaciones posibles con las tarjetas elegidas, puntos, empates y posiciones verificadas. **Pregunta de cierre:** ¿habéis cambiado alguna predicción matemática después de comprobar la cantidad, o el error estaba solo en la ruta?
 
-### 4. Revisem estratègies i ampliem el repte (50 min)
+### 4. Revisamos estrategias y ampliamos el reto (50 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Reviseu els fulls de les rondes i identifiqueu en quines el canvi de posició del robot ha fet més llarga la ruta següent. Predigueu si limitar el nombre de peces de moviment podria ajudar a planificar millor, tal com suggereix l'extensió oficial.
+Revisad las hojas de las rondas e identificad en cuáles el cambio de posición del robot ha hecho más larga la ruta siguiente. Predecid si limitar el número de piezas de movimiento podría ayudar a planificar mejor, tal como sugiere la extensión oficial.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Trieu una ruta nova amb un límit acordat de peces, per exemple sis blocs de moviment més els girs disponibles. L'equip pot canviar el numeral triat abans de codificar, però no moure la targeta després de començar. Si no existeix una ruta dins del límit, augmenteu-lo i registreu quina restricció impedia arribar-hi.
+Elegid una ruta nueva con un límite acordado de piezas, por ejemplo seis bloques de movimiento más los giros disponibles. El equipo puede cambiar el numeral elegido antes de codificar, pero no mover la tarjeta después de empezar. Si no existe una ruta dentro del límite, aumentadlo y registrad qué restricción impedía llegar.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu una seqüència inicial i una altra amb límit de peces: nombre d'avanços, girs i blocs totals. Distancieu la decisió matemàtica de la de programació: el nombre major no depén de quants moviments calen per arribar a ell.
+Comparad una secuencia inicial y otra con límite de piezas: número de avances, giros y bloques totales. Distanciad la decisión matemática de la de programación: el número mayor no depende de cuántos movimientos hacen falta para llegar a él.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Cada equip proposa un canvi en la disposició de targetes que mantinga els dos conjunts d'1 a 10, però oferisca una ruta diferent des de l'última posició. L'altre equip comprova que tots els nombres continuen apareixent una vegada per zona i resol una ronda de prova; corregiu llegenda o caselles si el mapa no permet interpretar el repte.
+Cada equipo propone un cambio en la disposición de tarjetas que mantenga los dos conjuntos del 1 al 10, pero ofrezca una ruta diferente desde la última posición. El otro equipo comprueba que todos los números continúan apareciendo una vez por zona y resuelve una ronda de prueba; corregid la leyenda o las casillas si el mapa no permite interpretar el reto.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència final:** mapa revisat, seqüència sotmesa a una restricció, comparació numèrica i registre de depuració. **Pregunta de tancament:** quina part de la ronda depén de les matemàtiques i quina de la programació?
+**Evidencia final:** mapa revisado, secuencia sometida a una restricción, comparación numérica y registro de depuración. **Pregunta de cierre:** ¿qué parte de la ronda depende de las matemáticas y qué parte de la programación?
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu la correspondència de quantitats i numerals, els mapes, els programes, el registre de cinc rondes i la revisió de la ruta limitada. Observeu si l'alumnat: identifica nombres de l'1 al 10; usa major/menor/igual amb justificació; marca la posició inicial i orientació actuals; executa moviments i girs disponibles; verifica manualment l'arribada abans de comparar; i separa un error de ruta d'un error de comparació. El marcador només estructura el joc; la rapidesa no és un criteri d'avaluació.
+Recoged la correspondencia de cantidades y numerales, los mapas, los programas, el registro de cinco rondas y la revisión de la ruta limitada. Observad si el alumnado: identifica números del 1 al 10; usa mayor/menor/igual con justificación; marca la posición inicial y la orientación actuales; ejecuta movimientos y giros disponibles; verifica manualmente la llegada antes de comparar; y separa un error de ruta de un error de comparación. El marcador solo estructura el juego; la rapidez no es un criterio de evaluación.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Oferiu targetes amb numerals grans, contrast i quantitats dibuixades, a més d'una graella tàctil o de paper per a la simulació. Prepareu una ruta més curta o un mapa sense girs addicionals, sense canviar la pregunta matemàtica. L'alumnat pot triar rols de programador/a, verificador/a de targetes, predictor/a, lector/a de quantitats o registrador/a. Permeteu resposta oral, assenyalada o escrita. No calen aliments reals: les targetes són fictícies i no impliquen consum; manteniu mans i fitxes fora del recorregut del robot.
+Ofreced tarjetas con numerales grandes, contraste y cantidades dibujadas, además de una cuadrícula táctil o de papel para la simulación. Preparad una ruta más corta o un mapa sin giros adicionales, sin cambiar la pregunta matemática. El alumnado puede elegir roles de programador/a, verificador/a de tarjetas, predictor/a, lector/a de cantidades o registrador/a. Permitid respuesta oral, señalada o escrita. No hacen falta alimentos reales: las tarjetas son ficticias y no implican consumo; mantened las manos y las fichas fuera del recorrido del robot.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [Compare Numbers](https://matatalab.com/en/node/92): activitat oficial per a Matatalab Lite amb dos mapes de 6 × 6, dos robots en mode de codificació, nombres de l'1 al 10, selecció d'un valor per grup, una puntuació per al nombre major, retirada de targetes utilitzades i robots que romanen a la destinació entre torns. La font descriu 10 minuts d'introducció, 25 de joc i 10 de retorn/extensió, i suggereix limitar les peces de moviment.
-- Matatalab, [Number Cards](https://fast.matatalab.com/cdn/ff/8lLszxkXCVu7f45VhjRXlhDQT9c_-vL28HkD7_JeU78/1595380448/public/2020-07/Number%20Cards.pdf) i [suport oficial](https://matatalab.com/en/product-support): recursos per a les targetes i dimensions del mapa.
+- Matatalab, [Compare Numbers](https://matatalab.com/en/node/92): actividad oficial para Matatalab Lite con dos mapas de 6 × 6, dos robots en modo de codificación, números del 1 al 10, selección de un valor por grupo, una puntuación para el número mayor, retirada de tarjetas utilizadas y robots que permanecen en el destino entre turnos. La fuente describe 10 minutos de introducción, 25 de juego y 10 de retorno/extensión, y sugiere limitar las piezas de movimiento.
+- Matatalab, [Number Cards](https://fast.matatalab.com/cdn/ff/8lLszxkXCVu7f45VhjRXlhDQT9c_-vL28HkD7_JeU78/1595380448/public/2020-07/Number%20Cards.pdf) y [soporte oficial](https://matatalab.com/en/product-support): recursos para las tarjetas y dimensiones del mapa.
 
-La proposta converteix els dos mapes en una graella compartida amb dues zones, alterna quin equip programa primer, usa un sol robot i fa els moviments seqüencials. Manté la selecció única per zona, la comparació de nombres, la retirada manual després de verificar l'arribada i el fet de continuar des de l'última posició; les regles d'empat, registre i correcció són pròpies. Les targetes de nombre, el mapa de mercat, les preguntes i les imatges IA són originals.
+La propuesta convierte los dos mapas en una cuadrícula compartida con dos zonas, alterna qué equipo programa primero, usa un solo robot y hace los movimientos secuenciales. Mantiene la selección única por zona, la comparación de números, la retirada manual después de verificar la llegada y el hecho de continuar desde la última posición; las reglas de empate, registro y corrección son propias. Las tarjetas de número, el mapa de mercado, las preguntas y las imágenes IA son originales.

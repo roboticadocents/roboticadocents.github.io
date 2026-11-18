@@ -14,112 +14,112 @@ duration: "3 sesiones"
 challenge: "¿Qué situaciones pueden interrumpir un trayecto y cómo podemos representar decisiones prudentes en una maqueta sin confundirla con una señalización real?"
 ---
 
-![El tren LEGO Education Coding Express de la dotació s’acosta a una barrera i un pas de vianants de maqueta, sobre una taula d’aula.](../../_assets/situacions/ce-cami-segur.webp)
+![El tren LEGO Education Coding Express de la dotación se acerca a una barrera y un paso de peatones de maqueta, sobre una mesa de aula.](../../_assets/situacions/ce-cami-segur.webp)
 
-_La maqueta serveix per conversar sobre una ruta segura; el tren no detecta vianants ni controla la barrera._
+_La maqueta sirve para conversar sobre una ruta segura; el tren no detecta peatones ni controla la barrera._
 
-## ❓ Repte i intenció
+## ❓ Reto e intención
 
-El grup investiga els quatre senyals de la dotació, construeix un recorregut en Y i resol incidències fictícies d’una ciutat de joguina. La maqueta permet parlar de com els senyals ens recorden acords i ajuden a descriure una ruta, però no representa un carrer complet ni ensenya totes les normes de circulació. Cada maó d’acció es prova amb l’app per distingir la seua resposta programada del significat que el grup imagina per al senyal.
+El grupo investiga las cuatro señales de la dotación, construye un recorrido en Y y resuelve incidencias ficticias de una ciudad de juguete. La maqueta permite hablar de cómo las señales nos recuerdan acuerdos y ayudan a describir una ruta, pero no representa una calle completa ni enseña todas las normas de circulación. Cada ladrillo de acción se prueba con la app para distinguir su respuesta programada del significado que el grupo imagina para la señal.
 
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Interpretar símbols i descriure trajectes, bifurcacions i possibles incidències en una maqueta.
-- Anticipar la resposta observada d’un maó d’acció i revisar la predicció amb una prova.
-- Construir una explicació de ruta amb ordres, pictogrames i llenguatge espacial.
-- Distingir una representació de joguina de les normes i senyals reals de circulació.
+- Interpretar símbolos y describir trayectos, bifurcaciones y posibles incidencias en una maqueta.
+- Anticipar la respuesta observada de un ladrillo de acción y revisar la predicción con una prueba.
+- Construir una explicación de ruta con órdenes, pictogramas y lenguaje espacial.
+- Distinguir una representación de juguete de las normas y señales reales de circulación.
 
-## Abans de començar
+## Antes de empezar
 
-La lliçó oficial està pensada per a fins a quatre participants i usa el set Coding Express amb l’app. Prepareu el tren, vies suficients per a una bifurcació en Y, els quatre senyals de trànsit de la caixa i altres maons d’acció, figures o models de barri, targetes de construcció si en disposeu, paper i retoladors. Comproveu abans de la classe la connexió amb l’app i les funcions disponibles en cada botó; la versió concreta pot canviar quines incidències es poden representar. Situeu la maqueta en una taula estable i manteniu cables i dispositius fora de la via.
+La lección oficial está pensada para hasta cuatro participantes y usa el set Coding Express con la app. Preparad el tren, vías suficientes para una bifurcación en Y, las cuatro señales de tráfico de la caja y otros ladrillos de acción, figuras o modelos de barrio, tarjetas de construcción si disponéis de ellas, papel y rotuladores. Comprobad antes de la clase la conexión con la app y las funciones disponibles en cada botón; la versión concreta puede cambiar qué incidencias se pueden representar. Situad la maqueta en una mesa estable y mantened cables y dispositivos fuera de la vía.
 
-Useu senyals reals només per mirar-los i identificar-los amb fonts educatives fiables. Les targetes inventades en aquesta activitat han de tindre una aparença diferenciada i dur l’etiqueta «senyal del nostre joc», per no confondre-les amb senyalització viària. No presenteu una interpretació infantil com a norma oficial. L’activitat es resol íntegrament dins de l’aula: no hi ha eixides al carrer, carreres, encreuaments simulats a escala humana ni situacions de perill.
+Usad señales reales solo para mirarlas e identificarlas con fuentes educativas fiables. Las tarjetas inventadas en esta actividad deben tener una apariencia diferenciada y llevar la etiqueta «señal de nuestro juego», para no confundirlas con señalización vial. No presentéis una interpretación infantil como norma oficial. La actividad se resuelve íntegramente dentro del aula: no hay salidas a la calle, carreras, cruces simulados a escala humana ni situaciones de peligro.
 
-**Vocabulari:** senyal, recordar, trajecte, bifurcació, parada, possible, evitar, predir i comprovar. Introduïu «bifurcació» amb dues vies visibles i deixeu que cada participant assenyale o descriga cap a on continua el tren.
+**Vocabulario:** señal, recordar, trayecto, bifurcación, parada, posible, evitar, predecir y comprobar. Introducid «bifurcación» con dos vías visibles y dejad que cada participante señale o describa hacia dónde continúa el tren.
 
-## 📅 Seqüència didàctica · tres sessions de 40 minuts
+## 📅 Secuencia didáctica · tres sesiones de 40 minutos
 
-### **Observem senyals i acordem el joc segur (40 min).**
+### **Observamos señales y acordamos el juego seguro (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Inicieu una conversa curta sobre els senyals que l’alumnat recorda haver vist des d’un vehicle o acompanyat per una persona adulta. No demaneu que descriguen com creuar un carrer; centreu-vos en la funció general de recordar o comunicar informació.
+Iniciad una conversación corta sobre las señales que el alumnado recuerda haber visto desde un vehículo o acompañado por una persona adulta. No pidáis que describan cómo cruzar una calle; centraos en la función general de recordar o comunicar información.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Mostreu els quatre senyals de la dotació Coding Express, un per un. Observeu-ne forma i color abans de proposar una interpretació. El docent contrasta les idees amb informació fiable i explica qualsevol diferència entre la peça de joguina i un senyal real.
+Mostrad las cuatro señales de la dotación Coding Express, una por una. Observad su forma y color antes de proponer una interpretación. El docente contrasta las ideas con información fiable y explica cualquier diferencia entre la pieza de juguete y una señal real.
 
-![Maqueta de ciutat amb el tren Coding Express, un pas de joguina, una barrera i fitxes de senyals inventades per a observar i predir.](../../_assets/situacions/sa-ce-cami-segur-senyals.webp)
+![Maqueta de ciudad con el tren Coding Express, un paso de juguete, una barrera y fichas de señales inventadas para observar y predecir.](../../_assets/situacions/sa-ce-cami-segur-senyals.webp)
 
-_Les fitxes de la imatge són pictogrames per al joc de maqueta; no substitueixen ni reprodueixen la senyalització viària oficial._
+_Las fichas de la imagen son pictogramas para el juego de maqueta; no sustituyen ni reproducen la señalización vial oficial._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu una targeta amb el senyal observat, la interpretació inicial i l’explicació contrastada o revisada. Marqueu quines parts són informació comprovada i quines són una regla inventada per al joc.
+Haced una tarjeta con la señal observada, la interpretación inicial y la explicación contrastada o revisada. Marcad qué partes son información comprobada y cuáles son una regla inventada para el juego.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu un joc tranquil de conducció dins d’una zona marcada de taula: les persones mouen una figura o el tren lentament i s’aturen davant d’algunes targetes. Una persona pot coordinar el trànsit amb senyals visuals de «continua», «redueix» o «atura’t», sempre com a regles inventades. Alterneu conducció i observació perquè totes les persones puguen veure què comunica cada targeta.
+Haced un juego tranquilo de conducción dentro de una zona marcada de la mesa: las personas mueven una figura o el tren lentamente y se detienen ante algunas tarjetas. Una persona puede coordinar el tráfico con señales visuales de «continúa», «reduce» o «detente», siempre como reglas inventadas. Alternad conducción y observación para que todas las personas puedan ver qué comunica cada tarjeta.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** targeta revisada i una explicació de què comunica el símbol. Pregunteu: «Què ens ajuda a recordar aquest símbol? Quina part és una norma contrastada i quina forma part del nostre joc?»
+**Evidencia:** tarjeta revisada y una explicación de qué comunica el símbolo. Preguntad: «¿Qué nos ayuda a recordar este símbolo? ¿Qué parte es una norma contrastada y qué forma parte de nuestro juego?»
 
-### **Construïm la bifurcació i investiguem els maons (40 min).**
+### **Construimos la bifurcación e investigamos los ladrillos (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans de muntar, cada equip descriu una ruta completa: origen, bifurcació, ramal triat i destinació. Recordeu que les vies i la bifurcació són elements de la maqueta, no una representació exacta d’una carretera.
+Antes de montar, cada equipo describe una ruta completa: origen, bifurcación, ramal elegido y destino. Recordad que las vías y la bifurcación son elementos de la maqueta, no una representación exacta de una carretera.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En grup menut, construïu una via en Y i col·loqueu dos o tres models de barri al costat de cada ramal: plaça, biblioteca o jardí, per exemple. Situeu alguns maons d’acció en llocs variats i registreu-ne la ubicació amb un dibuix senzill.
+En grupo pequeño, construid una vía en Y y colocad dos o tres modelos de barrio junto a cada ramal: plaza, biblioteca o jardín, por ejemplo. Situad algunos ladrillos de acción en lugares variados y registrad su ubicación con un dibujo sencillo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Exploreu els controls de l’app en torns, d’un botó cada vegada. En passar cada maó, observeu si el tren s’atura, canvia de comportament o no mostra cap canvi. Anoteu «predicció / observació / què pensem ara».
+Explorad los controles de la app por turnos, un botón cada vez. Al pasar cada ladrillo, observad si el tren se detiene, cambia de comportamiento o no muestra ningún cambio. Anotad «predicción / observación / qué pensamos ahora».
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si l’app mostra una incidència o el docent la proposa amb una targeta, descriviu-la sense dramatitzar-la: una destinació queda fora de servei en el joc, cal visitar una altra parada o el tren s’ha desviat. Cada grup tria una solució i la prova.
+Si la app muestra una incidencia o el docente la propone con una tarjeta, describidla sin dramatizarla: un destino queda fuera de servicio en el juego, hay que visitar otra parada o el tren se ha desviado. Cada grupo elige una solución y la prueba.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa de la Y amb destinacions, seqüència de ruta i registre d’una predicció contrastada amb l’app. Pregunteu: «Quin ramal heu triat i per què? Què ha fet realment el tren després del maó?»
+**Evidencia:** mapa de la Y con destinos, secuencia de ruta y registro de una predicción contrastada con la app. Preguntad: «¿Qué ramal habéis elegido y por qué? ¿Qué ha hecho realmente el tren después del ladrillo?»
 
-### **Dissenyem un senyal de joc i expliquem la ruta (40 min).**
+### **Diseñamos una señal de juego y explicamos la ruta (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Useu els quatre senyals de la dotació en més d’un punt del trajecte i prediu si la història continuarà sent comprensible per a un altre equip.
+Usad las cuatro señales de la dotación en más de un punto del trayecto y predecid si la historia seguirá siendo comprensible para otro equipo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Inventeu una targeta pròpia amb una forma i un pictograma fàcils de reconéixer. Escriviu-hi «senyal del nostre joc» i expliqueu què demana en aquesta maqueta. Col·loqueu-la al punt on penseu que serà útil.
+Inventad una tarjeta propia con una forma y un pictograma fáciles de reconocer. Escribid en ella «señal de nuestro juego» y explicad qué pide en esta maqueta. Colocadla en el punto donde penséis que será útil.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Executeu la ruta i demaneu a un altre equip que descriga què ha entés abans de sentir l’explicació dels autors. Registreu en una narració visual el trajecte: inici, bifurcació, incidència, decisió i destinació.
+Ejecutad la ruta y pedid a otro equipo que describa qué ha entendido antes de oír la explicación de los autores. Registrad en una narración visual el trayecto: inicio, bifurcación, incidencia, decisión y destino.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si el senyal no comunica la idea, canvieu un sol element —posició, contrast o símbol— i torneu a preguntar a un altre observador. Cada participant pot presentar el recorregut oralment, amb targetes o amb gestos.
+Si la señal no comunica la idea, cambiad un solo elemento —posición, contraste o símbolo— y volved a preguntar a otro observador. Cada participante puede presentar el recorrido oralmente, con tarjetas o con gestos.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** senyal de joc revisat, relat visual i justificació del lloc on s’ha col·locat. Pregunteu: «Què entén l’altre equip sense que li ho expliquem? Com hem comprovat que el senyal del joc no es confon amb un de real?» Recordeu que les peces i les regles creades valen per a la maqueta i no substitueixen l’acompanyament adult ni les normes reals de seguretat viària.
+**Evidencia:** señal de juego revisada, relato visual y justificación del lugar donde se ha colocado. Preguntad: «¿Qué entiende el otro equipo sin que se lo expliquemos? ¿Cómo hemos comprobado que la señal del juego no se confunde con una real?» Recordad que las piezas y las reglas creadas valen para la maqueta y no sustituyen el acompañamiento adulto ni las normas reales de seguridad vial.
 
-## 📋 Avaluació i evidències
+## 📋 Evaluación y evidencias
 
-Observeu el procés amb quatre indicadors: interpreta o formula una pregunta sobre un senyal; descriu una ruta amb origen, bifurcació i destinació; anticipa i comprova la funció d’un maó; i explica com el seu senyal inventat ajuda a entendre l’escena de joc. El quadern conserva la targeta inicial, el mapa de la Y, el registre predicció/observació i el senyal propi revisat.
+Observad el proceso con cuatro indicadores: interpreta o formula una pregunta sobre una señal; describe una ruta con origen, bifurcación y destino; anticipa y comprueba la función de un ladrillo; y explica cómo su señal inventada ayuda a entender la escena de juego. El cuaderno conserva la tarjeta inicial, el mapa de la Y, el registro predicción/observación y la señal propia revisada.
 
-Valoreu la qualitat de l’observació i la claredat de la representació, no la precisió de les primeres interpretacions ni la rapidesa en conduir. Si l’app no està disponible, representeu els efectes observats prèviament pel docent amb targetes i figuretes i manteniu el repte de descriure, predir i revisar.
+Valorad la calidad de la observación y la claridad de la representación, no la precisión de las primeras interpretaciones ni la rapidez al conducir. Si la app no está disponible, representad los efectos observados previamente por el docente con tarjetas y figuritas y mantened el reto de describir, predecir y revisar.
 
-## ♿ Més d’una manera de participar
+## ♿ Más de una manera de participar
 
-Feu tota la proposta amb maqueta, fotografies i pictogrames tàctils; no cal eixir al carrer. Useu instruccions anticipades, contrast alt i una sola bifurcació visible cada vegada. Eviteu efectes sonors inesperats i permeteu observar sense tocar el tren. Repartiu rols de constructor/a, lector/a de símbols, operador/a de l’app i relator/a, amb rotació opcional; qualsevol persona pot assenyalar, usar comunicació augmentativa o dictar a una companya. Deixeu espai entre participants i manteniu el tren a velocitat baixa.
+Haced toda la propuesta con maqueta, fotografías y pictogramas táctiles; no hace falta salir a la calle. Usad instrucciones anticipadas, contraste alto y una sola bifurcación visible cada vez. Evitad efectos sonoros inesperados y permitid observar sin tocar el tren. Repartid roles de constructor/a, lector/a de símbolos, operador/a de la app y relator/a, con rotación opcional; cualquier persona puede señalar, usar comunicación aumentativa o dictar a una compañera. Dejad espacio entre participantes y mantened el tren a velocidad baja.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta [Journey – Trouble on the Road](https://education.lego.com/en-us/lessons/preschool-coding-express/journey-troubles-on-the-road/): conversa sobre normes i quatre senyals del set, joc de conducció a zones marcades, construcció de la via en Y, exploració dels botons de l’app i els maons d’acció, resolució de problemes de trànsit i creació/col·locació de senyals o models propis. La situació del barri, les incidències, els mapes i les targetes són propis. La via només és una maqueta educativa; no ensenya normes completes ni substitueix formació viària.
+Adapta [Journey – Trouble on the Road](https://education.lego.com/en-us/lessons/preschool-coding-express/journey-troubles-on-the-road/): conversación sobre normas y cuatro señales del set, juego de conducción en zonas marcadas, construcción de la vía en Y, exploración de los botones de la app y los ladrillos de acción, resolución de problemas de tráfico y creación/colocación de señales o modelos propios. La situación del barrio, las incidencias, los mapas y las tarjetas son propios. La vía solo es una maqueta educativa; no enseña normas completas ni sustituye formación vial.

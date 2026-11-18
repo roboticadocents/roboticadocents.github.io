@@ -14,181 +14,181 @@ duration: "5 sesiones · 250 min"
 challenge: "¿Cómo podemos diseñar una herramienta que ayude a una persona con guantes a mover piezas o guiar un cable en una reparación simulada?"
 ---
 
-![El hub SPIKE Prime, un motor i bigues LEGO mouen una pinça davant d’una volandera lleugera sobre un tauler de maqueta EVA.](../../_assets/situacions/sp-eines-missio-eva.webp)
+![El hub SPIKE Prime, un motor y vigas LEGO mueven una pinza delante de una arandela ligera sobre un tablero de maqueta EVA.](../../_assets/situacions/sp-eines-missio-eva.webp)
 
-_La maqueta representa una reparació extravehicular; el prototip és SPIKE Prime i només actua sobre peces de prova lleugeres._
+_La maqueta representa una reparación extravehicular; el prototipo es SPIKE Prime y solo actúa sobre piezas de prueba ligeras._
 
-## 🌱 Situació i intenció
+## 🌱 Situación e intención
 
-Una missió educativa fictícia manté un satèl·lit que observa la costa valenciana i zones humides com l’Albufera. L’equip de disseny ha de preparar una eina de maqueta per moure una peça grossa entre perns o guiar un cable sense perdre’l de vista. El mapa del [Parc Natural de l’Albufera](https://parquesnaturales.gva.es/va/web/pn-l-albufera) aporta el context territorial; no afirmem que hi haja cap satèl·lit específic fent aquesta missió.
+Una misión educativa ficticia mantiene un satélite que observa la costa valenciana y zonas húmedas como la Albufera. El equipo de diseño debe preparar una herramienta de maqueta para mover una pieza grande entre pernos o guiar un cable sin perderlo de vista. El mapa del [Parque Natural de la Albufera](https://parquesnaturales.gva.es/va/web/pn-l-albufera) aporta el contexto territorial; no afirmamos que haya ningún satélite específico realizando esta misión.
 
-El repte adapta *Astronaut Tools*: comparar què demana una tasca extravehicular (EVA) respecte d’una eina terrestre i dissenyar pensant en el client, les seues mans amb guants i la visibilitat limitada. NASA descriu que les persones en caminada espacial s’estabilitzen amb passamans i que els objectes de treball s’ancoren perquè no s’allunyen; consulteu-ne la fitxa educativa de [què és una caminada espacial](https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-a-spacewalk-grades-5-8/). El nostre tauler no simula la microgravetat: és una maqueta fixa per investigar la forma, el control i la transmissió de força. Tampoc demanem a l’alumnat que es pose casc o que limite la vista; traduïm les restriccions en criteris de disseny i targetes de prova.
+El reto adapta *Astronaut Tools*: comparar qué exige una tarea extravehicular (EVA) frente a una herramienta terrestre y diseñar pensando en el cliente, sus manos con guantes y la visibilidad limitada. La NASA describe que las personas en caminata espacial se estabilizan con pasamanos y que los objetos de trabajo se anclan para que no se alejen; consultad su ficha educativa de [qué es una caminata espacial](https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-a-spacewalk-grades-5-8/). Nuestro tablero no simula la microgravedad: es una maqueta fija para investigar la forma, el control y la transmisión de fuerza. Tampoco pedimos al alumnado que se ponga un casco o que limite la vista; traducimos las restricciones en criterios de diseño y tarjetas de prueba.
 
-## 🎯 Repte i criteris d’èxit
+## 🎯 Reto y criterios de éxito
 
-Trieu una de tres tasques: traslladar una femella gran d’escuma d’un pern ample a un altre; guiar un cable tou entre dues guies; o girar lentament una femella de cartó fixada a un suport. Dissenyeu una pinça, selector o girador que puga completar la tasca sense colps i amb un control clar.
+Elegid una de tres tareas: trasladar una tuerca grande de espuma de un perno ancho a otro; guiar un cable blando entre dos guías; o girar lentamente una tuerca de cartón fijada a un soporte. Diseñad una pinza, selector o girador que pueda completar la tarea sin golpes y con un control claro.
 
-- La peça de prova queda controlada durant el trasllat, sense eixir del tauler.
+- La pieza de prueba queda controlada durante el traslado, sin salir del tablero.
 
-- Una altra parella pot identificar l’entrada, el moviment i la manera d’aturar el mecanisme.
+- Otra pareja puede identificar la entrada, el movimiento y la forma de detener el mecanismo.
 
-- La relació d’engranatges triada es justifica amb dades de velocitat, càrrega i èxit.
+- La relación de engranajes elegida se justifica con datos de velocidad, carga y éxito.
 
-- La prova és repetible en la maqueta i no s’extrapola a una operació espacial real.
+- La prueba es repetible en la maqueta y no se extrapola a una operación espacial real.
 
-- La idea d’interfície té en compte l’adherència ampla i un contrast visual clar sense obligar ningú a restringir la vista o el moviment.
+- La idea de interfaz tiene en cuenta la adherencia amplia y un contraste visual claro sin obligar a nadie a restringir la vista o el movimiento.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Analitzar una tasca simulada i definir requisits d’una eina per a una persona amb guants.
-- Comparar agafadors i guies de cable amb criteris de control, abast i facilitat d’ús.
-- Construir una maqueta segura i provar-la amb peces lleugeres i moviments lents.
-- Iterar el disseny a partir d’observacions i distingir una simulació d’una eina apta per a ús real.
+- Analizar una tarea simulada y definir requisitos de una herramienta para una persona con guantes.
+- Comparar agarradores y guías de cable con criterios de control, alcance y facilidad de uso.
+- Construir una maqueta segura y probarla con piezas ligeras y movimientos lentos.
+- Iterar el diseño a partir de observaciones y distinguir una simulación de una herramienta apta para uso real.
 
-## 📅 Seqüència didàctica · 5 sessions de 50 minuts
+## 📅 Secuencia didáctica · 5 sesiones de 50 minutos
 
-### **Sessió 1 · Entenem la tasca i el context.**
+### **Sesión 1 · Entendemos la tarea y el contexto.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Consulteu el mapa públic del Parc Natural i marqueu la zona valenciana que inspira la missió fictícia. Abans de llegir la fitxa, anoteu què penseu que pot necessitar una eina per retindre una peça en un entorn de treball diferent del terrestre.
+Consultad el mapa público del Parque Natural y marcad la zona valenciana que inspira la misión ficticia. Antes de leer la ficha, anotad qué pensáis que puede necesitar una herramienta para retener una pieza en un entorno de trabajo diferente del terrestre.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Compareu imatges o esquemes de l’espai amb una eina terrestre i distingiu fets que provenen d’una font de les hipòtesis del disseny. Llegiu una fitxa sobre les EVA: algunes eines necessiten ancoratges i els passamans ajuden la tripulació a estabilitzar-se. Representeu la idea amb un clip ample o una safata que reté una peça; la maqueta no recrea la física orbital.
+Comparad imágenes o esquemas del espacio con una herramienta terrestre y distinguid hechos que provienen de una fuente de las hipótesis del diseño. Leed una ficha sobre las EVA: algunas herramientas necesitan anclajes y los pasamanos ayudan a la tripulación a estabilizarse. Representad la idea con un clip ancho o una bandeja que retiene una pieza; la maqueta no recrea la física orbital.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-En equip, seleccioneu una tasca i descriviu la persona usuària fictícia. Completeu «necessitat / limitació / criteri de disseny / prova possible» i indiqueu què està documentat i què és una decisió de disseny.
+En equipo, seleccionad una tarea y describid la persona usuaria ficticia. Completad «necesidad / limitación / criterio de diseño / prueba posible» e indicad qué está documentado y qué es una decisión de diseño.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Dibuixeu què canviaria respecte d’una eina quotidiana: grandària i forma del mànec, contrast de la peça, visibilitat de l’acció i manera de retindre-la. Reviseu si cada criteri es pot comprovar amb una prova de taula segura.
+Dibujad qué cambiaría respecto a una herramienta cotidiana: tamaño y forma del mango, contraste de la pieza, visibilidad de la acción y forma de retenerla. Revisad si cada criterio se puede comprobar con una prueba de mesa segura.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** targeta de missió i dues necessitats amb criteris mesurables. Quina afirmació prové de la font i quina és encara una hipòtesi de la maqueta?
+**Evidencia:** tarjeta de misión y dos necesidades con criterios medibles. ¿Qué afirmación proviene de la fuente y cuál es todavía una hipótesis de la maqueta?
 
-### **Sessió 2 · Dissenyem i comparem agafadors.**
+### **Sesión 2 · Diseñamos y comparamos agarradores.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Esbosseu dues eines: una pinça de dues peces mòbils i una cullera o guia fixa que evita agafar la peça. Predigueu quina pot retindre millor una peça gran d’escuma sense danyar-la.
+Esbozad dos herramientas: una pinza de dos piezas móviles y una cuchara o guía fija que evita agarrar la pieza. Predecid cuál puede retener mejor una pieza grande de espuma sin dañarla.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Assenyaleu en cada esquema l’eix, el punt d’agafada, la superfície de contacte i el límit de tancament. Construïu una versió manual amb cartó o peces SPIKE, sense motor, i proveu-la amb peces grans d’escuma per comprovar la geometria abans de programar.
+Señalad en cada esquema el eje, el punto de agarre, la superficie de contacto y el límite de cierre. Construid una versión manual con cartón o piezas SPIKE, sin motor, y probadla con piezas grandes de espuma para comprobar la geometría antes de programar.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu un mànec estret amb un de més ample mitjançant plantilles. Registreu mida de presa, separació dels controls, contrast i facilitat de col·locació de la peça. Treballar amb guants és un requisit de disseny a considerar, no una experiència física que cal imitar.
+Comparad un mango estrecho con uno más ancho mediante plantillas. Registrad medida de agarre, separación de los controles, contraste y facilidad de colocación de la pieza. Trabajar con guantes es un requisito de diseño que hay que considerar, no una experiencia física que haya que imitar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Seleccioneu el disseny que millor s’ajusta a la tasca i justifiqueu la decisió amb els criteris. Com a ampliació, doneu el dibuix a un altre equip perquè comprove si entén on col·locar la peça sense instruccions addicionals.
+Seleccionad el diseño que mejor se ajusta a la tarea y justificad la decisión con los criterios. Como ampliación, dad el dibujo a otro equipo para que compruebe si entiende dónde colocar la pieza sin instrucciones adicionales.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dos esquemes, taula de criteris i selecció argumentada. Quina característica del dibuix o del mànec ha facilitat més la interpretació?
+**Evidencia:** dos esquemas, tabla de criterios y selección argumentada. ¿Qué característica del dibujo o del mango ha facilitado más la interpretación?
 
-### **Sessió 3 · Transmetem el moviment i provem engranatges.**
+### **Sesión 3 · Transmitimos el movimiento y probamos engranajes.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans de construir, predigueu què passarà amb la velocitat i el moviment de la peça si useu una reducció d’engranatges o una configuració que augmente la velocitat.
+Antes de construir, predecid qué pasará con la velocidad y el movimiento de la pieza si usáis una reducción de engranajes o una configuración que aumente la velocidad.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Construiu l’eina amb hub, motor gran o mitjà, bigues i una unió mòbil. Manteniu la base estable i el recorregut curt; no bloquegeu l’eix.
+Construid la herramienta con hub, motor grande o mediano, vigas y una unión móvil. Mantened la base estable y el recorrido corto; no bloqueéis el eje.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Proveu una reducció i una configuració més ràpida amb la mateixa peça i recorregut. Feu tres execucions per configuració i registreu temps, trasllats reeixits, relliscades i si la base s’alça o gira.
+Probad una reducción y una configuración más rápida con la misma pieza y recorrido. Haced tres ejecuciones por configuración y registrad tiempo, traslados exitosos, resbalones y si la base se levanta o gira.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Useu les dades per explicar el compromís: una reducció acostuma a donar més parell i menys velocitat a l’eix de sortida; augmentar la velocitat redueix el parell disponible segons la relació de transmissió. Si la pinça no tanca de manera controlada, pareu i reviseu el topall o el programa. Com a ampliació, repetiu amb un braç més llarg i observeu l’abast i l’estabilitat.
+Usad los datos para explicar el compromiso: una reducción suele dar más par y menos velocidad en el eje de salida; aumentar la velocidad reduce el par disponible según la relación de transmisión. Si la pinza no cierra de forma controlada, detened y revisad el tope o el programa. Como ampliación, repetid con un brazo más largo y observad el alcance y la estabilidad.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** diagrama d’engranatges i comparació de les proves. Per què no s’ha de comprovar la força amb els dits i quina configuració ha respost millor al criteri de la sessió?
+**Evidencia:** diagrama de engranajes y comparación de las pruebas. ¿Por qué no se debe comprobar la fuerza con los dedos y qué configuración ha respondido mejor al criterio de la sesión?
 
-### **Sessió 4 · Afegim una entrada i comparem sensors.**
+### **Sesión 4 · Añadimos una entrada y comparamos sensores.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu una targeta amb una marca de color ampla i prediu quina entrada podrà detectar cada sensor: etiqueta preparada amb color o proximitat d’un bloc gran.
+Preparad una tarjeta con una marca de color amplia y predecid qué entrada podrá detectar cada sensor: etiqueta preparada con color o proximidad de un bloque grande.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Configureu el sensor de color perquè seleccione una acció acordada i el sensor de distància perquè active una resposta quan el bloc arriba a una zona marcada. Manteniu un control manual alternatiu per a cada prova.
+Configurad el sensor de color para que seleccione una acción acordada y el sensor de distancia para que active una respuesta cuando el bloque llegue a una zona marcada. Mantened un control manual alternativo para cada prueba.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Prepareu tres targetes i dues distàncies. Registreu activacions correctes i falses, l’angle i la il·luminació. El sensor de color llig l’etiqueta preparada; no identifica material, tipus de femella ni duresa.
+Preparad tres tarjetas y dos distancias. Registrad activaciones correctas y falsas, el ángulo y la iluminación. El sensor de color lee la etiqueta preparada; no identifica material, tipo de tuerca ni dureza.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Com a variant de l’exemple oficial del martell amb detecció de moviment, substituïu qualsevol impacte per una pressió lenta sobre una peça d’escuma. Useu el gest del hub només si es pot fer amb control. Compareu la llegibilitat i previsibilitat d’aquesta entrada amb el botó manual; no colpegeu objectes ni persones.
+Como variante del ejemplo oficial del martillo con detección de movimiento, sustituid cualquier impacto por una presión lenta sobre una pieza de espuma. Usad el gesto del hub solo si se puede hacer con control. Comparad la legibilidad y previsibilidad de esta entrada con el botón manual; no golpeéis objetos ni personas.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** diagrama entrada-resposta, matriu de proves i justificació del sensor triat. Quines condicions poden provocar una falsa activació i quina entrada manual queda disponible?
+**Evidencia:** diagrama entrada-respuesta, matriz de pruebas y justificación del sensor elegido. ¿Qué condiciones pueden provocar una falsa activación y qué entrada manual queda disponible?
 
-### **Sessió 5 · Iterem i fem el lliurament de missió.**
+### **Sesión 5 · Iteramos y hacemos la entrega de misión.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Reviseu la taula de proves i trieu una sola millora: ampliar el mànec, canviar el límit de tancament, reduir velocitat o afegir una guia per al cable. Predigueu quin criteri hauria de millorar.
+Revisad la tabla de pruebas y elegid una sola mejora: ampliar el mango, cambiar el límite de cierre, reducir velocidad o añadir una guía para el cable. Predecid qué criterio debería mejorar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Canvieu una cosa cada vegada i repetiu la tasca tres voltes amb les mateixes condicions. Registreu els resultats abans i després del canvi.
+Cambiad una cosa cada vez y repetid la tarea tres veces con las mismas condiciones. Registrad los resultados antes y después del cambio.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Prepareu una fitxa de lliurament: missió, objecte que manipula, components SPIKE, passos d’ús, límit conegut i alternativa manual. Indiqueu quina prova avala cada afirmació.
+Preparad una ficha de entrega: misión, objeto que manipula, componentes SPIKE, pasos de uso, límite conocido y alternativa manual. Indicad qué prueba avala cada afirmación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Una altra parella executa la seqüència amb una targeta i una llista de comprovació, sense instruccions orals addicionals. Com a extensió, podeu demanar a una eina d’IA autoritzada variants de forma basades en criteris escrits; contrasteu-les amb les peces i les proves, i anoteu-ne l’ús. La IA no pilota ni controla el robot.
+Otra pareja ejecuta la secuencia con una tarjeta y una lista de comprobación, sin instrucciones orales adicionales. Como extensión, podéis pedir a una herramienta de IA autorizada variantes de forma basadas en criterios escritos; contrastadlas con las piezas y las pruebas, y anotad su uso. La IA no pilota ni controla el robot.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** prototip revisat, taula abans/després, instruccions i una limitació encara no provada. Quina dada us ha fet canviar el mecanisme i quina prova caldria abans d’usar una eina real?
+**Evidencia:** prototipo revisado, tabla antes/después, instrucciones y una limitación aún no probada. ¿Qué dato os ha hecho cambiar el mecanismo y qué prueba haría falta antes de usar una herramienta real?
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-SPIKE Prime 45678: hub, un motor, bigues, eixos, engranatges, sensor de color o de distància si està disponible; peces grans de cartó/escuma, perns amples de maqueta, volanderes d’escuma, cable tou, clips de retenció, cinta de paper, targetes, regla i graella de registre. No es necessita cap sensor de força extern ni cap expansió 45681.
+SPIKE Prime 45678: hub, un motor, vigas, ejes, engranajes, sensor de color o de distancia si está disponible; piezas grandes de cartón/espuma, pernos anchos de maqueta, arandelas de espuma, cable blando, clips de retención, cinta de papel, tarjetas, regla y cuadrícula de registro. No se necesita ningún sensor de fuerza externo ni ninguna expansión 45681.
 
-Prepareu taulers amb perns ben fixats i objectes lleugers que no puguen rodar fora de la taula. Reviseu connexions i programa, limiteu velocitat i força i manteniu lliure la zona mòbil. Feu grups amb rols rotatius de disseny, construcció, codi, observació i registre. Si falta dispositiu, la mateixa comparació es pot fer manualment, però marqueu l’evidència com a maqueta sense automatització.
+Preparad tableros con pernos bien fijados y objetos ligeros que no puedan rodar fuera de la mesa. Revisad conexiones y programa, limitad velocidad y fuerza y mantened libre la zona móvil. Haced grupos con roles rotativos de diseño, construcción, código, observación y registro. Si falta dispositivo, la misma comparación se puede hacer manualmente, pero marcad la evidencia como maqueta sin automatización.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Recolliu mapa/context, targeta de missió, esbossos, criteris, esquema de transmissió, programa, registre de sis o més proves, decisions d’iteració i instruccions finals. La rúbrica formativa observa si l’equip:
+Recoged mapa/contexto, tarjeta de misión, esbozos, criterios, esquema de transmisión, programa, registro de seis o más pruebas, decisiones de iteración e instrucciones finales. La rúbrica formativa observa si el equipo:
 
-- distingeix el context documentat de l’escenari fictici;
+- distingue el contexto documentado del escenario ficticio;
 
-- relaciona engranatges amb velocitat/parell sense prometre un resultat universal;
+- relaciona engranajes con velocidad/par sin prometer un resultado universal;
 
-- selecciona una entrada que pot justificar i ha provat amb casos diferents;
+- selecciona una entrada que puede justificar y ha probado con casos diferentes;
 
-- manté la peça dins del tauler i atura el mecanisme abans de modificar-lo;
+- mantiene la pieza dentro del tablero y detiene el mecanismo antes de modificarlo;
 
-- explica una limitació i proposa una prova posterior concreta;
+- explica una limitación y propone una prueba posterior concreta;
 
-- escriu instruccions que una altra parella pot seguir.
+- escribe instrucciones que otra pareja puede seguir.
 
-Autoavaluació: «La dada que m’ha fet canviar el mecanisme és…», «el sensor que he triat només em permet inferir…» i «per a usar aquesta eina en una missió real encara caldria…». El feedback parla de la qualitat del disseny, no de la destresa física de les persones.
+Autoevaluación: «El dato que me ha hecho cambiar el mecanismo es…», «el sensor que he elegido solo me permite inferir…» y «para usar esta herramienta en una misión real todavía haría falta…». La retroalimentación habla de la calidad del diseño, no de la destreza física de las personas.
 
-## ♿ Participació, seguretat i límits
+## ♿ Participación, seguridad y límites
 
-No fem simulacions de discapacitat ni posem cascos opacs o guants grossos com a prova obligatòria. Convertim els requisits en decisions de disseny, oferim mànecs alternatius, controls amplis, targetes visuals i rols de participació diversos. Ningú està obligat a provar físicament l’eina. Atureu el programa i desconnecteu el hub abans d’ajustar engranatges; manteniu els dits fora de la pinça i useu només càrregues grans, lleugeres i de baixa velocitat.
+No hacemos simulaciones de discapacidad ni ponemos cascos opacos o guantes gruesos como prueba obligatoria. Convertimos los requisitos en decisiones de diseño, ofrecemos mangos alternativos, controles amplios, tarjetas visuales y roles de participación diversos. Nadie está obligado a probar físicamente la herramienta. Detened el programa y desconectad el hub antes de ajustar engranajes; mantened los dedos fuera de la pinza y usad solo cargas grandes, ligeras y de baja velocidad.
 
-La maqueta terrestre no reprodueix microgravetat, tracció ni una EVA. El prototip no és una eina espacial operativa ni una pinça per a ús corporal. Un sensor de distància/color no reconeix persones o materials; la prova només verifica els estímuls preparats a classe.
+La maqueta terrestre no reproduce microgravedad, tracción ni una EVA. El prototipo no es una herramienta espacial operativa ni una pinza para uso corporal. Un sensor de distancia/color no reconoce personas o materiales; la prueba solo verifica los estímulos preparados en clase.
 
-## 🔗 Referents i adaptació completa
+## 🔗 Referentes y adaptación completa
 
-Partim del [SPIKE Activity Brief: Astronaut Tools](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt41706aa0b48fea02/6324c4779a6b39638424b8fd/LE_14x8.5_LessonMat_Astronaut_Tools_WB_Mech_NoCrops.pdf?locale=en-us) i el seu [exemple de codi per al Motion Sensing Hammer](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt39945736557adf75/5f8801b1d8724422d0ad95fd/le_activitybrief_astronaut_tools_python.pdf?locale=en-us). S’hi conserven traslladar femelles entre perns o encaminar cables, pensar les diferències d’eines de l’espai i de la Terra, dissenyar per a guants i visibilitat, els tres conceptes de martell/selector/desmuntatge, reducció i augment d’engranatges, activació per sensors, velocitat segons la peça i exploració d’IA. Les propostes per al martell es tradueixen a pressió lenta sense impacte; les peces, guies, proves, itinerari de cinc sessions i il·lustració són propis. L’exemple de codi pertany a SPIKE Legacy: comproveu la versió de l’app i manteniu blocs com a alternativa completa.
+Partimos del [SPIKE Activity Brief: Astronaut Tools](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt41706aa0b48fea02/6324c4779a6b39638424b8fd/LE_14x8.5_LessonMat_Astronaut_Tools_WB_Mech_NoCrops.pdf?locale=en-us) y su [ejemplo de código para el Motion Sensing Hammer](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt39945736557adf75/5f8801b1d8724422d0ad95fd/le_activitybrief_astronaut_tools_python.pdf?locale=en-us). Se conservan trasladar tuercas entre pernos o encaminar cables, pensar las diferencias entre herramientas del espacio y de la Tierra, diseñar para guantes y visibilidad, los tres conceptos de martillo/selector/desmontaje, reducción y aumento de engranajes, activación por sensores, velocidad según la pieza y exploración de IA. Las propuestas para el martillo se traducen a presión lenta sin impacto; las piezas, guías, pruebas, itinerario de cinco sesiones e ilustración son propios. El ejemplo de código pertenece a SPIKE Legacy: comprobad la versión de la app y mantened bloques como alternativa completa.
 
-Per contextualitzar els requisits d’una EVA, consulteu la fitxa educativa de la NASA enllaçada en la situació, que descriu guants, passamans i subjecció d’eines. La font local és el [Parc Natural de l’Albufera (Generalitat Valenciana)](https://parquesnaturales.gva.es/va/web/pn-l-albufera); l’ús com a escenari de missió és imaginari.
+Para contextualizar los requisitos de una EVA, consultad la ficha educativa de la NASA enlazada en la situación, que describe guantes, pasamanos y sujeción de herramientas. La fuente local es el [Parque Natural de la Albufera (Generalitat Valenciana)](https://parquesnaturales.gva.es/va/web/pn-l-albufera); el uso como escenario de misión es imaginario.

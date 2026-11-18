@@ -14,37 +14,37 @@ duration: "8 lecciones · 8–12 sesiones"
 challenge: "¿Cómo podemos crear un juego de feria con reglas transparentes en el que una condición Python cambie una respuesta del modelo, el marcador sea fiable y todo el mundo pueda participar?"
 ---
 
-![Mecanisme de joc fet amb LEGO SPIKE Prime, hub, motor i urpa lleugera que juga amb fitxes grans i símbols en un tauler de taula.](../../_assets/situacions/sp-python-jocs.webp)
+![Mecanismo de juego hecho con LEGO SPIKE Prime, hub, motor y garra ligera que juega con fichas grandes y símbolos en un tablero de mesa.](../../_assets/situacions/sp-python-jocs.webp)
 
-_Una regla de joc és un contracte: cal poder anticipar la resposta, provar-la i entendre la puntuació._
+_Una regla de juego es un contrato: hay que poder anticipar la respuesta, probarla y entender la puntuación._
 
-## 🌱 Repte i sentit
+## 🌱 Reto y sentido
 
-Una escola prepara una fira de jocs cooperatius inspirada en les festes i fires locals.
+Una escuela prepara una feria de juegos cooperativos inspirada en las fiestas y ferias locales.
 
-Un grup crea una estació interactiva amb SPIKE Prime: la inclinació del hub pot seleccionar una direcció, un mecanisme lleuger pot recollir una fitxa de paper, el sensor de color pot llegir una peça de prova i un marcador de llum o moviment comunica el resultat. Les regles han de ser públiques, provar-se amb casos previstos i inesperats i permetre una partida sense rapidesa física, so obligatori ni informació personal.
+Un grupo crea una estación interactiva con SPIKE Prime: la inclinación del hub puede seleccionar una dirección, un mecanismo ligero puede recoger una ficha de papel, el sensor de color puede leer una pieza de prueba y un marcador de luz o movimiento comunica el resultado. Las reglas deben ser públicas, probarse con casos previstos e inesperados y permitir una partida sin rapidez física, sonido obligatorio ni información personal.
 
-Aquesta proposta adapta la unitat 5 *Playing Games with Simple Conditions* de LEGO Education *Introduction to Python Programming · Course 1*: *Controlling Motion with Tilt*, *Claw Machine*, *Charting Game Decisions*, *Guess Which Color*, *Guessing Game*, *Score!*, *Game Time* i *Ideas to Help with Game Time*. Progressa des de l’entrada d’inclinació i la condició simple cap a un mecanisme amb bucle, diagrama de decisions, sensor de color, condicions `if/elif/else` i depuració, puntuació amb matriu/moviment, disseny de joc i revisió entre equips. Totes les regles, taulers i exemples d’aquesta fitxa són propis.
+Esta propuesta adapta la unidad 5 *Playing Games with Simple Conditions* de LEGO Education *Introduction to Python Programming · Course 1*: *Controlling Motion with Tilt*, *Claw Machine*, *Charting Game Decisions*, *Guess Which Color*, *Guessing Game*, *Score!*, *Game Time* e *Ideas to Help with Game Time*. Progresa desde la entrada de inclinación y la condición simple hacia un mecanismo con bucle, diagrama de decisiones, sensor de color, condiciones `if/elif/else` y depuración, puntuación con matriz/movimiento, diseño de juego y revisión entre equipos. Todas las reglas, tableros y ejemplos de esta ficha son propios.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Explicar que una condició Python avalua una expressió i decideix si executa una branca.
+- Explicar que una condición Python evalúa una expresión y decide si ejecuta una rama.
 
-- Llegir valors d’inclinació o orientació del sensor de moviment del hub en la forma que expose l’API local; mapar-los a accions limitades i reversibles.
+- Leer valores de inclinación u orientación del sensor de movimiento del hub en la forma que exponga la API local; mapearlos a acciones limitadas y reversibles.
 
-- Relacionar un bucle de joc amb la ronda d’una partida i definir explícitament quan comença, continua i acaba.
+- Relacionar un bucle de juego con la ronda de una partida y definir explícitamente cuándo empieza, continúa y termina.
 
-- Descompondre les regles en un diagrama de flux abans d’implementar-les, incloent resposta per entrada desconeguda i cas de partida acabada.
+- Descomponer las reglas en un diagrama de flujo antes de implementarlas, incluyendo respuesta para entrada desconocida y caso de partida terminada.
 
-- Programar una decisió basada en color amb valors mesurats en la llum real de l’aula; distingir el color llegit de la interpretació o regla que l’equip li assigna.
+- Programar una decisión basada en color con valores medidos en la luz real del aula; distinguir el color leído de la interpretación o regla que el equipo le asigna.
 
-- Usar `if`, `elif`, `else` i comparacions per seleccionar una resposta; depurar sintaxi, indentació, branca inaccessible o condició invertida.
+- Usar `if`, `elif`, `else` y comparaciones para seleccionar una respuesta; depurar sintaxis, indentación, rama inaccesible o condición invertida.
 
-- Gestionar puntuació amb una variable i un senyal de matriu o moviment senzill, comprovant que la puntuació s’actualitza una vegada per esdeveniment.
+- Gestionar la puntuación con una variable y una señal de matriz o movimiento sencillo, comprobando que la puntuación se actualiza una vez por evento.
 
-- Provar el joc amb diferents persones, demanar consentiment, oferir modes d’accés alternatius i aplicar feedback específic.
+- Probar el juego con diferentes personas, pedir consentimiento, ofrecer modos de acceso alternativos y aplicar retroalimentación específica.
 
-**Condició:** expressió booleana que és vertadera o falsa. **Branca:** camí que s’executa segons la condició. **Sensor de moviment del hub:** component integrat que informa orientació/inclinació dins dels límits de la seua API. **Estat:** situació actual del joc (espera, ronda, puntuació, acabat). **Puntuació:** comptador acordat pel disseny, no mesura de valor personal. **Cas límit:** entrada que posa a prova una frontera o situació no ordinària.
+**Condición:** expresión booleana que es verdadera o falsa. **Rama:** camino que se ejecuta según la condición. **Sensor de movimiento del hub:** componente integrado que informa orientación/inclinación dentro de los límites de su API. **Estado:** situación actual del juego (espera, ronda, puntuación, terminado). **Puntuación:** contador acordado por el diseño, no medida de valor personal. **Caso límite:** entrada que pone a prueba una frontera o situación no ordinaria.
 
 ```python
 # Python general: tres respostes explícites per a una entrada ja triada
@@ -56,204 +56,204 @@ else:
     resposta = "espera i demana una nova selecció"
 ```
 
-Aquest exemple usa dades fictícies i no llig inclinació ni controla el robot. Els noms i mètodes de lectura de sensor, motors, llums, matriu i bucle asíncron varien segons la versió de l’app SPIKE. Adapteu el codi a la documentació local i comenceu les proves amb motors aturats.
+Este ejemplo usa datos ficticios y no lee inclinación ni controla el robot. Los nombres y métodos de lectura de sensor, motores, luces, matriz y bucle asíncrono varían según la versión de la app SPIKE. Adaptad el código a la documentación local y empezad las pruebas con los motores detenidos.
 
-## 🧰 Materials i preparació docent
+## 🧰 Materiales y preparación docente
 
-Un set SPIKE Prime 45678 per equip, hub carregat, sensor de color, motor mitjà, peces per a una urpa o porta lleugera amb recorregut limitat, tauleta/ordinador amb SPIKE Python, fitxes grans mates amb colors i formes coincidents, cartó, cinta, paper, marcador i diari de programació. El sensor de moviment està integrat al hub. Cap material exigeix el set d’expansió. Si el model d’urpa resulta difícil, substituïu-lo per un indicador articulat o joc en pantalla/tauler: l’objectiu curricular és la decisió programada, no la destresa mecànica.
+Un set SPIKE Prime 45678 por equipo, hub cargado, sensor de color, motor mediano, piezas para una garra o puerta ligera con recorrido limitado, tableta/ordenador con SPIKE Python, fichas grandes mate con colores y formas coincidentes, cartón, cinta, papel, rotulador y diario de programación. El sensor de movimiento está integrado en el hub. Ningún material exige el set de expansión. Si el modelo de garra resulta difícil, sustituidlo por un indicador articulado o un juego en pantalla/tablero: el objetivo curricular es la decisión programada, no la destreza mecánica.
 
-Proveu prèviament els colors i eviteu fons brillants o llum directa. Definiu una urpa que només s’acoste a fitxes planes de cartó, amb topalls, baixa potència i ample suficient perquè no puga atrapar dits. Trieu un tauler que puga jugar-se assegut; creeu regles impreses amb icona, paraula i color. Prepareu tres variants de joc: selecció per inclinació, selecció manual en targeta i simulació de lectures. Acordeu que les puntuacions són del joc/equip, no de l’alumnat.
+Probad previamente los colores y evitad fondos brillantes o luz directa. Definid una garra que solo se acerque a fichas planas de cartón, con topes, baja potencia y anchura suficiente para que no pueda atrapar dedos. Elegid un tablero que pueda jugarse sentado; cread reglas impresas con icono, palabra y color. Preparad tres variantes de juego: selección por inclinación, selección manual en tarjeta y simulación de lecturas. Acordad que las puntuaciones son del juego/equipo, no del alumnado.
 
-Rols rotatius de programació, lectura de regles, prova, accessibilitat/observació i cura del model. El joc es prova en una taula tancada i estable; cap robot es mou cap a una persona ni es deixa executar sense supervisió.
+Roles rotatorios de programación, lectura de reglas, prueba, accesibilidad/observación y cuidado del modelo. El juego se prueba en una mesa cerrada y estable; ningún robot se mueve hacia una persona ni se deja ejecutar sin supervisión.
 
-## 📅 Seqüència didàctica · huit lliçons
+## 📅 Secuencia didáctica · ocho lecciones
 
-### **Lliçó 1 · Inclina i tria una acció (45 min).**
+### **Lección 1 · Inclina y elige una acción (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Amb una targeta gran de brúixola, definiu com una inclinació podria representar «dreta», «esquerra» o «espera». Predigueu quina acció correspon a cada orientació i oferiu una opció manual equivalent.
+Con una tarjeta grande de brújula, definid cómo una inclinación podría representar «derecha», «izquierda» o «espera». Predecid qué acción corresponde a cada orientación y ofreced una opción manual equivalente.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Consulteu el sensor de moviment del hub i anoteu com canvien les lectures en quatre orientacions segures, sense sacsejar ni deixar caure el hub.
+Consultad el sensor de movimiento del hub y anotad cómo cambian las lecturas en cuatro orientaciones seguras, sin sacudir ni dejar caer el hub.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Escriviu pseudocodi per a una sola regla i registreu lectura, orientació i resposta esperada. Identifiqueu quin llindar utilitzareu.
+Escribid pseudocódigo para una sola regla y registrad lectura, orientación y respuesta esperada. Identificad qué umbral utilizaréis.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Programeu una indicació lluminosa o una rotació curta, amb motors alçats/apagats de manera segura. Si les lectures menudes alternen les ordres, afegiu una zona neutra i repetiu la prova.
+Programad una indicación luminosa o una rotación corta, con motores elevados/apagados de forma segura. Si las lecturas pequeñas alternan las órdenes, añadid una zona neutra y repetid la prueba.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** prova amb inclinació clara a cada costat, hub pla i valor intermedi. Expliqueu quin llindar és convencional i per què no és universal entre hubs.
+**Evidencia:** prueba con inclinación clara hacia cada lado, hub plano y valor intermedio. Explicad qué umbral es convencional y por qué no es universal entre hubs.
 
-### **Lliçó 2 · Urpa de taula amb regles de captura (45 min).**
+### **Lección 2 · Garra de mesa con reglas de captura (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Definiu una ronda: el jugador selecciona una de tres zones i el mecanisme intenta agafar una fitxa gran. Acordeu qui inicia, quants intents hi ha i què significa «capturar».
+Definid una ronda: el jugador selecciona una de tres zonas y el mecanismo intenta coger una ficha grande. Acordad quién inicia, cuántos intentos hay y qué significa «capturar».
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dissenyeu una palanca o urpa de cartó o peces Technic amb límit de recorregut. Poseu la fitxa dins d’una safata plana i comproveu que no hi ha risc d’atrapar dits.
+Diseñad una palanca o garra de cartón o piezas Technic con límite de recorrido. Poned la ficha dentro de una bandeja plana y comprobad que no hay riesgo de atrapar dedos.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Creeu un bucle finit d’intents, una acció d’obrir/tancar i una condició per al resultat triat manualment. Identifiqueu l’entrada, l’acció i el resultat que una persona ha de confirmar.
+Cread un bucle finito de intentos, una acción de abrir/cerrar y una condición para el resultado elegido manualmente. Identificad la entrada, la acción y el resultado que una persona debe confirmar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu primer sense peça i després amb una fitxa lleugera. Atureu els motors abans d’ajustar el mecanisme; no afirmeu que detecta una captura si no hi ha sensor verificat.
+Ejecutad primero sin pieza y después con una ficha ligera. Detened los motores antes de ajustar el mecanismo; no afirméis que detecta una captura si no hay un sensor verificado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** regla de ronda, codi i registre de dues proves. Expliqueu quina part del resultat confirma l’operador en aquest prototip inicial.
+**Evidencia:** regla de ronda, código y registro de dos pruebas. Explicad qué parte del resultado confirma el operador en este prototipo inicial.
 
-### **Lliçó 3 · Dibuixar totes les decisions abans de jugar (45–90 min).**
+### **Lección 3 · Dibujar todas las decisiones antes de jugar (45–90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Proposeu un minijoc de fira que use una elecció i fins a tres resultats. Predigueu quines entrades i respostes necessita per ser comprensible.
+Proponed un minijuego de feria que use una elección y hasta tres resultados. Predecid qué entradas y respuestas necesita para ser comprensible.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Creeu un diagrama amb estat inicial, entrada, condicions en ordre, eixida de cada cas, puntuació i finalització. Afegiu resposta per a entrada desconeguda i cancel·lació.
+Cread un diagrama con estado inicial, entrada, condiciones en orden, salida de cada caso, puntuación y finalización. Añadid respuesta para entrada desconocida y cancelación.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una altra parella segueix el diagrama amb targetes. Marqueu si sempre arriba a una resposta, si hi ha una branca inassolible i quina eixida correspon a cada cas.
+Otra pareja sigue el diagrama con tarjetas. Marcad si siempre llega a una respuesta, si hay una rama inalcanzable y qué salida corresponde a cada caso.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Implementeu branques amb valors fixos abans d’afegir sensors. Compareu l’ordre de les condicions i les igualtats amb el diagrama; proveu totes les entrades previstes i una absent.
+Implementad ramas con valores fijos antes de añadir sensores. Comparad el orden de las condiciones y las igualdades con el diagrama; probad todas las entradas previstas y una ausente.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** diagrama traçat i instrucció amb llenguatge clar i pictogrames. Si hi ha 90 minuts, programeu el prototip; amb 45, deixeu el codi per a una sessió pròpia.
+**Evidencia:** diagrama trazado e instrucción con lenguaje claro y pictogramas. Si hay 90 minutos, programad el prototipo; con 45, dejad el código para una sesión propia.
 
-### **Lliçó 4 · Una fitxa, un color, una resposta (45 min).**
+### **Lección 4 · Una ficha, un color, una respuesta (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu fitxes planes i predigueu quines distingirà el sensor. Acordeu que cada resposta tindrà també una forma o símbol, no només un color.
+Mostrad fichas planas y predecid cuáles distinguirá el sensor. Acordad que cada respuesta tendrá también una forma o símbolo, no solo un color.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Col·loqueu les fitxes sota el sensor a una distància constant i registreu la lectura de cada color. Feu tres lectures per peça i, si és possible, repetiu amb una altra llum.
+Colocad las fichas bajo el sensor a una distancia constante y registrad la lectura de cada color. Haced tres lecturas por pieza y, si es posible, repetid con otra luz.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Assigneu a cada color reconegut un moviment o missatge i creeu una eixida neutral per a «cap/altre». Anoteu lectura, branca i resposta esperada.
+Asignad a cada color reconocido un movimiento o mensaje y cread una salida neutra para «ninguno/otro». Anotad lectura, rama y respuesta esperada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Implementeu la condició Python. Executeu primer amb motors quiets; després, si és segur, activeu una resposta visual o una rotació curta. Reviseu les categories que es confonen.
+Implementad la condición Python. Ejecutad primero con los motores quietos; después, si es seguro, activad una respuesta visual o una rotación corta. Revisad las categorías que se confunden.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** casos amb colors reconeguts, desconegut, sense fitxa i targeta girada. Expliqueu com la llum i la distància afecten la decisió; no suposeu valors exactes ni distinció universal de colors.
+**Evidencia:** casos con colores reconocidos, desconocido, sin ficha y tarjeta girada. Explicad cómo la luz y la distancia afectan la decisión; no supongáis valores exactos ni una distinción universal de colores.
 
-### **Lliçó 5 · Endevina la regla i depura el programa (45 min).**
+### **Lección 5 · Adivina la regla y depura el programa (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu una targeta secreta que complisca una propietat pública, com «color primari» o «forma amb tres costats». Predigueu quines respostes donarà el joc sense emmagatzemar dades personals.
+Elegid una tarjeta secreta que cumpla una propiedad pública, como «color primario» o «forma con tres lados». Predecid qué respuestas dará el juego sin almacenar datos personales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Escriviu una seqüència `if/elif/else` i un bucle finit de torns. Dibuixeu casos per a cada branca i exemples que no hi pertanyen.
+Escribid una secuencia `if/elif/else` y un bucle finito de turnos. Dibujad casos para cada rama y ejemplos que no pertenecen a ella.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Analitzeu tres programes amb errors: sintaxi/indentació, condició invertida i `else` prematur. Predigueu el resultat de cadascun abans de corregir-lo.
+Analizad tres programas con errores: sintaxis/indentación, condición invertida y `else` prematuro. Predecid el resultado de cada uno antes de corregirlo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una línia cada vegada i proveu-la amb els casos de la taula. Implementeu la vostra versió en Python general o amb el hub quiet i comproveu el màxim de torns.
+Cambiad una línea cada vez y probadla con los casos de la tabla. Implementad vuestra versión en Python general o con el hub quieto y comprobad el máximo de turnos.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** codi corregit i prova de cada branca. Expliqueu la diferència entre un error de sintaxi i una regla lògica errònia.
+**Evidencia:** código corregido y prueba de cada rama. Explicad la diferencia entre un error de sintaxis y una regla lógica errónea.
 
-### **Lliçó 6 · Marcador visible i puntuació justa (45 min).**
+### **Lección 6 · Marcador visible y puntuación justa (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Creeu una regla senzilla, com un punt per encert fins a un màxim de tres. Predigueu com es mostrarà una puntuació sense comparar capacitats personals.
+Cread una regla sencilla, como un punto por acierto hasta un máximo de tres. Predecid cómo se mostrará una puntuación sin comparar capacidades personales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Afegiu una variable `punts` i representeu-la amb la matriu del hub o un indicador de moviment. Actualitzeu-la una vegada després d’un esdeveniment vàlid.
+Añadid una variable `punts` y representadla con la matriz del hub o un indicador de movimiento. Actualizadla una vez después de un evento válido.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Prepareu casos d’encert, error, torn repetit, partida acabada, puntuació màxima i reinici. Compareu el valor de la variable amb la llum o moviment observat.
+Preparad casos de acierto, error, turno repetido, partida terminada, puntuación máxima y reinicio. Comparad el valor de la variable con la luz o el movimiento observado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Comproveu si una entrada sostinguda o acció repetida suma punts més d’una vegada. Proveu per separat l’increment i el reinici i corregiu qualsevol discrepància.
+Comprobad si una entrada sostenida o una acción repetida suma puntos más de una vez. Probad por separado el incremento y el reinicio y corregid cualquier discrepancia.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** registre dels sis casos de prova i marcador coherent. Proposeu una manera de mostrar la participació sense classificar persones.
+**Evidencia:** registro de los seis casos de prueba y marcador coherente. Proponed una manera de mostrar la participación sin clasificar a las personas.
 
-### **Lliçó 7 · Construir un joc complet per a la fira (90 min).**
+### **Lección 7 · Construir un juego completo para la feria (90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Definiu objectiu, regles en tres passos, nombre de rondes, respostes, marcador i alternatives d’accés. El joc usarà condicions Python i un component SPIKE; el sensor és opcional si ja s’ha calibrat.
+Definid objetivo, reglas en tres pasos, número de rondas, respuestas, marcador y alternativas de acceso. El juego usará condiciones Python y un componente SPIKE; el sensor es opcional si ya se ha calibrado.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Feu un diagrama d’estats i matriu de casos per a inici, resultats, entrada ambigua/no reconeguda, màxim de punts, nova ronda i cancel·lació/reinici. Munteu un suport estable i delimiteu la peça mòbil i la zona de mans.
+Haced un diagrama de estados y una matriz de casos para inicio, resultados, entrada ambigua/no reconocida, máximo de puntos, nueva ronda y cancelación/reinicio. Montad un soporte estable y delimitad la pieza móvil y la zona de manos.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Implementeu en parts l’entrada, la condició, la resposta, la puntuació i el final. Documenteu qualsevol exemple de codi reutilitzat i vinculeu cada regla amb un cas del diagrama.
+Implementad por partes la entrada, la condición, la respuesta, la puntuación y el final. Documentad cualquier ejemplo de código reutilizado y vinculad cada regla con un caso del diagrama.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu tots els casos i verifiqueu que cada ronda acaba i el reinici neteja la puntuació. Prepareu instruccions clares, mode sense so/color i una resposta per a lectura invàlida.
+Ejecutad todos los casos y verificad que cada ronda termina y el reinicio limpia la puntuación. Preparad instrucciones claras, modo sin sonido/color y una respuesta para lectura inválida.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** joc funcional amb pla de proves i instruccions. Valoreu la coherència entre especificació i codi, no qui aconsegueix més punts.
+**Evidencia:** juego funcional con plan de pruebas e instrucciones. Valorad la coherencia entre especificación y código, no quién consigue más puntos.
 
-### **Lliçó 8 · Feedback i millora de la fira (30–45 min).**
+### **Lección 8 · Retroalimentación y mejora de la feria (30–45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Un altre equip llig les instruccions i prova el minijoc. Els autors observen la primera ronda sense donar pistes; no recolliu noms ni puntuacions individuals.
+Otro equipo lee las instrucciones y prueba el minijuego. Los autores observan la primera ronda sin dar pistas; no recogáis nombres ni puntuaciones individuales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-El revisor anota una cosa que ha entés, una regla confusa i un cas límit que afegiria. L’equip autor tria un suggeriment relacionat amb l’objectiu.
+El revisor anota una cosa que ha entendido, una regla confusa y un caso límite que añadiría. El equipo autor elige una sugerencia relacionada con el objetivo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Registreu quin suggeriment s’ha triat i quina regla, entrada o missatge afectarà. Predigueu quin resultat hauria de canviar i quin cas hauria de continuar funcionant.
+Registrad qué sugerencia se ha elegido y qué regla, entrada o mensaje afectará. Predecid qué resultado debería cambiar y qué caso debería seguir funcionando.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una condició, missatge, entrada o regla. Executeu de nou el cas que va motivar el canvi i un cas que ja funcionava.
+Cambiad una condición, mensaje, entrada o regla. Ejecutad de nuevo el caso que motivó el cambio y un caso que ya funcionaba.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** demostració, diagrama i limitació identificada. Si no és possible una mostra pública, feu la revisió en paper o entre equips.
+**Evidencia:** demostración, diagrama y limitación identificada. Si no es posible una muestra pública, haced la revisión en papel o entre equipos.
 
-## 🧪 Evidències, avaluació i producte final
+## 🧪 Evidencias, evaluación y producto final
 
-Recolliu regles inicials, captures/dibuixos de lectura de sensor sense dades personals, diagrames de flux, taula de veritat/casos, pseudocodi, versions de `if/elif/else`, fragments depurats, registre de puntuació, prova de matriu/actuador, instruccions de joc, observació anònima entre parelles i comparació abans/després. Producte: joc de fira d’una estació, jugable tant en mode manual com en mode robot, amb regla, puntuació i instrucció accessibles.
+Recoged reglas iniciales, capturas/dibujos de lectura de sensor sin datos personales, diagramas de flujo, tabla de verdad/casos, pseudocódigo, versiones de `if/elif/else`, fragmentos depurados, registro de puntuación, prueba de matriz/actuador, instrucciones de juego, observación anónima entre parejas y comparación antes/después. Producto: juego de feria de una estación, jugable tanto en modo manual como en modo robot, con regla, puntuación e instrucción accesibles.
 
-Avalueu quatre dimensions: **lògica condicional** (preveu i codifica les branques); **integració i estat** (sensor o entrada, resposta, puntuació i reinici concorden); **proves i depuració** (prova casos no estàndard i corregeix amb evidència); **disseny inclusiu/col·laboració** (regles transparents, alternatives, rols i feedback específic). Nivells: necessita modelatge, ho resol amb suport, treballa autònomament, ho transfereix i justifica. Valoreu que el joc responga segons l’especificació, no la destresa, rapidesa o puntuació de qui hi juga.
+Valorad cuatro dimensiones: **lógica condicional** (prevé y codifica las ramas); **integración y estado** (sensor o entrada, respuesta, puntuación y reinicio concuerdan); **pruebas y depuración** (prueba casos no estándar y corrige con evidencia); **diseño inclusivo/colaboración** (reglas transparentes, alternativas, roles y retroalimentación específica). Niveles: necesita modelado, lo resuelve con apoyo, trabaja autónomamente, lo transfiere y justifica. Valorad que el juego responda según la especificación, no la destreza, rapidez o puntuación de quien juega.
 
-## ♿ Inclusió, privacitat i seguretat
+## ♿ Inclusión, privacidad y seguridad
 
-Cada regla combina símbol i paraula amb color; hi ha mode manual i mode sense so, i els torns no depenen de velocitat de reacció. Permeteu llegir, explicar, programar, registrar o construir amb valor equivalent. No useu contrasenyes, cares, noms ni dades personals. Manteniu joc i mecanisme a taula, urpa limitada a fitxes de cartó, velocitat baixa i motors aturats en qualsevol ajust. Sensor i inclinació no són dispositius de seguretat ni garanteixen una detecció. Cap peça s’apropa a cossos; supervisió contínua.
+Cada regla combina símbolo y palabra con color; hay modo manual y modo sin sonido, y los turnos no dependen de la velocidad de reacción. Permitid leer, explicar, programar, registrar o construir con un valor equivalente. No uséis contraseñas, caras, nombres ni datos personales. Mantened el juego y el mecanismo en la mesa, la garra limitada a fichas de cartón, la velocidad baja y los motores detenidos en cualquier ajuste. El sensor y la inclinación no son dispositivos de seguridad ni garantizan una detección. Ninguna pieza se acerca a los cuerpos; supervisión continua.
 
-## 🔗 Referent oficial i decisions d’adaptació
+## 🔗 Referente oficial y decisiones de adaptación
 
-Adapta la unitat 5 *Playing Games with Simple Conditions* del curs LEGO Education [*Introduction to Python Programming · Course 1*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt834b554cdaa246f7/6584064fd082f7672425e7ea/File_1_Units12345_Intro_to_Python_Course_TG_Course.pdf?locale=en-us): *Controlling Motion with Tilt*, *Claw Machine*, *Charting Game Decisions*, *Guess Which Color*, *Guessing Game*, *Score!*, *Game Time* i *Ideas to Help with Game Time*. Es conserva la pràctica de sensor de moviment, bucle d’interacció, representació de decisions, sensor de color amb condicions, `if/elif/else` i depuració, moviment/matriu com a resposta de joc, projecte integrat amb seqüència d’esdeveniments i revisió per companys. El joc de fira, el tauler, les regles i l’avaluació són propis; la instrucció de maquinari i els noms d’API s’han de validar en l’app disponible. Les durades oficials indexades indiquen jocs de 45 minuts, projecte de 90 minuts i revisió de 30–45 minuts; la planificació ací permet dividir el projecte en més d’una sessió.
+Adapta la unidad 5 *Playing Games with Simple Conditions* del curso LEGO Education [*Introduction to Python Programming · Course 1*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt834b554cdaa246f7/6584064fd082f7672425e7ea/File_1_Units12345_Intro_to_Python_Course_TG_Course.pdf?locale=en-us): *Controlling Motion with Tilt*, *Claw Machine*, *Charting Game Decisions*, *Guess Which Color*, *Guessing Game*, *Score!*, *Game Time* e *Ideas to Help with Game Time*. Se conserva la práctica de sensor de movimiento, bucle de interacción, representación de decisiones, sensor de color con condiciones, `if/elif/else` y depuración, movimiento/matriz como respuesta de juego, proyecto integrado con secuencia de eventos y revisión por compañeros. El juego de feria, el tablero, las reglas y la evaluación son propios; la instrucción de hardware y los nombres de API deben validarse en la app disponible. Las duraciones oficiales indexadas indican juegos de 45 minutos, proyecto de 90 minutos y revisión de 30–45 minutos; la planificación aquí permite dividir el proyecto en más de una sesión.

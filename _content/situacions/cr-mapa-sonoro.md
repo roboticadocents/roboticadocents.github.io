@@ -14,70 +14,70 @@ duration: "5 sesiones · 225–250 min"
 challenge: "¿Cómo podemos describir y comparar el ambiente sonoro de un espacio sin identificar quién habla ni confundir una lectura del sensor con una medida clínica o en decibelios?"
 ---
 
-![Codey Rocky al costat d’un mapa de l’aula amb zones de colors i ones que representen mostres controlades de so.](../../_assets/situacions/cr-mapa-sonor.webp)
+![Codey Rocky junto a un mapa del aula con zonas de colores y ondas que representan muestras controladas de sonido.](../../_assets/situacions/cr-mapa-sonor.webp)
 
-_El sensor de so permet comparar mostres en unes condicions acordades; no grava ni identifica què o qui ha produït el so._
+_El sensor de sonido permite comparar muestras en unas condiciones acordadas; no graba ni identifica qué o quién ha producido el sonido._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-La biblioteca de l’escola vol una guia senzilla perquè cada grup puga triar on llegir, conversar en veu baixa o preparar una activitat. La classe construirà un mapa sonor a partir de proves breus i repetibles amb Codey Rocky. El sensor de so del robot ofereix lectures del nivell de so de l’entorn; cada equip les compararà amb les d’altres proves i les representarà com a **valors relatius**, sense convertir-les en decibels ni afirmar que mesuren el benestar d’una persona.
+La biblioteca de la escuela quiere una guía sencilla para que cada grupo pueda elegir dónde leer, conversar en voz baja o preparar una actividad. La clase construirá un mapa sonoro a partir de pruebas breves y repetibles con Codey Rocky. El sensor de sonido del robot ofrece lecturas del nivel de sonido del entorno; cada equipo las comparará con las de otras pruebas y las representará como **valores relativos**, sin convertirlas en decibelios ni afirmar que miden el bienestar de una persona.
 
-El repte parteix de tres escenaris ficticis reproduïts amb materials —paper que s’arruga suaument, pàgines que es passen i un llapis que toca una coberta—, no de converses ni d’enregistraments de l’alumnat. Les proves es fan en una taula preparada, mantenint el robot quiet i controlant distància, orientació i durada. El producte final serà una guia visual revisable: mostrarà què s’ha provat, en quines condicions i quines decisions encara hauria de prendre la comunitat escolar.
+El reto parte de tres escenarios ficticios reproducidos con materiales —papel que se arruga suavemente, páginas que se pasan y un lápiz que toca una cubierta—, no de conversaciones ni de grabaciones del alumnado. Las pruebas se hacen en una mesa preparada, manteniendo el robot quieto y controlando distancia, orientación y duración. El producto final será una guía visual revisable: mostrará qué se ha probado, en qué condiciones y qué decisiones aún debería tomar la comunidad escolar.
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Distingir **so**, lectura del sensor i interpretació; justificar per què són tres coses diferents.
-- Formular una pregunta investigable i mantindre constants la distància, la posició, la durada i la font sonora.
-- Llegir valors relatius del sensor de so, repetir mesures i representar-ne el rang sense atribuir-li unitats que no s’han calibrat.
-- Construir una regla condicional amb dos llindars i provar els casos inferior, igual i superior.
-- Comparar una predicció amb dades, identificar una lectura atípica sense esborrar-la i proposar una nova prova.
-- Comunicar una recomanació d’organització de l’espai amb evidència i límits explícits, sense establir normes de conducta o diagnòstics sobre les persones.
+- Distinguir **sonido**, lectura del sensor e interpretación; justificar por qué son tres cosas diferentes.
+- Formular una pregunta investigable y mantener constantes la distancia, la posición, la duración y la fuente sonora.
+- Leer valores relativos del sensor de sonido, repetir medidas y representar su rango sin atribuirle unidades que no se han calibrado.
+- Construir una regla condicional con dos umbrales y probar los casos inferior, igual y superior.
+- Comparar una predicción con datos, identificar una lectura atípica sin borrarla y proponer una nueva prueba.
+- Comunicar una recomendación de organización del espacio con evidencia y límites explícitos, sin establecer normas de conducta o diagnósticos sobre las personas.
 
-**Vocabulari:** font sonora, sensor, lectura, variable, llindar, repetició, rang, cas límit, representació i límit del model.
+**Vocabulario:** fuente sonora, sensor, lectura, variable, umbral, repetición, rango, caso límite, representación y límite del modelo.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Codey Rocky de la dotació, amb bateria carregada i mBlock 5 instal·lat en un dispositiu compatible.
-- Targetes de tres escenaris de prova; paper, un llibre i un llapis per produir sons suaus i breus.
-- Regla o cinta mètrica, cronòmetre i full de registre amb camps per a codi de mostra, distància, durada, lectura i incidències.
-- Cartolina gran, retoladors i adhesius per al mapa; opcionalment, full de càlcul sense noms ni dades personals.
-- Una zona plana, estable i sense obstacles. Col·loqueu-hi el robot quiet i el material sonor en una posició marcada; manteniu el sensor orientat igual durant tota la sessió.
+- Codey Rocky de la dotación, con batería cargada y mBlock 5 instalado en un dispositivo compatible.
+- Tarjetas de tres escenarios de prueba; papel, un libro y un lápiz para producir sonidos suaves y breves.
+- Regla o cinta métrica, cronómetro y hoja de registro con campos para código de muestra, distancia, duración, lectura e incidencias.
+- Cartulina grande, rotuladores y adhesivos para el mapa; opcionalmente, hoja de cálculo sin nombres ni datos personales.
+- Una zona plana, estable y sin obstáculos. Colocad el robot quieto y el material sonoro en una posición marcada; mantened el sensor orientado igual durante toda la sesión.
 
-Abans de la classe, comproveu en el model i la versió de mBlock del centre que el bloc de lectura de so està disponible. Feu lectures de prova amb la sala en repòs i amb cadascun dels materials, i determineu un interval que l’equip puga distingir de manera repetible. Els valors de cada model i entorn poden variar: els llindars de l’activitat s’estableixen amb la prova local, no es copien d’una fitxa ni s’interpreten com a dB. Si el bloc no està disponible o varia massa, useu una escala d’observació manual i marqueu les dades com a simulació.
+Antes de la clase, comprobad en el modelo y la versión de mBlock del centro que el bloque de lectura de sonido está disponible. Haced lecturas de prueba con la sala en reposo y con cada uno de los materiales, y determinad un intervalo que el equipo pueda distinguir de manera repetible. Los valores de cada modelo y entorno pueden variar: los umbrales de la actividad se establecen con la prueba local, no se copian de una ficha ni se interpretan como dB. Si el bloque no está disponible o varía demasiado, usad una escala de observación manual y marcad los datos como simulación.
 
-## Seqüència didàctica · cinc sessions
+## 📅 Secuencia didáctica · cinco sesiones
 
-### **Què vol dir llegir un so? (45 min).**
+### **¿Qué significa leer un sonido? (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu tres targetes sense fer cap prova encara. En grups, ordeneu-les segons el nivell de so que espereu i expliqueu quina condició podria canviar el resultat. Acordeu que la investigació compara mostres, no classifica persones ni jutja si una aula és bona o roïna.
+Presentad tres tarjetas sin hacer ninguna prueba todavía. En grupos, ordenadlas según el nivel de sonido que esperáis y explicad qué condición podría cambiar el resultado. Acordad que la investigación compara muestras, no clasifica personas ni juzga si un aula es buena o mala.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Poseu Codey Rocky en una marca de la taula, amb el sensor de so lliure i el robot immòbil. Observeu la lectura en repòs durant un interval curt. Repetiu-la amb una sola acció sonora suau —per exemple, passar una pàgina a una distància marcada— i torneu al silenci abans de la següent prova. No parleu cap frase davant del sensor ni feu crits, palmades fortes o sons sobtats.
+Poned Codey Rocky en una marca de la mesa, con el sensor de sonido libre y el robot inmóvil. Observad la lectura en reposo durante un intervalo corto. Repetidla con una sola acción sonora suave —por ejemplo, pasar una página a una distancia marcada— y volved al silencio antes de la siguiente prueba. No habléis ninguna frase delante del sensor ni hagáis gritos, palmadas fuertes o sonidos repentinos.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Dibuixeu el recorregut de la dada: **font sonora → sensor → valor mostrat → interpretació de l’equip**. Registreu una observació i una interpretació diferents. Per exemple: «el valor ha pujat durant la prova» és una observació; «aquesta zona sempre és sorollosa» encara no està justificat.
+Dibujad el recorrido del dato: **fuente sonora → sensor → valor mostrado → interpretación del equipo**. Registrad una observación y una interpretación distintas. Por ejemplo: «el valor ha subido durante la prueba» es una observación; «esta zona siempre es ruidosa» todavía no está justificado.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu només la distància a la font i observeu si la lectura canvia. Després torneu a la marca inicial. Anoteu qualsevol diferència i proposeu com evitar que la posició explique el resultat en lloc del material.
+Cambiad solo la distancia a la fuente y observad si la lectura cambia. Después volved a la marca inicial. Anotad cualquier diferencia y proponed cómo evitar que la posición explique el resultado en lugar del material.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Cada equip lliura el diagrama de la dada i una pregunta que es puga investigar sense enregistrar persones. **Evidència:** predicció inicial, observació, interpretació i una variable que cal controlar.
+Cada equipo entrega el diagrama del dato y una pregunta que se pueda investigar sin grabar personas. **Evidencia:** predicción inicial, observación, interpretación y una variable que hay que controlar.
 
-### **Preparem un protocol de comparació (45 min).**
+### **Preparamos un protocolo de comparación (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu les lectures de la sessió anterior. Què hauria de mantindre’s igual perquè dues proves siguen comparables? Anoteu una predicció per a cadascun dels tres materials i una possible font d’error.
+Recuperad las lecturas de la sesión anterior. ¿Qué debería mantenerse igual para que dos pruebas sean comparables? Anotad una predicción para cada uno de los tres materiales y una posible fuente de error.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Definiu un protocol comú: mateixa taula, mateixa orientació del robot, mateixa distància entre sensor i font, mateixa durada i una pausa entre proves. Una persona prepara el material, una altra inicia el programa, una tercera registra el valor i una quarta comprova el protocol. Canvieu els rols després de cada font.
+Definid un protocolo común: misma mesa, misma orientación del robot, misma distancia entre sensor y fuente, misma duración y una pausa entre pruebas. Una persona prepara el material, otra inicia el programa, una tercera registra el valor y una cuarta comprueba el protocolo. Cambiad los roles después de cada fuente.
 
 ```blocks
 quan comença
@@ -87,27 +87,27 @@ quan comença
   torna a l'estat de repòs
 ```
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu tres repeticions de cada mostra. Registreu tots els valors, incloses les lectures inesperades. Calculeu el mínim, el màxim i el rang (màxim − mínim); no useu una mitjana si les lectures són tan disperses que amaga la variació.
+Haced tres repeticiones de cada muestra. Registrad todos los valores, incluidas las lecturas inesperadas. Calculad el mínimo, el máximo y el rango (máximo − mínimo); no uséis una media si las lecturas son tan dispersas que oculta la variación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu els fulls entre parelles. Comproveu si una altra parella podria repetir el protocol sense preguntar-vos cap pas. Si falta distància, durada o codi de mostra, afegiu-ho i repetiu una prova.
+Intercambiad las hojas entre parejas. Comprobad si otra pareja podría repetir el protocolo sin preguntaros ningún paso. Si falta distancia, duración o código de muestra, añadidlo y repetid una prueba.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compareu les tres repeticions i destaqueu una lectura estable i una de variable. **Evidència:** protocol datat, registre complet i justificació d’una decisió de control.
+Comparad las tres repeticiones y destacad una lectura estable y una variable. **Evidencia:** protocolo fechado, registro completo y justificación de una decisión de control.
 
-### **Construïm una escala relativa i una regla (45–50 min).**
+### **Construimos una escala relativa y una regla (45–50 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Ordeneu les mostres a partir dels rangs observats, no d’una impressió inicial. Marqueu amb un interrogant les que se superposen. Predigueu quin llindar separaria dues categories útils per a la guia i per què eixa separació podria fallar.
+Ordenad las muestras a partir de los rangos observados, no de una impresión inicial. Marcad con un interrogante las que se superponen. Predecid qué umbral separaría dos categorías útiles para la guía y por qué esa separación podría fallar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Trieu dos llindars a partir de les dades locals i programeu tres estats visibles a la matriu LED: lectura baixa, intermèdia o alta segons l’escala de la classe. Els llindars són convencions de l’activitat, no valors universals. Comproveu al programa que les condicions no se solapen i que cada cas té una resposta.
+Elegid dos umbrales a partir de los datos locales y programad tres estados visibles en la matriz LED: lectura baja, intermedia o alta según la escala de la clase. Los umbrales son convenciones de la actividad, no valores universales. Comprobad en el programa que las condiciones no se solapan y que cada caso tiene una respuesta.
 
 ```blocks
 quan comença
@@ -120,84 +120,84 @@ quan comença
     mostra el símbol de nivell alt
 ```
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu una taula de decisió amb valors per davall, iguals i per damunt de cada llindar. Simuleu cada fila abans d’executar-la i confirmeu què mostra el robot. Si la lectura oscil·la al voltant del límit, anoteu la incertesa; no presenteu el LED com una alarma.
+Haced una tabla de decisión con valores por debajo, iguales y por encima de cada umbral. Simulad cada fila antes de ejecutarla y confirmad qué muestra el robot. Si la lectura oscila alrededor del límite, anotad la incertidumbre; no presentéis el LED como una alarma.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu un llindar i torneu a provar les mateixes mostres. Compareu quantes canvien de categoria i si la modificació millora la utilitat del mapa. Torneu a la regla inicial si la nova decisió no es pot justificar amb dades.
+Cambiad un umbral y volved a probar las mismas muestras. Comparad cuántas cambian de categoría y si la modificación mejora la utilidad del mapa. Volved a la regla inicial si la nueva decisión no se puede justificar con datos.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu amb un exemple per què un valor igual al llindar necessita una regla definida. **Evidència:** programa, taula amb sis casos límit i una comparació entre llindars.
+Explicad con un ejemplo por qué un valor igual al umbral necesita una regla definida. **Evidencia:** programa, tabla con seis casos límite y una comparación entre umbrales.
 
-### **Representem el mapa de mostres de la biblioteca (45–50 min).**
+### **Representamos el mapa de muestras de la biblioteca (45–50 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu un plànol fictici amb tres espais: taula de lectura, prestatgeria i zona de preparació de materials. La classe no mesurarà ni etiquetarà espais reals ocupats. Predigueu com representaríeu una mostra estable, una variable i una prova que encara no s’ha fet.
+Mostrad un plano ficticio con tres espacios: mesa de lectura, estantería y zona de preparación de materiales. La clase no medirá ni etiquetará espacios reales ocupados. Predecid cómo representaríais una muestra estable, una variable y una prueba que todavía no se ha hecho.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Assigneu cada material a una zona fictícia i situeu-hi el codi de mostra, no el nom de cap persona. Enregistreu de nou tres repeticions per material amb el protocol. Traslladeu al mapa una escala de colors acordada pel grup i afegiu-hi la distància i el rang observat.
+Asignad cada material a una zona ficticia y situad allí el código de muestra, no el nombre de ninguna persona. Registrad de nuevo tres repeticiones por material con el protocolo. Trasladad al mapa una escala de colores acordada por el grupo y añadid allí la distancia y el rango observado.
 
-![Codey Rocky al costat d’un mapa de tres zones fictícies i un gràfic de barres sense dades personals.](../../_assets/situacions/sa-cr-mapa-sonor-zones.webp)
+![Codey Rocky junto a un mapa de tres zonas ficticias y un gráfico de barras sin datos personales.](../../_assets/situacions/sa-cr-mapa-sonor-zones.webp)
 
-_Les zones de color representen escenaris controlats de prova, no una vigilància de la biblioteca ni una mesura de l’estat de les persones._
+_Las zonas de color representan escenarios controlados de prueba, no una vigilancia de la biblioteca ni una medida del estado de las personas._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una parella que no ha fet les mesures interpreta el mapa. Demaneu-li que assenyale quines conclusions estan sostingudes per les repeticions i quines dependrien de mesurar l’espai real. Afegiu una llegenda per a «prova estable», «lectura variable» i «sense dades».
+Una pareja que no ha hecho las medidas interpreta el mapa. Pedidle que señale qué conclusiones están sostenidas por las repeticiones y cuáles dependerían de medir el espacio real. Añadid una leyenda para «prueba estable», «lectura variable» y «sin datos».
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu un detall del mapa perquè siga més clar en escala de grisos i per a persones que no distingeixen els colors: incorporeu formes, patrons o etiquetes breus. Comproveu si la informació continua sent entenedora sense dependre només del color.
+Cambiad un detalle del mapa para que sea más claro en escala de grises y para personas que no distinguen los colores: incorporad formas, patrones o etiquetas breves. Comprobad si la información sigue siendo comprensible sin depender solo del color.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Valideu la llegenda amb una interpretació en veu alta o amb targetes de resposta. **Evidència:** mapa amb unitat d’escala definida pel grup, valors i rangs, codi de mostra i llegenda accessible.
+Validad la leyenda con una interpretación en voz alta o con tarjetas de respuesta. **Evidencia:** mapa con unidad de escala definida por el grupo, valores y rangos, código de muestra y leyenda accesible.
 
-### **Proposem una guia responsable i la revisem (45–60 min).**
+### **Proponemos una guía responsable y la revisamos (45–60 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Llegiu tres recomanacions fictícies: una basada en una sola lectura, una que afirma usar decibels sense calibratge i una que descriu les condicions de la prova. Trieu quina és més responsable i indiqueu quina dada necessitaríeu per millorar les altres.
+Leed tres recomendaciones ficticias: una basada en una sola lectura, una que afirma usar decibelios sin calibración y una que describe las condiciones de la prueba. Elegid cuál es más responsable e indicad qué dato necesitaríais para mejorar las otras.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Prepareu una guia d’una pàgina amb pregunta, protocol resumit, mapa, una troballa sostinguda per dades i un límit. Redacteu recomanacions com a opcions d’organització de materials o espais, no com a ordres a les persones. Incloeu una alternativa sense robot per a repetir la comparació amb una escala observacional.
+Preparad una guía de una página con pregunta, protocolo resumido, mapa, un hallazgo sostenido por datos y un límite. Redactad recomendaciones como opciones de organización de materiales o espacios, no como órdenes a las personas. Incluid una alternativa sin robot para repetir la comparación con una escala observacional.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu una galeria de guies. Cada equip deixa un comentari basat en evidència: «la repetició mostra…», «ens falta saber…» o «podríeu aclarir…». No es comparen equips per qui obté les lectures més baixes.
+Haced una galería de guías. Cada equipo deja un comentario basado en evidencia: «la repetición muestra…», «nos falta saber…» o «podríais aclarar…». No se comparan equipos por quién obtiene las lecturas más bajas.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu una afirmació perquè distingisca dada i proposta. Afegiu una nota que explique que el sensor pot respondre a sons diferents, que el valor depén del model i de les condicions, i que no hi ha enregistrament ni reconeixement de parla.
+Revisad una afirmación para que distinga dato y propuesta. Añadid una nota que explique que el sensor puede responder a sonidos distintos, que el valor depende del modelo y de las condiciones, y que no hay grabación ni reconocimiento de habla.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Presenteu la guia final i responeu: quina decisió pot ajudar a prendre, quina dada la sosté i què queda fora del model? **Evidència:** guia revisada, registre de proves, codi i retorn incorporat.
+Presentad la guía final y responded: ¿qué decisión puede ayudar a tomar, qué dato la sostiene y qué queda fuera del modelo? **Evidencia:** guía revisada, registro de pruebas, código y retorno incorporado.
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu el diagrama de la dada, el protocol, el codi, les repeticions, la taula de casos límit, el mapa i la guia final. Useu una escala de tres nivells —**inicial**, **en procés**, **consolidat**— en aquests criteris:
+Recoged el diagrama del dato, el protocolo, el código, las repeticiones, la tabla de casos límite, el mapa y la guía final. Usad una escala de tres niveles —**inicial**, **en proceso**, **consolidado**— en estos criterios:
 
-- Manté o identifica les condicions que cal controlar per comparar dues mostres.
-- Registra totes les repeticions i descriu el rang sense ocultar lectures variables.
-- Programa i explica una regla condicional que inclou els casos iguals al llindar.
-- Separa el valor llegit de la interpretació i limita les conclusions al que s’ha provat.
-- Revisa una representació perquè puga llegir-se sense dependre només del color.
+- Mantiene o identifica las condiciones que hay que controlar para comparar dos muestras.
+- Registra todas las repeticiones y describe el rango sin ocultar lecturas variables.
+- Programa y explica una regla condicional que incluye los casos iguales al umbral.
+- Separa el valor leído de la interpretación y limita las conclusiones a lo que se ha probado.
+- Revisa una representación para que pueda leerse sin depender solo del color.
 
-L’autoavaluació demana quin canvi ha fet l’equip després d’una dada inesperada. La coavaluació revisa si el mapa mostra escala, repeticions, condicions i límits. No s’avalua la capacitat de mantindre el silenci ni el nivell sonor d’una classe.
+La autoevaluación pregunta qué cambio ha hecho el equipo después de un dato inesperado. La coevaluación revisa si el mapa muestra escala, repeticiones, condiciones y límites. No se evalúa la capacidad de mantener el silencio ni el nivel sonoro de una clase.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Cap activitat grava, emmagatzema o classifica la veu. No s’usen noms, converses, enregistraments ni mesures de persones; les mostres són materials i accions controlades. Es fan sons suaus, breus i anticipats, i qualsevol alumne pot triar un rol sense produir o escoltar el so. No es fa servir el dispositiu per a controlar el comportament, comparar grups o fer afirmacions clíniques.
+Ninguna actividad graba, almacena o clasifica la voz. No se usan nombres, conversaciones, grabaciones ni medidas de personas; las muestras son materiales y acciones controladas. Se hacen sonidos suaves, breves y anticipados, y cualquier alumno puede elegir un rol sin producir ni escuchar el sonido. No se usa el dispositivo para controlar el comportamiento, comparar grupos o hacer afirmaciones clínicas.
 
-Oferiu rols de programació, preparació, registre, comprovació i comunicació, amb rotació o elecció. Les instruccions es donen en text i oralment; el mapa incorpora patrons, icones i paraules a més dels colors. Qui ho preferisca pot registrar valors que dicta una parella, ordenar targetes de casos o seguir la mateixa taula de decisió en paper. Manteniu el robot quiet durant la lectura, eviteu sons forts i desconnecteu-lo abans de moure’l entre proves.
+Ofreced roles de programación, preparación, registro, comprobación y comunicación, con rotación o elección. Las instrucciones se dan en texto y oralmente; el mapa incorpora patrones, iconos y palabras además de los colores. Quien lo prefiera puede registrar valores que dicta una pareja, ordenar tarjetas de casos o seguir la misma tabla de decisión en papel. Mantened el robot quieto durante la lectura, evitad sonidos fuertes y desconectadlo antes de moverlo entre pruebas.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-La fitxa pren com a referent la descripció oficial dels mòduls de Codey Rocky de Makeblock: el [sensor de so](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) detecta el nivell sonor de l’entorn; el robot també té matriu LED i indicador RGB. La [fitxa de producte](https://www.makeblock.com/pages/codey-rocky-robot-toys-for-kids) enumera els mòduls integrats. La situació transforma eixa capacitat en una investigació escolar pròpia amb materials controlats i lectura crítica; no és una adaptació d’una lliçó oficial concreta ni promet mesuraments calibrats en decibels.
+La ficha toma como referente la descripción oficial de los módulos de Codey Rocky de Makeblock: el [sensor de sonido](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) detecta el nivel sonoro del entorno; el robot también tiene matriz LED e indicador RGB. La [ficha de producto](https://www.makeblock.com/pages/codey-rocky-robot-toys-for-kids) enumera los módulos integrados. La situación transforma esa capacidad en una investigación escolar propia con materiales controlados y lectura crítica; no es una adaptación de una lección oficial concreta ni promete mediciones calibradas en decibelios.

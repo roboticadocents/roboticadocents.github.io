@@ -14,116 +14,116 @@ duration: "3 sesiones"
 challenge: "¿Qué ruta puede seguir el robot para visitar tres espacios de lectura, y cómo podemos inventar una historia diferente en cada parada?"
 ---
 
-![Tale-Bot segueix una graella pròpia que connecta una prestatgeria, un racó de lectura i un cercle de contes.](../../_assets/situacions/tb-biblioteca-barri.webp)
+![Tale-Bot sigue una cuadrícula propia que conecta una estantería, un rincón de lectura y un círculo de cuentos.](../../_assets/situacions/tb-biblioteca-barri.webp)
 
-_Tale-Bot segueix una graella pròpia que connecta una prestatgeria, un racó de lectura i un cercle de contes._
+_Tale-Bot sigue una cuadrícula propia que conecta una estantería, un rincón de lectura y un círculo de cuentos._
 
-## ❓ Repte i intenció
+## ❓ Reto e intención
 
-La biblioteca es converteix en un mapa de llocs imaginaris: un racó de contes, una prestatgeria de llibres sense paraules i una plaça on les històries es conten en veu baixa. Els equips creen un personatge i un motiu per al seu viatge, planifiquen una ruta amb Tale-Bot i fan que cada parada aporte una part al relat. La programació és una seqüència d’ordres que podem representar, provar i corregir; la història és una obra pròpia que podem explicar amb paraules, imatges o gestos.
+La biblioteca se convierte en un mapa de lugares imaginarios: un rincón de cuentos, una estantería de libros sin palabras y una plaza donde las historias se cuentan en voz baja. Los equipos crean un personaje y un motivo para su viaje, planifican una ruta con Tale-Bot y hacen que cada parada aporte una parte al relato. La programación es una secuencia de órdenes que podemos representar, probar y corregir; la historia es una obra propia que podemos explicar con palabras, imágenes o gestos.
 
 
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-orientar-se en una graella, construir una seqüència amb més d’una destinació, anticipar posicions, detectar i corregir una ordre, crear una narració amb inici, canvi i final, escoltar i negociar decisions compartides.
+orientarse en una cuadrícula, construir una secuencia con más de un destino, anticipar posiciones, detectar y corregir una orden, crear una narración con inicio, cambio y final, escuchar y negociar decisiones compartidas.
 
-## Abans de començar
+## Antes de empezar
 
-Per a equips de tres o quatre, prepareu Tale-Bot carregat i comprovat, una graella gran de paper o tela, targetes de fletxes, tres espais de lectura dibuixats, obstacles opcionals i figures o pictogrames per a personatges. Dissenyeu un mapa original i de poques caselles; no cal reproduir les targetes del fabricant. Deixeu un corredor lliure perquè el robot puga girar i avançar sense caure de la taula.
+Para equipos de tres o cuatro, preparad Tale-Bot cargado y comprobado, una cuadrícula grande de papel o tela, tarjetas de flechas, tres espacios de lectura dibujados, obstáculos opcionales y figuras o pictogramas para personajes. Diseñad un mapa original y de pocas casillas; no hace falta reproducir las tarjetas del fabricante. Dejad un pasillo libre para que el robot pueda girar y avanzar sin caerse de la mesa.
 
-Comproveu amb antelació com s’introdueixen, s’executen i s’esborren ordres en el model disponible. La proposta pressuposa únicament els botons de programació bàsica de Tale-Bot; si la unitat concreta incorpora àudio o gravació, aquestes funcions són opcionals i no es necessiten per completar-la. No graveu veus infantils ni associeu personatges a infants reals. El docent pot ser escriba de les idees o oferir pictogrames quan la producció oral o escrita no siga accessible.
+Comprobad con antelación cómo se introducen, se ejecutan y se borran órdenes en el modelo disponible. La propuesta presupone únicamente los botones de programación básica de Tale-Bot; si la unidad concreta incorpora audio o grabación, estas funciones son opcionales y no se necesitan para completarla. No grabéis voces infantiles ni asociéis personajes a niños y niñas reales. El docente puede ser escriba de las ideas u ofrecer pictogramas cuando la producción oral o escrita no sea accesible.
 
-**Vocabulari:** graella, casella, davant, darrere, gir, ruta, ordre, seqüència, personatge, escena i final. Presenteu-lo mentre es mou una figura de paper pel mapa i convideu l’alumnat a descriure posicions amb paraules, gestos o fletxes.
+**Vocabulario:** cuadrícula, casilla, delante, detrás, giro, ruta, orden, secuencia, personaje, escena y final. Presentadlo mientras se mueve una figura de papel por el mapa e invitad al alumnado a describir posiciones con palabras, gestos o flechas.
 
-## 📅 Seqüència didàctica · tres sessions de 40 minuts
+## 📅 Secuencia didáctica · tres sesiones de 40 minutos
 
-### **Creem la biblioteca i els personatges (40 min).**
+### **Creamos la biblioteca y los personajes (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Comenceu amb la pregunta: quin lloc de lectura ens agradaria trobar al barri? Recolliu idees sense valorar-les per realistes o fantàstiques. Predigueu quins espais podrien ajudar a contar un viatge i quina informació ha de descobrir el personatge.
+Empezad con la pregunta: ¿qué lugar de lectura nos gustaría encontrar en el barrio? Recoged ideas sin valorarlas por realistas o fantásticas. Predecid qué espacios podrían ayudar a contar un viaje y qué información debe descubrir el personaje.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En assemblea, seleccioneu tres espais diferents i representeu-los amb dibuixos o pictogrames: per exemple, una prestatgeria de llibres d’animals, un racó de lectura tranquil i una plaça de narració. Parleu de com es comparteix un espai: deixar passar, cuidar els materials i respectar qui vol escoltar en silenci.
+En asamblea, seleccionad tres espacios diferentes y representadlos con dibujos o pictogramas: por ejemplo, una estantería de libros de animales, un rincón de lectura tranquilo y una plaza de narración. Hablad de cómo se comparte un espacio: dejar pasar, cuidar los materiales y respetar a quien quiere escuchar en silencio.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Cada equip tria un personatge fictici —una llavor que busca un conte, un núvol viatger o una tortuga bibliotecària— i decideix què necessita o vol descobrir. Ordeneu tres targetes: inici, canvi durant el viatge i final o descobriment. Encara no programeu: cada parada ha de tindre una raó dins de la història.
+Cada equipo elige un personaje ficticio —una semilla que busca un cuento, una nube viajera o una tortuga bibliotecaria— y decide qué necesita o quiere descubrir. Ordenad tres tarjetas: inicio, cambio durante el viaje y final o descubrimiento. Todavía no programéis: cada parada debe tener una razón dentro de la historia.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Comproveu que el personatge té un motiu per visitar cada espai. Si dues parades conten el mateix, canvieu-ne una o reviseu l’ordre. Una altra parella pot llegir les targetes i dir què espera que passe.
+Comprobad que el personaje tiene un motivo para visitar cada espacio. Si dos paradas cuentan lo mismo, cambiad una o revisad el orden. Otra pareja puede leer las tarjetas y decir qué espera que pase.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa dels tres espais i esquema narratiu amb personatge, motiu i tres moments. «Què vol descobrir? Què pot canviar en cada parada? Quin espai ajuda a explicar aquesta part?»
+**Evidencia:** mapa de los tres espacios y esquema narrativo con personaje, motivo y tres momentos. «¿Qué quiere descubrir? ¿Qué puede cambiar en cada parada? ¿Qué espacio ayuda a explicar esta parte?»
 
-### **Planifiquem i provem la ruta (40 min).**
+### **Planificamos y probamos la ruta (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Col·loqueu la graella al terra o en una taula accessible. Situeu Tale-Bot a l’inici i els tres espais en destinacions separades. Predigueu en quina casella acabarà després de les primeres ordres i marqueu l’orientació inicial.
+Colocad la cuadrícula en el suelo o en una mesa accesible. Situad Tale-Bot en el inicio y los tres espacios en destinos separados. Predecid en qué casilla acabará después de las primeras órdenes y marcad la orientación inicial.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Afegiu, si cal, un únic obstacle que obligue a triar camí. Cada equip mou primer una fitxa de paper casella a casella i representa les instruccions amb fletxes. Un moviment equival a passar a la casella adjacent; els girs depenen de l’orientació del robot.
+Añadid, si hace falta, un único obstáculo que obligue a elegir camino. Cada equipo mueve primero una ficha de papel casilla a casilla y representa las instrucciones con flechas. Un movimiento equivale a pasar a la casilla adyacente; los giros dependen de la orientación del robot.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Ordeneu les targetes de fletxes i assenyaleu les tres parades. Anoteu la seqüència i la predicció de casella final. Comproveu el pla amb una altra parella abans de transferir-lo al robot.
+Ordenad las tarjetas de flechas y señalad las tres paradas. Anotad la secuencia y la predicción de casilla final. Comprobad el plan con otra pareja antes de transferirlo al robot.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Una persona introdueix la seqüència a Tale-Bot, una altra comprova la posició i una tercera compara el resultat amb el mapa. Feu un trajecte curt fins a la primera destinació i continueu després cap a les altres. Si el robot no arriba on s’esperava, reconstruïu les ordres i canvieu-ne només una cada vegada. Compareu dues rutes: quina és més curta, quina evita l’obstacle i quina és més fàcil de comprovar?
+Una persona introduce la secuencia en Tale-Bot, otra comprueba la posición y una tercera compara el resultado con el mapa. Haced un trayecto corto hasta el primer destino y continuad después hacia los demás. Si el robot no llega donde se esperaba, reconstruid las órdenes y cambiad solo una cada vez. Comparad dos rutas: ¿cuál es más corta, cuál evita el obstáculo y cuál es más fácil de comprobar?
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dues propostes de ruta, seqüència final anotada i registre d’una correcció explicada. «On pensàveu que acabaria? Quina ordre concreta ha canviat el resultat? Com ho podem comprovar?»
+**Evidencia:** dos propuestas de ruta, secuencia final anotada y registro de una corrección explicada. «¿Dónde pensabais que acabaría? ¿Qué orden concreta ha cambiado el resultado? ¿Cómo lo podemos comprobar?»
 
-### **Narrem les parades i compartim (40 min).**
+### **Narramos las paradas y compartimos (40 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu l’esquema de la primera sessió i assigneu una part de la història a cada espai. Predigueu què entendrà el públic només observant les parades i les targetes.
+Recuperad el esquema de la primera sesión y asignad una parte de la historia a cada espacio. Predecid qué entenderá el público solo observando las paradas y las tarjetas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Abans de moure el robot, acordeu una frase breu, un gest o una imatge per a cada parada. Prepareu una targeta d’escena que indique què hi descobreix el personatge. Manteniu la història fictícia; ningú no ha de relatar experiències personals ni actuar en públic si no vol.
+Antes de mover el robot, acordad una frase breve, un gesto o una imagen para cada parada. Preparad una tarjeta de escena que indique qué descubre allí el personaje. Mantened la historia ficticia; nadie debe relatar experiencias personales ni actuar en público si no quiere.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Reviseu l’ordre de les escenes amb el mapa i anoteu quina parada correspon a cada moment. Si useu una funció de so del model disponible, demaneu permís i empreu només contingut creat pel grup; també podeu narrar en directe o mostrar pictogrames.
+Revisad el orden de las escenas con el mapa y anotad qué parada corresponde a cada momento. Si usáis una función de sonido del modelo disponible, pedid permiso y emplead solo contenido creado por el grupo; también podéis narrar en directo o mostrar pictogramas.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu una passada completa de la ruta mentre una persona narra i una altra verifica les destinacions. Un altre equip reconstrueix l’ordre de les escenes observant les targetes. Si algun moment no s’entén, canvieu una targeta, una frase o l’ordre d’una parada i repetiu la comprovació.
+Haced una pasada completa de la ruta mientras una persona narra y otra verifica los destinos. Otro equipo reconstruye el orden de las escenas observando las tarjetas. Si algún momento no se entiende, cambiad una tarjeta, una frase o el orden de una parada y repetid la comprobación.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** demostració de ruta, seqüència narrativa visual i una millora proposada a partir de la prova. «Què sabria el públic de la història només mirant les parades? El recorregut ha ajudat a entendre-la?»
+**Evidencia:** demostración de ruta, secuencia narrativa visual y una mejora propuesta a partir de la prueba. «¿Qué sabría el público de la historia solo mirando las paradas? ¿Ha ayudado el recorrido a entenderla?»
 
-## 📋 Avaluació i evidències
+## 📋 Evaluación y evidencias
 
-Observeu el raonament i la col·laboració durant les proves. Registreu si l’equip:
+Observad el razonamiento y la colaboración durante las pruebas. Registrad si el equipo:
 
-- situa inici i destinacions en la graella i descriu una posició relativa;
+- sitúa inicio y destinos en la cuadrícula y describe una posición relativa;
 
-- representa una ruta amb ordres en l’ordre d’execució i prediu almenys una arribada;
+- representa una ruta con órdenes en el orden de ejecución y predice al menos una llegada;
 
-- compara el trajecte real amb el previst i localitza una ordre que cal revisar;
+- compara el trayecto real con el previsto y localiza una orden que hay que revisar;
 
-- connecta les parades amb moments diferents d’un relat comprensible;
+- conecta las paradas con momentos diferentes de un relato comprensible;
 
-- escolta una proposta del grup i explica una decisió compartida.
+- escucha una propuesta del grupo y explica una decisión compartida.
 
-Guardeu el mapa inicial, la ruta corregida i les targetes de les tres escenes. Una seqüència dictada, assenyalada o construïda amb fletxes demostra el mateix aprenentatge que una explicació oral completa. No puntueu la velocitat ni la longitud del relat.
+Guardad el mapa inicial, la ruta corregida y las tarjetas de las tres escenas. Una secuencia dictada, señalada o construida con flechas demuestra el mismo aprendizaje que una explicación oral completa. No puntuéis la velocidad ni la longitud del relato.
 
-## ♿ Més d’una manera de participar
+## ♿ Más de una manera de participar
 
-Augmenteu la mida de les caselles i el contrast, simplifiqueu el mapa a una destinació cada vegada o afegiu relleu tàctil. Repartiu rols rotatius —narrador/a, planificador/a, programador/a i verificador/a—, amb dret a observar o canviar de rol. Oferiu pictogrames, frases iniciadores («El personatge arriba perquè…»), narració compartida i temps d’espera. El robot pot ser conduït per una persona seguint les indicacions de qui planifica; cap infant necessita parlar, llegir, escriure o manipular el dispositiu per participar en el repte.
+Aumentad el tamaño de las casillas y el contraste, simplificad el mapa a un destino cada vez o añadid relieve táctil. Repartid roles rotativos —narrador/a, planificador/a, programador/a y verificador/a—, con derecho a observar o cambiar de rol. Ofreced pictogramas, frases iniciadoras («El personaje llega porque…»), narración compartida y tiempo de espera. El robot puede ser conducido por una persona siguiendo las indicaciones de quien planifica; ningún niño o niña necesita hablar, leer, escribir o manipular el dispositivo para participar en el reto.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-La idea de donar un motiu narratiu a cada destinació s’inspira en l’activitat oficial [Deliver Animals](https://matatalab.com/en/node/86) i en el marc de [les Activity Cards de Tale-Bot](https://matatalab.com/en/lesson4.4). Ací canviem el context, els personatges, el mapa i el guió.
+La idea de dar un motivo narrativo a cada destino se inspira en la actividad oficial [Deliver Animals](https://matatalab.com/en/node/86) y en el marco de [las Activity Cards de Tale-Bot](https://matatalab.com/en/lesson4.4). Aquí cambiamos el contexto, los personajes, el mapa y el guion.

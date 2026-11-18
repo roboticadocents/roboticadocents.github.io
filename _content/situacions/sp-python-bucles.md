@@ -14,35 +14,35 @@ duration: "7 lecciones · 7–10 sesiones"
 challenge: "¿Cómo podemos programar una máquina de mosaico de mesa con patrones repetibles, controlar cuántas veces actúa y evitar que un bucle continúe cuando ya ha terminado la tarea?"
 ---
 
-![Mecanisme real construït amb LEGO SPIKE Prime, hub i motor, que col·loca peces planes per crear un mosaic geomètric inspirat en l’horta valenciana.](../../_assets/situacions/sp-python-bucles.webp)
+![Mecanismo real construido con LEGO SPIKE Prime, hub y motor, que coloca piezas planas para crear un mosaico geométrico inspirado en la huerta valenciana.](../../_assets/situacions/sp-python-bucles.webp)
 
-_Un bucle fa que una mateixa acció es repetisca; el comptador i la condició determinen quan toca parar._
+_Un bucle hace que una misma acción se repita; el contador y la condición determinan cuándo toca parar._
 
-## 🌱 Repte i sentit
+## 🌱 Reto y sentido
 
-Una associació cultural de la comarca vol preparar per a la fira escolar un mosaic modular inspirat en séquies, bancals i formes vegetals de l’horta. Cada equip dissenya una petita màquina de taula que repeteix un moviment amb un motor SPIKE Prime: pot desplaçar un indicador, fer avançar una fitxa gran o assenyalar una casella cada vegada. El codi ha de produir un patró recognoscible, comptar les repeticions i acabar en el moment previst. No es tracta de reproduir una tècnica artesanal ni d’automatitzar treball manual real; és una maqueta computacional i artística.
+Una asociación cultural de la comarca quiere preparar para la feria escolar un mosaico modular inspirado en acequias, bancales y formas vegetales de la huerta. Cada equipo diseña una pequeña máquina de mesa que repite un movimiento con un motor SPIKE Prime: puede desplazar un indicador, hacer avanzar una ficha grande o señalar una casilla cada vez. El código debe producir un patrón reconocible, contar las repeticiones y terminar en el momento previsto. No se trata de reproducir una técnica artesanal ni de automatizar trabajo manual real; es una maqueta computacional y artística.
 
-Aquesta situació adapta la unitat 4 de Course 1, *Doing Reps with Loops*, de LEGO Education *Introduction to Python Programming*. La progressió tracta bucles comptats en *Warm Up Loop with Leo*, registre de repeticions i compte arrere en *Counting Reps with Leo*, ritme en *Dance Loop with Coach*, selecció condicional de moviments en *Setting Conditions for Yoga*, comportament persistent en *Infinite Moves*, creació de model/algoritme repetitiu en *Leading the Team with Loops* i millora amb feedback en *Ideas for Leading Your Team with Loops*. Es canvia l’exercici corporal per un procés de composició de mosaic, conservant els conceptes de control i seqüència.
+Esta situación adapta la unidad 4 de Course 1, *Doing Reps with Loops*, de LEGO Education *Introduction to Python Programming*. La progresión trata los bucles contados en *Warm Up Loop with Leo*, el registro de repeticiones y la cuenta atrás en *Counting Reps with Leo*, el ritmo en *Dance Loop with Coach*, la selección condicional de movimientos en *Setting Conditions for Yoga*, el comportamiento persistente en *Infinite Moves*, la creación de un modelo o algoritmo repetitivo en *Leading the Team with Loops* y la mejora con feedback en *Ideas for Leading Your Team with Loops*. Se cambia el ejercicio corporal por un proceso de composición de mosaico, conservando los conceptos de control y secuencia.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Identificar un patró d’instruccions repetides i substituir còpies literals per un bucle `for` quan el nombre de repeticions és conegut.
+- Identificar un patrón de instrucciones repetidas y sustituir copias literales por un bucle `for` cuando el número de repeticiones es conocido.
 
-- Interpretar `range(n)` com un conjunt de n iteracions i predir quantes vegades s’executa el cos del bucle.
+- Interpretar `range(n)` como un conjunto de n iteraciones y predecir cuántas veces se ejecuta el cuerpo del bucle.
 
-- Usar una variable comptadora per registrar repeticions, mostrar un recompte i construir una seqüència de compte arrere sense confondre el valor mostrat amb l’índex del programa.
+- Usar una variable contadora para registrar repeticiones, mostrar un recuento y construir una secuencia de cuenta atrás sin confundir el valor mostrado con el índice del programa.
 
-- Comparar un moviment repetit amb pausa fixa i un patró rítmic; documentar temps i diferències entre ordre i moviment físic real.
+- Comparar un movimiento repetido con pausa fija y un patrón rítmico; documentar tiempos y diferencias entre la orden y el movimiento físico real.
 
-- Seleccionar una seqüència segons una condició explícita de disseny (p. ex. tipus de fitxa o patró acordat), i provar els dos camins d’eixida.
+- Seleccionar una secuencia según una condición explícita de diseño (p. ej., tipo de ficha o patrón acordado) y probar los dos caminos de salida.
 
-- Explicar per què un bucle infinit no té finalització pròpia, definir-ne una condició d’eixida o un mecanisme d’aturada manual i no executar-lo sense supervisió.
+- Explicar por qué un bucle infinito no tiene finalización propia, definirle una condición de salida o un mecanismo de parada manual y no ejecutarlo sin supervisión.
 
-- Descompondre una composició repetitiva en estructura, nombre de mòduls, ordre, pausa i reinici; usar un cicle de disseny propi.
+- Descomponer una composición repetitiva en estructura, número de módulos, orden, pausa y reinicio; usar un ciclo de diseño propio.
 
-- Oferir feedback sobre el comportament i el codi amb criteris observables i registrar com una modificació afecta la repetició.
+- Ofrecer feedback sobre el comportamiento y el código con criterios observables y registrar cómo una modificación afecta la repetición.
 
-**Iteració:** una volta del cos del bucle. **Comptador:** variable que registra quantes voltes o elements s’han processat. **Bucle comptat:** repetició amb una quantitat coneguda d’iteracions. **Condició:** expressió que pot resultar vertadera o falsa. **Bucle infinit:** repetició que no acaba mentre no s’interrompa. **Patró:** ordre que es reconeix perquè alguns elements es repeteixen.
+**Iteración:** una vuelta del cuerpo del bucle. **Contador:** variable que registra cuántas vueltas o elementos se han procesado. **Bucle con contador:** repetición con una cantidad conocida de iteraciones. **Condición:** expresión que puede resultar verdadera o falsa. **Bucle infinito:** repetición que no acaba mientras no se interrumpa. **Patrón:** orden que se reconoce porque algunos elementos se repiten.
 
 ```python
 # Exemple de Python general: genera una llista de passos previsibles
@@ -50,182 +50,182 @@ for index in range(4):
     print("col·loca la fitxa", index + 1)
 ```
 
-El codi sols imprimeix text i no controla SPIKE Prime. Per a moviment, pausa, matriu del hub i parada, adapteu la sintaxi a l’API Python de l’app instal·lada; les versions de SPIKE poden diferir. Confirmeu ports i velocitats amb el model immobilitzat abans d’executar-lo a la pista.
+El código solo imprime texto y no controla SPIKE Prime. Para movimiento, pausa, matriz del hub y parada, adaptad la sintaxis a la API Python de la app instalada; las versiones de SPIKE pueden diferir. Confirmad puertos y velocidades con el modelo inmovilizado antes de ejecutarlo en la pista.
 
-## 🧰 Materials i preparació docent
+## 🧰 Materiales y preparación docente
 
-Un SPIKE Prime 45678 per equip, hub carregat, un motor mitjà i peces Technic per a un mecanisme de baixa força i recorregut curt, plataforma estable, fitxes grans planes de cartó o paper, quadrícula impresa, retoladors, cinta de paper, regle, diari d’enginyeria i dispositiu amb SPIKE Python i consola. El motor només mou un indicador o empeny una fitxa lleugera per una canaleta oberta; no s’usa eina de tall, pinça de força ni material menut. El mural final es pot completar amb peces de paper sense mecanisme.
+Un SPIKE Prime 45678 por equipo, hub cargado, un motor mediano y piezas Technic para un mecanismo de baja fuerza y recorrido corto, plataforma estable, fichas grandes planas de cartón o papel, cuadrícula impresa, rotuladores, cinta de papel, regla, diario de ingeniería y dispositivo con SPIKE Python y consola. El motor solo mueve un indicador o empuja una ficha ligera por una canaleta abierta; no se usa herramienta de corte, pinza de fuerza ni material pequeño. El mural final se puede completar con piezas de papel sin mecanismo.
 
-Definiu límits de velocitat i angle, topalls mecànics i espai segur perquè l’accessori no caiga de la taula. Cada equip tria un mòdul gràfic senzill (per exemple, alternança de dues formes o seqüència de tres colors) i una forma d’entrada manual. Prepareu codi de demostració amb un `for` curt, un comptador, una condició i un exemple de bucle infinit només per a lectura en paper. Expliqueu que qualsevol codi que continua sense pausa pot congelar l’app o repetir moviment: la demostració d’infinit es traça mentalment o s’executa sense motors, i la professora manté accés a parar el programa.
+Definid límites de velocidad y ángulo, topes mecánicos y espacio seguro para que el accesorio no caiga de la mesa. Cada equipo elige un módulo gráfico sencillo (por ejemplo, alternancia de dos formas o secuencia de tres colores) y una forma de entrada manual. Preparad código de demostración con un `for` corto, un contador, una condición y un ejemplo de bucle infinito solo para lectura en papel. Explicad que cualquier código que continúa sin pausa puede congelar la app o repetir movimiento: la demostración de infinito se traza mentalmente o se ejecuta sin motores, y la profesora mantiene acceso a parar el programa.
 
-Rols rotatius: lectura/escriptura Python, construcció segura, registre i revisió de patrons. Acordeu com es representa el pas real del motor: una fitxa moguda, una llum o una anotació. Si no es disposa de motor, useu una tira de paper amb marcadors per simular la mateixa lògica.
+Roles rotativos: lectura/escritura de Python, construcción segura, registro y revisión de patrones. Acordad cómo se representa el paso real del motor: una ficha movida, una luz o una anotación. Si no se dispone de motor, usad una tira de papel con marcadores para simular la misma lógica.
 
-## 📅 Seqüència didàctica · set lliçons
+## 📅 Secuencia didáctica · siete lecciones
 
-### **Lliçó 1 · Quatre repeticions, una instrucció (45 min).**
+### **Lección 1 · Cuatro repeticiones, una instrucción (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Activació (7 min):** presenteu una tira amb quatre caselles i demaneu a l’alumnat com descriuria el mateix gest de col·locar una fitxa quatre vegades. Compareu quatre línies idèntiques amb “repeteix quatre voltes”.
+**Activación (7 min):** presentad una tira con cuatro casillas y preguntad al alumnado cómo describiría el mismo gesto de colocar una ficha cuatro veces. Comparad cuatro líneas idénticas con «repite cuatro vueltas».
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Model (10 min):** feu traça en paper d’un `for index in range(4)` amb una ordre d’eixida; compteu iteracions començant per zero i diferencieu índex de número de fitxa visible.
+**Modelo (10 min):** haced una traza en papel de un `for index in range(4)` con una orden de salida; contad las iteraciones empezando por cero y diferenciad el índice del número de ficha visible.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Programació (18 min):** escriviu un programa SPIKE simple segons l’API local perquè un indicador faça un moviment curt, torne i pause quatre vegades. Comenceu amb actuador immobilitzat o desconnectat; després executeu amb angle limitat i velocitat baixa.
+**Programación (18 min):** escribid un programa SPIKE sencillo según la API local para que un indicador haga un movimiento corto, vuelva y pause cuatro veces. Empezad con el actuador inmovilizado o desconectado; después ejecutad con ángulo limitado y velocidad baja.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Validació (7 min):** l’equip anota el nombre esperat i el nombre observat; si el motor es mou contínuament, pareu i comproveu la indentació, el rang i la crida.
+**Validación (7 min):** el equipo anota el número esperado y el número observado; si el motor se mueve continuamente, parad y comprobad la indentación, el rango y la llamada.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Eixida (3 min):** dibuixeu el flux d’una iteració i expliqueu què passa en acabar la quarta.
+**Salida (3 min):** dibujad el flujo de una iteración y explicad qué pasa al terminar la cuarta.
 
-### **Lliçó 2 · Comptar fitxes i fer compte arrere (45 min).**
+### **Lección 2 · Contar fichas y hacer la cuenta atrás (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Problema (5 min):** com sap l’operador quantes caselles del mosaic queden?
+**Problema (5 min):** ¿cómo sabe el operador cuántas casillas del mosaico quedan?
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Variables i recompte (12 min):** representeu una seqüència de cinc fitxes amb comptador que augmenta; prediu els valors abans d’executar.
+**Variables y recuento (12 min):** representad una secuencia de cinco fichas con un contador que aumenta; predecid los valores antes de ejecutar.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Comptador i eixida (18 min):** modifiqueu el programa perquè cada iteració actualitze el nombre col·locat i el mostre a consola o a la matriu si la funció local està disponible. Creeu una segona versió amb compte arrere des del nombre total fins a zero. Distingiu el recompte de cicles del sensor: la seqüència no detecta per si sola que una fitxa s’ha mogut correctament.
+**Contador y salida (18 min):** modificad el programa para que cada iteración actualice el número colocado y lo muestre en la consola o en la matriz si la función local está disponible. Cread una segunda versión con cuenta atrás desde el número total hasta cero. Distinguid el recuento de ciclos del sensor: la secuencia no detecta por sí sola que una ficha se ha movido correctamente.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Proves de frontera (7 min):** proveu 1, 0 i 5 iteracions en simulació; reviseu si zero repeticions deixa el programa en un estat clar i si l’últim missatge és “acabat”.
+**Pruebas de frontera (7 min):** probad 1, 0 y 5 iteraciones en simulación; revisad si cero repeticiones deja el programa en un estado claro y si el último mensaje es «acabado».
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Tancament (3 min):** descriviu un error *off-by-one* i com la traça l’ha fet visible.
+**Cierre (3 min):** describid un error *off-by-one* y cómo la traza lo ha hecho visible.
 
-### **Lliçó 3 · Ritme de passos i pauses (45 min).**
+### **Lección 3 · Ritmo de pasos y pausas (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Escolta/observació (6 min):** feu una seqüència no sonora amb palmell sobre la taula o targetes, i una versió lenta i una ràpida. La participació corporal és opcional; també es poden ordenar targetes.
+**Escucha/observación (6 min):** haced una secuencia no sonora con la palma sobre la mesa o tarjetas, y una versión lenta y una rápida. La participación corporal es opcional; también se pueden ordenar tarjetas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Planificació (8 min):** convertiu un patró A-B-A en instruccions temporitzades. Pregunteu què es repeteix i què canvia en cada volta.
+**Planificación (8 min):** convertid un patrón A-B-A en instrucciones temporizadas. Preguntad qué se repite y qué cambia en cada vuelta.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Implementació (18 min):** programa una sèrie de moviments curts amb pauses explícites; proveu amb el motor sense càrrega primer. Si la versió d’app no permet la funció de pausa prevista, feu una versió amb observació manual entre ordres i identifiqueu la limitació.
+**Implementación (18 min):** programad una serie de movimientos cortos con pausas explícitas; probad con el motor sin carga primero. Si la versión de app no permite la función de pausa prevista, haced una versión con observación manual entre órdenes e identificad la limitación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Comparació (8 min):** mesureu el temps total de dues seqüències amb mateixos moviments però pauses distintes; compareu durada prevista i real.
+**Comparación (8 min):** medid el tiempo total de dos secuencias con los mismos movimientos pero pausas distintas; comparad la duración prevista y la real.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Reflexió (5 min):** identifiqueu quina part de la coreografia depén del bucle i quina del valor de cada moviment.
+**Reflexión (5 min):** identificad qué parte de la coreografía depende del bucle y qué parte del valor de cada movimiento.
 
-### **Lliçó 4 · Si la fitxa és d’un tipus, canvia el patró (45 min).**
+### **Lección 4 · Si la ficha es de un tipo, cambia el patrón (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Regla desconnectada (8 min):** definiu una condició visible sense dependre només del color: forma circular → seqüència A; forma quadrada → seqüència B. Els equips classifiquen targetes i descriuen la decisió “si… altrament…”.
+**Regla desconectada (8 min):** definid una condición visible sin depender solo del color: forma circular → secuencia A; forma cuadrada → secuencia B. Los equipos clasifican tarjetas y describen la decisión «si… si no…».
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Flowchart (8 min):** dibuixeu entrada manual, condició, dues branques i punt de reunió.
+**Diagrama de flujo (8 min):** dibujad la entrada manual, la condición, dos ramas y el punto de reunión.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Programa i traça (17 min):** implementeu les branques a Python amb una variable triada en codi o confirmació manual; cada branca conté un patró curt de bucle. No afegiu sensor: l’objectiu és comprendre el control, no fer veure que el robot identifica formes.
+**Programa y traza (17 min):** implementad las ramas en Python con una variable elegida en el código o confirmación manual; cada rama contiene un patrón corto de bucle. No añadáis ningún sensor: el objetivo es comprender el control, no aparentar que el robot identifica formas.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Casos de prova (8 min):** executeu cada condició i un valor no previst; anoteu quina branca s’activa i quina resposta ofereix el programa a l’entrada desconeguda.
+**Casos de prueba (8 min):** ejecutad cada condición y un valor no previsto; anotad qué rama se activa y qué respuesta ofrece el programa a la entrada desconocida.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Sortida (4 min):** expliqueu per què el codi no ha de dependre d’una regla visual no especificada.
+**Salida (4 min):** explicad por qué el código no debe depender de una regla visual no especificada.
 
-### **Lliçó 5 · Repetir fins que algú ature: bucle infinit (45 min).**
+### **Lección 5 · Repetir hasta que alguien detenga: bucle infinito (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Comparació (7 min):** mireu un fragment finit amb `range(3)` i un d’infinit teòric com `while True`. Sense executar el segon, descriviu quin té eixida automàtica.
+**Comparación (7 min):** mirad un fragmento finito con `range(3)` y uno de infinito teórico como `while True`. Sin ejecutar el segundo, describid cuál tiene salida automática.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Usos i riscos (10 min):** discutiu casos en què el codi podria esperar una interacció constant i per què cal una condició de parada, pausa segura i control manual.
+**Usos y riesgos (10 min):** discutid casos en los que el código podría esperar una interacción constante y por qué hace falta una condición de parada, una pausa segura y un control manual.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Laboratori en paper (15 min):** traceu fragment infinit en una graella, localitzeu si existeix un canvi a la condició i afegiu un criteri de parada (comptador màxim, botó o estat explícit). Si es mostra en editor, és només sortida textual sense motors/connectivitat; mai es deixa el bucle executant sense supervisió.
+**Laboratorio en papel (15 min):** trazad el fragmento infinito en una cuadrícula, localizad si existe un cambio en la condición y añadid un criterio de parada (contador máximo, botón o estado explícito). Si se muestra en el editor, es solo salida textual sin motores ni conectividad; nunca se deja el bucle ejecutándose sin supervisión.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Model de moviment (8 min):** proposeu com seria una “mostra contínua” del mosaic amb indicador que alterna; expliqueu quin mecanisme podria trencar-se i com es comporta el programa en pausa.
+**Modelo de movimiento (8 min):** proponed cómo sería una «muestra continua» del mosaico con un indicador que alterna; explicad qué mecanismo podría romperse y cómo se comporta el programa en pausa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Tancament (5 min):** cada alumne escriu una regla per evitar moviment persistent no intencionat.
+**Cierre (5 min):** cada alumno escribe una regla para evitar un movimiento persistente no intencionado.
 
-### **Lliçó 6 · Liderar un equip amb un patró propi (90–120 min).**
+### **Lección 6 · Liderar un equipo con un patrón propio (90–120 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Encàrrec (10 min):** dissenyeu un mòdul per al mosaic de la fira que use almenys una repetició i comunique clarament quan s’ha acabat. Pot moure un indicador, alternar dues fitxes o fer avançar un marcador; no ha d’emular postures físiques ni obligar persones a fer exercicis.
+**Encargo (10 min):** diseñad un módulo para el mosaico de la feria que use al menos una repetición y comunique con claridad cuándo ha terminado. Puede mover un indicador, alternar dos fichas o hacer avanzar un marcador; no debe emular posturas físicas ni obligar a nadie a hacer ejercicios.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Exploració d’idees (12 min):** cada membre fa un esbós; l’equip tria una regla amb criteris de llegibilitat, nombre de peces, repeticions i estabilitat. Feu timeline/flowchart amb una iteració ampliada i marca de parada.
+**Exploración de ideas (12 min):** cada miembro hace un boceto; el equipo elige una regla con criterios de legibilidad, número de piezas, repeticiones y estabilidad. Haced una línea de tiempo o diagrama de flujo con una iteración ampliada y una marca de parada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Construcció (20 min):** creeu suport i topalls amb peces de la dotació, de manera que el moviment no arrossegue el hub ni deixe caure fitxes. **Programa (20 min):** dividiu en inici, repetició de mòdul, recompte/estat final i retorn a posició inicial. Useu `for` si el total és conegut; justifiqueu qualsevol altra estructura. Comentaris expliquen el patró triat i el mecanisme de parada.
+**Construcción (20 min):** cread soporte y topes con piezas de la dotación, de manera que el movimiento no arrastre el hub ni deje caer fichas. **Programa (20 min):** dividid en inicio, repetición de módulo, recuento/estado final y retorno a la posición inicial. Usad `for` si el total es conocido; justificad cualquier otra estructura. Los comentarios explican el patrón elegido y el mecanismo de parada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Proves (18 min):** feu un intent amb 1, 3 i el total pactat, primer sense fitxa i després amb càrrega lleugera. Anoteu cicles previstos/observats, desalineació, caigudes i temps; canvieu una única peça o valor per iteració.
+**Pruebas (18 min):** haced un intento con 1, 3 y el total acordado, primero sin ficha y después con carga ligera. Anotad ciclos previstos/observados, desalineación, caídas y tiempo; cambiad una única pieza o valor por iteración.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Presentació (10–20 min):** cada equip mostra com es llig el codi i quin canvi ha fet més fiable el patró. Rols de portaveu rotatius perquè qui no programa habitualment també comunique.
+**Presentación (10–20 min):** cada equipo muestra cómo se lee el código y qué cambio ha hecho más fiable el patrón. Roles de portavoz rotativos para que quien no programa habitualmente también comunique.
 
-### **Lliçó 7 · Feedback per millorar el mosaic (30–45 min).**
+### **Lección 7 · Feedback para mejorar el mosaico (30–45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Preparar evidències (7 min):** els autors exposen diagrama, programa, patró acabat, un resultat repetit i una pregunta.
+**Preparar evidencias (7 min):** los autores exponen el diagrama, el programa, el patrón acabado, un resultado repetido y una pregunta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Revisió (10 min):** una parella externa segueix el pseudocodi i observa un cicle complet; no canvia el codi ni reconstrueix el model. La pauta pregunta: es pot predir el nombre de moviments? l’aturada és visible? el ritme i el recompte concorden?
+**Revisión (10 min):** una pareja externa sigue el pseudocódigo y observa un ciclo completo; no cambia el código ni reconstruye el modelo. La pauta pregunta: ¿se puede predecir el número de movimientos?, ¿la parada es visible?, ¿el ritmo y el recuento concuerdan?
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Feedback (5 min):** formuleu una observació, una pregunta i una suggerència concreta. Els autors poden demanar aclariment.
+**Feedback (5 min):** formulad una observación, una pregunta y una sugerencia concreta. Los autores pueden pedir aclaraciones.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Iteració (12 min):** trieu una millora, registreu per què i repetiu el cas amb les mateixes condicions.
+**Iteración (12 min):** elegid una mejora, registrad por qué y repetid el caso con las mismas condiciones.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Reflexió (3–11 min):** compareu dades abans/després, indiqueu quin punt no es pot resoldre amb el temps disponible i valoreu la col·laboració sense comparar persones.
+**Reflexión (3–11 min):** comparad los datos antes/después, indicad qué punto no se puede resolver con el tiempo disponible y valorad la colaboración sin comparar personas.
 
-## 🧪 Evidències, avaluació i producte
+## 🧪 Evidencias, evaluación y producto
 
-El portafolis conté patró inicial, descomposició, traça de `range`, taula de comptador i compte arrere, cronologia del ritme, diagrama de branques, anàlisi escrita de bucle infinit, comentaris Python, disseny mecànic, casos 0/1/n, resultats repetits, feedback i registre d’una iteració. El producte final és un mòdul de mosaic de taula i una nota de programa que explica quantes voltes s’executa, què varia, quan finalitza i com s’atura si hi ha una incidència.
+El portafolio contiene el patrón inicial, la descomposición, la traza de `range`, la tabla de contador y cuenta atrás, la cronología del ritmo, el diagrama de ramas, el análisis escrito de bucle infinito, los comentarios de Python, el diseño mecánico, los casos 0/1/n, los resultados repetidos, el feedback y el registro de una iteración. El producto final es un módulo de mosaico de mesa y una nota de programa que explica cuántas vueltas se ejecuta, qué varía, cuándo finaliza y cómo se detiene si hay una incidencia.
 
-Quatre criteris: **raonament de repetició** (prediu quantitat i traça un bucle); **comptador/condició** (actualitza i mostra un recompte coherent, interpreta ambdues branques); **disseny segur** (limita repeticions i moviment i incorpora finalització); **prova/reflexió** (contrasta resultat, documenta feedback i millora una causa). Nivells: amb modelatge, amb suport, autònom i transferit amb justificació. La qualitat visual del mosaic no substitueix l’evidència de control del programa.
+Cuatro criterios: **razonamiento de repetición** (predice la cantidad y traza un bucle); **contador/condición** (actualiza y muestra un recuento coherente, interpreta ambas ramas); **diseño seguro** (limita repeticiones y movimiento e incorpora la finalización); **prueba/reflexión** (contrasta el resultado, documenta el feedback y mejora una causa). Niveles: con modelado, con apoyo, autónomo y transferido con justificación. La calidad visual del mosaico no sustituye la evidencia de control del programa.
 
-## ♿ Inclusió, seguretat i sostenibilitat
+## ♿ Inclusión, seguridad y sostenibilidad
 
-Oferiu bucles com a targetes manipulables, traça en taula, `for` en pseudocodi i oportunitats iguals per a construir, programar i documentar. El patró s’explica amb forma, posició i text, no sols amb color o ritme sonor. Feu pauses entre assajos; els sons són opcionals. El mecanisme usa baixa potència, recorregut limitat i fitxes grans; mans fora de parts mòbils i cablejat mentre funciona. No executeu bucles infinits amb motors ni deixeu equips funcionant sols. Reutilitzeu paper i cartó per a les peces decoratives i recicleu els materials al final.
+Ofreced bucles como tarjetas manipulables, traza en tabla, `for` en pseudocódigo y oportunidades iguales para construir, programar y documentar. El patrón se explica con forma, posición y texto, no solo con color o ritmo sonoro. Haced pausas entre ensayos; los sonidos son opcionales. El mecanismo usa baja potencia, recorrido limitado y fichas grandes; las manos fuera de las partes móviles y del cableado mientras funciona. No ejecutéis bucles infinitos con motores ni dejéis equipos funcionando solos. Reutilizad papel y cartón para las piezas decorativas y reciclad los materiales al final.
 
-## 🔗 Referent oficial i decisions d’adaptació
+## 🔗 Referente oficial y decisiones de adaptación
 
-Adapta la unitat 4 *Doing Reps with Loops* del curs LEGO Education [*Introduction to Python Programming · Course 1*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt834b554cdaa246f7/6584064fd082f7672425e7ea/File_1_Units12345_Intro_to_Python_Course_TG_Course.pdf?locale=en-us): *Warm Up Loop with Leo*, *Counting Reps with Leo*, *Dance Loop with Coach*, *Setting Conditions for Yoga*, *Infinite Moves*, *Leading the Team with Loops* i *Ideas for Leading Your Team with Loops*. Es conserven la seqüència d’instruccions amb `for` i quantitat en `range`, variable de recompte/compte arrere, ritme, control condicional, comprensió d’un bucle infinit, repte obert de model repetitiu i feedback. La guia oficial inclou un model de màquina de repeticions i un repte avançat de disseny/programació de 90–120 minuts; l’adaptació usa mosaics de cartó i moviment limitat. El codi de maquinari es valida amb la Knowledge Base de l’app local; no es copia cap construcció LEGO ni material d’alumnat.
+Adapta la unidad 4 *Doing Reps with Loops* del curso LEGO Education [*Introduction to Python Programming · Course 1*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt834b554cdaa246f7/6584064fd082f7672425e7ea/File_1_Units12345_Intro_to_Python_Course_TG_Course.pdf?locale=en-us): *Warm Up Loop with Leo*, *Counting Reps with Leo*, *Dance Loop with Coach*, *Setting Conditions for Yoga*, *Infinite Moves*, *Leading the Team with Loops* y *Ideas for Leading Your Team with Loops*. Se conservan la secuencia de instrucciones con `for` y cantidad en `range`, la variable de recuento/cuenta atrás, el ritmo, el control condicional, la comprensión de un bucle infinito, el reto abierto de modelo repetitivo y el feedback. La guía oficial incluye un modelo de máquina de repeticiones y un reto avanzado de diseño/programación de 90–120 minutos; la adaptación usa mosaicos de cartón y movimiento limitado. El código de hardware se valida con la Knowledge Base de la app local; no se copia ninguna construcción LEGO ni material del alumnado.

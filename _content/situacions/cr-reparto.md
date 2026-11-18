@@ -14,138 +14,138 @@ duration: "4 sesiones"
 challenge: "¿Cómo puede un vehículo programado avanzar por una ruta de reparto y reaccionar ante un obstáculo previsible?"
 ---
 
-![Codey Rocky de la dotació al costat d’una ruta de taula amb obstacles de cartó i una capsa de paper separada a la meta.](../../_assets/situacions/cr-repartiment.webp)
+![Codey Rocky de la dotación junto a una ruta de mesa con obstáculos de cartón y una caja de papel separada en la meta.](../../_assets/situacions/cr-repartiment.webp)
 
-_El robot no transporta la capsa: és una maqueta independent. La ruta i els obstacles serveixen per a provar el sensor en condicions controlades, no per a garantir un repartiment autònom._
+_El robot no transporta la caja: es una maqueta independiente. La ruta y los obstáculos sirven para probar el sensor en condiciones controladas, no para garantizar un reparto autónomo._
 
-## 🧩 Repte i context
+## 🧩 Reto y contexto
 
-El grup dissenya un servei de repartiment de joguina entre un punt de preparació, una parada de barri i una destinació com una biblioteca o un hort escolar. Codey Rocky segueix una ruta de baixa velocitat i prova una resposta programada davant d’obstacles de cartró. La maqueta serveix per estudiar decisions i límits d’un sensor; no representa un vehicle segur per a lliuraments reals ni substitueix la supervisió humana.
+El grupo diseña un servicio de reparto de juguete entre un punto de preparación, una parada de barrio y un destino como una biblioteca o un huerto escolar. Codey Rocky sigue una ruta de baja velocidad y prueba una respuesta programada ante obstáculos de cartón. La maqueta sirve para estudiar decisiones y límites de un sensor; no representa un vehículo seguro para entregas reales ni sustituye la supervisión humana.
 
-**Aprenentatges:** planificar un itinerari, controlar una variable, usar una condició, registrar deteccions i errors, revisar un programa i justificar per què un sistema automàtic necessita una persona responsable.
+**Aprendizajes:** planificar un itinerario, controlar una variable, usar una condición, registrar detecciones y errores, revisar un programa y justificar por qué un sistema automático necesita una persona responsable.
 
-## 📅 Seqüència didàctica · quatre sessions de 45 minuts
+## 📅 Secuencia didáctica · cuatro sesiones de 45 minutos
 
-### **Dissenyem el mapa de repartiment (45 min).**
+### **Diseñamos el mapa de reparto (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Dibuixeu una pista tancada i estable amb un punt de càrrega, una parada i una destinació. Marqueu distàncies amb unitats de paper, trams rectes i punts possibles de gir. Predigueu quines accions necessitaria Codey Rocky per seguir la ruta.
+Dibujad una pista cerrada y estable con un punto de carga, una parada y un destino. Marcad distancias con unidades de papel, tramos rectos y posibles puntos de giro. Predecid qué acciones necesitaría Codey Rocky para seguir la ruta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Traceu una ruta en el plànol i col·loqueu una capsa lleugera de paper com a símbol del paquet. No la fixeu damunt del robot si pot tapar el sensor o desestabilitzar-lo. Identifiqueu dos riscos potencials de la maqueta.
+Trazad una ruta en el plano y colocad una caja ligera de papel como símbolo del paquete. No la fijéis encima del robot si puede tapar el sensor o desestabilizarlo. Identificad dos riesgos potenciales de la maqueta.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Definiu què vol dir «obstacle» dins del model i anoteu quina informació el robot no pot donar: si una persona vol travessar, si una zona és privada o si el paquet ha arribat a una persona concreta.
+Definid qué significa «obstáculo» dentro del modelo y anotad qué información no puede dar el robot: si una persona quiere cruzar, si una zona es privada o si el paquete ha llegado a una persona concreta.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu el recorregut i amplieu les zones de gir si cal. Afegiu punts d’aturada clars abans de moure el robot.
+Revisad el recorrido y ampliad las zonas de giro si hace falta. Añadid puntos de parada claros antes de mover el robot.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu què pot fer el robot amb una detecció i quina decisió continua sent humana. **Evidència:** mapa amb ruta, punts de parada i riscos potencials.
+Explicad qué puede hacer el robot con una detección y qué decisión sigue siendo humana. **Evidencia:** mapa con ruta, puntos de parada y riesgos potenciales.
 
-### **Establim una línia base (45 min).**
+### **Establecemos una línea base (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Comproveu el Codey Rocky i l’entorn mBlock 5. Orienteu cap endavant el sensor IR/color integrat segons les instruccions del fabricant; no afegiu sensors aliens a la dotació. Predigueu on acabarà el robot en una prova sense obstacles.
+Comprobad el Codey Rocky y el entorno mBlock 5. Orientad hacia delante el sensor IR/color integrado según las instrucciones del fabricante; no añadáis sensores ajenos a la dotación. Predecid dónde acabará el robot en una prueba sin obstáculos.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Creeu un programa curt que inicie el moviment amb el botó A i el pare amb una acció accessible o supervisada. Feu-lo circular sense obstacle, a baixa velocitat, en una pista tancada i lliure.
+Cread un programa corto que inicie el movimiento con el botón A y lo pare con una acción accesible o supervisada. Hacedlo circular sin obstáculo, a baja velocidad, en una pista cerrada y libre.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Marqueu el punt d’inici, el temps aproximat i el lloc final. Repetiu la mateixa ruta tres vegades i compareu els resultats, mantenint superfície, bateria, velocitat i posició inicial.
+Marcad el punto de inicio, el tiempo aproximado y el lugar final. Repetid la misma ruta tres veces y comparad los resultados, manteniendo superficie, batería, velocidad y posición inicial.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si la desviació és gran, comproveu superfície, bateria, velocitat i posició abans de canviar el codi. Repetiu el protocol després de corregir una condició.
+Si la desviación es grande, comprobad superficie, batería, velocidad y posición antes de cambiar el código. Repetid el protocolo después de corregir una condición.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Descriviu la variabilitat que s’ha observat i indiqueu quines condicions s’han mantingut igual. **Evidència:** tres registres de línia base i configuració provada.
+Describid la variabilidad que se ha observado e indicad qué condiciones se han mantenido igual. **Evidencia:** tres registros de línea base y configuración probada.
 
-### **Provem una condició davant d’obstacles (45 min).**
+### **Probamos una condición ante obstáculos (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu un obstacle gran, tou, estable i visible per al sensor, com una paret baixa de cartró. Predigueu què farà el robot quan el detecte i recordeu que la direcció aleatòria no garanteix arribar a una destinació.
+Elegid un obstáculo grande, blando, estable y visible para el sensor, como una pared baja de cartón. Predecid qué hará el robot cuando lo detecte y recordad que la dirección aleatoria no garantiza llegar a un destino.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Afegiu una condició: quan el sensor detecta l’obstacle, el robot tria un gir a esquerra o dreta i després reprén l’avanç. Feu primer una demostració d’una sola detecció i manteniu les mans fora de la ruta mentre el motor està actiu.
+Añadid una condición: cuando el sensor detecta el obstáculo, el robot elige un giro a izquierda o derecha y después reanuda el avance. Haced primero una demostración de una sola detección y mantened las manos fuera de la ruta mientras el motor está activo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Canvieu una variable cada vegada —posició de l’obstacle, angle o distància inicial— i anoteu configuració, resposta esperada, resposta real i incidència. Incloeu casos sense detecció o amb una reacció massa prompte; no els oculteu ni els atribuïu a negligència de qui programa.
+Cambiad una variable cada vez —posición del obstáculo, ángulo o distancia inicial— y anotad configuración, respuesta esperada, respuesta real e incidencia. Incluid casos sin detección o con una reacción demasiado temprana; no los ocultéis ni los atribuyáis a negligencia de quien programa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu una condició i torneu a provar la mateixa situació. Si varia l’obstacle, manteniu el registre dels intents perquè es puga comparar cada resultat.
+Revisad una condición y volved a probar la misma situación. Si varía el obstáculo, mantened el registro de los intentos para que se pueda comparar cada resultado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Identifiqueu quina prova mostra que el sensor pot fallar i què caldria fer si hi haguera una persona. **Evidència:** taula de proves amb deteccions, falses alarmes i una revisió justificada.
+Identificad qué prueba muestra que el sensor puede fallar y qué habría que hacer si hubiera una persona. **Evidencia:** tabla de pruebas con detecciones, falsas alarmas y una revisión justificada.
 
-### **Revisem el servei i comuniquem els límits (45 min).**
+### **Revisamos el servicio y comunicamos los límites (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Ajusteu el recorregut perquè tinga una zona de gir ampla i cap eixida a terra. Predigueu quines fallades requeririen una intervenció humana.
+Ajustad el recorrido para que tenga una zona de giro amplia y no se salga al suelo. Predecid qué fallos requerirían una intervención humana.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Una altra parella executa el mateix protocol sense rebre l’explicació prèvia i comprova si pot reproduir la prova. Manteniu supervisió directa i obstacle triat pel docent.
+Otra pareja ejecuta el mismo protocolo sin recibir la explicación previa y comprueba si puede reproducir la prueba. Mantened supervisión directa y un obstáculo elegido por el docente.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Prepareu una presentació amb mapa, dades i una afirmació prudent, com ara «en dues de tres proves ha detectat aquesta paret de cartró a aquesta distància». Separeu l’observació del que no es pot concloure.
+Preparad una presentación con mapa, datos y una afirmación prudente, como «en dos de tres pruebas ha detectado esta pared de cartón a esta distancia». Separad la observación de lo que no se puede concluir.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu el programa o el protocol si l’altra parella no pot reproduir la prova. Afegiu un cartell d’ús: pista tancada, velocitat baixa i supervisió; no és un vehicle segur per a lliuraments reals.
+Revisad el programa o el protocolo si la otra pareja no puede reproducir la prueba. Añadid un cartel de uso: pista cerrada, velocidad baja y supervisión; no es un vehículo seguro para entregas reales.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Presenteu la recomanació per a la persona supervisora i expliqueu què les dades permeten afirmar i què no es pot prometre sobre un robot real. **Evidència:** programa comentat, plànol revisat, taula de proves i recomanació.
+Presentad la recomendación para la persona supervisora y explicad qué permiten afirmar los datos y qué no se puede prometer sobre un robot real. **Evidencia:** programa comentado, plano revisado, tabla de pruebas y recomendación.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Recolliu el plànol, el programa amb comentaris, tres proves de línia base, les observacions amb obstacle i la recomanació final. Observeu si l’alumnat:
+Recoged el plano, el programa con comentarios, tres pruebas de línea base, las observaciones con obstáculo y la recomendación final. Observad si el alumnado:
 
-- descriu ruta i instruccions abans de moure el robot;
+- describe ruta e instrucciones antes de mover el robot;
 
-- identifica la condició que activa la resposta i anticipa què hauria de passar;
+- identifica la condición que activa la respuesta y anticipa qué debería pasar;
 
-- separa una detecció correcta d’una falsa alarma o d’un obstacle no detectat;
+- separa una detección correcta de una falsa alarma o de un obstáculo no detectado;
 
-- canvia una variable a la vegada i usa resultats per depurar;
+- cambia una variable a la vez y usa los resultados para depurar;
 
-- explica per què cal supervisió humana i quins límits té el prototip.
+- explica por qué hace falta supervisión humana y qué límites tiene el prototipo.
 
-Valoreu la qualitat del protocol i la interpretació honesta, no que el robot complete sempre la ruta.
+Valorad la calidad del protocolo y la interpretación honesta, no que el robot complete siempre la ruta.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Descompondre una tasca de repartiment fictícia en entrada, decisió, gir i continuació.
-- Programar una resposta amb els components de Codey Rocky que s’han comprovat al centre.
-- Comparar els resultats de diversos intents i revisar una regla davant d’una detecció incorrecta.
-- Explicar per què un prototip escolar no és un sistema autònom segur per a un espai públic.
+- Descomponer una tarea de reparto ficticia en entrada, decisión, giro y continuación.
+- Programar una respuesta con los componentes de Codey Rocky que se han comprobado en el centro.
+- Comparar los resultados de varios intentos y revisar una regla ante una detección incorrecta.
+- Explicar por qué un prototipo escolar no es un sistema autónomo seguro para un espacio público.
 
 
-## 🧰 Preparació i seguretat
+## 🧰 Preparación y seguridad
 
-Verifiqueu que el sensor IR/color està muntat i orientat cap endavant, que el programa mBlock 5 el pot llegir i que la bateria permet proves curtes. Manteniu velocitat baixa, pista delimitada sobre una taula gran o al terra llis, obstacles lleugers i supervisió directa. No proveu prop d’escales, persones en moviment, animals, objectes fràgils o accessos de pas. L’infraroig pot no detectar materials o angles diversos; una absència de detecció no significa que el camí estiga lliure.
+Verificad que el sensor IR/color está montado y orientado hacia delante, que el programa mBlock 5 puede leerlo y que la batería permite pruebas cortas. Mantened velocidad baja, pista delimitada sobre una mesa grande o en el suelo liso, obstáculos ligeros y supervisión directa. No probéis cerca de escaleras, personas en movimiento, animales, objetos frágiles o accesos de paso. El infrarrojo puede no detectar materiales o ángulos diversos; una ausencia de detección no significa que el camino esté libre.
 
-## ♿ Variants de participació
+## ♿ Variantes de participación
 
-Permeteu dissenyar el recorregut en paper abans de manipular el robot i assigneu rols rotatius de planificació, programació, observació, registre i seguretat. Una ruta curta, una ordre per targeta o la lectura en veu alta faciliten la participació sense reduir el repte de raonament. Oferiu taules amb pictogrames per registrar resultats i deixeu que una persona dicte instruccions mentre una altra opera el robot. Qualsevol participant pot optar per observar les proves a una distància còmoda.
+Permitid diseñar el recorrido en papel antes de manipular el robot y asignad roles rotativos de planificación, programación, observación, registro y seguridad. Una ruta corta, una orden por tarjeta o la lectura en voz alta facilitan la participación sin reducir el reto de razonamiento. Ofreced tablas con pictogramas para registrar resultados y dejad que una persona dicte instrucciones mientras otra maneja el robot. Cualquier participante puede optar por observar las pruebas a una distancia cómoda.
 
-## 🔗 Referent oficial adaptat
+## 🔗 Referente oficial adaptado
 
-Hem pres com a punt de partida [Case 18: Codey Rocky avoids obstacles](https://support.makeblock.com/hc/en-us/articles/7463724329879-Case-18-Codey-Rocky-avoids-obstacles). Aquesta situació és una proposta pròpia amb context, seqüència i materials verificables per al centre; no reprodueix ni substitueix el material oficial. Comproveu sempre el model de robot i els accessoris disponibles.
+Hemos tomado como punto de partida [Case 18: Codey Rocky avoids obstacles](https://support.makeblock.com/hc/en-us/articles/7463724329879-Case-18-Codey-Rocky-avoids-obstacles). Esta situación es una propuesta propia con contexto, secuencia y materiales verificables para el centro; no reproduce ni sustituye el material oficial. Comprobad siempre el modelo de robot y los accesorios disponibles.

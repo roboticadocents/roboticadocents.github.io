@@ -14,35 +14,35 @@ duration: "6 lecciones · 6–8 sesiones"
 challenge: "¿Cómo podemos programar un mecanismo SPIKE que complete movimientos útiles y repetibles en una ruta de transporte simulada, y demostrar su precisión con pruebas?"
 ---
 
-![Base de dues rodes construïda amb peces LEGO SPIKE Prime i el seu hub, en una pista de taula amb girs i una fita de destinació.](../../_assets/situacions/sp-python-motors.webp)
+![Base de dos ruedas construida con piezas LEGO SPIKE Prime y su hub, en una pista de mesa con giros y una meta de destino.](../../_assets/situacions/sp-python-motors.webp)
 
-_El moviment només es considera repetible després de mesurar-lo en la mateixa superfície i amb el mateix muntatge._
+_El movimiento solo se considera repetible después de medirlo en la misma superficie y con el mismo montaje._
 
-## 🌱 Repte i sentit
+## 🌱 Reto e intención
 
-Una classe prepara una mostra de prototips per a una jornada escolar. Un equip ha d’idear un dispositiu SPIKE Prime que moga una fitxa de missatgeria per una ruta delimitada, la deixe en una zona de destinació i torne a un punt d’inici. Pot ser una base mòbil o un mecanisme de taula amb moviment acotat: la solució no està predeterminada. Les proves se centren en com els motors responen a temps, velocitat, posició i graus, com es coordinen dos motors i quines variables físiques alteren el trajecte.
+Una clase prepara una muestra de prototipos para una jornada escolar. Un equipo debe idear un dispositivo SPIKE Prime que mueva una ficha de mensajería por una ruta delimitada, la deje en una zona de destino y vuelva a un punto de inicio. Puede ser una base móvil o un mecanismo de mesa con movimiento acotado: la solución no está predeterminada. Las pruebas se centran en cómo responden los motores a tiempo, velocidad, posición y grados, cómo se coordinan dos motores y qué variables físicas alteran el trayecto.
 
-Aquesta proposta adapta la progressió de la unitat 2 *Motors* de LEGO Education *Introduction to Python Programming · Course 1*: control individual de motors amb paràmetres, moviments cap a posicions/quantitats definides, automatització d’una tasca, sincronització de dos motors i desplaçament d’un model sense rodes, trajecte amb passos i girs i feedback entre equips. La situació situa eixos objectius en un servei escolar fictici; no representa una solució real de mobilitat ni assumeix que el robot navegue sense supervisió.
+Esta propuesta adapta la progresión de la unidad 2 *Motores* de LEGO Education *Introduction to Python Programming · Course 1*: control individual de motores con parámetros, movimientos hacia posiciones/cantidades definidas, automatización de una tarea, sincronización de dos motores y desplazamiento de un modelo sin ruedas, trayecto con pasos y giros y retroalimentación entre equipos. La situación sitúa esos objetivos en un servicio escolar ficticio; no representa una solución real de movilidad ni asume que el robot navegue sin supervisión.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Identificar el motor com a actuador i descriure com el programa Python li envia ordres segons la biblioteca i la versió de l’app.
+- Identificar el motor como actuador y describir cómo el programa Python le envía órdenes según la biblioteca y la versión de la app.
 
-- Comparar moviment per temps, velocitat, posició i angle de gir del motor; entendre que graus de l’eix no equivalen automàticament a graus de gir del robot.
+- Comparar movimiento por tiempo, velocidad, posición y ángulo de giro del motor; entender que grados del eje no equivalen automáticamente a grados de giro del robot.
 
-- Fer que dos motors actuen individualment i en parella; explicar què canvia quan giren alhora o en sentits diferents.
+- Hacer que dos motores actúen individualmente y en pareja; explicar qué cambia cuando giran a la vez o en sentidos distintos.
 
-- Descompondre una tasca automàtica en inici, acció, espera, senyalització i aturada; escriure-la abans com a pseudocodi.
+- Descomponer una tarea automática en inicio, acción, espera, señalización y parada; escribirla antes como pseudocódigo.
 
-- Programar i traçar una seqüència de trams i girs per arribar a una fita en una pista coneguda.
+- Programar y trazar una secuencia de tramos y giros para llegar a una meta en una pista conocida.
 
-- Calibrar una relació motor-distància amb la mateixa roda, superfície, càrrega i bateria, i documentar les fonts de variació.
+- Calibrar una relación motor-distancia con la misma rueda, superficie, carga y batería, y documentar las fuentes de variación.
 
-- Fer proves repetides amb una variable canviada cada vegada, registrar diferències i decidir si un canvi millora el criteri triat.
+- Hacer pruebas repetidas con una variable cambiada cada vez, registrar diferencias y decidir si un cambio mejora el criterio elegido.
 
-- Donar feedback específic sobre el disseny i el codi sense prendre el control del projecte d’un altre equip.
+- Dar retroalimentación específica sobre el diseño y el código sin tomar el control del proyecto de otro equipo.
 
-**Actuador:** component que produeix moviment o una altra eixida. **Velocitat:** ritme de gir ordenat al motor. **Posició:** angle de l’eix respecte d’un referent definit. **Graus:** unitat angular per descriure una rotació. **Calibratge:** obtindre una relació de treball amb proves del muntatge real. **Repetibilitat:** semblança entre resultats d’assajos repetits sota condicions comparables.
+**Actuador:** componente que produce movimiento u otra salida. **Velocidad:** ritmo de giro ordenado al motor. **Posición:** ángulo del eje respecto a un referente definido. **Grados:** unidad angular para describir una rotación. **Calibración:** obtener una relación de trabajo con pruebas del montaje real. **Repetibilidad:** semejanza entre resultados de ensayos repetidos bajo condiciones comparables.
 
 ```python
 # Python general per a descriure el pla; no controla motors SPIKE
@@ -51,160 +51,160 @@ for tram in trams:
     print("provar:", tram)
 ```
 
-Aquest fragment no és codi de motor. L’API exacta (ports, motor individual, parella, `runloop`, posició, velocitat i frenada) depén de la versió local de l’app SPIKE. Consulteu-ne la Knowledge Base i proveu les ordres amb la base suspesa o en una pista segura abans d’adaptar-les.
+Este fragmento no es código de motor. La API exacta (puertos, motor individual, pareja, `runloop`, posición, velocidad y frenado) depende de la versión local de la app SPIKE. Consultad su Knowledge Base y probad las órdenes con la base suspendida o en una pista segura antes de adaptarlas.
 
-## 🧰 Materials i preparació docent
+## 🧰 Materiales y preparación docente
 
-Un set SPIKE Prime 45678 per equip, hub carregat, dos motors, rodes i peces Technic per a una base mòbil baixa o un mecanisme acotat, dispositiu amb editor Python i consola, cinta de paper, cartó per a fites i topalls tous, regla, transportador opcional, fitxa lleugera de missatgeria, diari d’enginyeria i temporitzador. Per al repte de moviment sincronitzat sense rodes, oferiu una construcció articulada lleugera de baixa altura feta amb les peces de la caixa; no cal que imite un animal ni reproduïsca cap model oficial.
+Un set SPIKE Prime 45678 por equipo, hub cargado, dos motores, ruedas y piezas Technic para una base móvil baja o un mecanismo acotado, dispositivo con editor Python y consola, cinta de papel, cartón para metas y topes blandos, regla, transportador opcional, ficha ligera de mensajería, diario de ingeniería y temporizador. Para el reto de movimiento sincronizado sin ruedas, ofreced una construcción articulada ligera de baja altura hecha con las piezas de la caja; no hace falta que imite un animal ni que reproduzca ningún modelo oficial.
 
-Trieu una zona plana sense vores, escales ni trànsit; marqueu carrils amples i una zona de parada. Càrrega i distància han de ser lleugeres i curtes. Abans de començar, comproveu la bateria, el port i orientació dels motors, les rodes lliures, el mecanisme sense fricció i una ordre d’aturada. Ajusteu velocitat baixa i limiteu el recorregut; ningú no sosté la base mentre els motors giren. Prepareu una base de referència i tres distàncies de prova, però deixeu que l’alumnat calibre el seu propi prototip.
+Elegid una zona plana sin bordes, escaleras ni tránsito; marcad carriles anchos y una zona de parada. Carga y distancia deben ser ligeras y cortas. Antes de empezar, comprobad la batería, el puerto y la orientación de los motores, las ruedas libres, el mecanismo sin fricción y una orden de parada. Ajustad velocidad baja y limitad el recorrido; nadie sujeta la base mientras los motores giran. Preparad una base de referencia y tres distancias de prueba, pero dejad que el alumnado calibre su propio prototipo.
 
-Rols rotatius de Python/prova, construcció/seguretat i mesura/registre. Cada equip manté una configuració de prova fixa durant una comparació i escriu quan ha canviat superfície, rodes, muntatge o càrrega. No compareu resultats de robots diferents com si les seues magnituds foren transferibles.
+Roles rotativos de Python/prueba, construcción/seguridad y medida/registro. Cada equipo mantiene una configuración de prueba fija durante una comparación y escribe cuándo ha cambiado la superficie, las ruedas, el montaje o la carga. No comparéis resultados de robots distintos como si sus magnitudes fueran transferibles.
 
-## 📅 Seqüència didàctica · sis lliçons
+## 📅 Secuencia didáctica · seis lecciones
 
-### **Lliçó 1 · El motor respon a temps i velocitat (45 min).**
+### **Lección 1 · El motor responde a tiempo y velocidad (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Activació (7 min):** compareu dues maneres de fer moure una roda una distància aproximada: fer-la girar durant un temps o demanar un nombre de graus/rotacions. Dibuixeu una predicció del que podria variar entre una superfície llisa i una altra amb més fricció.
+**Activación (7 min):** comparad dos maneras de hacer girar una rueda una distancia aproximada: hacerla girar durante un tiempo o pedir un número de grados/rotaciones. Dibujad una predicción de lo que podría variar entre una superficie lisa y otra con más fricción.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Prova aïllada (10 min):** amb la base elevada i fixada, executeu amb supervisió una ordre breu a velocitat baixa; comproveu quin motor i port responen. Atureu abans de canviar cables o configuració.
+**Prueba aislada (10 min):** con la base elevada y fijada, ejecutad con supervisión una orden breve a velocidad baja; comprobad qué motor y puerto responden. Detened antes de cambiar cables o configuración.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Exploració Python (18 min):** seguiu un exemple validat per a l’API local; canvieu només temps o velocitat en cada assaig, primer mantenint l’altra magnitud fixa. Passeu després a la pista curta i mesureu distància real amb regla. Feu dues repeticions per valor i anoteu bateria/superfície.
+**Exploración Python (18 min):** seguid un ejemplo validado para la API local; cambiad solo el tiempo o la velocidad en cada ensayo, primero manteniendo la otra magnitud fija. Pasad después a la pista corta y medid la distancia real con regla. Haced dos repeticiones por valor y anotad batería/superficie.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Interpretació (7 min):** representeu velocitat ordenada i distància observada en una taula; distingiu una ordre del programa d’una mesura del trajecte.
+**Interpretación (7 min):** representad velocidad ordenada y distancia observada en una tabla; distinguid una orden del programa de una medida del trayecto.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Eixida (3 min):** expliqueu en quin cas temporal seria més fàcil de programar i en quin caldria més calibratge.
+**Salida (3 min):** explicad en qué caso temporal sería más fácil de programar y en cuál haría falta más calibración.
 
-### **Lliçó 2 · Posició, camí curt i graus (45 min).**
+### **Lección 2 · Posición, camino corto y grados (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Pregunta (5 min):** si un eix està en una posició coneguda, quina ordre el porta a una altra posició amb menys moviment?
+**Pregunta (5 min):** si un eje está en una posición conocida, ¿qué orden lo lleva a otra posición con menos movimiento?
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Estació segura (8 min):** useu un motor sense càrrega amb una marca visual de referència a l’eix; anoteu posició inicial i no poseu dits prop de l’eix.
+**Estación segura (8 min):** usad un motor sin carga con una marca visual de referencia en el eje; anotad la posición inicial y no pongáis dedos cerca del eje.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Investigació guiada (22 min):** proveu en Python un moviment fins a una posició i un moviment per un nombre de graus, amb la funció que documenta l’app local. Predigueu direcció i angle, observeu si el motor fa el camí esperat i contrasteu una rotació positiva amb una de negativa. Repetiu amb una posició a cada costat del punt de referència i compareu recorreguts.
+**Investigación guiada (22 min):** probad en Python un movimiento hasta una posición y un movimiento por un número de grados, con la función que documenta la app local. Predecid dirección y ángulo, observad si el motor hace el camino esperado y contrastad una rotación positiva con una negativa. Repetid con una posición a cada lado del punto de referencia y comparad recorridos.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Transferència a la roda (7 min):** calculeu circumferència amb mesura aproximada i compareu-la amb la distància que avança una rotació; expliqueu per què lliscament, pressió i diàmetre real alteren el resultat.
+**Transferencia a la rueda (7 min):** calculad la circunferencia con una medida aproximada y comparadla con la distancia que avanza una rotación; explicad por qué el deslizamiento, la presión y el diámetro real alteran el resultado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Registre (3 min):** dibuixeu l’eix i indiqueu què significa posició en la prova concreta, sense confondre-la amb orientació del robot.
+**Registro (3 min):** dibujad el eje e indicad qué significa posición en la prueba concreta, sin confundirla con la orientación del robot.
 
-### **Lliçó 3 · Automatitzar una acció útil (45 min).**
+### **Lección 3 · Automatizar una acción útil (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Definició (7 min):** trieu una acció repetible de la mostra: alçar una barrera de cartó, desplaçar una fitxa per una canaleta o girar un indicador. Escriviu entrada, acció del motor, resultat i condició d’aturada.
+**Definición (7 min):** elegid una acción repetible de la muestra: levantar una barrera de cartón, desplazar una ficha por una canaleta o girar un indicador. Escribid entrada, acción del motor, resultado y condición de parada.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Ideació/mecanisme (10 min):** dibuixeu dues alternatives mecàniques i valoreu estabilitat, nombre de peces, recorregut i risc de pinçament.
+**Ideación/mecanismo (10 min):** dibujad dos alternativas mecánicas y valorad estabilidad, número de piezas, recorrido y riesgo de pinzamiento.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Programa per etapes (18 min):** programeu una posició inicial coneguda, una acció limitada i retorn/aturada. Verifiqueu primer el mecanisme a mà amb motors apagats; després proveu sense càrrega i amb una fitxa gran i lleugera. L’objectiu és automatitzar una tasca clara, no construir un model decoratiu.
+**Programa por etapas (18 min):** programad una posición inicial conocida, una acción limitada y retorno/parada. Verificad primero el mecanismo a mano con los motores apagados; después probad sin carga y con una ficha grande y ligera. El objetivo es automatizar una tarea clara, no construir un modelo decorativo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Proves i millora (7 min):** executeu tres intents i registreu si arriba, s’atura i retorna sense encallar. Si canvieu topall o posició inicial, torneu a mesurar.
+**Pruebas y mejora (7 min):** ejecutad tres intentos y registrad si llega, se detiene y retorna sin atascarse. Si cambiáis el tope o la posición inicial, volved a medir.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Reflexió (3 min):** identifiqueu què és una decisió del codi i què és una propietat física del muntatge.
+**Reflexión (3 min):** identificad qué es una decisión del código y qué es una propiedad física del montaje.
 
-### **Lliçó 4 · Dos motors, un moviment coordinat (45 min).**
+### **Lección 4 · Dos motores, un movimiento coordinado (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Activació (5 min):** amb una analogia corporal no competitiva, proveu a dos costats d’una corda lleugera com és avançar alhora i què passa si cada costat actua en un moment diferent. No estireu l’alumnat ni useu forces; també es pot simular amb dos marcadors en paper.
+**Activación (5 min):** con una analogía corporal no competitiva, probad en dos lados de una cuerda ligera cómo es avanzar a la vez y qué pasa si cada lado actúa en un momento distinto. No estiréis al alumnado ni uséis fuerzas; también se puede simular con dos rotuladores en papel.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Exploració (10 min):** proveu els dos motors per separat amb la base elevada; comproveu direcció, port i resposta.
+**Exploración (10 min):** probad los dos motores por separado con la base elevada; comprobad dirección, puerto y respuesta.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Construcció (15 min):** creeu una plataforma de taula amb dues potes articulades o un mecanisme sense rodes de baixa altura, inspirat en el problema de coordinar motors del repte *Hopper Run*, però amb una forma original i sense perseguir cap distància o velocitat. El mecanisme ha de romandre dins del carril i tenir topalls.
+**Construcción (15 min):** cread una plataforma de mesa con dos patas articuladas o un mecanismo sin ruedas de baja altura, inspirado en el problema de coordinar motores del reto *Hopper Run*, pero con una forma original y sin perseguir ninguna distancia o velocidad. El mecanismo debe permanecer dentro del carril y tener topes.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Programació (10 min):** useu la crida de parella documentada per fer-los moure simultàniament durant un interval curt; compareu amb instruccions consecutives. Analitzeu simetria, ordre, fricció i desequilibri.
+**Programación (10 min):** usad la llamada de pareja documentada para hacerlos mover simultáneamente durante un intervalo corto; comparad con instrucciones consecutivas. Analizad simetría, orden, fricción y desequilibrio.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Conversa (5 min):** justifiqueu per què un robot sense rodes pot avançar i quins límits presenta el vostre prototip.
+**Conversación (5 min):** justificad por qué un robot sin ruedas puede avanzar y qué límites presenta vuestro prototipo.
 
-### **Lliçó 5 · Una ruta amb passos i girs (45–90 min).**
+### **Lección 5 · Una ruta con pasos y giros (45–90 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Encàrrec i criteris (10 min):** planifiqueu un lliurament fictici des de la biblioteca a tres parades de maqueta. L’èxit significa passar per l’ordre correcte de fites i quedar dins d’una zona final àmplia; no s’exigeix precisió d’un servei real.
+**Encargo y criterios (10 min):** planificad una entrega ficticia desde la biblioteca a tres paradas de maqueta. El éxito significa pasar por el orden correcto de metas y quedar dentro de una zona final amplia; no se exige la precisión de un servicio real.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Mapa i pseudocodi (10 min):** dibuixeu quadrícula de trams, girs i pauses. Feu recompte d’ordres, determineu quin motor-parella s’utilitza per recta i com es genera el gir amb diferència de girs entre rodes.
+**Mapa y pseudocódigo (10 min):** dibujad una cuadrícula de tramos, giros y pausas. Haced recuento de órdenes, determinad qué motor-pareja se utiliza para la recta y cómo se genera el giro con la diferencia de giros entre ruedas.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Calibratge (15 min):** feu una recta d’una longitud curta amb tres proves i estimeu graus de roda necessaris; feu un gir de quart aproximat i mesureu orientació amb quadrícula/transportador. Useu relacions com a estimacions específiques del vostre robot, no constants universals.
+**Calibración (15 min):** haced una recta de una longitud corta con tres pruebas y estimad los grados de rueda necesarios; haced un giro de cuarto aproximado y medid la orientación con cuadrícula/transportador. Usad las relaciones como estimaciones específicas de vuestro robot, no como constantes universales.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Implementació Python (20 min):** traduïu la ruta en crides documentades, separant recta, gir i parada. Proveu cada funció en solitari, després encadeneu dues ordres i finalment la ruta completa a baixa velocitat. Manteniu un botó o via manual per aturar.
+**Implementación Python (20 min):** traducid la ruta en llamadas documentadas, separando recta, giro y parada. Probad cada función por separado, después encadenad dos órdenes y finalmente la ruta completa a baja velocidad. Mantened un botón o una vía manual para detenerlo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Diagnòstic (10 min):** si se’n va de la marca, canvieu una variable per iteració (graus, alineació, velocitat o superfície); documenteu quin error disminueix. **Si es disposa de més temps:** repetiu tres vegades la ruta completa i compareu dispersió i causes, sense fer una cursa de velocitat.
+**Diagnóstico (10 min):** si se sale de la marca, cambiad una variable por iteración (grados, alineación, velocidad o superficie); documentad qué error disminuye. **Si se dispone de más tiempo:** repetid tres veces la ruta completa y comparad dispersión y causas, sin hacer una carrera de velocidad.
 
-### **Lliçó 6 · Prova entre equips i feedback de disseny (30–45 min).**
+### **Lección 6 · Prueba entre equipos y retroalimentación de diseño (30–45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-**Preparació (8 min):** cada equip deixa la ruta, codi comentat, criteri d’arribada i resultats inicials visibles.
+**Preparación (8 min):** cada equipo deja la ruta, el código comentado, el criterio de llegada y los resultados iniciales visibles.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-**Revisió (12 min):** un segon equip prediu el moviment abans d’executar, prova amb consentiment dels autors i registra comportament; no edita el programa ni reconstrueix el mecanisme. El feedback segueix “he observat…”, “la predicció diu…”, “un cas més que provaria…”.
+**Revisión (12 min):** un segundo equipo predice el movimiento antes de ejecutar, prueba con el consentimiento de los autores y registra el comportamiento; no edita el programa ni reconstruye el mecanismo. La retroalimentación sigue «he observado…», «la predicción dice…», «un caso más que probaría…».
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-**Decisió (5 min):** autors trien una recomanació i expliquen si l’adopten, la deixen per al futur o la descarten amb motiu.
+**Decisión (5 min):** los autores eligen una recomendación y explican si la adoptan, la dejan para el futuro o la descartan con motivo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-**Iteració (12 min):** canvieu una característica, repetiu el cas anterior i un cas de control per assegurar que no s’ha perjudicat un tram correcte.
+**Iteración (12 min):** cambiad una característica, repetid el caso anterior y un caso de control para asegurar que no se ha perjudicado un tramo correcto.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Tancament (3–8 min):** mostreu gràfic/taula de predicció i resultat, descriviu limitacions del robot i valoreu quina prova ha sigut més informativa que una demostració única.
+**Cierre (3–8 min):** mostrad un gráfico/tabla de predicción y resultado, describid las limitaciones del robot y valorad qué prueba ha sido más informativa que una demostración única.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-El dossier conté esquema de maquinari i ports, registre de versió de l’app/API, diagrama de posicions, pseudocodi de ruta, codi Python anotat, prediccions, taula de temps/velocitat/graus i distància mesurada, proves del mecanisme automatitzat, comparació de crides individuals i de parella, mapa de ruta, tres resultats finals, feedback, canvi seleccionat i explicació de límits. El producte és una maqueta de lliurament i una nota tècnica d’una pàgina que separa instrucció, resposta física i evidència.
+El dosier contiene esquema de hardware y puertos, registro de versión de la app/API, diagrama de posiciones, pseudocódigo de ruta, código Python anotado, predicciones, tabla de tiempo/velocidad/grados y distancia medida, pruebas del mecanismo automatizado, comparación de llamadas individuales y de pareja, mapa de ruta, tres resultados finales, retroalimentación, cambio seleccionado y explicación de límites. El producto es una maqueta de entrega y una nota técnica de una página que separa instrucción, respuesta física y evidencia.
 
-Avalueu amb quatre criteris: **model del motor** (interpreta temps, velocitat, posició i graus sense confondre magnituds); **programació** (organitza crides i coordina motors a partir d’un pseudocodi); **enginyeria experimental** (manté condicions, registra més d’un intent i justifica un ajust); **col·laboració i comunicació** (participa en el feedback i declara què encara no funciona). Per a cadascun, descriviu quatre nivells: amb modelatge, amb suport, de manera autònoma i amb transferència justificada. Un recorregut que no arribe a la fita encara pot aportar evidència rigorosa si està ben diagnosticat.
+Evaluad con cuatro criterios: **modelo del motor** (interpreta tiempo, velocidad, posición y grados sin confundir magnitudes); **programación** (organiza llamadas y coordina motores a partir de un pseudocódigo); **ingeniería experimental** (mantiene condiciones, registra más de un intento y justifica un ajuste); **colaboración y comunicación** (participa en la retroalimentación y declara qué todavía no funciona). Para cada uno, describid cuatro niveles: con modelado, con apoyo, de manera autónoma y con transferencia justificada. Un recorrido que no llegue a la meta todavía puede aportar evidencia rigurosa si está bien diagnosticado.
 
-## ♿ Inclusió, seguretat i sostenibilitat
+## ♿ Inclusión, seguridad y sostenibilidad
 
-Oferiu pista impresa, simulació de moviments en paper i accés a consola amb lectura compartida. Distribuïu rols entre codi, construcció, mesura i comunicació, i feu-los rotar. Permeteu més temps i trams grans; la velocitat no és criteri d’èxit. Useu carrils delimitats, zona de parada, càrrega tova, distància curta i baixa potència; apagueu motors abans d’ajustar eixos, rodes o cables. Manteniu dits, cabells i roba lluny d’elements en moviment. Recupereu totes les peces després de la prova i no useu passadissos, rampes altes o escales.
+Ofreced pista impresa, simulación de movimientos en papel y acceso a consola con lectura compartida. Distribuid roles entre código, construcción, medida y comunicación, y hacedlos rotar. Permitid más tiempo y tramos grandes; la velocidad no es criterio de éxito. Usad carriles delimitados, zona de parada, carga blanda, distancia corta y baja potencia; apagad los motores antes de ajustar ejes, ruedas o cables. Mantened dedos, pelo y ropa lejos de los elementos en movimiento. Recoged todas las piezas después de la prueba y no uséis pasillos, rampas altas o escaleras.
 
-## 🔗 Referent oficial i decisions d’adaptació
+## 🔗 Referente oficial y decisiones de adaptación
 
-Adapta Unit 2 *Motors* del curs LEGO Education [*Introduction to Python Programming · Course 1*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt834b554cdaa246f7/6584064fd082f7672425e7ea/File_1_Units12345_Intro_to_Python_Course_TG_Course.pdf?locale=en-us). El PDF oficial consultat confirma les lliçons *Hopper Run* (dos motors simultanis i model sense rodes) i *Race Day* (programa amb seqüència de passos i girs i ús de la parella de motors), a més de la sessió de feedback *Ideas to Help with Race Day*. La progressió de motors individuals, posició i automatització s’ha contrastat amb els objectius indexats del pla oficial; les funcions de Python s’han de validar en l’app del centre. El repte, el context, el guió docent, els fulls de registre i la imatge són propis; no es reprodueixen instruccions de construcció LEGO ni s’afirma que la maqueta completa siga un model oficial.
+Adapta la unidad 2 *Motores* del curso LEGO Education [*Introduction to Python Programming · Course 1*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt834b554cdaa246f7/6584064fd082f7672425e7ea/File_1_Units12345_Intro_to_Python_Course_TG_Course.pdf?locale=en-us). El PDF oficial consultado confirma las lecciones *Hopper Run* (dos motores simultáneos y modelo sin ruedas) y *Race Day* (programa con secuencia de pasos y giros y uso de la pareja de motores), además de la sesión de retroalimentación *Ideas to Help with Race Day*. La progresión de motores individuales, posición y automatización se ha contrastado con los objetivos indexados del plan oficial; las funciones de Python se deben validar en la app del centro. El reto, el contexto, el guion docente, las hojas de registro y la imagen son propios; no se reproducen instrucciones de construcción LEGO ni se afirma que la maqueta completa sea un modelo oficial.

@@ -3,7 +3,7 @@ active: true
 title: "El tren se queda en el taller"
 description: "Cuatro actividades sin dispositivos adaptan las lecciones desconectadas de Coding Express con personajes, rutas, música y distancias de papel."
 robot: "desendollat"
-robot_label: "Activitat desconnectada"
+robot_label: "Actividad desconectada"
 cycle: "infantil"
 cycle_label: "Educación Infantil"
 subject: "pensament-computacional"
@@ -14,129 +14,129 @@ duration: "4 sesiones"
 challenge: "¿Podemos resolver los mismos retos con el cuerpo, tarjetas y papel?"
 ---
 
-![Targetes de paper amb un personatge eruga, una ruta amb desviament, fitxes de ritme i tires per comparar distàncies; no hi ha robots ni dispositius.](../../_assets/situacions/ce-reptes-desconnectats.webp)
+![Tarjetas de papel con un personaje oruga, una ruta con desvío, fichas de ritmo y tiras para comparar distancias; no hay robots ni dispositivos.](../../_assets/situacions/ce-reptes-desconnectats.webp)
 
-_Els reptes es resolen amb instruccions físiques, paper i cooperació, sense aplicació ni tren._
+_Los retos se resuelven con instrucciones físicas, papel y cooperación, sin aplicación ni tren._
 
-## 🌱 Situació, repte i intenció
+## 🌱 Situación, reto e intención
 
-Aquesta situació adapta les quatre lliçons desconnectades de Coding Express perquè es puguen fer amb paper, targetes i cooperació. El grup comprova si una altra persona pot seguir instruccions explícites, resoldre una desviació, interpretar un patró i comparar distàncies sense electricitat, pantalla, aplicació ni robot.
+Esta situación adapta las cuatro lecciones desconectadas de Coding Express para que se puedan hacer con papel, tarjetas y cooperación. El grupo comprueba si otra persona puede seguir instrucciones explícitas, resolver un desvío, interpretar un patrón y comparar distancias sin electricidad, pantalla, aplicación ni robot.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Descompondre una història o un trajecte en instruccions ordenades i verificables.
-- Detectar una instrucció ambigua, revisar-la i comprovar que una altra parella la pot executar.
-- Representar una alternativa a una ruta i justificar-la amb un criteri acordat.
-- Crear, repetir i modificar un patró sonor o visual, i mesurar recorreguts amb unitats iguals.
+- Descomponer una historia o un trayecto en instrucciones ordenadas y verificables.
+- Detectar una instrucción ambigua, revisarla y comprobar que otra pareja la puede ejecutar.
+- Representar una alternativa a una ruta y justificarla con un criterio acordado.
+- Crear, repetir y modificar un patrón sonoro o visual, y medir recorridos con unidades iguales.
 
-**Vocabulari:** instrucció, seqüència, patró, repetició, desviament, casella, unitat i depuració.
+**Vocabulario:** instrucción, secuencia, patrón, repetición, desvío, casilla, unidad y depuración.
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-Prepareu targetes de fletxes i símbols, paper gran, retoladors, tires de paper de longitud igual, fitxes de colors, una figura plana i cinta adhesiva reposicionable. Deixeu un corredor lliure per als recorreguts corporals; ningú corre ni tanca el pas. Oferiu també una ruta de taula perquè es puga participar sense desplaçar-se.
+Preparad tarjetas de flechas y símbolos, papel grande, rotuladores, tiras de papel de igual longitud, fichas de colores, una figura plana y cinta adhesiva reposicionable. Dejad un pasillo libre para los recorridos corporales; nadie corre ni cierra el paso. Ofreced también una ruta de mesa para que se pueda participar sin desplazarse.
 
-## 📅 Seqüència didàctica · quatre sessions desconnectades
+## 📅 Secuencia didáctica · cuatro sesiones desconectadas
 
-### Sessió 1 · L’eruga ordenada · Character—Caterpillar (30–35 min)
+### Sesión 1 · La oruga ordenada · Character—Caterpillar (30–35 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Doneu a cada equip una figura d’eruga i quatre targetes d’acció. Inventeu una història curta amb inici, canvi i final; abans d’ordenar les targetes, cada equip prediu quines instruccions faran falta perquè una altra persona la puga representar.
+Dad a cada equipo una figura de oruga y cuatro tarjetas de acción. Inventad una historia corta con inicio, cambio y final; antes de ordenar las tarjetas, cada equipo predice qué instrucciones harán falta para que otra persona la pueda representar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Convertiu les accions en ordres visibles, com ara avançar una casella, girar o parar. Eviteu consignes vagues com «ves fins a l’arbre»: afegiu un símbol o un nombre de passos. Una persona que no ha creat la seqüència la segueix literalment.
+Convertid las acciones en órdenes visibles, como avanzar una casilla, girar o parar. Evitad consignas vagas como «ve hasta el árbol»: añadid un símbolo o un número de pasos. Una persona que no ha creado la secuencia la sigue literalmente.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu el final previst amb el que ha representat l’intèrpret. Marqueu l’ordre concreta on s’ha perdut i expliqueu què li faltava perquè fora reproduïble.
+Comparad el final previsto con el que ha representado el intérprete. Marcad la orden concreta en la que se ha perdido y explicad qué le faltaba para que fuera reproducible.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reescriviu només la instrucció ambigua i intercanvieu la seqüència amb una altra parella. Proveu si la nova versió condueix al mateix final sense ajuda oral de les persones autores.
+Reescribid solo la instrucción ambigua e intercambiad la secuencia con otra pareja. Probad si la nueva versión conduce al mismo final sin ayuda oral de las personas autoras.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Guardeu la tira d’ordres i una anotació del canvi. **Evidència:** seqüència amb inici i final, seguida per una altra parella. **Pregunta docent:** quina informació ha fet que la instrucció es puga executar sense endevinar?
+Guardad la tira de órdenes y una anotación del cambio. **Evidencia:** secuencia con inicio y final, seguida por otra pareja. **Pregunta docente:** ¿qué información ha hecho que la instrucción se pueda ejecutar sin adivinar?
 
-### Sessió 2 · Obres en la ruta · Journey—Trouble on the Road (30–35 min)
+### Sesión 2 · Obras en la ruta · Journey—Trouble on the Road (30–35 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Dibuixeu una quadrícula de 5×5 amb inici, destinació i una casella marcada com a obra. Predigueu quins moviments permeten arribar-hi sense passar per la zona tancada.
+Dibujad una cuadrícula de 5×5 con inicio, destino y una casilla marcada como obra. Predecid qué movimientos permiten llegar sin pasar por la zona cerrada.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Escriviu una ruta inicial amb fletxes i, després, una alternativa. Una fitxa representa el tren i es mou una casella per instrucció; la persona observadora marca cada pas. La incidència és una targeta, no un obstacle físic a l’aula.
+Escribid una ruta inicial con flechas y, después, una alternativa. Una ficha representa el tren y se mueve una casilla por instrucción; la persona observadora marca cada paso. La incidencia es una tarjeta, no un obstáculo físico en el aula.
 
-![Targetes amb fletxes ordenades al costat d’una graella de paper amb inici, destinació i caselles tancades.](../../_assets/situacions/sa-ce-reptes-desconnectats-ruta.webp)
+![Tarjetas con flechas ordenadas junto a una cuadrícula de papel con inicio, destino y casillas cerradas.](../../_assets/situacions/sa-ce-reptes-desconnectats-ruta.webp)
 
-_Les targetes fan visible el programa abans que una persona execute la ruta i comprove si evita la zona tancada._
+_Las tarjetas hacen visible el programa antes de que una persona ejecute la ruta y compruebe si evita la zona cerrada._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compteu els moviments de cada ruta i compareu si totes dues arriben a la destinació. Digueu quin criteri heu prioritzat: evitar l’obra, arribar-hi o reduir passos.
+Contad los movimientos de cada ruta y comparad si ambas llegan al destino. Decid qué criterio habéis priorizado: evitar la obra, llegar o reducir pasos.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu el mapa amb una altra parella perquè prove la ruta sense explicacions addicionals. Si la fitxa entra a la casella tancada o es perd, reviseu el tram exacte i canvieu una instrucció.
+Intercambiad el mapa con otra pareja para que pruebe la ruta sin explicaciones adicionales. Si la ficha entra en la casilla cerrada o se pierde, revisad el tramo exacto y cambiad una instrucción.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Guardeu el mapa amb les dues rutes i els recomptes. **Evidència:** desviament executat pas a pas i justificat amb el criteri triat. **Pregunta docent:** una ruta amb més passos pot ser millor si evita la casella tancada?
+Guardad el mapa con las dos rutas y los recuentos. **Evidencia:** desvío ejecutado paso a paso y justificado con el criterio elegido. **Pregunta docente:** ¿una ruta con más pasos puede ser mejor si evita la casilla cerrada?
 
-### Sessió 3 · Concert d’animals · Music—Animal Concert (30–35 min)
+### Sesión 3 · Concierto de animales · Music—Animal Concert (30–35 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu tres figures de paper i proposeu un símbol per al so o ritme de cadascuna. Predigueu què entendrà un altre equip en veure la llegenda, abans de fer cap interpretació.
+Elegid tres figuras de papel y proponed un símbolo para el sonido o el ritmo de cada una. Predecid qué entenderá otro equipo al ver la leyenda, antes de hacer ninguna interpretación.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Assigneu patrons gràfics —per exemple, dues marques curtes i una llarga— i ordeneu les targetes per crear una partitura. Es pot representar amb palmades suaus, instruments, veu o només símbols visuals.
+Asignad patrones gráficos —por ejemplo, dos marcas cortas y una larga— y ordenad las tarjetas para crear una partitura. Se puede representar con palmadas suaves, instrumentos, voz o solo símbolos visuales.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Un altre equip interpreta la partitura. Compareu què s’ha repetit, quin símbol ha canviat i si la llegenda permetia entendre l’ordre sense conéixer la història original.
+Otro equipo interpreta la partitura. Comparad qué se ha repetido, qué símbolo ha cambiado y si la leyenda permitía entender el orden sin conocer la historia original.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una sola targeta i repetiu la interpretació. Qui prefereix silenci pot dirigir les icones o marcar visualment l’inici i el final del patró.
+Cambiad una sola tarjeta y repetid la interpretación. Quien prefiera silencio puede dirigir los iconos o marcar visualmente el inicio y el final del patrón.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Guardeu la partitura, la llegenda i el canvi identificat. **Evidència:** patró interpretat per una altra parella amb o sense so. **Pregunta docent:** què ha de mantindre’s perquè encara reconeguem el patró?
+Guardad la partitura, la leyenda y el cambio identificado. **Evidencia:** patrón interpretado por otra pareja con o sin sonido. **Pregunta docente:** ¿qué debe mantenerse para que todavía reconozcamos el patrón?
 
-### Sessió 4 · Quina ruta és més llarga? · Math—Distance (30–35 min)
+### Sesión 4 · ¿Qué ruta es más larga? · Math—Distance (30–35 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Traceu dues rutes en la mateixa quadrícula entre els mateixos punts. Abans de mesurar, ordeneu-les de més curta a més llarga i acordeu si els girs compten com a trams.
+Trazad dos rutas en la misma cuadrícula entre los mismos puntos. Antes de medir, ordenadlas de más corta a más larga y acordad si los giros cuentan como tramos.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Mesureu les dues rutes amb segments de paper de longitud igual. Marqueu on comença i acaba cada segment i escriviu el recompte amb la unitat emprada.
+Medid las dos rutas con segmentos de papel de igual longitud. Marcad dónde empieza y acaba cada segmento y escribid el recuento con la unidad empleada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Un segon equip verifica una ruta sense veure el recompte inicial. Si els resultats difereixen, localitzeu on s’ha començat o acabat un segment i comproveu que s’ha mantingut la mateixa convenció.
+Un segundo equipo verifica una ruta sin ver el recuento inicial. Si los resultados difieren, localizad dónde se ha empezado o acabado un segmento y comprobad que se ha mantenido la misma convención.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Redacteu una instrucció de mesura que elimine l’ambigüitat i torneu a mesurar. Si el grup ja coneix la regla, compareu la unitat de paper amb una unitat convencional sense barrejar els dos recomptes.
+Redactad una instrucción de medida que elimine la ambigüedad y volved a medir. Si el grupo ya conoce la regla, comparad la unidad de papel con una unidad convencional sin mezclar los dos recuentos.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Guardeu les dues rutes, els recomptes i la unitat indicada. **Evidència:** comparació verificada per un segon equip. **Pregunta docent:** per què cal usar unitats iguals quan comparem dos recorreguts?
+Guardad las dos rutas, los recuentos y la unidad indicada. **Evidencia:** comparación verificada por un segundo equipo. **Pregunta docente:** ¿por qué hay que usar unidades iguales cuando comparamos dos recorridos?
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Prepareu una carpeta amb quatre artefactes: la història i la tira d’ordres; les dues rutes amb el registre de passos; la partitura i la llegenda; i la comparació de distàncies amb la unitat indicada. Valoreu si les instruccions són reproduïbles, si l’equip revisa una decisió concreta, si identifica què es manté en un patró i si mesura amb unitats consistents. La retroacció d’una altra parella ha d’assenyalar el punt exacte on s’ha perdut, sense substituir la solució de l’equip autor.
+Preparad una carpeta con cuatro artefactos: la historia y la tira de órdenes; las dos rutas con el registro de pasos; la partitura y la leyenda; y la comparación de distancias con la unidad indicada. Valorad si las instrucciones son reproducibles, si el equipo revisa una decisión concreta, si identifica qué se mantiene en un patrón y si mide con unidades consistentes. La retroalimentación de otra pareja debe señalar el punto exacto en el que se ha perdido, sin sustituir la solución del equipo autor.
 
-## ♿ Participació, accessibilitat i seguretat
+## ♿ Participación, accesibilidad y seguridad
 
-Useu targetes grans amb formes i textures, instruccions d’un pas cada vegada i recorreguts asseguts sobre una quadrícula de taula. Permeteu participar amb gestos, selecció d’icones, dictat o demostració. En la sessió musical no cal produir sons: la partitura visual representa el patró completament en silenci. Manteniu lliure el corredor i no feu córrer l’alumnat.
+Usad tarjetas grandes con formas y texturas, instrucciones de un paso cada vez y recorridos sentados sobre una cuadrícula de mesa. Permitid participar con gestos, selección de iconos, dictado o demostración. En la sesión musical no hace falta producir sonidos: la partitura visual representa el patrón completamente en silencio. Mantened libre el pasillo y no hagáis correr al alumnado.
 
-## 🔗 Referents i adaptació
+## 🔗 Referentes y adaptación
 
-Adaptació original de [Unplugged Lessons de Coding Express](https://education.lego.com/en-us/product-resources/coding-express/additional-lesson-plans/unplugged-lessons/): *Character—Caterpillar*, *Journey—Trouble on the Road*, *Music—Animal Concert* i *Math—Distance*. Les quatre sessions es poden executar sense tren ni aplicació; les instruccions, històries, mapes, evidències i il·lustració són propis. La comparació opcional amb Coding Express es fa en un altre moment i no és requisit per completar aquesta situació.
+Adaptación original de [Unplugged Lessons de Coding Express](https://education.lego.com/en-us/product-resources/coding-express/additional-lesson-plans/unplugged-lessons/): *Character—Caterpillar*, *Journey—Trouble on the Road*, *Music—Animal Concert* y *Math—Distance*. Las cuatro sesiones se pueden ejecutar sin tren ni aplicación; las instrucciones, historias, mapas, evidencias e ilustración son propios. La comparación opcional con Coding Express se hace en otro momento y no es requisito para completar esta situación.

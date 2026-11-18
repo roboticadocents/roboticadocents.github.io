@@ -15,125 +15,125 @@ challenge: "¿Cómo preparamos MatataBot y una barca de papel en la misma línea
 official_source: "https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf"
 ---
 
-![MatataBot i la torre reals del Coding Set en una quadrícula, amb una barqueta de paper alineada davant i el bloc de música després dels blocs de moviment.](../../_assets/situacions/cs-benvinguda-barqueta.webp)
+![MatataBot y la torre reales del Coding Set en una cuadrícula, con una barca de papel alineada delante y el bloque de música después de los bloques de movimiento.](../../_assets/situacions/cs-benvinguda-barqueta.webp)
 
-_Il·lustració IA pròpia basada en el model real del Coding Set. La barqueta és una joguina de paper; MatataBot no la reconeix ni l’arreplega, només executa el recorregut i la música programats._
+_Ilustración de IA propia basada en el modelo real del Coding Set. La barca es un juguete de papel; MatataBot no la reconoce ni la recoge, solo ejecuta el recorrido y la música programados._
 
-## Situació, repte i intenció
+## Situación, reto e intención
 
-La classe rep una barqueta de paper que arriba a una maqueta de l’Albufera. MatataBot i la joguina es col·loquen en una mateixa fila o columna d’una graella, amb un passadís clar entre totes dues. L’equip programa el robot perquè avance fins a la barqueta i, després del moviment, faça sonar una melodia breu de benvinguda.
+La clase recibe una barca de papel que llega a una maqueta de la Albufera. MatataBot y el juguete se colocan en una misma fila o columna de una cuadrícula, con un pasillo claro entre ambos. El equipo programa el robot para que avance hasta la barca y, después del movimiento, haga sonar una melodía breve de bienvenida.
 
-La proposta adapta la targeta oficial **A-1 · Nice to Meet You** de les *Coding Activity Cards*. La imatge de la mostra especifica dos passos: col·locar MatataBot i una joguina en el mapa mantenint-los en la mateixa línia; programar el robot perquè es trobe amb la joguina i reproduïsca música. El context de barqueta, el mapa, els criteris de prova, la seqüència de sessions i les imatges són propis. “Trobar-se” significa arribar a la casella acordada: el robot no identifica la joguina ni té un sensor o una pinça per arreplegar-la.
+La propuesta adapta la tarjeta oficial **A-1 · Nice to Meet You** de las *Coding Activity Cards*. La imagen de la muestra especifica dos pasos: colocar MatataBot y un juguete en el mapa manteniéndolos en la misma línea; programar el robot para que se encuentre con el juguete y reproduzca música. El contexto de la barca, el mapa, los criterios de prueba, la secuencia de sesiones y las imágenes son propios. «Encontrarse» significa llegar a la casilla acordada: el robot no identifica el juguete ni tiene un sensor o una pinza para recogerlo.
 
-**Pregunta guia:** quines ordres necessitem per arribar a la joguina en línia recta i com comprovem que la melodia s’executa després del moviment?
+**Pregunta guía:** ¿qué órdenes necesitamos para llegar al juguete en línea recta y cómo comprobamos que la melodía se ejecuta después del movimiento?
 
-## Aprenentatges i vocabulari
+## Aprendizajes y vocabulario
 
-- Situar inici i destinació en una mateixa fila o columna de la quadrícula.
-- Relacionar distància en caselles amb els blocs de moviment disponibles.
-- Mantenir la mateixa orientació inicial en planificar, programar i provar.
-- Ordenar el bloc musical després dels moviments i observar el resultat.
-- Distingir una arribada programada de la detecció o recollida automàtica d’un objecte.
+- Situar inicio y destino en una misma fila o columna de la cuadrícula.
+- Relacionar distancia en casillas con los bloques de movimiento disponibles.
+- Mantener la misma orientación inicial al planificar, programar y probar.
+- Ordenar el bloque musical después de los movimientos y observar el resultado.
+- Distinguir una llegada programada de la detección o recogida automática de un objeto.
 
-**Vocabulari clau:** fila, columna, mateixa línia, casella, inici, destinació, avançar, orientació, seqüència, melodia, prova.
+**Vocabulario clave:** fila, columna, misma línea, casilla, inicio, destino, avanzar, orientación, secuencia, melodía, prueba.
 
-## Materials i preparació
+## Materiales y preparación
 
-- Coding Set real: MatataBot, torre de control, tauler, blocs de moviment i bloc de música disponibles al kit del centre.
-- Graella de 4 × 4 caselles o mapa del kit, amb un punt d’inici i una destinació en la mateixa fila o columna.
-- Barquetes de paper grans i lleugeres o una altra joguina segura, sense peces menudes ni arestes punxants.
-- Fitxa de robot de paper, targetes de fletxes i full de registre amb **fila/columna**, **posició inicial**, **orientació**, **blocs de moviment**, **ordre de la música** i **resultat observat**.
-- Rúbrica curta de parella: «mateixa línia», «arriba a la casella prevista», «música després del moviment».
+- Coding Set real: MatataBot, torre de control, tablero, bloques de movimiento y bloque de música disponibles en el kit del centro.
+- Cuadrícula de 4 × 4 casillas o mapa del kit, con un punto de inicio y un destino en la misma fila o columna.
+- Barcas de papel grandes y ligeras u otro juguete seguro, sin piezas pequeñas ni aristas punzantes.
+- Ficha de robot de papel, tarjetas de flechas y hoja de registro con **fila/columna**, **posición inicial**, **orientación**, **bloques de movimiento**, **orden de la música** y **resultado observado**.
+- Rúbrica corta de pareja: «misma línea», «llega a la casilla prevista», «música después del movimiento».
 
-Carregueu torre i MatataBot i comproveu que la torre reconeix els blocs que usareu. Col·loqueu robot i joguina en la mateixa fila o columna i deixeu lliure la ruta. La casella d’arribada ha de deixar espai perquè el robot no quede encastat contra la joguina; la trobada pot ser en la casella adjacent si l’escala del mapa ho demana. Ajusteu la distància a la superfície real i no forceu el robot contra la peça.
+Cargad la torre y MatataBot y comprobad que la torre reconoce los bloques que usaréis. Colocad el robot y el juguete en la misma fila o columna y dejad libre la ruta. La casilla de llegada debe dejar espacio para que el robot no quede encajado contra el juguete; el encuentro puede ser en la casilla adyacente si la escala del mapa lo pide. Ajustad la distancia a la superficie real y no forcéis el robot contra la pieza.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Sessió 1 · Posem el mapa en línia (45 min)
+### Sesión 1 · Ponemos el mapa en línea (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Presenteu la maqueta de la llacuna i la barqueta de paper. Mostreu dues disposicions: en una, robot i joguina comparteixen fila; en l’altra, estan desplaçats en diagonal. L’alumnat assenyala quina disposició compleix la consigna de la targeta i explica com ho sap.
+Presentad la maqueta de la laguna y la barca de papel. Mostrad dos disposiciones: en una, el robot y el juguete comparten fila; en la otra, están desplazados en diagonal. El alumnado señala qué disposición cumple la consigna de la tarjeta y explica cómo lo sabe.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-En parelles, marqueu la posició inicial de MatataBot i poseu la joguina en una altra casella de la mateixa fila o columna. La persona que planifica indica cap a on mira el robot i compta les caselles fins a la destinació; l’altra prepara la ruta amb fitxes de fletxes, sense blocs encara.
+En parejas, marcad la posición inicial de MatataBot y poned el juguete en otra casilla de la misma fila o columna. La persona que planifica indica hacia dónde mira el robot y cuenta las casillas hasta el destino; la otra prepara la ruta con fichas de flechas, sin bloques todavía.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Dibuixeu la fila o columna triada i anoteu inici, orientació i destinació. Una parella visitant verifica que no hi ha cap desviació de fila/columna i que la distància és clara. Si la joguina tapa la línia o queda massa prop del robot, canvieu la col·locació abans d’escriure el programa.
+Dibujad la fila o columna elegida y anotad inicio, orientación y destino. Una pareja visitante verifica que no hay ninguna desviación de fila/columna y que la distancia es clara. Si el juguete tapa la línea o queda demasiado cerca del robot, cambiad la colocación antes de escribir el programa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Intercanvieu una disposició amb una altra parella. La parella visitant ha de reproduir la posició a partir del mapa, sense instruccions orals de qui l’ha dibuixat. Si situa una peça en una altra casella, milloreu la llegenda i torneu a provar la lectura.
+Intercambiad una disposición con otra pareja. La pareja visitante tiene que reproducir la posición a partir del mapa, sin instrucciones orales de quien lo ha dibujado. Si sitúa una pieza en otra casilla, mejorad la leyenda y volved a probar la lectura.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa amb robot i joguina en la mateixa línia, punt inicial i orientació. **Pregunta:** què canviaria si les dues peces estigueren en diagonal?
+**Evidencia:** mapa con el robot y el juguete en la misma línea, punto inicial y orientación. **Pregunta:** ¿qué cambiaría si las dos piezas estuvieran en diagonal?
 
-### Sessió 2 · Programem l’arribada (45 min)
+### Sesión 2 · Programamos la llegada (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu una disposició validada i predigueu en quina casella acabarà MatataBot després de les ordres triades. Cada persona marca el final de la ruta abans de col·locar els blocs.
+Recuperad una disposición validada y predecid en qué casilla acabará MatataBot después de las órdenes elegidas. Cada persona marca el final de la ruta antes de colocar los bloques.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Traduïu la distància a blocs de moviment disponibles. Si el kit permet un bloc de nombre amb avançar, useu-lo només en la combinació acceptada pel model; altrament, representeu els passos amb blocs d’avanç consecutius. Simuleu la seqüència amb una fitxa de paper i comproveu que l’orientació no canvia.
+Traducid la distancia a bloques de movimiento disponibles. Si el kit permite un bloque de número con avanzar, usadlo solo en la combinación aceptada por el modelo; de lo contrario, representad los pasos con bloques de avance consecutivos. Simulad la secuencia con una ficha de papel y comprobad que la orientación no cambia.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Una persona llig el programa i l’altra assenyala la casella de cada moviment. Anoteu nombre de caselles previst i punt d’arribada. Confirmeu que la ruta no necessita detectar la barqueta: és la col·locació sobre la graella la que dona la destinació.
+Una persona lee el programa y la otra señala la casilla de cada movimiento. Anotad número de casillas previsto y punto de llegada. Confirmad que la ruta no necesita detectar la barca: es la colocación sobre la cuadrícula la que da el destino.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu el programa en la mateixa superfície i des del mateix punt. Si MatataBot no arriba a la casella prevista, mesureu la diferència, reviseu una sola instrucció i torneu a provar. No empenyeu el robot contra la barqueta ni canvieu alhora el mapa i els blocs.
+Ejecutad el programa en la misma superficie y desde el mismo punto. Si MatataBot no llega a la casilla prevista, medid la diferencia, revisad una sola instrucción y volved a probar. No empujéis el robot contra la barca ni cambiéis a la vez el mapa y los bloques.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** programa de moviment, predicció de casella i resultat observat. **Pregunta:** quina dada del mapa ens ha permés triar el nombre d’ordres d’avanç?
+**Evidencia:** programa de movimiento, predicción de casilla y resultado observado. **Pregunta:** ¿qué dato del mapa nos ha permitido elegir el número de órdenes de avance?
 
-### Sessió 3 · La música dona la benvinguda (45 min)
+### Sesión 3 · La música da la bienvenida (45 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Compareu dues seqüències idèntiques de moviment: una acaba després d’arribar i l’altra afegeix música abans dels moviments. Predigueu quin ordre comunica millor que la benvinguda musical arriba després de la trobada.
+Comparad dos secuencias idénticas de movimiento: una acaba después de llegar y la otra añade música antes de los movimientos. Predecid qué orden comunica mejor que la bienvenida musical llega después del encuentro.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Afegiu el bloc de música després dels blocs de moviment al tauler, segons la disposició acceptada pel kit del centre. Si el bloc no és present o la versió no el reconeix, substituïu la celebració per una targeta visual i anoteu que la prova de música no s’ha executat físicament.
+Añadid el bloque de música después de los bloques de movimiento en el tablero, según la disposición aceptada por el kit del centro. Si el bloque no está presente o la versión no lo reconoce, sustituid la celebración por una tarjeta visual y anotad que la prueba de música no se ha ejecutado físicamente.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Escriviu la seqüència com **moviments → arribada prevista → música**. Una altra parella llig el programa i assenyala quin bloc és responsable del desplaçament i quin de l’eixida sonora. Anoteu volum i durada percebuts sense puntuar la qualitat musical.
+Escribid la secuencia como **movimientos → llegada prevista → música**. Otra pareja lee el programa y señala qué bloque es responsable del desplazamiento y cuál de la salida sonora. Anotad volumen y duración percibidos sin puntuar la calidad musical.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu la seqüència completa. La parella observadora comprova que el robot arriba a la casella prevista i que la música sona després de l’execució dels moviments. Si l’ordre és diferent, corregiu la posició dels blocs i repetiu des de la mateixa casella inicial.
+Ejecutad la secuencia completa. La pareja observadora comprueba que el robot llega a la casilla prevista y que la música suena después de la ejecución de los movimientos. Si el orden es diferente, corregid la posición de los bloques y repetid desde la misma casilla inicial.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència final:** mapa, programa complet i registre de l’arribada i la música. Tanqueu amb: «La barqueta està en la mateixa línia perquè…» i «La música ha sonat després de…».
+**Evidencia final:** mapa, programa completo y registro de la llegada y la música. Cerrad con: «La barca está en la misma línea porque…» y «La música ha sonado después de…».
 
-## Evidències i avaluació
+## Evidencias y evaluación
 
-Recolliu el mapa, la seqüència tangible o dibuixada i una taula amb predicció i resultat. Observeu si l’alumnat:
+Recoged el mapa, la secuencia tangible o dibujada y una tabla con predicción y resultado. Observad si el alumnado:
 
-- comprova que inici i joguina comparteixen fila o columna;
-- marca orientació i distància abans d’executar;
-- associa els blocs a moviments observables;
-- situa la música després de la seqüència de moviment;
-- diferencia arribada, detecció i recollida.
+- comprueba que inicio y juguete comparten fila o columna;
+- marca orientación y distancia antes de ejecutar;
+- asocia los bloques a movimientos observables;
+- sitúa la música después de la secuencia de movimiento;
+- diferencia llegada, detección y recogida.
 
-No avalueu la rapidesa ni que el programa funcione al primer intent.
+No valoréis la rapidez ni que el programa funcione al primer intento.
 
-## Participació, accessibilitat i seguretat
+## Participación, accesibilidad y seguridad
 
-Feu servir mapa ampli, caselles d’alt contrast, fletxes en relleu i joguina prou gran perquè es veja des de qualsevol lloc. Permeteu participar assenyalant, llegint, col·locant blocs o registrant la prova. Oferiu alternativa sense so amb una targeta de benvinguda. Manteniu mans fora de la ruta quan el robot està actiu; si cal reposicionar la joguina, atureu primer el dispositiu. La barqueta és un model de paper, no una embarcació real ni un objecte que el robot transporta.
+Usad un mapa amplio, casillas de alto contraste, flechas en relieve y un juguete lo bastante grande para que se vea desde cualquier sitio. Permitid participar señalando, leyendo, colocando bloques o registrando la prueba. Ofreced una alternativa sin sonido con una tarjeta de bienvenida. Mantened las manos fuera de la ruta cuando el robot está activo; si hay que recolocar el juguete, detened primero el dispositivo. La barca es un modelo de papel, no una embarcación real ni un objeto que el robot transporta.
 
-## Referents i adaptació
+## Referentes y adaptación
 
-- Matatalab, [*Coding Activity Cards*, targeta A-1 · *Nice to Meet You* (PDF oficial)](https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf): col·loca MatataBot i una joguina en una mateixa línia del mapa i programa el robot perquè arribe a la joguina i reproduïsca música. La mostra consultada presenta la mateixa columna, una ruta recta i el bloc musical després dels moviments.
-- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): consulta per verificar els moviments direccionals i l’orientació del robot en el Coding Set.
+- Matatalab, [*Coding Activity Cards*, tarjeta A-1 · *Nice to Meet You* (PDF oficial)](https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf): coloca MatataBot y un juguete en una misma línea del mapa y programa el robot para que llegue al juguete y reproduzca música. La muestra consultada presenta la misma columna, una ruta recta y el bloque musical después de los movimientos.
+- Matatalab, [*Hello Matatalab Robots!*](https://matatalab.com/en/node/88): consulta para verificar los movimientos direccionales y la orientación del robot en el Coding Set.
 
-La proposta conserva els dos requisits visuals de la targeta A-1 —mateixa línia i música en arribar— i els transforma en una benvinguda local amb barqueta de paper. El kit executa ordres; les persones situen les peces, defineixen la destinació i comproven el resultat.
+La propuesta conserva los dos requisitos visuales de la tarjeta A-1 —misma línea y música al llegar— y los transforma en una bienvenida local con barca de papel. El kit ejecuta órdenes; las personas sitúan las piezas, definen el destino y comprueban el resultado.

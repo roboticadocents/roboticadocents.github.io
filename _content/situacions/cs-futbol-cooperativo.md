@@ -14,131 +14,131 @@ duration: "4 sesiones"
 challenge: "¿Cómo podemos programar una ruta de pase para que la pelota llegue a una zona acordada y todo el mundo pueda participar en el reto?"
 ---
 
-![El Coding Set i MatataBot en una pista de futbol de taula amb una pilota i zones de passada.](../../_assets/situacions/cs-futbol-cooperatiu.webp)
+![El Coding Set y MatataBot en una pista de fútbol de mesa con una pelota y zonas de pase.](../../_assets/situacions/cs-futbol-cooperatiu.webp)
 
-_El Coding Set i MatataBot en una pista de futbol de taula amb una pilota i zones de passada._
+_El Coding Set y MatataBot en una pista de fútbol de mesa con una pelota y zonas de pase._
 
-## ❓ Repte i intenció
+## ❓ Reto e intención
 
-Practicar seqüenciació, orientació espacial i presa de decisions en un joc cooperatiu amb criteris de participació i seguretat.
+Practicar la secuenciación, la orientación espacial y la toma de decisiones en un juego cooperativo con criterios de participación y seguridad.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Llegir una graella i planificar una ruta de passada fins a una zona acordada.
-- Programar, provar i depurar ordres de moviment mantenint una convenció comuna.
-- Canviar rols i ajustar la dificultat perquè l’èxit depenga de la cooperació i no de la velocitat individual.
-- Comparar una predicció amb el resultat i comunicar una millora del repte.
+- Leer una cuadrícula y planificar una ruta de pase hasta una zona acordada.
+- Programar, probar y depurar órdenes de movimiento manteniendo una convención común.
+- Cambiar roles y ajustar la dificultad para que el éxito dependa de la cooperación y no de la velocidad individual.
+- Comparar una predicción con el resultado y comunicar una mejora del reto.
 
-## Abans de començar
+## Antes de empezar
 
-Dibuixeu una pista de taula amb caselles amples i dues zones de destinació. Useu una pilota lleugera que no bloquege sensors ni pose en risc el robot; si el kit no la pot empényer amb seguretat, feu que el robot la visite i que una persona la moga després.
+Dibujad una pista de mesa con casillas amplias y dos zonas de destino. Usad una pelota ligera que no bloquee sensores ni ponga en riesgo el robot; si el kit no puede empujarla con seguridad, haced que el robot la visite y que una persona la mueva después.
 
-## 📅 Seqüència didàctica · quatre sessions de 45 minuts
+## 📅 Secuencia didáctica · cuatro sesiones de 45 minutos
 
-La proposta amplia el repte oficial de 45 minuts en una investigació de quatre sessions: primer s’aprén a llegir el camp i programar una ruta; després s’alternen els rols de defensa i atac; finalment, cada equip dissenya i comunica una variant pròpia. Si només disposeu d’una sessió, feu la sessió 1 i una ronda curta de la sessió 2.
+La propuesta amplía el reto oficial de 45 minutos en una investigación de cuatro sesiones: primero se aprende a leer el campo y programar una ruta; después se alternan los roles de defensa y ataque; finalmente, cada equipo diseña y comunica una variante propia. Si solo disponéis de una sesión, haced la sesión 1 y una ronda corta de la sesión 2.
 
-### **Sessió 1 · Del mapa a la seqüència.**
+### **Sesión 1 · Del mapa a la secuencia.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-En una graella de 4 × 4 caselles de 10 cm, indiqueu inici, porteria i tres obstacles de cartó. Abans de programar, cada parella anticipa quins girs haurà de fer MatataBot.
+En una cuadrícula de 4 × 4 casillas de 10 cm, indicad inicio, portería y tres obstáculos de cartón. Antes de programar, cada pareja anticipa qué giros tendrá que hacer MatataBot.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-L’adult pensa en veu alta com orientar MatataBot i traduir cada tram en ordres; l’alumnat compara avançar, retrocedir i girar 90°.
+La persona adulta piensa en voz alta cómo orientar MatataBot y traducir cada tramo en órdenes; el alumnado compara avanzar, retroceder y girar 90°.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Dibuixeu dues rutes possibles amb fletxes, escriviu el programa amb targetes de comanda i compteu ordres i caselles.
+Dibujad dos rutas posibles con flechas, escribid el programa con tarjetas de comando y contad órdenes y casillas.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Executeu una ruta, marqueu on queda el robot i localitzeu la primera diferència entre predicció i moviment. Corregiu només l’ordre necessària i torneu a provar.
+Ejecutad una ruta, marcad dónde queda el robot y localizad la primera diferencia entre predicción y movimiento. Corregid solo la orden necesaria y volved a probar.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu què heu canviat. **Evidència:** mapa anotat, seqüència inicial/corregida i explicació del primer error.
+Explicad qué habéis cambiado. **Evidencia:** mapa anotado, secuencia inicial/corregida y explicación del primer error.
 
-### **Sessió 2 · Defensa i atac amb rols intercanviables (45 min).**
+### **Sesión 2 · Defensa y ataque con roles intercambiables (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu la mateixa graella i una pilota de paper lleugera amb porteria ampla. Un equip defensor situa tres obstacles sense tapar el robot ni crear passos massa estrets; l’equip atacant observa el camp i prediu una ruta possible.
+Preparad la misma cuadrícula y una pelota de papel ligera con portería amplia. Un equipo defensor sitúa tres obstáculos sin tapar el robot ni crear pasos demasiado estrechos; el equipo atacante observa el campo y predice una ruta posible.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-L’equip atacant planifica una ruta fins a una casella des d’on una pala ampla de paper puga empényer la pilota suaument cap a la porteria. Dediqueu deu minuts a modelar la regla i preparar la primera ronda.
+El equipo atacante planifica una ruta hasta una casilla desde la que una pala ancha de papel pueda empujar la pelota suavemente hacia la portería. Dedicad diez minutos a modelar la regla y preparar la primera ronda.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Jugueu la primera ronda durant deu minuts i registreu si s’ha arribat a la zona de colp, si la pilota ha entrat, quantes ordres s’han usat i quin obstacle ha condicionat la ruta.
+Jugad la primera ronda durante diez minutos y registrad si se ha llegado a la zona de golpeo, si la pelota ha entrado, cuántas órdenes se han usado y qué obstáculo ha condicionado la ruta.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu una pausa de cinc minuts per intercanviar rols i jugueu una segona ronda de deu minuts. Si la pala no es pot fixar sense bloquejar o danyar el robot, acabeu la ruta al costat de la pilota i que una persona la col·loque, registrant aquesta adaptació.
+Haced una pausa de cinco minutos para intercambiar roles y jugad una segunda ronda de diez minutos. Si la pala no se puede fijar sin bloquear o dañar el robot, terminad la ruta junto a la pelota y que una persona la coloque, registrando esta adaptación.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Tanqueu amb cinc minuts de comparació. El punt és col·lectiu: atac i defensa guanyen quan poden justificar una decisió amb el mapa i les dades, no per rapidesa. **Evidència:** dos registres amb rols intercanviats i una comparació de resultats.
+Cerrad con cinco minutos de comparación. El punto es colectivo: ataque y defensa ganan cuando pueden justificar una decisión con el mapa y los datos, no por rapidez. **Evidencia:** dos registros con roles intercambiados y una comparación de resultados.
 
-### **Sessió 3 · Dissenyar un repte equilibrat (45 min).**
+### **Sesión 3 · Diseñar un reto equilibrado (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Cada parella crea un mapa nou amb quatre obstacles i una condició clara per a l’equip contrari. Predigueu quines rutes poden ser vàlides abans d’intercanviar els mapes.
+Cada pareja crea un mapa nuevo con cuatro obstáculos y una condición clara para el equipo contrario. Predecid qué rutas pueden ser válidas antes de intercambiar los mapas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Una altra parella comprova si la porteria és accessible, si hi ha almenys una ruta vàlida i si totes les instruccions caben en el mapa. Si no hi ha solució, reduïu un obstacle o canvieu-ne la posició.
+Otra pareja comprueba si la portería es accesible, si hay al menos una ruta válida y si todas las instrucciones caben en el mapa. Si no hay solución, reducid un obstáculo o cambiad su posición.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Intercanvieu mapes, proveu la ruta amb el robot i compteu ordres. Anoteu la ruta provada, els girs i si s’ha arribat a la destinació.
+Intercambiad mapas, probad la ruta con el robot y contad órdenes. Anotad la ruta probada, los giros y si se ha llegado al destino.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu els obstacles i ajusteu el mapa després de la prova. Com a extensió, demaneu dues rutes i compareu nombre d’ordres, girs i marge d’error; no declareu una ruta «òptima» si només n’heu provat dues.
+Revisad los obstáculos y ajustad el mapa después de la prueba. Como ampliación, pedid dos rutas y comparad el número de órdenes, los giros y el margen de error; no declaréis una ruta «óptima» si solo habéis probado dos.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu per què la solució és verificable amb el mapa i les ordres. **Evidència:** mapa provat, registre dels canvis i justificació de la ruta.
+Explicad por qué la solución es verificable con el mapa y las órdenes. **Evidencia:** mapa probado, registro de los cambios y justificación de la ruta.
 
-### **Sessió 4 · Galeria, explicació i transferència (45 min).**
+### **Sesión 4 · Galería, explicación y transferencia (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mostreu el mapa, la predicció, el programa i el registre de proves. Predigueu si una altra parella podrà executar la ruta sense que els autors l’expliquen.
+Mostrad el mapa, la predicción, el programa y el registro de pruebas. Predecid si otra pareja podrá ejecutar la ruta sin que sus autores la expliquen.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Una parella visitant intenta repetir les ordres seguint només les fletxes i la convenció de gir acordada. L’equip autor observa sense donar instruccions addicionals.
+Una pareja visitante intenta repetir las órdenes siguiendo solo las flechas y la convención de giro acordada. El equipo autor observa sin dar instrucciones adicionales.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Recolliu una pregunta del grup visitant i una proposta concreta de millora. Anoteu en quin punt s’ha interpretat o executat de manera diferent.
+Recoged una pregunta del grupo visitante y una propuesta concreta de mejora. Anotad en qué punto se ha interpretado o ejecutado de forma diferente.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Decidiu si accepteu la proposta i comproveu-la amb una nova prova. Reviseu la llegenda o el programa perquè una altra parella puga reproduir-lo.
+Decidid si aceptáis la propuesta y comprobadla con una nueva prueba. Revisad la leyenda o el programa para que otra pareja pueda reproducirlo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Trieu una situació pròxima —repartir llibres en una biblioteca fictícia, arribar a una parada o portar una fitxa a un punt de recollida— i expliqueu quines parts del mètode es podrien reutilitzar. **Evidència:** mapa i programa revisats, retorn de la parella i explicació de transferència.
+Elegid una situación cercana —repartir libros en una biblioteca ficticia, llegar a una parada o llevar una ficha a un punto de recogida— y explicad qué partes del método se podrían reutilizar. **Evidencia:** mapa y programa revisados, retorno de la pareja y explicación de transferencia.
 
-## 🧰 Preparació, materials i llenguatge de programació
+## 🧰 Preparación, materiales y lenguaje de programación
 
-**Materials:** Coding Set complet (MatataBot, torre de comandaments i tauler), quadrícula de 16 caselles, cinta de paper, targetes amb obstacles, porteria de cartó, pilota de paper lleugera, llapis i full de registre. El mapa oficial té 16 caselles de 10 × 10 cm; marqueu una quadrícula equivalent si no teniu el tapet específic. El braç/pala és una peça auxiliar de paper lleuger i només s’usa després de provar que no bloqueja el robot ni danya el material. Si no es pot fixar amb seguretat, el robot acaba la ruta al costat de la pilota i una persona la col·loca en la porteria, registrant l’adaptació.
+**Materiales:** Coding Set completo (MatataBot, torre de comandos y tablero), cuadrícula de 16 casillas, cinta de papel, tarjetas con obstáculos, portería de cartón, pelota de papel ligera, lápiz y hoja de registro. El mapa oficial tiene 16 casillas de 10 × 10 cm; marcad una cuadrícula equivalente si no tenéis la alfombrilla específica. El brazo/pala es una pieza auxiliar de papel ligero y solo se usa después de probar que no bloquea el robot ni daña el material. Si no se puede fijar con seguridad, el robot termina la ruta junto a la pelota y una persona la coloca en la portería, registrando la adaptación.
 
-Useu un vocabulari compartit: *inici*, *orientació*, *casella*, *ordre*, *obstacle*, *destinació* i *depuració*. Per a girar, l’alumnat indica primer cap a on mira el robot i després el costat del gir. La seqüència es llig d’esquerra a dreta; cada avanç o retrocés correspon a un pas del robot. No confongueu “girar” amb “avançar una casella”.
+Usad un vocabulario compartido: *inicio*, *orientación*, *casilla*, *orden*, *obstáculo*, *destino* y *depuración*. Para girar, el alumnado indica primero hacia dónde mira el robot y después el lado del giro. La secuencia se lee de izquierda a derecha; cada avance o retroceso corresponde a un paso del robot. No confundáis “girar” con “avanzar una casilla”.
 
-## 📊 Registre de prova i criteris d’èxit
+## 📊 Registro de prueba y criterios de éxito
 
-Per cada intent, anoteu: equip i rol, mapa/versió, ruta prevista, ordres totals, caselles recorregudes, obstacles evitats, arribada a la zona de colp, resultat de la pilota i canvi fet després de la prova. Valoreu quatre aspectes amb una escala descriptiva —encara amb ajuda / quasi autònom / autònom i explicat—: orientació espacial, correspondència entre fletxes i ordres, depuració a partir del primer punt de desviació i cooperació amb rols rotatius. L’èxit no depén de marcar gol: una ruta que identifica l’error i es corregeix amb evidència també és una solució satisfactòria.
+Para cada intento, anotad: equipo y rol, mapa/versión, ruta prevista, órdenes totales, casillas recorridas, obstáculos evitados, llegada a la zona de golpeo, resultado de la pelota y cambio hecho después de la prueba. Valorad cuatro aspectos con una escala descriptiva —todavía con ayuda / casi autónomo / autónomo y explicado—: orientación espacial, correspondencia entre flechas y órdenes, depuración a partir del primer punto de desviación y cooperación con roles rotativos. El éxito no depende de marcar gol: una ruta que identifica el error y se corrige con evidencia también es una solución satisfactoria.
 
-## ♿ Participació, ajustos i seguretat
+## ♿ Participación, ajustes y seguridad
 
-Oferiu instruccions en fletxes grans, pictogrames o paraules; es pot anticipar la seqüència amb una fitxa que recórrega la quadrícula abans de programar. Les persones poden triar entre planificar, col·locar obstacles, programar, observar, registrar o narrar, amb rotació voluntària dels rols. Reduïu el nombre d’obstacles, amplieu la porteria, lleveu el límit d’ordres i jugueu sense cronòmetre quan ajude a comprendre el repte. Manteniu el camp sobre una taula estable, useu només una pilota de paper, deixeu les mans fora del recorregut mentre el robot es mou i atureu-lo abans de reposicionar obstacles.
+Ofreced instrucciones en flechas grandes, pictogramas o palabras; se puede anticipar la secuencia con una ficha que recorra la cuadrícula antes de programar. Las personas pueden elegir entre planificar, colocar obstáculos, programar, observar, registrar o narrar, con rotación voluntaria de los roles. Reducid el número de obstáculos, ampliad la portería, quitad el límite de órdenes y jugad sin cronómetro cuando ayude a comprender el reto. Mantened el campo sobre una mesa estable, usad solo una pelota de papel, dejad las manos fuera del recorrido mientras el robot se mueve y detenedlo antes de reposicionar obstáculos.
 
-## 🔗 Referent oficial i adaptació
+## 🔗 Referente oficial y adaptación
 
-Adapta [Soccer Match](https://matatalab.com/en/node/81), activitat oficial de Coding Set per a 5–7 anys: el pla proposa una introducció guiada de 10 minuts, 30 minuts de joc en què defensa col·loca obstacles i atac programa una ruta amb ordres d’avanç/retrocés/gir, i 5 minuts de reflexió i extensió. La proposta pròpia conserva la planificació de rutes, els obstacles, els rols alterns i la prova del robot, però amplia la pràctica en quatre sessions, crea mapes i criteris locals i substitueix el rànquing per evidències de cooperació i depuració. No reutilitza el mapa ni les imatges oficials.
+Adapta [Soccer Match](https://matatalab.com/en/node/81), actividad oficial de Coding Set para 5–7 años: el plan propone una introducción guiada de 10 minutos, 30 minutos de juego en los que la defensa coloca obstáculos y el ataque programa una ruta con órdenes de avance/retroceso/giro, y 5 minutos de reflexión y ampliación. La propuesta propia conserva la planificación de rutas, los obstáculos, los roles alternos y la prueba del robot, pero amplía la práctica en cuatro sesiones, crea mapas y criterios locales y sustituye la clasificación por evidencias de cooperación y depuración. No reutiliza el mapa ni las imágenes oficiales.

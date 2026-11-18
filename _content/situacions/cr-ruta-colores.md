@@ -14,138 +14,138 @@ duration: "4 sesiones"
 challenge: "¿Cómo podemos describir y clasificar los colores que observamos en la huerta sin confundir una lectura del sensor con la identificación de un objeto?"
 ---
 
-![Codey Rocky observa targetes de colors preparades com a punts d’una ruta.](../../_assets/situacions/cr-ruta-colors.webp)
+![Codey Rocky observa tarjetas de colores preparadas como puntos de una ruta.](../../_assets/situacions/cr-ruta-colors.webp)
 
-_Les targetes de prova permeten comparar lectures conegudes abans d’observar objectes reals._
+_Las tarjetas de prueba permiten comparar lecturas conocidas antes de observar objetos reales._
 
-## 🧩 Repte i context
+## 🧩 Reto y contexto
 
-L’equip prepara un arxiu de colors per a acompanyar una observació del pati o d’un hort escolar. Codey Rocky es desplaça sobre mostres preparades amb el sensor orientat cap avall; el programa pot mostrar en l’indicador RGB un color que el sensor ha detectat. El repte és comprovar quines mostres distingeix en les condicions de la prova i descriure què sabem i què no podem concloure a partir d’eixa dada.
+El equipo prepara un archivo de colores para acompañar una observación del patio o de un huerto escolar. Codey Rocky se desplaza sobre muestras preparadas con el sensor orientado hacia abajo; el programa puede mostrar en el indicador RGB un color que el sensor ha detectado. El reto es comprobar qué muestras distingue en las condiciones de la prueba y describir qué sabemos y qué no podemos concluir a partir de ese dato.
 
-**Aprenentatges:** observar i classificar mostres, construir una condició amb blocs, fer proves comparables, registrar resultats, distingir dada i interpretació, i comunicar límits del mètode. Una lectura de color no identifica una espècie, un aliment ni l’estat de salut d’una planta.
+**Aprendizajes:** observar y clasificar muestras, construir una condición con bloques, hacer pruebas comparables, registrar resultados, distinguir dato e interpretación, y comunicar límites del método. Una lectura de color no identifica una especie, un alimento ni el estado de salud de una planta.
 
-## 📅 Seqüència didàctica · quatre sessions de 45 minuts
+## 📅 Secuencia didáctica · cuatro sesiones de 45 minutos
 
-### **Fem un arxiu de mostres i prediccions (45 min).**
+### **Hacemos un archivo de muestras y predicciones (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu targetes mates de colors diferents, diverses tonalitats pròximes, una targeta neutra i una mostra amb textura. Abans de programar, cada equip descriu les mostres i prediu quines podrà distingir el robot.
+Preparad tarjetas mates de colores diferentes, varias tonalidades próximas, una tarjeta neutra y una muestra con textura. Antes de programar, cada equipo describe las muestras y predice cuáles podrá distinguir el robot.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dibuixeu un pla de prova que indique quina mostra es col·locarà primer i com mantindre una posició semblant. Parleu de com la llum, la lluentor i el fons poden influir en l’observació. Assigneu rols per preparar la mostra, col·locar el robot, observar l’indicador i registrar.
+Dibujad un plan de prueba que indique qué muestra se colocará primero y cómo mantener una posición semejante. Hablad de cómo la luz, el brillo y el fondo pueden influir en la observación. Asignad roles para preparar la muestra, colocar el robot, observar el indicador y registrar.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Completeu la taula de prediccions i el protocol visual de manipulació. Anoteu què mantindreu igual per poder comparar mostres i què podria variar.
+Completad la tabla de predicciones y el protocolo visual de manipulación. Anotad qué mantendréis igual para poder comparar muestras y qué podría variar.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu el protocol abans d’iniciar les proves. Ajusteu la disposició de targetes o els torns si alguna condició —posició, superfície o fons— no es pot repetir de manera comparable.
+Revisad el protocolo antes de iniciar las pruebas. Ajustad la disposición de tarjetas o los turnos si alguna condición —posición, superficie o fondo— no se puede repetir de manera comparable.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Compartiu quines condicions mantindreu constants i quines limitacions poden afectar les prediccions. **Evidència:** taula de prediccions i protocol visual de manipulació.
+Compartid qué condiciones mantendréis constantes y qué limitaciones pueden afectar las predicciones. **Evidencia:** tabla de predicciones y protocolo visual de manipulación.
 
-### **Programem i repetim una prova controlada (45 min).**
+### **Programamos y repetimos una prueba controlada (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Comproveu que el sensor IR/color està instal·lat i orientat cap avall, tal com mostra el fabricant. Predigueu quina resposta mostrarà l’indicador RGB per a una o dues categories inicials.
+Comprobad que el sensor IR/color está instalado y orientado hacia abajo, tal como muestra el fabricante. Predecid qué respuesta mostrará el indicador RGB para una o dos categorías iniciales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Connecteu Codey Rocky a mBlock 5 i useu un programa condicional que faça mostrar a l’indicador RGB la resposta del color detectat. Comenceu amb una o dues categories que es puguen observar amb claredat; afegiu-ne més només després de verificar el comportament. No suposeu que tons pròxims tindran lectures diferents.
+Conectad Codey Rocky a mBlock 5 y usad un programa condicional que haga mostrar al indicador RGB la respuesta del color detectado. Empezad con una o dos categorías que se puedan observar con claridad; añadid más solo después de verificar el comportamiento. No supongáis que tonos próximos tendrán lecturas diferentes.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Passeu cada mostra pel sensor de la mateixa manera i repetiu almenys una observació. Anoteu el color de la mostra, el que indica el robot i si les repeticions coincideixen.
+Pasad cada muestra por el sensor de la misma manera y repetid al menos una observación. Anotad el color de la muestra, lo que indica el robot y si las repeticiones coinciden.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si una lectura varia, marqueu-la com a «variable» i torneu a comprovar llum, posició i fons. Canvieu una condició cada vegada i no esborreu cap resultat inconsistent.
+Si una lectura varía, marcadla como «variable» y volved a comprobar luz, posición y fondo. Cambiad una condición cada vez y no borréis ningún resultado inconsistente.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Descriviu quin resultat heu vist directament i quin esteu interpretant. **Evidència:** programa propi, dues proves per mostra i descripció d’un cas estable o ambigu.
+Describid qué resultado habéis visto directamente y cuál estáis interpretando. **Evidencia:** programa propio, dos pruebas por muestra y descripción de un caso estable o ambiguo.
 
-### **Observem materials del pati amb cautela (45 min).**
+### **Observamos materiales del patio con cautela (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu mostres no delicades que es puguen portar a l’aula: paper, fulla caiguda, terra dins d’un recipient tancat o fotografia impresa d’un element de l’hort. Predigueu què pot mostrar el sensor sense atribuir-li identificació d’objectes.
+Elegid muestras no delicadas que se puedan llevar al aula: papel, hoja caída, tierra dentro de un recipiente cerrado o fotografía impresa de un elemento del huerto. Predecid qué puede mostrar el sensor sin atribuirle identificación de objetos.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Poseu cada mostra sobre una targeta de fons neutre, atureu el robot i apropeu-hi el sensor. Eviteu arrencar plantes, posar terra solta sobre el sensor, decidir si un aliment és segur o afirmar que el color prova que una planta està sana.
+Poned cada muestra sobre una tarjeta de fondo neutro, detened el robot y acercad el sensor. Evitad arrancar plantas, poner tierra suelta sobre el sensor, decidir si un alimento es seguro o afirmar que el color prueba que una planta está sana.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Compareu la resposta amb la descripció humana de la mostra. Registreu dues fitxes amb mostra, llum, fons, distància i lectura observada.
+Comparad la respuesta con la descripción humana de la muestra. Registrad dos fichas con muestra, luz, fondo, distancia y lectura observada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Si la lectura canvia amb el fons o la llum, registreu la condició i repetiu la prova. Reformuleu afirmacions perquè es limiten a l’observació, per exemple: «el programa ha mostrat verd en aquesta prova», no «el sensor sap quina planta és».
+Si la lectura cambia con el fondo o la luz, registrad la condición y repetid la prueba. Reformulad afirmaciones para que se limiten a la observación, por ejemplo: «el programa ha mostrado verde en esta prueba», no «el sensor sabe qué planta es».
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Expliqueu quina informació dona el color i quina pregunta requeriria una observació o una font diferent. **Evidència:** dues fitxes d’observació amb condicions i lectura.
+Explicad qué información da el color y qué pregunta requeriría una observación o una fuente diferente. **Evidencia:** dos fichas de observación con condiciones y lectura.
 
-### **Publiquem l’arxiu crític (45 min).**
+### **Publicamos el archivo crítico (45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu un arxiu amb quatre camps: mostra, predicció, lectura repetida i grau de confiança —coincideix, varia o no ho sabem. Trieu un exemple estable i un d’ambigu.
+Preparad un archivo con cuatro campos: muestra, predicción, lectura repetida y grado de confianza —coincide, varía o no lo sabemos. Elegid un ejemplo estable y uno ambiguo.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Organitzeu les dades en una taula o mural i afegiu una categoria explícita «no ho podem concloure amb aquesta prova». Una altra parella revisa si queda clara la diferència entre el color mostrat i el significat atribuït.
+Organizad los datos en una tabla o mural y añadid una categoría explícita «no lo podemos concluir con esta prueba». Otra pareja revisa si queda clara la diferencia entre el color mostrado y el significado atribuido.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Expliqueu una afirmació que les lectures sostinguen i una pregunta encara oberta. Anoteu les condicions i les repeticions que donen suport a l’afirmació.
+Explicad una afirmación que las lecturas sostengan y una pregunta todavía abierta. Anotad las condiciones y las repeticiones que respaldan la afirmación.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proposeu una nova prova per respondre una pregunta diferent: comparar llum natural i artificial, repetir amb un altre fons o observar una planta al llarg del temps amb una pauta humana. No cal fer aquestes investigacions ni atribuir-les al robot.
+Proponed una nueva prueba para responder una pregunta diferente: comparar luz natural y artificial, repetir con otro fondo u observar una planta a lo largo del tiempo con una pauta humana. No hace falta hacer estas investigaciones ni atribuirlas al robot.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-Presenteu l’arxiu final i justifiqueu què podem afirmar i què no sabem. **Evidència:** arxiu crític, afirmació sustentada per lectures i una pregunta oberta.
+Presentad el archivo final y justificad qué podemos afirmar y qué no sabemos. **Evidencia:** archivo crítico, afirmación sustentada por lecturas y una pregunta abierta.
 
-## 🧪 Evidències i avaluació
+## 🧪 Evidencias y evaluación
 
-Recolliu el programa, les prediccions, el registre de lectures i l’arxiu crític. Observeu si l’alumnat:
+Recoged el programa, las predicciones, el registro de lecturas y el archivo crítico. Observad si el alumnado:
 
-- manté constants bàsiques per comparar dues mostres;
+- mantiene constantes básicas para comparar dos muestras;
 
-- distingeix una lectura repetida d’una lectura variable;
+- distingue una lectura repetida de una lectura variable;
 
-- explica la diferència entre el valor que mostra el robot i la interpretació humana;
+- explica la diferencia entre el valor que muestra el robot y la interpretación humana;
 
-- revisa una afirmació quan apareix una lectura ambigua;
+- revisa una afirmación cuando aparece una lectura ambigua;
 
-- proposa una pregunta nova sense atribuir al sensor funcions que no té.
+- propone una pregunta nueva sin atribuir al sensor funciones que no tiene.
 
-No es valora encertar totes les classificacions, sinó descriure honestament què ha passat i quines condicions limiten la prova.
+No se valora acertar todas las clasificaciones, sino describir honestamente qué ha pasado y qué condiciones limitan la prueba.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Calibrar el sensor amb mostres conegudes i registrar les condicions de llum i distància.
-- Programar una regla de classificació limitada a les mostres de prova acordades.
-- Calcular encerts, errors i casos dubtosos en intents repetits.
-- Distingir el color llegit de la identitat, la qualitat o la seguretat d’un objecte real.
+- Calibrar el sensor con muestras conocidas y registrar las condiciones de luz y distancia.
+- Programar una regla de clasificación limitada a las muestras de prueba acordadas.
+- Calcular aciertos, errores y casos dudosos en intentos repetidos.
+- Distinguir el color leído de la identidad, la calidad o la seguridad de un objeto real.
 
 
-## 🧰 Preparació i cura del material
+## 🧰 Preparación y cuidado del material
 
-Comproveu en el model de Codey Rocky del centre que el sensor IR/color està disponible i funciona, i que l’indicador RGB pot mostrar la resposta programada. El tutorial oficial orienta el sensor situat a la part frontal cap a la cara inferior del robot i usa mBlock 5 per programar el color detectat. Seguiu la versió de l’entorn de programació i el firmware instal·lats; abans de classe, feu una prova amb les mateixes targetes i superfície que usareu amb l’alumnat. La llum, l’angle, la distància, la lluentor i el color del fons poden modificar el resultat. Manteniu líquids, terra i peces menudes allunyats del sensor i no useu el robot per diagnosticar plantes ni classificar aliments.
+Comprobad en el modelo de Codey Rocky del centro que el sensor IR/color está disponible y funciona, y que el indicador RGB puede mostrar la respuesta programada. El tutorial oficial orienta el sensor situado en la parte frontal hacia la cara inferior del robot y usa mBlock 5 para programar el color detectado. Seguid la versión del entorno de programación y el firmware instalados; antes de clase, haced una prueba con las mismas tarjetas y superficie que usaréis con el alumnado. La luz, el ángulo, la distancia, el brillo y el color del fondo pueden modificar el resultado. Mantened líquidos, tierra y piezas pequeñas alejados del sensor y no uséis el robot para diagnosticar plantas ni clasificar alimentos.
 
-## ♿ Participació accessible
+## ♿ Participación accesible
 
-Oferiu mostres amb forma o textura distintiva a més del color; descriviu en veu alta cada lectura i mostreu pictogrames d’igual/diferent/variable. No feu dependre cap instrucció només de la percepció cromàtica. Distribuïu rols de programació, col·locació, observació i registre, i permeteu donar instruccions perquè una altra persona manipule el robot. La resposta es pot comunicar amb símbols, selecció de targetes, comunicació augmentativa o dibuix.
+Ofreced muestras con forma o textura distintiva además del color; describid en voz alta cada lectura y mostrad pictogramas de igual/diferente/variable. No hagáis depender ninguna instrucción solo de la percepción cromática. Distribuid roles de programación, colocación, observación y registro, y permitid dar instrucciones para que otra persona manipule el robot. La respuesta se puede comunicar con símbolos, selección de tarjetas, comunicación aumentativa o dibujo.
 
-## 🔗 Referent oficial adaptat
+## 🔗 Referente oficial adaptado
 
-Hem pres com a punt de partida [Case 19: Codey Rocky identifies colors](https://support.makeblock.com/hc/en-us/articles/7484512467223-Case-19-Codey-Rocky-identifies-colors). Aquesta situació és una proposta pròpia amb context, seqüència i materials verificables per al centre; no reprodueix ni substitueix el material oficial. Comproveu sempre el model de robot i els accessoris disponibles.
+Hemos tomado como punto de partida [Case 19: Codey Rocky identifies colors](https://support.makeblock.com/hc/en-us/articles/7484512467223-Case-19-Codey-Rocky-identifies-colors). Esta situación es una propuesta propia con contexto, secuencia y materiales verificables para el centro; no reproduce ni sustituye el material oficial. Comprobad siempre el modelo de robot y los accesorios disponibles.

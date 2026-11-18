@@ -14,144 +14,144 @@ duration: "4 sesiones de 20–25 minutos"
 challenge: "¿Qué formas y espacios podemos representar para que el plano del patio sea fácil de entender y permita más de una manera de jugar?"
 ---
 
-![Tale-Bot amb un retolador dibuixa una línia contínua al voltant d’un pla senzill de pati escolar.](../../_assets/situacions/tb-dibuix-pati.webp)
+![Tale-Bot con un rotulador dibuja una línea continua alrededor de un plano sencillo de patio escolar.](../../_assets/situacions/tb-dibuix-pati.webp)
 
-_Un esbós amb zones i recorreguts, dibuixat amb Tale-Bot i el suport per a retolador del kit. El mapa és una proposta, no un plànol arquitectònic._
+_Un esbozo con zonas y recorridos, dibujado con Tale-Bot y el soporte para rotulador del kit. El mapa es una propuesta, no un plano arquitectónico._
 
-## Repte i intenció
+## Reto e intención
 
-Com podem explicar un pati a algú que no el coneix i imaginar-hi activitats diferents? L'alumnat observa les zones, crea un plànol simbòlic i programa Tale-Bot perquè trace formes que representen espais possibles: un lloc tranquil, una zona de moviment o un espai per construir. El dibuix del robot fa visible com una seqüència de moviments es transforma en una línia; les peces i pictogrames completen el significat del mapa.
+¿Cómo podemos explicar un patio a alguien que no lo conoce e imaginar en él actividades diferentes? El alumnado observa las zonas, crea un plano simbólico y programa Tale-Bot para que trace formas que representan espacios posibles: un lugar tranquilo, una zona de movimiento o un espacio para construir. El dibujo del robot hace visible cómo una secuencia de movimientos se transforma en una línea; las piezas y pictogramas completan el significado del mapa.
 
-La situació parteix de la possibilitat de dibuix de Tale-Bot Pro amb el suport i els retoladors compatibles descrits pel fabricant. Abans d'impartir-la, comproveu que el model del centre disposa dels accessoris corresponents i proveu la fixació, el paper i una ruta curta. Si no hi ha accessori o la superfície no és adequada, feu el mateix repte amb una fitxa que recorre el traç i després dibuixeu-lo a mà.
+La situación parte de la posibilidad de dibujo de Tale-Bot Pro con el soporte y los rotuladores compatibles descritos por el fabricante. Antes de impartirla, comprobad que el modelo del centro dispone de los accesorios correspondientes y probad la fijación, el papel y una ruta corta. Si no hay accesorio o la superficie no es adecuada, haced el mismo reto con una ficha que recorre el trazo y después dibujadlo a mano.
 
-## Aprenentatges i criteris d'èxit
+## Aprendizajes y criterios de éxito
 
-- Reconéixer formes i recorreguts del pati i representar-los amb símbols i una llegenda senzilla.
+- Reconocer formas y recorridos del patio y representarlos con símbolos y una leyenda sencilla.
 
-- Compondre una seqüència de moviments per crear una forma i anticipar-ne el resultat.
+- Componer una secuencia de movimientos para crear una forma y anticipar su resultado.
 
-- Comparar el traç amb l'esbós, descriure una diferència i modificar una instrucció.
+- Comparar el trazo con el esbozo, describir una diferencia y modificar una instrucción.
 
-- Proposar una distribució que admeta activitats variades, pauses i circulació clara.
+- Proponer una distribución que admita actividades variadas, pausas y circulación clara.
 
-- Cooperar en el disseny sense assumir que totes les persones volen jugar de la mateixa manera.
+- Cooperar en el diseño sin asumir que todas las personas quieren jugar de la misma manera.
 
-## Materials i preparació
+## Materiales y preparación
 
-Prepareu Tale-Bot, el suport de retolador i retoladors rentables compatibles si el kit del centre els inclou, paper gran fixat a una superfície plana, formes de cartolina, pictogrames de zones i una tira visual amb les instruccions. Comproveu que el paper no es mogui i que les unions del suport no impedisquen avançar. Deixeu espai al voltant per observar sense acostar les mans a les rodes mentre el robot està en moviment.
+Preparad Tale-Bot, el soporte de rotulador y rotuladores lavables compatibles si el kit del centro los incluye, papel grande fijado a una superficie plana, formas de cartulina, pictogramas de zonas y una tira visual con las instrucciones. Comprobad que el papel no se mueva y que las uniones del soporte no impidan avanzar. Dejad espacio alrededor para observar sin acercar las manos a las ruedas mientras el robot está en movimiento.
 
-Per a l'observació, useu una visita al pati en un moment tranquil o un plànol buit preparat pel docent. No fotografieu infants ni feu una classificació de qui utilitza cada zona. Recolliu característiques de l'espai —ombra, banc, zona oberta, recorregut— i pregunteu quines activitats podria permetre cadascuna.
+Para la observación, usad una visita al patio en un momento tranquilo o un plano vacío preparado por el docente. No fotografiéis niños y niñas ni hagáis una clasificación de quién utiliza cada zona. Recoged características del espacio —sombra, banco, zona abierta, recorrido— y preguntad qué actividades podría permitir cada una.
 
-## Seqüència didàctica
+## Secuencia didáctica
 
-### Sessió 1 — Mirem l'espai amb ulls de disseny (20–25 min)
+### Sesión 1 — Miramos el espacio con ojos de diseño (20–25 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Abans d’observar, penseu quines zones i recorreguts fan que un pati siga comprensible i convide a jugar de maneres diferents.
+Antes de observar, pensad qué zonas y recorridos hacen que un patio sea comprensible e invite a jugar de maneras diferentes.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Feu una volta curta i localitzeu dues o tres zones sense fotografiar persones. Si no podeu eixir al pati, useu un plànol buit preparat per la docent.
+Dad una vuelta corta y localizad dos o tres zonas sin fotografiar personas. Si no podéis salir al patio, usad un plano vacío preparado por la docente.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Descriviu què permet cada lloc i quines condicions hi observeu: ombra, soroll, espai per moure’s o lloc per seure. Registreu característiques de l’espai, no qui l’utilitza.
+Describid qué permite cada lugar y qué condiciones observáis allí: sombra, ruido, espacio para moverse o lugar para sentarse. Registrad características del espacio, no quién lo utiliza.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Trieu formes i pictogrames per al mapa. Reviseu la pregunta de disseny: «tenim un lloc tranquil i un recorregut que no travesse el joc?» Afegiu un element si falta una opció de descans o circulació.
+Elegid formas y pictogramas para el mapa. Revisad la pregunta de diseño: «¿tenemos un lugar tranquilo y un recorrido que no atraviese el juego?» Añadid un elemento si falta una opción de descanso o circulación.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** esbós inicial amb zones i preguntes sobre les activitats possibles. Què hem observat i què continua sent una idea per comprovar?
+**Evidencia:** esbozo inicial con zonas y preguntas sobre las actividades posibles. ¿Qué hemos observado y qué sigue siendo una idea por comprobar?
 
-### Sessió 2 — De la forma a les instruccions (20–25 min)
+### Sesión 2 — De la forma a las instrucciones (20–25 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Sobre paper, creeu un plànol simbòlic amb tres zones. Trieu una forma gran —quadrat, rectangle o camí en L— i predigueu on començarà i acabarà Tale-Bot.
+Sobre papel, cread un plano simbólico con tres zonas. Elegid una forma grande —cuadrado, rectángulo o camino en L— y predecid dónde empezará y acabará Tale-Bot.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Amb cordill o peces, representeu la forma i seguiu-la amb el dit. Assenyaleu l’orientació inicial i on caldrà girar.
+Con cordel o piezas, representad la forma y seguidla con el dedo. Señalad la orientación inicial y dónde habrá que girar.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Ordeneu les instruccions de Tale-Bot amb les targetes del kit. Anoteu quantes vegades repetireu el moviment i la casella final prevista.
+Ordenad las instrucciones de Tale-Bot con las tarjetas del kit. Anotad cuántas veces repetiréis el movimiento y la casilla final prevista.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu una passada simulada amb una fitxa de paper. Si el recorregut no concorda amb la forma, reviseu una ordre abans d’executar el robot.
+Haced una pasada simulada con una ficha de papel. Si el recorrido no concuerda con la forma, revisad una orden antes de ejecutar el robot.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** plànol, forma representada i seqüència d’ordres anotada. «On comença? Quantes vegades repetirem el moviment? On hauria d’acabar?»
+**Evidencia:** plano, forma representada y secuencia de órdenes anotada. «¿Dónde empieza? ¿Cuántas veces repetiremos el movimiento? ¿Dónde debería acabar?»
 
-### Sessió 3 — Dibuixem, observem i revisem (20–25 min)
+### Sesión 3 — Dibujamos, observamos y revisamos (20–25 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recupereu la seqüència i prediu la forma que dibuixarà el robot abans de col·locar el retolador.
+Recuperad la secuencia y predecid la forma que dibujará el robot antes de colocar el rotulador.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Col·loqueu el retolador segons les instruccions del fabricant, poseu Tale-Bot al punt d’inici i executeu una seqüència curta.
+Colocad el rotulador según las instrucciones del fabricante, poned Tale-Bot en el punto de inicio y ejecutad una secuencia corta.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Observeu el traç i compareu-lo amb el model de cordill. Marqueu inici i final; descriviu qualsevol diferència, com un costat massa llarg o un gir en una altra direcció.
+Observad el trazo y comparadlo con el modelo de cordel. Marcad inicio y final; describid cualquier diferencia, como un lado demasiado largo o un giro en otra dirección.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Canvieu una sola instrucció i torneu a provar en un espai net del paper. També podeu assolir l’objectiu descrivint l’ordre o assenyalant quin canvi caldria fer, sense manipular el robot.
+Cambiad una sola instrucción y volved a probar en un espacio limpio del papel. También podéis alcanzar el objetivo describiendo la orden o señalando qué cambio habría que hacer, sin manipular el robot.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** esbós, traç observat i una ordre revisada. Quina diferència heu trobat entre el traç i la predicció? La precisió del dibuix no és l’únic objectiu.
+**Evidencia:** esbozo, trazo observado y una orden revisada. ¿Qué diferencia habéis encontrado entre el trazo y la predicción? La precisión del dibujo no es el único objetivo.
 
-### Sessió 4 — Presentem un pati amb opcions (20–25 min)
+### Sesión 4 — Presentamos un patio con opciones (20–25 min)
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Mireu les formes dibuixades i predigueu què podrà entendre un altre grup sense que li ho expliqueu.
+Mirad las formas dibujadas y predecid qué podrá entender otro grupo sin que se lo expliquéis.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Afegiu pictogrames a les formes i decidiu què representa cadascuna: un lloc tranquil, una zona de moviment o un espai per construir.
+Añadid pictogramas a las formas y decidid qué representa cada una: un lugar tranquilo, una zona de movimiento o un espacio para construir.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Un altre equip rep el plànol sense explicació i intenta trobar-hi les zones. Anoteu què interpreta i quins símbols resulten ambigus.
+Otro equipo recibe el plano sin explicación e intenta encontrar en él las zonas. Anotad qué interpreta y qué símbolos resultan ambiguos.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Afegiu una llegenda si cal i reviseu la proposta: hi ha una opció de descans, un espai ampli i un recorregut comprensible? No cal representar totes les activitats.
+Añadid una leyenda si hace falta y revisad la propuesta: ¿hay una opción de descanso, un espacio amplio y un recorrido comprensible? No hace falta representar todas las actividades.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** plànol amb pictogrames i llegenda revisada després de la prova. El producte és una maqueta inicial per conversar, no una afirmació que resol les necessitats de totes les persones.
+**Evidencia:** plano con pictogramas y leyenda revisada después de la prueba. El producto es una maqueta inicial para conversar, no una afirmación que resuelve las necesidades de todas las personas.
 
-## Organització i rols
+## Organización y roles
 
-Roteu quatre responsabilitats: observador/a de l'espai, dissenyador/a del plànol, planificador/a de la seqüència i narrador/a de la prova. En grups grans, una parella pot seguir el traç amb una fitxa i una altra controlar la tira d'ordres. Accepteu que una persona contribuïsca assenyalant, triant entre dues formes, dictant una idea o observant el resultat sense manipular el robot.
+Rotad cuatro responsabilidades: observador/a del espacio, diseñador/a del plano, planificador/a de la secuencia y narrador/a de la prueba. En grupos grandes, una pareja puede seguir el trazo con una ficha y otra controlar la tira de órdenes. Aceptad que una persona contribuya señalando, eligiendo entre dos formas, dictando una idea u observando el resultado sin manipular el robot.
 
-## Documentació i avaluació
+## Documentación y evaluación
 
-- Esbós inicial amb punt d'inici, formes i pictogrames proposats.
+- Esbozo inicial con punto de inicio, formas y pictogramas propuestos.
 
-- Seqüència d'ordres representada abans de dibuixar i una revisió després de comparar-la amb el traç.
+- Secuencia de órdenes representada antes de dibujar y una revisión después de compararla con el trazo.
 
-- Llegenda que permet a un altre grup interpretar el plànol.
+- Leyenda que permite a otro grupo interpretar el plano.
 
-- Explicació d'una decisió de disseny relacionada amb descans, moviment o circulació.
+- Explicación de una decisión de diseño relacionada con descanso, movimiento o circulación.
 
-Observeu si l'alumnat prediu una part del traç, associa l'ordre amb un resultat, revisa una instrucció amb una raó i escolta una interpretació diferent. Useu preguntes concretes: «Quina forma volíem?», «Què ha dibuixat?», «Quina instrucció canviaries?» i «Com ho sabrà una altra classe?». Recolliu notes o dibuixos; no cal enregistrar l'alumnat.
+Observad si el alumnado predice una parte del trazo, asocia la orden con un resultado, revisa una instrucción con una razón y escucha una interpretación diferente. Usad preguntas concretas: «¿Qué forma queríamos?», «¿Qué ha dibujado?», «¿Qué instrucción cambiarías?» y «¿Cómo lo sabrá otra clase?». Recoged notas o dibujos; no hace falta grabar al alumnado.
 
-## Inclusió i ampliacions
+## Inclusión y ampliaciones
 
-Useu paper gran amb contrast alt, formes tàctils, fletxes àmplies i una seqüència reduïda. Oferiu alternatives a l'escriptura manual i a la manipulació del robot. Per ampliar, planifiqueu una mateixa forma amb dos ordres diferents, mesureu aproximadament el perímetre amb blocs o creeu una ruta que connecte zones sense travessar la zona tranquil·la. En cada cas, feu explícit que es tracta d'un model simplificat.
+Usad papel grande con alto contraste, formas táctiles, flechas amplias y una secuencia reducida. Ofreced alternativas a la escritura manual y a la manipulación del robot. Para ampliar, planificad una misma forma con dos órdenes diferentes, medid aproximadamente el perímetro con bloques o cread una ruta que conecte zonas sin atravesar la zona tranquila. En cada caso, haced explícito que se trata de un modelo simplificado.
 
-## Referent i adaptació
+## Referente y adaptación
 
-Matatalab descriu per a Tale-Bot Pro les funcions de dibuix, el suport i els retoladors, juntament amb activitats de seqüència i creació ([informació oficial del producte](https://matatalab.com/en/node/774)). Aquesta proposta transforma eixa possibilitat en un repte propi d'observació i representació del pati; el mapa, els pictogrames i els criteris són originals i no reutilitzen materials gràfics oficials.
+Matatalab describe para Tale-Bot Pro las funciones de dibujo, el soporte y los rotuladores, junto con actividades de secuencia y creación ([información oficial del producto](https://matatalab.com/en/node/774)). Esta propuesta transforma esa posibilidad en un reto propio de observación y representación del patio; el mapa, los pictogramas y los criterios son originales y no reutilizan materiales gráficos oficiales.

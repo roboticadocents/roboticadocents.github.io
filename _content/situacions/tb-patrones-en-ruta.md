@@ -14,217 +14,217 @@ duration: "7 retos · 20–30 min cada uno"
 challenge: "¿Qué parte de una ruta se repite y cómo podemos expresarla con menos órdenes sin perder precisión?"
 ---
 
-![Tale-Bot Pro de la dotació, amb el panell lateral taronja i els botons direccionals, al costat d’un mapa de flors amb seqüències repetides i targetes de fletxes.](../../_assets/situacions/tb-patrons-en-ruta.webp)
+![Tale-Bot Pro de la dotación, con el panel lateral naranja y los botones direccionales, junto a un mapa de flores con secuencias repetidas y tarjetas de flechas.](../../_assets/situacions/tb-patrons-en-ruta.webp)
 
-_Les flors i l’abella són marcadors de paper; Tale-Bot executa les ordres introduïdes amb els botons i no detecta els dibuixos._
+_Las flores y la abeja son marcadores de papel; Tale-Bot ejecuta las órdenes introducidas con los botones y no detecta los dibujos._
 
-## 🌱 Punt de partida
+## 🌱 Punto de partida
 
-El parc del barri prepara una gimcana i necessita rutes repetibles. L’alumnat busca unitats que tornen a aparéixer, crea bucles amb la tecla física de repetició quan el model la incorpora i valida el programa amb una execució. Aquesta seqüència adapta les set targetes de reconeixement de patrons de la categoria C. Seguint les orientacions oficials, cada proposta es planifica per a infants de 3–5 anys, parelles i 20–30 minuts; alterneu qui construeix el patró i qui el comprova, amb opcions de resposta oral, visual o amb targetes. Abans de cada repte, carregueu Tale-Bot, comproveu la versió del robot i prepareu una taula o terra nets i plans. Els patrons i mapes són propis; useu adhesius OID o funcions de l’Activity Box només si el centre en disposa i els ha verificat.
+El parque del barrio prepara una gimcana y necesita rutas repetibles. El alumnado busca unidades que vuelven a aparecer, crea bucles con la tecla física de repetición cuando el modelo la incorpora y valida el programa con una ejecución. Esta secuencia adapta las siete tarjetas de reconocimiento de patrones de la categoría C. Siguiendo las orientaciones oficiales, cada propuesta se planifica para niños y niñas de 3–5 años, parejas y 20–30 minutos; alternad quién construye el patrón y quién lo comprueba, con opciones de respuesta oral, visual o con tarjetas. Antes de cada reto, cargad Tale-Bot, comprobad la versión del robot y preparad una mesa o suelo limpios y planos. Los patrones y mapas son propios; usad adhesivos OID o funciones de la Activity Box solo si el centro dispone de ellos y los ha verificado.
 
-## 🔁 Set reptes
+## 🔁 Siete retos
 
-### **C-1 · Busca la unitat que torna.**
+### **C-1 · Busca la unidad que vuelve.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Repartiu tires pròpies amb patrons de fruites, formes i sons del paisatge de l’horta. Predigueu quin element vindrà després d’una tira i expliqueu quina regla heu detectat.
+Repartid tiras propias con patrones de frutas, formas y sonidos del paisaje de la huerta. Predecid qué elemento vendrá después de una tira y explicad qué regla habéis detectado.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Encerclau la unitat mínima que es repeteix i representeu la regla amb targetes, veu o moviment voluntari. Compteu quantes vegades apareix.
+Rodead la unidad mínima que se repite y representad la regla con tarjetas, voz o movimiento voluntario. Contad cuántas veces aparece.
 
-![Tale-Bot Pro real al costat d’una tira amb una seqüència de fruita, fulla i nota musical que torna a començar.](../../_assets/situacions/sa-tb-patrons-c1-v1.webp)
+![Tale-Bot Pro real junto a una tira con una secuencia de fruta, hoja y nota musical que vuelve a empezar.](../../_assets/situacions/sa-tb-patrons-c1-v1.webp)
 
-_Les imatges són targetes de paper: el grup identifica la unitat repetida; Tale-Bot no reconeix els símbols._
+_Las imágenes son tarjetas de papel: el grupo identifica la unidad repetida; Tale-Bot no reconoce los símbolos._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Completeu una seqüència nova en què falta l’últim grup i registreu la unitat repetida i el recompte.
+Completad una secuencia nueva en la que falta el último grupo y registrad la unidad repetida y el recuento.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Creeu una tira perquè una altra parella n’endevine la regla. Reviseu-la si admet diverses continuacions possibles que no havíeu previst.
+Cread una tira para que otra pareja adivine la regla. Revisadla si admite varias continuaciones posibles que no habíais previsto.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** patró marcat, recompte i seqüència inventada. Expliqueu la diferència entre repetir el mateix patró i copiar la tira sencera.
+**Evidencia:** patrón marcado, recuento y secuencia inventada. Explicad la diferencia entre repetir el mismo patrón y copiar la tira entera.
 
-### **C-2 · Una dansa amb repetició.**
+### **C-2 · Una danza con repetición.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu cinc programes breus de dificultat creixent: acció única, canvi de direcció, parell d’accions, patró de dos passos repetit i seqüència amb pausa o dansa. Abans de cada intent, predigueu quins indicadors s’encendran i quantes repeticions hi haurà.
+Preparad cinco programas breves de dificultad creciente: acción única, cambio de dirección, par de acciones, patrón de dos pasos repetido y secuencia con pausa o danza. Antes de cada intento, predecid qué indicadores se encenderán y cuántas repeticiones habrá.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Introduïu els programes i anoteu els indicadors de codi i bucle que observeu. Comproveu quines funcions mostra realment el model de la dotació.
+Introducid los programas y anotad los indicadores de código y bucle que observáis. Comprobad qué funciones muestra realmente el modelo de la dotación.
 
-![Tale-Bot Pro real al costat d’una ruta curta, una seqüència d’ordres repetides i la versió compacta amb una targeta de bucle.](../../_assets/situacions/sa-tb-patrons-c2-v1.webp)
+![Tale-Bot Pro real junto a una ruta corta, una secuencia de órdenes repetidas y la versión compacta con una tarjeta de bucle.](../../_assets/situacions/sa-tb-patrons-c2-v1.webp)
 
-_La targeta de bucle és un recurs didàctic local; comproveu al robot només les ordres i indicadors que tinga la unitat del centre._
+_La tarjeta de bucle es un recurso didáctico local; comprobad en el robot solo las órdenes e indicadores que tenga la unidad del centro._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-En el cinqué repte, dissenyeu un patró de dos moviments i una pausa. Registreu-lo primer amb ordres repetides una per una.
+En el quinto reto, diseñad un patrón de dos movimientos y una pausa. Registradlo primero con órdenes repetidas una por una.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Introduïu el mateix patró amb el botó físic de repetició i compareu les dues execucions. Si la funció no està disponible o no és clara, representeu el bucle amb targetes i peces sobre paper.
+Introducid el mismo patrón con el botón físico de repetición y comparad las dos ejecuciones. Si la función no está disponible o no es clara, representad el bucle con tarjetas y piezas sobre papel.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** dos programes equivalents i una explicació de què resumeix el bucle. Els moviments corporals són opcionals.
+**Evidencia:** dos programas equivalentes y una explicación de qué resume el bucle. Los movimientos corporales son opcionales.
 
-### **C-3 · Comprimim i provem programes.**
+### **C-3 · Comprimimos y probamos programas.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu cinc seqüències pròpies de fletxes amb una part repetida. Predigueu la posició final abans de comprimir el programa.
+Preparad cinco secuencias propias de flechas con una parte repetida. Predecid la posición final antes de comprimir el programa.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Marqueu la unitat repetida, compteu-ne les ocurrències i decidiu quantes vegades cal usar el comandament de repetició.
+Marcad la unidad repetida, contad sus ocurrencias y decidid cuántas veces hay que usar el comando de repetición.
 
-![Una quadrícula amb la ruta de Tale-Bot Pro i dues seqüències de targetes equivalents: el codi llarg i la representació compacta amb una repetició.](../../_assets/situacions/sa-tb-patrons-c3-v1.webp)
+![Una cuadrícula con la ruta de Tale-Bot Pro y dos secuencias de tarjetas equivalentes: el código largo y la representación compacta con una repetición.](../../_assets/situacions/sa-tb-patrons-c3-v1.webp)
 
-_Les targetes comparen dues representacions del mateix programa; no són una lectura automàtica del robot._
+_Las tarjetas comparan dos representaciones del mismo programa; no son una lectura automática del robot._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Registreu la seqüència llarga, la unitat identificada, el nombre de repeticions i la posició final prevista.
+Registrad la secuencia larga, la unidad identificada, el número de repeticiones y la posición final prevista.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reescriviu cada programa amb el botó físic i compareu recorregut i posició final amb la versió llarga. Si la dotació no ofereix el botó, feu la representació compacta amb targetes i indiqueu-ho.
+Reescribid cada programa con el botón físico y comparad recorrido y posición final con la versión larga. Si la dotación no ofrece el botón, haced la representación compacta con tarjetas e indicadlo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** programa original, repetició identificada, versió curta i resultat. Com a ampliació, creeu una ruta més llarga i acordeu una regla d’aturada segura.
+**Evidencia:** programa original, repetición identificada, versión corta y resultado. Como ampliación, cread una ruta más larga y acordad una regla de parada segura.
 
-### **C-4 · Una abella visita flors semblants.**
+### **C-4 · Una abeja visita flores parecidas.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Col·loqueu flors de paper del mateix color en una maqueta del jardí escolar. Predigueu quines ordres portarien Tale-Bot des de l’inici fins a totes les flors.
+Colocad flores de papel del mismo color en una maqueta del jardín escolar. Predecid qué órdenes llevarían a Tale-Bot desde el inicio hasta todas las flores.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Dibuixeu una ruta que visite cada flor. La docent presenta una tira d’instruccions i el grup observa quins botons i indicadors s’activen.
+Dibujad una ruta que visite cada flor. La docente presenta una tira de instrucciones y el grupo observa qué botones e indicadores se activan.
 
-![Tale-Bot Pro real al costat d’una ruta dibuixada que visita flors de paper del mateix color en un jardí de maqueta.](../../_assets/situacions/sa-tb-patrons-c4-v1.webp)
+![Tale-Bot Pro real junto a una ruta dibujada que visita flores de papel del mismo color en un jardín de maqueta.](../../_assets/situacions/sa-tb-patrons-c4-v1.webp)
 
-_La flor i l’abella són figures planes de paper; el robot no detecta flors ni representa una pol·linització real._
+_La flor y la abeja son figuras planas de papel; el robot no detecta flores ni representa una polinización real._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Marqueu la part repetida de la ruta i anoteu quantes vegades s’ha d’executar. Comproveu cada parada esperada al mapa.
+Marcad la parte repetida de la ruta y anotad cuántas veces se debe ejecutar. Comprobad cada parada esperada en el mapa.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Introduïu les ordres i useu la funció repetir per crear una seqüència. Proveu-la des del mateix punt d’inici i reviseu la ruta si alguna flor queda sense visitar.
+Introducid las órdenes y usad la función repetir para crear una secuencia. Probadla desde el mismo punto de inicio y revisad la ruta si alguna flor queda sin visitar.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** mapa, predicció del codi i verificació de les parades. La metàfora no representa una abella real ni simula la pol·linització.
+**Evidencia:** mapa, predicción del código y verificación de las paradas. La metáfora no representa una abeja real ni simula la polinización.
 
-### **C-5 · Protegeix l’illa del jardí.**
+### **C-5 · Protege la isla del jardín.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Poseu un objecte tou gran damunt d’una illa de cartó. Predigueu una ruta que el rodege sense tocar-lo i torne al punt de partida.
+Poned un objeto blando grande encima de una isla de cartón. Predecid una ruta que lo rodee sin tocarlo y vuelva al punto de partida.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Traceu la ruta amb targetes i copieu les ordres en paper. Encerclau els trams iguals que podrien formar un bucle.
+Trazad la ruta con tarjetas y copiad las órdenes en papel. Rodead los tramos iguales que podrían formar un bucle.
 
-![Tale-Bot Pro real al costat d’una ruta de paper que rodeja una illa de cartó i torna al punt d’inici, amb trams repetits.](../../_assets/situacions/sa-tb-patrons-c5-v1.webp)
+![Tale-Bot Pro real junto a una ruta de papel que rodea una isla de cartón y vuelve al punto de inicio, con tramos repetidos.](../../_assets/situacions/sa-tb-patrons-c5-v1.webp)
 
-_La ruta segura es planifica amb les persones; Tale-Bot no detecta l’illa ni evita obstacles per si mateix._
+_La ruta segura se planifica con las personas; Tale-Bot no detecta la isla ni evita obstáculos por sí mismo._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Registreu el codi llarg, els trams repetits i l’orientació inicial. Indiqueu on ha de quedar el robot quan complete el recorregut.
+Registrad el código largo, los tramos repetidos y la orientación inicial. Indicad dónde debe quedar el robot cuando complete el recorrido.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reorganitzeu la seqüència amb el botó de repetició i executeu les dues versions des de la mateixa orientació. Si afegiu un segon objecte, predigueu primer quina part del programa haurà de canviar.
+Reorganizad la secuencia con el botón de repetición y ejecutad las dos versiones desde la misma orientación. Si añadís un segundo objeto, predecid primero qué parte del programa tendrá que cambiar.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** codis llarg i compacte, ruta marcada i retorn comprovat sense tocar l’objecte.
+**Evidencia:** códigos largo y compacto, ruta marcada y retorno comprobado sin tocar el objeto.
 
-### **C-6 · Recorregut de carlotes de cartó.**
+### **C-6 · Recorrido de zanahorias de cartón.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Col·loqueu tres fitxes de carlota en un mapa de bancals inspirat en l’horta valenciana. Predigueu l’ordre de visita i el nombre d’ordres necessari.
+Colocad tres fichas de zanahoria en un mapa de bancales inspirado en la huerta valenciana. Predecid el orden de visita y el número de órdenes necesario.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Marqueu la ruta amb retolador rentable sobre el mapa o amb una tira de caselles. Codifiqueu el trajecte que visita les tres fitxes.
+Marcad la ruta con rotulador lavable sobre el mapa o con una tira de casillas. Codificad el trayecto que visita las tres fichas.
 
-![Tale-Bot Pro real al costat de tres bancals de maqueta amb carlotes de cartó, targetes de direcció i una graella de registre.](../../_assets/situacions/sa-tb-patrons-c6-v1.webp)
+![Tale-Bot Pro real junto a tres bancales de maqueta con zanahorias de cartón, tarjetas de dirección y una cuadrícula de registro.](../../_assets/situacions/sa-tb-patrons-c6-v1.webp)
 
-_Les carlotes són fitxes de joc: l’alumnat les compta i registra; el robot només segueix les ordres introduïdes._
+_Las zanahorias son fichas de juego: el alumnado las cuenta y registra; el robot solo sigue las órdenes introducidas._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Localitzeu les ordres repetides i registreu el codi llarg i el nombre de visites previst.
+Localizad las órdenes repetidas y registrad el código largo y el número de visitas previsto.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Substituïu les ordres repetides pel botó físic de repetició. Abans de prémer *Play*, una altra persona comprova que la ruta curta visita els mateixos punts. Proveu-la amb el retolador només si el suport i el retolador originals són a la dotació; altrament, useu una fitxa de paper.
+Sustituid las órdenes repetidas por el botón físico de repetición. Antes de pulsar *Play*, otra persona comprueba que la ruta corta visita los mismos puntos. Probadla con el rotulador solo si el soporte y el rotulador originales están en la dotación; de lo contrario, usad una ficha de papel.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** ruta dibuixada, versió optimitzada i registre de visites correctes. Indiqueu clarament si el traçat ha sigut automàtic o manual.
+**Evidencia:** ruta dibujada, versión optimizada y registro de visitas correctas. Indicad claramente si el trazado ha sido automático o manual.
 
-### **C-7 · Collim carabasses de paper.**
+### **C-7 · Recogemos calabazas de papel.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Dissenyeu un repte final amb peces grans de carabassa i una ruta marcada. Incloeu com a mínim dos fragments repetits i predigueu la seqüència de visites.
+Diseñad un reto final con piezas grandes de calabaza y una ruta marcada. Incluid como mínimo dos fragmentos repetidos y predecid la secuencia de visitas.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Planifiqueu les ordres amb targetes i escriviu el programa llarg. Identifiqueu cada unitat repetida i el nombre de repeticions.
+Planificad las órdenes con tarjetas y escribid el programa largo. Identificad cada unidad repetida y el número de repeticiones.
 
-![Tale-Bot Pro real davant d’un mapa de paper amb tres parades de carabasses i targetes que mostren dos fragments repetits.](../../_assets/situacions/sa-tb-patrons-c7-v1.webp)
+![Tale-Bot Pro real ante un mapa de papel con tres paradas de calabazas y tarjetas que muestran dos fragmentos repetidos.](../../_assets/situacions/sa-tb-patrons-c7-v1.webp)
 
-_Les carabasses de cartó són fites simbòliques i les recull l’alumnat; Tale-Bot no les identifica ni les arreplega._
+_Las calabazas de cartón son hitos simbólicos y las recoge el alumnado; Tale-Bot no las identifica ni las recoge._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Prepareu el mapa i la predicció per a un altre equip, sense donar-li el codi. Registreu la posició esperada després de cada fragment.
+Preparad el mapa y la predicción para otro equipo, sin darle el código. Registrad la posición esperada después de cada fragmento.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Feu la versió compacta amb el botó de repetició i demaneu a l’altre equip que execute els dos codis. Si divergeixen, localitzeu el primer punt diferent i reviseu només el fragment corresponent.
+Haced la versión compacta con el botón de repetición y pedid al otro equipo que ejecute los dos códigos. Si divergen, localizad el primer punto diferente y revisad solo el fragmento correspondiente.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** repte creat, predicció d’un altre equip, prova i depuració justificada. Expliqueu si les dues versions visiten les mateixes fites en el mateix ordre.
+**Evidencia:** reto creado, predicción de otro equipo, prueba y depuración justificada. Explicad si las dos versiones visitan los mismos hitos en el mismo orden.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Identificar una unitat que es repeteix en un patró de moviments o símbols.
-- Expressar una repetició amb ordres més breus sense perdre la seqüència prevista.
-- Provar patrons diferents i detectar en quin punt deixa de coincidir el resultat.
-- Crear una ruta rítmica o visual i explicar-ne la regla a una altra parella.
+- Identificar una unidad que se repite en un patrón de movimientos o símbolos.
+- Expresar una repetición con órdenes más breves sin perder la secuencia prevista.
+- Probar patrones diferentes y detectar en qué punto deja de coincidir el resultado.
+- Crear una ruta rítmica o visual y explicar su regla a otra pareja.
 
-## 🧰 Materials i accés
+## 🧰 Materiales y acceso
 
-Tale-Bot, graella dibuixada pel centre, targetes de fletxes, peces planes i llapis de colors. No cal Activity Box: les targetes de joc i el mapa es poden confeccionar amb caselles pròpies. Comproveu el botó de repetició i les funcions de cada versió.
+Tale-Bot, cuadrícula dibujada por el centro, tarjetas de flechas, piezas planas y lápices de colores. No hace falta Activity Box: las tarjetas de juego y el mapa se pueden confeccionar con casillas propias. Comprobad el botón de repetición y las funciones de cada versión.
 
-## 🧪 Evidències
+## 🧪 Evidencias
 
-Patró marcat, seqüència llarga, versió compacta, nombre de repeticions i registre de prova. L’alumnat explica quan un bucle és més clar i quan pot amagar un error.
+Patrón marcado, secuencia larga, versión compacta, número de repeticiones y registro de prueba. El alumnado explica cuándo un bucle es más claro y cuándo puede esconder un error.
 
-## ♿ Participació, accessibilitat i seguretat
+## ♿ Participación, accesibilidad y seguridad
 
-Representem cada instrucció amb forma i símbol a més de color, i oferim una pauta de patró manipulable amb targetes. Qui no vulga conduir el robot pot predir, ordenar, observar o registrar el trajecte. Comenceu amb una ruta curta en superfície plana i afegiu ordres només quan l’equip puga explicar el patró.
+Representad cada instrucción con forma y símbolo además de color, y ofreced una pauta de patrón manipulable con tarjetas. Quien no quiera conducir el robot puede predecir, ordenar, observar o registrar el trayecto. Empezad con una ruta corta en superficie plana y añadid órdenes solo cuando el equipo pueda explicar el patrón.
 
-## 🔗 Referent oficial adaptat
+## 🔗 Referente oficial adaptado
 
-Adapta les set targetes C —*Find the Patterns*, *Tireless Dancer*, *Capable Repeat Button*, *Hardworking Bees*, *Tale-Bot Guard II*, *Carrot Picking* i *Pumpkin Picking*— de les [Activity Cards oficials](https://matatalab.com/en/lesson4.4). Les rutes i cartes són originals i l’ús del bucle s’ajusta a les ordres realment disponibles.
+Adapta las siete tarjetas C —*Find the Patterns*, *Tireless Dancer*, *Capable Repeat Button*, *Hardworking Bees*, *Tale-Bot Guard II*, *Carrot Picking* y *Pumpkin Picking*— de las [Activity Cards oficiales](https://matatalab.com/en/lesson4.4). Las rutas y cartas son originales y el uso del bucle se ajusta a las órdenes realmente disponibles.

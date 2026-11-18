@@ -14,310 +14,310 @@ duration: "12 sesiones"
 challenge: "¿Cómo puede Codey Rocky percibir señales de su entorno y convertirlas en respuestas que sean útiles, claras y comprobables?"
 ---
 
-![Codey Rocky observa targetes de colors i una roda de selecció mentre mostra una expressió a la pantalla LED.](../../_assets/situacions/cr-entrades-sensors.webp)
+![Codey Rocky observa tarjetas de colores y una rueda de selección mientras muestra una expresión en la pantalla LED.](../../_assets/situacions/cr-entrades-sensors.webp)
 
-_El laboratori combina els components integrats de Codey amb materials de prova de l'aula._
+_El laboratorio combina los componentes integrados de Codey con materiales de prueba del aula._
 
-## 🧩 Repte i context
+## 🧩 Reto y contexto
 
-La classe obri un laboratori d'interacció per a una exposició tecnològica del centre. En cada repte, un equip tria una entrada, anticipa què llegirà Codey Rocky, programa una resposta i comprova-la amb casos diferents. Les dotze sessions adapten lliçons públiques de *Codey Rocky & Neuron Discovery* que utilitzen botons, matriu LED, infraroig, potenciòmetre, sensor de color o giroscopi integrats. El curs original també conté reptes que necessiten mòduls Neuron; s'identifiquen al final i no es pressuposen ací.
+La clase abre un laboratorio de interacción para una exposición tecnológica del centro. En cada reto, un equipo elige una entrada, anticipa qué leerá Codey Rocky, programa una respuesta y la comprueba con casos distintos. Las doce sesiones adaptan lecciones públicas de *Codey Rocky & Neuron Discovery* que utilizan botones, matriz LED, infrarrojo, potenciómetro, sensor de color o giroscopio integrados. El curso original también contiene retos que necesitan módulos Neuron; se identifican al final y no se presuponen aquí.
 
-## 🧪 Seqüència de reptes
+## 🧪 Secuencia de retos
 
-### **Sessió 1 · *Find the Blue Dot*.**
+### **Sesión 1 · *Find the Blue Dot*.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu una quadrícula de paper amb files i columnes. Predigueu com es podria indicar una cel·la sense escriure’n el nom: un punt, una fletxa o una coordenada per torn.
+Preparad una cuadrícula de papel con filas y columnas. Predecid cómo se podría indicar una casilla sin escribir su nombre: un punto, una flecha o una coordenada por turno.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Programeu el botó de Codey perquè inicie el repte i la matriu LED perquè mostre un punt o una fletxa. Associeu cada símbol amb una cel·la del tauler.
+Programad el botón de Codey para que inicie el reto y la matriz LED para que muestre un punto o una flecha. Asociad cada símbolo con una casilla del tablero.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu la cel·la indicada i l’entrada que ha activat el programa. Distingiu el moment de llegir el botó del moment d’actualitzar la pantalla.
+Anotad la casilla indicada y la entrada que ha activado el programa. Distinguid el momento de leer el botón del momento de actualizar la pantalla.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proveu una pulsació curta, una de llarga i cap entrada. Si dues pulsacions generen respostes difícils de distingir, ajusteu la regla o el símbol LED.
+Probad una pulsación corta, una larga y ninguna entrada. Si dos pulsaciones generan respuestas difíciles de distinguir, ajustad la regla o el símbolo LED.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** taula d’entrades i cel·les amb una regla que una altra parella puga seguir. Expliqueu què fa el programa quan no rep cap senyal.
+**Evidencia:** tabla de entradas y casillas con una regla que otra pareja pueda seguir. Explicad qué hace el programa cuando no recibe ninguna señal.
 
-### **Sessió 2 · *Lucky Wheel*.**
+### **Sesión 2 · *Lucky Wheel*.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu opcions neutres, com ara quin repte cooperatiu provar, i representeu-les en una roda de paper. Predigueu si cada opció eixirà amb la mateixa freqüència.
+Elegid opciones neutras, como qué reto cooperativo probar, y representadlas en una rueda de papel. Predecid si cada opción saldrá con la misma frecuencia.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Useu el botó per iniciar i aturar una seqüència de selecció en la matriu LED. Diferencieu una animació que només sembla una roda d’una selecció que depén d’un valor variable.
+Usad el botón para iniciar y detener una secuencia de selección en la matriz LED. Diferenciad una animación que solo parece una rueda de una selección que depende de un valor variable.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Feu una sèrie de rondes i anoteu cada resultat amb marques de recompte. Manteniu el mateix nombre d’opcions i el mateix nombre d’intents per tanda.
+Haced una serie de rondas y anotad cada resultado con marcas de recuento. Mantened el mismo número de opciones y el mismo número de intentos por tanda.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu dues tandes i reviseu que el programa no afavorisca una posició per l’ordre de la seqüència o pel temps de pulsació. Si no hi ha un bloc aleatori, descriviu el resultat com una animació cíclica, no com una tria aleatòria.
+Comparad dos tandas y revisad que el programa no favorezca una posición por el orden de la secuencia o por el tiempo de pulsación. Si no hay un bloque aleatorio, describid el resultado como una animación cíclica, no como una elección aleatoria.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** recompte de resultats i explicació de per què freqüències observades poden variar. La roda és una dinàmica de joc, no un mecanisme per prendre decisions importants.
+**Evidencia:** recuento de resultados y explicación de por qué las frecuencias observadas pueden variar. La rueda es una dinámica de juego, no un mecanismo para tomar decisiones importantes.
 
-### **Sessió 3 · *Codey Rocky Can Do Addition*.**
+### **Sesión 3 · *Codey Rocky Can Do Addition*.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Repartiu objectes de prova en dues categories i feu un recompte manual inicial. Predigueu com canviarà la suma quan s’afiga una detecció a cada categoria.
+Repartid objetos de prueba en dos categorías y haced un recuento manual inicial. Predecid cómo cambiará la suma cuando se añada una detección a cada categoría.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Comproveu quin esdeveniment infraroig pot generar realment el model i l’equipament disponible. Programeu dos comptadors: cada detecció vàlida dins de la finestra acordada aporta una unitat al registre corresponent.
+Comprobad qué evento infrarrojo puede generar realmente el modelo y el equipamiento disponible. Programad dos contadores: cada detección válida dentro de la ventana acordada aporta una unidad al registro correspondiente.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Mostreu els dos recomptes i la suma. Registreu els valors abans i després de cada entrada per poder reconstruir el càlcul.
+Mostrad los dos recuentos y la suma. Registrad los valores antes y después de cada entrada para poder reconstruir el cálculo.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu el resultat programat amb el recompte manual en una tanda nova. Reviseu dobles deteccions o senyals que no s’hagen comptat i ajusteu la finestra de prova.
+Comparad el resultado programado con el recuento manual en una tanda nueva. Revisad dobles detecciones o señales que no se hayan contado y ajustad la ventana de prueba.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** taula de recompte manual i del programa amb una suma explicada. No interpreteu lectures IR no documentades com a distàncies calibrades.
+**Evidencia:** tabla de recuento manual y del programa con una suma explicada. No interpretéis lecturas IR no documentadas como distancias calibradas.
 
-### **Sessió 4 · *Jump! Codey!*.**
+### **Sesión 4 · *Jump! Codey!*.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Dibuixeu una pista curta de paper i trieu una icona per a representar l’activació. Predigueu què ha de passar quan arriba l’entrada IR i què ha de passar quan no arriba.
+Dibujad una pista corta de papel y elegid un icono para representar la activación. Predecid qué debe pasar cuando llega la entrada IR y qué debe pasar cuando no llega.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Programeu l’entrada IR acordada perquè Codey canvie la icona de la pantalla i Rocky faça un moviment breu. Manteniu la pista lliure d’obstacles rígids i el robot sobre una superfície estable.
+Programad la entrada IR acordada para que Codey cambie el icono de la pantalla y Rocky haga un movimiento breve. Mantened la pista libre de obstáculos rígidos y el robot sobre una superficie estable.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Registreu les entrades detectades, la icona mostrada i si el moviment s’ha produït. Separeu la lectura real del sensor de la regla de joc que heu triat.
+Registrad las entradas detectadas, el icono mostrado y si se ha producido el movimiento. Separad la lectura real del sensor de la regla de juego que habéis elegido.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu una versió amb pausa i una sense. Reviseu si els senyals consecutius es distingeixen i si el moviment es manté dins de la pista.
+Comparad una versión con pausa y una sin ella. Revisad si las señales consecutivas se distinguen y si el movimiento se mantiene dentro de la pista.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** programa i taula de proves amb activació present/absent. Expliqueu què detecta l’infraroig i quina part és només una convenció del joc.
+**Evidencia:** programa y tabla de pruebas con activación presente/ausente. Explicad qué detecta el infrarrojo y qué parte es solo una convención del juego.
 
-### **Sessió 5 · *RC Car*.**
+### **Sesión 5 · *RC Car*.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Dibuixeu una ruta de repartiment en una quadrícula i acordeu un vocabulari curt d’ordres. Predigueu quines instruccions podrien perdre’s o repetir-se durant una transmissió.
+Dibujad una ruta de reparto en una cuadrícula y acordad un vocabulario corto de órdenes. Predecid qué instrucciones podrían perderse o repetirse durante una transmisión.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Amb dos Codey Rocky i dos dispositius IR compatibles, configureu un emissor i un receptor. L’emissor envia ordres de ruta i el receptor les converteix en moviments o indicacions del model.
+Con dos Codey Rocky y dos dispositivos IR compatibles, configurad un emisor y un receptor. El emisor envía órdenes de ruta y el receptor las convierte en movimientos o indicaciones del modelo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Registreu l’ordre enviada, la rebuda i la resposta. Intercanvieu els rols perquè cada equip prove tant la transmissió com la recepció.
+Registrad la orden enviada, la recibida y la respuesta. Intercambiad los roles para que cada equipo pruebe tanto la transmisión como la recepción.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Repetiu una ruta i marqueu ordres perdudes o repetides. Si només hi ha un robot, alterneu el control amb un comandament IR compatible disponible; si no n’hi ha, assageu el protocol en targetes i indiqueu que la transmissió física no s’ha provat.
+Repetid una ruta y marcad órdenes perdidas o repetidas. Si solo hay un robot, alternad el control con un mando IR compatible disponible; si no hay ninguno, ensayad el protocolo con tarjetas e indicad que la transmisión física no se ha probado.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** registre emissor/receptor i una millora proposada per fer les ordres més fiables. Calen dos dispositius IR compatibles per a validar la comunicació entre robots.
+**Evidencia:** registro emisor/receptor y una mejora propuesta para hacer las órdenes más fiables. Se necesitan dos dispositivos IR compatibles para validar la comunicación entre robots.
 
-### **Sessió 6 · Un missatge entre dos Codey.**
+### **Sesión 6 · Un mensaje entre dos Codey.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Recordeu la sessió anterior: localitzeu en cada Codey Rocky l’emissor i el receptor IR segons el manual del model, i expliqueu quin paper fa cadascun. En parelles, inventeu una història breu situada en un espai pròxim —per exemple, dos missatges per orientar una visita a l’hort escolar— i definiu tres codis numèrics amb significat acordat. Predigueu què hauria de mostrar el receptor si rep un codi vàlid, un de desconegut o cap missatge. No empreu noms, ubicacions particulars ni missatges personals.
+Recordad la sesión anterior: localizad en cada Codey Rocky el emisor y el receptor IR según el manual del modelo, y explicad qué papel desempeña cada uno. En parejas, inventad una historia breve situada en un espacio próximo —por ejemplo, dos mensajes para orientar una visita al huerto escolar— y definid tres códigos numéricos con significado acordado. Predecid qué debería mostrar el receptor si recibe un código válido, uno desconocido o ningún mensaje. No empleéis nombres, ubicaciones particulares ni mensajes personales.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Prepareu dos Codey Rocky i dos ordinadors amb mBlock compatible; si cal, connecteu-los per USB o amb els dispositius Bluetooth disponibles. Un equip programa l’emissor amb els blocs IR i l’altre configura el receptor perquè llija el valor rebut, el guarde en una variable i trie una resposta visual. Abans de provar, feu que una altra parella puga llegir la taula de codis. Si la dotació només té un robot o no es pot verificar l’enllaç IR, completeu el disseny amb targetes i marqueu la prova física com a pendent.
+Preparad dos Codey Rocky y dos ordenadores con mBlock compatible; si hace falta, conectadlos por USB o con los dispositivos Bluetooth disponibles. Un equipo programa el emisor con los bloques IR y el otro configura el receptor para que lea el valor recibido, lo guarde en una variable y elija una respuesta visual. Antes de probar, haced que otra pareja pueda leer la tabla de códigos. Si la dotación solo tiene un robot o no se puede verificar el enlace IR, completad el diseño con tarjetas y marcad la prueba física como pendiente.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Escriviu un guió de tres moments —inici, missatge i resposta— i executeu-lo amb els dos robots. Registreu per a cada prova el codi enviat, el valor rebut, la variable i la resposta LED; compareu el relat previst amb el que realment s’ha mostrat. La història i els símbols són creació de l’equip, no contingut incorporat al robot.
+Escribid un guion de tres momentos —inicio, mensaje y respuesta— y ejecutadlo con los dos robots. Registrad para cada prueba el código enviado, el valor recibido, la variable y la respuesta LED; comparad el relato previsto con lo que realmente se ha mostrado. La historia y los símbolos son creación del equipo, no contenido incorporado al robot.
 
-![Dos Codey Rocky de la dotació intercanvien un senyal IR representat de manera conceptual mentre l’equip prepara targetes de relat sobre un entorn pròxim.](../../_assets/situacions/sa-cr-when-codey-meets-codey-v1.webp)
+![Dos Codey Rocky de la dotación intercambian una señal IR representada de manera conceptual mientras el equipo prepara tarjetas de relato sobre un entorno próximo.](../../_assets/situacions/sa-cr-when-codey-meets-codey-v1.webp)
 
-_El senyal i les targetes són una representació didàctica; cal comprovar l’orientació i la recepció en el maquinari disponible._
+_La señal y las tarjetas son una representación didáctica; hay que comprobar la orientación y la recepción en el hardware disponible._
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Afegiu una resposta segura per a un valor no reconegut, com ara una icona neutral i cap moviment. Proveu almenys cinc casos: cada codi vàlid; un valor que no figure en la taula; cap emissió; i una repetició del missatge. Alterneu emissor i receptor i compareu si la història s’entén quan canvia qui inicia l’intercanvi. No atribuïu al robot confirmació d’entrega, abast garantit ni comunicació a través d’obstacles: anoteu només el resultat observat en les condicions de l’aula.
+Añadid una respuesta segura para un valor no reconocido, como un icono neutral y ningún movimiento. Probad al menos cinco casos: cada código válido; un valor que no figure en la tabla; ninguna emisión; y una repetición del mensaje. Alternad emisor y receptor y comparad si la historia se entiende cuando cambia quién inicia el intercambio. No atribuyáis al robot confirmación de entrega, alcance garantizado ni comunicación a través de obstáculos: anotad solo el resultado observado en las condiciones del aula.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** guió original de tres moments, taula de codis, captura o descripció del programa amb la variable i el registre dels cinc casos. Expliqueu què necessiten emissor i receptor per interpretar el senyal de la mateixa manera i quin cas ha obligat a revisar la regla.
+**Evidencia:** guion original de tres momentos, tabla de códigos, captura o descripción del programa con la variable y el registro de los cinco casos. Explicad qué necesitan emisor y receptor para interpretar la señal de la misma manera y qué caso ha obligado a revisar la regla.
 
-### **Sessió 7 · *Volume Control*.**
+### **Sesión 7 · *Volume Control*.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Observeu el potenciòmetre i indiqueu quina resposta espereu en els extrems i al punt intermedi. Acordeu una escala de tres nivells per comparar-la.
+Observad el potenciómetro e indicad qué respuesta esperáis en los extremos y en el punto intermedio. Acordad una escala de tres niveles para compararla.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Llegiu el potenciòmetre integrat i useu la posició per regular el volum d’un senyal breu. Si el model o la configuració no permet so, feu servir la freqüència d’una animació LED com a alternativa identificada.
+Leed el potenciómetro integrado y usad la posición para regular el volumen de una señal breve. Si el modelo o la configuración no permite sonido, usad la frecuencia de una animación LED como alternativa identificada.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu valors mínim, intermedi i màxim al costat de la resposta observada. Descriviu com heu convertit la lectura en tres nivells comprensibles.
+Anotad los valores mínimo, intermedio y máximo junto a la respuesta observada. Describid cómo habéis convertido la lectura en tres niveles comprensibles.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proveu posicions intermèdies i ajuste els límits si dos nivells produeixen respostes massa semblants. Repetiu les lectures sense moure el robot ni canviar de programa.
+Probad posiciones intermedias y ajustad los límites si dos niveles producen respuestas demasiado parecidas. Repetid las lecturas sin mover el robot ni cambiar de programa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** taula de posició, lectura i resposta. La lectura és un control del model, no una escala normalitzada de volum.
+**Evidencia:** tabla de posición, lectura y respuesta. La lectura es un control del modelo, no una escala normalizada de volumen.
 
-### **Sessió 8 · *Number Guessing*.**
+### **Sesión 8 · *Number Guessing*.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Trieu un rang menut i penseu com convertir el gir del potenciòmetre en una conjectura. Predigueu què mostrarà el programa si la conjectura és inferior, superior o igual al valor secret.
+Elegid un rango pequeño y pensad cómo convertir el giro del potenciómetro en una conjetura. Predecid qué mostrará el programa si la conjetura es inferior, superior o igual al valor secreto.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Programeu el potenciòmetre per seleccionar la conjectura, el botó per confirmar-la i la matriu per mostrar «més», «menys» o «encert».
+Programad el potenciómetro para seleccionar la conjetura, el botón para confirmarla y la matriz para mostrar «más», «menos» o «acierto».
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu la lectura analògica, l’enter que li correspon, el valor secret i la pista mostrada en cada intent. Feu visible com es calcula la conversió.
+Anotad la lectura analógica, el entero que le corresponde, el valor secreto y la pista mostrada en cada intento. Haced visible cómo se calcula la conversión.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proveu els valors dels extrems, repeticions i un rang diferent. Reviseu què passa quan dues lectures pròximes es converteixen en el mateix enter.
+Probad los valores de los extremos, repeticiones y un rango distinto. Revisad qué pasa cuando dos lecturas próximas se convierten en el mismo entero.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** una traça del joc amb tres resultats possibles i explicació de la relació entre lectura analògica, conversió a enter i condicions.
+**Evidencia:** una traza del juego con tres resultados posibles y explicación de la relación entre lectura analógica, conversión a entero y condiciones.
 
-### **Sessió 9 · *I'm a Good Guesser*.**
+### **Sesión 9 · *I'm a Good Guesser*.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Prepareu targetes de colors per a una galeria del pati i predigueu quines podrà distingir el sensor. Acordeu com presentareu cada targeta.
+Preparad tarjetas de colores para una galería del patio y predecid cuáles podrá distinguir el sensor. Acordad cómo presentaréis cada tarjeta.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Feu lectures de diverses targetes, manteniu la distància, l’orientació i la llum tan constants com siga possible i creeu una regla inicial de classificació.
+Haced lecturas de varias tarjetas, mantened la distancia, la orientación y la luz tan constantes como sea posible y cread una regla inicial de clasificación.
 
-![Codey Rocky de la dotació apunta el sensor frontal cap a una targeta roja, amb altres mostres de color i una taula de registre.](../../_assets/situacions/sa-cr-sensor-color-proves.webp)
+![Codey Rocky de la dotación apunta el sensor frontal hacia una tarjeta roja, con otras muestras de color y una tabla de registro.](../../_assets/situacions/sa-cr-sensor-color-proves.webp)
 
-_La prova classifica lectures de superfícies en condicions controlades; el sensor no identifica què és l’objecte ni garanteix el mateix resultat amb qualsevol llum o distància._
+_La prueba clasifica lecturas de superficies en condiciones controladas; el sensor no identifica qué es el objeto ni garantiza el mismo resultado con cualquier luz o distancia._
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu les lectures repetides per targeta, la classificació prevista i el resultat. Separeu les targetes utilitzades per ajustar la regla de les que reservareu per a comprovar-la.
+Anotad las lecturas repetidas por tarjeta, la clasificación prevista y el resultado. Separad las tarjetas utilizadas para ajustar la regla de las que reservaréis para comprobarla.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proveu la regla amb targetes que no s’han emprat per ajustar-la. Si falla, canvieu una condició alhora i repetiu tant la mostra inicial com les targetes de comprovació.
+Probad la regla con tarjetas que no se han empleado para ajustarla. Si falla, cambiad una condición a la vez y repetid tanto la muestra inicial como las tarjetas de comprobación.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** taula de lectures i errors de classificació amb una regla revisada. El color detectat depén de la superfície i la il·luminació; no és una etiqueta infal·lible.
+**Evidencia:** tabla de lecturas y errores de clasificación con una regla revisada. El color detectado depende de la superficie y la iluminación; no es una etiqueta infalible.
 
-### **Sessió 10 · *Stoplight*.**
+### **Sesión 10 · *Stoplight*.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Dissenyeu una maqueta de pas escolar amb targetes de color i predigueu quina resposta ha de correspondre a cada senyal. Afegiu una targeta desconeguda com a cas de prova.
+Diseñad una maqueta de paso escolar con tarjetas de color y predecid qué respuesta debe corresponder a cada señal. Añadid una tarjeta desconocida como caso de prueba.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Programeu Rocky perquè, en detectar la targeta acordada, canvie l’estat LED i mostre també una forma o patró diferenciat. Manteniu text o símbols equivalents al color.
+Programad Rocky para que, al detectar la tarjeta acordada, cambie el estado LED y muestre también una forma o patrón diferenciado. Mantened texto o símbolos equivalentes al color.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Completeu una taula amb senyal present, lectura del sensor i resposta mostrada. Registreu els casos de color reconegut, absent i no previst.
+Completad una tabla con señal presente, lectura del sensor y respuesta mostrada. Registrad los casos de color reconocido, ausente y no previsto.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Reviseu els casos límit i feu que les respostes siguen distingibles també sense dependre només del color. Proveu de nou amb targetes en una condició de llum diferent.
+Revisad los casos límite y haced que las respuestas sean distinguibles también sin depender solo del color. Probad de nuevo con tarjetas en una condición de luz diferente.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** maqueta i matriu de proves amb una alternativa visual al color. És un prototip didàctic: no controla trànsit real ni substitueix senyalització accessible homologada.
+**Evidencia:** maqueta y matriz de pruebas con una alternativa visual al color. Es un prototipo didáctico: no controla tráfico real ni sustituye señalización accesible homologada.
 
-### **Sessió 11 · *Sensing Motions*.**
+### **Sesión 11 · *Sensing Motions*.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Amb Codey sobre una superfície estable, predigueu quin eix canviarà en una inclinació suau cap endavant, enrere o cap a un costat. No feu girar ni deixeu caure el robot.
+Con Codey sobre una superficie estable, predecid qué eje cambiará en una inclinación suave hacia delante, atrás o hacia un lado. No hagáis girar ni dejéis caer el robot.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Registreu una posició inicial de referència i inclineu Codey suaument en cada direcció. Llegiu els eixos i construïu una visualització senzilla per a una maqueta d’edifici accessible.
+Registrad una posición inicial de referencia e inclinad Codey suavemente en cada dirección. Leed los ejes y construid una visualización sencilla para una maqueta de edificio accesible.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu posició inicial, eix observat, sentit del canvi i resposta representada. Repetiu cada inclinació i manteniu la mateixa posició de partida.
+Anotad posición inicial, eje observado, sentido del cambio y respuesta representada. Repetid cada inclinación y mantened la misma posición de partida.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Compareu les repeticions i ajuste la visualització perquè diferencie els canvis observats. Si la lectura deriva o varia, registreu-ho en lloc d’amagar-ho.
+Comparad las repeticiones y ajustad la visualización para que diferencie los cambios observados. Si la lectura deriva o varía, registradlo en lugar de ocultarlo.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** taula d’eixos i representació del model. Expliqueu la diferència entre orientació relativa, moviment i posició absoluta.
+**Evidencia:** tabla de ejes y representación del modelo. Explicad la diferencia entre orientación relativa, movimiento y posición absoluta.
 
-### **Sessió 12 · *Jumping Game 2.0*.**
+### **Sesión 12 · *Jumping Game 2.0*.**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activamos y predecimos
 
-Dissenyeu un joc curt en què un personatge LED evita obstacles i guanya punts. Predigueu com una inclinació suau pot controlar el personatge i quines alternatives d’entrada podrien funcionar.
+Diseñad un juego corto en el que un personaje LED evita obstáculos y gana puntos. Predecid cómo una inclinación suave puede controlar el personaje y qué alternativas de entrada podrían funcionar.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Exploramos y construimos
 
-Programeu el giroscopi perquè detecte una inclinació i moga el personatge. Manteniu clara la regla de puntuació i oferiu una alternativa amb botons des del primer prototip.
+Programad el giroscopio para que detecte una inclinación y mueva el personaje. Mantened clara la regla de puntuación y ofreced una alternativa con botones desde el primer prototipo.
 
-#### Fase 3 · Expliquem i registrem
+#### Fase 3 · Explicamos y registramos
 
-Anoteu inclinació detectada, resposta del personatge i resultat de cada partida. Compareu el senyal llegit amb l’acció programada.
+Anotad inclinación detectada, respuesta del personaje y resultado de cada partida. Comparad la señal leída con la acción programada.
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 4 · Aplicamos y mejoramos
 
-Proveu el llindar amb gestos còmodes i ajuste’l perquè el repte no exigisca moviments bruscos. Feu una prova d’usabilitat amb l’entrada alternativa i registreu si permet completar les mateixes accions.
+Probad el umbral con gestos cómodos y ajustadlo para que el reto no exija movimientos bruscos. Haced una prueba de usabilidad con la entrada alternativa y registrad si permite completar las mismas acciones.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 5 · Comprobamos y reflexionamos
 
-**Evidència:** joc provat per dues persones amb opcions d’entrada i una explicació de com el sensor transforma moviment en dades. La participació no depén de fer gestos físics.
+**Evidencia:** juego probado por dos personas con opciones de entrada y una explicación de cómo el sensor transforma movimiento en datos. La participación no depende de hacer gestos físicos.
 
-## 🎯 Aprenentatges i vocabulari
+## 🎯 Aprendizajes y vocabulario
 
-- Identificar les entrades disponibles de Codey Rocky i relacionar-les amb una resposta del programa.
-- Construir una prova repetible que compare la predicció amb la lectura observada.
-- Interpretar dades de botons, infraroig, color, llum o giroscopi sense atribuir-los capacitats que no tenen.
-- Documentar errors, límits del sensor i una decisió de disseny basada en evidències.
+- Identificar las entradas disponibles de Codey Rocky y relacionarlas con una respuesta del programa.
+- Construir una prueba repetible que compare la predicción con la lectura observada.
+- Interpretar datos de botones, infrarrojo, color, luz o giroscopio sin atribuirles capacidades que no tienen.
+- Documentar errores, límites del sensor y una decisión de diseño basada en evidencias.
 
 
-## 🧰 Materials, accessibilitat i límits
+## 🧰 Materiales, accesibilidad y límites
 
-Cal Codey Rocky, mBlock en una versió compatible, paper, targetes de color, quadrícula i material tou per a la maqueta. Les sessions 5 i 6 necessiten dos dispositius amb transmissió/recepció IR compatibles per a completar la comunicació física; sense el segon dispositiu es conserva el disseny de protocol i s'identifica l'assaig com a no executat. El resultat de cada sensor s'ha de verificar al model i al programari disponibles.
+Se necesita Codey Rocky, mBlock en una versión compatible, papel, tarjetas de color, cuadrícula y material blando para la maqueta. Las sesiones 5 y 6 necesitan dos dispositivos con transmisión/recepción IR compatibles para completar la comunicación física; sin el segundo dispositivo se conserva el diseño de protocolo y se identifica el ensayo como no ejecutado. El resultado de cada sensor se debe verificar en el modelo y el software disponibles.
 
-El catàleg oficial associa també altres lliçons a interruptors tàctils externs, sensor d'ultrasons i tira LED Neuron. Aquests components no es consideren part del Codey Rocky bàsic d'aquesta proposta. No substituïm eixos reptes per una activitat que fingisca tindre els mòduls: queden marcats per a adaptar-los quan es confirme l'accessori corresponent.
+El catálogo oficial asocia también otras lecciones a interruptores táctiles externos, sensor de ultrasonidos y tira LED Neuron. Estos componentes no se consideran parte del Codey Rocky básico de esta propuesta. No sustituimos esos retos por una actividad que finja tener los módulos: quedan marcados para adaptarlos cuando se confirme el accesorio correspondiente.
 
-## ♿ Participació, accessibilitat i seguretat
+## ♿ Participación, accesibilidad y seguridad
 
-Oferim instruccions orals i visuals, torns de control, opcions amb botons i rols de programació, observació i registre. Evitem gestos bruscos i mantenim el robot sobre una superfície estable; les lectures es comproven al model i al programari disponibles.
+Ofrecemos instrucciones orales y visuales, turnos de control, opciones con botones y roles de programación, observación y registro. Evitamos gestos bruscos y mantenemos el robot sobre una superficie estable; las lecturas se comprueban en el modelo y el software disponibles.
 
-## 🎯 Evidències d'aprenentatge
+## 🎯 Evidencias de aprendizaje
 
-Cada equip lliura sis registres d'entrada i resposta, diagrames o fragments de codi, taules de proves amb casos límit i una explicació d'una limitació del sensor. La mostra final pot ser una demostració presencial, un pòster o una descripció accessible del prototip. Valorem la predicció, la prova repetible, la depuració i la justificació de decisions, no la velocitat ni la competició entre equips.
+Cada equipo entrega seis registros de entrada y respuesta, diagramas o fragmentos de código, tablas de pruebas con casos límite y una explicación de una limitación del sensor. La muestra final puede ser una demostración presencial, un póster o una descripción accesible del prototipo. Valoramos la predicción, la prueba repetible, la depuración y la justificación de decisiones, no la velocidad ni la competición entre equipos.
 
-## 🔗 Font oficial i abast de l'adaptació
+## 🔗 Fuente oficial y alcance de la adaptación
 
-La traçabilitat parteix de les lliçons 17, 18 i 21–30 de [Codey Rocky & Neuron Discovery](https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery), segons els títols i objectius publicats per Makeblock. Per a la sessió 6, la [guia docent oficial, lliçó 24 “When Codey Meets Codey”](https://qiniu.makeblock.com/education-makeblock-com/CodeyRockyNeuronTeachersBook.pdf), concreta l’ús dels emissors/receptors IR, els blocs infrarojos, les variables i una tasca d’escriptura d’història; la proposta en conserva aquests objectius amb una narració pròpia i casos de prova. La guia oficial [About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) identifica el mòdul IR del xassís Rocky com a sensor de color/proximitat; les sessions el mostren llegint targetes, sense atribuir-li reconeixement d’objectes. Les lliçons 19–20 (interruptors tàctils), 31–32 (ultrasons) i 33–34 (tira LED) depenen dels mòduls Neuron i queden fora mentre no es confirme que són a la dotació. La resta de materials docents del curs pot requerir accés de compte; aquesta adaptació crea reptes, seqüència i visuals propis a partir de la informació consultable i no afirma reproduir instruccions privades. La llista general de les 24 lliçons CSTA de Codey Rocky es troba en la [pàgina de Codey Rocky de Makeblock](https://www.makeblock.com/pages/codey-rocky-robot-toys-for-kids).
+La trazabilidad parte de las lecciones 17, 18 y 21–30 de [Codey Rocky & Neuron Discovery](https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery), según los títulos y objetivos publicados por Makeblock. Para la sesión 6, la [guía docente oficial, lección 24 “When Codey Meets Codey”](https://qiniu.makeblock.com/education-makeblock-com/CodeyRockyNeuronTeachersBook.pdf), concreta el uso de los emisores/receptores IR, los bloques infrarrojos, las variables y una tarea de escritura de historia; la propuesta conserva estos objetivos con una narración propia y casos de prueba. La guía oficial [About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) identifica el módulo IR del chasis Rocky como sensor de color/proximidad; las sesiones lo muestran leyendo tarjetas, sin atribuirle reconocimiento de objetos. Las lecciones 19–20 (interruptores táctiles), 31–32 (ultrasonidos) y 33–34 (tira LED) dependen de los módulos Neuron y quedan fuera mientras no se confirme que están en la dotación. El resto de materiales docentes del curso puede requerir acceso de cuenta; esta adaptación crea retos, secuencia y visuales propios a partir de la información consultable y no afirma reproducir instrucciones privadas. La lista general de las 24 lecciones CSTA de Codey Rocky se encuentra en la [página de Codey Rocky de Makeblock](https://www.makeblock.com/pages/codey-rocky-robot-toys-for-kids).
