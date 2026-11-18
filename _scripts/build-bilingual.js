@@ -142,16 +142,25 @@ function isRedirectPage(html) {
 }
 
 function inject(html, { selfPath, caPath, esPath, currentLang, currentLabel, alternateLabel, target }) {
-  const selector = `\n<div class="lang-switch" style="position:fixed;top:14px;right:16px;z-index:2147483647;display:flex;gap:6px;align-items:center;padding:6px 10px;border:1px solid #cbd5e1;border-radius:999px;background:#fff;box-shadow:0 4px 14px rgba(15,23,42,.12);font:600 13px/1.2 'Plus Jakarta Sans',system-ui,sans-serif">`
-    + `<span style="color:#64748b">${currentLabel}</span>`
-    + `<a href="${target}" style="color:#2563eb;text-decoration:none">${alternateLabel}</a>`
-    + `</div>\n`;
-  const style = `<style id="lang-switch-style">@media (min-width:761px){.header-nav{padding-right:118px}}@media (max-width:760px){.lang-switch{top:12px!important;right:10px!important;font-size:11px!important;padding:5px 8px!important}}</style>`;
-  const head = `${style}\n  <link rel="alternate" hreflang="ca" href="${caPath}">\n  <link rel="alternate" hreflang="es" href="${esPath}">\n  <link rel="alternate" hreflang="x-default" href="${caPath}">`;
+  const alternateLang = currentLang === 'ca' ? 'es' : 'ca';
+  const selector = `<div class="lang-switch" role="group" aria-label="Idioma">`
+    + `<span>${currentLabel}</span>`
+    + `<a href="${target}" onclick="try{localStorage.setItem('rd-lang','${alternateLang}')}catch(e){}">${alternateLabel}</a>`
+    + `</div>`;
+  const style = `<style id="lang-switch-style">.lang-switch{display:inline-flex;align-items:center;gap:.35rem;padding:.35rem .6rem;border:1px solid #cbd5e1;border-radius:999px;background:#fff;font:600 .8rem/1.2 'Plus Jakarta Sans',system-ui,sans-serif;white-space:nowrap}.lang-switch span{color:#64748b}.lang-switch a{color:#2563eb;text-decoration:none}@media(max-width:760px){.header-inner{position:relative}.lang-switch{position:absolute;top:0;right:0;font-size:.7rem;padding:.3rem .5rem}}@media(max-width:420px){.lang-switch span{display:none}.lang-switch{font-size:.68rem;padding:.28rem .45rem}}</style>`;
+  const detect = `<script id="lang-detect">(function(){try{var p=localStorage.getItem('rd-lang');if(p)return;var l=((navigator.languages&&navigator.languages[0])||navigator.language||'').toLowerCase();var c=document.documentElement.lang;var t=null;if(l.indexOf('es')===0)t='es';else if(l.indexOf('ca')===0)t='ca';if(!t)return;localStorage.setItem('rd-lang',t);if(t===c)return;var h=document.querySelector('link[rel="alternate"][hreflang="'+t+'"]');if(h)location.replace(h.getAttribute('href'));}catch(e){}})();</script>`;
+  const head = `${style}\n  <link rel="alternate" hreflang="ca" href="${caPath}">\n  <link rel="alternate" hreflang="es" href="${esPath}">\n  <link rel="alternate" hreflang="x-default" href="${caPath}">\n  ${detect}`;
   let out = html;
   if (out.includes('</head>')) out = out.replace('</head>', `  ${head}\n</head>`);
-  if (!out.includes('class="lang-switch"') && out.includes('</body>')) {
-    out = out.replace('</body>', `${selector}</body>`);
+  if (!out.includes('class="lang-switch"')) {
+    const navRe = /(<nav[^>]*class="[^"]*header-nav[^"]*"[^>]*>[\s\S]*?)(<\/nav>)/;
+    if (navRe.test(out)) {
+      out = out.replace(navRe, `$1${selector}$2`);
+    } else if (out.includes('</header>')) {
+      out = out.replace('</header>', `${selector}</header>`);
+    } else if (out.includes('</body>')) {
+      out = out.replace('</body>', `${selector}</body>`);
+    }
   }
   return out;
 }
