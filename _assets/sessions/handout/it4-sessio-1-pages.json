@@ -1,0 +1,27 @@
+{
+  "pages": {
+    "tb-prediu-el-resultat": 10,
+    "tb-escriu-el-codi": 11,
+    "tb-depura-el-codi": 12,
+    "tb-refactoritza-el-codi": 13,
+    "tb-quin-dibuix-fara": 14,
+    "tb-dibuixa-per-parts": 15,
+    "tb-des-de-quin-costat": 16,
+    "tb-aproxima-i-empeny": 17,
+    "cs-prediu-el-resultat": 18,
+    "cs-escriu-el-codi": 19,
+    "cs-depura-el-codi": 20,
+    "cs-refactoritza-el-codi": 21,
+    "cs-divideix-i-crea-funcions": 22,
+    "cs-que-pose-dins-del-bucle": 23,
+    "cs-una-funcio-diferents-llocs": 24,
+    "cs-combina-funcions-i-repeticions": 25,
+    "robots": 4,
+    "tale-bot": 5,
+    "coding-set": 6,
+    "disseny": 7,
+    "registre": 8,
+    "seguent": 9
+  },
+  "total": 25
+}
