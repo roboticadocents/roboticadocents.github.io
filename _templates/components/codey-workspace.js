@@ -1,4 +1,5 @@
 'use strict';
+const { palette, legend, icon } = require('../../sim/codey-blocks');
 function CodeyWorkspace({ root }) {
   return `<section class="cr-workspace" id="panel-controls-codey-rocky" role="tabpanel" aria-labelledby="tab-codey-rocky" data-codey-workspace hidden>
     <div class="cr-stage-panel">
@@ -46,12 +47,11 @@ function CodeyWorkspace({ root }) {
         <option value="line">Segueix la vora de la línia</option><option value="color">Atura’t sobre el roig</option><option value="obstacle">Atura’t davant d’un obstacle</option><option value="while">Avança mentre no hi haja obstacles</option><option value="buttons">Botons i cares</option><option value="light">Si baixa la llum…</option><option value="route">Moviment amb temps</option><option value="blank">Programa nou</option>
       </select></label>
       <div class="cr-event-tabs" role="group" aria-label="Programa que vols editar">
-        <button type="button" data-cr-script="start" aria-pressed="true">Quan comença</button><button type="button" data-cr-script="A" aria-pressed="false">Quan prems A</button><button type="button" data-cr-script="B" aria-pressed="false">Quan prems B</button>
+        <button type="button" data-cr-script="start" aria-pressed="true">${icon('event')}<span>Quan comença</span></button><button type="button" data-cr-script="A" aria-pressed="false">${icon('event')}<span>Quan prems A</span></button><button type="button" data-cr-script="B" aria-pressed="false">${icon('event')}<span>Quan prems B</span></button>
       </div>
+      ${legend()}
       <div class="cr-palette" role="group" aria-label="Blocs disponibles">
-        <button type="button" data-cr-add="face">Mostra cara</button><button type="button" data-cr-add="text">Mostra text</button><button type="button" data-cr-add="rgb">Llum RGB</button>
-        <button type="button" data-cr-add="forward">Avança durant…</button><button type="button" data-cr-add="back">Enrere durant…</button><button type="button" data-cr-add="left">Gira esquerra</button><button type="button" data-cr-add="right">Gira dreta</button><button type="button" data-cr-add="drive">Avança contínuament</button><button type="button" data-cr-add="tracks">Potència de les erugues</button><button type="button" data-cr-add="reading">Mostra lectura</button><button type="button" data-cr-add="stop">Atura motors</button>
-        <button type="button" data-cr-add="wait">Espera</button><button type="button" data-cr-add="repeat">Repeteix</button><button type="button" data-cr-add="forever">Per sempre</button><button type="button" data-cr-add="if">Si / si no</button><button type="button" data-cr-add="while">Mentre</button>
+        ${palette()}
       </div>
       <p class="cr-hint">Tria «Afegir ací» dins d’una branca o bucle i després un bloc. Pots canviar l’ordre amb ↑ i ↓.</p>
       <div class="cr-program" data-cr-program></div>

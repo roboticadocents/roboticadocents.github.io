@@ -10,6 +10,8 @@ La paleta permet crear programes per a l’inici i els botons A/B. «Afegir ací
 
 El ritme de reproducció controla la velocitat de tota la simulació, no altera els llindars ni les lectures de la pista. El bloc actiu, la lectura i el resultat de l’última condició són visibles. Canviar de robot, ocultar la pàgina o editar el programa atura l’execució.
 
+La paleta i els blocs comparteixen icones i colors: blau per al moviment, violeta per a pantalla i llum, turquesa per als sensors i taronja per al control. Els esdeveniments es marquen en groc. El text continua identificant cada acció i el bloc en execució conserva el contorn blau.
+
 ## Sensors i calibratge
 
 - **Cap endavant:** IR reflectit en escala 0–100. La intensitat augmenta quan s’apropa una superfície; no són centímetres ni un percentatge de distància. El model inclou les vores de l’escenari.
@@ -38,6 +40,7 @@ Es desen automàticament al navegador el programa, la pista, les superfícies, e
 ## Fitxers i verificació
 
 - `sim/codey-engine.js`: sensors, pistes, col·lisions i execució independent del navegador.
+- `sim/codey-blocks.js`: definicions visuals compartides entre la paleta i el programa.
 - `sim/codey.js` i `sim/codey.css`: editor, visualització i projectes.
 - `_templates/components/codey-workspace.js`: estructura de la nova opció.
 - `_scripts/tests/test-codey-simulation.js`: sensors, bucles, erugues i seguiment de tres pistes, inclòs a `node _scripts/test.js`.

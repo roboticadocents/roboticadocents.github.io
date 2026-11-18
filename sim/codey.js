@@ -9,7 +9,8 @@
   const numeric = (v,min,max,fallback) => Number.isFinite(Number(v)) ? Math.max(min,Math.min(max,Number(v))) : fallback;
   const colorNames={black:'Negre',white:'Blanc',red:'Roig',green:'Verd',blue:'Blau',yellow:'Groc'};
   const sensorOptions=[['infrared','IR reflectit (0–100)'],['gray','Grisos (0–100)'],['color','Color de la superfície'],['light','Llum'],['sound','So']];
-  const names = { face:'Mostra cara',text:'Mostra text',rgb:'Llum RGB',reading:'Mostra lectura',tracks:'Potència de les erugues',forward:'Avança',back:'Enrere',left:'Gira esquerra',right:'Gira dreta',drive:'Avança contínuament',stop:'Atura motors',wait:'Espera',repeat:'Repeteix',forever:'Per sempre',while:'Mentre',if:'Si' };
+  const {blocks: blockStyles, icon: blockIcon} = window.CodeyBlocks;
+  const names=Object.fromEntries(Object.entries(blockStyles).map(([type,b])=>[type,b.label]));
   let counter=0;
   function block(type,extra={}) {
     return {id:`cr-${++counter}`,type,power:30,left:10,right:10,seconds:1,count:3,sensor:'infrared',compare:'>',threshold:50,value:type==='face'?'happy':type==='rgb'?'#22c55e':'Hola',pattern:blankPattern(),body:[],then:[],else:[],...extra};
@@ -91,8 +92,8 @@
   function renderList(list, depth = 0) {
     const key = `list-${listMap.size}`; listMap.set(key, list);
     return `<div class="cr-block-list${list === target ? ' is-target' : ''}">${list.map((b, i) => {
-      const category = ['if','while','repeat','forever','wait'].includes(b.type) ? 'control' : ['face','text','rgb','reading'].includes(b.type) ? 'display' : 'motion';
-      return `<div class="cr-block cr-block-${category}" data-cr-block="${b.id}"><div class="cr-block-heading"><strong>${names[b.type]}</strong><div class="cr-block-actions"><button type="button" data-cr-action="up" aria-label="Puja ${names[b.type]}"${i === 0 ? ' disabled' : ''}>↑</button><button type="button" data-cr-action="down" aria-label="Baixa ${names[b.type]}"${i === list.length - 1 ? ' disabled' : ''}>↓</button><button type="button" data-cr-action="delete" aria-label="Lleva ${names[b.type]}">×</button></div></div><div class="cr-block-fields">${blockFields(b)}</div>${b.type === 'if' ? `<p class="cr-branch-label">Aleshores</p>${renderList(b.then, depth+1)}<p class="cr-branch-label">Si no</p>${renderList(b.else, depth+1)}` : ['repeat','forever','while'].includes(b.type) ? renderList(b.body, depth+1) : ''}</div>`;
+      const category=blockStyles[b.type].category;
+      return `<div class="cr-block cr-block-${category} cr-category-${category}" data-cr-block="${b.id}"><div class="cr-block-heading"><strong class="cr-block-title">${blockIcon(b.type)}<span>${names[b.type]}</span></strong><div class="cr-block-actions"><button type="button" data-cr-action="up" aria-label="Puja ${names[b.type]}"${i === 0 ? ' disabled' : ''}>↑</button><button type="button" data-cr-action="down" aria-label="Baixa ${names[b.type]}"${i === list.length - 1 ? ' disabled' : ''}>↓</button><button type="button" data-cr-action="delete" aria-label="Lleva ${names[b.type]}">×</button></div></div><div class="cr-block-fields">${blockFields(b)}</div>${b.type === 'if' ? `<p class="cr-branch-label">Aleshores</p>${renderList(b.then, depth+1)}<p class="cr-branch-label">Si no</p>${renderList(b.else, depth+1)}` : ['repeat','forever','while'].includes(b.type) ? renderList(b.body, depth+1) : ''}</div>`;
     }).join('')}<button type="button" class="cr-insert" data-cr-target="${key}" aria-pressed="${list === target}">${list === target ? '✓ ' : '+ '}Afegir ací</button></div>`;
   }
   function renderProgram() {

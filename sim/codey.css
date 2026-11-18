@@ -91,3 +91,26 @@
 .cr-project-controls { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
 .cr-project-controls .sim-btn { font-size:12px; cursor:pointer; }
 .cr-world { touch-action:none; }
+/* El mateix codi visual a la paleta i al programa; icona i text acompanyen el color. */
+.cr-category-motion { --cr-color:#1e40af; --cr-border:#2563eb; --cr-bg:#eff6ff; --cr-hover:#dbeafe; }
+.cr-category-display { --cr-color:#5b21b6; --cr-border:#7c3aed; --cr-bg:#f5f3ff; --cr-hover:#ede9fe; }
+.cr-category-sensor { --cr-color:#155e75; --cr-border:#0891b2; --cr-bg:#ecfeff; --cr-hover:#cffafe; }
+.cr-category-control { --cr-color:#92400e; --cr-border:#d97706; --cr-bg:#fffbeb; --cr-hover:#fef3c7; }
+.cr-block-icon { display:inline-block; width:19px; height:19px; flex:none; vertical-align:middle; }
+.cr-palette button { display:inline-flex; align-items:center; gap:6px; background:var(--cr-bg); border-color:var(--cr-border); color:var(--cr-color); font-weight:600; padding:6px 9px; }
+.cr-palette button:hover { background:var(--cr-hover); }
+.cr-palette-legend { display:flex; flex-wrap:wrap; gap:6px 14px; margin:12px 0 8px; }
+.cr-palette-legend > span { display:inline-flex; align-items:center; gap:5px; color:var(--cr-color); font-size:11px; font-weight:600; }
+.cr-category-dot { width:8px; height:8px; background:var(--cr-border); border-radius:50%; }
+.cr-block { border-color:var(--cr-border); border-left-color:var(--cr-border); background:var(--cr-bg); }
+.cr-block-title { display:inline-flex; align-items:center; gap:7px; color:var(--cr-color); }
+.cr-block-title .cr-block-icon { width:21px; height:21px; }
+.cr-event-tabs button { display:inline-flex; align-items:center; justify-content:center; gap:6px; color:#854d0e; background:#fefce8; border-color:#eab308; }
+.cr-event-tabs button[aria-pressed="true"] { background:#fef08a; border-color:#a16207; color:#713f12; box-shadow:inset 0 -2px #a16207; }
+.cr-event-tabs .cr-block-icon { width:16px; height:16px; }
+.cr-block.is-executing { outline:3px solid #2563eb; outline-offset:2px; }
+@media (max-width:480px) {
+  .cr-palette button { font-size:11px; padding:7px; }
+  .cr-block-icon { width:17px; height:17px; }
+  .cr-event-tabs button { gap:4px; padding-inline:5px; }
+}
