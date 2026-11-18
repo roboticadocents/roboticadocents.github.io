@@ -59,9 +59,10 @@
   function project() {return {type:'robotica-codey',version:2,program,environment:engine.environment,startPose,calibration};}
   function save() {try {localStorage.setItem('robotica-codey-v2',JSON.stringify(project()));}catch(_){}}
   function syncSceneControls() {
-    $('[data-cr-orientation]').value=engine.environment.orientation;
+    $('[data-cr-orientation]').value=engine.environment.orientation;lineWidth=engine.environment.lines[0]?.width||lineWidth;$('[data-cr-line-width]').value=lineWidth;
     for(const sensor of ['light','sound']){$(`[data-cr-sensor="${sensor}"]`).value=engine.environment[sensor];$(`[data-cr-${sensor}-value]`).textContent=engine.environment[sensor];}
     for(const key of ['background','line'])$(`[data-cr-sample-${key}]`).textContent=calibration[key]??'—';
+    $('[data-cr-calibration-status]').textContent=calibration.background!==null&&calibration.line!==null?`Fons: ${calibration.background} · Línia: ${calibration.line}.`:'Encara no hi ha dues mesures.';
   }
   function loadTrack(name) {
     halt();engine.environment.lines=name==='none'?[]:[trackPreset(name,lineWidth)];engine.environment.patches=[];engine.environment.obstacles=[];engine.environment.orientation='down';
@@ -134,10 +135,41 @@
     if (button.hasAttribute('data-cr-event')) engine.trigger(button.dataset.crEvent);
     if (button.hasAttribute('data-cr-reset')) { engine.reset();engine.pose={...startPose};engine.trace='Robot retornat a la posició inicial; es conserva la pista.'; }
     if (button.hasAttribute('data-cr-rotate')) { halt();startPose.angle=(startPose.angle+90)%360;engine.pose={...startPose};save(); }
+    if(button.hasAttribute('data-cr-clear-lines')){halt();engine.environment.lines=[];engine.environment.patches=[];$('[data-cr-track]').value='none';save();}
+    if(button.hasAttribute('data-cr-sample')) {
+      const value=engine.sensor('gray');
+      if(value===null){$('[data-cr-calibration-status]').textContent='Orienta primer el sensor cap al terra.';return;}
+      calibration[button.dataset.crSample]=value;syncSceneControls();save();
+      $('[data-cr-calibration-status]').textContent=`Fons: ${calibration.background??'—'} · Línia: ${calibration.line??'—'}.`;
+    }
+    if(button.hasAttribute('data-cr-apply-threshold')) {
+      const {background,line}=calibration;
+      if(background===null||line===null||Math.abs(background-line)<10){$('[data-cr-calibration-status]').textContent='Calen dues lectures amb prou contrast. Mesura el fons i el centre de la línia.';return;}
+      halt();const threshold=Math.round((background+line)/2);let total=0;
+      function apply(list){for(const b of list){if(['if','while'].includes(b.type)&&b.sensor==='gray'){b.threshold=threshold;total++;}apply(b.body);apply(b.then);apply(b.else);}}
+      for(const list of Object.values(program))apply(list);
+      $('[data-cr-calibration-status]').textContent=`Llindar ${threshold} aplicat a ${total} condicions de grisos. ${line<background?'La línia és més fosca que el fons.':'La línia és més clara: revisa el sentit de la comparació.'}`;
+      save();renderProgram();
+    }
+    if(button.hasAttribute('data-cr-export')) {
+      const url=URL.createObjectURL(new Blob([JSON.stringify(project(),null,2)],{type:'application/json'}));
+      const a=document.createElement('a');a.href=url;a.download='projecte-codey-rocky.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    }
     if (button.hasAttribute('data-cr-tool')) { tool=button.dataset.crTool;root.querySelectorAll('[data-cr-tool]').forEach(b=>b.setAttribute('aria-pressed',String(b===button))); }
   });
-  root.addEventListener('change', event => {
+  root.addEventListener('change', async event => {
     const input = event.target;
+    if(input.hasAttribute('data-cr-import')) {
+      const file=input.files[0];if(!file)return;
+      try{
+        if(file.size>1500000)throw new Error('Fitxer massa gran.');const data=JSON.parse(await file.text());
+        if(data.type!=='robotica-codey'||data.version!==2)throw new Error('No és un projecte de Codey Rocky compatible.');
+        const nextProgram=cleanProgram(data.program);cleanEnvironment(data.environment);
+        halt();program=nextProgram;engine.program=program;restoreScene(data);engine.reset();engine.pose={...startPose};selectedEvent='start';target=program.start;syncSceneControls();save();renderProgram();
+        engine.trace='Projecte obert: programa i escenari restaurats.';
+      }catch(error){engine.trace='No s’ha pogut obrir el projecte: '+error.message;}
+      input.value='';return;
+    }
     if(input.hasAttribute('data-cr-example')) {
       halt();program=example(input.value);engine.program=program;selectedEvent='start';target=program.start;
       if(input.value==='line')loadTrack('circuit');
@@ -147,7 +179,7 @@
     }
     if (input.hasAttribute('data-cr-field')) {
       const entry=find(input.closest('[data-cr-block]').dataset.crBlock);halt();
-      entry.block[input.dataset.crField]=input.type==='number'?Math.max(Number(input.min),Math.min(Number(input.max),Number(input.value)||Number(input.min))):input.value;
+      entry.block[input.dataset.crField]=input.type==='number'?numeric(input.value,Number(input.min),Number(input.max),Number(input.min)):input.value;
       if(input.dataset.crField==='sensor'&&input.value==='color'){entry.block.compare='=';entry.block.value='red';}
       else if(input.dataset.crField==='sensor'&&!['<','>','<=','>=','=','!='].includes(entry.block.compare))entry.block.compare='>';
       save();renderProgram();
@@ -162,12 +194,25 @@
     $(`[data-cr-${input.dataset.crSensor}-value]`).textContent=input.value;save();
   }));
   function editWorld(x,y) {
-    x=Math.max(25,Math.min(WIDTH-25,x));y=Math.max(25,Math.min(HEIGHT-25,y));
-    if(tool==='robot') { halt();startPose={x,y,angle:startPose.angle};engine.pose={...startPose}; }
-    else if(tool==='remove') engine.environment.obstacles=engine.environment.obstacles.filter(b=>!(x>=b.x-10&&x<=b.x+b.w+10&&y>=b.y-10&&y<=b.y+b.h+10));
-    else if(engine.environment.obstacles.length<30) engine.environment.obstacles.push({x:Math.min(WIDTH-60,x-25),y:Math.min(HEIGHT-60,y-25),w:50,h:50});
+    x=numeric(x,25,WIDTH-25,25);y=numeric(y,25,HEIGHT-25,25);
+    if(tool==='robot') {
+      halt();if(engine.environment.obstacles.some(b=>x>=b.x-20&&x<=b.x+b.w+20&&y>=b.y-20&&y<=b.y+b.h+20)){engine.trace='La posició inicial ha de quedar fora dels obstacles.';return;}
+      startPose={x,y,angle:startPose.angle};engine.pose={...startPose};
+    }else if(tool==='remove') {
+      engine.environment.obstacles=engine.environment.obstacles.filter(b=>!(x>=b.x-10&&x<=b.x+b.w+10&&y>=b.y-10&&y<=b.y+b.h+10));
+      engine.environment.patches=engine.environment.patches.filter(b=>!(x>=b.x&&x<=b.x+b.w&&y>=b.y&&y<=b.y+b.h));
+      engine.environment.lines=engine.environment.lines.filter(l=>!(l.points.length===1&&Math.hypot(x-l.points[0].x,y-l.points[0].y)<l.width/2+5)&&!l.points.some((p,i)=>i>0&&segmentDistance(x,y,l.points[i-1],p)<l.width/2+5));
+    }else if(tool==='line'){
+      halt();if(engine.environment.lines.length<80){drawing={points:[{x,y}],width:lineWidth,color:surfaceColor};engine.environment.lines.push(drawing);$('[data-cr-track]').value='none';}
+    }else if(tool==='surface') {
+      halt();if(engine.environment.patches.length<60)engine.environment.patches.push({x:Math.min(WIDTH-60,x-30),y:Math.min(HEIGHT-60,y-30),w:60,h:60,color:surfaceColor});
+    }else if(engine.environment.obstacles.length<30)engine.environment.obstacles.push({x:Math.min(WIDTH-60,x-25),y:Math.min(HEIGHT-60,y-25),w:50,h:50});
+    save();
   }
-  world.addEventListener('pointerdown',e=>{keyboardCursor=false;const r=world.getBoundingClientRect();editWorld((e.clientX-r.left)*WIDTH/r.width,(e.clientY-r.top)*HEIGHT/r.height);});
+  function worldPoint(e){const r=world.getBoundingClientRect();return {x:numeric((e.clientX-r.left)*WIDTH/r.width,0,WIDTH,0),y:numeric((e.clientY-r.top)*HEIGHT/r.height,0,HEIGHT,0)};}
+  world.addEventListener('pointerdown',e=>{keyboardCursor=false;const p=worldPoint(e);editWorld(p.x,p.y);if(tool==='line')world.setPointerCapture(e.pointerId);});
+  world.addEventListener('pointermove',e=>{if(!drawing||!world.hasPointerCapture(e.pointerId))return;const p=worldPoint(e),last=drawing.points.at(-1);if(drawing.points.length<1200&&Math.hypot(p.x-last.x,p.y-last.y)>2)drawing.points.push(p);});
+  const endDrawing=()=>{drawing=null;save();};world.addEventListener('pointerup',endDrawing);world.addEventListener('pointercancel',endDrawing);
   world.addEventListener('keydown',e=>{
     const dirs={ArrowUp:[0,-20],ArrowDown:[0,20],ArrowLeft:[-20,0],ArrowRight:[20,0]};
     if(dirs[e.key]) {e.preventDefault();keyboardCursor=true;cursor.x=Math.max(25,Math.min(WIDTH-25,cursor.x+dirs[e.key][0]));cursor.y=Math.max(25,Math.min(HEIGHT-25,cursor.y+dirs[e.key][1]));}
@@ -182,15 +227,22 @@
   };
   let previousTrace='', previousActive=null;
   function draw(now) {
-    ctx.fillStyle='#f8fafc';ctx.fillRect(0,0,WIDTH,HEIGHT);ctx.strokeStyle='#e2e8f0';ctx.lineWidth=1;
+    ctx.fillStyle='#ffffff';ctx.fillRect(0,0,WIDTH,HEIGHT);ctx.strokeStyle='#e2e8f0';ctx.lineWidth=1;
     for(let x=0;x<WIDTH;x+=50){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,HEIGHT);ctx.stroke();}
     for(let y=0;y<HEIGHT;y+=50){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(WIDTH,y);ctx.stroke();}
+    for(const b of engine.environment.patches){ctx.fillStyle=COLORS[b.color]||COLORS.white;ctx.fillRect(b.x,b.y,b.w,b.h);}
+    for(const line of engine.environment.lines){
+      if(!line.points.length)continue;ctx.strokeStyle=COLORS[line.color]||COLORS.black;ctx.fillStyle=ctx.strokeStyle;ctx.lineWidth=line.width;ctx.lineCap='round';ctx.lineJoin='round';ctx.beginPath();ctx.moveTo(line.points[0].x,line.points[0].y);for(const p of line.points.slice(1))ctx.lineTo(p.x,p.y);ctx.stroke();
+      if(line.points.length===1){ctx.beginPath();ctx.arc(line.points[0].x,line.points[0].y,line.width/2,0,Math.PI*2);ctx.fill();}
+    }
+    ctx.lineWidth=1;
     for(const b of engine.environment.obstacles){ctx.fillStyle='#cbd5e1';ctx.fillRect(b.x,b.y,b.w,b.h);ctx.strokeStyle='#64748b';ctx.strokeRect(b.x,b.y,b.w,b.h);}
     const p=engine.pose;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.angle*Math.PI/180);
-    ctx.fillStyle=engine.obstacle()?'#fca5a566':'#38bdf833';ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(100,-22);ctx.lineTo(100,22);ctx.closePath();ctx.fill();
+    if(engine.environment.orientation==='front'){ctx.fillStyle=engine.sensor('infrared')>60?'#fca5a566':'#38bdf833';ctx.beginPath();ctx.moveTo(24,0);ctx.lineTo(224,-28);ctx.lineTo(224,28);ctx.closePath();ctx.fill();}
     if(sprite.complete&&sprite.naturalWidth){ctx.rotate(Math.PI/2);ctx.drawImage(sprite,-27,-27,54,54);ctx.rotate(-Math.PI/2);}
     else {ctx.fillStyle='#2563eb';ctx.beginPath();ctx.arc(0,0,20,0,Math.PI*2);ctx.fill();}
     ctx.fillStyle='#1d4ed8';ctx.beginPath();ctx.moveTo(34,0);ctx.lineTo(24,-7);ctx.lineTo(24,7);ctx.closePath();ctx.fill();ctx.restore();
+    if(engine.environment.orientation==='down'){const point=engine.sensorPoint();ctx.strokeStyle='#0284c7';ctx.fillStyle='#38bdf8';ctx.lineWidth=2;ctx.beginPath();ctx.arc(point.x,point.y,5,0,Math.PI*2);ctx.fill();ctx.stroke();}
     if(keyboardCursor){ctx.strokeStyle='#2563eb';ctx.lineWidth=3;ctx.strokeRect(cursor.x-15,cursor.y-15,30,30);}
     let pattern=engine.output.face==='custom'&&engine.output.pattern?engine.output.pattern:faces[engine.output.face]||faces.happy;
     if(engine.output.text){textCtx.clearRect(0,0,16,8);textCtx.fillStyle='white';textCtx.font='8px monospace';const length=engine.output.text.length*5;const offset=16-(Math.floor(now/140)%(length+20));textCtx.fillText(engine.output.text,offset,7);const pixels=textCtx.getImageData(0,0,16,8).data;pattern=Array.from({length:8},(_,y)=>Array.from({length:16},(_,x)=>pixels[(y*16+x)*4+3]>80?'1':'0').join(''));}
@@ -198,17 +250,18 @@
     for(let y=0;y<8;y++)for(let x=0;x<16;x++){ledCtx.fillStyle=pattern[y][x]==='1'?'#38bdf8':'#1e293b';ledCtx.beginPath();ledCtx.arc(x*20+10,y*20+10,6,0,Math.PI*2);ledCtx.fill();}
     led.setAttribute('aria-label',engine.output.text?'Pantalla: '+engine.output.text:'Pantalla LED: '+({happy:'cara feliç',sad:'cara trista',surprise:'cara de sorpresa',blank:'buida',custom:'cara personalitzada'}[engine.output.face]||''));
     const rgb=$('[data-cr-rgb]');rgb.style.backgroundColor=engine.output.rgb;rgb.setAttribute('aria-label','Indicador RGB: '+({'#22c55e':'verd','#ef4444':'roig','#3b82f6':'blau','#facc15':'groc','#000000':'apagat'}[engine.output.rgb]||engine.output.rgb));
-    $('[data-cr-obstacle]').textContent=engine.obstacle()?'SÍ':'NO';
+    $('[data-cr-ir]').textContent=engine.sensor('infrared')??'—';$('[data-cr-gray]').textContent=engine.sensor('gray')??'—';$('[data-cr-color]').textContent=colorNames[engine.sensor('color')]??'—';
+    $('[data-cr-condition]').textContent=engine.lastCondition||'La lectura i el resultat de la condició apareixeran ací.';
     if(previousTrace!==engine.trace){$('[data-cr-status]').textContent=engine.trace;previousTrace=engine.trace;}
     if(previousActive!==engine.active){root.querySelectorAll('[data-cr-block]').forEach(b=>b.classList.toggle('is-executing',b.dataset.crBlock===engine.active));previousActive=engine.active;}
     $('[data-cr-run]').setAttribute('aria-pressed',String(engine.running));
   }
   document.addEventListener('simrobotchange',e=>{if(e.detail.robot!=='codey-rocky'){halt();engine.trace='Simulació aturada en canviar de robot.';}});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)halt();});
-  renderProgram();
+  syncSceneControls();renderProgram();
   let last=performance.now();
   function frame(now){
-    if(!root.hidden){const speed=Number(document.querySelector('[data-speed-select]').value)||520;engine.tick(Math.min((now-last)/1000,.1),speed/1000);draw(now);}
+    if(!root.hidden){const speed=Number(document.querySelector('[data-speed-select]').value)||520;engine.tick(Math.min((now-last)/1000,.1)*(520/speed),.08);draw(now);}
     last=now;requestAnimationFrame(frame);
   }
   requestAnimationFrame(frame);

@@ -36,7 +36,7 @@
       this.tasks = []; this.running = false; this.motor = { speed: 0, turn: 0 };
       this.clock = 0; this.budget = 0; this.accumulator = 0; this.active = null;
       this.trace = 'Preparat. Executa el programa o prem A o B.';
-      this.collision = false; this.nextTask = 0;
+      this.collision = false; this.nextTask = 0; this.lastCondition='';
     }
     stop() { this.running = false; this.tasks = []; this.motor = { speed: 0, turn: 0 }; }
     obstacle() {
@@ -100,7 +100,9 @@
     }
     conditionTrace(block,value,result) {
       const text=value===null?'no disponible: canvia l’orientació del sensor':typeof value==='boolean'?(value?'sí':'no'):String(value);
-      return `${SENSOR_NAMES[block.sensor]||block.sensor}: ${text} → condició ${result?'certa':'falsa'}`;
+      const comparison=block.sensor==='color'?` ${block.compare} ${block.value}`:typeof value==='number'?` ${block.compare} ${block.threshold}`:'';
+      this.lastCondition=`${SENSOR_NAMES[block.sensor]||block.sensor}: ${text}${comparison} → condició ${result?'certa':'falsa'}`;
+      return this.lastCondition;
     }
     trigger(event, run = true) {
       if (this.tasks.some(t => t.event === event)) return;

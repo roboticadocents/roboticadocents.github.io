@@ -38,7 +38,6 @@ function CodeyWorkspace({ root }) {
         <div class="cr-track-controls"><button type="button" class="sim-btn sim-btn-outline" data-cr-sample="background">Mesura el fons</button><output data-cr-sample-background>—</output><button type="button" class="sim-btn sim-btn-outline" data-cr-sample="line">Mesura la línia</button><output data-cr-sample-line>—</output><button type="button" class="sim-btn sim-btn-secondary" data-cr-apply-threshold>Aplica el llindar mitjà</button></div>
         <p data-cr-calibration-status role="status">Encara no hi ha dues mesures.</p>
       </details>
-      <p class="cr-condition-reading" data-cr-condition>La lectura i el resultat de la condició apareixeran ací.</p>
       <p class="cr-model-note">Model didàctic simplificat: IR i grisos són lectures de 0 a 100, no centímetres ni un percentatge de distància. El punt blau indica l’únic sensor de superfície; el feix frontal inclou les vores. Cal calibrar lectures, velocitats i girs amb el robot físic.</p>
     </div>
     <div class="cr-program-panel">
@@ -57,6 +56,7 @@ function CodeyWorkspace({ root }) {
       <p class="cr-hint">Tria «Afegir ací» dins d’una branca o bucle i després un bloc. Pots canviar l’ordre amb ↑ i ↓.</p>
       <div class="cr-program" data-cr-program></div>
       <div class="cr-run-controls"><button type="button" class="sim-btn sim-btn-primary" data-cr-run>▶ Executa</button><button type="button" class="sim-btn sim-btn-secondary" data-cr-step>Pas a pas</button><button type="button" class="sim-btn sim-btn-outline" data-cr-stop>■ Atura</button></div>
+      <p class="cr-condition-reading" data-cr-condition>La lectura i el resultat de la condició apareixeran ací.</p>
       <p class="cr-status" data-cr-status role="status" aria-live="polite">Preparat.</p>
       <p class="cr-hint">Selecció de blocs per practicar la lògica de mBlock. El projecte, amb el programa i l’escenari, es desa en aquest navegador.</p>
       <div class="cr-project-controls"><button type="button" class="sim-btn sim-btn-outline" data-cr-export>Descarrega el projecte</button><label class="sim-btn sim-btn-outline">Obri un projecte<input class="visually-hidden" type="file" accept=".json,application/json" data-cr-import></label></div>

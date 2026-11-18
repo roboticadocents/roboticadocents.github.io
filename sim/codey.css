@@ -79,3 +79,15 @@
 .cr-pixel-editor { display:grid; grid-template-columns:repeat(16,minmax(0,1fr)); gap:2px; flex-basis:100%; max-width:320px; padding:8px; background:#ebf5fd; border-radius:5px; }
 .cr-pixel-editor button { width:100%; min-width:0; padding:0; aspect-ratio:1; border:1px solid #94a3b8; border-radius:2px; background:white; cursor:pointer; }
 .cr-pixel-editor button.is-on { background:#2563eb; border-color:#1d4ed8; }
+.cr-track-settings,.cr-calibration { margin:10px 0; padding:10px; border:1px solid #dbe5ef; border-radius:8px; font-size:12px; }
+.cr-track-settings summary,.cr-calibration summary { cursor:pointer; font-weight:700; }
+.cr-track-controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:10px; }
+.cr-track-controls label { display:flex; flex-wrap:wrap; gap:5px; align-items:center; }
+.cr-track-controls input,.cr-track-controls select { min-width:0; max-width:100%; border:1px solid #94a3b8; border-radius:4px; padding:5px; background:white; color:#0f172a; font:400 12px var(--font-sans); }
+.cr-track-controls input { width:60px; }
+.cr-track-controls .sim-btn { font-size:11px; padding:7px; }
+.cr-calibration p { font-size:12px; line-height:1.6; }
+.cr-condition-reading { padding:10px; background:#eff6ff; font-size:12px; line-height:1.6; border-radius:6px; }
+.cr-project-controls { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+.cr-project-controls .sim-btn { font-size:12px; cursor:pointer; }
+.cr-world { touch-action:none; }
