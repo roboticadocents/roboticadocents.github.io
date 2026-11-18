@@ -1566,7 +1566,7 @@
   }
 
   function switchRobot(robotSlug, pushUrl = true) {
-    if (!['tale-bot', 'coding-set', 'codey-rocky'].includes(robotSlug)) robotSlug = 'tale-bot';
+    if (!['tale-bot', 'coding-set', 'codey-rocky', 'spike'].includes(robotSlug)) robotSlug = 'tale-bot';
     if (state.isRunning) stopExecution();
     state.robot = robotSlug;
 
@@ -1597,9 +1597,11 @@
 
     const codeyWorkspace = document.querySelector('[data-codey-workspace]');
     if (codeyWorkspace) codeyWorkspace.hidden = robotSlug !== 'codey-rocky';
+    const spikeWorkspace = document.querySelector('[data-spike-workspace]');
+    if (spikeWorkspace) spikeWorkspace.hidden = robotSlug !== 'spike';
     document.dispatchEvent(new CustomEvent('simrobotchange', { detail: { robot: robotSlug } }));
     updateAccessoryButtons();
-    if (robotSlug !== 'codey-rocky') resetRobotToStart(true);
+    if (!['codey-rocky', 'spike'].includes(robotSlug)) resetRobotToStart(true);
 
     if (pushUrl && window.history && window.history.replaceState) {
       const url = new URL(window.location.href);
@@ -1779,9 +1781,9 @@
   setupSpatialNavigation(gridCellsEl);
   setupSpatialNavigation(csMainSlotsEl);
 
-  // Inicialització segons ?robot=tale-bot | coding-set
+  // Inicialització segons el robot indicat a la URL.
   renderBoardHeaders();
   const initialParams = new URLSearchParams(window.location.search);
-  const initialRobot = ['coding-set', 'codey-rocky'].includes(initialParams.get('robot')) ? initialParams.get('robot') : 'tale-bot';
+  const initialRobot = ['coding-set', 'codey-rocky', 'spike'].includes(initialParams.get('robot')) ? initialParams.get('robot') : 'tale-bot';
   switchRobot(initialRobot, false);
 })();

@@ -2,13 +2,14 @@
 
 const { escapeHTML, escapeAttr, cleanRoot } = require('../layout/utils');
 const { CodeyWorkspace } = require('../components/codey-workspace');
+const { SpikeWorkspace } = require('../components/spike-workspace');
 const { getSimSvgs } = require('../../_scripts/lib/tangible-blocks');
 
 function SimPage({ root = '../' } = {}) {
   const r = cleanRoot(root);
   const svgs = getSimSvgs();
-  const title = 'Simulador · Tale-Bot, Coding Set i Codey Rocky | Robòtica²⁰⁰';
-  const description = 'Aplicació de simulació per a Tale-Bot Pro, Matatalab Coding Set i Codey Rocky.';
+  const title = 'Simulador · Tale-Bot, Coding Set, Codey Rocky i SPIKE Prime | Robòtica²⁰⁰';
+  const description = 'Aplicació de simulació per a Tale-Bot Pro, Matatalab Coding Set, Codey Rocky i SPIKE Prime.';
 
   return `<!DOCTYPE html>
 <html lang="ca">
@@ -23,11 +24,14 @@ function SimPage({ root = '../' } = {}) {
   <link rel="stylesheet" href="${r}_css/styles.css?v=10">
   <link rel="stylesheet" href="${r}sim/sim.css?v=5">
   <link rel="icon" type="image/svg+xml" href="${r}_assets/icons/logo.svg">
-  <script defer src="${r}sim/sim.js?v=5"></script>
+  <script defer src="${r}sim/sim.js?v=6"></script>
   <link rel="stylesheet" href="${r}sim/codey.css?v=7">
   <script defer src="${r}sim/codey-engine.js?v=3"></script>
   <script defer src="${r}sim/codey-blocks.js?v=2"></script>
   <script defer src="${r}sim/codey.js?v=6"></script>
+  <link rel="stylesheet" href="${r}sim/spike.css?v=1">
+  <script defer src="${r}sim/spike-engine.js?v=1"></script>
+  <script defer src="${r}sim/spike.js?v=1"></script>
 </head>
 <body class="sim-app-body">
   <header class="sim-topbar" data-sim-hero data-active-robot="tale-bot">
@@ -69,6 +73,7 @@ function SimPage({ root = '../' } = {}) {
       <button type="button" role="tab" id="tab-codey-rocky" class="sim-robot-tab" aria-selected="false" aria-controls="panel-controls-codey-rocky" tabindex="-1" data-robot-tab="codey-rocky">
         <img src="${r}_assets/icons/codey-rocky.webp" alt="" class="sim-robot-tab-icon" width="28" height="28"><span class="sim-robot-tab-name">Codey Rocky</span>
       </button>
+      <button type="button" role="tab" id="tab-spike" class="sim-robot-tab" aria-selected="false" aria-controls="panel-controls-spike" tabindex="-1" data-robot-tab="spike"><img src="${r}_assets/icons/spike.webp" alt="" class="sim-robot-tab-icon" width="28" height="28"><span class="sim-robot-tab-name">SPIKE Prime</span></button>
     </div>
 
     <div class="sim-topbar-end">
@@ -88,7 +93,7 @@ function SimPage({ root = '../' } = {}) {
   </header>
 
   <main id="page-content" class="sim-workspace" data-sim-workspace data-robot="tale-bot">
-    <h1 class="visually-hidden">Simulador de Tale-Bot Pro, Coding Set i Codey Rocky</h1>
+    <h1 class="visually-hidden">Simulador de Tale-Bot Pro, Coding Set, Codey Rocky i SPIKE Prime</h1>
 
     <!-- PANELL ESQUERRE: BARRA D'EINES VERTICAL ESQUERRA + TAPÍS 6x6 -->
     <div class="sim-stage-pane">
@@ -513,6 +518,7 @@ function SimPage({ root = '../' } = {}) {
 
     </div>
     ${CodeyWorkspace({ root: r })}
+    ${SpikeWorkspace()}
   </main>
 
   <!-- Diàleg emergent (Popover Top-Layer) per seleccionar qualsevol emoji per al tauler de Tale-Bot -->
