@@ -1,17 +1,17 @@
 (function(){
   'use strict';
   const root=document.querySelector('[data-spike-workspace]');if(!root||!window.SpikeSimulation)return;
-  const {Engine,definitions,block,example,cleanProgram}=window.SpikeSimulation;
+  const {Engine,definitions,examples,block,example,cleanProgram}=window.SpikeSimulation;
   const {icon}=window.CodeyBlocks;
   const $=selector=>root.querySelector(selector);
   const storageKey='robotica-spike-prime-v1';
-  let program=example('automatic'),stored=null;
+  let exampleKey='sequence',program=example(exampleKey),stored=null;
   try{stored=JSON.parse(localStorage.getItem(storageKey));if(stored?.type==='robotica-spike-prime'&&stored.version===1)program=cleanProgram(stored.program);else stored=null;}catch(_){stored=null;}
   const engine=new Engine(program);
   function restoreEnvironment(data){engine.environment={present:data?.present===true,distance:Math.max(5,Math.min(200,Number(data?.distance)||80))};}
-  if(stored){restoreEnvironment(stored.environment);$('[data-sp-example]').value='custom';}
+  if(stored){restoreEnvironment(stored.environment);exampleKey=Object.hasOwn(examples,stored.exampleKey)?stored.exampleKey:'custom';$('[data-sp-example]').value=exampleKey;}
   let target=program,targetIndex=null,movingId=null,lists=new Map();
-  function project(){return {type:'robotica-spike-prime',version:1,model:'barrier',program,environment:{...engine.environment}};}
+  function project(){return {type:'robotica-spike-prime',version:1,model:'barrier',exampleKey,program,environment:{...engine.environment}};}
   function save(){try{localStorage.setItem(storageKey,JSON.stringify(project()));}catch(_){}}
   function halt(){engine.stop();engine.started=false;engine.active=null;}
   function syncEnvironment(){$('[data-sp-present]').checked=engine.environment.present;$('[data-sp-distance]').value=engine.environment.distance;$('[data-sp-distance-label]').textContent=engine.environment.distance+' cm';}
@@ -34,8 +34,18 @@
       const d=definitions[b.type];return `${insertion(index)}<div class="cr-block cr-category-${d.category}${movingId===b.id?' is-moving':''}" data-sp-block="${b.id}"><div class="cr-block-heading"><strong class="cr-block-title">${icon(d.icon)}<span>${d.label}</span></strong><details class="cr-block-menu" name="sp-block-actions"><summary aria-label="Opcions de ${d.label}" title="Opcions del bloc">⋯</summary><div class="cr-block-actions"><button type="button" data-sp-action="before">Afig abans</button><button type="button" data-sp-action="after">Afig després</button><button type="button" data-sp-action="duplicate">Duplica</button><button type="button" data-sp-action="move">Mou…</button><button type="button" data-sp-action="up"${index===0?' disabled':''}>↑ Puja</button><button type="button" data-sp-action="down"${index===list.length-1?' disabled':''}>↓ Baixa</button><button type="button" data-sp-action="delete">Lleva</button></div></details></div><div class="cr-block-fields">${fields(b)}</div>${b.type==='if'?`<p class="cr-branch-label">Aleshores</p>${renderList(b.then)}<p class="cr-branch-label">Si no</p>${renderList(b.else)}`:['while','repeat','forever'].includes(b.type)?renderList(b.body):''}</div>`;
     }).join('')}${insertion(list.length)}</div>`;
   }
+  function syncActivity(){
+    const item=examples[exampleKey];
+    const body=$('.sp-activity-body');if(body.dataset.source!==exampleKey){body.scrollTop=0;body.dataset.source=exampleKey;}
+    $('[data-sp-sda-title]').textContent=item?.title||'Barrera · projecte propi';
+    $('[data-sp-sda-lesson]').textContent=item?.lesson||'Tria un exemple per vincular el programa a una SdA.';
+    $('[data-sp-task]').textContent=item?.task||'Defineix una acció, prediu el resultat i comprova’l amb el mecanisme.';
+    $('[data-sp-adaptation]').textContent=item?.adaptation||'Muntatge de referència propi amb motor A i sensor D.';
+    const link=$('[data-sp-sda-link]');link.hidden=!item;
+    if(item)link.href=`../situacio/${item.sda}/`;
+  }
   function render(){
-    lists=new Map();$('[data-sp-program]').innerHTML=renderList(program);
+    syncActivity();lists=new Map();$('[data-sp-program]').innerHTML=renderList(program);
     $('[data-sp-cancel-move]').hidden=!movingId;
     $('[data-sp-edit-status]').textContent=movingId?'Tria «Mou ací» a la posició de destí.':'';
     root.querySelectorAll('[data-sp-add]').forEach(button=>button.disabled=!!movingId);
@@ -71,7 +81,7 @@
     if(button.hasAttribute('data-sp-step'))engine.step();
     if(button.hasAttribute('data-sp-stop')){halt();engine.trace='Programa aturat. El motor conserva l’angle.';}
     if(button.hasAttribute('data-sp-reset')){engine.reset();engine.trace='Barrera a 0°; es conserva el programa.';}
-    if(button.hasAttribute('data-sp-clear')){halt();program=[];engine.program=program;target=program;targetIndex=null;movingId=null;save();render();}
+    if(button.hasAttribute('data-sp-clear')){halt();exampleKey='blank';$('[data-sp-example]').value='blank';program=[];engine.program=program;target=program;targetIndex=null;movingId=null;save();render();}
     if(button.hasAttribute('data-sp-export')){const url=URL.createObjectURL(new Blob([JSON.stringify(project(),null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='projecte-spike-barrera.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
   });
   root.addEventListener('keydown',event=>{if(event.key!=='Escape')return;const menu=event.target.closest('.cr-block-menu[open]');if(menu){menu.open=false;menu.querySelector('summary').focus();}if(movingId){event.preventDefault();cancelMove();}});
@@ -82,10 +92,10 @@
     const input=event.target;
     if(input.hasAttribute('data-sp-present')){engine.environment.present=input.checked;save();}
     if(input.hasAttribute('data-sp-field')){const b=find(input.closest('[data-sp-block]').dataset.spBlock).block;halt();b[input.dataset.spField]=input.type==='number'?Math.max(Number(input.min),Math.min(Number(input.max),Number(input.value)||Number(input.min))):input.value;if(input.type==='number')input.value=b[input.dataset.spField];save();}
-    if(input.hasAttribute('data-sp-example')){halt();program=example(input.value);engine.program=program;engine.reset();target=program;targetIndex=null;movingId=null;save();render();}
+    if(input.hasAttribute('data-sp-example')){halt();exampleKey=input.value;program=example(input.value);engine.program=program;engine.reset();target=program;targetIndex=null;movingId=null;save();render();}
     if(input.hasAttribute('data-sp-import')){
       const file=input.files[0];if(!file)return;
-      try{if(file.size>1500000)throw new Error('Fitxer massa gran.');const data=JSON.parse(await file.text());if(data.type!=='robotica-spike-prime'||data.version!==1||data.model!=='barrier')throw new Error('No és un projecte de la barrera SPIKE Prime.');const next=cleanProgram(data.program);halt();program=next;engine.program=program;restoreEnvironment(data.environment);engine.reset();target=program;targetIndex=null;movingId=null;syncEnvironment();save();render();$('[data-sp-example]').value='custom';engine.trace='Projecte obert.';}catch(error){engine.trace=error instanceof SyntaxError?'El fitxer no conté un JSON vàlid.':'No s’ha pogut obrir: '+error.message;}input.value='';
+      try{if(file.size>1500000)throw new Error('Fitxer massa gran.');const data=JSON.parse(await file.text());if(data.type!=='robotica-spike-prime'||data.version!==1||data.model!=='barrier')throw new Error('No és un projecte de la barrera SPIKE Prime.');const next=cleanProgram(data.program);halt();exampleKey=Object.hasOwn(examples,data.exampleKey)?data.exampleKey:'custom';program=next;engine.program=program;restoreEnvironment(data.environment);engine.reset();target=program;targetIndex=null;movingId=null;syncEnvironment();save();render();$('[data-sp-example]').value=exampleKey;engine.trace='Projecte obert.';}catch(error){engine.trace=error instanceof SyntaxError?'El fitxer no conté un JSON vàlid.':'No s’ha pogut obrir: '+error.message;}input.value='';
     }
   });
   function draw(){

@@ -6,11 +6,18 @@
   'use strict';
   const number=(value,min,max,fallback)=>Number.isFinite(Number(value))?Math.max(min,Math.min(max,Number(value))):fallback;
   const definitions={motor:{label:'Motor A a un angle',category:'motion',icon:'right'},wait:{label:'Espera',category:'control',icon:'wait'},waitUntil:{label:'Espera fins que',category:'sensor',icon:'reading'},if:{label:'Si / si no',category:'control',icon:'if'},while:{label:'Mentre',category:'control',icon:'while'},repeat:{label:'Repeteix',category:'control',icon:'repeat'},forever:{label:'Per sempre',category:'control',icon:'forever'}};
+  const examples={
+    sequence:{label:'Acció i retorn · Moviment amb motiu',sda:'sp-python-motors',title:'Moviment amb motiu',lesson:'Lliçó 3 · Automatitzar una acció útil',task:'Prediu l’ordre del moviment, executa tres cicles i comprova si el braç torna a 0°. Canvia només l’angle o l’espera i registra el resultat.',adaptation:'Pràctica prèvia en blocs de la tasca d’alçar una barrera de cartó; la SdA continua amb Python i el muntatge físic.'},
+    automatic:{label:'Barrera amb detecció · ampliació',sda:'sp-python-motors',title:'Moviment amb motiu',lesson:'Ampliació de la lliçó 3',task:'Afig una entrada a l’acció automatitzada: prova 20, 35 i 60 cm, i després retira l’objecte. Explica quan s’obri i quan pot tornar a tancar.',adaptation:'Ampliació pròpia amb sensor de distància i dos llindars; no és una reproducció literal de la lliçó.'},
+    condition:{label:'Sensor i resposta · Biblioteca',sda:'sp-sensors-logistica',title:'Sensors al servei de la biblioteca',lesson:'Preparació de la lliçó 1 · Els sensors activen respostes',task:'Prediu la branca per a 20, 30 i 40 cm. Prova els tres valors i anota lectura, decisió i angle observat.',adaptation:'La regla sensor–motor es practica amb un braç fix; la SdA l’aplica després a una base mòbil.'},
+    repeat:{label:'Quatre moviments · Mosaic',sda:'sp-python-bucles',title:'Un mosaic de moviments repetits',lesson:'Lliçó 1 · Quatre repeticions, una instrucció',task:'Usa el braç com a indicador: compta quatre anades i tornades. Canvia el nombre de repeticions i prediu on acabarà.',adaptation:'Pràctica en blocs del moviment repetit de l’indicador. No simula la col·locació de les peces del mosaic; la SdA continua en Python.'}
+  };
   let counter=0;
   function block(type,extra={}){return {type,angle:90,speed:30,seconds:1,count:3,compare:'<',threshold:30,body:[],then:[],else:[],...extra,id:`sp-${++counter}`};}
   function example(name){
     if(name==='blank')return [];
     if(name==='sequence')return [block('motor'),block('wait',{seconds:2}),block('motor',{angle:0})];
+    if(name==='repeat')return [block('repeat',{count:4,body:[block('motor',{angle:45}),block('motor',{angle:0}),block('wait',{seconds:.5})]})];
     if(name==='condition')return [block('forever',{body:[block('if',{then:[block('motor')],else:[block('motor',{angle:0})]}),block('wait',{seconds:.2})]})];
     return [block('forever',{body:[block('waitUntil'),block('motor'),block('waitUntil',{compare:'>',threshold:40}),block('wait'),block('motor',{angle:0})]})];
   }
@@ -83,5 +90,5 @@
     }
     finishPending(){const p=this.pending;if(p?.type==='motor')this.elapse(Math.abs(p.target-this.angle)/p.speed);else if(p?.type==='wait')this.elapse(p.remaining);}
   }
-  return {Engine,definitions,block,example,cleanProgram};
+  return {Engine,definitions,examples,block,example,cleanProgram};
 });

@@ -1,6 +1,6 @@
 'use strict';
 const assert=require('node:assert/strict');
-const {Engine,block:b,example,cleanProgram}=require('../../sim/spike-engine');
+const {Engine,block:b,example,examples,cleanProgram}=require('../../sim/spike-engine');
 const run=(e,seconds)=>{for(let t=0;t<seconds;t+=.02)e.tick(Math.min(.02,seconds-t));};
 // La barrera espera l'aproximació i només tanca després d'allunyar-se i esperar.
 {
@@ -39,5 +39,15 @@ const run=(e,seconds)=>{for(let t=0;t<seconds;t+=.02)e.tick(Math.min(.02,seconds
  assert.throws(()=>cleanProgram([{type:'vehicle'}]));assert.throws(()=>cleanProgram(Array.from({length:151},()=>b('wait'))));
  let nested=b('wait');for(let i=0;i<10;i++)nested=b('repeat',{body:[nested]});assert.throws(()=>cleanProgram([nested]));
  const restored=cleanProgram(example('automatic'));const ids=[];function visit(list){for(const b of list){ids.push(b.id);['body','then','else'].forEach(k=>visit(b[k]));}}visit(restored);assert.equal(ids.length,new Set(ids).size);
+}
+// Els exemples tenen una SdA real i la pràctica de quatre moviments acaba a zero.
+{
+ const fs=require('node:fs'),path=require('node:path');
+ for(const item of Object.values(examples)){
+  const source=fs.readFileSync(path.join(__dirname,'../../_content/situacions',item.sda+'.md'),'utf8');
+  assert.ok(source.includes('title: "'+item.title+'"'));
+  assert.ok(item.lesson&&item.task&&item.adaptation);
+ }
+ const e=new Engine(example('repeat'));e.start();run(e,15);assert.equal(e.angle,0);assert.equal(e.running,false);assert.equal(e.budget,13);
 }
 console.log('SPIKE Prime: cicle de barrera, dos llindars, motor gradual, aturada, pas a pas, bucles, sensors i validació de projectes correctes.');

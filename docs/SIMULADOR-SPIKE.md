@@ -12,7 +12,18 @@ La distància és una entrada manual entre 5 i 200 cm. Activar l’objecte o mou
 
 Les especificacions de LEGO indiquen un interval de mesura total de 50–2000 mm per al [sensor de distància](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt64c2b9534cf10f68/5f8801b8bc43790f5c4389ea/techspecs_technicdistancesensor.pdf?locale=en-us). El [motor angular mitjà](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt692436dd1e8fa71c/5f8801d5c8a27c1d9614c27e/techspecs_technicmediumangularmotor.pdf?locale=en-us) incorpora lectura de posició. En el muntatge físic cal comprovar el zero, el sentit de gir, la transmissió i les lectures. Els límits 0–90° corresponen a aquesta barrera, no a la capacitat general del motor.
 
-## Exemples
+## Exemples vinculats a les SdA
+
+El desplegable «SdA, repte i muntatge» identifica la situació, la lliçó, la consigna i les decisions d’adaptació. «Acció i retorn» és l’entrada per defecte per a projectes nous. La relació amb la SdA es desa en `exampleKey`; els projectes antics sense aquesta dada es mostren com a projecte propi, sense atribució automàtica.
+
+- **Acció i retorn:** «Moviment amb motiu», lliçó 3, que proposa alçar una barrera de cartó. Pràctica prèvia en blocs; la SdA continua amb Python.
+- **Barrera amb detecció:** ampliació pròpia de la mateixa lliçó, afegint sensor i dos llindars.
+- **Sensor i resposta:** preparació de la lliçó 1 de «Sensors al servei de la biblioteca», amb braç fix en lloc de base mòbil.
+- **Quatre moviments:** lliçó 1 d’«Un mosaic de moviments repetits», usant el braç com a indicador que va a 45°, torna a 0° i espera, quatre vegades. No simula col·locar les peces del mosaic.
+
+L’enllaç «Muntatge», al costat dels ports i dins dels recursos de cada exemple, obri `/sim/muntatge-barrera/`: guia orientativa pròpia amb esquema, components, sis passos, comprovació del zero i proves. No són instruccions peça a peça validades físicament. La guia diferencia el disseny propi del catàleg oficial de models LEGO.
+
+### Comportament dels programes
 
 - **Barrera amb detecció:** espera una distància menor de 30 cm, obri a 90°, espera una distància major de 40 cm (o zona lliure), espera un segon i tanca a 0°. Repeteix. Els llindars diferents permeten investigar què passa entre 30 i 40 cm sense encadenar obertures i tancaments.
 - **Obri, espera i tanca:** seqüència de motor a 90°, espera de dos segons i motor a 0°.
@@ -37,6 +48,7 @@ El navegador desa el programa i les entrades de l’escenari a `robotica-spike-p
 
 - `sim/spike-engine.js`: motor, condicions, bucles, exemples i validació; independent del navegador.
 - `sim/spike.js`: editor, escena SVG i persistència.
+- `_templates/pages/spike-build-page.js` i `_css/spike-build.css`: guia de muntatge de referència.
 - `sim/spike.css`: disposició i estil del mecanisme; comparteix la base visual de l’editor Codey.
 - `_templates/components/spike-workspace.js`: escena, connexions i controls.
 - `_scripts/tests/test-spike-simulation.js`: cicle amb llindars, moviment gradual, aturada, pas a pas, condicions, bucles i validació de projectes; inclòs a `node _scripts/test.js`.

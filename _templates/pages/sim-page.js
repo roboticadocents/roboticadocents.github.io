@@ -29,9 +29,9 @@ function SimPage({ root = '../' } = {}) {
   <script defer src="${r}sim/codey-engine.js?v=3"></script>
   <script defer src="${r}sim/codey-blocks.js?v=2"></script>
   <script defer src="${r}sim/codey.js?v=6"></script>
-  <link rel="stylesheet" href="${r}sim/spike.css?v=1">
-  <script defer src="${r}sim/spike-engine.js?v=1"></script>
-  <script defer src="${r}sim/spike.js?v=1"></script>
+  <link rel="stylesheet" href="${r}sim/spike.css?v=2">
+  <script defer src="${r}sim/spike-engine.js?v=2"></script>
+  <script defer src="${r}sim/spike.js?v=2"></script>
 </head>
 <body class="sim-app-body">
   <header class="sim-topbar" data-sim-hero data-active-robot="tale-bot">

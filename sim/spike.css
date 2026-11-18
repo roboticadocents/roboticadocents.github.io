@@ -32,3 +32,13 @@
   .sp-workspace .cr-scene-settings-body { max-height:85px; }
   .sp-readings { padding:8px 0; }
 }
+.sp-build-link { order:2; margin-left:auto; color:#155e75; text-decoration:underline; text-underline-offset:3px; }
+.sp-activity { margin-top:8px; font-size:12px; min-height:24px; flex-shrink:1; overflow:auto; }
+.sp-activity > summary { cursor:pointer; font-weight:600; color:#155e75; padding:4px 0; }
+.sp-activity-body { max-height:105px; overflow:auto; padding:5px 8px; margin-top:4px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; line-height:1.6; }
+.sp-activity-body p { margin:5px 0 9px; }
+.sp-adaptation { color:#64748b; font-size:11px; }
+.sp-resource-links { display:flex; flex-wrap:wrap; gap:8px 16px; padding:4px 0; }
+.sp-resource-links a { color:#1d4ed8; text-decoration:underline; text-underline-offset:3px; }
+.sp-resource-links [hidden] { display:none; }
+@media (min-width:961px) and (min-height:641px) and (max-height:760px) { .sp-activity-body { max-height:60px; } }
