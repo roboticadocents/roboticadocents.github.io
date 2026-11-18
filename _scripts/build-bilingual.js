@@ -14,6 +14,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { execFileSync } = require('node:child_process');
+const crypto = require('node:crypto');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'dist-bilingue');
@@ -124,17 +125,86 @@ function esToCa(p, inverse) {
   return '/';
 }
 
-function prefixSpanishAbsoluteUrls(dir) {
-  let count = 0;
-  walkHtml(dir, file => {
-    const html = fs.readFileSync(file, 'utf8');
-    const next = html.replace(/(href|src)=(["'])\/(?!\/|es\/)([^"']*)\2/g, (m, attr, q, rest) => {
-      count += 1;
-      return `${attr}=${q}/es/${rest}${q}`;
+
+function walkFiles(dir, cb) {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) walkFiles(full, cb);
+    else cb(full);
+  }
+}
+
+function sameFile(a, b) {
+  const sa = fs.statSync(a);
+  const sb = fs.statSync(b);
+  if (!sa.isFile() || sa.size !== sb.size) return false;
+  const hash = file => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+  return hash(a) === hash(b);
+}
+
+function pruneEmptyDirs(dir) {
+  if (!fs.existsSync(dir)) return;
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (entry.isDirectory()) pruneEmptyDirs(path.join(dir, entry.name));
+  }
+  if (fs.readdirSync(dir).length === 0) fs.rmdirSync(dir);
+}
+
+function dedupeSpanishStatic() {
+  let removed = 0;
+  let bytes = 0;
+  for (const dirName of ['_assets', '_css', '_js']) {
+    const esDir = path.join(OUT, 'es', dirName);
+    if (!fs.existsSync(esDir)) continue;
+    walkFiles(esDir, file => {
+      const rel = path.relative(esDir, file);
+      const rootFile = path.join(OUT, dirName, rel);
+      if (fs.existsSync(rootFile) && sameFile(file, rootFile)) {
+        bytes += fs.statSync(file).size;
+        fs.unlinkSync(file);
+        removed += 1;
+      }
     });
-    if (next !== html) fs.writeFileSync(file, next);
+    pruneEmptyDirs(esDir);
+  }
+  return { removed, bytes };
+}
+
+function rewriteSpanishAssetUrls() {
+  const staticDirs = ['_assets', '_css', '_js'];
+  let rewritten = 0;
+  walkHtml(path.join(OUT, 'es'), file => {
+    const pagePath = pagePathFromFile(path.join(OUT, 'es'), file);
+    const base = `https://bilingue.local/es${pagePath}`;
+    const html = fs.readFileSync(file, 'utf8');
+    let changed = false;
+    const next = html.replace(/(href|src|poster)=(["'])([^"']+)\2/g, (match, attr, quote, value) => {
+      if (/^(?:https?:|data:|mailto:|tel:|#|\/\/)/i.test(value)) return match;
+      let pathname;
+      try {
+        pathname = new URL(value, base).pathname;
+      } catch (_) {
+        return match;
+      }
+      for (const dirName of staticDirs) {
+        const esPrefix = `/es/${dirName}/`;
+        const rootPrefix = `/${dirName}/`;
+        if (pathname.startsWith(esPrefix) || pathname.startsWith(rootPrefix)) {
+          const rel = pathname.slice((pathname.startsWith(esPrefix) ? esPrefix : rootPrefix).length);
+          const esFile = path.join(OUT, 'es', dirName, rel);
+          const target = fs.existsSync(esFile) ? `/es/${dirName}/${rel}` : `/${dirName}/${rel}`;
+          if (target !== value) changed = true;
+          return `${attr}=${quote}${target}${quote}`;
+        }
+      }
+      return match;
+    });
+    if (changed) {
+      fs.writeFileSync(file, next);
+      rewritten += 1;
+    }
   });
-  return count;
+  return rewritten;
 }
 
 function isRedirectPage(html) {
@@ -192,8 +262,9 @@ function addLanguageLinks(dir, lang, mapper, skip = new Set()) {
     const alternate = lang === 'ca' ? mapper.caToEs(pagePath) : mapper.esToCa(pagePath);
     const currentLabel = lang === 'ca' ? 'Català' : 'Castellano';
     const alternateLabel = lang === 'ca' ? 'Castellano' : 'Català';
+    const esSelf = pagePath === '/' ? '/es/' : `/es${pagePath}`;
     const caPath = lang === 'ca' ? pagePath : alternate;
-    const esPath = lang === 'ca' ? alternate : pagePath;
+    const esPath = lang === 'ca' ? alternate : esSelf;
     fs.writeFileSync(file, inject(html, {
       selfPath: pagePath,
       caPath,
@@ -229,8 +300,10 @@ function main() {
   fs.cpSync(CA_DIST, OUT, { recursive: true });
   fs.cpSync(ES_DIST, path.join(OUT, 'es'), { recursive: true });
 
-  const prefixed = prefixSpanishAbsoluteUrls(path.join(OUT, 'es'));
-  console.log(`   ${prefixed} URLs absolutas del castellano prefijadas con /es`);
+  const dedupe = dedupeSpanishStatic();
+  console.log(`   ${dedupe.removed} assets idénticos deduplicados (${(dedupe.bytes / 1024 / 1024).toFixed(1)} MB)`);
+  const rewritten = rewriteSpanishAssetUrls();
+  console.log(`   ${rewritten} páginas ES con referencias de assets reescritas`);
 
   const { legacy, inverse } = loadMaps();
   const mapper = {
