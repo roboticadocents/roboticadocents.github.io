@@ -5,7 +5,7 @@
   else root.CodeyBlocks=api;
 })(typeof globalThis!=='undefined'?globalThis:this,function(){
   'use strict';
-  const categories={motion:'Moviment',display:'Pantalla i llum',sensor:'Sensors',control:'Control'};
+  const categories={motion:'Acció',display:'Aspecte',lighting:'Il·luminació',sensor:'Detecció',control:'Control'};
   const paths={
     face:'<rect x="3" y="4" width="18" height="16" rx="4"/><path d="M7 14c2 4 8 4 10 0"/><path d="M8 9h.01M16 9h.01" stroke-width="3"/>',
     text:'<path d="M4 5h16M12 5v14M8 19h8"/>',
@@ -26,13 +26,14 @@
     event:'<path d="M6 3v18M6 4h13l-3 4 3 4H6"/>'
   };
   const definitions={
-    face:['Mostra cara','display'],text:['Mostra text','display'],rgb:['Llum RGB','display'],
-    forward:['Avança','motion','Avança durant…'],back:['Enrere','motion','Enrere durant…'],left:['Gira esquerra','motion'],right:['Gira dreta','motion'],drive:['Avança contínuament','motion'],tracks:['Potència de les erugues','motion'],reading:['Mostra lectura','sensor'],stop:['Atura motors','motion'],
-    wait:['Espera','control'],repeat:['Repeteix','control'],forever:['Per sempre','control'],if:['Si','control','Si / si no'],while:['Mentre','control']
+    face:['mostra la imatge','display'],text:['mostra el text','display'],rgb:['defineix la llum RGB','lighting'],
+    forward:['mou endavant','motion','mou endavant durant…'],back:['mou enrere','motion','mou enrere durant…'],left:['gira a l’esquerra','motion'],right:['gira a la dreta','motion'],drive:['mou endavant','motion','mou endavant contínuament'],tracks:['defineix la potència dels motors','motion'],reading:['mostra el valor del sensor','display'],stop:['atura el moviment','motion'],
+    wait:['espera','control'],repeat:['repeteix','control'],forever:['per sempre','control'],if:['si','control','si / si no'],until:['repeteix fins que','control'],waitUntil:['espera fins que','control'],while:['mentre · compatibilitat','control']
   };
+  paths.until=paths.while;paths.waitUntil=paths.wait;
   function icon(type){return `<svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${paths[type]||paths.event}</svg>`;}
   const blocks=Object.fromEntries(Object.entries(definitions).map(([type,[label,category,paletteLabel]])=>[type,{label,category,paletteLabel:paletteLabel||label}]));
-  function palette(){return Object.entries(categories).map(([category,label])=>`<details class="cr-palette-family cr-category-${category}" name="cr-block-family"><summary><span class="cr-category-dot" aria-hidden="true"></span>${label}</summary><div class="cr-palette">${Object.entries(blocks).filter(([,b])=>b.category===category).map(([type,b])=>`<button type="button" class="cr-category-${category}" data-cr-add="${type}" title="${label} · ${b.paletteLabel}">${icon(type)}<span>${b.paletteLabel}</span></button>`).join('')}</div></details>`).join('');}
+  function palette(){return Object.entries(categories).filter(([category])=>Object.entries(blocks).some(([type,b])=>b.category===category&&type!=='while')).map(([category,label])=>`<details class="cr-palette-family cr-category-${category}" name="cr-block-family"><summary><span class="cr-category-dot" aria-hidden="true"></span>${label}</summary><div class="cr-palette">${Object.entries(blocks).filter(([type,b])=>b.category===category&&type!=='while').map(([type,b])=>`<button type="button" class="cr-category-${category}" data-cr-add="${type}" title="${label} · ${b.paletteLabel}">${icon(type)}<span>${b.paletteLabel}</span></button>`).join('')}</div></details>`).join('');}
   function legend(){return `<div class="cr-palette-legend" aria-label="Famílies de blocs">${Object.entries(categories).map(([key,label])=>`<span class="cr-category-${key}"><span class="cr-category-dot" aria-hidden="true"></span>${label}</span>`).join('')}</div>`;}
   return {blocks,categories,icon,palette,legend};
 });

@@ -1,5 +1,5 @@
 'use strict';
-const { palette, icon } = require('../../sim/codey-blocks');
+const { icon } = require('../../sim/codey-blocks');
 function CodeyWorkspace({ root }) {
   return `<section class="cr-workspace" id="panel-controls-codey-rocky" role="tabpanel" aria-labelledby="tab-codey-rocky" data-codey-workspace hidden>
     <div class="cr-stage-panel">
@@ -44,20 +44,15 @@ function CodeyWorkspace({ root }) {
       </div></details>
     </div>
     <div class="cr-program-panel">
-      <div class="cr-section-heading"><h2>Programa amb blocs</h2><button type="button" class="sim-btn sim-btn-outline" data-cr-clear>Buida</button></div>
-      <details class="cr-project"><summary>Guarda o obri un projecte</summary><p class="cr-hint">Selecció de blocs per practicar la lògica de mBlock. El projecte, amb el programa i l’escenari, es desa en aquest navegador.</p>
+      <div class="cr-section-heading"><h2>Programa Codey</h2><button type="button" class="sim-btn sim-btn-outline" data-cr-clear>Buida</button></div>
+      <details class="cr-project"><summary>Guarda o obri un projecte</summary><p class="cr-hint">Peces natives de Scratch Blocks amb un subconjunt de blocs Codey equivalents als de mBlock. Arrossega i encaixa les peces; el botó dret permet duplicar-les o llevar-les. El simulador conserva el programa i les peces soltes.</p>
       <div class="cr-project-controls"><button type="button" class="sim-btn sim-btn-outline" data-cr-export>Descarrega el projecte</button><label class="sim-btn sim-btn-outline">Obri un projecte<input class="visually-hidden" type="file" accept=".json,application/json" data-cr-import></label></div></details>
       <label class="cr-example-label">Exemple <select data-cr-example>
-        <option value="line">Segueix la vora de la línia</option><option value="color">Atura’t sobre el roig</option><option value="obstacle">Atura’t davant d’un obstacle</option><option value="while">Avança mentre no hi haja obstacles</option><option value="buttons">Botons i cares</option><option value="light">Si baixa la llum…</option><option value="route">Moviment amb temps</option><option value="blank">Programa nou</option>
+        <option value="line">Segueix la vora de la línia</option><option value="color">Atura’t sobre el roig</option><option value="obstacle">Atura’t davant d’un obstacle</option><option value="while">Repeteix fins a trobar un obstacle</option><option value="buttons">Botons i cares</option><option value="light">Si baixa la llum…</option><option value="route">Moviment amb temps</option><option value="blank">Programa nou</option>
       </select></label>
       <div class="cr-event-tabs" role="group" aria-label="Programa que vols editar">
-        <button type="button" data-cr-script="start" aria-pressed="true">${icon('event')}<span>Quan comença</span></button><button type="button" data-cr-script="A" aria-pressed="false">${icon('event')}<span>Quan prems A</span></button><button type="button" data-cr-script="B" aria-pressed="false">${icon('event')}<span>Quan prems B</span></button>
+        <button type="button" data-cr-script="start" aria-pressed="true">${icon('event')}<span>En iniciar</span></button><button type="button" data-cr-script="A" aria-pressed="false">${icon('event')}<span>Botó A</span></button><button type="button" data-cr-script="B" aria-pressed="false">${icon('event')}<span>Botó B</span></button>
       </div>
-      <div class="cr-palette-families" role="group" aria-label="Blocs disponibles per família">
-        ${palette()}
-      </div>
-      <p class="cr-hint">Afig blocs al punt seleccionat. Obri ⋯ per inserir, duplicar o moure.</p>
-      <div class="cr-edit-feedback"><span data-cr-edit-status role="status"></span><button type="button" class="cr-insert" data-cr-cancel-move hidden>Cancel·la el moviment</button></div>
       <div class="cr-program" data-cr-program></div>
       <div class="cr-execution"><div class="cr-run-controls"><button type="button" class="sim-btn sim-btn-primary" data-cr-run>▶ Executa</button><button type="button" class="sim-btn sim-btn-secondary" data-cr-step>Pas a pas</button><button type="button" class="sim-btn sim-btn-outline" data-cr-stop>■ Atura</button></div>
       <p class="cr-condition-reading" data-cr-condition>La lectura i el resultat de la condició apareixeran ací.</p>

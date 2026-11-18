@@ -95,3 +95,38 @@ console.log('Mentre: zero voltes, rellegir sensors, negació, eixida i bucles im
  e.step();assert.equal(e.motor.speed,0);assert.equal(e.motor.turn,0);e.step();assert.equal(e.motor.speed,0);assert.ok(e.motor.turn>0);e.step();assert.ok(e.motor.speed<0);assert.equal(e.motor.turn,0);
 }
 console.log('IR numèric, orientació, grisos, colors, erugues i seguiment de tres pistes correctes.');
+
+// mBlock: repeteix fins que no és equivalent a mentre; la lectura es renova.
+{
+ const body=[b('forward',{seconds:.1,power:10})];
+ const e=new Engine({start:[b('until',{sensor:'light',compare:'>',threshold:50,body}),b('stop'),b('rgb',{value:'#ef4444'})]});
+ e.environment.light=70;e.trigger('start');runFor(e,1);assert.equal(e.pose.x,160);assert.equal(e.output.rgb,'#ef4444');
+ e.reset();e.environment.light=10;e.trigger('start');runFor(e,1);assert.ok(e.pose.x>160);assert.equal(e.output.rgb,'#22c55e');e.environment.light=70;runFor(e,1);assert.equal(e.output.rgb,'#ef4444');assert.equal(e.motor.speed,0);
+ const unavailable=new Engine({start:[b('until',{sensor:'gray',compare:'>',threshold:50,body})]});unavailable.trigger('start');runFor(unavailable,1);assert.equal(unavailable.running,false);assert.equal(unavailable.pose.x,160);assert.match(unavailable.trace,/no disponible/);
+}
+// Espera fins que retorna el control a la interfície i no avança prematurament.
+{
+ const e=new Engine({start:[b('waitUntil',{sensor:'sound',compare:'>',threshold:60}),b('rgb',{value:'#ef4444'})]});e.environment.sound=10;e.trigger('start');runFor(e,1);assert.equal(e.output.rgb,'#22c55e');e.environment.sound=80;runFor(e,1);assert.equal(e.output.rgb,'#ef4444');
+ const stepper=new Engine({start:[b('waitUntil',{sensor:'light',compare:'<',threshold:20}),b('face',{value:'sad'})]});stepper.step();assert.equal(stepper.output.face,'happy');stepper.environment.light=10;stepper.step();stepper.step();assert.equal(stepper.output.face,'sad');
+}
+console.log('mBlock: repeteix fins que, espera fins que, lectures dinàmiques i compatibilitat de mentre correctes.');
+// Expressions de peces natives: comparacions, booleans, valors i paràmetres connectats.
+{
+ const {cleanExpression,evaluate}=require('../../sim/codey-engine');
+ const sensor=name=>({kind:'sensor',name}),num=value=>({kind:'number',value});
+ const compare=(op,left,right)=>({kind:'compare',op,left,right});
+ const expr={kind:'and',left:compare('<',sensor('light'),num(40)),right:{kind:'not',value:compare('>',sensor('sound'),num(60))}};
+ const e=new Engine({start:[b('if',{condition:expr,then:[b('rgb',{value:'#ef4444'})],else:[b('rgb',{value:'#000000'})]})]});
+ e.environment.light=20;e.environment.sound=10;e.trigger('start');runFor(e,1);assert.equal(e.output.rgb,'#ef4444');
+ e.reset();e.environment.sound=90;e.trigger('start');runFor(e,1);assert.equal(e.output.rgb,'#000000');
+ assert.equal(evaluate(cleanExpression({kind:'or',left:{kind:'boolean',value:false},right:{kind:'boolean',value:true}}),()=>0),true);
+ assert.throws(()=>cleanExpression({kind:'execute',value:'javascript'}));
+ const motion=new Engine({start:[b('forward',{seconds:1,bindings:{power:sensor('light')}})]});motion.environment.light=20;motion.trigger('start');runFor(motion,2);assert.ok(Math.abs(motion.pose.x-190)<.1);
+ const display=new Engine({start:[b('text',{expression:sensor('light')})]});display.environment.light=37;display.trigger('start');runFor(display,.5);assert.equal(display.output.text,'37');
+ const unavailable=new Engine();assert.equal(evaluate(sensor('gray'),name=>unavailable.sensor(name)),null);
+}
+// Les peces natives admeten zero: repeteix 0 no entra al cos i un moviment de 0 s no queda actiu.
+{
+ const e=new Engine({start:[b('repeat',{count:0,body:[b('rgb',{value:'#ef4444'})]}),b('forward',{seconds:0,power:80}),b('wait',{seconds:0})]});e.trigger('start');runFor(e,1);assert.equal(e.output.rgb,'#22c55e');assert.equal(e.pose.x,160);assert.equal(e.motor.speed,0);assert.equal(e.running,false);
+}
+console.log('Peces natives: condicions compostes, lectures connectades, paràmetres dinàmics i valors zero correctes.');

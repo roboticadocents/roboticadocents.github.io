@@ -181,3 +181,23 @@
 .cr-block-menu .cr-block-actions { display:flex; flex-wrap:wrap; gap:5px; padding:8px 0 4px; border-top:1px solid #cbd5e1; margin-top:6px; }
 .cr-block-menu .cr-block-actions button { width:auto; height:auto; padding:6px 9px; font:500 11px var(--font-sans); }
 .cr-block-menu [data-cr-action="delete"] { color:#b91c1c; }
+
+/* Scratch Blocks: les peces les dibuixa la biblioteca, amb formes i camps natius. */
+.cr-native-active .cr-palette-families,.cr-native-active .cr-edit-feedback,.cr-native-active .cr-program-panel > .cr-hint { display:none; }
+.cr-native-active .cr-program { position:relative; overflow:hidden; min-height:180px; padding:0; border:1px solid #d9d9df; border-radius:8px; }
+.cr-native-active .cr-program .blocklySvg { position:absolute; inset:0; }
+.cr-native-active .cr-section-heading { flex-wrap:wrap; }
+.cr-native-active .cr-section-heading h2 { margin-right:auto; }
+.cr-native-active .cr-section-heading > button { flex:none; }
+.cr-native-active .cr-condition-reading { max-height:65px; overflow:auto; }
+.cr-native-workspace:fullscreen { width:100vw; height:100vh; background:#fff; border:0; }
+.cr-native-matrix { width:min(95vw,520px); max-width:min(95vw,520px); border:1px solid #cbd5e1; border-radius:14px; padding:20px; background:#fff; color:#0f172a; font-family:var(--font-sans); }
+.cr-native-matrix::backdrop { background:#0f172a55; }
+.cr-native-matrix h2 { font:700 18px var(--font-heading); margin:0 0 15px; }
+.cr-native-presets,.cr-native-dialog-actions { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; }
+.cr-native-dialog-actions { justify-content:flex-end; margin-bottom:0; }
+.cr-native-matrix button { border:1px solid #94a3b8; border-radius:5px; padding:7px 12px; background:#fff; color:#0f172a; font:500 12px var(--font-sans); cursor:pointer; }
+.cr-native-pixels { display:grid; grid-template-columns:repeat(16,minmax(0,1fr)); gap:3px; }
+.cr-native-pixels button { width:100%; padding:0; aspect-ratio:1; border-radius:2px; background:#f1f5f9; }
+.cr-native-pixels [aria-pressed="true"] { background:#38bdf8; border-color:#0284c7; }
+@media (max-width:960px),(max-height:640px) { .cr-native-active .cr-program { height:520px; max-height:70vh; min-height:320px; flex:none; } }

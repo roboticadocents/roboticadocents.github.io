@@ -2,14 +2,14 @@
   'use strict';
   const root = document.querySelector('[data-codey-workspace]');
   if (!root || !window.CodeySimulation) return;
-  const { Engine, WIDTH, HEIGHT, COLORS, trackPreset, segmentDistance } = window.CodeySimulation;
+  const { Engine, WIDTH, HEIGHT, COLORS, trackPreset, segmentDistance, cleanExpression } = window.CodeySimulation;
   const $ = q => root.querySelector(q);
   const escape = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const blankPattern = () => Array(8).fill('0000000000000000');
   const numeric = (v,min,max,fallback) => Number.isFinite(Number(v)) ? Math.max(min,Math.min(max,Number(v))) : fallback;
   const colorNames={black:'Negre',white:'Blanc',red:'Roig',green:'Verd',blue:'Blau',yellow:'Groc'};
   const sensorOptions=[['infrared','IR reflectit (0–100)'],['gray','Grisos (0–100)'],['color','Color de la superfície'],['light','Llum'],['sound','So']];
-  const {blocks: blockStyles, icon: blockIcon} = window.CodeyBlocks;
+  const {blocks: blockStyles} = window.CodeyBlocks;
   const names=Object.fromEntries(Object.entries(blockStyles).map(([type,b])=>[type,b.label]));
   let counter=0;
   function block(type,extra={}) {
@@ -18,9 +18,9 @@
   function example(name) {
     const program={start:[],A:[block('face')],B:[block('face',{value:'sad'})]};
     if(name==='obstacle')program.start=[block('forever',{body:[block('if',{sensor:'infrared',compare:'>',threshold:60,then:[block('stop'),block('face',{value:'surprise'})],else:[block('face'),block('drive')]}),block('wait',{seconds:.1})]})];
-    if(name==='while')program.start=[block('while',{sensor:'infrared',compare:'<',threshold:60,body:[block('forward',{seconds:.2})]}),block('stop'),block('face',{value:'surprise'})];
+    if(name==='while')program.start=[block('until',{sensor:'infrared',compare:'>',threshold:60,body:[block('forward',{seconds:.2})]}),block('stop'),block('face',{value:'surprise'})];
     if(name==='line')program.start=[block('forever',{body:[block('if',{sensor:'gray',compare:'<',threshold:50,then:[block('tracks',{left:10,right:6})],else:[block('tracks',{left:6,right:10})]})]})];
-    if(name==='color')program.start=[block('while',{sensor:'color',compare:'!=',value:'red',body:[block('forward',{power:15,seconds:.1})]}),block('stop'),block('rgb',{value:'#ef4444'})];
+    if(name==='color')program.start=[block('until',{sensor:'color',compare:'=',value:'red',body:[block('forward',{power:15,seconds:.1})]}),block('stop'),block('rgb',{value:'#ef4444'})];
     if(name==='light')program.start=[block('forever',{body:[block('if',{sensor:'light',compare:'<',threshold:40,then:[block('rgb',{value:'#facc15'})],else:[block('rgb',{value:'#000000'})]}),block('wait',{seconds:.1})]})];
     if(name==='route')program.start=[block('forward'),block('right'),block('forward'),block('stop')];
     if(name==='buttons')program.start=[block('text',{value:'Prem A o B'})];
@@ -29,11 +29,11 @@
   function cleanProgram(value) {
     if(!value||typeof value!=='object')throw new Error('Falta el programa.');let total=0;
     function clean(list,depth=0) {
-      if(!Array.isArray(list)||list.length>150||depth>8)throw new Error('Estructura de blocs no vàlida.');
+      if(!Array.isArray(list)||list.length>150||(depth>8&&list.length))throw new Error('Estructura de blocs no vàlida.');
       return list.map(b=>{
         if(!b||!names[b.type]||++total>300)throw new Error('Bloc desconegut o programa massa llarg.');
         const legacy=b.sensor==='obstacle';
-        return block(b.type,{value:String(b.value||'').slice(0,40),pattern:Array.isArray(b.pattern)&&b.pattern.length===8&&b.pattern.every(r=>/^[01]{16}$/.test(r))?b.pattern:blankPattern(),power:numeric(b.power,0,100,30),left:numeric(b.left,-100,100,10),right:numeric(b.right,-100,100,10),seconds:numeric(b.seconds,.05,10,1),count:Math.round(numeric(b.count,1,100,3)),sensor:legacy?'infrared':sensorOptions.some(([v])=>v===b.sensor)?b.sensor:'infrared',compare:legacy?(b.obstacleValue==='false'?'<':'>'):['<','>','<=','>=','=','!='].includes(b.compare)?b.compare:'>',threshold:legacy?60:numeric(b.threshold,0,100,50),body:clean(b.body||[],depth+1),then:clean(b.then||[],depth+1),else:clean(b.else||[],depth+1)});
+        return block(b.type,{value:String(b.value||'').slice(0,40),condition:b.condition?cleanExpression(b.condition):undefined,expression:b.expression?cleanExpression(b.expression):undefined,bindings:b.bindings?Object.fromEntries(Object.entries(b.bindings).filter(([key])=>['power','left','right','seconds','count'].includes(key)).map(([key,value])=>[key,cleanExpression(value)])):undefined,pattern:Array.isArray(b.pattern)&&b.pattern.length===8&&b.pattern.every(r=>/^[01]{16}$/.test(r))?b.pattern:blankPattern(),power:numeric(b.power,0,100,30),left:numeric(b.left,-100,100,10),right:numeric(b.right,-100,100,10),seconds:numeric(b.seconds,0,3600,1),count:Math.round(numeric(b.count,0,10000,3)),sensor:legacy?'infrared':sensorOptions.some(([v])=>v===b.sensor)?b.sensor:'infrared',compare:legacy?(b.obstacleValue==='false'?'<':'>'):['<','>','<=','>=','=','!='].includes(b.compare)?b.compare:'>',threshold:legacy?60:numeric(b.threshold,0,100,50),body:clean(b.body||[],depth+1),then:clean(b.then||[],depth+1),else:clean(b.else||[],depth+1)});
       });
     }
     return {start:clean(value.start||[]),A:clean(value.A||[]),B:clean(value.B||[])};
@@ -41,7 +41,10 @@
   let stored=null,program=example('obstacle');
   try {stored=JSON.parse(localStorage.getItem('robotica-codey-v2')||localStorage.getItem('robotica-codey-v1'));if(stored&&[1,2].includes(stored.version))program=cleanProgram(stored.program);}catch(_){stored=null;}
   const engine=new Engine(program);
-  let selectedEvent='start',target=program.start,targetIndex=null,movingId=null,tool='obstacle',listMap=new Map();
+  let selectedEvent='start',tool='obstacle',nativeEditor=null;
+  let workspaceXml={};
+  function cleanWorkspaces(value){const result={};if(value&&window.CodeyNativeBlocks)for(const key of ['start','A','B'])if(value[key]){window.CodeyNativeBlocks.validateXml(value[key]);result[key]=value[key];}return result;}
+  try{workspaceXml=cleanWorkspaces(stored?.workspaceXml);}catch(_){workspaceXml={};}
   let startPose={...engine.pose},cursor={x:320,y:250},keyboardCursor=false;
   let calibration={background:null,line:null},lineWidth=24,surfaceColor='black',drawing=null;
   function cleanEnvironment(value={}) {
@@ -57,7 +60,7 @@
   const world = $('[data-cr-world]'), ctx = world.getContext('2d');
   const led = $('[data-cr-led]'), ledCtx = led.getContext('2d');
   const sprite = new Image(); sprite.src = new URL('../_assets/icons/codey-rocky.webp', document.currentScript.src).href;
-  function project() {return {type:'robotica-codey',version:2,program,environment:engine.environment,startPose,calibration};}
+  function project() {return {type:'robotica-codey',version:2,program,environment:engine.environment,startPose,calibration,workspaceXml};}
   function save() {try {localStorage.setItem('robotica-codey-v2',JSON.stringify(project()));}catch(_){}}
   function syncSceneControls() {
     $('[data-cr-orientation]').value=engine.environment.orientation;lineWidth=engine.environment.lines[0]?.width||lineWidth;$('[data-cr-line-width]').value=lineWidth;
@@ -72,114 +75,15 @@
     engine.reset();engine.pose={...startPose};calibration={background:null,line:null};$('[data-cr-track]').value=name;syncSceneControls();save();
   }
   function halt() { engine.stop(); engine.active = null; }
-  function select(options, current, field, label) {
-    return `<label>${label} <select data-cr-field="${field}">${options.map(([value, text]) => `<option value="${value}"${String(current) === String(value) ? ' selected' : ''}>${text}</option>`).join('')}</select></label>`;
+  function renderProgram(){
+    if(nativeEditor)nativeEditor.setProgram(program[selectedEvent],selectedEvent,workspaceXml[selectedEvent]);
+    else $('[data-cr-program]').textContent='No s’ha pogut carregar l’editor de blocs. Torna a carregar la pàgina.';
   }
-  function number(field, value, min, max, step, label) {
-    return `<label>${label} <input type="number" data-cr-field="${field}" value="${value}" min="${min}" max="${max}" step="${step}"></label>`;
-  }
-  function blockFields(b) {
-    if (b.type === 'face') return select([['happy','Feliç'],['sad','Trista'],['surprise','Sorpresa'],['blank','Buida'],['custom','Dibuixa la teua']], b.value, 'value', 'Cara') + (b.value === 'custom' ? '<div class="cr-pixel-editor" role="group" aria-label="Dibuixa la cara: 16 columnes per 8 files">' + b.pattern.map((row,y)=>[...row].map((pixel,x)=>`<button type="button" data-cr-pixel="${y*16+x}" class="${pixel==='1'?'is-on':''}" aria-label="Punt ${x+1}, ${y+1}" aria-pressed="${pixel==='1'}"></button>`).join('')).join('') + '</div>' : '');
-    if (b.type === 'text') return `<label>Text <input data-cr-field="value" value="${escape(b.value)}" maxlength="40" aria-label="Text de la pantalla"></label>`;
-    if (b.type === 'rgb') return select([['#22c55e','Verd'],['#ef4444','Roig'],['#3b82f6','Blau'],['#facc15','Groc'],['#000000','Apagada']], b.value, 'value', 'Color');
-    if(b.type==='reading')return select(sensorOptions,b.sensor,'sensor','Sensor');
-    if(b.type==='tracks')return number('left',b.left,-100,100,1,'Esquerra %')+number('right',b.right,-100,100,1,'Dreta %');
-    if(['if','while'].includes(b.type))return select(sensorOptions,b.sensor,'sensor','Sensor')+(b.sensor==='color'?select([['=','és'],['!=','no és']],b.compare,'compare','Condició')+select(Object.entries(colorNames),b.value,'value','Color'):select([['<','menor que'],['>','major que'],['<=','menor o igual'],['>=','major o igual'],['=','igual'],['!=','diferent']],b.compare,'compare','Condició')+number('threshold',b.threshold,0,100,1,'Llindar'));
-    if (b.type === 'repeat') return number('count', b.count, 1, 100, 1, 'Vegades');
-    const movement = ['forward','back','left','right','drive'].includes(b.type);
-    return (movement ? number('power', b.power, 0, 100, 1, 'Potència %') : '') + ((movement && b.type !== 'drive') || b.type === 'wait' ? number('seconds', b.seconds, .05, 10, .05, 'Segons') : '');
-  }
-  function containsList(b, list) {
-    return ['body','then','else'].some(key=>b[key]===list||b[key].some(child=>containsList(child,list)));
-  }
-  function validSize() {
-    let total=0;
-    function visit(list,depth=0) {return list.every(b=>++total<=150&&depth<=8&&['body','then','else'].every(key=>visit(b[key],depth+1)));}
-    return Object.values(program).every(list=>visit(list));
-  }
-  function copyBlock(b) {
-    return {...b,id:`cr-${++counter}`,pattern:[...b.pattern],body:b.body.map(copyBlock),then:b.then.map(copyBlock),else:b.else.map(copyBlock)};
-  }
-  function focusInsertion() { $('[data-cr-target][aria-pressed="true"]')?.focus({preventScroll:true}); }
-  function renderList(list) {
-    const key = `list-${listMap.size}`; listMap.set(key, list);
-    const moving=movingId&&find(movingId)?.block;
-    const blocked=moving&&containsList(moving,list);
-    function insertion(index) {
-      const selected=list===target&&index===(targetIndex??list.length);
-      if(!moving&&!selected&&index!==list.length)return '';
-      return `<button type="button" class="cr-insert" data-cr-target="${key}" data-cr-index="${index}" aria-pressed="${selected}" aria-label="${moving?'Mou':'Afegir'} ací: posició ${index+1}"${blocked?' disabled':''}>${selected?'✓ ':'+ '}${moving?'Mou ací':'Afegir ací'}</button>`;
-    }
-    return `<div class="cr-block-list${list === target ? ' is-target' : ''}">${list.map((b, i) => {
-      const category=blockStyles[b.type].category;
-      return `${insertion(i)}<div class="cr-block cr-block-${category} cr-category-${category}${b.id===movingId?' is-moving':''}" data-cr-block="${b.id}"><div class="cr-block-heading"><strong class="cr-block-title">${blockIcon(b.type)}<span>${names[b.type]}</span></strong><details class="cr-block-menu" name="cr-block-actions"><summary aria-label="Opcions de ${names[b.type]}" title="Opcions del bloc">⋯</summary><div class="cr-block-actions"><button type="button" data-cr-action="before">Afig abans</button><button type="button" data-cr-action="after">Afig després</button><button type="button" data-cr-action="duplicate">Duplica</button><button type="button" data-cr-action="move">Mou…</button><button type="button" data-cr-action="up"${i === 0 ? ' disabled' : ''}>↑ Puja</button><button type="button" data-cr-action="down"${i === list.length - 1 ? ' disabled' : ''}>↓ Baixa</button><button type="button" data-cr-action="delete">Lleva</button></div></details></div><div class="cr-block-fields">${blockFields(b)}</div>${b.type === 'if' ? `<p class="cr-branch-label">Aleshores</p>${renderList(b.then)}<p class="cr-branch-label">Si no</p>${renderList(b.else)}` : ['repeat','forever','while'].includes(b.type) ? renderList(b.body) : ''}</div>`;
-    }).join('')}${insertion(list.length)}</div>`;
-  }
-  function renderProgram() {
-    if(movingId&&!find(movingId))movingId=null;
-    listMap = new Map(); $('[data-cr-program]').innerHTML = renderList(program[selectedEvent]); previousActive = undefined;
-    root.querySelectorAll('[data-cr-script]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.crScript === selectedEvent)));
-    root.querySelectorAll('[data-cr-add]').forEach(b=>b.disabled=!!movingId);
-    $('[data-cr-cancel-move]').hidden=!movingId;
-    $('[data-cr-edit-status]').textContent=movingId?`Mou «${names[find(movingId).block.type]}»: tria «Mou ací» a la posició de destí. També pots canviar de programa A/B.`:'';
-  }
-  function find(id, lists = Object.values(program)) {
-    for (const list of lists) for (let i = 0; i < list.length; i++) {
-      if (list[i].id === id) return { list, index: i, block: list[i] };
-      const nested = find(id, [list[i].body, list[i].then, list[i].else]); if (nested) return nested;
-    }
-    return null;
-  }
-  root.addEventListener('click', event => {
-    if(!event.target.closest('.cr-block-menu'))root.querySelectorAll('.cr-block-menu[open]').forEach(menu=>menu.open=false);
-    const button = event.target.closest('button'); if (!button) return;
-    if (button.hasAttribute('data-cr-script')) { selectedEvent = button.dataset.crScript; target = program[selectedEvent]; targetIndex=null;renderProgram(); }
-    if (button.hasAttribute('data-cr-cancel-move')) { movingId=null;renderProgram();focusInsertion(); }
-    if (button.hasAttribute('data-cr-target')) {
-      const destination=listMap.get(button.dataset.crTarget);let index=Number(button.dataset.crIndex);
-      if(movingId) {
-        const entry=find(movingId);if(!entry||containsList(entry.block,destination))return;
-        halt();entry.list.splice(entry.index,1);if(entry.list===destination&&entry.index<index)index--;
-        destination.splice(index,0,entry.block);
-        if(!validSize()){destination.splice(index,1);entry.list.splice(entry.index,0,entry.block);engine.trace='El moviment supera la profunditat màxima de 8 nivells.';return;}
-        movingId=null;save();engine.trace='Bloc mogut amb tot el seu contingut.';
-      }
-      target=destination;targetIndex=index;renderProgram();focusInsertion();
-    }
-    if (button.hasAttribute('data-cr-add')) {
-      if(movingId)return;
-      halt();const b=block(button.dataset.crAdd),index=targetIndex??target.length;
-      target.splice(index,0,b);
-      if(!validSize()){target.splice(index,1);engine.trace='Programa massa llarg: màxim 150 blocs i 8 nivells.';return;}
-      targetIndex=index+1;
-      if(b.type==='if'){target=b.then;targetIndex=null;}else if(['repeat','forever','while'].includes(b.type)){target=b.body;targetIndex=null;}
-      save(); renderProgram();
-    }
-    if (button.hasAttribute('data-cr-pixel')) {
-      halt();const b=find(button.closest('[data-cr-block]').dataset.crBlock).block;const i=Number(button.dataset.crPixel),y=Math.floor(i/16),x=i%16;const row=[...b.pattern[y]];row[x]=row[x]==='1'?'0':'1';b.pattern[y]=row.join('');
-      button.classList.toggle('is-on',row[x]==='1');button.setAttribute('aria-pressed',String(row[x]==='1'));engine.output={...engine.output,face:'custom',pattern:b.pattern,text:''};save();
-    }
-    if (button.hasAttribute('data-cr-action')) {
-      const entry = find(button.closest('[data-cr-block]').dataset.crBlock); halt();
-      const action=button.dataset.crAction;
-      if(action==='before'||action==='after') {movingId=null;target=entry.list;targetIndex=entry.index+(action==='after'?1:0);renderProgram();focusInsertion();return;}
-      if(action==='move') {movingId=movingId===entry.block.id?null:entry.block.id;renderProgram();$('[data-cr-cancel-move]')?.focus();return;}
-      movingId=null;
-      if(action==='delete') {entry.list.splice(entry.index,1);target=program[selectedEvent];targetIndex=null;}
-      else if(action==='duplicate') {
-        const copy=copyBlock(entry.block);entry.list.splice(entry.index+1,0,copy);
-        if(!validSize()){entry.list.splice(entry.index+1,1);engine.trace='No es pot duplicar: se supera el límit de 150 blocs.';return;}
-        target=entry.list;targetIndex=entry.index+2;
-      } else {
-        const n=entry.index+(action==='up'?-1:1);
-        if(n>=0&&n<entry.list.length)[entry.list[n],entry.list[entry.index]]=[entry.list[entry.index],entry.list[n]];
-        target=entry.list;targetIndex=null;
-      }
-      save();renderProgram();
-      if(action==='delete'||action==='duplicate')focusInsertion();
-      else root.querySelector(`[data-cr-block="${entry.block.id}"] > .cr-block-heading > .cr-block-menu > summary`)?.focus({preventScroll:true});
-    }
-    if (button.hasAttribute('data-cr-clear')) { halt();program[selectedEvent]=[];target=program[selectedEvent];targetIndex=null;movingId=null;save();renderProgram(); }
+  root.addEventListener('click',event=>{
+    const button=event.target.closest('button');if(!button)return;
+    if(nativeEditor&&['data-cr-run','data-cr-step','data-cr-script','data-cr-export','data-cr-clear','data-cr-event','data-cr-apply-threshold'].some(key=>button.hasAttribute(key))){const valid=nativeEditor.flush();if(valid===false&&(button.hasAttribute('data-cr-run')||button.hasAttribute('data-cr-step')||button.hasAttribute('data-cr-event')))return;}
+    if(button.hasAttribute('data-cr-script')){selectedEvent=button.dataset.crScript;renderProgram();}
+    if (button.hasAttribute('data-cr-clear')) { halt();delete workspaceXml[selectedEvent];program[selectedEvent]=[];save();renderProgram(); }
     if (button.hasAttribute('data-cr-run')) { engine.reset();engine.pose={...startPose};engine.trigger('start'); }
     if (button.hasAttribute('data-cr-step')) engine.step();
     if (button.hasAttribute('data-cr-stop')) { halt();engine.trace='Programa aturat.'; }
@@ -197,8 +101,10 @@
       const {background,line}=calibration;
       if(background===null||line===null||Math.abs(background-line)<10){$('[data-cr-calibration-status]').textContent='Calen dues lectures amb prou contrast. Mesura el fons i el centre de la línia.';return;}
       halt();const threshold=Math.round((background+line)/2);let total=0;
-      function apply(list){for(const b of list){if(['if','while'].includes(b.type)&&b.sensor==='gray'){b.threshold=threshold;total++;}apply(b.body);apply(b.then);apply(b.else);}}
-      for(const list of Object.values(program))apply(list);
+      function apply(list){for(const b of list){if(['if','while','until','waitUntil'].includes(b.type)&&b.sensor==='gray'){b.threshold=threshold;if(!b.condition)total++;}apply(b.body);apply(b.then);apply(b.else);}}
+      function applyExpression(expr){if(!expr)return;const gray=e=>e?.kind==='sensor'&&e.name==='gray';if(expr.kind==='compare'){if(gray(expr.left)&&expr.right.kind==='number'){expr.right.value=threshold;total++;}if(gray(expr.right)&&expr.left.kind==='number'){expr.left.value=threshold;total++;}}if(expr.value&&typeof expr.value==='object')applyExpression(expr.value);if(expr.left)applyExpression(expr.left);if(expr.right)applyExpression(expr.right);}
+      for(const list of Object.values(program)){apply(list);function expressions(items){for(const b of items){applyExpression(b.condition);expressions(b.body);expressions(b.then);expressions(b.else);}}expressions(list);}
+      for(const key of Object.keys(workspaceXml))workspaceXml[key]=window.CodeyNativeBlocks.updateThresholdXml(workspaceXml[key],threshold);
       $('[data-cr-calibration-status]').textContent=`Llindar ${threshold} aplicat a ${total} condicions de grisos. ${line<background?'La línia és més fosca que el fons.':'La línia és més clara: revisa el sentit de la comparació.'}`;
       save();renderProgram();
     }
@@ -208,7 +114,6 @@
     }
     if (button.hasAttribute('data-cr-tool')) { tool=button.dataset.crTool;root.querySelectorAll('[data-cr-tool]').forEach(b=>b.setAttribute('aria-pressed',String(b===button))); }
   });
-  root.addEventListener('keydown',event=>{if(event.key==='Escape'&&event.target.closest('.cr-block-menu[open]')){const menu=event.target.closest('.cr-block-menu');menu.open=false;menu.querySelector('summary').focus();}if(event.key==='Escape'&&movingId){event.preventDefault();movingId=null;renderProgram();focusInsertion();}});
   root.addEventListener('change', async event => {
     const input = event.target;
     if(input.hasAttribute('data-cr-import')) {
@@ -216,27 +121,18 @@
       try{
         if(file.size>1500000)throw new Error('Fitxer massa gran.');const data=JSON.parse(await file.text());
         if(data.type!=='robotica-codey'||data.version!==2)throw new Error('No és un projecte de Codey Rocky compatible.');
-        const nextProgram=cleanProgram(data.program);cleanEnvironment(data.environment);
-        halt();program=nextProgram;engine.program=program;restoreScene(data);engine.reset();engine.pose={...startPose};selectedEvent='start';target=program.start;targetIndex=null;movingId=null;syncSceneControls();save();renderProgram();
+        const nextProgram=cleanProgram(data.program);const nextWorkspaces=cleanWorkspaces(data.workspaceXml);cleanEnvironment(data.environment);
+        halt();program=nextProgram;workspaceXml=nextWorkspaces;engine.program=program;restoreScene(data);engine.reset();engine.pose={...startPose};selectedEvent='start';syncSceneControls();save();renderProgram();
         engine.trace='Projecte obert: programa i escenari restaurats.';
       }catch(error){engine.trace='No s’ha pogut obrir el projecte: '+error.message;}
       input.value='';return;
     }
     if(input.hasAttribute('data-cr-example')) {
-      halt();program=example(input.value);engine.program=program;selectedEvent='start';target=program.start;targetIndex=null;movingId=null;
+      halt();program=example(input.value);workspaceXml={};engine.program=program;selectedEvent='start';
       if(input.value==='line')loadTrack('circuit');
       else if(input.value==='color'){loadTrack('none');engine.environment.patches=[{x:430,y:210,w:80,h:80,color:'red'}];startPose={x:160,y:250,angle:0};}
       else if(['obstacle','while'].includes(input.value)){engine.environment={...engine.environment,orientation:'front',lines:[],patches:[],obstacles:[{x:430,y:190,w:65,h:120}]};startPose={x:160,y:250,angle:0};}
       engine.reset();engine.pose={...startPose};engine.trace='Exemple carregat. Executa el programa o prem A o B.';syncSceneControls();save();renderProgram();
-    }
-    if (input.hasAttribute('data-cr-field')) {
-      const entry=find(input.closest('[data-cr-block]').dataset.crBlock);halt();
-      entry.block[input.dataset.crField]=input.type==='number'?numeric(input.value,Number(input.min),Number(input.max),Number(input.min)):input.value;
-      if(input.dataset.crField==='sensor'&&input.value==='color'){entry.block.compare='=';entry.block.value='red';}
-      else if(input.dataset.crField==='sensor'&&!['<','>','<=','>=','=','!='].includes(entry.block.compare))entry.block.compare='>';
-      save();
-      if(input.dataset.crField==='sensor'||(input.dataset.crField==='value'&&entry.block.type==='face'))renderProgram();
-      else if(input.type==='number')input.value=entry.block[input.dataset.crField];
     }
     if(input.hasAttribute('data-cr-orientation')){halt();engine.environment.orientation=input.value;save();}
     if(input.hasAttribute('data-cr-track'))loadTrack(input.value);
@@ -279,7 +175,7 @@
     surprise:['0000000000000000','0001100000011000','0001100000011000','0000000000000000','0000001111000000','0000010000100000','0000001111000000','0000000000000000'],
     blank:Array(8).fill('0000000000000000')
   };
-  let previousTrace='', previousActive=null;
+  let previousTrace='';
   function draw(now) {
     ctx.fillStyle='#ffffff';ctx.fillRect(0,0,WIDTH,HEIGHT);ctx.strokeStyle='#e2e8f0';ctx.lineWidth=1;
     for(let x=0;x<WIDTH;x+=50){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,HEIGHT);ctx.stroke();}
@@ -307,12 +203,21 @@
     $('[data-cr-ir]').textContent=engine.sensor('infrared')??'—';$('[data-cr-gray]').textContent=engine.sensor('gray')??'—';$('[data-cr-color]').textContent=colorNames[engine.sensor('color')]??'—';
     $('[data-cr-condition]').textContent=engine.lastCondition||'La lectura i el resultat de la condició apareixeran ací.';
     if(previousTrace!==engine.trace){$('[data-cr-status]').textContent=engine.trace;previousTrace=engine.trace;}
-    if(previousActive!==engine.active){root.querySelectorAll('[data-cr-block]').forEach(b=>b.classList.toggle('is-executing',b.dataset.crBlock===engine.active));previousActive=engine.active;}
+    if(nativeEditor)nativeEditor.highlight(engine.active);
     $('[data-cr-run]').setAttribute('aria-pressed',String(engine.running));
   }
-  document.addEventListener('simrobotchange',e=>{if(e.detail.robot!=='codey-rocky'){halt();engine.trace='Simulació aturada en canviar de robot.';}});
+  document.addEventListener('simrobotchange',e=>{if(e.detail.robot!=='codey-rocky'){nativeEditor?.flush();window.Blockly?.hideChaff();halt();engine.trace='Simulació aturada en canviar de robot.';}else{initNativeEditor();renderProgram();requestAnimationFrame(()=>nativeEditor?.resize());}});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)halt();});
-  syncSceneControls();renderProgram();
+  function initNativeEditor(){
+    if(nativeEditor||!window.CodeyNativeBlocks)return;
+    root.classList.add('cr-native-active');
+    nativeEditor=window.CodeyNativeBlocks.create({element:$('[data-cr-program]'),onChange(list,eventKey,xml){halt();program[eventKey]=list;engine.program=program;workspaceXml[eventKey]=xml;save();},onDraft(xml,eventKey){workspaceXml[eventKey]=xml;save();},onError(message){halt();engine.trace=message;}});
+    root.querySelector('[data-cr-clear]').insertAdjacentHTML('beforebegin','<button type="button" class="sim-btn sim-btn-outline" data-cr-editor-fullscreen>Amplia</button>');
+    root.querySelector('[data-cr-editor-fullscreen]').addEventListener('click',()=>{const editor=$('[data-cr-program]');if(document.fullscreenElement)document.exitFullscreen();else editor.requestFullscreen?.();});
+    document.addEventListener('fullscreenchange',()=>requestAnimationFrame(()=>nativeEditor.resize()));
+  }
+  if(!root.hidden)initNativeEditor();
+  syncSceneControls();if(nativeEditor)renderProgram();
   let last=performance.now();
   function frame(now){
     if(!root.hidden){const speed=Number(document.querySelector('[data-speed-select]').value)||520;engine.tick(Math.min((now-last)/1000,.1)*(520/speed),.08);draw(now);}

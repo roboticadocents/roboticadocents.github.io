@@ -24,6 +24,38 @@
     else if(name==='circuit') for(let i=0;i<=160;i++){const a=-Math.PI/2+i/160*Math.PI*2;points.push({x:400+250*Math.cos(a),y:250+150*Math.sin(a)});}
     return { points, width, color:'black' };
   }
+  function cleanExpression(expr,depth=0){
+    if(!expr||typeof expr!=='object'||depth>12)throw new Error('Expressió de blocs no vàlida.');
+    if(expr.kind==='number'&&Number.isFinite(Number(expr.value)))return {kind:'number',value:clamp(expr.value,-10000,10000)};
+    if(expr.kind==='boolean')return {kind:'boolean',value:expr.value===true};
+    if(expr.kind==='string')return {kind:'string',value:String(expr.value||'').slice(0,40)};
+    if(expr.kind==='sensor'&&['infrared','gray','light','sound','color'].includes(expr.name))return {kind:'sensor',name:expr.name};
+    if(expr.kind==='color'&&COLORS[expr.value])return {kind:'color',value:expr.value};
+    if(expr.kind==='not')return {kind:'not',value:cleanExpression(expr.value,depth+1)};
+    if(['compare','and','or'].includes(expr.kind)){
+      if(expr.kind==='compare'&&!['<','>','='].includes(expr.op))throw new Error('Operador no vàlid.');
+      return {kind:expr.kind,...(expr.kind==='compare'?{op:expr.op}:{}),left:cleanExpression(expr.left,depth+1),right:cleanExpression(expr.right,depth+1)};
+    }
+    throw new Error('Expressió de blocs desconeguda.');
+  }
+  function evaluate(expr,read){
+    if(['number','string','boolean'].includes(expr.kind))return expr.value;
+    if(expr.kind==='sensor')return read(expr.name);
+    if(expr.kind==='color'){const value=read('color');return value===null?null:value===expr.value;}
+    if(expr.kind==='not'){const value=evaluate(expr.value,read);return value===null?null:!value;}
+    const left=evaluate(expr.left,read),right=evaluate(expr.right,read);
+    if(left===null||right===null)return null;
+    if(expr.kind==='and')return Boolean(left&&right);
+    if(expr.kind==='or')return Boolean(left||right);
+    return expr.op==='<'?left<right:expr.op==='>'?left>right:left===right;
+  }
+  function describe(expr,read){
+    if(['number','string','boolean'].includes(expr.kind))return String(expr.value);
+    if(expr.kind==='sensor'){const value=read(expr.name);return `${SENSOR_NAMES[expr.name]} (${value===null?'no disponible':value})`;}
+    if(expr.kind==='color')return `color (${read('color')??'no disponible'}) = ${expr.value}`;
+    if(expr.kind==='not')return `no (${describe(expr.value,read)})`;
+    return `(${describe(expr.left,read)} ${expr.kind==='compare'?expr.op:expr.kind==='and'?'i':'o'} ${describe(expr.right,read)})`;
+  }
   class Engine {
     constructor(program = {}) {
       this.program = program;
@@ -90,6 +122,7 @@
       return this.environment[name] ?? 0;
     }
     test(block) {
+      if(block.condition){const result=evaluate(block.condition,name=>this.sensor(name));return {value:result===null?null:describe(block.condition,name=>this.sensor(name)),result:result===true};}
       const value = this.sensor(block.sensor);
       if(value===null)return {value,result:false};
       if(block.sensor==='color')return {value,result:block.compare==='!='?value!==block.value:value===block.value};
@@ -99,6 +132,7 @@
       return {value,result};
     }
     conditionTrace(block,value,result) {
+      if(block.condition){this.lastCondition=`${describe(block.condition,name=>this.sensor(name))} → condició ${result?'certa':'falsa'}`;return this.lastCondition;}
       const text=value===null?'no disponible: canvia l’orientació del sensor':typeof value==='boolean'?(value?'sí':'no'):String(value);
       const comparison=block.sensor==='color'?` ${block.compare} ${block.value}`:typeof value==='number'?` ${block.compare} ${block.threshold}`:'';
       this.lastCondition=`${SENSOR_NAMES[block.sensor]||block.sensor}: ${text}${comparison} → condició ${result?'certa':'falsa'}`;
@@ -134,21 +168,22 @@
         if (!block) { this.tasks.splice(this.tasks.indexOf(task), 1); this.nextTask = 0; if (!this.tasks.length && !this.motor.speed && !this.motor.turn) this.trace = 'Programa acabat. Pots provar els botons A i B.'; return false; }
         if (++this.budget > 10000) { this.stop(); this.trace = 'Pausa després de 10.000 blocs. Revisa el programa i torna a executar.'; return false; }
         this.active = block.id;
-        const seconds = clamp(block.seconds, .05, 10), power = clamp(block.power, 0, 100);
+        const input=key=>block.bindings?.[key]?evaluate(block.bindings[key],name=>this.sensor(name)):block[key];
+        const seconds = clamp(input('seconds'),0,3600), power = clamp(input('power'), 0, 100);
         this.trace = 'Executant: ' + ({face:'mostra cara',text:'mostra text',rgb:'llum RGB',forward:'avança',back:'enrere',left:'gira esquerra',right:'gira dreta',drive:'avança contínuament',tracks:'potència de les erugues',reading:'mostra lectura del sensor',stop:'atura motors',wait:'espera',repeat:'repeteix',forever:'per sempre'}[block.type] || block.type);
         switch (block.type) {
           case 'face': this.output.face = block.value || 'happy'; this.output.pattern = block.pattern; this.output.text = ''; break;
-          case 'text': this.output.text = String(block.value || 'Hola').slice(0, 40); break;
+          case 'text': this.output.text = String(block.expression?evaluate(block.expression,name=>this.sensor(name))??'—':block.value??'Hola').slice(0,40); break;
           case 'rgb': this.output.rgb = block.value || '#22c55e'; break;
           case 'forward': case 'back':
             this.motor = { speed: power * 1.5 * (block.type === 'back' ? -1 : 1), turn: 0 };
-            task.wait = seconds; task.timedMotor = true; break;
+            task.wait=seconds;task.timedMotor=seconds>0;if(!seconds)this.motor={speed:0,turn:0};break;
           case 'left': case 'right':
             this.motor = { speed: 0, turn: power * 2.4 * (block.type === 'left' ? -1 : 1) };
-            task.wait = seconds; task.timedMotor = true; break;
+            task.wait=seconds;task.timedMotor=seconds>0;if(!seconds)this.motor={speed:0,turn:0};break;
           case 'drive': this.motor = { speed: power * 1.5, turn: 0 }; break;
           case 'tracks': {
-            const left=clamp(block.left,-100,100),right=clamp(block.right,-100,100);
+            const left=clamp(input('left'),-100,100),right=clamp(input('right'),-100,100);
             this.motor={speed:(left+right)*.75,turn:(left-right)*2.4};break;
           }
           case 'reading': {const value=this.sensor(block.sensor);this.output.text=value===null?'—':String(value);break;}
@@ -159,14 +194,22 @@
             this.trace = this.conditionTrace(block,value,result) + ` → ${result?'aleshores':'si no'}`;
             task.frames.push({ blocks: result ? block.then : block.else, index: 0, remaining: 1 }); break;
           }
-          case 'while': {
+          case 'while': case 'until': {
             const { value, result } = this.test(block);
-            this.trace = 'Mentre · '+this.conditionTrace(block,value,result)+(result?': repetim':': continuem després del bucle');
-            if (result) task.frames.push({ blocks: block.body || [], index: 0, remaining: 1, whileBlock: block });
+            const repeat=block.type==='until'?!result:result;
+            this.trace = (block.type==='until'?'Repeteix fins que · ':'Mentre · ')+this.conditionTrace(block,value,result)+(repeat?': repetim':': continuem després del bucle');
+            if(block.type==='until'&&value===null){this.stop();this.trace='Lectura no disponible: orienta el sensor abans de repetir el moviment.';return false;}
+            if (repeat) task.frames.push({ blocks: block.body || [], index: 0, remaining: 1, whileBlock: block });
             break;
           }
-          case 'repeat': case 'forever':
-            task.frames.push({ blocks: block.body || [], index: 0, remaining: block.type === 'forever' ? Infinity : clamp(block.count, 1, 100) }); break;
+          case 'waitUntil': {
+            const {value,result}=this.test(block);this.trace='Espera fins que · '+this.conditionTrace(block,value,result);
+            if(!result){task.frames[task.frames.length-1].index--;task.wait=.08;}break;
+          }
+          case 'repeat': case 'forever': {
+            const count=block.type==='forever'?Infinity:Math.round(clamp(input('count'),0,10000));
+            if(count>0)task.frames.push({blocks:block.body||[],index:0,remaining:count});break;
+          }
         }
         return true;
       }
@@ -209,5 +252,5 @@
       if (waits.length) for (let t = 0, duration = Math.min(...waits); t < duration; t += .02) this.elapse(Math.min(.02, duration - t));
     }
   }
-  return { Engine, WIDTH, HEIGHT, R, COLORS, trackPreset, segmentDistance };
+  return { Engine, WIDTH, HEIGHT, R, COLORS, trackPreset, segmentDistance, cleanExpression, evaluate };
 });
