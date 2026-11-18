@@ -71,8 +71,8 @@ Cambiad los grados de `360` a `180`, ejecutad y comprobad que hace media vuelta.
 En un proyecto de bloques, representad la misma acción: cuando empiece el programa, haced girar el motor del puerto elegido una vuelta completa. Comparad los datos de cada formato: el puerto y el giro aparecen en el bloque y en el texto. En el texto también hay que respetar los nombres y los espacios iniciales.
 
 ```spikeapp
-quan comença el programa
-motor [A v] gira (360) graus
+cuando comience el programa
+motor [A v] gira (360) grados
 ```
 
 El dibujo muestra la acción equivalente; seleccionad los bloques y las unidades que ofrezca vuestra versión de la app. Si la velocidad se indica en una escala diferente, ajustadla y comparad el movimiento, sin asumir que los números son equivalentes.

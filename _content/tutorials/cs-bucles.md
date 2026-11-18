@@ -46,9 +46,9 @@ Al lado del inicio de bucle, poned **Adelante → Derecha**. Estas dos órdenes 
 Poned la ficha verde oscuro de final después de Derecha. Comprobad que el tablero queda así, con el número debajo del inicio:
 
 ```coding-set
-repeteix 4
-avançar -> girar dreta
-fi
+repetir 4
+avanzar -> girar derecha
+fin
 ```
 
 Pulsad el botón grande y observad los cuatro lados. El robot debería volver cerca del punto de partida, mirando en la dirección inicial; la posición puede variar según la superficie.
@@ -62,7 +62,7 @@ Pulsad el botón grande y observad los cuatro lados. El robot debería volver ce
 3. Comparad las posiciones y orientaciones finales de las dos versiones. Si habéis podido ejecutar ambas, repetid también la ruta larga tres veces.
 
 ```coding-set
-avançar -> girar dreta -> avançar -> girar dreta -> avançar -> girar dreta -> avançar -> girar dreta
+avanzar -> girar derecha -> avanzar -> girar derecha -> avanzar -> girar derecha -> avanzar -> girar derecha
 ```
 
 Contad las piezas de movimiento de cada versión. Si el resultado no coincide, revisad el número, el orden de las piezas y la orientación inicial.

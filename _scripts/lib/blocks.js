@@ -11,12 +11,6 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
-const {
-  renderOrGetMakeCodeSVG,
-  setCachedMakeCodeSVG,
-  getCachedMakeCodeSVG,
-  getMakeCodeHash
-} = require('./makecode-cache');
 
 // 1. Taula exacta d'amplades de glifs per a 12pt (16px) Sans-Serif Medium (Noto Sans / Helvetica Neue 500)
 const GLYPH_WIDTHS_16PX = {
@@ -191,25 +185,25 @@ function inferDialectAnnotation(trimmed, dialect) {
   const isMblock = d === 'mblock' || d === 'mblocks' || d === 'codey-rocky';
   if (!isSpike && !isMblock) return '';
 
-  if (/^(quan|when|en\s+iniciar|en\s+premer|en\s+prémer)\b/i.test(trimmed)) {
+  if (/^(quan|cuando|when|al\s+iniciar|al\s+pulsar|en\s+iniciar|en\s+premer|en\s+prémer)\b/i.test(trimmed)) {
     return isSpike ? ' :: hat #fddc3e' : ' :: hat #0079dc';
   }
-  if (/^(atura-ho\s+tot|atura\s+tot|stop\s+all)\b/i.test(trimmed)) {
+  if (/^(atura-ho\s+tot|atura\s+tot|detener\s+todo|stop\s+all)\b/i.test(trimmed)) {
     return ' :: cap #ff8c00';
   }
-  if (/^(espera|wait|repeteix|si\b|mentre)\b/i.test(trimmed)) {
+  if (/^(espera|wait|repeteix|repite|si\b|mentre|mientras)\b/i.test(trimmed)) {
     return ' :: #ffab19';
   }
-  if (/^(mostra|encén|encen|esborra|matriu|llum|led| salut|pantalla)\b/i.test(trimmed)) {
+  if (/^(mostra|mostrar|encén|encen|encender|apagar|esborra|borrar|matriu|matriz|llum|luz|led|salut|pantalla)\b/i.test(trimmed)) {
     return isSpike ? ' :: #00a8a8' : ' :: #0096ff';
   }
-  if (/^(reprodueix|so\b|to\b|volum|melodia)\b/i.test(trimmed)) {
+  if (/^(reprodueix|reproducir|emitir|so\b|sonido|to\b|tono|volum|volumen|melodia|melodía)\b/i.test(trimmed)) {
     return isSpike ? ' :: #785ef0' : ' :: #8a3ffc';
   }
-  if (/^(sensor|obstacle|distància|distancia|color|força|inclinació|llig)\b/i.test(trimmed)) {
+  if (/^(sensor|obstacle|obstáculo|distància|distancia|color|força|fuerza|inclinació|inclinación|llig)\b/i.test(trimmed)) {
     return isSpike ? ' :: #047fdf' : ' :: #00bebe';
   }
-  if (/^(activa\s+el\s+motor|motor\b)/i.test(trimmed) && isSpike) {
+  if (/^(activa\s+el\s+motor|activar\s+el\s+motor|fijar\s+la\s+velocidad\s+del\s+motor|detener\s+el\s+motor|motor\b)/i.test(trimmed) && isSpike) {
     return ' :: #d82098';
   }
   return isSpike ? ' :: #cf2478' : ' :: #0079dc';
@@ -227,13 +221,13 @@ function normalizeScratchBlocksCode(rawCode, dialect = '') {
     const cstartMatch = rawLine.match(/^(\s*)(.+?)\s*::\s*cstart\s*(#[0-9a-fA-F]{3,6}|[a-z-]+)?\s*$/i);
     if (cstartMatch) {
       const [, indent, label, colorOrCat = '#ffab19'] = cstartMatch;
-      const isForever = /^per\s+sempre\b/i.test(label.trim());
+      const isForever = /^(?:per\s+sempre|para\s+siempre)\b/i.test(label.trim());
       cblockStack.push({ colorOrCat, isForever });
       normalizedLines.push(`${indent}${label} {`);
       continue;
     }
 
-    const cendMatch = rawLine.match(/^(\s*)(?:fi|end)\s*::\s*cend\s*$/i);
+    const cendMatch = rawLine.match(/^(\s*)(?:fi|fin|end)\s*::\s*cend\s*$/i);
     if (cendMatch) {
       const [, indent] = cendMatch;
       const info = cblockStack.pop() || { colorOrCat: '#ffab19', isForever: false };
@@ -247,13 +241,18 @@ function normalizeScratchBlocksCode(rawCode, dialect = '') {
 
     const trimmed = rawLine.trim();
     if (trimmed && dialect && !rawLine.includes('::') && !/[{}]$/.test(trimmed) && !/^}/.test(trimmed)) {
-      if (/^(per\s+sempre|repeteix\b.*|si\b.*aleshores)$/i.test(trimmed)) {
-        const isForever = /^per\s+sempre\b/i.test(trimmed);
+      if (/^(per\s+sempre|para\s+siempre|(?:repeteix|repite)\b.*|si\b.*(?:aleshores|entonces))$/i.test(trimmed)) {
+        const isForever = /^(?:per\s+sempre|para\s+siempre)\b/i.test(trimmed);
         cblockStack.push({ colorOrCat: '#ffab19', isForever });
         normalizedLines.push(`${rawLine} {`);
         continue;
       }
-      if (/^(fi|end)$/i.test(trimmed) && cblockStack.length > 0) {
+      if (/^(si\s+no|sino)$/i.test(trimmed) && cblockStack.length > 0) {
+        const indent = rawLine.match(/^(\s*)/)[1];
+        normalizedLines.push(`${indent}} else {`);
+        continue;
+      }
+      if (/^(fi|fin|end)$/i.test(trimmed) && cblockStack.length > 0) {
         const indent = rawLine.match(/^(\s*)/)[1];
         const info = cblockStack.pop();
         if (info.isForever) {
@@ -349,6 +348,19 @@ function renderScratchBlocks(code, options = {}) {
 
   const normalized = normalizeScratchBlocksCode(code, opts.dialect);
   const doc = scratchblocks.parse(normalized, { languages: opts.languages });
+  // Scratchblocks requires the English separator to parse two branches. Translate
+  // its label before layout so the Spanish text gets the correct measured width.
+  function translateElse(node) {
+    const children = node.children || [];
+    children.forEach((child, index) => {
+      if (child.value === 'else' && children[index - 1]?.blocks && children[index + 1]?.blocks) {
+        child.value = 'si no';
+      }
+      translateElse(child);
+    });
+    for (const child of node.scripts || node.blocks || []) translateElse(child);
+  }
+  translateElse(doc);
   const view = scratchblocks.newView(doc, { style: opts.style, scale: opts.scale });
   view.render();
   const rawSvg = view.exportSVGString();
@@ -359,45 +371,45 @@ function renderScratchBlocks(code, options = {}) {
 const SAMPLES = {
   // Micro:bit (MakeCode): Blocs Basic (#0078d7) + Input (#d400d4)
   'microbit-sample': `
-per sempre {
-  mostra la icona [♥ cor v] :: #0078d7
+para siempre {
+  mostrar el icono [♥ corazón v] :: #0078d7
   pausa \\(ms\\) (500) :: #0078d7
-  esborra la pantalla :: #0078d7
+  borrar la pantalla :: #0078d7
   pausa \\(ms\\) (500) :: #0078d7
 } @loopArrow :: cap #0078d7
 
-en prémer el botó [A v] {
-  mostra la cadena ["Hola!"] :: #0078d7
-  mostra la icona [☺ feliç v] :: #0078d7
+al pulsar el botón [A v] {
+  mostrar la cadena ["Hola!"] :: #0078d7
+  mostrar el icono [☺ feliz v] :: #0078d7
 } :: cap #d400d4
 `,
 
   // Codey Rocky (mBlock 5): Tracció, matriu LED, sensor d'obstacles, altaveu
   'codey-rocky-sample': `
-quan s'iniciï Codey :: hat #0079dc
-mostra la imatge [cor v] :: #0096ff
-per sempre :: cstart #ffab19
-  mou endavant a potència (50) % :: #0079dc
-  si <obstacle detectat? :: #00bebe> aleshores :: cstart #ffab19
-    reprodueix el so [alarma v] :: #8a3ffc
-    atura el moviment :: #0079dc
-    mostra la imatge [sorpresa v] :: #0096ff
-    gira a la dreta (90) graus :: #0079dc
-  fi :: cend
-fi :: cend
+cuando se inicie Codey :: hat #0079dc
+mostrar la imagen [corazón v] :: #0096ff
+para siempre :: cstart #ffab19
+  mover adelante a potencia (50) % :: #0079dc
+  si <obstáculo detectado? :: #00bebe> entonces :: cstart #ffab19
+    reproducir el sonido [alarma v] :: #8a3ffc
+    detener el movimiento :: #0079dc
+    mostrar la imagen [sorpresa v] :: #0096ff
+    girar a la derecha (90) grados :: #0079dc
+  fin :: cend
+fin :: cend
 `,
 
   // LEGO SPIKE Prime: Motors A/B/C, sensor de distància, matriu 5x5, brunzidor
   'spike-sample': `
-quan comenci el programa :: hat #fddc3e
-assigna els motors de moviment a [B + C v] :: #cf2478
-defineix la velocitat de moviment al (50) % :: #cf2478
-encén la matriu 5x5 amb [somriure v] durant (2) segons :: #00a8a8
-mou [endavant v] durant (20) cm :: #cf2478
-espera fins que <distància sensor < (15) cm :: #047fdf> :: #ffab19
-reprodueix el to (60) durant (0.5) s :: #785ef0
-activa el motor [A v] durant (1) rotacions :: #d82098
-atura-ho tot :: cap #ff8c00
+cuando comience el programa :: hat #fddc3e
+asignar los motores de movimiento a [B + C v] :: #cf2478
+fijar la velocidad de movimiento al (50) % :: #cf2478
+encender la matriz 5x5 con [sonrisa v] durante (2) segundos :: #00a8a8
+mover [adelante v] durante (20) cm :: #cf2478
+espera hasta que <distancia del sensor < (15) cm :: #047fdf> :: #ffab19
+reproducir el tono (60) durante (0.5) s :: #785ef0
+activar el motor [A v] durante (1) rotaciones :: #d82098
+detener todo :: cap #ff8c00
 `
 };
 
@@ -410,42 +422,19 @@ function buildAllBlocks(customOutDir = null) {
     fs.mkdirSync(outDir, { recursive: true });
   }
 
-  const TS_MICROBIT_SAMPLE = `basic.forever(function () {
-    basic.showIcon(IconNames.Heart)
-    basic.pause(500)
-    basic.clearScreen()
-    basic.pause(500)
-})
-input.onButtonPressed(Button.A, function () {
-    basic.showString("Hola!")
-    basic.showIcon(IconNames.Happy)
-})`;
-
   const results = [];
   for (const [name, code] of Object.entries(SAMPLES)) {
-    let svg = null;
-    let fromCache = false;
-
-    if (name === 'microbit-sample') {
-      const cached = getCachedMakeCodeSVG(TS_MICROBIT_SAMPLE);
-      if (cached) {
-        svg = cached;
-        fromCache = true;
-      } else {
-        svg = renderScratchBlocks(code, { style: 'scratch3', scale: 1 });
-        setCachedMakeCodeSVG(TS_MICROBIT_SAMPLE, svg);
-      }
-    } else {
-      svg = renderScratchBlocks(code, { style: 'scratch3', scale: 1 });
-    }
+    // These three shared examples are local text diagrams, independent of the
+    // official MakeCode cache (which may contain an image in another language).
+    const svg = renderScratchBlocks(code, { style: 'scratch3', scale: 1 });
 
     const targetFile = path.join(outDir, `${name}.svg`);
     const existing = fs.existsSync(targetFile) ? fs.readFileSync(targetFile, 'utf8') : null;
     if (existing !== svg) {
       fs.writeFileSync(targetFile, svg, 'utf8');
     }
-    results.push({ name, file: targetFile, size: svg.length, fromCache });
-    console.log(`[build-blocks] Generat: ${name}.svg (${(svg.length / 1024).toFixed(1)} KB)${fromCache ? ' [cache hit]' : ''}`);
+    results.push({ name, file: targetFile, size: svg.length, fromCache: false });
+    console.log(`[build-blocks] Generado: ${name}.svg (${(svg.length / 1024).toFixed(1)} KB)`);
   }
   return results;
 }
@@ -467,13 +456,13 @@ function renderMakeCodeFallbackSVG(tsCode) {
     }
     if (/^basic\.forever\s*\(/.test(t)) {
       blockStack.push({ color: '#0078d7', isLoop: true });
-      out.push('per sempre {');
+      out.push('para siempre {');
       continue;
     }
     const btnMatch = t.match(/^input\.onButtonPressed\s*\(\s*Button\.([A-Za-z0-9_+]+)\s*,/);
     if (btnMatch) {
       blockStack.push({ color: '#d400d4', isLoop: false });
-      out.push(`en prémer el botó [${btnMatch[1]} v] {`);
+      out.push(`al pulsar el botón [${btnMatch[1]} v] {`);
       continue;
     }
     const gestureMatch = t.match(/^input\.onGesture\s*\(\s*Gesture\.([A-Za-z0-9_]+)\s*,/);
@@ -489,19 +478,19 @@ function renderMakeCodeFallbackSVG(tsCode) {
     }
     const iconMatch = t.match(/^basic\.showIcon\s*\(\s*IconNames\.([A-Za-z0-9_]+)\s*\)/);
     if (iconMatch) {
-      const iconMap = { Heart: '♥ cor', Happy: '☺ feliç', Sad: '☹ trist', Yes: '✓ sí', No: '✗ no' };
+      const iconMap = { Heart: '♥ corazón', Happy: '☺ feliz', Sad: '☹ triste', Yes: '✓ sí', No: '✗ no' };
       const label = iconMap[iconMatch[1]] || iconMatch[1];
-      out.push(`  mostra la icona [${label} v] :: #0078d7`);
+      out.push(`  mostrar el icono [${label} v] :: #0078d7`);
       continue;
     }
     const strMatch = t.match(/^basic\.showString\s*\(\s*(.+?)\s*\)$/);
     if (strMatch) {
-      out.push(`  mostra la cadena [${strMatch[1]}] :: #0078d7`);
+      out.push(`  mostrar la cadena [${strMatch[1]}] :: #0078d7`);
       continue;
     }
     const numMatch = t.match(/^basic\.showNumber\s*\(\s*(.+?)\s*\)$/);
     if (numMatch) {
-      out.push(`  mostra el nombre (${numMatch[1]}) :: #0078d7`);
+      out.push(`  mostrar el número (${numMatch[1]}) :: #0078d7`);
       continue;
     }
     const pauseMatch = t.match(/^basic\.pause\s*\(\s*(.+?)\s*\)$/);
@@ -510,7 +499,7 @@ function renderMakeCodeFallbackSVG(tsCode) {
       continue;
     }
     if (/^basic\.clearScreen\s*\(\s*\)/.test(t)) {
-      out.push('  esborra la pantalla :: #0078d7');
+      out.push('  borrar la pantalla :: #0078d7');
       continue;
     }
     out.push(raw.includes('::') ? raw : `${raw} :: #0078d7`);
@@ -524,6 +513,7 @@ if (require.main === module) {
 }
 
 module.exports = {
+  normalizeScratchBlocksCode,
   renderScratchBlocks,
   renderMakeCodeFallbackSVG,
   buildAllBlocks,

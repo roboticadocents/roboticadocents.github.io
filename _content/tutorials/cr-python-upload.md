@@ -47,11 +47,11 @@ Usad el cable micro-USB para conectar Codey al ordenador y encendedlo. En mBlock
 Cread una pila de bloques para el botón A y otra para el B. Dibujad una cara diferente en cada bloque de pantalla:
 
 ```mblock
-quan es prem el botó [A v]
-mostra una cara feliç
+cuando se pulse el botón [A v]
+mostrar una cara feliz
 
-quan es prem el botó [B v]
-mostra una cara sorpresa
+cuando se pulse el botón [B v]
+mostrar una cara de sorpresa
 ```
 
 El dibujo es una guía: los nombres de los bloques pueden variar. Elegid **Live** y, con Codey conectado, probad A y B. Después elegid **Upload** y seguid las indicaciones de mBlock para preparar la carga.

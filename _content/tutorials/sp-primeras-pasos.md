@@ -1,5 +1,5 @@
 ---
-title: "Primeras pasos: el Hub inteligente y el primer programa"
+title: "Primeros pasos: el Hub inteligente y el primer programa"
 description: "Conectar el Hub SPIKE Prime, explorar la matriz de 5 × 5, los seis puertos y el sensor de orientación."
 robot: spike
 level: "Iniciación"
@@ -42,10 +42,10 @@ Comprobad que el Hub tiene carga y encendedlo con el botón central. Abrid SPIKE
 Cread un proyecto con bloques de palabras o de iconos. Cuando empiece el programa, mostrad un icono en la matriz 5 × 5 y borradlo. Comprobad que se trata de una matriz de luz del Hub y no de una pantalla de píxeles en color.
 
 ```spikeapp
-quan comença el programa
-mostra una cara feliç
-espera (2) segons
-esborra la pantalla
+cuando comience el programa
+mostrar una cara feliz
+espera (2) segundos
+borrar la pantalla
 ```
 
 ### 3. Leed el sensor de orientación

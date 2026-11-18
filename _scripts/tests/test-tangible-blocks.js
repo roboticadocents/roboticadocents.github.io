@@ -12,12 +12,12 @@ assert.throws(() => parseSequence('repeteix 3 -> fi', 'talebot'));
 for (const lang of ['talebot', 'tale-bot', 'coding-set', 'codingset']) {
   const result = renderer.parse(`\`\`\`${lang}\navanzar -> avanzar -> girar derecha\n\`\`\``);
   assert.match(result.html, /<svg[^>]+role="img"/);
-  assert.match(result.html, /aria-label="Endavant → Endavant → Gir a la dreta"/);
+  assert.match(result.html, /aria-label="Adelante → Adelante → Girar a la derecha"/);
   assert.match(result.html, /<div class="blocks-visual-frame"[^>]*><svg/);
   assert.doesNotMatch(result.html, /<figure|<figcaption/);
 }
 const bad = renderer.parse('```talebot\navanzar -> girar\n```');
-assert.match(bad.html, /Instrucció no reconeguda/);
+assert.match(bad.html, /Instrucción no reconocida/);
 assert.match(bad.html, /avanzar -&gt; girar/);
 assert.doesNotMatch(bad.html, /<svg/);
 const tale = renderTangibleBlocks('avanzar -> retroceder -> girar derecha -> girar izquierda', 'talebot');

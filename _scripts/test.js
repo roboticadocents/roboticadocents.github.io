@@ -37,6 +37,8 @@ function main() {
   console.log('🧪 Executant suite de validació de Robòtica²⁰⁰:\n');
   runStep('Proves del bloqueig del build', process.execPath, [path.join(TESTS_DIR, 'test-build-lock.js')]);
   runStep('Validació de pàgines HTML i enllaços', 'python3', [path.join(TESTS_DIR, 'check-static-site.py')]);
+  runStep('Diagramas de programación en castellano', process.execPath, [path.join(TESTS_DIR, 'test-visual-blocks.js')]);
+  runStep('Secuencias de bloques tangibles', process.execPath, [path.join(TESTS_DIR, 'test-tangible-blocks.js')]);
   runStep('Proves del pipeline Markdown → HTML semàntic', process.execPath, [path.join(TESTS_DIR, 'test-markdown-renderer.js')]);
   runStep('Proves de classificació i rutes del contingut', process.execPath, [path.join(TESTS_DIR, 'test-content-routing.js')]);
   runStep('Proves de format i cobertura de tutorials', process.execPath, [path.join(TESTS_DIR, 'test-tutorial-format.js')]);

@@ -52,10 +52,10 @@ Registrad qué opción habéis podido abrir y con qué dispositivo. Si la conexi
 Mostrad en la pantalla el valor de la ruedecilla de Codey y giradla lentamente de un extremo al otro. Buscad los bloques equivalentes en vuestra versión:
 
 ```mblock
-quan comença el programa
-per sempre
-mostra el valor de la rodeta
-fi
+cuando comience el programa
+para siempre
+mostrar el valor de la ruedecilla
+fin
 ```
 
 Anotad el valor con la ruedecilla en tres posiciones: un extremo, el centro y el otro extremo. Volved a cada una y comprobad si las lecturas se parecen. Como ampliación, haced que los valores activen iconos diferentes.
@@ -65,8 +65,8 @@ Anotad el valor con la ruedecilla en tres posiciones: un extremo, el centro y el
 Buscad en mBlock el evento que detecta la inclinación hacia la izquierda. Haced que muestre una flecha hacia la izquierda:
 
 ```mblock
-quan Codey s'inclina cap a l'esquerra
-mostra una fletxa cap a l'esquerra
+cuando Codey se incline hacia la izquierda
+mostrar una flecha hacia la izquierda
 ```
 
 Devolved Codey a la posición plana antes de cada intento y repetid tres veces. Si vuestra versión también ofrece el evento de inclinación hacia la derecha, añadid otro icono. La sacudida es una acción diferente de mantener Codey inclinado.
@@ -80,19 +80,19 @@ Con dos Codey Rocky, buscad los bloques de infrarrojos que ofrezca la versión d
 Para el **primer Codey**, buscad en «Infrarrojos» la pieza de enviar mensaje y escribid `HOLA`:
 
 ```mblock
-quan es prem el botó [A v]
-envia el missatge IR [HOLA]
+cuando se pulse el botón [A v]
+enviar el mensaje IR [HOLA]
 ```
 
 Para el **segundo Codey**, combinad la pieza que comprueba el mensaje recibido con «si» y «para siempre». Haced que muestre una cara cuando reciba `HOLA`:
 
 ```mblock
-quan comença el programa
-per sempre
-si <missatge IR [HOLA] rebut?> aleshores
-mostra una cara feliç
-fi
-fi
+cuando comience el programa
+para siempre
+si <mensaje IR [HOLA] recibido?> entonces
+mostrar una cara feliz
+fin
+fin
 ```
 
 Los dibujos resumen las acciones; los nombres y el aspecto de las piezas pueden variar. El [cuaderno oficial de Makeblock](https://qiniu.makeblock.com/education-makeblock-com/studentbook.pdf) muestra las piezas de envío y de comprobación en la prueba de comunicación entre Codeys. Si el bloque de recepción no aparece, usad las tarjetas e indicad que no se ha probado la comunicación real.

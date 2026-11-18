@@ -42,10 +42,10 @@ Empezad con el sensor de sonido de Codey. La prueba de palabras es opcional y so
 Conectad Codey a mBlock y buscad el bloque que lee el nivel de sonido. Preparad un programa que lo muestre continuamente en la pantalla. Esta representación os ayuda a encontrar los bloques equivalentes en vuestra versión:
 
 ```mblock
-quan comença el programa
-per sempre
-mostra el nivell de so
-fi
+cuando comience el programa
+para siempre
+mostrar el nivel de sonido
+fin
 ```
 
 Cargad o ejecutad el programa según el modo elegido. Anotad qué muestra en silencio y después con una palmada suave; repetid tres veces. El número ayuda a comparar sonidos: no es una medida de decibelios ni una palabra reconocida.

@@ -41,7 +41,7 @@ Cargad torre y robot, colocad la torre estable delante del tablero y confirmad l
 Una función es un grupo de órdenes que podemos utilizar más de una vez. Dibujad una ruta con **Adelante → Derecha → Adelante → Derecha** y marcad el punto y la orientación iniciales. Poned estas cuatro piezas en la fila principal, ejecutadlas y anotad dónde acaba el robot y hacia dónde mira. Repetid desde la misma posición.
 
 ```coding-set
-avançar -> girar dreta -> avançar -> girar dreta
+avanzar -> girar derecha -> avanzar -> girar derecha
 ```
 
 Retirad las cuatro piezas del tablero. En la fila principal poned las dos piezas **Call Function → Call Function**; en la fila inferior poned **Define Function → Adelante → Derecha**, siguiendo la [guía del fabricante](https://matatalab.com/en/node/63). Cada llamada ejecuta las dos órdenes de la definición. Devolved el robot al inicio con la misma orientación, ejecutad y comparad su posición final con la del programa anterior. Si no coinciden, revisad las dos filas y la posición inicial antes de volver a probar.
@@ -49,13 +49,13 @@ Retirad las cuatro piezas del tablero. En la fila principal poned las dos piezas
 Fila principal:
 
 ```coding-set
-crida funció -> crida funció
+llamar función -> llamar función
 ```
 
 Fila inferior (definición):
 
 ```coding-set
-defineix funció -> avançar -> girar dreta
+definir función -> avanzar -> girar derecha
 ```
 
 Las piezas Define y Call van en filas diferentes. No añadáis un bloque número a la función: el fabricante indica que esta combinación no es compatible.
@@ -67,7 +67,7 @@ Si el kit incluye estos bloques, probad por separado el movimiento aleatorio, la
 Cada pieza siguiente corresponde a una prueba independiente; no las coloquéis juntas en un único programa.
 
 ```coding-set
-aleatori
+aleatorio
 ```
 
 ```coding-set
@@ -75,7 +75,7 @@ música
 ```
 
 ```coding-set
-dansa
+baile
 ```
 
 ### 3. Depurad la lectura del tablero

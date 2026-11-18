@@ -42,10 +42,10 @@ Con el programa detenido, conectad el motor al puerto A y el sensor de color al 
 Preparad esta secuencia con los bloques equivalentes de vuestra versión de SPIKE App:
 
 ```spikeapp
-quan comença el programa
-activa el motor [A v] a velocitat baixa
-espera fins que el sensor de color [C v] detecte [vermell v]
-atura el motor [A v]
+cuando comience el programa
+activar el motor [A v] a velocidad baja
+espera hasta que el sensor de color [C v] detecte [rojo v]
+detener el motor [A v]
 ```
 
 Empezad con la tarjeta blanca delante del sensor. Ejecutad el programa y sustituidla por la roja sin acercar las manos al motor. Observad si el eje deja de girar. Mantened accesible el botón de parada y parad manualmente si no se detecta el color.

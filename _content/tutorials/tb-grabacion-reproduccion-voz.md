@@ -40,7 +40,7 @@ Elegid una frase corta, por ejemplo «¡Hola, soy el conejo!». Mantened pulsado
 Mantened X más de un segundo para borrar las órdenes anteriores y comprobad que los indicadores se apagan. Después pulsad **Adelante → grabación brevemente → Derecha → Adelante → Play**. La pulsación breve del botón de grabación añade el mensaje a la secuencia; mantenerlo pulsado inicia una grabación nueva.
 
 ```talebot
-avançar -> gravació -> girar dreta -> avançar -> executa
+avanzar -> grabación -> girar derecha -> avanzar -> ejecutar
 ```
 
 > **💡 Consejo de uso:** Comprobad la grabación antes de añadirla al programa; una pulsación larga del botón sustituye el mensaje anterior.

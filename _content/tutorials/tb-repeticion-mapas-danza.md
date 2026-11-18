@@ -45,7 +45,7 @@ Mantened X más de un segundo para empezar sin órdenes anteriores. Preparad con
 Secuencia base; el botón de repetición se configura después, tal como se explica en el paso:
 
 ```talebot
-avançar -> girar dreta
+avanzar -> girar derecha
 ```
 
 ### 2. Comparad la danza predefinida
@@ -53,7 +53,7 @@ avançar -> girar dreta
 Borrad las órdenes anteriores, pulsad una vez el botón de danza y después **Play**. Repetid la prueba tres veces y anotad si el movimiento cambia. Comparadlo con una secuencia direccional propia: la danza selecciona un patrón incorporado, mientras que la ruta depende de las órdenes introducidas.
 
 ```talebot
-dansa -> executa
+baile -> ejecutar
 ```
 
 ### 3. Explorad la guía de un mapa OID
@@ -65,7 +65,7 @@ Con un mapa interactivo compatible, colocad el robot en la entrada principal y e
 Mantened pulsado el botón de grabación mientras decís una frase ficticia corta y soltadlo. El robot la reproducirá para que podáis comprobarla. Borrad las órdenes anteriores e introducid **Adelante → grabación** con una pulsación breve del botón de grabación; pulsad Play y escuchad el mensaje después del movimiento.
 
 ```talebot
-avançar -> gravació -> executa
+avanzar -> grabación -> ejecutar
 ```
 
 Usad una frase ficticia sin nombres ni datos personales.

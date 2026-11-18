@@ -42,9 +42,9 @@ Conectad el motor al puerto A y comprobad que SPIKE App lo reconoce. Observad la
 Seleccionad los bloques equivalentes de vuestra versión de la app y una velocidad baja:
 
 ```spikeapp
-quan comença el programa
-fixa la velocitat del motor [A v] a (20) %
-motor [A v] gira (90) graus
+cuando comience el programa
+fijar la velocidad del motor [A v] a (20) %
+motor [A v] gira (90) grados
 ```
 
 Ejecutad una vez y comprobad que la marca ha girado un cuarto de vuelta. No toquéis ni frenéis la parte giratoria. Si el motor se desplaza sobre la mesa, detenedlo y buscad una posición de apoyo estable antes de continuar.

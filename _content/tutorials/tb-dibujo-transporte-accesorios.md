@@ -39,7 +39,7 @@ Fijad una hoja grande sobre una superficie plana y poned una cartulina debajo. C
 Marcad un punto inicial y orientad el robot paralelo a un borde del papel. Borrad el programa anterior manteniendo X más de un segundo. Pulsad **Adelante → Derecha** cuatro veces y después **Play**. Cada avance dibuja un lado y cada giro cambia la orientación; el giro no dibuja un lado. Observad si el trazo se parece a un cuadrado y acaba cerca del punto inicial.
 
 ```talebot
-avançar -> girar dreta -> avançar -> girar dreta -> avançar -> girar dreta -> avançar -> girar dreta -> executa
+avanzar -> girar derecha -> avanzar -> girar derecha -> avanzar -> girar derecha -> avanzar -> girar derecha -> ejecutar
 ```
 
 ### 2. Cread un patrón rectangular
@@ -47,8 +47,8 @@ avançar -> girar dreta -> avançar -> girar dreta -> avançar -> girar dreta ->
 Borrad la secuencia. Planificad lados de dos pasos, un paso, dos pasos y un paso, con un giro a la derecha después de cada lado. Introducid **Adelante → Adelante → Derecha → Adelante → Derecha → Adelante → Adelante → Derecha → Adelante → Derecha** y pulsad **Play**. Los lados opuestos tienen la misma longitud. Antes de ejecutar, dibujad la forma prevista; usad una hoja nueva para distinguir los intentos. Si el robot no acepta toda la secuencia, ejecutad dos lados, borrad las órdenes e introducid los otros dos sin cambiar la posición ni la orientación.
 
 ```talebot
-avançar -> avançar -> girar dreta -> avançar -> girar dreta
-avançar -> avançar -> girar dreta -> avançar -> girar dreta -> executa
+avanzar -> avanzar -> girar derecha -> avanzar -> girar derecha
+avanzar -> avanzar -> girar derecha -> avanzar -> girar derecha -> ejecutar
 ```
 
 ### 3. Ampliación opcional: probad el transporte con los brazos

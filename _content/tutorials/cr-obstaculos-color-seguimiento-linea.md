@@ -44,9 +44,9 @@ Abrid mBlock 5, añadid Codey Rocky y conectad el robot por USB o por una conexi
 Empezad con una orden corta, sobre una mesa sin bordes próximos:
 
 ```mblock
-quan es prem el botó [A v]
-avança a velocitat (20) durant (1) segons
-atura el moviment
+cuando se pulse el botón [A v]
+avanzar a velocidad (20) durante (1) segundos
+detener el movimiento
 ```
 
 El dibujo muestra la idea del programa: buscad los bloques de movimiento equivalentes en vuestra versión y comprobad que Rocky se detiene después de un segundo.
@@ -60,16 +60,16 @@ Con el sensor orientado hacia delante, mostrad en la matriz de Codey el estado �
 Haced que Rocky avance a baja velocidad mientras el sensor indique espacio libre. Si detecta un obstáculo, detenedlo, haced una marcha atrás breve y girad a un lado antes de reanudar el avance. Buscad los bloques equivalentes en mBlock:
 
 ```mblock
-quan es prem el botó [A v]
-per sempre
-si <el sensor detecta un obstacle> aleshores
-atura el moviment
-ves arrere durant (0.5) segons
-gira a la dreta durant (0.5) segons
-si no
-avança a velocitat (20)
-fi
-fi
+cuando se pulse el botón [A v]
+para siempre
+si <el sensor detecta un obstáculo> entonces
+detener el movimiento
+retroceder durante (0.5) segundos
+girar a la derecha durante (0.5) segundos
+si no
+avanzar a velocidad (20)
+fin
+fin
 ```
 
 Empezad con una sola caja de cartón y una velocidad baja. Si el sensor no ofrece un bloque de obstáculo en vuestra versión, no inventéis el umbral: probad el caso oficial de Makeblock con el dispositivo y los bloques disponibles. Si el giro no deja espacio suficiente, cambiad solo la duración o la velocidad. El [caso oficial](https://support.makeblock.com/hc/en-us/articles/7463724329879-Case-18-Codey-Rocky-avoids-obstacles) muestra un ejemplo con el sensor mirando hacia delante.

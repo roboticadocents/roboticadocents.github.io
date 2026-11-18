@@ -1,5 +1,5 @@
 ---
-title: "Primeras pasos: conexión a mBlock 5 y caras en la matriz LED"
+title: "Primeros pasos: conexión a mBlock 5 y caras en la matriz LED"
 description: "Conectar Codey al software del ordenador o tableta y programar animaciones faciales y mensajes deslizantes."
 robot: codey-rocky
 level: "Iniciación"
@@ -41,11 +41,11 @@ Abrid la categoría de pantalla y añadid el bloque para mostrar una imagen. Dib
 Preparad dos pilas separadas: cuando se pulsa A, mostrad la cara; cuando se pulsa B, mostrad el texto «Hola».
 
 ```mblock
-quan es prem el botó [A v]
-mostra una cara feliç
+cuando se pulse el botón [A v]
+mostrar una cara feliz
 
-quan es prem el botó [B v]
-mostra el text [Hola]
+cuando se pulse el botón [B v]
+mostrar el texto [Hola]
 ```
 
 Buscad los bloques equivalentes en vuestra versión de mBlock: los nombres pueden variar. Ejecutad en modo **En vivo**, que envía las órdenes mientras Codey está conectado. Si queréis que el programa funcione sin el ordenador, usad el modo de carga y seguid la indicación de mBlock para transferirlo al dispositivo.

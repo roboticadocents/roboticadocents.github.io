@@ -43,7 +43,7 @@ Poned MatataBot en el inicio, mirando hacia el obstáculo y la bandera. Dibujad 
 Seguid con el dedo esta ruta sobre la cuadrícula antes de colocar las piezas. Un giro cambia hacia dónde mira el robot, pero no lo avanza:
 
 ```coding-set
-girar dreta -> avançar -> girar esquerra -> avançar -> avançar -> girar esquerra -> avançar
+girar derecha -> avanzar -> girar izquierda -> avanzar -> avanzar -> girar izquierda -> avanzar
 ```
 
 El recorrido pasa junto a la tarjeta y vuelve a la columna de la bandera. Antes de usar el robot, seguid las flechas con el dedo y comprobad que hay espacio suficiente en la cuadrícula.

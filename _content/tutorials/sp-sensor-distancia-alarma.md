@@ -43,11 +43,11 @@ Conectad el sensor de distancia ultrasónico al puerto C y abrid la información
 Poned la caja a 30 cm y preparad los bloques equivalentes de vuestra versión de SPIKE App:
 
 ```spikeapp
-quan comença el programa
-esborra la pantalla
-espera fins que la distància del sensor [C v] siga menor de (12) cm
-mostra un signe d’exclamació
-emet un to curt amb el Hub
+cuando comience el programa
+borrar la pantalla
+espera hasta que la distancia del sensor [C v] sea menor de (12) cm
+mostrar un signo de exclamación
+emitir un tono corto con el Hub
 ```
 
 Comprobad las unidades: 12 cm equivalen a 120 mm. Ejecutad el programa y acercad lentamente la caja a mano, sin mover el sensor. Observad cuándo aparece el icono y suena el tono del altavoz del Hub. El programa avisa una vez; para repetir, alejad la caja y volved a ejecutarlo.

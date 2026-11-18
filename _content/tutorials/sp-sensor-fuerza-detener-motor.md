@@ -41,10 +41,10 @@ Conectad el motor al puerto A y el sensor de fuerza al B. Abrid la información 
 Buscad los bloques equivalentes de vuestra versión de SPIKE App:
 
 ```spikeapp
-quan comença el programa
-activa el motor [A v] a velocitat baixa
-espera fins que el sensor de força [B v] estiga premut
-atura el motor [A v]
+cuando comience el programa
+activar el motor [A v] a velocidad baja
+espera hasta que el sensor de fuerza [B v] esté pulsado
+detener el motor [A v]
 ```
 
 Iniciad el programa con el sensor liberado. Pulsadlo sin acercar la mano al motor y observad la parada. Soltar el sensor no reinicia este programa: hay que volver a ejecutarlo. Mantened también accesible la parada manual del Hub o de la app.

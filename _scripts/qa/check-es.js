@@ -266,7 +266,16 @@ function compareStats(file, original, translated, issues) {
     before.fences.forEach((fence, index) => {
       const other = after.fences[index];
       if (fence.lang !== other.lang) error(`Lenguaje del bloque ${index + 1}: ${fence.lang} → ${other.lang}`);
-      if (fence.code !== other.code) error(`El contenido del bloque ${index + 1} ha cambiado; el código no se traduce`);
+      if (fence.code !== other.code) {
+        const visual = ['mblock', 'mblocks', 'spikeapp', 'spike-app', 'spike', 'scratchblocks', 'talebot', 'tale-bot', 'coding-set', 'codingset'].includes(fence.lang);
+        if (visual && fence.lang === other.lang) {
+          const numbers = code => (code.match(/\b\d+(?:[.,]\d+)?\b/g) || []).join(',');
+          if (numbers(fence.code) !== numbers(other.code)) error(`Han cambiado los parámetros numéricos del diagrama ${index + 1}`);
+          warn(`Etiquetas del diagrama ${index + 1} traducidas; comprobar formas, colores y agrupaciones con test-visual-blocks.js`);
+        } else {
+          error(`El contenido del bloque ${index + 1} ha cambiado; el código ejecutable no se traduce`);
+        }
+      }
     });
   }
   const originalImages = [...before.images].sort().join('\n');

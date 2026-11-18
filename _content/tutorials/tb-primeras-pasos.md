@@ -1,5 +1,5 @@
 ---
-title: "Primeras pasos: botones direccionales y la tecla Delete"
+title: "Primeros pasos: botones direccionales y la tecla Delete"
 description: "Descubrir los botones de Tale-Bot Pro, probar un recorrido corto y aprender a borrarlo."
 robot: tale-bot
 level: "Iniciación"
@@ -43,13 +43,13 @@ Antes de un camino nuevo, mantened pulsado el botón X más de un segundo y comp
 Marcad el inicio y orientad el robot hacia delante. Pulsad:
 
 ```talebot
-avançar -> avançar -> executa
+avanzar -> avanzar -> ejecutar
 ```
 
 Observad dónde se detiene y medid la distancia recorrida. Comprobad el tamaño del paso de vuestro robot; no supongáis que cada orden equivale a una casilla de la cuadrícula. El movimiento también puede variar según el suelo.
 
 ```talebot
-avançar -> girar dreta -> esborra -> avançar -> executa
+avanzar -> girar derecha -> borrar -> avanzar -> ejecutar
 ```
 
 Para comprobar el borrado parcial, mantened X más de un segundo, introducid **Adelante → Derecha**, pulsad X brevemente y añadid **Adelante**. Revisad las órdenes con las tarjetas o los indicadores y pulsad Play: el robot debería hacer dos avances. Si gira, vaciad la secuencia y repetid con una pulsación breve más clara.

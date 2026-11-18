@@ -44,11 +44,11 @@ Preparad **Adelante → Adelante → Adelante** y pulsad el botón grande. Devol
 Comparad las dos disposiciones del tablero:
 
 ```coding-set
-avançar -> avançar -> avançar
+avanzar -> avanzar -> avanzar
 ```
 
 ```coding-set
-avançar -> 3
+avanzar -> 3
 ```
 
 Repetid con Atrás si hay espacio libre detrás. El número indica cuántas veces se hace el movimiento de avanzar o retroceder, no centímetros ni velocidad.
@@ -58,7 +58,7 @@ Repetid con Atrás si hay espacio libre detrás. El número indica cuántas vece
 Añadid un giro de 90° al final de la ruta y observad que el robot gira sin avanzar de casilla. Según la guía del fabricante, los bloques numéricos no se aplican a los giros izquierda/derecha: para hacer dos giros, colocad dos piezas de giro o utilizad las piezas de bucle.
 
 ```coding-set
-avançar -> 3 -> girar dreta
+avanzar -> 3 -> girar derecha
 ```
 
 ### 3. Corregid el programa

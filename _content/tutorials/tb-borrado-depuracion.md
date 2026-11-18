@@ -43,7 +43,7 @@ Planificad cuatro órdenes sencillas que hagan llegar Tale-Bot a un destino. Bor
 Ejemplo de ruta prevista: dos avances, un giro a la derecha y un avance. Introducid por error un giro a la izquierda como cuarta orden, sin ejecutar todavía:
 
 ```talebot
-avançar -> avançar -> girar dreta -> girar esquerra
+avanzar -> avanzar -> girar derecha -> girar izquierda
 ```
 
 ### 2. Corregid la última orden
@@ -53,7 +53,7 @@ Pulsad Clear brevemente, menos de un segundo. Comprobad que desaparece el últim
 En el ejemplo, haced una pulsación corta de Clear y añadid el avance que faltaba. La ruta corregida queda así:
 
 ```talebot
-avançar -> avançar -> girar dreta -> avançar
+avanzar -> avanzar -> girar derecha -> avanzar
 ```
 
 ### 3. Ejecutad la secuencia y probad el borrado completo

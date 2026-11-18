@@ -91,7 +91,7 @@ function getSimSvgs() {
 
 function parseSequence(source, dialect) {
   const tokens = String(source).split(/\r?\n|->|→/).map(s => s.trim()).filter(Boolean);
-  if (!tokens.length) throw new Error('La seqüència està buida.');
+  if (!tokens.length) throw new Error('La secuencia está vacía.');
   const blocks = [];
   let depth = 0;
   for (const token of tokens) {
@@ -113,20 +113,20 @@ function parseSequence(source, dialect) {
     }
     if (dialect === 'talebot' && /^(executa|iniciar|ejecutar|play)$/.test(key)) { blocks.push({ type: 'play' }); continue; }
     if (dialect === 'talebot' && /^(esborra|borrar)$/.test(key)) { blocks.push({ type: 'clear' }); continue; }
-    throw new Error(`Instrucció no reconeguda en ${dialect}: «${token}».`);
+    throw new Error(`Instrucción no reconocida en ${dialect}: «${token}».`);
   }
-  if (depth) throw new Error('Falta «fi» per tancar el bucle.');
+  if (depth) throw new Error('Falta «fin» para cerrar el bucle.');
   return blocks;
 }
 
 function renderTangibleBlocks(source, language) {
   const dialect = DIALECTS[language];
-  if (!dialect) throw new Error('Robot desconegut.');
+  if (!dialect) throw new Error('Robot desconocido.');
   const blocks = parseSequence(source, dialect);
   const tale = dialect === 'talebot';
   const svgs = getSimSvgs();
   const width = blocks.length * 88 + 16;
-  const description = blocks.map(b => `${LABELS[b.type]}${b.number ? ` (${b.number === 'random' ? 'aleatori' : b.number})` : ''}`).join(' → ');
+  const description = blocks.map(b => `${LABELS[b.type]}${b.number ? ` (${b.number === 'random' ? 'aleatorio' : b.number})` : ''}`).join(' → ');
 
   const pieces = blocks.map((block, i) => {
     const x = i * 88 + 12;

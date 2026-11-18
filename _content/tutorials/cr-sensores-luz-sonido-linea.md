@@ -44,10 +44,10 @@ Abrid mBlock 5, seleccionad Codey Rocky y ejecutad una secuencia corta que muest
 Podéis empezar con esta prueba corta:
 
 ```mblock
-quan es prem el botó [A v]
-encén el llum RGB de color [blau v]
-avança a velocitat (20) durant (1) segons
-atura el moviment
+cuando se pulse el botón [A v]
+encender la luz RGB de color [azul v]
+avanzar a velocidad (20) durante (1) segundos
+detener el movimiento
 ```
 
 Buscad los bloques equivalentes en vuestra versión. Al pulsar A, observad la luz y comprobad que Rocky se detiene; si no lo hace, detened el programa antes de continuar.
@@ -57,8 +57,8 @@ Buscad los bloques equivalentes en vuestra versión. Al pulsar A, observad la lu
 Mantened Codey en la misma orientación. En mBlock, combinad un bloque de pantalla con el valor del sensor de luz. Esta es la idea que debéis construir con las piezas de vuestra versión:
 
 ```mblock
-quan es prem el botó [A v]
-mostra el valor de llum ambiental
+cuando se pulse el botón [A v]
+mostrar el valor de luz ambiental
 ```
 
 Pulsad A y anotad tres lecturas con luz habitual y tres haciendo sombra al sensor. Si necesitáis ayuda para encontrar el sensor, consultad el [ejemplo de luz del fabricante](https://support.makeblock.com/hc/en-us/articles/7463194482839-Case-12-Energy-conserving-RGB-LED-indicator).
@@ -72,15 +72,15 @@ En un proyecto de prueba, mostrad el nivel de sonido continuamente en la pantall
 En un proyecto nuevo, construid esta idea con los bloques equivalentes de mBlock. El número 25 es solo un ejemplo: poned vuestro valor de corte.
 
 ```mblock
-quan comença el programa
-per sempre
-si <nivell de so > (25)> aleshores
-encén el llum RGB de color [blau v]
-si no
-apaga el llum RGB
-fi
-espera (0.5) segons
-fi
+cuando comience el programa
+para siempre
+si <nivel de sonido > (25)> entonces
+encender la luz RGB de color [azul v]
+si no
+apagar la luz RGB
+fin
+espera (0.5) segundos
+fin
 ```
 
 Este dibujo resume las acciones; los nombres de los bloques pueden variar. Probad el programa en silencio y con una palmada. Si la luz no cambia, revisad las lecturas y ajustad el valor de corte. El sensor no reconoce palabras.

@@ -49,9 +49,9 @@ Programad el botón A para que muestre la primera expresión y encienda el indic
 Para empezar, preparad solo la respuesta del botón A:
 
 ```mblock
-quan es prem el botó [A v]
-mostra una cara feliç
-encén el llum RGB de color [blau v]
+cuando se pulse el botón [A v]
+mostrar una cara feliz
+encender la luz RGB de color [azul v]
 ```
 
 El dibujo es una guía: elegid los bloques de pantalla y luz equivalentes en mBlock. Pulsad A tres veces y comprobad la cara y la luz antes de añadir el botón B o los sensores.

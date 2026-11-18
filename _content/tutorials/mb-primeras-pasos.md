@@ -1,5 +1,5 @@
 ---
-title: "Primeras pasos: MakeCode, matriz de 25 LED y pulsadores"
+title: "Primeros pasos: MakeCode, matriz de 25 LED y pulsadores"
 description: "Cómo programar la placa desde el navegador web MakeCode sin instalar ningún programa y descargar el archivo."
   .hex.
 robot: microbit

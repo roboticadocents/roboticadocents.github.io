@@ -1,5 +1,5 @@
 ---
-title: "Primeras pasos: la torre de lectura y el tablero físico"
+title: "Primeros pasos: la torre de lectura y el tablero físico"
 description: "Descubrir la conexión entre la torre de escaneo y el MatataBot, y el orden secuencial de izquierda a derecha."
 robot: coding-set
 level: "Iniciación"
@@ -38,7 +38,7 @@ Encended la torre de control y el MatataBot y esperad a que se conecten. Comprob
 Poned tres fichas en la primera fila, de izquierda a derecha: **Adelante → Derecha → Adelante**. Colocad el robot sobre el mapa, mirando hacia una zona libre. Señalad la casilla donde pensáis que acabará; el giro cambia hacia dónde mira el robot, pero no lo avanza.
 
 ```coding-set
-avançar -> girar dreta -> avançar
+avanzar -> girar derecha -> avanzar
 ```
 
 ### 2. Ejecutad y comprobad la ruta

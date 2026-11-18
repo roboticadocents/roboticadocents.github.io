@@ -1,5 +1,5 @@
 ---
-title: "Primeras pasos: encender, impulsar y detener Coding Express"
+title: "Primeros pasos: encender, impulsar y detener Coding Express"
 description: "Poner en marcha el tren de la dotación, probar el movimiento Push & Go y construir una vía segura con estación y destino."
 robot: coding-express
 level: "Iniciación"
