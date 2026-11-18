@@ -11,10 +11,23 @@
     const dx = x - clamp(x, box.x, box.x + box.w), dy = y - clamp(y, box.y, box.y + box.h);
     return dx * dx + dy * dy < R * R;
   }
+  const SENSOR_NAMES = { infrared:'IR reflectit', gray:'Grisos', color:'Color', obstacle:'Obstacle', light:'Llum', sound:'So' };
+  const COLORS = { black:'#111827', white:'#ffffff', red:'#ef4444', green:'#22c55e', blue:'#3b82f6', yellow:'#facc15' };
+  function segmentDistance(x,y,a,b) {
+    const dx=b.x-a.x,dy=b.y-a.y,t=clamp(((x-a.x)*dx+(y-a.y)*dy)/(dx*dx+dy*dy||1),0,1);
+    return Math.hypot(x-a.x-t*dx,y-a.y-t*dy);
+  }
+  function trackPreset(name, width=24) {
+    const points=[];
+    if(name==='straight') points.push({x:70,y:250},{x:730,y:250});
+    else if(name==='curve') for(let i=0;i<=100;i++){const x=70+i*6.6;points.push({x,y:250+90*Math.sin((x-70)/660*Math.PI*2)});}
+    else if(name==='circuit') for(let i=0;i<=160;i++){const a=-Math.PI/2+i/160*Math.PI*2;points.push({x:400+250*Math.cos(a),y:250+150*Math.sin(a)});}
+    return { points, width, color:'black' };
+  }
   class Engine {
     constructor(program = {}) {
       this.program = program;
-      this.environment = { light: 70, sound: 20, obstacles: [{ x: 430, y: 190, w: 65, h: 120 }] };
+      this.environment = { light: 70, sound: 20, orientation:'front', lines:[], patches:[], obstacles: [{ x: 430, y: 190, w: 65, h: 120 }] };
       this.reset();
     }
     reset() {
@@ -34,14 +47,60 @@
       }
       return false;
     }
+    sensorPoint() {
+      const a=this.pose.angle*Math.PI/180;
+      return {x:this.pose.x+24*Math.cos(a),y:this.pose.y+24*Math.sin(a)};
+    }
+    infrared() {
+      if(this.environment.orientation!=='front') return null;
+      const origin=this.sensorPoint();let nearest=200;
+      for(const offset of [-8,0,8]) {
+        const a=(this.pose.angle+offset)*Math.PI/180;
+        for(let d=0;d<=200;d+=2){
+          const x=origin.x+Math.cos(a)*d,y=origin.y+Math.sin(a)*d;
+          if(x<0||y<0||x>WIDTH||y>HEIGHT||this.environment.obstacles.some(b=>x>=b.x&&x<=b.x+b.w&&y>=b.y&&y<=b.y+b.h)){nearest=Math.min(nearest,d);break;}
+        }
+      }
+      return Math.round(clamp(100*(1-nearest/200),0,100));
+    }
+    surfaceAt(x,y) {
+      let color='white';
+      for(const patch of this.environment.patches||[]) if(x>=patch.x&&y>=patch.y&&x<=patch.x+patch.w&&y<=patch.y+patch.h) color=patch.color;
+      for(const line of this.environment.lines||[]){
+        if(line.points.length===1&&Math.hypot(x-line.points[0].x,y-line.points[0].y)<=line.width/2)color=line.color;
+        for(let i=1;i<line.points.length;i++)if(segmentDistance(x,y,line.points[i-1],line.points[i])<=line.width/2){color=line.color;break;}
+      }
+      return color;
+    }
+    gray() {
+      if(this.environment.orientation!=='down')return null;
+      const p=this.sensorPoint();let sum=0;
+      // Petita petjada d'un únic sensor: la lectura varia en creuar una vora.
+      for(const dx of [-2,0,2])for(const dy of [-2,0,2]) {
+        const color=this.surfaceAt(p.x+dx,p.y+dy);
+        sum+=({black:5,white:95,red:40,green:55,blue:25,yellow:85})[color]??95;
+      }
+      return Math.round(sum/9);
+    }
     sensor(name) {
-      if (name === 'obstacle') return this.obstacle();
-      return this.environment[name] || 0;
+      if(name==='infrared')return this.infrared();
+      if(name==='gray')return this.gray();
+      if(name==='color'){if(this.environment.orientation!=='down')return null;const p=this.sensorPoint();return this.surfaceAt(p.x,p.y);}
+      if (name === 'obstacle') return this.obstacle(); // Compatibilitat amb projectes antics.
+      return this.environment[name] ?? 0;
     }
     test(block) {
       const value = this.sensor(block.sensor);
-      const result = block.sensor === 'obstacle' ? (block.obstacleValue === 'false' ? !value : Boolean(value)) : block.compare === '>' ? value > Number(block.threshold) : value < Number(block.threshold);
-      return { value, result };
+      if(value===null)return {value,result:false};
+      if(block.sensor==='color')return {value,result:block.compare==='!='?value!==block.value:value===block.value};
+      if(block.sensor==='obstacle')return {value,result:block.obstacleValue==='false'?!value:Boolean(value)};
+      const threshold=Number(block.threshold);
+      const result = ({'>':()=>value>threshold,'<':()=>value<threshold,'>=':()=>value>=threshold,'<=':()=>value<=threshold,'=':()=>value===threshold,'!=':()=>value!==threshold}[block.compare]||(()=>value<threshold))();
+      return {value,result};
+    }
+    conditionTrace(block,value,result) {
+      const text=value===null?'no disponible: canvia l’orientació del sensor':typeof value==='boolean'?(value?'sí':'no'):String(value);
+      return `${SENSOR_NAMES[block.sensor]||block.sensor}: ${text} → condició ${result?'certa':'falsa'}`;
     }
     trigger(event, run = true) {
       if (this.tasks.some(t => t.event === event)) return;
@@ -74,7 +133,7 @@
         if (++this.budget > 10000) { this.stop(); this.trace = 'Pausa després de 10.000 blocs. Revisa el programa i torna a executar.'; return false; }
         this.active = block.id;
         const seconds = clamp(block.seconds, .05, 10), power = clamp(block.power, 0, 100);
-        this.trace = 'Executant: ' + ({face:'mostra cara',text:'mostra text',rgb:'llum RGB',forward:'avança',back:'enrere',left:'gira esquerra',right:'gira dreta',drive:'avança contínuament',stop:'atura motors',wait:'espera',repeat:'repeteix',forever:'per sempre'}[block.type] || block.type);
+        this.trace = 'Executant: ' + ({face:'mostra cara',text:'mostra text',rgb:'llum RGB',forward:'avança',back:'enrere',left:'gira esquerra',right:'gira dreta',drive:'avança contínuament',tracks:'potència de les erugues',reading:'mostra lectura del sensor',stop:'atura motors',wait:'espera',repeat:'repeteix',forever:'per sempre'}[block.type] || block.type);
         switch (block.type) {
           case 'face': this.output.face = block.value || 'happy'; this.output.pattern = block.pattern; this.output.text = ''; break;
           case 'text': this.output.text = String(block.value || 'Hola').slice(0, 40); break;
@@ -86,16 +145,21 @@
             this.motor = { speed: 0, turn: power * 2.4 * (block.type === 'left' ? -1 : 1) };
             task.wait = seconds; task.timedMotor = true; break;
           case 'drive': this.motor = { speed: power * 1.5, turn: 0 }; break;
+          case 'tracks': {
+            const left=clamp(block.left,-100,100),right=clamp(block.right,-100,100);
+            this.motor={speed:(left+right)*.75,turn:(left-right)*2.4};break;
+          }
+          case 'reading': {const value=this.sensor(block.sensor);this.output.text=value===null?'—':String(value);break;}
           case 'stop': this.motor = { speed: 0, turn: 0 }; break;
           case 'wait': task.wait = seconds; break;
           case 'if': {
             const { value, result } = this.test(block);
-            this.trace = `${block.sensor === 'obstacle' ? 'Obstacle' : block.sensor === 'light' ? 'Llum' : 'So'}: ${typeof value === 'boolean' ? (value ? 'sí' : 'no') : value} → condició ${result ? 'certa' : 'falsa'} → ${result ? 'aleshores' : 'si no'}`;
+            this.trace = this.conditionTrace(block,value,result) + ` → ${result?'aleshores':'si no'}`;
             task.frames.push({ blocks: result ? block.then : block.else, index: 0, remaining: 1 }); break;
           }
           case 'while': {
             const { value, result } = this.test(block);
-            this.trace = `Mentre · ${block.sensor === 'obstacle' ? 'Obstacle' : block.sensor === 'light' ? 'Llum' : 'So'}: ${typeof value === 'boolean' ? (value ? 'sí' : 'no') : value} → condició ${result ? 'certa: repetim' : 'falsa: continuem després del bucle'}`;
+            this.trace = 'Mentre · '+this.conditionTrace(block,value,result)+(result?': repetim':': continuem després del bucle');
             if (result) task.frames.push({ blocks: block.body || [], index: 0, remaining: 1, whileBlock: block });
             break;
           }
@@ -143,5 +207,5 @@
       if (waits.length) for (let t = 0, duration = Math.min(...waits); t < duration; t += .02) this.elapse(Math.min(.02, duration - t));
     }
   }
-  return { Engine, WIDTH, HEIGHT, R };
+  return { Engine, WIDTH, HEIGHT, R, COLORS, trackPreset, segmentDistance };
 });
