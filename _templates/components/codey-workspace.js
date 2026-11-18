@@ -56,7 +56,8 @@ function CodeyWorkspace({ root }) {
       <div class="cr-palette-families" role="group" aria-label="Blocs disponibles per família">
         ${palette()}
       </div>
-      <p class="cr-hint">Tria «Afegir ací» dins d’una branca o bucle i després un bloc. Pots canviar l’ordre amb ↑ i ↓.</p>
+      <p class="cr-hint">Afig blocs al punt seleccionat. Obri ⋯ per inserir, duplicar o moure.</p>
+      <div class="cr-edit-feedback"><span data-cr-edit-status role="status"></span><button type="button" class="cr-insert" data-cr-cancel-move hidden>Cancel·la el moviment</button></div>
       <div class="cr-program" data-cr-program></div>
       <div class="cr-execution"><div class="cr-run-controls"><button type="button" class="sim-btn sim-btn-primary" data-cr-run>▶ Executa</button><button type="button" class="sim-btn sim-btn-secondary" data-cr-step>Pas a pas</button><button type="button" class="sim-btn sim-btn-outline" data-cr-stop>■ Atura</button></div>
       <p class="cr-condition-reading" data-cr-condition>La lectura i el resultat de la condició apareixeran ací.</p>

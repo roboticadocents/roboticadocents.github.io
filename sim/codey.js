@@ -29,7 +29,7 @@
   function cleanProgram(value) {
     if(!value||typeof value!=='object')throw new Error('Falta el programa.');let total=0;
     function clean(list,depth=0) {
-      if(!Array.isArray(list)||list.length>100||depth>8)throw new Error('Estructura de blocs no vàlida.');
+      if(!Array.isArray(list)||list.length>150||depth>8)throw new Error('Estructura de blocs no vàlida.');
       return list.map(b=>{
         if(!b||!names[b.type]||++total>300)throw new Error('Bloc desconegut o programa massa llarg.');
         const legacy=b.sensor==='obstacle';
@@ -41,7 +41,7 @@
   let stored=null,program=example('obstacle');
   try {stored=JSON.parse(localStorage.getItem('robotica-codey-v2')||localStorage.getItem('robotica-codey-v1'));if(stored&&[1,2].includes(stored.version))program=cleanProgram(stored.program);}catch(_){stored=null;}
   const engine=new Engine(program);
-  let selectedEvent='start',target=program.start,tool='obstacle',listMap=new Map();
+  let selectedEvent='start',target=program.start,targetIndex=null,movingId=null,tool='obstacle',listMap=new Map();
   let startPose={...engine.pose},cursor={x:320,y:250},keyboardCursor=false;
   let calibration={background:null,line:null},lineWidth=24,surfaceColor='black',drawing=null;
   function cleanEnvironment(value={}) {
@@ -89,16 +89,39 @@
     const movement = ['forward','back','left','right','drive'].includes(b.type);
     return (movement ? number('power', b.power, 0, 100, 1, 'Potència %') : '') + ((movement && b.type !== 'drive') || b.type === 'wait' ? number('seconds', b.seconds, .05, 10, .05, 'Segons') : '');
   }
-  function renderList(list, depth = 0) {
+  function containsList(b, list) {
+    return ['body','then','else'].some(key=>b[key]===list||b[key].some(child=>containsList(child,list)));
+  }
+  function validSize() {
+    let total=0;
+    function visit(list,depth=0) {return list.every(b=>++total<=150&&depth<=8&&['body','then','else'].every(key=>visit(b[key],depth+1)));}
+    return Object.values(program).every(list=>visit(list));
+  }
+  function copyBlock(b) {
+    return {...b,id:`cr-${++counter}`,pattern:[...b.pattern],body:b.body.map(copyBlock),then:b.then.map(copyBlock),else:b.else.map(copyBlock)};
+  }
+  function focusInsertion() { $('[data-cr-target][aria-pressed="true"]')?.focus({preventScroll:true}); }
+  function renderList(list) {
     const key = `list-${listMap.size}`; listMap.set(key, list);
+    const moving=movingId&&find(movingId)?.block;
+    const blocked=moving&&containsList(moving,list);
+    function insertion(index) {
+      const selected=list===target&&index===(targetIndex??list.length);
+      if(!moving&&!selected&&index!==list.length)return '';
+      return `<button type="button" class="cr-insert" data-cr-target="${key}" data-cr-index="${index}" aria-pressed="${selected}" aria-label="${moving?'Mou':'Afegir'} ací: posició ${index+1}"${blocked?' disabled':''}>${selected?'✓ ':'+ '}${moving?'Mou ací':'Afegir ací'}</button>`;
+    }
     return `<div class="cr-block-list${list === target ? ' is-target' : ''}">${list.map((b, i) => {
       const category=blockStyles[b.type].category;
-      return `<div class="cr-block cr-block-${category} cr-category-${category}" data-cr-block="${b.id}"><div class="cr-block-heading"><strong class="cr-block-title">${blockIcon(b.type)}<span>${names[b.type]}</span></strong><div class="cr-block-actions"><button type="button" data-cr-action="up" aria-label="Puja ${names[b.type]}"${i === 0 ? ' disabled' : ''}>↑</button><button type="button" data-cr-action="down" aria-label="Baixa ${names[b.type]}"${i === list.length - 1 ? ' disabled' : ''}>↓</button><button type="button" data-cr-action="delete" aria-label="Lleva ${names[b.type]}">×</button></div></div><div class="cr-block-fields">${blockFields(b)}</div>${b.type === 'if' ? `<p class="cr-branch-label">Aleshores</p>${renderList(b.then, depth+1)}<p class="cr-branch-label">Si no</p>${renderList(b.else, depth+1)}` : ['repeat','forever','while'].includes(b.type) ? renderList(b.body, depth+1) : ''}</div>`;
-    }).join('')}<button type="button" class="cr-insert" data-cr-target="${key}" aria-pressed="${list === target}">${list === target ? '✓ ' : '+ '}Afegir ací</button></div>`;
+      return `${insertion(i)}<div class="cr-block cr-block-${category} cr-category-${category}${b.id===movingId?' is-moving':''}" data-cr-block="${b.id}"><div class="cr-block-heading"><strong class="cr-block-title">${blockIcon(b.type)}<span>${names[b.type]}</span></strong><details class="cr-block-menu" name="cr-block-actions"><summary aria-label="Opcions de ${names[b.type]}" title="Opcions del bloc">⋯</summary><div class="cr-block-actions"><button type="button" data-cr-action="before">Afig abans</button><button type="button" data-cr-action="after">Afig després</button><button type="button" data-cr-action="duplicate">Duplica</button><button type="button" data-cr-action="move">Mou…</button><button type="button" data-cr-action="up"${i === 0 ? ' disabled' : ''}>↑ Puja</button><button type="button" data-cr-action="down"${i === list.length - 1 ? ' disabled' : ''}>↓ Baixa</button><button type="button" data-cr-action="delete">Lleva</button></div></details></div><div class="cr-block-fields">${blockFields(b)}</div>${b.type === 'if' ? `<p class="cr-branch-label">Aleshores</p>${renderList(b.then)}<p class="cr-branch-label">Si no</p>${renderList(b.else)}` : ['repeat','forever','while'].includes(b.type) ? renderList(b.body) : ''}</div>`;
+    }).join('')}${insertion(list.length)}</div>`;
   }
   function renderProgram() {
+    if(movingId&&!find(movingId))movingId=null;
     listMap = new Map(); $('[data-cr-program]').innerHTML = renderList(program[selectedEvent]); previousActive = undefined;
     root.querySelectorAll('[data-cr-script]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.crScript === selectedEvent)));
+    root.querySelectorAll('[data-cr-add]').forEach(b=>b.disabled=!!movingId);
+    $('[data-cr-cancel-move]').hidden=!movingId;
+    $('[data-cr-edit-status]').textContent=movingId?`Mou «${names[find(movingId).block.type]}»: tria «Mou ací» a la posició de destí. També pots canviar de programa A/B.`:'';
   }
   function find(id, lists = Object.values(program)) {
     for (const list of lists) for (let i = 0; i < list.length; i++) {
@@ -108,15 +131,28 @@
     return null;
   }
   root.addEventListener('click', event => {
+    if(!event.target.closest('.cr-block-menu'))root.querySelectorAll('.cr-block-menu[open]').forEach(menu=>menu.open=false);
     const button = event.target.closest('button'); if (!button) return;
-    if (button.hasAttribute('data-cr-script')) { selectedEvent = button.dataset.crScript; target = program[selectedEvent]; renderProgram(); }
-    if (button.hasAttribute('data-cr-target')) { target = listMap.get(button.dataset.crTarget); renderProgram(); }
+    if (button.hasAttribute('data-cr-script')) { selectedEvent = button.dataset.crScript; target = program[selectedEvent]; targetIndex=null;renderProgram(); }
+    if (button.hasAttribute('data-cr-cancel-move')) { movingId=null;renderProgram();focusInsertion(); }
+    if (button.hasAttribute('data-cr-target')) {
+      const destination=listMap.get(button.dataset.crTarget);let index=Number(button.dataset.crIndex);
+      if(movingId) {
+        const entry=find(movingId);if(!entry||containsList(entry.block,destination))return;
+        halt();entry.list.splice(entry.index,1);if(entry.list===destination&&entry.index<index)index--;
+        destination.splice(index,0,entry.block);
+        if(!validSize()){destination.splice(index,1);entry.list.splice(entry.index,0,entry.block);engine.trace='El moviment supera la profunditat màxima de 8 nivells.';return;}
+        movingId=null;save();engine.trace='Bloc mogut amb tot el seu contingut.';
+      }
+      target=destination;targetIndex=index;renderProgram();focusInsertion();
+    }
     if (button.hasAttribute('data-cr-add')) {
-      let total = 0; function count(list, d=0) { if(d>8) throw new Error(); for(const b of list) { total++;count(b.body,d+1);count(b.then,d+1);count(b.else,d+1); } }
-      try { for(const list of Object.values(program))count(list); if(total>=150)throw new Error(); }
-      catch (_) { engine.trace='Programa massa llarg. Redueix els blocs o la profunditat dels bucles.'; return; }
-      halt(); const b = block(button.dataset.crAdd); target.push(b);
-      if (b.type === 'if') target = b.then; else if (['repeat','forever','while'].includes(b.type)) target = b.body;
+      if(movingId)return;
+      halt();const b=block(button.dataset.crAdd),index=targetIndex??target.length;
+      target.splice(index,0,b);
+      if(!validSize()){target.splice(index,1);engine.trace='Programa massa llarg: màxim 150 blocs i 8 nivells.';return;}
+      targetIndex=index+1;
+      if(b.type==='if'){target=b.then;targetIndex=null;}else if(['repeat','forever','while'].includes(b.type)){target=b.body;targetIndex=null;}
       save(); renderProgram();
     }
     if (button.hasAttribute('data-cr-pixel')) {
@@ -125,11 +161,25 @@
     }
     if (button.hasAttribute('data-cr-action')) {
       const entry = find(button.closest('[data-cr-block]').dataset.crBlock); halt();
-      if (button.dataset.crAction === 'delete') { entry.list.splice(entry.index, 1); target = program[selectedEvent]; }
-      else { const n = entry.index + (button.dataset.crAction === 'up' ? -1 : 1); if(n>=0&&n<entry.list.length)[entry.list[n],entry.list[entry.index]]=[entry.list[entry.index],entry.list[n]]; }
+      const action=button.dataset.crAction;
+      if(action==='before'||action==='after') {movingId=null;target=entry.list;targetIndex=entry.index+(action==='after'?1:0);renderProgram();focusInsertion();return;}
+      if(action==='move') {movingId=movingId===entry.block.id?null:entry.block.id;renderProgram();$('[data-cr-cancel-move]')?.focus();return;}
+      movingId=null;
+      if(action==='delete') {entry.list.splice(entry.index,1);target=program[selectedEvent];targetIndex=null;}
+      else if(action==='duplicate') {
+        const copy=copyBlock(entry.block);entry.list.splice(entry.index+1,0,copy);
+        if(!validSize()){entry.list.splice(entry.index+1,1);engine.trace='No es pot duplicar: se supera el límit de 150 blocs.';return;}
+        target=entry.list;targetIndex=entry.index+2;
+      } else {
+        const n=entry.index+(action==='up'?-1:1);
+        if(n>=0&&n<entry.list.length)[entry.list[n],entry.list[entry.index]]=[entry.list[entry.index],entry.list[n]];
+        target=entry.list;targetIndex=null;
+      }
       save();renderProgram();
+      if(action==='delete'||action==='duplicate')focusInsertion();
+      else root.querySelector(`[data-cr-block="${entry.block.id}"] > .cr-block-heading > .cr-block-menu > summary`)?.focus({preventScroll:true});
     }
-    if (button.hasAttribute('data-cr-clear')) { halt();program[selectedEvent]=[];target=program[selectedEvent];save();renderProgram(); }
+    if (button.hasAttribute('data-cr-clear')) { halt();program[selectedEvent]=[];target=program[selectedEvent];targetIndex=null;movingId=null;save();renderProgram(); }
     if (button.hasAttribute('data-cr-run')) { engine.reset();engine.pose={...startPose};engine.trigger('start'); }
     if (button.hasAttribute('data-cr-step')) engine.step();
     if (button.hasAttribute('data-cr-stop')) { halt();engine.trace='Programa aturat.'; }
@@ -158,6 +208,7 @@
     }
     if (button.hasAttribute('data-cr-tool')) { tool=button.dataset.crTool;root.querySelectorAll('[data-cr-tool]').forEach(b=>b.setAttribute('aria-pressed',String(b===button))); }
   });
+  root.addEventListener('keydown',event=>{if(event.key==='Escape'&&event.target.closest('.cr-block-menu[open]')){const menu=event.target.closest('.cr-block-menu');menu.open=false;menu.querySelector('summary').focus();}if(event.key==='Escape'&&movingId){event.preventDefault();movingId=null;renderProgram();focusInsertion();}});
   root.addEventListener('change', async event => {
     const input = event.target;
     if(input.hasAttribute('data-cr-import')) {
@@ -166,13 +217,13 @@
         if(file.size>1500000)throw new Error('Fitxer massa gran.');const data=JSON.parse(await file.text());
         if(data.type!=='robotica-codey'||data.version!==2)throw new Error('No és un projecte de Codey Rocky compatible.');
         const nextProgram=cleanProgram(data.program);cleanEnvironment(data.environment);
-        halt();program=nextProgram;engine.program=program;restoreScene(data);engine.reset();engine.pose={...startPose};selectedEvent='start';target=program.start;syncSceneControls();save();renderProgram();
+        halt();program=nextProgram;engine.program=program;restoreScene(data);engine.reset();engine.pose={...startPose};selectedEvent='start';target=program.start;targetIndex=null;movingId=null;syncSceneControls();save();renderProgram();
         engine.trace='Projecte obert: programa i escenari restaurats.';
       }catch(error){engine.trace='No s’ha pogut obrir el projecte: '+error.message;}
       input.value='';return;
     }
     if(input.hasAttribute('data-cr-example')) {
-      halt();program=example(input.value);engine.program=program;selectedEvent='start';target=program.start;
+      halt();program=example(input.value);engine.program=program;selectedEvent='start';target=program.start;targetIndex=null;movingId=null;
       if(input.value==='line')loadTrack('circuit');
       else if(input.value==='color'){loadTrack('none');engine.environment.patches=[{x:430,y:210,w:80,h:80,color:'red'}];startPose={x:160,y:250,angle:0};}
       else if(['obstacle','while'].includes(input.value)){engine.environment={...engine.environment,orientation:'front',lines:[],patches:[],obstacles:[{x:430,y:190,w:65,h:120}]};startPose={x:160,y:250,angle:0};}
@@ -183,7 +234,9 @@
       entry.block[input.dataset.crField]=input.type==='number'?numeric(input.value,Number(input.min),Number(input.max),Number(input.min)):input.value;
       if(input.dataset.crField==='sensor'&&input.value==='color'){entry.block.compare='=';entry.block.value='red';}
       else if(input.dataset.crField==='sensor'&&!['<','>','<=','>=','=','!='].includes(entry.block.compare))entry.block.compare='>';
-      save();renderProgram();
+      save();
+      if(input.dataset.crField==='sensor'||(input.dataset.crField==='value'&&entry.block.type==='face'))renderProgram();
+      else if(input.type==='number')input.value=entry.block[input.dataset.crField];
     }
     if(input.hasAttribute('data-cr-orientation')){halt();engine.environment.orientation=input.value;save();}
     if(input.hasAttribute('data-cr-track'))loadTrack(input.value);

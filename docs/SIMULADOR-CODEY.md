@@ -4,7 +4,7 @@ Accés: `/sim/?robot=codey-rocky`, des de la pestanya del simulador o des de la 
 
 ## Programa i execució
 
-La paleta permet crear programes per a l’inici i els botons A/B. «Afegir ací» selecciona una branca o un cos de bucle. Les fletxes reordenen els blocs. Hi ha cares editables de 16 × 8, text lliscant, RGB, lectura de sensors, moviments amb temps, potència independent de les dues erugues, esperes, repeticions, «mentre» i «si / si no».
+La paleta permet crear programes per a l’inici i els botons A/B. «Afegir ací» apareix al final de cada branca o cos de bucle. El menú ⋯ de cada bloc permet inserir abans o després, pujar, baixar, duplicar, moure i llevar. Només es mostra un punt intermedi quan el seleccionem; en moure un bloc apareixen tots els destins. «Duplica» copia el bloc i tot el contingut amb identificadors nous. «Mou…» permet triar una posició de destí, també en un altre programa A/B, conservant els valors i el contingut. No es pot moure un bloc dins de si mateix; es pot cancel·lar amb el botó o amb Esc. Les operacions respecten el límit de 150 blocs i 8 nivells. Hi ha cares editables de 16 × 8, text lliscant, RGB, lectura de sensors, moviments amb temps, potència independent de les dues erugues, esperes, repeticions, «mentre» i «si / si no».
 
 «Executa» comença de nou des de la posició inicial. «Pas a pas» executa una instrucció lògica i aplica tota la durada d’un moviment temporitzat o espera. Una ordre contínua de les erugues manté els motors actius fins a una altra ordre; es pot observar en execució o avançar el temps amb un bloc d’espera. «Mentre» torna a comprovar el sensor abans de cada volta i continua després del bucle quan la condició és falsa.
 

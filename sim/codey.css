@@ -157,3 +157,27 @@
   .cr-device-face canvas { width:96px; height:48px; }
   .cr-section-heading { margin-bottom:10px; }
 }
+/* Edició amb posicions explícites i moviment per teclat o botons. */
+.cr-block-heading { flex-wrap:wrap; }
+.cr-block-actions { margin-left:auto; flex-wrap:wrap; }
+.cr-block-actions button { font-family:var(--font-sans); }
+.cr-block-actions button[aria-pressed="true"] { background:#dbeafe; border-color:#2563eb; }
+.cr-block.is-moving { outline:2px dashed #2563eb; outline-offset:2px; }
+.cr-block-list > .cr-insert { margin:2px 0 7px; }
+.cr-insert:disabled,.cr-palette button:disabled { opacity:.45; cursor:not-allowed; }
+.cr-edit-feedback { font-size:12px; line-height:1.5; color:#1e40af; max-height:80px; overflow:auto; }
+.cr-edit-feedback:has([data-cr-cancel-move]:not([hidden])) { background:#eff6ff; padding:6px; border-radius:6px; margin-bottom:6px; }
+.cr-edit-feedback button { margin-top:4px; }
+.cr-edit-feedback [hidden] { display:none; }
+.cr-program-panel:has([data-cr-cancel-move]:not([hidden])) > :is(.cr-palette-families,.cr-hint) { display:none; }
+/* Les accions secundàries es consulten només quan calen. */
+.cr-block-heading { align-items:flex-start; }
+.cr-block-title { flex:1; padding-top:4px; }
+.cr-block-menu { margin-left:auto; min-width:30px; }
+.cr-block-menu > summary { display:block; list-style:none; border:1px solid #cbd5e1; background:#ffffffc9; border-radius:5px; width:30px; padding:2px; text-align:center; font:700 20px/1.1 var(--font-sans); color:#475569; cursor:pointer; margin-left:auto; }
+.cr-block-menu > summary::-webkit-details-marker { display:none; }
+.cr-block-menu[open] { flex-basis:100%; }
+.cr-block-menu[open] > summary { background:white; border-color:var(--cr-border); }
+.cr-block-menu .cr-block-actions { display:flex; flex-wrap:wrap; gap:5px; padding:8px 0 4px; border-top:1px solid #cbd5e1; margin-top:6px; }
+.cr-block-menu .cr-block-actions button { width:auto; height:auto; padding:6px 9px; font:500 11px var(--font-sans); }
+.cr-block-menu [data-cr-action="delete"] { color:#b91c1c; }
