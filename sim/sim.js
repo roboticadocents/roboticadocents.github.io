@@ -1566,7 +1566,7 @@
   }
 
   function switchRobot(robotSlug, pushUrl = true) {
-    if (!['tale-bot', 'coding-set'].includes(robotSlug)) robotSlug = 'tale-bot';
+    if (!['tale-bot', 'coding-set', 'codey-rocky'].includes(robotSlug)) robotSlug = 'tale-bot';
     if (state.isRunning) stopExecution();
     state.robot = robotSlug;
 
@@ -1595,8 +1595,11 @@
       }
     }
 
+    const codeyWorkspace = document.querySelector('[data-codey-workspace]');
+    if (codeyWorkspace) codeyWorkspace.hidden = robotSlug !== 'codey-rocky';
+    document.dispatchEvent(new CustomEvent('simrobotchange', { detail: { robot: robotSlug } }));
     updateAccessoryButtons();
-    resetRobotToStart(true);
+    if (robotSlug !== 'codey-rocky') resetRobotToStart(true);
 
     if (pushUrl && window.history && window.history.replaceState) {
       const url = new URL(window.location.href);
@@ -1779,6 +1782,6 @@
   // Inicialització segons ?robot=tale-bot | coding-set
   renderBoardHeaders();
   const initialParams = new URLSearchParams(window.location.search);
-  const initialRobot = initialParams.get('robot') === 'coding-set' ? 'coding-set' : 'tale-bot';
+  const initialRobot = ['coding-set', 'codey-rocky'].includes(initialParams.get('robot')) ? initialParams.get('robot') : 'tale-bot';
   switchRobot(initialRobot, false);
 })();

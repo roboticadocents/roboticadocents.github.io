@@ -1,13 +1,14 @@
 'use strict';
 
 const { escapeHTML, escapeAttr, cleanRoot } = require('../layout/utils');
+const { CodeyWorkspace } = require('../components/codey-workspace');
 const { getSimSvgs } = require('../../_scripts/lib/tangible-blocks');
 
 function SimPage({ root = '../' } = {}) {
   const r = cleanRoot(root);
   const svgs = getSimSvgs();
-  const title = 'Simulador · Tale-Bot i Coding Set | Robòtica²⁰⁰';
-  const description = 'Aplicació de simulació per a Tale-Bot Pro i Matatalab Coding Set.';
+  const title = 'Simulador · Tale-Bot, Coding Set i Codey Rocky | Robòtica²⁰⁰';
+  const description = 'Aplicació de simulació per a Tale-Bot Pro, Matatalab Coding Set i Codey Rocky.';
 
   return `<!DOCTYPE html>
 <html lang="ca">
@@ -20,9 +21,12 @@ function SimPage({ root = '../' } = {}) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${r}_css/styles.css?v=10">
-  <link rel="stylesheet" href="${r}sim/sim.css?v=4">
+  <link rel="stylesheet" href="${r}sim/sim.css?v=5">
   <link rel="icon" type="image/svg+xml" href="${r}_assets/icons/logo.svg">
-  <script defer src="${r}sim/sim.js?v=4"></script>
+  <script defer src="${r}sim/sim.js?v=5"></script>
+  <link rel="stylesheet" href="${r}sim/codey.css?v=1">
+  <script defer src="${r}sim/codey-engine.js?v=2"></script>
+  <script defer src="${r}sim/codey.js?v=2"></script>
 </head>
 <body class="sim-app-body">
   <header class="sim-topbar" data-sim-hero data-active-robot="tale-bot">
@@ -61,6 +65,9 @@ function SimPage({ root = '../' } = {}) {
         <img src="${r}_assets/icons/coding-set.webp" alt="" class="sim-robot-tab-icon" width="28" height="28">
         <span class="sim-robot-tab-name">Coding Set</span>
       </button>
+      <button type="button" role="tab" id="tab-codey-rocky" class="sim-robot-tab" aria-selected="false" aria-controls="panel-controls-codey-rocky" tabindex="-1" data-robot-tab="codey-rocky">
+        <img src="${r}_assets/icons/codey-rocky.webp" alt="" class="sim-robot-tab-icon" width="28" height="28"><span class="sim-robot-tab-name">Codey Rocky</span>
+      </button>
     </div>
 
     <div class="sim-topbar-end">
@@ -80,7 +87,7 @@ function SimPage({ root = '../' } = {}) {
   </header>
 
   <main id="page-content" class="sim-workspace" data-sim-workspace data-robot="tale-bot">
-    <h1 class="visually-hidden">Simulador de Tale-Bot Pro i Coding Set</h1>
+    <h1 class="visually-hidden">Simulador de Tale-Bot Pro, Coding Set i Codey Rocky</h1>
 
     <!-- PANELL ESQUERRE: BARRA D'EINES VERTICAL ESQUERRA + TAPÍS 6x6 -->
     <div class="sim-stage-pane">
@@ -504,6 +511,7 @@ function SimPage({ root = '../' } = {}) {
       </div>
 
     </div>
+    ${CodeyWorkspace({ root: r })}
   </main>
 
   <!-- Diàleg emergent (Popover Top-Layer) per seleccionar qualsevol emoji per al tauler de Tale-Bot -->
