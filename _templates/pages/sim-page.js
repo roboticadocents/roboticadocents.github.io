@@ -24,9 +24,9 @@ function SimPage({ root = '../' } = {}) {
   <link rel="stylesheet" href="${r}sim/sim.css?v=5">
   <link rel="icon" type="image/svg+xml" href="${r}_assets/icons/logo.svg">
   <script defer src="${r}sim/sim.js?v=5"></script>
-  <link rel="stylesheet" href="${r}sim/codey.css?v=4">
+  <link rel="stylesheet" href="${r}sim/codey.css?v=5">
   <script defer src="${r}sim/codey-engine.js?v=3"></script>
-  <script defer src="${r}sim/codey-blocks.js?v=1"></script>
+  <script defer src="${r}sim/codey-blocks.js?v=2"></script>
   <script defer src="${r}sim/codey.js?v=4"></script>
 </head>
 <body class="sim-app-body">

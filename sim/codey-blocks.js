@@ -32,7 +32,7 @@
   };
   function icon(type){return `<svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${paths[type]||paths.event}</svg>`;}
   const blocks=Object.fromEntries(Object.entries(definitions).map(([type,[label,category,paletteLabel]])=>[type,{label,category,paletteLabel:paletteLabel||label}]));
-  function palette(){return Object.entries(blocks).map(([type,b])=>`<button type="button" class="cr-category-${b.category}" data-cr-add="${type}" title="${categories[b.category]} · ${b.paletteLabel}">${icon(type)}<span>${b.paletteLabel}</span></button>`).join('');}
+  function palette(){return Object.entries(categories).map(([category,label])=>`<details class="cr-palette-family cr-category-${category}" name="cr-block-family"><summary><span class="cr-category-dot" aria-hidden="true"></span>${label}</summary><div class="cr-palette">${Object.entries(blocks).filter(([,b])=>b.category===category).map(([type,b])=>`<button type="button" class="cr-category-${category}" data-cr-add="${type}" title="${label} · ${b.paletteLabel}">${icon(type)}<span>${b.paletteLabel}</span></button>`).join('')}</div></details>`).join('');}
   function legend(){return `<div class="cr-palette-legend" aria-label="Famílies de blocs">${Object.entries(categories).map(([key,label])=>`<span class="cr-category-${key}"><span class="cr-category-dot" aria-hidden="true"></span>${label}</span>`).join('')}</div>`;}
   return {blocks,categories,icon,palette,legend};
 });

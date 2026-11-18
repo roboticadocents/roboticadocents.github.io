@@ -12,6 +12,8 @@ El ritme de reproducció controla la velocitat de tota la simulació, no altera 
 
 La paleta i els blocs comparteixen icones i colors: blau per al moviment, violeta per a pantalla i llum, turquesa per als sensors i taronja per al control. Els esdeveniments es marquen en groc. El text continua identificant cada acció i el bloc en execució conserva el contorn blau.
 
+En pantalla ampla, l’escenari i els controls d’execució es mantenen visibles mentre es desplaça el programa. Els blocs es despleguen per famílies; només se n’obri una alhora. L’edició de l’escenari i el calibratge es despleguen sota les lectures, i les opcions de projecte són a la capçalera de l’editor. En mòbil, els panells s’apilen i els controls d’execució queden fixats a la vora inferior mentre es recorre l’editor.
+
 ## Sensors i calibratge
 
 - **Cap endavant:** IR reflectit en escala 0–100. La intensitat augmenta quan s’apropa una superfície; no són centímetres ni un percentatge de distància. El model inclou les vores de l’escenari.
