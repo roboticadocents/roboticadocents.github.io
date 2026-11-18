@@ -183,7 +183,7 @@ Se valora la calidad de las pruebas y la explicación de los límites, no una ta
 
 ## ♿ Seguridad y participación accesible
 
-No manipuleis residuos reales ni objetos sucios, cortantes, con líquidos o de origen desconocido. Usad piezas ligeras; mantened los dedos fuera de la compuerta y desconectad el motor antes de ajustar engranajes. Mantened la máquina a baja velocidad y bajo supervisión. Para participar, ofreced roles de cartografía, montaje, programación, lectura de datos y auditoría; se pueden dar instrucciones para que otra persona opere el dispositivo. Las categorías tienen que tener pictogramas y formas además de colores para no depender solo de la visión cromática. Se puede presentar la conclusión con gráfico, texto, comunicación aumentativa o demostración sin contacto con el mecanismo.
+No manipuléis residuos reales ni objetos sucios, cortantes, con líquidos o de origen desconocido. Usad piezas ligeras; mantened los dedos fuera de la compuerta y desconectad el motor antes de ajustar engranajes. Mantened la máquina a baja velocidad y bajo supervisión. Para participar, ofreced roles de cartografía, montaje, programación, lectura de datos y auditoría; se pueden dar instrucciones para que otra persona opere el dispositivo. Las categorías tienen que tener pictogramas y formas además de colores para no depender solo de la visión cromática. Se puede presentar la conclusión con gráfico, texto, comunicación aumentativa o demostración sin contacto con el mecanismo.
 
 ## 🔗 Dotación y fuentes técnicas
 

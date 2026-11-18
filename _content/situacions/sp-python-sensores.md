@@ -11,7 +11,7 @@ subject_label: "Tecnología, Ciencias y Programación"
 theme: "python"
 theme_label: "Python: sensores y decisiones"
 duration: "6 lecciones · 6–8 sesiones"
-challenge: "¿Cómo podemos hacer que un prototipo SPIKE pulse una orden con sensor de fuerza, reconozca una zona de parada con distancia y transporte una carga ligera sin salir del recorrido?"
+challenge: "¿Cómo podemos hacer que un prototipo SPIKE se ponga en marcha al pulsar el sensor de fuerza, reconozca una zona de parada con el sensor de distancia y transporte una carga ligera sin salir del recorrido?"
 ---
 
 ![Robot real LEGO SPIKE Prime con sensor de fuerza y sensor de distancia, transportando un paquete pequeño de semillas por una maqueta de vivero escolar.](../../_assets/situacions/sp-python-sensors.webp)

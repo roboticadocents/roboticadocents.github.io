@@ -11,7 +11,7 @@ subject_label: "Matemáticas y educación artística"
 theme: "entorn-local"
 theme_label: "Geometría y cerámica valenciana"
 duration: "4 sesiones de 50 minutos"
-challenge: "¿Cómo podemos programar un giro interior concreto y comprobar qué bloque de ángulo necesita MatataBot para dibujar cada triángulo?"
+challenge: "¿Cómo podemos construir un ángulo interior concreto y comprobar qué bloque de giro necesita MatataBot para dibujar cada triángulo?"
 official_source: "https://matatalab.com/en/node/84"
 ---
 
