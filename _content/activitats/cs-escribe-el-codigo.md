@@ -94,7 +94,7 @@ Valorad cada ejercicio de 0 a 2 puntos: 1 por la respuesta correcta y 1 por el t
 
 ## ♿ Variantes e inclusión
 
-Leed las consignas en voz alta si hace falta; las respuestas se siguen escribiendo en la ficha. Se puede usar el dedo o un lápiz para seguir el código. Los símbolos son grandes, en blanco y negro; la respuesta se puede dibujar con flechas sencillas. La mascota de contorno se puede colorear al terminar. Para apoyar, resolved oralmente un primer movimiento; para ampliar, cambiad la orientación inicial y volved a calcular el resultado en una hoja auxiliar.
+Leed las consignas en voz alta si hace falta; las respuestas se continúan escribiendo en la ficha. Se puede usar el dedo o un lápiz para seguir el código. Los símbolos son grandes, en blanco y negro; la respuesta se puede dibujar con flechas sencillas. La mascota de contorno se puede colorear al terminar. Para apoyar, resolved oralmente un primer movimiento; para ampliar, cambiad la orientación inicial y volved a calcular el resultado en una hoja auxiliar.
 
 ## 🔗 Referente consultado
 

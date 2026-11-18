@@ -492,7 +492,7 @@ function renderSemanticBlocks(nodes, state = { introPending: false }) {
         if (state.introPending) {
           state.introPending = false;
           if (!rendered.includes('markdown-note')) {
-            rendered = `<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">${SectionIcon('idea', 'note-pack-icon')}</span><div><h4>Punt de partida</h4>${rendered}</div></aside>`;
+            rendered = `<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">${SectionIcon('idea', 'note-pack-icon')}</span><div><h4>Punto de partida</h4>${rendered}</div></aside>`;
           }
         }
         out.push(rendered);
