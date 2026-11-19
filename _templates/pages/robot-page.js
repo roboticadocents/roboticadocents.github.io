@@ -97,7 +97,7 @@ function RobotPage({
     <div class="robot-overview-grid">
       <div class="robot-overview-lead">
         <p>${robotLead}</p>
-        ${['tale-bot', 'coding-set'].includes(robotSlug) ? `<p class="robot-simulator-link"><a class="btn-primary" href="${r}sim/index.html?robot=${escapeAttr(robotSlug)}">Prova el simulador interactiu de ${escapeHTML(title)}</a></p>` : ''}
+        ${['tale-bot', 'coding-set', 'codey-rocky', 'spike'].includes(robotSlug) ? `<p class="robot-simulator-link"><a class="btn-primary" href="${r}sim/index.html?robot=${escapeAttr(robotSlug)}">Prova el simulador interactiu de ${escapeHTML(title)}</a></p>` : ''}
       </div>${highlightHTML}
     </div>
   </section>

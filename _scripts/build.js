@@ -28,6 +28,7 @@ const { SituationPage } = require('../_templates/pages/situation-page');
 const { RedirectPage } = require('../_templates/pages/redirect-page');
 const { SimPage } = require('../_templates/pages/sim-page');
 const { PresencialPage } = require('../_templates/pages/presencial-page');
+const { SpikeBuildPage } = require('../_templates/pages/spike-build-page');
 const { Document } = require('../_templates/layout/document');
 const { escapeHTML, escapeAttr } = require('../_templates/layout/utils');
 
@@ -655,6 +656,7 @@ async function build({ pdf = false } = {}) {
   writeHTML('index.html', HomePage());
   // Accés directe compartit amb els participants; no s'afegeix als menús.
   writeHTML('presencial/index.html', PresencialPage());
+  writeHTML('sim/muntatge-barrera/index.html', SpikeBuildPage());
   writeHTML('pensament-computacional/index.html', ActivitiesCatalogPage({
     activitats: activitats.filter(item => item.slug.startsWith('pc-'))
   }));

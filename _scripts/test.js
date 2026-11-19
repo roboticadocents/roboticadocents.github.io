@@ -35,6 +35,8 @@ function runStep(label, cmd, args) {
 
 function main() {
   console.log('🧪 Executant suite de validació de Robòtica²⁰⁰:\n');
+  runStep('Motor del simulador Codey Rocky', process.execPath, [path.join(TESTS_DIR, 'test-codey-simulation.js')]);
+  runStep('Motor de mecanismes SPIKE Prime', process.execPath, [path.join(TESTS_DIR, 'test-spike-simulation.js')]);
   runStep('Proves del bloqueig del build', process.execPath, [path.join(TESTS_DIR, 'test-build-lock.js')]);
   runStep('Validació de pàgines HTML i enllaços', 'python3', [path.join(TESTS_DIR, 'check-static-site.py')]);
   runStep('Proves del pipeline Markdown → HTML semàntic', process.execPath, [path.join(TESTS_DIR, 'test-markdown-renderer.js')]);

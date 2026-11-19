@@ -3,15 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page-title">Simulador · Tale-Bot i Coding Set | Robòtica²⁰⁰</title>
-  <meta name="description" content="Aplicació de simulació per a Tale-Bot Pro i Matatalab Coding Set.">
+  <title id="page-title">Simulador · Tale-Bot, Coding Set, Codey Rocky i SPIKE Prime | Robòtica²⁰⁰</title>
+  <meta name="description" content="Aplicació de simulació per a Tale-Bot Pro, Matatalab Coding Set, Codey Rocky i SPIKE Prime.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../_css/styles.css?v=10">
   <link rel="stylesheet" href="../sim/sim.css?v=5">
   <link rel="icon" type="image/svg+xml" href="../_assets/icons/logo.svg">
-  <script defer src="../sim/sim.js?v=4"></script>
+  <script defer src="../sim/sim.js?v=6"></script>
+  <link rel="stylesheet" href="../sim/codey.css?v=9">
+  <script defer src="../sim/codey-engine.js?v=5"></script>
+  <script defer src="../sim/codey-blocks.js?v=3"></script>
+  <script defer src="../sim/vendor/scratch-blocks/blockly_compressed_vertical.js"></script>
+  <script defer src="../sim/vendor/scratch-blocks/blocks_compressed.js"></script>
+  <script defer src="../sim/vendor/scratch-blocks/blocks_compressed_vertical.js"></script>
+  <script defer src="../sim/vendor/scratch-blocks/messages.js"></script>
+  <script defer src="../sim/vendor/scratch-blocks/messages-ca.js"></script>
+  <script defer src="../sim/codey-native-blocks.js?v=1"></script>
+  <script defer src="../sim/codey.js?v=8"></script>
+  <link rel="stylesheet" href="../sim/spike.css?v=2">
+  <script defer src="../sim/spike-engine.js?v=2"></script>
+  <script defer src="../sim/spike.js?v=2"></script>
 </head>
 <body class="sim-app-body">
   <header class="sim-topbar" data-sim-hero data-active-robot="tale-bot">
@@ -50,6 +63,10 @@
         <img src="../_assets/icons/coding-set.webp" alt="" class="sim-robot-tab-icon" width="28" height="28">
         <span class="sim-robot-tab-name">Coding Set</span>
       </button>
+      <button type="button" role="tab" id="tab-codey-rocky" class="sim-robot-tab" aria-selected="false" aria-controls="panel-controls-codey-rocky" tabindex="-1" data-robot-tab="codey-rocky">
+        <img src="../_assets/icons/codey-rocky.webp" alt="" class="sim-robot-tab-icon" width="28" height="28"><span class="sim-robot-tab-name">Codey Rocky</span>
+      </button>
+      <button type="button" role="tab" id="tab-spike" class="sim-robot-tab" aria-selected="false" aria-controls="panel-controls-spike" tabindex="-1" data-robot-tab="spike"><img src="../_assets/icons/spike.webp" alt="" class="sim-robot-tab-icon" width="28" height="28"><span class="sim-robot-tab-name">SPIKE Prime</span></button>
     </div>
 
     <div class="sim-topbar-end">
@@ -69,7 +86,7 @@
   </header>
 
   <main id="page-content" class="sim-workspace" data-sim-workspace data-robot="tale-bot">
-    <h1 class="visually-hidden">Simulador de Tale-Bot Pro i Coding Set</h1>
+    <h1 class="visually-hidden">Simulador de Tale-Bot Pro, Coding Set, Codey Rocky i SPIKE Prime</h1>
 
     <!-- PANELL ESQUERRE: BARRA D'EINES VERTICAL ESQUERRA + TAPÍS 6x6 -->
     <div class="sim-stage-pane">
@@ -493,6 +510,105 @@
       </div>
 
     </div>
+    <section class="cr-workspace" id="panel-controls-codey-rocky" role="tabpanel" aria-labelledby="tab-codey-rocky" data-codey-workspace hidden>
+    <div class="cr-stage-panel">
+      <div class="cr-section-heading"><h2>Codey Rocky</h2><button type="button" class="sim-btn sim-btn-outline" data-cr-reset>↺ Reinicia l’escenari</button></div>
+      <div class="cr-device">
+        <div class="cr-device-face"><canvas width="320" height="160" data-cr-led aria-label="Pantalla LED de 16 per 8 punts"></canvas><span class="cr-rgb" data-cr-rgb role="img" aria-label="Indicador RGB verd"></span></div>
+        <div class="cr-device-buttons"><button type="button" data-cr-event="A">A</button><button type="button" data-cr-event="B">B</button><span>Prem un botó per activar el seu programa.</span></div>
+      </div>
+      <div class="cr-world-viewport"><canvas class="cr-world" width="800" height="500" data-cr-world tabindex="0" aria-label="Escenari de Rocky. Usa les fletxes per moure el cursor i Espai per aplicar l’eina seleccionada."></canvas></div>
+      <div class="cr-sensors">
+        <label>Llum <output data-cr-light-value>70</output><input data-cr-sensor="light" type="range" min="0" max="100" value="70"></label>
+        <label>So <output data-cr-sound-value>20</output><input data-cr-sensor="sound" type="range" min="0" max="100" value="20"></label>
+        <div class="cr-obstacle-reading">IR reflectit <strong data-cr-ir>0</strong><small>0–100 · creix en apropar-se</small></div>
+        <div class="cr-obstacle-reading">Grisos <strong data-cr-gray>—</strong><small>Model: 0 fosc · 100 clar</small></div>
+        <div class="cr-obstacle-reading">Color <strong data-cr-color>—</strong></div>
+      </div>
+      <details class="cr-scene-settings"><summary>Edita l’escenari i calibra el sensor</summary><div class="cr-scene-settings-body">
+      <div class="cr-world-tools" role="group" aria-label="Edició de l’escenari">
+        <button type="button" class="sim-btn sim-btn-secondary" data-cr-tool="obstacle" aria-pressed="true">Obstacle</button>
+        <button type="button" class="sim-btn sim-btn-outline" data-cr-tool="robot" aria-pressed="false">Posició inicial</button>
+        <button type="button" class="sim-btn sim-btn-outline" data-cr-tool="line" aria-pressed="false">Dibuixa línia</button>
+        <button type="button" class="sim-btn sim-btn-outline" data-cr-tool="surface" aria-pressed="false">Superfície de color</button>
+        <button type="button" class="sim-btn sim-btn-outline" data-cr-tool="remove" aria-pressed="false">Lleva element</button>
+        <button type="button" class="sim-btn sim-btn-outline" data-cr-rotate>Gira l’inici 90°</button>
+      </div>
+      <details class="cr-track-settings" open><summary>Pista i sensor</summary>
+        <div class="cr-track-controls">
+          <label>Sensor <select data-cr-orientation><option value="front">Cap endavant · IR</option><option value="down">Cap al terra · grisos i color</option></select></label>
+          <label>Pista <select data-cr-track><option value="none">Lliure</option><option value="straight">Recta</option><option value="curve">Corbes</option><option value="circuit">Circuit tancat</option></select></label>
+          <label>Amplària <input data-cr-line-width type="number" min="8" max="60" value="24" step="2"></label>
+          <label>Color <select data-cr-surface-color><option value="black">Negre</option><option value="white">Blanc</option><option value="red">Roig</option><option value="green">Verd</option><option value="blue">Blau</option><option value="yellow">Groc</option></select></label>
+          <button type="button" class="sim-btn sim-btn-outline" data-cr-clear-lines>Neteja la pista</button>
+        </div>
+      </details>
+      <p class="cr-hint">Clica o toca l’escenari amb l’eina seleccionada. Arrossega per dibuixar una línia. Pots editar obstacles durant l’execució.</p>
+      <details class="cr-calibration"><summary>Calibratge de la línia</summary>
+        <p>Amb el sensor cap al terra, situa el punt de lectura sobre el fons i després sobre la línia.</p>
+        <div class="cr-track-controls"><button type="button" class="sim-btn sim-btn-outline" data-cr-sample="background">Mesura el fons</button><output data-cr-sample-background>—</output><button type="button" class="sim-btn sim-btn-outline" data-cr-sample="line">Mesura la línia</button><output data-cr-sample-line>—</output><button type="button" class="sim-btn sim-btn-secondary" data-cr-apply-threshold>Aplica el llindar mitjà</button></div>
+        <p data-cr-calibration-status role="status">Encara no hi ha dues mesures.</p>
+      </details>
+      <p class="cr-model-note">Model didàctic simplificat: IR i grisos són lectures de 0 a 100, no centímetres ni un percentatge de distància. El punt blau indica l’únic sensor de superfície; el feix frontal inclou les vores. Cal calibrar lectures, velocitats i girs amb el robot físic.</p>
+      </div></details>
+    </div>
+    <div class="cr-program-panel">
+      <div class="cr-section-heading"><h2>Programa Codey</h2><button type="button" class="sim-btn sim-btn-outline" data-cr-clear>Buida</button></div>
+      <details class="cr-project"><summary>Guarda o obri un projecte</summary><p class="cr-hint">Peces natives de Scratch Blocks amb un subconjunt de blocs Codey equivalents als de mBlock. Arrossega i encaixa les peces; el botó dret permet duplicar-les o llevar-les. El simulador conserva el programa i les peces soltes.</p>
+      <div class="cr-project-controls"><button type="button" class="sim-btn sim-btn-outline" data-cr-export>Descarrega el projecte</button><label class="sim-btn sim-btn-outline">Obri un projecte<input class="visually-hidden" type="file" accept=".json,application/json" data-cr-import></label></div></details>
+      <label class="cr-example-label">Exemple <select data-cr-example>
+        <option value="line">Segueix la vora de la línia</option><option value="color">Atura’t sobre el roig</option><option value="obstacle">Atura’t davant d’un obstacle</option><option value="while">Repeteix fins a trobar un obstacle</option><option value="buttons">Botons i cares</option><option value="light">Si baixa la llum…</option><option value="route">Moviment amb temps</option><option value="blank">Programa nou</option>
+      </select></label>
+      <div class="cr-event-tabs" role="group" aria-label="Programa que vols editar">
+        <button type="button" data-cr-script="start" aria-pressed="true"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v18M6 4h13l-3 4 3 4H6"/></svg><span>En iniciar</span></button><button type="button" data-cr-script="A" aria-pressed="false"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v18M6 4h13l-3 4 3 4H6"/></svg><span>Botó A</span></button><button type="button" data-cr-script="B" aria-pressed="false"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v18M6 4h13l-3 4 3 4H6"/></svg><span>Botó B</span></button>
+      </div>
+      <div class="cr-program" data-cr-program></div>
+      <div class="cr-execution"><div class="cr-run-controls"><button type="button" class="sim-btn sim-btn-primary" data-cr-run>▶ Executa</button><button type="button" class="sim-btn sim-btn-secondary" data-cr-step>Pas a pas</button><button type="button" class="sim-btn sim-btn-outline" data-cr-stop>■ Atura</button></div>
+      <p class="cr-condition-reading" data-cr-condition>La lectura i el resultat de la condició apareixeran ací.</p>
+      <p class="cr-status" data-cr-status role="status" aria-live="polite">Preparat.</p>
+      </div>
+
+    </div>
+  </section>
+    <section class="cr-workspace sp-workspace" id="panel-controls-spike" role="tabpanel" aria-labelledby="tab-spike" data-spike-workspace hidden>
+    <div class="cr-stage-panel">
+      <div class="cr-section-heading"><div><h2>Barrera automàtica</h2><span class="sp-subtitle">SPIKE Prime · mecanismes</span></div><button type="button" class="sim-btn sim-btn-outline" data-sp-reset>↺ Reinicia</button></div>
+      <div class="sp-connections"><a class="sp-build-link" href="muntatge-barrera/" target="_blank" rel="noopener">Muntatge ↗</a><span><b>A</b> Motor angular</span><span><b>D</b> Sensor de distància</span></div>
+      <div class="sp-scene"><svg viewBox="0 0 720 430" role="img" aria-labelledby="sp-scene-title sp-scene-desc">
+        <title id="sp-scene-title">Mecanisme d’una barrera amb motor i sensor</title><desc id="sp-scene-desc">El braç gira de 0 graus, tancat, a 90 graus, obert. L’objecte davant del sensor es controla amb les entrades de sota.</desc>
+        <defs><pattern id="sp-stripes" width="48" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(-25)"><rect width="48" height="22" fill="#fff"/><rect width="24" height="22" fill="#ef4444"/></pattern></defs>
+        <rect x="1" y="1" width="718" height="428" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+        <path d="M30 360H690" stroke="#cbd5e1" stroke-width="3"/>
+        <path d="M230 50V280H460" fill="none" stroke="#cbd5e1" stroke-dasharray="5 6"/><path d="M230 150a130 130 0 0 1 130 130" fill="none" stroke="#cbd5e1" stroke-dasharray="5 6"/>
+        <text x="245" y="104" class="sp-svg-label">90° · oberta</text><text x="470" y="280" class="sp-svg-label">0° · tancada</text>
+        <rect x="205" y="280" width="50" height="80" rx="8" fill="#facc15" stroke="#a16207" stroke-width="2"/>
+        <path d="M115 320C150 260 170 315 230 280M115 345C160 385 260 390 262 325" fill="none" stroke="#94a3b8" stroke-width="4"/>
+        <rect x="50" y="295" width="100" height="65" rx="12" fill="#facc15" stroke="#a16207" stroke-width="2"/><rect x="72" y="307" width="56" height="32" rx="5" fill="#fff"/><text x="83" y="329" class="sp-svg-label">HUB</text><text x="70" y="352" class="sp-svg-label">A · D</text>
+        <g data-sp-arm transform="rotate(0 230 280)"><rect x="230" y="270" width="230" height="20" rx="6" fill="url(#sp-stripes)" stroke="#475569" stroke-width="2"/></g>
+        <circle cx="230" cy="280" r="21" fill="#06b6d4" stroke="#155e75" stroke-width="3"/><path d="M218 280h24M230 268v24" stroke="#fff" stroke-width="5"/>
+        <rect x="246" y="308" width="35" height="31" rx="6" fill="#fff" stroke="#0891b2" stroke-width="2"/><circle cx="267" cy="317" r="5" fill="#0891b2"/><circle cx="267" cy="330" r="5" fill="#0891b2"/>
+        <line x1="284" y1="325" x2="412" y2="325" stroke="#0891b2" stroke-width="2" stroke-dasharray="5 5" data-sp-beam/>
+        <g data-sp-object><rect x="0" y="290" width="65" height="60" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><path d="M22 290v22h20v-22" fill="#bfdbfe" stroke="#2563eb"/><text x="32" y="380" text-anchor="middle" class="sp-svg-label">Objecte</text></g>
+        <text x="32" y="40" class="sp-svg-status" data-sp-scene-state>Tancada</text>
+        <text x="32" y="65" class="sp-svg-label">Transmissió directa · 0° és la posició inicial</text>
+      </svg></div>
+      <div class="sp-readings"><div>Motor A <strong data-sp-angle>0°</strong></div><div>Distància D <strong data-sp-distance-value>Sense objecte</strong></div></div>
+      <div class="sp-object-controls"><label><input type="checkbox" data-sp-present> Objecte davant del sensor</label><label>Distància de l’objecte <output data-sp-distance-label>80 cm</output><input type="range" min="5" max="200" step="1" value="80" data-sp-distance></label></div>
+      <details class="cr-scene-settings"><summary>Muntatge i proposta d’activitat</summary><div class="cr-scene-settings-body"><p>Hub fix, motor al port A i sensor de distància al D. El braç va directament a l’eix: 0° tanca i 90° obri. No hi ha rodes ni desplaçament del hub.</p><p><strong>Prova-ho:</strong> tria un exemple i desplega «SdA, repte i muntatge» per veure la consigna i les proves. La guia de muntatge explica com preparar la base, el braç, el sensor i el zero del motor.</p><p>Model didàctic: velocitat aproximada, sense càrrega, col·lisions ni engranatges. La distància es controla manualment entre 5 i 200 cm; sense objecte es considera la zona lliure. Cal ajustar el zero, el sentit i el muntatge amb el robot físic.</p></div></details>
+    </div>
+    <div class="cr-program-panel">
+      <div class="cr-section-heading"><h2>Programa el mecanisme</h2><button type="button" class="sim-btn sim-btn-outline" data-sp-clear>Buida</button></div>
+      <details class="cr-project"><summary>Guarda o obri un projecte</summary><p class="cr-hint">Es desa automàticament en aquest navegador. El JSON és del simulador, no de l’app SPIKE.</p><div class="cr-project-controls"><button type="button" class="sim-btn sim-btn-outline" data-sp-export>Descarrega el projecte</button><label class="sim-btn sim-btn-outline">Obri un projecte<input class="visually-hidden" type="file" accept=".json,application/json" data-sp-import></label></div></details>
+      <label class="cr-example-label">Exemple <select data-sp-example><option value="sequence">Acció i retorn · Moviment amb motiu</option><option value="automatic">Barrera amb detecció · ampliació</option><option value="condition">Sensor i resposta · Biblioteca</option><option value="repeat">Quatre moviments · Mosaic</option><option value="blank">Programa nou</option><option value="custom" disabled>Projecte propi</option></select></label>
+      <details class="sp-activity"><summary>SdA, repte i muntatge</summary><div class="sp-resource-links"><a data-sp-sda-link href="../situacio/sp-python-motors/" target="_blank" rel="noopener">Obri la SdA ↗</a><a href="muntatge-barrera/" target="_blank" rel="noopener">Guia de muntatge ↗</a></div><div class="sp-activity-body"><p><strong data-sp-sda-title></strong><br><span data-sp-sda-lesson></span></p><p data-sp-task></p><p class="sp-adaptation" data-sp-adaptation></p></div></details>
+      <div class="sp-event"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v18M6 4h13l-3 4 3 4H6"/></svg> Quan comença</div>
+      <div class="cr-palette-families" role="group" aria-label="Blocs de SPIKE Prime"><details class="cr-palette-family cr-category-motion" name="sp-block-family"><summary><span class="cr-category-dot" aria-hidden="true"></span>Motor</summary><div class="cr-palette"><button type="button" data-sp-add="motor" class="cr-category-motion"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 21V12a6 6 0 0 1 6-6h10M15 1l6 5-6 5"/></svg><span>Motor A a un angle</span></button></div></details><details class="cr-palette-family cr-category-sensor" name="sp-block-family"><summary><span class="cr-category-dot" aria-hidden="true"></span>Sensor</summary><div class="cr-palette"><button type="button" data-sp-add="waitUntil" class="cr-category-sensor"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17a9 9 0 1 1 18 0M5 17h14M12 13l4-5M6 9l1 1M18 9l-1 1"/><circle cx="12" cy="14" r="2"/></svg><span>Espera fins que</span></button></div></details><details class="cr-palette-family cr-category-control" name="sp-block-family"><summary><span class="cr-category-dot" aria-hidden="true"></span>Control</summary><div class="cr-palette"><button type="button" data-sp-add="wait" class="cr-category-control"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg><span>Espera</span></button><button type="button" data-sp-add="if" class="cr-category-control"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 2 5 5-5 5-5-5 5-5ZM7 7H3v13h4M17 7h4v13h-4"/></svg><span>Si / si no</span></button><button type="button" data-sp-add="while" class="cr-category-control"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 6a9 9 0 1 0 2 9M19 2v5h-5M12 8l4 4-4 4-4-4 4-4Z"/></svg><span>Mentre</span></button><button type="button" data-sp-add="repeat" class="cr-category-control"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h12a4 4 0 0 1 0 8H8M8 4 4 8l4 4M12 12l-4 4 4 4"/></svg><span>Repeteix</span></button><button type="button" data-sp-add="forever" class="cr-category-control"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 12c-3-6-9-6-9 0s6 6 9 0 9-6 9 0-6 6-9 0Z"/></svg><span>Per sempre</span></button></div></details></div>
+      <p class="cr-hint">Afig blocs al punt seleccionat. Obri ⋯ per inserir, duplicar o moure.</p>
+      <div class="cr-edit-feedback"><span data-sp-edit-status role="status"></span><button type="button" class="cr-insert" data-sp-cancel-move hidden>Cancel·la el moviment</button></div>
+      <div class="cr-program" data-sp-program></div>
+      <div class="cr-execution"><div class="cr-run-controls"><button type="button" class="sim-btn sim-btn-primary" data-sp-run>▶ Executa</button><button type="button" class="sim-btn sim-btn-secondary" data-sp-step>Pas a pas</button><button type="button" class="sim-btn sim-btn-outline" data-sp-stop>■ Atura</button></div><p class="cr-condition-reading" data-sp-condition>La lectura de la condició apareixerà ací.</p><p class="cr-status" role="status" aria-live="polite" data-sp-status>Preparat.</p></div>
+    </div>
+  </section>
   </main>
 
   <!-- Diàleg emergent (Popover Top-Layer) per seleccionar qualsevol emoji per al tauler de Tale-Bot -->
