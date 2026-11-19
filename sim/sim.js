@@ -105,6 +105,7 @@
   const tbOnlyTools = Array.from(document.querySelectorAll('[data-tb-only]'));
   const rotateStartBtn = document.querySelector('[data-rotate-start]');
   const resetRobotBtn = document.querySelector('[data-reset-robot]');
+  const resetBoardBtn = document.querySelector('[data-reset-board]');
 
   const openEmojiDialogBtn = document.querySelector('[data-open-emoji-dialog]');
   const emojiToolIconEl = document.querySelector('[data-emoji-tool-icon]');
@@ -748,6 +749,14 @@
     updateRobotActor();
     renderTaleBotUI();
     renderCodingSetUI();
+  }
+
+  function resetBoard() {
+    if (state.isRunning) stopExecution();
+    clearCanvas();
+    robotActor.classList.remove('is-dancing', 'is-bumped');
+    resetRobotToStart(true);
+    playTone(500, 85, 'sine', 0.06);
   }
 
   // =========================================================
@@ -1653,10 +1662,16 @@
     playTone(540, 70, 'sine', 0.06);
   });
 
-  resetRobotBtn.addEventListener('click', () => {
-    resetRobotToStart(true);
-    playTone(480, 80, 'sine', 0.06);
-  });
+  if (resetRobotBtn) {
+    resetRobotBtn.addEventListener('click', () => {
+      resetRobotToStart(true);
+      playTone(480, 80, 'sine', 0.06);
+    });
+  }
+
+  if (resetBoardBtn) {
+    resetBoardBtn.addEventListener('click', resetBoard);
+  }
 
   togglePenBtn.addEventListener('click', () => {
     state.penEnabled = !state.penEnabled;
