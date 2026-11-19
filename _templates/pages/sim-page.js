@@ -22,9 +22,9 @@ function SimPage({ root = '../' } = {}) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${r}_css/styles.css?v=10">
-  <link rel="stylesheet" href="${r}sim/sim.css?v=5">
+  <link rel="stylesheet" href="${r}sim/sim.css?v=6">
   <link rel="icon" type="image/svg+xml" href="${r}_assets/icons/logo.svg">
-  <script defer src="${r}sim/sim.js?v=6"></script>
+  <script defer src="${r}sim/sim.js?v=8"></script>
   <link rel="stylesheet" href="${r}sim/codey.css?v=9">
   <script defer src="${r}sim/codey-engine.js?v=7"></script>
   <script defer src="${r}sim/codey-blocks.js?v=3"></script>
@@ -105,10 +105,6 @@ function SimPage({ root = '../' } = {}) {
     <div class="sim-stage-pane">
       <div class="sim-mat-toolbar" role="toolbar" aria-orientation="vertical" aria-label="Eines del tapís">
         <div class="sim-toolbar-section" role="group" aria-label="Elements del tapís" data-mat-tools>
-          <button type="button" class="sim-tool-btn is-active" aria-pressed="true" data-mat-tool="robot">
-            <span aria-hidden="true">📍</span>
-            <span>Robot</span>
-          </button>
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-mat-tool="flag">
             <span aria-hidden="true">🚩</span>
             <span>Bandera</span>
@@ -137,24 +133,19 @@ function SimPage({ root = '../' } = {}) {
 
         <hr class="sim-toolbar-divider" aria-hidden="true">
 
-        <div class="sim-toolbar-section" role="group" aria-label="Posició i accessoris">
+        <div class="sim-toolbar-section sim-draw-controls" role="group" aria-label="Robot i accessoris">
+          <button type="button" class="sim-tool-btn is-active" aria-pressed="true" data-mat-tool="robot">
+            <span aria-hidden="true">📍</span>
+            <span>Robot</span>
+          </button>
           <button type="button" class="sim-tool-btn" data-rotate-start="left" aria-label="Gira l'orientació inicial 90 graus">
             <span aria-hidden="true">↺</span>
             <span>90°</span>
-          </button>
-          <button type="button" class="sim-tool-btn" data-reset-robot aria-label="Torna el robot a la casella inicial">
-            <span aria-hidden="true">⏮</span>
-            <span>Inici</span>
           </button>
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-tb-toggle-arms data-tb-only>
             <span aria-hidden="true">🦾</span>
             <span>Braços</span>
           </button>
-        </div>
-
-        <hr class="sim-toolbar-divider" aria-hidden="true">
-
-        <div class="sim-toolbar-section sim-draw-controls" role="group" aria-label="Retolador i dibuix">
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-toggle-pen>
             <span aria-hidden="true">✏️</span>
             <span>Retolador</span>
@@ -166,9 +157,24 @@ function SimPage({ root = '../' } = {}) {
             <button type="button" class="sim-color-swatch" style="--swatch:#9333ea" data-pen-color="#9333ea" aria-label="Lila" aria-pressed="false"></button>
             <button type="button" class="sim-color-swatch" style="--swatch:#e11d48" data-pen-color="#e11d48" aria-label="Roig" aria-pressed="false"></button>
           </div>
+        </div>
+
+        <hr class="sim-toolbar-divider" aria-hidden="true">
+
+        <div class="sim-toolbar-section" role="group" aria-label="Accions del tauler">
           <button type="button" class="sim-tool-btn" data-clear-drawing aria-label="Neteja el tauler i el dibuix">
             <span aria-hidden="true">🧹</span>
             <span>Neteja</span>
+          </button>
+          <button
+            type="button"
+            class="sim-tool-btn"
+            data-reset-board
+            aria-label="Reinicia el tauler: torna el robot i les caixes a la posició inicial i esborra el dibuix"
+            title="Torna el robot i les caixes a la posició inicial i esborra el traç del retolador"
+          >
+            <span aria-hidden="true">🔄</span>
+            <span>Reinicia</span>
           </button>
         </div>
 

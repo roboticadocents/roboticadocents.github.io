@@ -250,6 +250,7 @@
   font-family: var(--font-sans);
   font-size: 0.78rem;
   font-weight: 700;
+  line-height: 1.25;
   padding: 0.38rem 0.55rem;
   border-radius: 8px;
   border: 1px solid #cbd5e1;
