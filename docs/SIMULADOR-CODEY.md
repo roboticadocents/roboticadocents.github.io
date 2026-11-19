@@ -141,3 +141,16 @@ Es desen automàticament al navegador el programa, la pista, les superfícies, e
 - `_scripts/tests/test-codey-simulation.js`: sensors, bucles, erugues i seguiment de tres pistes, inclòs a `node _scripts/test.js`.
 
 Regenera `sim/index.html` i `dist/` amb `node _scripts/build.js`.
+
+## Activitats compartides amb paper i robot
+
+La secció Activitats permet triar huit fitxes de tres exercicis. Els enllaços
+`?robot=codey-rocky&activity=cr-…&exercise=1` obrin les peces inicials i l’escenari
+corresponents. La consigna, el PDF i la preparació amb el robot provenen de
+`sim/codey-activities.json`. No són tres activitats independents.
+
+Carregar un exercici substitueix el programa i l’escenari, com carregar un
+exemple. Les edicions es desen; recarregar el mateix enllaç no torna a posar el
+programa inicial. Les solucions són per al solucionari docent i les proves;
+Carrega exercici només usa `starter`. Els projectes continuen sent JSON del
+simulador, no fitxers de càrrega a mBlock.

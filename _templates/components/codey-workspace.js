@@ -47,6 +47,12 @@ function CodeyWorkspace({ root }) {
       <div class="cr-section-heading"><h2>Programa Codey</h2><button type="button" class="sim-btn sim-btn-outline" data-cr-clear>Buida</button></div>
       <details class="cr-project"><summary>Guarda o obri un projecte</summary><p class="cr-hint">Peces natives de Scratch Blocks amb un subconjunt de blocs Codey equivalents als de mBlock. Arrossega i encaixa les peces; el botó dret permet duplicar-les o llevar-les. El simulador conserva el programa i les peces soltes.</p>
       <div class="cr-project-controls"><button type="button" class="sim-btn sim-btn-outline" data-cr-export>Descarrega el projecte</button><label class="sim-btn sim-btn-outline">Obri un projecte<input class="visually-hidden" type="file" accept=".json,application/json" data-cr-import></label></div></details>
+      <details class="cr-activities"><summary data-cr-activity-summary>Activitats: paper, simulador i robot</summary>
+        <label class="cr-example-label">Activitat <select data-cr-activity><option value="">Tria una activitat</option></select></label>
+        <label class="cr-example-label">Exercici <select data-cr-exercise disabled><option value="0">Tria primer l’activitat</option></select></label>
+        <p class="cr-hint" data-cr-activity-prompt>Resol el mateix repte en paper, al simulador o amb Codey Rocky.</p>
+        <div class="cr-project-controls"><button type="button" class="sim-btn sim-btn-secondary" data-cr-load-activity disabled>Carrega l’exercici</button><a data-cr-activity-link hidden>Guia i fitxa</a></div>
+      </details>
       <label class="cr-example-label">Exemple <select data-cr-example>
         <option value="line">Segueix la vora de la línia</option><option value="color">Atura’t sobre el roig</option><option value="obstacle">Atura’t davant d’un obstacle</option><option value="while">Repeteix fins a trobar un obstacle</option><option value="buttons">Botons i cares</option><option value="light">Si baixa la llum…</option><option value="route">Moviment amb temps</option><option value="blank">Programa nou</option>
       </select></label>

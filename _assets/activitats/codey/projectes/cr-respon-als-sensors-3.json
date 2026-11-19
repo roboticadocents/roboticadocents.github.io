@@ -1,0 +1,39 @@
+{
+  "type": "robotica-codey",
+  "version": 2,
+  "program": {
+    "start": [],
+    "A": [],
+    "B": [],
+    "C": []
+  },
+  "environment": {
+    "light": 70,
+    "sound": 20,
+    "orientation": "down",
+    "obstacles": [],
+    "patches": [
+      {
+        "x": 100,
+        "y": 180,
+        "w": 180,
+        "h": 140,
+        "color": "red"
+      }
+    ],
+    "lines": []
+  },
+  "startPose": {
+    "x": 160,
+    "y": 250,
+    "angle": 0
+  },
+  "calibration": {
+    "background": null,
+    "line": null
+  },
+  "activity": {
+    "slug": "cr-respon-als-sensors",
+    "exercise": 3
+  }
+}

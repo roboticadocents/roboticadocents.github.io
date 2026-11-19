@@ -26,7 +26,7 @@ function RobotPage({
   statusSourceLabel = ''
 } = {}) {
   const r = cleanRoot(root);
-  const activitiesHTML = ['tale-bot', 'coding-set'].includes(robotSlug) ? `
+  const activitiesHTML = ['tale-bot', 'coding-set', 'codey-rocky'].includes(robotSlug) ? `
     <section id="activitats" data-robot-activities aria-labelledby="activities-heading">
       <header class="robot-tutorials-heading">
         <div>

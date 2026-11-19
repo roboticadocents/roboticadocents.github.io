@@ -1,0 +1,104 @@
+{
+  "type": "robotica-codey",
+  "version": 2,
+  "program": {
+    "start": [
+      {
+        "id": "act-61",
+        "type": "until",
+        "power": 20,
+        "left": 10,
+        "right": 10,
+        "seconds": 0.2,
+        "count": 3,
+        "sensor": "infrared",
+        "compare": "<",
+        "threshold": 60,
+        "value": "",
+        "body": [
+          {
+            "id": "act-60",
+            "type": "forward",
+            "power": 10,
+            "left": 10,
+            "right": 10,
+            "seconds": 0.2,
+            "count": 3,
+            "sensor": "light",
+            "compare": "<",
+            "threshold": 40,
+            "value": "",
+            "body": [],
+            "then": [],
+            "else": []
+          }
+        ],
+        "then": [],
+        "else": []
+      },
+      {
+        "id": "act-62",
+        "type": "stop",
+        "power": 20,
+        "left": 10,
+        "right": 10,
+        "seconds": 0.2,
+        "count": 3,
+        "sensor": "light",
+        "compare": "<",
+        "threshold": 40,
+        "value": "",
+        "body": [],
+        "then": [],
+        "else": []
+      },
+      {
+        "id": "act-63",
+        "type": "text",
+        "power": 20,
+        "left": 10,
+        "right": 10,
+        "seconds": 0.2,
+        "count": 3,
+        "sensor": "light",
+        "compare": "<",
+        "threshold": 40,
+        "value": "FI",
+        "body": [],
+        "then": [],
+        "else": []
+      }
+    ],
+    "A": [],
+    "B": [],
+    "C": []
+  },
+  "environment": {
+    "light": 70,
+    "sound": 20,
+    "orientation": "front",
+    "obstacles": [
+      {
+        "x": 430,
+        "y": 190,
+        "w": 65,
+        "h": 120
+      }
+    ],
+    "patches": [],
+    "lines": []
+  },
+  "startPose": {
+    "x": 160,
+    "y": 250,
+    "angle": 0
+  },
+  "calibration": {
+    "background": null,
+    "line": null
+  },
+  "activity": {
+    "slug": "cr-depura-el-codi",
+    "exercise": 3
+  }
+}

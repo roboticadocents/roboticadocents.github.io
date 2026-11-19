@@ -7,7 +7,7 @@ const root = path.resolve(__dirname, '../..');
 const dist = path.join(root, 'dist');
 const readPage = route => fs.readFileSync(path.join(dist, route, 'index.html'), 'utf8');
 const catalog = readPage('pensament-computacional');
-const robotPrefixes = { 'tale-bot': 'tb', 'coding-set': 'cs' };
+const robotPrefixes = { 'tale-bot': 'tb', 'coding-set': 'cs', 'codey-rocky': 'cr', 'codey-rocky': 'cr' };
 const robotPages = Object.fromEntries(Object.keys(robotPrefixes).map(robot => [robot, readPage(`robot/${robot}`)]));
 const documents = folder => fs.readdirSync(path.join(root, '_content', folder))
   .filter(file => file.endsWith('.md') && !/^(README|TEMPLATE-)/.test(file));
@@ -16,9 +16,9 @@ for (const file of documents('tutorials')) {
   assert.match(file, /^(ce|cr|cs|mb|sp|tb)-.+\.md$/, `${file}: nom de tutorial sense prefix redundant`);
 }
 
-const counts = { tb: 0, cs: 0 };
+const counts = { tb: 0, cs: 0, cr: 0 };
 for (const file of documents('activitats')) {
-  assert.match(file, /^(pc|tb|cs)-.+\.md$/, `${file}: prefix d'activitat reconegut`);
+  assert.match(file, /^(pc|tb|cs|cr)-.+\.md$/, `${file}: prefix d'activitat reconegut`);
   const source = fs.readFileSync(path.join(root, '_content/activitats', file), 'utf8');
   if (/^active:\s*false\s*$/m.test(source)) continue;
   const slug = file.slice(0, -3);
@@ -43,7 +43,7 @@ for (const [robot, page] of Object.entries(robotPages)) {
   assert.match(page, /<h2 id="activities-heading">Activitats<\/h2>/);
   assert.equal(page.includes('Encara no hi ha activitats publicades'), counts[robotPrefixes[robot]] === 0);
 }
-for (const robot of ['coding-express', 'codey-rocky', 'microbit', 'spike']) {
+for (const robot of ['coding-express', 'microbit', 'spike']) {
   assert.ok(!readPage(`robot/${robot}`).includes('data-robot-activities'), `${robot}: no afegeix una secció no sol·licitada`);
 }
 
@@ -54,4 +54,4 @@ for (const [route, mapping] of Object.entries(redirects)) {
     assert.ok(readPage(`${route}/${oldSlug}`).includes(`data-redirect-target="../${slug}/index.html"`), `${oldSlug}: redirigeix al nou nom`);
   }
 }
-console.log('Classificació PC/Tale-Bot/Coding Set, navegació i redireccions correctes.');
+console.log('Classificació PC/Tale-Bot/Coding Set/Codey Rocky, navegació i redireccions correctes.');

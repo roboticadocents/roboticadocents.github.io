@@ -37,7 +37,8 @@ const DIST_DIR = path.resolve(ROOT_DIR, 'dist');
 let includePDFs = false;
 const activityRobots = {
   tb: ['tale-bot', 'Tale-Bot'],
-  cs: ['coding-set', 'Coding Set']
+  cs: ['coding-set', 'Coding Set'],
+  cr: ['codey-rocky', 'Codey Rocky']
 };
 
 function buildContentRedirects(route) {
@@ -113,7 +114,7 @@ function buildActivities() {
   cleanSubdirectories('activitat');
   const dir = path.join(ROOT_DIR, '_content/activitats');
   const files = fs.readdirSync(dir)
-    .filter(f => /^(pc|tb|cs)-.+\.md$/.test(f))
+    .filter(f => /^(pc|tb|cs|cr)-.+\.md$/.test(f))
     .sort();
   const items = [];
 
@@ -192,6 +193,7 @@ function buildTutorials() {
     ce: ['coding-express', 'Coding Express'],
     cr: ['codey-rocky', 'Codey Rocky'],
     cs: ['coding-set', 'Coding Set'],
+  cr: ['codey-rocky', 'Codey Rocky'],
     mb: ['microbit', 'Micro:bit'],
     sp: ['spike', 'Spike'],
     tb: ['tale-bot', 'Tale-Bot']

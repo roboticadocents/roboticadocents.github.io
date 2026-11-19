@@ -25,7 +25,7 @@ function SimPage({ root = '../' } = {}) {
   <link rel="stylesheet" href="${r}sim/sim.css?v=6">
   <link rel="icon" type="image/svg+xml" href="${r}_assets/icons/logo.svg">
   <script defer src="${r}sim/sim.js?v=8"></script>
-  <link rel="stylesheet" href="${r}sim/codey.css?v=9">
+  <link rel="stylesheet" href="${r}sim/codey.css?v=10">
   <script defer src="${r}sim/codey-engine.js?v=7"></script>
   <script defer src="${r}sim/codey-blocks.js?v=3"></script>
   <script defer src="${r}sim/vendor/scratch-blocks/blockly_compressed_vertical.js"></script>
@@ -34,7 +34,7 @@ function SimPage({ root = '../' } = {}) {
   <script defer src="${r}sim/vendor/scratch-blocks/messages.js"></script>
   <script defer src="${r}sim/vendor/scratch-blocks/messages-ca.js"></script>
   <script defer src="${r}sim/codey-native-blocks.js?v=3"></script>
-  <script defer src="${r}sim/codey.js?v=10"></script>
+  <script defer src="${r}sim/codey.js?v=11"></script>
   <link rel="stylesheet" href="${r}sim/spike.css?v=2">
   <script defer src="${r}sim/spike-engine.js?v=2"></script>
   <script defer src="${r}sim/spike.js?v=2"></script>

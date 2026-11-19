@@ -8,12 +8,13 @@ Totes les activitats es guarden en aquesta carpeta. El prefix determina on es mo
 | --- | --- | --- |
 | `pc-[slug].md` | `/pensament-computacional/` | `/activitat/pc-[slug]/` |
 | `tb-[slug].md` | Secció «Activitats» de Tale-Bot, després dels tutorials | `/activitat/tb-[slug]/` |
+| `cr-[slug].md` | Secció «Activitats» de Codey Rocky | `/activitat/cr-[slug]/` |
 | `cs-[slug].md` | Secció «Activitats» de Coding Set, després dels tutorials | `/activitat/cs-[slug]/` |
 
 Copieu `TEMPLATE-ACTIVITAT.md`, poseu un nom amb el prefix corresponent i canvieu
 `active` a `true` quan estiga preparada. Les activitats es mostren segons `order`.
 El robot es dedueix del prefix: no cal declarar `robot`; si es declara, ha de ser
-`tale-bot` per a `tb-` o `coding-set` per a `cs-`. Les activitats `pc-` no tenen robot.
+`tale-bot` per a `tb-` o `coding-set` per a `cs-` i `codey-rocky` per a `cr-`. Les activitats `pc-` no tenen robot.
 Les fitxes dels robots mostren un avís mentre no tinguen activitats publicades.
 Totes comparteixen les metadades i els temes de la plantilla; adapteu els materials,
 la seqüència i les evidències a l’ús del robot quan corresponga.
@@ -95,3 +96,36 @@ amb la ruta objectiu; no només la casella final.
 Les icones font editables estan en `_assets/activitats/icones/`. El generador
 les llig amb librsvg per mantindre el dibuix vectorial en els PDF i SVG generats.
 No les sobreescriu. Consulteu el README d’eixa carpeta abans de modificar-les.
+
+## Codey Rocky: una activitat, tres entorns
+
+Les huit fitxes `cr-` comparteixen tres exercicis per a paper, simulador i robot.
+La font única de textos, peces inicials, solucions i escenaris és
+`sim/codey-activities.json`. Els Markdown `cr-`, els projectes JSON i els PDF són
+generats: editeu la font compartida i regenereu-los, sense copiar els exercicis.
+
+```sh
+node _scripts/generate-codey-activities.js
+node _scripts/build.js
+# Amb el servidor local actiu i Playwright disponible:
+node _scripts/render-codey-activity-blocks.js
+python3 _scripts/generate-codey-pdfs.py
+node _scripts/build.js
+node _scripts/test.js
+```
+
+El renderitzador accepta `--playwright-module /ruta/al/modul`, `CODEY_CHROMIUM`
+i `CODEY_SIM_URL` si cal indicar el navegador o el servidor. El generador de PDF
+necessita reportlab, pypdf i cairosvg. Usa les fonts corporatives locals i les
+peces del mateix editor natiu.
+
+Cada fitxa té dues pàgines A4. El recull conté 16 pàgines i el solucionari docent
+separat, huit. Els originals es guarden a `output/pdf/` i les còpies web a
+`_assets/activitats/kits/`. Hi ha espai per predir, registrar el resultat i
+anotar la dificultat, el canvi provat i el dubte. Les fitxes de construcció
+incorporen un espai per dibuixar el programa.
+
+Els enllaços al simulador carreguen el programa inicial i l’escenari del mateix
+exercici; no carreguen la solució. Recarregar el mateix enllaç conserva el treball
+desat. Al robot les peces es reconstrueixen a mBlock: els JSON del simulador no
+es carreguen al dispositiu. Els valors físics es mesuren i es calibren.

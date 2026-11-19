@@ -1,0 +1,102 @@
+{
+  "type": "robotica-codey",
+  "version": 2,
+  "program": {
+    "start": [
+      {
+        "id": "act-141",
+        "type": "if",
+        "power": 20,
+        "left": 10,
+        "right": 10,
+        "seconds": 0.2,
+        "count": 3,
+        "sensor": "light",
+        "compare": "<",
+        "threshold": 40,
+        "value": "",
+        "body": [],
+        "then": [
+          {
+            "id": "act-139",
+            "type": "tracks",
+            "power": 20,
+            "left": 10,
+            "right": 6,
+            "seconds": 0.2,
+            "count": 3,
+            "sensor": "light",
+            "compare": "<",
+            "threshold": 40,
+            "value": "",
+            "body": [],
+            "then": [],
+            "else": []
+          }
+        ],
+        "else": [
+          {
+            "id": "act-140",
+            "type": "tracks",
+            "power": 20,
+            "left": 6,
+            "right": 10,
+            "seconds": 0.2,
+            "count": 3,
+            "sensor": "light",
+            "compare": "<",
+            "threshold": 40,
+            "value": "",
+            "body": [],
+            "then": [],
+            "else": []
+          }
+        ],
+        "condition": {
+          "kind": "compare",
+          "op": "<",
+          "left": {
+            "kind": "sensor",
+            "name": "gray"
+          },
+          "right": {
+            "kind": "number",
+            "value": 20
+          }
+        }
+      }
+    ],
+    "A": [],
+    "B": [],
+    "C": []
+  },
+  "environment": {
+    "light": 70,
+    "sound": 20,
+    "orientation": "down",
+    "obstacles": [],
+    "patches": [
+      {
+        "x": 100,
+        "y": 180,
+        "w": 180,
+        "h": 140,
+        "color": "blue"
+      }
+    ],
+    "lines": []
+  },
+  "startPose": {
+    "x": 160,
+    "y": 250,
+    "angle": 0
+  },
+  "calibration": {
+    "background": null,
+    "line": null
+  },
+  "activity": {
+    "slug": "cr-segueix-la-vora",
+    "exercise": 3
+  }
+}

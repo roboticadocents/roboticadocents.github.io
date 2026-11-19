@@ -1,0 +1,4345 @@
+{
+  "version": 1,
+  "activities": [
+    {
+      "slug": "cr-prediu-el-resultat",
+      "title": "Què mostrarà Codey?",
+      "topic": "Algorismes",
+      "objective": "Seguir una seqüència i distingir els estats intermedis del resultat final.",
+      "sda": "cr-emocions",
+      "robot": "Poseu Codey damunt de la taula; Rocky no necessita moure’s. Reconstruïu les piles a mBlock i executeu-les. Observeu també els canvis durant les esperes.",
+      "duration": "35–45 min",
+      "cycle": "Segon cicle",
+      "exercises": [
+        {
+          "title": "Text abans i després",
+          "prompt": "Anota què mostra durant l’espera i què queda al final.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-1",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "HOLA",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-2",
+                "type": "wait",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 1,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-3",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "ADEU",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-4",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "HOLA",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-5",
+                "type": "wait",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 1,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-6",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "ADEU",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "Durant l’espera mostra HOLA. Al final mostra ADEU.",
+          "expected": {
+            "output.text": "ADEU"
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-prediu-el-resultat-1"
+        },
+        {
+          "title": "Pantalla i llum",
+          "prompt": "Canviar el LED RGB esborra la imatge? Dibuixa què queda a la pantalla i indica el color final.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-7",
+                "type": "face",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "happy",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-8",
+                "type": "rgb",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "#ef4444",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-9",
+                "type": "wait",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 1,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-10",
+                "type": "rgb",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "#22c55e",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-11",
+                "type": "face",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "happy",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-12",
+                "type": "rgb",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "#ef4444",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-13",
+                "type": "wait",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 1,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-14",
+                "type": "rgb",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "#22c55e",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "Queda la cara feliç a la pantalla i el LED RGB verd. Són dues eixides diferents.",
+          "expected": {
+            "output.face": "happy",
+            "output.rgb": "#22c55e"
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-prediu-el-resultat-2"
+        },
+        {
+          "title": "Quantes vegades canvia?",
+          "prompt": "Compta les enceses roges i anota el text final.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-19",
+                "type": "repeat",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [
+                  {
+                    "id": "act-15",
+                    "type": "rgb",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "#ef4444",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  },
+                  {
+                    "id": "act-16",
+                    "type": "wait",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.3,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  },
+                  {
+                    "id": "act-17",
+                    "type": "rgb",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "#000000",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  },
+                  {
+                    "id": "act-18",
+                    "type": "wait",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.3,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-20",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "FI",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-25",
+                "type": "repeat",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [
+                  {
+                    "id": "act-21",
+                    "type": "rgb",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "#ef4444",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  },
+                  {
+                    "id": "act-22",
+                    "type": "wait",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.3,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  },
+                  {
+                    "id": "act-23",
+                    "type": "rgb",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "#000000",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  },
+                  {
+                    "id": "act-24",
+                    "type": "wait",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.3,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-26",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "FI",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "Hi ha tres enceses roges. Acaba amb el LED apagat i FI a la pantalla.",
+          "expected": {
+            "output.text": "FI",
+            "output.rgb": "#000000"
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-prediu-el-resultat-3"
+        }
+      ]
+    },
+    {
+      "slug": "cr-botons-i-esdeveniments",
+      "title": "Quan s’executa cada pila?",
+      "topic": "Descomposició",
+      "objective": "Relacionar cada esdeveniment amb la seua pila i separar inici, botons i eixides.",
+      "sda": "cr-entrades-sensors",
+      "robot": "Reproduïu les piles a mBlock. Reinicieu Codey abans de cada exercici i premeu només el botó indicat. C serveix ací com a esdeveniment programable, no com a aturada automàtica.",
+      "duration": "35–45 min",
+      "cycle": "Segon cicle",
+      "exercises": [
+        {
+          "title": "Inici i botó A",
+          "prompt": "Engega Codey. Després prem A. Què mostra abans i després?",
+          "starter": {
+            "start": [
+              {
+                "id": "act-27",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "INICI",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [
+              {
+                "id": "act-28",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "A",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-29",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "INICI",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [
+              {
+                "id": "act-30",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "A",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "B": [],
+            "C": []
+          },
+          "answer": "Primer mostra INICI; després de prémer A, mostra A.",
+          "expected": {
+            "output.text": "A"
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "events": [
+            "start",
+            "A"
+          ],
+          "id": "cr-botons-i-esdeveniments-1"
+        },
+        {
+          "title": "El botó B no es prem sol",
+          "prompt": "Engega Codey sense prémer B. S’encén el LED roig?",
+          "starter": {
+            "start": [
+              {
+                "id": "act-31",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "INICI",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [
+              {
+                "id": "act-32",
+                "type": "rgb",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "#ef4444",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-33",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "INICI",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [
+              {
+                "id": "act-34",
+                "type": "rgb",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "#ef4444",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "C": []
+          },
+          "answer": "No. La pila B no s’executa fins que es prem B. La pantalla mostra INICI.",
+          "expected": {
+            "output.text": "INICI"
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-botons-i-esdeveniments-2"
+        },
+        {
+          "title": "El botó C",
+          "prompt": "Prem A i després C. Quin text queda?",
+          "starter": {
+            "start": [],
+            "A": [
+              {
+                "id": "act-35",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "A",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "B": [],
+            "C": [
+              {
+                "id": "act-36",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "C",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ]
+          },
+          "solution": {
+            "start": [],
+            "A": [
+              {
+                "id": "act-37",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "A",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "B": [],
+            "C": [
+              {
+                "id": "act-38",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "C",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ]
+          },
+          "answer": "Queda C. Prémer C executa la pila que hi hem programat.",
+          "expected": {
+            "output.text": "C"
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "events": [
+            "A",
+            "C"
+          ],
+          "id": "cr-botons-i-esdeveniments-3"
+        }
+      ]
+    },
+    {
+      "slug": "cr-completa-el-programa",
+      "title": "Completa el programa",
+      "topic": "Algorismes",
+      "objective": "Construir una seqüència que complisca una especificació observable.",
+      "sda": "cr-emocions",
+      "robot": "Completeu les piles a mBlock amb les mateixes peces. Compareu el resultat amb la consigna; accepteu seqüències alternatives que la complisquen.",
+      "duration": "35–45 min",
+      "cycle": "Segon cicle",
+      "exercises": [
+        {
+          "title": "Dues eixides",
+          "prompt": "Completa la pila perquè mostre SOL i deixe el LED verd.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-39",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "SOL",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-40",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "SOL",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-41",
+                "type": "rgb",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "#22c55e",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "Afegir el LED RGB verd després del text és una solució.",
+          "expected": {
+            "output.text": "SOL",
+            "output.rgb": "#22c55e"
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-completa-el-programa-1"
+        },
+        {
+          "title": "La pausa importa",
+          "prompt": "Completa la pila: mostra 1, espera un segon i després mostra 2.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-42",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "1",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-43",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "1",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-44",
+                "type": "wait",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 1,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-45",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "2",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "Després de mostra 1: espera 1 s i mostra 2.",
+          "expected": {
+            "output.text": "2"
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-completa-el-programa-2"
+        },
+        {
+          "title": "Una resposta per a B",
+          "prompt": "Programa B perquè mostre B i encenga el LED blau. L’inici no ha de fer-ho.",
+          "starter": {
+            "start": [],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [],
+            "A": [],
+            "B": [
+              {
+                "id": "act-46",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "B",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-47",
+                "type": "rgb",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "#3b82f6",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "C": []
+          },
+          "answer": "La pila en prémer B conté mostra B i LED RGB blau; l’inici queda buit.",
+          "expected": {
+            "output.text": "B",
+            "output.rgb": "#3b82f6"
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "events": [
+            "B"
+          ],
+          "id": "cr-completa-el-programa-3"
+        }
+      ]
+    },
+    {
+      "slug": "cr-depura-el-codi",
+      "title": "Troba i corregeix l’error",
+      "topic": "Algorismes",
+      "objective": "Localitzar l’ordre que contradiu la consigna i justificar una correcció concreta.",
+      "sda": "cr-llum-aula",
+      "robot": "En els reptes de llum i color, anoteu les lectures reals abans de provar. Per al moviment, useu una superfície lliure i un objecte ample; comenceu amb potència baixa i manteniu a mà l’aturada.",
+      "duration": "35–45 min",
+      "cycle": "Segon cicle",
+      "exercises": [
+        {
+          "title": "La comparació al revés",
+          "prompt": "Ha de mostrar FOSC si la llum és menor que 40. La lectura és 20. Repara la condició.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-50",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-48",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "FOSC",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-49",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "CLAR",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "compare",
+                  "op": ">",
+                  "left": {
+                    "kind": "sensor",
+                    "name": "light"
+                  },
+                  "right": {
+                    "kind": "number",
+                    "value": 40
+                  }
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-53",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-51",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "FOSC",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-52",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "CLAR",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "compare",
+                  "op": "<",
+                  "left": {
+                    "kind": "sensor",
+                    "name": "light"
+                  },
+                  "right": {
+                    "kind": "number",
+                    "value": 40
+                  }
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "Cal canviar > per <. Amb 20, mostra FOSC.",
+          "expected": {
+            "output.text": "FOSC"
+          },
+          "environment": {
+            "light": 20,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-depura-el-codi-1"
+        },
+        {
+          "title": "El color equivocat",
+          "prompt": "Ha de mostrar ROIG en detectar roig. El sensor està sobre una superfície roja. Repara el desplegable.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-56",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-54",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "ROIG",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-55",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "ALTRE",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "color",
+                  "value": "blue"
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-59",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-57",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "ROIG",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-58",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "ALTRE",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "color",
+                  "value": "red"
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "Canviar blau per vermell al desplegable de la condició.",
+          "expected": {
+            "output.text": "ROIG"
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "down",
+            "obstacles": [],
+            "patches": [
+              {
+                "x": 100,
+                "y": 180,
+                "w": 180,
+                "h": 140,
+                "color": "red"
+              }
+            ],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-depura-el-codi-2"
+        },
+        {
+          "title": "Fins que, no mentre",
+          "prompt": "Ha d’avançar fins que l’IR supere 60 i aturar-se. La lectura inicial és baixa. Repara el comparador.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-61",
+                "type": "until",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "infrared",
+                "compare": "<",
+                "threshold": 60,
+                "value": "",
+                "body": [
+                  {
+                    "id": "act-60",
+                    "type": "forward",
+                    "power": 10,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-62",
+                "type": "stop",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-63",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "FI",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-65",
+                "type": "until",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "infrared",
+                "compare": ">",
+                "threshold": 60,
+                "value": "",
+                "body": [
+                  {
+                    "id": "act-64",
+                    "type": "forward",
+                    "power": 10,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-66",
+                "type": "stop",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-67",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "FI",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "Cal > 60: repeteix mentre encara no s’ha arribat al llindar. Després atura els motors.",
+          "expected": {
+            "output.text": "FI",
+            "motor.speed": 0
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [
+              {
+                "x": 430,
+                "y": 190,
+                "w": 65,
+                "h": 120
+              }
+            ],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 40,
+          "event": "start",
+          "id": "cr-depura-el-codi-3"
+        }
+      ]
+    },
+    {
+      "slug": "cr-delimita-el-bucle",
+      "title": "Què queda dins del bucle?",
+      "topic": "Patrons",
+      "objective": "Identificar la unitat repetida i separar les accions inicials i finals.",
+      "sda": "cr-coreografia",
+      "robot": "Useu patrons de llum, sense moure Rocky. Compteu les enceses i observeu què passa una sola vegada fora del bucle.",
+      "duration": "35–45 min",
+      "cycle": "Segon cicle",
+      "exercises": [
+        {
+          "title": "Tres pampallugues",
+          "prompt": "A partir d’una pampalluga, fes-ne tres amb un sol repeteix.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-68",
+                "type": "rgb",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "#ef4444",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-69",
+                "type": "wait",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.3,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-70",
+                "type": "rgb",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "#000000",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-71",
+                "type": "wait",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.3,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-76",
+                "type": "repeat",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [
+                  {
+                    "id": "act-72",
+                    "type": "rgb",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "#ef4444",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  },
+                  {
+                    "id": "act-73",
+                    "type": "wait",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.3,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  },
+                  {
+                    "id": "act-74",
+                    "type": "rgb",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "#000000",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  },
+                  {
+                    "id": "act-75",
+                    "type": "wait",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.3,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "El repeteix 3 inclou encendre, esperar, apagar i esperar. Repeteix tota la unitat.",
+          "expected": {
+            "output.rgb": "#000000"
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-delimita-el-bucle-1"
+        },
+        {
+          "title": "L’inici queda fora",
+          "prompt": "Mostra INICI una vegada, fes dues pampallugues blaves i mostra FI una vegada.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-77",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "INICI",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-78",
+                "type": "rgb",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "#3b82f6",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-79",
+                "type": "wait",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.3,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-80",
+                "type": "rgb",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "#000000",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-81",
+                "type": "wait",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.3,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-82",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "FI",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-83",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "INICI",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-88",
+                "type": "repeat",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 2,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [
+                  {
+                    "id": "act-84",
+                    "type": "rgb",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "#3b82f6",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  },
+                  {
+                    "id": "act-85",
+                    "type": "wait",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.3,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  },
+                  {
+                    "id": "act-86",
+                    "type": "rgb",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "#000000",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  },
+                  {
+                    "id": "act-87",
+                    "type": "wait",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.3,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-89",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "FI",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "Només les quatre ordres de la pampalluga van dins de repeteix 2.",
+          "expected": {
+            "output.text": "FI",
+            "output.rgb": "#000000"
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-delimita-el-bucle-2"
+        },
+        {
+          "title": "Zero voltes",
+          "prompt": "Què passa si el nombre de repeticions és zero? Prediu abans d’executar.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-90",
+                "type": "rgb",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "#3b82f6",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-92",
+                "type": "repeat",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 0,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [
+                  {
+                    "id": "act-91",
+                    "type": "rgb",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "#ef4444",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-93",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "FI",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-94",
+                "type": "rgb",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "#3b82f6",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-96",
+                "type": "repeat",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 0,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [
+                  {
+                    "id": "act-95",
+                    "type": "rgb",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "#ef4444",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "act-97",
+                "type": "text",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "FI",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "El cos no s’executa. Queda el LED blau i es mostra FI.",
+          "expected": {
+            "output.rgb": "#3b82f6",
+            "output.text": "FI"
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-delimita-el-bucle-3"
+        }
+      ]
+    },
+    {
+      "slug": "cr-condicions-i-operadors",
+      "title": "Quan és certa la condició?",
+      "topic": "Abstracció",
+      "objective": "Seleccionar les lectures rellevants i justificar comparacions i combinacions lògiques.",
+      "sda": "cr-entrades-sensors",
+      "robot": "Llegiu els sensors reals a mBlock abans d’executar. Construïu casos que facen certa i falsa la condició; no cal obtindre exactament les lectures del paper. El cas del límit exacte es comprova sobre paper o al simulador.",
+      "duration": "35–45 min",
+      "cycle": "Segon cicle",
+      "exercises": [
+        {
+          "title": "Les dues condicions",
+          "prompt": "Llum 20; so 20. Indica si la condició és certa i quina branca s’executa.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-100",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-98",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "SI",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-99",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "NO",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "and",
+                  "left": {
+                    "kind": "compare",
+                    "op": "<",
+                    "left": {
+                      "kind": "sensor",
+                      "name": "light"
+                    },
+                    "right": {
+                      "kind": "number",
+                      "value": 40
+                    }
+                  },
+                  "right": {
+                    "kind": "compare",
+                    "op": ">",
+                    "left": {
+                      "kind": "sensor",
+                      "name": "sound"
+                    },
+                    "right": {
+                      "kind": "number",
+                      "value": 60
+                    }
+                  }
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-103",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-101",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "SI",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-102",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "NO",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "and",
+                  "left": {
+                    "kind": "compare",
+                    "op": "<",
+                    "left": {
+                      "kind": "sensor",
+                      "name": "light"
+                    },
+                    "right": {
+                      "kind": "number",
+                      "value": 40
+                    }
+                  },
+                  "right": {
+                    "kind": "compare",
+                    "op": ">",
+                    "left": {
+                      "kind": "sensor",
+                      "name": "sound"
+                    },
+                    "right": {
+                      "kind": "number",
+                      "value": 60
+                    }
+                  }
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "La condició és falsa: 20 < 40 és cert, però 20 > 60 és fals. Amb i calen les dues; mostra NO.",
+          "expected": {
+            "output.text": "NO"
+          },
+          "environment": {
+            "light": 20,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-condicions-i-operadors-1"
+        },
+        {
+          "title": "Una de les dues",
+          "prompt": "Llum 20; so 20, com en l’exercici anterior. Què canvia quan usem o?",
+          "starter": {
+            "start": [
+              {
+                "id": "act-106",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-104",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "SI",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-105",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "NO",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "or",
+                  "left": {
+                    "kind": "compare",
+                    "op": "<",
+                    "left": {
+                      "kind": "sensor",
+                      "name": "light"
+                    },
+                    "right": {
+                      "kind": "number",
+                      "value": 40
+                    }
+                  },
+                  "right": {
+                    "kind": "compare",
+                    "op": ">",
+                    "left": {
+                      "kind": "sensor",
+                      "name": "sound"
+                    },
+                    "right": {
+                      "kind": "number",
+                      "value": 60
+                    }
+                  }
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-109",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-107",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "SI",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-108",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "NO",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "or",
+                  "left": {
+                    "kind": "compare",
+                    "op": "<",
+                    "left": {
+                      "kind": "sensor",
+                      "name": "light"
+                    },
+                    "right": {
+                      "kind": "number",
+                      "value": 40
+                    }
+                  },
+                  "right": {
+                    "kind": "compare",
+                    "op": ">",
+                    "left": {
+                      "kind": "sensor",
+                      "name": "sound"
+                    },
+                    "right": {
+                      "kind": "number",
+                      "value": 60
+                    }
+                  }
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "La condició és certa: basta que 20 < 40 siga cert. Mostra SI, encara que 20 > 60 siga fals.",
+          "expected": {
+            "output.text": "SI"
+          },
+          "environment": {
+            "light": 20,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-condicions-i-operadors-2"
+        },
+        {
+          "title": "El límit exacte",
+          "prompt": "Llum 40; so 20. Indica si la condició és certa i quina branca s’executa.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-112",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-110",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "SI",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-111",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "NO",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "not",
+                  "value": {
+                    "kind": "compare",
+                    "op": "<",
+                    "left": {
+                      "kind": "sensor",
+                      "name": "light"
+                    },
+                    "right": {
+                      "kind": "number",
+                      "value": 40
+                    }
+                  }
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-115",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-113",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "SI",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-114",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "NO",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "not",
+                  "value": {
+                    "kind": "compare",
+                    "op": "<",
+                    "left": {
+                      "kind": "sensor",
+                      "name": "light"
+                    },
+                    "right": {
+                      "kind": "number",
+                      "value": 40
+                    }
+                  }
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "La condició és certa i mostra SI. < és estricte: 40 < 40 és fals; el no ho transforma en cert.",
+          "expected": {
+            "output.text": "SI"
+          },
+          "environment": {
+            "light": 40,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-condicions-i-operadors-3"
+        }
+      ]
+    },
+    {
+      "slug": "cr-respon-als-sensors",
+      "title": "Una lectura, una resposta",
+      "topic": "Abstracció",
+      "objective": "Distingir entrada i eixida i programar una resposta observable amb una condició.",
+      "sda": "cr-ruta-colors",
+      "robot": "Per a la llum, tapeu i destapeu el sensor; per al so, useu veu o un picament moderat; per al color, orienteu Rocky cap al terra i mesureu dues superfícies. Ajusteu el llindar a partir de lectures, no a l’atzar.",
+      "duration": "35–45 min",
+      "cycle": "Segon cicle",
+      "exercises": [
+        {
+          "title": "La llum governa el LED",
+          "prompt": "Completa: amb llum menor que 40, LED verd; en cas contrari, LED roig. Prova 20 i 70.",
+          "starter": {
+            "start": [],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-118",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-116",
+                    "type": "rgb",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "#22c55e",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-117",
+                    "type": "rgb",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "#ef4444",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "compare",
+                  "op": "<",
+                  "left": {
+                    "kind": "sensor",
+                    "name": "light"
+                  },
+                  "right": {
+                    "kind": "number",
+                    "value": 40
+                  }
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "Amb 20 és verd; amb 70 és roig. Torna a executar després de canviar la lectura.",
+          "expected": {
+            "output.rgb": "#22c55e"
+          },
+          "environment": {
+            "light": 20,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-respon-als-sensors-1"
+        },
+        {
+          "title": "El so governa el text",
+          "prompt": "Completa: amb so major que 60, mostra SO; en cas contrari, mostra SILENCI. Prova 70 i 20.",
+          "starter": {
+            "start": [],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-121",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-119",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "SO",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-120",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "SILENCI",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "compare",
+                  "op": ">",
+                  "left": {
+                    "kind": "sensor",
+                    "name": "sound"
+                  },
+                  "right": {
+                    "kind": "number",
+                    "value": 60
+                  }
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "Amb 70 mostra SO; amb 20 mostra SILENCI. La condició es llig quan s’executa la pila.",
+          "expected": {
+            "output.text": "SO"
+          },
+          "environment": {
+            "light": 70,
+            "sound": 70,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-respon-als-sensors-2"
+        },
+        {
+          "title": "Detectar un color",
+          "prompt": "Completa: en detectar roig, mostra ROIG; en cas contrari, mostra ALTRE. Prova les dues superfícies.",
+          "starter": {
+            "start": [],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-124",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-122",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "ROIG",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-123",
+                    "type": "text",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "ALTRE",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "color",
+                  "value": "red"
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "La condició de color retorna cert o fals; no cal comparar un número de color.",
+          "expected": {
+            "output.text": "ROIG"
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "down",
+            "obstacles": [],
+            "patches": [
+              {
+                "x": 100,
+                "y": 180,
+                "w": 180,
+                "h": 140,
+                "color": "red"
+              }
+            ],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-respon-als-sensors-3"
+        }
+      ]
+    },
+    {
+      "slug": "cr-segueix-la-vora",
+      "title": "Per què perd la línia?",
+      "topic": "Algorismes",
+      "objective": "Relacionar la lectura d’un únic sensor amb el llindar i la potència de les dues erugues.",
+      "sda": "cr-ruta-colors",
+      "robot": "Prepareu una línia negra ampla sobre fons clar. Orienteu el sensor cap al terra, mesureu fons i línia i poseu-lo a la vora. Useu el punt mitjà com a primer llindar i potències baixes. Comproveu el sentit del gir abans de deixar el bucle actiu.",
+      "duration": "35–45 min",
+      "cycle": "Segon cicle",
+      "exercises": [
+        {
+          "title": "Decidir amb una lectura",
+          "prompt": "Sobre paper usa grisos 20 i després 80. Anota les dues potències en cada cas. Al simulador, mou el sensor entre el blau i el blanc.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-127",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-125",
+                    "type": "tracks",
+                    "power": 20,
+                    "left": 10,
+                    "right": 6,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-126",
+                    "type": "tracks",
+                    "power": 20,
+                    "left": 6,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "compare",
+                  "op": "<",
+                  "left": {
+                    "kind": "sensor",
+                    "name": "gray"
+                  },
+                  "right": {
+                    "kind": "number",
+                    "value": 50
+                  }
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-130",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-128",
+                    "type": "tracks",
+                    "power": 20,
+                    "left": 10,
+                    "right": 6,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-129",
+                    "type": "tracks",
+                    "power": 20,
+                    "left": 6,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "compare",
+                  "op": "<",
+                  "left": {
+                    "kind": "sensor",
+                    "name": "gray"
+                  },
+                  "right": {
+                    "kind": "number",
+                    "value": 50
+                  }
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "Amb 20: esquerra 10, dreta 6. Amb 80: esquerra 6, dreta 10. El llindar és 50; amb 50 va a si no.",
+          "expected": {
+            "motor.speed": 12,
+            "motor.turn": 9.6
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "down",
+            "obstacles": [],
+            "patches": [
+              {
+                "x": 100,
+                "y": 180,
+                "w": 180,
+                "h": 140,
+                "color": "blue"
+              }
+            ],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-segueix-la-vora-1"
+        },
+        {
+          "title": "Corregir la resposta",
+          "prompt": "La pista tancada es recorre amb la vora interior a l’esquerra. Les potències s’han intercanviat. Repara-les i compara.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-134",
+                "type": "forever",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [
+                  {
+                    "id": "act-133",
+                    "type": "if",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [
+                      {
+                        "id": "act-131",
+                        "type": "tracks",
+                        "power": 20,
+                        "left": 6,
+                        "right": 10,
+                        "seconds": 0.2,
+                        "count": 3,
+                        "sensor": "light",
+                        "compare": "<",
+                        "threshold": 40,
+                        "value": "",
+                        "body": [],
+                        "then": [],
+                        "else": []
+                      }
+                    ],
+                    "else": [
+                      {
+                        "id": "act-132",
+                        "type": "tracks",
+                        "power": 20,
+                        "left": 10,
+                        "right": 6,
+                        "seconds": 0.2,
+                        "count": 3,
+                        "sensor": "light",
+                        "compare": "<",
+                        "threshold": 40,
+                        "value": "",
+                        "body": [],
+                        "then": [],
+                        "else": []
+                      }
+                    ],
+                    "condition": {
+                      "kind": "compare",
+                      "op": "<",
+                      "left": {
+                        "kind": "sensor",
+                        "name": "gray"
+                      },
+                      "right": {
+                        "kind": "number",
+                        "value": 50
+                      }
+                    }
+                  }
+                ],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-138",
+                "type": "forever",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [
+                  {
+                    "id": "act-137",
+                    "type": "if",
+                    "power": 20,
+                    "left": 10,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [
+                      {
+                        "id": "act-135",
+                        "type": "tracks",
+                        "power": 20,
+                        "left": 10,
+                        "right": 6,
+                        "seconds": 0.2,
+                        "count": 3,
+                        "sensor": "light",
+                        "compare": "<",
+                        "threshold": 40,
+                        "value": "",
+                        "body": [],
+                        "then": [],
+                        "else": []
+                      }
+                    ],
+                    "else": [
+                      {
+                        "id": "act-136",
+                        "type": "tracks",
+                        "power": 20,
+                        "left": 6,
+                        "right": 10,
+                        "seconds": 0.2,
+                        "count": 3,
+                        "sensor": "light",
+                        "compare": "<",
+                        "threshold": 40,
+                        "value": "",
+                        "body": [],
+                        "then": [],
+                        "else": []
+                      }
+                    ],
+                    "condition": {
+                      "kind": "compare",
+                      "op": "<",
+                      "left": {
+                        "kind": "sensor",
+                        "name": "gray"
+                      },
+                      "right": {
+                        "kind": "number",
+                        "value": 50
+                      }
+                    }
+                  }
+                ],
+                "then": [],
+                "else": []
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "En la branca fosca: esquerra 10 i dreta 6. En la clara: esquerra 6 i dreta 10. Atura després d’observar; el programa no acaba sol.",
+          "expected": {},
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "down",
+            "obstacles": [],
+            "patches": [],
+            "lines": [
+              {
+                "points": [
+                  {
+                    "x": 400.0,
+                    "y": 100.0
+                  },
+                  {
+                    "x": 409.8149539397672,
+                    "y": 100.11564456389158
+                  },
+                  {
+                    "x": 419.6147739319612,
+                    "y": 100.46239994003079
+                  },
+                  {
+                    "x": 429.3843493644594,
+                    "y": 101.03973145676105
+                  },
+                  {
+                    "x": 439.1086162600577,
+                    "y": 101.84674891072933
+                  },
+                  {
+                    "x": 448.7725805040321,
+                    "y": 102.88220793951544
+                  },
+                  {
+                    "x": 458.3613409639764,
+                    "y": 104.14451194034851
+                  },
+                  {
+                    "x": 467.86011246626856,
+                    "y": 105.6317145319529
+                  },
+                  {
+                    "x": 477.25424859373686,
+                    "y": 107.34152255572698
+                  },
+                  {
+                    "x": 486.52926426937324,
+                    "y": 109.27129961162737
+                  },
+                  {
+                    "x": 495.67085809127246,
+                    "y": 111.41807012330699
+                  },
+                  {
+                    "x": 504.664934384357,
+                    "y": 113.77852392623782
+                  },
+                  {
+                    "x": 513.4976249348867,
+                    "y": 116.34902137174484
+                  },
+                  {
+                    "x": 522.1553103742388,
+                    "y": 119.12559893908045
+                  },
+                  {
+                    "x": 530.6246411789872,
+                    "y": 122.10397534688617
+                  },
+                  {
+                    "x": 538.8925582549006,
+                    "y": 125.27955815461821
+                  },
+                  {
+                    "x": 546.9463130731183,
+                    "y": 128.6474508437579
+                  },
+                  {
+                    "x": 554.7734873274585,
+                    "y": 132.20246036788825
+                  },
+                  {
+                    "x": 562.3620120825459,
+                    "y": 135.93910515999536
+                  },
+                  {
+                    "x": 569.7001863832354,
+                    "y": 139.85162358464717
+                  },
+                  {
+                    "x": 576.776695296637,
+                    "y": 143.93398282201787
+                  },
+                  {
+                    "x": 583.5806273589214,
+                    "y": 148.17988817005875
+                  },
+                  {
+                    "x": 590.1014914000077,
+                    "y": 152.58279275047246
+                  },
+                  {
+                    "x": 596.3292327201862,
+                    "y": 157.13590760352488
+                  },
+                  {
+                    "x": 602.2542485937369,
+                    "y": 161.83221215612903
+                  },
+                  {
+                    "x": 607.8674030756363,
+                    "y": 166.66446504705968
+                  },
+                  {
+                    "x": 613.160041088523,
+                    "y": 171.62521529260766
+                  },
+                  {
+                    "x": 618.1240017681993,
+                    "y": 176.70681377545677
+                  },
+                  {
+                    "x": 622.7516310470919,
+                    "y": 181.901425039068
+                  },
+                  {
+                    "x": 627.0357934562703,
+                    "y": 187.2010393693858
+                  },
+                  {
+                    "x": 630.9698831278217,
+                    "y": 192.59748514523653
+                  },
+                  {
+                    "x": 634.547833980621,
+                    "y": 198.08244143837607
+                  },
+                  {
+                    "x": 637.7641290737884,
+                    "y": 203.6474508437579
+                  },
+                  {
+                    "x": 640.6138091134119,
+                    "y": 209.28393252023886
+                  },
+                  {
+                    "x": 643.0924800994192,
+                    "y": 214.9831954216142
+                  },
+                  {
+                    "x": 645.1963201008076,
+                    "y": 220.73645169758078
+                  },
+                  {
+                    "x": 646.9220851487844,
+                    "y": 226.53483024396536
+                  },
+                  {
+                    "x": 648.2671142387316,
+                    "y": 232.36939038132437
+                  },
+                  {
+                    "x": 649.229333433282,
+                    "y": 238.23113564082325
+                  },
+                  {
+                    "x": 649.8072590601807,
+                    "y": 244.1110276361397
+                  },
+                  {
+                    "x": 650.0,
+                    "y": 250.0
+                  },
+                  {
+                    "x": 649.8072590601807,
+                    "y": 255.88897236386026
+                  },
+                  {
+                    "x": 649.229333433282,
+                    "y": 261.76886435917675
+                  },
+                  {
+                    "x": 648.2671142387316,
+                    "y": 267.63060961867563
+                  },
+                  {
+                    "x": 646.9220851487844,
+                    "y": 273.46516975603464
+                  },
+                  {
+                    "x": 645.1963201008076,
+                    "y": 279.2635483024192
+                  },
+                  {
+                    "x": 643.0924800994192,
+                    "y": 285.0168045783858
+                  },
+                  {
+                    "x": 640.6138091134119,
+                    "y": 290.71606747976114
+                  },
+                  {
+                    "x": 637.7641290737884,
+                    "y": 296.3525491562421
+                  },
+                  {
+                    "x": 634.547833980621,
+                    "y": 301.917558561624
+                  },
+                  {
+                    "x": 630.9698831278217,
+                    "y": 307.40251485476347
+                  },
+                  {
+                    "x": 627.0357934562703,
+                    "y": 312.79896063061415
+                  },
+                  {
+                    "x": 622.7516310470919,
+                    "y": 318.098574960932
+                  },
+                  {
+                    "x": 618.1240017681994,
+                    "y": 323.2931862245432
+                  },
+                  {
+                    "x": 613.160041088523,
+                    "y": 328.37478470739234
+                  },
+                  {
+                    "x": 607.8674030756363,
+                    "y": 333.3355349529403
+                  },
+                  {
+                    "x": 602.2542485937369,
+                    "y": 338.167787843871
+                  },
+                  {
+                    "x": 596.3292327201862,
+                    "y": 342.86409239647514
+                  },
+                  {
+                    "x": 590.1014914000077,
+                    "y": 347.41720724952756
+                  },
+                  {
+                    "x": 583.5806273589213,
+                    "y": 351.8201118299413
+                  },
+                  {
+                    "x": 576.776695296637,
+                    "y": 356.06601717798213
+                  },
+                  {
+                    "x": 569.7001863832354,
+                    "y": 360.1483764153528
+                  },
+                  {
+                    "x": 562.3620120825459,
+                    "y": 364.0608948400046
+                  },
+                  {
+                    "x": 554.7734873274585,
+                    "y": 367.7975396321117
+                  },
+                  {
+                    "x": 546.9463130731183,
+                    "y": 371.3525491562421
+                  },
+                  {
+                    "x": 538.8925582549005,
+                    "y": 374.7204418453818
+                  },
+                  {
+                    "x": 530.6246411789872,
+                    "y": 377.89602465311384
+                  },
+                  {
+                    "x": 522.1553103742388,
+                    "y": 380.8744010609196
+                  },
+                  {
+                    "x": 513.4976249348867,
+                    "y": 383.6509786282552
+                  },
+                  {
+                    "x": 504.66493438435697,
+                    "y": 386.22147607376223
+                  },
+                  {
+                    "x": 495.67085809127246,
+                    "y": 388.58192987669304
+                  },
+                  {
+                    "x": 486.5292642693733,
+                    "y": 390.7287003883726
+                  },
+                  {
+                    "x": 477.25424859373686,
+                    "y": 392.658477444273
+                  },
+                  {
+                    "x": 467.8601124662686,
+                    "y": 394.3682854680471
+                  },
+                  {
+                    "x": 458.3613409639764,
+                    "y": 395.8554880596515
+                  },
+                  {
+                    "x": 448.77258050403213,
+                    "y": 397.1177920604846
+                  },
+                  {
+                    "x": 439.1086162600577,
+                    "y": 398.15325108927067
+                  },
+                  {
+                    "x": 429.38434936445935,
+                    "y": 398.96026854323895
+                  },
+                  {
+                    "x": 419.6147739319612,
+                    "y": 399.53760005996924
+                  },
+                  {
+                    "x": 409.8149539397671,
+                    "y": 399.8843554361084
+                  },
+                  {
+                    "x": 400.0,
+                    "y": 400.0
+                  },
+                  {
+                    "x": 390.18504606023293,
+                    "y": 399.8843554361084
+                  },
+                  {
+                    "x": 380.3852260680389,
+                    "y": 399.53760005996924
+                  },
+                  {
+                    "x": 370.61565063554053,
+                    "y": 398.96026854323895
+                  },
+                  {
+                    "x": 360.8913837399423,
+                    "y": 398.15325108927067
+                  },
+                  {
+                    "x": 351.22741949596787,
+                    "y": 397.1177920604846
+                  },
+                  {
+                    "x": 341.6386590360237,
+                    "y": 395.8554880596515
+                  },
+                  {
+                    "x": 332.1398875337315,
+                    "y": 394.36828546804713
+                  },
+                  {
+                    "x": 322.745751406263,
+                    "y": 392.658477444273
+                  },
+                  {
+                    "x": 313.4707357306267,
+                    "y": 390.7287003883726
+                  },
+                  {
+                    "x": 304.3291419087276,
+                    "y": 388.58192987669304
+                  },
+                  {
+                    "x": 295.33506561564303,
+                    "y": 386.22147607376223
+                  },
+                  {
+                    "x": 286.5023750651134,
+                    "y": 383.6509786282552
+                  },
+                  {
+                    "x": 277.84468962576125,
+                    "y": 380.8744010609196
+                  },
+                  {
+                    "x": 269.3753588210128,
+                    "y": 377.89602465311384
+                  },
+                  {
+                    "x": 261.10744174509955,
+                    "y": 374.7204418453818
+                  },
+                  {
+                    "x": 253.05368692688174,
+                    "y": 371.3525491562421
+                  },
+                  {
+                    "x": 245.22651267254156,
+                    "y": 367.7975396321118
+                  },
+                  {
+                    "x": 237.63798791745404,
+                    "y": 364.0608948400046
+                  },
+                  {
+                    "x": 230.29981361676457,
+                    "y": 360.1483764153528
+                  },
+                  {
+                    "x": 223.22330470336314,
+                    "y": 356.06601717798213
+                  },
+                  {
+                    "x": 216.41937264107867,
+                    "y": 351.8201118299413
+                  },
+                  {
+                    "x": 209.89850859999234,
+                    "y": 347.4172072495276
+                  },
+                  {
+                    "x": 203.67076727981367,
+                    "y": 342.86409239647503
+                  },
+                  {
+                    "x": 197.74575140626317,
+                    "y": 338.167787843871
+                  },
+                  {
+                    "x": 192.13259692436367,
+                    "y": 333.3355349529403
+                  },
+                  {
+                    "x": 186.839958911477,
+                    "y": 328.3747847073924
+                  },
+                  {
+                    "x": 181.87599823180076,
+                    "y": 323.2931862245433
+                  },
+                  {
+                    "x": 177.24836895290807,
+                    "y": 318.098574960932
+                  },
+                  {
+                    "x": 172.96420654372966,
+                    "y": 312.7989606306142
+                  },
+                  {
+                    "x": 169.03011687217838,
+                    "y": 307.4025148547635
+                  },
+                  {
+                    "x": 165.45216601937898,
+                    "y": 301.917558561624
+                  },
+                  {
+                    "x": 162.23587092621162,
+                    "y": 296.3525491562421
+                  },
+                  {
+                    "x": 159.38619088658817,
+                    "y": 290.71606747976114
+                  },
+                  {
+                    "x": 156.90751990058084,
+                    "y": 285.01680457838575
+                  },
+                  {
+                    "x": 154.8036798991924,
+                    "y": 279.2635483024193
+                  },
+                  {
+                    "x": 153.07791485121558,
+                    "y": 273.46516975603464
+                  },
+                  {
+                    "x": 151.73288576126845,
+                    "y": 267.63060961867575
+                  },
+                  {
+                    "x": 150.770666566718,
+                    "y": 261.7688643591767
+                  },
+                  {
+                    "x": 150.1927409398193,
+                    "y": 255.88897236386035
+                  },
+                  {
+                    "x": 150.0,
+                    "y": 250.00000000000003
+                  },
+                  {
+                    "x": 150.1927409398193,
+                    "y": 244.11102763613968
+                  },
+                  {
+                    "x": 150.77066656671798,
+                    "y": 238.23113564082334
+                  },
+                  {
+                    "x": 151.73288576126845,
+                    "y": 232.36939038132428
+                  },
+                  {
+                    "x": 153.07791485121555,
+                    "y": 226.5348302439654
+                  },
+                  {
+                    "x": 154.8036798991924,
+                    "y": 220.73645169758075
+                  },
+                  {
+                    "x": 156.9075199005808,
+                    "y": 214.98319542161425
+                  },
+                  {
+                    "x": 159.38619088658814,
+                    "y": 209.28393252023892
+                  },
+                  {
+                    "x": 162.2358709262116,
+                    "y": 203.6474508437579
+                  },
+                  {
+                    "x": 165.45216601937895,
+                    "y": 198.08244143837604
+                  },
+                  {
+                    "x": 169.03011687217835,
+                    "y": 192.59748514523648
+                  },
+                  {
+                    "x": 172.96420654372963,
+                    "y": 187.20103936938585
+                  },
+                  {
+                    "x": 177.24836895290804,
+                    "y": 181.901425039068
+                  },
+                  {
+                    "x": 181.87599823180074,
+                    "y": 176.70681377545674
+                  },
+                  {
+                    "x": 186.83995891147697,
+                    "y": 171.62521529260763
+                  },
+                  {
+                    "x": 192.13259692436364,
+                    "y": 166.6644650470597
+                  },
+                  {
+                    "x": 197.7457514062631,
+                    "y": 161.83221215612906
+                  },
+                  {
+                    "x": 203.67076727981365,
+                    "y": 157.135907603525
+                  },
+                  {
+                    "x": 209.8985085999923,
+                    "y": 152.58279275047244
+                  },
+                  {
+                    "x": 216.41937264107855,
+                    "y": 148.1798881700588
+                  },
+                  {
+                    "x": 223.22330470336308,
+                    "y": 143.93398282201787
+                  },
+                  {
+                    "x": 230.2998136167646,
+                    "y": 139.85162358464717
+                  },
+                  {
+                    "x": 237.63798791745398,
+                    "y": 135.9391051599954
+                  },
+                  {
+                    "x": 245.2265126725416,
+                    "y": 132.2024603678882
+                  },
+                  {
+                    "x": 253.05368692688168,
+                    "y": 128.6474508437579
+                  },
+                  {
+                    "x": 261.10744174509944,
+                    "y": 125.27955815461821
+                  },
+                  {
+                    "x": 269.3753588210127,
+                    "y": 122.1039753468862
+                  },
+                  {
+                    "x": 277.8446896257612,
+                    "y": 119.12559893908045
+                  },
+                  {
+                    "x": 286.50237506511326,
+                    "y": 116.34902137174484
+                  },
+                  {
+                    "x": 295.335065615643,
+                    "y": 113.7785239262378
+                  },
+                  {
+                    "x": 304.3291419087274,
+                    "y": 111.41807012330702
+                  },
+                  {
+                    "x": 313.47073573062664,
+                    "y": 109.2712996116274
+                  },
+                  {
+                    "x": 322.74575140626314,
+                    "y": 107.34152255572698
+                  },
+                  {
+                    "x": 332.13988753373144,
+                    "y": 105.6317145319529
+                  },
+                  {
+                    "x": 341.63865903602374,
+                    "y": 104.14451194034851
+                  },
+                  {
+                    "x": 351.22741949596787,
+                    "y": 102.88220793951544
+                  },
+                  {
+                    "x": 360.8913837399422,
+                    "y": 101.84674891072936
+                  },
+                  {
+                    "x": 370.61565063554036,
+                    "y": 101.03973145676107
+                  },
+                  {
+                    "x": 380.38522606803883,
+                    "y": 100.46239994003079
+                  },
+                  {
+                    "x": 390.18504606023276,
+                    "y": 100.11564456389158
+                  },
+                  {
+                    "x": 399.99999999999994,
+                    "y": 100.0
+                  }
+                ],
+                "width": 24,
+                "color": "black"
+              }
+            ]
+          },
+          "startPose": {
+            "x": 400,
+            "y": 112,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-segueix-la-vora-2"
+        },
+        {
+          "title": "Calibrar el llindar",
+          "prompt": "Fons 95; línia 5. Tria el punt mitjà i substitueix el llindar 20. Prova també lectures 35 i 65.",
+          "starter": {
+            "start": [
+              {
+                "id": "act-141",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-139",
+                    "type": "tracks",
+                    "power": 20,
+                    "left": 10,
+                    "right": 6,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-140",
+                    "type": "tracks",
+                    "power": 20,
+                    "left": 6,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "compare",
+                  "op": "<",
+                  "left": {
+                    "kind": "sensor",
+                    "name": "gray"
+                  },
+                  "right": {
+                    "kind": "number",
+                    "value": 20
+                  }
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "solution": {
+            "start": [
+              {
+                "id": "act-144",
+                "type": "if",
+                "power": 20,
+                "left": 10,
+                "right": 10,
+                "seconds": 0.2,
+                "count": 3,
+                "sensor": "light",
+                "compare": "<",
+                "threshold": 40,
+                "value": "",
+                "body": [],
+                "then": [
+                  {
+                    "id": "act-142",
+                    "type": "tracks",
+                    "power": 20,
+                    "left": 10,
+                    "right": 6,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "else": [
+                  {
+                    "id": "act-143",
+                    "type": "tracks",
+                    "power": 20,
+                    "left": 6,
+                    "right": 10,
+                    "seconds": 0.2,
+                    "count": 3,
+                    "sensor": "light",
+                    "compare": "<",
+                    "threshold": 40,
+                    "value": "",
+                    "body": [],
+                    "then": [],
+                    "else": []
+                  }
+                ],
+                "condition": {
+                  "kind": "compare",
+                  "op": "<",
+                  "left": {
+                    "kind": "sensor",
+                    "name": "gray"
+                  },
+                  "right": {
+                    "kind": "number",
+                    "value": 50
+                  }
+                }
+              }
+            ],
+            "A": [],
+            "B": [],
+            "C": []
+          },
+          "answer": "El punt mitjà és 50. Amb 35 va a la branca fosca; amb 65, a la clara. Al robot calcula’l amb les mesures pròpies.",
+          "expected": {
+            "motor.speed": 12,
+            "motor.turn": 9.6
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "down",
+            "obstacles": [],
+            "patches": [
+              {
+                "x": 100,
+                "y": 180,
+                "w": 180,
+                "h": 140,
+                "color": "blue"
+              }
+            ],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 5,
+          "event": "start",
+          "id": "cr-segueix-la-vora-3"
+        }
+      ]
+    }
+  ]
+}

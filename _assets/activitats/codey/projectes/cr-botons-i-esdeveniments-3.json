@@ -1,0 +1,65 @@
+{
+  "type": "robotica-codey",
+  "version": 2,
+  "program": {
+    "start": [],
+    "A": [
+      {
+        "id": "act-35",
+        "type": "text",
+        "power": 20,
+        "left": 10,
+        "right": 10,
+        "seconds": 0.2,
+        "count": 3,
+        "sensor": "light",
+        "compare": "<",
+        "threshold": 40,
+        "value": "A",
+        "body": [],
+        "then": [],
+        "else": []
+      }
+    ],
+    "B": [],
+    "C": [
+      {
+        "id": "act-36",
+        "type": "text",
+        "power": 20,
+        "left": 10,
+        "right": 10,
+        "seconds": 0.2,
+        "count": 3,
+        "sensor": "light",
+        "compare": "<",
+        "threshold": 40,
+        "value": "C",
+        "body": [],
+        "then": [],
+        "else": []
+      }
+    ]
+  },
+  "environment": {
+    "light": 70,
+    "sound": 20,
+    "orientation": "front",
+    "obstacles": [],
+    "patches": [],
+    "lines": []
+  },
+  "startPose": {
+    "x": 160,
+    "y": 250,
+    "angle": 0
+  },
+  "calibration": {
+    "background": null,
+    "line": null
+  },
+  "activity": {
+    "slug": "cr-botons-i-esdeveniments",
+    "exercise": 3
+  }
+}

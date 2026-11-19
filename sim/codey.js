@@ -5,9 +5,11 @@
   const { Engine, WIDTH, HEIGHT, COLORS, trackPreset, segmentDistance, cleanExpression } = window.CodeySimulation;
   const $ = q => root.querySelector(q);
   const escape = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const activitiesURL=new URL('./codey-activities.json',document.currentScript.src);
+  let activities=[];
   const blankPattern = () => Array(8).fill('0000000000000000');
   const numeric = (v,min,max,fallback) => Number.isFinite(Number(v)) ? Math.max(min,Math.min(max,Number(v))) : fallback;
-  const colorNames={black:'Negre',white:'Blanc',red:'Roig',green:'Verd',blue:'Blau',yellow:'Groc'};
+  const colorNames={black:'Negre',white:'Blanc',red:'Roig',green:'Verd',blue:'Blau',yellow:'Groc',cyan:'Cian',purple:'Morat'};
   const sensorOptions=[['infrared','IR reflectit (0–100)'],['gray','Grisos (0–100)'],['color','Color de la superfície'],['light','Llum'],['sound','So']];
   const {blocks: blockStyles} = window.CodeyBlocks;
   const names=Object.fromEntries(Object.entries(blockStyles).map(([type,b])=>[type,b.label]));
@@ -43,6 +45,7 @@
   const engine=new Engine(program);
   let selectedEvent='start',tool='obstacle',nativeEditor=null;
   let workspaceXml={};
+  let activeActivity=stored?.activity||null;
   function cleanWorkspaces(value){const result={};if(value&&window.CodeyNativeBlocks)for(const key of ['start','A','B','C'])if(value[key]){window.CodeyNativeBlocks.validateXml(value[key]);result[key]=value[key];}return result;}
   try{workspaceXml=cleanWorkspaces(stored?.workspaceXml);}catch(_){workspaceXml={};}
   let startPose={...engine.pose},cursor={x:320,y:250},keyboardCursor=false;
@@ -60,7 +63,7 @@
   const world = $('[data-cr-world]'), ctx = world.getContext('2d');
   const led = $('[data-cr-led]'), ledCtx = led.getContext('2d');
   const sprite = new Image(); sprite.src = new URL('../_assets/icons/codey-rocky.webp', document.currentScript.src).href;
-  function project() {return {type:'robotica-codey',version:2,program,environment:engine.environment,startPose,calibration,workspaceXml};}
+  function project() {return {type:'robotica-codey',version:2,program,environment:engine.environment,startPose,calibration,workspaceXml,activity:activeActivity};}
   function save() {try {localStorage.setItem('robotica-codey-v2',JSON.stringify(project()));}catch(_){}}
   function syncSceneControls() {
     $('[data-cr-orientation]').value=engine.environment.orientation;lineWidth=engine.environment.lines[0]?.width||lineWidth;$('[data-cr-line-width]').value=lineWidth;
@@ -75,6 +78,31 @@
     engine.reset();engine.pose={...startPose};calibration={background:null,line:null};$('[data-cr-track]').value=name;syncSceneControls();save();
   }
   function halt() { engine.stop(); engine.active = null; }
+  function selectedActivity(){return activities.find(a=>a.slug===$('[data-cr-activity]').value);}
+  function updateActivity(){
+    const activity=selectedActivity(),exercise=$('[data-cr-exercise]');
+    exercise.replaceChildren();exercise.disabled=!activity;
+    for(const [i,item] of (activity?.exercises||[]).entries()){const option=document.createElement('option');option.value=String(i);option.textContent=`${i+1}. ${item.title}`;exercise.append(option);}
+    updateExercise();
+  }
+  function updateExercise(){
+    const activity=selectedActivity(),exercise=activity?.exercises[Number($('[data-cr-exercise]').value)];
+    $('[data-cr-load-activity]').disabled=!exercise;
+    $('[data-cr-activity-prompt]').textContent=exercise?.prompt||'Resol el mateix repte en paper, al simulador o amb Codey Rocky.';
+    const link=$('[data-cr-activity-link]');link.hidden=!activity;if(activity)link.href=new URL(`../activitat/${activity.slug}/`,activitiesURL).href;
+  }
+  function loadActivity(){
+    const activity=selectedActivity(),index=Number($('[data-cr-exercise]').value),exercise=activity?.exercises[index];if(!exercise)return;
+    activeActivity={slug:activity.slug,exercise:index+1};
+    halt();program=cleanProgram(exercise.starter);workspaceXml={};engine.program=program;
+    calibration={background:null,line:null};restoreScene(exercise);engine.reset();engine.pose={...startPose};
+    selectedEvent=exercise.events?.find(event=>event!=='start')||'start';
+    $('[data-cr-example]').selectedIndex=-1;syncSceneControls();save();renderProgram();
+    $('[data-cr-activity-summary]').textContent=`${activity.title} · ${index+1}. ${exercise.title}`;
+    engine.trace='Exercici carregat. Prediu el resultat abans d’executar.';
+    root.querySelector('.cr-activities').open=false;
+  }
+
   function renderProgram(){
     if(nativeEditor)nativeEditor.setProgram(program[selectedEvent],selectedEvent,workspaceXml[selectedEvent]);
     else $('[data-cr-program]').textContent='No s’ha pogut carregar l’editor de blocs. Torna a carregar la pàgina.';
@@ -82,6 +110,7 @@
   root.addEventListener('click',event=>{
     const button=event.target.closest('button');if(!button)return;
     if(nativeEditor&&['data-cr-run','data-cr-step','data-cr-script','data-cr-export','data-cr-clear','data-cr-event','data-cr-apply-threshold'].some(key=>button.hasAttribute(key))){const valid=nativeEditor.flush();if(valid===false&&(button.hasAttribute('data-cr-run')||button.hasAttribute('data-cr-step')||button.hasAttribute('data-cr-event')))return;}
+    if(button.hasAttribute('data-cr-load-activity'))loadActivity();
     if(button.hasAttribute('data-cr-script')){selectedEvent=button.dataset.crScript;renderProgram();}
     if (button.hasAttribute('data-cr-clear')) { halt();delete workspaceXml[selectedEvent];program[selectedEvent]=[];save();renderProgram(); }
     if (button.hasAttribute('data-cr-run')) { engine.reset();engine.pose={...startPose};engine.trigger('start'); }
@@ -123,19 +152,21 @@
   });
   root.addEventListener('change', async event => {
     const input = event.target;
+    if(input.hasAttribute('data-cr-activity')){updateActivity();return;}
+    if(input.hasAttribute('data-cr-exercise')){updateExercise();return;}
     if(input.hasAttribute('data-cr-import')) {
       const file=input.files[0];if(!file)return;
       try{
         if(file.size>1500000)throw new Error('Fitxer massa gran.');const data=JSON.parse(await file.text());
         if(data.type!=='robotica-codey'||data.version!==2)throw new Error('No és un projecte de Codey Rocky compatible.');
         const nextProgram=cleanProgram(data.program);const nextWorkspaces=cleanWorkspaces(data.workspaceXml);cleanEnvironment(data.environment);
-        halt();program=nextProgram;workspaceXml=nextWorkspaces;engine.program=program;restoreScene(data);engine.reset();engine.pose={...startPose};selectedEvent='start';syncSceneControls();save();renderProgram();
+        halt();activeActivity=data.activity&&activities.some(a=>a.slug===data.activity.slug&&a.exercises[Number(data.activity.exercise)-1])?{slug:data.activity.slug,exercise:Number(data.activity.exercise)}:null;program=nextProgram;workspaceXml=nextWorkspaces;engine.program=program;restoreScene(data);engine.reset();engine.pose={...startPose};selectedEvent='start';syncSceneControls();save();renderProgram();
         engine.trace='Projecte obert: programa i escenari restaurats.';
       }catch(error){engine.trace='No s’ha pogut obrir el projecte: '+error.message;}
       input.value='';return;
     }
     if(input.hasAttribute('data-cr-example')) {
-      halt();program=example(input.value);workspaceXml={};engine.program=program;selectedEvent='start';
+      halt();activeActivity=null;program=example(input.value);workspaceXml={};engine.program=program;selectedEvent='start';
       if(input.value==='line')loadTrack('circuit');
       else if(input.value==='color'){loadTrack('none');engine.environment.patches=[{x:430,y:210,w:80,h:80,color:'red'}];startPose={x:160,y:250,angle:0};}
       else if(['obstacle','while'].includes(input.value)){engine.environment={...engine.environment,orientation:'front',lines:[],patches:[],obstacles:[{x:430,y:190,w:65,h:120}]};startPose={x:160,y:250,angle:0};}
@@ -225,6 +256,12 @@
   }
   if(!root.hidden)initNativeEditor();
   syncSceneControls();if(nativeEditor)renderProgram();
+  fetch(activitiesURL).then(response=>{if(!response.ok)throw new Error('Activitats no disponibles');return response.json();}).then(data=>{
+    activities=data.activities||[];const select=$('[data-cr-activity]');
+    for(const activity of activities){const option=document.createElement('option');option.value=activity.slug;option.textContent=activity.title;select.append(option);}
+    const params=new URLSearchParams(location.search),slug=params.get('activity');
+    if(activities.some(activity=>activity.slug===slug)){select.value=slug;updateActivity();const index=Number(params.get('exercise')||1)-1;if(Number.isInteger(index)&&index>=0&&index<selectedActivity().exercises.length)$('[data-cr-exercise]').value=String(index);updateExercise();if(activeActivity?.slug===slug&&activeActivity?.exercise===index+1){$('[data-cr-activity-summary]').textContent=`${selectedActivity().title} · ${index+1}. ${selectedActivity().exercises[index].title}`;}else loadActivity();}
+  }).catch(()=>{$('[data-cr-activity-prompt]').textContent='No s’han pogut carregar les activitats. Torna a carregar la pàgina.';});
   let last=performance.now();
   function frame(now){
     if(!root.hidden){const speed=Number(document.querySelector('[data-speed-select]').value)||520;engine.tick(Math.min((now-last)/1000,.1)*(520/speed),.08);draw(now);}
