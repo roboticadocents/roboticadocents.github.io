@@ -13,7 +13,10 @@
 }
 
 .sim-app-body {
+  min-block-size: 0;
+  block-size: 100vh;
   block-size: 100dvh;
+  max-block-size: 100vh;
   max-block-size: 100dvh;
   inline-size: 100%;
   margin: 0;
@@ -24,15 +27,6 @@
   color: #0f172a;
   font-family: var(--font-sans);
   overflow: clip;
-}
-
-@media (max-width: 960px), (max-height: 640px) {
-  .sim-app-body {
-    block-size: auto;
-    max-block-size: none;
-    min-block-size: 100dvh;
-    overflow-y: auto;
-  }
 }
 
 /* =========================================================
@@ -173,7 +167,7 @@
   --robot-secondary: #804cbd;
   --robot-soft-bg: #fff7ed;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(330px, 380px);
+  grid-template-columns: minmax(0, 1fr) clamp(285px, 34%, 560px);
   gap: 0.65rem;
   padding: 0.65rem;
   block-size: 100%;
@@ -181,18 +175,16 @@
   overflow: clip;
 }
 
+@media (min-width: 2200px) {
+  .sim-workspace {
+    grid-template-columns: minmax(0, 1fr) clamp(560px, 33%, 880px);
+  }
+}
+
 .sim-workspace[data-robot="coding-set"] {
   --robot-primary: #16a34a;
   --robot-secondary: #fc7813;
   --robot-soft-bg: #f0fdf4;
-}
-
-@media (max-width: 960px), (max-height: 640px) {
-  .sim-workspace {
-    grid-template-columns: 1fr;
-    block-size: auto;
-    overflow: visible;
-  }
 }
 
 .sim-stage-pane {
@@ -362,6 +354,8 @@
 /* Escenari auto-ajustat a l'alçada i amplada disponibles */
 .sim-board-stage {
   flex: 1 1 auto;
+  inline-size: 100%;
+  block-size: 100%;
   min-block-size: 0;
   min-inline-size: 0;
   display: grid;
@@ -370,22 +364,23 @@
 }
 
 .sim-board-outer {
-  --board-max-dim: min(620px, calc(100dvh - 108px));
+  --board-max-h: max(200px, calc(100vh - 116px));
+  --board-max-h: max(200px, calc(100dvh - 116px));
   inline-size: min(
     100%,
-    var(--board-max-dim),
-    calc(var(--board-max-dim) * var(--grid-cols, 6) / var(--grid-rows, 6) + 1.35rem)
+    calc((var(--board-max-h) - 1.5rem) * var(--grid-cols, 6) / var(--grid-rows, 6) + 1.35rem)
   );
-  max-inline-size: 620px;
 }
 
-@media (max-width: 960px), (max-height: 640px) {
+@supports (container-type: size) {
+  .sim-board-stage {
+    container: board-stage / size;
+  }
+
   .sim-board-outer {
-    --board-max-dim: 480px;
     inline-size: min(
-      100%,
-      var(--board-max-dim),
-      calc(var(--board-max-dim) * var(--grid-cols, 6) / var(--grid-rows, 6) + 1.35rem)
+      100cqi,
+      calc(max(120px, 100cqb - 1.5rem) * var(--grid-cols, 6) / var(--grid-rows, 6) + 1.35rem)
     );
   }
 }
@@ -529,6 +524,24 @@
   font-size: clamp(0.85rem, calc(10.5rem / max(var(--grid-cols, 6), var(--grid-rows, 6))), 1.75rem);
   line-height: 1;
   pointer-events: none;
+}
+
+@supports (container-type: inline-size) {
+  .sim-mat-viewport {
+    container: mat-viewport / inline-size;
+  }
+
+  .sim-cell-coord {
+    font-size: clamp(0.46rem, calc(12cqi / var(--grid-cols, 6)), 0.85rem);
+  }
+
+  .sim-cell-StartTag {
+    font-size: clamp(0.42rem, calc(10cqi / var(--grid-cols, 6)), 0.75rem);
+  }
+
+  .sim-cell-item {
+    font-size: clamp(1rem, calc(52cqi / var(--grid-cols, 6)), 2.5rem);
+  }
 }
 
 .sim-cell-oid-label {
@@ -699,11 +712,13 @@
 
 .sim-tb-leds {
   display: grid;
-  grid-template-columns: repeat(8, 1.5rem);
-  gap: 0.32rem 0.35rem;
+  grid-template-columns: repeat(8, minmax(0, 1.5rem));
+  gap: 0.28rem 0.3rem;
+  inline-size: 100%;
+  max-inline-size: calc(8 * 1.5rem + 7 * 0.3rem + 0.4rem);
   align-items: center;
   justify-content: center;
-  max-block-size: 6rem;
+  max-block-size: 5.5rem;
   overflow-y: auto;
   overscroll-behavior: contain;
   padding: 0.12rem 0.2rem;
@@ -753,8 +768,9 @@
 }
 
 .sim-tb-led {
-  inline-size: 1.5rem;
-  block-size: 0.6rem;
+  inline-size: 100%;
+  max-inline-size: 1.5rem;
+  block-size: 0.56rem;
   border-radius: 999px;
   background: #e2e8f0;
   border: 1px solid #cbd5e1;
@@ -775,24 +791,40 @@
 .sim-tb-shell {
   flex: 1 1 auto;
   min-block-size: 0;
+  inline-size: 100%;
   background: #ffffff;
   border: 2px solid #e2e8f0;
   border-radius: 26px;
-  padding: 0.65rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0.6rem;
+  display: grid;
+  place-items: center;
+  overflow: clip;
   box-shadow: inset 0 1px 0 #ffffff, 0 4px 12px rgba(15, 23, 42, 0.04);
 }
 
 .sim-tb-keypad {
+  --tb-keypad-size: min(100%, max(168px, calc(100vh - 280px)), 380px);
+  --tb-keypad-size: min(100%, max(168px, calc(100dvh - 280px)), 380px);
+  inline-size: var(--tb-keypad-size);
+  aspect-ratio: 1 / 1;
   display: grid;
-  grid-template-columns: repeat(3, minmax(68px, 86px));
-  grid-template-rows: repeat(3, minmax(68px, 86px));
-  gap: 0.45rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.25rem, 1.5%, 0.55rem);
   place-content: center;
   place-items: center;
   margin-inline: auto;
+}
+
+@supports (container-type: size) {
+  .sim-tb-shell {
+    container: tb-shell / size;
+  }
+
+  .sim-tb-keypad {
+    inline-size: min(100cqi, 100cqb, 420px);
+    block-size: min(100cqi, 100cqb, 420px);
+  }
 }
 
 .sim-tb-key-btn {
@@ -867,10 +899,17 @@
 }
 
 .sim-tb-actions-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
   flex-shrink: 0;
+}
+
+.sim-tb-actions-row .sim-btn {
+  flex: 1 1 auto;
+  min-inline-size: 0;
+  padding: 0.32rem 0.48rem;
+  font-size: 0.74rem;
 }
 
 .sim-tb-voice-bar {
@@ -1009,21 +1048,31 @@
   border: 2px solid #cbd5e1;
   border-radius: 8px;
   box-shadow: inset 0 2px 6px rgba(15, 23, 42, 0.07);
-  padding: 0.55rem;
+  padding: 0.48rem;
   display: grid;
   place-items: center;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .sim-cs-board-grid {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   grid-template-rows: repeat(3, auto);
-  column-gap: 0.4rem;
-  row-gap: 0.45rem;
-  inline-size: 100%;
-  max-inline-size: min(100%, calc((100dvh - 300px) * 1.25));
+  column-gap: clamp(0.18rem, 1.2%, 0.45rem);
+  row-gap: clamp(0.2rem, 1.4%, 0.5rem);
+  inline-size: min(100%, max(180px, calc((100vh - 285px) * 1.25)));
+  inline-size: min(100%, max(180px, calc((100dvh - 285px) * 1.25)));
   margin-inline: auto;
+}
+
+@supports (container-type: size) {
+  .sim-cs-board-well {
+    container: cs-well / size;
+  }
+
+  .sim-cs-board-grid {
+    inline-size: min(100cqi, calc(100cqb * 1.24));
+  }
 }
 
 .sim-cs-cell {
@@ -1102,8 +1151,10 @@
 }
 
 .sim-cs-orange-play {
-  inline-size: 4.2rem;
-  block-size: 4.2rem;
+  inline-size: clamp(2.85rem, 7.5vh, 4.2rem);
+  inline-size: clamp(2.85rem, 7.5dvh, 4.2rem);
+  block-size: clamp(2.85rem, 7.5vh, 4.2rem);
+  block-size: clamp(2.85rem, 7.5dvh, 4.2rem);
   border-radius: 16px;
   border: 2px solid #ea580c;
   background: linear-gradient(180deg, #ff9838 0%, #f36c08 100%);
@@ -1118,8 +1169,8 @@
 }
 
 .sim-cs-orange-play svg {
-  inline-size: 2.3rem;
-  block-size: 2.3rem;
+  inline-size: 55%;
+  block-size: 55%;
   display: block;
 }
 
@@ -1395,4 +1446,181 @@
 .sim-emoji-dialog :where(button, input):focus-visible {
   outline: 3px solid #2563eb;
   outline-offset: 2px;
+}
+
+/* =========================================================
+   ADAPTACIÓ A PISSARRES DIGITALS I PANTALLES APAÏSADES COMPACTES
+   ========================================================= */
+@media (max-height: 660px) and (min-width: 721px) {
+  .sim-topbar {
+    padding-block: 0.3rem;
+    padding-inline: 0.65rem;
+    gap: 0.45rem;
+  }
+
+  .sim-robot-tab {
+    padding-block: 0.24rem;
+    padding-inline: 0.6rem;
+  }
+
+  .sim-workspace {
+    gap: 0.45rem;
+    padding: 0.45rem;
+  }
+
+  .sim-stage-pane,
+  .sim-console-pane {
+    padding: 0.45rem;
+    gap: 0.45rem;
+  }
+
+  .sim-mat-toolbar {
+    inline-size: 7.6rem;
+    padding: 0.38rem;
+    gap: 0.28rem;
+  }
+
+  .sim-toolbar-section {
+    gap: 0.22rem;
+  }
+
+  .sim-toolbar-divider {
+    margin-block: 0.04rem;
+  }
+
+  .sim-tool-btn {
+    font-size: 0.74rem;
+    line-height: 1.25;
+    padding: 0.26rem 0.42rem;
+    gap: 0.32rem;
+  }
+
+  .sim-size-field {
+    padding: 0.18rem 0.35rem;
+  }
+
+  .sim-robot-panel {
+    gap: 0.4rem;
+  }
+
+  .sim-panel-header {
+    padding: 0.36rem 0.48rem;
+  }
+
+  .sim-tb-leds-group {
+    gap: 0.4rem;
+  }
+
+  .sim-tb-leds {
+    max-block-size: 3.4rem;
+  }
+
+  .sim-tb-shell {
+    padding: 0.4rem;
+    border-radius: 20px;
+  }
+
+  .sim-tb-voice-bar {
+    padding: 0.22rem 0.4rem;
+  }
+
+  .sim-cs-panel {
+    gap: 0.42rem;
+  }
+
+  .sim-cs-palette {
+    padding: 0.36rem;
+    gap: 0.3rem;
+  }
+
+  .sim-cs-physical-board {
+    padding: 0.45rem 0.5rem 0.38rem;
+    gap: 0.38rem;
+  }
+
+  .sim-cs-board-well {
+    padding: 0.35rem;
+  }
+}
+
+/* Finestres extremadament baixes: permet desplaçament vertical sense apilar en apaïsat */
+@media (max-height: 360px) {
+  .sim-app-body {
+    block-size: auto;
+    max-block-size: none;
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+    overflow-y: auto;
+  }
+
+  .sim-workspace {
+    block-size: auto;
+    overflow: visible;
+  }
+
+  .sim-board-stage,
+  .sim-tb-shell,
+  .sim-cs-board-well {
+    container-type: inline-size;
+    block-size: auto;
+  }
+
+  .sim-board-outer {
+    --board-max-h: 360px;
+    inline-size: min(
+      100%,
+      calc((var(--board-max-h) - 1.5rem) * var(--grid-cols, 6) / var(--grid-rows, 6) + 1.35rem)
+    );
+  }
+
+  .sim-tb-keypad {
+    inline-size: min(100%, 240px);
+    block-size: auto;
+  }
+
+  .sim-cs-board-grid {
+    inline-size: min(100%, 360px);
+  }
+}
+
+/* Només pantalles estretes o tauletes en vertical apilen els dos panells */
+@media (max-width: 720px), (max-width: 900px) and (orientation: portrait) {
+  .sim-app-body {
+    block-size: auto;
+    max-block-size: none;
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+    overflow-y: auto;
+  }
+
+  .sim-workspace {
+    grid-template-columns: 1fr;
+    block-size: auto;
+    overflow: visible;
+  }
+
+  .sim-board-stage,
+  .sim-tb-shell,
+  .sim-cs-board-well {
+    container-type: inline-size;
+    block-size: auto;
+    flex: 0 0 auto;
+  }
+
+  .sim-board-outer {
+    --board-max-h: 480px;
+    inline-size: min(
+      100%,
+      calc((var(--board-max-h) - 1.5rem) * var(--grid-cols, 6) / var(--grid-rows, 6) + 1.35rem)
+    );
+  }
+
+  .sim-tb-keypad {
+    inline-size: min(100%, 276px);
+    block-size: auto;
+  }
+
+  .sim-cs-board-grid {
+    inline-size: min(100%, 420px);
+  }
 }
