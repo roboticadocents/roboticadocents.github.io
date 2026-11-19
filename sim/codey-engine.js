@@ -12,7 +12,7 @@
     return dx * dx + dy * dy < R * R;
   }
   const SENSOR_NAMES = { infrared:'IR reflectit', gray:'Grisos', color:'Color', obstacle:'Obstacle', light:'Llum', sound:'So' };
-  const COLORS = { black:'#111827', white:'#ffffff', red:'#ef4444', green:'#22c55e', blue:'#3b82f6', yellow:'#facc15' };
+  const COLORS = { black:'#111827', white:'#ffffff', red:'#ef4444', green:'#22c55e', blue:'#3b82f6', yellow:'#facc15',cyan:'#06b6d4',purple:'#a855f7' };
   function segmentDistance(x,y,a,b) {
     const dx=b.x-a.x,dy=b.y-a.y,t=clamp(((x-a.x)*dx+(y-a.y)*dy)/(dx*dx+dy*dy||1),0,1);
     return Math.hypot(x-a.x-t*dx,y-a.y-t*dy);
@@ -38,16 +38,31 @@
     }
     throw new Error('Expressió de blocs desconeguda.');
   }
+  // Regles de Scratch VM (util/cast.js), diferents de la coerció de JavaScript.
+  function scratchBoolean(value){
+    if(typeof value==='string')return value!==''&&value!=='0'&&value.toLowerCase()!=='false';
+    return Boolean(value);
+  }
+  function scratchCompare(left,right){
+    const numeric=value=>typeof value==='string'&&value.trim()===''?NaN:Number(value);
+    const a=numeric(left),b=numeric(right);
+    if(Number.isNaN(a)||Number.isNaN(b)){
+      const x=String(left).toLowerCase(),y=String(right).toLowerCase();
+      return x===y?0:x<y?-1:1;
+    }
+    return a===b?0:a-b;
+  }
   function evaluate(expr,read){
     if(['number','string','boolean'].includes(expr.kind))return expr.value;
-    if(expr.kind==='sensor')return read(expr.name);
-    if(expr.kind==='color'){const value=read('color');return value===null?null:value===expr.value;}
-    if(expr.kind==='not'){const value=evaluate(expr.value,read);return value===null?null:!value;}
+    if(expr.kind==='sensor')return read(expr.name)??0;
+    if(expr.kind==='color'){const value=read('color');return value===null?false:value===expr.value;}
+    if(expr.kind==='not'){const value=evaluate(expr.value,read);return value===null?null:!scratchBoolean(value);}
     const left=evaluate(expr.left,read),right=evaluate(expr.right,read);
     if(left===null||right===null)return null;
-    if(expr.kind==='and')return Boolean(left&&right);
-    if(expr.kind==='or')return Boolean(left||right);
-    return expr.op==='<'?left<right:expr.op==='>'?left>right:left===right;
+    if(expr.kind==='and')return scratchBoolean(left)&&scratchBoolean(right);
+    if(expr.kind==='or')return scratchBoolean(left)||scratchBoolean(right);
+    const comparison=scratchCompare(left,right);
+    return expr.op==='<'?comparison<0:expr.op==='>'?comparison>0:comparison===0;
   }
   function describe(expr,read){
     if(['number','string','boolean'].includes(expr.kind))return String(expr.value);
@@ -67,7 +82,7 @@
       this.output = { face: 'happy', text: '', rgb: '#22c55e' };
       this.tasks = []; this.running = false; this.motor = { speed: 0, turn: 0 };
       this.clock = 0; this.budget = 0; this.accumulator = 0; this.active = null;
-      this.trace = 'Preparat. Executa el programa o prem A o B.';
+      this.trace = 'Preparat. Executa el programa o prem A, B o C.';
       this.collision = false; this.nextTask = 0; this.lastCondition='';
     }
     stop() { this.running = false; this.tasks = []; this.motor = { speed: 0, turn: 0 }; }
@@ -110,7 +125,7 @@
       // Petita petjada d'un únic sensor: la lectura varia en creuar una vora.
       for(const dx of [-2,0,2])for(const dy of [-2,0,2]) {
         const color=this.surfaceAt(p.x+dx,p.y+dy);
-        sum+=({black:5,white:95,red:40,green:55,blue:25,yellow:85})[color]??95;
+        sum+=({black:5,white:95,red:40,green:55,blue:25,yellow:85,cyan:70,purple:35})[color]??95;
       }
       return Math.round(sum/9);
     }
@@ -122,9 +137,8 @@
       return this.environment[name] ?? 0;
     }
     test(block) {
-      if(block.condition){const result=evaluate(block.condition,name=>this.sensor(name));return {value:result===null?null:describe(block.condition,name=>this.sensor(name)),result:result===true};}
-      const value = this.sensor(block.sensor);
-      if(value===null)return {value,result:false};
+      if(block.condition){const result=evaluate(block.condition,name=>this.sensor(name));return {value:result===null?null:describe(block.condition,name=>this.sensor(name)),result:scratchBoolean(result)};}
+      const value = this.sensor(block.sensor)??(block.sensor==='color'?'':0);
       if(block.sensor==='color')return {value,result:block.compare==='!='?value!==block.value:value===block.value};
       if(block.sensor==='obstacle')return {value,result:block.obstacleValue==='false'?!value:Boolean(value)};
       const threshold=Number(block.threshold);
@@ -165,7 +179,7 @@
         const task = this.tasks[this.nextTask++];
         if (task.wait > 0) continue;
         const block = this.next(task);
-        if (!block) { this.tasks.splice(this.tasks.indexOf(task), 1); this.nextTask = 0; if (!this.tasks.length && !this.motor.speed && !this.motor.turn) this.trace = 'Programa acabat. Pots provar els botons A i B.'; return false; }
+        if (!block) { this.tasks.splice(this.tasks.indexOf(task), 1); this.nextTask = 0; if (!this.tasks.length && !this.motor.speed && !this.motor.turn) this.trace = 'Programa acabat. Pots provar els botons A, B i C.'; return false; }
         if (++this.budget > 10000) { this.stop(); this.trace = 'Pausa després de 10.000 blocs. Revisa el programa i torna a executar.'; return false; }
         this.active = block.id;
         const input=key=>block.bindings?.[key]?evaluate(block.bindings[key],name=>this.sensor(name)):block[key];
@@ -173,20 +187,25 @@
         this.trace = 'Executant: ' + ({face:'mostra cara',text:'mostra text',rgb:'llum RGB',forward:'avança',back:'enrere',left:'gira esquerra',right:'gira dreta',drive:'avança contínuament',tracks:'potència de les erugues',reading:'mostra lectura del sensor',stop:'atura motors',wait:'espera',repeat:'repeteix',forever:'per sempre'}[block.type] || block.type);
         switch (block.type) {
           case 'face': this.output.face = block.value || 'happy'; this.output.pattern = block.pattern; this.output.text = ''; break;
-          case 'text': this.output.text = String(block.expression?evaluate(block.expression,name=>this.sensor(name))??'—':block.value??'Hola').slice(0,40); break;
+          case 'text': {const value=block.expression?evaluate(block.expression,name=>this.sensor(name)):block.value??'Hola';this.output.text=(value===true?'True':value===false?'False':String(value??'—')).slice(0,40);break;}
           case 'rgb': this.output.rgb = block.value || '#22c55e'; break;
           case 'forward': case 'back':
+            if(!seconds)break;
             this.motor = { speed: power * 1.5 * (block.type === 'back' ? -1 : 1), turn: 0 };
-            task.wait=seconds;task.timedMotor=seconds>0;if(!seconds)this.motor={speed:0,turn:0};break;
+            task.wait=seconds;task.timedMotor=true;break;
           case 'left': case 'right':
+            if(!seconds)break;
             this.motor = { speed: 0, turn: power * 2.4 * (block.type === 'left' ? -1 : 1) };
-            task.wait=seconds;task.timedMotor=seconds>0;if(!seconds)this.motor={speed:0,turn:0};break;
-          case 'drive': this.motor = { speed: power * 1.5, turn: 0 }; break;
+            task.wait=seconds;task.timedMotor=true;break;
+          case 'drive': {
+            const direction=block.direction||'forward',turn=direction==='turn_left'?-1:direction==='turn_right'?1:0;
+            this.motor={speed:turn?0:power*1.5*(direction==='backward'?-1:1),turn:turn*power*2.4};break;
+          }
           case 'tracks': {
             const left=clamp(input('left'),-100,100),right=clamp(input('right'),-100,100);
             this.motor={speed:(left+right)*.75,turn:(left-right)*2.4};break;
           }
-          case 'reading': {const value=this.sensor(block.sensor);this.output.text=value===null?'—':String(value);break;}
+          case 'reading': {const value=this.sensor(block.sensor)??0;this.output.text=String(value);break;}
           case 'stop': this.motor = { speed: 0, turn: 0 }; break;
           case 'wait': task.wait = seconds; break;
           case 'if': {
@@ -198,7 +217,6 @@
             const { value, result } = this.test(block);
             const repeat=block.type==='until'?!result:result;
             this.trace = (block.type==='until'?'Repeteix fins que · ':'Mentre · ')+this.conditionTrace(block,value,result)+(repeat?': repetim':': continuem després del bucle');
-            if(block.type==='until'&&value===null){this.stop();this.trace='Lectura no disponible: orienta el sensor abans de repetir el moviment.';return false;}
             if (repeat) task.frames.push({ blocks: block.body || [], index: 0, remaining: 1, whileBlock: block });
             break;
           }
@@ -208,7 +226,7 @@
           }
           case 'repeat': case 'forever': {
             const count=block.type==='forever'?Infinity:Math.round(clamp(input('count'),0,10000));
-            if(count>0)task.frames.push({blocks:block.body||[],index:0,remaining:count});break;
+            if(count>0)task.frames.push({blocks:block.body||[],index:0,remaining:block.type==='forever'?1:count,...(block.type==='forever'?{whileBlock:block}:{})});break;
           }
         }
         return true;

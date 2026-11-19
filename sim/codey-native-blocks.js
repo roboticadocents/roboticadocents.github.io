@@ -6,30 +6,31 @@
   const media=new URL('./vendor/scratch-blocks/media/',document.currentScript.src).href;
   const icon='data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-width="1.6"><rect x="4" y="2" width="16" height="14" rx="4"/><path d="M7 8h2m6 0h2M8 12h8M5 18h14l2 4H3z"/></g></svg>');
   const faces={happy:['0000000000000000','0001100000011000','0001100000011000','0000000000000000','0010000000000100','0001000000001000','0000111111110000','0000000000000000'],sad:['0000000000000000','0001100000011000','0001100000011000','0000000000000000','0000111111110000','0001000000001000','0010000000000100','0000000000000000'],surprise:['0000000000000000','0001100000011000','0001100000011000','0000000000000000','0000001111000000','0000010000100000','0000001111000000','0000000000000000'],blank:Array(8).fill('0000000000000000')};
-  const colourOptions=[['negre','black'],['blanc','white'],['roig','red'],['verd','green'],['blau','blue'],['groc','yellow']];
-  const sensorLabels={infrared:'intensitat de llum infraroja reflectida',gray:'valor de grisos',light:'intensitat de la llum',sound:'intensitat del so'};
-  const colours={action:['#4c97ff','#4280d7','#3373cc'],looks:['#9966ff','#855cd6','#774dcb'],lighting:['#b17ed8','#a367cd','#8550a9'],sensing:['#4cbfe6','#38add7','#2695bb']};
+  const defaultImage=["0000000000000000", "0001100000011000", "0011110000111100", "0011110000111100", "0011110000111100", "0011110000111100", "0001100000011000", "0000000000000000"];
+  const colourOptions=[['vermell','red'],['verd','green'],['blau','blue'],['groc','yellow'],['cian','cyan'],['morat','purple'],['negre','black'],['blanc','white']];
+  const sensorLabels={infrared:'intensitat de la llum infraroja reflectida del sensor de color',gray:'valor en la escala de grisos del sensor de color',light:'intensitat de la llum ambiental',sound:'sonoritat'};
+  const colours={action:['#4c97ff','#2b84ff','#0a71ff'],looks:['#9966ff','#8142ff','#691fff'],lighting:['#b080d5','#a066cd','#904dc4'],sensing:['#4cbfe6','#31b5e2','#1ea8d7']};
   function image(pattern){let svg='<svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 80 40"><rect width="80" height="40" rx="3" fill="#323232"/>';for(let y=0;y<8;y++)for(let x=0;x<16;x++)svg+=`<rect x="${x*5+1}" y="${y*5+1}" width="3" height="3" fill="${pattern[y][x]==='1'?'#fff':'#575757'}"/>`;return 'data:image/svg+xml,'+encodeURIComponent(svg+'</svg>');}
   function device(type,message,args,category){
-    B.Blocks[type]={init(){this.jsonInit({message0:'%1 '+message.replace(/%(\d+)/g,(_,n)=>'%'+(Number(n)+1)),args0:[{type:'field_image',src:icon,width:24,height:24,alt:'Codey'},...args],inputsInline:true,colour:colours[category][0],colourSecondary:colours[category][1],colourTertiary:colours[category][2],extensions:['shape_statement']});}};
+    B.Blocks[type]={init(){this.jsonInit({message0:'%1 '+message.replace(/%(\d+)/g,(_,n)=>'%'+(Number(n)+1)),args0:[{type:'field_image',src:icon,width:28,height:26,alt:'Codey'},...args],inputsInline:true,colour:colours[category][0],colourSecondary:colours[category][1],colourTertiary:colours[category][2],extensions:['shape_statement']});}};
   }
   const numberInput=name=>({type:'input_value',name,check:'Number'});
-  for(const [type,label] of [['forward','mou endavant'],['back','mou enrere'],['left','gira a l’esquerra'],['right','gira a la dreta']])device('cr_'+type,`${label} a potència %1 % durant %2 s`,[numberInput('POWER'),numberInput('SECONDS')],'action');
-  device('cr_drive','mou endavant a potència %1 %',[numberInput('POWER')],'action');
-  device('cr_tracks','defineix la potència del motor esquerre a %1 % i dret a %2 %',[numberInput('LEFT'),numberInput('RIGHT')],'action');
-  device('cr_stop','atura el moviment',[],'action');
-  device('cr_face','mostra la imatge %1',[{type:'field_image',name:'IMAGE',src:image(faces.happy),width:80,height:40,alt:'Edita la imatge de 16 × 8'}],'looks');
+  for(const [type,label] of [['forward','avança'],['back','recula'],['left',"gira a l'esquerra"],['right','gira a la dreta']])device('cr_'+type,`${label} al %1% de potència durant %2 s`,[numberInput('POWER'),numberInput('SECONDS')],'action');
+  device('cr_drive','%1 al %2% de potència',[{type:'field_dropdown',name:'DIRECTION',options:[['mou endavant','forward'],['mou enrere','backward'],["gira a l’esquerra",'turn_left'],['gira a la dreta','turn_right']]},numberInput('POWER')],'action');
+  device('cr_tracks','la roda esquerra gira al %1% de potència, la dreta al %2%',[numberInput('LEFT'),numberInput('RIGHT')],'action');
+  device('cr_stop','deixa de moure',[],'action');
+  device('cr_face','mostra la imatge %1',[{type:'field_image',name:'IMAGE',src:image(defaultImage),width:80,height:40,alt:'Edita la imatge de 16 × 8'}],'looks');
   const faceInit=B.Blocks.cr_face.init;
   B.Blocks.cr_face.init=function(){faceInit.call(this);this.appendDummyInput('IMAGE_DATA').appendField(new B.FieldTextInput(''),'PATTERN');this.getInput('IMAGE_DATA').setVisible(false);};
-  function storedPattern(block,data){const bits=block.getFieldValue('PATTERN');return /^[01]{128}$/.test(bits||'')?Array.from({length:8},(_,y)=>bits.slice(y*16,y*16+16)):validPattern(data.pattern)?data.pattern:faces.happy.slice();}
+  function storedPattern(block,data){const bits=block.getFieldValue('PATTERN');return /^[01]{128}$/.test(bits||'')?Array.from({length:8},(_,y)=>bits.slice(y*16,y*16+16)):validPattern(data.pattern)?data.pattern:defaultImage.slice();}
   device('cr_show','mostra %1',[{type:'input_value',name:'VALUE'}],'looks');
-  device('cr_rgb','el LED RGB s’encén de color %1',[{type:'input_value',name:'COLOUR',check:'Colour'}],'lighting');
-  for(const [name,label] of Object.entries(sensorLabels))B.Blocks['cr_sensor_'+name]={init(){this.jsonInit({message0:'%1 '+label,args0:[{type:'field_image',src:icon,width:24,height:24,alt:'Codey'}],output:'Number',outputShape:B.OUTPUT_SHAPE_ROUND,colour:colours.sensing[0],colourSecondary:colours.sensing[1],colourTertiary:colours.sensing[2]});}};
+  device('cr_rgb',"el led RGB s'encén de %1",[{type:'input_value',name:'COLOUR',check:'Colour'}],'lighting');
+  for(const [name,label] of Object.entries(sensorLabels))B.Blocks['cr_sensor_'+name]={init(){this.jsonInit({message0:'%1 '+label,args0:[{type:'field_image',src:icon,width:28,height:26,alt:'Codey'}],output:'Number',outputShape:B.OUTPUT_SHAPE_ROUND,colour:colours.sensing[0],colourSecondary:colours.sensing[1],colourTertiary:colours.sensing[2]});}};
   B.Blocks.cr_sensor_color={init(){this.jsonInit({message0:'color detectat · compatibilitat',output:'String',outputShape:B.OUTPUT_SHAPE_ROUND,colour:colours.sensing[0]});}};
-  B.Blocks.cr_color={init(){this.jsonInit({message0:'%1 el color detectat és %2 ?',args0:[{type:'field_image',src:icon,width:24,height:24,alt:'Codey'},{type:'field_dropdown',name:'COLOUR',options:colourOptions}],output:'Boolean',outputShape:B.OUTPUT_SHAPE_HEXAGONAL,colour:colours.sensing[0],colourSecondary:colours.sensing[1],colourTertiary:colours.sensing[2]});}};
-  B.Blocks.cr_start={init(){this.jsonInit({message0:'quan Codey s’inicia',extensions:['colours_event','shape_hat']});}};
-  B.Blocks.cr_button={init(){this.jsonInit({message0:'quan es prem el botó %1',args0:[{type:'field_dropdown',name:'BUTTON',options:[['A','A'],['B','B']]}],extensions:['colours_event','shape_hat']});}};
-  const allowed=new Set(['cr_start','cr_button','cr_forward','cr_back','cr_left','cr_right','cr_drive','cr_tracks','cr_stop','cr_face','cr_show','cr_rgb','cr_color','cr_sensor_color',...Object.keys(sensorLabels).map(s=>'cr_sensor_'+s),'control_wait','control_repeat','control_forever','control_if_else','control_repeat_until','control_wait_until','operator_lt','operator_gt','operator_equals','operator_not','operator_and','operator_or','math_number','math_whole_number','math_positive_number','text','colour_picker']);
+  B.Blocks.cr_color={init(){this.jsonInit({message0:'%1 el color detectat és el %2?',args0:[{type:'field_image',src:icon,width:28,height:26,alt:'Codey'},{type:'field_dropdown',name:'COLOUR',options:colourOptions}],output:'Boolean',outputShape:B.OUTPUT_SHAPE_HEXAGONAL,colour:colours.sensing[0],colourSecondary:colours.sensing[1],colourTertiary:colours.sensing[2]});}};
+  B.Blocks.cr_start={init(){this.jsonInit({message0:"quan s'engega Codey",extensions:['colours_event','shape_hat']});}};
+  B.Blocks.cr_button={init(){this.jsonInit({message0:'en prémer el botó %1',args0:[{type:'field_dropdown',name:'BUTTON',options:[['A','A'],['B','B'],['C','C']]}],extensions:['colours_event','shape_hat']});}};
+  const allowed=new Set(['cr_start','cr_button','cr_forward','cr_back','cr_left','cr_right','cr_drive','cr_tracks','cr_stop','cr_face','cr_show','cr_rgb','cr_color','cr_sensor_color',...Object.keys(sensorLabels).map(s=>'cr_sensor_'+s),'control_wait','control_repeat','control_forever','control_if','control_if_else','control_repeat_until','control_wait_until','operator_lt','operator_gt','operator_equals','operator_not','operator_and','operator_or','math_number','math_whole_number','math_positive_number','text','colour_picker']);
     function escape(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));}
   const field=(name,value)=>`<field name="${name}">${escape(value)}</field>`;
   const shadow=(value,type='math_number')=>`<shadow type="${type}">${field(type==='text'?'TEXT':'NUM',value)}</shadow>`;
@@ -37,7 +38,7 @@
   function expressionXml(expr){
     if(expr.kind==='number')return shadow(expr.value);
     if(expr.kind==='string')return shadow(expr.value,'text');
-    if(expr.kind==='boolean')return expr.value?'<block type="operator_not"></block>':'';
+    if(expr.kind==='boolean')return expr.value?'<block type="operator_not"></block>':'<block type="operator_not"><value name="OPERAND"><block type="operator_not"></block></value></block>';
     if(expr.kind==='sensor')return `<block type="cr_sensor_${expr.name}"></block>`;
     if(expr.kind==='color')return `<block type="cr_color">${field('COLOUR',expr.value)}</block>`;
     if(expr.kind==='not')return `<block type="operator_not">${input('OPERAND',expressionXml(expr.value))}</block>`;
@@ -53,10 +54,11 @@
     return negate?{kind:'not',value:e}:e;
   }
   function blockXml(b,next=''){
-    const types={forward:'cr_forward',back:'cr_back',left:'cr_left',right:'cr_right',drive:'cr_drive',tracks:'cr_tracks',stop:'cr_stop',face:'cr_face',text:'cr_show',reading:'cr_show',rgb:'cr_rgb',wait:'control_wait',repeat:'control_repeat',forever:'control_forever',if:'control_if_else',until:'control_repeat_until',while:'control_repeat_until',waitUntil:'control_wait_until'};
+    const types={forward:'cr_forward',back:'cr_back',left:'cr_left',right:'cr_right',drive:'cr_drive',tracks:'cr_tracks',stop:'cr_stop',face:'cr_face',text:'cr_show',reading:'cr_show',rgb:'cr_rgb',wait:'control_wait',repeat:'control_repeat',forever:'control_forever',if:b.hasElse===false?'control_if':'control_if_else',until:'control_repeat_until',while:'control_repeat_until',waitUntil:'control_wait_until'};
     let contents='';
     const param=(name,key)=>input(name,expressionXml(b.bindings?.[key]||{kind:'number',value:b[key]}));
     if(['forward','back','left','right','drive'].includes(b.type))contents+=param('POWER','power');
+    if(b.type==='drive')contents+=field('DIRECTION',b.direction||'forward');
     if(['forward','back','left','right'].includes(b.type))contents+=param('SECONDS','seconds');
     if(b.type==='tracks')contents+=param('LEFT','left')+param('RIGHT','right');
     if(b.type==='text')contents+=input('VALUE',expressionXml(b.expression||{kind:'string',value:b.value}));
@@ -65,7 +67,7 @@
     if(b.type==='wait')contents+=param('DURATION','seconds');
     if(b.type==='repeat')contents+=param('TIMES','count');
     if(['if','until','while','waitUntil'].includes(b.type)){const condition=legacyCondition(b);contents+=input('CONDITION',expressionXml(b.type==='while'?{kind:'not',value:condition}:condition));}
-    if(b.type==='if')contents+=`<statement name="SUBSTACK">${listXml(b.then)}</statement><statement name="SUBSTACK2">${listXml(b.else)}</statement>`;
+    if(b.type==='if')contents+=`<statement name="SUBSTACK">${listXml(b.then)}</statement>${b.hasElse===false?'':'<statement name="SUBSTACK2">'+listXml(b.else)+'</statement>'}`;
     if(['repeat','forever','while','until'].includes(b.type))contents+=`<statement name="SUBSTACK">${listXml(b.body)}</statement>`;
     if(b.type==='face')contents+=`<data>${escape(JSON.stringify({pattern:b.value==='custom'?b.pattern:faces[b.value]||faces.happy,value:b.value}))}</data>`;
     if(b.type==='while')contents+='<data>{"legacyWhile":true}</data>';
@@ -76,7 +78,7 @@
   function listXml(list){let xml='';for(let i=list.length-1;i>=0;i--)xml=blockXml(list[i],xml);return xml;}
   function toolbox(){
     const entry=(type,values={})=>`<block type="${type}">${Object.entries(values).map(([name,value])=>input(name,shadow(value,typeof value==='string'?'text':'math_number'))).join('')}</block>`;
-    return `<xml><category name="Aspecte" id="Aspecte" colour="#9966ff" secondaryColour="#9966ff">${entry('cr_face')}${entry('cr_show',{VALUE:'Hola'})}</category><category name="Il·luminació" id="Il·luminació" colour="#b17ed8" secondaryColour="#b17ed8"><block type="cr_rgb"><value name="COLOUR"><shadow type="colour_picker">${field('COLOUR','#22c55e')}</shadow></value></block></category><category name="Acció" id="Acció" colour="#4c97ff" secondaryColour="#4c97ff">${['forward','back','left','right'].map(t=>entry('cr_'+t,{POWER:30,SECONDS:1})).join('')}${entry('cr_drive',{POWER:30})}${entry('cr_tracks',{LEFT:10,RIGHT:10})}${entry('cr_stop')}</category><category name="Detecció" id="Detecció" colour="#4cbfe6" secondaryColour="#4cbfe6">${Object.keys(sensorLabels).map(s=>entry('cr_sensor_'+s)).join('')}${entry('cr_color')}</category><category name="Control" id="Control" colour="#ffab19" secondaryColour="#ffab19">${entry('control_wait',{DURATION:1})}${entry('control_repeat',{TIMES:3})}${entry('control_forever')}${entry('control_if_else')}${entry('control_wait_until')}${entry('control_repeat_until')}</category><category name="Operadors" id="Operadors" colour="#59c059" secondaryColour="#59c059">${['lt','gt','equals'].map(s=>entry('operator_'+s,{OPERAND1:0,OPERAND2:50})).join('')}${['and','or','not'].map(s=>entry('operator_'+s)).join('')}</category></xml>`;
+    return `<xml><category name="Aspecte" id="Aspecte" colour="#9966ff" secondaryColour="#9966ff">${entry('cr_face')}${entry('cr_show',{VALUE:'hello'})}</category><category name="Il·luminació" id="Il·luminació" colour="#b080d5" secondaryColour="#b080d5"><block type="cr_rgb"><value name="COLOUR"><shadow type="colour_picker">${field('COLOUR','#ff0000')}</shadow></value></block></category><category name="Acció" id="Acció" colour="#4c97ff" secondaryColour="#4c97ff">${['forward','back','left','right'].map(t=>entry('cr_'+t,{POWER:50,SECONDS:1})).join('')}${entry('cr_drive',{POWER:50})}${entry('cr_tracks',{LEFT:50,RIGHT:50})}${entry('cr_stop')}</category><category name="Detecció" id="Detecció" colour="#4cbfe6" secondaryColour="#4cbfe6">${Object.keys(sensorLabels).map(s=>entry('cr_sensor_'+s)).join('')}${entry('cr_color')}</category><category name="Control" id="Control" colour="#ffab19" secondaryColour="#ffab19">${entry('control_wait',{DURATION:1})}${entry('control_repeat',{TIMES:3})}${entry('control_forever')}${entry('control_if')}${entry('control_if_else')}${entry('control_wait_until')}${entry('control_repeat_until')}</category><category name="Operadors" id="Operadors" colour="#59c059" secondaryColour="#59c059">${['lt','gt','equals'].map(s=>'<block type="operator_'+s+'">'+input('OPERAND1',shadow('',s==='equals'?'text':'math_number'))+input('OPERAND2',shadow(50,s==='equals'?'text':'math_number'))+'</block>').join('')}${['and','or','not'].map(s=>entry('operator_'+s)).join('')}</category></xml>`;
   }
   function readExpression(block){
     if(!block)return {kind:'boolean',value:false};
@@ -86,7 +88,10 @@
     if(block.type==='cr_color')return {kind:'color',value:block.getFieldValue('COLOUR')};
     if(block.type==='operator_not')return {kind:'not',value:readExpression(block.getInputTargetBlock('OPERAND'))};
     if(['operator_and','operator_or'].includes(block.type))return {kind:block.type.slice(9),left:readExpression(block.getInputTargetBlock('OPERAND1')),right:readExpression(block.getInputTargetBlock('OPERAND2'))};
-    if(['operator_lt','operator_gt','operator_equals'].includes(block.type))return {kind:'compare',op:{operator_lt:'<',operator_gt:'>',operator_equals:'='}[block.type],left:readExpression(block.getInputTargetBlock('OPERAND1')),right:readExpression(block.getInputTargetBlock('OPERAND2'))};
+    if(['operator_lt','operator_gt','operator_equals'].includes(block.type)){
+      const operand=name=>{const target=block.getInputTargetBlock(name);return target?readExpression(target):{kind:'string',value:''};};
+      return {kind:'compare',op:{operator_lt:'<',operator_gt:'>',operator_equals:'='}[block.type],left:operand('OPERAND1'),right:operand('OPERAND2')};
+    }
     throw new Error('Aquest bloc no és una lectura ni una condició compatible.');
   }
   function flatCondition(expr){
@@ -101,7 +106,7 @@
       const param=(name,key)=>{const target=current.getInputTargetBlock(name),expr=target?cleanExpression(readExpression(target)):{kind:'number',value:0};if(expr.kind==='number')base[key]=expr.value;else{base.bindings||={};base.bindings[key]=expr;}};
       let data={};try{data=JSON.parse(current.data||'{}');}catch(_){}
       switch(current.type){
-        case 'cr_forward':case 'cr_back':case 'cr_left':case 'cr_right':case 'cr_drive':param('POWER','power');if(base.type!=='drive')param('SECONDS','seconds');break;
+        case 'cr_forward':case 'cr_back':case 'cr_left':case 'cr_right':case 'cr_drive':param('POWER','power');if(base.type!=='drive')param('SECONDS','seconds');else base.direction=current.getFieldValue('DIRECTION')||'forward';break;
         case 'cr_tracks':param('LEFT','left');param('RIGHT','right');break;
         case 'cr_stop':break;
         case 'cr_face':base.value=current.getFieldValue('PATTERN')?'custom':data.value||'custom';base.pattern=storedPattern(current,data);break;
@@ -110,10 +115,11 @@
         case 'control_wait':base.type='wait';param('DURATION','seconds');break;
         case 'control_repeat':base.type='repeat';param('TIMES','count');break;
         case 'control_forever':base.type='forever';break;
-        case 'control_if_else':case 'control_repeat_until':case 'control_wait_until':{
-          base.type={control_if_else:'if',control_repeat_until:'until',control_wait_until:'waitUntil'}[current.type];
+        case 'control_if':case 'control_if_else':case 'control_repeat_until':case 'control_wait_until':{
+          base.type={control_if:'if',control_if_else:'if',control_repeat_until:'until',control_wait_until:'waitUntil'}[current.type];
           let expr=cleanExpression(readExpression(current.getInputTargetBlock('CONDITION')));
           if(data.legacyWhile&&expr.kind==='not'){base.type='while';expr=expr.value;}
+          if(base.type==='if')base.hasElse=current.type==='control_if_else';
           base.condition=expr;Object.assign(base,flatCondition(expr));break;
         }
         default:throw new Error('Aquest bloc no està implementat en el simulador.');
@@ -133,11 +139,14 @@
   function updateThresholdXml(text,threshold){
     const dom=validateXml(text);
     const value=(node,name)=>Array.from(node.children).find(child=>child.tagName.toLowerCase()==='value'&&child.getAttribute('name')===name);
-    const piece=node=>node&&Array.from(node.children).find(child=>['block','shadow'].includes(child.tagName.toLowerCase()));
+    const piece=node=>node&&(Array.from(node.children).find(child=>child.tagName.toLowerCase()==='block')||Array.from(node.children).find(child=>child.tagName.toLowerCase()==='shadow'));
     for(const node of dom.querySelectorAll('block'))if(['operator_lt','operator_gt','operator_equals'].includes(node.getAttribute('type'))){
       const left=piece(value(node,'OPERAND1')),right=piece(value(node,'OPERAND2'));
       const numeric=left?.getAttribute('type')==='cr_sensor_gray'?right:right?.getAttribute('type')==='cr_sensor_gray'?left:null;
-      if(numeric&&numeric.getAttribute('type')?.startsWith('math_')){const field=numeric.querySelector('field[name="NUM"]');if(field)field.textContent=String(threshold);}
+      if(numeric){
+        const field=numeric.querySelector('field[name="NUM"],field[name="TEXT"]');
+        if(field&&field.textContent.trim()!==''&&Number.isFinite(Number(field.textContent)))field.textContent=String(threshold);
+      }
     }
     return B.Xml.domToText(dom);
   }

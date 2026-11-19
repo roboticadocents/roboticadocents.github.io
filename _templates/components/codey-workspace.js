@@ -6,7 +6,7 @@ function CodeyWorkspace({ root }) {
       <div class="cr-section-heading"><h2>Codey Rocky</h2><button type="button" class="sim-btn sim-btn-outline" data-cr-reset>↺ Reinicia l’escenari</button></div>
       <div class="cr-device">
         <div class="cr-device-face"><canvas width="320" height="160" data-cr-led aria-label="Pantalla LED de 16 per 8 punts"></canvas><span class="cr-rgb" data-cr-rgb role="img" aria-label="Indicador RGB verd"></span></div>
-        <div class="cr-device-buttons"><button type="button" data-cr-event="A">A</button><button type="button" data-cr-event="B">B</button><span>Prem un botó per activar el seu programa.</span></div>
+        <div class="cr-device-buttons"><button type="button" data-cr-event="A">A</button><button type="button" data-cr-event="B">B</button><button type="button" data-cr-event="C">C</button><span>Prem un botó per activar el seu programa.</span></div>
       </div>
       <div class="cr-world-viewport"><canvas class="cr-world" width="800" height="500" data-cr-world tabindex="0" aria-label="Escenari de Rocky. Usa les fletxes per moure el cursor i Espai per aplicar l’eina seleccionada."></canvas></div>
       <div class="cr-sensors">
@@ -30,7 +30,7 @@ function CodeyWorkspace({ root }) {
           <label>Sensor <select data-cr-orientation><option value="front">Cap endavant · IR</option><option value="down">Cap al terra · grisos i color</option></select></label>
           <label>Pista <select data-cr-track><option value="none">Lliure</option><option value="straight">Recta</option><option value="curve">Corbes</option><option value="circuit">Circuit tancat</option></select></label>
           <label>Amplària <input data-cr-line-width type="number" min="8" max="60" value="24" step="2"></label>
-          <label>Color <select data-cr-surface-color><option value="black">Negre</option><option value="white">Blanc</option><option value="red">Roig</option><option value="green">Verd</option><option value="blue">Blau</option><option value="yellow">Groc</option></select></label>
+          <label>Color <select data-cr-surface-color><option value="black">Negre</option><option value="white">Blanc</option><option value="red">Roig</option><option value="green">Verd</option><option value="blue">Blau</option><option value="yellow">Groc</option><option value="cyan">Cian</option><option value="purple">Morat</option></select></label>
           <button type="button" class="sim-btn sim-btn-outline" data-cr-clear-lines>Neteja la pista</button>
         </div>
       </details>
@@ -51,7 +51,7 @@ function CodeyWorkspace({ root }) {
         <option value="line">Segueix la vora de la línia</option><option value="color">Atura’t sobre el roig</option><option value="obstacle">Atura’t davant d’un obstacle</option><option value="while">Repeteix fins a trobar un obstacle</option><option value="buttons">Botons i cares</option><option value="light">Si baixa la llum…</option><option value="route">Moviment amb temps</option><option value="blank">Programa nou</option>
       </select></label>
       <div class="cr-event-tabs" role="group" aria-label="Programa que vols editar">
-        <button type="button" data-cr-script="start" aria-pressed="true">${icon('event')}<span>En iniciar</span></button><button type="button" data-cr-script="A" aria-pressed="false">${icon('event')}<span>Botó A</span></button><button type="button" data-cr-script="B" aria-pressed="false">${icon('event')}<span>Botó B</span></button>
+        <button type="button" data-cr-script="start" aria-pressed="true">${icon('event')}<span>En iniciar</span></button><button type="button" data-cr-script="A" aria-pressed="false">${icon('event')}<span>Botó A</span></button><button type="button" data-cr-script="B" aria-pressed="false">${icon('event')}<span>Botó B</span></button><button type="button" data-cr-script="C" aria-pressed="false">${icon('event')}<span>Botó C</span></button>
       </div>
       <div class="cr-program" data-cr-program></div>
       <div class="cr-execution"><div class="cr-run-controls"><button type="button" class="sim-btn sim-btn-primary" data-cr-run>▶ Executa</button><button type="button" class="sim-btn sim-btn-secondary" data-cr-step>Pas a pas</button><button type="button" class="sim-btn sim-btn-outline" data-cr-stop>■ Atura</button></div>

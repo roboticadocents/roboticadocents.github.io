@@ -37,7 +37,8 @@ const runFor=(e,time)=>{for(let t=0;t<time;t+=.02)e.tick(.02,.02);};
 }
 // Un bucle finit buit acaba i un bucle infinit es pot aturar sense bloquejar JS.
 {
- const e=new Engine({start:[b('forever')]});e.trigger('start');runFor(e,.2);assert.equal(e.tasks.length,0);
+ const finite=new Engine({start:[b('repeat',{count:3})]});finite.trigger('start');runFor(finite,.2);assert.equal(finite.tasks.length,0);
+ const e=new Engine({start:[b('forever')]});e.trigger('start');runFor(e,.2);assert.equal(e.tasks.length,1);e.stop();assert.equal(e.running,false);
 }
 console.log('Codey Rocky: sensors dinàmics, botons, branques, temps, pas a pas i col·lisions correctes.');
 // Mentre: pot executar zero voltes i continua després del bucle.
@@ -66,7 +67,7 @@ console.log('Mentre: zero voltes, rellegir sensors, negació, eixida i bucles im
 {
  const e=new Engine();e.pose={x:200,y:250,angle:0};const far=e.sensor('infrared');e.pose.x=350;const near=e.sensor('infrared');
  assert.ok(near>far&&near>=0&&near<=100);assert.equal(e.test({sensor:'infrared',compare:'>',threshold:near-1}).result,true);
- e.environment.orientation='down';assert.equal(e.sensor('infrared'),null);assert.equal(e.test({sensor:'infrared',compare:'<',threshold:100}).result,false);
+ e.environment.orientation='down';assert.equal(e.sensor('infrared'),null);assert.equal(e.test({sensor:'infrared',compare:'<',threshold:100}).result,true);
 }
 // Una única petjada llig superfície i color; una vora dona un valor intermedi.
 {
@@ -102,7 +103,7 @@ console.log('IR numèric, orientació, grisos, colors, erugues i seguiment de tr
  const e=new Engine({start:[b('until',{sensor:'light',compare:'>',threshold:50,body}),b('stop'),b('rgb',{value:'#ef4444'})]});
  e.environment.light=70;e.trigger('start');runFor(e,1);assert.equal(e.pose.x,160);assert.equal(e.output.rgb,'#ef4444');
  e.reset();e.environment.light=10;e.trigger('start');runFor(e,1);assert.ok(e.pose.x>160);assert.equal(e.output.rgb,'#22c55e');e.environment.light=70;runFor(e,1);assert.equal(e.output.rgb,'#ef4444');assert.equal(e.motor.speed,0);
- const unavailable=new Engine({start:[b('until',{sensor:'gray',compare:'>',threshold:50,body})]});unavailable.trigger('start');runFor(unavailable,1);assert.equal(unavailable.running,false);assert.equal(unavailable.pose.x,160);assert.match(unavailable.trace,/no disponible/);
+ const unavailable=new Engine({start:[b('until',{sensor:'gray',compare:'>',threshold:50,body})]});unavailable.trigger('start');runFor(unavailable,1);assert.equal(unavailable.running,true);assert.ok(unavailable.pose.x>160);
 }
 // Espera fins que retorna el control a la interfície i no avança prematurament.
 {
@@ -123,10 +124,47 @@ console.log('mBlock: repeteix fins que, espera fins que, lectures dinàmiques i 
  assert.throws(()=>cleanExpression({kind:'execute',value:'javascript'}));
  const motion=new Engine({start:[b('forward',{seconds:1,bindings:{power:sensor('light')}})]});motion.environment.light=20;motion.trigger('start');runFor(motion,2);assert.ok(Math.abs(motion.pose.x-190)<.1);
  const display=new Engine({start:[b('text',{expression:sensor('light')})]});display.environment.light=37;display.trigger('start');runFor(display,.5);assert.equal(display.output.text,'37');
- const unavailable=new Engine();assert.equal(evaluate(sensor('gray'),name=>unavailable.sensor(name)),null);
+ const unavailable=new Engine();assert.equal(evaluate(sensor('gray'),name=>unavailable.sensor(name)),0);
 }
-// Les peces natives admeten zero: repeteix 0 no entra al cos i un moviment de 0 s no queda actiu.
+// Les peces natives admeten zero: repeteix 0 no entra al cos i un moviment de 0 s no activa motors que estaven parats.
 {
  const e=new Engine({start:[b('repeat',{count:0,body:[b('rgb',{value:'#ef4444'})]}),b('forward',{seconds:0,power:80}),b('wait',{seconds:0})]});e.trigger('start');runFor(e,1);assert.equal(e.output.rgb,'#22c55e');assert.equal(e.pose.x,160);assert.equal(e.motor.speed,0);assert.equal(e.running,false);
 }
 console.log('Peces natives: condicions compostes, lectures connectades, paràmetres dinàmics i valors zero correctes.');
+
+// Conformitat amb Scratch VM: util/cast.js i blocks/scratch3_{operators,control}.js.
+// Referències i diferències respecte de mBlock: docs/SIMULADOR-CODEY.md.
+{
+ const {evaluate}=require('../../sim/codey-engine');
+ const literal=value=>({kind:typeof value==='boolean'?'boolean':typeof value==='number'?'number':'string',value});
+ const compare=(op,left,right)=>evaluate({kind:'compare',op,left:literal(left),right:literal(right)},()=>0);
+ for(const [left,right,equal] of [[50,'50',true],['050',50,true],['Codey','CODEY',true],['',0,false],[' ',0,false],['', '',true],['false',false,true],[false,0,true],['10','2',false]])assert.equal(compare('=',left,right),equal,JSON.stringify([left,right]));
+ assert.equal(compare('<','10','2'),false);assert.equal(compare('<','apple','Banana'),true);assert.equal(compare('>','B','a'),true);
+ for(const [value,truth] of [['',false],['0',false],['FALSE',false],['false',false],[' ',true],['00',true],['true',true],[0,false],[2,true],[false,false],[true,true]]){
+  const expr=literal(value);assert.equal(evaluate({kind:'not',value:expr},()=>0),!truth);
+  assert.equal(evaluate({kind:'and',left:expr,right:literal(true)},()=>0),truth);
+  assert.equal(evaluate({kind:'or',left:expr,right:literal(false)},()=>0),truth);
+  const e=new Engine();assert.equal(e.test({condition:expr}).result,truth);
+ }
+ for(const [count,expected] of [[-1,0],[0,0],[.49,0],[.5,1],[1.49,1],[1.5,2],[2.5,3]]){
+  const e=new Engine({start:[b('repeat',{count,body:[b('forward',{power:10,seconds:1})]})]});e.environment.obstacles=[];e.trigger('start');runFor(e,6);assert.ok(Math.abs(e.pose.x-(160+15*expected))<.1,`repeteix ${count}`);
+ }
+ const forever=new Engine({start:[b('forever',{body:[]})]});forever.trigger('start');runFor(forever,1);assert.equal(forever.running,true);assert.ok(forever.tasks.length>0);forever.stop();assert.equal(forever.running,false);
+ const e=new Engine({start:[b('wait',{seconds:-2}),b('rgb',{value:'#ef4444'})]});e.trigger('start');runFor(e,.2);assert.equal(e.output.rgb,'#ef4444');
+}
+console.log('Conformitat Scratch: comparacions de text/nombres, booleans, arredoniment de repeticions, espera negativa i per sempre buit correctes.');
+
+// Contracte Codey 0.4.4: un moviment temporal no positiu no envia cap ordre als motors.
+{
+ for(const type of ['forward','back','left','right'])for(const seconds of [-1,0]){
+  const e=new Engine({start:[b('drive',{power:20}),b(type,{power:80,seconds})]});e.trigger('start');e.executeOne();const before={...e.motor};e.executeOne();assert.deepEqual(e.motor,before,`${type}: ${seconds} s`);
+ }
+ for(const [direction,speed,turn] of [['forward',75,0],['backward',-75,0],['turn_left',0,-120],['turn_right',0,120]]){
+  const e=new Engine({start:[b('drive',{direction,power:50})]});e.trigger('start');e.executeOne();assert.deepEqual(e.motor,{speed,turn});
+ }
+ for(const value of [true,false]){const e=new Engine({start:[b('text',{expression:{kind:'boolean',value}})]});e.step();assert.equal(e.output.text,value?'True':'False');}
+ for(const color of ['cyan','purple']){const e=new Engine();e.environment.orientation='down';e.environment.patches=[{x:0,y:0,w:800,h:500,color}];assert.equal(e.sensor('color'),color);assert.equal(e.test({condition:{kind:'color',value:color}}).result,true);}
+ const fallback=new Engine({start:[b('reading',{sensor:'gray'})]});fallback.step();assert.equal(fallback.output.text,'0');
+ const c=new Engine({C:[b('text',{value:'C'})]});c.trigger('C');c.executeOne();assert.equal(c.output.text,'C');
+}
+console.log('Contracte Codey: moviments nuls, quatre direccions, text booleà, huit colors i botó C correctes.');

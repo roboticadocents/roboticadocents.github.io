@@ -16,15 +16,15 @@
     return {id:`cr-${++counter}`,type,power:30,left:10,right:10,seconds:1,count:3,sensor:'infrared',compare:'>',threshold:50,value:type==='face'?'happy':type==='rgb'?'#22c55e':'Hola',pattern:blankPattern(),body:[],then:[],else:[],...extra};
   }
   function example(name) {
-    const program={start:[],A:[block('face')],B:[block('face',{value:'sad'})]};
+    const program={start:[],A:[block('face')],B:[block('face',{value:'sad'})],C:[block('stop')]};
     if(name==='obstacle')program.start=[block('forever',{body:[block('if',{sensor:'infrared',compare:'>',threshold:60,then:[block('stop'),block('face',{value:'surprise'})],else:[block('face'),block('drive')]}),block('wait',{seconds:.1})]})];
     if(name==='while')program.start=[block('until',{sensor:'infrared',compare:'>',threshold:60,body:[block('forward',{seconds:.2})]}),block('stop'),block('face',{value:'surprise'})];
     if(name==='line')program.start=[block('forever',{body:[block('if',{sensor:'gray',compare:'<',threshold:50,then:[block('tracks',{left:10,right:6})],else:[block('tracks',{left:6,right:10})]})]})];
     if(name==='color')program.start=[block('until',{sensor:'color',compare:'=',value:'red',body:[block('forward',{power:15,seconds:.1})]}),block('stop'),block('rgb',{value:'#ef4444'})];
     if(name==='light')program.start=[block('forever',{body:[block('if',{sensor:'light',compare:'<',threshold:40,then:[block('rgb',{value:'#facc15'})],else:[block('rgb',{value:'#000000'})]}),block('wait',{seconds:.1})]})];
     if(name==='route')program.start=[block('forward'),block('right'),block('forward'),block('stop')];
-    if(name==='buttons')program.start=[block('text',{value:'Prem A o B'})];
-    return name==='blank'?{start:[],A:[],B:[]}:program;
+    if(name==='buttons')program.start=[block('text',{value:'Prem A, B o C'})];
+    return name==='blank'?{start:[],A:[],B:[],C:[]}:program;
   }
   function cleanProgram(value) {
     if(!value||typeof value!=='object')throw new Error('Falta el programa.');let total=0;
@@ -33,17 +33,17 @@
       return list.map(b=>{
         if(!b||!names[b.type]||++total>300)throw new Error('Bloc desconegut o programa massa llarg.');
         const legacy=b.sensor==='obstacle';
-        return block(b.type,{value:String(b.value||'').slice(0,40),condition:b.condition?cleanExpression(b.condition):undefined,expression:b.expression?cleanExpression(b.expression):undefined,bindings:b.bindings?Object.fromEntries(Object.entries(b.bindings).filter(([key])=>['power','left','right','seconds','count'].includes(key)).map(([key,value])=>[key,cleanExpression(value)])):undefined,pattern:Array.isArray(b.pattern)&&b.pattern.length===8&&b.pattern.every(r=>/^[01]{16}$/.test(r))?b.pattern:blankPattern(),power:numeric(b.power,0,100,30),left:numeric(b.left,-100,100,10),right:numeric(b.right,-100,100,10),seconds:numeric(b.seconds,0,3600,1),count:Math.round(numeric(b.count,0,10000,3)),sensor:legacy?'infrared':sensorOptions.some(([v])=>v===b.sensor)?b.sensor:'infrared',compare:legacy?(b.obstacleValue==='false'?'<':'>'):['<','>','<=','>=','=','!='].includes(b.compare)?b.compare:'>',threshold:legacy?60:numeric(b.threshold,0,100,50),body:clean(b.body||[],depth+1),then:clean(b.then||[],depth+1),else:clean(b.else||[],depth+1)});
+        return block(b.type,{value:String(b.value||'').slice(0,40),hasElse:b.hasElse!==false,direction:['forward','backward','turn_left','turn_right'].includes(b.direction)?b.direction:'forward',condition:b.condition?cleanExpression(b.condition):undefined,expression:b.expression?cleanExpression(b.expression):undefined,bindings:b.bindings?Object.fromEntries(Object.entries(b.bindings).filter(([key])=>['power','left','right','seconds','count'].includes(key)).map(([key,value])=>[key,cleanExpression(value)])):undefined,pattern:Array.isArray(b.pattern)&&b.pattern.length===8&&b.pattern.every(r=>/^[01]{16}$/.test(r))?b.pattern:blankPattern(),power:numeric(b.power,0,100,30),left:numeric(b.left,-100,100,10),right:numeric(b.right,-100,100,10),seconds:numeric(b.seconds,0,3600,1),count:Math.round(numeric(b.count,0,10000,3)),sensor:legacy?'infrared':sensorOptions.some(([v])=>v===b.sensor)?b.sensor:'infrared',compare:legacy?(b.obstacleValue==='false'?'<':'>'):['<','>','<=','>=','=','!='].includes(b.compare)?b.compare:'>',threshold:legacy?60:numeric(b.threshold,0,100,50),body:clean(b.body||[],depth+1),then:clean(b.then||[],depth+1),else:clean(b.else||[],depth+1)});
       });
     }
-    return {start:clean(value.start||[]),A:clean(value.A||[]),B:clean(value.B||[])};
+    return {start:clean(value.start||[]),A:clean(value.A||[]),B:clean(value.B||[]),C:clean(value.C||[])};
   }
   let stored=null,program=example('obstacle');
   try {stored=JSON.parse(localStorage.getItem('robotica-codey-v2')||localStorage.getItem('robotica-codey-v1'));if(stored&&[1,2].includes(stored.version))program=cleanProgram(stored.program);}catch(_){stored=null;}
   const engine=new Engine(program);
   let selectedEvent='start',tool='obstacle',nativeEditor=null;
   let workspaceXml={};
-  function cleanWorkspaces(value){const result={};if(value&&window.CodeyNativeBlocks)for(const key of ['start','A','B'])if(value[key]){window.CodeyNativeBlocks.validateXml(value[key]);result[key]=value[key];}return result;}
+  function cleanWorkspaces(value){const result={};if(value&&window.CodeyNativeBlocks)for(const key of ['start','A','B','C'])if(value[key]){window.CodeyNativeBlocks.validateXml(value[key]);result[key]=value[key];}return result;}
   try{workspaceXml=cleanWorkspaces(stored?.workspaceXml);}catch(_){workspaceXml={};}
   let startPose={...engine.pose},cursor={x:320,y:250},keyboardCursor=false;
   let calibration={background:null,line:null},lineWidth=24,surfaceColor='black',drawing=null;
@@ -102,7 +102,14 @@
       if(background===null||line===null||Math.abs(background-line)<10){$('[data-cr-calibration-status]').textContent='Calen dues lectures amb prou contrast. Mesura el fons i el centre de la línia.';return;}
       halt();const threshold=Math.round((background+line)/2);let total=0;
       function apply(list){for(const b of list){if(['if','while','until','waitUntil'].includes(b.type)&&b.sensor==='gray'){b.threshold=threshold;if(!b.condition)total++;}apply(b.body);apply(b.then);apply(b.else);}}
-      function applyExpression(expr){if(!expr)return;const gray=e=>e?.kind==='sensor'&&e.name==='gray';if(expr.kind==='compare'){if(gray(expr.left)&&expr.right.kind==='number'){expr.right.value=threshold;total++;}if(gray(expr.right)&&expr.left.kind==='number'){expr.left.value=threshold;total++;}}if(expr.value&&typeof expr.value==='object')applyExpression(expr.value);if(expr.left)applyExpression(expr.left);if(expr.right)applyExpression(expr.right);}
+      function applyExpression(expr){
+        if(!expr)return;
+        const gray=e=>e?.kind==='sensor'&&e.name==='gray';
+        const numeric=e=>e?.kind==='number'||(e?.kind==='string'&&e.value.trim()!==''&&Number.isFinite(Number(e.value)));
+        const update=e=>{e.value=e.kind==='string'?String(threshold):threshold;total++;};
+        if(expr.kind==='compare'){if(gray(expr.left)&&numeric(expr.right))update(expr.right);if(gray(expr.right)&&numeric(expr.left))update(expr.left);}
+        if(expr.value&&typeof expr.value==='object')applyExpression(expr.value);if(expr.left)applyExpression(expr.left);if(expr.right)applyExpression(expr.right);
+      }
       for(const list of Object.values(program)){apply(list);function expressions(items){for(const b of items){applyExpression(b.condition);expressions(b.body);expressions(b.then);expressions(b.else);}}expressions(list);}
       for(const key of Object.keys(workspaceXml))workspaceXml[key]=window.CodeyNativeBlocks.updateThresholdXml(workspaceXml[key],threshold);
       $('[data-cr-calibration-status]').textContent=`Llindar ${threshold} aplicat a ${total} condicions de grisos. ${line<background?'La línia és més fosca que el fons.':'La línia és més clara: revisa el sentit de la comparació.'}`;
@@ -132,7 +139,7 @@
       if(input.value==='line')loadTrack('circuit');
       else if(input.value==='color'){loadTrack('none');engine.environment.patches=[{x:430,y:210,w:80,h:80,color:'red'}];startPose={x:160,y:250,angle:0};}
       else if(['obstacle','while'].includes(input.value)){engine.environment={...engine.environment,orientation:'front',lines:[],patches:[],obstacles:[{x:430,y:190,w:65,h:120}]};startPose={x:160,y:250,angle:0};}
-      engine.reset();engine.pose={...startPose};engine.trace='Exemple carregat. Executa el programa o prem A o B.';syncSceneControls();save();renderProgram();
+      engine.reset();engine.pose={...startPose};engine.trace='Exemple carregat. Executa el programa o prem A, B o C.';syncSceneControls();save();renderProgram();
     }
     if(input.hasAttribute('data-cr-orientation')){halt();engine.environment.orientation=input.value;save();}
     if(input.hasAttribute('data-cr-track'))loadTrack(input.value);
