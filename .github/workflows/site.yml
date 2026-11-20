@@ -47,8 +47,45 @@ jobs:
           node --check _scripts/build.js
           node --check _scripts/dev.js
           node --check _scripts/test.js
+          node --check _scripts/build-bilingual.js
       - name: Executar suite de validació (HTML estàtic, Markdown semàntic i tutorials)
         run: node _scripts/test.js
+      # Versió en castellà: es compila des de la branca `traduccion-es` i es publica a /es/.
+      # El valencià de `main` continua sent la llengua principal a l'arrel del lloc.
+      - name: Obtindre la branca castellana (traduccion-es)
+        uses: actions/checkout@v4
+        with:
+          ref: traduccion-es
+          path: .es-src
+      - name: Recuperar memòria cau dels PDF en castellà
+        id: printable-cache-es
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ runner.temp }}/robotica200-print-pdf-cache-es
+          key: robotica200-print-pdfs-es-${{ runner.os }}-${{ hashFiles('.es-src/_content/**/*.md', '.es-src/_assets/**/*', '.es-src/_scripts/md_to_typst.py') }}
+          restore-keys: |
+            robotica200-print-pdfs-es-${{ runner.os }}-
+      - name: Compilar la web i els PDF en castellà
+        working-directory: .es-src
+        env:
+          ROBOTICA_PDF_CACHE: ${{ runner.temp }}/robotica200-print-pdf-cache-es
+        run: node _scripts/build.js --pdf
+      - name: Guardar memòria cau dels PDF en castellà
+        if: github.event_name != 'pull_request' && steps.printable-cache-es.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ runner.temp }}/robotica200-print-pdf-cache-es
+          key: robotica200-print-pdfs-es-${{ runner.os }}-${{ hashFiles('.es-src/_content/**/*.md', '.es-src/_assets/**/*', '.es-src/_scripts/md_to_typst.py') }}
+      - name: Validar la web en castellà
+        working-directory: .es-src
+        run: node _scripts/test.js
+      - name: Compondre la web bilingüe (VA a /, ES a /es/)
+        run: >-
+          node _scripts/build-bilingual.js
+          --ca dist
+          --es .es-src/dist
+          --map .es-src/_scripts/legacy-content-map.json
+          --out dist-bilingue
       - name: Preparar web estàtica descarregable
         uses: actions/upload-artifact@v4
         with:
@@ -60,7 +97,7 @@ jobs:
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: dist-bilingue
 
   deploy:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
