@@ -25,7 +25,7 @@ const out=path.join(root,'_assets/activitats/codey');fs.mkdirSync(out,{recursive
    const content=images.map(image=>{const result=`<g transform="translate(${x-image.x},${6-image.y})">${image.body}</g>`;x+=image.width+20;return result;}).join('');
    return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}"><rect width="100%" height="100%" fill="white"/>${content}</svg>`;
   },program);
-  fs.writeFileSync(path.join(out,`${exercise.id}-${name}.svg`),svg);
+  const local=svg.replace(/xlink:href="[^"]*\/sim\/vendor\/scratch-blocks\/media\/([^"]+)"/g,(_,file)=>`xlink:href="data:image/svg+xml;base64,${fs.readFileSync(path.join(root,'sim/vendor/scratch-blocks/media',file)).toString('base64')}"`);fs.writeFileSync(path.join(out,`${exercise.id}-${name}.svg`),local);
  }
  await browser.close();console.log('48 diagrames renderitzats amb Scratch Blocks natiu.');
 })().catch(error=>{console.error(error);process.exit(1);});
