@@ -1,0 +1,96 @@
+{
+  "type": "robotica-codey",
+  "version": 2,
+  "program": {
+    "start": [
+      {
+        "id": "act-68",
+        "type": "rgb",
+        "power": 20,
+        "left": 10,
+        "right": 10,
+        "seconds": 0.2,
+        "count": 3,
+        "sensor": "light",
+        "compare": "<",
+        "threshold": 40,
+        "value": "#ef4444",
+        "body": [],
+        "then": [],
+        "else": []
+      },
+      {
+        "id": "act-69",
+        "type": "wait",
+        "power": 20,
+        "left": 10,
+        "right": 10,
+        "seconds": 0.3,
+        "count": 3,
+        "sensor": "light",
+        "compare": "<",
+        "threshold": 40,
+        "value": "",
+        "body": [],
+        "then": [],
+        "else": []
+      },
+      {
+        "id": "act-70",
+        "type": "rgb",
+        "power": 20,
+        "left": 10,
+        "right": 10,
+        "seconds": 0.2,
+        "count": 3,
+        "sensor": "light",
+        "compare": "<",
+        "threshold": 40,
+        "value": "#000000",
+        "body": [],
+        "then": [],
+        "else": []
+      },
+      {
+        "id": "act-71",
+        "type": "wait",
+        "power": 20,
+        "left": 10,
+        "right": 10,
+        "seconds": 0.3,
+        "count": 3,
+        "sensor": "light",
+        "compare": "<",
+        "threshold": 40,
+        "value": "",
+        "body": [],
+        "then": [],
+        "else": []
+      }
+    ],
+    "A": [],
+    "B": [],
+    "C": []
+  },
+  "environment": {
+    "light": 70,
+    "sound": 20,
+    "orientation": "front",
+    "obstacles": [],
+    "patches": [],
+    "lines": []
+  },
+  "startPose": {
+    "x": 160,
+    "y": 250,
+    "angle": 0
+  },
+  "calibration": {
+    "background": null,
+    "line": null
+  },
+  "activity": {
+    "slug": "cr-delimita-el-bucle",
+    "exercise": 1
+  }
+}

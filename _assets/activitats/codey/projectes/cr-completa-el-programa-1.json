@@ -1,0 +1,48 @@
+{
+  "type": "robotica-codey",
+  "version": 2,
+  "program": {
+    "start": [
+      {
+        "id": "act-39",
+        "type": "text",
+        "power": 20,
+        "left": 10,
+        "right": 10,
+        "seconds": 0.2,
+        "count": 3,
+        "sensor": "light",
+        "compare": "<",
+        "threshold": 40,
+        "value": "SOL",
+        "body": [],
+        "then": [],
+        "else": []
+      }
+    ],
+    "A": [],
+    "B": [],
+    "C": []
+  },
+  "environment": {
+    "light": 70,
+    "sound": 20,
+    "orientation": "front",
+    "obstacles": [],
+    "patches": [],
+    "lines": []
+  },
+  "startPose": {
+    "x": 160,
+    "y": 250,
+    "angle": 0
+  },
+  "calibration": {
+    "background": null,
+    "line": null
+  },
+  "activity": {
+    "slug": "cr-completa-el-programa",
+    "exercise": 1
+  }
+}

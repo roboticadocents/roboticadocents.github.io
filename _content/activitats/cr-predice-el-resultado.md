@@ -1,0 +1,100 @@
+---
+title: "¿Qué mostrará Codey?"
+description: "Seguir una secuencia y distinguir los estados intermedios del resultado final. Una actividad en papel, en el simulador y con Codey Rocky."
+robot: codey-rocky
+topic: "Algoritmos"
+cycle_label: "Segundo ciclo"
+duration: "35–45 min"
+order: 1
+---
+
+<!-- Generado por _scripts/generate-codey-activities.js desde sim/codey-activities.json. -->
+
+## 🎯 ¿Qué vamos a aprender?
+
+Seguir una secuencia y distinguir los estados intermedios del resultado final.
+
+Es **una misma actividad con tres entornos**, con tres ejercicios compartidos. Se puede empezar en cualquier entorno; no es obligatorio repetirlos todos. La respuesta debe justificarse con una predicción, una traza o una observación.
+
+## 🧰 Materiales y preparación
+
+- [Ficha del alumnado (PDF, 2 páginas A4)](_assets/activitats/kits/cr-prediu-el-resultat.pdf).
+- [Recopilatorio de las ocho actividades (PDF, 16 páginas A4)](_assets/activitats/kits/cr-fitxes-tres-entorns.pdf).
+- [Solucionario separado del profesorado (PDF, 8 páginas A4)](_assets/activitats/kits/cr-solucions-tres-entorns.pdf).
+- **Papel:** lápiz, goma y ficha. No hace falta robot ni dispositivo; las lecturas dadas son datos de la prueba.
+- **Simulador:** navegador con el [simulador de Codey Rocky](/sim/index.html?robot=codey-rocky&activity=cr-predice-el-resultado&exercise=1). Cada enlace carga las piezas iniciales y el escenario del ejercicio.
+- **Robot:** Codey Rocky, mBlock, cable o conexión disponible, y los materiales de la prueba. Los JSON son del simulador: en el robot se reconstruyen las mismas piezas en mBlock.
+
+### Preparación con el robot
+
+Si hace falta, seguid [Primeros pasos con Codey](../../tutorial/cr-primeras-pasos/index.html). Añadid Codey a mBlock, conectadlo y usad el modo Carga para las pilas de inicio.
+
+Poned a Codey sobre la mesa; Rocky no necesita moverse. Reconstruid las pilas en mBlock y ejecutadlas. Observad también los cambios durante las esperas.
+
+En las pruebas de movimiento, mantened accesible el interruptor. El botón C solo detiene los motores si le has programado esa orden.
+
+Los valores del papel son ejemplos controlados. En el robot, anotad las lecturas reales y justificad los ajustes. Una potencia y una duración no garantizan una distancia o un ángulo exactos; no se piden equivalencias en casillas.
+
+## 👣 Desarrollo paso a paso
+
+### 1. Texto antes y después
+
+Anota qué muestra durante la espera y qué queda al final.
+
+![Programa inicial del ejercicio 1; las piezas corresponden al simulador.](_assets/activitats/codey/cr-prediu-el-resultat-1-inici.svg)
+
+[Abre este ejercicio en el simulador](/sim/index.html?robot=codey-rocky&activity=cr-predice-el-resultado&exercise=1) · [Descarga el proyecto inicial](_assets/activitats/codey/projectes/cr-prediu-el-resultat-1.json)
+
+**En papel:** escribe la predicción o dibuja las piezas que faltan antes de comprobar.
+
+**En el simulador:** pulsa Ejecuta;  compara con la consigna y cambia un solo dato.
+
+**Con el robot:** reconstruye estas piezas en mBlock y haz la misma prueba; registra las lecturas reales antes de ajustar el programa.
+
+### 2. Pantalla y luz
+
+¿Cambiar el LED RGB borra la imagen? Dibuja qué queda en la pantalla e indica el color final.
+
+![Programa inicial del ejercicio 2; las piezas corresponden al simulador.](_assets/activitats/codey/cr-prediu-el-resultat-2-inici.svg)
+
+[Abre este ejercicio en el simulador](/sim/index.html?robot=codey-rocky&activity=cr-predice-el-resultado&exercise=2) · [Descarga el proyecto inicial](_assets/activitats/codey/projectes/cr-prediu-el-resultat-2.json)
+
+**En papel:** escribe la predicción o dibuja las piezas que faltan antes de comprobar.
+
+**En el simulador:** pulsa Ejecuta;  compara con la consigna y cambia un solo dato.
+
+**Con el robot:** reconstruye estas piezas en mBlock y haz la misma prueba; registra las lecturas reales antes de ajustar el programa.
+
+### 3. ¿Cuántas veces cambia?
+
+Cuenta los encendidos rojos y anota el texto final.
+
+![Programa inicial del ejercicio 3; las piezas corresponden al simulador.](_assets/activitats/codey/cr-prediu-el-resultat-3-inici.svg)
+
+[Abre este ejercicio en el simulador](/sim/index.html?robot=codey-rocky&activity=cr-predice-el-resultado&exercise=3) · [Descarga el proyecto inicial](_assets/activitats/codey/projectes/cr-prediu-el-resultat-3.json)
+
+**En papel:** escribe la predicción o dibuja las piezas que faltan antes de comprobar.
+
+**En el simulador:** pulsa Ejecuta;  compara con la consigna y cambia un solo dato.
+
+**Con el robot:** reconstruye estas piezas en mBlock y haz la misma prueba; registra las lecturas reales antes de ajustar el programa.
+
+## ✅ Evidencias de aprendizaje
+
+- Predice o propone una solución antes de probarla.
+- Explica qué pieza, lectura o condición determina el resultado.
+- Compara lo que esperaba con lo que observa y justifica un cambio.
+
+### Registro compartido
+
+Para cada ejercicio: **entorno, predicción, resultado, dificultad, cambio probado y duda pendiente**. En el robot añadid las lecturas medidas. El criterio es el mismo en los tres entornos; la traza en papel, el programa y la observación son evidencias alternativas.
+
+## ♿ Variantes e inclusión
+
+Se puede responder oralmente, señalando o dibujando las piezas. En pareja, alternad quién predice y quién comprueba. Para dar apoyo, resolved una comparación antes de mirar la pila entera. Para ampliar, cambiad una entrada y explicad si se conserva el resultado.
+
+## 🔗 Transferencia y referentes
+
+Conexión con la situación de aprendizaje [Máscaras de la plaza](../../situacion/cr-emociones/index.html). Las fichas son práctica de piezas y razonamiento; se pueden incorporar a esa situación cuando tenga sentido.
+
+Las piezas corresponden al subconjunto de Codey de mBlock. [Casos oficiales de Codey Rocky](https://support.makeblock.com/hc/en-us/sections/360001829193-Codey-Rocky).

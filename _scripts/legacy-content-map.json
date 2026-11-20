@@ -150,7 +150,13 @@
       "tb-escriu-el-codi": "tb-escribe-el-codigo",
       "tb-prediu-el-resultat": "tb-predice-el-resultado",
       "tb-quin-dibuix-fara": "tb-que-dibujo-hara",
-      "tb-refactoritza-el-codi": "tb-refactoriza-el-codigo"
+      "tb-refactoritza-el-codi": "tb-refactoriza-el-codigo",
+      "cr-botons-i-esdeveniments": "cr-botones-y-eventos",
+      "cr-condicions-i-operadors": "cr-condiciones-y-operadores",
+      "cr-depura-el-codi": "cr-depura-el-codigo",
+      "cr-prediu-el-resultat": "cr-predice-el-resultado",
+      "cr-respon-als-sensors": "cr-responde-a-los-sensores",
+      "cr-segueix-la-vora": "cr-sigue-el-borde"
     },
     "tutorial": {
       "ce-bifurcacions": "ce-bifurcaciones",

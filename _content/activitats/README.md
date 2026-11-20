@@ -1,74 +1,75 @@
-# Criteri editorial de les activitats
+# Criterio editorial de las actividades
 
-## Noms de fitxer i ubicació al web
+## Nombres de archivo y ubicación en el sitio
 
-Totes les activitats es guarden en aquesta carpeta. El prefix determina on es mostren:
+Todas las actividades se guardan en esta carpeta. El prefijo determina dónde se muestran:
 
-| Nom del fitxer | Llista | URL de detall |
+| Nombre del archivo | Lista | URL de detalle |
 | --- | --- | --- |
 | `pc-[slug].md` | `/pensamiento-computacional/` | `/actividad/pc-[slug]/` |
-| `tb-[slug].md` | Secció «Activitats» de Tale-Bot, després dels tutorials | `/actividad/tb-[slug]/` |
-| `cs-[slug].md` | Secció «Activitats» de Coding Set, després dels tutorials | `/actividad/cs-[slug]/` |
+| `tb-[slug].md` | Sección «Actividades» de Tale-Bot, después de los tutoriales | `/actividad/tb-[slug]/` |
+| `cr-[slug].md` | Sección «Actividades» de Codey Rocky | `/actividad/cr-[slug]/` |
+| `cs-[slug].md` | Sección «Actividades» de Coding Set, después de los tutoriales | `/actividad/cs-[slug]/` |
 
-Copieu `TEMPLATE-ACTIVITAT.md`, poseu un nom amb el prefix corresponent i canvieu
-`active` a `true` quan estiga preparada. Les activitats es mostren segons `order`.
-El robot es dedueix del prefix: no cal declarar `robot`; si es declara, ha de ser
-`tale-bot` per a `tb-` o `coding-set` per a `cs-`. Les activitats `pc-` no tenen robot.
-Les fitxes dels robots mostren un avís mentre no tinguen activitats publicades.
-Totes comparteixen les metadades i els temes de la plantilla; adapteu els materials,
-la seqüència i les evidències a l’ús del robot quan corresponga.
+Copiad `TEMPLATE-ACTIVITAT.md`, poned un nombre con el prefijo correspondiente y cambiad
+`active` a `true` cuando esté preparada. Las actividades se muestran según `order`.
+El robot se deduce del prefijo: no hace falta declarar `robot`; si se declara, debe ser
+`tale-bot` para `tb-` o `coding-set` para `cs-` y `codey-rocky` para `cr-`. Las actividades `pc-` no tienen robot.
+Las fichas de los robots muestran un aviso mientras no tengan actividades publicadas.
+Todas comparten los metadatos y los temas de la plantilla; adaptad los materiales,
+la secuencia y las evidencias al uso del robot cuando corresponda.
 
-## Temes compartits
+## Temas compartidos
 
-Cada activitat té un únic `topic` principal: la característica del pensament
-computacional que més destaca en el repte i en les evidències d'aprenentatge.
-Una activitat pot treballar les quatre característiques; l'etiqueta indica
-l'èmfasi principal, no una exclusió de les altres. No cal repartir les activitats
-per igual. Els conceptes específics (depuració, binari, protocols, comparadors,
-etc.) s'expliquen en el text, sense crear etiquetes noves.
+Cada actividad tiene un único `topic` principal: la característica del pensamiento
+computacional que más destaca en el reto y en las evidencias de aprendizaje.
+Una actividad puede trabajar las cuatro características; la etiqueta indica
+el énfasis principal, no una exclusión de las otras. No hace falta repartir las actividades
+por igual. Los conceptos específicos (depuración, binario, protocolos, comparadores,
+etc.) se explican en el texto, sin crear etiquetas nuevas.
 
-| `topic` | Criteri | Activitats |
+| `topic` | Criterio | Actividades |
 | --- | --- | --- |
-| Descomposició | Dividir una tasca o un missatge en parts i organitzar-ne les relacions | Receptes, xarxa de missatgers |
-| Abstracció | Seleccionar atributs rellevants i representar informació deixant fora altres detalls | Maleta, museu, píxels binaris |
-| Patrons | Reconéixer repeticions i aprofitar-les per descriure o executar una seqüència | Detectius de patrons, coreografia, correu de píxels |
-| Algorismes | Formular, seguir, comprovar o corregir un procediment | Robot humà, laberint, monstres, màquina de decisions, xarxa d'ordenació, Cèsar |
+| Descomposición | Dividir una tarea o un mensaje en partes y organizar sus relaciones | Recetas, red de mensajeros |
+| Abstracción | Seleccionar atributos relevantes y representar información dejando fuera otros detalles | Maleta, museo, píxeles binarios |
+| Patrones | Reconocer repeticiones y aprovecharlas para describir o ejecutar una secuencia | Detectives de patrones, coreografía, correo de píxeles |
+| Algoritmos | Formular, seguir, comprobar o corregir un procedimiento | Robot humano, laberinto, monstruos, máquina de decisiones, red de ordenación, César |
 
-La llista es defineix a `_scripts/lib/activity-topics.js` i el build rebutja
-etiquetes diferents, per evitar tornar a tenir un tema per activitat.
+La lista se define en `_scripts/lib/activity-topics.js` y el build rechaza
+etiquetas distintas, para evitar volver a tener un tema por actividad.
 
-## Portada i suports visuals
+## Portada y soportes visuales
 
-`image` apunta a la portada WebP de `_assets/activitats/portades/` i `image_alt`
-n'explica el contingut. La mateixa imatge apareix a la targeta del catàleg i
-al començament de la fitxa. No conté text ni instruccions que calga llegir.
+`image` apunta a la portada WebP de `_assets/activitats/portades/` y `image_alt`
+explica su contenido. La misma imagen aparece en la tarjeta del catálogo y
+al principio de la ficha. No contiene texto ni instrucciones que haya que leer.
 
-La portada simbolitza la proposta amb l'estil il·lustrat de la web. Els esquemes
-del kit són les representacions exactes de les regles, les peces i els exemples:
-es conserven en materials, seqüència i comprovació, després de la portada.
+La portada simboliza la propuesta con el estilo ilustrado del sitio. Los esquemas
+del kit son las representaciones exactas de las reglas, las piezas y los ejemplos:
+se conservan en materiales, secuencia y comprobación, después de la portada.
 
-Les portades generades i els prompts es documenten a
+Las portadas generadas y los prompts se documentan en
 `_scripts/activity-cover-prompts.json`.
 
-## Fitxes de robots per a resoldre en paper
+## Fichas de robots para resolver en papel
 
-Les huit activitats `tb-` i les huit `cs-` treballen predicció, escriptura,
-depuració i refactorització de codi. Tale-Bot incorpora també dibuix continu,
-descomposició, abstracció i espenta de capses amb repetició de tota la base. Cada fitxa és un A4 amb tres exercicis
-individuals, sense context narratiu i sense necessitat de robot.
+Las ocho actividades `tb-` y las ocho `cs-` trabajan predicción, escritura,
+depuración y refactorización de código. Tale-Bot incorpora también dibujo continuo,
+descomposición, abstracción y empuje de cajas con repetición de toda la base. Cada ficha es un A4 con tres ejercicios
+individuales, sin contexto narrativo y sin necesidad de robot.
 
-Els enunciats i les solucions viuen en els tres passos de cada Markdown.
-El generador llig els camps **Inici**, **Codi**, **Objectiu**, **Consigna**,
-**Resposta de control** i **Solució docent**; no manté una còpia del contingut.
-Inici, Codi, Objectiu, Resposta de control i Proposta es guarden en comentaris
-HTML no visibles. El codi s’hi serialitza amb lletres només per a validar-lo:
-als PDF i al web es mostra amb tecles arrodonides o peces amb encaix.
-Els nombres van davall de les peces; l’alumnat dibuixa els símbols en caselles
-grans. La mascota de contorn és decorativa i es pot colorejar.
-Un guió en Codi o Objectiu indica que no hi ha un valor donat.
+Los enunciados y las soluciones viven en los tres pasos de cada Markdown.
+El generador lee los campos **Inicio**, **Código**, **Objetivo**, **Consigna**,
+**Respuesta de control** y **Solución docente**; no mantiene una copia del contenido.
+Inicio, Código, Objetivo, Respuesta de control y Propuesta se guardan en comentarios
+HTML no visibles. El código se serializa allí con letras solo para validarlo:
+en los PDF y en el sitio se muestra con teclas redondeadas o piezas con encaje.
+Los números van debajo de las piezas; el alumnado dibuja los símbolos en casillas
+grandes. La mascota de contorno es decorativa y se puede colorear.
+Un guion en Código u Objetivo indica que no hay un valor dado.
 
-Per regenerar els setze PDF individuals, els dos reculls de l’alumnat i els dos
-solucionaris i els esquemes SVG per al web, cal Python 3, pycairo i PyGObject amb librsvg
+Para regenerar las dieciséis PDF individuales, los dos recopilatorios del alumnado y los dos
+solucionarios y los esquemas SVG para el sitio, hace falta Python 3, pycairo y PyGObject con librsvg
 (`python3-cairo python3-gi python3-gi-cairo gir1.2-rsvg-2.0`):
 
 ```sh
@@ -76,22 +77,55 @@ python3 _scripts/generate-robot-paper-kits.py
 node _scripts/build.js
 ```
 
-Els PDF es guarden en `_assets/activitats/kits/`, es versionen i es copien al web
-en qualsevol build, també sense `--pdf`. Són diferents de les versions imprimibles
-generals de les guies docents: els fulls de l’alumnat no inclouen les respostes.
-El generador comprova els límits de la quadrícula i l’equivalència de les solucions
-amb l’objectiu; en refactorització exigeix la mateixa seqüència d’ordres.
+Los PDF se guardan en `_assets/activitats/kits/`, se versionan y se copian al sitio
+en cualquier build, también sin `--pdf`. Son distintos de las versiones imprimibles
+generales de las guías docentes: las hojas del alumnado no incluyen las respuestas.
+El generador comprueba los límites de la cuadrícula y la equivalencia de las soluciones
+con el objetivo; en refactorización exige la misma secuencia de órdenes.
 
-En Tale-Bot, els camps interns `Mode`, `Capses`, `Metes` i `Comparacio`
-permeten dibuixar els nous taulers. El simulador del generador comprova també
-les espentes, les col·lisions i les posicions finals de totes les capses.
+En Tale-Bot, los campos internos `Mode`, `Capses`, `Metes` y `Comparacio`
+permiten dibujar los nuevos tableros. El simulador del generador comprueba también
+los empujes, las colisiones y las posiciones finales de todas las cajas.
 
-Coding Set incorpora funcions i bucles parcials. El camp intern `Funcio`
-conté la definició i `Principal` conté el programa de referència. `F` és una
-crida interna, que el generador representa amb la icona de crida. La simulació
-expandeix les crides dins dels bucles i compara totes les posicions i orientacions
-amb la ruta objectiu; no només la casella final.
+Coding Set incorpora funciones y bucles parciales. El campo interno `Funcio`
+contiene la definición y `Principal` contiene el programa de referencia. `F` es una
+llamada interna, que el generador representa con el icono de llamada. La simulación
+expande las llamadas dentro de los bucles y compara todas las posiciones y orientaciones
+con la ruta objetivo; no solo la casilla final.
 
-Les icones font editables estan en `_assets/activitats/icones/`. El generador
-les llig amb librsvg per mantindre el dibuix vectorial en els PDF i SVG generats.
-No les sobreescriu. Consulteu el README d’eixa carpeta abans de modificar-les.
+Los iconos fuente editables están en `_assets/activitats/icones/`. El generador
+los lee con librsvg para mantener el dibujo vectorial en los PDF y SVG generados.
+No los sobrescribe. Consultad el README de esa carpeta antes de modificarlos.
+
+## Codey Rocky: una actividad, tres entornos
+
+Las ocho fichas `cr-` comparten tres ejercicios para papel, simulador y robot.
+La fuente única de textos, piezas iniciales, soluciones y escenarios es
+`sim/codey-activities.json`. Los Markdown `cr-`, los proyectos JSON y los PDF son
+generados: editad la fuente compartida y regeneradlos, sin copiar los ejercicios.
+
+```sh
+node _scripts/generate-codey-activities.js
+node _scripts/build.js
+# Amb el servidor local actiu i Playwright disponible:
+node _scripts/render-codey-activity-blocks.js
+python3 _scripts/generate-codey-pdfs.py
+node _scripts/build.js
+node _scripts/test.js
+```
+
+El renderizador acepta `--playwright-module /ruta/al/modulo`, `CODEY_CHROMIUM`
+y `CODEY_SIM_URL` si hace falta indicar el navegador o el servidor. El generador de PDF
+necesita reportlab, pypdf y cairosvg. Usa las fuentes corporativas locales y las
+piezas del mismo editor nativo.
+
+Cada ficha tiene dos páginas A4. El recopilatorio contiene 16 páginas y el solucionario docente
+separado, ocho. Los originales se guardan en `output/pdf/` y las copias web en
+`_assets/activitats/kits/`. Hay espacio para predecir, registrar el resultado y
+anotar la dificultad, el cambio probado y la duda. Las fichas de construcción
+incorporan un espacio para dibujar el programa.
+
+Los enlaces al simulador cargan el programa inicial y el escenario del mismo
+ejercicio; no cargan la solución. Recargar el mismo enlace conserva el trabajo
+guardado. En el robot las piezas se reconstruyen en mBlock: los JSON del simulador no
+se cargan en el dispositivo. Los valores físicos se miden y se calibran.

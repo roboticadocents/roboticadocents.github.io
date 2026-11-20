@@ -26,7 +26,7 @@ function RobotPage({
   statusSourceLabel = ''
 } = {}) {
   const r = cleanRoot(root);
-  const activitiesHTML = ['tale-bot', 'coding-set'].includes(robotSlug) ? `
+  const activitiesHTML = ['tale-bot', 'coding-set', 'codey-rocky'].includes(robotSlug) ? `
     <section id="activitats" data-robot-activities aria-labelledby="activities-heading">
       <header class="robot-tutorials-heading">
         <div>
@@ -97,7 +97,7 @@ function RobotPage({
     <div class="robot-overview-grid">
       <div class="robot-overview-lead">
         <p>${robotLead}</p>
-        ${['tale-bot', 'coding-set'].includes(robotSlug) ? `<p class="robot-simulator-link"><a class="btn-primary" href="${r}sim/index.html?robot=${escapeAttr(robotSlug)}">Probar el simulador interactivo de ${escapeHTML(title)}</a></p>` : ''}
+        ${['tale-bot', 'coding-set', 'codey-rocky', 'spike'].includes(robotSlug) ? `<p class="robot-simulator-link"><a class="btn-primary" href="${r}sim/index.html?robot=${escapeAttr(robotSlug)}">Probar el simulador interactivo de ${escapeHTML(title)}</a></p>` : ''}
       </div>${highlightHTML}
     </div>
   </section>

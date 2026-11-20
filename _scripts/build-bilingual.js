@@ -73,6 +73,7 @@ function loadMaps() {
 
 const SIMPLE_PAIRS = [
   ['/', '/es/'],
+  ['/presencial/', '/es/presencial/'],
   ['/activitat/', '/es/actividad/'],
   ['/situacio/', '/es/situacion/'],
   ['/tutorial/', '/es/tutorial/'],
@@ -80,6 +81,7 @@ const SIMPLE_PAIRS = [
   ['/robot/', '/es/robot/'],
   ['/imprimir/', '/es/imprimir/'],
   ['/sim/', '/es/sim/'],
+  ['/sim/muntatge-barrera/', '/es/sim/montaje-barrera/'],
   ['/pensament-computacional/', '/es/pensamiento-computacional/'],
   ['/situacions-aprenentatge/', '/es/situaciones-aprendizaje/']
 ];
@@ -113,7 +115,7 @@ function caToEs(p, legacy) {
 
 function esToCa(p, inverse) {
   for (const [ca, es] of SIMPLE_PAIRS) {
-    if (p === es) return ca;
+    if (p === es || p === es.replace(/^\/es/, '')) return ca;
   }
   const parts = splitPath(p);
   if (parts[0] === 'es') parts.shift();

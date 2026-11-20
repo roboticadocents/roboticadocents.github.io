@@ -29,6 +29,7 @@ const { SituationPage } = require('../_templates/pages/situation-page');
 const { RedirectPage } = require('../_templates/pages/redirect-page');
 const { SimPage } = require('../_templates/pages/sim-page');
 const { PresencialPage } = require('../_templates/pages/presencial-page');
+const { SpikeBuildPage } = require('../_templates/pages/spike-build-page');
 const { Document } = require('../_templates/layout/document');
 const { escapeHTML, escapeAttr } = require('../_templates/layout/utils');
 
@@ -37,7 +38,8 @@ const DIST_DIR = path.resolve(ROOT_DIR, 'dist');
 let includePDFs = false;
 const activityRobots = {
   tb: ['tale-bot', 'Tale-Bot'],
-  cs: ['coding-set', 'Coding Set']
+  cs: ['coding-set', 'Coding Set'],
+  cr: ['codey-rocky', 'Codey Rocky']
 };
 
 function buildContentRedirects(route) {
@@ -141,7 +143,7 @@ function buildActivities() {
   cleanSubdirectories('actividad');
   const dir = path.join(ROOT_DIR, '_content/activitats');
   const files = fs.readdirSync(dir)
-    .filter(f => /^(pc|tb|cs)-.+\.md$/.test(f))
+    .filter(f => /^(pc|tb|cs|cr)-.+\.md$/.test(f))
     .sort();
   const items = [];
 
@@ -220,6 +222,7 @@ function buildTutorials() {
     ce: ['coding-express', 'Coding Express'],
     cr: ['codey-rocky', 'Codey Rocky'],
     cs: ['coding-set', 'Coding Set'],
+  cr: ['codey-rocky', 'Codey Rocky'],
     mb: ['microbit', 'Micro:bit'],
     sp: ['spike', 'Spike'],
     tb: ['tale-bot', 'Tale-Bot']
@@ -688,6 +691,7 @@ async function build({ pdf = false } = {}) {
   writeHTML('index.html', HomePage());
   // Acceso directo compartido con los participantes; no se añade a los menús.
   writeHTML('presencial/index.html', PresencialPage());
+  writeHTML('sim/montaje-barrera/index.html', SpikeBuildPage());
   writeHTML('pensamiento-computacional/index.html', ActivitiesCatalogPage({
     activitats: activitats.filter(item => item.slug.startsWith('pc-'))
   }));

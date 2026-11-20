@@ -1,53 +1,53 @@
 ---
 active: false
-title: "Nom de la funció o operació"
-description: "Resum de l’operació i del resultat esperat."
+title: "Nombre de la función u operación"
+description: "Resumen de la operación y del resultado esperado."
 robot: "slug-del-robot"
-level: "Iniciació"
+level: "Iniciación"
 duration: "10 min"
 order: 99
 image: "_assets/tutorials/nom.webp"
 ---
 
-## 🎯 Què aprendrem?
+## 🎯 ¿Qué vamos a aprender?
 
-Explica breument què permet fer aquest manual i amb quin model.
+Explica brevemente qué permite hacer este manual y con qué modelo.
 
-- Primera operació concreta.
-- Segona operació concreta.
+- Primera operación concreta.
+- Segunda operación concreta.
 
-<!-- Afegiu ací la portada decorativa amb alt buit: ![](../../_assets/tutorials/nom.webp). No la repetiu dins dels passos. -->
+<!-- Añadid aquí la portada decorativa con alt vacío: ![](../../_assets/tutorials/nom.webp). No la repitáis dentro de los pasos. -->
 
-## 🧰 Materials i preparació
+## 🧰 Materiales y preparación
 
-- Robot i alimentació necessaris.
-- Components, cables o programari requerits.
+- Robot y alimentación necesarios.
+- Componentes, cables o software requeridos.
 
-Indica les comprovacions prèvies d’encesa, connexió i compatibilitat.
+Indica las comprobaciones previas de encendido, conexión y compatibilidad.
 
-## 🧩 Funcions i controls
+## 🧩 Funciones y controles
 
-- Botó, sensor o connexió que s’utilitza.
-- Funció i límit rellevants per a l’operació.
+- Botón, sensor o conexión que se utiliza.
+- Función y límite relevantes para la operación.
 
-## 👣 Pas a pas
+## 👣 Paso a paso
 
-### 1. Connecteu i prepareu
+### 1. Conectad y preparad
 
-Descriu les connexions i l’estat inicial. Indica com comprovar que el dispositiu està preparat.
+Describe las conexiones y el estado inicial. Indica cómo comprobar que el dispositivo está preparado.
 
-### 2. Executeu l’operació
+### 2. Ejecutad la operación
 
-Explica les accions en ordre i mostra el programa amb la tanca corresponent. Indica la resposta esperada i com aturar-lo.
+Explica las acciones en orden y muestra el programa con la cerca correspondiente. Indica la respuesta esperada y cómo detenerlo.
 
-## 🧪 Comprovació i resolució de problemes
+## 🧪 Comprobación y resolución de problemas
 
-Indica com comprovar el resultat i què revisar si falla: alimentació, connexions, ports, versió del programari o ordre de les instruccions.
+Indica cómo comprobar el resultado y qué revisar si falla: alimentación, conexiones, puertos, versión del software u orden de las instrucciones.
 
-## 🛡️ Ús i seguretat
+## 🛡️ Uso y seguridad
 
-Inclou les precaucions específiques de manipulació, alimentació i moviment.
+Incluye las precauciones específicas de manipulación, alimentación y movimiento.
 
-## 🔗 Fonts i límits
+## 🔗 Fuentes y límites
 
-Enllaça la documentació oficial del fabricant i precisa els models, versions i accessoris compatibles.
+Enlaza la documentación oficial del fabricante y precisa los modelos, versiones y accesorios compatibles.

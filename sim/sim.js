@@ -105,6 +105,7 @@
   const tbOnlyTools = Array.from(document.querySelectorAll('[data-tb-only]'));
   const rotateStartBtn = document.querySelector('[data-rotate-start]');
   const resetRobotBtn = document.querySelector('[data-reset-robot]');
+  const resetBoardBtn = document.querySelector('[data-reset-board]');
 
   const openEmojiDialogBtn = document.querySelector('[data-open-emoji-dialog]');
   const emojiToolIconEl = document.querySelector('[data-emoji-tool-icon]');
@@ -578,10 +579,10 @@
         btn.setAttribute('tabindex', idx === state.activeCellIndex ? '0' : '-1');
 
         const parts = [`Casilla ${coord}`];
-        if (isStart) parts.push('Inici del robot');
+        if (isStart) parts.push('Inicio del robot');
         if (isFlag) parts.push('Bandera de destino');
         if (isObs) parts.push('Obstáculo físico');
-        if (isBox) parts.push('Caixa per transportar');
+        if (isBox) parts.push('Caja para transportar');
         if (oid) parts.push(`Emoji: ${oid.icon}`);
         btn.setAttribute('aria-label', parts.join(', '));
 
@@ -748,6 +749,14 @@
     updateRobotActor();
     renderTaleBotUI();
     renderCodingSetUI();
+  }
+
+  function resetBoard() {
+    if (state.isRunning) stopExecution();
+    clearCanvas();
+    robotActor.classList.remove('is-dancing', 'is-bumped');
+    resetRobotToStart(true);
+    playTone(500, 85, 'sine', 0.06);
   }
 
   // =========================================================
@@ -1429,7 +1438,7 @@
 
   function updatePlayButtonsState() {
     tbPlayBtn.classList.toggle('is-running', state.isRunning);
-    if (tbPlayLabel) tbPlayLabel.textContent = state.isRunning ? 'Atura' : 'Play';
+    if (tbPlayLabel) tbPlayLabel.textContent = state.isRunning ? 'Detener' : 'Play';
     csPlayBtn.classList.toggle('is-running', state.isRunning);
   }
 
@@ -1566,7 +1575,7 @@
   }
 
   function switchRobot(robotSlug, pushUrl = true) {
-    if (!['tale-bot', 'coding-set'].includes(robotSlug)) robotSlug = 'tale-bot';
+    if (!['tale-bot', 'coding-set', 'codey-rocky', 'spike'].includes(robotSlug)) robotSlug = 'tale-bot';
     if (state.isRunning) stopExecution();
     state.robot = robotSlug;
 
@@ -1595,8 +1604,13 @@
       }
     }
 
+    const codeyWorkspace = document.querySelector('[data-codey-workspace]');
+    if (codeyWorkspace) codeyWorkspace.hidden = robotSlug !== 'codey-rocky';
+    const spikeWorkspace = document.querySelector('[data-spike-workspace]');
+    if (spikeWorkspace) spikeWorkspace.hidden = robotSlug !== 'spike';
+    document.dispatchEvent(new CustomEvent('simrobotchange', { detail: { robot: robotSlug } }));
     updateAccessoryButtons();
-    resetRobotToStart(true);
+    if (!['codey-rocky', 'spike'].includes(robotSlug)) resetRobotToStart(true);
 
     if (pushUrl && window.history && window.history.replaceState) {
       const url = new URL(window.location.href);
@@ -1648,10 +1662,16 @@
     playTone(540, 70, 'sine', 0.06);
   });
 
-  resetRobotBtn.addEventListener('click', () => {
-    resetRobotToStart(true);
-    playTone(480, 80, 'sine', 0.06);
-  });
+  if (resetRobotBtn) {
+    resetRobotBtn.addEventListener('click', () => {
+      resetRobotToStart(true);
+      playTone(480, 80, 'sine', 0.06);
+    });
+  }
+
+  if (resetBoardBtn) {
+    resetBoardBtn.addEventListener('click', resetBoard);
+  }
 
   togglePenBtn.addEventListener('click', () => {
     state.penEnabled = !state.penEnabled;
@@ -1776,9 +1796,9 @@
   setupSpatialNavigation(gridCellsEl);
   setupSpatialNavigation(csMainSlotsEl);
 
-  // Inicialització segons ?robot=tale-bot | coding-set
+  // Inicialització segons el robot indicat a la URL.
   renderBoardHeaders();
   const initialParams = new URLSearchParams(window.location.search);
-  const initialRobot = initialParams.get('robot') === 'coding-set' ? 'coding-set' : 'tale-bot';
+  const initialRobot = ['coding-set', 'codey-rocky', 'spike'].includes(initialParams.get('robot')) ? initialParams.get('robot') : 'tale-bot';
   switchRobot(initialRobot, false);
 })();

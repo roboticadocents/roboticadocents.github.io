@@ -1,13 +1,15 @@
 'use strict';
 
 const { escapeHTML, escapeAttr, cleanRoot } = require('../layout/utils');
+const { CodeyWorkspace } = require('../components/codey-workspace');
+const { SpikeWorkspace } = require('../components/spike-workspace');
 const { getSimSvgs } = require('../../_scripts/lib/tangible-blocks');
 
 function SimPage({ root = '../' } = {}) {
   const r = cleanRoot(root);
   const svgs = getSimSvgs();
-  const title = 'Simulador · Tale-Bot y Coding Set | Robótica²⁰⁰';
-  const description = 'Aplicación de simulación para Tale-Bot Pro y Matatalab Coding Set.';
+  const title = 'Simulador · Tale-Bot, Coding Set, Codey Rocky y SPIKE Prime | Robótica²⁰⁰';
+  const description = 'Aplicación de simulación para Tale-Bot Pro, Matatalab Coding Set, Codey Rocky y SPIKE Prime.';
 
   return `<!DOCTYPE html>
 <html lang="es">
@@ -20,9 +22,22 @@ function SimPage({ root = '../' } = {}) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${r}_css/styles.css?v=10">
-  <link rel="stylesheet" href="${r}sim/sim.css?v=4">
+  <link rel="stylesheet" href="${r}sim/sim.css?v=6">
   <link rel="icon" type="image/svg+xml" href="${r}_assets/icons/logo.svg">
-  <script defer src="${r}sim/sim.js?v=4"></script>
+  <script defer src="${r}sim/sim.js?v=8"></script>
+  <link rel="stylesheet" href="${r}sim/codey.css?v=10">
+  <script defer src="${r}sim/codey-engine.js?v=7"></script>
+  <script defer src="${r}sim/codey-blocks.js?v=3"></script>
+  <script defer src="${r}sim/vendor/scratch-blocks/blockly_compressed_vertical.js"></script>
+  <script defer src="${r}sim/vendor/scratch-blocks/blocks_compressed.js"></script>
+  <script defer src="${r}sim/vendor/scratch-blocks/blocks_compressed_vertical.js"></script>
+  <script defer src="${r}sim/vendor/scratch-blocks/messages.js"></script>
+  <script defer src="${r}sim/vendor/scratch-blocks/messages-es.js"></script>
+  <script defer src="${r}sim/codey-native-blocks.js?v=3"></script>
+  <script defer src="${r}sim/codey.js?v=11"></script>
+  <link rel="stylesheet" href="${r}sim/spike.css?v=2">
+  <script defer src="${r}sim/spike-engine.js?v=2"></script>
+  <script defer src="${r}sim/spike.js?v=2"></script>
 </head>
 <body class="sim-app-body">
   <header class="sim-topbar" data-sim-hero data-active-robot="tale-bot">
@@ -61,6 +76,10 @@ function SimPage({ root = '../' } = {}) {
         <img src="${r}_assets/icons/coding-set.webp" alt="" class="sim-robot-tab-icon" width="28" height="28">
         <span class="sim-robot-tab-name">Coding Set</span>
       </button>
+      <button type="button" role="tab" id="tab-codey-rocky" class="sim-robot-tab" aria-selected="false" aria-controls="panel-controls-codey-rocky" tabindex="-1" data-robot-tab="codey-rocky">
+        <img src="${r}_assets/icons/codey-rocky.webp" alt="" class="sim-robot-tab-icon" width="28" height="28"><span class="sim-robot-tab-name">Codey Rocky</span>
+      </button>
+      <button type="button" role="tab" id="tab-spike" class="sim-robot-tab" aria-selected="false" aria-controls="panel-controls-spike" tabindex="-1" data-robot-tab="spike"><img src="${r}_assets/icons/spike.webp" alt="" class="sim-robot-tab-icon" width="28" height="28"><span class="sim-robot-tab-name">SPIKE Prime</span></button>
     </div>
 
     <div class="sim-topbar-end">
@@ -80,16 +99,12 @@ function SimPage({ root = '../' } = {}) {
   </header>
 
   <main id="page-content" class="sim-workspace" data-sim-workspace data-robot="tale-bot">
-    <h1 class="visually-hidden">Simulador de Tale-Bot Pro y Coding Set</h1>
+    <h1 class="visually-hidden">Simulador de Tale-Bot Pro, Coding Set, Codey Rocky y SPIKE Prime</h1>
 
     <!-- PANELL ESQUERRE: BARRA D'EINES VERTICAL ESQUERRA + TAPÍS 6x6 -->
     <div class="sim-stage-pane">
       <div class="sim-mat-toolbar" role="toolbar" aria-orientation="vertical" aria-label="Herramientas del tapete">
         <div class="sim-toolbar-section" role="group" aria-label="Elementos del tapete" data-mat-tools>
-          <button type="button" class="sim-tool-btn is-active" aria-pressed="true" data-mat-tool="robot">
-            <span aria-hidden="true">📍</span>
-            <span>Robot</span>
-          </button>
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-mat-tool="flag">
             <span aria-hidden="true">🚩</span>
             <span>Bandera</span>
@@ -118,24 +133,20 @@ function SimPage({ root = '../' } = {}) {
 
         <hr class="sim-toolbar-divider" aria-hidden="true">
 
-        <div class="sim-toolbar-section" role="group" aria-label="Posición y accesorios">
+        <div class="sim-toolbar-section sim-draw-controls" role="group" aria-label="Robot y accesorios">
+          <button type="button" class="sim-tool-btn is-active" aria-pressed="true" data-mat-tool="robot">
+            <span aria-hidden="true">📍</span>
+            <span>Robot</span>
+          </button>
           <button type="button" class="sim-tool-btn" data-rotate-start="left" aria-label="Girar la orientación inicial 90 grados">
             <span aria-hidden="true">↺</span>
             <span>90°</span>
-          </button>
-          <button type="button" class="sim-tool-btn" data-reset-robot aria-label="Volver el robot a la casilla inicial">
-            <span aria-hidden="true">⏮</span>
-            <span>Inicio</span>
           </button>
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-tb-toggle-arms data-tb-only>
             <span aria-hidden="true">🦾</span>
             <span>Brazos</span>
           </button>
-        </div>
 
-        <hr class="sim-toolbar-divider" aria-hidden="true">
-
-        <div class="sim-toolbar-section sim-draw-controls" role="group" aria-label="Rotulador y dibujo">
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-toggle-pen>
             <span aria-hidden="true">✏️</span>
             <span>Rotulador</span>
@@ -147,9 +158,24 @@ function SimPage({ root = '../' } = {}) {
             <button type="button" class="sim-color-swatch" style="--swatch:#9333ea" data-pen-color="#9333ea" aria-label="Lila" aria-pressed="false"></button>
             <button type="button" class="sim-color-swatch" style="--swatch:#e11d48" data-pen-color="#e11d48" aria-label="Rojo" aria-pressed="false"></button>
           </div>
+        </div>
+
+        <hr class="sim-toolbar-divider" aria-hidden="true">
+
+        <div class="sim-toolbar-section" role="group" aria-label="Acciones del tablero">
           <button type="button" class="sim-tool-btn" data-clear-drawing aria-label="Limpiar el tablero y el dibujo">
             <span aria-hidden="true">🧹</span>
             <span>Limpiar</span>
+          </button>
+          <button
+            type="button"
+            class="sim-tool-btn"
+            data-reset-board
+            aria-label="Reiniciar el tablero: devuelve el robot y las cajas a la posición inicial y borra el dibujo"
+            title="Devuelve el robot y las cajas a la posición inicial y borra el trazo del rotulador"
+          >
+            <span aria-hidden="true">🔄</span>
+            <span>Reiniciar</span>
           </button>
         </div>
 
@@ -504,6 +530,8 @@ function SimPage({ root = '../' } = {}) {
       </div>
 
     </div>
+    ${CodeyWorkspace({ root: r })}
+    ${SpikeWorkspace()}
   </main>
 
   <!-- Diàleg emergent (Popover Top-Layer) per seleccionar qualsevol emoji per al tauler de Tale-Bot -->

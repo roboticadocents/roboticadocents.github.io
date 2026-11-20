@@ -1,0 +1,94 @@
+{
+  "type": "robotica-codey",
+  "version": 2,
+  "program": {
+    "start": [
+      {
+        "id": "act-56",
+        "type": "if",
+        "power": 20,
+        "left": 10,
+        "right": 10,
+        "seconds": 0.2,
+        "count": 3,
+        "sensor": "light",
+        "compare": "<",
+        "threshold": 40,
+        "value": "",
+        "body": [],
+        "then": [
+          {
+            "id": "act-54",
+            "type": "text",
+            "power": 20,
+            "left": 10,
+            "right": 10,
+            "seconds": 0.2,
+            "count": 3,
+            "sensor": "light",
+            "compare": "<",
+            "threshold": 40,
+            "value": "ROJO",
+            "body": [],
+            "then": [],
+            "else": []
+          }
+        ],
+        "else": [
+          {
+            "id": "act-55",
+            "type": "text",
+            "power": 20,
+            "left": 10,
+            "right": 10,
+            "seconds": 0.2,
+            "count": 3,
+            "sensor": "light",
+            "compare": "<",
+            "threshold": 40,
+            "value": "OTRO",
+            "body": [],
+            "then": [],
+            "else": []
+          }
+        ],
+        "condition": {
+          "kind": "color",
+          "value": "blue"
+        }
+      }
+    ],
+    "A": [],
+    "B": [],
+    "C": []
+  },
+  "environment": {
+    "light": 70,
+    "sound": 20,
+    "orientation": "down",
+    "obstacles": [],
+    "patches": [
+      {
+        "x": 100,
+        "y": 180,
+        "w": 180,
+        "h": 140,
+        "color": "red"
+      }
+    ],
+    "lines": []
+  },
+  "startPose": {
+    "x": 160,
+    "y": 250,
+    "angle": 0
+  },
+  "calibration": {
+    "background": null,
+    "line": null
+  },
+  "activity": {
+    "slug": "cr-depura-el-codigo",
+    "exercise": 2
+  }
+}

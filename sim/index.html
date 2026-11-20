@@ -3,15 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page-title">Simulador · Tale-Bot y Coding Set | Robótica²⁰⁰</title>
-  <meta name="description" content="Aplicación de simulación para Tale-Bot Pro y Matatalab Coding Set.">
+  <title id="page-title">Simulador · Tale-Bot, Coding Set, Codey Rocky y SPIKE Prime | Robótica²⁰⁰</title>
+  <meta name="description" content="Aplicación de simulación para Tale-Bot Pro, Matatalab Coding Set, Codey Rocky y SPIKE Prime.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../_css/styles.css?v=10">
-  <link rel="stylesheet" href="../sim/sim.css?v=4">
+  <link rel="stylesheet" href="../sim/sim.css?v=6">
   <link rel="icon" type="image/svg+xml" href="../_assets/icons/logo.svg">
-  <script defer src="../sim/sim.js?v=4"></script>
+  <script defer src="../sim/sim.js?v=8"></script>
+  <link rel="stylesheet" href="../sim/codey.css?v=10">
+  <script defer src="../sim/codey-engine.js?v=7"></script>
+  <script defer src="../sim/codey-blocks.js?v=3"></script>
+  <script defer src="../sim/vendor/scratch-blocks/blockly_compressed_vertical.js"></script>
+  <script defer src="../sim/vendor/scratch-blocks/blocks_compressed.js"></script>
+  <script defer src="../sim/vendor/scratch-blocks/blocks_compressed_vertical.js"></script>
+  <script defer src="../sim/vendor/scratch-blocks/messages.js"></script>
+  <script defer src="../sim/vendor/scratch-blocks/messages-es.js"></script>
+  <script defer src="../sim/codey-native-blocks.js?v=3"></script>
+  <script defer src="../sim/codey.js?v=11"></script>
+  <link rel="stylesheet" href="../sim/spike.css?v=2">
+  <script defer src="../sim/spike-engine.js?v=2"></script>
+  <script defer src="../sim/spike.js?v=2"></script>
 </head>
 <body class="sim-app-body">
   <header class="sim-topbar" data-sim-hero data-active-robot="tale-bot">
@@ -50,6 +63,10 @@
         <img src="../_assets/icons/coding-set.webp" alt="" class="sim-robot-tab-icon" width="28" height="28">
         <span class="sim-robot-tab-name">Coding Set</span>
       </button>
+      <button type="button" role="tab" id="tab-codey-rocky" class="sim-robot-tab" aria-selected="false" aria-controls="panel-controls-codey-rocky" tabindex="-1" data-robot-tab="codey-rocky">
+        <img src="../_assets/icons/codey-rocky.webp" alt="" class="sim-robot-tab-icon" width="28" height="28"><span class="sim-robot-tab-name">Codey Rocky</span>
+      </button>
+      <button type="button" role="tab" id="tab-spike" class="sim-robot-tab" aria-selected="false" aria-controls="panel-controls-spike" tabindex="-1" data-robot-tab="spike"><img src="../_assets/icons/spike.webp" alt="" class="sim-robot-tab-icon" width="28" height="28"><span class="sim-robot-tab-name">SPIKE Prime</span></button>
     </div>
 
     <div class="sim-topbar-end">
@@ -69,16 +86,12 @@
   </header>
 
   <main id="page-content" class="sim-workspace" data-sim-workspace data-robot="tale-bot">
-    <h1 class="visually-hidden">Simulador de Tale-Bot Pro y Coding Set</h1>
+    <h1 class="visually-hidden">Simulador de Tale-Bot Pro, Coding Set, Codey Rocky y SPIKE Prime</h1>
 
     <!-- PANELL ESQUERRE: BARRA D'EINES VERTICAL ESQUERRA + TAPÍS 6x6 -->
     <div class="sim-stage-pane">
       <div class="sim-mat-toolbar" role="toolbar" aria-orientation="vertical" aria-label="Herramientas del tapete">
         <div class="sim-toolbar-section" role="group" aria-label="Elementos del tapete" data-mat-tools>
-          <button type="button" class="sim-tool-btn is-active" aria-pressed="true" data-mat-tool="robot">
-            <span aria-hidden="true">📍</span>
-            <span>Robot</span>
-          </button>
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-mat-tool="flag">
             <span aria-hidden="true">🚩</span>
             <span>Bandera</span>
@@ -107,24 +120,20 @@
 
         <hr class="sim-toolbar-divider" aria-hidden="true">
 
-        <div class="sim-toolbar-section" role="group" aria-label="Posición y accesorios">
+        <div class="sim-toolbar-section sim-draw-controls" role="group" aria-label="Robot y accesorios">
+          <button type="button" class="sim-tool-btn is-active" aria-pressed="true" data-mat-tool="robot">
+            <span aria-hidden="true">📍</span>
+            <span>Robot</span>
+          </button>
           <button type="button" class="sim-tool-btn" data-rotate-start="left" aria-label="Girar la orientación inicial 90 grados">
             <span aria-hidden="true">↺</span>
             <span>90°</span>
-          </button>
-          <button type="button" class="sim-tool-btn" data-reset-robot aria-label="Volver el robot a la casilla inicial">
-            <span aria-hidden="true">⏮</span>
-            <span>Inicio</span>
           </button>
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-tb-toggle-arms data-tb-only>
             <span aria-hidden="true">🦾</span>
             <span>Brazos</span>
           </button>
-        </div>
 
-        <hr class="sim-toolbar-divider" aria-hidden="true">
-
-        <div class="sim-toolbar-section sim-draw-controls" role="group" aria-label="Rotulador y dibujo">
           <button type="button" class="sim-tool-btn" aria-pressed="false" data-toggle-pen>
             <span aria-hidden="true">✏️</span>
             <span>Rotulador</span>
@@ -136,9 +145,24 @@
             <button type="button" class="sim-color-swatch" style="--swatch:#9333ea" data-pen-color="#9333ea" aria-label="Lila" aria-pressed="false"></button>
             <button type="button" class="sim-color-swatch" style="--swatch:#e11d48" data-pen-color="#e11d48" aria-label="Rojo" aria-pressed="false"></button>
           </div>
+        </div>
+
+        <hr class="sim-toolbar-divider" aria-hidden="true">
+
+        <div class="sim-toolbar-section" role="group" aria-label="Acciones del tablero">
           <button type="button" class="sim-tool-btn" data-clear-drawing aria-label="Limpiar el tablero y el dibujo">
             <span aria-hidden="true">🧹</span>
             <span>Limpiar</span>
+          </button>
+          <button
+            type="button"
+            class="sim-tool-btn"
+            data-reset-board
+            aria-label="Reiniciar el tablero: devuelve el robot y las cajas a la posición inicial y borra el dibujo"
+            title="Devuelve el robot y las cajas a la posición inicial y borra el trazo del rotulador"
+          >
+            <span aria-hidden="true">🔄</span>
+            <span>Reiniciar</span>
           </button>
         </div>
 
@@ -493,6 +517,111 @@
       </div>
 
     </div>
+    <section class="cr-workspace" id="panel-controls-codey-rocky" role="tabpanel" aria-labelledby="tab-codey-rocky" data-codey-workspace hidden>
+    <div class="cr-stage-panel">
+      <div class="cr-section-heading"><h2>Codey Rocky</h2><button type="button" class="sim-btn sim-btn-outline" data-cr-reset>↺ Reiniciar el escenario</button></div>
+      <div class="cr-device">
+        <div class="cr-device-face"><canvas width="320" height="160" data-cr-led aria-label="Pantalla LED de 16 por 8 puntos"></canvas><span class="cr-rgb" data-cr-rgb role="img" aria-label="Indicador RGB verde"></span></div>
+        <div class="cr-device-buttons"><button type="button" data-cr-event="A">A</button><button type="button" data-cr-event="B">B</button><button type="button" data-cr-event="C">C</button><span>Pulsar un botón para activar su programa.</span></div>
+      </div>
+      <div class="cr-world-viewport"><canvas class="cr-world" width="800" height="500" data-cr-world tabindex="0" aria-label="Escenario de Rocky. Usa las flechas para mover el cursor y Espacio para aplicar la herramienta seleccionada."></canvas></div>
+      <div class="cr-sensors">
+        <label>Luz <output data-cr-light-value>70</output><input data-cr-sensor="light" type="range" min="0" max="100" value="70"></label>
+        <label>Sonido <output data-cr-sound-value>20</output><input data-cr-sensor="sound" type="range" min="0" max="100" value="20"></label>
+        <div class="cr-obstacle-reading">IR reflejado <strong data-cr-ir>0</strong><small>0–100 · crece al acercarse</small></div>
+        <div class="cr-obstacle-reading">Grises <strong data-cr-gray>—</strong><small>Modelo: 0 oscuro · 100 claro</small></div>
+        <div class="cr-obstacle-reading">Color <strong data-cr-color>—</strong></div>
+      </div>
+      <details class="cr-scene-settings"><summary>Editar el escenario y calibrar el sensor</summary><div class="cr-scene-settings-body">
+      <div class="cr-world-tools" role="group" aria-label="Edición del escenario">
+        <button type="button" class="sim-btn sim-btn-secondary" data-cr-tool="obstacle" aria-pressed="true">Obstáculo</button>
+        <button type="button" class="sim-btn sim-btn-outline" data-cr-tool="robot" aria-pressed="false">Posición inicial</button>
+        <button type="button" class="sim-btn sim-btn-outline" data-cr-tool="line" aria-pressed="false">Dibujar línea</button>
+        <button type="button" class="sim-btn sim-btn-outline" data-cr-tool="surface" aria-pressed="false">Superficie de color</button>
+        <button type="button" class="sim-btn sim-btn-outline" data-cr-tool="remove" aria-pressed="false">Quitar elemento</button>
+        <button type="button" class="sim-btn sim-btn-outline" data-cr-rotate>Girar el inicio 90°</button>
+      </div>
+      <details class="cr-track-settings" open><summary>Pista y sensor</summary>
+        <div class="cr-track-controls">
+          <label>Sensor <select data-cr-orientation><option value="front">Hacia delante · IR</option><option value="down">Hacia el suelo · grises y color</option></select></label>
+          <label>Pista <select data-cr-track><option value="none">Libre</option><option value="straight">Recta</option><option value="curve">Curvas</option><option value="circuit">Circuito cerrado</option></select></label>
+          <label>Anchura <input data-cr-line-width type="number" min="8" max="60" value="24" step="2"></label>
+          <label>Color <select data-cr-surface-color><option value="black">Negro</option><option value="white">Blanco</option><option value="red">Rojo</option><option value="green">Verde</option><option value="blue">Azul</option><option value="yellow">Amarillo</option><option value="cyan">Cian</option><option value="purple">Morado</option></select></label>
+          <button type="button" class="sim-btn sim-btn-outline" data-cr-clear-lines>Limpiar la pista</button>
+        </div>
+      </details>
+      <p class="cr-hint">Hacer clic o tocar el escenario con la herramienta seleccionada. Arrastrar para dibujar una línea. Se pueden editar obstáculos durante la ejecución.</p>
+      <details class="cr-calibration"><summary>Calibración de la línea</summary>
+        <p>Con el sensor hacia el suelo, sitúa el punto de lectura sobre el fondo y después sobre la línea.</p>
+        <div class="cr-track-controls"><button type="button" class="sim-btn sim-btn-outline" data-cr-sample="background">Medir el fondo</button><output data-cr-sample-background>—</output><button type="button" class="sim-btn sim-btn-outline" data-cr-sample="line">Medir la línea</button><output data-cr-sample-line>—</output><button type="button" class="sim-btn sim-btn-secondary" data-cr-apply-threshold>Aplicar el umbral medio</button></div>
+        <p data-cr-calibration-status role="status">Todavía no hay dos medidas.</p>
+      </details>
+      <p class="cr-model-note">Modelo didáctico simplificado: IR y grises son lecturas de 0 a 100, no centímetros ni un porcentaje de distancia. El punto azul indica el único sensor de superficie; el haz frontal incluye los bordes. Hay que calibrar lecturas, velocidades y giros con el robot físico.</p>
+      </div></details>
+    </div>
+    <div class="cr-program-panel">
+      <div class="cr-section-heading"><h2>Programa Codey</h2><button type="button" class="sim-btn sim-btn-outline" data-cr-clear>Vaciar</button></div>
+      <details class="cr-project"><summary>Guardar o abrir un proyecto</summary><p class="cr-hint">Piezas nativas de Scratch Blocks con un subconjunto de bloques Codey equivalentes a los de mBlock. Arrastra y encaja las piezas; el botón derecho permite duplicarlas o quitarlas. El simulador conserva el programa y las piezas sueltas.</p>
+      <div class="cr-project-controls"><button type="button" class="sim-btn sim-btn-outline" data-cr-export>Descargar el proyecto</button><label class="sim-btn sim-btn-outline">Abrir un proyecto<input class="visually-hidden" type="file" accept=".json,application/json" data-cr-import></label></div></details>
+      <details class="cr-activities"><summary data-cr-activity-summary>Actividades: papel, simulador y robot</summary>
+        <label class="cr-example-label">Actividad <select data-cr-activity><option value="">Elegir una actividad</option></select></label>
+        <label class="cr-example-label">Ejercicio <select data-cr-exercise disabled><option value="0">Elegir primero la actividad</option></select></label>
+        <p class="cr-hint" data-cr-activity-prompt>Resuelve el mismo reto en papel, en el simulador o con Codey Rocky.</p>
+        <div class="cr-project-controls"><button type="button" class="sim-btn sim-btn-secondary" data-cr-load-activity disabled>Cargar el ejercicio</button><a data-cr-activity-link hidden>Guía y ficha</a></div>
+      </details>
+      <label class="cr-example-label">Ejemplo <select data-cr-example>
+        <option value="line">Sigue el borde de la línea</option><option value="color">Párate sobre el rojo</option><option value="obstacle">Párate delante de un obstáculo</option><option value="while">Repite hasta encontrar un obstáculo</option><option value="buttons">Botones y caras</option><option value="light">Si baja la luz…</option><option value="route">Movimiento con tiempo</option><option value="blank">Programa nuevo</option>
+      </select></label>
+      <div class="cr-event-tabs" role="group" aria-label="Programa que quieres editar">
+        <button type="button" data-cr-script="start" aria-pressed="true"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v18M6 4h13l-3 4 3 4H6"/></svg><span>Al iniciar</span></button><button type="button" data-cr-script="A" aria-pressed="false"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v18M6 4h13l-3 4 3 4H6"/></svg><span>Botón A</span></button><button type="button" data-cr-script="B" aria-pressed="false"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v18M6 4h13l-3 4 3 4H6"/></svg><span>Botón B</span></button><button type="button" data-cr-script="C" aria-pressed="false"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v18M6 4h13l-3 4 3 4H6"/></svg><span>Botón C</span></button>
+      </div>
+      <div class="cr-program" data-cr-program></div>
+      <div class="cr-execution"><div class="cr-run-controls"><button type="button" class="sim-btn sim-btn-primary" data-cr-run>▶ Ejecutar</button><button type="button" class="sim-btn sim-btn-secondary" data-cr-step>Paso a paso</button><button type="button" class="sim-btn sim-btn-outline" data-cr-stop>■ Detener</button></div>
+      <p class="cr-condition-reading" data-cr-condition>La lectura y el resultado de la condición aparecerán aquí.</p>
+      <p class="cr-status" data-cr-status role="status" aria-live="polite">Preparado.</p>
+      </div>
+
+    </div>
+  </section>
+    <section class="cr-workspace sp-workspace" id="panel-controls-spike" role="tabpanel" aria-labelledby="tab-spike" data-spike-workspace hidden>
+    <div class="cr-stage-panel">
+      <div class="cr-section-heading"><div><h2>Barrera automática</h2><span class="sp-subtitle">SPIKE Prime · mecanismos</span></div><button type="button" class="sim-btn sim-btn-outline" data-sp-reset>↺ Reiniciar</button></div>
+      <div class="sp-connections"><a class="sp-build-link" href="montaje-barrera/" target="_blank" rel="noopener">Montaje ↗</a><span><b>A</b> Motor angular</span><span><b>D</b> Sensor de distancia</span></div>
+      <div class="sp-scene"><svg viewBox="0 0 720 430" role="img" aria-labelledby="sp-scene-title sp-scene-desc">
+        <title id="sp-scene-title">Mecanismo de una barrera con motor y sensor</title><desc id="sp-scene-desc">El brazo gira de 0 grados, cerrado, a 90 grados, abierto. El objeto delante del sensor se controla con las entradas de abajo.</desc>
+        <defs><pattern id="sp-stripes" width="48" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(-25)"><rect width="48" height="22" fill="#fff"/><rect width="24" height="22" fill="#ef4444"/></pattern></defs>
+        <rect x="1" y="1" width="718" height="428" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+        <path d="M30 360H690" stroke="#cbd5e1" stroke-width="3"/>
+        <path d="M230 50V280H460" fill="none" stroke="#cbd5e1" stroke-dasharray="5 6"/><path d="M230 150a130 130 0 0 1 130 130" fill="none" stroke="#cbd5e1" stroke-dasharray="5 6"/>
+        <text x="245" y="104" class="sp-svg-label">90° · abierta</text><text x="470" y="280" class="sp-svg-label">0° · cerrada</text>
+        <rect x="205" y="280" width="50" height="80" rx="8" fill="#facc15" stroke="#a16207" stroke-width="2"/>
+        <path d="M115 320C150 260 170 315 230 280M115 345C160 385 260 390 262 325" fill="none" stroke="#94a3b8" stroke-width="4"/>
+        <rect x="50" y="295" width="100" height="65" rx="12" fill="#facc15" stroke="#a16207" stroke-width="2"/><rect x="72" y="307" width="56" height="32" rx="5" fill="#fff"/><text x="83" y="329" class="sp-svg-label">HUB</text><text x="70" y="352" class="sp-svg-label">A · D</text>
+        <g data-sp-arm transform="rotate(0 230 280)"><rect x="230" y="270" width="230" height="20" rx="6" fill="url(#sp-stripes)" stroke="#475569" stroke-width="2"/></g>
+        <circle cx="230" cy="280" r="21" fill="#06b6d4" stroke="#155e75" stroke-width="3"/><path d="M218 280h24M230 268v24" stroke="#fff" stroke-width="5"/>
+        <rect x="246" y="308" width="35" height="31" rx="6" fill="#fff" stroke="#0891b2" stroke-width="2"/><circle cx="267" cy="317" r="5" fill="#0891b2"/><circle cx="267" cy="330" r="5" fill="#0891b2"/>
+        <line x1="284" y1="325" x2="412" y2="325" stroke="#0891b2" stroke-width="2" stroke-dasharray="5 5" data-sp-beam/>
+        <g data-sp-object><rect x="0" y="290" width="65" height="60" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><path d="M22 290v22h20v-22" fill="#bfdbfe" stroke="#2563eb"/><text x="32" y="380" text-anchor="middle" class="sp-svg-label">Objeto</text></g>
+        <text x="32" y="40" class="sp-svg-status" data-sp-scene-state>Cerrada</text>
+        <text x="32" y="65" class="sp-svg-label">Transmisión directa · 0° es la posición inicial</text>
+      </svg></div>
+      <div class="sp-readings"><div>Motor A <strong data-sp-angle>0°</strong></div><div>Distancia D <strong data-sp-distance-value>Sin objeto</strong></div></div>
+      <div class="sp-object-controls"><label><input type="checkbox" data-sp-present> Objeto delante del sensor</label><label>Distancia del objeto <output data-sp-distance-label>80 cm</output><input type="range" min="5" max="200" step="1" value="80" data-sp-distance></label></div>
+      <details class="cr-scene-settings"><summary>Montaje y propuesta de actividad</summary><div class="cr-scene-settings-body"><p>Hub fijo, motor en el puerto A y sensor de distancia en el D. El brazo va directamente al eje: 0° cierra y 90° abre. No hay ruedas ni desplazamiento del hub.</p><p><strong>Pruébalo:</strong> elige un ejemplo y despliega «SdA, reto y montaje» para ver la consigna y las pruebas. La guía de montaje explica cómo preparar la base, el brazo, el sensor y el cero del motor.</p><p>Modelo didáctico: velocidad aproximada, sin carga, colisiones ni engranajes. La distancia se controla manualmente entre 5 y 200 cm; sin objeto se considera la zona libre. Hay que ajustar el cero, el sentido y el montaje con el robot físico.</p></div></details>
+    </div>
+    <div class="cr-program-panel">
+      <div class="cr-section-heading"><h2>Programa el mecanismo</h2><button type="button" class="sim-btn sim-btn-outline" data-sp-clear>Vaciar</button></div>
+      <details class="cr-project"><summary>Guardar o abrir un proyecto</summary><p class="cr-hint">Se guarda automáticamente en este navegador. El JSON es del simulador, no de la app SPIKE.</p><div class="cr-project-controls"><button type="button" class="sim-btn sim-btn-outline" data-sp-export>Descargar el proyecto</button><label class="sim-btn sim-btn-outline">Abrir un proyecto<input class="visually-hidden" type="file" accept=".json,application/json" data-sp-import></label></div></details>
+      <label class="cr-example-label">Ejemplo <select data-sp-example><option value="sequence">Acción y retorno · Movimiento con motivo</option><option value="automatic">Barrera con detección · ampliación</option><option value="condition">Sensor y respuesta · Biblioteca</option><option value="repeat">Cuatro movimientos · Mosaico</option><option value="blank">Programa nuevo</option><option value="custom" disabled>Proyecto propio</option></select></label>
+      <details class="sp-activity"><summary>SdA, reto y montaje</summary><div class="sp-resource-links"><a data-sp-sda-link href="../situacion/sp-python-motors/" target="_blank" rel="noopener">Abre la SdA ↗</a><a href="montaje-barrera/" target="_blank" rel="noopener">Guía de montaje ↗</a></div><div class="sp-activity-body"><p><strong data-sp-sda-title></strong><br><span data-sp-sda-lesson></span></p><p data-sp-task></p><p class="sp-adaptation" data-sp-adaptation></p></div></details>
+      <div class="sp-event"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v18M6 4h13l-3 4 3 4H6"/></svg> Cuando empieza</div>
+      <div class="cr-palette-families" role="group" aria-label="Bloques de SPIKE Prime"><details class="cr-palette-family cr-category-motion" name="sp-block-family"><summary><span class="cr-category-dot" aria-hidden="true"></span>Motor</summary><div class="cr-palette"><button type="button" data-sp-add="motor" class="cr-category-motion"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 21V12a6 6 0 0 1 6-6h10M15 1l6 5-6 5"/></svg><span>Motor A a un ángulo</span></button></div></details><details class="cr-palette-family cr-category-sensor" name="sp-block-family"><summary><span class="cr-category-dot" aria-hidden="true"></span>Sensor</summary><div class="cr-palette"><button type="button" data-sp-add="waitUntil" class="cr-category-sensor"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17a9 9 0 1 1 18 0M5 17h14M12 13l4-5M6 9l1 1M18 9l-1 1"/><circle cx="12" cy="14" r="2"/></svg><span>Espera hasta que</span></button></div></details><details class="cr-palette-family cr-category-control" name="sp-block-family"><summary><span class="cr-category-dot" aria-hidden="true"></span>Control</summary><div class="cr-palette"><button type="button" data-sp-add="wait" class="cr-category-control"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg><span>Espera</span></button><button type="button" data-sp-add="if" class="cr-category-control"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 2 5 5-5 5-5-5 5-5ZM7 7H3v13h4M17 7h4v13h-4"/></svg><span>Si / si no</span></button><button type="button" data-sp-add="while" class="cr-category-control"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 6a9 9 0 1 0 2 9M19 2v5h-5M12 8l4 4-4 4-4-4 4-4Z"/></svg><span>Mientras</span></button><button type="button" data-sp-add="repeat" class="cr-category-control"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h12a4 4 0 0 1 0 8H8M8 4 4 8l4 4M12 12l-4 4 4 4"/></svg><span>Repite</span></button><button type="button" data-sp-add="forever" class="cr-category-control"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 12c-3-6-9-6-9 0s6 6 9 0 9-6 9 0-6 6-9 0Z"/></svg><span>Por siempre</span></button></div></details></div>
+      <p class="cr-hint">Añadir bloques al punto seleccionado. Abrir ⋯ para insertar, duplicar o mover.</p>
+      <div class="cr-edit-feedback"><span data-sp-edit-status role="status"></span><button type="button" class="cr-insert" data-sp-cancel-move hidden>Cancelar el movimiento</button></div>
+      <div class="cr-program" data-sp-program></div>
+      <div class="cr-execution"><div class="cr-run-controls"><button type="button" class="sim-btn sim-btn-primary" data-sp-run>▶ Ejecutar</button><button type="button" class="sim-btn sim-btn-secondary" data-sp-step>Paso a paso</button><button type="button" class="sim-btn sim-btn-outline" data-sp-stop>■ Detener</button></div><p class="cr-condition-reading" data-sp-condition>La lectura de la condición aparecerá aquí.</p><p class="cr-status" role="status" aria-live="polite" data-sp-status>Preparado.</p></div>
+    </div>
+  </section>
   </main>
 
   <!-- Diàleg emergent (Popover Top-Layer) per seleccionar qualsevol emoji per al tauler de Tale-Bot -->

@@ -1,0 +1,109 @@
+{
+  "type": "robotica-codey",
+  "version": 2,
+  "program": {
+    "start": [
+      {
+        "id": "act-106",
+        "type": "if",
+        "power": 20,
+        "left": 10,
+        "right": 10,
+        "seconds": 0.2,
+        "count": 3,
+        "sensor": "light",
+        "compare": "<",
+        "threshold": 40,
+        "value": "",
+        "body": [],
+        "then": [
+          {
+            "id": "act-104",
+            "type": "text",
+            "power": 20,
+            "left": 10,
+            "right": 10,
+            "seconds": 0.2,
+            "count": 3,
+            "sensor": "light",
+            "compare": "<",
+            "threshold": 40,
+            "value": "SI",
+            "body": [],
+            "then": [],
+            "else": []
+          }
+        ],
+        "else": [
+          {
+            "id": "act-105",
+            "type": "text",
+            "power": 20,
+            "left": 10,
+            "right": 10,
+            "seconds": 0.2,
+            "count": 3,
+            "sensor": "light",
+            "compare": "<",
+            "threshold": 40,
+            "value": "NO",
+            "body": [],
+            "then": [],
+            "else": []
+          }
+        ],
+        "condition": {
+          "kind": "or",
+          "left": {
+            "kind": "compare",
+            "op": "<",
+            "left": {
+              "kind": "sensor",
+              "name": "light"
+            },
+            "right": {
+              "kind": "number",
+              "value": 40
+            }
+          },
+          "right": {
+            "kind": "compare",
+            "op": ">",
+            "left": {
+              "kind": "sensor",
+              "name": "sound"
+            },
+            "right": {
+              "kind": "number",
+              "value": 60
+            }
+          }
+        }
+      }
+    ],
+    "A": [],
+    "B": [],
+    "C": []
+  },
+  "environment": {
+    "light": 20,
+    "sound": 20,
+    "orientation": "front",
+    "obstacles": [],
+    "patches": [],
+    "lines": []
+  },
+  "startPose": {
+    "x": 160,
+    "y": 250,
+    "angle": 0
+  },
+  "calibration": {
+    "background": null,
+    "line": null
+  },
+  "activity": {
+    "slug": "cr-condiciones-y-operadores",
+    "exercise": 2
+  }
+}
