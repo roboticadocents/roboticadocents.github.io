@@ -229,11 +229,13 @@ function isRedirectPage(html) {
 
 function inject(html, { selfPath, caPath, esPath, currentLang, currentLabel, alternateLabel, target }) {
   const alternateLang = currentLang === 'ca' ? 'es' : 'ca';
+  const current = `<strong aria-current="true" title="${currentLabel}">${currentLang === 'ca' ? 'VA' : 'ES'}</strong>`;
+  const other = `<a href="${target}" lang="${alternateLang}" hreflang="${alternateLang}" title="${alternateLabel}" onclick="try{localStorage.setItem('rd-lang','${alternateLang}')}catch(e){}">${alternateLang === 'ca' ? 'VA' : 'ES'}</a>`;
+  const [first, second] = currentLang === 'ca' ? [current, other] : [other, current];
   const selector = `<div class="lang-switch" role="group" aria-label="Idioma">`
-    + `<span>${currentLabel}</span>`
-    + `<a href="${target}" onclick="try{localStorage.setItem('rd-lang','${alternateLang}')}catch(e){}">${alternateLabel}</a>`
+    + `${first}<span class="lang-sep" aria-hidden="true">|</span>${second}`
     + `</div>`;
-  const style = `<style id="lang-switch-style">.lang-switch{display:inline-flex;align-items:center;gap:.35rem;padding:.35rem .6rem;border:1px solid #cbd5e1;border-radius:999px;background:#fff;font:600 .8rem/1.2 'Plus Jakarta Sans',system-ui,sans-serif;white-space:nowrap}.lang-switch span{color:#64748b}.lang-switch a{color:#2563eb;text-decoration:none}@media(max-width:760px){.header-inner{position:relative}.lang-switch{position:absolute;top:0;right:0;font-size:.7rem;padding:.3rem .5rem}}@media(max-width:420px){.lang-switch span{display:none}.lang-switch{font-size:.68rem;padding:.28rem .45rem}}</style>`;
+  const style = `<style id="lang-switch-style">.lang-switch{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .7rem;border:1px solid #cbd5e1;border-radius:999px;background:#fff;font:600 .8rem/1.2 'Plus Jakarta Sans',system-ui,sans-serif;white-space:nowrap;letter-spacing:.03em}.lang-switch strong{color:#0f172a;font-weight:800}.lang-switch .lang-sep{color:#cbd5e1}.lang-switch a{color:#2563eb;text-decoration:none}.lang-switch a:hover{text-decoration:underline}@media(max-width:760px){.header-inner{position:relative}.lang-switch{position:absolute;top:0;right:0;font-size:.72rem;padding:.3rem .55rem}}</style>`;
   const detect = `<script id="lang-detect">(function(){try{var p=localStorage.getItem('rd-lang');if(p)return;var l=((navigator.languages&&navigator.languages[0])||navigator.language||'').toLowerCase();var c=document.documentElement.lang;var t=null;if(l.indexOf('es')===0)t='es';else if(l.indexOf('ca')===0)t='ca';if(!t)return;localStorage.setItem('rd-lang',t);if(t===c)return;var h=document.querySelector('link[rel="alternate"][hreflang="'+t+'"]');if(h)location.replace(h.getAttribute('href'));}catch(e){}})();</script>`;
   const head = `${style}\n  <link rel="alternate" hreflang="ca" href="${caPath}">\n  <link rel="alternate" hreflang="es" href="${esPath}">\n  <link rel="alternate" hreflang="x-default" href="${caPath}">\n  ${detect}`;
   let out = html;
@@ -276,8 +278,8 @@ function addLanguageLinks(dir, lang, mapper, skip = new Set()) {
     if (isRedirectPage(html)) return;
     const pagePath = pagePathFromFile(dir, file);
     const alternate = lang === 'ca' ? mapper.caToEs(pagePath) : mapper.esToCa(pagePath);
-    const currentLabel = lang === 'ca' ? 'Català' : 'Castellano';
-    const alternateLabel = lang === 'ca' ? 'Castellano' : 'Català';
+    const currentLabel = lang === 'ca' ? 'Valencià' : 'Castellano';
+    const alternateLabel = lang === 'ca' ? 'Castellano' : 'Valencià';
     const esSelf = pagePath === '/' ? '/es/' : `/es${pagePath}`;
     const caPath = lang === 'ca' ? pagePath : alternate;
     const esPath = lang === 'ca' ? alternate : esSelf;
