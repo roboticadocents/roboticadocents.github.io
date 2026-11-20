@@ -76,3 +76,18 @@ jobs:
       - uses: actions/configure-pages@v5
       - uses: actions/deploy-pages@v4
         id: deployment
+
+  # La web publicada es compon des de `main` (valencià a /, castellà a /es/).
+  # Quan la branca castellana canvia i passa la validació, es torna a llançar
+  # el workflow de `main` perquè /es/ es publique actualitzat.
+  republicar-main:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/traduccion-es' && github.repository == 'roboticadocents/roboticadocents.github.io'
+    needs: site
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: Llançar la publicació bilingüe des de main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run site.yml --repo "${{ github.repository }}" --ref main
