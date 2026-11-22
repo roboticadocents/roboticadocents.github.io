@@ -74,5 +74,5 @@ for index,a in enumerate(activities,1):
  for i,ex in enumerate(a['exercises'],1):
   story += [para(f'{i}. {ex["title"]}','h'),diagram(ex,True,145),para(ex['answer'])]
  story += [Spacer(1,7),para('Criteri compartit: 1 punt pel resultat o proposta vàlida i 1 punt per la traça o justificació, en cada exercici. Al robot valoreu les lectures i els ajustos; no una coincidència física exacta amb el model.','small')]
-key=OUT/'cr-solucions-tres-entorns.pdf';document(key,story,'Solucionari');assert len(PdfReader(key).pages)==8,'El solucionari ha de tindre huit pàgines';shutil.copyfile(key,WEB/key.name)
-print('8 fitxes de 2 pàgines, recull de 16 pàgines i solucionari de 8 pàgines generats.')
+key=OUT/'cr-solucions-tres-entorns.pdf';document(key,story,'Solucionari');assert len(PdfReader(key).pages)==len(activities),'El solucionari ha de tindre una pàgina per activitat';shutil.copyfile(key,WEB/key.name)
+print(f'{len(activities)} fitxes de 2 pàgines, recull de {len(activities)*2} pàgines i solucionari de {len(activities)} pàgines generats.')

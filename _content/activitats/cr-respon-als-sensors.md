@@ -19,8 +19,8 @@ Distingir entrada i eixida i programar una resposta observable amb una condició
 ## 🧰 Materials i preparació
 
 - [Fitxa de l’alumnat (PDF, 2 pàgines A4)](_assets/activitats/kits/cr-respon-als-sensors.pdf).
-- [Recull de les huit activitats (PDF, 16 pàgines A4)](_assets/activitats/kits/cr-fitxes-tres-entorns.pdf).
-- [Solucionari separat del professorat (PDF, 8 pàgines A4)](_assets/activitats/kits/cr-solucions-tres-entorns.pdf).
+- [Recull de les 9 activitats (PDF, 18 pàgines A4)](_assets/activitats/kits/cr-fitxes-tres-entorns.pdf).
+- [Solucionari separat del professorat (PDF, 9 pàgines A4)](_assets/activitats/kits/cr-solucions-tres-entorns.pdf).
 - **Paper:** llapis, goma i fitxa. No cal robot ni dispositiu; les lectures donades són dades de la prova.
 - **Simulador:** navegador amb el [simulador de Codey Rocky](/sim/index.html?robot=codey-rocky&activity=cr-respon-als-sensors&exercise=1). Cada enllaç carrega les peces inicials i l’escenari de l’exercici.
 - **Robot:** Codey Rocky, mBlock, cable o connexió disponible, i els materials de la prova. Els JSON són del simulador: al robot es reconstrueixen les mateixes peces a mBlock.

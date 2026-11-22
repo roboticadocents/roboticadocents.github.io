@@ -4340,6 +4340,379 @@
           "id": "cr-segueix-la-vora-3"
         }
       ]
+    },
+    {
+      "slug": "cr-moviment-discret-continu",
+      "title": "Del pas al control dels motors",
+      "topic": "Algorismes",
+      "objective": "Distingir una ordre de pas o gir d’una ordre de motor amb potència i temps, i explicar quan s’atura el moviment.",
+      "sda": "cr-repartiment",
+      "robot": "Prepareu una zona lliure de la taula o del terra i marqueu l’inici. Comenceu a potència baixa. Programeu també C amb deixa de moure i proveu-lo abans del moviment continu; en l’exercici 2, B també atura. Reinicieu la posició i l’orientació abans de cada assaig. Mesureu amb regle o transportador i feu tres proves amb la mateixa configuració.",
+      "duration": "35–45 min",
+      "cycle": "Segon cicle",
+      "exercises": [
+        {
+          "id": "cr-moviment-discret-continu-1",
+          "title": "Un segon o dos?",
+          "prompt": "Prem A: avança al 20% durant 1 s. Torna al mateix inici, canvia només la durada a 2 s i prova-ho de nou. Prediu quin assaig arribarà més lluny i quan s’atura. Després varia només la potència i registra què canvia.",
+          "starter": {
+            "start": [],
+            "A": [
+              {
+                "id": "moviment-1",
+                "type": "forward",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "B": [],
+            "C": [
+              {
+                "id": "moviment-2",
+                "type": "stop",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ]
+          },
+          "solution": {
+            "start": [],
+            "A": [
+              {
+                "id": "moviment-1",
+                "type": "forward",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "B": [],
+            "C": [
+              {
+                "id": "moviment-2",
+                "type": "stop",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ]
+          },
+          "answer": "El moviment temporal s’atura en acabar la durada. En el model, amb la mateixa potència i sense obstacles, 2 s dona més recorregut que 1 s. Al robot comparem les mesures: el 20% és una potència demanada, no una distància ni una velocitat mesurada.",
+          "expected": {
+            "motor.speed": 0
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 4,
+          "event": "A",
+          "events": [
+            "A"
+          ]
+        },
+        {
+          "id": "cr-moviment-discret-continu-2",
+          "title": "Què fa el motor durant espera?",
+          "prompt": "Prem A i observa el moviment mentre espera 1 s i quan mostra FI. S’ha aturat? Prem B per aturar-lo. Repara la pila A perquè acabe parada després de l’espera i conserve el text FI.",
+          "starter": {
+            "start": [],
+            "A": [
+              {
+                "id": "moviment-3",
+                "type": "drive",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "moviment-4",
+                "type": "wait",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "moviment-5",
+                "type": "text",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "FI",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "B": [
+              {
+                "id": "moviment-6",
+                "type": "stop",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "C": [
+              {
+                "id": "moviment-7",
+                "type": "stop",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ]
+          },
+          "solution": {
+            "start": [],
+            "A": [
+              {
+                "id": "moviment-8",
+                "type": "drive",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "moviment-9",
+                "type": "wait",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "moviment-10",
+                "type": "stop",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              },
+              {
+                "id": "moviment-11",
+                "type": "text",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "FI",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "B": [
+              {
+                "id": "moviment-12",
+                "type": "stop",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "C": [
+              {
+                "id": "moviment-13",
+                "type": "stop",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ]
+          },
+          "answer": "El moviment sense durada manté els motors actius. Espera retarda la peça següent, però el robot continua movent-se, també quan mostra FI. B o C executen deixa de moure. Una solució afegeix deixa de moure després de l’espera i abans del text.",
+          "expected": {
+            "output.text": "FI",
+            "motor.speed": 0
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 4,
+          "event": "A",
+          "events": [
+            "A"
+          ]
+        },
+        {
+          "id": "cr-moviment-discret-continu-3",
+          "title": "Un gir que hem de mesurar",
+          "prompt": "Prem A: gira a l’esquerra al 20% durant 0,5 s. Recupera l’orientació inicial i prova 1 s. Quin gir és més gran? Podem donar per fet que és un gir de 90°? Tria i calibra una durada per acostar-te a un quart de volta.",
+          "starter": {
+            "start": [],
+            "A": [
+              {
+                "id": "moviment-14",
+                "type": "left",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 0.5,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "B": [],
+            "C": [
+              {
+                "id": "moviment-15",
+                "type": "stop",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ]
+          },
+          "solution": {
+            "start": [],
+            "A": [
+              {
+                "id": "moviment-14",
+                "type": "left",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 0.5,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ],
+            "B": [],
+            "C": [
+              {
+                "id": "moviment-15",
+                "type": "stop",
+                "power": 20,
+                "direction": "forward",
+                "seconds": 1,
+                "count": 3,
+                "value": "",
+                "body": [],
+                "then": [],
+                "else": []
+              }
+            ]
+          },
+          "answer": "A potència constant, el model gira més amb 1 s que amb 0,5 s. La peça temporal no fixa un angle de 90°: cal observar o mesurar l’angle i ajustar la durada. El temps calibrat al simulador no s’ha de traslladar directament al robot físic.",
+          "expected": {
+            "motor.speed": 0,
+            "motor.turn": 0
+          },
+          "environment": {
+            "light": 70,
+            "sound": 20,
+            "orientation": "front",
+            "obstacles": [],
+            "patches": [],
+            "lines": []
+          },
+          "startPose": {
+            "x": 160,
+            "y": 250,
+            "angle": 0
+          },
+          "seconds": 4,
+          "event": "A",
+          "events": [
+            "A"
+          ]
+        }
+      ]
     }
   ]
 }

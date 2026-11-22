@@ -144,7 +144,7 @@ Regenera `sim/index.html` i `dist/` amb `node _scripts/build.js`.
 
 ## Activitats compartides amb paper i robot
 
-La secció Activitats permet triar huit fitxes de tres exercicis. Els enllaços
+La secció Activitats permet triar nou fitxes de tres exercicis. Els enllaços
 `?robot=codey-rocky&activity=cr-…&exercise=1` obrin les peces inicials i l’escenari
 corresponents. La consigna, el PDF i la preparació amb el robot provenen de
 `sim/codey-activities.json`. No són tres activitats independents.

@@ -99,7 +99,7 @@ No les sobreescriu. Consulteu el README d’eixa carpeta abans de modificar-les.
 
 ## Codey Rocky: una activitat, tres entorns
 
-Les huit fitxes `cr-` comparteixen tres exercicis per a paper, simulador i robot.
+Les nou fitxes `cr-` comparteixen tres exercicis per a paper, simulador i robot.
 La font única de textos, peces inicials, solucions i escenaris és
 `sim/codey-activities.json`. Els Markdown `cr-`, els projectes JSON i els PDF són
 generats: editeu la font compartida i regenereu-los, sense copiar els exercicis.
@@ -119,8 +119,8 @@ i `CODEY_SIM_URL` si cal indicar el navegador o el servidor. El generador de PDF
 necessita reportlab, pypdf i cairosvg. Usa les fonts corporatives locals i les
 peces del mateix editor natiu.
 
-Cada fitxa té dues pàgines A4. El recull conté 16 pàgines i el solucionari docent
-separat, huit. Els originals es guarden a `output/pdf/` i les còpies web a
+Cada fitxa té dues pàgines A4. El recull conté 18 pàgines i el solucionari docent
+separat, nou. Els originals es guarden a `output/pdf/` i les còpies web a
 `_assets/activitats/kits/`. Hi ha espai per predir, registrar el resultat i
 anotar la dificultat, el canvi provat i el dubte. Les fitxes de construcció
 incorporen un espai per dibuixar el programa.

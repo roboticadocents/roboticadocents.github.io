@@ -139,7 +139,7 @@ for (const name of tutorials) {
   assert.ok(fs.existsSync(path.join(root, image)), `${name}: la portada local existe`);
 
   const introHTML = rendered.html.match(/<section[^>]*data-section-group="intro"[^>]*>([\s\S]*?)<\/section>/)[1];
-  assert.equal((rendered.html.match(/<figure class="sa-illustration">/g) || []).length, 1, `${name}: la portada decorativa només apareix una vegada`);
+  assert.equal((rendered.html.match(/<figure class="sa-illustration"><img[^>]*alt=""/g) || []).length, 1, `${name}: la portada decorativa només apareix una vegada`);
   assert.match(introHTML, /<img[^>]*alt=""/, `${name}: la portada decorativa pertany a la introducció`);
   assert.ok(introHTML.includes(image), `${name}: la introducció usa la portada de les metadades`);
   assert.doesNotMatch(rendered.html, /Instrucció no reconeguda|Falta «fi»/, `${name}: totes les instruccions físiques es renderitzen`);

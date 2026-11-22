@@ -1,0 +1,57 @@
+{
+  "type": "robotica-codey",
+  "version": 2,
+  "program": {
+    "start": [],
+    "A": [
+      {
+        "id": "moviment-14",
+        "type": "left",
+        "power": 20,
+        "direction": "forward",
+        "seconds": 0.5,
+        "count": 3,
+        "value": "",
+        "body": [],
+        "then": [],
+        "else": []
+      }
+    ],
+    "B": [],
+    "C": [
+      {
+        "id": "moviment-15",
+        "type": "stop",
+        "power": 20,
+        "direction": "forward",
+        "seconds": 1,
+        "count": 3,
+        "value": "",
+        "body": [],
+        "then": [],
+        "else": []
+      }
+    ]
+  },
+  "environment": {
+    "light": 70,
+    "sound": 20,
+    "orientation": "front",
+    "obstacles": [],
+    "patches": [],
+    "lines": []
+  },
+  "startPose": {
+    "x": 160,
+    "y": 250,
+    "angle": 0
+  },
+  "calibration": {
+    "background": null,
+    "line": null
+  },
+  "activity": {
+    "slug": "cr-moviment-discret-continu",
+    "exercise": 3
+  }
+}

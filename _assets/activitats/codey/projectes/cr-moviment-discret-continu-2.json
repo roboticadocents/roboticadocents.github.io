@@ -1,0 +1,94 @@
+{
+  "type": "robotica-codey",
+  "version": 2,
+  "program": {
+    "start": [],
+    "A": [
+      {
+        "id": "moviment-3",
+        "type": "drive",
+        "power": 20,
+        "direction": "forward",
+        "seconds": 1,
+        "count": 3,
+        "value": "",
+        "body": [],
+        "then": [],
+        "else": []
+      },
+      {
+        "id": "moviment-4",
+        "type": "wait",
+        "power": 20,
+        "direction": "forward",
+        "seconds": 1,
+        "count": 3,
+        "value": "",
+        "body": [],
+        "then": [],
+        "else": []
+      },
+      {
+        "id": "moviment-5",
+        "type": "text",
+        "power": 20,
+        "direction": "forward",
+        "seconds": 1,
+        "count": 3,
+        "value": "FI",
+        "body": [],
+        "then": [],
+        "else": []
+      }
+    ],
+    "B": [
+      {
+        "id": "moviment-6",
+        "type": "stop",
+        "power": 20,
+        "direction": "forward",
+        "seconds": 1,
+        "count": 3,
+        "value": "",
+        "body": [],
+        "then": [],
+        "else": []
+      }
+    ],
+    "C": [
+      {
+        "id": "moviment-7",
+        "type": "stop",
+        "power": 20,
+        "direction": "forward",
+        "seconds": 1,
+        "count": 3,
+        "value": "",
+        "body": [],
+        "then": [],
+        "else": []
+      }
+    ]
+  },
+  "environment": {
+    "light": 70,
+    "sound": 20,
+    "orientation": "front",
+    "obstacles": [],
+    "patches": [],
+    "lines": []
+  },
+  "startPose": {
+    "x": 160,
+    "y": 250,
+    "angle": 0
+  },
+  "calibration": {
+    "background": null,
+    "line": null
+  },
+  "activity": {
+    "slug": "cr-moviment-discret-continu",
+    "exercise": 2
+  }
+}
