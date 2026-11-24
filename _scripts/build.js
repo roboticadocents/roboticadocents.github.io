@@ -83,7 +83,7 @@ function prepareDist() {
   }
 
   // El quadern presencial es distribueix tal com s'ha revisat, també sense --pdf.
-  const handout = 'output/pdf/sessio-1-handout-revisat.pdf';
+  const handout = 'output/pdf/sessio-1-handout-compacte.pdf';
   const handoutDest = path.join(DIST_DIR, handout);
   fs.mkdirSync(path.dirname(handoutDest), { recursive: true });
   fs.copyFileSync(path.join(ROOT_DIR, handout), handoutDest);

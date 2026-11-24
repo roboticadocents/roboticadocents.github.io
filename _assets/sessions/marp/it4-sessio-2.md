@@ -53,31 +53,15 @@ Fonts: sessió 1 del repositori, sim/codey-activities.json, tutorials cr-primere
 
 ---
 
-## Recuperem una prova de la sessió 1
+## Repàs de la sessió 1
 
-Compartiu en parella:
+Amb Tale-Bot i Coding Set, preparàvem una seqüència de **passos i girs**.
 
-- Una **solució que podeu explicar**.
-- Un error que heu revisat i la prova que l’ha resolt.
-- Una possible aplicació amb el vostre grup.
+**Exemple:** avança dos passos, gira a la dreta i avança un pas. Si canviem l’ordre del gir, canvia el recorregut.
 
-**Quina pregunta va ajudar a entendre el programa?**
+Amb Codey Rocky també ordenarem les instruccions. Hui veurem com indicar **quant de temps es mou i quan s’atura**.
 
-<!-- Guió del formador: Aquest és el retorn del treball autònom que es va proposar al tancament de la sessió 1. Si algú no ha pogut practicar, pot partir d’un exemple resolt al taller. Recolliu dues o tres aportacions; no convertiu el retorn en una correcció de totes les fitxes. Font: it4-sessio-1.md, diapositiva de tancament. -->
-
----
-
-## Què ens emportarem?
-
-- Un moviment controlat amb **potència, temps i aturada**.
-- Una resposta programada a un **botó o una lectura**.
-- Una condició comprovada amb casos diferents.
-- Una correcció explicada amb les dades de la prova.
-- Una proposta per treballar un aprenentatge del nostre cicle.
-
-**Predir → Programar → Comprovar → Explicar → Revisar**
-
-<!-- Guió del formador: El fil principal va de la primera càrrega a una resposta basada en sensors i a una proposta d’aula. L’ús de no, i/o i línia és una ampliació final. Recupereu la rutina de la sessió anterior. Ara la predicció ha d’incloure l’entrada: amb quina lectura o quin esdeveniment esperem una resposta? L’èxit no és només que el robot faça alguna cosa, sinó poder explicar per què ho fa. -->
+<!-- Guió del formador: Recordeu en veu alta el recorregut de l’exemple. Podeu assenyalar-lo amb el dit sobre una quadrícula. Passeu al mapa de la sessió després del repàs. -->
 
 ---
 
@@ -93,7 +77,7 @@ Compartiu en parella:
 | 4. Respondre als sensors | Una lectura determina una resposta |
 | 5. Aplicar-ho a l’aula | Proposem una activitat i dos casos de prova |
 
-**Al final:** ampliacions opcionals d’operadors i seguiment de línia.
+Cada etapa proposa una prova. Trieu els exercicis de reforç segons el grup.
 
 <!-- Guió del formador: Aquest és el fil conductor; el ritme i la tria de proves depenen del grup. La posada en marxa és una demostració guiada que després es posa en pràctica. Cada repte segueix predicció, prova, explicació i canvi. Les ampliacions són després del tancament i els recursos: no cal recórrer-les per completar el fil principal. No impliqueu que cal acabar totes les fitxes abans de passar d’etapa. -->
 
@@ -119,9 +103,15 @@ Canviem els rols: una persona prediu; l’altra prova i registra.
 
 ## 1 · Preparar i carregar
 
-**Comprovem que el programa queda al robot.**
+**Prova de referència**
 
-Carreguem dues respostes i les provem sense USB.
+Carregueu una cara al botó A i proveu-la sense USB.
+
+**Quan podem continuar?**
+
+Podeu explicar com heu transferit el programa i mostrar que funciona.
+
+<!-- Guió del formador: Projecteu la captura de connexió i passeu a la primera càrrega. Si hi ha dubtes sobre els modes, obriu «En viu o Càrrega?». Si falla la prova, consulteu «Si la primera prova falla». -->
 
 ---
 <!-- _class: hardware -->
@@ -134,24 +124,6 @@ Carreguem dues respostes i les provem sense USB.
 Guió del formador: Localitzeu físicament les dues parts. Comenceu amb Codey quiet: els primers reptes no necessiten desplaçament. Després incorporarem el sensor de Rocky. Diferencieu la matriu de pantalla de l’indicador RGB.
 Fonts: _content/robots/robot-codey-rocky.md; Makeblock, https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky . Imatge del catàleg del projecte: _assets/robots/codey-rocky.webp.
 -->
-
----
-
-<!-- _class: compact-table -->
-
-## Dels passos al control dels motors
-
-| Als reptes de Tale-Bot i Coding Set | Amb Codey Rocky |
-| :--- | :--- |
-| Planifiquem passos i girs predefinits | Fixem potència, durada i aturada |
-| Raonem sobre un recorregut en caselles | Mesurem distàncies i angles obtinguts |
-| Preparem una seqüència d’ordres | Podem consultar sensors mentre es mou |
-
-«Discret» descriu les ordres de pas; el desplaçament físic és continu.
-
-**Ja no podem assumir: una ordre = una casella o un gir de 90°.**
-
-<!-- Guió del formador: La comparació descriu els reptes de la sessió 1, no totes les capacitats possibles dels robots. «Discret» es refereix a les unitats d’ordre (passos i girs), no a salts físics: els tres robots es desplacen de manera contínua. Codey també rep instruccions discretes, però aquestes controlen l’estat dels motors. Codey i Rocky són dues parts del mateix robot. Amb Codey podem separar esdeveniments, lectures i respostes i corregir el moviment durant l’execució. Fonts: sessió 1 i Makeblock, https://makeblock-micropython-api.readthedocs.io/en/latest/codey%26rocky/rocky/motion.html . -->
 
 ---
 
@@ -171,20 +143,6 @@ Fonts: _content/robots/robot-codey-rocky.md; Makeblock, https://support.makebloc
 
 <!-- _class: manual-screen -->
 
-## La interfície de mBlock
-
-<img class="manual-overview" src="../../tutorials/codey-manual/mblock-interficie.png" alt="Captura del manual oficial: dispositiu i connexió a l’esquerra, categories de peces al centre i àrea del programa a la dreta.">
-
-**Esquerra:** dispositiu i connexió. **Centre:** peces. **Dreta:** programa.
-
-<p class="manual-caption">Makeblock · Manual oficial, p. 2. Edició anterior de mBlock; l’aspecte pot variar.</p>
-
-<!-- Guió del formador: Localitzeu les tres zones també en l’ordinador del taller. Diferencieu Devices de Sprites: ací programem Codey, no el personatge de l’escenari. Captura real extreta de Code for Fun with Codey Rocky, p. impresa 2 (p. 4 del PDF), retall sense modificar el contingut: https://support.makeblock.com/hc/en-us/article_attachments/13133887873047 . -->
-
----
-
-<!-- _class: manual-screen -->
-
 ## Connexió USB amb mBlock 5
 
 <div class="manual-layout"><figure><img src="../../tutorials/codey-manual/mblock-connexio.png" alt="Diàleg Connect Device del manual, amb el port d’exemple COM3 i el botó Connection."><figcaption>Makeblock · Manual oficial, p. 3.<br>Edició anterior de mBlock.</figcaption></figure><div><ol><li>Connecteu Codey per USB i enceneu-lo.</li><li>A <strong>Dispositius</strong>, afegiu <strong>Codey</strong>.</li><li>Premeu <strong>Connecta</strong> i trieu el port del vostre equip.</li><li>Espereu la confirmació.</li></ol><p><strong>COM3 és un exemple:</strong> el nom del port pot ser diferent.</p><p>Al web: connexió directa o mLink, segons l’entorn.</p></div></div>
@@ -193,47 +151,13 @@ Fonts: _content/robots/robot-codey-rocky.md; Makeblock, https://support.makebloc
 
 ---
 
-<!-- _class: compact-table -->
-
-## En viu o Càrrega?
-
-| Mode | Execució | Sense connexió amb mBlock |
-| :--- | :--- | :--- |
-| En viu / Live | Necessita la connexió activa | El programa no pot continuar funcionant |
-| Càrrega / Upload | Transferim el programa a Codey | Pot funcionar autònomament |
-
-**Al taller, usem Càrrega per als programes de botons i d’inici.**
-
-Desar el projecte conserva el fitxer; carregar-lo programa el robot.
-
-<!-- Guió del formador: Cada modificació del programa en mode Càrrega s’ha de transferir de nou. Una prova En viu és útil si es volen executar ordres amb connexió permanent; no la confongueu amb un programa autònom. La primera prova de botó de la guia oficial usa Upload. Fonts: manual oficial, inici ràpid p. 4; apartat Start programming de https://support.makeblock.com/hc/en-us/articles/1500008637961-Program-Codey-Rocky-with-mBlock-5 . -->
-
----
-
 <!-- _class: manual-screen -->
 
 ## Primera càrrega · Cara i salutació
 
-<div class="manual-layout"><figure><img src="../../tutorials/codey-manual/mblock-carrega.png" alt="Captura del manual: Device connected, botó Upload to device i botó Disconnect."><figcaption>Makeblock · Manual oficial, p. 4.<br>Edició anterior de mBlock.</figcaption></figure><div><p>Prepareu dues piles en <strong>Codey</strong>:</p><ul><li><strong>Botó A → mostra una cara pròpia.</strong></li><li><strong>Botó B → mostra «Hola».</strong></li></ul><p>Seleccioneu <strong>Càrrega</strong>, transferiu el programa i proveu els botons.</p><p>Desconnecteu l’USB i torneu a provar.</p><p><strong>Canvieu una resposta i carregueu de nou.</strong></p></div></div>
+<div class="manual-layout"><figure><img src="../../tutorials/codey-manual/mblock-carrega.png" alt="Captura del manual: Device connected, botó Upload to device i botó Disconnect."><figcaption>Makeblock · Manual oficial, p. 4.<br>Edició anterior de mBlock.</figcaption></figure><div><p>Comenceu amb una pila en <strong>Codey</strong>:</p><ul><li><strong>Botó A → mostra una cara pròpia.</strong></li></ul><p>Seleccioneu <strong>Càrrega</strong>, transferiu el programa i premeu A.</p><p>Desconnecteu l’USB i torneu a provar.</p><p>Si funciona, afegiu <strong>B → mostra «Hola»</strong> i torneu a carregar.</p></div></div>
 
 <!-- Guió del formador: La captura mostra el control real Upload to device del manual; busqueu l’equivalent Upload/Carrega de la versió del taller. El nostre programa de cara i salutació és una adaptació didàctica, no el contingut de la captura. Captura real de Code for Fun with Codey Rocky, p. impresa 4 (p. 6 del PDF), retall sense alterar el contingut: https://support.makeblock.com/hc/en-us/article_attachments/13133887873047 . El manual explica que la càrrega permet executar sense mBlock. Mostreu les peces al mBlock real i espereu la confirmació abans de desconnectar. Contrast: https://support.makeblock.com/hc/en-us/articles/1500008637961-Program-Codey-Rocky-with-mBlock-5 . -->
-
----
-
-<!-- _class: compact-table -->
-
-## Si la primera prova falla
-
-| Què passa? | Què comprovem? |
-| :--- | :--- |
-| mBlock no detecta Codey | Encesa, cable de dades, port i dispositiu |
-| Només funciona connectat | Mode triat i càrrega completada |
-| Mostra una resposta antiga | Si hem carregat l’últim canvi |
-| Hi ha un avís de firmware | Procediment oficial per USB |
-
-**Abans de seguir:** A i B responen sense USB. [Guia de consulta](https://roboticadocents.github.io/tutorial/cr-primeres-passes/)
-
-<!-- Guió del formador: Si un equip no resol la connexió, continueu el repte al simulador i registreu el missatge i l’entorn per revisar-lo després. Firmware: actualitzeu si mBlock ho indica; no és necessari repetir l’actualització per cada programa ni s’ha de desconnectar el cable durant el procés. Fonts: https://support.makeblock.com/hc/en-us/articles/1500004266501-FAQs-on-Codey-Rocky ; https://support.makeblock.com/hc/en-us/articles/4402733426327-Update-the-Firmware-of-Codey-Rocky . -->
 
 ---
 
@@ -242,9 +166,15 @@ Desar el projecte conserva el fitxer; carregar-lo programa el robot.
 
 ## 2 · Activar respostes
 
-**Distingim què inicia una acció i què la fa repetir.**
+**Prova de referència**
 
-Provem l’encesa, el botó A i una seqüència de pampallugues.
+Predigueu què mostra Codey quan s’engega i quan premem A.
+
+**Quan podem continuar?**
+
+Podeu identificar quina pila s’executa en cada cas.
+
+<!-- Guió del formador: Feu el repte 1. Si cal distingir les eixides, recupereu pantalla i llum. Si el grup necessita practicar la repetició, obriu el repte 2. -->
 
 ---
 <!-- _class: code-study short -->
@@ -320,7 +250,7 @@ Canvieu la resposta del botó i torneu a provar.
 
 <img class="native-code" src="it4-sessio-2-materials/cr-delimita-el-bucle-1-solucio.svg" alt="El repeteix 3 conté les quatre ordres de la pampalluga">
 
-<p class="task-line"><strong>Tres execucions; LED apagat al final.</strong> Ara aplicarem ordres als motors.</p>
+<p class="task-line"><strong>Tres execucions amb la peça «apaga el LED RGB».</strong> Ara aplicarem ordres als motors.</p>
 
 <!-- Guió del formador: Acaba amb el LED apagat. Si el ritme es veu poc, augmenteu les dues esperes i conserveu la mateixa unitat. Relacioneu-ho amb la repetició de Coding Set: ací el bloc delimita el cos que es repeteix. Font: cr-delimita-el-bucle, solució de l’exercici 1. -->
 
@@ -331,9 +261,33 @@ Canvieu la resposta del botó i torneu a provar.
 
 ## 3 · Controlar el moviment
 
-**Passem dels passos predefinits a decidir potència, durada i aturada.**
+**Prova de referència**
 
-Comparem dos avanços i dos girs, i comprovem quan paren els motors.
+Compareu un avanç d’un segon amb moure endavant i esperar un segon.
+
+**Quan podem continuar?**
+
+Podeu explicar quan s’atura cada versió i on cal afegir l’ordre d’aturada.
+
+<!-- Guió del formador: Mostreu primer un avanç temporitzat i després feu el repte 4. Si costa aïllar l’efecte del temps sobre la distància, obriu el repte 3. Per ajustar un quart de volta, feu el repte 5. -->
+
+---
+
+<!-- _class: compact-table -->
+
+## Dels passos al control dels motors
+
+| Als reptes de Tale-Bot i Coding Set | Amb Codey Rocky |
+| :--- | :--- |
+| Planifiquem passos i girs predefinits | Fixem potència, durada i aturada |
+| Raonem sobre un recorregut en caselles | Mesurem distàncies i angles obtinguts |
+| Preparem una seqüència d’ordres | Podem consultar sensors mentre es mou |
+
+«Discret» descriu les ordres de pas; el desplaçament físic és continu.
+
+**Ja no podem assumir: una ordre = una casella o un gir de 90°.**
+
+<!-- Guió del formador: La comparació descriu els reptes de la sessió 1, no totes les capacitats possibles dels robots. «Discret» es refereix a les unitats d’ordre (passos i girs), no a salts físics: els tres robots es desplacen de manera contínua. Codey també rep instruccions discretes, però aquestes controlen l’estat dels motors. Codey i Rocky són dues parts del mateix robot. Amb Codey podem separar esdeveniments, lectures i respostes i corregir el moviment durant l’execució. Fonts: sessió 1 i Makeblock, https://makeblock-micropython-api.readthedocs.io/en/latest/codey%26rocky/rocky/motion.html . -->
 
 ---
 <!-- _class: compact-table -->
@@ -444,9 +398,15 @@ Abans de moure Rocky, programeu i proveu **C → atura**.
 
 ## 4 · Respondre als sensors
 
-**Fem servir una lectura per decidir què fa el robot.**
+**Prova de referència**
 
-Comencem amb llum i pantalla. Acabem amb el sensor de Rocky i els motors.
+Feu que la llum canvie el text i que una lectura de Rocky determine quan deixa d’avançar.
+
+**Quan podem continuar?**
+
+Podeu explicar què llig el robot, què compara i quan deixa d’avançar.
+
+<!-- Guió del formador: Feu els reptes 6 i 8. Si el grup confon lectura i condició, recupereu el repte 7 amb dues superfícies. Abans del repte 8, distingiu una comprovació puntual d’una lectura repetida. -->
 
 ---
 <!-- _class: readings -->
@@ -601,9 +561,15 @@ Volem avançar fins que l’IR supere **60**. La lectura inicial és baixa.
 
 ## 5 · Aplicar-ho a l’aula
 
-**Convertim un repte del taller en una activitat amb un objectiu d’aula.**
+**Prova de referència**
 
-Triem què volem que aprenga el grup i com ho comprovarem amb dos casos.
+Adapteu un repte al vostre grup i proposeu dos casos de prova.
+
+**Quan podem continuar?**
+
+Podeu dir què ha d’aprendre l’alumnat i què observareu per comprovar-ho.
+
+<!-- Guió del formador: Si costa formular l’objectiu, obriu una situació d’aprenentatge de la diapositiva següent. Si els dos casos donen la mateixa resposta, demaneu una prova a cada costat del llindar o amb dos esdeveniments diferents. -->
 
 ---
 <!-- _class: compact-table -->
@@ -682,6 +648,66 @@ i una possible aplicació a l’aula.
 **Primer prediem; després comprovem i expliquem.**
 
 <!-- Guió del formador: Solucionari separat per a preparar la sessió: https://roboticadocents.github.io/_assets/activitats/kits/cr-solucions-tres-entorns.pdf . Les pàgines de les diapositives fan referència al recull de l’alumnat de 18 pàgines, no al solucionari ni al quadern de la sessió 1. La presentació editable és it4-sessio-2.md; l’HTML i el PDF s’exporten amb export-session-marp.js. -->
+
+---
+
+<!-- _class: section -->
+<!-- footer: "Robòtica per a docents · Sessió 2 · Consulta de posada en marxa" -->
+
+## Consulta de posada en marxa
+
+Interfície de mBlock, modes d’execució i comprovacions si la primera càrrega falla.
+
+---
+
+<!-- footer: "Robòtica per a docents · Sessió 2 · Consulta de posada en marxa" -->
+<!-- _class: manual-screen -->
+
+## La interfície de mBlock
+
+<img class="manual-overview" src="../../tutorials/codey-manual/mblock-interficie.png" alt="Captura del manual oficial: dispositiu i connexió a l’esquerra, categories de peces al centre i àrea del programa a la dreta.">
+
+**Esquerra:** dispositiu i connexió. **Centre:** peces. **Dreta:** programa.
+
+<p class="manual-caption">Makeblock · Manual oficial, p. 2. Edició anterior de mBlock; l’aspecte pot variar.</p>
+
+<!-- Guió del formador: Localitzeu les tres zones també en l’ordinador del taller. Diferencieu Devices de Sprites: ací programem Codey, no el personatge de l’escenari. Captura real extreta de Code for Fun with Codey Rocky, p. impresa 2 (p. 4 del PDF), retall sense modificar el contingut: https://support.makeblock.com/hc/en-us/article_attachments/13133887873047 . -->
+
+---
+
+<!-- footer: "Robòtica per a docents · Sessió 2 · Consulta de posada en marxa" -->
+<!-- _class: compact-table -->
+
+## En viu o Càrrega?
+
+| Mode | Execució | Sense connexió amb mBlock |
+| :--- | :--- | :--- |
+| En viu / Live | Necessita la connexió activa | El programa no pot continuar funcionant |
+| Càrrega / Upload | Transferim el programa a Codey | Pot funcionar autònomament |
+
+**Al taller, usem Càrrega per als programes de botons i d’inici.**
+
+Desar el projecte conserva el fitxer; carregar-lo programa el robot.
+
+<!-- Guió del formador: Cada modificació del programa en mode Càrrega s’ha de transferir de nou. Una prova En viu és útil si es volen executar ordres amb connexió permanent; no la confongueu amb un programa autònom. La primera prova de botó de la guia oficial usa Upload. Fonts: manual oficial, inici ràpid p. 4; apartat Start programming de https://support.makeblock.com/hc/en-us/articles/1500008637961-Program-Codey-Rocky-with-mBlock-5 . -->
+
+---
+
+<!-- footer: "Robòtica per a docents · Sessió 2 · Consulta de posada en marxa" -->
+<!-- _class: compact-table -->
+
+## Si la primera prova falla
+
+| Què passa? | Què comprovem? |
+| :--- | :--- |
+| mBlock no detecta Codey | Encesa, cable de dades, port i dispositiu |
+| Només funciona connectat | Mode triat i càrrega completada |
+| Mostra una resposta antiga | Si hem carregat l’últim canvi |
+| Hi ha un avís de firmware | Procediment oficial per USB |
+
+**Abans de seguir:** A i B responen sense USB. [Guia de consulta](https://roboticadocents.github.io/tutorial/cr-primeres-passes/)
+
+<!-- Guió del formador: Si un equip no resol la connexió, continueu el repte al simulador i registreu el missatge i l’entorn per revisar-lo després. Firmware: actualitzeu si mBlock ho indica; no és necessari repetir l’actualització per cada programa ni s’ha de desconnectar el cable durant el procés. Fonts: https://support.makeblock.com/hc/en-us/articles/1500004266501-FAQs-on-Codey-Rocky ; https://support.makeblock.com/hc/en-us/articles/4402733426327-Update-the-Firmware-of-Codey-Rocky . -->
 
 ---
 

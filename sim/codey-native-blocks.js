@@ -19,18 +19,24 @@
   device('cr_drive','%1 al %2% de potència',[{type:'field_dropdown',name:'DIRECTION',options:[['mou endavant','forward'],['mou enrere','backward'],["gira a l’esquerra",'turn_left'],['gira a la dreta','turn_right']]},numberInput('POWER')],'action');
   device('cr_tracks','la roda esquerra gira al %1% de potència, la dreta al %2%',[numberInput('LEFT'),numberInput('RIGHT')],'action');
   device('cr_stop','deixa de moure',[],'action');
-  device('cr_face','mostra la imatge %1',[{type:'field_image',name:'IMAGE',src:image(defaultImage),width:80,height:40,alt:'Edita la imatge de 16 × 8'}],'looks');
-  const faceInit=B.Blocks.cr_face.init;
-  B.Blocks.cr_face.init=function(){faceInit.call(this);this.appendDummyInput('IMAGE_DATA').appendField(new B.FieldTextInput(''),'PATTERN');this.getInput('IMAGE_DATA').setVisible(false);};
+  const matrixField={type:'field_image',name:'IMAGE',src:image(defaultImage),width:80,height:40,alt:'Edita la imatge de 16 × 8'};
+  device('cr_face','mostra la imatge %1',[matrixField],'looks');
+  device('cr_faceTimed','mostra la imatge %1 durant %2 s',[matrixField,numberInput('SECONDS')],'looks');
+  for(const type of ['cr_face','cr_faceTimed']){
+    const init=B.Blocks[type].init;
+    B.Blocks[type].init=function(){init.call(this);this.appendDummyInput('IMAGE_DATA').appendField(new B.FieldTextInput(''),'PATTERN');this.getInput('IMAGE_DATA').setVisible(false);};
+  }
   function storedPattern(block,data){const bits=block.getFieldValue('PATTERN');return /^[01]{128}$/.test(bits||'')?Array.from({length:8},(_,y)=>bits.slice(y*16,y*16+16)):validPattern(data.pattern)?data.pattern:defaultImage.slice();}
   device('cr_show','mostra %1',[{type:'input_value',name:'VALUE'}],'looks');
   device('cr_rgb',"el led RGB s'encén de %1",[{type:'input_value',name:'COLOUR',check:'Colour'}],'lighting');
+  device('cr_rgbOff','apaga el LED RGB',[],'lighting');
   for(const [name,label] of Object.entries(sensorLabels))B.Blocks['cr_sensor_'+name]={init(){this.jsonInit({message0:'%1 '+label,args0:[{type:'field_image',src:icon,width:28,height:26,alt:'Codey'}],output:'Number',outputShape:B.OUTPUT_SHAPE_ROUND,colour:colours.sensing[0],colourSecondary:colours.sensing[1],colourTertiary:colours.sensing[2]});}};
   B.Blocks.cr_sensor_color={init(){this.jsonInit({message0:'color detectat · compatibilitat',output:'String',outputShape:B.OUTPUT_SHAPE_ROUND,colour:colours.sensing[0]});}};
+  B.Blocks.cr_obstacle={init(){this.jsonInit({message0:'%1 hi ha obstacles al davant?',args0:[{type:'field_image',src:icon,width:28,height:26,alt:'Codey'}],output:'Boolean',outputShape:B.OUTPUT_SHAPE_HEXAGONAL,colour:colours.sensing[0],colourSecondary:colours.sensing[1],colourTertiary:colours.sensing[2]});}};
   B.Blocks.cr_color={init(){this.jsonInit({message0:'%1 el color detectat és el %2?',args0:[{type:'field_image',src:icon,width:28,height:26,alt:'Codey'},{type:'field_dropdown',name:'COLOUR',options:colourOptions}],output:'Boolean',outputShape:B.OUTPUT_SHAPE_HEXAGONAL,colour:colours.sensing[0],colourSecondary:colours.sensing[1],colourTertiary:colours.sensing[2]});}};
   B.Blocks.cr_start={init(){this.jsonInit({message0:"quan s'engega Codey",extensions:['colours_event','shape_hat']});}};
   B.Blocks.cr_button={init(){this.jsonInit({message0:'en prémer el botó %1',args0:[{type:'field_dropdown',name:'BUTTON',options:[['A','A'],['B','B'],['C','C']]}],extensions:['colours_event','shape_hat']});}};
-  const allowed=new Set(['cr_start','cr_button','cr_forward','cr_back','cr_left','cr_right','cr_drive','cr_tracks','cr_stop','cr_face','cr_show','cr_rgb','cr_color','cr_sensor_color',...Object.keys(sensorLabels).map(s=>'cr_sensor_'+s),'control_wait','control_repeat','control_forever','control_if','control_if_else','control_repeat_until','control_wait_until','operator_lt','operator_gt','operator_equals','operator_not','operator_and','operator_or','math_number','math_whole_number','math_positive_number','text','colour_picker']);
+  const allowed=new Set(['cr_start','cr_button','cr_forward','cr_back','cr_left','cr_right','cr_drive','cr_tracks','cr_stop','cr_face','cr_faceTimed','cr_show','cr_rgb','cr_rgbOff','cr_color','cr_obstacle','cr_sensor_color',...Object.keys(sensorLabels).map(s=>'cr_sensor_'+s),'control_wait','control_repeat','control_forever','control_if','control_if_else','control_repeat_until','control_wait_until','operator_lt','operator_gt','operator_equals','operator_not','operator_and','operator_or','math_number','math_whole_number','math_positive_number','text','colour_picker']);
     function escape(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));}
   const field=(name,value)=>`<field name="${name}">${escape(value)}</field>`;
   const shadow=(value,type='math_number')=>`<shadow type="${type}">${field(type==='text'?'TEXT':'NUM',value)}</shadow>`;
@@ -40,6 +46,7 @@
     if(expr.kind==='string')return shadow(expr.value,'text');
     if(expr.kind==='boolean')return expr.value?'<block type="operator_not"></block>':'<block type="operator_not"><value name="OPERAND"><block type="operator_not"></block></value></block>';
     if(expr.kind==='sensor')return `<block type="cr_sensor_${expr.name}"></block>`;
+    if(expr.kind==='obstacle')return '<block type="cr_obstacle"></block>';
     if(expr.kind==='color')return `<block type="cr_color">${field('COLOUR',expr.value)}</block>`;
     if(expr.kind==='not')return `<block type="operator_not">${input('OPERAND',expressionXml(expr.value))}</block>`;
     if(expr.kind==='and'||expr.kind==='or')return `<block type="operator_${expr.kind}">${input('OPERAND1',expressionXml(expr.left))}${input('OPERAND2',expressionXml(expr.right))}</block>`;
@@ -54,7 +61,7 @@
     return negate?{kind:'not',value:e}:e;
   }
   function blockXml(b,next=''){
-    const types={forward:'cr_forward',back:'cr_back',left:'cr_left',right:'cr_right',drive:'cr_drive',tracks:'cr_tracks',stop:'cr_stop',face:'cr_face',text:'cr_show',reading:'cr_show',rgb:'cr_rgb',wait:'control_wait',repeat:'control_repeat',forever:'control_forever',if:b.hasElse===false?'control_if':'control_if_else',until:'control_repeat_until',while:'control_repeat_until',waitUntil:'control_wait_until'};
+    const types={forward:'cr_forward',back:'cr_back',left:'cr_left',right:'cr_right',drive:'cr_drive',tracks:'cr_tracks',stop:'cr_stop',face:'cr_face',faceTimed:'cr_faceTimed',rgbOff:'cr_rgbOff',text:'cr_show',reading:'cr_show',rgb:'cr_rgb',wait:'control_wait',repeat:'control_repeat',forever:'control_forever',if:b.hasElse===false?'control_if':'control_if_else',until:'control_repeat_until',while:'control_repeat_until',waitUntil:'control_wait_until'};
     let contents='';
     const param=(name,key)=>input(name,expressionXml(b.bindings?.[key]||{kind:'number',value:b[key]}));
     if(['forward','back','left','right','drive'].includes(b.type))contents+=param('POWER','power');
@@ -69,7 +76,8 @@
     if(['if','until','while','waitUntil'].includes(b.type)){const condition=legacyCondition(b);contents+=input('CONDITION',expressionXml(b.type==='while'?{kind:'not',value:condition}:condition));}
     if(b.type==='if')contents+=`<statement name="SUBSTACK">${listXml(b.then)}</statement>${b.hasElse===false?'':'<statement name="SUBSTACK2">'+listXml(b.else)+'</statement>'}`;
     if(['repeat','forever','while','until'].includes(b.type))contents+=`<statement name="SUBSTACK">${listXml(b.body)}</statement>`;
-    if(b.type==='face')contents+=`<data>${escape(JSON.stringify({pattern:b.value==='custom'?b.pattern:faces[b.value]||faces.happy,value:b.value}))}</data>`;
+    if(b.type==='faceTimed')contents+=param('SECONDS','seconds');
+    if(['face','faceTimed'].includes(b.type))contents+=`<data>${escape(JSON.stringify({pattern:b.value==='custom'?b.pattern:faces[b.value]||faces.happy,value:b.value}))}</data>`;
     if(b.type==='while')contents+='<data>{"legacyWhile":true}</data>';
     if(b.type==='forever'&&next){detached.push(next);next='';}
     return `<block type="${types[b.type]}" id="${escape(b.id)}">${contents}${next?'<next>'+next+'</next>':''}</block>`;
@@ -78,13 +86,14 @@
   function listXml(list){let xml='';for(let i=list.length-1;i>=0;i--)xml=blockXml(list[i],xml);return xml;}
   function toolbox(){
     const entry=(type,values={})=>`<block type="${type}">${Object.entries(values).map(([name,value])=>input(name,shadow(value,typeof value==='string'?'text':'math_number'))).join('')}</block>`;
-    return `<xml><category name="Aspecte" id="Aspecte" colour="#9966ff" secondaryColour="#9966ff">${entry('cr_face')}${entry('cr_show',{VALUE:'hello'})}</category><category name="Il·luminació" id="Il·luminació" colour="#b080d5" secondaryColour="#b080d5"><block type="cr_rgb"><value name="COLOUR"><shadow type="colour_picker">${field('COLOUR','#ff0000')}</shadow></value></block></category><category name="Acció" id="Acció" colour="#4c97ff" secondaryColour="#4c97ff">${['forward','back','left','right'].map(t=>entry('cr_'+t,{POWER:50,SECONDS:1})).join('')}${entry('cr_drive',{POWER:50})}${entry('cr_tracks',{LEFT:50,RIGHT:50})}${entry('cr_stop')}</category><category name="Detecció" id="Detecció" colour="#4cbfe6" secondaryColour="#4cbfe6">${Object.keys(sensorLabels).map(s=>entry('cr_sensor_'+s)).join('')}${entry('cr_color')}</category><category name="Control" id="Control" colour="#ffab19" secondaryColour="#ffab19">${entry('control_wait',{DURATION:1})}${entry('control_repeat',{TIMES:3})}${entry('control_forever')}${entry('control_if')}${entry('control_if_else')}${entry('control_wait_until')}${entry('control_repeat_until')}</category><category name="Operadors" id="Operadors" colour="#59c059" secondaryColour="#59c059">${['lt','gt','equals'].map(s=>'<block type="operator_'+s+'">'+input('OPERAND1',shadow('',s==='equals'?'text':'math_number'))+input('OPERAND2',shadow(50,s==='equals'?'text':'math_number'))+'</block>').join('')}${['and','or','not'].map(s=>entry('operator_'+s)).join('')}</category></xml>`;
+    return `<xml><category name="Aspecte" id="Aspecte" colour="#9966ff" secondaryColour="#9966ff">${entry('cr_face')}${entry('cr_faceTimed',{SECONDS:1})}${entry('cr_show',{VALUE:'hello'})}</category><category name="Il·luminació" id="Il·luminació" colour="#b080d5" secondaryColour="#b080d5"><block type="cr_rgb"><value name="COLOUR"><shadow type="colour_picker">${field('COLOUR','#ff0000')}</shadow></value></block>${entry('cr_rgbOff')}</category><category name="Acció" id="Acció" colour="#4c97ff" secondaryColour="#4c97ff">${['forward','back','left','right'].map(t=>entry('cr_'+t,{POWER:50,SECONDS:1})).join('')}${entry('cr_drive',{POWER:50})}${entry('cr_tracks',{LEFT:50,RIGHT:50})}${entry('cr_stop')}</category><category name="Detecció" id="Detecció" colour="#4cbfe6" secondaryColour="#4cbfe6">${Object.keys(sensorLabels).map(s=>entry('cr_sensor_'+s)).join('')}${entry('cr_obstacle')}${entry('cr_color')}</category><category name="Control" id="Control" colour="#ffab19" secondaryColour="#ffab19">${entry('control_wait',{DURATION:1})}${entry('control_repeat',{TIMES:3})}${entry('control_forever')}${entry('control_if')}${entry('control_if_else')}${entry('control_wait_until')}${entry('control_repeat_until')}</category><category name="Operadors" id="Operadors" colour="#59c059" secondaryColour="#59c059">${['lt','gt','equals'].map(s=>'<block type="operator_'+s+'">'+input('OPERAND1',shadow('',s==='equals'?'text':'math_number'))+input('OPERAND2',shadow(50,s==='equals'?'text':'math_number'))+'</block>').join('')}${['and','or','not'].map(s=>entry('operator_'+s)).join('')}</category></xml>`;
   }
   function readExpression(block){
     if(!block)return {kind:'boolean',value:false};
     if(block.type.startsWith('cr_sensor_'))return {kind:'sensor',name:block.type.slice(10)};
     if(block.type.startsWith('math_'))return {kind:'number',value:Number(block.getFieldValue('NUM'))};
     if(block.type==='text')return {kind:'string',value:block.getFieldValue('TEXT')};
+    if(block.type==='cr_obstacle')return {kind:'obstacle'};
     if(block.type==='cr_color')return {kind:'color',value:block.getFieldValue('COLOUR')};
     if(block.type==='operator_not')return {kind:'not',value:readExpression(block.getInputTargetBlock('OPERAND'))};
     if(['operator_and','operator_or'].includes(block.type))return {kind:block.type.slice(9),left:readExpression(block.getInputTargetBlock('OPERAND1')),right:readExpression(block.getInputTargetBlock('OPERAND2'))};
@@ -109,7 +118,8 @@
         case 'cr_forward':case 'cr_back':case 'cr_left':case 'cr_right':case 'cr_drive':param('POWER','power');if(base.type!=='drive')param('SECONDS','seconds');else base.direction=current.getFieldValue('DIRECTION')||'forward';break;
         case 'cr_tracks':param('LEFT','left');param('RIGHT','right');break;
         case 'cr_stop':break;
-        case 'cr_face':base.value=current.getFieldValue('PATTERN')?'custom':data.value||'custom';base.pattern=storedPattern(current,data);break;
+        case 'cr_rgbOff':break;
+        case 'cr_face':case 'cr_faceTimed':if(base.type==='faceTimed')param('SECONDS','seconds');base.value=current.getFieldValue('PATTERN')?'custom':data.value||'custom';base.pattern=storedPattern(current,data);break;
         case 'cr_show':{const value=current.getInputTargetBlock('VALUE'),expr=value?cleanExpression(readExpression(value)):{kind:'string',value:''};if(expr.kind==='sensor'){base.type='reading';base.sensor=expr.name;}else{base.type='text';if(expr.kind==='string')base.value=expr.value;else base.expression=expr;}break;}
         case 'cr_rgb':base.type='rgb';base.value=current.getInputTargetBlock('COLOUR')?.getFieldValue('COLOUR')||'#22c55e';break;
         case 'control_wait':base.type='wait';param('DURATION','seconds');break;
@@ -166,7 +176,7 @@
       clearTimeout(timer);timer=null;if(busy||!hat||workspace.isDragging())return;
       try{const xml=serialise();onDraft(xml,eventKey);const list=readList(hat.getNextBlock());if(xml!==lastXml){lastXml=xml;onChange(list,eventKey,xml);}return true;}catch(error){onError(error.message);return false;}
     }
-    function installImages(){for(const block of workspace.getAllBlocks(false))if(block.type==='cr_face'&&!block.isInsertionMarker()){
+    function installImages(){for(const block of workspace.getAllBlocks(false))if(['cr_face','cr_faceTimed'].includes(block.type)&&!block.isInsertionMarker()){
       let data={};try{data=JSON.parse(block.data||'{}');}catch(_){}
       const pattern=storedPattern(block,data);
       const field=block.getField('IMAGE');field.setValue(image(pattern));

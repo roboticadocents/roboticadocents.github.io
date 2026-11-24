@@ -27,6 +27,7 @@
   function cleanExpression(expr,depth=0){
     if(!expr||typeof expr!=='object'||depth>12)throw new Error('Expressió de blocs no vàlida.');
     if(expr.kind==='number'&&Number.isFinite(Number(expr.value)))return {kind:'number',value:clamp(expr.value,-10000,10000)};
+    if(expr.kind==='obstacle')return {kind:'obstacle'};
     if(expr.kind==='boolean')return {kind:'boolean',value:expr.value===true};
     if(expr.kind==='string')return {kind:'string',value:String(expr.value||'').slice(0,40)};
     if(expr.kind==='sensor'&&['infrared','gray','light','sound','color'].includes(expr.name))return {kind:'sensor',name:expr.name};
@@ -52,8 +53,11 @@
     }
     return a===b?0:a-b;
   }
+  // El llindar del model no és el llindar intern del firmware de Rocky.
+  const obstacleAhead=read=>read('infrared')>60;
   function evaluate(expr,read){
     if(['number','string','boolean'].includes(expr.kind))return expr.value;
+    if(expr.kind==='obstacle')return obstacleAhead(read);
     if(expr.kind==='sensor')return read(expr.name)??0;
     if(expr.kind==='color'){const value=read('color');return value===null?false:value===expr.value;}
     if(expr.kind==='not'){const value=evaluate(expr.value,read);return value===null?null:!scratchBoolean(value);}
@@ -66,6 +70,7 @@
   }
   function describe(expr,read){
     if(['number','string','boolean'].includes(expr.kind))return String(expr.value);
+    if(expr.kind==='obstacle')return obstacleAhead(read)?'obstacle al davant':'sense obstacle al davant';
     if(expr.kind==='sensor'){const value=read(expr.name);return `${SENSOR_NAMES[expr.name]} (${value===null?'no disponible':value})`;}
     if(expr.kind==='color')return `color (${read('color')??'no disponible'}) = ${expr.value}`;
     if(expr.kind==='not')return `no (${describe(expr.value,read)})`;
@@ -186,8 +191,13 @@
         const seconds = clamp(input('seconds'),0,3600), power = clamp(input('power'), 0, 100);
         this.trace = 'Executant: ' + ({face:'mostra cara',text:'mostra text',rgb:'llum RGB',forward:'avança',back:'enrere',left:'gira esquerra',right:'gira dreta',drive:'avança contínuament',tracks:'potència de les erugues',reading:'mostra lectura del sensor',stop:'atura motors',wait:'espera',repeat:'repeteix',forever:'per sempre'}[block.type] || block.type);
         switch (block.type) {
+          case 'faceTimed':
+            if(!seconds)break;
+            task.wait=seconds;task.timedDisplay=true;
+            // La imatge es mostra com en una ordre de pantalla sense durada.
           case 'face': this.output.face = block.value || 'happy'; this.output.pattern = block.pattern; this.output.text = ''; break;
           case 'text': {const value=block.expression?evaluate(block.expression,name=>this.sensor(name)):block.value??'Hola';this.output.text=(value===true?'True':value===false?'False':String(value??'—')).slice(0,40);break;}
+          case 'rgbOff': this.output.rgb='#000000'; break;
           case 'rgb': this.output.rgb = block.value || '#22c55e'; break;
           case 'forward': case 'back':
             if(!seconds)break;
@@ -244,7 +254,7 @@
       if (this.collision) this.trace = 'Contacte amb un obstacle o la vora. El robot no pot travessar-los.';
       for (const task of this.tasks) if (task.wait > 0) {
         task.wait = Math.max(0, task.wait - dt);
-        if (task.wait < 1e-8) { task.wait = 0; if (task.timedMotor) this.motor = { speed: 0, turn: 0 }; task.timedMotor = false; }
+        if (task.wait < 1e-8) { task.wait = 0; if (task.timedMotor) this.motor = { speed: 0, turn: 0 }; task.timedMotor = false; if(task.timedDisplay){this.output.face='blank';this.output.pattern=undefined;this.output.text='';task.timedDisplay=false;} }
       }
     }
     tick(dt, interval = .3) {

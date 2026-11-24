@@ -19,13 +19,13 @@
   }
   function example(name) {
     const program={start:[],A:[block('face')],B:[block('face',{value:'sad'})],C:[block('stop')]};
-    if(name==='obstacle')program.start=[block('forever',{body:[block('if',{sensor:'infrared',compare:'>',threshold:60,then:[block('stop'),block('face',{value:'surprise'})],else:[block('face'),block('drive')]}),block('wait',{seconds:.1})]})];
+    if(name==='obstacle')program.start=[block('drive',{power:15}),block('waitUntil',{condition:{kind:'obstacle'}}),block('stop')];
     if(name==='while')program.start=[block('until',{sensor:'infrared',compare:'>',threshold:60,body:[block('forward',{seconds:.2})]}),block('stop'),block('face',{value:'surprise'})];
     if(name==='line')program.start=[block('forever',{body:[block('if',{sensor:'gray',compare:'<',threshold:50,then:[block('tracks',{left:10,right:6})],else:[block('tracks',{left:6,right:10})]})]})];
     if(name==='color')program.start=[block('until',{sensor:'color',compare:'=',value:'red',body:[block('forward',{power:15,seconds:.1})]}),block('stop'),block('rgb',{value:'#ef4444'})];
-    if(name==='light')program.start=[block('forever',{body:[block('if',{sensor:'light',compare:'<',threshold:40,then:[block('rgb',{value:'#facc15'})],else:[block('rgb',{value:'#000000'})]}),block('wait',{seconds:.1})]})];
-    if(name==='route')program.start=[block('forward'),block('right'),block('forward'),block('stop')];
-    if(name==='buttons')program.start=[block('text',{value:'Prem A, B o C'})];
+    if(name==='light')program.start=[block('forever',{body:[block('if',{sensor:'light',compare:'<',threshold:40,then:[block('rgb',{value:'#facc15'})],else:[block('rgbOff')]}),block('wait',{seconds:.1})]})];
+    if(name==='route')program.start=[block('forward'),block('right'),block('forward')];
+    if(name==='buttons'){program.start=[block('text',{value:'Prem A, B o C'})];program.A=[block('faceTimed',{value:'happy',seconds:1})];}
     return name==='blank'?{start:[],A:[],B:[],C:[]}:program;
   }
   function cleanProgram(value) {

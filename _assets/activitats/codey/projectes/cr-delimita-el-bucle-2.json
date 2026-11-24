@@ -53,7 +53,7 @@
       },
       {
         "id": "act-80",
-        "type": "rgb",
+        "type": "rgbOff",
         "power": 20,
         "left": 10,
         "right": 10,
@@ -62,7 +62,7 @@
         "sensor": "light",
         "compare": "<",
         "threshold": 40,
-        "value": "#000000",
+        "value": "",
         "body": [],
         "then": [],
         "else": []

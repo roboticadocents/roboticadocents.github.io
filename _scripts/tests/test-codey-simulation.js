@@ -168,3 +168,36 @@ console.log('Conformitat Scratch: comparacions de text/nombres, booleans, arredo
  const c=new Engine({C:[b('text',{value:'C'})]});c.trigger('C');c.executeOne();assert.equal(c.output.text,'C');
 }
 console.log('Contracte Codey: moviments nuls, quatre direccions, text booleà, huit colors i botó C correctes.');
+
+// El booleà d’obstacles es torna a llegir mentre l’avanç continu està actiu.
+{
+ const e=new Engine({start:[
+  b('drive',{power:15}),
+  b('waitUntil',{condition:{kind:'obstacle'}}),
+  b('stop')
+ ]});
+ e.trigger('start');
+ runFor(e,.5);
+ assert.ok(e.motor.speed>0);
+ runFor(e,15);
+ assert.equal(e.motor.speed,0);
+ assert.equal(e.collision,false);
+ assert.ok(e.sensor('infrared')>60);
+ e.environment.orientation='down';
+ assert.equal(e.test({condition:{kind:'obstacle'}}).result,false);
+}
+
+// La imatge es veu durant l’espera i s’esborra abans de la peça següent.
+{
+ const e=new Engine({start:[
+  b('faceTimed',{value:'sad',seconds:1}),
+  b('rgbOff')
+ ]});
+ e.trigger('start');
+ runFor(e,.5);
+ assert.equal(e.output.face,'sad');
+ assert.equal(e.output.rgb,'#22c55e');
+ runFor(e,.7);
+ assert.equal(e.output.face,'blank');
+ assert.equal(e.output.rgb,'#000000');
+}

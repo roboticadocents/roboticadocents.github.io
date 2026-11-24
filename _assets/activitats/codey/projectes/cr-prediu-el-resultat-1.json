@@ -5,23 +5,7 @@
     "start": [
       {
         "id": "act-1",
-        "type": "text",
-        "power": 20,
-        "left": 10,
-        "right": 10,
-        "seconds": 0.2,
-        "count": 3,
-        "sensor": "light",
-        "compare": "<",
-        "threshold": 40,
-        "value": "HOLA",
-        "body": [],
-        "then": [],
-        "else": []
-      },
-      {
-        "id": "act-2",
-        "type": "wait",
+        "type": "faceTimed",
         "power": 20,
         "left": 10,
         "right": 10,
@@ -30,7 +14,7 @@
         "sensor": "light",
         "compare": "<",
         "threshold": 40,
-        "value": "",
+        "value": "happy",
         "body": [],
         "then": [],
         "else": []

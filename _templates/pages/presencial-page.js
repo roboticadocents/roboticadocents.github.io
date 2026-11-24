@@ -28,9 +28,9 @@ function PresencialPage() {
       <div class="presencial-download">
         <div>
           <h3>Quadern de treball</h3>
-          <p>Guia, índex de fitxes, tots els exercicis i registre del treball autònom. Les pàgines coincideixen amb les referències de la presentació.</p>
+          <p>Versió compacta de 20 pàgines amb guia, índex, tots els exercicis i registre del treball autònom. Les pàgines coincideixen amb les referències de la presentació.</p>
         </div>
-        <a class="presencial-download-link" href="../output/pdf/sessio-1-handout-revisat.pdf" download>Descarrega el quadern <span>PDF</span></a>
+        <a class="presencial-download-link" href="../output/pdf/sessio-1-handout-compacte.pdf" download>Descarrega el quadern <span>PDF</span></a>
       </div>
       <p class="presencial-note">El ritme i la tria d’exercicis s’adapten al nivell del grup. El quadern permet continuar practicant fins a la sessió següent.</p>
     </section>
@@ -48,6 +48,10 @@ function PresencialPage() {
         <a class="presencial-download-link" href="../tutorial/cr-primeres-passes/">Obri la guia <span>Web</span></a>
       </div>
       <p><a href="https://support.makeblock.com/hc/en-us/article_attachments/13133887873047">Manual oficial de Codey Rocky (PDF, anglés)</a> · <a href="https://support.makeblock.com/hc/en-us/articles/1500008637961-Program-Codey-Rocky-with-mBlock-5">Connexió i programació: instruccions oficials</a></p>
+      <div class="presencial-download">
+        <div><h3>Quadern de treball</h3><p>Guia del taller, índex, registre i les nou fitxes de Codey Rocky.</p></div>
+        <a class="presencial-download-link" href="../_assets/sessions/it4-sessio-2-handout.pdf" download>Descarrega el quadern <span>PDF</span></a>
+      </div>
       <div class="presencial-download">
         <div><h3>Fitxes de l’alumnat</h3><p>Nou activitats, 27 exercicis i espai per registrar prediccions, resultats i canvis. Recull de 18 pàgines.</p></div>
         <a class="presencial-download-link" href="../_assets/activitats/kits/cr-fitxes-tres-entorns.pdf" download>Descarrega les fitxes <span>PDF</span></a>

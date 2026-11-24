@@ -19,8 +19,8 @@ from pypdf import PdfReader, PdfWriter
 
 ROOT = Path(__file__).resolve().parents[1]
 MARP = ROOT / '_assets/sessions/marp'
-OUT = ROOT / 'output/pdf/sessio-1-handout-revisat.pdf'
-GUIDE_PAGES = 9
+OUT = ROOT / 'output/pdf/sessio-1-handout-compacte.pdf'
+GUIDE_PAGES = 4
 W, H = A4
 M = 44
 WIDTH = W - 2*M
@@ -44,7 +44,7 @@ WORKSHEETS = [
  ('cs-combina-funcions-i-repeticions', 'Combina funcions i repeticions'),
 ]
 PAGES = {slug: GUIDE_PAGES+i+1 for i,(slug,_) in enumerate(WORKSHEETS)}
-PAGES.update({'robots':4, 'tale-bot':5, 'coding-set':6, 'disseny':7, 'registre':8, 'seguent':9})
+PAGES.update({'robots':2, 'tale-bot':2, 'coding-set':2, 'disseny':4, 'registre':4, 'seguent':4})
 
 for name, file in [('Sora','Sora.ttf'),('SoraBold','Sora-Bold.ttf'),('Jakarta','PlusJakartaSans.ttf'),('JakartaBold','PlusJakartaSans-Bold.ttf')]:
     pdfmetrics.registerFont(TTFont(name,str(MARP/'fonts'/file)))
@@ -89,86 +89,49 @@ class Guide:
         assert self.page==GUIDE_PAGES
         self.c.save();return self.buffer
 
-def ref(slug):return f'p. {PAGES[slug]}'
-
 def build_guide():
-    g=Guide()
+    g = Guide()
     g.new('Programar per aprendre')
-    g.p('Pensem, programem i comprovem','h2',after=24)
-    g.p('<b>Sessió 1 · Quadern de treball i activitats completes</b>',after=20)
-    g.p('Tale-Bot Pro i Matatalab Coding Set<br/>Presentació de Coding Express',after=24)
-    g.p('Guia de treball · 16 fitxes amb 48 exercicis · Treball entre sessions',after=40)
-    g.lines('Nom:',2);g.lines('Centre i cicle:',2)
-    g.p('El quadern acompanya el taller i permet continuar treballant fins a la sessió següent. El ritme i la tria d’exercicis s’adapten al nivell de cada participant.',after=16)
-    g.p('La pàgina impresa coincideix amb el número de pàgina del PDF. Les diapositives remeten a aquesta mateixa numeració.','small')
-
-    g.new('Com treballarem')
-    g.p('Interpretarem programes curts, comprovarem els moviments i explicarem les correccions. Compararem la repetició completa, els bucles i les funcions, i prepararem una aplicació curricular.')
-    g.heading('El recorregut')
-    g.p('Introducció → Coding Express (presentació breu) → Tale-Bot i activitats → pausa → Coding Set i activitats → aplicació a l’aula i posada en comú.')
-    g.p('Treballarem amb paper i simulador. Els moviments reals, els accessoris i la lectura de les peces es contrastaran amb els robots quan en disposem.')
-    g.heading('La nostra rutina')
+    g.p('Itinerari 4 · Sessió 1 · Quadern de treball', 'h2')
+    g.p('Tale-Bot Pro i Matatalab Coding Set · Presentació de Coding Express')
+    g.p('16 fitxes · 48 exercicis · Versió compacta')
+    g.lines('Nom, centre i cicle', 1)
+    g.heading('Què treballarem')
+    g.p('Interpretarem programes curts, comprovarem recorreguts i explicarem les correccions. Compararem la repetició completa, els bucles i les funcions per preparar una activitat d’aula.')
+    g.heading('Com treballarem')
     g.p('<b>Prediu → Programa → Comprova → Explica → Millora</b>')
-    g.p('En parella, una persona planifica i explica; l’altra programa i comprova. Canvieu els rols. Abans de cada prova, recupereu la mateixa posició i orientació inicials.')
-    g.table([['Quan…','Posem en joc…'],['Separem una tasca en parts','Descomposició'],['Identifiquem què es repeteix','Patrons'],['Triem les dades necessàries','Abstracció'],['Ordenem instruccions','Algorismes']],[WIDTH*.61,WIDTH*.39])
-    g.p('La depuració acompanya tot el procés: identificar una diferència, proposar un canvi i tornar a comprovar.')
-    g.p('No hi ha una llista tancada d’exercicis per al taller o per a casa. Continueu segons el vostre nivell i anoteu les proves i els dubtes al registre de la pàgina 8.','small')
+    g.p('En parella, alterneu qui planifica i qui comprova. Recupereu la mateixa posició i orientació abans de cada prova. Podeu treballar en paper, al simulador i amb els robots disponibles.')
+    g.table([['Quan…', 'Posem en joc…'], ['Separem la tasca en parts', 'Descomposició'], ['Identifiquem què es repeteix', 'Patrons'], ['Triem les dades necessàries', 'Abstracció'], ['Ordenem instruccions', 'Algorismes']], compact=True)
+    g.p('Trieu les fitxes segons el vostre nivell i continueu practicant entre sessions. Anoteu un canvi i el resultat al registre de la pàgina 4.')
+    g.p('<link href="https://roboticadocents.github.io/sim/" color="#2563eb">Obri el simulador</link> · <link href="https://roboticadocents.github.io/" color="#2563eb">Portal del curs</link>')
+
+    g.new('Què aporta cada robot?')
+    g.heading('Coding Express · Accions a la via')
+    g.p('Els maons d’acció situats a la via fan que el tren s’ature o emeta sons i llums. Ho veurem amb imatges per anticipar i narrar què passa al llarg del trajecte.')
+    g.heading('Tale-Bot Pro · Moviment, veu i traç')
+    g.p('Programem amb els botons del robot. Pot reproduir veu gravada i, amb els accessoris compatibles, dibuixar o empentar objectes. Els mapes OID compatibles incorporen instruccions de veu.')
+    g.p('<b>Per començar:</b> marqueu la posició i cap a on mira. Avançar i retrocedir canvien la posició. Girar canvia l’orientació. La repetició afecta la seqüència completa.')
+    g.heading('Matatalab Coding Set · El programa queda a la vista')
+    g.p('La torre llig les peces del tauler i envia les ordres al robot. Els nombres abreugen moviments compatibles, els bucles delimiten un fragment i les funcions permeten reutilitzar una seqüència.')
+    g.p('<b>Per començar:</b> seguiu les peces amb el dit. Localitzeu què queda dins del bucle i on continua el programa després d’una crida. Les peces de definició i crida van sense nombres.')
+    g.p('En els reptes de dibuix, el retolador es manté baixat. En els de capses, els braços empenten cap endavant.', 'small')
 
     g.new('Índex de fitxes')
     g.p('Totes les fitxes contenen tres exercicis. Aquest índex serveix per trobar-les; no estableix un ordre obligatori de treball.','small')
     for prefix,title in [('tb-','Tale-Bot Pro'),('cs-','Matatalab Coding Set')]:
         g.heading(title)
         g.table([['Fitxa','Pàgina']]+[[name,str(PAGES[slug])] for slug,name in WORKSHEETS if slug.startswith(prefix)],[WIDTH-65,65],compact=True)
-    g.p('Guia dels robots: p. 4 · Tale-Bot: p. 5 · Coding Set: p. 6<br/>Disseny d’aula: p. 7 · Registre: p. 8 · Sessió següent: p. 9','small')
+    g.p('Capacitats dels robots: p. 2 · Aplicació a l’aula i registre: p. 4', 'small')
 
-    g.new('Què aporta cada robot?')
-    g.heading('Coding Express · Les accions són a la via')
-    g.p('Construïm el recorregut amb vies DUPLO i hi situem maons d’acció. Quan el tren hi passa, respon amb aturades, sons o llums. Permet anticipar què passarà en cada punt i narrar un trajecte.')
-    g.p('Educació Infantil. En aquesta sessió el presentem amb imatges, sense pràctica. El sensor llig els maons; no detecta obstacles ni decideix una destinació.','small',after=20)
-    g.heading('Tale-Bot Pro · Moviment, veu i traç')
-    g.p('Introduïm les ordres amb botons del robot. Pot gravar i reproduir veu dins d’una ruta, repetir el programa complet i, amb els accessoris compatibles, dibuixar o empentar objectes. Els mapes OID compatibles ofereixen instruccions de veu.')
-    g.p('La veu gravada no és reconeixement de parla. Un tapís imprés normal no té les funcions d’un mapa OID. La repetició afecta el programa complet.','small',after=20)
-    g.heading('Coding Set · El programa queda a la vista')
-    g.p('Les peces sobre el tauler permeten llegir, discutir i modificar el programa abans d’executar-lo. Els nombres abreugen moviments; els bucles delimiten el fragment repetit; les funcions permeten definir una seqüència i cridar-la des de diferents punts.')
-    g.p('La torre llig el tauler i envia les ordres al robot. Les peces de definició i crida no admeten nombres davall.','small')
-    g.p('Fonts: tutorials del portal i guies dels fabricants enllaçades a les diapositives de presentació dels robots.','small')
-
-    g.new('Tale-Bot · Pensar abans de prémer')
-    g.heading('Recorda')
-    g.p('• Avançar i retrocedir desplacen el robot; girar només canvia l’orientació.<br/>• Anar enrere no canvia cap a on mira.<br/>• La repetició executa tota la base; tres vegades són tres execucions totals.<br/>• En els exercicis de dibuix suposem que el retolador està sempre baixat: repassar una línia no l’esborra.<br/>• En les activitats de capses, els braços empenten cap endavant.')
-    g.heading('Propostes de treball')
-    g.p(f'Predir i depurar: {ref("tb-prediu-el-resultat")} i {ref("tb-depura-el-codi")}.<br/>Escriure i abreujar: {ref("tb-escriu-el-codi")} i {ref("tb-refactoritza-el-codi")}.<br/>Interpretar i construir dibuixos: {ref("tb-quin-dibuix-fara")} i {ref("tb-dibuixa-per-parts")}.<br/>Aproximar-se i empentar: {ref("tb-des-de-quin-costat")} i {ref("tb-aproxima-i-empeny")}.')
-    g.lines('Què he predit? Posició i orientació finals:',3)
-    g.lines('Què he observat? On apareix la primera diferència?',3)
-    g.lines('Què canviaria i per què?',3)
-
-    g.new('Coding Set · Llegir el programa')
-    g.table([['Element','Per a què serveix?'],['Moviment i nombre','El moviment indica l’acció; el nombre indica passos en moviments compatibles.'],['Inici i fi de bucle','Delimiten les ordres repetides. El nombre va davall de l’inici.'],['Definició de funció','Guarda la seqüència en una fila inferior.'],['Crida a funció','Executa la definició i després continua la principal.']],[145,WIDTH-145])
-    g.p('Les peces de definició i crida no porten nombres. Una crida pot estar dins d’un bucle.')
-    g.heading('Propostes de treball')
-    g.p(f'Predir i depurar: {ref("cs-prediu-el-resultat")} i {ref("cs-depura-el-codi")}.<br/>Escriure i abreujar: {ref("cs-escriu-el-codi")} i {ref("cs-refactoritza-el-codi")}.<br/>Definir i delimitar: {ref("cs-divideix-i-crea-funcions")} i {ref("cs-que-pose-dins-del-bucle")}.<br/>Reutilitzar i combinar: {ref("cs-una-funcio-diferents-llocs")} i {ref("cs-combina-funcions-i-repeticions")}.')
-    g.lines('Quines ordres s’executen una vegada? Quines es repeteixen?',3)
-    g.lines('On continua la principal després d’una crida?',3)
-    g.p('<b>Diferència clau:</b> Tale-Bot repeteix tota la base; Coding Set permet delimitar un fragment amb un bucle i reutilitzar una definició mitjançant crides.')
-
-    g.new('Dissenyem una activitat d’aula')
-    g.p('Partiu d’un contingut que ja treballeu. Prepareu una consigna i proveu una possible solució abans de portar-la a l’aula.','small')
-    for label,count in [('Cicle, àrea i robot:',1),('Volem que l’alumnat aprenga a…',2),('Consigna que donarem:',2),('Què haurà de decidir o explicar l’alumnat?',2),('Tapís, materials i suports per participar:',2),('Una possible solució i com la comprovarem:',2),('Què observarem per saber si ho ha entés?',2)]:g.lines(label,count)
-
-    g.new('Registre del treball autònom')
-    g.p('Anota els exercicis que hages treballat, al taller o entre sessions. No cal completar totes les fitxes ni seguir-ne l’ordre. Si necessites més espai, continua en un full.','small',after=16)
-    for n in range(1,3):
-        g.heading(f'Prova {n}')
-        for label in ['Exercici i pàgina:','Dificultat trobada:','Canvi provat i resultat:','Dubte pendent:']:g.lines(label,1)
-
-    g.new('Per a la sessió següent')
-    g.p('A partir del que hages treballat, prepara aquests tres elements per compartir-los. Pots portar el quadern, una fotografia o una explicació oral.')
-    g.lines('Una solució explicada: què has fet i com l’has comprovada?',4)
-    g.lines('Un error revisat: què passava, què has canviat i què has observat?',4)
-    g.lines('Una possible aplicació a l’aula: amb quin grup i per aprendre què?',4)
-    g.heading('Recursos per continuar')
-    g.p('<link href="https://roboticadocents.github.io/sim/" color="#2563eb">Simulador: roboticadocents.github.io/sim/</link><br/><link href="https://roboticadocents.github.io/" color="#2563eb">Portal del curs: roboticadocents.github.io</link>')
-    g.p('Al portal trobaràs activitats, materials imprimibles, solucionaris, tutorials i situacions d’aprenentatge. Els solucionaris permeten contrastar una prova després d’haver-la intentada.','small')
+    g.new('Del taller a l’aula')
+    g.heading('Una possible activitat')
+    g.lines('Cicle, robot i què volem que aprenga el grup', 2)
+    g.lines('Consigna i com comprovarem l’aprenentatge', 2)
+    g.heading('Registre del treball autònom')
+    for label in ['Fitxa i exercici', 'Dificultat trobada', 'Canvi provat i resultat', 'Dubte pendent']:
+        g.lines(label, 1)
+    g.heading('Per a la sessió següent')
+    g.p('Porta una solució explicada, un error revisat amb la prova que has fet i una possible aplicació a l’aula.')
     return g.finish()
 
 # Cada fitxa ocupa una pàgina. Si canvia, parem abans d’escriure referències incorrectes.
@@ -183,7 +146,7 @@ for reader in annexes:
         buf=BytesIO();c=canvas.Canvas(buf,pagesize=A4);c.setFillColor(HexColor(MUTED));c.setFont('Jakarta',8)
         c.drawRightString(W-32,14,str(len(writer.pages)+1));c.save()
         writer.add_page(original);writer.pages[-1].merge_page(PdfReader(buf).pages[0])
-for title,page in [('Guia de treball',1),('Índex',3),('Capacitats dels robots',4),('Disseny d’aula',7),('Registre',8),('Sessió següent',9)]:writer.add_outline_item(title=title,page_number=page-1)
+for title,page in [('Guia de treball',1),('Índex',3),('Capacitats dels robots',2),('Aplicació a l’aula i registre',4)]:writer.add_outline_item(title=title,page_number=page-1)
 for slug,title in WORKSHEETS:writer.add_outline_item(title=('Tale-Bot · ' if slug.startswith('tb-') else 'Coding Set · ')+title,page_number=PAGES[slug]-1)
 writer.add_metadata({'/Title':'Sessió 1 · Quadern de treball i activitats completes','/Author':'Robòtica per a docents'})
 OUT.parent.mkdir(parents=True,exist_ok=True)
@@ -198,5 +161,5 @@ def sync(m):
     label=f'Dossier · p. {PAGES[slug]}' + (f' · exercici {ex.group(1)}' if ex else '')
     return '<p '+attrs+'>'+label+'</p>'
 source=re.sub(r'<p ([^>]*data-handout="[^"]+"[^>]*)>.*?</p>',sync,source)
-md.write_text(source)
+md.write_text(source.replace('sessio-1-handout-revisat.pdf', OUT.name))
 print(f'{OUT.relative_to(ROOT)} · {len(writer.pages)} pàgines; referències MARP sincronitzades')

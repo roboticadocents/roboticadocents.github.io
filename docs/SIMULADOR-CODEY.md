@@ -43,7 +43,9 @@ Referències directes fixades el 19 de novembre de 2026:
 | Potència de cada roda i aturada | `meos_move_with_motors`, `meos_move_stop` |
 | Imatge 16 × 8 i text/valor | `meos_show_led_matrix_face`, `meos_show_led_matrix` |
 | LED RGB | `meos_show_led` |
+| Apaga el LED RGB i imatge temporitzada | `meos_turn_off_led`, `meos_show_led_matrix_face_with_time` |
 | Llum, so, IR i grisos | `meos_detect_lightness`, `meos_detect_volume`, `meos_rocky_detect_ir_reflection`, `meos_rocky_detect_grey` |
+| Obstacle al davant, booleà | `meos_rocky_event_obstacles_ahead` |
 | Condició de color, amb huit opcions | `meos_event_is_color` |
 | Inici i botons A/B/C | `meos_when_board_launch`, `meos_when_button_press` |
 | Espera, repeticions i condicionals | `control_wait`, `control_repeat`, `control_forever`, `control_if`, `control_if_else`, `control_wait_until`, `control_repeat_until` |
@@ -122,7 +124,7 @@ La secció «Pista i sensor» permet carregar recta, corbes o circuit tancat i a
 
 L’exemple «Segueix la vora de la línia» carrega un circuit i situa el sensor sobre la vora interior. Un «per sempre» consulta el gris: quan és fosc accelera més l’eruga esquerra; quan és clar, la dreta. La ruta no es reprodueix automàticament ni es coneix per endavant: el moviment resulta del programa i de les lectures. Si canviem el llindar, les potències, la pista o el punt inicial pot perdre la línia.
 
-«Atura’t sobre el roig» practica una condició de color. Els exemples d’obstacles usen comparadors i llindars IR numèrics. Els projectes antics amb obstacle sí/no es migren a condicions IR de llindar 60, que és una convenció de compatibilitat, no un llindar físic oficial.
+«Atura’t sobre el roig» practica una condició de color. «Atura’t davant d’un obstacle» usa el booleà oficial «hi ha obstacles al davant?» dins d’«espera fins que». Makeblock delega la detecció a `rocky.color_ir_sensor.is_obstacle_ahead()`. El simulador considera cert un IR frontal superior a 60. És un llindar del model. «Obstacles amb llindar IR» conserva el comparador numèric per practicar el calibratge. Els blocs de gir per angle consten a l’extensió però tenen la llista de plataformes buida en la versió 0.4.4. Els exemples de gir usen els blocs temporitzats disponibles. Els projectes antics amb obstacle sí/no es migren a condicions IR de llindar 60, que és una convenció de compatibilitat, no un llindar físic oficial.
 
 ## Guardar i compartir
 

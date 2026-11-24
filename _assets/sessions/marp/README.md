@@ -31,7 +31,7 @@ Les respostes es mostren després de les consignes. L’activitat de les capses 
 
 ## Quadern i referències de pàgina
 
-El quadern complet és `output/pdf/sessio-1-handout-revisat.pdf`: 9 pàgines de guia i 16 fitxes originals, sense retirar cap exercici. L’índex, els números impresos i les referències del MARP comparteixen la mateixa paginació (25 pàgines en total).
+El quadern compacte és `output/pdf/sessio-1-handout-compacte.pdf`: 4 pàgines de guia i les 16 fitxes originals. L’índex, els números impresos i el MARP comparteixen la paginació de 20 pàgines.
 
 La font de la guia és `_scripts/generate-session-handout.py`. Requereix Python amb `reportlab`, `pypdf` i `svglib`. Les fitxes es prenen dels PDF originals `tb-fitxes-paper.pdf` i `cs-fitxes-paper.pdf`; no s’hi inclouen els solucionaris.
 
@@ -46,7 +46,7 @@ El primer script genera el quadern i el mapa `_assets/sessions/handout/it4-sessi
 
 Els atributs `data-exercise` només identifiquen l’exemple projectat. No assignen exercicis obligatoris per al taller ni per al treball entre sessions.
 
-El handout anterior `output/pdf/sessio-1-handout-activitats-completes.pdf` es conserva sense modificacions. El generador escriu exclusivament la nova versió `sessio-1-handout-revisat.pdf`.
+Les versions anteriors de 25 pàgines i d’activitats completes es conserven. El generador escriu el PDF compacte i sincronitza el mapa de pàgines i el MARP.
 
 ## Sessió 2 · Codey Rocky
 

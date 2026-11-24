@@ -84,7 +84,7 @@ Primer, una predicció en paper. Després, una prova al simulador.
 
 ## Coding Express · Les accions són a la via
 
-<p class="handout-ref" data-handout="robots">Dossier · p. 4</p>
+<p class="handout-ref" data-handout="robots">Dossier · p. 2</p>
 
 <div class="hardware-layout"><figure><img src="../../robots/coding-express.webp" alt="Tren Coding Express amb vies DUPLO i maons d’acció"></figure><div><p><b>Vies DUPLO:</b> construïm el recorregut físic.</p><p><b>Maons d’acció:</b> el tren els llig en passar-hi i respon amb aturades, sons o llums.</p><p><b>Què aporta:</b> anticipar què passarà en cada punt del trajecte.</p><p>Educació Infantil · Avui el coneixem amb imatges.</p></div></div>
 
@@ -99,7 +99,7 @@ Fonts: _content/tutorials/ce-primeres-passes.md i ce-maons-accio-sons-llums-atur
 
 ## Tale-Bot Pro · Programar amb botons
 
-<p class="handout-ref" data-handout="tale-bot">Dossier · p. 5</p>
+<p class="handout-ref" data-handout="tale-bot">Dossier · p. 2</p>
 
 <div class="hardware-layout"><figure><img src="../../robots/tale-bot.webp" alt="Robot Tale-Bot Pro"></figure><div><p>Les ordres s’introdueixen al robot.</p><p><b>Avançar i retrocedir:</b> desplaçament.</p><p><b>Girar:</b> canvi d’orientació, sense avançar.</p><p><b>Play:</b> executa la seqüència preparada.</p></div></div>
 
@@ -109,7 +109,7 @@ Fonts: _content/tutorials/ce-primeres-passes.md i ce-maons-accio-sons-llums-atur
 
 ## Tale-Bot Pro · Moviment, veu i traç
 
-<p class="handout-ref" data-handout="robots">Dossier · p. 4</p>
+<p class="handout-ref" data-handout="robots">Dossier · p. 2</p>
 
 - **Veu pròpia:** grava i reprodueix missatges dins d’una ruta.
 - **Dibuix i transport:** deixa un traç o empeny objectes amb els accessoris compatibles.
@@ -129,7 +129,7 @@ Fonts: https://matatalab.com/en/lesson4.2 i https://matatalab.com/en/lesson4.3 ;
 
 ## Activitats amb Tale-Bot
 
-<p class="handout-ref" data-handout="tale-bot">Dossier · p. 5</p>
+<p class="handout-ref" data-handout="tale-bot">Dossier · p. 2</p>
 
 Moviment · Depuració · Repetició
 
@@ -143,7 +143,7 @@ Moviment · Depuració · Repetició
 
 ## Repte 1 · Què farà el robot?
 
-<p class="handout-ref" data-handout="tb-prediu-el-resultat" data-exercise="1">Dossier · p. 10 · exercici 1</p>
+<p class="handout-ref" data-handout="tb-prediu-el-resultat" data-exercise="1">Dossier · p. 5 · exercici 1</p>
 
 Inici: **B2, mirant al nord**.
 
@@ -161,7 +161,7 @@ Dibuixeu el camí i l’orientació final abans d’executar.
 
 ## Comprovem la predicció
 
-<p class="handout-ref" data-handout="tb-prediu-el-resultat" data-exercise="1">Dossier · p. 10 · exercici 1</p>
+<p class="handout-ref" data-handout="tb-prediu-el-resultat" data-exercise="1">Dossier · p. 5 · exercici 1</p>
 
 Visita **B3 → B4 → C4**.
 
@@ -179,7 +179,7 @@ El gir canvia on mira el robot; **no el mou de casella**.
 
 ## Localitzem una tecla equivocada
 
-<p class="handout-ref" data-handout="tb-depura-el-codi" data-exercise="1">Dossier · p. 12 · exercici 1</p>
+<p class="handout-ref" data-handout="tb-depura-el-codi" data-exercise="1">Dossier · p. 7 · exercici 1</p>
 
 Volem fer el mateix camí fins a **C4**.
 
@@ -197,7 +197,7 @@ Quina és la primera instrucció que ens en separa?
 
 ## Canviem el gir i repetim la prova
 
-<p class="handout-ref" data-handout="tb-depura-el-codi" data-exercise="1">Dossier · p. 12 · exercici 1</p>
+<p class="handout-ref" data-handout="tb-depura-el-codi" data-exercise="1">Dossier · p. 7 · exercici 1</p>
 
 **Tercera tecla: dreta en lloc d’esquerra**.
 
@@ -216,7 +216,7 @@ Després: **C4, mirant a l’est**.
 
 ## Repte 2 · Dibuixem tres escalons
 
-<p class="handout-ref" data-handout="tb-dibuixa-per-parts" data-exercise="2">Dossier · p. 15 · exercici 2</p>
+<p class="handout-ref" data-handout="tb-dibuixa-per-parts" data-exercise="2">Dossier · p. 10 · exercici 2</p>
 
 Quina part del camí es repeteix?
 
@@ -234,7 +234,7 @@ On acaba cada execució? Cap a on mira?
 
 ## Una base, tres execucions
 
-<p class="handout-ref" data-handout="tb-dibuixa-per-parts" data-exercise="2">Dossier · p. 15 · exercici 2</p>
+<p class="handout-ref" data-handout="tb-dibuixa-per-parts" data-exercise="2">Dossier · p. 10 · exercici 2</p>
 
 **Avança → Dreta → Avança → Esquerra**
 
@@ -252,7 +252,7 @@ Cada escaló deixa el robot orientat per començar el següent.
 
 ## Una tasca, tres capses
 
-<p class="handout-ref" data-handout="tb-aproxima-i-empeny" data-exercise="2">Dossier · p. 17 · exercici 2</p>
+<p class="handout-ref" data-handout="tb-aproxima-i-empeny" data-exercise="2">Dossier · p. 12 · exercici 2</p>
 
 **Empenta → Torna → Canvia de columna → Recupera l’orientació**
 
@@ -281,7 +281,7 @@ Mantindrem la mateixa manera de treballar:
 
 ## Coding Set · Programar amb peces
 
-<p class="handout-ref" data-handout="coding-set">Dossier · p. 6</p>
+<p class="handout-ref" data-handout="coding-set">Dossier · p. 2</p>
 
 <div class="hardware-layout"><figure><img src="../../robots/coding-set.webp" alt="Matatalab Coding Set amb robot, torre, tauler i peces"></figure><div><p><b>Tauler:</b> preparem el programa amb peces.</p><p><b>Torre:</b> llig les peces i envia les ordres.</p><p><b>Robot:</b> executa els moviments.</p><p>Els nombres permeten abreujar els trams rectes.</p></div></div>
 
@@ -291,7 +291,7 @@ Mantindrem la mateixa manera de treballar:
 
 ## Coding Set · El programa queda a la vista
 
-<p class="handout-ref" data-handout="robots">Dossier · p. 4</p>
+<p class="handout-ref" data-handout="robots">Dossier · p. 2</p>
 
 - **Peces sobre el tauler:** podem llegir, discutir i canviar el programa abans d’executar-lo.
 - **Nombres:** abreugen els trams de moviment.
@@ -311,7 +311,7 @@ Fonts: https://matatalab.com/en/node/62 i https://matatalab.com/en/node/63 ; tut
 
 ## Activitats amb Coding Set
 
-<p class="handout-ref" data-handout="coding-set">Dossier · p. 6</p>
+<p class="handout-ref" data-handout="coding-set">Dossier · p. 2</p>
 
 Nombres · Bucles · Funcions
 
@@ -323,7 +323,7 @@ Nombres · Bucles · Funcions
 
 ## Repte 3 · Abreuja els trams rectes
 
-<p class="handout-ref" data-handout="cs-escriu-el-codi" data-exercise="1">Dossier · p. 19 · exercici 1</p>
+<p class="handout-ref" data-handout="cs-escriu-el-codi" data-exercise="1">Dossier · p. 14 · exercici 1</p>
 
 Inici: **B2, mirant al nord**.
 
@@ -341,7 +341,7 @@ Quines peces necessiten un nombre?
 
 ## Dos trams i un gir
 
-<p class="handout-ref" data-handout="cs-escriu-el-codi" data-exercise="1">Dossier · p. 19 · exercici 1</p>
+<p class="handout-ref" data-handout="cs-escriu-el-codi" data-exercise="1">Dossier · p. 14 · exercici 1</p>
 
 **Avança 3 → Dreta → Avança 2**
 
@@ -359,7 +359,7 @@ Els nombres abreugen els avanços; el gir canvia l’orientació.
 
 ## Repte 4 · Què queda dins del bucle?
 
-<p class="handout-ref" data-handout="cs-que-pose-dins-del-bucle" data-exercise="2">Dossier · p. 23 · exercici 2</p>
+<p class="handout-ref" data-handout="cs-que-pose-dins-del-bucle" data-exercise="2">Dossier · p. 18 · exercici 2</p>
 
 Feu **un avanç inicial** i després **dos escalons**.
 
@@ -377,7 +377,7 @@ Què passaria si l’avanç inicial quedara dins del bucle?
 
 ## L’aproximació queda fora
 
-<p class="handout-ref" data-handout="cs-que-pose-dins-del-bucle" data-exercise="2">Dossier · p. 23 · exercici 2</p>
+<p class="handout-ref" data-handout="cs-que-pose-dins-del-bucle" data-exercise="2">Dossier · p. 18 · exercici 2</p>
 
 **Un avanç + dues execucions de l’escaló**
 
@@ -395,7 +395,7 @@ Acaba en **D4, mirant al nord**.
 
 ## Repte 5 · Defineix i crida un escaló
 
-<p class="handout-ref" data-handout="cs-divideix-i-crea-funcions" data-exercise="2">Dossier · p. 22 · exercici 2</p>
+<p class="handout-ref" data-handout="cs-divideix-i-crea-funcions" data-exercise="2">Dossier · p. 17 · exercici 2</p>
 
 **Fila inferior:** definiu les ordres d’un escaló.
 
@@ -413,7 +413,7 @@ Definir la funció la posa en marxa?
 
 ## Definir i executar són accions diferents
 
-<p class="handout-ref" data-handout="cs-divideix-i-crea-funcions" data-exercise="2">Dossier · p. 22 · exercici 2</p>
+<p class="handout-ref" data-handout="cs-divideix-i-crea-funcions" data-exercise="2">Dossier · p. 17 · exercici 2</p>
 
 <div class="function-example"><figure><figcaption>Definició</figcaption><img src="../../activitats/kits/cs-divideix-i-crea-funcions-ex2-funcio.svg" alt="Definició: avançar, dreta, avançar i esquerra"></figure><figure><figcaption>Programa principal</figcaption><img src="../../activitats/kits/cs-divideix-i-crea-funcions-ex2-resposta.svg" alt="Dues crides a la funció"></figure></div>
 
@@ -431,7 +431,7 @@ La definició s’executa quan el programa la crida.
 
 ## Funcions i bucles, junts
 
-<p class="handout-ref" data-handout="cs-combina-funcions-i-repeticions" data-exercise="1">Dossier · p. 25 · exercici 1</p>
+<p class="handout-ref" data-handout="cs-combina-funcions-i-repeticions" data-exercise="1">Dossier · p. 20 · exercici 1</p>
 
 **La funció:** quines ordres executem.
 
@@ -464,7 +464,7 @@ Predieu on acabarà després de **tres crides** a l’escaló.
 
 ## Matemàtiques · Una figura que es repeteix
 
-<p class="handout-ref" data-handout="tb-dibuixa-per-parts" data-exercise="1">Dossier · p. 15 · exercici 1</p>
+<p class="handout-ref" data-handout="tb-dibuixa-per-parts" data-exercise="1">Dossier · p. 10 · exercici 1</p>
 
 **Dos avanços + gir a la dreta**.
 
@@ -481,7 +481,7 @@ On acabarà mirant el robot?
 
 ## Ara, al vostre cicle
 
-<p class="handout-ref" data-handout="disseny">Dossier · p. 7</p>
+<p class="handout-ref" data-handout="disseny">Dossier · p. 4</p>
 
 Dissenyeu una activitat amb:
 
@@ -498,7 +498,7 @@ Prepareu la consigna i una possible solució. **Proveu-la.**
 
 ## Compartim una proposta per cicle
 
-<p class="handout-ref" data-handout="disseny">Dossier · p. 7</p>
+<p class="handout-ref" data-handout="disseny">Dossier · p. 4</p>
 
 «Volem que aprenguen…»
 
@@ -516,7 +516,7 @@ Prepareu la consigna i una possible solució. **Proveu-la.**
 
 ## Què provaràs primer?
 
-<p class="handout-ref" data-handout="seguent">Dossier · p. 9</p>
+<p class="handout-ref" data-handout="seguent">Dossier · p. 4</p>
 
 **Una activitat concreta. Amb quin grup? Què observaràs?**
 
@@ -535,9 +535,9 @@ Després d’executar: comparem i revisem.
 
 ## Recursos per continuar
 
-<p class="handout-ref" data-handout="registre">Dossier · p. 8</p>
+<p class="handout-ref" data-handout="registre">Dossier · p. 4</p>
 
-- [Quadern complet de la sessió](https://roboticadocents.github.io/output/pdf/sessio-1-handout-revisat.pdf)
+- [Quadern complet de la sessió](https://roboticadocents.github.io/output/pdf/sessio-1-handout-compacte.pdf)
 - [Simulador de Tale-Bot i Coding Set](https://roboticadocents.github.io/sim/)
 - [Fitxes de Tale-Bot](https://roboticadocents.github.io/_assets/activitats/kits/tb-fitxes-paper.pdf) i [solucionari](https://roboticadocents.github.io/_assets/activitats/kits/tb-solucions-paper.pdf)
 - [Fitxes de Coding Set](https://roboticadocents.github.io/_assets/activitats/kits/cs-fitxes-paper.pdf) i [solucionari](https://roboticadocents.github.io/_assets/activitats/kits/cs-solucions-paper.pdf)

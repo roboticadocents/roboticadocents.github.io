@@ -26,7 +26,7 @@
     event:'<path d="M6 3v18M6 4h13l-3 4 3 4H6"/>'
   };
   const definitions={
-    face:['mostra la imatge','display'],text:['mostra el text','display'],rgb:['defineix la llum RGB','lighting'],
+    face:['mostra la imatge','display'],faceTimed:['mostra la imatge durant…','display'],rgbOff:['apaga el LED RGB','lighting'],text:['mostra el text','display'],rgb:['defineix la llum RGB','lighting'],
     forward:['mou endavant','motion','mou endavant durant…'],back:['mou enrere','motion','mou enrere durant…'],left:['gira a l’esquerra','motion'],right:['gira a la dreta','motion'],drive:['mou endavant','motion','mou endavant contínuament'],tracks:['defineix la potència dels motors','motion'],reading:['mostra el valor del sensor','display'],stop:['atura el moviment','motion'],
     wait:['espera','control'],repeat:['repeteix','control'],forever:['per sempre','control'],if:['si','control','si / si no'],until:['repeteix fins que','control'],waitUntil:['espera fins que','control'],while:['mentre · compatibilitat','control']
   };

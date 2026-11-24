@@ -37,9 +37,9 @@ Els valors del paper són exemples controlats. Al robot, anoteu les lectures rea
 
 ## 👣 Desenvolupament pas a pas
 
-### 1. Text abans i després
+### 1. Una imatge durant un segon
 
-Anota què mostra durant l’espera i què queda al final.
+Què mostra Codey durant el primer segon? Què mostra al final?
 
 ![Programa inicial de l’exercici 1; les peces corresponen al simulador.](_assets/activitats/codey/cr-prediu-el-resultat-1-inici.svg)
 

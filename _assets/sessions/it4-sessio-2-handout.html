@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ca"><meta charset="utf-8"><title>Quadern de treball · Codey Rocky</title>
+<style>
+@font-face{font-family:Sora;src:url(marp/fonts/Sora-Bold.ttf);font-weight:700}
+@font-face{font-family:Jakarta;src:url(marp/fonts/PlusJakartaSans.ttf)}
+@font-face{font-family:Jakarta;src:url(marp/fonts/PlusJakartaSans-Bold.ttf);font-weight:700}
+@page{size:A4;margin:16mm}
+body{margin:0;color:#0f172a;font:11pt/1.46 Jakarta,sans-serif}
+section{break-after:page} section:last-child{break-after:auto}
+h1,h2,h3{font-family:Sora,sans-serif} h1{font-size:27pt;margin:.2em 0} h2{font-size:20pt;margin:.3em 0} h3{font-size:12pt;margin:1em 0 .2em}
+p{margin:.45em 0} header{color:#1d4ed8;font-weight:bold} header img{width:24px;vertical-align:middle;margin-right:8px}
+table{border-collapse:collapse;width:100%;margin:1em 0} th,td{text-align:left;border-bottom:1px solid #cbd5e1;padding:7px} th{background:#ebf5fd} a{color:#1d4ed8}
+.line{height:10mm;border-bottom:1px solid #cbd5e1} small{color:#475569} footer{margin-top:1.2em;color:#475569;font-size:9pt}
+</style>
+<section>
+<header><img src="../icons/logo.svg" alt="">Itinerari 4 · Sessió 2</header>
+<h1>Codey Rocky</h1><h2>Dels botons als sensors</h2>
+<p>Nom ___________________________________ Data ______________</p>
+<h3>Repàs</h3><p>Amb Tale-Bot i Coding Set, combinàvem passos i girs. Ara indicarem la potència i la durada del moviment i decidirem quan s’aturen els motors.</p>
+<h3>El recorregut del taller</h3>
+<table><tr><th>Etapa</th><th>Què comprovem?</th></tr>
+<tr><td>1. Preparar i carregar</td><td>Amb el botó A, Codey mostra una cara sense USB després de carregar el programa.</td></tr>
+<tr><td>2. Activar respostes</td><td>Sabem quina pila s’executa en engegar Codey i quina en prémer A. Fitxa 2.</td></tr>
+<tr><td>3. Controlar el moviment</td><td>Expliquem quan s’atura un avanç temporitzat i què passa si ordenem moure endavant i després esperar. Fitxa 9.</td></tr>
+<tr><td>4. Respondre als sensors</td><td>Expliquem què llig Rocky, què compara i quan deixa d’avançar. Fitxa 4.</td></tr>
+<tr><td>5. Aplicar-ho a l’aula</td><td>Adaptem un repte al nostre grup i proposem dos casos de prova.</td></tr></table>
+<h3>Primera càrrega</h3><p>Connecteu Codey amb un micro-USB de dades i enceneu-lo. En mBlock 5, afegiu <strong>Codey</strong> a Dispositius i connecteu-lo. Prepareu <strong>botó A → mostra una cara</strong>, seleccioneu <strong>Càrrega</strong> i transferiu el programa. Proveu A i repetiu la prova sense cable.</p>
+<p><a href="https://roboticadocents.github.io/tutorial/cr-primeres-passes/">Guia de posada en marxa</a> · <a href="https://roboticadocents.github.io/sim/?robot=codey-rocky">Simulador</a></p>
+<footer>Guia de la sessió · 1/3</footer>
+</section>
+<section>
+<header>Itinerari 4 · Sessió 2</header><h2>Índex de les fitxes</h2>
+<p>La presentació cita les pàgines del <strong>recull de fitxes</strong>. En aquest PDF, les fitxes comencen a la pàgina 4. La columna dreta indica la pàgina per anar-hi directament al visor.</p>
+<table><tr><th>Fitxa</th><th>Recull</th><th>Pàgina del PDF</th></tr>
+<tr><td>1. Què mostrarà Codey?</td><td>1–2</td><td>4–5</td></tr>
+<tr><td>2. Quan s’executa cada pila?</td><td>3–4</td><td>6–7</td></tr>
+<tr><td>3. Completa el programa</td><td>5–6</td><td>8–9</td></tr>
+<tr><td>4. Troba i corregeix l’error</td><td>7–8</td><td>10–11</td></tr>
+<tr><td>5. Què queda dins del bucle?</td><td>9–10</td><td>12–13</td></tr>
+<tr><td>6. Quan és certa la condició?</td><td>11–12</td><td>14–15</td></tr>
+<tr><td>7. Una lectura, una resposta</td><td>13–14</td><td>16–17</td></tr>
+<tr><td>8. Per què perd la línia?</td><td>15–16</td><td>18–19</td></tr>
+<tr><td>9. Del pas al control dels motors</td><td>17–18</td><td>20–21</td></tr></table>
+<h3>Com treballarem</h3><p><strong>En paper</strong>, prediu el resultat i explica quina peça el determina. <strong>Al simulador</strong>, carrega l’exercici, executa’l i canvia una sola dada. <strong>Amb el robot</strong>, reconstrueix les peces a mBlock i mesura els valors amb el muntatge real.</p>
+<p>Tria els exercicis segons el teu punt de partida. Pots continuar amb els que et queden pendents després del taller.</p>
+<h3>Dos detalls que cal comprovar</h3><p>Una ordre temporitzada s’atura en acabar. Amb moviment continu, «espera» només retarda la instrucció següent. En les proves de moviment, comprova abans el botó d’aturada programat.</p>
+<p>El sensor infraroig reflectit dona una lectura d’intensitat. Prova amb el teu objecte i ajusta el llindar a partir de les lectures.</p>
+<footer>Guia de la sessió · 2/3</footer>
+</section>
+<section>
+<header>Itinerari 4 · Sessió 2</header><h2>Registre del treball autònom</h2>
+<p>Tria un exercici que t’ajude a resoldre un dubte. Anota què esperaves i què has observat abans de canviar el programa.</p>
+<p><strong>Fitxa i exercici</strong> ___________________ <strong>Entorn</strong> ___________________</p>
+<h3>Predicció i resultat</h3><div class="line"></div><div class="line"></div>
+<h3>Dificultat trobada i canvi provat</h3><div class="line"></div><div class="line"></div>
+<h3>Dubte pendent</h3><div class="line"></div>
+<h2>Una aplicació a l’aula</h2>
+<p><strong>Grup i aprenentatge que volem observar</strong></p><div class="line"></div>
+<p><strong>Dos casos de prova i què esperem en cada cas</strong></p><div class="line"></div><div class="line"></div>
+<h3>Per a la sessió següent</h3><p>Porta una solució que pugues explicar, un error revisat amb la prova que has fet i una possible aplicació a l’aula.</p>
+<footer>Guia de la sessió · 3/3</footer>
+</section>
+</html>

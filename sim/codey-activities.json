@@ -12,29 +12,13 @@
       "cycle": "Segon cicle",
       "exercises": [
         {
-          "title": "Text abans i després",
-          "prompt": "Anota què mostra durant l’espera i què queda al final.",
+          "title": "Una imatge durant un segon",
+          "prompt": "Què mostra Codey durant el primer segon? Què mostra al final?",
           "starter": {
             "start": [
               {
                 "id": "act-1",
-                "type": "text",
-                "power": 20,
-                "left": 10,
-                "right": 10,
-                "seconds": 0.2,
-                "count": 3,
-                "sensor": "light",
-                "compare": "<",
-                "threshold": 40,
-                "value": "HOLA",
-                "body": [],
-                "then": [],
-                "else": []
-              },
-              {
-                "id": "act-2",
-                "type": "wait",
+                "type": "faceTimed",
                 "power": 20,
                 "left": 10,
                 "right": 10,
@@ -43,7 +27,7 @@
                 "sensor": "light",
                 "compare": "<",
                 "threshold": 40,
-                "value": "",
+                "value": "happy",
                 "body": [],
                 "then": [],
                 "else": []
@@ -73,23 +57,7 @@
             "start": [
               {
                 "id": "act-4",
-                "type": "text",
-                "power": 20,
-                "left": 10,
-                "right": 10,
-                "seconds": 0.2,
-                "count": 3,
-                "sensor": "light",
-                "compare": "<",
-                "threshold": 40,
-                "value": "HOLA",
-                "body": [],
-                "then": [],
-                "else": []
-              },
-              {
-                "id": "act-5",
-                "type": "wait",
+                "type": "faceTimed",
                 "power": 20,
                 "left": 10,
                 "right": 10,
@@ -98,7 +66,7 @@
                 "sensor": "light",
                 "compare": "<",
                 "threshold": 40,
-                "value": "",
+                "value": "happy",
                 "body": [],
                 "then": [],
                 "else": []
@@ -124,7 +92,7 @@
             "B": [],
             "C": []
           },
-          "answer": "Durant l’espera mostra HOLA. Al final mostra ADEU.",
+          "answer": "Mostra una cara feliç durant un segon. La peça esborra la imatge en acabar i després la pantalla mostra ADEU.",
           "expected": {
             "output.text": "ADEU"
           },
@@ -364,7 +332,7 @@
                   },
                   {
                     "id": "act-17",
-                    "type": "rgb",
+                    "type": "rgbOff",
                     "power": 20,
                     "left": 10,
                     "right": 10,
@@ -373,7 +341,7 @@
                     "sensor": "light",
                     "compare": "<",
                     "threshold": 40,
-                    "value": "#000000",
+                    "value": "",
                     "body": [],
                     "then": [],
                     "else": []
@@ -468,7 +436,7 @@
                   },
                   {
                     "id": "act-23",
-                    "type": "rgb",
+                    "type": "rgbOff",
                     "power": 20,
                     "left": 10,
                     "right": 10,
@@ -477,7 +445,7 @@
                     "sensor": "light",
                     "compare": "<",
                     "threshold": 40,
-                    "value": "#000000",
+                    "value": "",
                     "body": [],
                     "then": [],
                     "else": []
@@ -1706,7 +1674,7 @@
               },
               {
                 "id": "act-70",
-                "type": "rgb",
+                "type": "rgbOff",
                 "power": 20,
                 "left": 10,
                 "right": 10,
@@ -1715,7 +1683,7 @@
                 "sensor": "light",
                 "compare": "<",
                 "threshold": 40,
-                "value": "#000000",
+                "value": "",
                 "body": [],
                 "then": [],
                 "else": []
@@ -1790,7 +1758,7 @@
                   },
                   {
                     "id": "act-74",
-                    "type": "rgb",
+                    "type": "rgbOff",
                     "power": 20,
                     "left": 10,
                     "right": 10,
@@ -1799,7 +1767,7 @@
                     "sensor": "light",
                     "compare": "<",
                     "threshold": 40,
-                    "value": "#000000",
+                    "value": "",
                     "body": [],
                     "then": [],
                     "else": []
@@ -1905,7 +1873,7 @@
               },
               {
                 "id": "act-80",
-                "type": "rgb",
+                "type": "rgbOff",
                 "power": 20,
                 "left": 10,
                 "right": 10,
@@ -1914,7 +1882,7 @@
                 "sensor": "light",
                 "compare": "<",
                 "threshold": 40,
-                "value": "#000000",
+                "value": "",
                 "body": [],
                 "then": [],
                 "else": []
@@ -2021,7 +1989,7 @@
                   },
                   {
                     "id": "act-86",
-                    "type": "rgb",
+                    "type": "rgbOff",
                     "power": 20,
                     "left": 10,
                     "right": 10,
@@ -2030,7 +1998,7 @@
                     "sensor": "light",
                     "compare": "<",
                     "threshold": 40,
-                    "value": "#000000",
+                    "value": "",
                     "body": [],
                     "then": [],
                     "else": []
@@ -3510,8 +3478,8 @@
               {
                 "points": [
                   {
-                    "x": 400.0,
-                    "y": 100.0
+                    "x": 400,
+                    "y": 100
                   },
                   {
                     "x": 409.8149539397672,
@@ -3670,8 +3638,8 @@
                     "y": 244.1110276361397
                   },
                   {
-                    "x": 650.0,
-                    "y": 250.0
+                    "x": 650,
+                    "y": 250
                   },
                   {
                     "x": 649.8072590601807,
@@ -3830,8 +3798,8 @@
                     "y": 399.8843554361084
                   },
                   {
-                    "x": 400.0,
-                    "y": 400.0
+                    "x": 400,
+                    "y": 400
                   },
                   {
                     "x": 390.18504606023293,
@@ -3990,7 +3958,7 @@
                     "y": 255.88897236386035
                   },
                   {
-                    "x": 150.0,
+                    "x": 150,
                     "y": 250.00000000000003
                   },
                   {
@@ -4151,7 +4119,7 @@
                   },
                   {
                     "x": 399.99999999999994,
-                    "y": 100.0
+                    "y": 100
                   }
                 ],
                 "width": 24,
