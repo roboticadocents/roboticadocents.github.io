@@ -2,7 +2,7 @@
   'use strict';
   const root = document.querySelector('[data-codey-workspace]');
   if (!root || !window.CodeySimulation) return;
-  const { Engine, WIDTH, HEIGHT, COLORS, trackPreset, segmentDistance, cleanExpression } = window.CodeySimulation;
+  const { Engine, WIDTH, HEIGHT, R, COLORS, trackPreset, segmentDistance, cleanExpression } = window.CodeySimulation;
   const $ = q => root.querySelector(q);
   const escape = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const activitiesURL=new URL('./codey-activities.json',document.currentScript.src);
@@ -109,7 +109,7 @@
   }
   root.addEventListener('click',event=>{
     const button=event.target.closest('button');if(!button)return;
-    if(nativeEditor&&['data-cr-run','data-cr-step','data-cr-script','data-cr-export','data-cr-clear','data-cr-event','data-cr-apply-threshold'].some(key=>button.hasAttribute(key))){const valid=nativeEditor.flush();if(valid===false&&(button.hasAttribute('data-cr-run')||button.hasAttribute('data-cr-step')||button.hasAttribute('data-cr-event')))return;}
+    if(nativeEditor&&['data-cr-run','data-cr-step','data-cr-script','data-cr-export','data-cr-clear','data-cr-clear-scene','data-cr-event','data-cr-apply-threshold'].some(key=>button.hasAttribute(key))){const valid=nativeEditor.flush();if(valid===false&&(button.hasAttribute('data-cr-run')||button.hasAttribute('data-cr-step')||button.hasAttribute('data-cr-event')))return;}
     if(button.hasAttribute('data-cr-load-activity'))loadActivity();
     if(button.hasAttribute('data-cr-script')){selectedEvent=button.dataset.crScript;renderProgram();}
     if (button.hasAttribute('data-cr-clear')) { halt();delete workspaceXml[selectedEvent];program[selectedEvent]=[];save();renderProgram(); }
@@ -119,6 +119,18 @@
     if (button.hasAttribute('data-cr-event')) engine.trigger(button.dataset.crEvent);
     if (button.hasAttribute('data-cr-reset')) { engine.reset();engine.pose={...startPose};engine.trace='Robot retornat a la posició inicial; es conserva la pista.'; }
     if (button.hasAttribute('data-cr-rotate')) { halt();startPose.angle=(startPose.angle+90)%360;engine.pose={...startPose};save(); }
+    if(button.hasAttribute('data-cr-clear-scene')){
+      engine.environment.obstacles=[];
+      engine.environment.lines=[];
+      engine.environment.patches=[];
+      calibration={background:null,line:null};
+      engine.reset();
+      engine.pose={...startPose};
+      engine.trace='Escenari buit. Es conserva el programa i la posició inicial.';
+      $('[data-cr-track]').value='none';
+      syncSceneControls();
+      save();
+    }
     if(button.hasAttribute('data-cr-clear-lines')){halt();engine.environment.lines=[];engine.environment.patches=[];$('[data-cr-track]').value='none';save();}
     if(button.hasAttribute('data-cr-sample')) {
       const value=engine.sensor('gray');
@@ -148,7 +160,7 @@
       const url=URL.createObjectURL(new Blob([JSON.stringify(project(),null,2)],{type:'application/json'}));
       const a=document.createElement('a');a.href=url;a.download='projecte-codey-rocky.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
     }
-    if (button.hasAttribute('data-cr-tool')) { tool=button.dataset.crTool;root.querySelectorAll('[data-cr-tool]').forEach(b=>b.setAttribute('aria-pressed',String(b===button))); }
+    if (button.hasAttribute('data-cr-tool')) { keyboardObstacle=null; tool=button.dataset.crTool;root.querySelectorAll('[data-cr-tool]').forEach(b=>b.setAttribute('aria-pressed',String(b===button))); }
   });
   root.addEventListener('change', async event => {
     const input = event.target;
@@ -181,13 +193,44 @@
     engine.environment[input.dataset.crSensor]=Number(input.value);
     $(`[data-cr-${input.dataset.crSensor}-value]`).textContent=input.value;save();
   }));
+  let draggedObstacle=null, keyboardObstacle=null;
+
+  function obstacleAt(x,y) {
+    const obstacles=engine.environment.obstacles;
+    for(let index=obstacles.length-1;index>=0;index--){
+      const b=obstacles[index];
+      if(x>=b.x&&x<=b.x+b.w&&y>=b.y&&y<=b.y+b.h)return index;
+    }
+    return -1;
+  }
+
+  function moveObstacle(obstacle,x,y) {
+    const nextX=Math.max(0,Math.min(WIDTH-obstacle.w,x));
+    const nextY=Math.max(0,Math.min(HEIGHT-obstacle.h,y));
+    const overlaps=pose=>pose.x>=nextX-R&&pose.x<=nextX+obstacle.w+R&&
+      pose.y>=nextY-R&&pose.y<=nextY+obstacle.h+R;
+    if(overlaps(startPose)||overlaps(engine.pose)){
+      engine.trace='Deixa espai al voltant del robot i de la seua posició inicial.';
+      return false;
+    }
+    obstacle.x=nextX;obstacle.y=nextY;
+    engine.trace='Obstacle mogut.';
+    return true;
+  }
+
   function editWorld(x,y) {
-    x=numeric(x,25,WIDTH-25,25);y=numeric(y,25,HEIGHT-25,25);
+    if(tool!=='remove'){x=numeric(x,25,WIDTH-25,25);y=numeric(y,25,HEIGHT-25,25);}
     if(tool==='robot') {
       halt();if(engine.environment.obstacles.some(b=>x>=b.x-20&&x<=b.x+b.w+20&&y>=b.y-20&&y<=b.y+b.h+20)){engine.trace='La posició inicial ha de quedar fora dels obstacles.';return;}
       startPose={x,y,angle:startPose.angle};engine.pose={...startPose};
     }else if(tool==='remove') {
-      engine.environment.obstacles=engine.environment.obstacles.filter(b=>!(x>=b.x-10&&x<=b.x+b.w+10&&y>=b.y-10&&y<=b.y+b.h+10));
+      const index=obstacleAt(x,y);
+      if(index!==-1){
+        engine.environment.obstacles.splice(index,1);
+        engine.trace='Obstacle llevat.';
+        save();
+        return;
+      }
       engine.environment.patches=engine.environment.patches.filter(b=>!(x>=b.x&&x<=b.x+b.w&&y>=b.y&&y<=b.y+b.h));
       engine.environment.lines=engine.environment.lines.filter(l=>!(l.points.length===1&&Math.hypot(x-l.points[0].x,y-l.points[0].y)<l.width/2+5)&&!l.points.some((p,i)=>i>0&&segmentDistance(x,y,l.points[i-1],p)<l.width/2+5));
     }else if(tool==='line'){
@@ -198,13 +241,58 @@
     save();
   }
   function worldPoint(e){const r=world.getBoundingClientRect();return {x:numeric((e.clientX-r.left)*WIDTH/r.width,0,WIDTH,0),y:numeric((e.clientY-r.top)*HEIGHT/r.height,0,HEIGHT,0)};}
-  world.addEventListener('pointerdown',e=>{keyboardCursor=false;const p=worldPoint(e);editWorld(p.x,p.y);if(tool==='line')world.setPointerCapture(e.pointerId);});
-  world.addEventListener('pointermove',e=>{if(!drawing||!world.hasPointerCapture(e.pointerId))return;const p=worldPoint(e),last=drawing.points.at(-1);if(drawing.points.length<1200&&Math.hypot(p.x-last.x,p.y-last.y)>2)drawing.points.push(p);});
-  const endDrawing=()=>{drawing=null;save();};world.addEventListener('pointerup',endDrawing);world.addEventListener('pointercancel',endDrawing);
+  world.addEventListener('pointerdown',e=>{
+    if(e.button!==0||!e.isPrimary)return;
+    keyboardCursor=false;
+    const p=worldPoint(e);
+    if(tool==='move-obstacle'){
+      const obstacle=engine.environment.obstacles[obstacleAt(p.x,p.y)];
+      if(!obstacle)return;
+      halt();
+      draggedObstacle={obstacle,dx:p.x-obstacle.x,dy:p.y-obstacle.y};
+      world.setPointerCapture(e.pointerId);
+      return;
+    }
+    editWorld(p.x,p.y);
+    if(tool==='line')world.setPointerCapture(e.pointerId);
+  });
+  world.addEventListener('pointermove',e=>{
+    if(!world.hasPointerCapture(e.pointerId))return;
+    const p=worldPoint(e);
+    if(draggedObstacle){
+      const {obstacle,dx,dy}=draggedObstacle;
+      if(engine.environment.obstacles.includes(obstacle))moveObstacle(obstacle,p.x-dx,p.y-dy);
+      return;
+    }
+    if(!drawing)return;
+    const last=drawing.points.at(-1);
+    if(drawing.points.length<1200&&Math.hypot(p.x-last.x,p.y-last.y)>2)drawing.points.push(p);
+  });
+  function endWorldEdit(){
+    if(!drawing&&!draggedObstacle)return;
+    drawing=null;draggedObstacle=null;save();
+  }
+  world.addEventListener('lostpointercapture',endWorldEdit);
   world.addEventListener('keydown',e=>{
     const dirs={ArrowUp:[0,-20],ArrowDown:[0,20],ArrowLeft:[-20,0],ArrowRight:[20,0]};
     if(dirs[e.key]) {e.preventDefault();keyboardCursor=true;cursor.x=Math.max(25,Math.min(WIDTH-25,cursor.x+dirs[e.key][0]));cursor.y=Math.max(25,Math.min(HEIGHT-25,cursor.y+dirs[e.key][1]));}
-    if(e.key===' '||e.key==='Enter'){e.preventDefault();editWorld(cursor.x,cursor.y);}
+    if(e.key==='Escape')keyboardObstacle=null;
+    if(e.key===' '||e.key==='Enter'){
+      e.preventDefault();
+      if(tool!=='move-obstacle'){editWorld(cursor.x,cursor.y);return;}
+      if(keyboardObstacle&&engine.environment.obstacles.includes(keyboardObstacle)){
+        if(moveObstacle(keyboardObstacle,cursor.x-keyboardObstacle.w/2,cursor.y-keyboardObstacle.h/2)){
+          keyboardObstacle=null;
+          save();
+        }
+      }else{
+        keyboardObstacle=engine.environment.obstacles[obstacleAt(cursor.x,cursor.y)]||null;
+        if(keyboardObstacle){
+          halt();
+          engine.trace='Obstacle seleccionat. Mou el cursor i prem Espai per col·locar-lo.';
+        }
+      }
+    }
   });
   const pixelText=document.createElement('canvas');pixelText.width=16;pixelText.height=8;const textCtx=pixelText.getContext('2d',{willReadFrequently:true});
   const faces={

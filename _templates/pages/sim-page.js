@@ -34,7 +34,7 @@ function SimPage({ root = '../' } = {}) {
   <script defer src="${r}sim/vendor/scratch-blocks/messages.js"></script>
   <script defer src="${r}sim/vendor/scratch-blocks/messages-ca.js"></script>
   <script defer src="${r}sim/codey-native-blocks.js?v=5"></script>
-  <script defer src="${r}sim/codey.js?v=13"></script>
+  <script defer src="${r}sim/codey.js?v=15"></script>
   <link rel="stylesheet" href="${r}sim/spike.css?v=2">
   <script defer src="${r}sim/spike-engine.js?v=2"></script>
   <script defer src="${r}sim/spike.js?v=2"></script>

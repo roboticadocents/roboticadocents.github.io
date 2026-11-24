@@ -120,7 +120,7 @@ Fonts de les escales: [API del sensor infraroig/color de Rocky](https://makebloc
 
 ## Pistes, superfícies i exemples
 
-La secció «Pista i sensor» permet carregar recta, corbes o circuit tancat i ajustar l’amplària. L’eina de línia dibuixa traços amb arrossegament; l’eina de superfície pinta una zona de color. Les línies es dibuixen sobre les superfícies. «Lleva element» elimina l’obstacle, la zona o el traç que es toca. La posició inicial i la seua orientació es poden canviar. Amb el teclat: fletxes per moure el cursor i Espai o Retorn per aplicar l’eina.
+La secció «Pista i sensor» permet carregar recta, corbes o circuit tancat i ajustar l’amplària. L’eina de línia dibuixa traços amb arrossegament; l’eina de superfície pinta una zona de color. Les línies es dibuixen sobre les superfícies. «Mou obstacle» permet arrossegar un obstacle amb el ratolí o amb el dit. Amb el teclat, desplaça el cursor amb les fletxes i prem Espai per seleccionar i col·locar l’obstacle. «Lleva element» dona prioritat a l’obstacle que es toca, encara que estiga sobre una línia o superfície. La posició inicial i la seua orientació es poden canviar. Amb el teclat: fletxes per moure el cursor i Espai o Retorn per aplicar l’eina.
 
 L’exemple «Segueix la vora de la línia» carrega un circuit i situa el sensor sobre la vora interior. Un «per sempre» consulta el gris: quan és fosc accelera més l’eruga esquerra; quan és clar, la dreta. La ruta no es reprodueix automàticament ni es coneix per endavant: el moviment resulta del programa i de les lectures. Si canviem el llindar, les potències, la pista o el punt inicial pot perdre la línia.
 
@@ -130,7 +130,7 @@ L’exemple «Segueix la vora de la línia» carrega un circuit i situa el senso
 
 Es desen automàticament al navegador el programa, la pista, les superfícies, els obstacles, l’orientació del sensor, la posició inicial, les entrades de llum/so i les mesures de calibratge. El camp opcional `workspaceXml` conserva la posició i les peces soltes dels programes d’inici/A/B/C. Les expressions i els paràmetres connectats es desen també al programa executable; en obrir un projecte antic es construeixen les peces equivalents. «Descarrega el projecte» exporta un JSON que «Obri un projecte» restaura. No és un fitxer de mBlock ni es carrega directament al robot. S’admeten fitxers de fins a 1,5 MB; les estructures, coordenades i mides es validen en obrir-los.
 
-«Reinicia l’escenari» torna el robot a l’inici i conserva la pista; «Neteja la pista» elimina les línies i les superfícies. Els exemples de línia, color i obstacles substitueixen l’escenari per la seua preparació.
+«Reinicia l’escenari» torna el robot a l’inici i conserva la pista; «Neteja la pista» elimina les línies i les superfícies. «Buida l’escenari» elimina també els obstacles i les mesures de calibratge, conservant el programa i la posició inicial. Els exemples de línia, color i obstacles substitueixen l’escenari per la seua preparació.
 
 ## Fitxers i verificació
 

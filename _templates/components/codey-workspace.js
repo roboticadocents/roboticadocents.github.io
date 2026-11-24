@@ -3,7 +3,7 @@ const { icon } = require('../../sim/codey-blocks');
 function CodeyWorkspace({ root }) {
   return `<section class="cr-workspace" id="panel-controls-codey-rocky" role="tabpanel" aria-labelledby="tab-codey-rocky" data-codey-workspace hidden>
     <div class="cr-stage-panel">
-      <div class="cr-section-heading"><h2>Codey Rocky</h2><button type="button" class="sim-btn sim-btn-outline" data-cr-reset>↺ Reinicia l’escenari</button></div>
+      <div class="cr-section-heading"><h2>Codey Rocky</h2><button type="button" class="sim-btn sim-btn-outline" data-cr-reset>↺ Reinicia l’escenari</button><button type="button" class="sim-btn sim-btn-outline" data-cr-clear-scene>Buida l’escenari</button></div>
       <div class="cr-device">
         <div class="cr-device-face"><canvas width="320" height="160" data-cr-led aria-label="Pantalla LED de 16 per 8 punts"></canvas><span class="cr-rgb" data-cr-rgb role="img" aria-label="Indicador RGB verd"></span></div>
         <div class="cr-device-buttons"><button type="button" data-cr-event="A">A</button><button type="button" data-cr-event="B">B</button><button type="button" data-cr-event="C">C</button><span>Prem un botó per activar el seu programa.</span></div>
@@ -19,6 +19,7 @@ function CodeyWorkspace({ root }) {
       <details class="cr-scene-settings"><summary>Edita l’escenari i calibra el sensor</summary><div class="cr-scene-settings-body">
       <div class="cr-world-tools" role="group" aria-label="Edició de l’escenari">
         <button type="button" class="sim-btn sim-btn-secondary" data-cr-tool="obstacle" aria-pressed="true">Obstacle</button>
+        <button type="button" class="sim-btn sim-btn-outline" data-cr-tool="move-obstacle" aria-pressed="false">Mou obstacle</button>
         <button type="button" class="sim-btn sim-btn-outline" data-cr-tool="robot" aria-pressed="false">Posició inicial</button>
         <button type="button" class="sim-btn sim-btn-outline" data-cr-tool="line" aria-pressed="false">Dibuixa línia</button>
         <button type="button" class="sim-btn sim-btn-outline" data-cr-tool="surface" aria-pressed="false">Superfície de color</button>
@@ -34,7 +35,7 @@ function CodeyWorkspace({ root }) {
           <button type="button" class="sim-btn sim-btn-outline" data-cr-clear-lines>Neteja la pista</button>
         </div>
       </details>
-      <p class="cr-hint">Clica o toca l’escenari amb l’eina seleccionada. Arrossega per dibuixar una línia. Pots editar obstacles durant l’execució.</p>
+      <p class="cr-hint">Clica o toca l’escenari amb l’eina seleccionada. Arrossega amb «Mou obstacle» o «Dibuixa línia». Amb el teclat, usa les fletxes i prem Espai per seleccionar i col·locar l’obstacle.</p>
       <details class="cr-calibration"><summary>Calibratge de la línia</summary>
         <p>Amb el sensor cap al terra, situa el punt de lectura sobre el fons i després sobre la línia.</p>
         <div class="cr-track-controls"><button type="button" class="sim-btn sim-btn-outline" data-cr-sample="background">Mesura el fons</button><output data-cr-sample-background>—</output><button type="button" class="sim-btn sim-btn-outline" data-cr-sample="line">Mesura la línia</button><output data-cr-sample-line>—</output><button type="button" class="sim-btn sim-btn-secondary" data-cr-apply-threshold>Aplica el llindar mitjà</button></div>
