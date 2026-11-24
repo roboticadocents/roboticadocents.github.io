@@ -49,8 +49,8 @@ function PresencialPage() {
       </div>
       <p><a href="https://support.makeblock.com/hc/en-us/article_attachments/13133887873047">Manual oficial de Codey Rocky (PDF, anglés)</a> · <a href="https://support.makeblock.com/hc/en-us/articles/1500008637961-Program-Codey-Rocky-with-mBlock-5">Connexió i programació: instruccions oficials</a></p>
       <div class="presencial-download">
-        <div><h3>Quadern compacte per imprimir</h3><p>Els 27 exercicis en 14 pàgines A4. Són 7 fulls a doble cara. L’índex indica la pàgina de cada exercici.</p></div>
-        <a class="presencial-download-link" href="../_assets/activitats/kits/cr-quadern-compacte.pdf" download>Descarrega el quadern compacte <span>PDF</span></a>
+        <div><h3>Quadern compacte en blanc i negre</h3><p>Els 27 exercicis en 10 pàgines A4 amb estil de fitxa. Són 5 fulls a doble cara. L’índex indica la pàgina de cada exercici.</p></div>
+        <a class="presencial-download-link" href="../output/pdf/sessio-2-handout-compacte-bn.pdf" download>Descarrega el quadern compacte <span>PDF</span></a>
       </div>
       <div class="presencial-download">
         <div><h3>Quadern de treball</h3><p>Guia del taller, índex, registre i les nou fitxes de Codey Rocky.</p></div>
