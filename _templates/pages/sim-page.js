@@ -22,9 +22,9 @@ function SimPage({ root = '../' } = {}) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${r}_css/styles.css?v=10">
-  <link rel="stylesheet" href="${r}sim/sim.css?v=6">
+  <link rel="stylesheet" href="${r}sim/sim.css?v=7">
   <link rel="icon" type="image/svg+xml" href="${r}_assets/icons/logo.svg">
-  <script defer src="${r}sim/sim.js?v=8"></script>
+  <script defer src="${r}sim/sim.js?v=9"></script>
   <link rel="stylesheet" href="${r}sim/codey.css?v=10">
   <script defer src="${r}sim/codey-engine.js?v=9"></script>
   <script defer src="${r}sim/codey-blocks.js?v=4"></script>
@@ -123,8 +123,6 @@ function SimPage({ root = '../' } = {}) {
             aria-pressed="false"
             data-mat-tool="emoji"
             data-open-emoji-dialog
-            commandfor="sim-emoji-dialog"
-            command="show-popover"
           >
             <span data-emoji-tool-icon aria-hidden="true">😀</span>
             <span>Emoji</span>
@@ -538,6 +536,7 @@ function SimPage({ root = '../' } = {}) {
     id="sim-emoji-dialog"
     class="sim-emoji-dialog"
     popover="auto"
+    hidden
     role="dialog"
     aria-labelledby="sim-emoji-dialog-title"
     data-emoji-dialog
@@ -547,8 +546,6 @@ function SimPage({ root = '../' } = {}) {
       <button
         type="button"
         class="sim-emoji-dialog-close"
-        commandfor="sim-emoji-dialog"
-        command="hide-popover"
         data-close-emoji-dialog
         aria-label="Tanca el selector d'emojis"
       >✕</button>
@@ -563,7 +560,6 @@ function SimPage({ root = '../' } = {}) {
         placeholder="Escriu o enganxa qualsevol emoji (ex. 🦄, 🚀, 🏰)..."
         maxlength="16"
         data-emoji-custom-input
-        autofocus
       >
       <button type="button" class="sim-btn sim-btn-secondary" data-emoji-custom-apply>
         Usa l'emoji

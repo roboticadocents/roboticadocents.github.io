@@ -395,33 +395,21 @@
   }
 
   function openEmojiDialog() {
-    if (!emojiDialog) return;
+    if (!emojiDialog || !emojiDialog.hidden) return;
     renderEmojiDialogOptions();
+    emojiDialog.hidden = false;
     if (typeof emojiDialog.showPopover === 'function') {
-      try {
-        if (!emojiDialog.matches(':popover-open')) {
-          emojiDialog.showPopover();
-        }
-      } catch (_) {}
+      emojiDialog.showPopover();
     } else {
-      emojiDialog.classList.add(':popover-open');
-    }
-    if (emojiCustomInput) {
-      setTimeout(() => emojiCustomInput.focus(), 20);
+      emojiDialog.classList.add('is-open');
     }
   }
 
   function closeEmojiDialog() {
-    if (!emojiDialog) return;
-    if (typeof emojiDialog.hidePopover === 'function') {
-      try {
-        if (emojiDialog.matches(':popover-open')) {
-          emojiDialog.hidePopover();
-        }
-      } catch (_) {}
-    } else {
-      emojiDialog.classList.remove(':popover-open');
-    }
+    if (!emojiDialog || emojiDialog.hidden) return;
+    if (typeof emojiDialog.hidePopover === 'function') emojiDialog.hidePopover();
+    emojiDialog.classList.remove('is-open');
+    emojiDialog.hidden = true;
   }
 
   function selectEmojiForBoard(emoji) {
@@ -437,25 +425,14 @@
   }
 
   if (emojiDialog) {
-    renderEmojiDialogOptions();
-    emojiDialog.addEventListener('beforetoggle', (e) => {
-      if (e.newState === 'open') {
-        renderEmojiDialogOptions();
+    emojiDialog.querySelector('[data-close-emoji-dialog]').addEventListener('click', closeEmojiDialog);
+    emojiDialog.addEventListener('toggle', (event) => {
+      if (event.newState === 'closed' && !emojiDialog.matches(':popover-open')) {
+        emojiDialog.hidden = true;
       }
     });
-  }
-
-  // Fallback per a Invoker Commands (commandfor / command) en navegadors sense suport natiu
-  if (!('commandForElement' in HTMLButtonElement.prototype)) {
-    document.addEventListener('click', (event) => {
-      const btn = event.composedPath().find((el) => el && el.matches && el.matches('button[commandfor="sim-emoji-dialog"]'));
-      if (!btn) return;
-      const cmd = btn.getAttribute('command');
-      if (cmd === 'show-popover') {
-        openEmojiDialog();
-      } else if (cmd === 'hide-popover') {
-        closeEmojiDialog();
-      }
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && emojiDialog.classList.contains('is-open')) closeEmojiDialog();
     });
   }
 
@@ -1575,6 +1552,7 @@
   }
 
   function switchRobot(robotSlug, pushUrl = true) {
+    closeEmojiDialog();
     if (!['tale-bot', 'coding-set', 'codey-rocky', 'spike'].includes(robotSlug)) robotSlug = 'tale-bot';
     if (state.isRunning) stopExecution();
     state.robot = robotSlug;
