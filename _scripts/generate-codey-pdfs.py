@@ -114,12 +114,12 @@ def diagram(ex,solution=False,maxheight=190,monochrome=False):
   ImageOps.grayscale(PillowImage.open(BytesIO(png))).save(grayscale, format='PNG')
   png = grayscale.getvalue()
  image=Image(BytesIO(png),width=w*scale,height=h*scale);image.hAlign='LEFT';return image
-def footer(label):
+def footer(label, page_offset=0):
  def draw(c,doc):
-  c.saveState();c.setStrokeColor(HexColor('#b0b0b0'));c.line(34,31,A4[0]-34,31);c.setFont('Jakarta',8);c.setFillColor(HexColor('#444444'));c.drawString(34,19,'Robòtica per a docents · Codey Rocky');c.drawRightString(A4[0]-34,19,f'{label} · {doc.page}');c.restoreState()
+  c.saveState();c.setStrokeColor(HexColor('#b0b0b0'));c.line(34,31,A4[0]-34,31);c.setFont('Jakarta',8);c.setFillColor(HexColor('#444444'));c.drawString(34,19,'Robòtica per a docents · Codey Rocky');c.drawRightString(A4[0]-34,19,f'{label} · {doc.page+page_offset}');c.restoreState()
  return draw
-def document(file,story,label):
- doc=SimpleDocTemplate(str(file) if isinstance(file, Path) else file,pagesize=A4,rightMargin=34,leftMargin=34,topMargin=30,bottomMargin=43,title=label,author='Robòtica per a docents');doc.build(story,onFirstPage=footer(label),onLaterPages=footer(label))
+def document(file,story,label,page_offset=0):
+ doc=SimpleDocTemplate(str(file) if isinstance(file, Path) else file,pagesize=A4,rightMargin=34,leftMargin=34,topMargin=30,bottomMargin=43,title=label,author='Robòtica per a docents');doc.build(story,onFirstPage=footer(label,page_offset),onLaterPages=footer(label,page_offset))
 def exercise(ex,i):
  return [para(f'{i}. {ex["title"]}','h'),para(ex['prompt']),diagram(ex),Spacer(1,5),Response(ex['id'].startswith(('cr-completa-el-programa','cr-respon-als-sensors')))]
 if '--compact-only' not in sys.argv:
@@ -149,8 +149,9 @@ if '--compact-only' not in sys.argv:
     key=OUT/'cr-solucions-tres-entorns.pdf';document(key,story,'Solucionari');assert len(PdfReader(key).pages)==len(activities),'El solucionari ha de tindre una pàgina per activitat';shutil.copyfile(key,WEB/key.name)
     print(f'{len(activities)} fitxes de 2 pàgines, recull de {len(activities)*2} pàgines i solucionari de {len(activities)} pàgines generats.')
 
-def compact_workbook():
+def compact_workbook(reference):
     """Maqueta els exercicis en flux continu i indexa la pàgina de cadascun."""
+    intro_pages = len(PdfReader(reference).pages) + 1
     exercise_heading = ParagraphStyle('compact-exercise', parent=styles['h'], spaceBefore=5, spaceAfter=3)
     prompt_style = ParagraphStyle('compact-prompt', parent=styles['body'], spaceAfter=3)
 
@@ -162,7 +163,7 @@ def compact_workbook():
     class Workbook(SimpleDocTemplate):
         def afterFlowable(self, item):
             if isinstance(item, ExerciseTitle):
-                exercise_pages[item.key] = self.page + 1
+                exercise_pages[item.key] = self.page + intro_pages
 
     exercise_pages = {}
     # Reservem més alçada per al bucle llarg del seguidor de línia.
@@ -204,7 +205,7 @@ def compact_workbook():
         c.setFont('Jakarta', 8)
         c.setFillColor(HexColor('#444444'))
         c.drawString(34, 19, label)
-        c.drawRightString(A4[0]-34, 19, str(doc.page+1))
+        c.drawRightString(A4[0]-34, 19, str(doc.page+intro_pages))
         c.restoreState()
     Workbook(pages, pagesize=A4, rightMargin=34, leftMargin=34,
              topMargin=23, bottomMargin=31).build(
@@ -225,7 +226,7 @@ def compact_workbook():
     for n, activity in enumerate(activities, 1):
         rows.append([f'{n}. {activity["title"]}', f'{2*n-1}–{2*n}'] +
                     [str(exercise_pages[n, 1])])
-        assert all(exercise_pages[n, position] == n+1 for position in range(1, 4)), f'La fitxa {n} no cap en una pàgina'
+        assert all(exercise_pages[n, position] == n+intro_pages for position in range(1, 4)), f'La fitxa {n} no cap en una pàgina'
     table = Table([[para(cell, 'small') for cell in row] for row in rows],
                   colWidths=[377, 75, 75])
     table.setStyle(TableStyle([
@@ -241,10 +242,13 @@ def compact_workbook():
         para('__________________________________________________________________'),
     ]
     guide = BytesIO()
-    document(guide, intro, label)
+    document(guide, intro, label, page_offset=intro_pages-1)
     assert len(PdfReader(guide).pages) == 1, 'La guia i l’índex han d’ocupar una pàgina'
     writer = PdfWriter()
+    writer.append(reference, import_outline=False)
     writer.append(PdfReader(guide))
+    writer.add_outline_item(title="Guia del robot i de programació", page_number=0)
+    writer.add_outline_item(title="Índex de les fitxes", page_number=intro_pages-1)
     writer.append(PdfReader(pages))
     for n, activity in enumerate(activities, 1):
         writer.add_outline_item(title=activity['title'], page_number=exercise_pages[n, 1]-1)
@@ -253,4 +257,54 @@ def compact_workbook():
     print(f'{filename} · {len(writer.pages)} pàgines')
 
 
-compact_workbook()
+
+def quick_reference():
+    """Guia de dues cares per acompanyar les fitxes de la sessió."""
+    body_style = ParagraphStyle('guide-body', parent=styles['body'], fontSize=11, leading=16)
+    def body(text):
+        return Paragraph(escape(text), body_style)
+    def section(label, text):
+        return Paragraph(f'<b>{escape(label)}</b> {escape(text)}', body_style)
+
+    story = [
+        para('ITINERARI 4 · SESSIÓ 2 · GUIA DE CONSULTA', 'small'),
+        para('Codey Rocky al taller', 'title'),
+        para('Identifica les dues parts del robot', 'h'),
+        section('Codey.', 'És el controlador programable. Té els botons A, B i C, una pantalla de 16 × 8 punts, un LED RGB, un altaveu i sensors de llum i so. Pots practicar amb la pantalla i els botons sense muntar Rocky.'),
+        section('Rocky.', 'És el xassís amb motors i erugues. Porta un sensor de color i infraroig orientable. Cap endavant serveix per detectar obstacles. Cap al terra permet comprovar el color o llegir els grisos per seguir una línia.'),
+        para('Primera càrrega amb mBlock 5', 'h'),
+        body('1. Encén Codey i connecta’l a l’ordinador amb un cable micro-USB de dades.'),
+        body('2. A Dispositius, afegeix Codey i prem Connecta. Si l’editor demana un port, tria el del robot.'),
+        body('3. Uneix «en prémer el botó A» amb «mostra la imatge». Tria una cara, selecciona Càrrega i transfereix el programa.'),
+        body('4. Prem A. Desconnecta el cable i torna a prémer A amb Codey encés. Si modifiques el programa, carrega’l de nou.'),
+        section('En viu i Càrrega.', 'En viu necessita connexió amb mBlock. Càrrega transfereix el programa a Codey perquè puga executar-lo després sense l’ordinador.'),
+        para('Llegir una pila de blocs', 'h'),
+        body('L’esdeveniment de dalt indica quan comença la pila. Les instruccions de baix s’executen en ordre. Ací l’encesa i el botó A inicien dues piles diferents.'),
+        diagram(activities[1]['exercises'][0], maxheight=130, monochrome=True),
+        Spacer(1, 8),
+        Paragraph('<link href="https://roboticadocents.github.io/tutorial/cr-primeres-passes/">Guia de posada en marxa</link> · <link href="https://roboticadocents.github.io/sim/?robot=codey-rocky">Simulador de Codey Rocky</link>', styles['body']),
+        PageBreak(),
+        para('ITINERARI 4 · SESSIÓ 2 · GUIA DE CONSULTA', 'small'),
+        para('Moviment, sensors i decisions', 'title'),
+        para('Tria l’ordre segons quan vulgues que s’ature', 'h'),
+        section('Avança durant 1 s.', 'El bloc controla la durada i atura els motors en acabar. La distància real varia segons el muntatge i la potència. Mesura-la abans de repetir el recorregut.'),
+        section('Mou endavant.', 'Els motors continuen actius mentre el programa passa a la peça següent. «Espera 1 s» pausa la pila. Per aturar el robot, posa-hi «deixa de moure».'),
+        diagram(activities[8]['exercises'][1], maxheight=145, monochrome=True),
+        para('A inicia l’avanç. B i C executen l’aturada perquè els hem programat eixa ordre. Prova l’aturada abans de fer avançar Rocky.', 'small'),
+        para('Fes que una lectura determine la resposta', 'h'),
+        section('Pregunta de sí o no.', '«Hi ha obstacles al davant?» es pot encaixar dins d’«espera fins que». Seqüència: mou endavant → espera fins que hi haja un obstacle → deixa de moure.'),
+        section('Lectura numèrica.', 'La intensitat infraroja reflectida va de 0 a 100. Orienta el sensor endavant, observa la lectura amb el teu obstacle i tria un llindar. El valor mesura intensitat, en lloc de distància en centímetres.'),
+        section('Comprovació contínua.', 'Un «si» comprova la condició en arribar-hi. Dins d’un «per sempre», el robot torna a llegir i pot canviar la resposta.'),
+        para('Troba la pràctica al quadern', 'h'),
+        body('Fitxa 2: inici i botons. Fitxa 9: moviment i aturada. Fitxa 4: condicions i obstacles. Fitxa 8: seguiment de línia.'),
+        para('Prediu què passarà, prova-ho i canvia una sola dada. En passar del simulador a Rocky, torna a mesurar abans d’ajustar el programa.', 'small'),
+    ]
+    target = OUT / 'sessio-2-guia-codey-rocky-bn.pdf'
+    document(target, story, 'Guia de consulta')
+    assert len(PdfReader(target).pages) == 2, 'La guia ha d’ocupar dues pàgines'
+    print(f'{target.name} · 2 pàgines')
+
+    return target
+
+
+compact_workbook(quick_reference())

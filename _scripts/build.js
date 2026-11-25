@@ -86,6 +86,7 @@ function prepareDist() {
   for (const handout of [
     'output/pdf/sessio-1-handout-compacte.pdf',
     'output/pdf/sessio-2-handout-compacte-bn.pdf',
+    'output/pdf/sessio-2-guia-codey-rocky-bn.pdf',
   ]) {
     const destination = path.join(DIST_DIR, handout);
     fs.mkdirSync(path.dirname(destination), { recursive: true });
