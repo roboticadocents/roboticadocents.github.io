@@ -4,6 +4,8 @@
   if (!root || !window.CodeySimulation) return;
   const { Engine, WIDTH, HEIGHT, R, COLORS, trackPreset, segmentDistance, cleanExpression } = window.CodeySimulation;
   const $ = q => root.querySelector(q);
+  const scene3d=window.RoboticsScene3D;
+  const view=scene3d?.mount(root,'codey-rocky');
   const escape = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const activitiesURL=new URL('./codey-activities.json',document.currentScript.src);
   let activities=[];
@@ -302,7 +304,7 @@
     blank:Array(8).fill('0000000000000000')
   };
   let previousTrace='';
-  function draw(now) {
+  function drawPlan() {
     ctx.fillStyle='#ffffff';ctx.fillRect(0,0,WIDTH,HEIGHT);ctx.strokeStyle='#e2e8f0';ctx.lineWidth=1;
     for(let x=0;x<WIDTH;x+=50){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,HEIGHT);ctx.stroke();}
     for(let y=0;y<HEIGHT;y+=50){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(WIDTH,y);ctx.stroke();}
@@ -320,8 +322,12 @@
     ctx.fillStyle='#1d4ed8';ctx.beginPath();ctx.moveTo(34,0);ctx.lineTo(24,-7);ctx.lineTo(24,7);ctx.closePath();ctx.fill();ctx.restore();
     if(engine.environment.orientation==='down'){const point=engine.sensorPoint();ctx.strokeStyle='#0284c7';ctx.fillStyle='#38bdf8';ctx.lineWidth=2;ctx.beginPath();ctx.arc(point.x,point.y,5,0,Math.PI*2);ctx.fill();ctx.stroke();}
     if(keyboardCursor){ctx.strokeStyle='#2563eb';ctx.lineWidth=3;ctx.strokeRect(cursor.x-15,cursor.y-15,30,30);}
+  }
+  function draw(now) {
+    if(root.dataset.simView!=='3d')drawPlan();
     let pattern=engine.output.face==='custom'&&engine.output.pattern?engine.output.pattern:faces[engine.output.face]||faces.happy;
     if(engine.output.text){textCtx.clearRect(0,0,16,8);textCtx.fillStyle='white';textCtx.font='8px monospace';const length=engine.output.text.length*5;const offset=16-(Math.floor(now/140)%(length+20));textCtx.fillText(engine.output.text,offset,7);const pixels=textCtx.getImageData(0,0,16,8).data;pattern=Array.from({length:8},(_,y)=>Array.from({length:16},(_,x)=>pixels[(y*16+x)*4+3]>80?'1':'0').join(''));}
+    view?.draw(scene3d.codey,engine,window.CodeySimulation,pattern);
     ledCtx.fillStyle='#0f172a';ledCtx.fillRect(0,0,320,160);
     for(let y=0;y<8;y++)for(let x=0;x<16;x++){ledCtx.fillStyle=pattern[y][x]==='1'?'#38bdf8':'#1e293b';ledCtx.beginPath();ledCtx.arc(x*20+10,y*20+10,6,0,Math.PI*2);ledCtx.fill();}
     led.setAttribute('aria-label',engine.output.text?'Pantalla: '+engine.output.text:'Pantalla LED: '+({happy:'cara feliç',sad:'cara trista',surprise:'cara de sorpresa',blank:'buida',custom:'cara personalitzada'}[engine.output.face]||''));

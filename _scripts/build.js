@@ -87,6 +87,7 @@ function prepareDist() {
     'output/pdf/sessio-1-handout-compacte.pdf',
     'output/pdf/sessio-2-handout-compacte-bn.pdf',
     'output/pdf/sessio-2-guia-codey-rocky-bn.pdf',
+    'output/pdf/spike-prime-barrera-handout-bn.pdf',
   ]) {
     const destination = path.join(DIST_DIR, handout);
     fs.mkdirSync(path.dirname(destination), { recursive: true });
@@ -663,7 +664,8 @@ async function build({ pdf = false } = {}) {
   writeHTML('index.html', HomePage());
   // Accés directe compartit amb els participants; no s'afegeix als menús.
   writeHTML('presencial/index.html', PresencialPage());
-  writeHTML('sim/muntatge-barrera/index.html', SpikeBuildPage());
+  writeHTML('sim/muntatge-barrera/index.html', SpikeBuildPage({legacy:true}));
+  writeHTML('sim/muntatges-spike/index.html', SpikeBuildPage());
   writeHTML('pensament-computacional/index.html', ActivitiesCatalogPage({
     activitats: activitats.filter(item => item.slug.startsWith('pc-'))
   }));

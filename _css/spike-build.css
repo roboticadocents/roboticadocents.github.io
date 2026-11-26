@@ -1,5 +1,7 @@
 .sp-build { max-width:850px; margin:25px auto 65px; color:#0f172a; font-family:var(--font-sans); line-height:1.7; }
 .sp-build header { margin:30px 0 22px; }
+.sp-build-index { display:flex; flex-wrap:wrap; gap:8px 18px; padding:12px 16px; background:#ebf5fd; border-radius:8px; }
+.sp-build section[id] { scroll-margin-top:90px; }
 .sp-build-kicker { font-size:13px; color:#155e75; font-weight:700; }
 .sp-build h1,.sp-build h2,.sp-build h3 { font-family:var(--font-heading); line-height:1.35; }
 .sp-build h1 { font-size:clamp(28px,5vw,42px); }

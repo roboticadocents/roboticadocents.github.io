@@ -1,4 +1,5 @@
 'use strict';
+const {ViewControls,Preview3D}=require('./sim-view');
 const { icon } = require('../../sim/codey-blocks');
 function CodeyWorkspace({ root }) {
   return `<section class="cr-workspace" id="panel-controls-codey-rocky" role="tabpanel" aria-labelledby="tab-codey-rocky" data-codey-workspace hidden>
@@ -8,7 +9,10 @@ function CodeyWorkspace({ root }) {
         <div class="cr-device-face"><canvas width="320" height="160" data-cr-led aria-label="Pantalla LED de 16 per 8 punts"></canvas><span class="cr-rgb" data-cr-rgb role="img" aria-label="Indicador RGB verd"></span></div>
         <div class="cr-device-buttons"><button type="button" data-cr-event="A">A</button><button type="button" data-cr-event="B">B</button><button type="button" data-cr-event="C">C</button><span>Prem un botó per activar el seu programa.</span></div>
       </div>
-      <div class="cr-world-viewport"><canvas class="cr-world" width="800" height="500" data-cr-world tabindex="0" aria-label="Escenari de Rocky. Usa les fletxes per moure el cursor i Espai per aplicar l’eina seleccionada."></canvas></div>
+      ${ViewControls()}
+      <div class="cr-world-viewport" data-view-planar><canvas class="cr-world" width="800" height="500" data-cr-world tabindex="0" aria-label="Escenari de Rocky. Usa les fletxes per moure el cursor i Espai per aplicar l’eina seleccionada."></canvas></div>
+      ${Preview3D('Vista 3D del moviment de Codey Rocky')}
+      <p class="sim-view-hint" data-view-note hidden>Per dibuixar o moure elements sobre la pista, tria 2D.</p>
       <div class="cr-sensors">
         <label>Llum <output data-cr-light-value>70</output><input data-cr-sensor="light" type="range" min="0" max="100" value="70"></label>
         <label>So <output data-cr-sound-value>20</output><input data-cr-sensor="sound" type="range" min="0" max="100" value="20"></label>
@@ -35,7 +39,7 @@ function CodeyWorkspace({ root }) {
           <button type="button" class="sim-btn sim-btn-outline" data-cr-clear-lines>Neteja la pista</button>
         </div>
       </details>
-      <p class="cr-hint">Clica o toca l’escenari amb l’eina seleccionada. Arrossega amb «Mou obstacle» o «Dibuixa línia». Amb el teclat, usa les fletxes i prem Espai per seleccionar i col·locar l’obstacle.</p>
+      <p class="cr-hint" data-view-planar>Clica o toca l’escenari amb l’eina seleccionada. Arrossega amb «Mou obstacle» o «Dibuixa línia». Amb el teclat, usa les fletxes i prem Espai per seleccionar i col·locar l’obstacle.</p>
       <details class="cr-calibration"><summary>Calibratge de la línia</summary>
         <p>Amb el sensor cap al terra, situa el punt de lectura sobre el fons i després sobre la línia.</p>
         <div class="cr-track-controls"><button type="button" class="sim-btn sim-btn-outline" data-cr-sample="background">Mesura el fons</button><output data-cr-sample-background>—</output><button type="button" class="sim-btn sim-btn-outline" data-cr-sample="line">Mesura la línia</button><output data-cr-sample-line>—</output><button type="button" class="sim-btn sim-btn-secondary" data-cr-apply-threshold>Aplica el llindar mitjà</button></div>

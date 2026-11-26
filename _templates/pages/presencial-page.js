@@ -69,6 +69,14 @@ function PresencialPage() {
         <a class="presencial-download-link" href="../_assets/activitats/kits/cr-solucions-tres-entorns.pdf" download>Descarrega el solucionari <span>PDF</span></a>
       </div>
       <p class="presencial-note">Trieu els exercicis segons el nivell i el ritme del grup. Els reptes de sensors i seguiment de línia permeten aprofundir. <a href="../robot/codey-rocky/#activitats">Obri les activitats de Codey Rocky</a> · <a href="../sim/?robot=codey-rocky">Obri el simulador</a></p>
+    </section>
+    <section class="presencial-session" aria-labelledby="spike-prime">
+      <h2 id="spike-prime">SPIKE Prime · Barrera automàtica</h2>
+      <div class="presencial-download">
+        <div><h3>Guia i fitxa de la barrera</h3><p>Dues pàgines A4 en blanc i negre amb la posada en marxa i tres proves en paper, simulador i muntatge físic.</p></div>
+        <a class="presencial-download-link" href="../output/pdf/spike-prime-barrera-handout-bn.pdf" download>Descarrega el quadern <span>PDF</span></a>
+      </div>
+      <p><a href="../sim/?robot=spike">Obri el banc de proves de SPIKE Prime</a> · <a href="../sim/muntatge-barrera/#barrera">Guia de muntatge de la barrera</a> · <a href="../sim/muntatges-spike/">Guies dels projectes SPIKE Prime</a></p>
     </section>`
   });
 }
