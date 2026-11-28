@@ -12,7 +12,7 @@ function SpikeWorkspace(){
       <div class="sp-project-brief" data-sp-brief hidden><p data-sp-task></p><p data-sp-note></p><a href="muntatges-spike/" data-sp-guide>Guia de muntatge</a></div>
       ${ViewControls()}
       ${Preview3D('Vista 3D de l’escenari de SPIKE Prime',{id:'sp',width:960,height:600})}
-      <p class="sim-view-help" data-spike-view-status role="status" hidden></p>
+      <p class="sim-view-help" data-view-status role="status" hidden></p>
       <div class="sp-scene" data-sp-panel="" data-view-planar><svg viewBox="0 0 720 300" role="img" aria-labelledby="sp-scene-title">
         <title id="sp-scene-title">Vista superior del banc de proves amb un motor i un sensor de distància</title>
         <rect x="1" y="1" width="718" height="298" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>

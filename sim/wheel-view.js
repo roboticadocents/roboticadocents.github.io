@@ -1,4 +1,4 @@
-import {LDrawLoader,LDrawConditionalLineMaterial,Vector3} from './vendor/three/viewer-r177.js?v=2';
+import {LDrawLoader,LDrawConditionalLineMaterial,Vector3} from './vendor/three/viewer-r177.js?v=3';
 
 export async function loadWheelModel(){
   const loader=new LDrawLoader();

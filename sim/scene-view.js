@@ -1,9 +1,10 @@
 import {Scene,Color,AmbientLight,DirectionalLight,OrthographicCamera,OrbitControls,
-  WebGLRenderer,Spherical,Vector3} from './vendor/three/viewer-r177.js?v=2';
-import {createMechanism} from './spike-models.js';
-import {loadWheelModel} from './wheel-view.js?v=8';
+  WebGLRenderer,Spherical,Vector3} from './vendor/three/viewer-r177.js?v=3';
+import {createMechanism} from './spike-models.js?v=2';
+import {createCodeyModel} from './codey-model.js';
+import {loadWheelModel} from './wheel-view.js?v=9';
 
-export function createSpikeView(original){
+export function createSceneView(original){
   const canvas=original.cloneNode(false);
   const context=canvas.getContext('webgl2',{antialias:true})
     ||canvas.getContext('webgl2',{antialias:false});
@@ -14,8 +15,9 @@ export function createSpikeView(original){
   light.position.set(-150,320,240);
   scene.add(light,new AmbientLight(0xffffff,1.8));
   const renderer=new WebGLRenderer({canvas,context});
+  renderer.localClippingEnabled=true;
   renderer.setSize(original.width,original.height,false);
-  const camera=new OrthographicCamera(-1,1,1,-1,1,1500);
+  const camera=new OrthographicCamera(-1,1,1,-1,1,3000);
   const orbit=new OrbitControls(camera,canvas);
   orbit.minZoom=.65;
   orbit.maxZoom=2.8;
@@ -60,7 +62,10 @@ export function createSpikeView(original){
   });
   return {
     canvas,
-    load(project){return project==='wheel'?loadWheelModel():createMechanism(project);},
+    load(project,options){
+      if(project==='codey-rocky')return createCodeyModel(options);
+      return project==='wheel'?loadWheelModel():createMechanism(project);
+    },
     command(button){
       if(button.dataset.viewTurn)rotate(Number(button.dataset.viewTurn)*Math.PI/4,0);
       if(button.hasAttribute('data-view-top'))rotate(0,-orbit.getPolarAngle()+.02);
@@ -71,21 +76,21 @@ export function createSpikeView(original){
       }
       if(button.hasAttribute('data-view-reset'))orbit.reset();
     },
-    draw(projectView,engine,partColor){
+    draw(project,projectView,engine,detail){
       if(active!==projectView){
         if(active)scene.remove(active.model);
         active=projectView;
         scene.add(active.model);
-        canvas.dataset.spikeViewProject=engine.project||'bench';
+        canvas.dataset.sceneProject=project||'bench';
         orbit.target.copy(active.target);
-        camera.position.copy(active.target).add(new Vector3(230,engine.project==='wheel'?67:245,504));
+        camera.position.copy(active.target).add(active.cameraOffset??new Vector3(230,project==='wheel'?67:245,504));
         camera.zoom=1;
         orbit.update();
         frameModel();
         orbit.saveState();
         dirty=true;
       }
-      if(active.update(engine,partColor))dirty=true;
+      if(active.update(engine,detail))dirty=true;
       if(dirty){renderer.render(scene,camera);dirty=false;}
     },
   };

@@ -1,4 +1,4 @@
-import {BoxGeometry,CylinderGeometry,Mesh,MeshStandardMaterial,Group,Vector3,CanvasTexture,Sprite,SpriteMaterial} from "./vendor/three/viewer-r177.js?v=2";
+import {BoxGeometry,CylinderGeometry,Mesh,MeshStandardMaterial,Group,Vector3,CanvasTexture,Sprite,SpriteMaterial} from "./vendor/three/viewer-r177.js?v=3";
 
 function drawMechanism({box,round,tag},engine,partColor){
   const {project,environment,angle,travel,delivery}=engine;

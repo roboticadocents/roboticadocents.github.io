@@ -66,7 +66,8 @@
   const led = $('[data-cr-led]'), ledCtx = led.getContext('2d');
   const sprite = new Image(); sprite.src = new URL('../_assets/icons/codey-rocky.webp', document.currentScript.src).href;
   function project() {return {type:'robotica-codey',version:2,program,environment:engine.environment,startPose,calibration,workspaceXml,activity:activeActivity};}
-  function save() {try {localStorage.setItem('robotica-codey-v2',JSON.stringify(project()));}catch(_){}}
+  let sceneRevision=0;
+  function save() {sceneRevision++;try {localStorage.setItem('robotica-codey-v2',JSON.stringify(project()));}catch(_){}}
   function syncSceneControls() {
     $('[data-cr-orientation]').value=engine.environment.orientation;lineWidth=engine.environment.lines[0]?.width||lineWidth;$('[data-cr-line-width]').value=lineWidth;
     for(const sensor of ['light','sound']){$(`[data-cr-sensor="${sensor}"]`).value=engine.environment[sensor];$(`[data-cr-${sensor}-value]`).textContent=engine.environment[sensor];}
@@ -304,7 +305,7 @@
     blank:Array(8).fill('0000000000000000')
   };
   let previousTrace='';
-  function drawPlan() {
+  function drawGround(ctx) {
     ctx.fillStyle='#ffffff';ctx.fillRect(0,0,WIDTH,HEIGHT);ctx.strokeStyle='#e2e8f0';ctx.lineWidth=1;
     for(let x=0;x<WIDTH;x+=50){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,HEIGHT);ctx.stroke();}
     for(let y=0;y<HEIGHT;y+=50){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(WIDTH,y);ctx.stroke();}
@@ -313,6 +314,10 @@
       if(!line.points.length)continue;ctx.strokeStyle=COLORS[line.color]||COLORS.black;ctx.fillStyle=ctx.strokeStyle;ctx.lineWidth=line.width;ctx.lineCap='round';ctx.lineJoin='round';ctx.beginPath();ctx.moveTo(line.points[0].x,line.points[0].y);for(const p of line.points.slice(1))ctx.lineTo(p.x,p.y);ctx.stroke();
       if(line.points.length===1){ctx.beginPath();ctx.arc(line.points[0].x,line.points[0].y,line.width/2,0,Math.PI*2);ctx.fill();}
     }
+  }
+  const sceneOptions={width:WIDTH,height:HEIGHT,drawGround};
+  function drawPlan() {
+    drawGround(ctx);
     ctx.lineWidth=1;
     for(const b of engine.environment.obstacles){ctx.fillStyle='#cbd5e1';ctx.fillRect(b.x,b.y,b.w,b.h);ctx.strokeStyle='#64748b';ctx.strokeRect(b.x,b.y,b.w,b.h);}
     const p=engine.pose;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.angle*Math.PI/180);
@@ -327,7 +332,7 @@
     if(root.dataset.simView!=='3d')drawPlan();
     let pattern=engine.output.face==='custom'&&engine.output.pattern?engine.output.pattern:faces[engine.output.face]||faces.happy;
     if(engine.output.text){textCtx.clearRect(0,0,16,8);textCtx.fillStyle='white';textCtx.font='8px monospace';const length=engine.output.text.length*5;const offset=16-(Math.floor(now/140)%(length+20));textCtx.fillText(engine.output.text,offset,7);const pixels=textCtx.getImageData(0,0,16,8).data;pattern=Array.from({length:8},(_,y)=>Array.from({length:16},(_,x)=>pixels[(y*16+x)*4+3]>80?'1':'0').join(''));}
-    view?.draw(scene3d.codey,engine,window.CodeySimulation,pattern);
+    view?.draw('codey-rocky',engine,{pattern,revision:sceneRevision},sceneOptions);
     ledCtx.fillStyle='#0f172a';ledCtx.fillRect(0,0,320,160);
     for(let y=0;y<8;y++)for(let x=0;x<16;x++){ledCtx.fillStyle=pattern[y][x]==='1'?'#38bdf8':'#1e293b';ledCtx.beginPath();ledCtx.arc(x*20+10,y*20+10,6,0,Math.PI*2);ledCtx.fill();}
     led.setAttribute('aria-label',engine.output.text?'Pantalla: '+engine.output.text:'Pantalla LED: '+({happy:'cara feliç',sad:'cara trista',surprise:'cara de sorpresa',blank:'buida',custom:'cara personalitzada'}[engine.output.face]||''));

@@ -21,13 +21,13 @@
   <script defer src="../sim/vendor/scratch-blocks/messages.js"></script>
   <script defer src="../sim/vendor/scratch-blocks/messages-ca.js"></script>
   <script defer src="../sim/codey-native-blocks.js?v=5"></script>
-  <script defer src="../sim/scene-3d.js?v=18"></script>
-  <script defer src="../sim/codey.js?v=16"></script>
+  <script defer src="../sim/scene-3d.js?v=19"></script>
+  <script defer src="../sim/codey.js?v=17"></script>
   <link rel="stylesheet" href="../sim/spike.css?v=11">
   <script defer src="../sim/spike-engine.js?v=12"></script>
   <script defer src="../sim/spike-projects.js?v=4"></script>
   <script defer src="../sim/spike-native-blocks.js?v=7"></script>
-  <script defer src="../sim/spike.js?v=18"></script>
+  <script defer src="../sim/spike.js?v=19"></script>
 </head>
 <body class="sim-app-body">
   <header class="sim-topbar" data-sim-hero data-active-robot="tale-bot">
@@ -543,6 +543,7 @@
     <canvas width="800" height="500" data-view-canvas role="img" aria-label="Vista 3D del moviment de Codey Rocky" tabindex="0" aria-describedby="cr-camera-help"></canvas>
     <p class="sim-view-help" id="cr-camera-help">Arrossega o usa les fletxes per girar.</p>
   </div>
+      <p class="sim-view-help" data-view-status role="status" hidden></p>
       <p class="sim-view-hint" data-view-note hidden>Per dibuixar o moure elements sobre la pista, tria 2D.</p>
       <div class="cr-sensors">
         <label>Llum <output data-cr-light-value>70</output><input data-cr-sensor="light" type="range" min="0" max="100" value="70"></label>
@@ -625,7 +626,7 @@
     <canvas width="960" height="600" data-view-canvas role="img" aria-label="Vista 3D de l’escenari de SPIKE Prime" tabindex="0" aria-describedby="sp-camera-help"></canvas>
     <p class="sim-view-help" id="sp-camera-help">Arrossega o usa les fletxes per girar.</p>
   </div>
-      <p class="sim-view-help" data-spike-view-status role="status" hidden></p>
+      <p class="sim-view-help" data-view-status role="status" hidden></p>
       <div class="sp-scene" data-sp-panel="" data-view-planar><svg viewBox="0 0 720 300" role="img" aria-labelledby="sp-scene-title">
         <title id="sp-scene-title">Vista superior del banc de proves amb un motor i un sensor de distància</title>
         <rect x="1" y="1" width="718" height="298" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>

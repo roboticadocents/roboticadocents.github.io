@@ -379,7 +379,7 @@
   }
   function draw(){
     drawHub();
-    view?.drawSpike(engine,cssColors[engine.environment.color]);
+    view?.draw(engine.project,engine,cssColors[engine.environment.color]);
     drawProject();
     $('[data-sp-rotor]').setAttribute('transform',`rotate(${engine.angle} 170 135)`);
     $('[data-sp-angle]').textContent=Math.round(engine.angle)+'°';

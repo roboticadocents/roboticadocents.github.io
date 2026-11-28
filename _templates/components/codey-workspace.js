@@ -12,6 +12,7 @@ function CodeyWorkspace({ root }) {
       ${ViewControls()}
       <div class="cr-world-viewport" data-view-planar><canvas class="cr-world" width="800" height="500" data-cr-world tabindex="0" aria-label="Escenari de Rocky. Usa les fletxes per moure el cursor i Espai per aplicar l’eina seleccionada."></canvas></div>
       ${Preview3D('Vista 3D del moviment de Codey Rocky',{id:'cr'})}
+      <p class="sim-view-help" data-view-status role="status" hidden></p>
       <p class="sim-view-hint" data-view-note hidden>Per dibuixar o moure elements sobre la pista, tria 2D.</p>
       <div class="cr-sensors">
         <label>Llum <output data-cr-light-value>70</output><input data-cr-sensor="light" type="range" min="0" max="100" value="70"></label>

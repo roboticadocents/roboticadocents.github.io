@@ -22,7 +22,7 @@ Les guies de muntatge continuen disponibles a `/sim/muntatges-spike/` i la guia 
 
 - `sim/spike-engine.js` calcula el moviment, les condicions i els bucles, i valida els blocs importats.
 - `sim/spike.js` gestiona l’editor, la vista 2D i els projectes.
-- `sim/spike-view.js` gestiona el visor Three.js i la càmera.
+- `sim/scene-view.js` gestiona el visor Three.js i la càmera.
 - `sim/spike-models.js` defineix els mecanismes esquemàtics. La sínia carrega el seu model LDraw des de `sim/wheel-view.js`.
 - `_templates/components/spike-workspace.js` defineix el banc de proves i els controls.
 

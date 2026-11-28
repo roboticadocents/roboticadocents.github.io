@@ -34,13 +34,13 @@ function SimPage({ root = '../' } = {}) {
   <script defer src="${r}sim/vendor/scratch-blocks/messages.js"></script>
   <script defer src="${r}sim/vendor/scratch-blocks/messages-ca.js"></script>
   <script defer src="${r}sim/codey-native-blocks.js?v=5"></script>
-  <script defer src="${r}sim/scene-3d.js?v=18"></script>
-  <script defer src="${r}sim/codey.js?v=16"></script>
+  <script defer src="${r}sim/scene-3d.js?v=19"></script>
+  <script defer src="${r}sim/codey.js?v=17"></script>
   <link rel="stylesheet" href="${r}sim/spike.css?v=11">
   <script defer src="${r}sim/spike-engine.js?v=12"></script>
   <script defer src="${r}sim/spike-projects.js?v=4"></script>
   <script defer src="${r}sim/spike-native-blocks.js?v=7"></script>
-  <script defer src="${r}sim/spike.js?v=18"></script>
+  <script defer src="${r}sim/spike.js?v=19"></script>
 </head>
 <body class="sim-app-body">
   <header class="sim-topbar" data-sim-hero data-active-robot="tale-bot">
