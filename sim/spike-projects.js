@@ -13,12 +13,14 @@
 
   return {
     dial:{
+      approximateModel:true,
       title:'Indicador de torns',guide:'indicador-torns',motor:'A',
       task:'Observa les tres posicions de l’agulla. Canvia l’ordre dels estats o el temps del torn.',
       note:'Lliure → En ús → Canvi de torn. L’agulla torna a 0°.',
       program:()=>[speed(40,'A'),forever(position(0),wait(2),position(30),wait(3),position(60),wait(2))],
     },
     claw:{
+      approximateModel:true,
       title:'Pinça per recollir peces',guide:'pinca',motor:'F',
       task:'Col·loca la peça. Prem el botó esquerre per tancar la pinça i solta’l per obrir-la.',
       note:'La posició i el recorregut es calibren al muntatge físic.',
@@ -36,6 +38,7 @@
       )],
     },
     cart:{
+      approximateModel:true,
       title:'Carretó de repartiment',guide:'carreto',motor:'A',extraMotors:['E','C'],distance:'B',environment:{present:true,distance:95},
       task:'Executa amb la zona de descàrrega al davant. Canvia la distància inicial i comprova on s’atura.',
       note:'El carretó avança en línia recta amb els motors E i A. El sensor B ha de llegir menys de 15 cm abans de parar.',
@@ -45,6 +48,7 @@
         block('motorStop',{port:'E'}),block('motorStop',{port:'A'})],
     },
     sorter:{
+      approximateModel:true,
       title:'Classificador de peces per color',guide:'classificador',motor:'A',extraMotors:['F'],color:'D',
       task:'Presenta una peça groga o rosa i mira a quina eixida va. Prova després un altre color.',
       note:'Motor A per girar la base, F per moure el braç i D per llegir el color. Retira la peça del sensor abans del següent cicle.',

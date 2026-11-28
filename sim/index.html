@@ -21,13 +21,13 @@
   <script defer src="../sim/vendor/scratch-blocks/messages.js"></script>
   <script defer src="../sim/vendor/scratch-blocks/messages-ca.js"></script>
   <script defer src="../sim/codey-native-blocks.js?v=5"></script>
-  <script defer src="../sim/scene-3d.js?v=19"></script>
+  <script defer src="../sim/scene-3d.js?v=23"></script>
   <script defer src="../sim/codey.js?v=17"></script>
-  <link rel="stylesheet" href="../sim/spike.css?v=11">
+  <link rel="stylesheet" href="../sim/spike.css?v=12">
   <script defer src="../sim/spike-engine.js?v=12"></script>
-  <script defer src="../sim/spike-projects.js?v=4"></script>
+  <script defer src="../sim/spike-projects.js?v=6"></script>
   <script defer src="../sim/spike-native-blocks.js?v=7"></script>
-  <script defer src="../sim/spike.js?v=19"></script>
+  <script defer src="../sim/spike.js?v=21"></script>
 </head>
 <body class="sim-app-body">
   <header class="sim-topbar" data-sim-hero data-active-robot="tale-bot">
@@ -607,7 +607,7 @@
     <section class="cr-workspace sp-workspace" id="panel-controls-spike" role="tabpanel" aria-labelledby="tab-spike" data-spike-workspace hidden>
     <div class="cr-stage-panel">
       <div class="cr-section-heading"><h2>SPIKE Prime</h2><button type="button" class="sim-btn sim-btn-outline" data-sp-reset>↺ Reinicia</button><button type="button" class="sim-btn sim-btn-outline" data-sp-clear-scene>Buida l’escenari</button></div>
-      <div class="sp-project-brief" data-sp-brief hidden><p data-sp-task></p><p data-sp-note></p><a href="muntatges-spike/" data-sp-guide>Guia de muntatge</a></div>
+      <div class="sp-project-brief" data-sp-brief hidden><p data-sp-task></p><p data-sp-note></p><a href="muntatges-spike/" data-sp-guide>Guia de muntatge</a><p data-sp-model-note hidden>Model 3D aproximat. Per al muntatge físic, segueix la guia original.</p></div>
       <div class="sim-view-controls" data-sim-view-controls hidden>
     <div role="group" aria-label="Vista de l’escenari">
       <button type="button" class="sim-btn sim-btn-outline" data-view="2d" aria-pressed="true">2D</button>
@@ -736,6 +736,7 @@
       <div class="cr-section-heading"><h2>Programa SPIKE Prime</h2><button type="button" class="sim-btn sim-btn-outline" data-sp-clear>Buida</button></div>
       <details class="cr-project"><summary>Guarda o obri un projecte</summary><p class="cr-hint">Es desa automàticament en aquest navegador. El JSON és del simulador, no de l’app SPIKE.</p><div class="cr-project-controls"><button type="button" class="sim-btn sim-btn-outline" data-sp-export>Descarrega el projecte</button><button type="button" class="sim-btn sim-btn-outline" data-sp-backup hidden>Descarrega el programa anterior</button><label class="sim-btn sim-btn-outline">Obri un projecte<input class="visually-hidden" type="file" accept=".json,application/json" data-sp-import></label></div></details>
       <label class="cr-example-label">Projecte <select data-sp-project><option value="">Banc de proves</option><option value="dial">1. Indicador de torns</option><option value="claw">2. Pinça per recollir peces</option><option value="wheel">3. Sínia de sis cabines</option><option value="cart">4. Carretó de repartiment</option><option value="sorter">5. Classificador de peces per color</option></select></label>
+      <button type="button" class="sim-btn sim-btn-outline sp-load-example" data-sp-load-example hidden>Carrega el programa d’exemple</button>
       <div data-sp-native hidden aria-label="Editor de blocs de SPIKE Prime"></div><p data-sp-native-status role="status"></p>
       <div data-sp-fallback>
       <div class="sp-event"><svg class="cr-block-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v18M6 4h13l-3 4 3 4H6"/></svg> Quan s’inicia el programa</div>

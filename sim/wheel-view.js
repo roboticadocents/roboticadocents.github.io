@@ -3,7 +3,7 @@ import {LDrawLoader,LDrawConditionalLineMaterial,Vector3} from './vendor/three/v
 export async function loadWheelModel(){
   const loader=new LDrawLoader();
   loader.setConditionalLineMaterial(LDrawConditionalLineMaterial);
-  await loader.preloadMaterials(new URL('./models/sinia-colors.ldr?v=3',import.meta.url).href);
+  await loader.preloadMaterials(new URL('./models/spike-colors.ldr?v=1',import.meta.url).href);
   const model=await loader.loadAsync(new URL('./models/sinia-spike.mpd?v=6',import.meta.url).href);
   const disc=model.getObjectByName('disc.ldr');
   const cabins=Array.from({length:6},(_,i)=>model.getObjectByName('cabina-'+(i+1)+'.ldr'));

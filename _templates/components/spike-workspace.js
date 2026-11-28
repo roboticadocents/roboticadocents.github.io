@@ -9,7 +9,7 @@ function SpikeWorkspace(){
   return `<section class="cr-workspace sp-workspace" id="panel-controls-spike" role="tabpanel" aria-labelledby="tab-spike" data-spike-workspace hidden>
     <div class="cr-stage-panel">
       <div class="cr-section-heading"><h2>SPIKE Prime</h2><button type="button" class="sim-btn sim-btn-outline" data-sp-reset>↺ Reinicia</button><button type="button" class="sim-btn sim-btn-outline" data-sp-clear-scene>Buida l’escenari</button></div>
-      <div class="sp-project-brief" data-sp-brief hidden><p data-sp-task></p><p data-sp-note></p><a href="muntatges-spike/" data-sp-guide>Guia de muntatge</a></div>
+      <div class="sp-project-brief" data-sp-brief hidden><p data-sp-task></p><p data-sp-note></p><a href="muntatges-spike/" data-sp-guide>Guia de muntatge</a><p data-sp-model-note hidden>Model 3D aproximat. Per al muntatge físic, segueix la guia original.</p></div>
       ${ViewControls()}
       ${Preview3D('Vista 3D de l’escenari de SPIKE Prime',{id:'sp',width:960,height:600})}
       <p class="sim-view-help" data-view-status role="status" hidden></p>
@@ -102,6 +102,7 @@ function SpikeWorkspace(){
       <div class="cr-section-heading"><h2>Programa SPIKE Prime</h2><button type="button" class="sim-btn sim-btn-outline" data-sp-clear>Buida</button></div>
       <details class="cr-project"><summary>Guarda o obri un projecte</summary><p class="cr-hint">Es desa automàticament en aquest navegador. El JSON és del simulador, no de l’app SPIKE.</p><div class="cr-project-controls"><button type="button" class="sim-btn sim-btn-outline" data-sp-export>Descarrega el projecte</button><button type="button" class="sim-btn sim-btn-outline" data-sp-backup hidden>Descarrega el programa anterior</button><label class="sim-btn sim-btn-outline">Obri un projecte<input class="visually-hidden" type="file" accept=".json,application/json" data-sp-import></label></div></details>
       <label class="cr-example-label">Projecte <select data-sp-project><option value="">Banc de proves</option>${Object.entries(projects).map(([key,project],index)=>`<option value="${key}">${index+1}. ${project.title}</option>`).join('')}</select></label>
+      <button type="button" class="sim-btn sim-btn-outline sp-load-example" data-sp-load-example hidden>Carrega el programa d’exemple</button>
       <div data-sp-native hidden aria-label="Editor de blocs de SPIKE Prime"></div><p data-sp-native-status role="status"></p>
       <div data-sp-fallback>
       <div class="sp-event">${icon('event')} Quan s’inicia el programa</div>

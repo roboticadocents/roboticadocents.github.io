@@ -1,7 +1,8 @@
 The SPIKE Prime Ferris wheel in sinia-spike.mpd is adapted from subeen40.
 https://blog.naver.com/subeen40/223212140282
 
-The electronics, bricks and Technic parts use the LDraw.org Parts Library
+The electronics, bricks and Technic parts in sinia-spike.mpd and
+spike-muntatges.mpd use the LDraw.org Parts Library
 (release 2026-10). The embedded files retain their original author, history
 and license headers. File paths have been adapted for embedding in an MPD,
 and the colors are a subset of LDConfig.ldr.

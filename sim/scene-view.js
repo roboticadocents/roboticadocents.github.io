@@ -1,8 +1,8 @@
 import {Scene,Color,AmbientLight,DirectionalLight,OrthographicCamera,OrbitControls,
   WebGLRenderer,Spherical,Vector3} from './vendor/three/viewer-r177.js?v=3';
-import {createMechanism} from './spike-models.js?v=2';
+import {loadMechanism} from './spike-models.js?v=4';
 import {createCodeyModel} from './codey-model.js';
-import {loadWheelModel} from './wheel-view.js?v=9';
+import {loadWheelModel} from './wheel-view.js?v=10';
 
 export function createSceneView(original){
   const canvas=original.cloneNode(false);
@@ -64,7 +64,7 @@ export function createSceneView(original){
     canvas,
     load(project,options){
       if(project==='codey-rocky')return createCodeyModel(options);
-      return project==='wheel'?loadWheelModel():createMechanism(project);
+      return project==='wheel'?loadWheelModel():loadMechanism(project);
     },
     command(button){
       if(button.dataset.viewTurn)rotate(Number(button.dataset.viewTurn)*Math.PI/4,0);

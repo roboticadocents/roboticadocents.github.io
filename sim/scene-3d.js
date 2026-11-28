@@ -17,7 +17,7 @@
       const projectView={};
       projectViews.set(project,projectView);
       if(!viewerRequest){
-        viewerRequest=import('./scene-view.js?v=1').then(module=>{
+        viewerRequest=import('./scene-view.js?v=3').then(module=>{
           viewer=module.createSceneView(canvas);
           if(!viewer){
             viewerError='El navegador no ha pogut iniciar WebGL 2. Pots continuar en 2D.';

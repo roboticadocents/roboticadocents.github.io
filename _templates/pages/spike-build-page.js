@@ -30,12 +30,12 @@ const officialGuides=` <section id="the-thing"><h2>The Thing · What is this?</h
 
 const projectGuides=`
  <section id="indicador-torns"><h2>Indicador de torns</h2>
- <p>Prepara les peces dels dos llibrets de l’indicador de vent que trobaràs <a href="#indicador-vent">més avall</a>. Afig cartolina i un retolador per fer l’escala.</p>
+ <p>El muntatge físic és l’indicador de vent de LEGO Education. Segueix els <a href="#indicador-vent">dos llibrets originals, base i agulla</a>. Per a l’activitat de torns, prepara una escala de cartolina amb 0°, 30° i 60°.</p>
  <ol><li>Munta el model i connecta el motor al port A.</li><li>Marca «Lliure», «En ús» i «Canvi de torn» a 0°, 30° i 60° respecte del repòs. Usa l’app SPIKE per comprovar la posició física real del motor en cada marca.</li><li>Executa els tres moviments i comprova que l’agulla passa per totes les marques i torna a l’inici.</li></ol>
  <p><a href="../?robot=spike&amp;project=dial">Obri l’indicador al simulador</a></p></section>
  <section id="pinca"><h2>Pinça per recollir peces</h2>
  <p>Prepara un kit SPIKE Prime 45678 i una peça lleugera de prova. El <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltd34f6e501eb5ff30/5f8802b8bf5ab07ee90076df/pass-the-brick-bi-pdf-book1of1.pdf?locale=en-us">llibre oficial Pass the Brick (PDF)</a> mostra les peces i els passos de la mà robòtica.</p>
- <ol><li>Munta les dues mordasses i connecta el motor al port F.</li><li>Obri la pinça i anota la posició del motor. Tanca-la lentament sobre la peça i anota l’angle on la subjecta sense forçar el motor. Usa aquests valors al programa físic.</li><li>Prem i solta el botó esquerre. Comprova si pots agafar i deixar la peça tres vegades.</li></ol>
+ <ol><li>Munta el marc, el motor i les dues mordasses seguint <em>Pass the Brick</em>. Per executar l’exemple del simulador, connecta el motor al port F.</li><li>Obri la pinça i anota la posició del motor. Tanca-la lentament sobre la peça i anota l’angle on la subjecta sense forçar el motor. Usa aquests valors al programa físic.</li><li>Prem i solta el botó esquerre. Comprova si pots agafar i deixar la peça tres vegades.</li></ol>
  <p><a href="../?robot=spike&amp;project=claw">Obri la pinça al simulador</a> · <a href="https://education.lego.com/en-us/lessons/prime-extra-resources/pass-the-brick/">Lliçó de LEGO Education</a></p></section>
  <section id="sinia"><h2>Sínia de sis cabines</h2>
  <p>La sínia es basa en el muntatge SPIKE Prime de subeen40, amb sis cabines de LEGO, una estructura Technic i una transmissió amb vis sense fi.</p>
@@ -50,12 +50,12 @@ const projectGuides=`
  </section>
  <section id="carreto"><h2>Carretó de repartiment</h2>
  <p>Prepara un kit 45678, una peça de càrrega i una capsa plana com a zona de descàrrega. Segueix el <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt809618df861ea1b7/5f8802a14376310c19e3370a/out-of-order-bi-pdf-book1of1.pdf?locale=en-us">manual complet del carretó (PDF)</a> per identificar les peces.</p>
- <ol><li>Munta el carretó de la lliçó Cart Control. Comprova el parell de tracció als ports E i A, el motor de la roda posterior al C i el sensor de distància al B. Posa la roda posterior recta.</li><li>Orienta el sensor cap a la capsa. Al programa físic, aparella E i A i engega el moviment recte. Atura el parell quan la distància llegida siga menor de 15 cm.</li><li>Repeteix des de dos punts d’eixida i mesura la separació final. Ajusta la velocitat si la càrrega cau o el carretó s’acosta massa.</li></ol>
+ <ol><li>Munta el Delivery Cart i la zona de descàrrega seguint el llibret. El programa del taller usa els motors de tracció als ports E i A i el sensor de distància al B. Alinea la roda posterior perquè el carretó avance recte.</li><li>Orienta el sensor cap a la capsa. Al programa físic, aparella E i A i engega el moviment recte. Atura el parell quan la distància llegida siga menor de 15 cm.</li><li>Repeteix des de dos punts d’eixida i mesura la separació final. Ajusta la velocitat si la càrrega cau o el carretó s’acosta massa.</li></ol>
  <p><a href="../?robot=spike&amp;project=cart">Obri el carretó al simulador</a> · <a href="https://education.lego.com/en-gb/lessons/spike-python-u3-sensor-control/spike-python-u3l3/">Lliçó de LEGO Education</a></p></section>
  <section id="classificador"><h2>Classificador de peces per color</h2>
- <p>Els tres llibrets indiquen les peces per construir el mecanisme, la base i les peces de prova.</p>
- <ul><li><a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltebfffd33fc0a5e72/5f8802a1bc43790f5c4389f2/automate-it-bi-pdf-book1of3.pdf?locale=en-us">1. Mecanisme classificador (PDF)</a></li>
- <li><a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blte262c4974fee83b0/5f8802a3ed5ccb12e4342dac/automate-it-bi-pdf-book2of3.pdf?locale=en-us">2. Base del classificador (PDF)</a></li>
+ <p>Munta la base, el conjunt del braç classificador i els paquets de prova segons els tres llibrets d’<em>Automate It!</em>.</p>
+ <ul><li><a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltebfffd33fc0a5e72/5f8802a1bc43790f5c4389f2/automate-it-bi-pdf-book1of3.pdf?locale=en-us">1. Muntatge inferior i base (PDF)</a></li>
+ <li><a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blte262c4974fee83b0/5f8802a3ed5ccb12e4342dac/automate-it-bi-pdf-book2of3.pdf?locale=en-us">2. Conjunt superior i braç (PDF)</a></li>
  <li><a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt2cb1e769ec72a3d7/5f88022d6c54ba0f72c2081a/automate-it-bi-pdf-book3of3.pdf?locale=en-us">3. Paquets de prova (PDF)</a></li></ul>
  <ol><li>Munta el model amb el motor A a la base, el F al braç i el sensor de color al D.</li><li>Col·loca una peça a mà a la zona de lectura. Calibra les posicions de recollida i descàrrega abans d’executar el cicle complet. Assenyala les dues eixides amb targetes groga i rosa.</li><li>Prova una peça de cada color i una d’un tercer color. Comprova que cada color programat acaba a l’eixida prevista i que un color desconegut activa l’avís.</li></ol>
  <p><a href="../?robot=spike&amp;project=sorter">Obri el classificador al simulador</a> · <a href="https://education.lego.com/en-us/lessons/prime-kickstart-a-business/automate-it/">Lliçó de LEGO Education</a></p></section>`;

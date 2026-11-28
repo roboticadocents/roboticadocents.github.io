@@ -5,12 +5,14 @@
 0 !COLOUR Yellow                                                CODE    14   VALUE #FAC80A   EDGE #333333
 0 !COLOUR White                                                 CODE    15   VALUE #F4F4F4   EDGE #333333
 0 !COLOUR Purple                                                CODE    22   VALUE #671F81   EDGE #333333
+0 !COLOUR Orange                                                CODE    25   VALUE #D67923   EDGE #333333
 0 !COLOUR Light_Bluish_Grey                                     CODE    71   VALUE #969696   EDGE #333333
 0 !COLOUR Dark_Bluish_Grey                                      CODE    72   VALUE #646464   EDGE #333333
 0 !COLOUR Medium_Azure                                          CODE   322   VALUE #68C3E2   EDGE #333333
 0 !COLOUR Trans_Clear                                           CODE    47   VALUE #FCFCFC   EDGE #C9C9C9   ALPHA 128
 0 !COLOUR Chrome_Gold                                           CODE 334   VALUE #DFC176   EDGE #C2982E                               CHROME
 0 !COLOUR Rubber_White                                          CODE   511 VALUE #F4F4F4   EDGE #333333                               RUBBER
+0 !COLOUR Rubber_Medium_Azure                                   CODE 10322 VALUE #68C3E2   EDGE #333333                               RUBBER
 0 !COLOUR Main_Colour                                           CODE  16   VALUE #FFFF80   EDGE #333333
 0 !COLOUR Edge_Colour                                           CODE  24   VALUE #7F7F7F   EDGE #333333
 0 !COLOUR Electric_Contact_Alloy                                CODE 494   VALUE #D0D0D0   EDGE #333333                               METAL

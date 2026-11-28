@@ -35,7 +35,12 @@
     engine.reset();
   }
   function restoreDraft(saved){
-    const data=readProject(saved);
+    const setup=projects[projectKey(saved.scenario)];
+    const data=readProject(setup&&saved.program==null?{...saved,program:[]}:saved);
+    if(setup&&!data.program.length&&saved.emptyProgram!==true){
+      data.program=setup.program();
+      data.motor=setup.motor;
+    }
     if(data.scenario==='wheel'){
       // Update only the previous starter, preserving edited and imported programs.
       const turn=block('motorFor',{port:'A',direction:'clockwise',amount:90,motionUnit:'degrees'});
@@ -78,7 +83,7 @@
   const cssColors={red:'#ef4444',green:'#22c55e',blue:'#2563eb',yellow:'#facc15',white:'#fff',
     black:'#111827',azure:'#38bdf8',violet:'#8b5cf6',magenta:'#ec4899',none:'#e2e8f0'};
   let target=program,targetIndex=null,movingId=null,lists=new Map();
-  function project(){return {type:'robotica-spike-prime',version:2,scenario:engine.project,ports:{motor:engine.motorPort,color:engine.colorPort},program,environment:{...engine.environment}};}
+  function project(){return {type:'robotica-spike-prime',version:2,scenario:engine.project,ports:{motor:engine.motorPort,color:engine.colorPort},program,emptyProgram:program.length===0,environment:{...engine.environment}};}
   function save(){
     try{
       const content=JSON.stringify(project());
@@ -91,6 +96,7 @@
     const key=engine.project,setup=projects[key];
     root.dataset.spScenario=key;
     $('[data-sp-project]').value=key;
+    $('[data-sp-load-example]').hidden=!setup;
     $('[data-sp-brief]').hidden=!setup;
     $('[data-sp-task]').textContent=setup?.task??'';
     $('[data-sp-note]').textContent=setup?.note??'';
@@ -217,6 +223,19 @@
       engine.reset();
       engine.trace='Escenari buit. Es conserva el programa.';
       syncEnvironment();save();
+    }
+    if(button.hasAttribute('data-sp-load-example')){
+      const setup=projects[engine.project];
+      if(!setup)return;
+      const valid=nativeEditor?.flush()!==false;
+      if((program.length||!valid)&&!window.confirm('Vols substituir el programa actual pel programa d’exemple?'))return;
+      halt();
+      engine.motorPort=setup.motor;
+      program=engine.program=setup.program();
+      engine.reset();
+      target=program;targetIndex=null;movingId=null;
+      syncEnvironment();save();render();
+      engine.trace='Programa d’exemple carregat.';
     }
     if(button.hasAttribute('data-sp-clear')){halt();program=engine.program=[];target=program;targetIndex=null;movingId=null;save();render();}
     if(button.hasAttribute('data-sp-export'))downloadProject(project(),'projecte-spike.json');
@@ -380,6 +399,7 @@
   function draw(){
     drawHub();
     view?.draw(engine.project,engine,cssColors[engine.environment.color]);
+    $('[data-sp-model-note]').hidden=root.dataset.simView!=='3d'||!projects[engine.project]?.approximateModel;
     drawProject();
     $('[data-sp-rotor]').setAttribute('transform',`rotate(${engine.angle} 170 135)`);
     $('[data-sp-angle]').textContent=Math.round(engine.angle)+'°';
