@@ -25,14 +25,14 @@
       program:()=>[speed(45,'F'),forever(when(button('left','pressed')),position(65,'F'),when(button('left','released')),position(0,'F'))],
     },
     wheel:{
-      title:'Sínia de quatre cabines',guide:'sinia',motor:'A',
-      task:'Executa el programa. Marca «Botó esquerre premut» per avançar una cabina i desmarca’l abans de tornar a prémer.',
-      note:'Un quart de volta situa la cabina següent a la zona d’embarcament. Prova de mantindre el botó premut.',
-      phases:angle=>Array.from({length:4},(_,index)=>(angle-index*90)*Math.PI/180),
-      program:()=>[speed(25,'A'),forever(
-        when(button('left','pressed')),
-        block('motorFor',{port:'A',direction:'clockwise',amount:90,motionUnit:'degrees'}),
-        when(button('left','released')),
+      title:'Sínia de sis cabines',guide:'sinia',motor:'F',distance:'D',
+      task:'Prem Play. Posa un objecte davant del sensor i situa’l a menys de 15 cm.',
+      note:'La velocitat programada baixa del 100% al 20% quan el sensor detecta un objecte a menys de 15 cm.',
+      phases:angle=>Array.from({length:6},(_,index)=>(angle-index*60)*Math.PI/180),
+      program:()=>[block('motorStart',{port:'F',direction:'clockwise'}),forever(
+        block('if',{predicate:{type:'distance',port:'D',compare:'<',threshold:15,unit:'cm'},
+          then:[speed(20,'F')],else:[speed(100,'F')]}),
+        wait(.1),
       )],
     },
     cart:{

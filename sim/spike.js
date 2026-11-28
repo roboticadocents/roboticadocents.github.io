@@ -27,20 +27,38 @@
     program=engine.program=data.program;
     engine.project=data.scenario??'';
     const setup=projects[engine.project];
-    engine.motorPort=setup?.motor??data.motor;
+    engine.motorPort=engine.project==='wheel'&&data.motor==='A'?'A':setup?.motor??data.motor;
     engine.colorPort=setup?.color??data.color;
     engine.extraMotors=setup?.extraMotors??[];
     engine.distancePort=setup?.distance??'D';
     restoreEnvironment(data.environment);
     engine.reset();
   }
+  function restoreDraft(saved){
+    const data=readProject(saved);
+    if(data.scenario==='wheel'){
+      // Update only the previous starter, preserving edited and imported programs.
+      const turn=block('motorFor',{port:'A',direction:'clockwise',amount:90,motionUnit:'degrees'});
+      const buttonWait=state=>block('waitUntil',{predicate:{type:'button',button:'left',state}});
+      const oldStarters=[
+        [block('setSpeed',{speed:25,port:'A'}),block('forever',{body:[buttonWait('pressed'),turn,buttonWait('released')]})],
+        [block('setSpeed',{speed:25,port:'A'}),block('forever',{body:[turn,block('wait',{seconds:2})]})],
+      ];
+      const signature=list=>JSON.stringify(list,(key,value)=>key==='id'?undefined:value);
+      if(oldStarters.some(starter=>signature(data.program)===signature(cleanProgram(starter)))){
+        data.program=projects.wheel.program();
+        data.motor=projects.wheel.motor;
+      }
+    }
+    loadProject(data);
+  }
   const saved=readSaved(storageKey);
-  if(saved){try{loadProject(readProject(saved));}catch(_){}}
+  if(saved){try{restoreDraft(saved);}catch(_){}}
   function chooseProject(key){
     const draft=readSaved(storageKey+'-project-'+key);
-    if(draft){try{loadProject(readProject(draft));return;}catch(_){}}
+    if(draft){try{restoreDraft(draft);return;}catch(_){}}
     const setup=projects[key];
-    loadProject({scenario:key,program:setup?.program()??[],environment:setup?.environment,motor:'A',color:'C'});
+    loadProject({scenario:key,program:setup?.program()??[],environment:setup?.environment,motor:setup?.motor??'A',color:'C'});
   }
   const url=new URL(location.href),requested=url.searchParams.get('project');
   if(requested&&projectKey(requested)&&engine.project!==requested){
@@ -78,8 +96,8 @@
     $('[data-sp-note]').textContent=setup?.note??'';
     if(setup)$('[data-sp-guide]').href='muntatges-spike/#'+setup.guide;
     for(const panel of root.querySelectorAll('[data-sp-panel]'))panel.hidden=panel.dataset.spPanel!==key;
-    $('[data-sp-distance-controls]').hidden=Boolean(key&&key!=='cart');
-    $('[data-sp-distance-title]').parentElement.hidden=Boolean(key&&key!=='cart');
+    $('[data-sp-distance-controls]').hidden=Boolean(key&&!['cart','wheel'].includes(key));
+    $('[data-sp-distance-title]').parentElement.hidden=Boolean(key&&!['cart','wheel'].includes(key));
     $('[data-sp-claw-control]').hidden=key!=='claw';
     $('[data-sp-wheel-reading]').hidden=key!=='wheel';
     if(key==='claw'||key==='wheel'||key==='sorter')$('[data-sp-hub]').open=true;
@@ -330,15 +348,15 @@
       $('[data-sp-claw-piece]').style.display=environment.present?'':'none';
     }
     if(project==='wheel'){
-      $('[data-sp-wheel-rim]').setAttribute('transform',`rotate(${angle} 260 120)`);
-      projects.wheel.phases(angle).forEach((phase,index)=>{
+      const wheelAngle=engine.wheelAngle;
+      $('[data-sp-wheel-rim]').setAttribute('transform',`rotate(${wheelAngle} 260 120)`);
+      projects.wheel.phases(wheelAngle).forEach((phase,index)=>{
         const x=260-92*Math.sin(phase),y=120+92*Math.cos(phase);
         $(`[data-sp-wheel-cabin="${index}"]`).setAttribute('transform',`translate(${x} ${y})`);
       });
-      const quarter=Math.round(angle/90),output=$('[data-sp-boarding]');
-      const aligned=engine.pending?.type!=='motor'&&Math.abs(angle-quarter*90)<1;
-      const label=aligned?`Cabina ${quarter%4+1}`:'Entre cabines';
-      if(output.textContent!==label)output.textContent=label;
+      const cabin=Math.round(wheelAngle/60)%6+1;
+      const output=$('[data-sp-boarding]');
+      if(output.textContent!==`Cabina ${cabin}`)output.textContent=`Cabina ${cabin}`;
     }
     if(project==='cart'){
       $('[data-sp-cart-body]').setAttribute('transform',`translate(${40+travel*2.15} 0)`);
@@ -361,7 +379,7 @@
   }
   function draw(){
     drawHub();
-    view?.draw(scene3d.spike,engine,cssColors[engine.environment.color]);
+    view?.drawSpike(engine,cssColors[engine.environment.color]);
     drawProject();
     $('[data-sp-rotor]').setAttribute('transform',`rotate(${engine.angle} 170 135)`);
     $('[data-sp-angle]').textContent=Math.round(engine.angle)+'°';

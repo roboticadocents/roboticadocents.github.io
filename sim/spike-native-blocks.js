@@ -1,4 +1,4 @@
-/* Editor Scratch Blocks per al model de barrera SPIKE Prime. */
+/* Editor Scratch Blocks per a SPIKE Prime. */
 (function(){
   'use strict';
   const B=window.Blockly;
@@ -14,28 +14,49 @@
     setSpeed:['%1 · fixa la velocitat al %2 %',[motorPort,fields('speed',75,1,100)],'motor'],
     wait:['espera %1 segons',[fields('seconds',1,.1,30,.1)],'control'],
     waitUntil:['espera fins que %1',[condition],'control'],
-    ifThen:['si %1 llavors %2',[condition,stack('then')],'control'],
-    if:['si %1 llavors %2 si no %3',[condition,stack('then'),stack('else')],'control'],
-    while:['mentre %1 %2',[condition,stack('body')],'control'],
-    until:['repeteix fins que %1 %2',[condition,stack('body')],'control'],
-    repeat:['repeteix %1 vegades %2',[fields('count',3,1,100),stack('body')],'control'],
-    forever:['per sempre %1',[stack('body')],'control'],
+    ifThen:['si %1 llavors',[condition,stack('then')],'control'],
+    if:['si %1 llavors',[condition,stack('then'),stack('else')],'control'],
+    while:['mentre %1',[condition,stack('body')],'control'],
+    until:['repeteix fins que %1',[condition,stack('body')],'control'],
+    repeat:['repeteix %1 vegades',[fields('count',3,1,100),stack('body')],'control'],
+    forever:['per sempre',[stack('body')],'control'],
     ...extraCommands,
   };
-  const colours={motor:'#256c95',lights:'#795496',sound:'#9b4684',control:'#a35e20',sensor:'#187a77',operators:'#397345'};
+  // Paleta de blocs de paraules de l’app LEGO Education SPIKE.
+  const palette=(colour,colourSecondary,colourTertiary)=>({colour,colourSecondary,colourTertiary});
+  const colours={
+    motor:palette('#0090F5','#0078CC','#0062A6'),
+    lights:palette('#9B6AF6','#691FF0','#571CC1'),
+    sound:palette('#C061F1','#8A40AF','#642E7F'),
+    control:palette('#FFB515','#ECA100','#C98A01'),
+    sensor:palette('#34CCF1','#00A8C9','#368FA9'),
+    operators:palette('#00B94D','#00963E','#006A2A'),
+    event:palette('#F5C402','#C8A300','#B09400'),
+  };
+  const loopTypes=new Set(['forever','repeat','until','while']);
   for(const [type,[message,args,category]] of Object.entries(commands)){
+    const stacks=args.filter(arg=>arg.type==='input_statement');
+    const layout={message0:message,args0:args.filter(arg=>arg.type!=='input_statement')};
+    // Scratch Blocks renders the opening of a C-shaped block on its own statement row.
+    if(stacks.length){
+      Object.assign(layout,{message1:'%1',args1:[stacks[0]]});
+      if(stacks.length===2)Object.assign(layout,{message2:'si no',message3:'%1',args3:[stacks[1]]});
+      if(loopTypes.has(type))Object.assign(layout,{message2:'%1',lastDummyAlign2:'RIGHT',args2:[
+        {type:'field_image',src:media+'repeat.svg',width:24,height:24,alt:'',flip_rtl:true},
+      ]});
+    }
     B.Blocks['sp_'+type]={init(){
-      this.jsonInit({message0:message,args0:args,inputsInline:true,colour:colours[category],extensions:['shape_statement']});
+      this.jsonInit({...layout,inputsInline:true,...colours[category],extensions:['shape_statement']});
     }};
   }
   B.Blocks.sp_start={init(){
-    this.jsonInit({message0:'quan s’inicia el programa',colour:'#855a2d',extensions:['shape_hat']});
+    this.jsonInit({message0:'quan s’inicia el programa',...colours.event,extensions:['shape_hat']});
   }};
   for(const [type,options] of [['sp_distance',comparisons],['sp_legacy_distance',legacyComparisons]]){
     B.Blocks[type]={init(){
       this.jsonInit({message0:'%1 · està %2 %3 %4?',args0:[distancePort,
         menuField('compare',options),fields('threshold',15,0,1000000,.0001),menuField('unit',units),
-      ],output:'Boolean',outputShape:B.OUTPUT_SHAPE_HEXAGONAL,colour:colours.sensor});
+      ],output:'Boolean',outputShape:B.OUTPUT_SHAPE_HEXAGONAL,...colours.sensor});
     }};
   }
   const expressions={...predicates,...reporters};
@@ -43,7 +64,7 @@
     const boolean=Object.hasOwn(predicates,type);
     B.Blocks[(boolean?'sp_pred_':'sp_report_')+type]={init(){
       this.jsonInit({message0:message,args0:args,inputsInline:true,output:boolean?'Boolean':'Number',
-        outputShape:boolean?B.OUTPUT_SHAPE_HEXAGONAL:B.OUTPUT_SHAPE_ROUND,colour:colours[category]});
+        outputShape:boolean?B.OUTPUT_SHAPE_HEXAGONAL:B.OUTPUT_SHAPE_ROUND,...colours[category]});
     }};
   }
   B.Blocks.sp_numeric={init(){
@@ -95,7 +116,7 @@
       .map(([type,[,args]])=>`<block type="${Object.hasOwn(predicates,type)?'sp_pred_':'sp_report_'}${type}">${args
         .filter(a=>a.check==='Number').map(a=>value(a.name,numericShadow(0))).join('')}</block>`).join('');
     const entries=(category==='sensor'?distanceXml():'')+statements+values;
-    return `<category name="${label}" id="sp-${category}" colour="${colours[category]}" secondaryColour="${colours[category]}">${entries}</category>`;
+    return `<category name="${label}" id="sp-${category}" colour="${colours[category].colour}" secondaryColour="${colours[category].colourSecondary}">${entries}</category>`;
   }).join('');
 
   function encodeList(list){

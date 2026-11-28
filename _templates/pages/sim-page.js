@@ -22,7 +22,7 @@ function SimPage({ root = '../' } = {}) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${r}_css/styles.css?v=10">
-  <link rel="stylesheet" href="${r}sim/sim.css?v=9">
+  <link rel="stylesheet" href="${r}sim/sim.css?v=10">
   <link rel="icon" type="image/svg+xml" href="${r}_assets/icons/logo.svg">
   <script defer src="${r}sim/sim.js?v=9"></script>
   <link rel="stylesheet" href="${r}sim/codey.css?v=10">
@@ -34,13 +34,13 @@ function SimPage({ root = '../' } = {}) {
   <script defer src="${r}sim/vendor/scratch-blocks/messages.js"></script>
   <script defer src="${r}sim/vendor/scratch-blocks/messages-ca.js"></script>
   <script defer src="${r}sim/codey-native-blocks.js?v=5"></script>
-  <script defer src="${r}sim/scene-3d.js?v=8"></script>
+  <script defer src="${r}sim/scene-3d.js?v=18"></script>
   <script defer src="${r}sim/codey.js?v=16"></script>
-  <link rel="stylesheet" href="${r}sim/spike.css?v=9">
-  <script defer src="${r}sim/spike-engine.js?v=11"></script>
-  <script defer src="${r}sim/spike-projects.js?v=2"></script>
-  <script defer src="${r}sim/spike-native-blocks.js?v=5"></script>
-  <script defer src="${r}sim/spike.js?v=15"></script>
+  <link rel="stylesheet" href="${r}sim/spike.css?v=11">
+  <script defer src="${r}sim/spike-engine.js?v=12"></script>
+  <script defer src="${r}sim/spike-projects.js?v=4"></script>
+  <script defer src="${r}sim/spike-native-blocks.js?v=7"></script>
+  <script defer src="${r}sim/spike.js?v=18"></script>
 </head>
 <body class="sim-app-body">
   <header class="sim-topbar" data-sim-hero data-active-robot="tale-bot">

@@ -1642,11 +1642,10 @@
 .sim-view-controls[hidden],.sim-view-controls [hidden],.sim-preview-3d[hidden],.sim-view-hint[hidden],
 [data-sim-view="3d"] [data-view-planar] { display:none; }
 .sim-preview-3d { display:grid; place-items:center; border:1px solid #cbd5e1; border-radius:10px; background:#ebf5fd; overflow:hidden; }
-.sim-preview-3d canvas { display:block; width:100%; max-width:800px; height:auto; }
+.sim-preview-3d [data-view-canvas] { display:block; width:100%; height:auto; cursor:grab; touch-action:none; }
 .sim-view-hint { margin:4px 0 0; font-size:12px; color:#475569; }
 
 .sim-view-controls [data-view-camera] { flex-wrap:wrap; }
-.sim-preview-3d [data-view-inspect] { width:100%; max-width:none; cursor:grab; touch-action:none; }
-.sim-preview-3d [data-view-inspect]:active { cursor:grabbing; }
-.sim-preview-3d [data-view-inspect]:focus-visible { outline:2px solid #2563eb; outline-offset:-4px; }
+.sim-preview-3d [data-view-canvas]:active { cursor:grabbing; }
+.sim-preview-3d [data-view-canvas]:focus-visible { outline:2px solid #2563eb; outline-offset:-4px; }
 .sim-view-help { font-size:.75rem; margin:5px 10px 8px; color:#475569; }

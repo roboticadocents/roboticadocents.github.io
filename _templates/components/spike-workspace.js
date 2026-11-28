@@ -9,10 +9,10 @@ function SpikeWorkspace(){
   return `<section class="cr-workspace sp-workspace" id="panel-controls-spike" role="tabpanel" aria-labelledby="tab-spike" data-spike-workspace hidden>
     <div class="cr-stage-panel">
       <div class="cr-section-heading"><h2>SPIKE Prime</h2><button type="button" class="sim-btn sim-btn-outline" data-sp-reset>↺ Reinicia</button><button type="button" class="sim-btn sim-btn-outline" data-sp-clear-scene>Buida l’escenari</button></div>
-      <label class="sp-project-choice">Projecte <select data-sp-project><option value="">Banc de proves</option>${Object.entries(projects).map(([key,project],index)=>`<option value="${key}">${index+1}. ${project.title}</option>`).join('')}</select></label>
       <div class="sp-project-brief" data-sp-brief hidden><p data-sp-task></p><p data-sp-note></p><a href="muntatges-spike/" data-sp-guide>Guia de muntatge</a></div>
-      ${ViewControls({inspect:true})}
-      ${Preview3D('Vista 3D de l’escenari de SPIKE Prime',{inspect:true})}
+      ${ViewControls()}
+      ${Preview3D('Vista 3D de l’escenari de SPIKE Prime',{id:'sp',width:960,height:600})}
+      <p class="sim-view-help" data-spike-view-status role="status" hidden></p>
       <div class="sp-scene" data-sp-panel="" data-view-planar><svg viewBox="0 0 720 300" role="img" aria-labelledby="sp-scene-title">
         <title id="sp-scene-title">Vista superior del banc de proves amb un motor i un sensor de distància</title>
         <rect x="1" y="1" width="718" height="298" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
@@ -39,15 +39,17 @@ function SpikeWorkspace(){
         <path data-sp-jaw-right d="M313 98l35 73v47h-35" fill="none" stroke="#2563eb" stroke-width="18" stroke-linejoin="round"/>
         <rect data-sp-claw-piece x="233" y="185" width="54" height="43" rx="6" fill="#facc15"/>
       </svg></div>
-      <div class="sp-project-scene" data-sp-panel="wheel" data-view-planar hidden><svg viewBox="0 0 520 310" role="img" aria-label="Sínia amb quatre cabines penjants i una zona d’embarcament">
-        <path d="M185 265l75-145 75 145" fill="none" stroke="#2478c7" stroke-width="11" stroke-linejoin="round"/>
+      <div class="sp-project-scene" data-sp-panel="wheel" data-view-planar hidden><svg viewBox="0 0 520 310" role="img" aria-label="Sínia Technic amb sis cabines penjants">
+        <path d="M260 265V120" fill="none" stroke="#2478c7" stroke-width="11" stroke-linejoin="round"/>
         <rect x="166" y="263" width="192" height="12" rx="3" fill="#94a3b8"/>
         <rect x="227" y="250" width="66" height="12" rx="3" fill="#155e75"/>
         <text x="260" y="297" text-anchor="middle" class="sp-svg-label">Zona d’embarcament</text>
-        <circle cx="260" cy="120" r="92" fill="#ebf5fd" fill-opacity=".5" stroke="#0891b2" stroke-width="9"/>
-        <g data-sp-wheel-rim><path d="M260 28v184M168 120h184" stroke="#0891b2" stroke-width="8"/></g>
+        <g data-sp-wheel-rim>
+          <polygon points="260,28 281,84 340,74 302,120 340,166 281,156 260,212 239,156 180,166 218,120 180,74 239,84" fill="none" stroke="#eab308" stroke-width="6"/>
+          <path d="M260 28v184M180 74l160 92M180 166l160-92" stroke="#0891b2" stroke-width="8"/>
+        </g>
         <circle cx="260" cy="120" r="13" fill="#155e75"/>
-        ${['#bde8f1','#e9d5ff','#fde68a','#bbf7d0'].map((color,index)=>`<g data-sp-wheel-cabin="${index}">
+        ${['#bde8f1','#e9d5ff','#fde68a','#e9d5ff','#bbf7d0','#fecaca'].map((color,index)=>`<g data-sp-wheel-cabin="${index}">
           <path d="M0 0v10" stroke="#334155" stroke-width="3"/><circle r="4" fill="#334155"/>
           <rect x="-18" y="10" width="36" height="24" rx="5" fill="${color}" stroke="#475569" stroke-width="1.5"/>
           <text x="0" y="27" text-anchor="middle" class="sp-svg-label">${index+1}</text>
@@ -69,7 +71,7 @@ function SpikeWorkspace(){
         <g data-sp-sort-arm><path data-sp-arm-line d="M260 160v-79" stroke="#2563eb" stroke-width="17" stroke-linecap="round"/><circle cx="260" cy="160" r="16" fill="#155e75"/></g>
         <rect data-sp-sort-piece x="-17" y="-14" width="34" height="28" rx="5"/>
       </svg></div>
-      <div class="sp-readings"><div>Posició del motor <strong data-sp-angle>0°</strong></div><div data-sp-wheel-reading hidden>Embarcament <strong data-sp-boarding>Cabina 1</strong></div><div><span data-sp-distance-title>Distància D</span> <strong data-sp-distance-value>Sense objecte</strong></div></div>
+      <div class="sp-readings"><div>Posició del motor <strong data-sp-angle>0°</strong></div><div data-sp-wheel-reading hidden>Cabina més baixa <strong data-sp-boarding>Cabina 1</strong></div><div><span data-sp-distance-title>Distància D</span> <strong data-sp-distance-value>Sense objecte</strong></div></div>
       <div class="sp-object-controls" data-sp-distance-controls><label><input type="checkbox" data-sp-present> Objecte davant del sensor</label><button type="button" class="sim-btn sim-btn-outline" data-sp-remove-object>Lleva l’objecte</button><label><span data-sp-range-label>Distància de l’objecte</span> <output data-sp-distance-label>80 cm</output><input type="range" min="5" max="200" step="1" value="80" data-sp-distance></label></div>
       <label class="sp-piece-control" data-sp-claw-control hidden><input type="checkbox" data-sp-claw-present> Peça entre les mordasses</label>
       <details class="sp-hub" data-sp-hub><summary>Hub i sensors</summary>
@@ -99,6 +101,7 @@ function SpikeWorkspace(){
     <div class="cr-program-panel">
       <div class="cr-section-heading"><h2>Programa SPIKE Prime</h2><button type="button" class="sim-btn sim-btn-outline" data-sp-clear>Buida</button></div>
       <details class="cr-project"><summary>Guarda o obri un projecte</summary><p class="cr-hint">Es desa automàticament en aquest navegador. El JSON és del simulador, no de l’app SPIKE.</p><div class="cr-project-controls"><button type="button" class="sim-btn sim-btn-outline" data-sp-export>Descarrega el projecte</button><button type="button" class="sim-btn sim-btn-outline" data-sp-backup hidden>Descarrega el programa anterior</button><label class="sim-btn sim-btn-outline">Obri un projecte<input class="visually-hidden" type="file" accept=".json,application/json" data-sp-import></label></div></details>
+      <label class="cr-example-label">Projecte <select data-sp-project><option value="">Banc de proves</option>${Object.entries(projects).map(([key,project],index)=>`<option value="${key}">${index+1}. ${project.title}</option>`).join('')}</select></label>
       <div data-sp-native hidden aria-label="Editor de blocs de SPIKE Prime"></div><p data-sp-native-status role="status"></p>
       <div data-sp-fallback>
       <div class="sp-event">${icon('event')} Quan s’inicia el programa</div>

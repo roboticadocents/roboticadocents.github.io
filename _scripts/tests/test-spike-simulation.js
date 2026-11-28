@@ -236,21 +236,28 @@ console.log('SPIKE Prime: cicle de barrera, dos llindars, motor gradual, aturada
  }
 }
 
-// La sínia avança una cabina per pulsació, fins i tot si el botó queda premut.
+// La sínia gira amb la reducció del vis sense fi i respon al llindar del sensor D.
 {
  const wheel=require('../../sim/spike-projects').wheel;
  const engine=new Engine(cleanProgram(wheel.program()));
+ engine.project='wheel';
+ engine.motorPort='F';
  engine.start();
- run(engine,3);
- assert.equal(engine.angle,0);
- for(const expected of [90,180,270,0]){
-   engine.environment.left=true;
-   run(engine,5);
-   assert.equal(engine.angle,expected);
-   assert.ok(engine.pending);
-   assert.equal(engine.pending.block.predicate.state,'released');
-   engine.environment.left=false;
-   run(engine,.5);
-   assert.equal(engine.angle,expected);
- }
+ run(engine,2);
+ assert.equal(engine.motorSpeed,100);
+ assert.ok(engine.wheelAngle>0);
+ assert.ok(engine.angle>engine.wheelAngle*23);
+ engine.environment.present=true;
+ engine.environment.distance=15;
+ run(engine,1);
+ assert.equal(engine.motorSpeed,100);
+ engine.environment.distance=14;
+ run(engine,1);
+ assert.equal(engine.motorSpeed,20);
+ const previous=engine.wheelAngle;
+ run(engine,1);
+ assert.ok(Math.abs(engine.wheelAngle-previous-1.5)<1e-6);
+ engine.environment.present=false;
+ run(engine,1);
+ assert.equal(engine.motorSpeed,100);
 }

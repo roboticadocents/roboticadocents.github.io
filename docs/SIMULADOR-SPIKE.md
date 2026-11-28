@@ -4,7 +4,7 @@ Accés a `/sim/?robot=spike`. El banc de proves s’obri amb el bloc d’inici. 
 
 ## Banc de proves
 
-Les vistes 2D i 3D comparteixen l’estat del programa. Les escenes són esquemàtiques: el carretó es mou per un corredor recte i la manipulació de peces és aproximada. La vista 3D permet girar la càmera. El lliscador de distància funciona en ambdues vistes. En 2D, també es pot arrossegar l’objecte.
+Les vistes 2D i 3D comparteixen l’estat del programa. Les escenes són esquemàtiques: el carretó es mou per un corredor recte i la manipulació de peces és aproximada. Tots els projectes i el banc de proves comparteixen el visor Three.js amb OrbitControls. El visor requereix WebGL 2 i permet girar, desplaçar i apropar la càmera. El lliscador de distància funciona en ambdues vistes. En 2D, també es pot arrossegar l’objecte.
 
 El motor es connecta al port A per defecte i admet qualsevol port de l’A a l’F. El sensor de color es pot connectar als ports C o B. El sensor de força és al B i el de distància al D. Els controls del hub permeten provar la matriu, el so i els botons.
 
@@ -22,7 +22,8 @@ Les guies de muntatge continuen disponibles a `/sim/muntatges-spike/` i la guia 
 
 - `sim/spike-engine.js` calcula el moviment, les condicions i els bucles, i valida els blocs importats.
 - `sim/spike.js` gestiona l’editor, la vista 2D i els projectes.
-- `sim/scene-3d.js` dibuixa la vista 3D.
+- `sim/spike-view.js` gestiona el visor Three.js i la càmera.
+- `sim/spike-models.js` defineix els mecanismes esquemàtics. La sínia carrega el seu model LDraw des de `sim/wheel-view.js`.
 - `_templates/components/spike-workspace.js` defineix el banc de proves i els controls.
 
 Regenera el lloc amb `node _scripts/build.js` i executa les comprovacions amb `node _scripts/test.js`.

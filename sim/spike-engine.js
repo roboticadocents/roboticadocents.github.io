@@ -122,7 +122,7 @@
     get motorSpeed(){return this.motorAt(this.motorPort)?.speed??30;}
     reset(){
       this.motors=Object.fromEntries([this.motorPort,...this.extraMotors].map(port=>[port,{angle:0,speed:30,spin:0}]));
-      this.travel=0;this.delivery='';this.stop();this.clock=0;this.timerStart=0;this.active=null;this.lastCondition='';
+      this.travel=0;this.wheelAngle=0;this.delivery='';this.stop();this.clock=0;this.timerStart=0;this.active=null;this.lastCondition='';
       this.trace='Preparat.';this.budget=0;this.accumulator=0;this.started=false;this.hubColor='none';this.volume=100;this.setMatrix(dark);
     }
     stop(){this.running=false;this.frames=[];this.pending=null;for(const motor of Object.values(this.motors))motor.spin=0;this.note=null;}
@@ -279,6 +279,10 @@
         const base=this.motorAt('A').angle;
         if(Math.abs(base-90)<12)this.delivery='yellow';
         if(Math.abs(base-270)<12)this.delivery='magenta';
+      }
+      if(this.project==='wheel'){
+        // El vis sense fi d’una entrada fa avançar una dent de la corona de 24.
+        this.wheelAngle=normalizeAngle(this.wheelAngle+(wheelDelta[this.motorPort]??0)/24);
       }
       if(this.project==='cart'){
         // Els motors miren en sentits oposats. El corredor restringeix el moviment a un eix.

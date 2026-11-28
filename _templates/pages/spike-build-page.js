@@ -37,48 +37,16 @@ const projectGuides=`
  <p>Prepara un kit SPIKE Prime 45678 i una peça lleugera de prova. El <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltd34f6e501eb5ff30/5f8802b8bf5ab07ee90076df/pass-the-brick-bi-pdf-book1of1.pdf?locale=en-us">llibre oficial Pass the Brick (PDF)</a> mostra les peces i els passos de la mà robòtica.</p>
  <ol><li>Munta les dues mordasses i connecta el motor al port F.</li><li>Obri la pinça i anota la posició del motor. Tanca-la lentament sobre la peça i anota l’angle on la subjecta sense forçar el motor. Usa aquests valors al programa físic.</li><li>Prem i solta el botó esquerre. Comprova si pots agafar i deixar la peça tres vegades.</li></ol>
  <p><a href="../?robot=spike&amp;project=claw">Obri la pinça al simulador</a> · <a href="https://education.lego.com/en-us/lessons/prime-extra-resources/pass-the-brick/">Lliçó de LEGO Education</a></p></section>
- <section id="sinia"><h2>Sínia de quatre cabines</h2>
- <p>Muntatge propi amb una roda lleugera de cartó, quatre cabines penjants i un motor SPIKE Prime al port A. El motor mou la roda directament. Cada quart de volta canvia la cabina que queda a l’embarcament.</p>
- <h3>Peces i materials</h3>
- <ul>
-  <li>1 hub SPIKE Prime carregat, 1 motor angular gran, 1 eix Technic en creu de 4 mòduls i 1 roda dentada cònica de 36 dents amb forat en creu. La roda dentada fa de suport del disc.</li>
-  <li>1 base rígida de cartó de 30 × 24 cm, 1 capsa rígida d’uns 16 × 12 × 12 cm i un retall de cartó corrugat de 20 × 20 cm.</li>
-  <li>4 rectangles de cartolina de 3 × 4 cm per a les cabines, 4 enquadernadors de llautó i 4 trams de canyeta de 4 mm per separar les cabines del disc.</li>
-  <li>2 gomes amples, cinta de doble cara, cinta de paper, tisores, regle, compàs i retolador.</li>
- </ul>
- <figure><svg viewBox="0 0 730 330" role="img" aria-labelledby="wheel-build-title">
-  <title id="wheel-build-title">Sínia vista de front i de costat amb les mides del disc, l’eix i les cabines</title>
-  <rect x="1" y="1" width="728" height="328" rx="14" fill="#f8fafc" stroke="#cbd5e1"/>
-  <text x="70" y="29">Vista frontal</text><text x="452" y="29">Vista lateral</text>
-  <path d="M52 282h282m91 0h265" stroke="#64748b" stroke-width="4"/>
-  <rect x="108" y="141" width="169" height="141" rx="6" fill="#fef3c7" stroke="#a16207"/>
-  <circle cx="192" cy="135" r="91" fill="#ebf5fd" stroke="#0891b2" stroke-width="3"/>
-  <path d="M102 135h180M192 45v180" fill="none" stroke="#64748b" stroke-dasharray="5 5"/>
-  <circle cx="192" cy="135" r="8" fill="#155e75"/>
-  <path d="M192 53v10m82 72v10m-82 72v10m-82-92v10" stroke="#334155" stroke-width="2"/>
-  <path d="M177 64h30v23h-30zM259 145h30v23h-30zM177 227h30v23h-30zM95 145h30v23H95z" fill="#bae6fd" stroke="#0369a1"/>
-  <path d="M101 41h182M101 37v9m182-9v9" stroke="#475569"/><text x="292" y="46">Ø 18 cm</text>
-  <text x="39" y="112">Radi 8 cm</text><text x="193" y="271" text-anchor="middle">Embarcament</text>
-  <rect x="457" y="158" width="104" height="124" rx="7" fill="#fef3c7" stroke="#a16207"/>
-  <rect x="500" y="110" width="61" height="49" rx="6" fill="#38bdf8" stroke="#0369a1"/>
-  <path d="M557 134h42" stroke="#334155" stroke-width="7"/><rect x="584" y="99" width="12" height="71" fill="#155e75"/>
-  <path d="M600 48v188" stroke="#0891b2" stroke-width="6"/><path d="M603 218h13v22" fill="none" stroke="#334155" stroke-width="2"/>
-  <rect x="612" y="238" width="24" height="20" rx="3" fill="#bae6fd" stroke="#0369a1"/>
-  <path d="M655 134v147m-5 0h10m-10-147h10" stroke="#64748b" stroke-dasharray="4 3"/><text x="663" y="212">13 cm</text>
-  <text x="503" y="97">Motor A</text><text x="607" y="63">Disc</text>
- </svg><figcaption>Els pivots de les cabines estan separats per 90°. El disc va davant del motor, amb espai perquè els quatre enquadernadors passen lliurement.</figcaption></figure>
- <h3>Muntatge pas a pas</h3>
- <ol class="sp-build-steps">
-  <li>Fixa la capsa rígida al centre de la base amb cinta de doble cara. Subjecta-hi el motor amb les dues gomes. Orienta l’eix horitzontal i situa el seu centre a uns 13 cm de la base. Deixa el disc del motor accessible i fixa el cable a la base.</li>
-  <li>Dibuixa i retalla un disc de 18 cm. Marca el centre i traça dos diàmetres perpendiculars. Fes quatre forats xicotets, a 8 cm del centre, un a cada extrem de la creu.</li>
-  <li>En cada rectangle de cartolina, plega l’últim centímetre per fer el sòl de la cabina. Numera-les de l’1 al 4. Fes un forat al centre de la vora superior de cada cabina.</li>
-  <li>Penja cada cabina amb un enquadernador i un tros de canyeta com a separador. Deixa prou joc perquè la cabina puga girar lliurement. Amb la cabina 1 avall, col·loca la 2 a la dreta, la 3 dalt i la 4 a l’esquerra.</li>
-  <li>Amb el motor aturat, encaixa l’eix en creu i la roda dentada. Centra i enganxa el disc de cartó a la cara exterior de la roda dentada amb cinta de doble cara. Comprova que les potes dels enquadernadors i les cabines deixen espai al suport durant una volta sencera.</li>
-  <li>Connecta el motor al port A. Situa la cabina 1 a baix amb un moviment lent i marca la zona d’embarcament a la base. Si el primer quart de volta du la cabina 4 a l’embarcament, invertix el sentit de gir al programa físic.</li>
- </ol>
+ <section id="sinia"><h2>Sínia de sis cabines</h2>
+ <p>La sínia es basa en el muntatge SPIKE Prime de subeen40, amb sis cabines de LEGO, una estructura Technic i una transmissió amb vis sense fi.</p>
+ <p><a href="https://blog.naver.com/subeen40/223212140282">Obri les instruccions de muntatge originals (85 passos)</a> · <a href="https://youtu.be/xsvf345XInw">Vídeo del muntatge en marxa</a></p>
  <h3>Prova física</h3>
- <p>Treballa amb el disc i les cabines buides. Programa velocitat baixa, espera que es prema el botó esquerre, gira 90° i espera que es solte. Mantín el botó premut després de la primera pulsació i comprova que la sínia s’atura. En quatre pulsacions ha de tornar a la cabina 1.</p>
- <p><a href="../?robot=spike&amp;project=wheel">Obri la sínia al simulador</a> · <a href="https://education.lego.com/v3/assets/blt293eea581807678a/blt28cad37f1f002fd3/5f8801b982eaa522ca601c89/le_spike_prime_element_overview.pdf">Inventari del kit LEGO (PDF)</a> · <a href="https://www.fllcasts.com/materials/1236-ferris-wheel-built-with-lego-education-spike-prime-available-as-3d-building-instructions">Model manual de FLLCasts</a></p>
+ <ol>
+  <li>Segueix els 85 passos de la guia per muntar la base, instal·lar la transmissió i penjar les sis cabines. Fes girar l’eix a mà abans de connectar el motor i comprova que les cabines pengen lliurement.</li>
+  <li>Connecta el sensor de distància al port D i el motor al port F.</li>
+  <li>Prem Play. Acosta un objecte a menys de 15 cm del sensor i comprova que la sínia reduïx la velocitat. Allunya’l i observa com recupera la velocitat anterior.</li>
+ </ol>
+ <p><a href="../?robot=spike&amp;project=wheel">Obri la sínia al simulador</a></p>
  </section>
  <section id="carreto"><h2>Carretó de repartiment</h2>
  <p>Prepara un kit 45678, una peça de càrrega i una capsa plana com a zona de descàrrega. Segueix el <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt809618df861ea1b7/5f8802a14376310c19e3370a/out-of-order-bi-pdf-book1of1.pdf?locale=en-us">manual complet del carretó (PDF)</a> per identificar les peces.</p>

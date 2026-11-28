@@ -12,7 +12,13 @@
 .sp-object-controls input[type="range"] { width:100%; accent-color:#0891b2; }
 .sp-object-controls input[type="checkbox"] { accent-color:#0891b2; width:16px; height:16px; }
 .sp-object-controls output { margin-left:auto; font-weight:600; }
-.sp-event { display:flex; align-items:center; gap:6px; margin:12px 0; color:#854d0e; font-size:12px; font-weight:600; }
+.sp-event { display:flex; align-items:center; gap:6px; margin:12px 0; color:#705c00; font-size:12px; font-weight:600; }
+/* Tons de la paleta SPIKE per a l’editor alternatiu. */
+.sp-workspace .cr-category-motion { --cr-color:#0062a6; --cr-border:#0090f5; --cr-bg:#eef8ff; --cr-hover:#dbf0ff; }
+.sp-workspace .cr-category-lights { --cr-color:#571cc1; --cr-border:#9b6af6; --cr-bg:#f7f2ff; --cr-hover:#efe5ff; }
+.sp-workspace .cr-category-sound { --cr-color:#642e7f; --cr-border:#c061f1; --cr-bg:#fcf3ff; --cr-hover:#f6e5ff; }
+.sp-workspace .cr-category-control { --cr-color:#754f00; --cr-border:#ffb515; --cr-bg:#fff8e8; --cr-hover:#fff0ce; }
+.sp-workspace .cr-category-sensor { --cr-color:#155e75; --cr-border:#34ccf1; --cr-bg:#eefaff; --cr-hover:#d7f6ff; }
 .sp-workspace .cr-palette-families { grid-template-columns:repeat(3,minmax(0,1fr)); }
 .sp-workspace .cr-palette-family summary { padding-inline:5px; }
 .sp-workspace .cr-block-menu [data-sp-action="delete"] { color:#b91c1c; }
@@ -57,8 +63,6 @@
 .sp-hub-inputs label { display:flex; align-items:center; gap:5px; flex-wrap:wrap; }
 .sp-hub-inputs input[type="range"] { width:100%; accent-color:#0891b2; }
 .sp-port-settings { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
-.sp-project-choice { display:flex; gap:8px; align-items:center; flex-wrap:wrap; font-size:.85rem; margin-bottom:8px; }
-.sp-project-choice select { font:inherit; max-width:100%; padding:5px; }
 .sp-project-brief { font-size:.8rem; line-height:1.45; margin-bottom:8px; }
 .sp-project-brief p { margin:0 0 4px; }
 .sp-project-brief a { color:#155e75; text-decoration:underline; }
